@@ -11,14 +11,17 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
-      - run: pip install feedparser deep-translator
+      - run: pip install feedparser requests deep-translator
       - run: python scripts/fetch_news.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       - name: Gravar alterações
         run: |
           git config user.name "cyberradar-bot"

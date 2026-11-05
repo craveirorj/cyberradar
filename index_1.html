@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#070b14">
+<title>CyberRadar</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<style>
+:root{
+  --bg:#070b14; --panel:#0d1424; --panel2:#111b30; --line:#1c2a47;
+  --text:#e6edf8; --muted:#8a9bb8; --accent:#22d3ee; --accent2:#7c5cff; --ok:#34d399; --warn:#fbbf24; --bad:#f43f5e;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+#bg{position:fixed;inset:0;z-index:0;pointer-events:none}
+.wrap{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:0 16px 80px}
+header{position:sticky;top:0;z-index:5;margin:0 -16px;padding:12px 16px 10px;background:linear-gradient(var(--bg) 70%,transparent);backdrop-filter:blur(6px)}
+.top{display:flex;align-items:center;gap:10px;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.5px;font-size:20px}
+.logo svg{width:28px;height:28px}
+.logo b{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.live{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 rgba(52,211,153,.6);animation:pulse 2s infinite}
+.dot.off{background:var(--bad);animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(52,211,153,0)}100%{box-shadow:0 0 0 0 rgba(52,211,153,0)}}
+.iconbtn{background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:7px 10px;cursor:pointer;font-size:14px}
+.iconbtn:active{transform:scale(.96)}
+.spin{animation:rot .8s linear infinite}@keyframes rot{to{transform:rotate(360deg)}}
+.search{width:100%;margin-top:10px;padding:11px 14px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:var(--text);font-size:15px;outline:none}
+.search:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(34,211,238,.15)}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--muted);font-size:13px;cursor:pointer;transition:.2s}
+.chip.on{color:#04121a;background:linear-gradient(90deg,var(--accent),#67e8f9);border-color:transparent;font-weight:600}
+.stats{display:flex;gap:10px;margin:12px 0}
+.stat{flex:1;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.stat b{display:block;font-size:20px}.stat span{font-size:12px;color:var(--muted)}
+.banner{background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.35);color:var(--warn);padding:10px 12px;border-radius:12px;font-size:13px;margin:10px 0}
+.newbar{display:none;position:sticky;top:116px;z-index:4;margin:8px auto;width:max-content;max-width:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;border:0;border-radius:999px;padding:8px 16px;font-weight:600;cursor:pointer;box-shadow:0 8px 24px rgba(34,211,238,.25);animation:drop .4s ease}
+@keyframes drop{from{transform:translateY(-20px);opacity:0}}
+.grid{display:grid;gap:12px;grid-template-columns:1fr}
+@media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+.card{position:relative;background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:16px;padding:14px;cursor:pointer;overflow:hidden;opacity:0;transform:translateY(14px);animation:in .5s ease forwards;transition:transform .2s,border-color .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 10px 30px rgba(34,211,238,.1)}
+.card.fresh::after{content:"NOVO";position:absolute;top:10px;right:10px;font-size:10px;font-weight:800;letter-spacing:1px;color:#04121a;background:var(--ok);padding:2px 7px;border-radius:6px;animation:glow 1.6s infinite alternate}
+@keyframes glow{to{box-shadow:0 0 14px var(--ok)}}
+@keyframes in{to{opacity:1;transform:none}}
+.meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12px;color:var(--muted)}
+.tag{padding:2px 8px;border-radius:6px;border:1px solid var(--line);font-size:11px}
+.tag.Ransomware,.tag.Vulnerabilidade{color:var(--bad);border-color:rgba(244,63,94,.4)}
+.tag.Malware,.tag.Ataque\/APT{color:#fb923c;border-color:rgba(251,146,60,.4)}
+.tag.Phishing\/Fraude,.tag.Fuga\ de\ dados{color:var(--warn);border-color:rgba(251,191,36,.4)}
+.tag.IA{color:var(--accent2);border-color:rgba(124,92,255,.5)}
+.tag.Regulação{color:var(--accent);border-color:rgba(34,211,238,.4)}
+.card h3{margin:8px 0 6px;font-size:16px;line-height:1.3;padding-right:44px}
+.card p{margin:0;color:var(--muted);font-size:13.5px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card .cta{margin-top:10px;color:var(--accent);font-size:13px;font-weight:600;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.card .cta .btn{padding:5px 10px;font-size:12px}
+.sheet{position:relative}
+.x{position:absolute;top:10px;right:10px;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:var(--panel2);color:var(--text);cursor:pointer;font-size:14px}
+.empty{text-align:center;color:var(--muted);padding:60px 0}
+/* modal */
+.modal{position:fixed;inset:0;z-index:20;display:none;background:rgba(3,6,12,.75);backdrop-filter:blur(6px);align-items:flex-end;justify-content:center}
+.modal.open{display:flex;animation:fade .2s}
+@keyframes fade{from{opacity:0}}
+.sheet{width:100%;max-width:760px;max-height:92vh;overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:20px 20px 0 0;padding:18px 16px 28px;animation:up .3s cubic-bezier(.2,.9,.3,1)}
+@media(min-width:760px){.modal{align-items:center}.sheet{border-radius:20px}}
+@keyframes up{from{transform:translateY(40px);opacity:0}}
+.sheet h2{margin:6px 0 8px;font-size:19px;line-height:1.3}
+.sheet .orig{font-size:12px;color:var(--muted);margin-bottom:8px}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.btn{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:10px;padding:9px 14px;font-size:14px;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.primary{background:linear-gradient(90deg,var(--accent),#67e8f9);color:#04121a;border:0;font-weight:700}
+.btn:active{transform:scale(.97)}
+.tabs{display:flex;gap:6px;margin-top:14px}
+.tab{flex:1;text-align:center;padding:8px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--muted);cursor:pointer;font-size:13px}
+.tab.on{color:var(--text);border-color:var(--accent)}
+textarea{width:100%;min-height:230px;margin-top:10px;background:#080e1b;border:1px solid var(--line);border-radius:12px;color:var(--text);padding:12px;font:14px/1.55 inherit;resize:vertical;outline:none}
+textarea:focus{border-color:var(--accent)}
+.opts{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;font-size:13px;color:var(--muted)}
+.opts label{display:flex;align-items:center;gap:5px;background:var(--panel2);border:1px solid var(--line);padding:5px 10px;border-radius:8px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,40px);background:var(--ok);color:#04121a;font-weight:700;padding:10px 18px;border-radius:999px;opacity:0;transition:.3s;z-index:40}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+details{margin-top:12px;color:var(--muted);font-size:13px}
+details input{width:100%;margin-top:6px;padding:9px;border-radius:8px;border:1px solid var(--line);background:#080e1b;color:var(--text)}
+.sum{color:var(--text);font-size:14.5px;margin:0 0 10px}
+.info{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:8px 0;font-size:14px}
+.info b{display:block;font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
+.info.todo b{color:var(--ok)}
+.thumb{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;margin:8px 0 2px;background:var(--panel2)}
+.thumb.big{margin:4px 0 4px}
+.cap{margin:0 0 10px;font-size:11px;color:var(--muted)}
+.pts{margin:0 0 10px;padding-left:20px;font-size:14px}
+.pts li{margin:3px 0}
+.note{margin:8px 0;font-size:12px;color:var(--muted)}
+.ch{margin:16px 0 0;font-size:15px}
+.srcs{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.srcs .chip{font-size:12px;padding:4px 10px}
+.srcs .chip.hidden{opacity:.4;text-decoration:line-through}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas>
+<div class="wrap">
+  <header>
+    <div class="top">
+      <div class="logo">
+        <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="13" stroke="#22d3ee" stroke-width="2" opacity=".5"/><circle cx="16" cy="16" r="7" stroke="#7c5cff" stroke-width="2" opacity=".8"/><path d="M16 16 L26 8" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round" class="sweep"/><circle cx="16" cy="16" r="2" fill="#22d3ee"/></svg>
+        <span>Cyber<b>Radar</b></span>
+      </div>
+      <div class="live"><span class="dot" id="dot"></span><span id="upd">a carregar…</span>
+        <button class="iconbtn" id="refresh" title="Atualizar agora">⟳</button>
+        <button class="iconbtn" id="gear" title="Fontes e definições">⚙</button>
+      </div>
+    </div>
+    <input class="search" id="q" type="search" placeholder="Pesquisar notícias (ex: ransomware, CNCS, phishing)…">
+    <div class="chips" id="regionChips"></div>
+    <div class="chips" id="catChips"></div>
+  </header>
+
+  <div id="banner"></div>
+  <button class="newbar" id="newbar"></button>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" style="display:none">Nada encontrado com estes filtros.</div>
+</div>
+
+<!-- post modal -->
+<div class="modal" id="modal"><div class="sheet" id="sheet">
+  <button class="x" id="mX" title="Fechar">✕</button>
+  <div class="meta" id="mMeta" style="padding-right:38px"></div>
+  <h2 id="mTitle"></h2>
+  <div class="orig" id="mOrig"></div>
+  <div id="reader">
+  <img id="mImg" class="thumb big" alt="" loading="lazy" referrerpolicy="no-referrer" style="display:none">
+  <p class="cap" id="mCap" style="display:none"></p>
+  <p id="mSum" class="sum"></p>
+  <ul class="pts" id="mPts" style="display:none"></ul>
+  <div id="mWhy" class="info" style="display:none"><b>Porque importa</b><span></span></div>
+  <div id="mTodo" class="info todo" style="display:none"><b>O que fazer</b><span></span></div>
+  <div class="row">
+    <a class="btn primary" id="mLink" target="_blank" rel="noopener">Ler notícia completa na fonte ↗</a>
+    <button class="btn" id="mToCreate" style="display:none">✍️ Criar post</button>
+    <button class="btn" id="mClose">Fechar</button>
+  </div>
+  <p class="note" id="mNote"></p>
+  </div>
+  <div id="creator" style="display:none">
+  <div class="row" style="justify-content:space-between;align-items:center;margin:14px 0 0"><h3 class="ch" style="margin:0">✍️ Criar post</h3><button class="btn" id="mToRead">← Ver notícia</button></div>
+  <p class="note">Ao publicares com o link da fonte, o LinkedIn e o Facebook mostram sozinhos o cartão com a imagem. Não copies a imagem do site sem autorização.</p>
+  <div class="tabs" id="tabs">
+    <div class="tab on" data-n="linkedin">LinkedIn</div>
+    <div class="tab" data-n="instagram">Instagram</div>
+    <div class="tab" data-n="facebook">Facebook</div>
+  </div>
+  <div class="opts">
+    <label><input type="checkbox" id="oEmoji" checked> Emojis</label>
+    <label><input type="checkbox" id="oTags" checked> Hashtags</label>
+    <label><input type="checkbox" id="oLink" checked> Link da fonte</label>
+    <label>Tom
+      <select id="oTone" style="background:transparent;color:inherit;border:0">
+        <option value="mix">Misto</option><option value="tech">Técnico</option><option value="simple">Simples</option>
+      </select></label>
+  </div>
+  <textarea id="post"></textarea>
+  <div class="row">
+    <button class="btn primary" id="copy">Copiar post</button>
+    <button class="btn" id="regen">↻ Outra versão</button>
+    <button class="btn" id="ai">✨ Melhorar com IA (grátis)</button>
+  </div>
+  <details>
+    <summary>Chave Gemini (opcional, gratuita)</summary>
+    <p>Cria uma chave grátis em aistudio.google.com e cola aqui. Fica guardada só neste dispositivo.</p>
+    <input id="gkey" type="password" placeholder="Chave API Gemini">
+  </details>
+  </div>
+</div></div>
+
+<!-- settings modal -->
+<div class="modal" id="setModal"><div class="sheet">
+  <h2>Fontes <small id="srcCount" style="font-size:12px;color:var(--muted);font-weight:400"></small></h2>
+  <p style="color:var(--muted);font-size:13px;margin:0">Toca para esconder/mostrar uma fonte neste dispositivo. Para acrescentar fontes novas, edita <code>feeds.json</code> no GitHub.</p>
+  <div class="srcs" id="srcs"></div>
+  <label class="opts" style="display:flex;gap:8px;align-items:center;margin-top:14px;font-size:13px;color:var(--muted)"><input type="checkbox" id="oCreator"> Modo criador (mostra as ferramentas para criar posts)</label>
+  <div class="row"><button class="btn" id="setClose">Fechar</button></div>
+</div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const $ = s => document.querySelector(s);
+const LS = {get:(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}},set:(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch{}}};
+const state = {items:[], sources:[], updated:null, region:'Todas', cat:'Todas', q:'', hidden:new Set(LS.get('hidden',[])), seen:new Set(LS.get('seen',[])), pending:null, cur:null, tab:'linkedin', variant:0};
+const REGIONS = ['Todas','PT','BR','US','EU','INT'];
+const REGION_NAMES = {Todas:'Todas',PT:'🇵🇹 Portugal',BR:'🇧🇷 Brasil',US:'🇺🇸 EUA',EU:'🇪🇺 Europa',INT:'🌍 Resto do mundo'};
+const creatorOn = () => !!LS.get('creator',false);
+
+/* ---------- fundo animado (rede de nós) ---------- */
+(function(){
+  const c=$('#bg'),x=c.getContext('2d');let w,h,pts=[];
+  const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  function size(){w=c.width=innerWidth;h=c.height=innerHeight;pts=Array.from({length:Math.min(70,Math.floor(w*h/22000))},()=>({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.25,vy:(Math.random()-.5)*.25}))}
+  function draw(){x.clearRect(0,0,w,h);
+    for(const p of pts){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>w)p.vx*=-1;if(p.y<0||p.y>h)p.vy*=-1}
+    for(let i=0;i<pts.length;i++){const a=pts[i];x.fillStyle='rgba(34,211,238,.55)';x.beginPath();x.arc(a.x,a.y,1.4,0,6.28);x.fill();
+      for(let j=i+1;j<pts.length;j++){const b=pts[j],d=Math.hypot(a.x-b.x,a.y-b.y);if(d<130){x.strokeStyle=`rgba(124,92,255,${.22*(1-d/130)})`;x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke()}}}
+    if(!reduce)requestAnimationFrame(draw)}
+  addEventListener('resize',size);size();draw();
+})();
+const sweep=document.querySelector('.sweep');if(sweep){sweep.style.transformOrigin='16px 16px';sweep.animate([{transform:'rotate(0)'},{transform:'rotate(360deg)'}],{duration:3500,iterations:Infinity})}
+
+/* ---------- utilitários ---------- */
+function ago(iso){const s=(Date.now()-new Date(iso))/1000;if(s<60)return 'agora';if(s<3600)return `há ${Math.floor(s/60)} min`;if(s<86400)return `há ${Math.floor(s/3600)} h`;return `há ${Math.floor(s/86400)} d`}
+function esc(t){return (t||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1600)}
+
+/* ---------- dados ---------- */
+async function load(manual){
+  const btn=$('#refresh');btn.classList.add('spin');
+  try{
+    const r=await fetch('data/news.json?t='+Date.now(),{cache:'no-store'});
+    if(!r.ok)throw new Error(r.status);
+    const d=await r.json();
+    const first=state.items.length===0;
+    const known=new Set(state.items.map(i=>i.id));
+    const fresh=d.items.filter(i=>!known.has(i.id));
+    if(first||manual){state.items=d.items;state.pending=null}
+    else if(fresh.length){state.pending=d.items;showNew(fresh.length)}
+    state.sources=d.sources||[];state.updated=d.updated;state.translation=d.translation||null;
+    if(first&&state.seen.size===0){d.items.forEach(i=>state.seen.add(i.id));LS.set('seen',[...state.seen])}
+    $('#dot').classList.remove('off');
+    $('#upd').textContent='atualizado '+ago(d.updated);
+    render();
+  }catch(e){$('#dot').classList.add('off');$('#upd').textContent='sem ligação'}
+  btn.classList.remove('spin');
+}
+function showNew(n){const b=$('#newbar');b.style.display='block';b.textContent=`↑ ${n} nova${n>1?'s':''} notícia${n>1?'s':''}`}
+$('#newbar').onclick=()=>{if(state.pending){state.items=state.pending;state.pending=null}$('#newbar').style.display='none';scrollTo({top:0,behavior:'smooth'});render()};
+$('#refresh').onclick=()=>{$('#newbar').style.display='none';load(true)};
+setInterval(()=>load(false),5*60*1000);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)load(false)});
+
+/* ---------- filtros ---------- */
+function chips(){
+  $('#regionChips').innerHTML=REGIONS.map(r=>`<div class="chip ${state.region===r?'on':''}" data-r="${r}">${REGION_NAMES[r]}</div>`).join('');
+  const cats=['Todas',...new Set(state.items.map(i=>i.category))].sort((a,b)=>a==='Todas'?-1:b==='Todas'?1:a.localeCompare(b));
+  $('#catChips').innerHTML=cats.map(c=>`<div class="chip ${state.cat===c?'on':''}" data-c="${esc(c)}">${esc(c)}</div>`).join('');
+}
+document.addEventListener('click',e=>{
+  const r=e.target.closest('[data-r]');if(r){state.region=r.dataset.r;render()}
+  const c=e.target.closest('[data-c]');if(c){state.cat=c.dataset.c;render()}
+});
+$('#q').oninput=e=>{state.q=e.target.value.toLowerCase();render()};
+
+function visible(){
+  return state.items.filter(i=>!state.hidden.has(i.source)
+    &&(state.region==='Todas'||i.region===state.region)
+    &&(state.cat==='Todas'||i.category===state.cat)
+    &&(!state.q||(i.title+' '+i.summary+' '+i.source).toLowerCase().includes(state.q)));
+}
+function render(){
+  chips();
+  const v=visible();
+  const demo=state.items.some(i=>i.demo);
+  const tr=state.translation;
+  $('#banner').innerHTML=demo?'<div class="banner">Estas são notícias de <b>exemplo</b>. As reais aparecem depois da primeira atualização automática (ver README).</div>'
+    :(tr&&tr.pending>0?`<div class="banner">${tr.pending} notícias ainda em inglês (etiqueta EN). ${tr.provider==='gemini'?'Vão sendo traduzidas nas próximas atualizações.':'A tradução automática está bloqueada: falta configurar a chave Gemini (ver README).'}</div>`:'');
+  $('#grid').innerHTML=v.slice(0,150).map((i,n)=>`
+    <article class="card ${state.seen.has(i.id)?'':'fresh'}" data-id="${i.id}" style="animation-delay:${Math.min(n,12)*45}ms">
+      <div class="meta"><span>${esc(i.source)}</span><span>·</span><span>${ago(i.published)}</span><span class="tag ${esc(i.category)}">${esc(i.category)}</span>${i.translated?'<span class="tag">traduzido</span>':(i.lang!=='pt'?'<span class="tag">EN</span>':'')}</div>
+      ${i.image?`<img class="thumb" src="${esc(i.image)}" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.remove()">`:''}
+      <h3>${esc(i.title)}</h3>
+      ${i.summary?`<p>${esc(i.summary)}</p>`:''}
+      <div class="cta"><span>Ver notícia →</span>${creatorOn()?'<button class="btn mk">✍️ Criar post</button>':''}</div>
+    </article>`).join('');
+  $('#empty').style.display=v.length?'none':'block';
+}
+$('#grid').onclick=e=>{
+  const mk=e.target.closest('.mk');
+  if(mk){openPost(mk.closest('.card').dataset.id,'create');return}
+  const a=e.target.closest('.card');if(a)openPost(a.dataset.id,'read');
+};
+
+/* ---------- gerador de posts ---------- */
+const HOOKS={
+  Ransomware:['🚨 Mais um alerta de ransomware.','Ransomware outra vez em destaque.'],
+  Vulnerabilidade:['⚠️ Vulnerabilidade nova a pedir atenção.','Já atualizaste os teus sistemas?'],
+  Malware:['🦠 Malware em circulação.','Nova ameaça de malware no radar.'],
+  'Phishing/Fraude':['🎣 Cuidado com esta campanha.','Burla à vista — partilha com quem conheces.'],
+  'Fuga de dados':['🔓 Dados expostos.','Mais uma fuga de dados.'],
+  'Ataque/APT':['🎯 Ataque em destaque.','Atividade de ameaça a acompanhar.'],
+  Regulação:['📜 Novidade regulatória.','Conformidade em movimento.'],
+  IA:['🤖 IA e cibersegurança, outra vez.','A IA também entra no jogo do ataque e da defesa.'],
+  Geral:['📰 Notícia de cibersegurança do dia.','O que aconteceu hoje em cibersegurança.']
+};
+const TAKEAWAY={
+  Ransomware:['Backups testados e offline, segmentação de rede e MFA reduzem muito o impacto.','Se não tens backups testados, esta é a notícia que devia fazer-te testá-los hoje.'],
+  Vulnerabilidade:['Aplica as atualizações, prioriza o que está exposto à internet e confirma o inventário de ativos.','Gestão de patches não é glamorosa, mas é o que mais evita problemas.'],
+  Malware:['EDR, privilégios mínimos e atenção a anexos e downloads fazem a diferença.','Higiene básica continua a ser a melhor defesa.'],
+  'Phishing/Fraude':['Desconfia de urgência, confirma por outro canal e ativa MFA.','Antes de clicar: quem envia, o que pede e porquê agora?'],
+  'Fuga de dados':['Muda palavras-passe, ativa MFA e usa um gestor de palavras-passe.','Se foste afetado, trata já das credenciais reutilizadas.'],
+  'Ataque/APT':['Monitorização, deteção e plano de resposta a incidentes são essenciais.','Quem não deteta, não responde a tempo.'],
+  Regulação:['Para as PME: começar cedo evita correria depois.','Conformidade é também uma oportunidade de organizar a casa.'],
+  IA:['Usa IA com política clara: o que pode e não pode ser partilhado.','A IA acelera atacantes e defensores. Vence quem se prepara.'],
+  Geral:['Manter-se informado é o primeiro passo para estar protegido.','Pequenas boas práticas, grandes diferenças.']
+};
+const TAGS={Ransomware:['#ransomware'],Vulnerabilidade:['#vulnerabilidades','#patching'],Malware:['#malware'],'Phishing/Fraude':['#phishing','#burlas'],'Fuga de dados':['#fugadedados','#privacidade'],'Ataque/APT':['#threatintel'],Regulação:['#NIS2','#RGPD'],IA:['#IA'],Geral:[]};
+function pick(a,n){return a[n%a.length]}
+function firstSentences(t,n){const s=(t||'').split(/(?<=[.!?])\s+/).slice(0,n).join(' ');return s.length>280?s.slice(0,277)+'…':s}
+function buildPost(i,net,v){
+  const emoji=$('#oEmoji').checked,tags=$('#oTags').checked,link=$('#oLink').checked,tone=$('#oTone').value;
+  const strip=t=>emoji?t:t.replace(/[\p{Extended_Pictographic}️]/gu,'').trim();
+  const hook=strip(pick(HOOKS[i.category]||HOOKS.Geral,v));
+  const take=i.todo||pick(TAKEAWAY[i.category]||TAKEAWAY.Geral,v);
+  const sum=firstSentences(i.summary,tone==='simple'?1:2);
+  const ht=['#cibersegurança','#infosec',...(TAGS[i.category]||[])];
+  const tagLine=tags?'\n\n'+ht.join(' '):'';
+  const src=link?`\n\nFonte: ${i.source}\n${i.link}`:'';
+  const b=emoji?'👉 ':'• ';
+  if(net==='instagram'){
+    return `${hook}\n\n${i.title}\n\n${tone==='tech'?sum:take}${tags?'\n\n'+ht.slice(0,5).join(' '):''}${link?`\n\n(Fonte: ${i.source} — link na bio/comentários)`:''}`;
+  }
+  if(net==='facebook'){
+    return `${hook}\n\n${i.title}\n\n${sum}\n\n${take}${src}`;
+  }
+  const body=tone==='simple'
+    ?`${i.title}\n\nO que isto significa para ti: ${take}`
+    :tone==='tech'
+    ?`${i.title}\n\n${sum}\n\n${(i.points||[]).slice(0,3).map(p=>'• '+p).join('\n')}${(i.points||[]).length?'\n\n':''}${b}Mitigação: ${take}`
+    :`${i.title}\n\n${sum}\n\n${b}O que fazer: ${take}\n\nE tu, já tens isto coberto? Diz-me nos comentários.`;
+  return `${hook}\n\n${body}${src}${tagLine}`;
+}
+function refreshPost(){ $('#post').value=buildPost(state.cur,state.tab,state.variant) }
+function setMode(m){
+  state.mode=(m==='create'&&creatorOn())?'create':'read';
+  $('#reader').style.display=state.mode==='read'?'block':'none';
+  $('#creator').style.display=state.mode==='create'?'block':'none';
+  $('#mToCreate').style.display=(state.mode==='read'&&creatorOn())?'inline-block':'none';
+  $('#sheet').scrollTop=0;
+}
+function openPost(id,mode){
+  const i=state.items.find(x=>x.id===id);if(!i)return;
+  state.cur=i;state.variant=0;state.tab='linkedin';
+  state.seen.add(id);LS.set('seen',[...state.seen]);
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.dataset.n==='linkedin'));
+  $('#mMeta').innerHTML=`<span>${esc(i.source)}</span><span>·</span><span>${ago(i.published)}</span><span class="tag ${esc(i.category)}">${esc(i.category)}</span>`;
+  $('#mTitle').textContent=i.title;
+  $('#mOrig').textContent=i.title_original?'Original: '+i.title_original:'';
+  $('#mSum').textContent=i.summary||'';
+  const im=$('#mImg');im.onerror=()=>{im.style.display='none';$('#mCap').style.display='none'};
+  if(i.image){im.src=i.image;im.style.display='block';$('#mCap').textContent='Imagem: '+i.source;$('#mCap').style.display='block'}
+  else{im.removeAttribute('src');im.style.display='none';$('#mCap').style.display='none'}
+  const pts=(i.points||[]);$('#mPts').innerHTML=pts.map(p=>`<li>${esc(p)}</li>`).join('');$('#mPts').style.display=pts.length?'block':'none';
+  $('#mNote').textContent=i.enriched?`Resumo escrito por IA com base na notícia de ${i.source}. Os detalhes completos estão na fonte.`:`Excerto da notícia de ${i.source}. Os detalhes completos estão na fonte.`;
+  $('#mLink').textContent=`Ler notícia completa em ${i.source} ↗`;
+  $('#mWhy').style.display=i.why?'block':'none';$('#mWhy span').textContent=i.why||'';
+  $('#mTodo').style.display=i.todo?'block':'none';$('#mTodo span').textContent=i.todo||'';
+  $('#mLink').href=i.link;
+  $('#gkey').value=LS.get('gkey','');
+  refreshPost();$('#modal').classList.add('open');document.body.style.overflow='hidden';
+  setMode(mode||'read');
+  document.querySelector(`[data-id="${id}"]`)?.classList.remove('fresh');
+}
+function closePost(){$('#modal').classList.remove('open');document.body.style.overflow=''}
+$('#mClose').onclick=closePost;
+$('#mX').onclick=closePost;
+$('#mToCreate').onclick=()=>setMode('create');
+$('#mToRead').onclick=()=>setMode('read');
+$('#modal').onclick=e=>{if(e.target.id==='modal')closePost()};
+$('#tabs').onclick=e=>{const t=e.target.closest('.tab');if(!t)return;state.tab=t.dataset.n;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x===t));refreshPost()};
+['oEmoji','oTags','oLink','oTone'].forEach(id=>$('#'+id).onchange=refreshPost);
+$('#regen').onclick=()=>{state.variant++;refreshPost()};
+$('#copy').onclick=async()=>{
+  const v=$('#post').value;
+  try{await navigator.clipboard.writeText(v)}catch{$('#post').select();document.execCommand('copy')}
+  toast('Copiado ✓');
+};
+$('#gkey').onchange=e=>LS.set('gkey',e.target.value.trim());
+$('#ai').onclick=async()=>{
+  const key=LS.get('gkey','');
+  if(!key){toast('Cola primeiro a chave Gemini (grátis)');$('#gkey').closest('details').open=true;return}
+  const i=state.cur,net={linkedin:'LinkedIn',instagram:'Instagram',facebook:'Facebook'}[state.tab];
+  const prompt=`Escreve um post de ${net} em português de Portugal sobre esta notícia de cibersegurança. Tom: mistura de técnico e simples, direto, sem exageros nem clichés. Abre com um gancho curto, explica o essencial em 2-3 frases, termina com uma ação prática e uma pergunta. ${$('#oEmoji').checked?'Usa poucos emojis.':'Sem emojis.'} ${$('#oTags').checked?'Acaba com 3-5 hashtags.':'Sem hashtags.'} ${$('#oLink').checked?'Inclui a fonte e o link no fim.':''} Não inventes factos que não estejam abaixo.\n\nTítulo: ${i.title}\nResumo: ${i.summary}\nFonte: ${i.source}\nLink: ${i.link}`;
+  const btn=$('#ai');btn.disabled=true;btn.textContent='A escrever…';
+  try{
+    let t='',err='';
+    for(const model of [LS.get('gmodel','gemini-2.5-flash-lite'),'gemini-3.5-flash-lite','gemini-3.1-flash-lite']){
+      const r=await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,{method:'POST',headers:{'Content-Type':'application/json','x-goog-api-key':key},body:JSON.stringify({contents:[{parts:[{text:prompt}]}]})});
+      const d=await r.json();
+      t=d?.candidates?.[0]?.content?.parts?.[0]?.text||'';
+      if(t)break;
+      err=d?.error?.message||'sem resposta';
+      if(r.status===429||r.status===401||(r.status===400&&/API key/i.test(err)))break;
+    }
+    if(!t)throw new Error(err||'sem resposta');
+    $('#post').value=t.trim();
+  }catch(e){toast('IA indisponível: usei o modelo base');console.warn(e)}
+  btn.disabled=false;btn.textContent='✨ Melhorar com IA (grátis)';
+};
+
+/* ---------- definições ---------- */
+$('#gear').onclick=()=>{
+  const names=[...new Set(state.items.map(i=>i.source).concat(state.sources.map(s=>s.source)))].sort();
+  const okN=state.sources.filter(s=>s.ok).length;
+  $('#srcCount').textContent=state.sources.length?`· ${okN} de ${state.sources.length} a funcionar`:'';
+  $('#srcs').innerHTML=names.map(n=>{const st=state.sources.find(s=>s.source===n);return `<div class="chip ${state.hidden.has(n)?'hidden':''}" data-src="${esc(n)}">${st&&!st.ok?'⚠ ':''}${esc(n)}</div>`}).join('');
+  $('#oCreator').checked=!!LS.get('creator',false);
+  $('#setModal').classList.add('open');
+};
+$('#oCreator').onchange=e=>{LS.set('creator',e.target.checked);render()};
+$('#srcs').onclick=e=>{const c=e.target.closest('[data-src]');if(!c)return;const n=c.dataset.src;state.hidden.has(n)?state.hidden.delete(n):state.hidden.add(n);LS.set('hidden',[...state.hidden]);c.classList.toggle('hidden');render()};
+$('#setClose').onclick=()=>$('#setModal').classList.remove('open');
+$('#setModal').onclick=e=>{if(e.target.id==='setModal')$('#setModal').classList.remove('open')};
+addEventListener('keydown',e=>{if(e.key==='Escape'){closePost();$('#setModal').classList.remove('open')}});
+
+if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
+load(true);
+</script>
+</body>
+</html>

@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""CyberRadar - recolhe notícias de ciber via RSS, traduz para PT-PT e grava data/news.json.
+"""CyberRadar - recolhe notícias de ciber via RSS, traduz e resume em PT-PT e grava data/news.json.
 
 Corre de 20 em 20 minutos no GitHub Actions (gratuito). Uma fonte que falhe é ignorada.
 
-Tradução (por ordem):
-  1. Gemini (grátis), se existir o segredo GEMINI_API_KEY no repositório. Traduz em lotes.
-  2. Google Translate "não oficial", sem chave. Costuma ser bloqueado nos servidores do GitHub.
-Se nenhuma funcionar, a notícia fica em inglês (etiqueta EN) e é traduzida numa execução futura.
+Para cada notícia o Gemini (grátis, segredo GEMINI_API_KEY) escreve, com palavras próprias:
+  - título em PT-PT, resumo de 2-4 frases, "porque importa" e "o que fazer".
+Não se republica o artigo: guarda-se só este resumo e o link para a fonte.
+Sem chave: usa o Google Translate "não oficial" (costuma ser bloqueado no GitHub) e fica só o excerto do RSS.
+Se nada funcionar, a notícia fica em inglês (etiqueta EN) e é tratada numa execução futura.
 """
 import hashlib
 import html
@@ -26,8 +27,8 @@ FEEDS = ROOT / "feeds.json"
 OUT = ROOT / "data" / "news.json"
 MAX_AGE_DAYS = 14
 MAX_ITEMS = 600
-MAX_TRANSLATE_PER_RUN = 120   # notícias por execução
-GEMINI_BATCH = 20             # notícias por pedido
+MAX_AI_PER_RUN = 120          # notícias por execução
+GEMINI_BATCH = 12             # notícias por pedido
 GEMINI_PAUSE = 7              # segundos entre pedidos (plano grátis: 10 por minuto)
 GEMINI_MODELS = ["gemini-2.5-flash-lite", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]
 
@@ -45,6 +46,13 @@ CATEGORIES = [
     ("IA", r"\bai\b|artificial intelligence|llm|inteligência artificial|deepfake"),
 ]
 
+# Rodapés automáticos dos feeds ("The post X appeared first on Y.", "Leia mais...")
+BOILER = [
+    re.compile(r"\s*(The post|The article|O post|A publicação|O artigo) .{0,400}?"
+               r"(appeared first on|apareceu primeiro (em|no|na)|apareceu pela primeira vez (em|no|na)) .{0,120}$", re.I),
+    re.compile(r"\s*(Read more|Continue reading|Leia mais|Ler mais|Saiba mais)\b.{0,80}$", re.I),
+]
+
 
 class QuotaError(Exception):
     pass
@@ -54,6 +62,53 @@ def clean(text: str) -> str:
     text = re.sub(r"<[^>]+>", " ", text or "")
     text = html.unescape(text)
     return re.sub(r"\s+", " ", text).strip()
+
+
+def strip_boiler(text: str) -> str:
+    text = text or ""
+    for pattern in BOILER:
+        text = pattern.sub("", text)
+    return text.strip()
+
+
+IMG_RE = re.compile(r"""<img[^>]+src=["']([^"']+)["']""", re.I)
+BAD_IMG = re.compile(r"feedburner|pixel|spacer|1x1|smilies|emoji|gravatar|/avatar|\.svg($|\?)|doubleclick|adserver", re.I)
+
+
+def good_image(url):
+    if not url:
+        return None
+    url = url.strip()
+    if url.startswith("//"):
+        url = "https:" + url
+    if url.startswith("http://"):
+        url = "https://" + url[len("http://"):]
+    if not url.startswith("https://") or BAD_IMG.search(url) or len(url) > 500:
+        return None
+    return url
+
+
+def entry_image(e):
+    """Endereço da imagem que o próprio feed indica (não se descarrega nem se guarda a imagem)."""
+    for key in ("media_content", "media_thumbnail"):
+        for m in e.get(key) or []:
+            kind = (m.get("type") or m.get("medium") or "")
+            if key == "media_thumbnail" or not kind or "image" in kind:
+                u = good_image(m.get("url"))
+                if u:
+                    return u
+    for en in (e.get("enclosures") or []) + [l for l in (e.get("links") or []) if l.get("rel") == "enclosure"]:
+        if "image" in (en.get("type") or ""):
+            u = good_image(en.get("href") or en.get("url"))
+            if u:
+                return u
+    blobs = [c.get("value", "") for c in (e.get("content") or [])] + [e.get("summary", "")]
+    for blob in blobs:
+        for m in IMG_RE.finditer(blob or ""):
+            u = good_image(m.group(1))
+            if u:
+                return u
+    return None
 
 
 def categorize(title: str, summary: str) -> str:
@@ -96,20 +151,32 @@ def fetch_feed(url: str):
     raise last
 
 
-# ---------------------------------------------------------------- tradução
+# ---------------------------------------------------------------- IA (Gemini)
 def gemini_batch(batch, key, state):
-    payload = [{"i": n, "t": it["title"], "s": it["summary"][:350]} for n, it in enumerate(batch)]
+    payload = [
+        {"i": n, "idioma": it["lang"], "t": it["title"], "x": (it.get("raw") or it["summary"])[:2500]}
+        for n, it in enumerate(batch)
+    ]
     prompt = (
-        "Traduz para português europeu (PT-PT) os títulos e resumos de notícias de cibersegurança abaixo. "
-        "Mantém nomes próprios, nomes de malware e de grupos, CVEs, siglas e termos técnicos habituais "
-        "(ransomware, phishing, zero-day) sem tradução forçada. Não acrescentes nada. "
-        "Responde só com um array JSON com um objeto por notícia, no formato "
-        '{"i": <número>, "t": <título traduzido>, "s": <resumo traduzido, ou "" se não houver>}.\n\n'
+        "És editor de uma app de notícias de cibersegurança para o público português, incluindo pequenas empresas. "
+        "Para cada notícia abaixo escreve, em português europeu (PT-PT):\n"
+        '- "t": o título (traduzido se estiver noutra língua; se já estiver em português, mantém-no igual);\n'
+        '- "s": um resumo próprio de 3 a 5 frases, com palavras tuas (não copies frases do texto), '
+        "com o essencial: o que aconteceu, quem e qual o impacto;\n"
+        '- "k": 3 a 4 pontos-chave curtos (cada um com menos de 20 palavras), como lista de textos, '
+        "também com palavras tuas (quem, o quê, como, impacto);\n"
+        '- "w": porque importa, numa frase;\n'
+        '- "a": o que fazer, 1 a 2 recomendações práticas e gerais de boas práticas ligadas ao tema '
+        '(pode ser "" se não fizer sentido).\n'
+        "Regras: usa só a informação do texto; não inventes nomes, números, datas nem atribuições; "
+        "se o texto for curto, escreve um resumo curto; mantém nomes próprios, nomes de malware e de grupos, "
+        "CVEs e siglas. Responde só com um array JSON, um objeto por notícia, no formato "
+        '{"i": <número>, "t": ..., "s": ..., "k": [...], "w": ..., "a": ...}.\n\n'
         + json.dumps(payload, ensure_ascii=False)
     )
     body = {
         "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.1, "responseMimeType": "application/json"},
+        "generationConfig": {"temperature": 0.2, "maxOutputTokens": 8192, "responseMimeType": "application/json"},
     }
     last = ""
     while state["idx"] < len(GEMINI_MODELS):
@@ -118,7 +185,7 @@ def gemini_batch(batch, key, state):
             f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
             headers={"x-goog-api-key": key, "Content-Type": "application/json"},
             json=body,
-            timeout=90,
+            timeout=120,
         )
         if r.status_code == 429:
             raise QuotaError("limite do plano grátis atingido")
@@ -135,24 +202,33 @@ def gemini_batch(batch, key, state):
         for o in data:
             try:
                 n = int(o["i"])
-                t = str(o["t"]).strip()
-            except (KeyError, TypeError, ValueError):
+                t = str(o.get("t") or "").strip()
+                s = str(o.get("s") or "").strip()
+            except (KeyError, TypeError, ValueError, AttributeError):
                 continue
-            if 0 <= n < len(batch) and t:
-                out[n] = (t, str(o.get("s") or "").strip())
+            if 0 <= n < len(batch) and s:
+                k = o.get("k") if isinstance(o.get("k"), list) else []
+                k = [str(x).strip()[:220] for x in k if str(x).strip()][:4]
+                out[n] = (t, s, str(o.get("w") or "").strip(), str(o.get("a") or "").strip(), k)
         return out
     raise RuntimeError(f"nenhum modelo Gemini respondeu ({last})")
 
 
-def apply_translation(item, title, summary):
-    item["title_original"] = item["title"]
-    item["title"] = title
-    if summary:
-        item["summary"] = summary
-    item["translated"] = True
+def apply_brief(item, title, summary, why, todo, points=()):
+    if item["lang"] != "pt" and not item["translated"]:
+        item["title_original"] = item["title"]
+        if title:
+            item["title"] = title
+        item["translated"] = True
+    item["summary"] = summary
+    item["why"] = why
+    item["todo"] = todo
+    item["points"] = list(points)
+    item["enriched"] = True
+    item.pop("raw", None)
 
 
-def translate_gemini(pending, key):
+def enrich_gemini(pending, key):
     done = 0
     state = {"idx": 0}
     for start in range(0, len(pending), GEMINI_BATCH):
@@ -160,23 +236,24 @@ def translate_gemini(pending, key):
         try:
             result = gemini_batch(batch, key, state)
         except QuotaError as exc:
-            print(f"[TRADUÇÃO] {exc}; o resto fica para a próxima execução")
+            print(f"[IA] {exc}; o resto fica para a próxima execução")
             break
         except Exception as exc:
-            print(f"[TRADUÇÃO] Gemini falhou: {exc}")
+            print(f"[IA] Gemini falhou: {exc}")
             break
-        for n, (t, s) in result.items():
-            apply_translation(batch[n], t, s)
+        for n, (t, s, w, a, k) in result.items():
+            apply_brief(batch[n], t, s, w, a, k)
             done += 1
         time.sleep(GEMINI_PAUSE)
     return done
 
 
+# ---------------------------------------------------------------- reserva sem chave
 def translate_google(pending):
     try:
         from deep_translator import GoogleTranslator
     except Exception as exc:
-        print(f"[TRADUÇÃO] deep-translator indisponível: {exc}")
+        print(f"[IA] deep-translator indisponível: {exc}")
         return 0
     tr = GoogleTranslator(source="auto", target="pt")
     done = fails = 0
@@ -187,12 +264,16 @@ def translate_google(pending):
         except Exception as exc:
             fails += 1
             if fails >= 3:
-                print(f"[TRADUÇÃO] Google Translate bloqueado ({str(exc)[:80]}...). "
-                      "Configura GEMINI_API_KEY para traduzir de forma fiável.")
+                print(f"[IA] Google Translate bloqueado ({str(exc)[:80]}...). "
+                      "Configura GEMINI_API_KEY para traduzir e resumir de forma fiável.")
                 break
             continue
         if t:
-            apply_translation(it, t, s)
+            it["title_original"] = it["title"]
+            it["title"] = t
+            if s:
+                it["summary"] = s
+            it["translated"] = True
             done += 1
         time.sleep(0.6)
     return done
@@ -201,6 +282,7 @@ def translate_google(pending):
 def main() -> int:
     feeds = json.loads(FEEDS.read_text(encoding="utf-8"))["feeds"]
     cutoff = datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)
+    has_key = bool(os.environ.get("GEMINI_API_KEY", "").strip())
 
     items = {}
     if OUT.exists():
@@ -212,9 +294,19 @@ def main() -> int:
                 if i.get("translated") and i.get("title_original") == i.get("title"):
                     i["translated"] = False
                     i["title_original"] = None
+                if not i.get("enriched"):
+                    i["summary"] = strip_boiler(i.get("summary", ""))
+                i.setdefault("enriched", False)
                 items[i["id"]] = i
         except Exception as exc:
             print(f"[AVISO] não consegui ler o news.json anterior: {exc}")
+
+    # a região e a língua seguem sempre o feeds.json (permite reclassificar notícias já guardadas)
+    by_name = {f["name"]: f for f in feeds}
+    for i in items.values():
+        f = by_name.get(i["source"])
+        if f:
+            i["region"], i["lang"] = f["region"], f["lang"]
 
     status = []
     for feed in feeds:
@@ -237,8 +329,10 @@ def main() -> int:
             published = entry_time(e)
             if published < cutoff:
                 continue
-            summary = clean(e.get("summary", ""))[:600]
-            if kw and not re.search("|".join(kw), f"{title} {summary}".lower()):
+            excerpt = strip_boiler(clean(e.get("summary", "")))
+            content = strip_boiler(clean(" ".join(c.get("value", "") for c in (e.get("content") or []))))
+            body = content if len(content) > len(excerpt) else excerpt
+            if kw and not re.search("|".join(kw), f"{title} {body[:800]}".lower()):
                 continue
             uid = hashlib.sha1(link.encode()).hexdigest()[:16]
             if uid in items:
@@ -251,30 +345,35 @@ def main() -> int:
                 "link": link,
                 "published": published.isoformat(),
                 "title": title,
-                "summary": summary,
+                "summary": excerpt[:600],
+                "image": entry_image(e),
+                "points": [],
                 "title_original": None,
-                "category": categorize(title, summary),
+                "category": categorize(title, body[:600]),
                 "translated": False,
+                "enriched": False,
             }
+            if has_key:  # o texto serve só de entrada para a IA e é apagado depois de resumido
+                items[uid]["raw"] = body[:2500]
             added += 1
         print(f"[OK] {name}: +{added}")
         status.append({"source": name, "ok": True, "added": added})
 
-    # ---- tradução das notícias estrangeiras que ainda estão por traduzir (as mais recentes primeiro)
-    pending = sorted(
-        (i for i in items.values() if i["lang"] != "pt" and not i["translated"]),
-        key=lambda i: i["published"],
-        reverse=True,
-    )[:MAX_TRANSLATE_PER_RUN]
+    # ---- IA: traduzir + resumir as notícias ainda por tratar (as mais recentes primeiro)
+    by_date = lambda seq: sorted(seq, key=lambda i: i["published"], reverse=True)
     key = os.environ.get("GEMINI_API_KEY", "").strip()
     provider, done = "nenhum", 0
-    if pending:
-        if key:
-            provider, done = "gemini", translate_gemini(pending, key)
-        else:
-            provider, done = "google", translate_google(pending)
-    still_pending = sum(1 for i in items.values() if i["lang"] != "pt" and not i["translated"])
-    print(f"[TRADUÇÃO] {provider}: {done} traduzidas agora, {still_pending} por traduzir")
+    if key:
+        todo = by_date(i for i in items.values() if not i["enriched"])[:MAX_AI_PER_RUN]
+        if todo:
+            provider, done = "gemini", enrich_gemini(todo, key)
+    else:
+        todo = by_date(i for i in items.values() if i["lang"] != "pt" and not i["translated"])[:MAX_AI_PER_RUN]
+        if todo:
+            provider, done = "google", translate_google(todo)
+    pending = sum(1 for i in items.values() if i["lang"] != "pt" and not i["translated"])
+    unenriched = sum(1 for i in items.values() if not i["enriched"])
+    print(f"[IA] {provider}: {done} tratadas agora | {pending} por traduzir | {unenriched} sem resumo")
 
     kept = [i for i in items.values() if datetime.fromisoformat(i["published"]) >= cutoff]
     kept.sort(key=lambda i: i["published"], reverse=True)
@@ -286,7 +385,7 @@ def main() -> int:
             {
                 "updated": datetime.now(timezone.utc).isoformat(),
                 "sources": status,
-                "translation": {"provider": provider, "done": done, "pending": still_pending},
+                "translation": {"provider": provider, "done": done, "pending": pending, "unenriched": unenriched},
                 "items": kept,
             },
             ensure_ascii=False,

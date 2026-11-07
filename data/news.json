@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T20:24:13.078408+00:00",
+ "updated": "2026-11-07T23:49:22.734804+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -9,7 +9,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "TugaTech",
@@ -69,7 +69,7 @@
   {
    "source": "MS-ISAC (CIS)",
    "ok": true,
-   "added": 4
+   "added": 5
   },
   {
    "source": "BleepingComputer",
@@ -304,11 +304,55 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
+  "done": 109,
   "pending": 147,
   "unenriched": 0
  },
  "items": [
+  {
+   "id": "5610415a5d264b1d",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/linux/falha-openssh-linux-sem-palavra-passe/",
+   "published": "2026-11-07T21:30:00+00:00",
+   "title": "Falha grave no Linux permite entrar sem saber a palavra-passe. Esteve escondida 10 anos",
+   "summary": "Uma vulnerabilidade de segurança desconhecida durante uma década afeta determinados sistemas Linux, permitindo o acesso remoto sem palavra-passe. Através da introdução de uma longa sequência de caracteres, um atacante consegue entrar em servidores afetados. O problema já está a ser ativamente explorado em ataques reais, colocando os sistemas em risco severo.",
+   "image": null,
+   "points": [
+    "Falha afeta determinados sistemas Linux sem ser detetada durante dez anos.",
+    "Atacantes conseguem acesso remoto sem palavra-passe com caracteres longos.",
+    "Vulnerabilidade já está a ser explorada ativamente por atacantes."
+   ],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": true,
+   "why": "Permite que atacantes acedam a servidores Linux remotamente sem autenticação válida.",
+   "todo": "Atualize os sistemas Linux afetados e reveja os registos de acesso para detetar atividades suspeitas."
+  },
+  {
+   "id": "bda2b44b079e09bc",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/202607/ai/inside-artex-ai-hacking-tools-exposed-servers-and-south-korean-bank-breaches.html",
+   "published": "2026-11-07T19:56:18+00:00",
+   "title": "Por dentro do ARTEX: ferramentas de hacking de IA, servidores expostos e violações em bancos sul-coreanos",
+   "summary": "Entre o final de setembro e outubro de 2026, sete instituições financeiras sul-coreanas sofreram uma violação de dados através de sistemas virados para a internet. O ataque afetou dezenas de milhares de pessoas e milhares de empresas, expondo dados pessoais, de emprego e de empréstimos. A infraestrutura utilizada baseava-se na framework ARTEX e em modelos de inteligência artificial.",
+   "image": "https://i0.wp.com/securityaffairs.com/wp-content/uploads/2026/11/image-14.png?resize=886%2C366&#038;ssl=1",
+   "points": [
+    "Sete instituições financeiras sul-coreanas foram alvo de roubo de dados.",
+    "Cerca de 67 mil pessoas e 2200 empresas viram dados expostos.",
+    "Ataques usaram a framework ARTEX e modelos de IA como DeepSeek."
+   ],
+   "title_original": "Inside ARTEX: AI Hacking Tools, Exposed Servers and South Korean Bank Breaches",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como ferramentas de IA e frameworks de testes de intrusão são usadas em ataques financeiros em larga escala.",
+   "todo": "Proteja sistemas virados para a internet e monitorize o uso não autorizado de ferramentas de IA."
+  },
   {
    "id": "193a8985c0da6ddc",
    "source": "Security Affairs",
@@ -13795,50 +13839,6 @@
    "enriched": true,
    "why": "Alerta para a cooperação entre estados em campanhas cibernéticas destrutivas em contextos geopolíticos tensos.",
    "todo": "Garanta a segmentação adequada das redes e reforce a monitorização de atividades anómalas associadas a grupos APT."
-  },
-  {
-   "id": "fd607345118f3399",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/10/30/in-the-year-ai-re-wrote-the-infosec-rulebook-its-comforting-to-know-crypto-exchanges-still-have-bad-security/5306539",
-   "published": "2026-10-30T04:22:12+00:00",
-   "title": "No ano em que a IA reescreveu as regras da segurança da informação, é reconfortante saber que as exchanges de criptomoedas continuam a ter má segurança",
-   "summary": "A exchange de criptomoedas Binance suspendeu as negociações após descobrir que partes desconhecidas comprometeram o computador portátil de um trabalhador para executar transações massivas. A empresa garantiu que os fundos dos utilizadores estão seguros, mas apelou à cautela contra burlas e links não oficiais. A investigação inicial sugere que um engenheiro DevOps teve o dispositivo comprometido, permitindo o acesso a contentores de serviços. A Binance elevou a estimativa de fundos afetados para 6,3 mil milhões de dólares, prometendo cobrir quaisquer perdas dos clientes enquanto coopera com as autoridades.",
-   "image": "https://image.theregister.com/?imageId=5306544&width=800",
-   "points": [
-    "A Binance suspendeu transações após o comprometimento do computador portátil de um colaborador.",
-    "O intruso obteve acesso para submeter transações não autorizadas avaliadas em 6,3 mil milhões de dólares.",
-    "A empresa assegurou que as chaves privadas das carteiras não foram comprometidas e os fundos estão seguros.",
-    "A plataforma prometeu cobrir todas as perdas e colaborar com as autoridades e firmas de blockchain."
-   ],
-   "title_original": "In the year AI re-wrote the infosec rulebook, it’s comforting to know crypto exchanges still have bad security",
-   "category": "Phishing/Fraude",
-   "translated": true,
-   "enriched": true,
-   "why": "Sublinha como falhas em endpoints de colaboradores continuam a ameaçar plataformas financeiras de criptomoedas.",
-   "todo": "Proteja os postos de trabalho com autenticação forte, políticas de acesso restrito e monitorização contínua de endpoints."
-  },
-  {
-   "id": "208ac926eb0f63f6",
-   "source": "SANS ISC",
-   "region": "US",
-   "lang": "en",
-   "link": "https://isc.sans.edu/diary/rss/33472",
-   "published": "2026-10-30T03:30:17+00:00",
-   "title": "ISC Stormcast para sexta-feira, 30 de outubro de 2026",
-   "summary": "Este episódio do podcast ISC Stormcast, publicado na sexta-feira, 30 de outubro de 2026, aborda atualizações e análises breves sobre a atualidade de cibersegurança. O formato fornece um resumo técnico direcionado a profissionais da área para acompanhamento de incidentes e vulnerabilidades recentes. A informação serve de consulta rápida sobre o panorama de ameaças do dia.",
-   "image": null,
-   "points": [
-    "O episódio faz parte da série diária de podcasts ISC Stormcast.",
-    "São abordadas notícias e análises de cibersegurança relativas ao dia 30 de outubro de 2026."
-   ],
-   "title_original": "ISC Stormcast For Friday, October 30th, 2026 https://isc.sans.edu/podcastdetail/10158, (Fri, Oct 30th)",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Facilita a atualização rápida dos profissionais de segurança sobre as ocorrências diárias do setor.",
-   "todo": ""
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T01:33:20.017627+00:00",
+ "updated": "2026-11-09T08:43:57.877636+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -28,8 +28,8 @@
   },
   {
    "source": "SAPO Tek",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "429 Client Error: Too Many Requests for url: https://tek.sapo.pt/feed/"
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -49,7 +49,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 1
+   "added": 2
   },
   {
    "source": "CISA Advisories",
@@ -109,7 +109,7 @@
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "TechCrunch Security",
@@ -134,7 +134,7 @@
   {
    "source": "SANS ISC",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "DataBreaches.net",
@@ -239,12 +239,12 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 3
   },
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -269,7 +269,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 3
   },
   {
    "source": "Check Point Research",
@@ -304,11 +304,298 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 12,
-  "pending": 247,
-  "unenriched": 108
+  "done": 60,
+  "pending": 211,
+  "unenriched": 71
  },
  "items": [
+  {
+   "id": "9b84aec2931ce955",
+   "source": "CSO Online",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.csoonline.com/article/4240628/7-tips-for-achieving-defensive-agility.html",
+   "published": "2026-11-09T08:25:00+00:00",
+   "title": "7 dicas para alcançar a agilidade defensiva",
+   "summary": "A agilidade na segurança defensiva reflete a capacidade de uma organização detetar, adaptar e responder rapidamente a ameaças cibernéticas sem perturbar as operações principais. Os especialistas apontam que as empresas devem abandonar arquiteturas estáticas em favor de iteração contínua, automação e flexibilidade. Como parte da estratégia, recomenda-se estabelecer uma base de zero-trust e modernizar a infraestrutura de segurança existente. O impacto destas medidas traduz-se numa melhoria da postura de risco e numa recuperação mais rápida de ataques inevitáveis.",
+   "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4240628-0-83205300-1794212841-shutterstock_2773666809.jpg?quality=50&strip=all",
+   "points": [
+    "Implementar uma abordagem zero-trust contínua em utilizadores e dispositivos.",
+    "Modernizar e racionalizar infraestruturas de segurança complexas e desatualizadas.",
+    "Utilizar sistemas baseados em IA para detetar e responder a ataques rapidamente."
+   ],
+   "title_original": "7 tips for achieving defensive agility",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite às organizações adaptar-se a ameaças em evolução e minimizar disrupções no negócio.",
+   "todo": "Integre o zero-trust nas operações diárias e avalie a infraestrutura de segurança existente."
+  },
+  {
+   "id": "eb3c71176de5067b",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/202717/malware/fake-github-security-tools-infect-over-2000-pcs-with-malware.html",
+   "published": "2026-11-09T08:07:39+00:00",
+   "title": "Ferramentas falsas de segurança do GitHub infetam mais de 2.000 PCs com malware",
+   "summary": "Uma campanha de malware tem utilizado o GitHub para distribuir ferramentas falsas de segurança direcionadas a entusiastas de jogos blockchain e profissionais de cibersegurança. Mais de 2.000 computadores foram infetados através de projetos comprometidos que continham scripts maliciosos. O malware recolhe informações do sistema, desativa o Windows Defender e remove vários produtos antivírus conhecidos. O impacto afeta diretamente os utilizadores infetados, cujos dados confidenciais e sistemas ficam expostos aos atacantes.",
+   "image": "https://i0.wp.com/securityaffairs.com/wp-content/uploads/2026/11/image-16.png?resize=944%2C350&#038;ssl=1",
+   "points": [
+    "Atacantes ocultaram malware em projetos do GitHub simulando ferramentas de segurança.",
+    "A campanha infetou mais de 2.000 PCs de fãs de jogos e profissionais de TI.",
+    "O malware desativa o Windows Defender e desinstala antivírus como McAfee e ESET.",
+    "Scripts do PowerShell descarregam componentes que roubam dados e comunicam com bots do Telegram."
+   ],
+   "title_original": "Fake GitHub Security Tools Infect Over 2,000 PCs With Malware",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "Compromete dados sensíveis e desativa defesas críticas de milhares de sistemas.",
+   "todo": "Verifique a autenticidade das ferramentas de segurança descarregadas e mantenha os antivírus atualizados."
+  },
+  {
+   "id": "4da17d4d6362a4aa",
+   "source": "Malwarebytes Labs",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.malwarebytes.com/blog/news/2026/11/a-week-in-security-november-2-november-8",
+   "published": "2026-11-09T08:01:00+00:00",
+   "title": "Uma semana em segurança (2 de novembro – 8 de novembro)",
+   "summary": "O panorama semanal da cibersegurança destacou múltiplos incidentes e vulnerabilidades a afetar empresas e utilizadores globais. Entre os casos encontram-se falhas críticas corrigidas em navegadores, ataques a sistemas de armazenamento de sangue e superfícies de televisão inteligente a ignorar definições de privacidade. Verificaram-se também incidentes em cadeias de retalho e compromissos em plataformas de jogos. O impacto abrange a exposição de dados de milhões de utilizadores e riscos operacionais graves.",
+   "image": null,
+   "points": [
+    "O Google Chrome corrigiu 213 falhas de segurança, incluindo 7 críticas.",
+    "Uma violação num cartão de crédito da Revolve afetou cerca de 1,5 milhões de pessoas.",
+    "Ataques a sistemas de refrigeração e sangue alarmaram as autoridades norte-americanas."
+   ],
+   "title_original": "A week in security (November 2 – November 8)",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "Resume os principais riscos e incidentes que marcaram a semana no setor tecnológico.",
+   "todo": "Atualize regularmente o software e monitorize os dados pessoais contra potenciais fugas."
+  },
+  {
+   "id": "a2c922a06d73cc00",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/former-openai-engineer-pleads-not.html",
+   "published": "2026-11-09T07:05:48+00:00",
+   "title": "Antigo engenheiro da OpenAI declara-se não culpado de colocar dispositivo oculto em sala de reuniões executiva",
+   "summary": "O antigo engenheiro da OpenAI, Abdulrahman Alfozan, declarou-se não culpado perante um tribunal federal de São Francisco das acusações de colocar um dispositivo de gravação de áudio oculto num escritório da empresa. O caso, revelado no mês passado, levou à detenção do cidadão saudita. O impacto centra-se nas implicações legais e na segurança interna da empresa de inteligência artificial.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9MuMJQQRaLilGnzYMqgighbIcm726E965P9JqACVPbah4ID7WePGRjwdlaYG3BUIUPB3vkX9Xzs7sXIEuU9ZoEcPo-2N__SwxcCk_IhbrH-9IhJjeW0Go2d9TGw2ZJcqMLquHLOfQVn0JCQhDrKsZujSFFsenYB28oTBnFyUWBQNmS_DVmjaxUWxXxgjT/s1600/openai.jpg",
+   "points": [
+    "O engenheiro Abdulrahman Alfozan foi acusado de plantar um gravador de áudio num escritório.",
+    "O suspeito declarou-se não culpado num tribunal federal em São Francisco.",
+    "A próxima audiência do caso foi agendada para novembro de 2026."
+   ],
+   "title_original": "Former OpenAI Engineer Pleads Not Guilty to Planting Covert Device in Executive Meeting Room",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia potenciais falhas de segurança física e espionagem interna em empresas tecnológicas de topo.",
+   "todo": "Reforce os controlos de acesso físico e a monitorização de áreas sensíveis nas instalações."
+  },
+  {
+   "id": "86637ef69b3a62ae",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/202667/cyber-warfare-2/the-bbc-has-a-plan-for-a-black-sky-event-and-it-runs-on-fm-radio.html",
+   "published": "2026-11-09T07:04:52+00:00",
+   "title": "A BBC tem um plano para um evento Black Sky, e funciona através de rádio FM",
+   "summary": "A BBC desenvolveu um plano de emergência baseado em rádio FM para manter a população britânica informada durante apagões prolongados e falhas totais de infraestruturas. A estratégia baseia-se em lições retiradas de inundações anteriores, onde a dependência excessiva de infraestruturas digitais deixou comunidades sem comunicações vitais. O impacto de um evento Black Sky envolveria a falha simultânea de eletricidade, água e comunicações, tornando o rádio FM num meio essencial de sobrevivência informativa.",
+   "image": null,
+   "points": [
+    "A BBC preparou estúdios auto-suficientes para emitir rádio FM durante 72 horas em caso de apagão.",
+    "Incidentes passados mostraram a vulnerabilidade das sociedades dependentes de infraestruturas digitais.",
+    "O plano visa mitigar os riscos de um evento Black Sky que interrompa eletricidade e comunicações."
+   ],
+   "title_original": "The BBC has a plan for a Black Sky event, and it runs on FM radio",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Garante o acesso a informações essenciais à população quando a infraestrutura digital colapsa.",
+   "todo": "Tenha sempre um rádio a pilhas ou dínamo acessível para receber avisos em caso de emergência prolongada."
+  },
+  {
+   "id": "df6a1e5a88d8a5b7",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html",
+   "published": "2026-11-09T06:15:10+00:00",
+   "title": "Agências dos EUA alertam que ataques a controladores de refrigeração podem causar incêndios e perdas de inventário",
+   "summary": "Agências governamentais dos Estados Unidos emitiram um alerta global sobre ataques direcionados a sistemas industriais de refrigeração e monitorização da cadeia de frio. Os atacantes exploram vulnerabilidades em controladores acessíveis através da internet para alterar remotamente definições e forçar o aquecimento contínuo das unidades. O impacto destes ataques inclui graves interrupções de serviço, perigos de incêndio e perda total de inventário armazenado.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKryTkTZPSm_Pvf-PEvYRFle3Bp0jQaXScE21oOsMfwir63sr355bqHInvPRm5zynq2sYfLswRNEeywDHo7p2snw5sQmlIrWIONBq4AoYFEGXvdgy5gNLMESgjL5zwnhbqYIwdKLRaolb18pKz1sqFynmSjWn2IT_BxlEb-0av9vDfp-oEzp23_cwOIoik/s1600/ref.jpg",
+   "points": [
+    "Atores maliciosos visam sistemas industriais de refrigeração e monitorização a nível global.",
+    "As explorações ocorrem em controladores sem patches ou acessíveis diretamente pela internet.",
+    "Os ataques podem provocar alterações térmicas forçadas, incêndios e perda de inventário."
+   ],
+   "title_original": "U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Protege infraestruturas críticas e cadeias de abastecimento contra danos físicos e materiais severos.",
+   "todo": "Assegure que os controladores industriais não estão diretamente expostos à internet e aplique as atualizações de segurança necessárias."
+  },
+  {
+   "id": "3d5dfb277e1d458f",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
+   "published": "2026-11-09T06:05:24+00:00",
+   "title": "CISA sinaliza falha de bypass de MFA no SonicWall SonicOS em meio a relatos de possível exploração",
+   "summary": "A agência norte-americana CISA adicionou uma vulnerabilidade de alta gravidade que afeta o SonicWall SonicOS ao seu catálogo de vulnerabilidades exploradas conhecidas. A falha, catalogada como CVE-2026-19868 com uma pontuação CVSS elevada, está relacionada com o reforço de autenticação. O impacto decorre de relatos de que o problema poderá estar a ser ativamente explorado em ataques no mundo real.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjILYvlBWd-cPdnYJiX5gpFUBvDeq0nZYHWard5V4B8oEx7r_-4lUxcIan0_5l4EHxun-KbEHOJTj1p8qTuORzAaKalwqmlz1ajVuBmS-KTBJB0-rBSrhHGgHUkY0I3GTMSEbIy5fkP4vDyITtkZvbkqreMTACQjDS3OBRmnZE4U7pVZLjgId53L259b5Qj/s1600/sonicss.jpg",
+   "points": [
+    "A CISA adicionou a falha CVE-2026-19868 ao catálogo de vulnerabilidades exploradas.",
+    "A vulnerabilidade afeta o SonicWall SonicOS e envolve mecanismos de autenticação.",
+    "Existem suspeitas de exploração ativa da falha em cenários reais."
+   ],
+   "title_original": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mitiga o risco de acessos não autorizados a redes empresariais através de equipamentos de perímetro vulneráveis.",
+   "todo": "Atualize imediatamente os dispositivos SonicWall afetados com os patches de segurança fornecidos pelo fabricante."
+  },
+  {
+   "id": "010d19db0cbbc5fd",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/09/wirken-open-source-ai-agent-gateway/",
+   "published": "2026-11-09T06:00:12+00:00",
+   "title": "Wirken: Gateway de agentes de IA de código aberto",
+   "summary": "O Wirken é um gateway de código aberto concebido para intervir entre aplicações de mensagens e agentes de inteligência artificial. Assumindo que qualquer agente pode ser comprometido contra o seu proprietário, a ferramenta limita o acesso a recursos sensíveis. A solução protege contra instruções ocultas em mensagens ou documentos que possam levar agentes com privilégios de correio e comandos a divulgar segredos. O impacto foca-se na contenção de riscos em ambientes de IA integrados com ferramentas de comunicação.",
+   "image": null,
+   "points": [
+    "O Wirken restringe o acesso de agentes de IA a dados e funcionalidades sensíveis.",
+    "A ferramenta protege contra instruções ocultas que tentam extrair informações confidenciais.",
+    "Integra-se com plataformas de mensagens como Signal, WhatsApp e Telegram."
+   ],
+   "title_original": "Wirken: Open-source AI agent gateway",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Reduz o risco de manipulação maliciosa de assistentes de inteligência artificial com acesso a dados pessoais.",
+   "todo": "Monitore e limite rigorosamente as permissões concedidas a agentes de IA integrados em canais de comunicação."
+  },
+  {
+   "id": "5f43a571e5822603",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/09/barracuda-msp-cybersecurity-services-expectations-report/",
+   "published": "2026-11-09T06:00:05+00:00",
+   "title": "Empresas à procura de um MSP duvidam da sua capacidade de detetar ciberataques",
+   "summary": "Um estudo da Barracuda revelou que as empresas que pretendem terceirizar a cibersegurança procuram fornecedores capazes de ajudar na recuperação de ataques e na gestão de riscos de IA. A maioria das organizações inquiridas já recorre ou avalia recorrer a um prestador de serviços geridos (MSP) devido a dificuldades internas. O impacto reflete a necessidade urgente de suporte especializado na recuperação e monitorização de ameaças.",
+   "image": null,
+   "points": [
+    "A maioria das organizações inquiridas já utiliza ou considera contratar serviços de um MSP.",
+    "As empresas procuram ajuda especializada para gerir riscos de IA e recuperar de incidentes.",
+    "A recuperação de ataques continua a ser um ponto fraco para as organizações sem apoio externo."
+   ],
+   "title_original": "Companies seeking an MSP doubt their ability to spot cyberattacks",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda as empresas a escolher fornecedores adequados para colmatar lacunas na deteção e recuperação de incidentes.",
+   "todo": "Avalie detalhadamente as capacidades de recuperação e resposta a incidentes ao contratar um fornecedor de serviços geridos."
+  },
+  {
+   "id": "f70e8a67fa8f2419",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/09/elastic-businesses-remote-access-attacks-report/",
+   "published": "2026-11-09T05:00:39+00:00",
+   "title": "Uma média de 8 minutos é tudo o que os piratas informáticos precisam para iniciar sessão com credenciais roubadas",
+   "summary": "Segundo um relatório da Elastic Security Threat Command, os atacantes utilizaram credenciais roubadas para aceder a sistemas numa média de oito minutos após a infeção em casos de infostealers. Os investigadores documentaram também o uso indevido de aplicações de IA para executar comandos e ferramentas de monitorização remota. O impacto traduz-se na rapidez com que os intrusos conseguem comprometer redes após obterem acesso inicial.",
+   "image": null,
+   "points": [
+    "Os atacantes iniciam sessão com credenciais roubadas em apenas oito minutos em média.",
+    "A investigação detetou o uso de IA e ferramentas legítimas para manter o acesso aos sistemas.",
+    "Agentes de IA conectados à internet representam uma nova superfície de ataque em caso de uso indevido."
+   ],
+   "title_original": "An average of 8 minutes is all hackers need to log in with stolen credentials",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra a velocidade crítica com que os cibercriminosos agem após capturar credenciais de utilizador.",
+   "todo": "Implemente autenticação multifator (MFA) robusta e monitorize continuamente acessos suspeitos às contas."
+  },
+  {
+   "id": "f95e5ffd3bd78329",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/09/linus-torvalds-sees-signs-ai-prompted-patch-flood-has-peaked/5308345",
+   "published": "2026-11-09T04:53:08+00:00",
+   "title": "Linus Torvalds vê sinais de que o fluxo de patches gerados por IA atingiu o pico",
+   "summary": "Linus Torvalds indicou no lançamento do Linux 7.4 rc2 que o pico do fluxo maciço de correções de software impulsionadas por IA poderá ter ficado para trás. A proliferação de modelos de descoberta de vulnerabilidades aumentou drasticamente o número de falhas detetadas e patches gerados nos últimos meses, sobrecarregando as equipas de TI. O impacto destas correções reflete-se na estabilização progressiva do volume de relatórios em áreas específicas do kernel Linux.",
+   "image": "https://image.theregister.com/?imageId=5241522&width=800",
+   "points": [
+    "O lançamento do Linux 7.4 rc2 incluiu correções geradas devido ao aumento da descoberta de bugs por IA.",
+    "Ferramentas de IA tinham provocado um dilúvio sem precedentes de patches e correções de segurança.",
+    "Líderes do projeto indicam que o ritmo de correções começa a equilibrar-se face aos novos relatórios."
+   ],
+   "title_original": "Linus Torvalds sees signs AI-prompted patch flood has peaked",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Indica um potencial alívio na pressão sobre as equipas de desenvolvimento para aplicar correções em massa.",
+   "todo": "Mantenha processos rigorosos de teste e validação antes de aplicar atualizações massivas de software."
+  },
+  {
+   "id": "94acbee62afa84e1",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/systems/2026/11/09/huawei-says-its-made-a-100-percent-chinese-pc/5308335",
+   "published": "2026-11-09T02:14:17+00:00",
+   "title": "Huawei afirma ter criado um PC 100 por cento chinês",
+   "summary": "A Huawei lançou o computador desktop Qingyun HM650, afirmando que utiliza exclusivamente componentes fabricados na China, incluindo um processador próprio e o sistema operativo HarmonyOS. A máquina foi adotada por agências governamentais no contexto de diretivas locais para substituir tecnologia estrangeira. O impacto comercial afeta diretamente fabricantes ocidentais de semicondutores e hardware que perdem acesso ao mercado público chinês.",
+   "image": "https://image.theregister.com/?imageId=5308342&width=800",
+   "points": [
+    "A Huawei lançou o PC Qingyun HM650 com componentes e sistema operativo de fabrico local.",
+    "Agências governamentais chinesas estão a adotar estes equipamentos para substituir alternativas estrangeiras.",
+    "O afastamento de fornecedores ocidentais afeta fabricantes globais de hardware e processadores."
+   ],
+   "title_original": "Huawei says it’s made a 100 percent Chinese PC",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Ilustra a fragmentação tecnológica global e a transição para cadeias de fornecimento de hardware regionais.",
+   "todo": "Acompanhe as mudanças regulamentares e geopolíticas na cadeia de fornecimento de TI para mitigar riscos de dependência."
+  },
+  {
+   "id": "95a81488e3cdcea6",
+   "source": "SANS ISC",
+   "region": "US",
+   "lang": "en",
+   "link": "https://isc.sans.edu/diary/rss/33500",
+   "published": "2026-11-09T02:05:10+00:00",
+   "title": "ISC Stormcast For Monday, November 9th, 2026 https://isc.sans.edu/podcastdetail/10170, (Mon, Nov 9th)",
+   "summary": "Este episódio do podcast Stormcast aborda as últimas atualizações de cibersegurança apresentadas pelo ISC. O boletim diário resume os incidentes e alertas mais relevantes do setor para o respetivo dia. A emissão serve para informar profissionais sobre novas ameaças e tendências tecnológicas.",
+   "image": null,
+   "points": [
+    "Apresentador partilha atualizações diárias de cibersegurança.",
+    "Foco em alertas e incidentes recentes.",
+    "Destinado a profissionais e entusiastas da área."
+   ],
+   "title_original": "ISC Stormcast For Monday, November 9th, 2026 https://isc.sans.edu/podcastdetail/10170, (Mon, Nov 9th)",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite manter os profissionais atualizados sobre as ameaças mais recentes de forma rápida.",
+   "todo": "Acompanhar regularmente boletins de cibersegurança para antecipar novas ameaças."
+  },
   {
    "id": "8c8cd2ff187c9088",
    "source": "Pplware Segurança",
@@ -13544,297 +13831,6 @@
    "enriched": true,
    "why": "Expõe uma vulnerabilidade de execução remota de código que pode ser explorada sem credenciais prévias.",
    "todo": "Atualize o BeyondTrust Remote Support para as versões corrigidas assim que estiverem disponíveis pelo fabricante."
-  },
-  {
-   "id": "ceef22bcea3718dc",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/mongodb-security-advisory-av26-1107",
-   "published": "2026-10-30T15:53:31+00:00",
-   "title": "Aviso de segurança MongoDB (AV26-1107)",
-   "summary": "A MongoDB emitiu um alerta de segurança para reportar vulnerabilidades que afetam o conector Laravel MongoDB em versões anteriores à 5.12.0. O Centro Cibernético encorajou os utilizadores e administradores afetados a consultarem os links disponibilizados e a aplicarem as atualizações necessárias. A falha está relacionada com relações específicas do framework afetado.",
-   "image": null,
-   "points": [
-    "O pacote Laravel MongoDB foi afetado por vulnerabilidades de segurança.",
-    "As versões anteriores à 5.12.0 encontram-se sob risco.",
-    "Recomenda-se a atualização imediata dos componentes afetados."
-   ],
-   "title_original": "MongoDB security advisory (AV26-1107)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Protege aplicações web baseadas em Laravel que utilizam MongoDB contra potenciais explorações.",
-   "todo": "Atualize o Laravel MongoDB para a versão 5.12.0 ou posterior."
-  },
-  {
-   "id": "307efccb5031c175",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/framework-ransomware-resilience-ai/",
-   "published": "2026-10-30T15:53:00+00:00",
-   "title": "Novo quadro orientador foca a resiliência contra ransomware em sistemas de IA",
-   "summary": "Foi lançado um novo quadro analítico, denominado RAID-AI, com o objetivo de ajudar as organizações a avaliarem a sua preparação de segurança face a ataques de ransomware direcionados especificamente a sistemas de inteligência artificial. A iniciativa pretende colmatar lacunas na proteção de infraestruturas modernas baseadas em IA. Com o aumento da adoção destas tecnologias, a resiliência operacional torna-se crucial.",
-   "image": null,
-   "points": [
-    "O quadro RAID-AI foi criado para avaliar a segurança em sistemas de IA.",
-    "Ajuda empresas a prepararem-se contra ataques de ransomware direcionados.",
-    "Foca-se na resiliência de infraestruturas tecnológicas emergentes."
-   ],
-   "title_original": "New Framework Puts Ransomware Resilience for AI Systems in Focus",
-   "category": "Ransomware",
-   "translated": true,
-   "enriched": true,
-   "why": "Ajuda as empresas a protegerem os seus ecossistemas de inteligência artificial contra ameaças emergentes de ransomware.",
-   "todo": "Adote frameworks de avaliação de risco dedicados para auditar a segurança dos seus sistemas e modelos de inteligência artificial."
-  },
-  {
-   "id": "3408687e3b9699a2",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/hashicorp-security-advisory-av26-1106",
-   "published": "2026-10-30T15:49:12+00:00",
-   "title": "Aviso de segurança HashiCorp (AV26-1106)",
-   "summary": "A HashiCorp divulgou avisos de segurança relativos a vulnerabilidades detetadas nos produtos Nomad e Boundary. As falhas permitem que cargas úteis de despacho fujam do diretório de alocação através de ligações simbólicas e expõem o Boundary a ataques de Server-Side Request Forgery no repositório de credenciais Vault. A entidade competente recomenda a aplicação célere das atualizações de correção por parte dos administradores.",
-   "image": null,
-   "points": [
-    "Produtos da HashiCorp, incluindo Nomad e Boundary, foram afetados por falhas de segurança.",
-    "Foram identificados problemas de fuga de diretórios e Server-Side Request Forgery.",
-    "Os utilizadores devem aplicar os patches de atualização recomendados."
-   ],
-   "title_original": "HashiCorp security advisory (AV26-1106)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Evita a exploração de falhas em ferramentas de orquestração e gestão de acessos críticos.",
-   "todo": "Atualize o Nomad e o Boundary para as versões seguras indicadas pela HashiCorp nos respetivos boletins."
-  },
-  {
-   "id": "2abe9b4ec40bfd63",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1105",
-   "published": "2026-10-30T15:43:17+00:00",
-   "title": "Drupal security advisory (AV26-1105)",
-   "summary": "O Drupal foi afetado por uma vulnerabilidade crítica de bypass de acesso no Commerce Core. Relatórios indicam que a falha CVE-2026-118539 já está a ser ativamente explorada por atacantes. O problema afeta versões anteriores à 2.41 e à 3.3.13.",
-   "image": null,
-   "points": [
-    "O quê: Vulnerabilidade de bypass de acesso (CVE-2026-118539) no Commerce Core do Drupal.",
-    "Como: A falha está a ser explorada ativamente em ataques reais por agentes maliciosos.",
-    "Impacto: Permite burlar controlos de acesso, colocando em risco sites que utilizam as versões vulneráveis.",
-    "O quê fazer: Revisar os links oficiais e aplicar as atualizações disponibilizadas o mais rapidamente possível."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Permite que atacantes contornem controlos de acesso em lojas online, sendo explorada ativamente.",
-   "todo": "Verifique se utiliza o Commerce Core do Drupal e instale imediatamente as atualizações de segurança recomendadas."
-  },
-  {
-   "id": "47e04300a3731174",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy-italian",
-   "published": "2026-10-30T15:39:54+00:00",
-   "title": "L’Italia è afflitta da vulnerabilità informatiche, senza una causa chiara",
-   "summary": "Os investigadores de cibersegurança enfrentam dificuldades para explicar a origem das vulnerabilidades informáticas em Itália. As ameaças no país apresentam características muito distintas de qualquer outra nação. Atualmente, ainda não existe uma causa clara para esta anomalia.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt0dafcf0847efff9a/6ae24fff8ec8cff4371f87c5/rome-Sean_Gallup-GettyImages-623337092jpg.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "O quê: Presença invulgar de vulnerabilidades informáticas em Itália.",
-    "Quem: Investigadores de cibersegurança a analisar o fenómeno.",
-    "Impacto: Dificuldade em compreender e mitigar padrões de ameaças que diferem dos restantes países."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia um comportamento anómalo nas ameaças cibernéticas de um país europeu sem justificação conhecida.",
-   "todo": ""
-  },
-  {
-   "id": "e7b4f0009f186bbb",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/news/2026/10/fake-pdf-and-search-tools-hijacked-searches-for-13-4-million-chrome-users",
-   "published": "2026-10-30T15:25:41+00:00",
-   "title": "Fake PDF and search tools hijacked searches for 13.4 million Chrome users",
-   "summary": "Centenas de extensões falsas para o navegador Google Chrome foram promovidas através de anúncios online para converter ficheiros PDF ou encontrar manuais. Estas ferramentas maliciosas sequestravam as definições de pesquisa predefinidas dos utilizadores e desviavam as buscas através de servidores controlados pelos operadores. O esquema afetou cerca de 13,4 milhões de instalações ao longo de uma década, permitindo aos atacantes monitorizar os termos pesquisados e obter receitas de referência.",
-   "image": null,
-   "points": [
-    "O quê: 319 extensões falsas do Chrome sequestraram pesquisas de 13,4 milhões de utilizadores.",
-    "Como: Através de anúncios falsos e listagens ocultas na loja oficial que redirecionavam pesquisas para o Yahoo ou Bing.",
-    "Impacto: Exposição de dados pessoais sensíveis das pesquisas e risco de redirecionamento para páginas maliciosas.",
-    "O quê fazer: Rever as extensões instaladas no Chrome e verificar as definições do motor de busca."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Comprometeu a privacidade de milhões de utilizadores ao intercetar e reencaminhar dados de pesquisa.",
-   "todo": "Aceda a chrome://extensions, remova extensões desconhecidas ou suspeitas e verifique o motor de busca predefinido nas definições do navegador."
-  },
-  {
-   "id": "7b310c119f825d95",
-   "source": "Schneier on Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.schneier.com/blog/archives/2026/10/bloatware-in-aftermarket-auto-parts.html",
-   "published": "2026-10-30T15:20:02+00:00",
-   "title": "Bloatware in Aftermarket Auto Parts",
-   "summary": "Um proprietário de um automóvel descobriu software indesejado e adware num sistema de entretenimento comprado na Amazon. Com a ajuda de inteligência artificial para fazer engenharia reversa, foram encontrados assistentes de voz com consumo excessivo de recursos, serviços de localização e um gravador de chamadas. Esta situação demonstra os riscos de segurança presentes em software IoT económico.",
-   "image": null,
-   "points": [
-    "O quê: Descoberta de bloatware e spyware num auto-rádio Android económico comprado online.",
-    "Como: Um utilizador usou engenharia reversa apoiada por IA para analisar o sistema.",
-    "Impacto: Exposição de vulnerabilidades graves de privacidade e consumo constante de recursos de processamento.",
-    "O quê fazer: Ter cautela na compra de hardware IoT de fornecedores desconhecidos."
-   ],
-   "title_original": null,
-   "category": "Malware",
-   "translated": false,
-   "enriched": true,
-   "why": "Revela falhas de segurança e software espião em equipamentos eletrónicos de veículos de baixo custo.",
-   "todo": "Evite instalar dispositivos de marcas desconhecidas ou não verificadas nos veículos e redes pessoais."
-  },
-  {
-   "id": "cb6c08bb4ce2f1cb",
-   "source": "Cybersecurity Dive",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cybersecuritydive.com/news/palo-alto-networks-firewalls-compromised-chained-attacks-php2shell/873323/",
-   "published": "2026-10-30T15:17:22+00:00",
-   "title": "Palo Alto Networks firewalls compromised in chained attacks using PHP2Shell",
-   "summary": "Duas dezenas de alvos, incluindo entidades ligadas ao governo dos Estados Unidos, foram atingidos por uma campanha cibernética. Os ataques utilizaram inteligência artificial para comprometer firewalls da Palo Alto Networks através de explorações encadeadas com o PHP2Shell.",
-   "image": "https://imgproxy.divecdn.com/GIYzwlNjOKTP404DFoLhvl_AAP8vATOhBr409ywwc-4/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS8yRUoyRU5ULmpwZw==.webp",
-   "points": [
-    "O quê: Firewalls da Palo Alto Networks comprometidas em ataques encadeados.",
-    "Como: Utilização da ferramenta PHP2Shell combinada com capacidades de IA.",
-    "Impacto: Afetou cerca de vinte alvos estratégicos, incluindo sites governamentais norte-americanos."
-   ],
-   "title_original": null,
-   "category": "Ataque/APT",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra o uso de inteligência artificial em ataques direcionados contra infraestruturas críticas e governamentais.",
-   "todo": "Garanta que os equipamentos de rede e firewalls estão totalmente atualizados e monitorizados contra intrusões."
-  },
-  {
-   "id": "e293edf88b4e6655",
-   "source": "WeLiveSecurity (ESET)",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.welivesecurity.com/en/videos/month-security-tony-anscombe-october-2026/",
-   "published": "2026-10-30T15:03:14+00:00",
-   "title": "This month in security with Tony Anscombe – October 2026 edition",
-   "summary": "A divulgação de vulnerabilidades graves, como o caso do PHP2Shell, marcou a atualidade da cibersegurança em outubro de 2026. Estes incidentes reforçam a necessidade urgente de as organizações adotarem planos de preparação cibernética bem estruturados.",
-   "image": null,
-   "points": [
-    "O quê: Resumo mensal de cibersegurança de outubro de 2026 por Tony Anscombe.",
-    "Como: Análise de incidentes recentes, incluindo a falha PHP2Shell.",
-    "Impacto: Sublinha a importância de estratégias robustas de ciber-prontidão nas empresas."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Destaca a evolução das ameaças mensais e a necessidade de preparação contínua das empresas.",
-   "todo": "Reveja regularmente os planos de resposta a incidentes e mantenha-se informado sobre novas vulnerabilidades."
-  },
-  {
-   "id": "fd838daecd3326ce",
-   "source": "Cybersecurity Dive",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cybersecuritydive.com/news/top-cybersecurity-conferences-to-attend-in-2027/832981/",
-   "published": "2026-10-30T14:34:00+00:00",
-   "title": "Top cybersecurity conferences to attend in 2027",
-   "summary": "As principais conferências de cibersegurança planeadas para 2027 vão focar-se em três grandes desafios do setor. Os debates principais deverão centrar-se no impacto da inteligência artificial, nos conflitos geopolíticos globais e na segurança da cadeia de fornecimento.",
-   "image": "https://imgproxy.divecdn.com/apwALScEIhpKIzh5OhsAcoX3gpPBFvChy96m__twrZE/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9yc2FjMjAyNmJhbm5lci5qcGc=.webp",
-   "points": [
-    "O quê: Principais conferências de cibersegurança agendadas para 2027.",
-    "Temas centrais: Inteligência artificial, conflitos globais e segurança da cadeia de fornecimento.",
-    "Impacto: Ajuda profissionais a antecipar tendências e debates da indústria."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "Identifica os temas prioritários que moldarão a agenda de segurança da informação no próximo ano.",
-   "todo": ""
-  },
-  {
-   "id": "c5d4f7a3fa549cfa",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/application-security/undead-software-projects-raise-security-risks",
-   "published": "2026-10-30T14:10:37+00:00",
-   "title": "Undead Software Projects Continue to Raise Security Risks",
-   "summary": "Uma empresa de segurança aplicou correções numa aplicação abandonada há uma década para evitar o sequestro de milhões de computadores. O caso demonstra como o aproveitamento de domínios e projetos de software abandonados continua a representar um risco elevado para os utilizadores.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltd40811c92b905082/6ae3b49914ffedf86f1c84cc/zombies-in-graveyard-zef_art-shutterstock.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "O quê: Empresa de segurança corrigiu uma aplicação abandonada há dez anos.",
-    "Impacto: Evitou o potencial sequestro de milhões de máquinas por atacantes.",
-    "O quê fazer: Evitar o uso de software descontinuado e monitorizar dependências."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia o perigo latente de software e domínios abandonados que podem ser apropriados por cibercriminosos.",
-   "todo": "Faça auditorias ao software utilizado na empresa para identificar e substituir aplicações descontinuadas."
-  },
-  {
-   "id": "d8f136c1d198616d",
-   "source": "TechCrunch Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://techcrunch.com/2026/10/30/north-korean-hackers-blamed-for-stealing-record-6-3b-in-binance-breach/",
-   "published": "2026-10-30T14:00:25+00:00",
-   "title": "North Korean hackers blamed for stealing record $6.3B in Binance breach",
-   "summary": "Um ataque cibernético à exchange de criptomoedas Binance resultou no roubo de cerca de 6,3 mil milhões de dólares em ativos digitais. Os hackers, associados a campanhas norte-coreanas, conseguiram aceder ao computador portátil de um funcionário da empresa, viabilizando o furto recorde.",
-   "image": null,
-   "points": [
-    "O quê: Roubo recorde de 6,3 mil milhões de dólares na plataforma Binance.",
-    "Quem: Hackers patrocinados pela Coreia do Norte apontados como responsáveis.",
-    "Como: Compromisso do computador portátil de um colaborador da empresa.",
-    "Impacto: O maior roubo de criptomoedas da história, levando à suspensão de levantamentos."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "Constitui o maior roubo de criptomoedas de sempre, atribuído a grupos estatais norte-coreanos.",
-   "todo": "Reforce a segurança dos postos de trabalho dos colaboradores com autenticação multifator rigorosa e proteção de endpoints."
-  },
-  {
-   "id": "6f421f1330c72555",
-   "source": "Google Threat Intelligence",
-   "region": "US",
-   "lang": "en",
-   "link": "https://cloud.google.com/blog/topics/threat-intelligence/artex-and-friends-enter-agentic-offensive-frameworks/",
-   "published": "2026-10-30T14:00:00+00:00",
-   "title": "ARTEX and Friends: Enter Agentic Offensive Frameworks",
-   "summary": "Grupos de ameaça começaram a adotar estruturas automatizadas baseadas em inteligência artificial e modelos de linguagem para realizar testes de intrusão ofensivos. Ferramentas open-source como ARTEX, Hexstrike e CAIRN foram observadas a automatizar e acelerar ataques informáticos à velocidade das máquinas. Esta mudança exige que as equipas de segurança repensem as suas estratégias de defesa contra ataques autónomos em larga escala.",
-   "image": null,
-   "points": [
-    "O quê: Adoção de frameworks de testes de intrusão baseadas em agentes autónomos de IA por atacantes.",
-    "Ferramentas: ARTEX, Hexstrike e CAIRN.",
-    "Impacto: Aceleração exponencial e automação de ataques cibernéticos complexos.",
-    "O quê fazer: Implementar isolamento do plano de controlo, credenciais de curta duração e deteção comportamental."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "Representa uma mudança de paradigma, com intrusões informáticas altamente automatizadas e executadas à velocidade da máquina.",
-   "todo": "Adote o princípio do privilégio mínimo, segmente redes e utilize credenciais de curta duração para mitigar ataques automatizados."
   }
  ]
 }

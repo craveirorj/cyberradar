@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T02:19:37.885501+00:00",
+ "updated": "2026-11-10T10:06:25.243221+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -9,7 +9,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "TugaTech",
@@ -28,8 +28,8 @@
   },
   {
    "source": "SAPO Tek",
-   "ok": true,
-   "added": 2
+   "ok": false,
+   "error": "429 Client Error: Too Many Requests for url: https://tek.sapo.pt/feed/"
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -49,7 +49,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 4
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -74,32 +74,32 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 4
+   "added": 2
   },
   {
    "source": "Krebs on Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 17
+   "added": 15
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 4
   },
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Cybersecurity Dive",
@@ -109,22 +109,22 @@
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 1
+   "added": 3
   },
   {
    "source": "TechCrunch Security",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "Ars Technica Security",
    "ok": true,
-   "added": 5
+   "added": 4
   },
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 11
+   "added": 14
   },
   {
    "source": "Schneier on Security",
@@ -139,7 +139,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "Malwarebytes Labs",
@@ -159,17 +159,17 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 4
+   "added": 5
   },
   {
    "source": "Cisco Talos",
    "ok": true,
-   "added": 6
+   "added": 5
   },
   {
    "source": "Unit 42 (Palo Alto)",
    "ok": true,
-   "added": 2
+   "added": 3
   },
   {
    "source": "Google Threat Intelligence",
@@ -179,7 +179,7 @@
   {
    "source": "Google Project Zero",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CrowdStrike Blog",
@@ -204,7 +204,7 @@
   {
    "source": "Tenable",
    "ok": true,
-   "added": 3
+   "added": 2
   },
   {
    "source": "Zero Day Initiative",
@@ -229,17 +229,17 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 14
+   "added": 15
   },
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 9
+   "added": 7
   },
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 5
   },
   {
    "source": "Security Affairs",
@@ -249,7 +249,7 @@
   {
    "source": "WeLiveSecurity (ESET)",
    "ok": true,
-   "added": 5
+   "added": 6
   },
   {
    "source": "Sophos News",
@@ -269,7 +269,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 6
   },
   {
    "source": "Check Point Research",
@@ -279,7 +279,7 @@
   {
    "source": "Securelist (Kaspersky)",
    "ok": true,
-   "added": 5
+   "added": 7
   },
   {
    "source": "Risky Bulletin",
@@ -289,7 +289,7 @@
   {
    "source": "Troy Hunt",
    "ok": true,
-   "added": 3
+   "added": 1
   },
   {
    "source": "Cyber Centre Canadá",
@@ -304,11 +304,671 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 335,
-  "unenriched": 234
+  "done": 36,
+  "pending": 332,
+  "unenriched": 237
  },
  "items": [
+  {
+   "id": "ce0b470d4dea056e",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html",
+   "published": "2026-11-10T10:02:40+00:00",
+   "title": "SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution",
+   "summary": "A SAP corrigiu quatro falhas graves de segurança avaliadas com a pontuação máxima de 10.0 no sistema CVSS, permitindo que atacantes explorassem os problemas sem necessidade de autenticação. Três destas vulnerabilidades encontram-se no servidor de aplicações SAP NetWeaver, enquanto a outra afeta o Web Dispatcher. O impacto principal reside no risco de execução remota de código por parte de agentes maliciosos.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgo4snqwJ4uD_sRDyI8zs23mcfFTWfZoSrn9n1hbUrsHbyWy-1VFL8amxqQnLb7LSTPkuSwnsPofUJT6anObg-nU4Q5e01WBb3IixN_PdL-1MJ2nOip4qSTEoVDmePRlOgjSVjvtbH8vFlQgxtGuKuqmuHWLyzIavw2Sj4VtZBlTYhUqeySbQcDMEr4Wns/s1600/sap-flaws.jpg",
+   "points": [
+    "A SAP corrigiu quatro falhas críticas com pontuação CVSS máxima de 10.0.",
+    "Três vulnerabilidades afetam o servidor SAP NetWeaver e uma o Web Dispatcher.",
+    "Os atacantes podiam explorar as falhas remotamente sem necessidade de login prévio."
+   ],
+   "title_original": "SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite prevenir a execução remota de código não autorizado em sistemas empresariais essenciais.",
+   "todo": "Aplique imediatamente as atualizações de segurança mensais disponibilizadas pela SAP."
+  },
+  {
+   "id": "338bb5cfedca3d65",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/10/eset-turla-exchange-malware/",
+   "published": "2026-11-10T10:00:39+00:00",
+   "title": "O malware Cereal da Turla transforma servidores Exchange das vítimas em centros de espionagem",
+   "summary": "O grupo alinhado com a Rússia Turla instalou um conjunto de ferramentas .NET em servidores Microsoft Exchange de duas organizações governamentais, uma no Cazaquistão e outra na Roménia. Este malware, descoberto por investigadores da ESET e batizado de Cereal, foi utilizado para copiar e filtrar emails diretamente do fluxo de mensagens. O operador envia comandos disfarçados de tráfego legítimo do Outlook Web Access, Autodiscover e ActiveSync, dispensando um servidor próprio.",
+   "image": null,
+   "points": [
+    "O grupo Turla infetou servidores Exchange de duas organizações governamentais com o Cereal.",
+    "O malware foi descoberto pela ESET no Cazaquistão e na Roménia.",
+    "As ferramentas ocultam comandos em tráfego legítimo do Outlook Web Access e ActiveSync para roubar emails."
+   ],
+   "title_original": "Turla’s Cereal malware turns victims’ Exchange servers into spy hubs",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "Exemplifica como os atacantes mascaram o roubo de dados em tráfego legítimo para evitar deteção.",
+   "todo": "Monitorize o tráfego dos servidores Exchange e implemente soluções avançadas de deteção de ameaças."
+  },
+  {
+   "id": "1f6bc1af5305b1b9",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/",
+   "published": "2026-11-10T09:56:28+00:00",
+   "title": "N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days",
+   "summary": "A N-able retirou temporariamente o N-central do ar após a divulgação de mais de trinta vulnerabilidades do tipo zero-day por parte de um investigador. Estas falhas permitiam que agentes maliciosos executassem código remotamente, roubassem credenciais e criassem contas de administrador. O impacto afeta a estabilidade e a segurança dos sistemas geridos pela plataforma afetada.",
+   "image": null,
+   "points": [
+    "A N-able colocou o N-central offline após a divulgação de mais de 30 zero-days.",
+    "Um investigador revelou falhas que permitiam execução remota de código e roubo de credenciais.",
+    "Os atacantes podiam criar contas de administrador nos sistemas vulneráveis."
+   ],
+   "title_original": "N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Protege os utilizadores contra explorações ativas de dezenas de falhas críticas em ferramentas de gestão.",
+   "todo": "Acompanhe os comunicados do fornecedor e suspenda o uso de serviços afetados até à correção."
+  },
+  {
+   "id": "e61330c9778509bd",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/",
+   "published": "2026-11-10T09:42:27+00:00",
+   "title": "IBM Aspera Faspex, SignalWire FreeSwitch Vulnerabilities Exploited in Attacks",
+   "summary": "A CISA adicionou as vulnerabilidades CVE-2026-123218 e CVE-2026-116779 ao seu catálogo de explorações conhecidas devido a ataques ativos observados. A agência governamental emitiu um aviso a instar as agências federais a aplicarem as respetivas correções no prazo de três dias. Esta medida visa mitigar o impacto de explorações direcionadas a estes produtos.",
+   "image": null,
+   "points": [
+    "A CISA adicionou CVE-2026-123218 e CVE-2026-116779 ao catálogo de falhas exploradas.",
+    "As vulnerabilidades afetam o IBM Aspera Faspex e o SignalWire FreeSwitch.",
+    "As agências federais foram instruídas a corrigir os problemas em três dias."
+   ],
+   "title_original": "IBM Aspera Faspex, SignalWire FreeSwitch Vulnerabilities Exploited in Attacks",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para falhas que estão a ser ativamente exploradas em ataques no mundo real.",
+   "todo": "Atualize com urgência os softwares IBM Aspera Faspex e SignalWire FreeSwitch afetados."
+  },
+  {
+   "id": "1db51eee62731236",
+   "source": "CSO Online",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.csoonline.com/article/4246688/anthropic-sharpens-ai-coding-and-security-capabilities-with-mythos-5-2.html",
+   "published": "2026-11-10T09:33:17+00:00",
+   "title": "Anthropic sharpens AI coding and security capabilities with Mythos 5.2",
+   "summary": "A Anthropic lançou os novos modelos Claude Fable 5.2 e Mythos 5.2, prometendo melhorias significativas em tarefas de engenharia de software e reduções de preços face às versões anteriores. Enquanto o Fable 5.2 está amplamente disponível, o acesso ao Mythos é restrito a organizações de cibersegurança e ciências da vida para evitar utilizações maliciosas. Embora ofereçam um desempenho superior na geração de código e autonomia, persistem desafios relacionados com a fiabilidade sem supervisão humana.",
+   "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4246688-0-05673400-1794303211-shutterstock_editorial_2338803257.jpg?quality=50&strip=all",
+   "points": [
+    "A Anthropic lançou os modelos Fable 5.2 e Mythos 5.2 com melhor desempenho e preços mais baixos.",
+    "O acesso ao modelo Mythos está restrito a entidades vetadas para mitigar riscos de segurança.",
+    "Os novos modelos aumentam a velocidade e a capacidade na programação e tarefas complexas."
+   ],
+   "title_original": "Anthropic sharpens AI coding and security capabilities with Mythos 5.2",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra a evolução dos modelos de IA avançados e a necessidade de restringir o acesso a versões de alto risco.",
+   "todo": "Avalie o rácio custo-eficácia e mantenha supervisão humana rigorosa ao integrar agentes de IA autónomos."
+  },
+  {
+   "id": "efb5e115ad7e82e7",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/binance-investigates-shinyhunters/",
+   "published": "2026-11-10T09:30:00+00:00",
+   "title": "Binance Investigates ShinyHunters Breach Claims",
+   "summary": "A exchange de criptomoedas Binance iniciou uma investigação na sequência de alegações de violação de dados divulgadas pelo grupo ShinyHunters. Após uma análise inicial, a empresa concluiu que as alegações de pirataria informática aparentam ser fraudulentas. O caso sublinha o escrutínio constante a que as grandes plataformas financeiras estão sujeitas quanto à segurança dos dados.",
+   "image": null,
+   "points": [
+    "A Binance investigou alegações de pirataria avançadas pelo grupo ShinyHunters.",
+    "A empresa de criptomoedas determinou que as reivindicações de violação parecem ser uma farsa.",
+    "O incidente gerou alerta em torno de potenciais falsos roubos de dados na plataforma."
+   ],
+   "title_original": "Binance Investigates ShinyHunters Breach Claims",
+   "category": "Phishing/Fraude",
+   "translated": true,
+   "enriched": true,
+   "why": "Esclarece falsos alarmes de incidentes de segurança em grandes plataformas de criptomoedas.",
+   "todo": "Confirme sempre a veracidade de alegadas violações de dados através dos canais oficiais das empresas."
+  },
+  {
+   "id": "fc26574a13bf8a48",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/motores/espionagem-carros-da-byd-acusados-de-ameacar-a-seguranca-dos-europeus/",
+   "published": "2026-11-10T09:21:22+00:00",
+   "title": "Espionagem: carros da BYD acusados de ameaçar a segurança dos europeus",
+   "summary": "Um grupo de catorze eurodeputados, liderado por François Kalfon, solicitou formalmente à Comissão Europeia que avalie se os veículos da marca chinesa BYD representam um risco de segurança para o bloco europeu. Os parlamentares defendem a implementação de restrições rigorosas, incluindo a eventual exclusão destes automóveis de concursos públicos. A iniciativa surge no seguimento de preocupações crescentes em torno da proteção de dados e cibersegurança associadas a tecnologias estrangeiras.",
+   "image": null,
+   "points": [
+    "Catorze eurodeputados pediram à Comissão Europeia uma avaliação de segurança sobre os carros da BYD.",
+    "O grupo é liderado pelo eurodeputado francês François Kalfon.",
+    "Foi sugerida a exclusão destes veículos de concursos públicos na Europa."
+   ],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": true,
+   "why": "Alerta para os riscos geopolíticos e de segurança associados a tecnologias e veículos conectados estrangeiros.",
+   "todo": "Avalie a conformidade de segurança e a procedência de dispositivos e veículos conectados adquiridos por organizações."
+  },
+  {
+   "id": "e56a3763b149d514",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html",
+   "published": "2026-11-10T09:08:20+00:00",
+   "title": "France Blames Iran for Sabotage Attack on Refrigeration Controllers at About 700 Retail Sites",
+   "summary": "O governo francês atribuiu a uma unidade cibernética da Guarda Revolucionária Islâmica do Irão um ataque informático que afetou cerca de 700 superfícies comerciais em outubro. Os atacantes acederam remotamente aos controladores de refrigeração e alteraram as definições de descongelação para temperaturas elevadas, provocando a perda de alimentos e pelo menos quinze incêndios. O incidente levou as autoridades francesas a ponderar sanções da União Europeia e a protestar formalmente junto do embaixador iraniano.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQkt0P-pw4g1CSZvboG35E5WMLU_vea9rR2DLZ4X0lK5NyipbooRyXkRXcRb7X-ddRbVCygF1OkhW6a3j_8sCsBA_GhHAtOF8dISlx4Q2H74fnLJTm5ZOoEBlsbES0hPZutw60wjcAcMZEZcmx4NCLAM-pqVJCfw9yLhoQV2U_QFRX5h1k0zKPzgioICw/s1600/iran-france.jpg",
+   "points": [
+    "Cerca de 700 superfícies comerciais em França foram alvo de sabotagem informática em outubro.",
+    "O governo francês responsabilizou uma unidade cibernética da Guarda Revolucionária do Irão.",
+    "A alteração remota da temperatura dos refrigeradores causou perdas de alimentos e incêndios."
+   ],
+   "title_original": "France Blames Iran for Sabotage Attack on Refrigeration Controllers at About 700 Retail Sites",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Ilustra o impacto físico e destrutivo de ciberataques estatais dirigidos a infraestruturas e cadeias de abastecimento.",
+   "todo": "Proteja sistemas de gestão remota industrial com autenticação forte e segmente a rede OT da rede corporativa."
+  },
+  {
+   "id": "93f6e42fad0621c0",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/franca-acusa-o-ira-por-ataques-ciberneticos-contra-refrigeradores-de-supermercados/",
+   "published": "2026-11-10T09:00:00+00:00",
+   "title": "França acusa o Irã por ataques cibernéticos contra refrigeradores de supermercados",
+   "summary": "Autoridades francesas acusaram o Irão de orquestrar ciberataques contra sistemas de refrigeração em supermercados de várias redes, como Coopérative U, Intermarché, Carrefour, Monoprix e E.Leclerc. Os atacantes exploraram falhas de software para elevar a temperatura dos congeladores até 50ºC, resultando em milhões de euros em alimentos estragados e na abertura de investigações judiciais. Campanhas semelhantes afetaram posteriormente outros países europeus e bases militares norte-americanas.",
+   "image": "https://www.estadao.com.br/resizer/v2/6M2SSYAWAJGKNO5Q3CNBZQINPY.jpg?quality=80&auth=e19f2b2bc262d4fd684288ede3f52e910d3f7507472bed152bcd41e354af6df7&width=710",
+   "points": [
+    "Supermercados em França sofreram ataques que elevaram a temperatura dos congeladores até 50ºC.",
+    "O ministro Jean-Noël Barrot apontou o envolvimento do Irão e anunciou protestos diplomáticos.",
+    "O incidente causou a perda de milhões de euros em alimentos e investigações em curso."
+   ],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": true,
+   "why": "Evidencia a vulnerabilidade de equipamentos comerciais conectados a ataques cibernéticos em larga escala.",
+   "todo": "Garanta que sistemas de refrigeração e IoT comercial não estão expostos diretamente à internet sem proteção."
+  },
+  {
+   "id": "94273c2fc318c7db",
+   "source": "CSO Online",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.csoonline.com/article/4246440/when-everything-is-a-threat-nothing-feels-safe.html",
+   "published": "2026-11-10T09:00:00+00:00",
+   "title": "When everything is a threat, nothing feels safe",
+   "summary": "O fluxo constante de alertas sobre novas fraudes, fugas de dados e vulnerabilidades críticas na internet pode gerar um sentimento de exaustão e indiferença nos utilizadores e empresas. Muitas vezes, os avisos chegam sem o devido contexto ou priorização, fazendo com que ameaças teóricas pareçam riscos imediatos para todos os negócios. Para evitar que os alertas se tornem ruído de fundo inútil, é essencial distinguir quais as falhas que afetam diretamente os produtos e sistemas efetivamente utilizados por cada organização.",
+   "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4246440-0-56523300-1794301429-shutterstock_2170167385.jpg?quality=50&strip=all",
+   "points": [
+    "O excesso de alertas de cibersegurança sem contexto pode sobrecarregar utilizadores e empresas.",
+    "A existência de uma vulnerabilidade crítica não significa o mesmo nível de risco para todas as organizações.",
+    "É fundamental avaliar quais os produtos utilizados antes de desencadear respostas de emergência."
+   ],
+   "title_original": "When everything is a threat, nothing feels safe",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda a otimizar a resposta a incidentes ao focar os recursos em ameaças realmente relevantes para o negócio.",
+   "todo": "Filtre os alertas de segurança com base no inventário real de ativos e na exposição efetiva dos sistemas da sua empresa."
+  },
+  {
+   "id": "7e1f9b33c691b691",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/",
+   "published": "2026-11-10T08:51:25+00:00",
+   "title": "Google patches eighth Chrome zero-day exploited in attacks this year",
+   "summary": "A Google disponibilizou atualizações de emergência para corrigir uma nova vulnerabilidade no navegador Chrome que estava a ser ativamente explorada por atacantes em ataques do tipo zero-day. Esta falha representa o oitavo problema do género corrigido pela empresa desde o início do ano. A correção visa proteger os utilizadores contra a exploração remota deste vetor de ataque.",
+   "image": null,
+   "points": [
+    "A Google lançou atualizações de emergência para corrigir uma nova falha no Chrome.",
+    "Trata-se do oitavo zero-day corrigido no navegador desde o início do ano.",
+    "A vulnerabilidade estava a ser ativamente explorada em ataques reais."
+   ],
+   "title_original": "Google patches eighth Chrome zero-day exploited in attacks this year",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Previne a exploração bem-sucedida de falhas ativas no navegador mais utilizado do mercado.",
+   "todo": "Atualize o navegador Google Chrome para a versão mais recente de imediato."
+  },
+  {
+   "id": "0e6f77f0820cbf5f",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html",
+   "published": "2026-11-10T08:16:14+00:00",
+   "title": "Anthropic's Claude Fable 5.2 Beats GPT-6 Cyber in Multi-Stage Cyberattack Benchmark",
+   "summary": "A Anthropic apresentou os modelos Claude Fable 5.2 e Claude Mythos 5.2, destacando avanços notáveis no raciocínio, visão e programação. Durante a fase de testes, os modelos auxiliaram engenheiros a concluir migrações de software complexas, desenhar dispositivos eletrónicos e resolver problemas de física. Contudo, os especialistas continuam a alertar para os desafios de fiabilidade associados ao uso destas ferramentas em tarefas totalmente autónomas.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgogipF_6VgFSzsnZ_UFUM5FfzGyk1MOv5SRi3PSivRHjxs6IsO0fmOdDjQsDJHiKcnxJ8T89NMMYiqo_NEEtv0EoQsafjOFuZ-Te6famJBJKegqDnf1b63Hdzkls7IO1JOtSNjb5Hatb4Ny8Zu46mggCXYKvHf3Ne9Qc4ZRfLBmLnZ7omPEHAjDfJRQEKu/s1600/fable.jpg",
+   "points": [
+    "A Anthropic lançou os modelos Claude Fable 5.2 e Claude Mythos 5.2.",
+    "Os modelos demonstraram capacidades avançadas em migrações de software e resolução de problemas.",
+    "A fiabilidade continua a exigir supervisão humana nos testes de ciberataques multi-etapa."
+   ],
+   "title_original": "Anthropic's Claude Fable 5.2 Beats GPT-6 Cyber in Multi-Stage Cyberattack Benchmark",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Destaca o avanço das capacidades de IA em cenários técnicos complexos e simulações de segurança.",
+   "todo": "Implemente salvaguardas e validações humanas rigorosas ao testar ou utilizar ferramentas de IA em ambientes críticos."
+  },
+  {
+   "id": "8ccc41c61f1c0057",
+   "source": "Securelist (Kaspersky)",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/",
+   "published": "2026-11-10T08:00:37+00:00",
+   "title": "Evolução das ameaças informáticas no terceiro trimestre de 2026: estatísticas não móveis",
+   "summary": "No terceiro trimestre de 2026, os produtos da Kaspersky bloquearam centenas de milhões de ataques online e dezenas de milhões de objetos maliciosos baseados em ficheiros. Várias operações de ransomware foram severamente afetadas pelas autoridades, resultando em penas de prisão para administradores e membros de grupos criminosos como Ransom Cartel, Ryuk e Conti. Adicionalmente, investigadores e agências alertaram para a exploração ativa de vulnerabilidades em firewalls e outros softwares por parte de cibercriminosos.",
+   "image": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2026/11/10070730/malware-report-q3-2026-featured-image.jpg",
+   "points": [
+    "Bloqueio de mais de 311 milhões de ataques online e 23 milhões de ficheiros maliciosos.",
+    "Condenação judicial de administradores e membros ligados a redes de ransomware como Ransom Cartel, Ryuk e Conti.",
+    "Exploração ativa de vulnerabilidades, incluindo falhas em firewalls da Palo Alto Networks pelo grupo Qilin."
+   ],
+   "title_original": "IT threat evolution in Q3 2026. Non-mobile statistics",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como o ecossistema do ransomware continua a ser combatido pelas autoridades, embora mantenha uma forte atividade de exploração de vulnerabilidades.",
+   "todo": "Atualize regularmente o software e as firewalls para corrigir vulnerabilidades conhecidas e reforce a monitorização de acessos às redes."
+  },
+  {
+   "id": "1f4ed50ff466708f",
+   "source": "Securelist (Kaspersky)",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://securelist.com/malware-report-q3-2026-mobile-statistics/121844/",
+   "published": "2026-11-10T08:00:17+00:00",
+   "title": "Evolução das ameaças informáticas no terceiro trimestre de 2026: estatísticas móveis",
+   "summary": "Durante o terceiro trimestre de 2026, os produtos da Kaspersky bloquearam mais de 1,66 milhões de ataques direcionados a dispositivos móveis, sendo os cavalos de Troia bancários a ameaça mais prevalente. Os atacantes recorreram a novas técnicas, incluindo aplicações maliciosas que utilizam inteligência artificial para automatizar fraudes e analisar dados bancários em galerias de imagens. Foram também detetadas ameaças disfarçadas de aplicações legítimas e pacotes PHP infetados que distribuíam kits de exploração.",
+   "image": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2026/11/10070730/malware-report-q3-2026-featured-image.jpg",
+   "points": [
+    "Mais de 1,66 milhões de ameaças móveis bloqueadas, destacando-se os cavalos de Troia bancários com cerca de 31% das deteções.",
+    "Descoberta de aplicações maliciosas no Android que usam inteligência artificial para automatizar fraudes e ler dados bancários.",
+    "Infiltração de um troia de subscrição na Google Play disfarçado de aplicação de temas de teclado."
+   ],
+   "title_original": "IT threat evolution in Q3 2026. Mobile statistics",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia a evolução do malware móvel, que já integra inteligência artificial para roubar dados de forma mais eficaz.",
+   "todo": "Descarregue aplicações apenas de lojas oficiais e verifique cuidadosamente as permissões concedidas a cada aplicação."
+  },
+  {
+   "id": "b7036d5b3864682e",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/internet/seguranca/claude-code-esta-a-expor-passwords-e-chaves-secretas-no-github-sem-que-ninguem-repare/",
+   "published": "2026-11-10T08:00:00+00:00",
+   "title": "Claude Code está a expor passwords e chaves secretas no GitHub sem que ninguém repare",
+   "summary": "A ferramenta Claude Code da Anthropic inclui uma funcionalidade que permite aos programadores autorizar comandos de consola sem interrupções constantes. Quando o utilizador escolhe a opção para não voltar a perguntar, a ferramenta regista a instrução aprovada. O problema ocorre quando essa instrução contém credenciais confidenciais, levando à exposição acidental de milhares de dados sensíveis na Internet.",
+   "image": null,
+   "points": [
+    "O Claude Code permite automatizar a execução de comandos de consola para programadores.",
+    "A opção de memorizar instruções regista comandos aprovados sem alertas adicionais.",
+    "Credenciais sensíveis incluídas nestes comandos acabam por ser expostas publicamente."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Demonstra como as ferramentas de produtividade para programadores podem expor inadvertidamente dados confidenciais.",
+   "todo": "Reveja cuidadosamente o histórico de comandos e evite guardar instruções que contenham palavras-passe ou chaves secretas."
+  },
+  {
+   "id": "7d2482c88528a363",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/",
+   "published": "2026-11-10T07:49:58+00:00",
+   "title": "Fireworks AI discloses new breach after cloud provider hack",
+   "summary": "A startup de infraestrutura de inteligência artificial Fireworks sofreu uma violação de segurança depois de atacantes comprometerem um fornecedor de serviços em nuvem terceiro. Através dessa brecha inicial, os intrusos conseguiram aceder às máquinas de desenvolvimento da empresa. O incidente evidencia os riscos associados à cadeia de fornecimento e a fornecedores externos.",
+   "image": null,
+   "points": [
+    "A Fireworks AI foi alvo de uma nova violação de segurança informática.",
+    "Os atacantes comprometeram primeiro um fornecedor de nuvem terceiro.",
+    "O acesso permitiu aos intrusos entrarem nas máquinas de desenvolvimento da startup."
+   ],
+   "title_original": "Fireworks AI discloses new breach after cloud provider hack",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Sublinha a vulnerabilidade das empresas face a falhas de segurança nos seus fornecedores de serviços em nuvem.",
+   "todo": "Audite regularmente a segurança dos fornecedores externos e reforce os controlos de acesso aos ambientes de desenvolvimento."
+  },
+  {
+   "id": "f06524f29e3f5388",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/10/eric-fourrier-gitguardian-leaked-credentials/",
+   "published": "2026-11-10T07:40:43+00:00",
+   "title": "What a security leader should tell the CEO about leaked credentials",
+   "summary": "Numa entrevista recente, o diretor executivo da GitGuardian abordou os riscos associados a credenciais vazadas e a responsabilidade pessoal dos líderes de segurança e administrações. O responsável explicou que o medo da culpa muitas vezes esconde erros críticos e detalhou o que deve ser comunicado ao CEO em caso de exposição de chaves. Foram ainda discutidas novas métricas de segurança e o impacto do uso de ferramentas de inteligência artificial.",
+   "image": null,
+   "points": [
+    "Discussão sobre a responsabilidade pessoal de líderes de segurança perante fugas de credenciais.",
+    "O medo de assumir culpas pode esconder erros importantes nas organizações.",
+    "Necessidade de adotar novas métricas de segurança para além da contagem de alertas."
+   ],
+   "title_original": "What a security leader should tell the CEO about leaked credentials",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda os líderes de cibersegurança a comunicarem eficazmente incidentes de credenciais vazadas aos órgãos de gestão.",
+   "todo": "Estabeleça uma cultura de transparência para reportar erros rapidamente e utilize ferramentas de deteção automatizada de segredos."
+  },
+  {
+   "id": "694928bcf42da269",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/france-blames-iran-for-a-cyberattack-that-heated-supermarket-refrigerators/",
+   "published": "2026-11-10T07:35:05+00:00",
+   "title": "France Blames Iran for a Cyberattack That Heated Supermarket Refrigerators",
+   "summary": "O governo francês culpou publicamente o Irão por um ciberataque que provocou o aquecimento de frigoríficos em supermercados do país. Na sequência do incidente, abaixou o embaixador iraniano e anunciou que irá procurar a aplicação de sanções europeias contra os responsáveis. O caso ilustra o impacto de ataques informáticos direcionados a infraestruturas físicas.",
+   "image": null,
+   "points": [
+    "França responsabiliza o Irão por um ciberataque a refrigeração de supermercados.",
+    "O ataque provocou o aumento perigoso da temperatura em frigoríficos comerciais.",
+    "O governo francês convocou o embaixador iraniano e pediu sanções europeias."
+   ],
+   "title_original": "France Blames Iran for a Cyberattack That Heated Supermarket Refrigerators",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra como os ciberataques estatais podem afetar diretamente infraestruturas do mundo físico e bens essenciais.",
+   "todo": "isole sistemas de refrigeração e controlo industrial da rede pública e reforce a autenticação de acessos."
+  },
+  {
+   "id": "2eff05fe6c164061",
+   "source": "WIRED Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.wired.com/story/security-flaws-across-uk-government-sites-exposed-god-tier-information/",
+   "published": "2026-11-10T07:00:00+00:00",
+   "title": "Security Flaws Across UK Government Sites Exposed ‘God-Tier’ Information",
+   "summary": "Um investigador de segurança descobriu falhas em códigos de acesso público que colocavam em risco informações privadas em vários departamentos governamentais do Reino Unido. A análise revelou que dados altamente sensíveis estavam vulneráveis devido a desproteções no código disponibilizado. O incidente expôs a fragilidade na gestão de dados por parte de entidades públicas.",
+   "image": "https://media.wired.com/photos/6af269df2008482926d88a86/master/pass/Security_Security%20Flaws%20Across%20UK%20Government%20Sites%20Exposed%20%E2%80%98God-Tier%E2%80%99%20Information_v1.jpg",
+   "points": [
+    "Investigador descobriu falhas de segurança em códigos de sites governamentais do Reino Unido.",
+    "Informação privada e altamente sensível esteve em risco em vários departamentos.",
+    "A vulnerabilidade decorria de dados expostos em código publicamente acessível."
+   ],
+   "title_original": "Security Flaws Across UK Government Sites Exposed ‘God-Tier’ Information",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Revela como a falta de cuidado na publicação de código pode expor dados críticos de entidades governamentais.",
+   "todo": "Faça auditorias regulares aos repositórios de código público para garantir que não contêm dados confidenciais."
+  },
+  {
+   "id": "9844bc61915e12db",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
+   "published": "2026-11-10T06:52:54+00:00",
+   "title": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
+   "summary": "A Google lançou atualizações de segurança para corrigir nove vulnerabilidades no navegador Chrome, incluindo uma falha de alta gravidade já explorada ativamente por atacantes. O problema, identificado como CVE-2026-125350, consiste num erro do tipo 'use-after-free' no componente XML. Este tipo de falha ocorre quando um programa tenta aceder a uma zona de memória após esta ter sido libertada.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjk5S9J891bQS8W6TgyoiEPQ7geGia8FqqWjckFlo9qMH2wXIXv-7gyod1XKUpI9BfgcliN2Re8A85rJ121jxqgfnw1LsjYBvAYtX7694GVgMF7B94G0n5MzqMaKqLAbr-No1nqrN0gyF8MFR_bYQIYlqiTh_FzobmWrq4NOCLbcW_78uEMMW5FE4eqJoo/s1600/chrome-0day.jpg",
+   "points": [
+    "A Google corrigiu nove vulnerabilidades no Chrome, incluindo um zero-day explorado ativamente.",
+    "A falha principal (CVE-2026-125350) é um erro de 'use-after-free' no componente XML.",
+    "O erro permite explorar falhas de memória através de acessos indevidos."
+   ],
+   "title_original": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Destaca a urgência de atualizar navegadores web para evitar explorações ativas de vulnerabilidades desconhecidas.",
+   "todo": "Atualize imediatamente o navegador Google Chrome para a versão mais recente disponibilizada."
+  },
+  {
+   "id": "329980cc6fad8b73",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html",
+   "published": "2026-11-10T06:44:36+00:00",
+   "title": "N-able Takes N-central Cloud Offline After Researcher Discloses 33 Zero-Days with PoC Exploits",
+   "summary": "A empresa N-able retirou temporariamente o seu ambiente em nuvem N-central e apelou aos clientes com servidores locais para os desligarem. A medida preventiva surgiu após a divulgação pública por um investigador de mais de 30 vulnerabilidades coletivamente denominadas Able2Shell. A empresa está a tomar ações urgentes para garantir a segurança dos sistemas afetados.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-DkzHcZpJVVEU3e3wmGB2DiyRsnWXkf_2bfT1fiDJG4Wn92cartbhyphenhyphenqZHOjXGasigHqJAyXM0kjOlYipgEkahrCi9KGa1s8gpINVT-oFldgOc1bZMUQ-nmFqsSMNwIe6463fXOxSqX1dNroXgwn9MwsmCx41jvPdtdygITxfKyTRDUWKS19YVTFTZY8sr/s1600/n-able.jpg",
+   "points": [
+    "A N-able colocou o N-central Cloud offline de forma preventiva.",
+    "Foram divulgadas publicamente 33 vulnerabilidades conhecidas como Able2Shell.",
+    "A empresa instou os clientes locais a desligarem os servidores até nova ordem."
+   ],
+   "title_original": "N-able Takes N-central Cloud Offline After Researcher Discloses 33 Zero-Days with PoC Exploits",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra o impacto drástico que a revelação pública de múltiplas vulnerabilidades pode ter na operação de um serviço.",
+   "todo": "Desligue servidores afetados e siga as recomendações oficiais do fabricante para aplicar correções de segurança."
+  },
+  {
+   "id": "b579a343e6b64bab",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html",
+   "published": "2026-11-10T06:31:42+00:00",
+   "title": "CISA Warns of Active Exploitation of OpenSSH, GPUStack, FreeSWITCH, and IBM Flaws",
+   "summary": "A Agência de Cibersegurança e Segurança de Infraestrutura dos EUA (CISA) adicionou quatro novas falhas de segurança ao seu catálogo de vulnerabilidades exploradas ativamente. As falhas afetam o GPUStack, o SignalWire FreeSwitch, o OpenBSD OpenSSH e o IBM Aspera Faspex. Entre as vulnerabilidades inclui-se uma falha de autorização incorreta com pontuação máxima de gravidade.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVAsrcYxVs8sJe7IiSD6WkTC4yPv0eLfup7dwcsS0NLcAAgoY__wyC3UFCR90PL2ziKCEW-vMNIEQXES-8uAG-MxuXlyIDdQGeNREm8yFv3tbvsCVXXRyRGT4ORirvcVKP_uD62XHYy9w3x_P0o7XzkguJPwq_1vV2jPxxnZWbhAHHUJ3YJ6HbTlXb0shyphenhyphen/s1600/openssh.png",
+   "points": [
+    "A CISA atualizou o catálogo KEV com quatro novas falhas sob exploração ativa.",
+    "Os produtos afetados incluem GPUStack, FreeSWITCH, OpenSSH e IBM Aspera Faspex.",
+    "Uma das vulnerabilidades apresenta uma pontuação de gravidade máxima (9.8)."
+   ],
+   "title_original": "CISA Warns of Active Exploitation of OpenSSH, GPUStack, FreeSWITCH, and IBM Flaws",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para a exploração ativa no mundo real de falhas críticas em software amplamente utilizado.",
+   "todo": "Consulte o catálogo da CISA e aplique imediatamente os patches de segurança para o OpenSSH, GPUStack, FreeSWITCH e IBM."
+  },
+  {
+   "id": "2cbe70caa854d581",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/202740/data-breach/iris-ohyama-data-breach-may-expose-personal-information-of-7-7-million-people.html",
+   "published": "2026-11-10T06:28:06+00:00",
+   "title": "Iris Ohyama data breach may expose personal information of 7.7 million people",
+   "summary": "A empresa japonesa Iris Ohyama alertou que uma violação de dados num serviço de nuvem externo poderá ter exposto informações pessoais de 7.7 milhões de clientes da sua subsidiária Iris Plaza. O acesso não autorizado foi detetado após a descoberta de um ficheiro suspeito, levando a empresa a suspender imediatamente a plataforma de comércio eletrónico. Os dados potencialmente comprometidos incluem nomes, moradas, contactos e palavras-passe.",
+   "image": null,
+   "points": [
+    "Incidente de segurança num serviço de nuvem afetou a subsidiária Iris Plaza.",
+    "Potencial exposição de dados de cerca de 7.7 milhões de clientes atuais e antigos.",
+    "Informações em risco incluem nomes, moradas, números de telefone e passwords."
+   ],
+   "title_original": "Iris Ohyama data breach may expose personal information of 7.7 million people",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia os riscos de segurança associados a serviços de nuvem operados por terceiros fora da infraestrutura da organização.",
+   "todo": "Reveja os controlos de segurança de fornecedores de nuvem externos e altere imediatamente credenciais se utilizar os serviços afetados."
+  },
+  {
+   "id": "61f253ac4386a7fa",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/chrome-update-patches-exploited-xml-zero-day-eighth-this-year/",
+   "published": "2026-11-10T06:12:24+00:00",
+   "title": "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
+   "summary": "A Google lançou uma atualização de emergência para corrigir uma vulnerabilidade de alta gravidade no componente XML do navegador Chrome. A falha, reportada anonimamente e já explorada por atacantes em cenários reais, consiste num erro de memória do tipo 'use-after-free'. Trata-se do oitavo zero-day corrigido pela empresa ao longo do ano.",
+   "image": null,
+   "points": [
+    "A Google corrigiu o oitavo zero-day do ano no navegador Chrome.",
+    "A vulnerabilidade afeta o componente XML e baseia-se num erro de 'use-after-free'.",
+    "O problema foi reportado anonimamente e já estava a ser explorado em ataques."
+   ],
+   "title_original": "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Reforça a necessidade de manter o navegador web sempre atualizado face a ataques de dia zero.",
+   "todo": "Atualize o Google Chrome para a versão mais recente para mitigar o risco de exploração desta falha."
+  },
+  {
+   "id": "8320933ab233bee8",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/10/abnormal-ai-behavioral-security-report/",
+   "published": "2026-11-10T06:00:42+00:00",
+   "title": "Equipas de segurança querem detetar comportamento invulgar em agentes de IA enquanto definem o que é normal",
+   "summary": "De acordo com o relatório da Abnormal AI, os agentes de IA lideram os investimentos planeados em monitorização comportamental para os próximos dois anos. Cerca de 43% dos profissionais de segurança apostam nestas tecnologias, superando largamente as integrações de APIs. No entanto, existe divisão sobre a capacidade de definir linhas de base para o comportamento normal destes agentes. Quase metade dos inquiridos expressou dúvidas quanto ao estabelecimento e manutenção desses padrões.",
+   "image": null,
+   "points": [
+    "Agentes de IA lideram planos de investimento em monitorização comportamental com 43% das preferências.",
+    "O investimento em agentes de IA triplica o valor atribuído às integrações de APIs.",
+    "Quase metade dos profissionais duvida da capacidade de estabelecer linhas de base normais."
+   ],
+   "title_original": "Security teams want to spot unusual AI agent behavior while they’re still defining normal",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite perceber as novas prioridades de investimento e os desafios na monitorização de agentes de IA.",
+   "todo": "Defina políticas claras de monitorização comportamental antes de implementar agentes de IA na organização."
+  },
+  {
+   "id": "4b5815d13aa1db94",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/10/acronis-ai-agent-cyberattacks-report/",
+   "published": "2026-11-10T05:30:59+00:00",
+   "title": "Mais de 575 competências maliciosas OpenClaw entregaram malware para Windows e macOS",
+   "summary": "Cibercriminosos estão a utilizar agentes de inteligência artificial para coordenar ataques direcionados a sistemas Windows e macOS. A investigação da Acronis revelou que um único operador coordenou modelos de IA com ferramentas de reconhecimento e exploração através de aplicações como WeChat e LINE. Esta abordagem permitiu automatizar tarefas e utilizar credenciais roubadas para interferir com a recuperação de sistemas.",
+   "image": null,
+   "points": [
+    "Cibercriminosos usam agentes de IA para coordenar ataques a Windows e macOS.",
+    "Mais de 575 competências maliciosas OpenClaw distribuíram software malicioso.",
+    "Operador utilizou aplicações de mensagens para automatizar tarefas e monitorizar atividades."
+   ],
+   "title_original": "Over 575 malicious OpenClaw skills delivered malware to Windows and macOS",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como os atacantes estão a automatizar campanhas maliciosas através de inteligência artificial.",
+   "todo": "Monitorize rigorosamente a utilização de agentes de IA e restrinja a execução de extensões ou competências não verificadas."
+  },
+  {
+   "id": "c98e24de8e306e06",
+   "source": "WIRED Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/",
+   "published": "2026-11-10T05:01:00+00:00",
+   "title": "Nova ferramenta de IA do Google DeepMind prova que o protocolo Signal é seguro",
+   "summary": "Investigadores da DeepMind conseguiram verificar formalmente que o amplamente utilizado protocolo de encriptação Signal funciona exatamente conforme planeado. Este avanço demonstra a capacidade de utilizar inteligência artificial para validar a segurança de sistemas criptográficos complexos. O objetivo de longo prazo da equipa passa por aplicar validações semelhantes a todo o software existente no mundo.",
+   "image": "https://media.wired.com/photos/6af239fd5613664a71d65edb/master/pass/Security_V1-ezgif.com-video-to-gif-converter.gif",
+   "points": [
+    "Investigadores da DeepMind verificaram formalmente a segurança do protocolo Signal.",
+    "A ferramenta de IA validou que o protocolo de encriptação opera conforme planeado.",
+    "O objetivo final da investigação é expandir a verificação a uma vasta gama de software."
+   ],
+   "title_original": "A New AI Tool From Google DeepMind Proved the Signal Protocol Is Secure",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia o potencial da IA na verificação formal de protocolos de segurança críticos.",
+   "todo": ""
+  },
+  {
+   "id": "3f155623a93abcea",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/10/cybersecurity-jobs-available-right-now-november-10-2026/",
+   "published": "2026-11-10T05:00:58+00:00",
+   "title": "Empregos em cibersegurança disponíveis neste momento: 10 de novembro de 2026",
+   "summary": "O ONE ZERO BANK abriu uma vaga em regime híbrido em Israel para um Engenheiro de Segurança de Aplicações. O profissional selecionado trabalhará diretamente com programadores para integrar a segurança no ciclo de vida do desenvolvimento de software. As funções incluem análises de segurança, modelação de ameaças e automatização de controlos para detetar vulnerabilidades.",
+   "image": null,
+   "points": [
+    "ONE ZERO BANK procura Engenheiro de Segurança de Aplicações em Israel.",
+    "O cargo foca-se em integrar a segurança no ciclo de vida de desenvolvimento.",
+    "Inclui a utilização de revisões de segurança, modelação de ameaças e automação."
+   ],
+   "title_original": "Cybersecurity jobs available right now: November 10, 2026",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Atualiza sobre oportunidades de carreira e funções críticas na área de engenharia de segurança.",
+   "todo": ""
+  },
+  {
+   "id": "40624752f33038d2",
+   "source": "CyberScoop",
+   "region": "US",
+   "lang": "en",
+   "link": "https://cyberscoop.com/trump-picks-palantirs-losapio-to-head-cisa/",
+   "published": "2026-11-10T03:38:11+00:00",
+   "title": "Trump escolhe LoSapio da Palantir para liderar a CISA",
+   "summary": "O presidente Donald Trump nomeou Michael LoSapio, diretor de segurança da informação da Palantir, para liderar a Agência de Segurança de Infraestrutura e Cibersegurança (CISA). A agência tem permanecido sem um diretor confirmado pelo Senado durante todo o segundo mandato presidencial. A nomeação poderá enfrentar obstáculos políticos no Congresso devido a escrutínios anteriores sobre o trabalho da Palantir.",
+   "image": null,
+   "points": [
+    "Michael LoSapio foi nomeado por Donald Trump para liderar a CISA.",
+    "A CISA tem estado sem um diretor confirmado pelo Senado no atual mandato.",
+    "A nomeação poderá enfrentar resistência política no Congresso devido ao histórico da Palantir."
+   ],
+   "title_original": "Trump picks Palantir’s LoSapio to head CISA",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Informa sobre mudanças na liderança da principal agência norte-americana de cibersegurança.",
+   "todo": ""
+  },
+  {
+   "id": "4859564daac4bbcc",
+   "source": "CSO Online",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.csoonline.com/article/4246479/sonicwall-releases-patches-for-7-flaws-in-its-firewalls-most-involving-unauthenticated-access.html",
+   "published": "2026-11-10T02:36:14+00:00",
+   "title": "SonicWall lança correções para 7 falhas em firewalls, a maioria envolvendo acesso não autenticado",
+   "summary": "A SonicWall atualizou o seu aviso de segurança para corrigir sete vulnerabilidades que afetam as firewalls das gerações 7 e 8, incluindo cinco falhas que permitem ataques remotos sem autenticação. A empresa alertou para a exploração potencial de uma das falhas, um bypass de autenticação SAML no serviço SonicOS SSL VPN. A CISA adicionou essa mesma falha ao seu catálogo de vulnerabilidades exploradas, recomendando atenção imediata.",
+   "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4246479-0-27428800-1794278188-shutterstock_1735894208.jpg?quality=50&strip=all",
+   "points": [
+    "Sete vulnerabilidades corrigidas em firewalls SonicWall de gerações 7 e 8.",
+    "Cinco das falhas permitem ataques remotos sem autenticação prévia.",
+    "Existe registo de potencial exploração ativa de uma falha de bypass SAML."
+   ],
+   "title_original": "SonicWall releases patches for 7 flaws in its firewalls, most involving unauthenticated access",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Protege infraestruturas de rede críticas contra explorações ativas em firewalls amplamente utilizadas.",
+   "todo": "Atualize urgentemente o SonicOS para a versão corrigida e aplique as soluções temporárias indicadas pelo fabricante se necessário."
+  },
   {
    "id": "231ca9f8e4898f73",
    "source": "SANS ISC",
@@ -316,15 +976,20 @@
    "lang": "en",
    "link": "https://isc.sans.edu/diary/rss/33504",
    "published": "2026-11-10T02:00:02+00:00",
-   "title": "ISC Stormcast For Tuesday, November 10th, 2026 https://isc.sans.edu/podcastdetail/10172, (Tue, Nov 10th)",
-   "summary": "",
+   "title": "ISC Stormcast para terça-feira, 10 de novembro de 2026",
+   "summary": "O Stormcast do SANS Internet Storm Center disponibilizou a análise diária de cibersegurança para terça-feira, 10 de novembro de 2026. A emissão cobre os principais desenvolvimentos e incidentes reportados pela comunidade de segurança informática.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Podcast diário do SANS ISC sobre o panorama de ameaças.",
+    "Publicado a 10 de novembro de 2026.",
+    "Focado em incidentes e alertas recentes de cibersegurança."
+   ],
+   "title_original": "ISC Stormcast For Tuesday, November 10th, 2026 https://isc.sans.edu/podcastdetail/10172, (Tue, Nov 10th)",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": ""
+   "translated": true,
+   "enriched": true,
+   "why": "Fornece um resumo rápido das tendências e notícias diárias do setor.",
+   "todo": ""
   },
   {
    "id": "b17d6815a2b2451f",
@@ -333,15 +998,20 @@
    "lang": "en",
    "link": "https://www.csoonline.com/article/4246592/microsofts-email-security-is-unexpectedly-blocking-legitimate-business-mail-2.html",
    "published": "2026-11-10T01:57:23+00:00",
-   "title": "Microsoft’s email security is unexpectedly blocking legitimate business mail",
-   "summary": "Microsoft’s email filters meant to protect users from malicious messages appear to be rejecting legitimate ones. Over the last few days, some mail sent to Microsoft consumer addresses have bounced if they did not publish a domain-based message authentication, reporting, and conformance (DMARC) record. This includes messages to Outlook, Hotmail, Live, and MSN. The refusals began November 5 and are ongoing as of publication time . Microsoft did not announce a policy change and has not published a postmaster notice, service-health entry, or other blog post. The issue may indicate that a policy ch",
+   "title": "A segurança de e-mail da Microsoft está a bloquear inesperadamente mensagens de empresas legítimas",
+   "summary": "Os filtros de e-mail da Microsoft começaram a rejeitar mensagens legítimas enviadas para contas de consumidores como Outlook, Hotmail, Live e MSN. A falha afeta remetentes que não possuem registos DMARC configurados, gerando relatórios de erro inconsistentes. Embora a medida vise combater o spoofing, a implementação sem aviso prévio afetou pequenos remetentes com erros de entrega.",
    "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4246592-0-33853700-1794275856-shutterstock_530331409.jpg?quality=50&strip=all",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Filtros da Microsoft rejeitam e-mails legítimos de pequenos remetentes.",
+    "O problema afeta utilizadores sem registos DMARC, SPF ou DKIM devidamente publicados.",
+    "A alteração ocorreu sem aviso prévio, gerando erros de entrega inconsistentes."
+   ],
+   "title_original": "Microsoft’s email security is unexpectedly blocking legitimate business mail",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Microsoft’s email filters meant to protect users from malicious messages appear to be rejecting legitimate ones. Over the last few days, some mail sent to Microsoft consumer addresses have bounced if they did not publish a domain-based message authentication, reporting, and conformance (DMARC) record. This includes messages to Outlook, Hotmail, Live, and MSN. The refusals began November 5 and are ongoing as of publication time . Microsoft did not announce a policy change and has not published a postmaster notice, service-health entry, or other blog post. The issue may indicate that a policy change and a bug may both be in play, noted Frank Dickson of Dickson Research. “Requiring every sending domain to prove it is who it says it is makes email safer,” he pointed out. “Doing it without notice, with an error message that points at the wrong problem, makes a mess.” Intermittent sending issues DMARC is meant to protect against spoofing, phishing , and business email compromise. Microsoft has had a rule in place since May 2025 requiring DMARC, but only from domains sending more than 5,000 messages a day to consumer mailboxes. But as of November 5, mail from small, ordinary senders, rather than from bulk ones, have been bounced due to lack of DMARC, Sender Policy Framework (SPF), or DomainKeys Identified Mail (DKIM). Senders have been receiving Non-Delivery Reports (NDRs) citing 550 5.7.1 or 550 5.7.23 errors, but are doing so inconsistently; some messages are getting through while others are rejected. For instance, one user reported this error message on Microsoft’s community forum : Your message to @hotmail.com couldn’t be delivered. hotmail.com couldn’t confirm that your message was sent from a trusted location. Another user reported the same problem, adding: “Some emails work fine and others return errors with SPF failed.” Adding to the confusion, some bounced domains were reported to have working SPF, DKIM, and DMARC. A Microsoft external staff moderator called it a “service degradation” currently under active investigation. According to email security company MailRoute , enterprises can determine if their domain is impacted with this command on any terminal (replacing example.com with their domain): dig +short TXT _dmarc.example.com . A response starting with v=DMARC1 means there is a DMARC record; no reply means there isn’t, MailRoute said. The fix is a single TXT record: v=DMARC1 ; p=none . This declares that a domain uses DMARC and asks receivers to sen"
+   "translated": true,
+   "enriched": true,
+   "why": "Afeta a comunicação empresarial legítima com utilizadores de serviços de correio da Microsoft.",
+   "todo": "Configure registos DMARC, SPF e DKIM válidos no seu domínio para evitar falhas na entrega de e-mails."
   },
   {
    "id": "9a05a8a98c24b36f",
@@ -350,15 +1020,20 @@
    "lang": "en",
    "link": "https://www.troyhunt.com/weekly-update-529/",
    "published": "2026-11-10T00:42:35+00:00",
-   "title": "Weekly Update 529: Kids Social Media Bans (and Everything Else)",
-   "summary": "The kids-and-social-media discussion is just dumb. It's not the premise of delaying their access until 16, but the inability of those who should know better to grasp where the responsibility for enforcement lies. Here's our PM's explainer after the laws passed",
+   "title": "Atualização Semanal 529: Proibições de redes sociais para crianças e tudo o resto",
+   "summary": "A discussão em torno das restrições de acesso a redes sociais para menores centra-se na responsabilização das plataformas tecnológicas em vez dos utilizadores ou pais. A legislação implementada coloca o ónus da fiscalização diretamente nas empresas de redes sociais. Embora existam falhas na execução e preocupações com a privacidade, defende-se que a medida ajudará a alterar gradualmente as normas sociais a longo prazo.",
    "image": "https://storage.ghost.io/c/fb/33/fb3391dc-723d-4e74-b95a-d641b5feb38e/content/images/2026/11/download--1-.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A responsabilidade pela aplicação de limites de idade recai sobre as plataformas.",
+    "A legislação não penaliza os utilizadores jovens nem os pais.",
+    "Pretende-se alterar gradualmente as expectativas sociais das gerações mais jovens."
+   ],
+   "title_original": "Weekly Update 529: Kids Social Media Bans (and Everything Else)",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "The kids-and-social-media discussion is just dumb. It's not the premise of delaying their access until 16, but the inability of those who should know better to grasp where the responsibility for enforcement lies. Here's our PM's explainer after the laws passed down here a couple of years ago: The onus won't be on parents or young people. There will be no penalties for users. And it's been expressed many times since, in similar terms, always to the effect of placing responsibility for implementation and enforcement on the social media platforms. Inevitably, there are some massive holes in their implementation, along with major privacy and social concerns. But as I say this week (and have said on many previous occasions), it doesn't have to be perfect; over the long run, it will gradually change social norms, and the kids in that shoulder age bracket right now will have a different set of expectations than those who come after them. But hopefully, in the interim, the whole \"onus won't be on parents\" mantra will be respected more than it has been to date."
+   "translated": true,
+   "enriched": true,
+   "why": "Aborda o impacto regulatório e a responsabilidade das plataformas na segurança digital dos jovens.",
+   "todo": ""
   },
   {
    "id": "d3f5f59ecb3bcdf4",
@@ -367,15 +1042,20 @@
    "lang": "en",
    "link": "https://www.theregister.com/ai-and-ml/2026/11/10/anthropics-super-bug-finding-mythos-model-is-going-into-cisco-and-ibm-products/5308616",
    "published": "2026-11-10T00:00:20+00:00",
-   "title": "Anthropic's super bug-finding Mythos model is going into Cisco and IBM products",
-   "summary": "Enterprise security tools will offer its capabilities without handing customers the model itself",
+   "title": "O modelo de IA Mythos da Anthropic focado na deteção de falhas é integrado em produtos da Cisco e IBM",
+   "summary": "A Anthropic alargou o acesso ao seu modelo de IA Mythos, permitindo a Cisco e IBM integrá-lo nas suas ferramentas de segurança. A Cisco incorporou a tecnologia na sua suite AI Defense para detetar vulnerabilidades de forma automatizada. Por sua vez, a IBM integrou o modelo na ferramenta Concert para identificar riscos e gerar correções de código, expandindo o uso comercial da ferramenta.",
    "image": "https://image.theregister.com/?imageId=245983&width=800",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Cisco e IBM integraram o modelo de IA Mythos da Anthropic nas suas ferramentas.",
+    "A tecnologia automatiza a deteção de vulnerabilidades e falhas de software.",
+    "A Anthropic lançou simultaneamente as versões 5.2, mais rápidas e económicas."
+   ],
+   "title_original": "Anthropic's super bug-finding Mythos model is going into Cisco and IBM products",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "Anthropic has started extending access to its bug-finding Mythos model by allowing Cisco and IBM to make it part of their security products. Cisco announced its integration today at an event in Melbourne, Australia, where it revealed that the red teaming tools in its AI Defense suite, which looks for weaknesses and inappropriate activity in AI models, agents, and applications they power, will be able to call Mythos to test customers’ setups. “At a very high level, AI Defense has the ability to look at models and break them,” said Jeff Schultz, Cisco’s senior vice president for portfolio strategy and marketing. He said the tool is now “super-charged by Mythos” and will identify more danger that AI Defense will then address. AI Defense already uses AI-powered red teaming to find flaws. Mythos will become another option. Cisco will make it available under users’ existing licenses, without additional cost. Natalie Mead, Anthropic’s head of applied AI for the Asia-Pacific, said the company has a long queue of buyers who want to use Mythos, and working with Cisco will make it easier to satisfy that demand. Anthropic initially made Mythos available under \"Project Glasswing,\" a program that gave vetted organizations access to the model to test their codebases, but has since expanded access through other controlled programs, an arrangement that makes considerable sense because in the wrong hands Mythos could help attackers exploit software flaws. The Cisco deal exposes the functionality of Mythos to end-users, without letting them use the model itself. The Register asked Mead if Anthropic has similar deals with other third parties and she demurred. That may be because a few hours after Cisco told us about its use of Mythos, IBM announced that it will also integrate Anthropic’s model into a product – namely its Concert tool, which uses AI to scan applications for risks and weaknesses. IBM says it will use Mythos “to uncover weaknesses traditional scanners miss, determine which pose real risk and generate fixes for developer approval.” We have asked Anthropic if these integrations represent a decision to open Mythos to more users in more ways. We will update this story if we receive a substantial response. Also on Monday, Anthropic introduced version 5.2 of Mythos and Fable, which the company says generate outputs up to 30 percent faster than version 5.1 yet cost less: $8 per million input tokens and $40 per million output tokens. Users can choose to run both models "
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra a adoção industrial de modelos avançados de IA para automatizar a descoberta de falhas.",
+   "todo": "Utilize ferramentas automatizadas de análise de código para identificar e corrigir vulnerabilidades precocemente."
   },
   {
    "id": "48d9ef3d98d6483b",
@@ -384,15 +1064,20 @@
    "lang": "en",
    "link": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/",
    "published": "2026-11-09T23:52:12+00:00",
-   "title": "Vanderbilt University hit in BYOD ransomware attack, data theft claimed",
-   "summary": "Vanderbilt University warns it is responding to a cyberattack claimed by the BYOD ransomware gang, which claims to have encrypted the university's databases and stolen sensitive student, employee, and research data. [...]",
+   "title": "Universidade Vanderbilt atingida em ataque de ransomware BYOD com alegação de roubo de dados",
+   "summary": "A Universidade Vanderbilt alertou que está a responder a um ciberataque reivindicado pelo grupo de ransomware BYOD. O grupo cibercriminoso afirma ter encriptado as bases de dados da instituição e roubado dados sensíveis pertencentes a estudantes, funcionários e projetos de investigação.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Universidade Vanderbilt sofreu um ciberataque de ransomware.",
+    "O grupo BYOD reivindicou a autoria da intrusão.",
+    "Os atacantes afirmam ter roubado dados de estudantes, funcionários e investigações."
+   ],
+   "title_original": "Vanderbilt University hit in BYOD ransomware attack, data theft claimed",
    "category": "Ransomware",
-   "translated": false,
-   "enriched": false,
-   "raw": "Vanderbilt University warns it is responding to a cyberattack claimed by the BYOD ransomware gang, which claims to have encrypted the university's databases and stolen sensitive student, employee, and research data. [...]"
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para os riscos contínuos de ataques de ransomware direcionados a instituições de ensino superior.",
+   "todo": "Mantenha cópias de segurança offline atualizadas e aplique políticas rigorosas de controlo de acessos."
   },
   {
    "id": "fffcae2ee0fe3118",
@@ -401,15 +1086,20 @@
    "lang": "en",
    "link": "https://techcrunch.com/2026/11/09/hotel-giant-wyndham-exposed-customer-data-after-app-security-lapse/",
    "published": "2026-11-09T23:03:46+00:00",
-   "title": "Hotel giant Wyndham exposed customer data after app security lapse",
-   "summary": "Exclusive: Wyndham left a hardcoded credential in its customer app, allowing anyone to access customer data. The hotel giant wouldn't say if it has the ability to check for any past unauthorized access.",
+   "title": "Gigante hoteleiro Wyndham expôs dados de clientes após falha de segurança em aplicação",
+   "summary": "A Wyndham deixou credenciais integradas de forma fixa numa aplicação móvel para clientes, permitindo o acesso não autorizado a dados sensíveis. O grupo hoteleiro recusou esclarecer se tem capacidade para auditar acessos não autorizados anteriores decorrentes desta falha de segurança.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Wyndham expôs dados de clientes através de credenciais fixas numa aplicação.",
+    "A falha permitia a qualquer pessoa aceder a informações confidenciais.",
+    "A empresa não confirmou se consegue detetar acessos não autorizados passados."
+   ],
+   "title_original": "Hotel giant Wyndham exposed customer data after app security lapse",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "Exclusive: Wyndham left a hardcoded credential in its customer app, allowing anyone to access customer data. The hotel giant wouldn't say if it has the ability to check for any past unauthorized access."
+   "translated": true,
+   "enriched": true,
+   "why": "Sublinha os perigos graves de falhas de programação básicas no desenvolvimento de aplicações móveis.",
+   "todo": "Elimine credenciais hardcoded do código-fonte e realize auditorias regulares de segurança em aplicações."
   },
   {
    "id": "b8bbb6880f1f339e",
@@ -12633,687 +13323,6 @@
    "enriched": true,
    "why": "Importa para consciencializar as organizações sobre o perigo real de vetores de ataque aparentemente simples.",
    "todo": "Implemente filtros rigorosos de correio eletrónico e mantenha políticas estritas de controlo de execução de ficheiros."
-  },
-  {
-   "id": "0a9e638a7a48e0ce",
-   "source": "SentinelLabs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.sentinelone.com/labs/defrost-and-disrupt-an-assessment-of-europe-s-refrigeration-attacks/",
-   "published": "2026-11-03T14:57:27+00:00",
-   "title": "Descongelar e perturbar | Uma avaliação dos ataques de refrigeração na Europa",
-   "summary": "Várias cadeias de supermercados em diversos países europeus enfrentaram falhas noturnas nos sistemas de refrigeração devido a alterações remotas em interfaces de gestão. Incidentes semelhantes tinham ocorrido anteriormente noutras regiões, afetando também instalações industriais e comerciais. Relatórios apontam para interfaces expostas à internet e palavras-passe fracas como principais facilitadores destas intrusões. Embora grupos alinhados à Rússia tenham historial nesta área operacional, a autoria exata destes casos europeus permanece por confirmar.",
-   "image": "https://images.contentstack.io/v3/assets/blt53c99b43892c2378/bltc4b8416b7c48392e/6ae9eec4d1a90d6a4c3f9fc2/2.jpg",
-   "points": [
-    "Quem: Lojas e cadeias de supermercados em vários países europeus.",
-    "O quê: Interrupção remota de sistemas de refrigeração através de alterações de parâmetros.",
-    "Como: Exploração de interfaces de gestão expostas à internet e credenciais fracas.",
-    "Impacto: Danos operacionais em equipamentos de frio comercial em vários países."
-   ],
-   "title_original": "Defrost and Disrupt | An Assessment of Europe’s Refrigeration Attacks",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Revela a vulnerabilidade de tecnologias operacionais (OT) expostas e o risco de sabotagem em infraestruturas comerciais.",
-   "todo": "Isole as redes de tecnologia operacional da internet pública e reforce as políticas de autenticação e palavras-passe."
-  },
-  {
-   "id": "33aaf4454e61a7a3",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/progress-software-security-advisory-av26-1116",
-   "published": "2026-11-03T14:46:33+00:00",
-   "title": "Aviso de segurança da Progress Software (AV26-1116)",
-   "summary": "A Progress Software reportou vulnerabilidades que afetam versões específicas do WS_FTP Server. As falhas foram identificadas em edições anteriores a 2024.0.6 e 2025.0.3, exigindo atenção imediata dos administradores. As autoridades de cibersegurança encorajam a consulta dos boletins oficiais e a aplicação célere das correções disponíveis. A negligência na atualização destas aplicações pode expor os sistemas a explorações maliciosas.",
-   "image": null,
-   "points": [
-    "Quem: Progress Software e o Centro Canadiano de Cibersegurança.",
-    "O quê: Alerta de vulnerabilidade crítica no WS_FTP Server.",
-    "Como: Identificação de falhas em versões anteriores aos patches indicados.",
-    "Impacto: Risco de compromisso de servidores caso as atualizações não sejam aplicadas."
-   ],
-   "title_original": "Progress Software security advisory (AV26-1116)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa para evitar a exploração de falhas conhecidas em servidores de transferência de ficheiros expostos.",
-   "todo": "Atualize imediatamente o WS_FTP Server para as versões seguras recomendadas pelo fabricante."
-  },
-  {
-   "id": "ba10cb756d660e0c",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/control-systems-siemens-security-advisory-av26-802",
-   "published": "2026-11-03T14:39:43+00:00",
-   "title": "[Sistemas de controlo] Aviso de segurança da Siemens (AV26-802) – Atualização 1",
-   "summary": "A Siemens atualizou o seu aviso de segurança para reportar múltiplas vulnerabilidades em vários produtos de automação, software e sistemas de controlo. A lista de equipamentos afetados inclui gamas como Desigo, SIMATIC IoT2050, Solid Edge e Simcenter, entre outros. Relatórios de fontes abertas indicam que uma das falhas identificadas já está a ser ativamente explorada. Os utilizadores e administradores são aconselhados a rever os boletins e a aplicar as correções fornecidas.",
-   "image": null,
-   "points": [
-    "Quem: A Siemens e entidades de cibersegurança.",
-    "O quê: Atualização de aviso sobre vulnerabilidades em múltiplos produtos industriais e de software.",
-    "Como: Identificação de falhas críticas, com pelo menos uma a sofrer exploração ativa.",
-    "Impacto: Risco de segurança em infraestruturas que utilizam estes sistemas de controlo e software."
-   ],
-   "title_original": "[Control systems] Siemens security advisory (AV26-802) – Update 1",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "É vital para proteger ambientes industriais e empresariais contra explorações ativas em sistemas Siemens.",
-   "todo": "Consulte o boletim da Siemens e aplique as atualizações de firmware e software recomendadas."
-  },
-  {
-   "id": "67dd767dfddf3423",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/btcpay-server-flaw-cryptocurrency/",
-   "published": "2026-11-03T14:30:00+00:00",
-   "title": "Piratas informáticos exploram falha no BTCPay Server para roubar criptomoeda",
-   "summary": "Atacantes aproveitaram uma vulnerabilidade em instâncias desatualizadas do BTCPay Server para drenar fundos de carteiras ativas. O prejuízo financeiro já contabilizado ascende a milhões de dólares em ativos digitais. A exploração afetou especificamente os utilizadores que não mantiveram os seus sistemas atualizados com as correções mais recentes. Este caso destaca os riscos financeiros associados à falta de manutenção de infraestruturas de pagamento em criptomoedas.",
-   "image": null,
-   "points": [
-    "Quem: Atacantes informáticos e utilizadores de instâncias desatualizadas do BTCPay Server.",
-    "O quê: Roubo de criptomoedas através da exploração de falhas em software desatualizado.",
-    "Como: Acesso não autorizado a carteiras ativas em servidores vulneráveis.",
-    "Impacto: Perdas financeiras superiores a um milhão de dólares rastreadas até ao momento."
-   ],
-   "title_original": "Hackers Exploit BTCPay Server Flaw to Steal Cryptocurrency",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra o impacto financeiro direto da falta de atualizações em plataformas de pagamento digital.",
-   "todo": "Atualize prontamente as instâncias do BTCPay Server e reforce a segurança das carteiras de criptomoedas."
-  },
-  {
-   "id": "dc2643e69a5b0c65",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/postgresql-security-advisory-av26-1115",
-   "published": "2026-11-03T14:24:43+00:00",
-   "title": "Aviso de segurança da PostgreSQL (AV26-1116)",
-   "summary": "A PostgreSQL alertou para a existência de vulnerabilidades que afetam o componente psqlODBC em versões anteriores à 18.00.0006. As falhas envolvem problemas de transbordo de memória, como leituras excessivas em objetos grandes e erros de buffer no analisador ODBC. O Centro de Cibersegurança insta os administradores a verificarem os avisos e a aplicarem as correções necessárias. A correção destas falhas evita potenciais ataques direcionados a bases de dados.",
-   "image": null,
-   "points": [
-    "Quem: PostgreSQL e administradores de bases de dados.",
-    "O quê: Divulgação de vulnerabilidades no driver psqlODBC.",
-    "Como: Falhas de transbordo de buffer e leitura excessiva em objetos grandes.",
-    "Impacto: Potencial instabilidade ou execução não autorizada em aplicações que utilizem o driver afetado."
-   ],
-   "title_original": "PostgreSQL security advisory (AV26-1115)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa para prevenir falhas de segurança em sistemas que dependem de conexões ODBC com bases de dados PostgreSQL.",
-   "todo": "Atualize o psqlODBC para a versão segura disponibilizada pela PostgreSQL."
-  },
-  {
-   "id": "b9383c7a19ebc50e",
-   "source": "WeLiveSecurity (ESET) PT",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.welivesecurity.com/pt/pesquisas/gorbag-grupo-alinhado-a-russia-mira-organizacoes-ucranianas/",
-   "published": "2026-11-03T14:14:01+00:00",
-   "title": "Gorbag: grupo alinhado à Rússia mira organizações ucranianas",
-   "summary": "A equipa de investigação da ESET identificou um novo grupo de ameaça denominado Gorbag, associado a interesses russos. O coletivo utiliza ferramentas simples de roubo de informação (infostealers) para comprometer dados sensíveis de entidades na Ucrânia. Esta campanha demonstra como atores de ameaças recorrem a malwares acessíveis para realizar espionagem e exfiltração de dados. A descoberta reforça a necessidade contínua de monitorização de campanhas direcionadas na região.",
-   "image": null,
-   "points": [
-    "Quem: O grupo Gorbag e investigadores da ESET.",
-    "O quê: Campanhas de cibercatspionagem contra organizações ucranianas.",
-    "Como: Utilização de infostealers simples para extração de dados.",
-    "Impacto: Compromisso de informações confidenciais de alvos na Ucrânia."
-   ],
-   "title_original": null,
-   "category": "Malware",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia as táticas persistentes de grupos alinhados a Estados contra alvos estratégicos ucranianos.",
-   "todo": "Reforce a deteção de infostealers nos terminais e monitorize comportamentos anómalos de exfiltração de dados."
-  },
-  {
-   "id": "637c20fbb7376d2a",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/mobile/2026/11/a-hidden-backdoor-put-1-3-million-tv-boxes-to-work-for-criminals",
-   "published": "2026-11-03T14:11:25+00:00",
-   "title": "Backdoor oculto colocou 1,3 milhões de colunas de TV ao serviço de criminosos",
-   "summary": "A Google revelou que a Videostrong integrou um backdoor malicioso em cerca de 1,3 milhões de caixas Android TV certificadas, vendendo o acesso a redes de cibercriminosos. O código malicioso, instalado na partilha de sistema, reinstalava-se automaticamente após cada reinício e desativava verificações de segurança. Esta rede servia como um sistema de proxy residencial, permitindo a terceiros mascarar tráfego malicioso e contornar controlos antifraude. Embora a infraestrutura tenha sido perturbada, o firmware infetado permanece nos dispositivos dos utilizadores afetados.",
-   "image": null,
-   "points": [
-    "Quem: Fabricante Videostrong Technology e investigadores da Google.",
-    "O quê: Inclusão de um backdoor em firmware de caixas Android TV.",
-    "Como: Instalação de código oculto pós-fabrico para criar uma rede de proxies residenciais.",
-    "Impacto: 1,3 milhões de dispositivos comprometidos e utilizados para mascarar atividades criminosas."
-   ],
-   "title_original": "A hidden backdoor put 1.3 million TV boxes to work for criminals",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como o hardware de consumo pode vir comprometido de fábrica, transformando redes domésticas em plataformas de crime.",
-   "todo": "Desconecte dispositivos suspeitos da rede doméstica e contacte o fabricante ou vendedor para obter uma correção ou substituição."
-  },
-  {
-   "id": "bf4b8141dfebfe3d",
-   "source": "Pplware Segurança",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://pplware.sapo.pt/internet/seguranca/frigorificos-de-supermercados-europeus-alvos-de-ciberataques-quem-esta-por-tras-e-porque/",
-   "published": "2026-11-03T14:00:00+00:00",
-   "title": "Frigoríficos de supermercados europeus alvos de ciberataques: quem está por trás e porquê?",
-   "summary": "Equipamentos de frio de grandes superfícies comerciais em sete países europeus sofreram perturbações operacionais devido à alteração remota de termóstatos. Os incidentes repetiram-se ao longo de poucas semanas, afetando cadeias de supermercados sem que haja ainda uma autoria formal confirmada. As investigações apontam para vulnerabilidades antigas associadas a acessos de gestão expostos e credenciais débeis. O caso sublinha os riscos de cibersegurança que afetam infraestruturas comerciais e de retalho.",
-   "image": null,
-   "points": [
-    "Quem: Grandes superfícies comerciais em sete países da Europa.",
-    "O quê: Sabotagem remota de sistemas de refrigeração e arcas congeladoras.",
-    "Como: Manipulação de termóstatos através de interfaces de gestão vulneráveis.",
-    "Impacto: Avarias e perdas operacionais em estabelecimentos de retalho alimentar."
-   ],
-   "title_original": null,
-   "category": "Ataque/APT",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa para alertar o setor do retalho para a fragilidade dos sistemas de gestão de refrigeração conectados.",
-   "todo": "Proteja as interfaces de administração de sistemas OT com VPNs e palavras-passe robustas, evitando exposições diretas à internet."
-  },
-  {
-   "id": "ccddb3cec5c858d3",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/data-privacy/3am-affiliate-ai-loops-european-school-attack",
-   "published": "2026-11-03T14:00:00+00:00",
-   "title": "Afiliado do 3AM adota ciclos semelhantes aos da IA num ataque a escolas europeias",
-   "summary": "Investigações a um ataque informático conduzido por um gangue de ransomware contra escolas europeias sugerem o uso de um modelo computacional para gerar e otimizar comandos. Embora os especialistas evitem afirmar que houve automação total, existem indícios de que o modelo ajudou a adaptar as instruções durante a intrusão. Esta evolução tecnológica aponta para uma maior sofisticação e rapidez na execução de ataques por parte de grupos cibercriminosos. A descoberta marca uma nova tendência na utilização de tecnologia avançada em operações maliciosas.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blta280e1d9bd26c729/6ae8fcfdb20def7a8ae983ea/school_front-YinYang-GettyImages-157476686.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "Quem: Gangue de ransomware associado ao 3AM e investigadores de cibersegurança.",
-    "O quê: Possível utilização de ferramentas baseadas em modelos para gerar comandos num ataque.",
-    "Como: Criação e revisão automatizada de instruções táticas durante a intrusão.",
-    "Impacto: Maior eficiência e sofisticação em ataques cibernéticos a instituições de ensino."
-   ],
-   "title_original": "3AM Affiliate Embraces AI-Like Loops in European School Attack",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Sinaliza a integração precoce de capacidades automatizadas e de IA em ataques reais de ransomware.",
-   "todo": "Adote soluções avançadas de deteção baseadas em comportamentos anómalos para identificar tentativas rápidas de intrusão."
-  },
-  {
-   "id": "de9a8ddf286d759f",
-   "source": "Check Point Research",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://research.checkpoint.com/2026/free-the-model-sell-the-gateway-prompt-adware-hidden-in-jailbreak-bundles/",
-   "published": "2026-11-03T13:57:04+00:00",
-   "title": "Liberte o Modelo, Venda o Gateway: Adware de Prompt Oculto em Pacotes de Jailbreak",
-   "summary": "A Check Point Research descobriu um pacote de jailbreak direcionado ao OpenAI Codex, classificado como adware de prompt, que instala ferramentas de segurança e altera configurações para injetar anúncios do autor nas respostas. O criador utiliza esta distribuição gratuita para angariar clientes para um gateway de LLM pago e opaco. O pacote foi detetado a ser utilizado por um cibercriminoso juntamente com Cobalt Strike, VulnClaw e o framework Ladon num servidor web mal configurado. Esta situação demonstra como ferramentas de IA de uso duplo e pacotes de jailbreak são ativamente aproveitados por agentes maliciosos nas suas operações.",
-   "image": "https://research.checkpoint.com/wp-content/uploads/2026/10/image-10.png",
-   "points": [
-    "Alvo: O pacote de jailbreak Haiou visa o modelo OpenAI Codex e debilita as defesas de segurança.",
-    "O quê: O software injeta publicidade para um gateway LLM pago nas respostas dos agentes de IA.",
-    "Como: Modifica ficheiros de configuração e instala ferramentas secundárias em servidores comprometidos.",
-    "Impacto: Utilizadores e sistemas ficam expostos a campanhas criminosas que usam ferramentas de IA e frameworks de hacking."
-   ],
-   "title_original": "Free the Model, Sell the Gateway: Prompt Adware hidden in Jailbreak Bundles",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como ferramentas de jailbreak de IA e utilitários de uso duplo são usados ativamente por cibercriminosos para promover serviços pagos e potenciar ataques.",
-   "todo": "Evite descarregar pacotes de jailbreak ou scripts não verificados para modelos de IA e restrinja o acesso direto a gateways e chaves de API."
-  },
-  {
-   "id": "f141bf6c3c9d2f6a",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/cyber-refrigeration-supermarkets/",
-   "published": "2026-11-03T13:45:00+00:00",
-   "title": "Ataque Cibernético a Sistemas de Refrigeração Atinge Supermercados na Europa",
-   "summary": "Um incidente cibernético provocou alterações nas temperaturas de frigoríficos em supermercados de vários países europeus. Esta ocorrência faz lembrar um ataque semelhante que afetou retalhistas franceses no mês anterior. O evento destaca os riscos associados à exposição de sistemas de controlo industrial e refrigeração à internet.",
-   "image": null,
-   "points": [
-    "O quê: Um ataque cibernético alterou as temperaturas de sistemas de refrigeração em supermercados europeus.",
-    "Impacto: Risco potencial para a conservação de alimentos e perturbação das operações comerciais.",
-    "Contexto: O incidente assemelha-se a uma ocorrência idêntica registada em retalhistas franceses no mês passado."
-   ],
-   "title_original": "Cyber-Attack on Refrigeration Systems Hits Supermarkets Across Europe",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia a vulnerabilidade de sistemas industriais e de refrigeração ligados remotamente, colocando em risco infraestruturas essenciais.",
-   "todo": "Isole os sistemas de refrigeração e de gestão predial da internet pública e utilize redes privadas virtuais (VPN) seguras para o acesso remoto."
-  },
-  {
-   "id": "f0875b5f88c2bded",
-   "source": "WeLiveSecurity (ESET) PT",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.welivesecurity.com/pt/seguranca-para-empresas/pmes-como-fornecedores-de-confianca-orientam-seus-clientes/",
-   "published": "2026-11-03T13:26:53+00:00",
-   "title": "Cibersegurança para PMEs: como fornecedores de confiança orientam seus clientes",
-   "summary": "As pequenas e médias empresas enfrentam desafios constantes na proteção dos seus ativos digitais e necessitam de uma integração orientada. Para mitigar riscos e otimizar os investimentos financeiros, estas organizações recorrem a fornecedores de confiança que oferecem proteção supervisionada. Esta abordagem ajuda a garantir que os recursos de segurança são aplicados de forma eficiente onde são mais necessários.",
-   "image": null,
-   "points": [
-    "Alvo: Pequenas e médias empresas (PMEs) com recursos limitados.",
-    "O quê: Necessidade de integração orientada e proteção supervisionada.",
-    "Como: Através do apoio de fornecedores de confiança para otimizar os investimentos em segurança."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Ajuda as PMEs a perceberem como podem melhorar a sua postura de segurança cibernética com o apoio externo adequado.",
-   "todo": "Estabeleça parcerias com fornecedores de serviços geridos de segurança (MSSP) para implementar monitorização e proteção contínuas."
-  },
-  {
-   "id": "68779352afb43358",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/03/britain-on-notice-ai-powered-ransomware-attacks-to-arrive-by-2028/5307200",
-   "published": "2026-11-03T12:39:25+00:00",
-   "title": "Grã-Bretanha em alerta: ataques de ransomware impulsionados por IA chegam até 2028",
-   "summary": "O Centro Nacional de Cibersegurança do Reino Unido (NCSC) alerta que o malware potenciado por inteligência artificial tem fortes probabilidades de integrar ataques de ransomware contra infraestruturas críticas até 2028. O relatório aponta para o reaproveitamento malicioso de ferramentas de segurança de código aberto, como a plataforma ARTEX, e antecipa o aumento da sofisticação e da dificuldade de atribuição dos ataques. Em resposta, o NCSC está a desenvolver iniciativas de defesa baseadas em IA, como o projeto DROMOS e o sistema Cyber Shield. Estas medidas visam detetar vulnerabilidades e reforçar a resiliência governamental face a cenários de ameaças cada vez mais autónomos.",
-   "image": "https://image.theregister.com/?imageId=241603&width=800",
-   "points": [
-    "Quem: O NCSC do Reino Unido alerta para ameaças futuras até 2028.",
-    "O quê: Previsão de ataques de ransomware e malware impulsionados por inteligência artificial.",
-    "Como: Através do reaproveitamento malicioso de ferramentas de código aberto e plataformas de testes de intrusão.",
-    "Impacto: Aumento da sofisticação dos ataques e maior dificuldade na atribuição de responsabilidades a nível geopolítico."
-   ],
-   "title_original": "Britain on notice: AI-powered ransomware attacks to arrive by 2028",
-   "category": "Ransomware",
-   "translated": true,
-   "enriched": true,
-   "why": "Alerta para a evolução iminente do cibercrime através do uso de IA em ataques contra infraestruturas críticas nacionais.",
-   "todo": "Invista proativamente em sistemas de monitorização automatizados e na correção atempada de vulnerabilidades para mitigar ameaças futuras."
-  },
-  {
-   "id": "cd1526455890c245",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/what-to-know-before-getting-a-crypto-debit-card/",
-   "published": "2026-11-03T12:34:21+00:00",
-   "title": "O que saber antes de obter um cartão de débito de criptomoedas",
-   "summary": "O impacto das criptomoedas no setor financeiro tornou-se difícil de ignorar, mesmo para quem não apoia ativamente este mercado. A adoção de soluções ligadas a ativos digitais traz novas opções de pagamento, mas exige atenção aos riscos inerentes. Conhecer o funcionamento destes serviços financeiros é essencial para proteger os fundos pessoais.",
-   "image": null,
-   "points": [
-    "O quê: A crescente relevância das criptomoedas e dos cartões de débito associados.",
-    "Impacto: Necessidade de maior consciencia sobre a gestão de ativos digitais e os riscos financeiros envolvidos."
-   ],
-   "title_original": "What to Know Before Getting a Crypto Debit Card",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Informa os utilizadores sobre as precauções necessárias ao adotar instrumentos financeiros baseados em criptomoedas.",
-   "todo": "Reveja os termos de serviço, taxas e políticas de segurança da entidade emissora antes de solicitar um cartão de criptomoedas."
-  },
-  {
-   "id": "e82758f663cf6f7b",
-   "source": "CSO Online",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.csoonline.com/article/4243874/network-appliances-go-more-than-a-year-without-patches-as-exploits-speed-up.html",
-   "published": "2026-11-03T12:32:10+00:00",
-   "title": "Aparelhos de rede passam mais de um ano sem atualizações enquanto exploits aceleram",
-   "summary": "Uma análise da Microsoft revela que a vulnerabilidade mediana em equipamentos de rede empresariais permanece por corrigir durante mais de um ano. Em contraste, o tempo médio que os cibercriminosos demoram a explorar falhas críticas reduziu-se drasticamente para poucos dias após a sua publicação. Esta disparidade cria uma janela temporal alargada onde os atacantes conseguem explorar sistemas expostos e críticos para as empresas. Fatores como dependências de aplicações, burocracia na aprovação de alterações e infraestruturas legadas contribuem para o atraso na aplicação de correções.",
-   "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4243874-0-72192900-1793709141-shutterstock_2351071965.jpg?quality=50&strip=all",
-   "points": [
-    "O quê: Aparelhos de rede demoram mais de um ano a receber patches de segurança.",
-    "Como: Atrasos causados por dependências, processos de aprovação e receio de interromper operações.",
-    "Impacto: Os atacantes exploram falhas críticas em poucos dias, deixando uma vasta janela de exposição."
-   ],
-   "title_original": "Network appliances go more than a year without patches as exploits speed up",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra o perigo crítico da desatualização prolongada em equipamentos de rede face à rapidez com que os cibercriminosos exploram novas falhas.",
-   "todo": "Estabeleça janelas de manutenção regulares para atualizar o firmware de equipamentos de rede e priorize a correção de falhas ativamente exploradas."
-  },
-  {
-   "id": "05f8a42fcfed586e",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/bugs/2026/11/hackers-put-porn-on-public-billboards-and-claim-it-was-far-too-easy",
-   "published": "2026-11-03T12:01:55+00:00",
-   "title": "Hackers colocam pornografia em outdoors públicos e afirmam que foi “demasiado fácil”",
-   "summary": "Vários cartazes digitais públicos em países como Egito, Brasil e Malásia exibiram conteúdos explícitos após ataques informáticos reivindicados pelo grupo Leakers$. Os atacantes não acederam diretamente a cada ecrã, mas comprometeram o software central de transmissão e gestão de conteúdos utilizado para enviar publicidade aos painéis LED. Com recurso a varabolismo automatizado e exploração de interfaces web expostas na internet, o grupo obteve acesso remoto a milhares de sistemas. As autoridades locais confirmaram o comprometimento dos operadores dos outdoors, sublinhando os riscos da exposição de sistemas de gestão remota.",
-   "image": null,
-   "points": [
-    "Quem: O grupo de hackers Leakers$ reivindicou os ataques a outdoors digitais.",
-    "O quê: Exibição de conteúdos impróprios em painéis de trânsito e vias públicas em vários países.",
-    "Como: Através do compromisso de software de gestão de conteúdos exposto na internet e descoberto com ferramentas automatizadas.",
-    "Impacto: Demonstra os riscos associados à gestão remota insegura de ecrãs e dispositivos ligados à rede."
-   ],
-   "title_original": "Hackers put porn on public billboards and claim it was “far too easy”",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Ilustra como a exposição de interfaces de gestão remota na internet facilita ataques cibernéticos a ecrãs públicos e sistemas industriais.",
-   "todo": "Proteja as interfaces de administração de sistemas remotos com autenticação forte e restrinja o acesso através de firewalls ou redes privadas."
-  },
-  {
-   "id": "dcae8bed3d42d0e1",
-   "source": "Schneier on Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html",
-   "published": "2026-11-03T12:01:00+00:00",
-   "title": "IAs a invadir a lei",
-   "summary": "A linguagem natural utilizada para codificar as leis da sociedade pode conter vulnerabilidades semelhantes às encontradas em sistemas informáticos. Com o desenvolvimento de sistemas de inteligência artificial altamente capazes, a descoberta dessas falhas legais tornou-se viável à escala. Testes realizados na Alemanha com modelos de linguagem (LLMs) permitiram identificar inúmeras vulnerabilidades inéditas no sistema jurídico do país. Caso a utilização de raciocínio jurídico automatizado se generalize, os legisladores poderão ter de reforçar significativamente a segurança e a robustez dos processos de criação de leis.",
-   "image": null,
-   "points": [
-    "O quê: Descoberta de vulnerabilidades no sistema jurídico alemão através de modelos de IA.",
-    "Como: Utilização de modelos de linguagem para analisar e explorar a linguagem natural das leis.",
-    "Impacto: O uso generalizado de IA pode comprometer o funcionamento dos sistemas legais atuais se estes não forem endurecidos."
-   ],
-   "title_original": "AIs Hacking the Law",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Revela como a inteligência artificial pode ser utilizada para encontrar e explorar falhas em sistemas jurídicos e normativos.",
-   "todo": ""
-  },
-  {
-   "id": "ffbe770cafe2be84",
-   "source": "NCSC UK",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.ncsc.gov.uk/news/cyber-chief-uk-facing-ai-powered-attacks-on-critical-infrastructure-in-two-years",
-   "published": "2026-11-03T12:00:00+00:00",
-   "title": "Chefe de cibersegurança: Reino Unido enfrenta ataques de IA contra infraestruturas críticas em dois anos",
-   "summary": "O NCSC alerta que a falta de investimento e a facilidade de acesso a tecnologias baratas deixaram as organizações britânicas vulneráveis a ataques baseados em inteligência artificial. Estas ferramentas de IA são capazes de detetar e explorar falhas de segurança antigas de forma acelerada. Perante este cenário, a agência apela a um investimento urgente no reforço da resiliência cibernética do país.",
-   "image": null,
-   "points": [
-    "Quem: O NCSC do Reino Unido emite alerta sobre ameaças cibernéticas.",
-    "O quê: Risco de ataques potenciados por IA contra infraestruturas críticas nos próximos dois anos.",
-    "Impacto: Organizações expostas à exploração automatizada de vulnerabilidades antigas."
-   ],
-   "title_original": "Cyber chief: UK facing AI-powered attacks on critical infrastructure within two years",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Sublinha a urgência de reforçar as defesas das infraestruturas críticas face à capacidade da IA em acelerar a exploração de falhas.",
-   "todo": "Acelere a implementação de programas de gestão de vulnerabilidades e reforce o investimento em tecnologias de defesa automatizadas."
-  },
-  {
-   "id": "c8ac0b309f86dbbb",
-   "source": "NCSC UK",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.ncsc.gov.uk/report/artificial-intelligence-and-cyber-intrusion",
-   "published": "2026-11-03T12:00:00+00:00",
-   "title": "Inteligência artificial e intrusão cibernética",
-   "summary": "Uma avaliação publicada pelo NCSC analisa as tendências atuais das ameaças impulsionadas por inteligência artificial e apresenta projeções para o panorama de risco até 2028. O relatório examina como o uso de tecnologias de IA está a transformar as táticas de intrusão e o comportamento dos atacantes. O documento serve como orientação para antecipar a evolução dos incidentes cibernéticos nos próximos anos.",
-   "image": null,
-   "points": [
-    "Quem: O NCSC avalia o impacto da inteligência artificial nas ameaças cibernéticas.",
-    "O quê: Análise de tendências de intrusão e projeções do panorama de risco até 2028.",
-    "Impacto: Ajuda a compreender as mudanças nas táticas dos atacantes motivadas pela adoção de IA."
-   ],
-   "title_original": "Artificial intelligence and cyber intrusion",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Fornece uma perspetiva oficial sobre a evolução esperada das ameaças cibernéticas potenciadas por inteligência artificial até 2028.",
-   "todo": "Consulte relatórios de ameaças oficiais para adaptar as estratégias de segurança da sua organização às novas tendências de ataque."
-  },
-  {
-   "id": "e812a0e2b595bf64",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/cursor-claude-code-extensions-ssh-backdoor-code/",
-   "published": "2026-11-03T11:53:29+00:00",
-   "title": "Cursor distribui extensões do Claude Code com código de backdoor SSH",
-   "summary": "Extensões maliciosas para o Claude Code direcionadas a programadores em Windows e macOS foram distribuídas através do editor Cursor. Os componentes maliciosos recolhiam detalhes confidenciais dos dispositivos infetados e instalavam ficheiros para garantir acesso remoto persistente. Este incidente demonstra os riscos associados à cadeia de fornecimento de extensões e ferramentas de desenvolvimento de IA.",
-   "image": null,
-   "points": [
-    "Alvo: Programadores que utilizam sistemas Windows e macOS.",
-    "O quê: Extensões maliciosas com backdoors SSH distribuídas através do Cursor.",
-    "Como: Recolha de dados do dispositivo e instalação de ficheiros para acesso remoto persistente.",
-    "Impacto: Exposição de ambientes de desenvolvimento e dados confidenciais de engenharia."
-   ],
-   "title_original": "Cursor Distributed Claude Code Extensions With SSH Backdoor Code",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Alerta para os riscos de segurança na cadeia de fornecimento de ferramentas de programação e extensões de IA.",
-   "todo": "Verifique a autenticidade e a reputação das extensões e plugins de desenvolvimento antes de os instalar em ambientes de trabalho."
-  },
-  {
-   "id": "bc926f5034b4c60b",
-   "source": "CSO Online",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.csoonline.com/article/4243863/enterprises-pay-100000-a-day-for-ai-they-never-ordered.html",
-   "published": "2026-11-03T11:52:38+00:00",
-   "title": "Empresas pagam 100.000 dólares por dia por IA que nunca encomendaram",
-   "summary": "O Google Threat Intelligence Group (GTIG) alertou para campanhas de \"LLMjacking\" com motivações financeiras, onde cibercriminosos comprometem o acesso à cloud e a modelos de IA de empresas para os revender ilegalmente. Através de gateways conhecidos como \"LLM Mixers\", os atacantes agrupam credenciais de API roubadas e reencaminham pedidos para clientes pagantes na dark web, gerando faturas diárias superiores a 100.000 dólares para as vítimas. Um grupo identificado, o UNC6993, utilizou ferramentas como \"new-api\" e \"gcli2api\" para distribuir o consumo de tokens por várias contas comprometidas. Esta atividade sublinha a necessidade de aplicar controlos de autoridade rigorosos nas chaves de API, evitando que credenciais de aplicações individuais sirvam de acesso livre a outros recursos e modelos.",
-   "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4243863-0-97594300-1793706772-shutterstock_1336007219.jpg?quality=50&strip=all",
-   "points": [
-    "Quem: O Google Threat Intelligence Group alerta para campanhas de roubo de recursos de IA.",
-    "O quê: Cibercriminosos sequestram o acesso a modelos de linguagem na cloud para o revender em serviços de subscrição subterrâneos.",
-    "Como: Utilização de gateways clandestinos (\"LLM Mixers\") para mascarar e redirecionar pedidos através de chaves de API roubadas.",
-    "Impacto: Empresas vítimas acumulam custos financeiros massivos na cloud antes de detetarem o roubo."
-   ],
-   "title_original": "Enterprises pay $100,000 a day for AI they never ordered",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Expõe uma nova vaga de crime financeiro focada no roubo e revenda de recursos computacionais de IA em ambiente cloud.",
-   "todo": "Monitorize regularmente os custos e consumos de APIs de IA na cloud e aplique o princípio do privilégio mínimo às chaves de acesso."
-  },
-  {
-   "id": "983bb324e38de868",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/ncsc-ai-ransomware-threat-uk-cni/",
-   "published": "2026-11-03T11:45:00+00:00",
-   "title": "NCSC Chief Warns of Imminent AI Ransomware Threat to UK Critical Infrastructure",
-   "summary": "O chefe de cibersegurança do Reino Unido alertou que o 'malware' impulsionado por inteligência artificial deverá surgir em ataques de 'ransomware' contra infraestruturas críticas britânicas até 2028. Esta evolução tecnológica ameaça aumentar a sofisticação e a eficácia das investidas maliciosas direcionadas a setores fundamentais. O aviso sublinha a necessidade urgente de preparação por parte das entidades responsáveis por estes serviços essenciais.",
-   "image": null,
-   "points": [
-    "Quem: O chefe de cibersegurança do Reino Unido (NCSC).",
-    "O quê: Alerta para a integração de IA em ataques de ransomware.",
-    "Quando: Ameaça prevista até 2028.",
-    "Impacto: Risco elevado para as infraestruturas críticas britânicas."
-   ],
-   "title_original": null,
-   "category": "Ransomware",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como a inteligência artificial vai potenciar futuras ameaças de ransomware em setores críticos.",
-   "todo": "Reforçar a monitorização de redes e atualizar os planos de resposta a incidentes para mitigar ameaças impulsionadas por IA."
-  },
-  {
-   "id": "077ace75f36a70f7",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/data-breaches/2026/11/revolve-card-breach-1-5-million-people-may-be-affected",
-   "published": "2026-11-03T11:26:44+00:00",
-   "title": "Revolve card breach: 1.5 million people may be affected",
-   "summary": "A retalhista de moda Revolve Group notificou as autoridades sobre uma violação de dados que resultou no roubo de números de cartões de pagamento e datas de validade dos clientes. O incidente afetou utilizadores que tinham guardados os dados do cartão de pagamento nas respetivas contas na plataforma. Os atacantes também acederam a nomes e moradas associados aos perfis comprometidos.",
-   "image": null,
-   "points": [
-    "Quem: A retalhista de moda Revolve Group e os seus clientes.",
-    "O quê: Roubo de números de cartões de pagamento, validades, nomes e moradas.",
-    "Como: Através de contas de clientes onde os dados de pagamento estavam guardados.",
-    "Impacto: Dados sensíveis de milhares de pessoas expostos."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "Exemplifica como o roubo de dados de pagamento em plataformas de comércio eletrónico afeta diretamente os consumidores.",
-   "todo": "Monitorizar os extratos bancários com atenção e considerar a substituição dos cartões de pagamento afetados junto do emitente."
-  },
-  {
-   "id": "77f64f32faf59d10",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
-   "published": "2026-11-03T11:23:53+00:00",
-   "title": "Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing",
-   "summary": "A Red Hat disponibilizou correções para uma vulnerabilidade crítica do tipo 'use-after-free' no código TCP IPv4 do núcleo Linux, catalogada como CVE-2026-98432. Em simultâneo, a Ubuntu lançou correções para as suas versões de suporte de longo prazo num canal de testes. A falha apresenta uma pontuação de gravidade muito elevada e pode ser explorada por atacantes remotos sem autenticação.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdf8UfDHsjH9VaJGtYT5WgjtJ1G5YRMkjPWNeKn-hw05sM9ny0kW9L2eIc3UCiIQ7qmc_TmfrenS1WH8KiRBjln2hQS0X7DUlykxdHrzDgg4uoiHpiOf3fVTOnUuOt4618z3PN7hw1AfUch_y0Tot3ubTga5LEfyWnATkzegfQBSWxMbzNzJaGY18QqC8/s1600/linux-rce.jpg",
-   "points": [
-    "Quem: Red Hat e Ubuntu.",
-    "O quê: Correção de uma vulnerabilidade crítica (CVE-2026-98432) no código TCP do Linux.",
-    "Como: Disponibilização de kernels corrigidos e atualizações de teste.",
-    "Impacto: Risco de execução remota de código por atacantes não autenticados."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Destaca a urgência de atualizar sistemas operativos para mitigar falhas críticas no núcleo Linux.",
-   "todo": "Aplicar imediatamente as atualizações de segurança do núcleo disponibilizadas pelo fornecedor do sistema operativo."
-  },
-  {
-   "id": "20c9c9965d29956a",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/the-4-elements-of-exposure.html",
-   "published": "2026-11-03T11:18:20+00:00",
-   "title": "The 4 Elements of Exposure Prioritization and How to Operationalize Them",
-   "summary": "Muitas organizações gastam demasiado tempo a remediar vulnerabilidades que os atacantes nunca chegam a explorar, enquanto os riscos reais permanecem na fila de espera. Um relatório do Gartner indica que menos de 10% das vulnerabilidades são efetivamente exploradas, apesar da maioria ser tratada com urgência. Esta desproporção mantém o risco de violação praticamente inalterado apesar do esforço de correção.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiK5J_qkmStJVdWJYvNtd4lb2cRfPMaSvu1dEKp8tXOjw71kt_fRGGfdPr60HL5agJ8NMBYO5sH7jVvzMWXlLW1fq0xilaF0GyLQHCznSjHeos7sdP_Xwmd6OWyzKv8Yq8m-Z0Hn3x15GBU8AySu2A27OlIWiuAW9ch0iZuXxTpELRSQ6uRdW9nLK4uXQg/s1600/picus-main.png",
-   "points": [
-    "Quem: Equipas de segurança e organizações.",
-    "O quê: Desperdício de recursos na correção de vulnerabilidades de baixo risco.",
-    "Como: Tratando a maioria das falhas como urgentes quando menos de 10% são exploradas.",
-    "Impacto: O risco global de intrusão mantém-se inalterado."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Ajuda a otimizar a gestão de vulnerabilidades, focando os recursos no que realmente representa risco.",
-   "todo": "Implementar uma estratégia de priorização baseada no risco real de exploração e não apenas na contagem de falhas."
-  },
-  {
-   "id": "3ce297811edf1174",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html",
-   "published": "2026-11-03T11:00:45+00:00",
-   "title": "Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware",
-   "summary": "Um grupo de ameaça associado à Rússia, conhecido como Gorbag, tem utilizado 'software' malicioso de roubo de dados em ataques direcionados a organizações ucranianas. Ativo desde o início do ano passado, o grupo tem visado especificamente entidades policiais, de justiça, administrações locais e o setor da defesa. Os atacantes recorreram a falhas em ferramentas comuns para implementar os seus objetivos.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqyPfrBB7GYTnYsvVj2TxCv0pPwFh_PkVpdQcxuspKgQfbsX1p2kDSdokIyPqLsxSfBCkFPiTATfZxZRbouqkoqfEESL7CgA-MyXD61eQFluiQtdFZDyXQc_3EUAg71JWIHxq9MPVLrwwegvUVuiViE8AxsKH6iBVypWazO0wmCoaC3-D1Ih9Yw3vwN1FJ/s1600/russia-hackers.jpg",
-   "points": [
-    "Quem: O grupo de hackers Gorbag alinhado com a Rússia.",
-    "O quê: Ataques com 'malware' de roubo de dados.",
-    "Alvos: Organizações ucranianas, forças de segurança e setor da defesa.",
-    "Impacto: Comprometimento de informação sensível em setores estratégicos."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Ilustra como grupos patrocinados por estados exploram vulnerabilidades comuns para espionagem e roubo de dados.",
-   "todo": "Atualizar imediatamente o software de compressão de ficheiros e monitorizar tráfego anómalo associado a exfiltração de dados."
-  },
-  {
-   "id": "96743687ed5f9f34",
-   "source": "CyberScoop",
-   "region": "US",
-   "lang": "en",
-   "link": "https://cyberscoop.com/cisa-2030-strategy-operational-technology-blind-trust-op-ed/",
-   "published": "2026-11-03T11:00:00+00:00",
-   "title": "CISA’s new strategy runs into America’s blind trust problem",
-   "summary": "A nova estratégia da CISA prioriza a segurança da tecnologia operacional e a integridade da cadeia de fornecimento, reconhecendo que defesas fortes não impedem todas as intrusões. As organizações confiam frequentemente em dispositivos, atualizações ou identidades com base em aprovações antigas que nunca foram reavaliadas. A introdução de agentes de inteligência artificial eleva ainda mais o risco, transformando o acesso autorizado em autoridade operacional se não for rigorosamente supervisionado.",
-   "image": null,
-   "points": [
-    "Quem: CISA e agências federais ou operadores de infraestruturas.",
-    "O quê: Desafios da confiança cega em dispositivos e atualizações antigas.",
-    "Como: Através da persistência de aprovações desatualizadas e integração de IA.",
-    "Impacto: Risco de disrupção operacional e falhas na cadeia de fornecimento."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Alerta para os perigos de manter confiança cega em sistemas legados e na integração descontrolada de IA.",
-   "todo": "Fazer um inventário rigoroso de ativos e reavaliar periodicamente as permissões de acesso de fornecedores e dispositivos."
-  },
-  {
-   "id": "3ba786711454502e",
-   "source": "CSO Online",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.csoonline.com/article/4243816/armed-with-ai-hackers-target-endpoint-security-blind-spots-raising-stakes-for-cisos.html",
-   "published": "2026-11-03T10:53:10+00:00",
-   "title": "Armed with AI, hackers target endpoint security blind spots, raising stakes for CISOs",
-   "summary": "Um grupo de pirataria informática ligado à China, denominado VAPOR PANDA, utilizou um framework de testes de penetração baseado em inteligência artificial para visar organizações a nível global. Os atacantes empregaram agentes de IA para examinar processos em execução e identificar lacunas de segurança em sistemas Windows, contornando controlos tradicionais. Outro grupo, Storm-0940, também utilizou ferramentas semelhantes para automatizar ataques e obter acesso privilegiado à nuvem em poucas horas.",
-   "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4243816-0-19481200-1793703201-shutterstock_680075014.jpg?quality=50&strip=all",
-   "points": [
-    "Quem: Grupos ligados à China como VAPOR PANDA e Storm-0940.",
-    "O quê: Uso de frameworks de IA (ARTEX) para automatizar ataques e reconhecimento.",
-    "Alvos: Centenas de organizações governamentais e empresariais em vários países.",
-    "Impacto: Redução drástica no tempo de reconhecimento e aumento de acessos privilegiados indevidos."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Revela como a inteligência artificial está a acelerar e a automatizar ataques cibernéticos em grande escala.",
-   "todo": "Implementar uma monitorização comportamental avançada e proceder à rotação regular de chaves de autenticação e credenciais."
-  },
-  {
-   "id": "7231c1d578cddb92",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/llmjacking-cost-business-1m-warns/",
-   "published": "2026-11-03T10:45:00+00:00",
-   "title": "LLMJacking is Costing Some Businesses Up to $1m, Warns Google",
-   "summary": "A Google Mandiant emitiu um aviso sobre os elevados custos associados ao roubo e uso não autorizado de acessos a modelos linguísticos de grande escala, um fenómeno conhecido como LLMJacking. Este tipo de intrusão pode resultar em prejuízos financeiros avultados para as empresas afetadas, que veem os seus recursos de IA explorados por terceiros mal intencionados. O problema sublinha a necessidade de proteger rigorosamente as interfaces e credenciais ligadas a estes sistemas.",
-   "image": null,
-   "points": [
-    "Quem: Google Mandiant e empresas utilizadoras de IA.",
-    "O quê: Alerta para custos elevados resultantes do roubo de acesso a modelos de linguagem.",
-    "Impacto: Prejuízos financeiros que podem atingir um milhão de dólares para algumas empresas."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "Adverte para o impacto financeiro direto do roubo de recursos e credenciais de inteligência artificial.",
-   "todo": "Proteger e auditar rigorosamente as chaves de API e os acessos a plataformas de inteligência artificial."
-  },
-  {
-   "id": "face46920f5fd2a7",
-   "source": "Securelist (Kaspersky)",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://securelist.com/tr/machine-learning-event-processor-in-kics-for-networks/121794/",
-   "published": "2026-11-03T10:00:07+00:00",
-   "title": "MLEP in KICS for Networks 5.0: how machine learning helps track network behavior of OT devices",
-   "summary": "Nas redes industriais, a atividade maliciosa disfarça-se frequentemente de tráfego legítimo, tornando difícil detetar anomalias sem conhecer o papel exato de cada dispositivo. Muitas organizações enfrentam inventários de ativos incompletos, o que dificulta a identificação de conexões não autorizadas com controladores lógicos programáveis. Tecnologias baseadas em aprendizagem automática e análise de tráfego passivo ajudam a descobrir dispositivos e a categorizar o seu comportamento normal.",
-   "image": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2026/11/02125021/mlep_securelist-featured.jpg",
-   "points": [
-    "Quem: Operadores de redes industriais e ferramentas de segurança OT.",
-    "O quê: Deteção de anomalias e gestão de inventário em ambientes industriais.",
-    "Como: Através de análise passiva de tráfego e machine learning.",
-    "Impacto: Melhoria na identificação de conexões não autorizadas e proteção de infraestruturas."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra a importância de utilizar machine learning para detetar ameaças subtis em redes industriais complexas.",
-   "todo": "Manter inventários de ativos industriais atualizados e implementar ferramentas de monitorização passiva de tráfego."
   }
  ]
 }

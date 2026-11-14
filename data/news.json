@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T05:33:31.611128+00:00",
+ "updated": "2026-11-14T12:33:36.506938+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -34,7 +34,7 @@
   {
    "source": "WeLiveSecurity (ESET) PT",
    "ok": true,
-   "added": 6
+   "added": 7
   },
   {
    "source": "Canaltech Segurança",
@@ -89,7 +89,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "The Record",
@@ -109,7 +109,7 @@
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "TechCrunch Security",
@@ -124,7 +124,7 @@
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 11
+   "added": 10
   },
   {
    "source": "Schneier on Security",
@@ -164,7 +164,7 @@
   {
    "source": "Cisco Talos",
    "ok": true,
-   "added": 2
+   "added": 1
   },
   {
    "source": "Unit 42 (Palo Alto)",
@@ -184,7 +184,7 @@
   {
    "source": "CrowdStrike Blog",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "SentinelLabs",
@@ -244,12 +244,12 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "Sophos News",
@@ -304,11 +304,102 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 12,
-  "pending": 491,
-  "unenriched": 398
+  "done": 48,
+  "pending": 449,
+  "unenriched": 352
  },
  "items": [
+  {
+   "id": "f694138aff43c168",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data/",
+   "published": "2026-11-14T11:00:00+00:00",
+   "title": "Apple Revela Como os Exclaves Seguros Protegem os Dados da Câmara e do Microfone",
+   "summary": "A gigante tecnológica detalhou a arquitetura desenvolvida para isolar os dados de sensores ambientais do sistema operativo principal. Esta tecnologia protege as informações recolhidas em dispositivos como o HomeView e os novos iPhones. Com esta solução, o isolamento visa reforçar a privacidade e a segurança dos utilizadores contra acessos indesejados.",
+   "image": null,
+   "points": [
+    "A Apple detalhou uma nova arquitetura de segurança baseada em exclusclaves.",
+    "O sistema isola dados da câmara e do microfone do sistema operativo principal.",
+    "A tecnologia protege o HomeView e os novos modelos de iPhone.",
+    "O principal objetivo é blindar os dados de sensores ambientais contra ameaças."
+   ],
+   "title_original": "Apple Reveals How Secure Exclaves Shield Camera and Microphone Data",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque demonstra como o isolamento físico de dados sensíveis ao nível do hardware pode travar o acesso indevido por parte do sistema operativo ou de potenciais atacantes.",
+   "todo": "Mantenha os dispositivos atualizados com as versões de software mais recentes disponibilizadas pela marca."
+  },
+  {
+   "id": "954a632adf12bc82",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203040/hacking/u-s-cisa-adds-check-point-and-unrealircd-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+   "published": "2026-11-14T09:08:00+00:00",
+   "title": "U.S. CISA adds Check Point and UnrealIRCd flaws to its Known Exploited Vulnerabilities catalog",
+   "summary": "A agência norte-americana CISA adicionou duas vulnerabilidades críticas ao seu catálogo de explorações conhecidas. As falhas afetam o software UnrealIRCd e os produtos de segurança da Check Point. Ambas as vulnerabilidades estão a ser ativamente exploradas por atacantes na internet.",
+   "image": null,
+   "points": [
+    "A CISA atualizou o catálogo KEV com falhas no UnrealIRCd e Check Point.",
+    "A vulnerabilidade CVE-2026-114713 no UnrealIRCd permite injeção de comandos.",
+    "A falha CVE-2026-123039 na Check Point possibilita a escalação de privilégios locais.",
+    "Ambas as falhas já estão a ser exploradas ativamente por cibercriminosos."
+   ],
+   "title_original": "U.S. CISA adds Check Point and UnrealIRCd flaws to its Known Exploited Vulnerabilities catalog",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque estas vulnerabilidades estão a ser exploradas ativamente, permitindo o controlo de sistemas caso não sejam aplicadas as correções.",
+   "todo": "Consulte os alertas oficiais dos fabricantes e aplique imediatamente os patches de segurança recomendados para as versões afetadas."
+  },
+  {
+   "id": "9cdb1de4d4867300",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update/",
+   "published": "2026-11-14T08:40:22+00:00",
+   "title": "No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update",
+   "summary": "As autoridades afirmam que não existem provas de um ciberataque na origem da paragem nacional dos voos da FAA. A interrupção dos serviços parece ter sido provocada por uma atualização de software problemática. O FBI encontra-se a investigar o incidente para apurar todas as causas exatas.",
+   "image": null,
+   "points": [
+    "A interrupção dos voos da FAA não apresentou indícios de ciberataque.",
+    "O problema terá sido despoletado por uma atualização de software.",
+    "O FBI está a investigar o sucedido em coordenação com as autoridades."
+   ],
+   "title_original": "No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque demonstra que falhas operacionais em atualizações de software podem causar interrupções críticas em infraestruturas essenciais sem envolver ações maliciosas.",
+   "todo": "Garanta a realização de testes rigorosos e procedimentos de validação antes de implementar atualizações de software críticas."
+  },
+  {
+   "id": "43803d3c2ee64417",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/14/big-tech-takes-a-beating-as-online-safety-experts-accuse-companies-of-doing-bare-minimum/5309302",
+   "published": "2026-11-14T08:18:00+00:00",
+   "title": "Big Tech takes a beating as online safety experts accuse companies of doing bare minimum",
+   "summary": "Especialistas em segurança digital acusaram grandes empresas tecnológicas perante o Parlamento britânico de cumprirem apenas o mínimo indispensável ao abrigo da lei de segurança online. Durante a audiência, foram apontadas falhas persistentes na remoção ou desclassificação de conteúdos nocivos e ilegais nos motores de busca. Gigantes como a Google e a Microsoft foram criticadas pela inconsistência na moderação de termos de pesquisa extremamente perigosos.",
+   "image": "https://image.theregister.com/?imageId=5254826&width=800",
+   "points": [
+    "Especialistas criticaram a ineficácia das grandes tecnológicas no cumprimento da lei britânica.",
+    "Empresas como a Google e a Microsoft foram acusadas de ações insuficientes.",
+    "Termos de pesquisa prejudiciais continuam a ser encontrados com demasiada facilidade.",
+    "Foi apontada a falta de uma abordagem sistemática na desclassificação de conteúdos."
+   ],
+   "title_original": "Big Tech takes a beating as online safety experts accuse companies of doing bare minimum",
+   "category": "Regulação",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque revela como as plataformas tecnológicas continuam a falhar na proteção dos utilizadores contra conteúdos ilícitos e prejudiciais.",
+   "todo": ""
+  },
   {
    "id": "74c03507cc4ed031",
    "source": "CrowdStrike Blog",
@@ -325,9 +416,9 @@
     "Como: Monitoriza e centraliza pedidos e interações de IA numa única interface.",
     "Impacto: Aumento da segurança corporativa e prevenção contra fugas de dados."
    ],
-   "title_original": "Inside Falcon AI Gateway: One Control Point for AI Traffic",
+   "title_original": null,
    "category": "IA",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa porque a adoção crescente de IA nas empresas exige um controlo centralizado do tráfego para evitar riscos de segurança.",
    "todo": "Mapeie e centralize todas as ferramentas de IA utilizadas na sua organização através de um gateway seguro."
@@ -859,14 +950,19 @@
    "link": "https://therecord.media/city-of-osaka-japan-email-data-breach",
    "published": "2026-11-13T19:43:00+00:00",
    "title": "City of Osaka warns of data breach impacting 1 million as Japan reels from dozens of cyber incidents",
-   "summary": "Osaka, Japan's third-largest city, told its 2.8 million residents to be wary of suspicious emails purporting to come from the local government.",
+   "summary": "A cidade de Osaka, no Japão, emitiu um aviso aos seus residentes devido a uma violação de dados que afeta cerca de um milhão de pessoas. A população foi instada a redobrar a cautela perante potenciais emails suspeitos que aparentam ser enviados pelo governo local. O incidente ocorre numa altura em que o país enfrenta uma vaga de vários ciberincidentes.",
    "image": "https://cms.therecord.media/uploads/Osaka_City_Hall_2026_19ba5dd07a.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A cidade de Osaka sofreu uma violação de dados que afeta um milhão de residentes.",
+    "As autoridades alertaram a população para o perigo de emails falsos em nome do município.",
+    "O caso insere-se numa vaga recente de incidentes cibernéticos registados no Japão."
+   ],
+   "title_original": "City of Osaka warns of data breach impacting 1 million as Japan reels from dozens of cyber incidents",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "Osaka, Japan's third-largest city, told its 2.8 million residents to be wary of suspicious emails purporting to come from the local government."
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque expõe o risco de campanhas de engenharia social direcionadas a cidadãos na sequência de fugas de dados municipais.",
+   "todo": "Desconfie sempre de comunicações inesperadas em nome de entidades públicas e evite clicar em links suspeitos."
   },
   {
    "id": "ee274201614e1119",
@@ -876,14 +972,20 @@
    "link": "https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/",
    "published": "2026-11-13T19:38:36+00:00",
    "title": "Trezor confirms crypto-stealing implants in three wallets, releases fix",
-   "summary": "Cryptocurrency hardware wallet maker Trezor has confirmed that three Safe 5 devices sold by Southeast Asian reseller CryptoBilis contained malicious hardware implants designed to steal wallet recovery phrases and send them to attackers over cellular networks. [...]",
+   "summary": "A marca de carteiras de criptomoedas Trezor confirmou que três dispositivos Safe 5, vendidos por um revendedor no Sudeste Asiático, continham implantes de hardware maliciosos. Estes componentes foram desenhados para roubar as frases de recuperação das carteiras e transmiti-las a atacantes através de redes móveis. A empresa já veio a público confirmar o sucedido e disponibilizou uma correção para o problema.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Trezor detetou implantes de hardware maliciosos em três carteiras Safe 5.",
+    "Os componentes intercetavam e enviavam frases de recuperação a atacantes.",
+    "Os dispositivos comprometidos foram comercializados por um revendedor no Sudeste Asiático.",
+    "A fabricante já confirmou a situação e lançou uma correção oficial."
+   ],
+   "title_original": "Trezor confirms crypto-stealing implants in three wallets, releases fix",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Cryptocurrency hardware wallet maker Trezor has confirmed that three Safe 5 devices sold by Southeast Asian reseller CryptoBilis contained malicious hardware implants designed to steal wallet recovery phrases and send them to attackers over cellular networks. [...]"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque ilustra o perigo da adulteração de hardware na cadeia de distribuição de dispositivos voltados para a segurança financeira.",
+   "todo": "Adquira hardware de criptomoedas estritamente através de canais oficiais e fabricantes autorizados."
   },
   {
    "id": "1876ce8bb4f47670",
@@ -893,14 +995,19 @@
    "link": "https://www.wired.com/story/microsoft-365-crawls-back-to-life-after-a-24-hour-outage/",
    "published": "2026-11-13T19:08:57+00:00",
    "title": "Microsoft 365 Crawls Back to Life After a 24-Hour Outage",
-   "summary": "The company says a bad update—not a cyberattack or AI—caused its servers around the world to crash.",
+   "summary": "Os serviços da Microsoft começaram a recuperar gradualmente após enfrentarem uma interrupção global com a duração de cerca de 24 horas. A empresa esclareceu que o colapso dos servidores a nível mundial foi provocado por uma atualização incorreta e descartou qualquer cenário de ciberataque ou uso de inteligência artificial. O incidente provocou fortes perturbações operacionais em várias geografias.",
    "image": "https://media.wired.com/photos/6af75c7bac6958eb8481a5e6/master/pass/Security_MicrosoftBackOnline_v1.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Os serviços da Microsoft 365 recuperaram após um apagão de 24 horas.",
+    "A causa do colapso global dos servidores foi uma atualização defeituosa.",
+    "A empresa garantiu que não se tratou de um ciberataque nem de uma falha de IA."
+   ],
+   "title_original": "Microsoft 365 Crawls Back to Life After a 24-Hour Outage",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "The company says a bad update—not a cyberattack or AI—caused its servers around the world to crash."
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque evidencia a vulnerabilidade global gerada pela dependência de ecossistemas tecnológicos centralizados.",
+   "todo": "Tenha planos de contingência operacionais e soluções alternativas para mitigar o impacto de falhas repentinas em serviços na cloud."
   },
   {
    "id": "2335b3c2f3b56b9a",
@@ -910,14 +1017,20 @@
    "link": "https://www.csoonline.com/article/4248553/how-ai-is-changing-the-nature-of-cyberattacks.html",
    "published": "2026-11-13T19:02:39+00:00",
    "title": "How AI is changing the nature of cyberattacks",
-   "summary": "AI may be helping cyberattackers increase the speed and scale of their operations, but it is not yet changing their core objectives or the techniques they employ as part of their attack chains. Phishing, malware, and vulnerability exploitation remain the main techniques in play even as abuse of AI tools has made attacks easier to mount and cheaper for even relatively unskilled attackers, according to security experts. “Attackers are still identifying targets, performing reconnaissance, establishing a foothold, moving laterally, achieving their objective, covering their tracks, and moving on to",
+   "summary": "Especialistas em segurança indicam que a inteligência artificial está a aumentar a velocidade e a escala dos ciberataques, embora os objetivos centrais e as técnicas tradicionais permaneçam inalterados. O phishing, o malware e a exploração de vulnerabilidades continuam a ser as principais armas dos atacantes, impulsionados agora pela automatização e pela descoberta mais rápida de falhas em código de fontes abertas. Campanhas recentes demonstram que a IA funciona como um acelerador e facilitador em várias fases do ciclo de intrusão, desde a reconhecimento até à exfiltração de dados.",
    "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4248553-0-29990900-1794596573-shutterstock_1603390990.jpg?quality=50&strip=all",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A inteligência artificial acelera e aumenta a escala dos ciberataques modernos.",
+    "As técnicas fundamentais como phishing e malware continuam a ser a base dos ataques.",
+    "A IA permite detetar vulnerabilidades e automatizar intrusões com maior rapidez.",
+    "A exploração de falhas em software continua a ser a principal causa raiz das intrusões."
+   ],
+   "title_original": "How AI is changing the nature of cyberattacks",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "AI may be helping cyberattackers increase the speed and scale of their operations, but it is not yet changing their core objectives or the techniques they employ as part of their attack chains. Phishing, malware, and vulnerability exploitation remain the main techniques in play even as abuse of AI tools has made attacks easier to mount and cheaper for even relatively unskilled attackers, according to security experts. “Attackers are still identifying targets, performing reconnaissance, establishing a foothold, moving laterally, achieving their objective, covering their tracks, and moving on to the next target,” says Ronald Lewis, director of cybersecurity governance at application security firm Black Duck. “What’s changed is the volume and velocity that AI allows this process to happen.” Even in the most high-profile example of an AI powered attack to date, in which Claude Code was abused by Chinese state-sponsored actors to mount an AI-orchestrated cyber-espionage campaign in September 2025, conventional attack techniques and procedures laid the foundation, with AI abused as an enabler to support reconnaissance, vulnerability discovery, exploitation, lateral movement, credential harvesting, data analysis, and exfiltration during the GTG-1002 campaign . JadePuffer, a ransomware campaign disclosed in July 2026, witnessed an LLM-driven agent automating most of the intrusion chain. Initial exploitation was through CVE-2025-3248, a year-old missing-authentication flaw in Langflow, a popular open-source framework for building LLM applications and agent workflows. Vulnerable internet-facing Langflow instances were looted for cloud credentials, API keys, and other secrets before lateral movement, privilege escalation, and ultimately destructive database encryption. JadePuffer shows AI’s potential for automating conventional attack methods, but it also underscores how vulnerable software is where AI has been giving attackers the biggest edge to date. AI tools can readily find exploitable flaws in open-source code faster than defenders can patch them, a huge problem for the many enterprises carrying years of technical debt . And security experts see software flaws rising as a root cause of breaches as a result . What AI enables In addition to enhancing attackers’ flaw discovery prowess, AI is also enabling attackers to fail or succeed faster. Defenders are witnessing improvements in speed, scale, and operational ability from attackers that correlates strongly with "
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque revela como os atacantes utilizam a IA para automatizar e escalar ameaças tradicionais, exigindo defesas igualmente ágeis.",
+   "todo": "Adote práticas rigorosas de gestão de patches e utilize ferramentas de monitorização comportamental baseadas em IA para detetar ameaças atempadamente."
   },
   {
    "id": "f016224a76b4735e",
@@ -927,14 +1040,19 @@
    "link": "https://tek.sapo.pt/noticias/internet/artigos/microsoft-365-servicos-em-recuperacao-e-uma-falha-global-ainda-sem-fim-a-vista-o-que-causou-um-dos-maiores-apagoes-da-historia-da-empresa/",
    "published": "2026-11-13T18:55:42+00:00",
    "title": "Microsoft 365: Serviços em recuperação e uma falha global ainda sem fim à vista. O que causou um dos maiores apagões da história da empresa?",
-   "summary": "O Outlook, Teams e Copilot ainda estão a recuperar após mais de 24 horas de perturbações. A Microsoft já identificou a origem do problema e está a aplicar correções, garantindo que a falha não está relacionada com um ciberataque. Em Portugal, o incidente afetou serviços do Governo, da saúde e várias empresas.",
+   "summary": "Ferramentas como o Outlook, Teams e Copilot continuam a recuperar após mais de 24 horas de fortes perturbações globais. A Microsoft identificou a origem do problema técnico, aplicou correções e descartou a hipótese de um ciberataque. Em Portugal, o apagão afetou o funcionamento de serviços governamentais, do setor da saúde e de diversas empresas.",
    "image": null,
-   "points": [],
+   "points": [
+    "O Outlook, Teams e Copilot enfrentaram perturbações prolongadas por mais de 24 horas.",
+    "A origem foi um problema técnico interno, sem qualquer ligação a ciberataques.",
+    "Em Portugal, o incidente atingiu o governo, a saúde e o tecido empresarial."
+   ],
    "title_original": null,
    "category": "Ataque/APT",
    "translated": false,
-   "enriched": false,
-   "raw": "O Outlook, Teams e Copilot ainda estão a recuperar após mais de 24 horas de perturbações. A Microsoft já identificou a origem do problema e está a aplicar correções, garantindo que a falha não está relacionada com um ciberataque. Em Portugal, o incidente afetou serviços do Governo, da saúde e várias empresas."
+   "enriched": true,
+   "why": "Importa porque demonstra o impacto sistémico que uma falha tecnológica num fornecedor crítico pode causar em serviços essenciais do país.",
+   "todo": "Diversifique os fornecedores de serviços críticos e garanta testes regulares aos planos de recuperação de desastres."
   },
   {
    "id": "cf42b36aeb3f1a4f",
@@ -944,14 +1062,41 @@
    "link": "https://therecord.media/nyc-council-passes-bill-ban-surveillance-pricing",
    "published": "2026-11-13T18:35:00+00:00",
    "title": "NYC to bar surveillance pricing as momentum for bans grows nationwide",
-   "summary": "The New York City government will be able to fine companies $1,000 for each verified instance of surveillance pricing.",
+   "summary": "A administração da cidade de Nova Iorque vai passar a multar as empresas que utilizem práticas de preços personalizados com base na vigilância digital dos consumidores. Cada infração comprovada poderá resultar numa coima de 1 000 dólares para as entidades prevaricadoras. A medida surge numa altura em que cresce o movimento a nível nacional nos Estados Unidos para banir este tipo de condutas comerciais.",
    "image": "https://cms.therecord.media/uploads/new_york_stefan_suner_unsplash_bf865772e2.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A cidade de Nova Iorque vai proibir o recurso a preços baseados em vigilância.",
+    "As empresas infratoras enfrentarão coimas de 1.000 dólares por cada violação.",
+    "A iniciativa reflete o aumento de restrições legais a práticas comerciais invasivas."
+   ],
+   "title_original": "NYC to bar surveillance pricing as momentum for bans grows nationwide",
    "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque protege a privacidade financeira dos consumidores contra táticas de preços abusivas alimentadas pela recolha massiva de dados.",
+   "todo": ""
+  },
+  {
+   "id": "501b72f68cab0620",
+   "source": "WeLiveSecurity (ESET) PT",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.welivesecurity.com/pt/golpes-fraudes/gta-6-golpes-com-downloads-falsos-e-malware-aumentam-antes-do-lancamento/",
+   "published": "2026-11-13T18:05:22+00:00",
+   "title": "GTA 6: golpes com downloads falsos e malware aumentam antes do lançamento",
+   "summary": "Cibercriminosos estão a aproveitar a enorme expetativa em torno do lançamento do jogo GTA 6 para espalhar campanhas maliciosas. Os ataques incluem ficheiros de download infetados com malware, falsos vazamentos de informação, lojas fraudulentas e falsas promessas de acesso antecipado. Estas táticas visam enganar os fãs mais distraídos e comprometer os seus dispositivos.",
+   "image": null,
+   "points": [
+    "Criminosos exploram a popularidade de GTA 6 para lançar armadilhas online.",
+    "As fraudes incluem downloads com malware, lojas falsas e falsos acessos antecipados.",
+    "O objetivo é enganar os utilizadores através da expectativa gerada pelo jogo."
+   ],
+   "title_original": null,
+   "category": "Malware",
    "translated": false,
-   "enriched": false,
-   "raw": "The New York City government will be able to fine companies $1,000 for each verified instance of surveillance pricing."
+   "enriched": true,
+   "why": "Importa porque demonstra como os atacantes aproveitam fenómenos da cultura pop e grandes lançamentos para propagar software malicioso.",
+   "todo": "Descarregue conteúdos apenas de fontes oficiais e desconfie de promessas de acesso antecipado a jogos em sites de terceiros."
   },
   {
    "id": "f6f4a6d64aa85b9c",
@@ -961,14 +1106,19 @@
    "link": "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/",
    "published": "2026-11-13T17:31:56+00:00",
    "title": "German military drone operations disrupted by cyberattack",
-   "summary": "German defense technology company Quantum Systems confirmed that it detected an incident in late October that was part of an active cyberattack by \"hostile actors.\" [...]",
+   "summary": "A empresa alemã de tecnologia de defesa Quantum Systems confirmou ter detetado um incidente cibernético no final de outubro. A ocorrência integrou um ciberataque ativo perpetrado por atores hostis. O ataque afetou as operações relacionadas com os drones militares da empresa.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Quantum Systems detetou um incidente de cibersegurança nos seus sistemas.",
+    "O ataque foi levado a cabo por atores hostis no final de outubro.",
+    "As operações dos drones militares da empresa alemã foram interrompidas."
+   ],
+   "title_original": "German military drone operations disrupted by cyberattack",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "German defense technology company Quantum Systems confirmed that it detected an incident in late October that was part of an active cyberattack by \"hostile actors.\" [...]"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque ilustra os riscos geopolíticos e de segurança nacional associados a ataques direcionados a empresas de defesa.",
+   "todo": "Reforce a monitorização de redes industriais e de defesa contra intrusões de atores estatais ou grupos patrocinados."
   },
   {
    "id": "4c8fe02bd04ce44e",
@@ -977,15 +1127,20 @@
    "lang": "en",
    "link": "https://therecord.media/university-of-texas-arlington-warns-data-breach",
    "published": "2026-11-13T17:26:00+00:00",
-   "title": "University of Texas at Arlington warns personal information stolen during cyberattack",
-   "summary": "In a statement to Recorded Future News, a spokesperson said an investigation into the attack confirmed the stolen data but declined to say what information was obtained by the threat actors.",
+   "title": "Universidade do Texas em Arlington alerta para roubo de informação pessoal num ciberataque",
+   "summary": "A Universidade do Texas em Arlington sofreu um ciberataque que resultou no roubo de dados pessoais, conforme confirmou uma investigação interna. Um porta-voz da instituição validou a ocorrência da exfiltração de dados após declarações a um meio especializado. No entanto, a administração recusou-se a especificar quais as informações concretas que foram acedidas pelos atacantes. O impacto prende-se com a exposição de dados cuja natureza exata permanece por revelar.",
    "image": "https://cms.therecord.media/uploads/University_of_Texas_at_Arlington_March_2021_103_Gateway_Tower_1_1b860ea19f.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Universidade do Texas em Arlington e atacantes desconhecidos.",
+    "O Quê: Ciberataque que resultou no roubo de dados pessoais.",
+    "Impacto: Informação sensível foi comprometida, embora o conteúdo exato não tenha sido divulgado."
+   ],
+   "title_original": "University of Texas at Arlington warns personal information stolen during cyberattack",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "In a statement to Recorded Future News, a spokesperson said an investigation into the attack confirmed the stolen data but declined to say what information was obtained by the threat actors."
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque a falta de transparência sobre os dados roubados deixa as vítimas sem saber se estão em risco de fraude.",
+   "todo": "Monitorize regularmente as suas contas e credenciais à procura de atividade suspeita e ative a autenticação multifator."
   },
   {
    "id": "c2116e34fef731c3",
@@ -994,15 +1149,20 @@
    "lang": "en",
    "link": "https://www.wired.com/story/the-microsoft-outage-is-a-warning-for-the-world/",
    "published": "2026-11-13T17:15:54+00:00",
-   "title": "The Microsoft Outage Is a Warning for the World",
-   "summary": "Countless businesses, schools, hospitals, and governments have found out the hard way what it means to rely on a single company’s systems to get things done. And next time could be even worse.",
+   "title": "A falha da Microsoft é um aviso para o mundo",
+   "summary": "Inúmeras organizações a nível global, incluindo empresas, escolas, hospitais e governos, enfrentaram graves perturbações operacionais devido à dependência excessiva dos sistemas de uma única empresa. Este incidente demonstrou os perigos de centralizar serviços críticos numa só entidade tecnológica. O impacto económico e operacional foi generalizado, servindo de alerta para a vulnerabilidade das infraestruturas modernas. Os especialistas avisam que uma futura falha semelhante poderá ter consequências ainda mais graves.",
    "image": "https://media.wired.com/photos/6af7348a98648de7b1064e82/master/pass/Security_Microsoft365OfflineProblem_v3.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Empresas, escolas, hospitais, governos e a Microsoft.",
+    "O Quê: Falha tecnológica em larga escala devido à forte dependência de um único fornecedor.",
+    "Impacto: Interrupção generalizada de serviços essenciais e operacionais em todo o mundo."
+   ],
+   "title_original": "The Microsoft Outage Is a Warning for the World",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Countless businesses, schools, hospitals, and governments have found out the hard way what it means to rely on a single company’s systems to get things done. And next time could be even worse."
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque expõe o risco sistémico de depender de um único fornecedor tecnológico para serviços essenciais.",
+   "todo": "Diversifique os fornecedores de infraestrutura tecnológica e implemente planos de continuidade de negócio e recuperação de desastres."
   },
   {
    "id": "e05f7a78ce38d83c",
@@ -1011,15 +1171,20 @@
    "lang": "en",
    "link": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
    "published": "2026-11-13T16:53:08+00:00",
-   "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
-   "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw, tracked as CVE-2026-6460, has a CVSS score of 8.8. Any code run this way has the rights of the operating",
+   "title": "PostgreSQL corrige 52 falhas, incluindo vulnerabilidade com 22 anos que permite RCE autenticado",
+   "summary": "Os desenvolvedores do PostgreSQL lançaram atualizações de segurança para corrigir 52 falhas, destacando-se uma vulnerabilidade de confusão de tipos com 22 anos. Esta falha, registada como CVE-2026-6460 e com uma pontuação CVSS de 8.8, permite que utilizadores com permissões para criar objetos executem código malicioso no servidor com privilégios do sistema operativo. Para uma proteção completa, a correção exige não só a atualização do software, como também a recompilação de extensões em linguagem C instaladas no servidor. O impacto afeta qualquer base de dados vulnerável onde utilizadores maliciosos consigam injetar e executar código.",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj8XOS7IKEt2ZhrwwdlDSpQ5hAyI46wHZpPkTQ3_hA6yUtMQpzaM50fm2v9x0O7NCt5z9vdrTsYM3iPOmu9fmmMTQDViu-rQjCfSxfCQhwZQazr4ZYayvEn5MQfUdTBVODtAay6RIaTqJGUj-HVzbtMqNPdNFiQHExhO9sitJX0GrvTx_EhWmslA-87ds/s1600/postgresql.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Equipa de desenvolvimento do PostgreSQL e administradores de bases de dados.",
+    "O Quê: Correção de 52 falhas de segurança, incluindo uma vulnerabilidade crítica de execução remota de código (CVE-2026-6460).",
+    "Impacto: Utilizadores com capacidade de criar objetos podiam assumir o controlo total do servidor afetado."
+   ],
+   "title_original": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw, tracked as CVE-2026-6460, has a CVSS score of 8.8. Any code run this way has the rights of the operating"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque a falha permite o controlo total do servidor por utilizadores autenticados, exigindo ações complexas de remediação.",
+   "todo": "Atualize imediatamente as instâncias do PostgreSQL e recompila as extensões em linguagem C afetadas."
   },
   {
    "id": "d7bc555715b6841f",
@@ -1028,15 +1193,20 @@
    "lang": "en",
    "link": "https://www.malwarebytes.com/blog/news/2026/11/new-york-city-council-votes-to-ban-surveillance-pricing",
    "published": "2026-11-13T16:52:36+00:00",
-   "title": "New York City votes to ban surveillance pricing",
-   "summary": "The bill would stop companies from using personal data to set individualized prices. Here’s what that means for shoppers.",
+   "title": "Nova Iorque vota a proibição da fixação de preços por vigilância",
+   "summary": "O Conselho Municipal de Nova Iorque aprovou uma lei para proibir a prática de preços baseados em vigilância, que consiste na utilização de dados pessoais e algoritmos para cobrar preços diferentes a clientes distintos pelo mesmo produto. A legislação, que aguarda a assinatura do presidente da câmara para entrar em vigor dentro de um ano, restringe também a recolha, venda ou partilha de dados pessoais para este fim. O impacto destina-se a proteger os consumidores contra a exploração dos seus hábitos online e histórico de navegação para fins comerciais discriminatórios.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Conselho Municipal de Nova Iorque e os consumidores locais.",
+    "O Quê: Aprovação de um projeto de lei contra a fixação de preços personalizada baseada em dados e algoritmos.",
+    "Impacto: Os comerciantes ficarão proibidos de praticar preços discriminatórios baseados no perfil digital dos clientes."
+   ],
+   "title_original": "New York City votes to ban surveillance pricing",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Two people shopping for the same product shouldn’t have to wonder whether one is paying more because a company knows more about them. That’s the concern behind a bill passed by the New York City Council on November 12. The legislation targets surveillance pricing, defined as using personal data and algorithms to offer different people different prices for the same goods or services. Introduction 891-A would prohibit these practices in transactions with consumers in New York City. It would also restrict collecting, selling, or sharing personal data to facilitate surveillance pricing. The bill is at the mayor’s desk and would take effect one year after becoming law. For consumers, the issue goes beyond an unexpectedly expensive shopping cart. It’s about companies turning information about your life and online behavior into a tool for deciding what to charge you. Learn more about surveillance pricing in this episode of our podcast Lock & Code: Large-scale data collection also creates risks beyond pricing, including sensitive inferences about people and unauthorized disclosure of their information. What exactly is surveillance pricing? Surveillance pricing uses information about you, or a profile a company has built about you, to help determine the price you see for a specific product or service. That information can include your location, browsing history, shopping habits, and demographic characteristics. In initial findings published in January 2025, the Federal Trade Commission (FTC) said pricing tools could draw on surprisingly detailed behavior, including mouse movements and the products people leave unpurchased in their online shopping carts. This is not some conspiracy theory. There is evidence that the tools and data pipelines exist. The FTC’s findings drew on documents from pricing and technology intermediaries. Staff reported that the intermediaries examined worked with at least 250 clients across sectors including groceries and apparel. The published examples were hypothetical to protect confidential business information. Surveillance pricing should not be confused with dynamic pricing. Dynamic pricing can respond to changing market conditions, such as demand or availability. Surveillance pricing uses personal information to differentiate between customers. While the two can overlap, they aren’t interchangeable. A personalized price isn’t automatically a higher price. Some shoppers might receive discounts. The concern is that an opaque pricing syste"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque regula o uso abusivo de dados pessoais para discriminação de preços no comércio.",
+   "todo": "Utilize ferramentas de privacidade, bloqueadores de rastreadores e navegação anónima para limitar a recolha excessiva de dados de navegação."
   },
   {
    "id": "862c3998dd63db20",
@@ -1045,15 +1215,20 @@
    "lang": "en",
    "link": "https://www.rapid7.com/blog/post/dr-mdr-pricing-comparing-asset-ingestion-based-ingestion-costs",
    "published": "2026-11-13T16:37:29+00:00",
-   "title": "MDR Pricing: Comparing Asset-Based and Ingestion-Based Costs",
-   "summary": "When comparing MDR pricing, it helps to understand what the same annual budget would buy from each provider. Two proposals with similar prices may give analysts access to different evidence, retain it for different periods, or leave your team with different responsibilities. Those differences can affect what happens when you need to investigate a compromised account or trace an attacker’s low-and-slow activity across your environment. For security leaders weighing asset-based against ingestion-based pricing, a useful comparison starts with the systems you need to protect and the logs required",
+   "title": "Preços de MDR: Comparação entre custos baseados em ativos e baseados em ingestão",
+   "summary": "A escolha de um serviço de Deteção e Resposta Gerida (MDR) exige que as organizações compreendam a diferença entre modelos de preços baseados em ativos e baseados em ingestão de dados. Enquanto o modelo por ativos contabiliza estações de trabalho, servidores e recursos na nuvem, o modelo baseado em ingestão calcula o custo consoante o volume de dados recolhidos e processados. As empresas devem submeter os mesmos requisitos de inventário e retenção a vários fornecedores para obter propostas comparáveis. O impacto desta escolha reflete-se na capacidade financeira e na eficácia da investigação de incidentes de segurança.",
    "image": "https://images.contentstack.io/v3/assets/blte4f029e766e6b253/blt09a532eac4a02570/6852c5968e72c44b89691ca4/PSN-gov-showcase-hero-image-2.png",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Líderes de segurança e fornecedores de serviços MDR.",
+    "O Quê: Análise comparativa entre modelos de faturação baseados em ativos versus volume de dados ingeridos.",
+    "Impacto: A escolha incorreta do modelo pode resultar em custos inesperados ou lacunas na cobertura de segurança."
+   ],
+   "title_original": "MDR Pricing: Comparing Asset-Based and Ingestion-Based Costs",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "When comparing MDR pricing, it helps to understand what the same annual budget would buy from each provider. Two proposals with similar prices may give analysts access to different evidence, retain it for different periods, or leave your team with different responsibilities. Those differences can affect what happens when you need to investigate a compromised account or trace an attacker’s low-and-slow activity across your environment. For security leaders weighing asset-based against ingestion-based pricing, a useful comparison starts with the systems you need to protect and the logs required to investigate threats. Giving providers the same requirements and budget helps expose the decisions behind each quote, including what you would need to exclude or pay more to include. Asset-based vs. ingestion-based MDR pricing Under asset-based pricing, the charge is tied to a defined population of assets. You need to establish how the provider counts workstations, servers, cloud resources, and other systems, alongside which data sources and service capabilities the price includes. A predictable asset count can help with budgeting, but the proposal still needs to explain any integration limits or additional service charges. At Rapid7, an asset is defined as any physical or virtual endpoint or server running a supported operating system within the monitored environment. With ingestion-based pricing, some of the cost depends on the volume of data collected or processed. The comparison needs to account for the included allowance, how billable volume is measured, and what happens when usage increases. Retention, search, and supporting infrastructure may also contribute to the overall cost, depending on the commercial model. At Rapid7, MDR customers have access to 13 months hot storage of logs as standard. Whichever approach you are evaluating, include the technology, analysts, and response support needed to deliver the service. A SIEM ingestion charge on its own cannot be compared directly with an MDR subscription that includes investigation and response. Both proposals need to account for the work your organization expects the provider to perform - this clarity is key to a successful partnership. How to make a like-for-like MDR pricing comparison Give each provider the same asset inventory, required data sources, retention needs, and response expectations, then ask what fits within your annual budget. Any exclusions should be visible in the proposal, so you can judge t"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque ajuda as empresas a otimizar o orçamento de cibersegurança sem sacrificar a visibilidade contra ameaças.",
+   "todo": "Forneça o mesmo inventário de ativos e requisitos de retenção a todos os potenciais fornecedores para comparar propostas de forma transparente."
   },
   {
    "id": "f6d06bee472cc946",
@@ -1062,15 +1237,20 @@
    "lang": "en",
    "link": "https://therecord.media/german-parliament-passes-law-giving-spy-agencies-hacking-power",
    "published": "2026-11-13T16:32:00+00:00",
-   "title": "German parliament passes law giving spy agencies hacking, sabotage powers",
-   "summary": "In the biggest overhaul of the country’s spy laws of the postwar era, the Bundestag approved the bill by 308 votes to 190 — with 71 abstentions — months after Chancellor Friedrich Merz’s cabinet signed off on the draft.",
+   "title": "Parlamento alemão aprova lei que confere poderes de pirataria e sabotagem a agências de espionagem",
+   "summary": "O Bundestag aprovou uma profunda reformulação das leis de espionagem do país no período pós-guerra, após a proposta ter sido assinada pelo gabinete do chanceler Friedrich Merz. A nova legislação foi aprovada por uma margem clara de votos a favor, apesar da oposição e das abstenções registadas. O impacto desta medida reside na atribuição de competências legais a agências governamentais para realizarem operações de pirataria informática e sabotagem. Esta mudança altera significativamente o enquadramento jurídico das operações de inteligência na Alemanha.",
    "image": "https://cms.therecord.media/uploads/rasmus_gundorff_saederup_k_C_Dr4i_Pax7c_unsplash_cf20643196.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Parlamento alemão (Bundestag) e agências de espionagem.",
+    "O Quê: Aprovação de uma ampla reforma legislativa que concede poderes de hacking e sabotagem aos serviços secretos.",
+    "Impacto: Alargamento drástico das competências ofensivas legais das autoridades de segurança e espionagem do Estado."
+   ],
+   "title_original": "German parliament passes law giving spy agencies hacking, sabotage powers",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "In the biggest overhaul of the country’s spy laws of the postwar era, the Bundestag approved the bill by 308 votes to 190 — with 71 abstentions — months after Chancellor Friedrich Merz’s cabinet signed off on the draft."
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque redefine os limites legais das operações estatais no cyberspace e altera o equilíbrio de segurança e privacidade.",
+   "todo": ""
   },
   {
    "id": "fcdcf30ed87c5681",
@@ -1079,15 +1259,20 @@
    "lang": "en",
    "link": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/",
    "published": "2026-11-13T16:26:32+00:00",
-   "title": "Windows 0-day dropped by disgruntled researcher hands hackers System rights",
-   "summary": "\"SignDrop\" exploit lets local users gain all-powerful System rights.",
+   "title": "Zero-day do Windows divulgado por investigador desentendido concede direitos de Sistema a hackers",
+   "summary": "Um investigador com o pseudónimo Nightmare Eclipse divulgou publicamente uma vulnerabilidade zero-day no Windows chamada SignDrop, afetando o Common Log File System (CLFS). A falha permite que um utilizador local com privilégios comuns utilize o Windows Defender para abrir um ficheiro de registo adulterado, elevando os seus privilégios para o nível máximo de Sistema. O impacto afeta várias versões do sistema operativo, uma vez que os atacantes podem usar os mecanismos normais de defesa do próprio Windows contra o seu funcionamento legítimo.",
    "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-1237693734-1152x648-1783631068.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: O investigador Nightmare Eclipse e utilizadores maliciosos com acesso local.",
+    "O Quê: Divulgação pública de uma falha zero-day de elevação de privilégios no subsistema CLFS do Windows.",
+    "Impacto: Utilizadores comuns podem obter direitos de Sistema e assumir o controlo total das máquinas afetadas."
+   ],
+   "title_original": "Windows 0-day dropped by disgruntled researcher hands hackers System rights",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Nightmare Eclipse, the pseudonym of a researcher with an ongoing, very public beef with Microsoft, has dropped yet another Windows zero-day. On Tuesday, Nightmare Eclipse disclosed SignDrop, a vulnerability that gives local users full System rights on some versions of Windows. The vulnerability resides in the Common Log File System , which Microsoft describes as a “general-purpose logging service used by software clients running in user-mode or kernel-mode.” By forcing a privileged process such as Windows Defender to open a crafted CLFS container, an attacker with ordinary user rights can abuse the privileged file creation to elevate privileges to System. Turning a Windows defense against itself The attack exploits the interaction of CLFS, Windows Defender, and Windows file permissions. The exploit uses Windows Defender to open a log file created by a standard user by calling ServerMpUpdateEngineSignature, a legitimate Defender function for processing antivirus signature updates. Read full article Comments"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque expõe uma falha crítica que transforma ferramentas de segurança do próprio sistema operativo em vetores de ataque.",
+   "todo": "Aplique as atualizações de segurança da Microsoft logo que sejam disponibilizadas para colmatar falhas de elevação de privilégios."
   },
   {
    "id": "b297d876237ef144",
@@ -1096,15 +1281,20 @@
    "lang": "en",
    "link": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
    "published": "2026-11-13T16:21:43+00:00",
-   "title": "Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper",
-   "summary": "Vulnerable Check Point Security Gateway instances have been targeted in PHP2Shell attacks that deployed data-wiping malware on VMware ESXi hosts. [...]",
+   "title": "Gateways da Check Point atacados através do PHP2Shell para implementar wiper em VMware ESXi",
+   "summary": "Instâncias vulneráveis de gateways de segurança da Check Point foram alvo de ataques informáticos que exploraram a vulnerabilidade PHP2Shell. Os atacantes utilizaram este acesso inicial para implementar malware destrutivo do tipo wiper em servidores hipervisores VMware ESXi. O impacto desta campanha resulta na destruição irreversível de dados e na inutilização dos sistemas virtualizados afetados.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Atacantes cibernéticos e utilizadores de gateways Check Point e VMware ESXi.",
+    "O Quê: Exploração de falhas em gateways para instalar software malicioso de eliminação de dados.",
+    "Impacto: Perda catastrófica de dados e interrupção total da infraestrutura virtualizada das organizações."
+   ],
+   "title_original": "Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Vulnerable Check Point Security Gateway instances have been targeted in PHP2Shell attacks that deployed data-wiping malware on VMware ESXi hosts. [...]"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque demonstra como a exploração de perímetros de rede vulneráveis pode conduzir à destruição total de ambientes virtuais.",
+   "todo": "Atualize imediatamente os gateways de segurança e os servidores ESXi com as correções de segurança mais recentes fornecidas pelos fabricantes."
   },
   {
    "id": "162be0ba5917897b",
@@ -1113,15 +1303,20 @@
    "lang": "en",
    "link": "https://www.helpnetsecurity.com/2026/11/13/openai-chatgpt-wallet/",
    "published": "2026-11-13T16:15:25+00:00",
-   "title": "ChatGPT Wallet lets agents pay without seeing your card number",
-   "summary": "OpenAI began rolling out ChatGPT Wallet, which lets ChatGPT agents pay for purchases with a stand-in card number, so the user’s card details are not shared with the agent or the merchant. OpenAI built it with American Express, Mastercard, and Visa. It runs inside dots, where a user’s dot completes the purchase on their behalf. Merchants will have to do most of the adjusting. OpenAI says some websites may block agent purchases without meaning to, … More →",
+   "title": "ChatGPT Wallet permite a agentes pagar sem expor o número do cartão",
+   "summary": "A OpenAI iniciou a implementação da ChatGPT Wallet, uma funcionalidade desenvolvida em parceria com a American Express, Mastercard e Visa que permite aos agentes de IA efetuarem pagamentos online através de um número de cartão virtual temporário. Desta forma, os dados reais do cartão do utilizador nunca são partilhados nem com o agente autónomo nem com o comerciante. O impacto afeta principalmente os comerciantes, que terão de adaptar os seus sistemas, visto que alguns sites poderão bloquear acidentalmente compras efetuadas por agentes automatizados.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: OpenAI, redes de cartões de crédito e utilizadores do ChatGPT.",
+    "O Quê: Lançamento de uma carteira digital baseada em cartões virtuais para transações efetuadas por agentes de IA.",
+    "Impacto: Maior segurança financeira para os utilizadores, evitando a exposição de dados de cartões de crédito a comerciantes e bots."
+   ],
+   "title_original": "ChatGPT Wallet lets agents pay without seeing your card number",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "OpenAI began rolling out ChatGPT Wallet, which lets ChatGPT agents pay for purchases with a stand-in card number, so the user’s card details are not shared with the agent or the merchant. OpenAI built it with American Express, Mastercard, and Visa. It runs inside dots, where a user’s dot completes the purchase on their behalf. Merchants will have to do most of the adjusting. OpenAI says some websites may block agent purchases without meaning to, … More →"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque protege os dados financeiros dos utilizadores ao delegar pagamentos em assistentes de inteligência artificial.",
+   "todo": "Utilize cartões virtuais ou mecanismos de pagamento isolados sempre que recorrer a assistentes automatizados para compras online."
   },
   {
    "id": "879a230695f79139",
@@ -1131,14 +1326,19 @@
    "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/os-bastidores-da-operacao-cloudfire-a-engenharia-do-golpe-do-google-agenda/",
    "published": "2026-11-13T16:00:00+00:00",
    "title": "Os bastidores da ‘Operação CloudFire’: a engenharia do golpe do Google Agenda",
-   "summary": "Golpes por convites de calendário roubam sessões do Google e furam autenticação",
+   "summary": "A campanha maliciosa 'Operação CloudFire', descoberta pela Material Security em agosto, utilizou convites fraudulentos do Google Agenda para contornar a autenticação multifator (MFA) de utilizadores corporativos. O esquema recorreu a uma arquitetura de três camadas que incluiu iscas através de contas comprometidas, redirecionadores oficiais do Google para passar em filtros de segurança, verificação humana com Cloudflare Turnstile e um proxy reverso dinâmico em memória para roubar sessões de login. O impacto foca-se no roubo bem-sucedido de credenciais e sessões de funcionários de empresas.",
    "image": "https://www.estadao.com.br/resizer/v2/SHLV6ENWMVA5BHF7MKBN3BM6RA.png?quality=80&auth=d05bd3325bd650c66c46d8a7f4335b4b6b70cd025a5967d27580d8e99e1103fb&width=710",
-   "points": [],
+   "points": [
+    "Quem: Os autores da Operação CloudFire e alvos corporativos.",
+    "O Quê: Campanha de phishing baseada em convites falsos do Google Agenda e proxies reversos para roubar sessões e burlar MFA.",
+    "Impacto: Compromisso de contas empresariais e bypass de mecanismos robustos de autenticação de duas etapas."
+   ],
    "title_original": null,
    "category": "Phishing/Fraude",
    "translated": false,
-   "enriched": false,
-   "raw": "A campanha maliciosa batizada de “ Operação CloudFire ” revelou uma estratégia sofisticada para burlar a autenticação de duas etapas (MFA) de usuários corporativos. O esquema explora os convites do Google Agenda e utiliza uma arquitetura dividida em três camadas para contornar filtros automáticos de reputação e análises estáticas. A operação foi identificada em meados de agosto pela equipe de pesquisa da empresa Material Security. A investigação técnica detalhada no whitepaper (relatório aprofundado) da empresa afirma que o sucesso do ataque reside na combinação de três elementos: redirecionadores legítimos, desafios reais de segurança e um proxy reverso dinâmico (um servidor intermediário posicionado entre os usuários e os sistemas reais). Os pesquisadores destacam que eles devem atuar simultaneamente e em tempo real. Golpes por convites de calendário roubam sessões do Google e furam autenticação Foto: Reprodução/ChatGPT Anatomia das três camadas O funcionamento técnico do esquema criminoso se apoia em uma divisão modular de infraestrutura, em que cada etapa cumpre um papel específico para evitar alertas de segurança: Camada 1 (Isca): os convites chegam às vítimas por meio de cópia oculta (BCC) ou de contas previamente comprometidas com quem o alvo já mantinha histórico de correspondência. Os links inseridos nas mensagens não apontam diretamente para servidores criminosos; eles utilizam o redirecionador oficial do Google (/url), acrônimos do Workspace ou links diretos arquivos do Google Drive; Sendo assim, no momento em que a mensagem é escaneada pelos gateways de e-mail, o domínio, o certificado digital e a reputação exibidos pertencem integralmente ao Google. Camada 2 (Portão de defesa): os links secundários carregam um token hexadecimal (sequência alfanumérica curta) que ativa a interface e monitora o usuário. O acesso passa por páginas de verificação que utilizam o Cloudflare Turnstile; Muitas vezes, o Cloudflare Turnstile é servido de forma legítima a partir da infraestrutura do Cloudflare Camada 3 (Coletor e proxy ): após a verificação humana, a página de captura é construída dinamicamente no navegador no usuário como um documento em Binary Large Object ( blob ), um grande bloco de dados binários armazenados na memória temporária do navegador web. Isso impede que rastreadores estáticos ou crawlers encontrem arquivos estáticos para escanear. A partir de então, o invasor operam proxy reverso que intercepta o fluxo real de login do Google. Nova campanh"
+   "enriched": true,
+   "why": "Importa porque prova que os atacantes abusam de serviços legítimos de calendário e ferramentas de colaboração para enganar utilizadores e filtros de segurança.",
+   "todo": "Desconfie de convites de calendário inesperados de remetentes desconhecidos e valide sempre os domínios de autenticação antes de inserir credenciais."
   },
   {
    "id": "19ad942142494871",
@@ -1147,15 +1347,20 @@
    "lang": "en",
    "link": "https://www.elastic.co/security-labs/threat-command/agentic-offensive-frameworks-detection-artex",
    "published": "2026-11-13T16:00:00+00:00",
-   "title": "Inside the loop: Five AI attack frameworks that never ask permission",
-   "summary": "Five agentic offensive frameworks act in bursts of two to 25 seconds, and none enforces authorization in code. What ARTEX, CyberStrikeAI, Cairn, PentAGI, and HexStrike leave in your telemetry, and the ES|QL hunt that catches them.",
+   "title": "Por dentro do ciclo: Cinco frameworks de ataque baseadas em IA que nunca pedem permissão",
+   "summary": "Cinco frameworks ofensivas baseadas em agentes de IA autónomos — ARTEX, CyberStrikeAI, Cairn, PentAGI e HexStrike — foram identificadas em intrusões reais e investigações de resposta a incidentes pela Google, Mandiant e Microsoft. Estas ferramentas utilizam modelos de linguagem de grande escala (LLM) para planear e executar ataques de forma automatizada, dispensando a intervenção humana contínua. O impacto afeta as equipas defensivas, uma vez que estas ferramentas operam rapidamente em rajadas, ignoram restrições de autorização por defeito e gerem tráfego ruidoso mas altamente dinâmico.",
    "image": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt65a3888c587a2e5a/6af6ddafd41eec3efa5ffb68/agentic-offensive-frameworks.png",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Equipas de resposta a incidentes (Google, Microsoft, Mandiant) e atacantes a usar frameworks de IA.",
+    "O Quê: Adoção generalizada de ferramentas de pirataria autónomas geridas por inteligência artificial em ataques reais.",
+    "Impacto: Aceleração e automação de intrusões cibernéticas, exigindo defesas comportamentais mais rápidas das organizações."
+   ],
+   "title_original": "Inside the loop: Five AI attack frameworks that never ask permission",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "Five agentic offensive frameworks install with a single script or Compose file and have drawn more than 60,000 GitHub stars between them: ARTEX, CyberStrikeAI, Cairn, PentAGI, and HexStrike. All five have already turned up in intrusions rather than only in red team engagements. Google Threat Intelligence Group (GTIG) and Mandiant have observed ARTEX, Cairn, HexStrike, and PentAGI in incident response engagements , and Microsoft has attributed ARTEX use to Storm-0940 . We traced an AI-assisted AWS intrusion to a CyberStrikeAI server in One CyberStrikeAI Server, Eight AWS Identities . An agentic offensive framework puts a large language model (LLM) in charge of the scanners, curl, shells, and cloud CLIs that red teams and threat actors already use. The tools are familiar, but the loop around them is new: a model plans each step, splits the work across agents, builds or installs what it lacks, and in ARTEX’s case moves on in bursts of two to 25 seconds. We read the source of all five, alongside the public incident reporting, to work out what reaches a defender’s telemetry when one of them runs. None of them enforces authorization in code, and every action they take still has to land in telemetry you already collect. Key takeaways Agentic frameworks such as ARTEX work in bursts of seconds, so the detections trusted to start containment have to be chosen before an incident begins. None of the five frameworks enforces authorization in code by default. Three assert it in the prompt, and the only target restrictions active by default are blocklists for government and education domains. The frameworks are loud by default and, in ARTEX and CyberStrikeAI, change route when blocked. They also change faster than signatures, but their actions do not. Every action that touches your environment reaches defenders as a process, a web request, an API call, or a sign-in, so detections anchored on behavior outlast those anchored on a source address, a User-Agent, or a framework's fingerprint. How agentic offensive frameworks differ from Traditional C2 Frameworks Cobalt Strike and Brute Ratel C4 put a human operator behind an implant, deciding what to run next. Agentic frameworks keep the tools and replace the operator's think time with a planning loop. GTIG observed ARTEX execution bursts of roughly two to 25 seconds, while NorForge, tracking exposed Cairn panels it assessed as malicious, found that one actor cluster's successful projects took just under 23 hours on average fr"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque a automação de ataques por IA reduz drasticamente o tempo necessário para comprometer redes empresariais.",
+   "todo": "Implemente monitorização comportamental em tempo real na rede e endpoints para detetar rajadas rápidas de atividade maliciosa automatizada."
   },
   {
    "id": "e4e9606f466dde4a",
@@ -1164,15 +1369,20 @@
    "lang": "en",
    "link": "https://therecord.media/gootloader-ransomware-doj-details",
    "published": "2026-11-13T15:59:00+00:00",
-   "title": "DOJ: Gootloader used in at least 44 ransomware attacks costing $29 million since 2018",
-   "summary": "In a briefing adjacent to European announcements about an international anti-malware operation, U.S. officials detailed the history and impact of the Gootloader ransomware.",
+   "title": "DOJ: Gootloader usado em pelo menos 44 ataques de ransomware que custaram 29 milhões de dólares desde 2018",
+   "summary": "Funcionários do governo dos Estados Unidos revelaram dados estatísticos sobre o impacto histórico do malware Gootloader durante uma operação internacional contra o cibercrime. Desde 2018, esta ferramenta esteve associada a pelo menos 44 ataques de ransomware direcionados, resultando em prejuízos financeiros acumulados avaliados em 29 milhões de dólares. O impacto destaca a persistência e a eficácia deste vetor inicial de infeção na extorsão financeira de organizações.",
    "image": "https://cms.therecord.media/uploads/gootloader_page_operation_endgame_d490d02942.png",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Autoridades norte-americanas e operadores do Gootloader.",
+    "O Quê: Divulgação de dados sobre o envolvimento do Gootloader em dezenas de ataques de ransomware e custos multimilionários.",
+    "Impacto: Enorme prejuízo financeiro para as organizações visadas e persistência prolongada da ameaça no ecossistema de ransomware."
+   ],
+   "title_original": "DOJ: Gootloader used in at least 44 ransomware attacks costing $29 million since 2018",
    "category": "Ransomware",
-   "translated": false,
-   "enriched": false,
-   "raw": "In a briefing adjacent to European announcements about an international anti-malware operation, U.S. officials detailed the history and impact of the Gootloader ransomware."
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque quantifica o impacto financeiro devastador de um vetor de infeção frequentemente usado no acesso inicial a redes corporativas.",
+   "todo": "Forme os colaboradores para reconhecerem técnicas de engenharia social e restrinja a execução de scripts não autorizados nos computadores da empresa."
   },
   {
    "id": "62dee2cf97b1b825",
@@ -1181,15 +1391,21 @@
    "lang": "en",
    "link": "https://www.cybersecuritydive.com/news/north-korea-cyberattacks-cryptocurrency-seizure-seizure-facestealer-binance/874622/",
    "published": "2026-11-13T15:54:13+00:00",
-   "title": "US cracks down on North Korean cryptocurrency-theft scheme, recovers more Binance funds",
-   "summary": "Federal agents used court orders to chip away at North Korea’s cyberattacks.",
+   "title": "EUA travam esquema norte-coreano de roubo de criptomoedas e recuperam fundos na Binance",
+   "summary": "Agentes federais norte-americanos utilizaram ordens judiciais para desmantelar operações cibernéticas ligadas à Coreia do Norte. A ação permitiu travar um esquema focado no roubo de criptomoedas. Como resultado da operação, foi possível recuperar fundos que estavam depositados na plataforma Binance. Esta intervenção demonstra a pressão contínua das autoridades sobre as infraestruturas financeiras dos atacantes.",
    "image": "https://imgproxy.divecdn.com/_UnezC--funFbVCU3E88sVmqPnql0LaCmWKfOlOtPWo/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xNDU5NTA4MDQwLmpwZw==.webp",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Autoridades dos EUA usaram ordens judiciais.",
+    "Alvo foi um esquema norte-coreano de criptomoedas.",
+    "Operação recuperou fundos na Binance.",
+    "Ação mitiga as capacidades financeiras dos atacantes."
+   ],
+   "title_original": "US cracks down on North Korean cryptocurrency-theft scheme, recovers more Binance funds",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Federal agents used court orders to chip away at North Korea’s cyberattacks."
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra a cooperação internacional e o uso da justiça para travar o financiamento ilícito de cibercriminosos estatais.",
+   "todo": "Utiliza autenticação forte e monitorização rigorosa em plataformas de criptomoedas para detetar transações suspeitas."
   },
   {
    "id": "affb0a0191fb6db2",
@@ -1198,15 +1414,21 @@
    "lang": "en",
    "link": "https://www.cybersecuritydive.com/news/china-hacker-ai-tool-campaign-us-defense-semiconductor/874619/",
    "published": "2026-11-13T15:38:10+00:00",
-   "title": "China-nexus actor uses AI tool in campaign targeting US defense, semiconductor industries",
-   "summary": "A separate campaign used a pen-testing framework to steal AWS credentials.",
+   "title": "Ator associado à China usa ferramenta de IA em campanha contra indústrias de defesa e semicondutores dos EUA",
+   "summary": "Um grupo de ameaça com ligações à China utilizou uma ferramenta de inteligência artificial numa campanha de ciberespionagem. O principal alvo foram os setores norte-americanos de defesa e de fabrico de semicondutores. Numa operação distinta, foi explorada uma framework de testes de intrusão para roubar credenciais da AWS. Estas ações revelam a sofisticação crescente dos métodos utilizados contra infraestruturas críticas.",
    "image": "https://imgproxy.divecdn.com/pBVJIPKoJVTgHHWWdEijzgeyV1DjfTOZKO-WTriU-9Y/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjA5NzUzNDc1LmpwZw==.webp",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Ator ligado à China usou IA em ataques.",
+    "Setores de defesa e semicondutores foram visados.",
+    "Campanha paralela roubou credenciais AWS.",
+    "Utilização de frameworks de testes de intrusão."
+   ],
+   "title_original": "China-nexus actor uses AI tool in campaign targeting US defense, semiconductor industries",
    "category": "Ataque/APT",
-   "translated": false,
-   "enriched": false,
-   "raw": "A separate campaign used a pen-testing framework to steal AWS credentials."
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia a adoção de inteligência artificial por grupos estatais para automatizar e potenciar ataques a alvos estratégicos.",
+   "todo": "Protege as credenciais de serviços na cloud com gestão estrita de acessos e rotação frequente de chaves."
   },
   {
    "id": "04d39ddabcc81277",
@@ -1215,15 +1437,21 @@
    "lang": "en",
    "link": "https://www.elastic.co/security-labs/threat-command/cyberstrikeai-aws-cloudtrail-intrusion",
    "published": "2026-11-13T15:27:20+00:00",
-   "title": "56 AWS API calls in 141 milliseconds: Inside an AI-run intrusion",
-   "summary": "A CyberStrikeAI server spent 16 days in four AWS accounts using eight identities, and the CloudTrail record shows why six detection rules each caught only part of it.",
+   "title": "56 chamadas de API AWS em 141 milissegundos: Por dentro de uma intrusão operada por IA",
+   "summary": "Entre setembro e outubro de 2026, um servidor associado à plataforma CyberStrikeAI utilizou credenciais roubadas para comprometer quatro contas AWS. O invasor executou de forma automatizada dezenas de pedidos de dados a alta velocidade, passando despercebido pelos alertas convencionais devido ao intervalo temporal entre as ações. Esta ferramenta de código aberto combina agentes de IA com utilitários de segurança ofensiva. O impacto traduziu-se no acesso não autorizado a identidades e parâmetros sensíveis na nuvem.",
    "image": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt6563bd994d897304/6af5db091380e64ad87e1178/image2.png",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Servidor CyberStrikeAI usou credenciais roubadas.",
+    "Atividade espalhou-se por quatro contas AWS.",
+    "Uso de automação gerou alta velocidade de pedidos.",
+    "Ferramenta combina IA com segurança ofensiva."
+   ],
+   "title_original": "56 AWS API calls in 141 milliseconds: Inside an AI-run intrusion",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "One server read 56 EC2 user data scripts in 141 milliseconds. Then it went quiet for 14 days and came back. That gap did more damage than the burst, because fixed correlation windows cannot span two weeks. Between September 30 and October 16, 2026, a CyberStrikeAI server worked through stolen AWS credentials in a familiar sequence: validate identities, harvest secrets from Secrets Manager, pull EC2 user data, decrypt an SSM parameter, send a remote command. Every one of those is a call a legitimate role makes every day. Nothing in CloudTrail looked urgent at the time. CyberStrikeAI is an open-source platform that pairs LLM agents with offensive security tools. Will Thomas at Team Cymru counted 21 IPs running it in early 2026 , all of them aimed at Fortinet edge devices. This is the first case we have seen of the same tooling turned on AWS. We call this AI-assisted on the strength of the tool attribution and the machine-speed behavior in the logs. We cannot prove an LLM agent was making the decisions, and we do not know how the attacker obtained the credentials. Key findings from the CyberStrikeAI AWS intrusion Between Sep 30 and Oct 16, 2026, one CyberStrikeAI server (43[.]240[.]29[.]11) used credentials from eight AWS identities (five IAM users and three EC2 instance roles) across four accounts and generated 78 alerts. app-role sent 56 user data requests in 141 milliseconds, part of 58 user data retrieval alerts (74% of the total), which points to automated tooling. On Oct 2, container-role read an encrypted SSM parameter and issued an SSM SendCommand 29 seconds later. The audit log does not show what the command was or whether it succeeded. 43[.]240[.]29[.]28 and 43[.]240[.]29[.]33 serve a CyberStrikeAI page on port 8080 with the same self-signed certificate as 43[.]240[.]29[.]11, which ties the three servers together. As of November, none of the three is serving that interface, so treat the IPs as indicators for retrospective hunting. All 78 alerts were medium or low severity and only made sense once correlated by source IP. How the CyberStrikeAI server moved through four AWS accounts Threat infrastructure and the eight AWS identities used One CyberStrikeAI server used credentials belonging to eight IAM identities across four AWS accounts over 16 days, with activity on four of those days. Account and identity names are replaced with aliases. Attribute Value Source IP 43[.]240[.]29[.]11 Attribution CyberStrikeAI server (confirmed) Target cloud AWS Accoun"
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra como agentes automatizados conseguem fintar a correlação de alertas tradicionais em ambientes cloud.",
+   "todo": "Implementa monitorização comportamental na cloud e limita estritamente os privilégios atribuídos a funções e identidades IAM."
   },
   {
    "id": "fb5ac890be2a0d21",
@@ -1232,15 +1460,21 @@
    "lang": "en",
    "link": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
    "published": "2026-11-13T15:27:05+00:00",
-   "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
-   "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need control of the server's hypervisor, and Mior also needs control of the server's BIOS. Researchers",
+   "title": "Novos ataques Mior e Skyfall permitem a anfitriões de nuvem maliciosos roubar segredos de VMs AMD SEV-SNP",
+   "summary": "Foram divulgados dois novos ataques, denominados Mior e Skyfall, que afetam máquinas virtuais protegidas por AMD SEV-SNP. Estas falhas permitem que um anfitrião malicioso leia dados confidenciais do interior das máquinas virtuais. Além disso, a variante Mior consegue modificar a memória e falsificar relatórios de estado do software. Para concretizar os ataques, é necessário controlo prévio do hipervisor e, no caso do Mior, também da BIOS do servidor.",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi28SrA-dW0l0kreAg1vMHHOgBRMM7lzxv5qg2FT2HzRxReJ96pxZP4Fjpm15fYWDDgWpbBI8iC119aE37t_kmQ4guoA70NUlJsdiA4hFvTg8fflx9fsKqUsGuoB-S9VS5pPd38EBVYRGmvKIT5EylE3IwEK8bBCp5CkLrdTwhbyUA2xWN_0iOynP33yE8/s1600/amd-flaws.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Mior e Skyfall visam máquinas virtuais AMD SEV-SNP.",
+    "Anfitriões maliciosos conseguem ler dados protegidos.",
+    "Ataque Mior pode alterar memória e relatórios.",
+    "Exigem controlo prévio do hipervisor e da BIOS."
+   ],
+   "title_original": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need control of the server's hypervisor, and Mior also needs control of the server's BIOS. Researchers"
+   "translated": true,
+   "enriched": true,
+   "why": "Compromete garantias fundamentais de isolamento e confidencialidade em ambientes de computação confidencial.",
+   "todo": "Aplica atualizações de firmware e BIOS recomendadas pelos fabricantes de hardware e restringe o acesso físico e administrativo aos anfitriões."
   },
   {
    "id": "c3cb9f9906170c50",
@@ -1249,15 +1483,21 @@
    "lang": "en",
    "link": "https://www.securityweek.com/in-other-news-new-cisa-director-nominee-connected-car-hacking-baker-tilly-data-breach/",
    "published": "2026-11-13T15:20:00+00:00",
-   "title": "In Other News: New CISA Director Nominee, Connected Car Hacking, Baker Tilly Data Breach",
-   "summary": "Noteworthy stories that might have slipped under the radar: Siemens details security advisory policy, OpenAI Codex backdoor risk, Microsoft warns of model weight backdoors.",
+   "title": "Outras Notícias: Novo candidato a Diretor da CISA, Hacking de Carros Conectados e Violação de Dados na Baker Tilly",
+   "summary": "Foram divulgados vários desenvolvimentos relevantes no setor que incluem novas políticas e riscos tecnológicos. A Siemens detalhou a sua política de advisories de segurança e surgiram alertas sobre vulnerabilidades na ferramenta OpenAI Codex. Adicionalmente, a Microsoft emitiu avisos relativos a riscos de backdoors ocultos em pesos de modelos de inteligência artificial. Estes tópicos destacam a diversidade de vetores de ameaça atualmente monitorizados pelos especialistas.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Siemens detalha política de segurança.",
+    "Identificados riscos no OpenAI Codex.",
+    "Microsoft alerta para backdoors em modelos de IA.",
+    "Notícias recolhem vários alertas tecnológicos."
+   ],
+   "title_original": "In Other News: New CISA Director Nominee, Connected Car Hacking, Baker Tilly Data Breach",
    "category": "Malware",
-   "translated": false,
-   "enriched": false,
-   "raw": "Noteworthy stories that might have slipped under the radar: Siemens details security advisory policy, OpenAI Codex backdoor risk, Microsoft warns of model weight backdoors."
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra a amplitude de riscos emergentes que vão desde a cadeia de suprimentos de IA até às políticas de divulgação de vulnerabilidades.",
+   "todo": "Mantém uma política rigorosa de atualização para ferramentas de desenvolvimento e modelos de inteligência artificial."
   },
   {
    "id": "39b1ecde555ff00f",
@@ -1267,14 +1507,20 @@
    "link": "https://tek.sapo.pt/noticias/internet/artigos/bricklink-ja-regressou-depois-de-um-ciberataque-lego-confirma-acesso-a-nomes-de-utilizador-ip-e-alguns-emails/",
    "published": "2026-11-13T15:13:05+00:00",
    "title": "BrickLink já regressou depois de um ciberataque: Lego confirma acesso a nomes de utilizador, IP e alguns emails",
-   "summary": "A Lego colocou o BrickLink, o mercado online de peças e sets usados da marca, offline durante mais de uma semana após um ciberataque. A empresa dinamarquesa garante que palavras-passe e dados de pagamento não foram afetado.",
+   "summary": "A Lego manteve a plataforma BrickLink offline durante mais de uma semana na sequência de um ciberataque. A empresa dinamarquesa confirmou que os atacantes acederam a nomes de utilizador, endereços IP e alguns endereços de correio eletrónico. Em contrapartida, a organização garantiu que as palavras-passe e os dados de pagamento dos utilizadores não foram afetados. O incidente obrigou a uma interrupção prolongada do mercado online de peças usadas.",
    "image": null,
-   "points": [],
+   "points": [
+    "BrickLink esteve offline mais de uma semana.",
+    "Lego confirmou acesso a dados de utilizadores.",
+    "Nomes de utilizador, IPs e emails foram expostos.",
+    "Palavras-passe e pagamentos ficaram salvaguardados."
+   ],
    "title_original": null,
    "category": "Ataque/APT",
    "translated": false,
-   "enriched": false,
-   "raw": "A Lego colocou o BrickLink, o mercado online de peças e sets usados da marca, offline durante mais de uma semana após um ciberataque. A empresa dinamarquesa garante que palavras-passe e dados de pagamento não foram afetado."
+   "enriched": true,
+   "why": "Evidencia o impacto operacional e reputacional de incidentes em plataformas de comércio eletrónico e comunidades online.",
+   "todo": "Ativa a autenticação multifator (MFA) sempre que disponível e utiliza credenciais únicas em cada plataforma online."
   },
   {
    "id": "e8d212e2e33e21cf",
@@ -1283,15 +1529,21 @@
    "lang": "en",
    "link": "https://therecord.media/tsmc-confirms-employee-data-breach-cloud-provider",
    "published": "2026-11-13T15:06:00+00:00",
-   "title": "TSMC confirms employee data breach tied to cloud service provider",
-   "summary": "An investigation into the breach found that no TSMC systems were compromised but the information was “verified to match data stored in the system services of a cloud service provider, but is unrelated to the company’s operations or customer-related data.”",
+   "title": "TSMC confirma fuga de dados de funcionários ligada a fornecedor de serviços na nuvem",
+   "summary": "Uma investigação conduzida pela TSMC concluiu que os seus sistemas internos não sofreram qualquer compromisso num incidente recente. No entanto, os dados recolhidos coincidiam com informações armazenadas nos serviços de um fornecedor externo de computação na nuvem. A empresa esclareceu que os registos afetados são totalmente alheios às suas operações principais e aos dados de clientes. O caso sublinha os riscos de segurança associados a fornecedores terceiros.",
    "image": "https://cms.therecord.media/uploads/TSMC_logo_on_Taichung_factory_building_4ac5558127.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Sistemas internos da TSMC não foram comprometidos.",
+    "Dados coincidem com registos de fornecedor cloud.",
+    "Informação roubada é alheia à operação da empresa.",
+    "Incidente envolveu serviços de terceiros."
+   ],
+   "title_original": "TSMC confirms employee data breach tied to cloud service provider",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "An investigation into the breach found that no TSMC systems were compromised but the information was “verified to match data stored in the system services of a cloud service provider, but is unrelated to the company’s operations or customer-related data.”"
+   "translated": true,
+   "enriched": true,
+   "why": "Destaca a importância de auditar a segurança e os acessos dos fornecedores de serviços externos na nuvem.",
+   "todo": "Reviu e restringe as permissões concedidas a fornecedores externos e parceiros nos ambientes de nuvem."
   },
   {
    "id": "db3fd3a5adb8fb92",
@@ -1300,15 +1552,21 @@
    "lang": "en",
    "link": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
    "published": "2026-11-13T15:01:11+00:00",
-   "title": "How one AI agent exposed five critical enterprise security gaps",
-   "summary": "An AI agent built to automate invoice processing could be manipulated into changing vendor bank details through a malicious email, without triggering traditional security alerts. Token Security examines five critical AI agent security gaps and shares practical guidance from industry security leaders on preventing them. [...]",
+   "title": "Como um agente de IA expôs cinco falhas críticas de segurança empresarial",
+   "summary": "Um agente de inteligência artificial desenvolvido para automatizar o processamento de faturas foi manipulado através de um email malicioso. A manipulação permitiu alterar os dados bancários de fornecedores sem despoletar os alertas de segurança tradicionais. A análise da Token Security identificou cinco lacunas críticas na arquitetura de agentes autónomos. O impacto reside na capacidade de contornar defesas corporativas tradicionais através de engenharia social direcionada a IA.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Agente de IA foi manipulado via email malicioso.",
+    "Dados bancários de fornecedores foram alterados.",
+    "Ataque ocorreu sem disparar alertas tradicionais.",
+    "Identificadas cinco falhas em agentes de IA."
+   ],
+   "title_original": "How one AI agent exposed five critical enterprise security gaps",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "An AI agent built to automate invoice processing could be manipulated into changing vendor bank details through a malicious email, without triggering traditional security alerts. Token Security examines five critical AI agent security gaps and shares practical guidance from industry security leaders on preventing them. [...]"
+   "translated": true,
+   "enriched": true,
+   "why": "Revela que os sistemas autónomos baseados em IA introduzem novos vetores de ataque difíceis de detetar com ferramentas clássicas.",
+   "todo": "Implementa validação humana obrigatória para alterações críticas em processos automatizados por IA."
   },
   {
    "id": "baed7b0264260484",
@@ -1317,15 +1575,21 @@
    "lang": "en",
    "link": "https://www.helpnetsecurity.com/2026/11/13/fake-gta-6-download-scam/",
    "published": "2026-11-13T15:00:59+00:00",
-   "title": "Fake GTA 6 download goes after Steam logins and crypto wallet data",
-   "summary": "Cynet researchers followed a “GTA 6 EXE file download” link from a Google Colab notebook to a ZIP archive and found a WARDEN Stealer loader inside. The malware takes saved passwords, browser cookies, Steam and Roblox credentials, and cryptocurrency wallet data from the machine it runs on. A Google Colab notebook promotes a fake GTA 6 executable download (Source: Cynet) Grand Theft Auto VI launches November 19 with no PC version. Any site offering a … More →",
+   "title": "Download falso do GTA 6 aponta a credenciais do Steam e dados de carteiras de criptomoedas",
+   "summary": "Investigadores detetaram um esquema que utilizava um link num caderno Google Colab para promover um suposto instalador do jogo GTA 6. O ficheiro descarregado continha o carregador de malware WARDEN Stealer. Uma vez executado na máquina da vítima, o software roubava palavras-passe guardadas, cookies de navegadores, credenciais do Steam e Roblox, bem como dados de carteiras de criptomoedas. O impacto afeta diretamente a privacidade e os ativos digitais dos utilizadores infetados.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Falso instalador do GTA 6 continha malware.",
+    "Uso de Google Colab para distribuir ameaça.",
+    "Roubo de credenciais de jogos e navegadores.",
+    "Exfiltração de dados de carteiras de criptomoedas."
+   ],
+   "title_original": "Fake GTA 6 download goes after Steam logins and crypto wallet data",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Cynet researchers followed a “GTA 6 EXE file download” link from a Google Colab notebook to a ZIP archive and found a WARDEN Stealer loader inside. The malware takes saved passwords, browser cookies, Steam and Roblox credentials, and cryptocurrency wallet data from the machine it runs on. A Google Colab notebook promotes a fake GTA 6 executable download (Source: Cynet) Grand Theft Auto VI launches November 19 with no PC version. Any site offering a … More →"
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra como os cibercriminosos aproveitam a expetativa em torno de lançamentos populares para distribuir infostealers.",
+   "todo": "Descarrega software apenas de fontes oficiais e evita links promocionais em plataformas de partilha de código ou redes sociais."
   },
   {
    "id": "7f9029083fd2c804",
@@ -1335,14 +1599,20 @@
    "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/nova-falha-no-windows-transforma-recurso-de-seguranca-em-acesso-total-ao-sistema/",
    "published": "2026-11-13T15:00:00+00:00",
    "title": "Nova falha no Windows transforma recurso de segurança em acesso total ao sistema",
-   "summary": "Nova falha no Windows transforma recurso de segurança em acesso total ao sistema",
+   "summary": "Uma vulnerabilidade do tipo zero-day, batizada de 'SignDrop', foi descoberta no driver do Common Log File System (CLFS) do Windows. O erro lógico ocorre quando um processo privilegiado abre registos geridos por utilizadores comuns, fazendo com que os ficheiros herdem permissões vulneráveis. Um atacante pode explorar esta falha para escrever nos ficheiros e obter privilégios máximos de sistema. A vulnerabilidade foi divulgada publicamente no GitHub por um investigador sem aviso prévio à Microsoft.",
    "image": "https://www.estadao.com.br/resizer/v2/NLSBQEQ2FZDAJBIWHKBLS275WI.png?quality=80&auth=056c5d0069439f27103972df00010777ba45cae93889c2cb5bf91634737e0048&width=710",
-   "points": [],
+   "points": [
+    "Falha zero-day 'SignDrop' afeta o Windows.",
+    "Explora o driver CLFS e a herança de permissões.",
+    "Permite a utilizadores comuns obter privilégios de sistema.",
+    "Divulgada publicamente sem correção imediata."
+   ],
    "title_original": null,
    "category": "Vulnerabilidade",
    "translated": false,
-   "enriched": false,
-   "raw": "Uma falha de segurança “ zero-day” (desconhecida pelo desenvolvedor) descoberta no Windows permite que um usuário comum obtenha privilégios máximos do sistema explorando o driver do Common Log File System ( CLFS ). Batizada de “ SignDrop ”, a vulnerabilidade ocorre porque um recurso criado pela fabricante para proteger o computador contra invasões apresenta um erro lógico ao lidar com arquivos de registro. A falha foi divulgada publicamente no GitHub por um pesquisador sobre pseudônimo MSNightmare nesta terça-feira (10), mesmo dia em que a empresa liberou as atualizações mensais de segurança . Contudo, essa ação ocorreu sem que houvesse aviso prévio ou correção imediata por parte da fabricante. Nova falha no Windows transforma recurso de segurança em acesso total ao sistema Foto: Reprodução/ChatG A ferramenta CLFS lida com os registros e históricos do sistema Windows ao gerenciar estruturas complexas em modo kernel . A fabricante adicionou uma verificação baseada em código de autenticação de mensagem (HMAC) criadas com chaves exclusivas de cada computador, pois cibercriminosos já haviam explorado falhas nessa área para aplicar golpes de ransomware anteriormente. Nova falha no Windows transforma recurso de segurança em acesso total ao sistema Foto: Reprodução/LinkedIn No entanto, MSNightmare descobriu que a lógica de criação do arquivo complementar de recuperação, chamado de “.cnpf”, apresenta uma brecha conceitual. Quando um processo privilegiado abre um registro ( log ) preparado por um usuário comum, o driver cria o documento herda as permissões vulneráveis. Essa falha permite que o invasor escreva nele e encadeie o acesso para assumir o controle da máquina. Validação e impacto em ambientes corporativos A eficácia do código foi testada e confirmada por especialistas da área de segurança. O chefe de pesquisa da empresa coreana 78researchlab, Sungyup Nam, relatou que o pesquisador Heewon Song testou a exploração. O especialista constatou que ela funciona, embora exija que o Windows Defender esteja ativado e ainda não opere com estabilidade suficiente para uso operacional em larga escala. Na avaliação publicada no LinkedIn , Nam resumiu o problema ao afirmar que “tudo é feito corretamente pela Microsoft aqui, mas a lógica permite o abuso“. Ele destacou que o sistema confia cegamente na identidade do processo sem comparar quem definiu o caminho do arquivo com o usuário que realizou a escrita. Esta é a tela onde o Nightmare-Eclipse PoC obteve a permissão SYST"
+   "enriched": true,
+   "why": "Ilustra como erros lógicos em mecanismos de defesa do sistema operativo podem ser invertidos para obter controlo total.",
+   "todo": "Monitoriza advisories de segurança e aplica atualizações do sistema operativo assim que sejam disponibilizadas pelo fabricante."
   },
   {
    "id": "a351355edf69d9b0",
@@ -1351,15 +1621,21 @@
    "lang": "en",
    "link": "https://techcrunch.com/2026/11/13/uber-confirms-hackers-stole-thousands-of-drivers-license-information-in-data-breach/",
    "published": "2026-11-13T14:57:55+00:00",
-   "title": "Uber confirms hackers stole thousands of drivers’ license information in data breach",
-   "summary": "The ride-sharing giant said driver's license information stored by AI cloud company Fireworks AI was stolen during a security incident.",
+   "title": "Uber confirma que piratas informáticos roubaram informações de cartas de condução de milhares de condutores em violação de dados",
+   "summary": "A empresa de transporte partilhado Uber confirmou ter sofrido um incidente de segurança que resultou no roubo de dados de cartas de condução. A informação afetada encontrava-se armazenada na empresa de inteligência artificial em nuvem Fireworks AI. O incidente resultou na exposição de documentos de identificação de milhares de condutores. Este evento reforça os riscos associados à gestão de dados sensíveis por parceiros tecnológicos externos.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Uber sofreu incidente de violação de dados.",
+    "Dados de cartas de condução foram roubados.",
+    "Informação estava armazenada na Fireworks AI.",
+    "Milhares de condutores foram afetados."
+   ],
+   "title_original": "Uber confirms hackers stole thousands of drivers’ license information in data breach",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "The ride-sharing giant said driver's license information stored by AI cloud company Fireworks AI was stolen during a security incident."
+   "translated": true,
+   "enriched": true,
+   "why": "Sublinha o risco de confiar dados sensíveis de utilizadores a prestadores de serviços de IA na nuvem de terceiros.",
+   "todo": "Avalia rigorosamente a postura de segurança e a encriptação de dados utilizada por fornecedores externos de serviços em nuvem."
   },
   {
    "id": "4691a96fc7400e14",
@@ -1368,15 +1644,21 @@
    "lang": "en",
    "link": "https://databreaches.net/2026/11/13/hospitals-airlines-and-governments-hit-by-microsoft-outage-as-employee-risk-warnings-mount/",
    "published": "2026-11-13T14:48:05+00:00",
-   "title": "Hospitals, airlines and governments hit by Microsoft outage as employee risk warnings mount",
-   "summary": "Sheriff’s offices, courts, state agencies and hospitals lost email as the Microsoft 365 failure ran past 12 hours. The bigger risk for insurers may be what staff did to keep working. An insurance perspective on the outage from Insurance News. From a post by Matthew Sellers: For US brokers, the outage raises three coverage questions....",
+   "title": "Hospitais, companhias aéreas e governos atingidos por falha da Microsoft enquanto aumentam os avisos de risco para os trabalhadores",
+   "summary": "Uma interrupção prolongada nos serviços do Microsoft 365, com duração superior a doze horas, afetou agências estatais, tribunais, gabinetes de xerife e hospitais. A falha deixou estas organizações sem acesso a correio eletrónico e ferramentas essenciais de trabalho. Os especialistas alertam que o maior risco decorre dos métodos informais adotados pelos funcionários para continuarem a operar durante a falha. O impacto estendeu-se à continuidade operacional de serviços públicos críticos.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Falha prolongada afetou o Microsoft 365.",
+    "Hospitais e agências públicas perderam acesso a email.",
+    "Interrupção durou mais de 12 horas.",
+    "Trabalhadores recorreram a métodos informais de trabalho."
+   ],
+   "title_original": "Hospitals, airlines and governments hit by Microsoft outage as employee risk warnings mount",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Sheriff’s offices, courts, state agencies and hospitals lost email as the Microsoft 365 failure ran past 12 hours. The bigger risk for insurers may be what staff did to keep working. An insurance perspective on the outage from Insurance News. From a post by Matthew Sellers: For US brokers, the outage raises three coverage questions...."
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra a vulnerabilidade das infraestruturas críticas face à dependência excessiva de serviços centralizados na nuvem.",
+   "todo": "Estabelece planos de contingência robustos e canais de comunicação alternativos para falhas prolongadas de fornecedores cloud."
   },
   {
    "id": "0fbd3c4c8dcf93ae",
@@ -1385,15 +1667,21 @@
    "lang": "en",
    "link": "https://databreaches.net/2026/11/13/crackdown-on-uk-medical-record-snooping-after-staff-reported-sneaking-300-times-this-year/",
    "published": "2026-11-13T14:47:26+00:00",
-   "title": "Crackdown on UK medical record snooping after staff reported sneaking 300+ times this year",
-   "summary": "Carly Page reports: Britain’s privacy watchdog has put healthcare bosses on notice after receiving more than 300 reports of staff snooping through medical records this year, demanding that executives personally confirm they’re doing enough to keep prying eyes out of patient files. The Information Commissioner’s Office (ICO) said on Thursday that it had written to...",
+   "title": "Aperto a espiar registos médicos no Reino Unido após funcionários admitirem mais de 300 acessos indevidos este ano",
+   "summary": "O regulador da privacidade britânico exigiu que os diretores hospitalares confirmem pessoalmente as medidas de segurança, após registar mais de 300 denúncias de funcionários a espiar registos médicos. A Information Commissioner’s Office enviou cartas formais aos responsáveis do setor da saúde para combater o acesso não autorizado a ficheiros de pacientes. Esta intervenção surge na sequência de um aumento expressivo de incidentes de devassa da privacidade relatados este ano. O impacto traduz-se no risco acrescido para a confidencialidade dos dados clínicos dos cidadãos.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O regulador britânico interveio após mais de 300 denúncias de espionagem de registos médicos.",
+    "Funcionários do setor da saúde acederam indevidamente a ficheiros de pacientes.",
+    "A ICO exigiu que os executivos confirmem pessoalmente a eficácia das medidas de proteção.",
+    "O impacto afeta diretamente a privacidade e a confidencialidade dos dados dos pacientes."
+   ],
+   "title_original": "Crackdown on UK medical record snooping after staff reported sneaking 300+ times this year",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Carly Page reports: Britain’s privacy watchdog has put healthcare bosses on notice after receiving more than 300 reports of staff snooping through medical records this year, demanding that executives personally confirm they’re doing enough to keep prying eyes out of patient files. The Information Commissioner’s Office (ICO) said on Thursday that it had written to..."
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque demonstra que o maior risco para a privacidade médica muitas vezes vem de dentro das próprias organizações.",
+   "todo": "Limite estritamente os acessos a dados sensíveis com base no princípio do menor privilégio e monitore regularmente os registos de atividade."
   },
   {
    "id": "d9d770fe986966fb",
@@ -1402,15 +1690,21 @@
    "lang": "en",
    "link": "https://databreaches.net/2026/11/13/microsoft-outage-2026-what-happened-and-what-the-law-says/",
    "published": "2026-11-13T14:47:17+00:00",
-   "title": "Microsoft Outage 2026: What Happened and What the Law Says",
-   "summary": "While many are still focused on Microsoft’s global outage and Microsoft is still working on recovery, there is already a legal perspective. Edmarverson A. Santos of Diplomacy & Law writes: The Microsoft outage 2026 began on November 12, disrupting Exchange Online and several connected Microsoft 365 services across multiple countries. Businesses, government agencies, courts, and...",
+   "title": "Falha global da Microsoft em 2026: o que aconteceu e o que diz a lei",
+   "summary": "Uma interrupção global nos serviços da Microsoft afetou o Exchange Online e várias ferramentas do Microsoft 365 em diversos países. O incidente, iniciado a 12 de novembro, atingiu empresas, organismos governamentais e tribunais, enquanto a empresa procura recuperar a normalidade. A situação gerou repercussões e análises jurídicas a nível internacional devido ao impacto operacional provocado. O evento afetou profundamente as comunicações e a produtividade de várias entidades públicas e privadas.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A falha global da Microsoft afetou o Exchange Online e o Microsoft 365.",
+    "O incidente começou a 12 de novembro e atingiu vários países.",
+    "Governos, tribunais e empresas viram as suas operações interrompidas.",
+    "A interrupção gerou preocupações operacionais e perspetivas jurídicas."
+   ],
+   "title_original": "Microsoft Outage 2026: What Happened and What the Law Says",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "While many are still focused on Microsoft’s global outage and Microsoft is still working on recovery, there is already a legal perspective. Edmarverson A. Santos of Diplomacy & Law writes: The Microsoft outage 2026 began on November 12, disrupting Exchange Online and several connected Microsoft 365 services across multiple countries. Businesses, government agencies, courts, and..."
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque revela a vulnerabilidade crítica das infraestruturas centralizadas na nuvem para a economia e o Estado.",
+   "todo": "Adote estratégias de redundância e planos de recuperação para mitigar o impacto de falhas em fornecedores de serviços na nuvem."
   },
   {
    "id": "af568f0b41b86683",
@@ -1419,15 +1713,21 @@
    "lang": "en",
    "link": "https://databreaches.net/2026/11/13/over-144000-norwegian-and-wideroe-passengers-affected-by-data-breach/",
    "published": "2026-11-13T14:46:54+00:00",
-   "title": "Over 144,000 Norwegian and Widerøe passengers affected by data breach",
-   "summary": "The following is an automated translation of an article that originally appeared in Norwegian. Helge Aadland Carlsen and Martin Gundersen report: Information about 144,249 passengers at Norwegian and Widerøe has been leaked in connection with the data breach at the Spanish IT provider Amadeus. This is stated in a letter Norwegian has sent to the...",
+   "title": "Mais de 144.000 passageiros da Norwegian e Widerøe afetados por fuga de dados",
+   "summary": "Uma fuga de dados na empresa tecnológica espanhola Amadeus comprometeu informações de 144.249 passageiros das companhias aéreas Norwegian e Widerøe. A falha foi comunicada aos clientes afetados através de uma carta enviada pela própria Norwegian. O incidente expôs dados pessoais de utilizadores destas linhas aéreas nórdicas. O impacto incide sobre a privacidade dos passageiros envolvidos nesta violação de dados de terceiros.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Dados de 144.249 passageiros foram expostos numa fuga de informação.",
+    "O incidente ocorreu no fornecedor de TI espanhol Amadeus.",
+    "As companhias Norwegian e Widerøe foram as afetadas pelo problema.",
+    "Os passageiros afetados foram notificados por escrito sobre o sucedido."
+   ],
+   "title_original": "Over 144,000 Norwegian and Widerøe passengers affected by data breach",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "The following is an automated translation of an article that originally appeared in Norwegian. Helge Aadland Carlsen and Martin Gundersen report: Information about 144,249 passengers at Norwegian and Widerøe has been leaked in connection with the data breach at the Spanish IT provider Amadeus. This is stated in a letter Norwegian has sent to the..."
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque evidencia os riscos sistémicos associados a falhas de segurança em fornecedores de serviços tecnológicos externos.",
+   "todo": "Exija auditorias de segurança rigorosas aos fornecedores terceiros e reforce a vigilância sobre o tratamento de dados de clientes."
   },
   {
    "id": "c8bd8f24faddac2d",
@@ -1436,15 +1736,21 @@
    "lang": "en",
    "link": "https://securityaffairs.com/202997/cyber-crime/gootloader-malware-disrupted-after-infecting-25000-computers.html",
    "published": "2026-11-13T14:35:44+00:00",
-   "title": "Gootloader Malware Disrupted After Infecting 25,000 Computers",
-   "summary": "International law enforcement disrupts Gootloader, seizing domains and taking down over 100 servers linked to 25,000 infected computers. The U.S. Department of Justice announced that law enforcement has removed Gootloader malware from more than 100 computer servers, seized U.S. domain names used to deliver and control it, and notified victims worldwide. “The Department of Justice […]",
+   "title": "Malware Gootloader desmantelado após infetar 25.000 computadores",
+   "summary": "Uma operação policial internacional desmantelou a rede do malware Gootloader, apreendendo domínios e neutralizando mais de 100 servidores ligados a 25.000 computadores infetados. O Departamento de Justiça dos EUA e autoridades globais lideraram a ação contra esta ameaça ativa desde 2018, usada para facilitar ataques de ransomware com prejuízos avultados. O esquema propagava-se através de sites comprometidos, como o WordPress, enganando as vítimas para descarregarem ficheiros maliciosos. O impacto incluiu perdas financeiras superiores a 28 milhões de dólares apenas nos EUA, afetando também a base industrial de defesa.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Autoridades internacionais desmantelaram o Gootloader e apreenderam mais de 100 servidores.",
+    "O malware infetou pelo menos 25.000 computadores a nível global desde 2018.",
+    "A ameaça utilizava sites comprometidos para enganar utilizadores e injetar ransomware.",
+    "O impacto gerou prejuízos superiores a 28 milhões de dólares em vítimas norte-americanas."
+   ],
+   "title_original": "Gootloader Malware Disrupted After Infecting 25,000 Computers",
    "category": "Malware",
-   "translated": false,
-   "enriched": false,
-   "raw": "International law enforcement disrupts Gootloader, seizing domains and taking down over 100 servers linked to 25,000 infected computers. The U.S. Department of Justice announced that law enforcement has removed Gootloader malware from more than 100 computer servers, seized U.S. domain names used to deliver and control it, and notified victims worldwide. “The Department of Justice today announced the successful removal of malware known as “Gootloader” from over 100 computer servers, including compromised WordPress sites, and the seizure of U.S. domain names used by criminals to deliver and control the Gootloader malware. Since 2018, Gootloader malware has infected at least 25,000 computers around the world.” states DoJ . “Gootloader malware has been used in ransomware attacks of at least 44 U.S. based victims which has resulted in approximately $28.8 million in loss.” Gootloader spreads mostly through compromised WordPress sites and other websites, where victims are tricked into downloading it thinking they’re getting something legitimate. Once a machine is infected it joins a botnet, and the people running Gootloader then sell access to those machines to ransomware groups. The ransomware groups do the rest, and the total losses to US-based victims alone reach roughly $28.8 million across at least 44 victims, including the Department of War and the Defense Industrial Base. GootLoader runs on an access-a-as-a-service model, it is used by different groups to drop additional malicious payloads on the compromised systems. GootLoader has been known to use fileless techniques to deliver threats such as the SunCrypt , and REvil (Sodinokibi) ransomware, Kronos trojans, and Cobalt Strike. In the past, GootLoader distributed malware masquerading as freeware installers and it used legal documents to trick users into downloading these files. GootLoader is a part of the GootKit malware family, which has been active since 2014. Mandiant tracked the threat actors behind GootKit as UNC2565 . The law enforcement operation ran under court authorization and in coordination with Operation Endgame , the multinational law enforcement initiative targeting malware criminal services. Partners included Germany’s BKA, the Netherlands National Police, Canada’s RCMP and Ottawa Police Service, Danish Police, France’s Paris Cybercrime Brigade, the UK’s National Crime Agency, the Australian Federal Police and Europol. OpenAI, Fraunhofer FKIE, the Shadowserver Foundation and hosting compan"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque o Gootloader funcionava como um canal crítico de acesso inicial para grupos de ransomware de alto nível.",
+   "todo": "Forme os colaboradores para reconhecerem tentativas de engenharia social e descarreguem software apenas de fontes oficiais e fidedignas."
   },
   {
    "id": "9dae410164b5ae37",
@@ -1454,14 +1760,20 @@
    "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/ataque-hacker-ao-tesouro-o-que-se-sabe-ate-agora/",
    "published": "2026-11-13T14:30:00+00:00",
    "title": "Ataque hacker ao Tesouro; o que se sabe até agora",
-   "summary": "Cofres públicos e sistemas estruturantes não foram afetados, segundo a secretaria.",
+   "summary": "O Tesouro Nacional foi alvo de um ciberataque detetado a 4 de novembro, que resultou na exposição de 30.000 registos do portal e-Serviços e 4.000 chaves Pix. A Secretaria do Tesouro Nacional avançou que o incidente afetou duas bases de dados, embora sem causar impactos financeiros ou comprometer sistemas estruturantes. As autoridades competentes, incluindo a ANPD, foram informadas e encontram-se a investigar a origem da intrusão. O impacto foca-se na exposição de dados pessoais, aumentando o risco de tentativas de fraudes e phishing contra os cidadãos.",
    "image": "https://www.estadao.com.br/resizer/v2/6X5HCD7SSFOW7GCSGJY3K3LEUU.jpg?quality=80&auth=84f7694b3f24f5015ded2184ce9d3877a58bb9b06683c91cb9d2dc7767b662ef&width=710",
-   "points": [],
+   "points": [
+    "O ciberataque expôs 30.000 registos do portal e-Serviços e 4.000 chaves Pix.",
+    "A Secretaria do Tesouro Nacional confirmou que os sistemas estruturantes não foram afetados.",
+    "O incidente foi detetado a 4 de novembro e comunicado ao abrigo da LGPD.",
+    "O impacto eleva o risco de campanhas de phishing e burlas direcionadas aos cidadãos afetados."
+   ],
    "title_original": null,
    "category": "Ataque/APT",
    "translated": false,
-   "enriched": false,
-   "raw": "O Tesouro Nacional foi alvo de um ataque hacker que expôs 30 mil cadastros de usuários do portal e-Serviços e 4 mil chaves Pix de beneficiários de pagamentos do governo federal, anunciou a secretaria nesta quinta-feira (12). Apesar da dimensão do incidente, o órgão afirma que não houve impacto financeiro nem comprometimento de sistemas estruturantes. A entidade investiga o caso e recomenda atenção a contatos desconhecidos. O incidente de segurança foi detectado em 4 de novembro deste ano e atingiu duas bases de dados do Tesouro Nacional. A Secretaria do Tesouro Nacional (STN) comunicou o ocorrido em cumprimento à Lei Geral de Proteção de Dados Pessoais (LGPD). Cofres públicos e sistemas estruturantes não foram afetados, segundo a secretaria. Foto: Fabio Motta/Estadão O que foi exposto no incidente do Tesouro Nacional? Segundo o órgão, foram identificados acessos indevidos a nomes, CPFs e endereços de e-mail registrados no e-Serviços , plataforma do governo federal utilizada para solicitar e acompanhar serviços do Tesouro Nacional. Cerca de 30 mil cadastros foram expostos. Além disso, uma base de dados utilizada para consultas internas também foi atingida. Neste caso, ela continha cerca de 4 mil chaves Pix de beneficiários de pagamentos do governo federal , bem como informações relacionadas aos pagamentos realizados. Não houve impacto financeiro e nenhum sistema estruturante foi afetado, ressaltou o órgão. Tesouro Nacional investiga a origem do acesso indevido Os sistemas de segurança e monitoramento permitiram identificar e conter o acesso indevido . Por enquanto, a origem do incidente não foi identificada. “Em relação às medidas adotadas, o monitoramento foi reforçado e foram implementadas medidas adicionais de proteção e iniciada investigação técnica para determinar a origem e a extensão do incidente”, informou o órgão. A Agência Nacional de Proteção de Dados (ANPD) e o Centro de Prevenção, Tratamento e Resposta a Incidentes Cibernéticos de Governo (CTIR Gov) foram informados sobre o vazamento. Segundo o Tesouro, a demora na comunicação foi resultado do tempo necessário para detectar e confirmar o incidente , realizar investigações internas em diversas áreas, e implementar medidas de contenção e recuperação. O que fazer agora? A exposição de dados pessoais não significa necessariamente que as contas dos cidadãos foram comprometidas , mas aumenta o risco de tentativas de golpes. De posse das informações, criminosos podem utilizá-las para fazer e-mails, me"
+   "enriched": true,
+   "why": "Importa porque a exposição de dados pessoais governamentais facilita campanhas direcionadas de engenharia social contra os cidadãos.",
+   "todo": "Desconfie de contactos inesperados que utilizem dados pessoais e valide sempre a autenticidade de comunicações sobre pagamentos ou serviços."
   },
   {
    "id": "c6e1d6a772717416",
@@ -1470,15 +1782,21 @@
    "lang": "en",
    "link": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
    "published": "2026-11-13T14:28:58+00:00",
-   "title": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
-   "summary": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months. As part of a coordinated set of actions announced by the U.S. government, the cloud-based",
+   "title": "FBI indica que hackers norte-coreanos roubaram mais de 400 milhões de dólares em criptomoedas através de videochamadas deepfake",
+   "summary": "O FBI determinou que atores maliciosos ligados à Coreia do Norte roubaram mais de 400 milhões de dólares em criptomoedas nos últimos 18 meses, utilizando uma campanha de engenharia social chamada FaceStealer. O esquema recorreu a tecnologias avançadas para enganar alvos no setor criptográfico. Esta operação coordenada do governo norte-americano visa travar as burlas financeiras do regime. O impacto reflete-se em perdas financeiras massivas para o ecossistema de ativos digitais.",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDmjJA-t4vvigohRIfUR6JExYEPR0Dohh29eooVagQOvRyRDgdisxAy3wSWni5iFHjf2Dk8X2BavSeGO8hJ-wCTbDuffsdtamOuqj1PVTb75EWNF5vNe3tCsS6pyS_pSzNhEELOVU0DxHdmGx4Kt8KNqwz8YheAM9kEoVmpnHeVV1qsofLCBYDEt0E2IqX/s1600/flash.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Hackers norte-coreanos roubaram mais de 400 milhões de dólares em criptomoedas.",
+    "O esquema FaceStealer utilizou engenharia social avançada ao longo de 18 meses.",
+    "O FBI liderou a investigação e revelou o envolvimento estatal da Coreia do Norte.",
+    "O impacto traduz-se em perdas severas para investidores e plataformas de criptomoedas."
+   ],
+   "title_original": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
    "category": "Malware",
-   "translated": false,
-   "enriched": false,
-   "raw": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months. As part of a coordinated set of actions announced by the U.S. government, the cloud-based"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque ilustra a evolução e sofisticação de ataques baseados em inteligência artificial e deepfakes para burlas financeiras.",
+   "todo": "Adote processos rigorosos de verificação de identidade fora de banda antes de autorizar transações financeiras ou partilhar dados sensíveis."
   },
   {
    "id": "339bacdcefcfe9be",
@@ -1487,15 +1805,21 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/n8n-security-advisory-av26-1160",
    "published": "2026-11-13T14:28:49+00:00",
-   "title": "n8n security advisory (AV26-1160)",
-   "summary": "",
+   "title": "Aviso de segurança n8n (AV26-1160)",
+   "summary": "O Centro Cibernético emitiu um alerta sobre vulnerabilidades na plataforma n8n que afetam versões anteriores à 2.45.5, 2.46.1 e 3.0.1. A falha identificada permite o sequestro de contas OAuth através de um fluxo de credenciais não autenticado. Os administradores são aconselhados a rever os links de suporte e a atualizar o software. O impacto prende-se com o risco de acesso não autorizado a sistemas automatizados.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Vulnerabilidades críticas foram detetadas no software n8n.",
+    "As versões anteriores a 2.45.5, 2.46.1 e 3.0.1 encontram-se afetadas.",
+    "A falha permite o sequestro de contas OAuth através de callbacks não autenticados.",
+    "O impacto exige a atualização imediata para mitigar riscos de intrusão."
+   ],
+   "title_original": "n8n security advisory (AV26-1160)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1160 Date: November 13, 2026 As of November 13, 2026, n8n is affected by vulnerabilities in the following product: n8n Prior to 2.45.5 Prior to 2.46.1 Prior to 3.0.1 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. OAuth Account Hijack in the End-User Credential Connect Flow via Unauthenticated Callback Overview · n8n-io/n8n · GitHub"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque falhas em ferramentas de automatização podem expor fluxos de trabalho inteiros a atores maliciosos.",
+   "todo": "Atualize o software n8n para as versões corrigidas recomendadas pelo fabricante o mais rapidamente possível."
   },
   {
    "id": "e71bf5215ff136bd",
@@ -1504,15 +1828,21 @@
    "lang": "en",
    "link": "https://therecord.media/belarus-cloud-provider-activecloud-ransomware-attack",
    "published": "2026-11-13T14:28:00+00:00",
-   "title": "Ransomware attack on Belarusian cloud firm disrupts businesses for days",
-   "summary": "ActiveCloud said hackers had breached its systems and encrypted parts of its cloud infrastructure, leaving customers unable to access key services for several days.",
+   "title": "Ataque de ransomware a empresa de cloud bielorrussa perturba empresas durante dias",
+   "summary": "A empresa ActiveCloud sofreu um ataque informático em que cibercriminosos violaram os seus sistemas e encriptaram parte da infraestrutura em nuvem. A falha deixou os clientes sem acesso a serviços essenciais durante vários dias consecutivos. A empresa atuou para mitigar o problema e repor a normalidade operacional. O impacto resultou em fortes perturbações na atividade diária das empresas dependentes daquela nuvem.",
    "image": "https://cms.therecord.media/uploads/server_getty_images_unsplash_bba164f23e.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A ActiveCloud foi alvo de um ataque de ransomware que cifrou infraestruturas.",
+    "Os clientes ficaram sem acesso a serviços essenciais durante vários dias.",
+    "A empresa de alojamento investigou e tentou recuperar os sistemas afetados.",
+    "O impacto causou paragens prolongadas nas operações comerciais dos utilizadores."
+   ],
+   "title_original": "Ransomware attack on Belarusian cloud firm disrupts businesses for days",
    "category": "Ransomware",
-   "translated": false,
-   "enriched": false,
-   "raw": "ActiveCloud said hackers had breached its systems and encrypted parts of its cloud infrastructure, leaving customers unable to access key services for several days."
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque demonstra como a dependência de fornecedores de nuvem regionais pode paralisar negócios em caso de incidente.",
+   "todo": "Garanta cópias de segurança offline e independentes dos dados críticos alojados em serviços de nuvem de terceiros."
   },
   {
    "id": "40eafe7e31c0ae0c",
@@ -1521,15 +1851,21 @@
    "lang": "en",
    "link": "https://hackread.com/fbi-disrupts-north-korean-facestealer-crypto-theft/",
    "published": "2026-11-13T14:17:17+00:00",
-   "title": "FBI Disrupts North Korean FaceStealer Scheme Behind $400M Crypto Theft",
-   "summary": "The FaceStealer scheme used hijacked messaging accounts, fake video meetings and secretly recorded webcam footage to target cryptocurrency…",
+   "title": "FBI desmantela esquema FaceStealer norte-coreano responsável por roubo de 400 milhões em criptomoedas",
+   "summary": "O esquema FaceStealer, operado por cibercriminosos norte-coreanos, utilizou contas de mensagens comprometidas, reuniões de vídeo falsas e webcams secretamente gravadas para atacar o setor das criptomoedas. A investigação do FBI concluiu que estas táticas permitiram roubar mais de 400 milhões de dólares. As autoridades norte-americanas tomaram medidas concertadas para neutralizar o grupo. O impacto centrou-se no roubo em larga escala de ativos digitais a utilizadores e empresas.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O esquema FaceStealer usou videochamadas falsas e contas comprometidas para fraudes.",
+    "O grupo norte-coreano roubou mais de 400 milhões de dólares em ativos digitais.",
+    "O FBI liderou as ações de interrupção desta rede criminosa.",
+    "O impacto afetou gravemente a segurança do setor de criptomoedas."
+   ],
+   "title_original": "FBI Disrupts North Korean FaceStealer Scheme Behind $400M Crypto Theft",
    "category": "Malware",
-   "translated": false,
-   "enriched": false,
-   "raw": "The FaceStealer scheme used hijacked messaging accounts, fake video meetings and secretly recorded webcam footage to target cryptocurrency…"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque revela a utilização de métodos de engenharia social altamente personalizados e visuais em ataques cibernéticos modernos.",
+   "todo": "Desconfie de reuniões virtuais não solicitadas com novos contactos do setor financeiro e valide sempre a identidade dos interlocutores."
   },
   {
    "id": "d53524da74177c0c",
@@ -1538,15 +1874,21 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/apache-security-advisory-av26-1159",
    "published": "2026-11-13T14:10:44+00:00",
-   "title": "Apache security advisory (AV26-1159)",
-   "summary": "",
+   "title": "Aviso de segurança Apache (AV26-1159)",
+   "summary": "O Centro Cibernético alertou para uma vulnerabilidade que afeta o Apache HTTP Server em versões anteriores à 2.4.71. Os administradores de sistemas foram encorajados a consultar os recursos recomendados e a aplicar as correções necessárias. A divulgação visa prevenir a exploração da falha por agentes maliciosos. O impacto está associado a potenciais brechas de segurança em servidores web que utilizem versões desatualizadas.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Foi identificada uma vulnerabilidade no Apache HTTP Server.",
+    "A versão 2.4.71 introduz correções para as falhas detetadas anteriormente.",
+    "O Centro Cibernético recomenda a atualização imediata dos sistemas afetados.",
+    "O impacto afeta a estabilidade e a segurança de servidores web vulneráveis."
+   ],
+   "title_original": "Apache security advisory (AV26-1159)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1159 Date: November 13, 2026 As of November 11, 2026, Apache is affected by vulnerabilities in the following product: Apache HTTP Server Prior to 2.4.71 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. Downloading the Apache HTTP Server Apache http Server Project"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque o Apache HTTP Server é amplamente utilizado, tornando qualquer vulnerabilidade um alvo imediato para exploração.",
+   "todo": "Atualize o Apache HTTP Server para a versão 2.4.71 ou superior para mitigar potenciais riscos de segurança."
   },
   {
    "id": "6e2149244374b4d5",
@@ -1555,15 +1897,21 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/control-systems-johnson-controls-security-advisory-av26-1158",
    "published": "2026-11-13T13:56:59+00:00",
-   "title": "[Control systems] Johnson Controls security advisory (AV26-1158)",
-   "summary": "",
+   "title": "[Sistemas de controlo] Aviso de segurança Johnson Controls (AV26-1158)",
+   "summary": "A Johnson Controls confirmou uma vulnerabilidade crítica que afeta os produtos EasyIO FW nas versões V3.0b25 e anteriores. O Centro Cibernético emitiu um alerta a instar os administradores a verificarem os avisos do fabricante e a aplicarem as atualizações de segurança disponíveis. Esta falha afeta sistemas de controlo industrial e edifícios inteligentes. O impacto prende-se com o risco de acesso e controlo não autorizado sobre estes equipamentos.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Johnson Controls reportou uma vulnerabilidade no EasyIO FW V3.0b25 e anteriores.",
+    "O alerta foi divulgado pelo Centro Cibernético para administradores de sistemas.",
+    "A falha atinge sistemas de automatização e controlo afetados.",
+    "O impacto exige a aplicação urgente de patches para evitar acessos indevidos."
+   ],
+   "title_original": "[Control systems] Johnson Controls security advisory (AV26-1158)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1158 Date: November 13, 2026 As of November 12, 2026, Johnson Controls is affected by a vulnerability in the following product: EasyIO FW Prior to or equal to V3.0b25 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. Johnson Controls has confirmed a vulnerability impacting EasyIO FW (PDF) Johnson Controls Product Security Advisories"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque vulnerabilidades em sistemas de controlo industrial e de edifícios podem comprometer operações físicas e de infraestruturas.",
+   "todo": "Reveja os avisos de segurança do fabricante e aplique os patches de atualização nos controladores EasyIO afetados."
   },
   {
    "id": "79815295aaa35652",
@@ -1572,15 +1920,21 @@
    "lang": "en",
    "link": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
    "published": "2026-11-13T13:54:20+00:00",
-   "title": "Trezor Confirms Hidden Implants in CryptoBilis-Sold Wallets That Can Steal Recovery Phrases",
-   "summary": "Three Trezor Safe 5 wallets bought from the reseller CryptoBilis contain an implant, an extra circuit board that can copy their recovery phrases, hardware wallet maker Trezor said yesterday. The implant reads the phrase from the wallet's screen and sends it over the mobile network to a server controlled by the attackers. The company examined one of the wallets in its lab, identified the other",
+   "title": "Trezor confirma implantes ocultos em carteiras CryptoBilis capazes de roubar frases de recuperação",
+   "summary": "A fabricante de carteiras de hardware Trezor detetou um circuito eletrónico adicional em três carteiras Trezor Safe 5 adquiridas através do revendedor CryptoBilis. O componente fraudulento consegue ler a frase de recuperação diretamente do ecrã do dispositivo e transmiti-la via rede móvel para um servidor controlado por atacantes. A empresa examinou laboratorialmente um dos exemplares para compreender o mecanismo de espionagem. O impacto compromete irremediavelmente a segurança dos fundos dos utilizadores que adquiriram os dispositivos afetados.",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivDE4uIn_bV4GUrsw0LjzqBnnNaQM_0lzJhrSy89nrShmwNlFcsVucCFpzzZ2LMkkSMF-XMb8rp0e7_Maemyj5sypkVIf4s2Wx5pbJXkOwf0vMkG9ThBQAHhvJ_mKWHq78f_iJYhAM2l1Hp_Zk3VtB_bVvYFmZTX4WakIpC_Zib0rlFnDG-H674JSP5Mg/s1600/implant.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Três carteiras Trezor Safe 5 compradas no revendedor CryptoBilis continham um circuito malicioso.",
+    "O implante lê a frase de recuperação do ecrã e envia-a via rede móvel a atacantes.",
+    "A Trezor confirmou a adulteração física após análise laboratorial.",
+    "O impacto resulta no roubo direto de chaves privadas e fundos em criptomoedas."
+   ],
+   "title_original": "Trezor Confirms Hidden Implants in CryptoBilis-Sold Wallets That Can Steal Recovery Phrases",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Three Trezor Safe 5 wallets bought from the reseller CryptoBilis contain an implant, an extra circuit board that can copy their recovery phrases, hardware wallet maker Trezor said yesterday. The implant reads the phrase from the wallet's screen and sends it over the mobile network to a server controlled by the attackers. The company examined one of the wallets in its lab, identified the other"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque demonstra que a adulteração física de hardware por revendedores pode comprometer a segurança absoluta de carteiras de criptomoedas.",
+   "todo": "Compre carteiras de hardware exclusivamente através do fabricante oficial ou de canais de distribuição autorizados e fidedignos."
   },
   {
    "id": "70883ad509251f33",
@@ -12406,116 +12760,6 @@
    "enriched": true,
    "why": "Ajuda os líderes de cibersegurança a comunicarem eficazmente incidentes de credenciais vazadas aos órgãos de gestão.",
    "todo": "Estabeleça uma cultura de transparência para reportar erros rapidamente e utilize ferramentas de deteção automatizada de segredos."
-  },
-  {
-   "id": "694928bcf42da269",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/france-blames-iran-for-a-cyberattack-that-heated-supermarket-refrigerators/",
-   "published": "2026-11-10T07:35:05+00:00",
-   "title": "France Blames Iran for a Cyberattack That Heated Supermarket Refrigerators",
-   "summary": "O governo francês culpou publicamente o Irão por um ciberataque que provocou o aquecimento de frigoríficos em supermercados do país. Na sequência do incidente, abaixou o embaixador iraniano e anunciou que irá procurar a aplicação de sanções europeias contra os responsáveis. O caso ilustra o impacto de ataques informáticos direcionados a infraestruturas físicas.",
-   "image": null,
-   "points": [
-    "França responsabiliza o Irão por um ciberataque a refrigeração de supermercados.",
-    "O ataque provocou o aumento perigoso da temperatura em frigoríficos comerciais.",
-    "O governo francês convocou o embaixador iraniano e pediu sanções europeias."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Demonstra como os ciberataques estatais podem afetar diretamente infraestruturas do mundo físico e bens essenciais.",
-   "todo": "isole sistemas de refrigeração e controlo industrial da rede pública e reforce a autenticação de acessos."
-  },
-  {
-   "id": "2eff05fe6c164061",
-   "source": "WIRED Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.wired.com/story/security-flaws-across-uk-government-sites-exposed-god-tier-information/",
-   "published": "2026-11-10T07:00:00+00:00",
-   "title": "Security Flaws Across UK Government Sites Exposed ‘God-Tier’ Information",
-   "summary": "Um investigador de segurança descobriu falhas em códigos de acesso público que colocavam em risco informações privadas em vários departamentos governamentais do Reino Unido. A análise revelou que dados altamente sensíveis estavam vulneráveis devido a desproteções no código disponibilizado. O incidente expôs a fragilidade na gestão de dados por parte de entidades públicas.",
-   "image": "https://media.wired.com/photos/6af269df2008482926d88a86/master/pass/Security_Security%20Flaws%20Across%20UK%20Government%20Sites%20Exposed%20%E2%80%98God-Tier%E2%80%99%20Information_v1.jpg",
-   "points": [
-    "Investigador descobriu falhas de segurança em códigos de sites governamentais do Reino Unido.",
-    "Informação privada e altamente sensível esteve em risco em vários departamentos.",
-    "A vulnerabilidade decorria de dados expostos em código publicamente acessível."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "Revela como a falta de cuidado na publicação de código pode expor dados críticos de entidades governamentais.",
-   "todo": "Faça auditorias regulares aos repositórios de código público para garantir que não contêm dados confidenciais."
-  },
-  {
-   "id": "9844bc61915e12db",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
-   "published": "2026-11-10T06:52:54+00:00",
-   "title": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
-   "summary": "A Google lançou atualizações de segurança para corrigir nove vulnerabilidades no navegador Chrome, incluindo uma falha de alta gravidade já explorada ativamente por atacantes. O problema, identificado como CVE-2026-125350, consiste num erro do tipo 'use-after-free' no componente XML. Este tipo de falha ocorre quando um programa tenta aceder a uma zona de memória após esta ter sido libertada.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjk5S9J891bQS8W6TgyoiEPQ7geGia8FqqWjckFlo9qMH2wXIXv-7gyod1XKUpI9BfgcliN2Re8A85rJ121jxqgfnw1LsjYBvAYtX7694GVgMF7B94G0n5MzqMaKqLAbr-No1nqrN0gyF8MFR_bYQIYlqiTh_FzobmWrq4NOCLbcW_78uEMMW5FE4eqJoo/s1600/chrome-0day.jpg",
-   "points": [
-    "A Google corrigiu nove vulnerabilidades no Chrome, incluindo um zero-day explorado ativamente.",
-    "A falha principal (CVE-2026-125350) é um erro de 'use-after-free' no componente XML.",
-    "O erro permite explorar falhas de memória através de acessos indevidos."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Destaca a urgência de atualizar navegadores web para evitar explorações ativas de vulnerabilidades desconhecidas.",
-   "todo": "Atualize imediatamente o navegador Google Chrome para a versão mais recente disponibilizada."
-  },
-  {
-   "id": "329980cc6fad8b73",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html",
-   "published": "2026-11-10T06:44:36+00:00",
-   "title": "N-able Takes N-central Cloud Offline After Researcher Discloses 33 Zero-Days with PoC Exploits",
-   "summary": "A empresa N-able retirou temporariamente o seu ambiente em nuvem N-central e apelou aos clientes com servidores locais para os desligarem. A medida preventiva surgiu após a divulgação pública por um investigador de mais de 30 vulnerabilidades coletivamente denominadas Able2Shell. A empresa está a tomar ações urgentes para garantir a segurança dos sistemas afetados.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-DkzHcZpJVVEU3e3wmGB2DiyRsnWXkf_2bfT1fiDJG4Wn92cartbhyphenhyphenqZHOjXGasigHqJAyXM0kjOlYipgEkahrCi9KGa1s8gpINVT-oFldgOc1bZMUQ-nmFqsSMNwIe6463fXOxSqX1dNroXgwn9MwsmCx41jvPdtdygITxfKyTRDUWKS19YVTFTZY8sr/s1600/n-able.jpg",
-   "points": [
-    "A N-able colocou o N-central Cloud offline de forma preventiva.",
-    "Foram divulgadas publicamente 33 vulnerabilidades conhecidas como Able2Shell.",
-    "A empresa instou os clientes locais a desligarem os servidores até nova ordem."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra o impacto drástico que a revelação pública de múltiplas vulnerabilidades pode ter na operação de um serviço.",
-   "todo": "Desligue servidores afetados e siga as recomendações oficiais do fabricante para aplicar correções de segurança."
-  },
-  {
-   "id": "b579a343e6b64bab",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html",
-   "published": "2026-11-10T06:31:42+00:00",
-   "title": "CISA Warns of Active Exploitation of OpenSSH, GPUStack, FreeSWITCH, and IBM Flaws",
-   "summary": "A Agência de Cibersegurança e Segurança de Infraestrutura dos EUA (CISA) adicionou quatro novas falhas de segurança ao seu catálogo de vulnerabilidades exploradas ativamente. As falhas afetam o GPUStack, o SignalWire FreeSwitch, o OpenBSD OpenSSH e o IBM Aspera Faspex. Entre as vulnerabilidades inclui-se uma falha de autorização incorreta com pontuação máxima de gravidade.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVAsrcYxVs8sJe7IiSD6WkTC4yPv0eLfup7dwcsS0NLcAAgoY__wyC3UFCR90PL2ziKCEW-vMNIEQXES-8uAG-MxuXlyIDdQGeNREm8yFv3tbvsCVXXRyRGT4ORirvcVKP_uD62XHYy9w3x_P0o7XzkguJPwq_1vV2jPxxnZWbhAHHUJ3YJ6HbTlXb0shyphenhyphen/s1600/openssh.png",
-   "points": [
-    "A CISA atualizou o catálogo KEV com quatro novas falhas sob exploração ativa.",
-    "Os produtos afetados incluem GPUStack, FreeSWITCH, OpenSSH e IBM Aspera Faspex.",
-    "Uma das vulnerabilidades apresenta uma pontuação de gravidade máxima (9.8)."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Alerta para a exploração ativa no mundo real de falhas críticas em software amplamente utilizado.",
-   "todo": "Consulte o catálogo da CISA e aplique imediatamente os patches de segurança para o OpenSSH, GPUStack, FreeSWITCH e IBM."
   }
  ]
 }

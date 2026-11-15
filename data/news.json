@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-15T16:55:16.575178+00:00",
+ "updated": "2026-11-15T21:35:57.686375+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 1
   },
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 5
+   "added": 4
   },
   {
    "source": "TugaTech",
@@ -49,7 +49,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -89,7 +89,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "The Record",
@@ -104,7 +104,7 @@
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CSO Online",
@@ -233,8 +233,8 @@
   },
   {
    "source": "The Register Security",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 16
   },
   {
    "source": "Help Net Security",
@@ -244,12 +244,12 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 4
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
    "ok": true,
-   "added": 3
+   "added": 4
   },
   {
    "source": "Sophos News",
@@ -263,13 +263,13 @@
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -304,11 +304,125 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 36,
-  "pending": 300,
-  "unenriched": 135
+  "done": 120,
+  "pending": 236,
+  "unenriched": 61
  },
  "items": [
+  {
+   "id": "16ac19c7d1b10bec",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/15/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
+   "published": "2026-11-15T20:56:08+00:00",
+   "title": "FBI alerta que a ferramenta de pirataria com IA ARTEX está a impulsionar ciberataques globais",
+   "summary": "O FBI emitiu um aviso alertando que vários atacantes estão a utilizar uma ferramenta de testes de penetração baseada em inteligência artificial chamada ARTEX para automatizar ciberataques a nível mundial. Entre os incidentes destaca-se uma recente falha na cadeia de abastecimento da ConnectWise que comprometeu os ambientes de clientes da Microsoft 365. A agência indicou que a framework de código aberto tem sido instrumentalizada por cibercriminosos desde pelo menos o final da semana passada. Esta ameaça afeta organizações em todo o globo através da automação de intrusões.",
+   "image": null,
+   "points": [
+    "O FBI alertou sobre o uso global da ferramenta de IA ARTEX.",
+    "Hackers utilizam a framework para automatizar ciberataques contra organizações.",
+    "A campanha inclui uma falha na cadeia de abastecimento da ConnectWise.",
+    "O impacto resultou no compromisso de ambientes de clientes da Microsoft 365."
+   ],
+   "title_original": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como a inteligência artificial está a ser usada ativamente por cibercriminosos para automatizar ataques em larga escala.",
+   "todo": "Monitorize os fornecedores da cadeia de abastecimento e reforce a segurança nos ambientes Microsoft 365."
+  },
+  {
+   "id": "4201db3ac6828cb2",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
+   "published": "2026-11-15T18:29:53+00:00",
+   "title": "FBI alerta que a ferramenta de pirataria com IA ARTEX está a impulsionar ciberataques globais",
+   "summary": "O FBI emitiu um alerta sobre a utilização por hackers de uma ferramenta de testes de penetração impulsionada por inteligência artificial, designada ARTEX. Esta framework automatiza ataques cibernéticos contra organizações em todo o mundo, tendo sido associada a uma recente brecha na cadeia de abastecimento da ConnectWise. O incidente resultou na invasão de ambientes de clientes do Microsoft 365. A agência aponta que vários autores de ameaças exploram ativamente esta tecnologia.",
+   "image": null,
+   "points": [
+    "O FBI reportou ataques baseados na framework de IA ARTEX.",
+    "A ferramenta automatiza ataques cibernéticos contra várias organizações.",
+    "O ataque afetou a cadeia de abastecimento da ConnectWise.",
+    "Foram comprometidos ambientes de clientes do Microsoft 365."
+   ],
+   "title_original": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia a rápida adoção de frameworks de IA por atacantes para escalar operações maliciosas.",
+   "todo": "Adote controlos rigorosos de acesso e verificação em serviços em nuvem como o Microsoft 365."
+  },
+  {
+   "id": "989c0561410e90b3",
+   "source": "SANS ISC",
+   "region": "US",
+   "lang": "en",
+   "link": "https://isc.sans.edu/diary/rss/33496",
+   "published": "2026-11-15T18:17:27+00:00",
+   "title": "Lançamento do YARA-X 1.23.0",
+   "summary": "Foi anunciada a nova versão 1.23.0 da ferramenta YARA-X, que traz diversas melhorias operacionais. A atualização foca-se na correção de bugs e no incremento da estabilidade geral do sistema. Esta nova versão inclui especificamente quatro melhorias e dezasseis correções de erros. Estas alterações visam otimizar a experiência e o desempenho para os utilizadores.",
+   "image": null,
+   "points": [
+    "Foi lançada a versão 1.23.0 do YARA-X.",
+    "A atualização introduz quatro melhorias funcionais.",
+    "Foram implementadas dezasseis correções de bugs."
+   ],
+   "title_original": "YARA-X 1.23.0 Release, (Sun, Nov 15th)",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Mantém as ferramentas de análise atualizadas e livres de falhas conhecidas.",
+   "todo": "Atualize a ferramenta YARA-X para a versão mais recente para beneficiar das correções de erros."
+  },
+  {
+   "id": "9c6a34470d66886a",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203174/laws-and-regulations/meta-fined-e805-million-in-italy-over-facebooks-default-photo-gallery-access.html",
+   "published": "2026-11-15T18:11:56+00:00",
+   "title": "Meta Multada em 805 Milhões de Euros em Itália Devido ao Acesso Predefinido à Galeria de Fotos no Facebook",
+   "summary": "A autoridade de proteção de dados de Itália, o Garante, aplicou uma coima de 805 milhões de euros à Meta Platforms Ireland Limited. A investigação concluiu que a aplicação do Facebook para Android acedia a fotos, vídeos e metadados nos telemóveis dos utilizadores sem consentimento específico. A funcionalidade, ativa desde 2023, vinha ligada por predefinição e utilizava uma única permissão genérica para múltiplos fins. Cerca de 20 milhões de pessoas foram afetadas por esta prática de recolha não transparente.",
+   "image": null,
+   "points": [
+    "O Garante multou a Meta em 805 milhões de euros.",
+    "O Facebook em Android acedia a galerias sem consentimento explícito.",
+    "A funcionalidade estava ativada por predefinição e afetou 20 milhões de pessoas.",
+    "A investigação detetou o uso de uma única permissão para vários fins."
+   ],
+   "title_original": "Meta Fined €805 Million in Italy Over Facebook’s Default Photo Gallery Access",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Sublinha o rigor regulatório europeu face ao tratamento abusivo de dados e falta de consentimento transparente.",
+   "todo": "Reveja e ajuste as permissões das aplicações móveis nas definições de privacidade do dispositivo."
+  },
+  {
+   "id": "c336f921881caf3b",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/novo-ataque-cibernetico-sequestra-redes-moveis-para-enganar-vitima-via-mensagens/",
+   "published": "2026-11-15T18:00:00+00:00",
+   "title": "Novo ataque cibernético sequestra redes móveis para enganar vítima via mensagens",
+   "summary": "Um grupo de atacantes apelidado de \"SilentAir\" sequestrou nós de redes móveis através de vulnerabilidades nos protocolos SS7 e Diameter. A campanha, monitorizada desde o ano passado, focou-se em assinantes em Taiwan e envolveu operadoras em seis países asiáticos para monitorizar políticos e autoridades. Os criminosos modificaram a localização das vítimas para intercetar códigos de autenticação de dois fatores e desviar chamadas. Esta invasão aproveitou a confiança inerente à rede global IPX para injetar comandos maliciosos.",
+   "image": "https://www.estadao.com.br/resizer/v2/LOY6WR3BZBB7HK7LTYO7LJLKDU.png?quality=80&auth=2345414e31f36bf8cf22bbda85b42dc9fa6c54a4be75eeb81a0f9416b1e1b3d3&width=710",
+   "points": [
+    "O grupo \"SilentAir\" explorou falhas nos protocolos SS7 e Diameter.",
+    "Foram sequestrados nós de redes móveis para intercetar chamadas e mensagens.",
+    "O ataque visou políticos e utilizadores, principalmente em Taiwan.",
+    "Os atacantes roubaram códigos de autenticação de dois fatores para invasões de contas."
+   ],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": true,
+   "why": "Revela fragilidades críticas nas infraestruturas globais de telecomunicações que comprometem a autenticação e a privacidade.",
+   "todo": "Evite depender exclusivamente de SMS para a autenticação de dois fatores, preferindo aplicações autenticadoras ou chaves físicas."
+  },
   {
    "id": "17f0563e97138ce4",
    "source": "Security Affairs",
@@ -324,9 +438,9 @@
     "Newsletter cobre vulnerabilidades recentes, ferramentas de IA e campanhas maliciosas.",
     "Destacam-se incidentes como falhas no NEAR AI e ataques direcionados a Taiwan."
    ],
-   "title_original": "SECURITY AFFAIRS AI-CYBERSECURITY NEWSLETTER ROUND 8",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Ajuda a compreender a evolução rápida da inteligência artificial nas ameaças e defesas cibernéticas.",
    "todo": "Mantenha-se informado sobre as novas ferramentas de IA e adote controlos rigorosos para proteger chaves e credenciais."
@@ -368,9 +482,9 @@
     "Aborda campanhas de roubo de credenciais, intrusões e implantes de comando e controlo.",
     "Analisa comportamentos pós-infeção de várias famílias de software malicioso."
    ],
-   "title_original": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 123",
+   "title_original": null,
    "category": "Malware",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Permite monitorizar as tendências globais e as novas técnicas utilizadas por operadores de malware.",
    "todo": "Atualize regularmente o software de segurança e monitore os terminais contra comportamentos anómalos."
@@ -412,9 +526,9 @@
     "Aborda novas vulnerabilidades conhecidas, ataques de ransomware e ações de autoridades.",
     "Destaca incidentes em plataformas de grandes empresas e ataques a infraestruturas."
    ],
-   "title_original": "Security Affairs newsletter Round 604 by Pierluigi Paganini – INTERNATIONAL EDITION",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Sintetiza o panorama semanal de ameaças e vulnerabilidades globais mais relevantes.",
    "todo": "Aplique correções de segurança urgentes e acompanhe os alertas de agências especializadas."
@@ -456,9 +570,9 @@
     "O quê: Mudança oficial de designação para 'Super Intelligence Office'.",
     "Impacto: Alinhamento institucional com diretivas executivas sobre terminologia tecnológica."
    ],
-   "title_original": "Pentagon Renames CDAO ‘Super Intelligence Office’",
+   "title_original": null,
    "category": "IA",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Reflete mudanças políticas na nomenclatura oficial de tecnologias de inteligência artificial.",
    "todo": ""
@@ -500,9 +614,9 @@
     "O quê: Ciberataque expôs nomes e moradas postais de 22 milhões de destinatários.",
     "Impacto: Afetou indiretamente utilizadores de serviços habitacionais e de saúde através de subcontratados."
    ],
-   "title_original": "Data Breach at La Poste Subsidiary Maileva Affects 22 Million People in France",
+   "title_original": null,
    "category": "Fuga de dados",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Sublinha o risco sistémico de violações de dados em cadeias de subcontratação digital.",
    "todo": "Valide as medidas de segurança adotadas por todos os subcontratados que lidam com dados de clientes."
@@ -522,9 +636,9 @@
     "Aborda roubo de credenciais em repositórios e manipulação de ferramentas de código.",
     "Discute a comunicação de riscos e credenciais expostas entre líderes e administrações."
    ],
-   "title_original": "Week in review: Secret stealer hits GitHub repos, Claude Code turned into remote-controlled implant",
+   "title_original": null,
    "category": "Malware",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Ajuda os profissionais a acompanharem os vetores de ataque mais recentes contra repositórios e ferramentas de desenvolvimento.",
    "todo": "Implemente a verificação contínua de segredos para evitar a exposição acidental de credenciais em repositórios de código."
@@ -544,9 +658,9 @@
     "O quê: Roubo de chave de acesso exposta por violação em parceiro.",
     "Impacto: Permitiu cópia de dados e comprometeu extensões de desenvolvimento."
    ],
-   "title_original": "Stolen Fireworks AI Key Led to Cursor Data Breach and Trojanized Claude Code Extension",
+   "title_original": null,
    "category": "Malware",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Evidencia o perigo de chaves de API comprometidas em cadeias de fornecedores de inteligência artificial.",
    "todo": "Rotacione chaves de API regularmente e restrinja estritamente os seus privilégios de acesso."
@@ -589,9 +703,9 @@
     "Como: Através do acesso a fotografias e vídeos da galeria do Android na aplicação Facebook.",
     "Impacto: Violação da esfera privada dos utilizadores por falta de consentimento livre e informado."
    ],
-   "title_original": "Meta Fined $887 Million in Italy Over Android Gallery Photos and Videos on Facebook",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra a fiscalização rigorosa e as pesadas coimas aplicadas às grandes tecnológicas por violações da privacidade e proteção de dados.",
    "todo": "Reveja e restrinja as permissões de acesso concedidas às aplicações móveis nas definições do seu smartphone."
@@ -13630,116 +13744,6 @@
    "enriched": true,
    "why": "Evidencia como acessos privilegiados podem ser abusados internamente e a utilização de IA no planeamento de fugas criminosas.",
    "todo": "Aplique o princípio do privilégio mínimo e audite regularmente os acessos internos a dados e ativos apreendidos."
-  },
-  {
-   "id": "1fd1d86ac6f01caf",
-   "source": "CyberScoop",
-   "region": "US",
-   "lang": "en",
-   "link": "https://cyberscoop.com/spyware-attacks-trend-everyday-people-iverify-report/",
-   "published": "2026-11-10T11:00:00+00:00",
-   "title": "Spyware attacks trend toward hitting just about anyone",
-   "summary": "Os ataques de spyware estão a tornar-se menos direcionados, afetando cidadãos comuns em vez de apenas alvos tradicionais de alto perfil. Informações da empresa iVerify mostram que incidentes recentes atingiram familiares de trabalhadores e cidadãos sem cargos públicos de relevo. A maioria destas infeções resulta de campanhas criminosas em massa focadas no roubo de credenciais e criptomoedas. O impacto demonstra que qualquer utilizador pode ser vítima de spyware, independentemente do seu perfil profissional.",
-   "image": null,
-   "points": [
-    "Ataques de spyware estão a afetar cidadãos comuns de forma indiscriminada.",
-    "Notificações de ameaças da Apple atingiram pessoas sem perfis públicos ou cargos sensíveis.",
-    "Três em cada quatro deteções correspondem a cibercriminosos a roubar credenciais e criptomoedas."
-   ],
-   "title_original": null,
-   "category": "Malware",
-   "translated": false,
-   "enriched": true,
-   "why": "Revela uma mudança estratégica no cibercrime, onde o spyware é usado em massa contra utilizadores comuns e não apenas contra elites.",
-   "todo": "Adote boas práticas de higiene digital e mantenha os dispositivos móveis atualizados para detetar potenciais ameaças de spyware."
-  },
-  {
-   "id": "59dac25c32ac2cab",
-   "source": "SAPO Tek",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://tek.sapo.pt/noticias/internet/artigos/da-identificacao-a-correcao-quanto-tempo-demoram-as-empresas-a-agir-perante-problemas-de-ciberseguranca/",
-   "published": "2026-11-10T10:57:36+00:00",
-   "title": "Da identificação à correção: Quanto tempo demoram as empresas a agir perante problemas de cibersegurança?",
-   "summary": "Um relatório recente da Check Point Software analisou a abordagem Safe Remediation para avaliar a resposta empresarial a problemas de cibersegurança. O estudo examinou o tempo que as organizações demoram a agir, testar, validar e implementar correções. O impacto do relatório foca-se em medir a eficiência operacional das empresas na gestão de vulnerabilidades.",
-   "image": null,
-   "points": [
-    "A Check Point Software publicou um relatório sobre a abordagem Safe Remediation.",
-    "O estudo analisa o tempo que as empresas demoram a agir perante problemas de segurança.",
-    "Avalia os processos de teste, validação e implementação de correções."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Ajuda as empresas a avaliar e otimizar os seus tempos de resposta face a vulnerabilidades de segurança.",
-   "todo": "Estabeleça processos claros e automatizados para testar e aplicar correções de segurança com maior rapidez."
-  },
-  {
-   "id": "698e773b5afbed92",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/france-blames-iran-supermarket/",
-   "published": "2026-11-10T10:35:00+00:00",
-   "title": "França responsabiliza o Irão por ciberataque a frigoríficos de supermercados e pede mandados de prisão internacionais",
-   "summary": "As autoridades francesas ligaram oficialmente o ciberataque direcionado aos frigoríficos de supermercados ao Corpo da Guarda Revolucionária Islâmica do Irão. Na sequência desta investigação, o governo francês solicitou a emissão de mandados de prisão internacionais. O incidente destaca o envolvimento estatal em ataques direcionados a infraestruturas e equipamentos comerciais.",
-   "image": null,
-   "points": [
-    "Autores: Corpo da Guarda Revolucionária Islâmica do Irão.",
-    "Alvo: Frigoríficos de supermercados em França.",
-    "Ação: Autoridades francesas pediram mandados de prisão internacionais."
-   ],
-   "title_original": "France Blames Iran for Supermarket Fridge Hack, Requests International Arrest Warrants",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como o ciberespionagem e os ataques estatais podem visar infraestruturas comerciais do quotidiano.",
-   "todo": ""
-  },
-  {
-   "id": "83b8553356ad0515",
-   "source": "Pplware Segurança",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://pplware.sapo.pt/informacao/o-que-e-que-a-china-poderia-obter-de-jensen-huang/",
-   "published": "2026-11-10T10:30:00+00:00",
-   "title": "O que é que a China poderia obter de Jensen Huang?",
-   "summary": "Jensen Huang, o diretor executivo da Nvidia, encontra-se no centro de uma polémica devido a uma relação pessoal com uma executiva suspeita de espionagem chinesa. A situação levantou suspeitas sobre os dados ou informações confidenciais a que a China poderia ter acesso através desta proximidade. A controvérsia gerou debate sobre os riscos de segurança associados a figuras centrais da tecnologia.",
-   "image": null,
-   "points": [
-    "Quem: Jensen Huang, CEO da Nvidia.",
-    "O quê: Relação pessoal com executiva associada a suspeitas de espionagem.",
-    "Impacto: Gera preocupações sobre potenciais fugas de informação sensível para a China."
-   ],
-   "title_original": null,
-   "category": "Ataque/APT",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia os riscos de segurança geopolítica e de espionagem que envolvem líderes de empresas tecnológicas globais.",
-   "todo": "Definir políticas rigorosas de segurança e controlo de acessos a informação sensível para executivos de topo."
-  },
-  {
-   "id": "ba7507c6f20e8122",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html",
-   "published": "2026-11-10T10:16:51+00:00",
-   "title": "Apple corrige falhas de privacidade em chats de grupo do iMessage e vulnerabilidades de emparelhamento Bluetooth",
-   "summary": "A Apple lançou atualizações de software para corrigir falhas de segurança críticas que afetavam o iMessage e o emparelhamento Bluetooth. Uma das vulnerabilidades permitia que um atacante remoto entrasse num chat de grupo e recebesse mensagens, enquanto outra dava acesso a mensagens trocadas antes de o utilizador ser adicionado. As correções destinam-se a vários modelos de iPhone e iPad.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUM6RGvSNUqube0TIXYpzHhs7uSvT0k28f2Q8s-GVOexnCI4T5mzFMUs3Lz4_aS6gNuS71DSTvtfOO-tfVFXvVu82pBmj5gO5_jO5g1ndVQQX8xjBY8A_IDAVNkO7oE1s5FRyEsxXQ_HEM_5_KI4g9VWN8BLgCmQTS1DaFt6lRlfgEJMsxyC5bxQW1qhM/s1600/apple-patch.jpg",
-   "points": [
-    "Quem: Apple.",
-    "O quê: Correção de falhas no iMessage e Bluetooth.",
-    "Impacto: Impedira acesso não autorizado a chats de grupo e mensagens anteriores."
-   ],
-   "title_original": "Apple Patches iMessage Group Chat Privacy Flaws and Bluetooth Pairing Vulnerabilities",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Protege a privacidade das comunicações em grupo contra acessos indevidos por atacantes remotos.",
-   "todo": "Atualize imediatamente os dispositivos Apple para a versão de software mais recente."
   }
  ]
 }

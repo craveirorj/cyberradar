@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-15T09:57:22.760203+00:00",
+ "updated": "2026-11-15T16:55:16.575178+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 1
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 6
+   "added": 5
   },
   {
    "source": "TugaTech",
@@ -74,7 +74,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -89,7 +89,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "The Record",
@@ -139,7 +139,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Malwarebytes Labs",
@@ -233,18 +233,18 @@
   },
   {
    "source": "The Register Security",
-   "ok": true,
-   "added": 16
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 4
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -263,8 +263,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -304,11 +304,209 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 342,
-  "unenriched": 179
+  "done": 36,
+  "pending": 300,
+  "unenriched": 135
  },
  "items": [
+  {
+   "id": "17f0563e97138ce4",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203165/ai/security-affairs-ai-cybersecurity-newsletter-round-8.html",
+   "published": "2026-11-15T16:06:11+00:00",
+   "title": "SECURITY AFFAIRS AI-CYBERSECURITY NEWSLETTER ROUND 8",
+   "summary": "A edição número 8 da newsletter Security Affairs focada em inteligência artificial e cibersegurança destaca o impacto da IA nas operações ofensivas e defensivas. O documento aborda vários incidentes e investigações recentes, incluindo explorações de vulnerabilidades e campanhas autónomas. Entre os temas encontram-se falhas em plataformas como NEAR AI e ataques a serviços de emergência em Taiwan. A publicação sublinha a evolução rápida das ameaças tecnológicas e a incerteza em torno do futuro da IA.",
+   "image": null,
+   "points": [
+    "IA está a transformar táticas de atacantes e defensores na cibersegurança.",
+    "Newsletter cobre vulnerabilidades recentes, ferramentas de IA e campanhas maliciosas.",
+    "Destacam-se incidentes como falhas no NEAR AI e ataques direcionados a Taiwan."
+   ],
+   "title_original": "SECURITY AFFAIRS AI-CYBERSECURITY NEWSLETTER ROUND 8",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda a compreender a evolução rápida da inteligência artificial nas ameaças e defesas cibernéticas.",
+   "todo": "Mantenha-se informado sobre as novas ferramentas de IA e adote controlos rigorosos para proteger chaves e credenciais."
+  },
+  {
+   "id": "81ffe66f4f296d9f",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/15/hack-at-french-postal-unit-exposes-22-million-peoples-data/",
+   "published": "2026-11-15T15:49:15+00:00",
+   "title": "Ciberataque a unidade postal francesa expõe dados de 22 milhões de pessoas",
+   "summary": "Um ataque informático à Maileva, subsidiária digital do grupo postal nacional francês La Poste, resultou na exposição de dados pessoais de cerca de 22 milhões de pessoas. O incidente, ocorrido em meados de setembro, comprometeu nomes próprios, apelidos e moradas postais. A empresa confirmou a ocorrência da violação após relatos nos meios de comunicação social franceses.",
+   "image": null,
+   "points": [
+    "Alvo: Maileva, subsidiária do grupo La Poste em França.",
+    "O quê: Ciberataque expôs nomes e moradas postais de 22 milhões de cidadãos.",
+    "Impacto: Dados de destinatários de clientes da empresa foram divulgados publicamente."
+   ],
+   "title_original": "Hack at French postal unit exposes 22 million people’s data",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como um ataque a um fornecedor digital pode expor em massa dados de cidadãos sem relação direta com a empresa.",
+   "todo": "Exija rigorosos padrões de segurança a fornecedores terceiros que processem dados confidenciais dos seus clientes."
+  },
+  {
+   "id": "1a28e03ea6191181",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203156/malware/security-affairs-malware-newsletter-round-123.html",
+   "published": "2026-11-15T15:49:04+00:00",
+   "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 123",
+   "summary": "A edição 123 da newsletter de malware do Security Affairs reúne uma análise detalhada das mais recentes ameaças e investigações internacionais sobre software malicioso. O documento aborda campanhas de intrusão, ferramentas de roubo de credenciais e operações de cibercrime à escala global. São destacados vários grupos e técnicas, incluindo o uso de web shells, cryptominers e implantes de controlo. A publicação serve de ponto de situação sobre o comportamento pós-infeção de diversas famílias de malware.",
+   "image": null,
+   "points": [
+    "Compilação semanal de investigação internacional sobre malware.",
+    "Aborda campanhas de roubo de credenciais, intrusões e implantes de comando e controlo.",
+    "Analisa comportamentos pós-infeção de várias famílias de software malicioso."
+   ],
+   "title_original": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 123",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite monitorizar as tendências globais e as novas técnicas utilizadas por operadores de malware.",
+   "todo": "Atualize regularmente o software de segurança e monitore os terminais contra comportamentos anómalos."
+  },
+  {
+   "id": "bbb8a67270856461",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
+   "published": "2026-11-15T15:23:48+00:00",
+   "title": "Violação de dados de funcionários da TSMC ligada a fornecedor de nuvem",
+   "summary": "A Taiwan Semiconductor Manufacturing Company confirmou que dados pessoais de colaboradores foram divulgados online. A confirmação surgiu depois de um atacante colocar à venda 6,9 gigabytes de informação alegadamente roubada à empresa. O incidente de segurança está associado a um fornecedor de serviços em nuvem.",
+   "image": null,
+   "points": [
+    "Alvo: Taiwan Semiconductor Manufacturing Company (TSMC).",
+    "O quê: Vazamento e tentativa de venda de 6,9GB de dados de colaboradores.",
+    "Impacto: Informação sensível de trabalhadores exposta através de um fornecedor cloud."
+   ],
+   "title_original": "TSMC employee data breach linked to cloud provider",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia os riscos de segurança associados a fornecedores de serviços em nuvem externos.",
+   "todo": "Audite regularmente os acessos e a segurança dos fornecedores terceiros que alojam dados da sua empresa."
+  },
+  {
+   "id": "dbc32ca8847e99fa",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203140/breaking-news/security-affairs-newsletter-round-604-by-pierluigi-paganini-international-edition.html",
+   "published": "2026-11-15T15:00:08+00:00",
+   "title": "Security Affairs newsletter Round 604 by Pierluigi Paganini – INTERNATIONAL EDITION",
+   "summary": "A edição 604 da newsletter internacional Security Affairs resume os principais incidentes de cibersegurança da semana, destacando ataques de extorsão, vulnerabilidades críticas e operações de agências governamentais. Entre os vários eventos, destacam-se a recuperação de fundos ilícitos ligados à Coreia do Norte, falhas corrigidas pela CISA e incidentes em infraestruturas e plataformas digitais globais. A publicação compila notícias sobre ransomware, espionagem digital e atualizações de segurança de grandes fabricantes.",
+   "image": null,
+   "points": [
+    "Compilação semanal de notícias internacionais de cibersegurança e relatórios de ameaças.",
+    "Aborda novas vulnerabilidades conhecidas, ataques de ransomware e ações de autoridades.",
+    "Destaca incidentes em plataformas de grandes empresas e ataques a infraestruturas."
+   ],
+   "title_original": "Security Affairs newsletter Round 604 by Pierluigi Paganini – INTERNATIONAL EDITION",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Sintetiza o panorama semanal de ameaças e vulnerabilidades globais mais relevantes.",
+   "todo": "Aplique correções de segurança urgentes e acompanhe os alertas de agências especializadas."
+  },
+  {
+   "id": "49e862e5b0734344",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/informacao/asae-ataque-informatico-jose-socrates/",
+   "published": "2026-11-15T13:04:38+00:00",
+   "title": "ASAE alvo de ataque informático. Hackers deixam mensagem com nome de José Sócrates",
+   "summary": "A Autoridade de Segurança Alimentar e Económica foi alegadamente alvo de um ciberataque que se destacou pela inclusão da mensagem “Hacked by José Sócrates”. O incidente levanta preocupações sobre a robustez e a proteção dos sistemas informáticos utilizados por organismos públicos em Portugal. Até ao momento, foram apontadas questões sobre a segurança digital destas entidades governamentais.",
+   "image": null,
+   "points": [
+    "Alvo: Autoridade de Segurança Alimentar e Económica (ASAE).",
+    "O quê: Ataque informático com uma mensagem personalizada associada a José Sócrates.",
+    "Impacto: Desperta preocupações em torno da segurança digital das entidades públicas portuguesas."
+   ],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": true,
+   "why": "Alerta para a vulnerabilidade das infraestruturas digitais de entidades públicas nacionais.",
+   "todo": "Reforce a monitorização de acessos e aplique protocolos rigorosos de resposta a incidentes em sistemas públicos."
+  },
+  {
+   "id": "c8b26857299e57fb",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/pentagon-renames-cdao-super-intelligence-office/",
+   "published": "2026-11-15T12:51:33+00:00",
+   "title": "Pentagon Renames CDAO ‘Super Intelligence Office’",
+   "summary": "O Pentágono procedeu à alteração do nome do Centro Digital e de Inteligência Artificial para 'Super Intelligence Office'. Esta decisão decorre de uma ordem emitida pela presidência para substituir o termo “ inteligência artificial” por “super inteligência” nas comunicações oficiais do poder executivo.",
+   "image": null,
+   "points": [
+    "Alvo: Centro Digital e de Inteligência Artificial do Pentágono (CDAO).",
+    "O quê: Mudança oficial de designação para 'Super Intelligence Office'.",
+    "Impacto: Alinhamento institucional com diretivas executivas sobre terminologia tecnológica."
+   ],
+   "title_original": "Pentagon Renames CDAO ‘Super Intelligence Office’",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Reflete mudanças políticas na nomenclatura oficial de tecnologias de inteligência artificial.",
+   "todo": ""
+  },
+  {
+   "id": "04c1c102f5a737e8",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
+   "published": "2026-11-15T11:27:31+00:00",
+   "title": "Itália multa Meta em 805 milhões de euros por acesso à galeria Android do Facebook sem consentimento",
+   "summary": "A autoridade de proteção de dados de Itália aplicou uma coima de 805 milhões de euros à Meta devido a uma funcionalidade na aplicação do Facebook para Android. O recurso sugeria fotos e vídeos das galerias dos telemóveis para publicação sem que os utilizadores dessem consentimento explícito, estando a funcionalidade ativa por predefinição. A empresa dispõe de um prazo de sessenta dias para responder à decisão.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdTCjpbsG3Dp62JM1KZqfSvZpuBnxwaCxXsplW3dAt2b4Ym0KAWPfxkHf4DT-02VK3jJESLmgasdE6D36qGegWu7dk9YSLN4DZxRVsgrM9lIEXXHUvQ0VzaZ1_gFqpjtA4cP3rlt82g5WnK2sXNZHJd5F_rEk4VSTGnMKOuXziSM1R85Vqhway3lajwTA/s1600/facebook-fine.jpg",
+   "points": [
+    "Alvo: Empresa Meta.",
+    "O quê: Coima de 805 milhões de euros aplicada pela autoridade italiana Garante.",
+    "Impacto: Acedia a conteúdos multimédia e metadados de utilizadores sem consentimento explícito."
+   ],
+   "title_original": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra o rigor regulatório europeu face a violações de privacidade por defeito em aplicações móveis.",
+   "todo": "Reveja as permissões de aplicações móveis e garanta que o acesso a dados de utilizadores requer consentimento explícito."
+  },
+  {
+   "id": "254208bdc6f74740",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203126/data-breach/data-breach-at-la-poste-subsidiary-maileva-affects-22-million-people-in-france.html",
+   "published": "2026-11-15T10:43:16+00:00",
+   "title": "Data Breach at La Poste Subsidiary Maileva Affects 22 Million People in France",
+   "summary": "Um ciberataque à Maileva, subsidiária do grupo postal francês La Poste, comprometeu dados de 22 milhões de cidadãos que receberam documentos através da plataforma. A violação expôs nomes e moradas postais de clientes de empresas terceiras, incluindo inquilinos de habitações sociais e pacientes de laboratórios médicos. Embora os dados bancários não tenham sido afetados, o incidente expôs documentos confidenciais geridos por subcontratados.",
+   "image": null,
+   "points": [
+    "Alvo: Maileva, subsidiária digital do grupo La Poste.",
+    "O quê: Ciberataque expôs nomes e moradas postais de 22 milhões de destinatários.",
+    "Impacto: Afetou indiretamente utilizadores de serviços habitacionais e de saúde através de subcontratados."
+   ],
+   "title_original": "Data Breach at La Poste Subsidiary Maileva Affects 22 Million People in France",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Sublinha o risco sistémico de violações de dados em cadeias de subcontratação digital.",
+   "todo": "Valide as medidas de segurança adotadas por todos os subcontratados que lidam com dados de clientes."
+  },
   {
    "id": "8e707f9e30b1d6b6",
    "source": "Help Net Security",
@@ -317,14 +515,19 @@
    "link": "https://www.helpnetsecurity.com/2026/11/15/week-in-review-secret-stealer-hits-github-repos-claude-code-turned-into-remote-controlled-implant/",
    "published": "2026-11-15T09:00:37+00:00",
    "title": "Week in review: Secret stealer hits GitHub repos, Claude Code turned into remote-controlled implant",
-   "summary": "Here’s an overview of some of last week’s most interesting news, articles, interviews and videos: What a security leader should tell the CEO about leaked credentials In this Help Net Security interview, Eric Fourrier, CEO of GitGuardian, talks about leaked credentials and personal liability for security leaders and boards. He explains how fear of blame pushes mistakes out of sight, and what a security leader should be ready to tell a CEO about exposed keys. … More →",
+   "summary": "O resumo semanal de cibersegurança destaca principais notícias, artigos e entrevistas sobre incidentes recentes. Entre os tópicos abordados encontram-se o roubo de credenciais que afetam repositórios no GitHub e a transformação de ferramentas de programação em implantes controlados remotamente. Inclui também perspetivas de líderes de segurança sobre a gestão de chaves expostas e a comunicação de riscos aos conselhos de administração.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Resumo semanal com os principais artigos e entrevistas da indústria.",
+    "Aborda roubo de credenciais em repositórios e manipulação de ferramentas de código.",
+    "Discute a comunicação de riscos e credenciais expostas entre líderes e administrações."
+   ],
+   "title_original": "Week in review: Secret stealer hits GitHub repos, Claude Code turned into remote-controlled implant",
    "category": "Malware",
-   "translated": false,
-   "enriched": false,
-   "raw": "Here’s an overview of some of last week’s most interesting news, articles, interviews and videos: What a security leader should tell the CEO about leaked credentials In this Help Net Security interview, Eric Fourrier, CEO of GitGuardian, talks about leaked credentials and personal liability for security leaders and boards. He explains how fear of blame pushes mistakes out of sight, and what a security leader should be ready to tell a CEO about exposed keys. … More →"
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda os profissionais a acompanharem os vetores de ataque mais recentes contra repositórios e ferramentas de desenvolvimento.",
+   "todo": "Implemente a verificação contínua de segredos para evitar a exposição acidental de credenciais em repositórios de código."
   },
   {
    "id": "960f41318ea903dd",
@@ -334,14 +537,19 @@
    "link": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
    "published": "2026-11-15T08:22:04+00:00",
    "title": "Stolen Fireworks AI Key Led to Cursor Data Breach and Trojanized Claude Code Extension",
-   "summary": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. \"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday update. \"The key was exposed by Fireworks, and the attacker used it to copy data from a read-only",
+   "summary": "A compilação de dados da Cursor e a alteração maliciosa da extensão Claude Code decorreram do roubo de uma chave de acesso emitida pela Fireworks AI. Um atacante obteve a chave exposta na sequência de uma violação sofrida pela Fireworks AI e utilizou-a para aceder a dados de leitura apenas. O incidente afetou a segurança dos marketplaces de extensões e os dados dos clientes associados.",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg16ACawbG7rP_kT-8Boo4xdTje3BeTWyFSnNXwHhr5cvy2-1X3Ljhrc1IuZlseWd55tN8E1yjQ9ldhTnjWTU-GJBpX_Zen36YiLQGsRSRAoteqHyxx7mn_w0QgLfMKDLItA4p_jpHajucbglLnCR_zWBY_t82YvFkLa9dQFBfjP1BrTlrNdYufsGMSZiGn/s1600/cursor.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Alvo: Extensão Claude Code no marketplace da Cursor e Fireworks AI.",
+    "O quê: Roubo de chave de acesso exposta por violação em parceiro.",
+    "Impacto: Permitiu cópia de dados e comprometeu extensões de desenvolvimento."
+   ],
+   "title_original": "Stolen Fireworks AI Key Led to Cursor Data Breach and Trojanized Claude Code Extension",
    "category": "Malware",
-   "translated": false,
-   "enriched": false,
-   "raw": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. \"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday update. \"The key was exposed by Fireworks, and the attacker used it to copy data from a read-only"
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia o perigo de chaves de API comprometidas em cadeias de fornecedores de inteligência artificial.",
+   "todo": "Rotacione chaves de API regularmente e restrinja estritamente os seus privilégios de acesso."
   },
   {
    "id": "7bb4f5d60253726b",
@@ -351,14 +559,42 @@
    "link": "https://pplware.sapo.pt/smartphones-tablets/android/google-messages-ganha-protecao-melhorada-com-gemini-para-travar-burlas-por-sms/",
    "published": "2026-11-15T07:00:00+00:00",
    "title": "Google Messages ganha Proteção Melhorada com Gemini para travar burlas por SMS",
-   "summary": "As burlas por mensagem deixaram de ser fáceis de apanhar à primeira vista. Em vez dos antigos esquemas de prémios milionários, os atacantes enviam hoje falsas entregas de encomendas, ofertas de emprego ou um simples “olá” para ganhar confiança ao longo de vários dias. Para responder a este problema, a Google começou a disponibilizar o […]",
+   "summary": "A Google começou a disponibilizar uma nova funcionalidade de Proteção Melhorada com recurso ao Gemini na aplicação Google Messages para combater fraudes por SMS. Esta ferramenta foi criada para responder à evolução das burlas móveis, que deixaram de se centrar em prémios fáceis e passaram a utilizar falsas entregas de encomendas ou propostas de emprego falsas construídas ao longo de vários dias. O objetivo é detetar e bloquear padrões de engenharia social utilizados para enganar os utilizadores.",
    "image": null,
-   "points": [],
+   "points": [
+    "Alvo: Utilizadores da aplicação Google Messages.",
+    "O quê: Integração da tecnologia Gemini para detetar e bloquear burlas por SMS.",
+    "Impacto: Protege os cidadãos contra esquemas prolongados de engenharia social e falsas entregas."
+   ],
    "title_original": null,
    "category": "Phishing/Fraude",
    "translated": false,
-   "enriched": false,
-   "raw": "As burlas por mensagem deixaram de ser fáceis de apanhar à primeira vista. Em vez dos antigos esquemas de prémios milionários, os atacantes enviam hoje falsas entregas de encomendas, ofertas de emprego ou um simples “olá” para ganhar confiança ao longo de vários dias. Para responder a este problema, a Google começou a disponibilizar o […]"
+   "enriched": true,
+   "why": "Ajuda a mitigar o aumento de fraudes baseadas em mensagens de texto enganosas.",
+   "todo": "Ative as ferramentas de proteção automática contra spam nas suas aplicações de mensagens e desconfie de contactos inesperados."
+  },
+  {
+   "id": "f316d41a09fed9d0",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/meta-fined-887-million-in-italy-over-android-gallery-photos-and-videos-on-facebook/",
+   "published": "2026-11-14T19:00:00+00:00",
+   "title": "Meta Fined $887 Million in Italy Over Android Gallery Photos and Videos on Facebook",
+   "summary": "A autoridade italiana multou a Meta em 887 milhões de dólares devido ao acesso não autorizado a fotografias e vídeos da galeria do Android através do Facebook. Esta diretiva protege os smartphones como parte da esfera privada dos utilizadores. A autoridade sublinhou que este tipo de acesso exige um consentimento livre e informado.",
+   "image": null,
+   "points": [
+    "Quem: A autoridade reguladora italiana e a Meta.",
+    "O quê: Multa de 887 milhões de dólares aplicada à Meta.",
+    "Como: Através do acesso a fotografias e vídeos da galeria do Android na aplicação Facebook.",
+    "Impacto: Violação da esfera privada dos utilizadores por falta de consentimento livre e informado."
+   ],
+   "title_original": "Meta Fined $887 Million in Italy Over Android Gallery Photos and Videos on Facebook",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra a fiscalização rigorosa e as pesadas coimas aplicadas às grandes tecnológicas por violações da privacidade e proteção de dados.",
+   "todo": "Reveja e restrinja as permissões de acesso concedidas às aplicações móveis nas definições do seu smartphone."
   },
   {
    "id": "2aae0ad36a1c0089",
@@ -13504,226 +13740,6 @@
    "enriched": true,
    "why": "Protege a privacidade das comunicações em grupo contra acessos indevidos por atacantes remotos.",
    "todo": "Atualize imediatamente os dispositivos Apple para a versão de software mais recente."
-  },
-  {
-   "id": "0e899e1e6c12f277",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/",
-   "published": "2026-11-10T10:10:20+00:00",
-   "title": "Hackers exploram falhas críticas no Barracuda ESG para obter acesso root",
-   "summary": "A empresa de cibersegurança Barracuda Networks emitiu um aviso alertando que atacantes estão a explorar ativamente duas vulnerabilidades recentemente corrigidas no Email Security Gateway. Estas falhas permitem que indivíduos mal-intencionados executem comandos com privilégios de root nos sistemas afetados. A exploração bem-sucedida concede controlo total sobre os gateways comprometidos.",
-   "image": null,
-   "points": [
-    "Quem: Atacantes cibernéticos.",
-    "O quê: Exploração de duas falhas no Barracuda Email Security Gateway.",
-    "Impacto: Permite execução de comandos com privilégios de root."
-   ],
-   "title_original": "Hackers now exploit critical Barracuda ESG flaws to gain root access",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite que atacantes obtenham controlo total sobre gateways de email empresariais vulneráveis.",
-   "todo": "Aplique urgentemente os patches de segurança disponibilizados pela Barracuda para os dispositivos ESG."
-  },
-  {
-   "id": "7d35c70e67083122",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/russian-turla-hackers-use-new-cereal.html",
-   "published": "2026-11-10T10:07:29+00:00",
-   "title": "Hackers russos do grupo Turla usam novo malware Cereal para roubar emails de servidores Exchange governamentais",
-   "summary": "O grupo de ameaças Turla, associado ao Estado russo, está a utilizar uma nova ferramenta de ciberespionagem modular chamada Cereal. Esta ferramenta foi desenvolvida para invadir servidores Microsoft Exchange de vítimas com o objetivo de recolher emails de forma secreta. O grupo tem visado infraestruturas governamentais sensíveis.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5658vTd_mkm0NXhB4ueRe7z7purQPsvIa5Ik8qqEMo0dN5DU5bTpprIJeXFEj7XKLIOP3ykE4ZlNnixosysJ8YmGXzuRqEA1YoDvaQUFUgdXGfX2gj4f3hgUzop1wizxyv9olPYRDIb6CBW09bFVYAVqvpJk1zRqp3N5QCDBdfXTeoJuGCRkgy227_TgN/s1600/russian-emails.jpg",
-   "points": [
-    "Quem: Grupo de hackers russo Turla (ou Snake).",
-    "O quê: Utilização da ferramenta Cereal para roubar emails em servidores Exchange.",
-    "Impacto: Recolha clandestina de correspondência eletrónica governamental."
-   ],
-   "title_original": "Russian Turla Hackers Use New Cereal Malware to Steal Emails From Government Exchange Servers",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra o uso de ferramentas sofisticadas e modulares por grupos estatais para espionagem de longo alcance.",
-   "todo": "Monitore os servidores de email de forma apertada e mantenha todos os softwares atualizados contra ameaças persistentes avançadas."
-  },
-  {
-   "id": "b5aec74a1cd24e04",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/202772/breaking-news/google-fixes-the-eighth-actively-exploited-chrome-zero-day-of-2026.html",
-   "published": "2026-11-10T10:05:00+00:00",
-   "title": "Google corrige a oitava zero-day do Chrome explorada ativamente em 2026",
-   "summary": "A Google corrigiu nove falhas de segurança no navegador Chrome, incluindo uma vulnerabilidade do tipo use-after-free em XML identificada como CVE-2026-125350. Esta falha tem sido ativamente explorada por atacantes em cenários reais, sendo a oitava zero-day corrigida pela empresa desde o início de 2026. A exploração pode resultar em corrupção de memória ou execução de código arbitrário.",
-   "image": null,
-   "points": [
-    "Quem: Google e atacantes desconhecidos.",
-    "O quê: Correção da zero-day CVE-2026-125350 no Chrome.",
-    "Impacto: Falha ativa permitia corrupção de memória e possível execução de código."
-   ],
-   "title_original": "Google fixes the eighth actively exploited Chrome zero-day of 2026",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Protege os utilizadores contra ataques ativos que exploram vulnerabilidades críticas desconhecidas no navegador.",
-   "todo": "Atualize o navegador Google Chrome para a versão mais recente o mais rapidamente possível."
-  },
-  {
-   "id": "8791ad63d4b7382e",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/turla-hackers-use-new-ceral-malware-to-spy-on-govt-exchange-servers/",
-   "published": "2026-11-10T10:04:32+00:00",
-   "title": "Hackers do grupo Turla utilizam novo malware Cereal para espionar servidores Exchange governamentais",
-   "summary": "O grupo de hackers Turla, apoiado pelo Estado russo, tem recorrido a um novo conjunto de ferramentas maliciosas chamado Cereal. O software é utilizado para intercetar comunicações de email em servidores Microsoft Exchange pertencentes a organizações governamentais. A campanha visa a recolha silenciosa de informação sensível.",
-   "image": null,
-   "points": [
-    "Quem: Grupo estatal russo Turla.",
-    "O quê: Emprego do conjunto de ferramentas Cereal.",
-    "Impacto: Interceção de emails em servidores Exchange governamentais."
-   ],
-   "title_original": "Turla hackers use new Cereal malware to spy on govt Exchange servers",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Ilustra o foco contínuo de atores estatais na interceção de comunicações eletrónicas em entidades públicas.",
-   "todo": "Implemente autenticação multifator rigorosa e monitorização de tráfego anómalo em servidores de correio."
-  },
-  {
-   "id": "eb8503f8804a356e",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/10/windows-settings-backup-default/",
-   "published": "2026-11-10T10:03:40+00:00",
-   "title": "Cópia de segurança de definições do Windows fica ativa por predefinição a partir do Windows 11 26H2",
-   "summary": "A partir da versão 26H2 do Windows 11, a funcionalidade de cópia de segurança das definições do sistema passará a estar ativada por predefinição nos dispositivos elegíveis. A ferramenta guarda as configurações suportadas do Windows e a lista de aplicações obtidas através da Microsoft Store. Os utilizadores poderão posteriormente selecionar um perfil de cópia para recuperar o seu ambiente de trabalho.",
-   "image": null,
-   "points": [
-    "Quem: Microsoft (Windows 11).",
-    "O quê: Ativação por defeito da cópia de segurança de definições a partir da versão 26H2.",
-    "Impacto: Guarda automaticamente configurações e lista de aplicações da Microsoft Store."
-   ],
-   "title_original": "Windows settings backup is on by default starting with Windows 11 26H2",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Facilita a recuperação de dados e preferências do utilizador em novos dispositivos ou reinstalações.",
-   "todo": "Reveja as definições de privacidade e cópia de segurança do sistema operativo de acordo com as políticas da sua organização."
-  },
-  {
-   "id": "ce0b470d4dea056e",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html",
-   "published": "2026-11-10T10:02:40+00:00",
-   "title": "SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution",
-   "summary": "A SAP corrigiu quatro falhas graves de segurança avaliadas com a pontuação máxima de 10.0 no sistema CVSS, permitindo que atacantes explorassem os problemas sem necessidade de autenticação. Três destas vulnerabilidades encontram-se no servidor de aplicações SAP NetWeaver, enquanto a outra afeta o Web Dispatcher. O impacto principal reside no risco de execução remota de código por parte de agentes maliciosos.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgo4snqwJ4uD_sRDyI8zs23mcfFTWfZoSrn9n1hbUrsHbyWy-1VFL8amxqQnLb7LSTPkuSwnsPofUJT6anObg-nU4Q5e01WBb3IixN_PdL-1MJ2nOip4qSTEoVDmePRlOgjSVjvtbH8vFlQgxtGuKuqmuHWLyzIavw2Sj4VtZBlTYhUqeySbQcDMEr4Wns/s1600/sap-flaws.jpg",
-   "points": [
-    "A SAP corrigiu quatro falhas críticas com pontuação CVSS máxima de 10.0.",
-    "Três vulnerabilidades afetam o servidor SAP NetWeaver e uma o Web Dispatcher.",
-    "Os atacantes podiam explorar as falhas remotamente sem necessidade de login prévio."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Permite prevenir a execução remota de código não autorizado em sistemas empresariais essenciais.",
-   "todo": "Aplique imediatamente as atualizações de segurança mensais disponibilizadas pela SAP."
-  },
-  {
-   "id": "338bb5cfedca3d65",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/10/eset-turla-exchange-malware/",
-   "published": "2026-11-10T10:00:39+00:00",
-   "title": "O malware Cereal da Turla transforma servidores Exchange das vítimas em centros de espionagem",
-   "summary": "O grupo alinhado com a Rússia Turla instalou um conjunto de ferramentas .NET em servidores Microsoft Exchange de duas organizações governamentais, uma no Cazaquistão e outra na Roménia. Este malware, descoberto por investigadores da ESET e batizado de Cereal, foi utilizado para copiar e filtrar emails diretamente do fluxo de mensagens. O operador envia comandos disfarçados de tráfego legítimo do Outlook Web Access, Autodiscover e ActiveSync, dispensando um servidor próprio.",
-   "image": null,
-   "points": [
-    "O grupo Turla infetou servidores Exchange de duas organizações governamentais com o Cereal.",
-    "O malware foi descoberto pela ESET no Cazaquistão e na Roménia.",
-    "As ferramentas ocultam comandos em tráfego legítimo do Outlook Web Access e ActiveSync para roubar emails."
-   ],
-   "title_original": "Turla’s Cereal malware turns victims’ Exchange servers into spy hubs",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Exemplifica como os atacantes mascaram o roubo de dados em tráfego legítimo para evitar deteção.",
-   "todo": "Monitorize o tráfego dos servidores Exchange e implemente soluções avançadas de deteção de ameaças."
-  },
-  {
-   "id": "923e1bc8d6783b29",
-   "source": "CyberScoop",
-   "region": "US",
-   "lang": "en",
-   "link": "https://cyberscoop.com/russian-turla-group-used-new-toolset-to-silently-pilfer-emails-from-kazakhstan-romanian-governments/",
-   "published": "2026-11-10T10:00:00+00:00",
-   "title": "Grupo russo Turla utilizou novo conjunto de ferramentas para roubar secretamente emails de governos do Cazaquistão e da Roménia",
-   "summary": "O grupo de ciberespionagem Turla, ligado aos serviços secretos russos (FSB), utilizou uma ferramenta modular chamada Cereal para comprometer redes governamentais internacionais. Descoberta pela ESET, a ferramenta aproveita funções legítimas do Windows, .NET e servidores Exchange, utilizando os próprios servidores comprometidos como infraestrutura de comando e controlo. Foram identificados ataques a alvos no Cazaquistão e numa agência governamental romena.",
-   "image": "https://cyberscoop.com/wp-content/uploads/sites/3/2026/11/Screenshot-2026-11-09-at-11.42.28-AM.png?w=1024",
-   "points": [
-    "Quem: Grupo russo Turla (ligado ao FSB).",
-    "O quê: Uso da ferramenta Cereal para espionagem e roubo de emails.",
-    "Impacto: Comprometimento de servidores Exchange governamentais no Cazaquistão e Roménia sem infraestrutura externa de C&C."
-   ],
-   "title_original": "Russian Turla group used new toolset to silently pilfer emails from Kazakhstan, Romanian governments",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Revela táticas furtivas avançadas de grupos estatais que transformam os próprios servidores das vítimas em centros de comando.",
-   "todo": "Audite regularmente os registos de atividade dos servidores Exchange e implemente soluções avançadas de deteção de ameaças baseadas no comportamento."
-  },
-  {
-   "id": "8162e65e6a02e01f",
-   "source": "Cybersecurity Dive",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cybersecuritydive.com/spons/truth-or-consequences-what-your-ai-strategy-is-standing-on/873999/",
-   "published": "2026-11-10T10:00:00+00:00",
-   "title": "Verdade ou consequências: Em que assenta a sua estratégia de IA",
-   "summary": "A inteligência artificial processa dados de ativos incorretos com o mesmo nível de confiança com que processa dados corretos. Este comportamento exige que as organizações verifiquem primeiro a fundação e a qualidade dos seus dados antes de implementarem estratégias baseadas em IA. A fiabilidade dos resultados depende diretamente da integridade da informação de base.",
-   "image": null,
-   "points": [
-    "Quem: Organizações que utilizam IA.",
-    "O quê: A necessidade de validar dados de ativos antes de aplicar inteligência artificial.",
-    "Impacto: Evita que decisões de IA sejam tomadas com base em dados erróneos ou corrompidos."
-   ],
-   "title_original": "Truth or consequences: What your AI strategy is standing on",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Alerta para a importância crucial da qualidade dos dados na segurança e eficácia das ferramentas de IA.",
-   "todo": "Valide e limpe os dados internos da organização antes de os integrar em sistemas de inteligência artificial."
-  },
-  {
-   "id": "a731319ae302ffd3",
-   "source": "WeLiveSecurity (ESET)",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.welivesecurity.com/en/eset-research/exchange-for-breakfast-turlas-cereal-tricks-are-not-for-kids/",
-   "published": "2026-11-10T09:57:00+00:00",
-   "title": "Análise técnica do Cereal da Turla destaca novos módulos de recolha de email e mecanismos de comando e controlo",
-   "summary": "A ESET Research divulgou detalhes técnicos sobre o conjunto de ferramentas Cereal utilizado pelo grupo Turla. O malware inclui um módulo inovador de recolha de emails em servidores Exchange, técnicas sofisticadas de execução em .NET e um mecanismo de comando e controlo pouco convencional. A análise detalha a elevada modularidade e a engenharia por trás desta ameaça de ciberespionagem.",
-   "image": null,
-   "points": [
-    "Quem: ESET Research (investigadores) e grupo Turla.",
-    "O quê: Publicação de detalhes técnicos sobre o malware Cereal.",
-    "Impacto: Aumenta o conhecimento público sobre táticas avançadas de execução e recolha de dados."
-   ],
-   "title_original": "Exchange for breakfast: Turla’s Cereal tricks are not for kids",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Ajuda a comunidade de cibersegurança a compreender e detetar novas variantes de ataques estatais.",
-   "todo": "Utilize relatórios de inteligência de ameaças para atualizar as regras de deteção nos sistemas de segurança da empresa."
   }
  ]
 }

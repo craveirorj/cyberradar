@@ -19,6 +19,25 @@ Radar de notícias de cibersegurança (PT, BR e internacionais), traduzidas para
 
 Repositório público = GitHub Actions gratuito e sem limites práticos para isto.
 
+## Tradução automática (grátis, recomendado)
+
+O Google Translate não oficial é bloqueado nos servidores do GitHub, por isso a tradução usa o Gemini (plano grátis, sem cartão):
+
+1. Em aistudio.google.com, entra com a tua conta Google e clica em **Get API key → Create API key**.
+2. No GitHub: **Settings → Secrets and variables → Actions → New repository secret**.
+3. Nome: `GEMINI_API_KEY`. Valor: a chave. Guarda.
+4. Corre o workflow outra vez (Actions → Atualizar notícias → Run workflow).
+
+Sem a chave, as notícias estrangeiras ficam em inglês (etiqueta EN). Com a chave, são traduzidas em lotes de 20, as mais recentes primeiro. A primeira vez pode demorar uma hora a recuperar tudo.
+
+## Ataques ao vivo (mapa)
+
+O separador "🌐 Ataques ao vivo" usa `scripts/fetch_threats.py` (corre no mesmo workflow) e grava `data/threats.json`.
+- **abuse.ch Feodo Tracker**: botnets ativas, sem chave.
+- **URLhaus, ThreatFox, OpenPhish e SANS DShield**: malware, phishing e scans, sem chave. O país vem da base gratuita DB-IP Lite (CC BY 4.0, db-ip.com).
+- **Cloudflare Radar** (opcional, grátis): em dash.cloudflare.com → My Profile → API Tokens → Create Token → modelo personalizado com permissão *Account → Radar → Read* (ou Account Analytics). Guarda-o no GitHub como segredo `CLOUDFLARE_API_TOKEN` (Settings → Secrets and variables → Actions).
+O mapa é uma animação feita a partir destes números reais; não mostra cada ataque individual.
+
 ## Acrescentar fontes
 
 Edita `feeds.json` no GitHub e acrescenta uma linha:

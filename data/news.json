@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T13:28:30.808165+00:00",
+ "updated": "2026-11-18T13:45:41.717588+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -29,12 +29,12 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
    "ok": true,
-   "added": 6
+   "added": 5
   },
   {
    "source": "Canaltech Segurança",
@@ -89,12 +89,12 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -238,8 +238,8 @@
   },
   {
    "source": "Help Net Security",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "Exceeded 30 redirects."
   },
   {
    "source": "Security Affairs",
@@ -269,7 +269,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -304,9 +304,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 84,
-  "pending": 260,
-  "unenriched": 119,
+  "done": 0,
+  "pending": 343,
+  "unenriched": 205,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -314,6 +314,74 @@
   ]
  },
  "items": [
+  {
+   "id": "dfcd48a830ee2555",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/russian-apt-poses-as-employee-of-hacked-firm-to-breach-another-us-organization/",
+   "published": "2026-11-18T13:33:47+00:00",
+   "title": "Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization",
+   "summary": "Star Blizzard weaponized data and identities stolen in late 2025 to phish and compromise a US organization.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "Star Blizzard weaponized data and identities stolen in late 2025 to phish and compromise a US organization."
+  },
+  {
+   "id": "f46e27c9ea7a3d03",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1171",
+   "published": "2026-11-18T13:31:24+00:00",
+   "title": "Google security advisory (AV26-1171)",
+   "summary": "",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Serial number: AV26-1171 Date: November 17, 2026 As of November 17, 2026, Google is affected by a vulnerability in the following product: Stable Channel Chrome for Desktop Versions prior to 158.0.8127.36/.37 (Windows/Mac), and 158.0.8127.36 (Linux) The Cyber Centre encourages users and administrators to review the provided web link and apply any necessary updates as they become available. Google Chrome Security Advisory"
+  },
+  {
+   "id": "58112a1964c673a4",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/norway-equinor-cyberattack-energy",
+   "published": "2026-11-18T13:30:00+00:00",
+   "title": "Cyberattack hits Norwegian energy giant Equinor, disrupting internal services",
+   "summary": "The Norwegian energy giant Equinor is working to contain a cyberattack on its IT systems that the company said has not impacted oil and gas production.",
+   "image": "https://cms.therecord.media/uploads/Equinor_Northern_Lights_4aa869f98c.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "The Norwegian energy giant Equinor is working to contain a cyberattack on its IT systems that the company said has not impacted oil and gas production."
+  },
+  {
+   "id": "2c1ddb51a4dc89a3",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/last-of-five-defendants-sentenced-in-us-scattered-spider-hacking-case/",
+   "published": "2026-11-18T13:19:32+00:00",
+   "title": "Last of Five Defendants Sentenced in US Scattered Spider Hacking Case",
+   "summary": "British national Tyler Robert Buchanan has been sentenced to 6 years in prison in the United States, the DOJ announced.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "British national Tyler Robert Buchanan has been sentenced to 6 years in prison in the United States, the DOJ announced."
+  },
   {
    "id": "1895e5ba109e889f",
    "source": "SAPO Tek",
@@ -353,6 +421,23 @@
    "enriched": true,
    "why": "Permite que os programadores corrijam falhas de segurança sem perder o contexto original transmitido pelas equipas de segurança.",
    "todo": "Se utiliza o Tenable One e o Codex Security, configure a importação local de vulnerabilidades para agilizar o fluxo de trabalho dos programadores."
+  },
+  {
+   "id": "3ba2d1a2d97757b4",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/oracle-corporation-security-advisory-av26-1170",
+   "published": "2026-11-18T12:51:56+00:00",
+   "title": "Oracle Corporation security advisory (AV26-1170)",
+   "summary": "",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Serial number: AV26-1170 Date: November 18, 2026 As of November 17, 2026, Oracle Corporation is affected by vulnerabilities in the following products: Helidon JD Edwards EnterpriseOne Localizations MySQL Cluster MySQL Server MySQL Server, MySQL Cluster MySQL Shell MySQL Workbench Oracle APEX Oracle Access Manager Oracle Agile Engineering Data Management Oracle Agile PLM Oracle Agile Product Lifecycle Management for Process Oracle Application Development Framework (ADF) Oracle Application Testing Suite Oracle AutoVue Oracle Autonomous Health Framework Oracle BI Publisher Oracle Business Intelligence Enterprise Edition Oracle Business Process Management Suite Oracle Commerce Guided Search Oracle Commerce Platform Oracle Communications Billing and Revenue Management Oracle Communications Diameter Signaling Router Oracle Communications Element Manager Oracle Communications Service Catalog and Design Oracle Communications Unified Assurance Oracle Communications Unified Inventory Management Oracle Database Server Oracle E-Business Suite Oracle Enterprise Manager Base Platform Oracle Financial Services Customer Screening Oracle Financial Services Enterprise Case Management Oracle Financial Services Regulatory Reporting Oracle Global Lifecycle Management OPatch Oracle GraalVM Enterprise Edition Oracle GraalVM for JDK Oracle HTTP Server Oracle Hyperion Data Relationship Management Oracle Hyperion Financial Close Management Oracle Hyperion Financial Data Quality Management Oracle Hyperion Financial Management Oracle Hyperion Infrastructure Technology Oracle Hyperion Planning Oracle Hyperion Profitability and Cost Management Oracle Hyperion Workspace Oracle Identity Manager Connector Oracle Java SE Oracle JavaFX Oracle Managed File Transfer Oracle Middleware Common Libraries and T"
   },
   {
    "id": "7aa694effe302302",
@@ -13676,116 +13761,6 @@
    "enriched": true,
    "why": "A exploração ativa destas falhas coloca os sites e dados em risco iminente.",
    "todo": "Atualize o Craft CMS e o Commerce-mollie para as versões corrigidas."
-  },
-  {
-   "id": "94242d099e9688f5",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/watchguard-security-advisory-av26-1147",
-   "published": "2026-11-12T15:52:53+00:00",
-   "title": "Aviso de segurança WatchGuard (AV26-1147)",
-   "summary": "A WatchGuard foi afetada por uma vulnerabilidade no software Endpoint Security em versões anteriores à 8.00.26.0011. A falha, identificada como CVE-2026-57907, afeta a comunicação do serviço de consola. Isto permite a execução de código com privilégios SYSTEM através de uma escalada de privilégios local. O Centro Cibernético apela à revisão dos avisos e aplicação de correções.",
-   "image": null,
-   "points": [
-    "O quê: Vulnerabilidade CVE-2026-57907 no WatchGuard Endpoint Security.",
-    "Impacto: Permite a execução de código SYSTEM por escalada de privilégios local.",
-    "Ação: O Centro Cibernético recomenda a atualização imediata."
-   ],
-   "title_original": "WatchGuard security advisory (AV26-1147)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite que utilizadores maliciosos locais obtenham controlo total do sistema.",
-   "todo": "Atualize o WatchGuard Endpoint Security para a versão 8.00.26.0011 ou posterior."
-  },
-  {
-   "id": "f1db2b213c7d2418",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/adobe-security-advisory-av26-1146",
-   "published": "2026-11-12T15:45:47+00:00",
-   "title": "Aviso de segurança Adobe (AV26-1146)",
-   "summary": "A Adobe divulgou múltiplos produtos afetados por vulnerabilidades de segurança. Entre os softwares impactados encontram-se o Adobe Experience Manager, Premiere, Photoshop e After Effects. O Centro Cibernético recomenda que os utilizadores consultem os boletins e instalem as atualizações necessárias. Estas correções evitam a exploração de potenciais falhas nestas aplicações.",
-   "image": null,
-   "points": [
-    "O quê: Múltiplas vulnerabilidades em vários produtos da Adobe.",
-    "Quem: Afeta software como Photoshop, Premiere, After Effects e Experience Manager.",
-    "Ação: O Centro Cibernético incentiva a aplicação de atualizações disponíveis."
-   ],
-   "title_original": "Adobe security advisory (AV26-1146)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Apanha uma vasta gama de ferramentas criativas amplamente utilizadas por profissionais e empresas.",
-   "todo": "Atualize todo o software Adobe através da Creative Cloud ou dos canais oficiais."
-  },
-  {
-   "id": "20d86bf867d2bc82",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/12/police-dismantle-gootloader-castlerat-stealc-malware-infrastructure/",
-   "published": "2026-11-12T15:45:24+00:00",
-   "title": "Polícia desmonta infraestrutura dos malwares Gootloader, CastleRAT e StealC",
-   "summary": "A Europol e forças de segurança de nove países desmantelaram centenas de servidores e domínios. A operação visou as redes de distribuição dos malwares Gootloader, CastleRAT e StealC. O Gootloader é um carregador ativo desde 2020, enquanto o StealC rouba credenciais e criptomoedas. Esta ação conjunta reduziu significativamente a capacidade operacional destes grupos criminosos.",
-   "image": null,
-   "points": [
-    "Quem: Europol e autoridades de nove países.",
-    "O quê: Apreensão de centenas de servidores e domínios de malware.",
-    "Impacto: Interrupção das operações do Gootloader, CastleRAT e StealC."
-   ],
-   "title_original": "Police dismantle Gootloader, CastleRAT, StealC malware infrastructure",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Representa um golpe duro na infraestrutura de grupos cibercriminosos internacionais.",
-   "todo": "Mantenha soluções antivírus atualizadas e treine colaboradores para detetar tentativas de phishing."
-  },
-  {
-   "id": "a679392f6321ec50",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/12/hong-kong-sogo-data-breach-puts-personal-information-of-820000-members-at-risk/",
-   "published": "2026-11-12T15:42:32+00:00",
-   "title": "Violação de dados no Sogo em Hong Kong expõe informações de 820.000 membros",
-   "summary": "Os retalhistas Sogo e Chow Sang Sang sofreram violações de dados após acessos não autorizados aos seus sistemas. O incidente colocou em risco informações pessoais de clientes, incluindo cerca de 820.000 membros do clube de fidelização do Sogo. O Gabinete do Comissariado para a Privacidade dos Dados divulgou os números relativos ao Sogo. As empresas enfrentam agora o escrutínio sobre a segurança dos seus dados.",
-   "image": null,
-   "points": [
-    "Quem: Retalhistas Sogo e Chow Sang Sang.",
-    "O quê: Acessos não autorizados aos sistemas com roubo de dados.",
-    "Impacto: Cerca de 820.000 membros do Sogo expostos a riscos de privacidade."
-   ],
-   "title_original": "Hong Kong Sogo data breach puts personal information of 820,000 members at risk",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Exõe dados sensíveis de centenas de milhares de clientes a potenciais fraudes.",
-   "todo": "Reveja as políticas de acesso a bases de dados de clientes e reforce a encriptação."
-  },
-  {
-   "id": "0aad57d93e667100",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/12/unocoin-goes-dark-as-81000-wallets-show-zero-holdings/",
-   "published": "2026-11-12T15:40:24+00:00",
-   "title": "Unocoin fica offline após 81.000 carteiras mostrarem saldo zero",
-   "summary": "A exchange de criptomoedas indiana Unocoin detetou um acesso não autorizado aos seus servidores. Como medida de precaução, desativou temporariamente os logins de utilizadores durante a investigação. Cerca de 81.000 carteiras apresentavam saldos a zero. Três dias após o incidente inicial, o website da plataforma continuava offline.",
-   "image": null,
-   "points": [
-    "Quem: A exchange de criptomoedas Unocoin.",
-    "O quê: Acesso não autorizado aos servidores e saldos a zero em 81.000 carteiras.",
-    "Impacto: Website permaneceu offline enquanto decorriam as averiguações."
-   ],
-   "title_original": "Unocoin Goes Dark As 81,000 Wallets Show Zero Holdings",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Ilustra o risco crítico de roubo e indisponibilidade em plataformas de ativos digitais.",
-   "todo": "Utilize carteiras de criptomoedas privadas e seguras fora de exchanges centralizadas para grandes montantes."
   }
  ]
 }

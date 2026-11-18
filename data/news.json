@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T12:07:36.129275+00:00",
+ "updated": "2026-11-18T12:29:16.864735+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -74,7 +74,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -89,7 +89,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 2
   },
   {
    "source": "The Record",
@@ -109,12 +109,12 @@
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 5
+   "added": 4
   },
   {
    "source": "TechCrunch Security",
    "ok": true,
-   "added": 8
+   "added": 9
   },
   {
    "source": "Ars Technica Security",
@@ -169,12 +169,12 @@
   {
    "source": "Unit 42 (Palo Alto)",
    "ok": true,
-   "added": 3
+   "added": 4
   },
   {
    "source": "Google Threat Intelligence",
-   "ok": false,
-   "error": "HTTPSConnectionPool(host='cloudblog.withgoogle.com', port=443): Read timed out. (read timeout=25)"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "Google Project Zero",
@@ -229,7 +229,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 22
+   "added": 21
   },
   {
    "source": "The Register Security",
@@ -244,7 +244,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -269,7 +269,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Check Point Research",
@@ -294,7 +294,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 11
+   "added": 12
   },
   {
    "source": "ACSC Austrália",
@@ -304,16 +304,103 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 48,
-  "pending": 288,
-  "unenriched": 155,
+  "done": 108,
+  "pending": 238,
+  "unenriched": 96,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 110 column 5 (char 9942)",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "Expecting property name enclosed in double quotes: line 84 column 5 (char 7988)"
   ]
  },
  "items": [
+  {
+   "id": "c9f8dc26d8d07054",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
+   "published": "2026-11-18T12:15:00+00:00",
+   "title": "Lista de Verificação de Pentesting de IA para Apps Web: 15 Perguntas a Fazer Antes de Escolher um Fornecedor",
+   "summary": "Os ataques informáticos ocorrem cada vez mais cedo, com muitas explorações a surgirem antes mesmo de existir uma correção oficial. Perante esta realidade, escolher um fornecedor de pentesting baseado em inteligência artificial exige cautela, pois nem todos oferecem o mesmo nível de fiabilidade. As principais falhas costumam manifestar-se nos fluxos autenticados, na cobertura dos testes e na segurança em ambiente de produção. Assim, avaliar cuidadosamente estas soluções é essencial para garantir uma proteção eficaz.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdb3EyKCLHzaa6p3bzrF2EkkcJJQgshTsoaU6kzga1C8NGRBE1rDwlsHwhVKehkmGsOYpf0Dq-VCQpmFDPYLglxQIQjEiv3NrkFDRPTc3wUObe1Kc0km71lwUEXLTtWJGBQ3nO6wFbRqKoOJLcBv2lwpD-ZAYc1caohfkIFkCVlLQdS-YuwmbecgBf-sQ/s1600/reflectiz.jpg",
+   "points": [
+    "Os atacantes exploram vulnerabilidades rapidamente, muitas vezes antes de existirem correções.",
+    "A maioria dos fornecedores de pentesting de IA parece convincente nas demonstrações.",
+    "As falhas aparecem tipicamente nos fluxos com login, na cobertura e na produção."
+   ],
+   "title_original": "AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda as organizações a selecionarem fornecedores de pentesting de IA seguros e verdadeiramente eficazes.",
+   "todo": "Analise rigorosamente a cobertura e a segurança de produção dos fornecedores de IA antes de os contratar."
+  },
+  {
+   "id": "ddb3ea43dd74220f",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview/",
+   "published": "2026-11-18T12:14:23+00:00",
+   "title": "Microsoft Retira a Plataforma de Segurança Agentic Perception do Estado de Pré-visualização",
+   "summary": "A Microsoft disponibilizou de forma geral quatro agentes de equipa azul e o agente Recon, integrados na sua plataforma de segurança. Esta alteração significa que estas ferramentas deixam o estado de pré-visualização para passarem a estar acessíveis aos utilizadores. Em simultâneo, outras funcionalidades associadas, como integrações e proteção contra vulnerabilidades, continuam ainda em fase de pré-visualização. Com esta mudança, a empresa reforça o portefólio de ferramentas defensivas baseadas em agentes.",
+   "image": null,
+   "points": [
+    "Quatro agentes defensivos e o agente Recon ficaram geralmente disponíveis.",
+    "As ferramentas passam a integrar oficialmente as soluções de segurança da Microsoft.",
+    "As integrações e a proteção contra vulnerabilidades continuam em pré-visualização."
+   ],
+   "title_original": "Microsoft Takes Perception Agentic Security Platform Out of Preview",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Disponibiliza novas ferramentas defensivas baseadas em agentes para melhorar a segurança das organizações.",
+   "todo": "Consulte a documentação da Microsoft para adotar e testar os novos agentes de segurança disponíveis."
+  },
+  {
+   "id": "6352ff872275d62b",
+   "source": "Schneier on Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html",
+   "published": "2026-11-18T12:05:35+00:00",
+   "title": "França Acusa o Irão pelo Ciberataque aos Frigoríficos",
+   "summary": "Agências de inteligência dos Estados Unidos atribuíram com baixa confiança ao Irão a responsabilidade por ataques cibernéticos ocorridos em solo francês. Uma avaliação de baixa confiança indica que os dados disponíveis são fragmentados, podendo a conclusão alterar-se com novas informações. As investigações apontam o Estado iraniano de forma genérica, sem identificar um grupo específico, como a Guarda Revolucionária. Além do caso em França, as autoridades suspeitam que o Irão esteja associado a incidentes semelhantes noutros países europeus.",
+   "image": null,
+   "points": [
+    "Serviços secretos norte-americanos associam o Irão a ataques cibernéticos em França.",
+    "A avaliação é de baixa confiança devido à fragmentação inicial dos dados.",
+    "O governo iraniano também é suspeito de outros ataques semelhantes na Europa."
+   ],
+   "title_original": "France Is Blaming Iran for the Fridge Cyberattack",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Revela potenciais operações cibernéticas estatais direcionadas a infraestruturas e equipamentos na Europa.",
+   "todo": ""
+  },
+  {
+   "id": "2df0fcea5ad6b106",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/ciso-conversations-patti-degnan-part-of-the-job-is-deciding-what-not-to-do/",
+   "published": "2026-11-18T12:00:00+00:00",
+   "title": "Conversas com CISO: Patti Degnan – Parte do Trabalho é Decidir O Que Não Fazer",
+   "summary": "Patti Degnan assumiu o cargo de CISO na empresa de segurança de endpoints Glow após ter enfrentado o roubo da sua própria identidade. Este acontecimento pessoal marcou o ponto de partida para o seu percurso na liderança da cibersegurança. A experiência destaca os desafios diários enfrentados pelos responsáveis de segurança na gestão de prioridades. O testemunho ilustra como trajetórias individuais moldam profissionais na área da proteção digital.",
+   "image": null,
+   "points": [
+    "Patti Degnan sofreu um roubo de identidade que impulsionou a sua carreira.",
+    "Assumiu a posição de CISO na empresa de segurança Glow.",
+    "O trabalho de liderança em segurança exige focar o que realmente importa."
+   ],
+   "title_original": "CISO Conversations: Patti Degnan – Part of the Job Is Deciding What Not to Do",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Ilumina a perspetiva de liderança e a tomada de decisões críticas na gestão de cibersegurança.",
+   "todo": "Priorize iniciativas de segurança críticas e aprenda a gerir eficazmente os recursos disponíveis."
+  },
   {
    "id": "f2058d689eec5dda",
    "source": "CSO Online",
@@ -330,9 +417,9 @@
     "Como: Recolha automática de variáveis de ambiente e ficheiros locais.",
     "Impacto: Exposição de segredos de nuvem e dados de sistemas de compilação."
    ],
-   "title_original": "Attackers hijack Microsoft’s agent-framework package to steal Azure and CI credentials",
+   "title_original": null,
    "category": "Malware",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Permite que atacantes roubem segredos sensíveis e credenciais de nuvem diretamente de estações de trabalho de programadores.",
    "todo": "Verifique se utilizou as versões afetadas (1.26.1 ou 1.26.2) do pacote e revogue imediatamente quaisquer credenciais ou tokens expostos."
@@ -353,9 +440,9 @@
     "Como: Através de um acordo de resolução negociado com os responsáveis.",
     "Impacto: Fim de uma plataforma com cerca de 21 milhões de visitas mensais."
    ],
-   "title_original": "Dizigom illegal streaming service with 21M monthly visits shuts down",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Reduz significativamente a disponibilidade de grandes redes de pirataria online na região.",
    "todo": ""
@@ -376,9 +463,9 @@
     "Como: Através de campanhas direcionadas para roubo de dados em massa.",
     "Impacto: Facilita ataques futuros e o acesso não autorizado a infraestruturas."
    ],
-   "title_original": "Russian Espionage Actor Star Blizzard Focuses on Cloud Identities for Mass Data Theft",
+   "title_original": null,
    "category": "Ataque/APT",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra como os grupos de ameaças estatais estão a migrar o seu foco para ambientes em nuvem para maximizar o roubo de dados.",
    "todo": "Reforce a autenticação multifator (MFA) em todas as contas de serviços em nuvem e monitorize acessos suspeitos."
@@ -399,12 +486,34 @@
     "Como: Através do lançamento de patches e atribuição de recompensas.",
     "Impacto: Melhora a proteção do navegador contra potenciais explorações."
    ],
-   "title_original": "Chrome 158 Patches 204 Vulnerabilities",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Garante que o navegador web mais utilizado permanece protegido contra vulnerabilidades recém-descobertas.",
    "todo": "Atualize o Google Chrome para a versão mais recente o mais rapidamente possível."
+  },
+  {
+   "id": "293f2105b9f21630",
+   "source": "Malwarebytes Labs",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.malwarebytes.com/blog/bugs/2026/11/java4shell-a-critical-flaw-with-a-narrow-reach",
+   "published": "2026-11-18T11:41:07+00:00",
+   "title": "Java4Shell: Uma falha crítica com alcance limitado",
+   "summary": "Foi descoberta uma vulnerabilidade crítica de corrupção de memória no descodificador Base64 do Java, batizada de Java4Shell e registada sob o identificador CVE-2026-114938. A exploração desta falha depende de fatores específicos como o runtime do Java, o processador e a aplicação utilizada. Embora os utilizadores domésticos dificilmente sejam afetados, as organizações que utilizam ferramentas como Jira, Confluence ou Jenkins correm riscos. A CISA e os fornecedores emitiram alertas urgentes para que as correções sejam aplicadas de imediato.",
+   "image": "https://www.malwarebytes.com/wp-content/uploads/sites/2/2026/04/CNET_Editors_Choice.png?w=819",
+   "points": [
+    "Descoberta a falha CVE-2026-114938 de corrupção de memória no Java.",
+    "A exploração depende do ambiente Java, processador e tipo de aplicação.",
+    "Empresas que usam ferramentas como Jira, Confluence ou Jenkins devem atualizar."
+   ],
+   "title_original": "Java4Shell: A critical flaw with a narrow reach",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Protege infraestruturas empresariais contra a execução remota de código através de falhas no Java.",
+   "todo": "Atualize o Java e aplique prontamente as correções de segurança disponibilizadas pela Oracle e OpenJDK."
   },
   {
    "id": "fd349f5a83c393ad",
@@ -422,9 +531,9 @@
     "Como: Deteção de acessos e mobilização de recursos de resposta.",
     "Impacto: Perturbação de aplicações diárias e email, sem afetar a produção."
    ],
-   "title_original": "Norwegian Gas Giant Equinor Says It’s Under Cyberattack. Production Keeps Running",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Evidencia os riscos crescentes de ciberataques contra operadores de infraestruturas críticas e fornecedores de energia.",
    "todo": "Mantenha os planos de resposta a incidentes atualizados e garanta a segmentação adequada entre redes corporativas e industriais."
@@ -474,6 +583,28 @@
    "enriched": true,
    "why": "Compromete credenciais críticas de acesso a serviços de nuvem e ferramentas de desenvolvimento logo na inicialização.",
    "todo": "Verifique se utiliza as versões afetadas do agent-framework, remova-as e revogue imediatamente todas as credenciais expostas."
+  },
+  {
+   "id": "63ab0fd187977a4a",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html",
+   "published": "2026-11-18T11:03:57+00:00",
+   "title": "A Qualidade Não é a Principal Preocupação no Pentesting de IA — A Privacidade de Dados e a Segurança em Produção São",
+   "summary": "A adoção da inteligência artificial está a acelerar a criação de software, resultando em mais código e mais oportunidades para introduzir vulnerabilidades. Em simultâneo, os atacantes utilizam a mesma tecnologia para detetar e explorar falhas num espaço de tempo cada vez mais curto. Para acompanhar este ritmo, o pentesting automatizado com IA permite realizar testes profundos sem esperar por ciclos tradicionais. Contudo, os maiores desafios centram-se na proteção da privacidade dos dados e na segurança dos ambientes produtivos.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj276QET-ma2-edrAgsOdbZltmoW58d_kJT8C-g8DXQfDQAzPlmCcQYv-tWcX-DXcSipQpu_oFY_pPunvn-eXoog3H0BYPLkb4uY3B4Ax9T7LmtVBgVDwZZInLbj5QgnjVMI5d1za8bgR1a2TvGaJzZUK2UuSAEk3gSY-erKiddYAYTkNE9kxEp0zcx5x8/s1600/intruder.jpg",
+   "points": [
+    "A IA acelera tanto o desenvolvimento de software como a atividade dos atacantes.",
+    "O tempo necessário para explorar vulnerabilidades foi reduzido para apenas um dia.",
+    "O pentesting com IA exige salvaguardar a privacidade e a estabilidade da produção."
+   ],
+   "title_original": "Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para os riscos de privacidade e segurança ao integrar testes de IA em ambientes de produção.",
+   "todo": "Garanta que as ferramentas de teste baseadas em IA cumprem rigorosos padrões de privacidade e segurança."
   },
   {
    "id": "e3a24527dd73e527",
@@ -560,9 +691,9 @@
     "Como: Exploitation através de uma string Base64 malformada de 65 carateres.",
     "Impacto: Permite a execução remota de código em servidores e sistemas cloud."
    ],
-   "title_original": "65 Characters to RCE: Inside the Java4Shell Vulnerability",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Abre portas à execução remota de código em milhões de servidores e aplicações empresariais baseadas em Java.",
    "todo": "Atualize imediatamente as suas instalações e runtimes OpenJDK para as versões corrigidas."
@@ -13664,144 +13795,6 @@
    "enriched": true,
    "why": "Vulnerabilidades em múltiplos produtos Fortinet podem expor redes empresariais a acessos não autorizados se não forem corrigidas.",
    "todo": "Consulte o boletim oficial da Fortinet e atualize imediatamente os softwares e equipamentos afetados."
-  },
-  {
-   "id": "9b10d73bdc3dfb5d",
-   "source": "Cybersecurity Dive",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cybersecuritydive.com/news/connectwise-disables-third-party-extensions-cyberattack-ScreenConnect/874490/",
-   "published": "2026-11-12T15:17:54+00:00",
-   "title": "ConnectWise desativa extensões de terceiros enquanto investiga ciberataque a utilizadores do ScreenConnect",
-   "summary": "A empresa ConnectWise procedeu à desativação de extensões de terceiros na sua plataforma. A medida surge no âmbito de uma investigação a um ciberataque recente direcionado aos utilizadores do ScreenConnect. Investigadores alertam que a ferramenta tem sido explorada para obter acesso remoto indevido e instalar kits de ferramentas maliciosos.",
-   "image": null,
-   "points": [
-    "ConnectWise desativou extensões de terceiros.",
-    "A investigação foca-se em ataques ao ScreenConnect.",
-    "A plataforma tem sido abusada por criminosos.",
-    "O objetivo é obter acesso remoto e instalar malware."
-   ],
-   "title_original": "ConnectWise disables third-party extensions as it probes cyberattack targeting ScreenConnect users",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "A exploração do acesso remoto pode comprometer sistemas empresariais críticos geridos à distância.",
-   "todo": "Desative extensões de terceiros não essenciais e monitore ativamente os acessos remotos na plataforma."
-  },
-  {
-   "id": "50b7d482cfd778ee",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/186-fake-ai-domains-redirect-users-to.html",
-   "published": "2026-11-12T15:15:40+00:00",
-   "title": "186 domínios falsos de IA redirecionam utilizadores para esquemas ClickFix, malware de browser e sequestradores de pesquisa",
-   "summary": "Investigadores de cibersegurança descobriram que centenas de domínios fraudulentos imitam ferramentas populares de inteligência artificial. Estes sites falsos são utilizados para enganar utilizadores através de engodos do tipo ClickFix, instalando malware de browser e extensões que desviam pesquisas. Esta técnica de entrega recebeu o nome de TypoPrompting.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirJnc36Fxj4oKOmKhcPvspB_xQpv3VgpXjYnu29SOv8NbVJHeaGNKT26851QIPQbHozxeF5vmq5otdRbJBKEaN9557MtuxLwp5fxX-pQVDVKwvZJtPR9ayT2Njx83svW7TVsVkVpFUOt5JHqhdSkSI7uV0d4dxlf5pWAmHISttTHWjURyOpuuy0CzVCSmK/s1600/lauce.jpg",
-   "points": [
-    "Detetados 186 domínios falsos de IA.",
-    "Utilizam esquemas ClickFix e malware de browser.",
-    "Extensões maliciosas sequestram as pesquisas dos utilizadores.",
-    "Técnica foi batizada de TypoPrompting."
-   ],
-   "title_original": "186 Fake AI Domains Redirect Users to ClickFix Lures, Browser Malware, and Search Hijackers",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Falsas ferramentas de IA atraem utilizadores desprevenidos para infetar os seus computadores com malware e roubar dados.",
-   "todo": "Confirme sempre o endereço oficial dos sites de IA que visita e evite descarregar extensões de fontes desconhecidas."
-  },
-  {
-   "id": "c616c4812a053c27",
-   "source": "CSO Online",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.csoonline.com/article/4247565/palo-alto-tracks-a-massive-chinese-ai-attack-that-sadly-lives-up-to-industry-fears.html",
-   "published": "2026-11-12T15:15:00+00:00",
-   "title": "Palo Alto rastreia ataque massivo de IA de origem chinesa que concretiza receios da indústria",
-   "summary": "A Unit 42 da Palo Alto Networks monitorizou uma campanha massiva com origem na China que utilizou o framework de testes de penetração Cairn. Os atacantes combinaram a ferramenta com modelos de IA chineses para conduzir operações autónomas contra várias organizações, obtendo acessos não autorizados e credenciais válidas. A campanha demonstrou como a inteligência artificial pode escalar e automatizar ataques complexos de forma sem precedentes.",
-   "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4247565-0-72234300-1794496694-shutterstock_2321046757_71010c.jpg?quality=50&strip=all",
-   "points": [
-    "Campanha usou IA autónoma e o framework Cairn.",
-    "Alvejou dezenas de organizações com sucesso.",
-    "Foram roubadas credenciais e milhões de registos.",
-    "Ataques demonstraram a nova escala da ameaça por IA."
-   ],
-   "title_original": "Palo Alto tracks a massive Chinese AI attack that sadly lives up to industry fears",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra que ataques cibernéticos impulsionados por IA autónoma conseguem atingir múltiplas organizações em larga escala com menor custo humano.",
-   "todo": "Reveja os modelos de risco perimetral e reforce as políticas de autenticação e gestão de acessos na nuvem."
-  },
-  {
-   "id": "b6cd1d92c2adabec",
-   "source": "Graham Cluley",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/whitearmor-gang-cyberattack-maersk",
-   "published": "2026-11-12T15:12:29+00:00",
-   "title": "Grupo WhiteArmor reivindica responsabilidade por ciberataque recente à gigante do transporte marítimo Maersk",
-   "summary": "A empresa de transporte marítimo Maersk confirmou a intrusão num dos seus sistemas por parte de piratas informáticos que conseguiram roubar dados. O grupo cibercriminoso WhiteArmor veio a público assumir a autoria deste ciberataque. O incidente afetou a infraestrutura tecnológica da multinacional.",
-   "image": null,
-   "points": [
-    "Maersk sofreu uma intrusão num sistema.",
-    "Houve roubo de dados confidenciais.",
-    "O grupo WhiteArmor reivindicou o ataque.",
-    "Afeta uma gigante do transporte marítimo global."
-   ],
-   "title_original": "WhiteArmor gang claims responsibility for latest cyber attack on shipping giant Maersk",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Ataques a grandes operadores logísticos podem causar perturbações significativas nas cadeias de abastecimento globais.",
-   "todo": "Garanta backups offline rigorosos e reforce a monitorização de intrusões em sistemas corporativos essenciais."
-  },
-  {
-   "id": "01036a7b09f64a1c",
-   "source": "CERT/CC (Carnegie Mellon)",
-   "region": "US",
-   "lang": "en",
-   "link": "https://kb.cert.org/vuls/id/685399",
-   "published": "2026-11-12T15:09:39+00:00",
-   "title": "VU#685399: Injeção de código em chaves de contexto no PromZard conduz à execução remota de código",
-   "summary": "A biblioteca npm promzard, nas versões 4.0.0 e anteriores, apresenta uma vulnerabilidade crítica de execução remota de código. O problema decorre da interpolação direta e sem higienização de chaves de objetos de contexto como código fonte JavaScript. Um atacante capaz de influenciar estas chaves pode injetar código malicioso e executá-lo no processo Node.js.",
-   "image": null,
-   "points": [
-    "Afeta a biblioteca Node.js promzard (v4.0.0 e anteriores).",
-    "Vulnerabilidade permite injeção de código JavaScript.",
-    "Pode resultar em execução remota de código.",
-    "Falta de validação em chaves de contexto."
-   ],
-   "title_original": "VU#685399: PromZard context key code injection leads to remote code execution",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite que atacantes executem código arbitrário em servidores vulneráveis, comprometendo toda a aplicação Node.js.",
-   "todo": "Valide rigorosamente todas as entradas de dados utilizadas em contextos e atualize ou substitua componentes vulneráveis."
-  },
-  {
-   "id": "62ff99ae778bcb02",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/",
-   "published": "2026-11-12T15:07:20+00:00",
-   "title": "Polícia desmantela infraestrutura de malware Gootloader, CastleRAT e StealC",
-   "summary": "Uma operação conjunta coordenada pela Europol e autoridades policiais de nove países resultou no encerramento de centenas de servidores e domínios. Estas infraestruturas eram utilizadas para sustentar as operações de distribuição dos malwares Gootloader, CastleRAT e StealC. A ação policial enfraquece significativamente as redes cibercriminosas associadas a estas ameaças.",
-   "image": null,
-   "points": [
-    "Europol e polícias de nove países atuaram juntos.",
-    "Centenas de servidores e domínios foram apreendidos.",
-    "Operação visou os malwares Gootloader, CastleRAT e StealC.",
-    "Redes criminosas sofreram um duro golpe."
-   ],
-   "title_original": "Police dismantle Gootloader, CastleRAT, StealC malware infrastructure",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "O desmantelamento de infraestruturas criminosas reduz temporariamente a capacidade de propagação destes malwares.",
-   "todo": "Mantenha soluções de segurança atualizadas nos endpoints para detetar eventuais tentativas residuais de infeção."
   }
  ]
 }

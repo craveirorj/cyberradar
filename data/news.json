@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-18T15:06:42.654850+00:00",
+ "updated": "2026-11-18T15:25:12.896848+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 1
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "Pplware Segurança",
@@ -74,7 +74,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -94,7 +94,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -104,12 +104,12 @@
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 5
+   "added": 4
   },
   {
    "source": "TechCrunch Security",
@@ -139,7 +139,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Malwarebytes Labs",
@@ -149,7 +149,7 @@
   {
    "source": "Microsoft Security Blog",
    "ok": true,
-   "added": 5
+   "added": 6
   },
   {
    "source": "Microsoft MSRC",
@@ -184,7 +184,7 @@
   {
    "source": "CrowdStrike Blog",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "SentinelLabs",
@@ -199,7 +199,7 @@
   {
    "source": "Rapid7",
    "ok": true,
-   "added": 7
+   "added": 6
   },
   {
    "source": "Tenable",
@@ -229,7 +229,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 20
+   "added": 19
   },
   {
    "source": "The Register Security",
@@ -263,8 +263,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -294,7 +294,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 13
+   "added": 14
   },
   {
    "source": "ACSC Austrália",
@@ -304,9 +304,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 12,
-  "pending": 344,
-  "unenriched": 196,
+  "done": 0,
+  "pending": 350,
+  "unenriched": 208,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -398,6 +398,23 @@
    "translated": false,
    "enriched": false,
    "raw": "Cybersecurity has long been a contest between attackers finding new ways in and defenders trying to keep them out. Artificial intelligence is making that contest more complicated, giving cybercriminals new ways to develop and adapt their attacks while putting additional pressure on conventional cyber defences. For enterprise IT leaders, the challenge extends beyond preventing a breach. What happens when an attacker gets through? Can compromised data be identified, clean copies recovered, and essential systems brought back online without prolonged disruption? These questions are becoming increasingly important as organizations confront both traditional threats and emerging AI-powered cyberattacks. A successful defense strategy must, therefore, account for what happens after an incident, not just the measures designed to prevent one. Making recovery part of the defence This is where cyber-resilient enterprise storage has an important role to play. Rather than relying solely on traditional backup processes, organizations need ways to protect critical data, detect potential compromise, establish which copies can safely be recovered, and restore those copies as quickly as possible. Infinidat addresses this challenge through its InfiniBox and InfiniBox SSA enterprise storage platforms, which incorporate the company’s InfiniSafe cyber resilience and recovery software suite. InfiniSafe combines immutable snapshots, which cannot be altered or deleted during their protected retention period, with logical air-gapping to isolate the management plane from the data plane. Fenced forensic environments provide a separate space for validating data before recovery. The technology also supports automated cyber protection, allowing security monitoring data center wide cyber security softwa"
+  },
+  {
+   "id": "1d0a30cec42f79b3",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/18/norwegian-gas-giant-equinor-says-its-under-cyberattack/",
+   "published": "2026-11-18T14:58:52+00:00",
+   "title": "Norwegian Gas Giant Equinor Says It’s Under Cyberattack",
+   "summary": "Pierluigi Paganini reports: Equinor, Europe’s largest gas supplier, said on 17 November it had detected an ongoing cyberattack against some IT systems. The Norwegian company said the attack had not affected operations and production, and it had taken steps to neutralise it. “Equinor has detected an ongoing cyber-attack against certain IT systems. Relevant resources have...",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "Pierluigi Paganini reports: Equinor, Europe’s largest gas supplier, said on 17 November it had detected an ongoing cyberattack against some IT systems. The Norwegian company said the attack had not affected operations and production, and it had taken steps to neutralise it. “Equinor has detected an ongoing cyber-attack against certain IT systems. Relevant resources have..."
   },
   {
    "id": "9610a86cb8015f07",
@@ -13700,28 +13717,6 @@
    "enriched": true,
    "why": "Permite que atacantes leiam ou modifiquem ficheiros sensíveis no sistema através de processamento de imagens.",
    "todo": "Restrinja as políticas de segurança do ImageMagick e valide rigorosamente todos os uploads e fontes de imagens."
-  },
-  {
-   "id": "950205e16691a515",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html",
-   "published": "2026-11-12T18:07:15+00:00",
-   "title": "Webinar: Veja como os pontos cegos de identidade colocam o seu SOC em risco e como eliminá-los",
-   "summary": "As equipas de segurança dispõem de ferramentas avançadas de monitorização e registo, mas continuam a enfrentar dificuldades em identificar rapidamente quem está por trás de uma atividade suspeita e a que recursos tem acesso. Um incidente pode envolver um trabalhador legítimo, uma conta de máquina ou um agente de IA com privilégios excessivos. A falta de visibilidade sobre identidades e permissões deixa as operações de segurança vulneráveis.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj765JyAl658UR5d1raKFLJmZpxXuof0-wBCobeJwnWjWZROTa4wtMyPvTTjBr4-ccE0cmKpIyGT1BetlqUPkPS_omcKVWz7RcCv6sUl2h6KxXrem_X26kzrp7kwq8bSezUsYMa6h2JNh-rPglsuNnRzt6i3IdzBjkLFNBNy5-Y0jId2B6Zhyir_jdm8O4/s1600/sails.jpg",
-   "points": [
-    "Dificuldade em identificar a origem de ações em acessos e chamadas de API.",
-    "Envolve riscos associados a contas de trabalhadores, máquinas e agentes de IA.",
-    "A falta de visibilidade em identidades prejudica a resposta dos centros de operações de segurança."
-   ],
-   "title_original": "Webinar: See How Identity Blind Spots Put Your SOC at Risk and How to Close Them",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Salienta a importância de eliminar pontos cegos de identidade para melhorar a resposta a incidentes no SOC.",
-   "todo": "Implementar uma monitorização rigorosa de identidades e auditorias regulares de permissões de máquinas e utilizadores."
   }
  ]
 }

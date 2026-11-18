@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-18T17:25:50.871300+00:00",
+ "updated": "2026-11-18T17:45:07.897515+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 1
   },
   {
    "source": "Pplware Segurança",
@@ -29,7 +29,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -84,7 +84,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 25
+   "added": 24
   },
   {
    "source": "SecurityWeek",
@@ -209,7 +209,7 @@
   {
    "source": "Zero Day Initiative",
    "ok": true,
-   "added": 1
+   "added": 2
   },
   {
    "source": "The DFIR Report",
@@ -224,7 +224,7 @@
   {
    "source": "CERT-EU",
    "ok": true,
-   "added": 1
+   "added": 2
   },
   {
    "source": "Infosecurity Magazine",
@@ -234,7 +234,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 13
+   "added": 14
   },
   {
    "source": "Help Net Security",
@@ -263,8 +263,8 @@
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -294,7 +294,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 21
+   "added": 22
   },
   {
    "source": "ACSC Austrália",
@@ -304,9 +304,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 12,
-  "pending": 350,
-  "unenriched": 227,
+  "done": 0,
+  "pending": 353,
+  "unenriched": 232,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -314,6 +314,74 @@
   ]
  },
  "items": [
+  {
+   "id": "6fba50ef58cbfb94",
+   "source": "CERT-EU",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://cert.europa.eu/publications/security-advisories/2026-022/",
+   "published": "2026-11-18T18:30:42+00:00",
+   "title": "2026-022: Critical vulnerabilities in Nginx",
+   "summary": "On 18 November 2026, F5 published an advisory addressing five vulnerabilities in NGINX that allow an unauthenticated remote attacker to execute code with the privileges of the NGINX worker process. While researchers managed to successfully demonstrate the use of CVE-2026-123007, no exploitation in the wild has been reported yet. It is recommended to swiftly update NGINX as soon as possible, prioritising internet facing appliances.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "On 18 November 2026, F5 published an advisory addressing five vulnerabilities in NGINX that allow an unauthenticated remote attacker to execute code with the privileges of the NGINX worker process. While researchers managed to successfully demonstrate the use of CVE-2026-123007, no exploitation in the wild has been reported yet. It is recommended to swiftly update NGINX as soon as possible, prioritising internet facing appliances."
+  },
+  {
+   "id": "708e52618cd98258",
+   "source": "TechCrunch Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/",
+   "published": "2026-11-18T17:32:10+00:00",
+   "title": "More banks says customers using AI agents are on their own — even if they get hacked",
+   "summary": "Citi is the latest major financial institution to put the breaks on personal finance AI agents.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "IA",
+   "translated": false,
+   "enriched": false,
+   "raw": "Citi is the latest major financial institution to put the breaks on personal finance AI agents."
+  },
+  {
+   "id": "29fd5c5793b64c35",
+   "source": "Zero Day Initiative",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.thezdi.com/blog/2026/11/17/hostile-inference-exploiting-docker-model-runner-for-container-escapes",
+   "published": "2026-11-18T17:23:52+00:00",
+   "title": "Hostile Inference: Exploiting Docker Model Runner for Container Escapes",
+   "summary": "Local LLM inference is seeing adoption in default developer workflows, and the tooling that serves those models now ships inside products developers already trust. One of those is Docker Model Runner (DMR), the feature in Docker Desktop that pulls, runs, and serves models locally. In November 2025, we reported ZDI-26-150 / CVE-2026-28400 , a denial-of-service (on macOS) stemming from an unauthenticated argument-injection vulnerability in DMR. A container created with the default set of privileges could overwrite and corrupt the Docker Desktop VM’s data disk. Further analysis, under non-default",
+   "image": "https://images.squarespace-cdn.com/content/v1/5894c269e4fcb5e65a1ed623/1794935549124-CY879LVRLLOTO6TWGFBX/pexels-gulin-yigiter-2160510905-36842554.jpg?format=1500w",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Local LLM inference is seeing adoption in default developer workflows, and the tooling that serves those models now ships inside products developers already trust. One of those is Docker Model Runner (DMR), the feature in Docker Desktop that pulls, runs, and serves models locally. In November 2025, we reported ZDI-26-150 / CVE-2026-28400 , a denial-of-service (on macOS) stemming from an unauthenticated argument-injection vulnerability in DMR. A container created with the default set of privileges could overwrite and corrupt the Docker Desktop VM’s data disk. Further analysis, under non-default configurations, turned the same primitive into arbitrary code execution on the host, on both macOS and Windows. In this post, we walk through the full chain: the argument-injection primitive, the host file read/write foothold it grants, how we take partial control of what gets written, and the payoff that turns a constrained file write into arbitrary code execution on the host through Docker Extensions. We then cover two further escapes we found along the way: one from an overly permissive Seatbelt sandbox configuration on macOS, and one that pivots the WSL2 VM-to-host boundary through Docker Extensions. Background: Docker Model Runner and the host boundary Docker Desktop helps run Docker containers on macOS, Windows, and Linux. Docker Desktop for Windows with Windows containers and Docker Desktop for Linux are out of scope for this blog. Since macOS and Windows don’t come with a Linux kernel to run Linux containers, Docker Desktop ships a LinuxKit VM that hosts the container runtime; on macOS the VM runs using the Apple Virtualization Framework , while on Windows it runs under WSL2 by default. Linux containers and the Docker Engine components (runc, containerd, dockerd) run in th"
+  },
+  {
+   "id": "55044eb187059b94",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/18/microsofts-official-python-agent-framework-hijacked-to-distribute-malware/5310858",
+   "published": "2026-11-18T17:23:37+00:00",
+   "title": "Microsoft's official Python agent framework hijacked to distribute malware",
+   "summary": "In today's how-could-things-get-worse-for-Microsoft news, it seems someone's GitHub org admin creds have been compromised",
+   "image": "https://image.theregister.com/?imageId=5309156&width=800",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Microsoft’s official agent framework package hosted on PyPI has been hijacked and now installs info-stealing malware, multiple security research firms have discovered. CEO Satya Nadella may be on stage trying to wow investors and customers at his company’s annual Ignite conference, but somewhere in the bowels of a building in Redmond his open source team is likely panicking at what appears to be unauthorized access to an administrator account on Microsoft’s Github organization. The problem package is Microsoft’s agent-framework, versions 1.26.1 and 1.26.2, researchers reported late yesterday and this morning. According to OX Security, version 1.26.1 was reverted to a safe version, but the attacker later uploaded 1.26.2 through Microsoft’s official PyPI publisher account, suggesting that, at least at the time of their report, the credentials hadn’t been locked down. Safe to say, but if you find either version in your environment assume you have some account security work to do. Microsoft agent-framework for Python boasts nearly 200,000 downloads a month and is used to build and deploy AI agents. As of those latest releases, it’s also being used to exfiltrate environment variables, credential files, and other secrets for Azure, Git, Docker, Hugging Face, and other sensitive developer services. To make matters worse, the package never needs to be imported to do its dirty work – all it takes is a Python interpreter with the package installed to start up – the infected package still pulls the genuine 1.26.0 version of Microsoft’s agent-framework in order to keep itself running and looking legitimate, while in the background it gathers up credentials, encrypts them as a base64-encoded chunk of JSON, and sends them off to a webhook.site address hard coded into the malware. It "
+  },
   {
    "id": "3408547b0745afd8",
    "source": "SAPO Tek",
@@ -13564,95 +13632,6 @@
    "enriched": true,
    "why": "Importa porque facilita o acesso público a um histórico detalhado de incidentes cibernéticos para análise e investigação.",
    "todo": ""
-  },
-  {
-   "id": "17cc5115889acc48",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/12/ransomware-without-data-theft-can-still-trigger-mandatory-breach-reporting-under-indias-dpdp-law-k7-cybersecurity/",
-   "published": "2026-11-12T21:19:09+00:00",
-   "title": "Ransomware Without Data Theft Can Still Trigger Mandatory Breach Reporting Under India’s DPDP Law: K7 CyberSecurity",
-   "summary": "De acordo com um esclarecimento divulgado pela K7 CyberSecurity, os ataques de ransomware que bloqueiam sistemas empresariais podem constituir uma violação de dados pessoais ao abrigo da lei indiana DPDP. Esta obrigação legal de notificação aplica-se mesmo nos cenários em que os atacantes não exfiltram ou roubam ficheiros corporativos. A interpretação sublinha que a interrupção do acesso a dados pessoais já preenche os critérios legais de infração. As organizações devem assim rever os seus planos de resposta a incidentes para cumprir os requisitos regulatórios locais.",
-   "image": null,
-   "points": [
-    "Ataques de ransomware que bloqueiam sistemas podem violar a lei DPDP na Índia.",
-    "A obrigação de notificar aplica-se mesmo quando nenhum ficheiro é roubado pelos atacantes.",
-    "A indisponibilidade de dados pessoais já constitui uma infração legal reportável."
-   ],
-   "title_original": null,
-   "category": "Ransomware",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque alarga o âmbito legal das obrigações de notificação de incidentes a ataques que apenas bloqueiam o acesso a dados.",
-   "todo": "Garanta cópias de segurança offline e atualize os procedimentos de conformidade legal para resposta a incidentes."
-  },
-  {
-   "id": "39360acccba04a84",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/cybersecurity-operations/cyber-experts-fight-artex-antifox",
-   "published": "2026-11-12T21:18:52+00:00",
-   "title": "Cyber Experts Weigh In: How to Fight Artex & AntiFox",
-   "summary": "Peritos em cibersegurança alertam para a proliferação de ferramentas de testes de penetração geradas por agentes autónomos, como o Artex e o AntiFox. Com estas tecnologias já disponíveis para ciberdelinquentes, as empresas enfrentam um cenário de ameaças automatizadas mais dinâmico. Especialistas defendem que as organizações precisam de adotar planos de defesa imediatos e adaptados a esta nova realidade. O objetivo é mitigar os riscos associados ao uso malicioso de inteligência artificial em testes de intrusão.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt131056a0513594b5/6af623f4a8a90fde9d0b34ee/Artex-ShaunWilkinson-Getty.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "Especialistas alertam para o uso malicioso de ferramentas de pentesting baseadas em agentes.",
-    "As ameaças incluem tecnologias como Artex e AntiFox nas mãos de cibercriminosos.",
-    "As empresas são aconselhadas a implementar planos de defesa urgentes contra estas ferramentas."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque a automação de ataques com inteligência artificial acelera a descoberta de vulnerabilidades por parte de atacantes.",
-   "todo": "Implemente monitorização comportamental contínua e reveja as defesas contra ferramentas automatizadas de exploração."
-  },
-  {
-   "id": "65ba8076fc80bba4",
-   "source": "CyberScoop",
-   "region": "US",
-   "lang": "en",
-   "link": "https://cyberscoop.com/connectwise-screenconnect-sckit-attack/",
-   "published": "2026-11-12T20:58:17+00:00",
-   "title": "Rogue remote-access campaign spread through ScreenConnect add-on, researchers say",
-   "summary": "Investigadores da Huntress detetaram uma campanha maliciosa que explorou painéis do ScreenConnect alojados na nuvem para infetar pelo menos 288 computadores em 48 organizações. A intrusão ocorreu através do abuso da extensão de terceiros Rmm+, que continha uma falha de autenticação ao aceitar chaves em branco e contornar a autenticação multifator. O malware instalou clientes ScreenConnect ilegítimos para substituir os originais e manter o acesso persistente aos dispositivos. Tanto a ConnectWise como os investigadores confirmaram que a infraestrutura principal do software não foi comprometida.",
-   "image": null,
-   "points": [
-    "Uma campanha maliciosa afetou centenas de computadores através de uma extensão do ScreenConnect.",
-    "O ataque explorou a extensão Rmm+, que continha uma falha de autenticação e bypass de MFA.",
-    "O malware substituiu clientes legítimos por versões controladas pelos atacantes.",
-    "A ConnectWise desativou as extensões vulneráveis e confirmou que a sua infraestrutura está segura."
-   ],
-   "title_original": null,
-   "category": "Ataque/APT",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque demonstra como extensões de terceiros em ferramentas de gestão remota podem ser exploradas para acessos não autorizados em massa.",
-   "todo": "Audite e remova extensões de terceiros não essenciais em plataformas de gestão remota e reforce a autenticação."
-  },
-  {
-   "id": "f394da5f2166ea82",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/",
-   "published": "2026-11-12T20:55:30+00:00",
-   "title": "Microsoft 365 Outage Disrupts Outlook, Exchange Online and Teams",
-   "summary": "Uma falha nos servidores da Microsoft provocou perturbações no funcionamento de serviços essenciais como o Outlook, o Exchange Online e o Teams. A interrupção foi motivada por falhas em verificações de saúde dos servidores, afetando a conectividade dos utilizadores. A empresa avançou que continua a investigar a origem exata do problema técnico. Até ao momento, não foram encontradas quaisquer evidências de que a falha tenha resultado de um ciberataque.",
-   "image": null,
-   "points": [
-    "Uma falha nos servidores da Microsoft afetou o Outlook, Exchange Online e o Teams.",
-    "O problema foi causado por falhas nas verificações de saúde dos sistemas.",
-    "A empresa excluiu a hipótese de o incidente ter sido provocado por um ciberataque."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque afeta a produtividade e a comunicação de milhares de utilizadores dependentes do ecossistema Microsoft 365.",
-   "todo": "Consulte os painéis de estado oficiais da Microsoft para obter atualizações em tempo real durante interrupções de serviço."
   }
  ]
 }

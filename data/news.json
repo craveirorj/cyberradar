@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-18T22:47:12.236811+00:00",
+ "updated": "2026-11-18T23:07:08.077704+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Pplware Segurança",
@@ -144,7 +144,7 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 5
+   "added": 3
   },
   {
    "source": "Microsoft Security Blog",
@@ -159,7 +159,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "Cisco Talos",
@@ -229,12 +229,12 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 18
+   "added": 19
   },
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 12
+   "added": 11
   },
   {
    "source": "Help Net Security",
@@ -305,13 +305,36 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 196,
-  "unenriched": 82,
+  "pending": 191,
+  "unenriched": 76,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "9e33069bc7a4c129",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/banco-do-brasil-nega-invasao-mas-alerta-clientes-sobre-vazamento-de-dados/",
+   "published": "2026-11-18T22:45:00+00:00",
+   "title": "Banco do Brasil nega invasão, mas alerta clientes sobre vazamento de dados",
+   "summary": "O Banco do Brasil confirmou um acesso indevido a dados pessoais de clientes provocado pelo uso de uma credencial válida. A falha expôs informações como nomes, CPFs e contactos, embora os sistemas internos, senhas e transações financeiras tenham ficado protegidos. Um criminoso colocou à venda num fórum restrito milhões de registos alegadamente obtidos na instituição. Os clientes afetados foram notificados pela entidade através de email.",
+   "image": "https://www.estadao.com.br/resizer/v2/LIUXQ63R55BC7GR6XX6DUFAL6I.png?quality=80&auth=7209a8e2796a401907e3f58d1acc8889123a3bc2f4d1f122e0098d5a02777b05&width=710",
+   "points": [
+    "O Banco do Brasil confirmou um acesso indevido a dados pessoais de clientes.",
+    "Um criminoso utilizou uma credencial válida para obter informações e expô-las à venda.",
+    "Sistemas internos, senhas, tokens e transações financeiras não foram afetados.",
+    "A instituição notificou por email os titulares cujos dados foram comprometidos."
+   ],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": true,
+   "why": "Mostra como o roubo de credenciais válidas continua a expor milhões de dados pessoais em grandes instituições.",
+   "todo": "Utilize autenticação multifator rigorosa e monitore constantemente o uso de credenciais privilegiadas."
+  },
   {
    "id": "80197199f808637c",
    "source": "The Register Security",
@@ -13759,28 +13782,6 @@
    "enriched": true,
    "why": "Importa porque os cibercriminosos utilizam grandes eventos de entretenimento para espalhar malware e roubar dados.",
    "todo": "Desconfie de ofertas de acesso antecipado e descarregue conteúdos apenas de fontes oficiais."
-  },
-  {
-   "id": "d26b08426b71229a",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/hackers-stolen-github-accounts-target-repositories/",
-   "published": "2026-11-13T09:41:06+00:00",
-   "title": "Piratas informáticos usam 4.837 contas do GitHub roubadas para atacar 61.764 repositórios",
-   "summary": "Um grupo de atacantes utilizou milhares de contas do GitHub comprometidas no âmbito da campanha wfx-loot. O objetivo principal foi visar repositórios de código e roubar credenciais de programadores e dados na cloud. Esta operação demonstra a escala com que os atacantes exploram acessos legítimos para comprometer a cadeia de fornecimento de software.",
-   "image": null,
-   "points": [
-    "Campanha wfx-loot usou milhares de contas do GitHub comprometidas.",
-    "O ataque visou dezenas de milhares de repositórios de código.",
-    "O objetivo principal foi o roubo de credenciais de programadores."
-   ],
-   "title_original": "Hackers Use 4,837 Stolen GitHub Accounts to Target 61,764 Repositories",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "O roubo de contas de programadores compromete diretamente a segurança do código-fonte e da cadeia de fornecimento.",
-   "todo": "Ative a autenticação multifator (MFA) em todas as contas de desenvolvimento e monitorize acessos suspeitos a repositórios."
   }
  ]
 }

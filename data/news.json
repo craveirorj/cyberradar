@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T20:47:18.028613+00:00",
+ "updated": "2026-11-18T21:07:09.719957+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "CISA Advisories",
    "ok": true,
-   "added": 10
+   "added": 11
   },
   {
    "source": "CISA Alertas (KEV)",
@@ -74,7 +74,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -99,7 +99,7 @@
   {
    "source": "CyberScoop",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Cybersecurity Dive",
@@ -109,7 +109,7 @@
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "TechCrunch Security",
@@ -244,7 +244,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -304,16 +304,83 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 96,
-  "pending": 221,
-  "unenriched": 107,
+  "done": 48,
+  "pending": 271,
+  "unenriched": 160,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 45 column 5 (char 3916)",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "f83f4afbf79de25c",
+   "source": "CyberScoop",
+   "region": "US",
+   "lang": "en",
+   "link": "https://cyberscoop.com/tech-outages-ai-vulnerability-patching/",
+   "published": "2026-11-18T20:56:55+00:00",
+   "title": "Cresce o consenso de que falhas tecnológicas foram impulsionadas pela correção de vulnerabilidades descobertas por IA",
+   "summary": "Responsáveis da administração Trump e legisladores apontam que as recentes interrupções tecnológicas em sistemas de aviação, comunicações e banca não se devem a ataques informáticos diretos. O problema decorre da descoberta acelerada de vulnerabilidades através de inteligência artificial, o que gerou uma pressão massiva para aplicar correções de forma imediata. Essa urgência e o ritmo alucinante de atualizações colocaram uma pressão tremenda sobre infraestruturas que não estavam preparadas para tal velocidade. As autoridades alertam que este tipo de perturbações poderá continuar à medida que o panorama da cibersegurança evolui rapidamente.",
+   "image": null,
+   "points": [
+    "O quê: Interrupções tecnológicas em vários setores críticos associadas a correções rápidas.",
+    "Causa: Aceleração na descoberta de falhas por IA, gerando pressão excessiva de atualização.",
+    "Impacto: Sistemas sob enorme esforço técnico, resultando em falhas de serviço.",
+    "Perspetiva: O ritmo acelerado de correção continuará a ser vital, apesar dos riscos de perturbação."
+   ],
+   "title_original": "Consensus mounts that tech outages were fueled by patching of AI-discovered vulnerabilities",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como a velocidade na correção de falhas impulsionada por IA pode sobrecarregar e desestabilizar as infraestruturas tecnológicas.",
+   "todo": "Planeie e teste as atualizações críticas com cuidado para evitar sobrecargas operacionais, mantendo o foco na segurança."
+  },
+  {
+   "id": "ede0adf4c578028e",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/",
+   "published": "2026-11-18T20:49:32+00:00",
+   "title": "Coinbase bloqueia 4,7 milhões de dólares em transferências para esquema de 'deepfake' de Elon Musk",
+   "summary": "A plataforma Coinbase conseguiu bloquear transferências de criptomoedas no valor de 4,7 milhões de dólares destinadas a burlões. Os criminosos utilizavam uma falsificação profunda gerada por inteligência artificial, simulando Elon Musk durante uma transmissão em direto da Tesla. Este esquema fraudulento de falsas ofertas atraiu mais de 500.000 visualizadores antes de ser travado.",
+   "image": null,
+   "points": [
+    "O quê: Bloqueio de 4,7 milhões de dólares em transferências de criptomoeda.",
+    "Como: Burla baseada num 'deepfake' de Elon Musk em direto na Tesla.",
+    "Impacto: Proteção de utilizadores contra esquemas massivos de roubo de fundos."
+   ],
+   "title_original": "Coinbase blocks $4.7 million in transfers to Elon Musk deepfake scam",
+   "category": "Phishing/Fraude",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia o perigo crescente dos 'deepfakes' em tempo real em grandes transmissões para enganar utilizadores e roubar criptomoedas.",
+   "todo": "Desconfie sempre de ofertas de criptomoedas em transmissões em direto, mesmo que envolvam figuras públicas conhecidas."
+  },
+  {
+   "id": "cebfa689962e40ae",
+   "source": "Dark Reading",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.darkreading.com/cyber-risk/strike-graph-launches-integration-ai-to-automate-continuous-compliance-evidence-using-any-existing-tool",
+   "published": "2026-11-18T20:45:49+00:00",
+   "title": "Strike Graph lança integração com IA para automatizar evidências de conformidade contínua com qualquer ferramenta existente",
+   "summary": "A Strike Graph lançou uma nova solução de inteligência artificial agêntica desenhada para simplificar processos regulatórios. A tecnologia utiliza APIs para recolher provas de conformidade diretamente dos sistemas existentes. De seguida, aplica esses dados a mais de 30 frameworks de conformidade diferentes, evitando a duplicação de trabalho pelas equipas.",
+   "image": null,
+   "points": [
+    "O quê: Lançamento de solução de IA agêntica para automatizar a conformidade.",
+    "Como: Uso de APIs para recolher dados de sistemas e aplicá-los a várias frameworks.",
+    "Impacto: Eliminação de trabalho duplicado e simplificação na gestão de conformidade."
+   ],
+   "title_original": "Strike Graph Launches Integration AI to Automate Continuous Compliance Evidence Using Any Existing Tool",
+   "category": "Regulação",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda as empresas a gerir a conformidade regulatória de forma mais eficiente através da automação por IA.",
+   "todo": "Considere soluções automatizadas para reduzir o esforço manual na recolha de evidências de conformidade nas ferramentas da empresa."
+  },
   {
    "id": "68db8fe19e005f1a",
    "source": "CSO Online",
@@ -321,15 +388,65 @@
    "lang": "en",
    "link": "https://www.csoonline.com/article/4250390/a-new-critical-java-hole-illustrates-the-enterprise-it-visibility-problem.html",
    "published": "2026-11-18T20:39:16+00:00",
-   "title": "A new critical Java hole illustrates the enterprise IT visibility problem",
-   "summary": "When cybersecurity research firm Calif published details Tuesday of a potentially major Java security flaw, dubbed Java4Shell, it described an unauthenticated attacker’s ability to read Java heap memory, steal private keys, tokens, and session secrets, and reach remote code execution (RCE). With Java being all-but-ubiquitous in today’s enterprise, coupled with the inability of CISOs to have visibility into every instance of it in their estate, this means that the bug could be a big problem for IT. Java, which has had its fair share of cybersecurity issues lately, is well-known for safely handl",
+   "title": "Uma nova falha crítica em Java ilustra o problema de visibilidade de TI nas empresas",
+   "summary": "Uma empresa de cibersegurança descobriu uma falha de segurança grave em Java, designada Java4Shell e registada como CVE-2026-114938, com uma pontuação de gravidade crítica. A vulnerabilidade afeta o descodificador Base64 do OpenJDK e permite que um atacante não autenticado leia memória heap, roube chaves privadas e execute código remoto. Dada a ubiquidade do Java nas empresas e a dificuldade dos CISO em mapear todas as instâncias, esta falha representa um risco elevado. O problema reside num erro no código otimizado ao processar dados binários, expondo vulnerabilidades semelhantes ao antigo Heartbleed.",
    "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4250390-0-10098500-1795034372-shutterstock_1671261181.jpg?quality=50&strip=all",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O quê: Vulnerabilidade crítica de corrupção de memória em Java (CVE-2026-114938).",
+    "Quem e como: Afeta o OpenJDK Base64; atacantes sem autenticação podem roubar dados e executar código.",
+    "Impacto: Risco elevado para empresas devido à ampla utilização de Java e à falta de visibilidade total.",
+    "Severidade: Classificada com 9.2 (Crítica) no CVSS 4.0."
+   ],
+   "title_original": "A new critical Java hole illustrates the enterprise IT visibility problem",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "When cybersecurity research firm Calif published details Tuesday of a potentially major Java security flaw, dubbed Java4Shell, it described an unauthenticated attacker’s ability to read Java heap memory, steal private keys, tokens, and session secrets, and reach remote code execution (RCE). With Java being all-but-ubiquitous in today’s enterprise, coupled with the inability of CISOs to have visibility into every instance of it in their estate, this means that the bug could be a big problem for IT. Java, which has had its fair share of cybersecurity issues lately, is well-known for safely handling memory. That is why a Java bug affecting memory management is so dangerous. Java4Shell, tracked as CVE-2026-114938 , is a vulnerability in the OpenJDK x86-64 Base64 decoder that scores 9.2 in severity (Critical) under CVSS 4.0, Calif said. Oracle assigned it a lower rating of 8.1 (High) using CVSS 3.1. Calif explained in its post describing the issue that Base64 is a common way of representing binary data as text. “It is used in authentication protocols, to encode file uploads, and to deliver network messages,” it wrote. “To decode Base64 faster, OpenJDK uses specialized x86-64 CPU instructions to process many bytes at once. We discovered a bug in optimized machine-level code that lets malformed input overwrite neighboring memory. With careful exploitation, the corruption can reveal sensitive memory, as Heartbleed did, or lead to remote code execution.” It said that the corruption can be triggered by a string of just 64 “A” characters followed by a single equals sign (=); in older OpenJDK 17 versions, 128 “A” characters are required before the equals sign. “Memory corruption is the most common class of vulnerability on the internet,” Calif said. “But one of Java’s biggest selli"
+   "translated": true,
+   "enriched": true,
+   "why": "Expõe como vulnerabilidades em componentes omnipresentes como o Java colocam dados e sistemas empresariais em risco severo devido à falta de inventário.",
+   "todo": "Mantenha um inventário rigoroso de todos os ativos Java na sua rede e aplique patches de segurança imediatos."
+  },
+  {
+   "id": "33f8f6aa43e26574",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/judge-signs-off-google-purchase-spirit-airlines-data",
+   "published": "2026-11-18T20:39:00+00:00",
+   "title": "Juiz aprova venda de dados da Spirit Airlines à Google",
+   "summary": "Um juiz federal de falências autorizou a aquisição dos dados da extinta Spirit Airlines por parte da Google, num negócio avaliado em 10 milhões de dólares. A gigante tecnológica concordou em implementar várias proteções de segurança na transação. A intenção da Google é utilizar estes dados recolhidos para alimentar os seus projetos futuros no âmbito da inteligência artificial.",
+   "image": "https://cms.therecord.media/uploads/spirit_airlines_pexels_ant_armada_5803bb2701.jpg",
+   "points": [
+    "O quê: Aprovada a venda de dados da Spirit Airlines à Google por 10 milhões de dólares.",
+    "Como: Decisão emitida por um juiz federal de falências com proteções acordadas.",
+    "Impacto: A Google adquire bases de dados para alimentar projetos de inteligência artificial."
+   ],
+   "title_original": "Judge signs off on sale of Spirit Airlines’ data to Google",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Ilustra como ativos de dados de empresas falidas são comercializados e integrados em iniciativas tecnológicas de IA.",
+   "todo": ""
+  },
+  {
+   "id": "27e5f548c7a1914c",
+   "source": "Dark Reading",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.darkreading.com/threat-intelligence/attackiq-research-reveals-iranian-cyber-groups",
+   "published": "2026-11-18T20:38:42+00:00",
+   "title": "Investigação da AttackIQ revela como grupos cibernéticos iranianos partilham acessos a redes para permitir ataques destrutivos",
+   "summary": "Uma análise detalhada a 20 grupos de ameaças patrocinados pelo estado iraniano examinou a forma como operam no ecossistema cibernético. A investigação demonstra a intersecção entre espionagem, ransomware e ativismo político em campanhas estatais. Os grupos colaboram frequentemente, passando acessos obtidos a redes para viabilizar ataques altamente destrutivos.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
+   "points": [
+    "O quê: Análise de 20 grupos de ameaças iranianos apoiados pelo estado.",
+    "Como: Cooperação mútua na partilha de acessos iniciais a redes corporativas.",
+    "Impacto: Facilitação de campanhas complexas que combinam espionagem, ransomware e ações destrutivas."
+   ],
+   "title_original": "AttackIQ Research Reveals How Iranian Cyber Groups Hand Off Network Access to Enable Destructive Attacks",
+   "category": "Ransomware",
+   "translated": true,
+   "enriched": true,
+   "why": "Revela a colaboração tática entre diferentes grupos estatais para maximizar o impacto de ataques cibernéticos destrutivos.",
+   "todo": "Reforce a monitorização de acessos e a deteção precoce de movimentos laterais para mitigar intrusões avançadas."
   },
   {
    "id": "f0ed0fdc40d96a21",
@@ -352,6 +469,29 @@
    "enriched": true,
    "why": "Permite melhorar a velocidade e a eficácia na deteção e resposta a incidentes de segurança.",
    "todo": "Avalie a integração de soluções SIEM modernas para otimizar as operações de segurança da sua organização."
+  },
+  {
+   "id": "34a54f9c44549adf",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203419/security/apache-roller-rce-flaw-cve-2026-129448-under-active-attack.html",
+   "published": "2026-11-18T20:11:35+00:00",
+   "title": "Falha de execução remota de código no Apache Roller (CVE-2026-129448) sob ataque ativo",
+   "summary": "Uma vulnerabilidade crítica de desserialização não segura no endpoint XML-RPC do Apache Roller, rastreada como CVE-2026-129448, está a ser ativamente explorada por atacantes. A falha afeta as versões 4.0.0 a 6.1.4 da plataforma de blogues em Java e permite que um atacante não autenticado execute código arbitrário nos servidores vulneráveis. O problema decorre do processamento de dados controlados por atacantes antes de verificar se a origem é fidedigna. A fundação Apache instou os administradores a aplicarem atualizações urgentes para mitigar a ameaça.",
+   "image": null,
+   "points": [
+    "O quê: Vulnerabilidade crítica de execução remota de código no Apache Roller (CVE-2026-129448).",
+    "Como: Exploração de desserialização insegura no endpoint XML-RPC sem necessidade de credenciais.",
+    "Impacto: Servidores vulneráveis estão a ser ativamente atacados, permitindo controlo total.",
+    "Severidade: Pontuação CVSS de 9.8."
+   ],
+   "title_original": "Apache Roller RCE Flaw CVE-2026-129448 Under Active Attack",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Destaca uma falha crítica ativa que permite comprometer servidores de blogues sem autenticação prévia.",
+   "todo": "Atualize imediatamente o Apache Roller para as versões corrigidas para travar os ataques em curso."
   },
   {
    "id": "012eeaa79a3fa866",
@@ -382,15 +522,20 @@
    "lang": "en",
    "link": "https://therecord.media/tech-disruptions-house-homeland-committee-testimony",
    "published": "2026-11-18T20:00:00+00:00",
-   "title": "Trump administration officials size-up a bad stretch for tech",
-   "summary": "Homeland Security Secretary Markwayne Mullin said the administration will reach out to industry to get companies to share more information about big patches before they take effect.",
+   "title": "Oficiais da administração Trump avaliam fase negativa para a tecnologia",
+   "summary": "O secretário de Segurança Interna, Markwayne Mullin, anunciou que a administração vai contactar o setor tecnológico para estreitar a colaboração. O objetivo é incentivar as empresas a partilharem mais informações detalhadas sobre grandes atualizações de segurança antes de estas entrarem em vigor, mitigando futuras perturbações.",
    "image": "https://cms.therecord.media/uploads/markwayne_millin_worthwide_threats_11_18_2026_76960be5f3.png",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O quê: Administração norte-americana planeia dialogar com a indústria tecnológica.",
+    "Como: Apelo à partilha prévia de informações sobre grandes atualizações e patches.",
+    "Impacto: Aumento da coordenação para prevenir falhas sistémicas associadas a correções."
+   ],
+   "title_original": "Trump administration officials size-up a bad stretch for tech",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Homeland Security Secretary Markwayne Mullin said the administration will reach out to industry to get companies to share more information about big patches before they take effect."
+   "translated": true,
+   "enriched": true,
+   "why": "Sublinha a necessidade de maior transparência e coordenação entre governos e indústria face a falhas sistémicas.",
+   "todo": ""
   },
   {
    "id": "ab37adcdb2bf6806",
@@ -2100,6 +2245,29 @@
    "enriched": true,
    "why": "Ilumina a perspetiva de liderança e a tomada de decisões críticas na gestão de cibersegurança.",
    "todo": "Priorize iniciativas de segurança críticas e aprenda a gerir eficazmente os recursos disponíveis."
+  },
+  {
+   "id": "122413bd849f4f44",
+   "source": "CISA Advisories",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+   "published": "2026-11-18T12:00:00+00:00",
+   "title": "CISA adiciona quatro vulnerabilidades conhecidas e exploradas ao seu catálogo",
+   "summary": "A CISA atualizou o seu catálogo de vulnerabilidades conhecidas exploradas (KEV) com quatro novas falhas devido a evidências de exploração ativa no terreno. A lista inclui falhas em produtos como o Synology DiskStation Manager, BerriAI LiteLLM, Apache Axis e o sistema REDCap da Universidade de Vanderbilt. Esta inclusão obriga as agências federais a priorizarem a remediação rápida destas falhas em ativos expostos. A agência recomenda vivamente que todas as organizações adotem uma gestão de riscos idêntica.",
+   "image": null,
+   "points": [
+    "O quê: Adição de quatro novas falhas ao catálogo KEV da CISA.",
+    "Alvos: Afeta produtos da Synology, BerriAI, Apache Axis e REDCap.",
+    "Impacto: Aumento do risco de exploração ativa em ativos expostos na internet.",
+    "Ação: Obrigatoriedade de correção rápida para entidades federais e recomendação geral para empresas."
+   ],
+   "title_original": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Sinaliza falhas que estão a ser ativamente exploradas por cibercriminosos, exigindo prioridade máxima de correção.",
+   "todo": "Consulte o catálogo KEV da CISA e aplique patches prioritários nos produtos afetados se estiverem presentes na sua rede."
   },
   {
    "id": "f2058d689eec5dda",
@@ -13614,163 +13782,6 @@
    "enriched": true,
    "why": "Importa porque explora vulnerabilidades em equipamentos de perímetro críticos para comprometer a rede e apagar dados.",
    "todo": "Atualize urgentemente os gateways Check Point e aplique as correções de segurança recomendadas pelo fabricante."
-  },
-  {
-   "id": "1838248a60d90440",
-   "source": "Google Project Zero",
-   "region": "US",
-   "lang": "en",
-   "link": "https://projectzero.google/2026/11/disclosure-policy.html",
-   "published": "2026-11-13T08:00:00+00:00",
-   "title": "Política e Divulgação: Edição 2026",
-   "summary": "O Project Zero alterou a sua política de divulgação de vulnerabilidades face ao impacto da inteligência artificial, que acelerou a descoberta e exploração por parte de atacantes. O modelo anterior de 90 dias mais 30 dias de tolerância tornou-se inadequado num cenário onde os patches são rapidamente revertidos. A nova política determina a divulgação total após 90 dias para incentivar correções mais rápidas.",
-   "image": null,
-   "points": [
-    "O Project Zero atualizou a política de divulgação devido ao impacto das ferramentas de IA.",
-    "A IA aumentou a velocidade de descoberta e exploração de vulnerabilidades por atacantes.",
-    "O novo modelo estabelece a divulgação pública das falhas 90 dias após a notificação."
-   ],
-   "title_original": "Policy and Disclosure: 2026 Edition",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque redefine os prazos de divulgação de falhas de segurança para forçar correções mais céleres pelos fornecedores.",
-   "todo": ""
-  },
-  {
-   "id": "d9f7469060c3fa0d",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/",
-   "published": "2026-11-13T07:39:04+00:00",
-   "title": "PHP2Shell Explorado em Ataques Destrutivos a Gateways Check Point",
-   "summary": "A vulnerabilidade PHP2Shell permitiu o comprometimento inicial de sistemas em ataques destrutivos contra gateways Check Point. Adicionalmente, os atacantes utilizaram a falha CVE-2026-123039 para elevar os seus privilégios até ao nível de root. Isto facilitou ações maliciosas profundas nos sistemas afetados.",
-   "image": null,
-   "points": [
-    "O quê: Exploração de falhas em dispositivos Check Point.",
-    "Como: Uso da vulnerabilidade PHP2Shell e da CVE-2026-123039.",
-    "Impacto: Consecução de acesso inicial e elevação de privilégios a root."
-   ],
-   "title_original": "PHP2Shell Exploited in Destructive Check Point Gateway Attacks",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque detalha o vetor técnico exato usado para obter controlo total sobre equipamentos de segurança de rede.",
-   "todo": "Garanta a aplicação imediata das correções para a vulnerabilidade PHP2Shell e a falha CVE-2026-123039."
-  },
-  {
-   "id": "c36e90f8a1e3f20e",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/devops/2026/11/13/c26-stumbles-at-finish-line-over-contracts-dispute/5309526",
-   "published": "2026-11-13T07:31:00+00:00",
-   "title": "C++26 Encalha na Reta Final Devido a Disputa Sobre Contratos",
-   "summary": "A próxima versão da linguagem de programação C++, designada C++26, pode sofrer atrasos na sequência de um desacordo técnico em torno de uma nova funcionalidade de segurança chamada Contratos. A divisão de opiniões entre os criadores e maintainers levou à rejeição da proposta numa votação de rascunho da ISO. Enquanto o criador Bjarne Stroustrup e outros criticam a implementação atual por considerá-la complexa e apressada, defensores da tecnologia argumentam que o veto prejudica o processo.",
-   "image": "https://image.theregister.com/?imageId=5309559&width=800",
-   "points": [
-    "Quem: Comité de normalização da linguagem C++ e ISO.",
-    "O quê: Chumbo do rascunho da norma C++26.",
-    "Como: Votação falhou devido a divergências sobre a funcionalidade de Contratos.",
-    "Impacto: Atraso potencial na aprovação final da nova versão da linguagem."
-   ],
-   "title_original": "C++26 stumbles at finish line over Contracts dispute",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque afeta o desenvolvimento futuro de uma das linguagens de programação mais utilizadas na indústria tecnológica.",
-   "todo": ""
-  },
-  {
-   "id": "f1ba5df7cf65c4de",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/hackers-exploit-new-n-central-zero-day-hours-after-poc-publication/",
-   "published": "2026-11-13T07:20:50+00:00",
-   "title": "Hackers Exploram Nova Zero-Day do N-central Horas Após Publicação de PoC",
-   "summary": "Uma nova falha de segurança, batizada de 4EverAble2Shell, foi explorada por atacantes. A vulnerabilidade tem a capacidade de permitir que atacantes remotos e não autenticados executem código com privilégios de root.",
-   "image": null,
-   "points": [
-    "O quê: Exploração da vulnerabilidade 4EverAble2Shell.",
-    "Quem: Atacantes remotos não autenticados.",
-    "Impacto: Execução de código com privilégios de root."
-   ],
-   "title_original": "Hackers Exploit New N-central Zero-Day Hours After PoC Publication",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque demonstra a rapidez com que os atacantes convertem provas de conceito (PoC) públicas em explorações ativas.",
-   "todo": "Aplique prontamente os patches de segurança e mitigações disponibilizados para o software N-central."
-  },
-  {
-   "id": "474c0fc5bba6c2b2",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/13/fbi-north-korean-fake-zoom-calls/",
-   "published": "2026-11-13T06:30:30+00:00",
-   "title": "Vídeos Roubados de Câmaras de 900+ Vítimas Alimentam Esquema Falso do Zoom de 400 Milhões de Dólares da Coreia do Norte",
-   "summary": "Hackers estatais norte-coreanos roubaram mais de 400 milhões de dólares em criptomoeda ao longo de 18 meses através de chamadas falsas no Zoom e Teams. O esquema, apelidado de FaceStealer pelo FBI, utilizava gravações de vídeo de vítimas anteriores para enganar novos alvos. O FBI apreendeu mais de 900 gravações associadas e emitiu um aviso a trabalhadores do setor cripto e open-source.",
-   "image": null,
-   "points": [
-    "Quem: Hackers estatais da Coreia do Norte.",
-    "O quê: Esquema fraudulento de chamadas falsas em Zoom e Teams.",
-    "Como: Utilização de vídeos roubados de webcams de vítimas anteriores.",
-    "Impacto: Roubo superior a 400 milhões de dólares em criptomoeda."
-   ],
-   "title_original": "Stolen webcam clips of 900+ victims feed North Korea’s $400 million fake Zoom scheme",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque revela táticas sofisticadas de engenharia social direcionadas a profissionais do setor cripto e tecnológico.",
-   "todo": "Desconfie de reuniões virtuais inesperadas e verifique sempre a identidade dos participantes antes de interagir ou partilhar dados."
-  },
-  {
-   "id": "536dea6e3a45f0f6",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/13/microsoft-teams-device-code-phishing/",
-   "published": "2026-11-13T06:15:48+00:00",
-   "title": "Como Atacantes Transformaram uma Marcação de Reunião do Teams numa Armadilha de Phishing por Código de Dispositivo",
-   "summary": "Atacantes utilizaram um agendador de reuniões falso do Microsoft Teams para enganar um colaborador de uma empresa de construção civil. A manobra convenceu a vítima a aprovar um início de sessão por código de dispositivo, permitindo aos atacantes obterem um token de sessão válido antes da deteção. Esta técnica abusa do fluxo legítimo de autenticação da Microsoft para contornar a autenticação multifator (MFA).",
-   "image": null,
-   "points": [
-    "Quem: Atacantes cibernéticos.",
-    "O quê: Phishing através de agendador de reuniões falso do Teams.",
-    "Como: Abuso do fluxo legítimo de código de dispositivo da Microsoft.",
-    "Impacto: Obtenção de um token de sessão válido e acesso à conta."
-   ],
-   "title_original": "How attackers turned a Teams meeting booking into a device code phishing trap",
-   "category": "Phishing/Fraude",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque mostra como os atacantes abusam de funcionalidades legítimas e de confiança para contornar medidas de segurança como o MFA.",
-   "todo": "Eduque os colaboradores para desconfiarem de pedidos inesperados de introdução de códigos de início de sessão em dispositivos."
-  },
-  {
-   "id": "355dbfe4711532dc",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/13/north-korean-it-workers-onboarding/",
-   "published": "2026-11-13T06:00:22+00:00",
-   "title": "Supostos Profissionais de TI Norte-Coreanos Chegaram à Fase de Integração em Empresas com Dados Abertos",
-   "summary": "Uma análise da Material Security acompanhou 27 personas de falsos profissionais de TI da Coreia do Norte em processos de recrutamento ao longo de um ano. Descobriu-se que algumas destas falsas identidades chegaram à fase de integração de funcionários em empresas. Numa das empresas afetadas, foram partilhados centenas de milhares de ficheiros confidenciais contendo números de Segurança Social devido a permissões excessivas.",
-   "image": null,
-   "points": [
-    "Quem: Supostos falsos trabalhadores de TI norte-coreanos.",
-    "O quê: Infiltração em processos de recrutamento de empresas.",
-    "Impacto: Acesso a fases de integração e partilha indevida de ficheiros com dados sensíveis."
-   ],
-   "title_original": "Suspected North Korean IT workers reached onboarding at companies with open data",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque ilustra como agentes maliciosos se infiltram em empresas através de processos de contratação remota para aceder a dados corporativos.",
-   "todo": "Refforce a verificação de antecedentes em processos de contratação remota e restrinja as permissões de partilha de ficheiros internos."
   }
  ]
 }

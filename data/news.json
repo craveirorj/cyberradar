@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T12:46:14.344553+00:00",
+ "updated": "2026-11-18T13:07:18.870827+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -133,8 +133,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": true,
-   "added": 2
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "DataBreaches.net",
@@ -194,7 +194,7 @@
   {
    "source": "Elastic Security Labs",
    "ok": true,
-   "added": 2
+   "added": 1
   },
   {
    "source": "Rapid7",
@@ -204,7 +204,7 @@
   {
    "source": "Tenable",
    "ok": true,
-   "added": 3
+   "added": 4
   },
   {
    "source": "Zero Day Initiative",
@@ -229,7 +229,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 21
+   "added": 20
   },
   {
    "source": "The Register Security",
@@ -294,7 +294,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 12
+   "added": 13
   },
   {
    "source": "ACSC Austrália",
@@ -304,9 +304,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 36,
-  "pending": 303,
-  "unenriched": 165,
+  "done": 12,
+  "pending": 325,
+  "unenriched": 187,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -314,6 +314,29 @@
   ]
  },
  "items": [
+  {
+   "id": "bd7bead76e6f6509",
+   "source": "Tenable",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.tenable.com/blog/openai-connector-tenable-one-codex-security",
+   "published": "2026-11-18T13:00:00+00:00",
+   "title": "Correções do Tenable One integradas onde os programadores trabalham: Tenable e OpenAI Daybreak Defense Factory",
+   "summary": "Os clientes do Tenable One podem agora importar dados detetados selecionados para a OpenAI Daybreak Defense Factory através de uma ferramenta de linha de comandos local. A OpenAI criou este conector de código aberto no Codex Security para permitir que as descrições e soluções de segurança cheguem diretamente aos programadores. O impacto traduz-se na redução da perda de contexto e de tempo na transição de tickets entre equipas. Desta forma, os programadores conseguem corrigir vulnerabilidades no mesmo ambiente onde escrevem o código.",
+   "image": "https://www.tenable.com/sites/default/files/images/articles/Fix%20Tenable%20One%20findings%20where%20developers%20work.png",
+   "points": [
+    "A OpenAI integrou um conector para o Tenable One no Codex Security.",
+    "As vulnerabilidades e soluções são importadas diretamente para o ambiente local dos programadores.",
+    "Evita-se a perda de contexto habitual na passagem de tickets entre equipas.",
+    "Acelera a correção de falhas de segurança no código."
+   ],
+   "title_original": "Fix Tenable One findings where developers work: Tenable and OpenAI Daybreak Defense Factory",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que os programadores corrijam falhas de segurança sem perder o contexto original transmitido pelas equipas de segurança.",
+   "todo": "Se utiliza o Tenable One e o Codex Security, configure a importação local de vulnerabilidades para agilizar o fluxo de trabalho dos programadores."
+  },
   {
    "id": "7aa694effe302302",
    "source": "Infosecurity Magazine",
@@ -13773,29 +13796,6 @@
    "enriched": true,
    "why": "Permite o controlo remoto de servidores web que tenham o protocolo HTTP/2 ativo.",
    "todo": "Atualize o Servidor HTTP Apache para a versão mais recente que inclui a correção."
-  },
-  {
-   "id": "97f84b46ebe7fa0b",
-   "source": "Cybersecurity Dive",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cybersecuritydive.com/news/ai-vulnerabilities-critical-infrastructure-embedded-software/874499/",
-   "published": "2026-11-12T15:30:18+00:00",
-   "title": "A inteligência artificial encontrou vulnerabilidades em IoT de forma mais rápida e barata do que os humanos",
-   "summary": "Ferramentas baseadas em inteligência artificial identificaram falhas de segurança em dispositivos IoT com uma rapidez e eficiência superiores às capacidades humanas. Esta descoberta demonstra a capacidade crescente da inteligência artificial no setor tecnológico. Em simultâneo, o estudo evidencia as vulnerabilidades persistentes que continuam a afetar as infraestruturas críticas.",
-   "image": "https://imgproxy.divecdn.com/rYFwoq2SbnkggLx26tFTc__vmJRJpr7fAAt3MBdnYnE/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjkwNzY5NjEzLmpwZw==.webp",
-   "points": [
-    "A IA detetou falhas em IoT rapidamente.",
-    "O processo foi mais barato do que com humanos.",
-    "Mostra o avanço e o poder da IA.",
-    "Evidencia fragilidades contínuas em infraestruturas críticas."
-   ],
-   "title_original": "AI found widespread IoT vulnerabilities more quickly and cheaply than humans could",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia que a inteligência artificial pode acelerar a descoberta de falhas, aumentando os riscos para infraestruturas críticas.",
-   "todo": "Mantenha os dispositivos IoT atualizados e reforce a monitorização de segurança nas redes internas."
   }
  ]
 }

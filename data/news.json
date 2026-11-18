@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T18:58:01.773485+00:00",
+ "updated": "2026-11-18T19:05:15.519584+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -99,7 +99,7 @@
   {
    "source": "CyberScoop",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Cybersecurity Dive",
@@ -305,8 +305,8 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 325,
-  "unenriched": 204,
+  "pending": 326,
+  "unenriched": 205,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -314,6 +314,23 @@
   ]
  },
  "items": [
+  {
+   "id": "ad35669340d43217",
+   "source": "CyberScoop",
+   "region": "US",
+   "lang": "en",
+   "link": "https://cyberscoop.com/nginx-critical-vulnerabilities-exploits/",
+   "published": "2026-11-18T18:54:12+00:00",
+   "title": "It’s NGINX’s turn to cause vulnpocalypse headaches",
+   "summary": "Researchers just dropped five NGINX exploits, including one that chains an HTTP/2 bug with a kernel flaw to seize the machine behind the web server.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Security researchers disclosed five vulnerabilities Tuesday in NGINX, the web server software that handles traffic for roughly a third of all websites, each with a working exploit. The most severe allows an unauthenticated attacker to run code on the server from anywhere on the internet, and in tests the researchers chained it with a separate Linux kernel flaw to take over the machine hosting the server entirely. F5, the company behind NGINX, released fixes Tuesday and published an advisory classifying the worst of the flaws, an integer underflow tracked as CVE-2026-123007, as critical, scoring 9.2 out of 10 on the CVSS scale. The problem sits in HTTP/2, the protocol NGINX uses to carry many requests over a single connection. HTTP/2 uses a credit system: the client grants the server permission to send a fixed amount of data. When a client cancels a request while its response data is still waiting to be sent, NGINX hands back that unused credit without checking whether the total now exceeds the protocol’s maximum. A later check subtracts the inflated number from the maximum using unsigned arithmetic, which cannot go negative, so the calculation wraps into an enormous value. That broken number is eventually treated as a negative response length, producing a memory buffer whose end pointer sits before its start, and a memory copy that spills outside its boundaries. Rapid7 researcher Stephen Fewer, credited in F5’s advisory along with Wiz Research , Xint.io and Ikotas Labs, built a working exploit against a NGINX 1.31.8 container with HTTP/2 and TLS enabled. The attack has practical limits: it requires roughly 128 gigabytes of HTTP/2 traffic, most of it control frames carrying no actual data. The demonstration took two-and-a-half minutes on a fast local network, but would n"
+  },
   {
    "id": "6fba50ef58cbfb94",
    "source": "CERT-EU",
@@ -13761,28 +13778,6 @@
    "enriched": true,
    "why": "Importa porque revela potenciais riscos de segurança nacional e falhas de proteção de segredos tecnológicos numa gigante de semicondutores.",
    "todo": "As empresas devem reforçar os controlos de segurança interna e manter políticas rigorosas de proteção de informação sensível."
-  },
-  {
-   "id": "e52fb1952d02967a",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted",
-   "published": "2026-11-12T21:42:00+00:00",
-   "title": "Feds announce seizure of $1.2 billion from Binance theft; also takedown of ‘FaceStealer’ tools",
-   "summary": "As autoridades federais dos Estados Unidos realizaram duas operações distintas contra cibercrime associado a operações norte-coreanas de roubo de criptomoedas. Na primeira ação, o Departamento de Justiça e o FBI anunciaram a apreensão de 1,2 mil milhões de dólares provenientes de um furto na plataforma Binance. Numa segunda operação, as autoridades desmantelaram as ferramentas maliciosas conhecidas como 'FaceStealer'. Estas medidas visam travar o financiamento e as capacidades técnicas de grupos maliciosos ligados à Coreia do Norte.",
-   "image": "https://cms.therecord.media/uploads/doj_logo_green_code_f20ed46844.jpg",
-   "points": [
-    "O Departamento de Justiça e o FBI conduziram duas operações contra o cibercrime norte-coreano.",
-    "Foram apreendidos 1,2 mil milhões de dólares furtados na plataforma Binance.",
-    "As autoridades desativaram as ferramentas maliciosas denominadas 'FaceStealer'."
-   ],
-   "title_original": null,
-   "category": "Malware",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque demonstra a recuperação de fundos roubados de grande escala e o combate a infraestruturas de cibercrime associadas a Estados.",
-   "todo": "Utilize autenticação forte e carteiras de criptomoedas seguras, mantendo-se atento a campanhas de roubo de credenciais."
   }
  ]
 }

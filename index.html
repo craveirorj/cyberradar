@@ -325,9 +325,9 @@ function renderThreats(){
   const f=d.feodo,c=d.cloudflare;TH.fx=[];
   let h='';
   const SER=[];
-  if(f)SER.push({key:'botnets',label:'Servidores de botnets',col:'244,63,94',total:f.online,by:f.by_country||{},det:f.detail||{},extra:Object.entries(f.by_malware||{}).map(([k,v])=>`${k} (${v})`).join(', ')});
+  if(f)SER.push({key:'botnets',label:'Servidores de botnets',col:'244,63,94',total:f.online,by:f.by_country||{},det:f.detail||{},ports:f.ports||{},extra:Object.entries(f.by_malware||{}).map(([k,v])=>`${k} (${v})`).join(', ')});
   const T=d.types||{},COL={malware_urls:'251,146,60',phishing:'167,139,250',ioc:'244,114,182',scans:'52,211,153'};
-  for(const k of Object.keys(COL))if(T[k])SER.push({key:k,label:T[k].label,col:COL[k],total:T[k].total,by:T[k].by_country||{},det:T[k].detail||{},extra:Object.entries(T[k].tags||T[k].malware||{}).map(([a,v])=>`${a} (${v})`).join(', ')});
+  for(const k of Object.keys(COL))if(T[k])SER.push({key:k,label:T[k].label,col:COL[k],total:T[k].total,by:T[k].by_country||{},det:T[k].detail||{},ports:T[k].ports||{},extra:Object.entries(T[k].tags||T[k].malware||{}).map(([a,v])=>`${a} (${v})`).join(', ')});
   TH.ser=SER;
   if(!TH.off)TH.off=new Set();
   $('#legend').innerHTML=SER.map(x=>`<span class="leg ${TH.off.has(x.key)?'off':''}" data-k="${x.key}"><i style="background:rgb(${x.col})"></i>${esc(x.label)}</span>`).join('')+'<span><i style="background:#22d3ee"></i>origem de ataques</span><span><i style="background:#fbbf24"></i>alvo</span>';
@@ -358,8 +358,8 @@ $('#sub').onclick=e=>{const b=e.target.closest('.tab');if(!b)return;if(b.dataset
 function openCountry(cc){
   const P=$('#cpanel'),SER=TH.ser||[],c=(TH.data&&TH.data.cloudflare)||{};
   let h=`<h4 style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:16px;color:var(--text)">${flag(cc)} ${esc(cname(cc))}</span><button class="iconbtn" id="cpX">✕</button></h4>`,any=false;
-  for(const x of SER){const n=x.by[cc];if(!n)continue;any=true;const det=Object.entries((x.det||{})[cc]||{}).map(([k,v])=>`${esc(k)} (${v})`).join(', ');
-    h+=`<div class="tl"><span><i style="display:inline-block;width:8px;height:8px;border-radius:50%;background:rgb(${x.col});margin-right:6px"></i>${esc(x.label)}${det?`<br><span style="color:var(--muted);font-size:11.5px">${det}</span>`:''}</span><span style="color:var(--text);font-weight:700">${n}</span></div>`}
+  for(const x of SER){const n=x.by[cc];if(!n)continue;any=true;const det=Object.entries((x.det||{})[cc]||{}).map(([k,v])=>`${esc(k)} (${v})`).join(', '),pt=Object.entries((x.ports||{})[cc]||{}).map(([k,v])=>`${esc(k)} (${v})`).join(', ');
+    h+=`<div class="tl"><span><i style="display:inline-block;width:8px;height:8px;border-radius:50%;background:rgb(${x.col});margin-right:6px"></i>${esc(x.label)}${det?`<br><span style="color:var(--muted);font-size:11.5px">${det}</span>`:''}${pt?`<br><span style="color:var(--muted);font-size:11.5px">Portos: ${pt}</span>`:''}</span><span style="color:var(--text);font-weight:700">${n}</span></div>`}
   const CF=[['l7_origin','Origem de ataques a sites'],['l7_target','Alvo de ataques a sites'],['l3_origin','Origem de DDoS'],['l3_target','Alvo de DDoS']];
   for(const [k,l] of CF){const m=(c[k]||[]).find(x=>x.cc===cc);if(m){any=true;h+=`<div class="tl"><span>${l} (24 h, Cloudflare)</span><span style="color:var(--text);font-weight:700">${m.pct.toFixed(1)}%</span></div>`}}
   if(!any)h+='<div class="tnote">Sem atividade registada neste país nos dados atuais.</div>';

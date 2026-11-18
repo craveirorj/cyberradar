@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T21:07:09.850416+00:00",
+ "updated": "2026-11-18T21:25:53.359123+00:00",
  "errors": [],
  "feodo": {
   "total": 5,
@@ -58,15 +58,15 @@
    "label": "Sites que distribuem malware",
    "total": 897,
    "by_country": {
-    "US": 705,
-    "CN": 88,
-    "CA": 28,
+    "US": 701,
+    "CN": 90,
+    "CA": 29,
     "TR": 19,
     "SE": 16,
     "IN": 8,
+    "AL": 4,
     "ID": 4,
     "IT": 4,
-    "AL": 3,
     "BR": 3,
     "ZA": 2,
     "ET": 2,
@@ -84,14 +84,14 @@
    },
    "detail": {
     "US": {
-     "DEVPOPPER": 266,
-     "DEVBOX": 208,
+     "DEVPOPPER": 265,
+     "DEVBOX": 205,
      "exe": 117,
      "github": 70,
      "malware_download": 17
     },
     "CN": {
-     "malware_download": 56,
+     "malware_download": 58,
      "32-bit": 17,
      "fake-deepseek": 13,
      "elf": 2
@@ -99,7 +99,7 @@
     "CA": {
      "malware_download": 10,
      "gitlab": 6,
-     "IRAHook": 4,
+     "IRAHook": 5,
      "AgentTesla": 3,
      "bonboncraft.com": 2
     },
@@ -116,6 +116,10 @@
      "32-bit": 4,
      "malware_download": 4
     },
+    "AL": {
+     "32-bit": 2,
+     "malware_download": 2
+    },
     "ID": {
      "malware_download": 4
     },
@@ -123,10 +127,6 @@
      "malware_download": 2,
      "minecraft": 1,
      "CoinMiner": 1
-    },
-    "AL": {
-     "malware_download": 2,
-     "32-bit": 1
     },
     "BR": {
      "malware_download": 1,
@@ -175,29 +175,29 @@
     }
    },
    "tags": {
-    "github": 660,
-    "js": 478,
-    "VSCode": 397,
-    "TxDataHiding": 269,
-    "DEVPOPPER": 266,
-    "DEVBOX": 208
+    "github": 656,
+    "js": 474,
+    "VSCode": 394,
+    "TxDataHiding": 268,
+    "DEVPOPPER": 265,
+    "DEVBOX": 205
    },
    "ports": {
     "US": {
-     "443": 685,
+     "443": 681,
      "80": 18,
      "2050": 1,
      "41697": 1
     },
     "CN": {
      "443": 13,
+     "59260": 2,
      "57868": 2,
      "54432": 2,
-     "38034": 2,
-     "52879": 2
+     "38034": 2
     },
     "CA": {
-     "443": 24,
+     "443": 25,
      "37027": 2,
      "46149": 1,
      "44137": 1
@@ -218,6 +218,11 @@
      "42747": 1,
      "53916": 1
     },
+    "AL": {
+     "45616": 2,
+     "46514": 1,
+     "50369": 1
+    },
     "ID": {
      "43384": 2,
      "45898": 1,
@@ -226,11 +231,6 @@
     "IT": {
      "443": 2,
      "51303": 2
-    },
-    "AL": {
-     "45616": 1,
-     "46514": 1,
-     "50369": 1
     },
     "BR": {
      "8000": 2,
@@ -283,8 +283,8 @@
    "label": "Sites de phishing",
    "total": 300,
    "by_country": {
-    "US": 133,
-    "CA": 103,
+    "US": 137,
+    "CA": 99,
     "IT": 6,
     "HK": 1,
     "RU": 1,
@@ -295,10 +295,10 @@
    },
    "detail": {
     "US": {
-     "phishing": 133
+     "phishing": 137
     },
     "CA": {
-     "phishing": 103
+     "phishing": 99
     },
     "IT": {
      "phishing": 6
@@ -325,13 +325,13 @@
   },
   "ioc": {
    "label": "Indicadores de malware (IPs)",
-   "total": 286,
+   "total": 287,
    "by_country": {
     "US": 52,
     "NL": 45,
     "CN": 42,
     "HK": 30,
-    "DE": 22,
+    "DE": 23,
     "SG": 14,
     "CA": 9,
     "FR": 8,
@@ -399,7 +399,7 @@
      "AsyncRAT": 4,
      "Aisuru": 4,
      "Sliver": 2,
-     "Evilginx": 1
+     "CECbot": 1
     },
     "SG": {
      "Unknown malware": 8,
@@ -568,9 +568,9 @@
     "DE": {
      "8001": 4,
      "31337": 2,
+     "10213": 1,
      "3333": 1,
-     "56003": 1,
-     "20100": 1
+     "56003": 1
     },
     "SG": {
      "443": 6,
@@ -709,21 +709,21 @@
    "label": "Scans e força bruta",
    "total": 200,
    "by_country": {
-    "US": 107,
-    "GB": 71,
+    "US": 166,
     "DE": 17,
+    "GB": 12,
     "NL": 4,
     "RU": 1
    },
    "detail": {
     "US": {
-     "scan/força bruta": 107
-    },
-    "GB": {
-     "scan/força bruta": 71
+     "scan/força bruta": 166
     },
     "DE": {
      "scan/força bruta": 17
+    },
+    "GB": {
+     "scan/força bruta": 12
     },
     "NL": {
      "scan/força bruta": 4
@@ -732,7 +732,7 @@
      "scan/força bruta": 1
     }
    },
-   "reports": 4569293
+   "reports": 4548447
   }
  },
  "cloudflare": {

@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-18T21:07:09.719957+00:00",
+ "updated": "2026-11-18T21:25:53.140339+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 1
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "Pplware Segurança",
@@ -54,7 +54,7 @@
   {
    "source": "CISA Advisories",
    "ok": true,
-   "added": 11
+   "added": 10
   },
   {
    "source": "CISA Alertas (KEV)",
@@ -74,7 +74,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -84,7 +84,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 26
+   "added": 24
   },
   {
    "source": "SecurityWeek",
@@ -94,12 +94,12 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Cybersecurity Dive",
@@ -139,7 +139,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Malwarebytes Labs",
@@ -179,7 +179,7 @@
   {
    "source": "Google Project Zero",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CrowdStrike Blog",
@@ -234,7 +234,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 12
+   "added": 13
   },
   {
    "source": "Help Net Security",
@@ -244,7 +244,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -263,8 +263,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -278,8 +278,8 @@
   },
   {
    "source": "Securelist (Kaspersky)",
-   "ok": true,
-   "added": 5
+   "ok": false,
+   "error": "HTTPSConnectionPool(host='securelist.com', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection("
   },
   {
    "source": "Risky Bulletin",
@@ -304,16 +304,84 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 48,
-  "pending": 271,
-  "unenriched": 160,
+  "done": 24,
+  "pending": 284,
+  "unenriched": 172,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "Expecting ':' delimiter: line 77 column 3 (char 6371)",
+   "Expecting property name enclosed in double quotes: line 45 column 5 (char 4306)"
   ]
  },
  "items": [
+  {
+   "id": "341390730f1c6883",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/18/ai-found-more-critical-bugs-in-another-widely-used-technology-running-225m-websites/5310887",
+   "published": "2026-11-18T21:11:04+00:00",
+   "title": "AI found more critical bugs in another widely used technology running 225M websites",
+   "summary": "Open source NGINX joins patchapalooza",
+   "image": "https://image.theregister.com/?imageId=228044&width=800",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Hot on the heels of serious vulnerabilities in seemingly every other widely used software powering the entire internet, F5 today released emergency patches for 10 bugs in open source NGINX. These include critical remote code execution flaws that let attackers hijack NGINX servers with HTTP/2 enabled, as well as the millions of websites running NGINX, to steal sensitive data and disrupt services. As with all of the other recently disclosed vulnerabilities in foundational technologies like PHP, Apache, and Java, these critical NGINX bugs were uncovered by researchers using AI. One of them has been hiding in the code for at least 10 years. Tomer Schwartz, Wiz’s chief technology officer of exposure management and AppSec, helped find the bug, along with researchers from Ikotas Labs, Metnir, Rapid7, and Xint working independently. Schwartz told The Register that this wave of AI-discovered flaws “point to a new reality.” “We need to treat every internet-connected system as potentially vulnerable,” Schwartz said. “AI has changed not only which vulnerabilities can be found, but how quickly longstanding risks can become real threats.” NGINX is the world’s most widely used open source web server, handling HTTPS requests and routing incoming traffic to the right application or API. It powers about a third of all websites (around 225 million), and F5 maintains the open source version. On Wednesday, F5 published an out-of-band security notification that addressed 10 CVEs in open source NGINIX. If you run NGINX, update to 1.31.9 as soon as possible. CVE-2026-123633 and CVE-2026-123007 Two of the vulns are especially serious as they allow a remote attacker to execute code on the NGINX server without authentication. These two, tracked as CVE-2026-123633 and CVE-2026-123007, both receive"
+  },
+  {
+   "id": "b0d9354dce2cc6da",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/18/uk-transport-for-london-photocard-breach-exposes-265000-customers/",
+   "published": "2026-11-18T21:08:50+00:00",
+   "title": "UK: Transport for London photocard breach exposes 265,000 customers",
+   "summary": "The BBC reports: The personal details of about 265,000 Oyster photocard customers have been accessed in a cyber breach, Transport for London (TfL) has said. Names, email and home addresses, phone numbers, dates of birth and security questions and answers were compromised after “suspicious activity” was detected on the photocard website on Monday. TfL said...",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "The BBC reports: The personal details of about 265,000 Oyster photocard customers have been accessed in a cyber breach, Transport for London (TfL) has said. Names, email and home addresses, phone numbers, dates of birth and security questions and answers were compromised after “suspicious activity” was detected on the photocard website on Monday. TfL said..."
+  },
+  {
+   "id": "78913f271efd4422",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/smartertools-security-advisory-av26-1177",
+   "published": "2026-11-18T21:06:13+00:00",
+   "title": "SmarterTools security advisory (AV26-1177)",
+   "summary": "",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Serial number: AV26-1177 Date: November 18, 2026 As of November 17, 2026, SmarterTools is affected by vulnerabilities in the following product: SmarterMail Prior to Build 9817 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. SmarterMail Release Notes Download SmarterMail"
+  },
+  {
+   "id": "29c5c6f5d78c22be",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1176",
+   "published": "2026-11-18T21:00:34+00:00",
+   "title": "JetBrains security advisory (AV26-1176)",
+   "summary": "",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Serial number: AV26-1176 Date: November 18, 2026 As of November 18, 2026, JetBrains is affected by vulnerabilities in the following product: TeamCity Prior to 2025.11.7 Prior to 2026.1.3 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. Fixed security issues Security - The JetBrains Blog"
+  },
   {
    "id": "f83f4afbf79de25c",
    "source": "CyberScoop",
@@ -13690,98 +13758,6 @@
    "enriched": true,
    "why": "Sem um plano alternativo, as empresas evitam usar o botão de emergência por medo de paralisar a atividade.",
    "todo": "Desenvolva planos de contingência detalhados para os processos automatizados por IA, definindo claramente procedimentos manuais de substituição."
-  },
-  {
-   "id": "0b5efb819342c6c9",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/",
-   "published": "2026-11-13T08:50:36+00:00",
-   "title": "Nightmare Eclipse Lança Exploit Zero-Day 'SignDrop' para Windows",
-   "summary": "O grupo Nightmare Eclipse lançou uma vulnerabilidade zero-day no Windows chamada 'SignDrop'. A falha abusa do componente CLFS e do Windows Defender. O objetivo é provocar a criação arbitrária de ficheiros utilizando o contexto do processo antimalware.",
-   "image": null,
-   "points": [
-    "Quem: Nightmare Eclipse.",
-    "O quê: Exploração da vulnerabilidade zero-day SignDrop no Windows.",
-    "Como: Abuso do CLFS e do Windows Defender.",
-    "Impacto: Criação arbitrária de ficheiros no contexto do antimalware."
-   ],
-   "title_original": "Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque explora componentes centrais do sistema operativo e do antivírus para executar ações maliciosas.",
-   "todo": "Aplique imediatamente as atualizações de segurança e correções disponibilizadas pela Microsoft."
-  },
-  {
-   "id": "309e75734ab9fda7",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/news/2026/11/worldwide-microsoft-365-outage-disrupts-outlook-sharepoint-teams-and-more",
-   "published": "2026-11-13T08:35:18+00:00",
-   "title": "Falha Mundial no Microsoft 365 Perturba Outlook, SharePoint, Teams e Outros",
-   "summary": "Uma interrupção generalizada afetou os serviços do Microsoft 365, incluindo Outlook, SharePoint, Teams e Copilot, a partir de quinta-feira e prolongando-se para sexta-feira. O problema atingiu utilizadores em dezenas de países, afetando empresas, escolas e serviços governamentais. A Microsoft indicou que alguns servidores ficaram indisponíveis após falharem testes automáticos de integridade, descartando contudo qualquer atividade maliciosa.",
-   "image": "https://www.malwarebytes.com/wp-content/uploads/sites/2/2026/04/CNET_Editors_Choice.png?w=819",
-   "points": [
-    "O quê: Falha global nos serviços do Microsoft 365 como Outlook e Teams.",
-    "Quando: Iniciou-se numa quinta-feira e continuou na sexta-feira.",
-    "Impacto: Perturbações em empresas, escolas e governos em dezenas de países.",
-    "Causa: Servidores indisponíveis por falhas em testes automáticos de saúde."
-   ],
-   "title_original": "Worldwide Microsoft 365 outage disrupts Outlook, SharePoint, Teams, and more",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque paralisa ferramentas essenciais de comunicação e produtividade de milhares de organizações em todo o mundo.",
-   "todo": "Acompanhe os canais oficiais de estado da Microsoft para obter atualizações sobre a recuperação dos serviços."
-  },
-  {
-   "id": "3ff055feac947c37",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/police-arrest-354-vendors-buyers-in-global-cybercrime-crackdown/",
-   "published": "2026-11-13T08:34:20+00:00",
-   "title": "Polícia Prende 354 Suspeitos em Operação Contra a Cibercriminalidade na Dark Web",
-   "summary": "As autoridades realizaram uma operação internacional conjunta que resultou na detenção de 354 suspeitos. A ação teve como alvo direto vendedores e compradores presentes em vários mercados ilícitos da dark web. Entre as plataformas visadas encontravam-se o Archetyp, Nemesis, Tor2Door, Bohemia e Kingdom.",
-   "image": null,
-   "points": [
-    "Quem: Autoridades policiais internacionais.",
-    "O quê: Operação contra a criminalidade na dark web.",
-    "Como: Ação coordenada visando múltiplos mercados ilícitos.",
-    "Impacto: Detenção de 354 suspeitos, entre compradores e vendedores."
-   ],
-   "title_original": "Police arrest 354 suspects in dark web cybercrime crackdown",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque demonstra o impacto das operações policiais globais contra infraestruturas cibercriminosas na dark web.",
-   "todo": ""
-  },
-  {
-   "id": "c0eea237828e0534",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
-   "published": "2026-11-13T08:05:49+00:00",
-   "title": "Piratas Informáticos Exploram Falhas PHP2Shell em Gateways Check Point para Instalar Backdoor TSGA e Apagar Ficheiros ESXi",
-   "summary": "Um atacante desconhecido visou gateways de segurança da Check Point não corrigidos para obter acesso inicial através das vulnerabilidades PHP2Shell. De seguida, foi explorada uma falha de escalação de privilégios locais no Gaia OS para implementar uma backdoor designada TSGA. A campanha, iniciada em outubro, teve como alvo inicial organizações israelitas.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP3B9ZQG1BXlSPUWzwVJ5qgwh899Ngm9u2GAbWiX5HDqhhT6q6gsmva9-TR2upR0fepas2i0k53VUxh1CH21LeUUv1Ipczl9huExytcqNdlqIoHP64CRYJuGyHe-OgLoov-JR6GziUT4JDJ92Ne83CshfWn9pr9Bt2HPKkv4phQJ2esJHcV6eZqzRretVu/s1600/php.jpg",
-   "points": [
-    "Quem: Atores de ameaça desconhecidos.",
-    "O quê: Ataques a gateways Check Point não corrigidos.",
-    "Como: Uso de vulnerabilidades PHP2Shell e falhas no Gaia OS.",
-    "Impacto: Implementação da backdoor TSGA e destruição de ficheiros ESXi."
-   ],
-   "title_original": "Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque explora vulnerabilidades em equipamentos de perímetro críticos para comprometer a rede e apagar dados.",
-   "todo": "Atualize urgentemente os gateways Check Point e aplique as correções de segurança recomendadas pelo fabricante."
   }
  ]
 }

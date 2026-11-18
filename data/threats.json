@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-18T10:46:06.874674+00:00",
+ "updated": "2026-11-18T11:06:50.182939+00:00",
  "errors": [
-  "malware_urls: 410 Client Error: Gone for url: https://urlhaus.abuse.ch/downloads/csv_recent/",
-  "ioc: 410 Client Error: Gone for url: https://threatfox.abuse.ch/export/json/recent/",
+  "malware_urls: falta o segredo ABUSECH_AUTH_KEY (chave grátis em auth.abuse.ch)",
+  "ioc: falta o segredo ABUSECH_AUTH_KEY (chave grátis em auth.abuse.ch)",
   "Cloudflare: falta o segredo CLOUDFLARE_API_TOKEN"
  ],
  "feodo": {
@@ -13,6 +13,11 @@
   },
   "by_malware": {
    "QakBot": 1
+  },
+  "ports": {
+   "US": {
+    "443": 1
+   }
   },
   "detail": {
    "US": {
@@ -57,31 +62,28 @@
    "label": "Sites de phishing",
    "total": 300,
    "by_country": {
-    "CA": 176,
-    "US": 34,
+    "CA": 174,
+    "US": 45,
     "IT": 16,
-    "MX": 10,
     "NL": 6,
     "DE": 4,
     "SI": 2,
     "SG": 2,
     "PK": 1,
     "HK": 1,
+    "MX": 1,
     "AR": 1,
     "JP": 1
    },
    "detail": {
     "CA": {
-     "phishing": 176
+     "phishing": 174
     },
     "US": {
-     "phishing": 34
+     "phishing": 45
     },
     "IT": {
      "phishing": 16
-    },
-    "MX": {
-     "phishing": 10
     },
     "NL": {
      "phishing": 6
@@ -101,6 +103,9 @@
     "HK": {
      "phishing": 1
     },
+    "MX": {
+     "phishing": 1
+    },
     "AR": {
      "phishing": 1
     },
@@ -113,94 +118,82 @@
    "label": "Scans e força bruta",
    "total": 200,
    "by_country": {
-    "CA": 47,
-    "FR": 37,
-    "US": 35,
-    "NL": 21,
-    "DE": 14,
-    "BG": 9,
-    "AD": 7,
-    "HK": 6,
-    "SC": 4,
-    "GB": 4,
-    "KZ": 3,
-    "BE": 2,
-    "PL": 2,
+    "US": 102,
+    "FR": 47,
+    "NL": 20,
+    "DE": 6,
+    "HK": 5,
+    "SG": 3,
+    "SC": 3,
+    "VN": 2,
+    "KZ": 2,
     "RU": 1,
+    "BG": 1,
+    "AM": 1,
     "RO": 1,
-    "SE": 1,
-    "LT": 1,
-    "IL": 1,
-    "FI": 1,
-    "VN": 1,
-    "BR": 1
+    "NO": 1,
+    "AD": 1,
+    "CN": 1,
+    "GB": 1,
+    "LU": 1
    },
    "detail": {
-    "CA": {
-     "scan/força bruta": 47
+    "US": {
+     "scan/força bruta": 102
     },
     "FR": {
-     "scan/força bruta": 37
-    },
-    "US": {
-     "scan/força bruta": 35
+     "scan/força bruta": 47
     },
     "NL": {
-     "scan/força bruta": 21
+     "scan/força bruta": 20
     },
     "DE": {
-     "scan/força bruta": 14
-    },
-    "BG": {
-     "scan/força bruta": 9
-    },
-    "AD": {
-     "scan/força bruta": 7
-    },
-    "HK": {
      "scan/força bruta": 6
     },
-    "SC": {
-     "scan/força bruta": 4
+    "HK": {
+     "scan/força bruta": 5
     },
-    "GB": {
-     "scan/força bruta": 4
-    },
-    "KZ": {
+    "SG": {
      "scan/força bruta": 3
     },
-    "BE": {
+    "SC": {
+     "scan/força bruta": 3
+    },
+    "VN": {
      "scan/força bruta": 2
     },
-    "PL": {
+    "KZ": {
      "scan/força bruta": 2
     },
     "RU": {
      "scan/força bruta": 1
     },
+    "BG": {
+     "scan/força bruta": 1
+    },
+    "AM": {
+     "scan/força bruta": 1
+    },
     "RO": {
      "scan/força bruta": 1
     },
-    "SE": {
+    "NO": {
      "scan/força bruta": 1
     },
-    "LT": {
+    "AD": {
      "scan/força bruta": 1
     },
-    "IL": {
+    "CN": {
      "scan/força bruta": 1
     },
-    "FI": {
+    "GB": {
      "scan/força bruta": 1
     },
-    "VN": {
-     "scan/força bruta": 1
-    },
-    "BR": {
+    "LU": {
      "scan/força bruta": 1
     }
    },
-   "reports": 63120476
+   "reports": 17690278
   }
  }
 }

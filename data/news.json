@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T10:46:06.737367+00:00",
+ "updated": "2026-11-18T11:06:50.055270+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -74,7 +74,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -89,7 +89,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -104,7 +104,7 @@
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CSO Online",
@@ -164,7 +164,7 @@
   {
    "source": "Cisco Talos",
    "ok": true,
-   "added": 2
+   "added": 4
   },
   {
    "source": "Unit 42 (Palo Alto)",
@@ -174,7 +174,7 @@
   {
    "source": "Google Threat Intelligence",
    "ok": false,
-   "error": "500 Server Error: Internal Server Error for url: https://cloudblog.withgoogle.com/topics/threat-intelligence/rss/"
+   "error": "HTTPSConnectionPool(host='cloudblog.withgoogle.com', port=443): Read timed out. (read timeout=25)"
   },
   {
    "source": "Google Project Zero",
@@ -229,7 +229,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 21
+   "added": 22
   },
   {
    "source": "The Register Security",
@@ -294,7 +294,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 10
+   "added": 11
   },
   {
    "source": "ACSC Austrália",
@@ -304,9 +304,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 36,
-  "pending": 294,
-  "unenriched": 162,
+  "done": 12,
+  "pending": 321,
+  "unenriched": 189,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -314,6 +314,40 @@
   ]
  },
  "items": [
+  {
+   "id": "e3a24527dd73e527",
+   "source": "Cisco Talos",
+   "region": "US",
+   "lang": "en",
+   "link": "https://blog.talosintelligence.com/the-challenge-of-defending-against-bulletproof-dead-drops-on-public-blockchains/",
+   "published": "2026-11-18T11:00:00+00:00",
+   "title": "The challenge of defending against bulletproof dead drops on public blockchains",
+   "summary": "The evolution of malware command-and-control (C2) infrastructure has shifted away from fragile, centralized servers and hardcoded domains toward resilient, decentralized blockchain networks that eliminate single points of failure.",
+   "image": "https://storage.ghost.io/c/af/a0/afa04ee3-414f-4481-8d23-7e7c146f192e/content/images/2026/11/on_the_radar.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Malware",
+   "translated": false,
+   "enriched": false,
+   "raw": "The evolution of malware command-and-control (C2) infrastructure has shifted away from fragile, centralized servers and hardcoded domains toward resilient, decentralized blockchain networks that eliminate single points of failure. Threat actors are leveraging immutable public ledgers such as Bitcoin transactions, EVM smart contracts via techniques like EtherHiding, TRON wallets, and Solana memo programs to store, mask, and persistently update their operational endpoints. By executing read-only remote procedure call (RPC) queries to retrieve encrypted C2 configurations directly into compromised endpoint memory, adversaries can continuously bypass traditional perimeter defenses and domain seizures. Modern cybersecurity requires a fundamental shift away from static domain blocklists toward monitoring anomalous outbound JSON-RPC traffic, analyzing endpoint memory, and treating blockchain infrastructure as an active threat communication channel. The command-and-control (C2) channel is the operational backbone of any persistent malware campaign. It is also the most fragile component. The moment an actor's C2 infrastructure is identified and reported to the hosting provider, the domain registrar, or law enforcement, the campaign's operational capability collapses. This fundamental asymmetry, where defenders need to identify only a single infrastructure link to disrupt an operation, has driven a multi-decade arms race in resilience techniques, spanning from fast flux DNS evasion to decentralized and peer-to-peer architectures. Traditional C2 infrastructure where malware beacons to a hardcoded domain or IP address is volatile by design. Security researchers or incident responders who identify the C2 address can trigger a response. The hosting provider can null-route the IP addre"
+  },
+  {
+   "id": "a3cef9df02f8e3a4",
+   "source": "Cisco Talos",
+   "region": "US",
+   "lang": "en",
+   "link": "https://blog.talosintelligence.com/uat-12643-suspected-north-korea-aligned-actor-blends-blockchain-resilience-with-targeted-infostealing/",
+   "published": "2026-11-18T11:00:00+00:00",
+   "title": "UAT-12643: Suspected North Korea-aligned actor blends blockchain resilience with targeted infostealing",
+   "summary": "Cisco Talos discovered malicious infrastructure associated with a financially motivated threat group we are tracking as UAT-12643.",
+   "image": "https://storage.ghost.io/c/af/a0/afa04ee3-414f-4481-8d23-7e7c146f192e/content/images/2026/11/threat_spotlight.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Malware",
+   "translated": false,
+   "enriched": false,
+   "raw": "Cisco Talos discovered malicious infrastructure associated with a financially motivated threat group we are tracking as UAT-12643. The actor’s arsenal has several payloads including the Go-based Overlord remote access trojan (RAT), a Python-based infostealer internally labelled “Good Game,” and a multi-cryptocurrency clipboard hijacker. The threat actor is likely operating a campaign targeting cryptocurrency holders, gaming platform account owners, and VoIP software users based on the lure file names of the initial vectors and the payloads. The Overlord RAT implements a command-and-control (C2) resilience technique in which encrypted server URLs are embedded in Solana blockchain transaction memos. Victimology The threat actor is potentially targeting victims in Europe, according to the payload’s keyword-based file harvesting capability, which specifically targeted documents that had file names in English, French, Spanish, and Portuguese. Based on the lure themes and payload file names, the potential victim pool spans across multiple verticals. A lure financial statement decoy PDF — launched when the Good Game stealer is executed — indicates targeting finance and accounting staff. The Viber trojanized installer lure targets messaging platform users, while additional payload variants of files named microsip indicate targeting VoIP softphone operators, consistent with call-center or business telephone environments. Cryptocurrency and gaming users are also targeted by both the clipboard hijacker and the infostealer. Potential links to North Korea-aligned actors Talos assesses with low confidence that UAT-12643 is a North Korea-aligned advanced persistent threat (APT) actor based on overlaps in tactics, techniques, and procedures (TTPs) with those of the other known North Ko"
+  },
   {
    "id": "94321d4b37d655bf",
    "source": "SecurityWeek",
@@ -336,6 +370,23 @@
    "enriched": true,
    "why": "Permite que agentes maliciosos executem código arbitrário diretamente em servidores corporativos vulneráveis.",
    "todo": "Aplique imediatamente as atualizações de segurança disponibilizadas pelo fabricante para corrigir a falha CVE-2026-115731."
+  },
+  {
+   "id": "4f4cc6f190747ed0",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/",
+   "published": "2026-11-18T10:35:05+00:00",
+   "title": "Apache warns of Roller RCE vulnerability exploited in attacks",
+   "summary": "Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [...]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [...]"
   },
   {
    "id": "92333b5b9c3bfc02",
@@ -12177,6 +12228,23 @@
    "todo": "Avalie a integração de ferramentas automatizadas de análise de código e validação de patches com supervisão técnica."
   },
   {
+   "id": "d31c8888b13f2710",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/microsoft-security-advisory-november-2026-monthly-rollup-av26-1142",
+   "published": "2026-11-12T20:42:34+00:00",
+   "title": "Microsoft security advisory – November 2026 monthly rollup (AV26-1142) – Update 1",
+   "summary": "",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Serial number: AV26-1142 Date: November 10, 2026 Updated: November 12, 2026 As of November 10, 2026, Microsoft is affected by vulnerabilities in the following products: .NET 10.0 .NET 11.0 .NET 8.0 .NET 9.0 Aspire Dashboard Aspire Cli Aspire Dashboard Sdk Aspire Hosting Aspire Hosting AppHost Azure Confidential Clean Room Azure CycleCloud Azure DevOps Azure DevOps Server Azure DevOps Server 2025 Azure File Sync Azure Front Door Azure Local Azure Machine Learning Azure Managed Grafana Azure Open AI Azure Privileged Identity Management (PIM) Azure Virtual Machines Azure Web Apps Entra Device Registration GitHub Copilot Plugin for JetBrains IDEs HEIF Image Extension HEVC Video Extensions HEVC Video Extensions for Licensed Applications HEVC Video Extensions from Device Manufacturer Microsoft 365 Apps Microsoft Agent Framework SDK Microsoft Authentication Library for JavaScript Microsoft Configuration Manager 2603 Microsoft Entra Private Network Connector Microsoft Exchange Server Subscription Edition RTM Microsoft GDK Microsoft HPC Pack 2016 Microsoft HPC Pack 2019 Microsoft JDBC Driver Microsoft Malware Protection Engine Microsoft Office 365 Microsoft Office LTSC Microsoft Power Apps Microsoft SQL Server 2017 Microsoft SQL Server 2019 Microsoft SQL Server 2022 Microsoft SQL Server 2025 Microsoft SharePoint Server Subscription Edition Microsoft Teams for Android Microsoft Visual Studio 2022 Microsoft Visual Studio 2026 Microsoft AspNetCore Http Connections Microsoft AspNetCore SignalR StackExchangeRedis Microsoft AspNetCore WebUtilities Microsoft Data SqlClient Microsoft DotNet HotReload Watch Aspire Microsoft DotNet Web ProjectTemplates Microsoft Extensions Validation Microsoft TestPlatform CLI Microsoft VisualStudio Microsoft dotnet-scaffold Microsoft dotnet-scaffold-aspn"
+  },
+  {
    "id": "a4cf8f411221734b",
    "source": "Security Affairs",
    "region": "EU",
@@ -13708,94 +13776,6 @@
    "enriched": true,
    "why": "Deixa centenas de servidores desatualizados expostos a explorações futuras sem qualquer correção oficial da Microsoft.",
    "todo": "Atualize imediatamente para uma versão suportada do Exchange Server ou migre para uma solução online."
-  },
-  {
-   "id": "328096a2336ea08a",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/202922/malware/predator-pegasus-and-graphite-governments-accused-of-spyware-abuse-face-little-accountability.html",
-   "published": "2026-11-12T14:53:25+00:00",
-   "title": "Predator, Pegasus e Graphite: Governos acusados de abuso de spyware enfrentam pouca responsabilização",
-   "summary": "As vítimas de spyware na Europa enfrentam anos de batalhas legais e falta de respostas enquanto os governos invocam razões de segurança nacional para ocultar a vigilância. Um tribunal em Atenas condenou recentemente quatro executivos ligados à Intellexa, criadora do spyware Predator, a penas suspensas de prisão por acessos ilegais e violação de privacidade. No entanto, com exceção da Grécia, os casos noutros países como Espanha e Hungria continuam sem condenações criminais ou acesso a informações básicas para as vítimas.",
-   "image": null,
-   "points": [
-    "Tribunal em Atenas condenou quatro executivos ligados ao spyware Predator.",
-    "Vítimas de spyware na Europa enfrentam barreiras legais e o pretexto da segurança nacional.",
-    "Investigações anteriores revelaram o uso generalizado de ferramentas como o Pegasus."
-   ],
-   "title_original": "Predator, Pegasus and Graphite: Governments Accused of Spyware Abuse Face Little Accountability",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Ilustra a dificuldade em obter justiça e responsabilização contra o uso abusivo de tecnologias de espionagem estatal.",
-   "todo": "Adote boas práticas de higiene digital e utilize ferramentas avançadas de deteção de ameaças em dispositivos móveis para detetar infeções."
-  },
-  {
-   "id": "17623bbf5fa1d0d6",
-   "source": "CERT/CC (Carnegie Mellon)",
-   "region": "US",
-   "lang": "en",
-   "link": "https://kb.cert.org/vuls/id/944667",
-   "published": "2026-11-12T14:48:14+00:00",
-   "title": "VU#944667: ComfyUI-Easy-Use contém vulnerabilidade de path traversal sem autenticação",
-   "summary": "As versões 1.4.1 e anteriores da extensão ComfyUI-Easy-Use contêm uma falha no seu manipulador save_preview() que permite a um atacante não autenticado sobrescrever o ficheiro Python de um nó personalizado instalado. Um atacante com acesso à rede pode carregar um ficheiro malicioso e executá-lo quando a aplicação for reiniciada. O mantenedor não pôde ser contactado para coordenação, mas foi lançado um compromisso de correção no repositório principal.",
-   "image": null,
-   "points": [
-    "A extensão ComfyUI-Easy-Use até à versão 1.4.1 tem uma falha de path traversal (CVE-2026-123790).",
-    "Permite a atacantes remotos sem autenticação executar código arbitrário.",
-    "A exploração ocorre através da sobreposição de ficheiros Python de nós personalizados."
-   ],
-   "title_original": "VU#944667: ComfyUI-Easy-Use contains unauthenticated path traversal vulnerability",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite que atacantes externos executem comandos arbitrários no sistema com os privilégios da aplicação de IA.",
-   "todo": "Remova a extensão vulnerável ou restrinja o acesso à rede do ComfyUI apenas a utilizadores de confiança."
-  },
-  {
-   "id": "504c4dbc535ba4c5",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/europe-hoax-email-threats",
-   "published": "2026-11-12T14:45:00+00:00",
-   "title": "Contas de e-mail comprometidas complicam investigações sobre falsas ameaças de bomba na Europa",
-   "summary": "Ameaças de bomba enviadas para milhares de escolas em toda a Europa partiram de uma conta de e-mail comprometida numa universidade em Taiwan. Este incidente insere-se numa série de ameaças falsas direcionadas a aeroportos e redações utilizando mensagens enviadas através de instituições legítimas. O uso de contas institucionais hijacked dificulta o rastreio e complica as investigações policiais.",
-   "image": "https://cms.therecord.media/uploads/Garda_662e334238.jpg",
-   "points": [
-    "Falsas ameaças de bomba foram enviadas a escolas europeias através de e-mails comprometidos.",
-    "A conta de origem pertencia a uma universidade em Taiwan.",
-    "O uso de instituições legítimas complica o trabalho de investigação das autoridades."
-   ],
-   "title_original": "Hijacked email accounts complicate investigations into European bomb hoaxes",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como contas de organizações legítimas são sequestradas para dar credibilidade a campanhas maliciosas.",
-   "todo": "Implemente autenticação multifator (MFA) robusta em todas as contas de e-mail institucionais."
-  },
-  {
-   "id": "7927f7b9de97b7ad",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/",
-   "published": "2026-11-12T14:36:47+00:00",
-   "title": "Apify rota tokens de API e força redefinição de 2FA após violação",
-   "summary": "A Apify procedeu à rotação de segredos internos críticos e revogou algumas ligações OAuth de terceiros após detetar um acesso não autorizado aos seus sistemas internos. A medida preventiva visa proteger a plataforma e os dados dos utilizadores contra possíveis exposições decorrentes do incidente. A empresa também exigiu a redefinição da autenticação de dois fatores (2FA) como parte da resposta de segurança.",
-   "image": null,
-   "points": [
-    "Apify detetou acesso não autorizado aos seus sistemas internos.",
-    "Foram rotacionados segredos internos críticos e revogadas ligações OAuth de terceiros.",
-    "A empresa obrigou os utilizadores a redefinirem o 2FA."
-   ],
-   "title_original": "Apify rotates API tokens, prompts 2FA resets after breach",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia a resposta rápida necessária para conter acessos não autorizados em plataformas de desenvolvimento e APIs.",
-   "todo": "Renove credenciais e tokens de API imediatamente se houver suspeita de comprometimento de plataformas de terceiros."
   }
  ]
 }

@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-18T23:26:37.023642+00:00",
+ "updated": "2026-11-18T23:46:43.883164+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "Pplware Segurança",
@@ -74,7 +74,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -234,7 +234,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 11
+   "added": 12
   },
   {
    "source": "Help Net Security",
@@ -249,7 +249,7 @@
   {
    "source": "WeLiveSecurity (ESET)",
    "ok": true,
-   "added": 1
+   "added": 2
   },
   {
    "source": "Sophos News",
@@ -263,8 +263,8 @@
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -305,13 +305,59 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 192,
-  "unenriched": 77,
+  "pending": 193,
+  "unenriched": 78,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "6a80cc1b8fcf07bb",
+   "source": "CSO Online",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.csoonline.com/article/4250460/ai-unearths-internet-breaker-flaws-in-nginx-web-server.html",
+   "published": "2026-11-18T23:36:40+00:00",
+   "title": "AI deteta falhas críticas no servidor web Nginx",
+   "summary": "Ferramentas de inteligência artificial permitiram a investigadores descobrir várias vulnerabilidades graves no servidor web Nginx, incluindo uma falha crítica de execução remota de código presente há mais de uma década. A falha mais severa afeta o protocolo HTTP/2 e permite manipular a memória para executar comandos com privilégios do Nginx. Esta vulnerabilidade pode ser encadeada com uma falha não corrigida no kernel do Linux para obter privilégios de root, tendo os testes demonstrado a fuga de contentores Docker. A F5 já lançou atualizações para corrigir as falhas detetadas no Nginx.",
+   "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4250460-0-16552800-1795045013-engin-akyurt-8nVlpxBn8Rc-unsplash.jpg?quality=50&strip=all",
+   "points": [
+    "Investigadores usaram agentes de IA para descobrir falhas graves no Nginx.",
+    "A vulnerabilidade afeta o protocolo HTTP/2 e permite a execução de comandos.",
+    "A falha pode ser combinada com um problema no kernel do Linux para obter privilégios de root.",
+    "A F5 disponibilizou correções para o Nginx nas versões mais recentes."
+   ],
+   "title_original": "AI unearths ‘internet breaker’ flaws in Nginx web server",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Milhões de sites correm riscos devido a falhas antigas e críticas que agora podem ser exploradas com o auxílio de inteligência artificial.",
+   "todo": "Atualize imediatamente o servidor Nginx para as versões corrigidas mais recentes disponibilizadas pela F5."
+  },
+  {
+   "id": "6e6d50da41952309",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/19/ransomware-access-brokers-cybercrime/",
+   "published": "2026-11-18T23:28:20+00:00",
+   "title": "Brokers de acesso de ransomware mudam negociações para fóruns privados",
+   "summary": "As gangues de ransomware e extorsão registaram uma média de cerca de 718 vítimas por mês até outubro de 2026, revelando um aumento face aos valores do ano anterior. Em contrapartida, os anúncios públicos na dark web para venda de acessos a redes corporativas caíram significativamente entre o início de 2025 e o início de 2026. Estes anúncios funcionavam habitualmente como um aviso prévio de potenciais ataques iminentes de ransomware. Esta mudança indica que os criminosos estão a abandonar os fóruns públicos em favor de canais de comunicação mais privados.",
+   "image": null,
+   "points": [
+    "As extorsões por ransomware aumentaram para cerca de 718 vítimas mensais em 2026.",
+    "Os anúncios públicos de venda de acessos na dark web diminuíram para metade num ano.",
+    "Os brokers de acesso costumavam sinalizar o envolvimento prévio de grupos de ransomware.",
+    "Os criminosos estão a deslocar as suas negociações para fora dos fóruns públicos."
+   ],
+   "title_original": "Ransomware access brokers are moving their deals off public forums",
+   "category": "Ransomware",
+   "translated": true,
+   "enriched": true,
+   "why": "A descida de anúncios públicos reduz a capacidade de antecipar ataques de ransomware através do monitoramento da dark web.",
+   "todo": "Reforce a monitorização interna de acessos e a deteção de intrusões, uma vez que os sinais de alerta prévios estão mais ocultos."
+  },
   {
    "id": "b326b8531a9216c7",
    "source": "BleepingComputer",
@@ -13738,50 +13784,6 @@
    "enriched": true,
    "why": "Importa porque a falha permite o controlo total dos dispositivos afetados e tem sido ativamente explorada por atacantes.",
    "todo": "Instale imediatamente as correções de emergência disponibilizadas pela Check Point nos dispositivos afetados."
-  },
-  {
-   "id": "499cd78db2478beb",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/agentic-finance-accountability-gap-kya-aims-close-it/",
-   "published": "2026-11-13T10:31:18+00:00",
-   "title": "Finanças com agentes de IA têm lacuna de responsabilização e o KYA quer colmatá-la",
-   "summary": "A iniciativa Know Your Agent (KYA) foi proposta para introduzir mecanismos de identidade, permissões e supervisão para agentes de inteligência artificial no setor financeiro. O objetivo principal é associar ações automatizadas diretamente às pessoas responsáveis por elas. Esta abordagem pretende colmatar a falta de responsabilização associada ao uso de agentes autónomos em transações financeiras.",
-   "image": null,
-   "points": [
-    "O KYA propõe identidade e supervisão para IA nas finanças.",
-    "Associa ações automatizadas a pessoas responsáveis.",
-    "Aborda a lacuna de responsabilização dos agentes autónomos."
-   ],
-   "title_original": "Agentic Finance Has an Accountability Gap, and KYA Aims to Close It",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Ajuda a responsabilizar humanos pelas ações automatizadas da IA no setor financeiro.",
-   "todo": "Mapeie e documente claramente quais os colaboradores responsáveis por aprovar e supervisionar cada fluxo automatizado de IA."
-  },
-  {
-   "id": "da110ad0aa4a88e1",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/microsoft-365-outage-security/",
-   "published": "2026-11-13T10:29:00+00:00",
-   "title": "Interrupção do Microsoft 365 vai aumentar os riscos de segurança para as organizações",
-   "summary": "Após a resolução de uma falha global nos serviços M365 e Outlook, as equipas de cibersegurança mantêm-se em alerta máximo. O incidente deixou o ecossistema vulnerável enquanto os cibercriminosos se preparam para explorar o caos gerado. Esta situação eleva significativamente os riscos operacionais e de segurança para as organizações afetadas.",
-   "image": null,
-   "points": [
-    "Uma falha global afetou o Microsoft 365 e o Outlook.",
-    "A Microsoft já resolveu a interrupção de serviço.",
-    "Cibercriminosos preparam-se para explorar o caos causado."
-   ],
-   "title_original": "Microsoft 365 Outage Set to Ramp up Security Risks to Organizations",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Os cibercriminosos aproveitam o caos de falhas globais para lançar ataques oportunistas.",
-   "todo": "Aumente a vigilância e reveja os registos de atividade após interrupções de serviços críticos na cloud."
   }
  ]
 }

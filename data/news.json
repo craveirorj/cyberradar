@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T14:26:23.504862+00:00",
+ "updated": "2026-11-18T14:47:28.302902+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -29,7 +29,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -49,7 +49,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -189,7 +189,7 @@
   {
    "source": "SentinelLabs",
    "ok": true,
-   "added": 2
+   "added": 1
   },
   {
    "source": "Elastic Security Labs",
@@ -264,7 +264,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Hacker News",
@@ -274,7 +274,7 @@
   {
    "source": "Check Point Research",
    "ok": true,
-   "added": 6
+   "added": 5
   },
   {
    "source": "Securelist (Kaspersky)",
@@ -294,7 +294,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 14
+   "added": 15
   },
   {
    "source": "ACSC Austrália",
@@ -304,9 +304,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 349,
-  "unenriched": 211,
+  "done": 12,
+  "pending": 342,
+  "unenriched": 203,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -315,6 +315,95 @@
  },
  "items": [
   {
+   "id": "e359b576628c9898",
+   "source": "SAPO Tek",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://tek.sapo.pt/noticias/internet/artigos/falha-na-optimizely-expos-178-organizacoes-a-malware-zoom-salesforce-bbc-e-cnn-entre-as-empresas-afetadas/",
+   "published": "2026-11-18T14:40:00+00:00",
+   "title": "Falha na Optimizely expôs 178 organizações a malware. Zoom, Salesforce, BBC e CNN entre as empresas afetadas",
+   "summary": "Um atacante explorou uma vulnerabilidade na plataforma Optimizely para injetar código malicioso em 178 organizações. Entre as entidades afetadas encontram-se grandes nomes como Zoom, BBC, CNN, IKEA e HSBC. O incidente resultou na troca de endereços de criptomoedas, roubo de dados de cartões e ações direcionadas a dispositivos iOS.",
+   "image": null,
+   "points": [
+    "Ator malicioso explorou falha na Optimizely.",
+    "Código malicioso afetou 178 organizações globais.",
+    "Impacto incluiu roubo de cartões e fraude de criptomoedas.",
+    "Empresas como Zoom, BBC e HSBC foram atingidas."
+   ],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": true,
+   "why": "Mostra como uma falha num fornecedor externo pode comprometer em simultâneo dezenas de grandes organizações.",
+   "todo": "Monitorize os fornecedores terceiros e mantenha os sistemas atualizados para mitigar vulnerabilidades de cadeia de suprimentos."
+  },
+  {
+   "id": "ef99d4f0243c1573",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/internet/seguranca/as-piores-passwords-em-portugal-foram-reveladas-e-a-sua-pode-estar-nesta-lista/",
+   "published": "2026-11-18T14:30:00+00:00",
+   "title": "As piores passwords em Portugal foram reveladas e a sua pode estar nesta lista",
+   "summary": "Um novo estudo global da NordPass revelou os hábitos de segurança e as palavras-passe mais comuns utilizadas em dezenas de países. Em Portugal, a clássica sequência numérica «123456» continua a liderar de forma destacada a tabela das escolhas mais populares. Os dados demonstram que a conveniência continua a sobrepor-se à segurança na proteção de contas online.",
+   "image": null,
+   "points": [
+    "Estudo anual da NordPass analisa palavras-passe em 44 países.",
+    "Sequência «123456» mantém-se como a mais usada em Portugal.",
+    "Utilizadores continuam a privilegiar a facilidade em detrimento da segurança."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Passwords fracas facilitam o acesso não autorizado a contas pessoais e empresariais através de ataques de força bruta.",
+   "todo": "Utilize palavras-passe fortes e complexas, combine-as com um gestor de credenciais e ative a autenticação multifator (MFA)."
+  },
+  {
+   "id": "24d2f47323be4ea1",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/big-techs/servicos-da-apple-tambem-ficaram-fora-do-ar-empresa-descarta-ataque-hacker/",
+   "published": "2026-11-18T14:30:00+00:00",
+   "title": "Serviços da Apple também ficaram fora do ar; empresa descarta ataque hacker",
+   "summary": "Diversos serviços da Apple, incluindo a App Store, iCloud e Apple Pay, sofreram interrupções temporárias em vários países. A empresa descartou qualquer tipo de ataque cibernético e atribuiu a falha a uma atualização interna realizada durante a manhã. A situação afetou o acesso de utilizadores, funcionários e sistemas internos de suporte.",
+   "image": "https://www.estadao.com.br/resizer/v2/5TQQWD7TS5HGDFEXIUFNA5VROI.png?quality=80&auth=c815f6ed8e672e10d5b8f6cf4f11d0301ed7ba7f28397a1262f3eac1899abf1a&width=710",
+   "points": [
+    "Serviços como iCloud e App Store ficaram indisponíveis.",
+    "Apple descartou a hipótese de um ataque cibernético.",
+    "Problema foi provocado por uma atualização interna da empresa."
+   ],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": true,
+   "why": "Interrupções em infraestruturas tecnológicas podem paralisar operações comerciais e deixar utilizadores sem acesso a ferramentas críticas.",
+   "todo": "Consulte as páginas de estado dos fornecedores em caso de falha súbita e garanta planos de contingência operacionais."
+  },
+  {
+   "id": "ae8a45c47c7a4c88",
+   "source": "HackRead",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://hackread.com/armornet-debuts-ai-security-for-the-code-and-vendors-companies-trust/",
+   "published": "2026-11-18T14:24:37+00:00",
+   "title": "Armornet Debuts AI Security for the Code and Vendors Companies Trust",
+   "summary": "A Armornet lançou uma nova solução de segurança baseada em inteligência artificial focada no código e nos fornecedores em que as empresas confiam. A ferramenta pretende ajudar as organizações a protegerem os seus ecossistemas digitais contra ameaças emergentes. O anúncio foi feito a partir de Grand Rapids, no estado norte-americano do Michigan.",
+   "image": null,
+   "points": [
+    "Armornet lança nova solução de segurança de IA.",
+    "Foco colocado na proteção de código e fornecedores.",
+    "Anúncio realizado a 18 de novembro de 2026."
+   ],
+   "title_original": "Armornet Debuts AI Security for the Code and Vendors Companies Trust",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "A segurança da cadeia de fornecedores de software é vital para prevenir a introdução de vulnerabilidades nas empresas.",
+   "todo": "Avalie regularmente a segurança do código desenvolvido internamente e dos fornecedores externos utilizados pela organização."
+  },
+  {
    "id": "8368f9805644f450",
    "source": "Dark Reading",
    "region": "US",
@@ -322,14 +411,19 @@
    "link": "https://www.darkreading.com/vulnerabilities-threats/major-brazilian-signature-app-rce-fraud",
    "published": "2026-11-18T14:00:00+00:00",
    "title": "Major Brazilian Signature Apps Enable RCE & Fraud",
-   "summary": "Government-sanctioned authentication middleware is used for exceptionally important legal documents, yet it's often rife with RCE bugs.",
+   "summary": "Aplicações de assinatura e autenticação de uso governamental no Brasil foram associadas a falhas críticas que permitem execução remota de código (RCE). Estes middlewares de autenticação são utilizados para gerir documentos jurídicos de elevada importância. A presença destas vulnerabilidades abre portas a potenciais fraudes e comprometimento de segurança.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltd3d76d438281428b/6afb51c99f6beb04c5e535c4/Brazil_CNH-RafaPress-Getty.jpg?width=720&quality=80&disable=upscale",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Aplicações de assinatura no Brasil afetadas por falhas graves.",
+    "Vulnerabilidades permitem execução remota de código (RCE).",
+    "Middleware é utilizado em documentos jurídicos cruciais."
+   ],
+   "title_original": "Major Brazilian Signature Apps Enable RCE & Fraud",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Government-sanctioned authentication middleware is used for exceptionally important legal documents, yet it's often rife with RCE bugs."
+   "translated": true,
+   "enriched": true,
+   "why": "Falhas em aplicações de assinatura digital colocam em risco a validade jurídica de documentos e facilitam fraudes.",
+   "todo": "Garanta a auditoria rigorosa de software crítico e aplique correções de segurança logo que os fabricantes as disponibilizem."
   },
   {
    "id": "cbfae60454052722",
@@ -339,14 +433,19 @@
    "link": "https://www.infosecurity-magazine.com/news/eggstreme-malware-rebuilt-after/",
    "published": "2026-11-18T14:00:00+00:00",
    "title": "Suspected Chinese APT Rebuilds EggStreme Malware After Exposure",
-   "summary": "Suspected Chinese APT rebuilt EggStreme malware and infrastructure after Bitdefender exposure",
+   "summary": "Um grupo de ameaça persistente avançada (APT), suspeito de ter origem na China, reconstruiu o seu malware EggStreme e respetiva infraestrutura. A remodulação ocorreu na sequência da exposição pública das ferramentas originais por parte da empresa de cibersegurança Bitdefender. Este comportamento demonstra a capacidade de adaptação rápida destes operadores maliciosos.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Grupo APT chinês reconstrói o malware EggStreme.",
+    "Reestruturação ocorreu após exposição pública pela Bitdefender.",
+    "Demonstra a resiliência e adaptabilidade de agentes de ameaça."
+   ],
+   "title_original": "Suspected Chinese APT Rebuilds EggStreme Malware After Exposure",
    "category": "Malware",
-   "translated": false,
-   "enriched": false,
-   "raw": "Suspected Chinese APT rebuilt EggStreme malware and infrastructure after Bitdefender exposure"
+   "translated": true,
+   "enriched": true,
+   "why": "Grupos de cibercunpionagem adaptam rapidamente as suas ferramentas para continuar campanhas de intrusão após serem detetados.",
+   "todo": "Mantenha soluções de deteção e resposta a endpoints (EDR) atualizadas para identificar variantes novas ou modificadas de malware."
   },
   {
    "id": "0659e2489161c5d8",
@@ -356,14 +455,19 @@
    "link": "https://www.sentinelone.com/labs/labscon26-replay-governing-just-in-time-intelligence-ai-dual-use-capabilities-and-the-limits-of-guardrails/",
    "published": "2026-11-18T14:00:00+00:00",
    "title": "LABScon26 Replay | Governing Just-in-Time Intelligence: AI, Dual-Use Capabilities, and the Limits of Guardrails",
-   "summary": "ICRC’s Mauro Vignati argues AI guardrails can’t fix a deeper problem: a 70-year-old distribution model now applied to dual-use cognitive capabilities.",
+   "summary": "Numa apresentação na conferência LABScon 26, Mauro Vignati abordou os limites das barreiras de segurança na inteligência artificial generativa avançada. O especialista defendeu que o modelo de distribuição de IA a pedido reutiliza lógicas industriais e criminosas preexistentes. Como alternativa aos controlos superficiais, foi proposta uma estrutura em camadas para regular o uso destes modelos.",
    "image": "https://images.contentstack.io/v3/assets/blt53c99b43892c2378/bltf0d6eb4fdce2acfe/6afc8dac99559c1960e0acc8/labscon_mauro_ftr.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Mauro Vignati debateu os limites da regulação em IA na LABScon 26.",
+    "Modelos de IA usam distribuições comerciais de uso dual.",
+    "Propõe-se uma estrutura em camadas para governar o acesso à IA."
+   ],
+   "title_original": "LABScon26 Replay | Governing Just-in-Time Intelligence: AI, Dual-Use Capabilities, and the Limits of Guardrails",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "In his LABScon 26 talk, Mauro Vignati, Advisor on Digital Technologies of Warfare at the International Committee of the Red Cross (ICRC), argues that guardrails cannot address the deeper problem with frontier AI. Advanced cognitive capabilities are now distributed through the same on-demand, as-a-service model that has shaped industry, and later cybercrime, for seventy years. That model was designed for industrial efficiency, not for technology this powerful. Vignati traces the model back to Toyota’s post-war just-in-time production system, built on the principle that customers get only what they need and pay only for what they get. The IT needed to coordinate that system helped give rise to application service providers and eventually to software-as-a-service. Cybercriminals later adopted the same logic for crimeware and ransomware, and hacktivists for DDoS campaigns. In each case the people taking part needed no technical skill of their own. Model-as-a-service differs from its predecessors because the capability is dual-use at the source, supplied by private technology firms largely independent of who the end users are or what they intend. Vignati explains why criminals who tried to build their own AI systems have largely turned to wrapping commercial ones instead, leaving the legitimate economy to carry the cost of training and infrastructure. He then draws on cybernetics’ law of requisite variety, the principle that any system regulating another must match its complexity, to argue that AI governance has no simple fix. In its place he proposes a layered framework for deciding what a model can do, for whom and under what conditions. His warning is that as long as the industry keeps offering powerful general-purpose models, criminals and activists will continue to para"
+   "translated": true,
+   "enriched": true,
+   "why": "A utilização de inteligência artificial de uso geral por cibercriminosos exige novas abordagens de governance e mitigação de riscos.",
+   "todo": "Estabeleça políticas claras de utilização interna de ferramentas de inteligência artificial generativa nas empresas."
   },
   {
    "id": "98d24ce7e396ea0e",
@@ -373,14 +477,19 @@
    "link": "https://hackread.com/ox-security-launches-ox-radar-and-response-center-to-show-companies-which-cyber-threats-actually-affect-them/",
    "published": "2026-11-18T13:58:11+00:00",
    "title": "OX Security Launches OX Radar and Response Center to Show Companies Which Cyber Threats Actually Affect Them",
-   "summary": "New York, United States, 18th November 2026, TechnologyWire",
+   "summary": "A OX Security anunciou o lançamento do OX Radar e de um centro de resposta em Nova Iorque. As novas soluções foram criadas para ajudar as empresas a identificar quais as ameaças cibernéticas que impactam diretamente os seus ambientes. O objetivo é reduzir o ruído de alertas e focar os recursos em riscos reais.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "OX Security lança OX Radar e centro de resposta.",
+    "Ferramentas ajudam a filtrar ameaças com impacto real.",
+    "Anúncio efetuado em Nova Iorque a 18 de novembro de 2026."
+   ],
+   "title_original": "OX Security Launches OX Radar and Response Center to Show Companies Which Cyber Threats Actually Affect Them",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "New York, United States, 18th November 2026, TechnologyWire"
+   "translated": true,
+   "enriched": true,
+   "why": "A priorização de alertas de segurança evita a fadiga das equipas e acelerta a remediação de ameaças críticas.",
+   "todo": "Adote plataformas que centralizem e contextualizem alertas de segurança com base no risco real para o seu negócio."
   },
   {
    "id": "959698f1939d3a92",
@@ -389,15 +498,42 @@
    "lang": "en",
    "link": "https://therecord.media/russia-hockey-cyberattack-championships",
    "published": "2026-11-18T13:45:00+00:00",
-   "title": "Ice hockey governing body website defaced by hackers amid dispute over Russia's exclusion",
-   "summary": "The International Ice Hockey Federation (IIHF) confirmed a cyberattack on its website after hackers replaced its homepage with a pro-Russian message criticizing the country's exclusion from international competitions.",
+   "title": "Federação Internacional de Hóquei no Gelo sofre desaturação de site devido a disputa sobre a Rússia",
+   "summary": "A Federação Internacional de Hóquei no Gelo (IIHF) confirmou ter sido alvo de um ciberataque que afetou o seu portal oficial. Os atacantes alteraram a página principal para exibir uma mensagem pró-russa. O ataque ocorreu no contexto de um diferendo relacionado com a exclusão da Rússia de competições internacionais.",
    "image": "https://cms.therecord.media/uploads/Hockey_stick_669de98496.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Website da IIHF foi alvo de um ataque de desaturação.",
+    "Página inicial foi substituída por mensagem pró-russa.",
+    "Motivação ligada à exclusão do país de competições desportivas."
+   ],
+   "title_original": "Ice hockey governing body website defaced by hackers amid dispute over Russia's exclusion",
    "category": "Ataque/APT",
-   "translated": false,
-   "enriched": false,
-   "raw": "The International Ice Hockey Federation (IIHF) confirmed a cyberattack on its website after hackers replaced its homepage with a pro-Russian message criticizing the country's exclusion from international competitions."
+   "translated": true,
+   "enriched": true,
+   "why": "Disputas geopolíticas resultam frequentemente em ataques de desaturação e hacktivismo contra alvos institucionais.",
+   "todo": "Proteja os portais web com autenticação robusta, firewalls de aplicações web (WAF) e monitorização de integridade."
+  },
+  {
+   "id": "23c332bbba47ed24",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/github-security-advisory-av26-1172",
+   "published": "2026-11-18T13:40:25+00:00",
+   "title": "Aviso de segurança do GitHub (AV26-1172)",
+   "summary": "O GitHub emitiu um aviso de segurança referente a vulnerabilidades detetadas em várias versões do GitHub Enterprise Server. As falhas afetam as linhas de produtos 3.19, 3.20, 3.21 e 3.22 em compilações anteriores a versões específicas corrigidas. Os centros de cibersegurança recomendam aos administradores a aplicação imediata das atualizações disponíveis.",
+   "image": null,
+   "points": [
+    "GitHub emite alerta de segurança AV26-1172.",
+    "Vulnerabilidades afetam o GitHub Enterprise Server.",
+    "Versões anteriores a 3.19.16, 3.20.12, 3.21.10 e 3.22.5 estão em risco."
+   ],
+   "title_original": "GitHub security advisory (AV26-1172)",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Vulnerabilidades em servidores corporativos de gestão de código podem expor projetos confidenciais e credenciais de acesso.",
+   "todo": "Atualize o GitHub Enterprise Server para as versões corrigidas recomendadas no boletim de segurança."
   },
   {
    "id": "dfcd48a830ee2555",
@@ -407,14 +543,19 @@
    "link": "https://www.securityweek.com/russian-apt-poses-as-employee-of-hacked-firm-to-breach-another-us-organization/",
    "published": "2026-11-18T13:33:47+00:00",
    "title": "Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization",
-   "summary": "Star Blizzard weaponized data and identities stolen in late 2025 to phish and compromise a US organization.",
+   "summary": "O grupo russo Star Blizzard utilizou dados e identidades roubadas no final de 2025 para realizar ataques de phishing contra uma organização norte-americana. Ao fazer-se passar por um colaborador de uma empresa previamente comprometida, o grupo conseguiu infiltrar-se com sucesso no novo alvo. Esta técnica de engenharia social aprofundada aumenta a eficácia das intrusões.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Grupo Star Blizzard usou identidades roubadas em ataques.",
+    "Atacantes fingiram ser colaboradores de uma empresa comprometida.",
+    "Organização nos EUA foi alvo de campanhas de phishing direcionadas."
+   ],
+   "title_original": "Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "Star Blizzard weaponized data and identities stolen in late 2025 to phish and compromise a US organization."
+   "translated": true,
+   "enriched": true,
+   "why": "O roubo de identidades corporativas legitima campanhas de phishing e facilita o acesso a redes empresariais.",
+   "todo": "Implemente autenticação multifator resistente a phishing e valide identidades em pedidos atípicos de colaboradores."
   },
   {
    "id": "593f3f6a4cfabc0a",
@@ -424,14 +565,19 @@
    "link": "https://www.malwarebytes.com/blog/inside-malwarebytes/2026/11/who-protects-the-antivirus-how-we-secure-malwarebytes-itself",
    "published": "2026-11-18T13:32:54+00:00",
    "title": "Who protects the antivirus? How we secure Malwarebytes itself",
-   "summary": "Imagine a piece of malware that can disable your antivirus and leave you unprotected. That's exactly what we as engineers work to prevent.",
+   "summary": "A segurança do software antivírus apresenta desafios complexos, uma vez que estas ferramentas operam com privilégios elevados no sistema operativo. A Malwarebytes explicou a arquitetura de duas camadas que separa a interface de utilizador do serviço em segundo plano executado como SYSTEM. Esta divisão através do Windows COM protege operações críticas contra abusos por parte de software malicioso.",
    "image": "https://www.malwarebytes.com/wp-content/uploads/sites/2/2026/11/illustration_1_trust_boundary.png?w=1024",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Antivírus operam com privilégios elevados, tornando-se alvos atrativos.",
+    "Arquitetura divide a interface e o serviço SYSTEM via COM.",
+    "Objetivo é impedir que o malware desative as defesas do sistema."
+   ],
+   "title_original": "Who protects the antivirus? How we secure Malwarebytes itself",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "An antivirus is also software, and it can have weaknesses of its own. That makes antivirus development particularly demanding. The product must safely handle files that may be hostile, run reliably across very different Windows environments, and resist attackers who try to abuse its privileges or shut it down completely. Imagine a piece of malware that can disable your antivirus and leave you unprotected. That’s exactly what we as engineers work to prevent. The attack surface of a privileged process You might wonder why vulnerabilities matter for a desktop application that runs locally. Our software runs with high privileges, so it has access to the entire system. That access is what lets it protect the system from exploits, data theft, and ransomware. It also makes our software an attractive target. An attacker who can disable our protection, or abuse it to gain those privileges, has a much easier path to taking over the system. Two layers, one critical boundary At a basic level, Malwarebytes has two layers: a user interface running as the signed-in user, and a background service running as SYSTEM. They communicate through COM (Component Object Model), a built-in Windows mechanism that lets one program call functions in another program, even one running in a separate process. The UI can’t do much on its own. When you add an exclusion, restore a file from quarantine, or pause real-time protection, the UI only asks, and the SYSTEM service does the work. Those are exactly the operations malware would like to perform: excluding its own folder from scanning or turning protection off. And malware doesn’t need our UI to act. Any process running as the same user can write its own COM client and call the same methods. So on every call, the service must answer two questions: who"
+   "translated": true,
+   "enriched": true,
+   "why": "Garantir a integridade do próprio software de segurança evita que o malware desative as proteções do sistema operativo.",
+   "todo": "Mantenha todo o software de segurança atualizado e restrinja permissões administrativas locais em postos de trabalho."
   },
   {
    "id": "f46e27c9ea7a3d03",
@@ -13247,6 +13393,23 @@
    "todo": "Atualize o MongoDB Server para as versões seguras recomendadas e restrinja as permissões de readConcern."
   },
   {
+   "id": "5ff135d39a0d9123",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/citrix-security-advisory-av26-1150",
+   "published": "2026-11-12T18:37:14+00:00",
+   "title": "Citrix security advisory (AV26-1150)",
+   "summary": "",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Serial number: AV26-1150 Date: November 12, 2026 As of November 12, 2026, Citrix is affected by vulnerabilities in the following products: NetScaler ADC and NetScaler Gateway Prior to 13.1-64.39 Prior to 14.1-73.57 NetScaler ADC FIPS Prior to 14.1-73.58 FIPS Prior to 13.1-37.293 FIPS & NDcPP NetScaler Console Prior to 14.1-74.34 Secure Access Client for Linux Prior to 26.10.4 Secure Access Client for Windows Prior to 26.11.16 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. Security updates for NetScaler ADC, NetScaler Gateway, and NetScaler Console Citrix NetScaler ADC and Citrix NetScaler Gateway Security Bulletin Citrix NetScaler Console Security Bulletin for CVE-2026-120869 Citrix Secure Access Client for Linux Security Bulletin for CVE-2026-118269 Citrix Secure Access Client for Windows Security Bulletin for CVE-2026-118268 Citrix Security Advisories"
+  },
+  {
    "id": "241a55355180a09a",
    "source": "Cyber Centre Canadá",
    "region": "INT",
@@ -13589,141 +13752,6 @@
    "enriched": true,
    "why": "Reduz significativamente a capacidade operacional de redes globais de ransomware e roubo de credenciais.",
    "todo": "Utilize autenticação multifator e altere credenciais comprometidas para proteger os sistemas contra campanhas de roubo de dados."
-  },
-  {
-   "id": "710937bcc980018a",
-   "source": "CrowdStrike Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.crowdstrike.com/en-us/blog/crowdstrike-to-acquire-fiddler/",
-   "published": "2026-11-12T16:53:50.737546+00:00",
-   "title": "CrowdStrike vai adquirir a Fiddler para fornecer o Falcon Observe para observabilidade de agentes de IA",
-   "summary": "A CrowdStrike anunciou a intenção de adquirir a Fiddler com o objetivo de integrar a solução Falcon Observe, focada na observabilidade de agentes de IA. Com esta aquisição, a empresa pretende reforçar o acompanhamento e a segurança das ferramentas de inteligência artificial utilizadas pelas organizações. O impacto traduz-se numa maior capacidade de monitorização e controlo sobre o comportamento de agentes de IA em ambiente empresarial.",
-   "image": null,
-   "points": [
-    "A CrowdStrike vai comprar a Fiddler.",
-    "O objetivo é lançar o Falcon Observe para agentes de IA.",
-    "A solução foca-se na monitorização e observabilidade de IA."
-   ],
-   "title_original": "CrowdStrike to Acquire Fiddler to Deliver Falcon Observe for AI Agent Observability",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque reflete a crescente necessidade de monitorizar e garantir a segurança na utilização de agentes de IA nas empresas.",
-   "todo": "Avalie e monitorize de perto o comportamento e os acessos das ferramentas de inteligência artificial integradas na sua organização."
-  },
-  {
-   "id": "f3ef8a4b5dc168c1",
-   "source": "CrowdStrike Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.crowdstrike.com/en-us/blog/adversaries-turn-vulnerability-ecosystem-against-defenders/",
-   "published": "2026-11-12T16:53:50.737417+00:00",
-   "title": "Como os atacantes estão a voltar o ecossistema de vulnerabilidades contra os defensores",
-   "summary": "Os adversários cibernéticos estão a adaptar as suas estratégias para tirar partido do próprio ecossistema de vulnerabilidades e atacar as organizações. Esta abordagem permite-lhes explorar falhas conhecidas e desconhecidas com maior eficácia, dificultando o trabalho das equipas de segurança defensiva. O impacto reflete-se num aumento do risco para as empresas, que enfrentam ameaças mais ágeis e adaptadas aos ciclos de correção.",
-   "image": null,
-   "points": [
-    "Atacantes exploram o ecossistema de vulnerabilidades para atingir defensores.",
-    "A estratégia compromete a eficácia das defesas tradicionais.",
-    "Aumenta a pressão sobre as equipas de segurança empresarial."
-   ],
-   "title_original": "How Adversaries Are Turning the Vulnerability Ecosystem Against Defenders",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque evidencia a evolução das táticas ofensivas, que exigem respostas mais rápidas e estratégicas na gestão de vulnerabilidades.",
-   "todo": "Adote uma postura de gestão de vulnerabilidades baseada no risco e acelere a aplicação de correções críticas."
-  },
-  {
-   "id": "72cace5c82fd439f",
-   "source": "CrowdStrike Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-2026-idc-marketscape-worldwide-augmented-identity-security-solutions/",
-   "published": "2026-11-12T16:53:50.737270+00:00",
-   "title": "CrowdStrike nomeada líder no IDC MarketScape para soluções de segurança de identidade aumentada a nível mundial em 2026",
-   "summary": "A CrowdStrike foi distinguida como líder no relatório IDC MarketScape de 2026 para soluções globais de segurança de identidade aumentada. A avaliação destaca o papel da empresa no reforço da proteção baseada em identidades num cenário de ameaças cada vez mais complexo. O impacto valoriza as ferramentas que ajudam as organizações a mitigar roubos de credenciais e acessos não autorizados.",
-   "image": null,
-   "points": [
-    "A CrowdStrike lidera o IDC MarketScape 2026 de identidade aumentada.",
-    "O reconhecimento foca-se em soluções de segurança de identidade.",
-    "Destaca a importância da proteção contra acessos não autorizados."
-   ],
-   "title_original": "CrowdStrike Named a Leader in the 2026 IDC MarketScape for Worldwide Augmented Identity Security Solutions",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque sublinha a centralidade da segurança de identidade na estratégia de ciberdefence das organizações modernas.",
-   "todo": "Implemente autenticação multifator (MFA) em todos os acessos e adote princípios de privilégio mínimo."
-  },
-  {
-   "id": "5ac8638c201cb3fa",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/big-techs/hoje-no-tecmundo-11-gta-6-e-recorde-de-pre-venda-google-lanca-nova-ia-e-mais/",
-   "published": "2026-11-12T16:47:00+00:00",
-   "title": "Hoje no TecMundo (11): GTA 6 é recorde de pré-venda, Google lança nova IA e mais",
-   "summary": "A edição do programa 'Hoje no TecMundo' destacou várias novidades tecnológicas, incluindo o lançamento do modelo de inteligência artificial Gemini 4 Carbon pelo Google. No setor de cibersegurança, o Google corrigiu uma vulnerabilidade zero-day crítica no navegador Chrome, a oitava do ano, exigindo atualizações imediatas. Além disso, o Porto de Santos confirmou estar a investigar um incidente cibernético que causou instabilidade nos sistemas online. Outros destaques incluíram recordes de pré-venda do jogo GTA 6 e novos aplicativos de produtividade da Anthropic.",
-   "image": "https://www.estadao.com.br/resizer/v2/G25JMXV72FDDFCKHE3I5JIZDWQ.jpg?quality=80&auth=2d5c77c4ac4bd7f17e5b353e4f3e2bac18ea306622222c9f99137adb0390b0fd&width=710",
-   "points": [
-    "O Google lançou o modelo de inteligência artificial Gemini 4 Carbon para utilizadores avançados.",
-    "Uma falha zero-day de alta gravidade no Chrome foi corrigida pelo Google numa atualização de emergência.",
-    "O Porto de Santos investiga um ataque cibernético que afetou os seus sistemas online.",
-    "GTA 6 bateu recordes históricos de pré-vendas nas lojas digitais de consolas."
-   ],
-   "title_original": null,
-   "category": "Ataque/APT",
-   "translated": false,
-   "enriched": true,
-   "why": "Informa sobre incidentes de segurança recentes em infraestruturas críticas e correções urgentes de vulnerabilidades de navegadores.",
-   "todo": "Atualize o navegador Google Chrome imediatamente para a versão mais recente para mitigar falhas zero-day."
-  },
-  {
-   "id": "f791dc642ff1816e",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/hackers-abuse-microsoft-sql-servers-monero-miner-gh0st-rat/",
-   "published": "2026-11-12T16:30:49+00:00",
-   "title": "Piratas informáticos abusam de servidores Microsoft SQL para instalar minerador Monero e Gh0st RAT",
-   "summary": "Atores maliciosos estão a explorar passwords fracas em servidores Microsoft SQL para instalar ferramentas de acesso remoto e mineração de criptomoedas. Os atacantes tiram partido de funcionalidades nativas das bases de dados para implementar o minerador Monero e a trojan Gh0st RAT nos sistemas infetados. Esta atividade demonstra como a falta de políticas de autenticação robustas continua a ser explorada para comprometer servidores empresariais. A campanha resulta na perda de recursos computacionais e na exposição de redes afetadas.",
-   "image": null,
-   "points": [
-    "Servidores Microsoft SQL com passwords fracas são o principal alvo dos atacantes.",
-    "A campanha instala o minerador de criptomoedas Monero e a ferramenta Gh0st RAT.",
-    "Os atacantes utilizam funcionalidades legítimas de bases de dados para executar código malicioso.",
-    "O objetivo passa por explorar recursos de computação alheios e obter acesso remoto."
-   ],
-   "title_original": "Hackers Abuse Microsoft SQL Servers to Deploy Monero Miner and Gh0st RAT",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra os riscos de manter credenciais fracas em servidores de bases de dados expostos.",
-   "todo": "Utilize palavras-passe fortes e políticas de acesso restritas em todos os servidores de bases de dados Microsoft SQL."
-  },
-  {
-   "id": "093b008afb96e695",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html",
-   "published": "2026-11-12T16:27:01+00:00",
-   "title": "Falha crítica no Red Hat Quay permite a atacantes ler e sobre escrever todas as imagens de contentores privados num registo",
-   "summary": "Uma vulnerabilidade crítica descoberta no Red Hat Quay permite que utilizadores não autorizados acedam a imagens de contentores privados em todos os repositórios de um registo. O problema decorre do acesso anónimo ativado por predefinição, dispensando autenticação, embora contas válidas também possam explorar a falha caso essa opção esteja desativada. A Red Hat já disponibilizou versões corrigidas do software para resolver o problema de segurança. Os administradores são aconselhados a atualizar os sistemas afetados com a máxima brevidade.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtLHm05FB2LmoHZMLAD5nDmfo_G2tdIqO4URdUwukuooBCVwIJhKC2rUDbDNtsGB8_lwium1MEUD1CxYcix4WMVpCoS58DJivMBSmb9LcIGswQu0nKUNE_sbfH8EsgFfhPrKEgEY7MJHWKyhFqX61ne-AOFKnTNuqIkWez1bec-kq-3Cz8BFbPLrgiV8k/s1600/redhat.jpg",
-   "points": [
-    "Detetada uma falha crítica de segurança no gestor de registos Red Hat Quay.",
-    "A vulnerabilidade permite ler e sobrescrever imagens de contentores privados.",
-    "O problema afeta tanto o acesso anónimo predefinido como contas de utilizador válidas.",
-    "A empresa já lançou novas versões corrigidas para resolver o problema."
-   ],
-   "title_original": "Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Protege a confidencialidade e a integridade de imagens de contentores empresariais armazenadas em registos Quay.",
-   "todo": "Atualize o Red Hat Quay para as versões corrigidas disponibilizadas pela empresa e verifique as definições de acesso anónimo."
   }
  ]
 }

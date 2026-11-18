@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T22:07:54.205700+00:00",
+ "updated": "2026-11-18T22:25:51.395242+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -304,16 +304,50 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 72,
-  "pending": 239,
-  "unenriched": 128,
+  "done": 60,
+  "pending": 251,
+  "unenriched": 140,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "Expecting ':' delimiter: line 92 column 3 (char 8298)",
+   "Expecting value: line 5 column 9 (char 110)"
   ]
  },
  "items": [
+  {
+   "id": "df751380d9ea4643",
+   "source": "TechCrunch Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://techcrunch.com/2026/11/18/palmer-luckey-doesnt-deny-that-hes-a-prepper/",
+   "published": "2026-11-18T22:04:03+00:00",
+   "title": "Palmer Luckey doesn’t deny that he’s a prepper",
+   "summary": "The Anduril founder said Wednesday that Americans should always have three days of food, water and medicine — just in case.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "The Anduril founder said Wednesday that Americans should always have three days of food, water and medicine — just in case."
+  },
+  {
+   "id": "84415312a0a78762",
+   "source": "Dark Reading",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another",
+   "published": "2026-11-18T21:59:46+00:00",
+   "title": "Cold Relic Turns One Cloud Breach Into Another",
+   "summary": "The Russia-linked threat group is using data stolen from one victim to target others via convincing impersonations and social engineering attacks.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt0cf0a0b934852050/6afe1492ac3412795c5370fe/russia_Skorzewiak_shutterstoc.jpg?width=720&quality=80&disable=upscale",
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "The Russia-linked threat group is using data stolen from one victim to target others via convincing impersonations and social engineering attacks."
+  },
   {
    "id": "48feb3ab27c887a6",
    "source": "TechCrunch Security",
@@ -13739,50 +13773,6 @@
    "enriched": true,
    "why": "O uso de IA por cibercriminosos aumenta a escala e a eficácia das campanhas de ransomware.",
    "todo": "Reforce as defesas contra ransomware com cópias de segurança imutáveis e monitorizadora comportamental avançada."
-  },
-  {
-   "id": "78041fc66f0499b6",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/202968/hacking/new-signdrop-exploit-can-abuse-windows-defender-to-bypass-security-protections.html",
-   "published": "2026-11-13T09:02:00+00:00",
-   "title": "Novo exploit SignDrop abusa do Windows Defender para contornar proteções de segurança",
-   "summary": "Um investigador de segurança publicou um exploit de dia zero local para o Windows, apelidado de SignDrop, que abusa das proteções do Common Log File System (CLFS) para obter privilégios de SYSTEM e contornar defesas. A falha decorre da implementação faseada de uma mitigação de segurança recente da Microsoft, deixando vulneráveis cerca de oitenta por cento das instalações de Windows mais antigas ou com proteção parcial. A vulnerabilidade reside especificamente no modo como o controlador clfs.sys gere ficheiros de autenticação associados.",
-   "image": "https://i0.wp.com/securityaffairs.com/wp-content/uploads/2026/11/image-26.png?resize=938%2C883&#038;ssl=1",
-   "points": [
-    "SignDrop é uma vulnerabilidade de dia zero no Windows para escales de privilégios.",
-    "Afeta o sistema CLFS devido a uma implementação faseada de mitigação.",
-    "Cerca de 80% das instalações de Windows podem estar vulneráveis."
-   ],
-   "title_original": "New SignDrop Exploit Can Abuse Windows Defender to Bypass Security Protections",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Falhas de escales de privilégios locais permitem a atacantes assumirem o controlo total do sistema operativo.",
-   "todo": "Verifique a configuração de registo do CLFS e mantenha os sistemas operacionais rigorosamente atualizados com as mitigações completas da Microsoft."
-  },
-  {
-   "id": "b955104ed90db8b9",
-   "source": "Securelist (Kaspersky)",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://securelist.com/esxi-ransomware/121959/",
-   "published": "2026-11-13T09:00:43+00:00",
-   "title": "Ransomware na camada do hipervisor: como os atacantes usam funcionalidades do ESXi e vCenter para fins maliciosos",
-   "summary": "Uma investigação recente revelou uma campanha do grupo BlackNevas que destruiu toda a infraestrutura de virtualização de uma organização ao longo de dez dias. O ataque visou anfitriões ESXi, máquinas virtuais, aparelhos vCenter e infraestruturas de cópia de segurança sem explorar vulnerabilidades de hipervisor. Os criminosos utilizaram apenas interfaces de gestão legítimas e códigos de ransomware derivados de versões anteriormente vazadas, como o Babuk.",
-   "image": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2026/11/12200032/esxi-3_securelist-featured_1200x600_x2.jpg",
-   "points": [
-    "Atacantes destruíram infraestruturas ESXi usando interfaces de gestão legítimas.",
-    "O grupo BlackNevas explorou código vazado do Babuk sem usar falhas de hipervisor.",
-    "A campanha afetou anfitriões, máquinas virtuais e sistemas de backup."
-   ],
-   "title_original": "Ransomware at the hypervisor layer: how attackers use ESXi and vCenter features for malicious purposes",
-   "category": "Ransomware",
-   "translated": true,
-   "enriched": true,
-   "why": "O comprometimento da camada de virtualização paralisa toda a infraestrutura empresarial de uma só vez.",
-   "todo": "Proteja as consolas de gestão de hipervisores com autenticação forte e isole os backups da rede principal."
   }
  ]
 }

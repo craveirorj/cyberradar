@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T16:45:03.323742+00:00",
+ "updated": "2026-11-18T17:05:40.149386+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -74,7 +74,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -84,7 +84,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 24
+   "added": 25
   },
   {
    "source": "SecurityWeek",
@@ -94,7 +94,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -124,7 +124,7 @@
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "Schneier on Security",
@@ -184,7 +184,7 @@
   {
    "source": "CrowdStrike Blog",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "SentinelLabs",
@@ -264,7 +264,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Hacker News",
@@ -305,8 +305,8 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 360,
-  "unenriched": 232,
+  "pending": 362,
+  "unenriched": 236,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -314,6 +314,74 @@
   ]
  },
  "items": [
+  {
+   "id": "aee65bc8ab681b47",
+   "source": "CrowdStrike Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.crowdstrike.com/en-us/blog/crowdstrike-brings-human-advantage-aidr/",
+   "published": "2026-11-18T17:01:59.458267+00:00",
+   "title": "CrowdStrike Brings the Human Advantage to AI Detection and Response",
+   "summary": "",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "IA",
+   "translated": false,
+   "enriched": false,
+   "raw": ""
+  },
+  {
+   "id": "4d21e756021aad15",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/",
+   "published": "2026-11-18T16:58:42+00:00",
+   "title": "Microsoft’s Agent Framework PyPI package compromised to steal credentials",
+   "summary": "Hackers compromised Microsoft's official Agent Framework Python package on PyPI, publishing two malicious versions designed to steal cloud credentials and other sensitive information from developers' systems. [...]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": false,
+   "raw": "Hackers compromised Microsoft's official Agent Framework Python package on PyPI, publishing two malicious versions designed to steal cloud credentials and other sensitive information from developers' systems. [...]"
+  },
+  {
+   "id": "830c2e13c09821d1",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/five-critical-vulnerabilities/",
+   "published": "2026-11-18T16:55:00+00:00",
+   "title": "Five Critical Vulnerabilities Found in World's Most Widely Used Open-Source Web Server",
+   "summary": "Five critical NGINX vulnerabilities could allow unauthenticated attackers to remotely execute code and potentially take control of affected servers",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Five critical NGINX vulnerabilities could allow unauthenticated attackers to remotely execute code and potentially take control of affected servers"
+  },
+  {
+   "id": "2d4652f602101788",
+   "source": "HackRead",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://hackread.com/what-github-actions-cache-expose-to-pull-request/",
+   "published": "2026-11-18T16:51:11+00:00",
+   "title": "What a GitHub Actions Cache Can Expose to Anyone Who Opens a Pull Request",
+   "summary": "GitHub Actions caches can expose credentials to attackers through forked pull requests. Learn how secrets leak and how developers can prevent it.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "GitHub Actions caches can expose credentials to attackers through forked pull requests. Learn how secrets leak and how developers can prevent it."
+  },
   {
    "id": "c0bdf578bee45e85",
    "source": "WIRED Security",
@@ -13537,95 +13605,6 @@
    "enriched": true,
    "why": "Corrige dezenas de falhas de segurança críticas em ecossistemas de software amplamente utilizados.",
    "todo": "Reveja o boletim de segurança da Microsoft e instale as atualizações acumuladas nos sistemas afetados."
-  },
-  {
-   "id": "a4cf8f411221734b",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/202932/security/microsoft-cloud-outage-hits-outlook-teams-copilot-and-ai-services.html",
-   "published": "2026-11-12T20:41:47+00:00",
-   "title": "Microsoft Cloud Outage Hits Outlook, Teams, Copilot and AI Services",
-   "summary": "Uma falha generalizada na cloud da Microsoft afetou plataformas como o Outlook, Teams, Copilot e os serviços Azure e OneDrive nos Estados Unidos e a nível global. O problema também interrompeu os conectores utilizados por ferramentas de IA da OpenAI e da Anthropic para aceder a contas Microsoft 365. A Microsoft esclareceu que o incidente não decorreu de um aumento de tráfego, mas sim da indisponibilidade inesperada de vários servidores. Para mitigar o impacto, a empresa suspendeu novas implementações, redistribuiu o tráfego e iniciou o reinício dos servidores afetados.",
-   "image": "https://i0.wp.com/securityaffairs.com/wp-content/uploads/2026/11/image-24.png?resize=1024%2C260&#038;ssl=1",
-   "points": [
-    "Uma falha na cloud da Microsoft afetou o Outlook, Teams, Copilot e serviços Azure.",
-    "O apagão interrompeu igualmente conectores de IA da OpenAI e da Anthropic.",
-    "A Microsoft atribuiu o problema à indisponibilidade inesperada de servidores e não a picos de tráfego.",
-    "A empresa suspendeu implementações e reiniciou servidores para repor a normalidade."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque provocou perturbações massivas em serviços corporativos críticos e em integrações de inteligência artificial.",
-   "todo": "Mantenha planos de continuidade de negócio e canais alternativos de comunicação para mitigar o impacto de falhas na cloud."
-  },
-  {
-   "id": "c7f9e1ea52878fc4",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1157",
-   "published": "2026-11-12T20:39:53+00:00",
-   "title": "Google security advisory (AV26-1157)",
-   "summary": "A Google emitiu um aviso de segurança para alertar sobre vulnerabilidades que afetam o navegador Google Chrome em computadores. A falha atinge as versões do canal estável anteriores à 157.0.8103.78 e 157.0.8103.79 para Windows e Mac, bem como a versão 157.0.8103.78 para Linux. O Centro de Cibersegurança recomenda aos utilizadores e administradores que consultem os detalhes técnicos e procedam à atualização imediata do software. Esta medida é essencial para prevenir a exploração de brechas de segurança conhecidas.",
-   "image": null,
-   "points": [
-    "A Google publicou o aviso de segurança AV26-1157 para o Chrome em computadores.",
-    "A vulnerabilidade afeta versões anteriores à 157.0.8103.78/79 no Windows, Mac e Linux.",
-    "As autoridades recomendam a aplicação urgente das atualizações de segurança disponíveis."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque protege os utilizadores contra a exploração de vulnerabilidades críticas num dos navegadores mais utilizados.",
-   "todo": "Atualize o Google Chrome para a versão mais recente através das definições do navegador."
-  },
-  {
-   "id": "902df14331cd0c17",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/nodejs-security-advisory-av26-1156",
-   "published": "2026-11-12T20:35:04+00:00",
-   "title": "Nodejs security advisory (AV26-1156)",
-   "summary": "Foi detetada uma vulnerabilidade que afeta o Node.js em várias versões anteriores aos lançamentos mais recentes. O Centro Cibernético recomenda que os utilizadores e administradores consultem os links disponíveis. O impacto prende-se com potenciais falhas de segurança nestas versões do software. A principal recomendação passa por aplicar as atualizações necessárias assim que estiverem disponíveis.",
-   "image": null,
-   "points": [
-    "O produto afetado é o Node.js em versões anteriores a v24.22.3, v26.13.1 e v22.23.5.",
-    "O problema foi divulgado através de um aviso de segurança com o número de série AV26-1156.",
-    "O Centro Cibernético aconselha a aplicação de atualizações para mitigar a falha."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Permite corrigir vulnerabilidades conhecidas e proteger os sistemas contra potenciais explorações.",
-   "todo": "Atualizar o Node.js para as versões mais recentes recomendadas."
-  },
-  {
-   "id": "ab1dc203a99d3622",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/amd-security-advisory-av26-1155",
-   "published": "2026-11-12T20:24:57+00:00",
-   "title": "AMD security advisory (AV26-1155)",
-   "summary": "Várias gamas de processadores e produtos da AMD foram afetadas por vulnerabilidades de segurança. Entre os componentes visados encontram-se processadores móveis e de secretária das séries Athlon, EPYC e Ryzen, bem como aceleradores Instinct. O impacto abrange os sistemas que utilizam versões de firmware ou controladores desatualizados. Os utilizadores e administradores devem verificar os avisos e aplicar as atualizações indicadas.",
-   "image": null,
-   "points": [
-    "Vários processadores AMD Athlon, EPYC, Ryzen e Instinct foram afetados.",
-    "O aviso de segurança foi emitido sob o número de série AV26-1155.",
-    "A maioria das versões anteriores aos firmwares especificados apresenta vulnerabilidades."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Evita falhas de segurança a nível de hardware e processamento que podem comprometer o sistema.",
-   "todo": "Consultar o aviso oficial e atualizar os firmwares e controladores dos processadores AMD afetados."
   }
  ]
 }

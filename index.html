@@ -372,7 +372,7 @@ function openCountry(cc){
 }
 $('#tgrid').addEventListener('click',e=>{const b=e.target.closest('[data-cc]');if(b)openCountry(b.dataset.cc)});
 $('#map').addEventListener('click',e=>{
-  const r=e.target.getBoundingClientRect(),W=e.target.width,H=e.target.height,mx=(e.clientX-r.left)/r.width*W,my=(e.clientY-r.top)/r.height*H;
+  const r=e.target.getBoundingClientRect(),W=1200,H=520,mx=(e.clientX-r.left)/r.width*W,my=(e.clientY-r.top)/r.height*H;
   const ccs=new Set();(TH.ser||[]).forEach(x=>Object.keys(x.by).forEach(k=>ccs.add(k)));
   const c=(TH.data&&TH.data.cloudflare)||{};Object.values(c).forEach(l=>l.forEach(x=>ccs.add(x.cc)));
   let best=null,bd=1e9;for(const k of ccs){const m=MAP.cent[k];if(!m)continue;const[x,y]=xy({lat:m[0],lon:m[1]},W,H),d=Math.hypot(x-mx,y-my);if(d<bd){bd=d;best=k}}
@@ -382,13 +382,15 @@ function wpick(a){if(!a||!a.length)return null;let t=a.reduce((s,x)=>s+x.w,0),r=
 function xy(p,W,H){return [(p.lon+180)/360*W,(80-p.lat)/140*H]}
 function startMap(){
   TH.cv=$('#map');TH.ctx=TH.cv.getContext('2d');cancelAnimationFrame(TH.raf);
-  const W=TH.cv.width,H=TH.cv.height,cx=TH.ctx,rows=MAP.rows,cw=W/rows[0].length,ch=H/rows.length;
+  const W=1200,H=520,cx=TH.ctx,rows=MAP.rows,cw=W/rows[0].length,ch=H/rows.length;
+  const fit=()=>{const dpr=Math.min(window.devicePixelRatio||1,3),cw2=TH.cv.clientWidth||W;TH.cv.width=Math.round(cw2*dpr);TH.cv.height=Math.round(cw2*dpr*H/W);TH.k=TH.cv.width/W};
+  fit();if(!TH.rs){TH.rs=true;addEventListener('resize',()=>{if(TH.view==='thr'&&TH.cv)fit()})}
   let last=0,lastArc=0,shown=0;const tk=$('#ticker');
   const total=()=>(TH.ser||[]).filter(x=>!TH.off.has(x.key)).reduce((a,x)=>a+(x.total||0),0);
   const addTick=(col,txt)=>{if(!tk)return;const d=document.createElement('div');d.className='tkr';d.style.borderColor=`rgb(${col})`;d.textContent=txt;tk.prepend(d);while(tk.children.length>6)tk.lastChild.remove()};
   const frame=t=>{
     TH.raf=requestAnimationFrame(frame);
-    cx.clearRect(0,0,W,H);
+    cx.setTransform(1,0,0,1,0,0);cx.clearRect(0,0,TH.cv.width,TH.cv.height);cx.setTransform(TH.k,0,0,TH.k,0,0);
     // terra: pontos com leve cintilação
     for(let r=0;r<rows.length;r++)for(let c=0;c<rows[r].length;c++)if(rows[r][c]==='1'){
       const tw=.35+.15*Math.sin(t/900+c*.7+r*.5);cx.fillStyle=`rgba(70,105,160,${tw})`;cx.beginPath();cx.arc(c*cw+cw/2,r*ch+ch/2,cw*.28,0,7);cx.fill()}
@@ -397,7 +399,7 @@ function startMap(){
     // pontos permanentes ("calor") por país, a respirar
     for(const sr of (TH.ser||[])){if(TH.off.has(sr.key))continue;const mx=Math.max(...Object.values(sr.by),1);
       for(const [k,v] of Object.entries(sr.by)){const m=MAP.cent[k];if(!m)continue;const[x,y]=xy({lat:m[0],lon:m[1]},W,H),rad=3+Math.sqrt(v/mx)*9*(1+.12*Math.sin(t/500+x));
-        const gr=cx.createRadialGradient(x,y,0,x,y,rad*2.4);gr.addColorStop(0,`rgba(${sr.col},.55)`);gr.addColorStop(1,`rgba(${sr.col},0)`);cx.fillStyle=gr;cx.beginPath();cx.arc(x,y,rad*2.4,0,7);cx.fill()}}
+        const gr=cx.createRadialGradient(x,y,0,x,y,rad*1.7);gr.addColorStop(0,`rgba(${sr.col},.35)`);gr.addColorStop(1,`rgba(${sr.col},0)`);cx.fillStyle=gr;cx.beginPath();cx.arc(x,y,rad*1.7,0,7);cx.fill();cx.fillStyle=`rgba(${sr.col},.95)`;cx.beginPath();cx.arc(x,y,2.4,0,7);cx.fill()}}
     // novos eventos
     if(t-last>230){last=t;
       const on=(TH.ser||[]).filter(x=>!TH.off.has(x.key)),sr=wpick(on.map(x=>({w:x.total||1,x})));

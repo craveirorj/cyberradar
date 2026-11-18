@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T20:25:36.276951+00:00",
+ "updated": "2026-11-18T20:47:18.028613+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -94,7 +94,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -134,12 +134,12 @@
   {
    "source": "SANS ISC",
    "ok": true,
-   "added": 1
+   "added": 3
   },
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "Malwarebytes Labs",
@@ -184,7 +184,7 @@
   {
    "source": "CrowdStrike Blog",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "SentinelLabs",
@@ -194,7 +194,7 @@
   {
    "source": "Elastic Security Labs",
    "ok": true,
-   "added": 2
+   "added": 1
   },
   {
    "source": "Rapid7",
@@ -304,16 +304,33 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 24,
-  "pending": 291,
-  "unenriched": 180,
+  "done": 96,
+  "pending": 221,
+  "unenriched": 107,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "Expecting property name enclosed in double quotes: line 45 column 5 (char 3916)",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "68db8fe19e005f1a",
+   "source": "CSO Online",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.csoonline.com/article/4250390/a-new-critical-java-hole-illustrates-the-enterprise-it-visibility-problem.html",
+   "published": "2026-11-18T20:39:16+00:00",
+   "title": "A new critical Java hole illustrates the enterprise IT visibility problem",
+   "summary": "When cybersecurity research firm Calif published details Tuesday of a potentially major Java security flaw, dubbed Java4Shell, it described an unauthenticated attacker’s ability to read Java heap memory, steal private keys, tokens, and session secrets, and reach remote code execution (RCE). With Java being all-but-ubiquitous in today’s enterprise, coupled with the inability of CISOs to have visibility into every instance of it in their estate, this means that the bug could be a big problem for IT. Java, which has had its fair share of cybersecurity issues lately, is well-known for safely handl",
+   "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4250390-0-10098500-1795034372-shutterstock_1671261181.jpg?quality=50&strip=all",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "When cybersecurity research firm Calif published details Tuesday of a potentially major Java security flaw, dubbed Java4Shell, it described an unauthenticated attacker’s ability to read Java heap memory, steal private keys, tokens, and session secrets, and reach remote code execution (RCE). With Java being all-but-ubiquitous in today’s enterprise, coupled with the inability of CISOs to have visibility into every instance of it in their estate, this means that the bug could be a big problem for IT. Java, which has had its fair share of cybersecurity issues lately, is well-known for safely handling memory. That is why a Java bug affecting memory management is so dangerous. Java4Shell, tracked as CVE-2026-114938 , is a vulnerability in the OpenJDK x86-64 Base64 decoder that scores 9.2 in severity (Critical) under CVSS 4.0, Calif said. Oracle assigned it a lower rating of 8.1 (High) using CVSS 3.1. Calif explained in its post describing the issue that Base64 is a common way of representing binary data as text. “It is used in authentication protocols, to encode file uploads, and to deliver network messages,” it wrote. “To decode Base64 faster, OpenJDK uses specialized x86-64 CPU instructions to process many bytes at once. We discovered a bug in optimized machine-level code that lets malformed input overwrite neighboring memory. With careful exploitation, the corruption can reveal sensitive memory, as Heartbleed did, or lead to remote code execution.” It said that the corruption can be triggered by a string of just 64 “A” characters followed by a single equals sign (=); in older OpenJDK 17 versions, 128 “A” characters are required before the equals sign. “Memory corruption is the most common class of vulnerability on the internet,” Calif said. “But one of Java’s biggest selli"
+  },
   {
    "id": "f0ed0fdc40d96a21",
    "source": "CrowdStrike Blog",
@@ -329,9 +346,9 @@
     "Utilização da tecnologia Falcon Next-Gen SIEM.",
     "Aumento da automatização na segurança cibernética."
    ],
-   "title_original": "CrowdStrike Is Building the Engine of the Agentic SOC with Falcon Next-Gen SIEM",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Permite melhorar a velocidade e a eficácia na deteção e resposta a incidentes de segurança.",
    "todo": "Avalie a integração de soluções SIEM modernas para otimizar as operações de segurança da sua organização."
@@ -357,6 +374,23 @@
    "enriched": true,
    "why": "Evidencia ameaças contínuas de espionagem estrangeira contra o setor tecnológico e de defesa crítico.",
    "todo": "Reforce a vigilância sobre acessos não autorizados e proteja dados sensíveis de investigação e desenvolvimento."
+  },
+  {
+   "id": "db1d82795c0b0074",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/tech-disruptions-house-homeland-committee-testimony",
+   "published": "2026-11-18T20:00:00+00:00",
+   "title": "Trump administration officials size-up a bad stretch for tech",
+   "summary": "Homeland Security Secretary Markwayne Mullin said the administration will reach out to industry to get companies to share more information about big patches before they take effect.",
+   "image": "https://cms.therecord.media/uploads/markwayne_millin_worthwide_threats_11_18_2026_76960be5f3.png",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Homeland Security Secretary Markwayne Mullin said the administration will reach out to industry to get companies to share more information about big patches before they take effect."
   },
   {
    "id": "ab37adcdb2bf6806",
@@ -13737,52 +13771,6 @@
    "enriched": true,
    "why": "Importa porque ilustra como agentes maliciosos se infiltram em empresas através de processos de contratação remota para aceder a dados corporativos.",
    "todo": "Refforce a verificação de antecedentes em processos de contratação remota e restrinja as permissões de partilha de ficheiros internos."
-  },
-  {
-   "id": "9e0cc84d062dbe41",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
-   "published": "2026-11-13T05:43:28+00:00",
-   "title": "Hackers Exploram Falhas no N-central para Infetar 21 Servidores, Incluindo 19 com o Hotfix 2",
-   "summary": "Na sequência da revelação pública de vulnerabilidades designadas 4EverAble2Shell e Agent2Shell, a N-able anunciou medidas adicionais de precaução. A empresa decidiu restringir certas funcionalidades e integrações do N-central. Estas restrições visam proteger os sistemas enquanto decorre o processo de remediação definitiva.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA4jxlXpPBPhD5o3IHy80Fn7fSHUtcqH3iXQlU-jDUL5C3zJcf1_Zb-GAYxuW6P6q647p9JAT_opImlj-v-USDNhZ_z83mYC3ISKtN72pe_3XLwf5EyMRuK4OdXCFnYxGMhOAvN_i4UFqk5vJLriRnkbRRwILuT5JUpExx9Tm74sXSCQ0g7jjsOzWV1cqk/s1600/nable-hacks.jpg",
-   "points": [
-    "Quem: N-able e atacantes cibernéticos.",
-    "O quê: Exploração de falhas de segurança no N-central em 21 servidores.",
-    "Como: Divulgação pública de vulnerabilidades e aplicação restrita de correções.",
-    "Impacto: Restrição temporária de funcionalidades por parte do fornecedor."
-   ],
-   "title_original": "Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque demonstra que mesmo servidores com atualizações recentes podem estar em risco perante novas falhas do tipo zero-day.",
-   "todo": "Implemente as restrições e orientações de segurança recomendadas pelo fabricante para mitigar o risco nos servidores afetados."
-  },
-  {
-   "id": "121956c94603ba79",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/13/corelight-mcp-server-supply-chain/",
-   "published": "2026-11-13T05:30:22+00:00",
-   "title": "O seu Servidor MCP Fixado Pode Não Estar Tão Fixado Como Pensa",
-   "summary": "Um servidor MCP configurado para executar uma versão fixa numa estação de trabalho administrativa acabou por funcionar com múltiplos conjuntos de dependências diferentes ao longo de várias semanas, sem qualquer alteração manual na configuração. A descoberta revelou que dezenas de pacotes e bibliotecas críticas de criptografia e JSON Web Token alteraram as suas versões de forma autónoma. Esta oscilação afeta servidores utilizados por assistentes de programação baseados em IA.",
-   "image": null,
-   "points": [
-    "Quem: Investigadores de segurança.",
-    "O quê: Alteração não intencional de dependências num servidor MCP.",
-    "Como: Modificação automática de versões de pacotes e bibliotecas de software.",
-    "Impacto: Desvio de configuração em ambientes de desenvolvimento com IA."
-   ],
-   "title_original": "Your pinned MCP server may not be as pinned as you think",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque evidencia riscos ocultos na gestão de dependências de ferramentas de IA, o que pode introduzir vulnerabilidades inesperadas.",
-   "todo": "Audite regularmente as dependências e versões de pacotes utilizadas nos servidores de desenvolvimento e assistentes de IA."
   }
  ]
 }

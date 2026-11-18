@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T15:45:11.058865+00:00",
+ "updated": "2026-11-18T16:05:38.849659+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -64,7 +64,7 @@
   {
    "source": "CERT/CC (Carnegie Mellon)",
    "ok": true,
-   "added": 4
+   "added": 5
   },
   {
    "source": "MS-ISAC (CIS)",
@@ -89,12 +89,12 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -139,7 +139,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 5
+   "added": 1
   },
   {
    "source": "Malwarebytes Labs",
@@ -199,7 +199,7 @@
   {
    "source": "Rapid7",
    "ok": true,
-   "added": 6
+   "added": 7
   },
   {
    "source": "Tenable",
@@ -224,7 +224,7 @@
   {
    "source": "CERT-EU",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Infosecurity Magazine",
@@ -244,7 +244,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -294,7 +294,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 14
+   "added": 18
   },
   {
    "source": "ACSC Austrália",
@@ -305,8 +305,8 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 358,
-  "unenriched": 217,
+  "pending": 362,
+  "unenriched": 227,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -314,6 +314,40 @@
   ]
  },
  "items": [
+  {
+   "id": "bdb650441debacd9",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/18/partner-content-cyber-insurers-now-want-proof-you-can-actually-recover/5309325",
+   "published": "2026-11-18T16:00:00+00:00",
+   "title": "Cyber insurers now want proof you can actually recover",
+   "summary": "PARTNER CONTENT: As carriers tighten underwriting, a backup job marked green is no longer enough. Here’s the evidence underwriters expect.",
+   "image": "https://image.theregister.com/?imageId=5309330&width=800",
+   "points": [],
+   "title_original": null,
+   "category": "Ransomware",
+   "translated": false,
+   "enriched": false,
+   "raw": "Cyber insurance pricing has cooled. Marsh’s Global Insurance Market Index shows global cyber rates falling for a 13th consecutive quarter, with US rates recently stabilizing after the ransomware-driven spikes of 2020 and 2021. Part of the reason rates are lowering is because carriers are imposing stricter requirements that determine if you will qualify at all. A major global carrier recently stopped writing law firms altogether because of claims volume, and brokers expect healthcare and managed service providers (MSPs) to be next. The newest requirement is the one many MSPs are least ready for: proof that you can actually recover. This is what insurers really want to see, and meeting the bar is harder than it sounds. Why insurers stopped taking backups on faith In a recent webinar with cyber insurance provider Beltex, the familiar list of requirements came up first: Multifactor authentication (MFA) on external access and privileged accounts Endpoint detection and response (EDR) on every endpoint A staffed 24/7 team where managed detection and response (MDR) is required, and timely patching. Backup is now joining that list, and for good reason. For years it was assumed that having backups and a green job status was good enough. Claims have shown otherwise. Now, attackers go after backup infrastructure to make their ransomware more effective, and an untested restore can re-infect the production network. Beltex described an MSP that restored a client directly from backup without involving the insurer. The attackers were still in the environment, and the ransom reportedly doubled. So, carriers are asking for proof. Some want evidence of a successful restore within the last six months, and some insurance applications must be signed by a C-level executive rather than the IT d"
+  },
+  {
+   "id": "25d8d8d5e8c90e89",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/18/british-national-sentenced-to-6-years-in-federal-prison-for-hacking-into-companies-and-stealing-at-least-11-million-in-virtual-currency/",
+   "published": "2026-11-18T15:54:02+00:00",
+   "title": "British National Sentenced to 6 Years in Federal Prison for Hacking into Companies and Stealing at Least $11 Million in Virtual Currency",
+   "summary": "Note: The following is a press release from the U.S. Department of Justice. While some news sites are reporting the $11M figure, DataBreaches points out that that figure was only for U.S. victims’ virtual currency losses, not the total for all of his victims’ virtual currency losses. SANTA ANA, California – A United Kingdom man...",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "Note: The following is a press release from the U.S. Department of Justice. While some news sites are reporting the $11M figure, DataBreaches points out that that figure was only for U.S. victims’ virtual currency losses, not the total for all of his victims’ virtual currency losses. SANTA ANA, California – A United Kingdom man..."
+  },
   {
    "id": "d574991fd4638a96",
    "source": "Cyber Centre Canadá",
@@ -570,6 +604,23 @@
    "raw": "Two British hackers face lengthy prison sentences for hacks that broke into the Grand Theft Auto gamemaker and for stealing millions in crypto."
   },
   {
+   "id": "26ecd5240f46f024",
+   "source": "Cybersecurity Dive",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cybersecuritydive.com/news/java-vulnerability-oracle-ai-java4shell/875029/",
+   "published": "2026-11-18T14:54:31+00:00",
+   "title": "Critical Java vulnerability could help hackers compromise many popular applications",
+   "summary": "The flaw’s ripple effects could be widespread, although researchers cautioned that exploitation would not be easy.",
+   "image": "https://imgproxy.divecdn.com/wMszVIfQd4knHYyzdPW4l4vcZ4F0bzCneSvIf-C2iVA/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xODY3ODQ0NDYyLmpwZw==.webp",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "The flaw’s ripple effects could be widespread, although researchers cautioned that exploitation would not be easy."
+  },
+  {
    "id": "df0e63c7fcacf452",
    "source": "CSO Online",
    "region": "US",
@@ -602,6 +653,23 @@
    "translated": false,
    "enriched": false,
    "raw": "Tyler Robert Buchanan, 24, of Dundee, Scotland, was previously described as the suspected ringleader of the hacking collective, which Microsoft called “one of the most dangerous financial criminal groups” around."
+  },
+  {
+   "id": "4f7936fd956ec9a6",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203408/cyber-crime/scattered-spider-member-gets-six-years-for-phishing-and-sim-swapping-attacks.html",
+   "published": "2026-11-18T14:46:34+00:00",
+   "title": "Scattered Spider Member Gets Six Years for Phishing and SIM-Swapping Attacks",
+   "summary": "Scottish hacker gets six years for phishing attacks, SIM swapping and stealing $11.6 million in cryptocurrency from US victims. Tyler Robert Buchanan (24) of Dundee, Scotland, was sentenced to 72 months in federal prison. The Justice Department says he conspired to hack at least a dozen companies through text message phishing and stole over $11.6 […]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Phishing/Fraude",
+   "translated": false,
+   "enriched": false,
+   "raw": "Scottish hacker gets six years for phishing attacks, SIM swapping and stealing $11.6 million in cryptocurrency from US victims. Tyler Robert Buchanan (24) of Dundee, Scotland, was sentenced to 72 months in federal prison. The Justice Department says he conspired to hack at least a dozen companies through text message phishing and stole over $11.6 million in virtual currency from individuals across the US. He pleaded guilty in April to conspiracy to commit wire fraud and aggravated identity theft, and he’s the fifth and final defendant sentenced in this case. Employees who typed their credentials into those pages handed over account access, personal information and company data. The conspirators built a phishing kit that captured those logins and piped them straight to a Telegram channel Buchanan ran with another member. When police searched his home in Scotland in April 2023, they found files tied to numerous victim companies. Spanish police arrested the British national who was suspected of being a key member of the cybercrime group Scattered Spider (also known as UNC3944 , 0ktapus ). The man was arrested in Palma de Mallorca while attempting to fly to Italy. During the arrest, police confiscated a laptop and a mobile phone. The arrest resulted from a joint operation conducted by the U.S. Federal Bureau of Investigation (FBI) and the Spanish Police. Spanish police tracked the suspect to Mallorca after he entered Spain via Barcelona in late May 2024. Buchanan has been in U.S. custody since April 2025. Between 2021 and 2023, he and his group targeted companies and individuals across several sectors. They sent large SMS phishing campaigns that mimicked trusted services and tricked employees into sharing credentials and personal data. Using this access, they broke into cor"
   },
   {
    "id": "e359b576628c9898",
@@ -813,6 +881,23 @@
    "enriched": true,
    "why": "A priorização de alertas de segurança evita a fadiga das equipas e acelerta a remediação de ameaças críticas.",
    "todo": "Adote plataformas que centralizem e contextualizem alertas de segurança com base no risco real para o seu negócio."
+  },
+  {
+   "id": "7918b8a639b8200f",
+   "source": "Rapid7",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.rapid7.com/blog/post/ve-cve-2026-123007-critical-nginx-http-2-integer-underflow-leads-to-rce-fixed",
+   "published": "2026-11-18T13:56:42+00:00",
+   "title": "CVE-2026-123007: Critical NGINX HTTP/2 Integer Underflow Leads to RCE (FIXED)",
+   "summary": "Overview Today, both Rapid7 and F5 are disclosing CVE-2026-123007 , a critical integer underflow vulnerability affecting nginx HTTP/2, which can allow for unauthenticated remote code execution (RCE) against affected servers under certain conditions. CVE ID Description CWE CVSSv4 CVE-2026-123007 HTTP/2 flow-control memory corruption permitting worker-context RCE CWE-191 (Integer Underflow) 9.2 (Critical) nginx can miscalculate how much response data an HTTP/2 client has allowed it to send. A remote, unauthenticated client can exploit this error by cancelling queued response data, then make ngin",
+   "image": "https://images.contentstack.io/v3/assets/blte4f029e766e6b253/bltcbf09ec3af35e28e/6a15c63f08221ed5144dbf77/webinar-rapid7-logo.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Overview Today, both Rapid7 and F5 are disclosing CVE-2026-123007 , a critical integer underflow vulnerability affecting nginx HTTP/2, which can allow for unauthenticated remote code execution (RCE) against affected servers under certain conditions. CVE ID Description CWE CVSSv4 CVE-2026-123007 HTTP/2 flow-control memory corruption permitting worker-context RCE CWE-191 (Integer Underflow) 9.2 (Critical) nginx can miscalculate how much response data an HTTP/2 client has allowed it to send. A remote, unauthenticated client can exploit this error by cancelling queued response data, then make nginx use an invalid length when copying a later response. The resulting memory corruption can disclose data, interrupt service, and execute code with the nginx worker process's permissions. Impact Rapid7 has developed a proof-of-concept to demonstrate leveraging CVE-2026-123007 for unauthenticated RCE against a vulnerable linux/amd64 Docker image running nginx version 1.31.8 , as shown below in Figure 1. The target nginx server’s configuration had http2 on and TLS enabled. Note that for brevity, video playback is at 8x speed. Figure 1: Video demonstrating unauthenticated RCE against NGINX 1.31.8 via CVE-2026-123007 Leveraging CVE-2026-123007 for RCE requires a significant amount of network traffic to be transmitted, approximately 128 GB of HTTP/2 data. Both available network bandwidth and connection timeouts will place practical limitations on Internet exploitation. In the above example shown in Figure 1, exploitation takes two and a half minutes. The approximate timings to transmit the required network data over a 10 Gbit/s network is two minutes, while on a 1 Gbit/s network it is seventeen minutes. Due to nginx’s default one hour connection lifetime, a network slower than approximat"
   },
   {
    "id": "959698f1939d3a92",
@@ -13561,116 +13646,6 @@
    "enriched": true,
    "why": "Bloqueia fluxos de trabalho essenciais e operações de comunicação empresarial.",
    "todo": ""
-  },
-  {
-   "id": "5e7c3d53ea737937",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/",
-   "published": "2026-11-12T19:51:16+00:00",
-   "title": "New N-able \"4EverAble2Shell\" zero-day exploited hours after PoC released",
-   "summary": "Um novo zero-day em servidores N-able N-central, batizado de \"4EverAble2Shell\", foi ativamente explorado horas após a publicação de um PoC. Os atacantes comprometeram sistemas para instalar mineradores de criptomoedas. A investigação detetou pelo menos vinte e um sistemas afetados, incluindo dezenena e meia que já executavam a atualização de segurança mais recente da empresa.",
-   "image": null,
-   "points": [
-    "A vulnerabilidade zero-day \"4EverAble2Shell\" foi explorada logo após a divulgação de um PoC.",
-    "Os atacantes comprometeram servidores para instalar mineradores de criptomoedas.",
-    "Pelo menos 21 sistemas foram identificados como afetados por esta exploração."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Permite o acesso não autorizado a servidores e a utilização abusiva de recursos computacionais.",
-   "todo": "Aplicar imediatamente correções de segurança e patches para vulnerabilidades zero-day divulgadas."
-  },
-  {
-   "id": "bb48d6f8868d0053",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/united-airlines-to-block-customers-using-ai-agents",
-   "published": "2026-11-12T19:20:00+00:00",
-   "title": "United to block customers from using AI agents, citing cyber threats",
-   "summary": "A United Airlines decidiu bloquear a utilização de agentes de inteligência artificial por parte dos clientes. A empresa justificou a medida com base em riscos de cibersegurança e na partilha de credenciais de conta com assistentes terceiros. Segundo a companhia, estas ferramentas podem expor dados sensíveis e realizar compras não intencionais através das contas dos utilizadores.",
-   "image": "https://cms.therecord.media/uploads/united_airlineslukas_souza_unsplash_b9dd803335.jpg",
-   "points": [
-    "A United Airlines vai bloquear o uso de assistentes de IA de terceiros pelos clientes.",
-    "A decisão baseia-se em ameaças cibernéticas e riscos de segurança.",
-    "A partilha de credenciais com IA pode expor dados sensíveis e originar compras indesejadas."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "Protege os dados confidenciais dos clientes e evita o acesso não autorizado a contas.",
-   "todo": "Evitar partilhar credenciais de acesso ou dados pessoais com ferramentas de inteligência artificial de terceiros."
-  },
-  {
-   "id": "fac8887887ba8ddd",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/",
-   "published": "2026-11-12T19:12:55+00:00",
-   "title": "Apache HTTP Server patches critical HTTP/2 remote code execution flaw",
-   "summary": "Foi descoberta uma vulnerabilidade crítica no módulo HTTP/2 do Apache HTTP Server. A falha podia ser explorada por um atacante sem autenticação para obter execução remota de código. Para mitigar o risco, a Apache disponibilizou correções direcionadas a este problema crítico. O impacto desta falha podia permitir o controlo total dos servidores afetados.",
-   "image": null,
-   "points": [
-    "O Apache HTTP Server corrigiu uma falha crítica no módulo HTTP/2.",
-    "A vulnerabilidade permitia execução remota de código por atacantes não autenticados.",
-    "Foi disponibilizada uma atualização oficial para corrigir o problema."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Elimina o risco de controlo remoto de servidores web por agentes maliciosos.",
-   "todo": "Atualizar o Apache HTTP Server para a versão mais recente que inclui a correção da vulnerabilidade HTTP/2."
-  },
-  {
-   "id": "aa41f4c563286962",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/check-point-security-advisory-av26-1154",
-   "published": "2026-11-12T19:08:09+00:00",
-   "title": "Check Point security advisory (AV26-1154)",
-   "summary": "Vários produtos da Check Point foram afetados por vulnerabilidades de segurança, estando uma delas a ser explorada ativamente em ambiente real. As falhas abrangem firewalls, servidores de gestão e registo, e orquestradores da marca. Os problemas incluem falhas de validação de entrada no backend do Gaia Portal e de escalívio de privilégios locais no DynamicCLI. O Centro Cibernético aconselha a consulta dos links oficiais e a aplicação célere das atualizações.",
-   "image": null,
-   "points": [
-    "Produtos Check Point como firewalls e servidores de gestão foram afetados por falhas.",
-    "A vulnerabilidade CVE-2026-123039 está a ser explorada ativamente (\"in the wild\").",
-    "O aviso AV26-1154 abrange problemas de escalívio de privilégios locais e validação de entradas."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Mitiga falhas ativamente exploradas que concedem privilégios de root aos atacantes.",
-   "todo": "Rever os avisos de segurança da Check Point e instalar imediatamente as correções recomendadas."
-  },
-  {
-   "id": "4b0b066cf2183599",
-   "source": "Cisco Talos",
-   "region": "US",
-   "lang": "en",
-   "link": "https://blog.talosintelligence.com/never-be-afraid-to-ask-questions/",
-   "published": "2026-11-12T19:00:00+00:00",
-   "title": "Never be afraid to ask questions",
-   "summary": "Um artigo de reflexão recorda uma experiência académica de intercâmbio estudantil com aulas conjuntas à distância. Através de perguntas genuínas e troca de perspetivas culturais, os alunos ultrapassaram barreiras e tabus sociais. A experiência consolidou a importância de fazer perguntas de boa-fé para promover a compreensão mútua. A partilha de dúvidas e a curiosidade continuam a ser pilares fundamentais de aprendizagem e crescimento.",
-   "image": "https://storage.ghost.io/c/af/a0/afa04ee3-414f-4481-8d23-7e7c146f192e/content/images/2026/11/threat_source-1.jpg",
-   "points": [
-    "Uma aula internacional à distância uniu estudantes através de videoconferências.",
-    "As questões iniciais evoluíram de temas banais para debates sociais mais profundos.",
-    "O lema da turma tornou-se a importância de nunca ter medo de colocar perguntas."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Incentiva o pensamento crítico e a comunicação aberta através da curiosidade construtiva.",
-   "todo": "Promover um ambiente de abertura e questionamento transparente nas equipas e organizações."
   }
  ]
 }

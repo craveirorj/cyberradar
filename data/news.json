@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T13:45:41.717588+00:00",
+ "updated": "2026-11-18T14:01:45.611327+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -34,7 +34,7 @@
   {
    "source": "WeLiveSecurity (ESET) PT",
    "ok": true,
-   "added": 5
+   "added": 4
   },
   {
    "source": "Canaltech Segurança",
@@ -89,7 +89,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "The Record",
@@ -238,8 +238,8 @@
   },
   {
    "source": "Help Net Security",
-   "ok": false,
-   "error": "Exceeded 30 redirects."
+   "ok": true,
+   "added": 0
   },
   {
    "source": "Security Affairs",
@@ -304,9 +304,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 343,
-  "unenriched": 205,
+  "done": 24,
+  "pending": 322,
+  "unenriched": 183,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -314,6 +314,23 @@
   ]
  },
  "items": [
+  {
+   "id": "959698f1939d3a92",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/russia-hockey-cyberattack-championships",
+   "published": "2026-11-18T13:45:00+00:00",
+   "title": "Ice hockey governing body website defaced by hackers amid dispute over Russia's exclusion",
+   "summary": "The International Ice Hockey Federation (IIHF) confirmed a cyberattack on its website after hackers replaced its homepage with a pro-Russian message criticizing the country's exclusion from international competitions.",
+   "image": "https://cms.therecord.media/uploads/Hockey_stick_669de98496.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": false,
+   "raw": "The International Ice Hockey Federation (IIHF) confirmed a cyberattack on its website after hackers replaced its homepage with a pro-Russian message criticizing the country's exclusion from international competitions."
+  },
   {
    "id": "dfcd48a830ee2555",
    "source": "SecurityWeek",
@@ -330,6 +347,23 @@
    "translated": false,
    "enriched": false,
    "raw": "Star Blizzard weaponized data and identities stolen in late 2025 to phish and compromise a US organization."
+  },
+  {
+   "id": "593f3f6a4cfabc0a",
+   "source": "Malwarebytes Labs",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.malwarebytes.com/blog/inside-malwarebytes/2026/11/who-protects-the-antivirus-how-we-secure-malwarebytes-itself",
+   "published": "2026-11-18T13:32:54+00:00",
+   "title": "Who protects the antivirus? How we secure Malwarebytes itself",
+   "summary": "Imagine a piece of malware that can disable your antivirus and leave you unprotected. That's exactly what we as engineers work to prevent.",
+   "image": "https://www.malwarebytes.com/wp-content/uploads/sites/2/2026/11/illustration_1_trust_boundary.png?w=1024",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "An antivirus is also software, and it can have weaknesses of its own. That makes antivirus development particularly demanding. The product must safely handle files that may be hostile, run reliably across very different Windows environments, and resist attackers who try to abuse its privileges or shut it down completely. Imagine a piece of malware that can disable your antivirus and leave you unprotected. That’s exactly what we as engineers work to prevent. The attack surface of a privileged process You might wonder why vulnerabilities matter for a desktop application that runs locally. Our software runs with high privileges, so it has access to the entire system. That access is what lets it protect the system from exploits, data theft, and ransomware. It also makes our software an attractive target. An attacker who can disable our protection, or abuse it to gain those privileges, has a much easier path to taking over the system. Two layers, one critical boundary At a basic level, Malwarebytes has two layers: a user interface running as the signed-in user, and a background service running as SYSTEM. They communicate through COM (Component Object Model), a built-in Windows mechanism that lets one program call functions in another program, even one running in a separate process. The UI can’t do much on its own. When you add an exclusion, restore a file from quarantine, or pause real-time protection, the UI only asks, and the SYSTEM service does the work. Those are exactly the operations malware would like to perform: excluding its own folder from scanning or turning protection off. And malware doesn’t need our UI to act. Any process running as the same user can write its own COM client and call the same methods. So on every call, the service must answer two questions: who"
   },
   {
    "id": "f46e27c9ea7a3d03",
@@ -13717,50 +13751,6 @@
    "enriched": true,
    "why": "Privilégios SYSTEM dão controlo total sobre o sistema operativo afetado.",
    "todo": "Aplique as correções de segurança assim que a Microsoft disponibilize atualizações."
-  },
-  {
-   "id": "3d701704b07c7f9d",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/fortinet-sql-server-cryptominer/",
-   "published": "2026-11-12T16:00:00+00:00",
-   "title": "Passwords fracas expõem servidores SQL a mineradores de criptomoedas e Gh0st RAT",
-   "summary": "A Fortinet detetou que servidores SQL com palavras-passe fracas estão a ser explorados. Os atacantes utilizam esta fragilidade para infetar os sistemas com mineradores e o trojan Gh0st RAT. Esta situação compromete a segurança e os recursos das máquinas afetadas. A falha decorre diretamente de práticas deficientes de autenticação.",
-   "image": null,
-   "points": [
-    "O quê: Uso de passwords fracas em servidores SQL detetado pela Fortinet.",
-    "Impacto: Instalação de um minerador de criptomoedas e do Gh0st RAT.",
-    "Como: Atacantes tiram partido de credenciais débeis para infetar os sistemas."
-   ],
-   "title_original": "Weak Passwords Expose SQL Servers to Cryptominer and Gh0st RAT",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Passwords fracas continuam a ser uma porta de entrada fácil para malware perigoso.",
-   "todo": "Utilize palavras-passe fortes e complexas em todos os servidores e bases de dados."
-  },
-  {
-   "id": "e96645367845bb49",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/craft-cms-security-advisory-av26-1086",
-   "published": "2026-11-12T15:54:21+00:00",
-   "title": "Aviso de segurança do Craft CMS (AV26-1086) - Atualização 1",
-   "summary": "O Craft CMS foi afetado por vulnerabilidades em várias versões anteriores a 4.18.9 e 5.11.2, incluindo o componente Commerce-mollie. Relatórios de fontes abertas indicam que a falha CVE-2026-123488 está a ser ativamente explorada. O Centro Cibernético recomenda a aplicação urgente das atualizações disponíveis. Os administradores devem rever os links fornecidos para mitigar os riscos.",
-   "image": null,
-   "points": [
-    "O quê: Vulnerabilidades detetadas no Craft CMS e Commerce-mollie.",
-    "Impacto: A falha CVE-2026-123488 está a ser explorada ativamente.",
-    "Ação: O Centro Cibernético aconselha a aplicação imediata de atualizações."
-   ],
-   "title_original": "Craft CMS security advisory (AV26-1086) - Update 1",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "A exploração ativa destas falhas coloca os sites e dados em risco iminente.",
-   "todo": "Atualize o Craft CMS e o Commerce-mollie para as versões corrigidas."
   }
  ]
 }

@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-18T23:07:08.077704+00:00",
+ "updated": "2026-11-18T23:26:37.023642+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "Pplware Segurança",
@@ -49,7 +49,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CISA Advisories",
@@ -74,7 +74,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -239,7 +239,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -263,8 +263,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -305,13 +305,57 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 191,
-  "unenriched": 76,
+  "pending": 192,
+  "unenriched": 77,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "b326b8531a9216c7",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
+   "published": "2026-11-18T23:08:33+00:00",
+   "title": "Ucrânia e FBI detêm membros de gangue de ransomware ligado a 40 milhões de dólares em resgates",
+   "summary": "As autoridades da Ucrânia, em colaboração com o FBI, efetuaram a detenção de quatro presumíveis membros de uma organização internacional de ransomware. O grupo está associado ao pagamento de mais de 40,5 milhões de dólares em resgates, afetando pelo menos 28 empresas em todo o mundo. Esta operação conjunta permitiu desmantelar parte da rede criminosa responsável por estes ataques financeiros avultados.",
+   "image": null,
+   "points": [
+    "Quem: Autoridades ucranianas e o FBI.",
+    "O quê: Detenção de quatro suspeitos de ransomware.",
+    "Impacto: Mais de 40,5 milhões de dólares extorquidos a 28 empresas."
+   ],
+   "title_original": "Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms",
+   "category": "Ransomware",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra a eficácia da cooperação policial internacional contra redes de cibercrime organizadas.",
+   "todo": "Mantenha cópias de segurança atualizadas e desconectadas da rede para mitigar o impacto de ataques de ransomware."
+  },
+  {
+   "id": "36b11d0f96a4f2bd",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/19/microsoft-azure-linux-4/",
+   "published": "2026-11-18T23:01:14+00:00",
+   "title": "Azure Linux 4 disponibiliza o SO dos serviços cloud da Microsoft para máquinas virtuais sem custos de licença",
+   "summary": "A Microsoft disponibilizou publicamente o Azure Linux 4 para uso geral como sistema operativo de servidores em máquinas virtuais e conjuntos de dimensionamento de clientes. A distribuição é oferecida sem taxas de licenciamento adicionais, cobrando apenas a computação subjacente do Azure. Este mesmo sistema já alimenta milhões de núcleos em serviços da Microsoft como o Azure Kubernetes Service e o Azure Cosmos DB.",
+   "image": null,
+   "points": [
+    "Quem: A Microsoft.",
+    "O quê: Lançamento geral do Azure Linux 4 para máquinas virtuais.",
+    "Impacto: Disponibilizado sem custos adicionais de licença de sistema operativo."
+   ],
+   "title_original": "Azure Linux 4 puts the OS behind Microsoft’s cloud services on your VMs at no extra license fee",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Facilita a consistência operacional ao usar a mesma distribuição Linux em infraestruturas locais e na cloud.",
+   "todo": "Avalie a adoção de distribuições Linux otimizadas para ambientes cloud para uniformizar a gestão de servidores."
+  },
   {
    "id": "9e33069bc7a4c129",
    "source": "Tecmundo",
@@ -13738,50 +13782,6 @@
    "enriched": true,
    "why": "Os cibercriminosos aproveitam o caos de falhas globais para lançar ataques oportunistas.",
    "todo": "Aumente a vigilância e reveja os registos de atividade após interrupções de serviços críticos na cloud."
-  },
-  {
-   "id": "c1c74e2579b4b1d2",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/13/brit-police-watchdog-says-cops-use-of-facial-recog-risks-wrongful-arrests/5309379",
-   "published": "2026-11-13T10:15:00+00:00",
-   "title": "Órgão de fiscalização policial do Reino Unido diz que uso de reconhecimento facial pela polícia arrisca prisões injustas",
-   "summary": "Um relatório da inspeção de justiça criminal revelou falhas graves e falta de compreensão entre as forças policiais e a National Crime Agency sobre o uso de pesquisas de reconhecimento facial retrospetivo. A ausência de legislação unificada e a dependência excessiva de resultados automatizados levaram a ações investigativas desadequadas e ao risco de prisões injustas. O organismo apelou à criação de normas estatais e a uma maior validação humana antes de tomar medidas de execução.",
-   "image": "https://image.theregister.com/?imageId=5247722&width=800",
-   "points": [
-    "Inspetores criticam falhas no uso policial do reconhecimento facial retrospetivo.",
-    "Falta de leis uniformes e compreensão geram investigações desadequadas.",
-    "Investigadores confundem frequentemente resultados de IA com provas definitivas."
-   ],
-   "title_original": "Brit police watchdog says cops' use of facial recog risks wrongful arrests",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "A confiança cega em ferramentas automatizadas sem validação humana pode violar direitos fundamentais.",
-   "todo": "Garanta sempre a validação humana rigorosa e investigações corroborativas antes de tomar decisões críticas baseadas em tecnologia."
-  },
-  {
-   "id": "e9579899f60ddf7f",
-   "source": "WeLiveSecurity (ESET)",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.welivesecurity.com/en/cybersecurity/gta-vi-isnt-out-yet-scams-full-swing/",
-   "published": "2026-11-13T10:00:00+00:00",
-   "title": "GTA VI ainda não foi lançado, mas as burlas já estão a todo o vapor",
-   "summary": "Os ciber criminosos estão a aproveitar a expetativa em torno do jogo para enganar os fãs através de downloads com malware e falsos acessos antecipados. Estas armadilhas visam capitalizar a popularidade do título para infetar os utilizadores desprevenidos. O impacto traduz-se na propagação de software malicioso disfarçado de conteúdo legítimo.",
-   "image": null,
-   "points": [
-    "Ciber criminosos exploram a popularidade do GTA VI com falsas promessas.",
-    "As burlas incluem downloads infetados com malware e o falso acesso antecipado.",
-    "O objetivo é enganar fãs ansiosos pelo lançamento do jogo."
-   ],
-   "title_original": "GTA VI isn’t out yet – and the scams are already in full swing",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque os cibercriminosos utilizam grandes eventos de entretenimento para espalhar malware e roubar dados.",
-   "todo": "Desconfie de ofertas de acesso antecipado e descarregue conteúdos apenas de fontes oficiais."
   }
  ]
 }

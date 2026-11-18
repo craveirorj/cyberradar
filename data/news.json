@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T22:25:51.395242+00:00",
+ "updated": "2026-11-18T22:47:12.236811+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -49,7 +49,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -84,7 +84,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 24
+   "added": 23
   },
   {
    "source": "SecurityWeek",
@@ -114,12 +114,12 @@
   {
    "source": "TechCrunch Security",
    "ok": true,
-   "added": 7
+   "added": 6
   },
   {
    "source": "Ars Technica Security",
    "ok": true,
-   "added": 8
+   "added": 7
   },
   {
    "source": "WIRED Security",
@@ -159,7 +159,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "Cisco Talos",
@@ -279,7 +279,7 @@
   {
    "source": "Securelist (Kaspersky)",
    "ok": true,
-   "added": 5
+   "added": 6
   },
   {
    "source": "Risky Bulletin",
@@ -304,16 +304,124 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 60,
-  "pending": 251,
-  "unenriched": 140,
+  "done": 120,
+  "pending": 196,
+  "unenriched": 82,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting ':' delimiter: line 92 column 3 (char 8298)",
-   "Expecting value: line 5 column 9 (char 110)"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "80197199f808637c",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/patches/2026/11/18/get-ready-for-another-critical-php-security-release-to-drop/5310911",
+   "published": "2026-11-18T22:38:12+00:00",
+   "title": "Prepare-se para outro lançamento crítico de segurança do PHP",
+   "summary": "A Fundação PHP vai lançar uma atualização de segurança crítica para resolver vulnerabilidades de alta gravidade. Entre as falhas está um problema de execução remota de código (RCE), identificado como CVE-2026-115560, que exige configurações específicas para ser explorado. A organização aconselha os utilizadores a prepararem-se para atualizar rapidamente os sistemas assim que os pacotes estiverem disponíveis. Como medida preventiva temporária, é recomendado definir a opção session.upload_progress.enabled para zero.",
+   "image": "https://image.theregister.com/?imageId=5310922&width=800",
+   "points": [
+    "A Fundação PHP lançará uma atualização de segurança crítica na quinta-feira.",
+    "A vulnerabilidade RCE CVE-2026-115560 exige configurações específicas para ser explorada na prática.",
+    "Os utilizadores devem preparar-se para aplicar as correções assim que forem disponibilizadas."
+   ],
+   "title_original": "Get ready for another critical PHP security release to drop",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite mitigar falhas críticas de execução remota de código antes que sejam exploradas por atacantes.",
+   "todo": "Atualize o PHP prontamente assim que a nova versão for lançada e configure session.upload_progress.enabled=0 como precaução."
+  },
+  {
+   "id": "75f233fd5082c1c3",
+   "source": "AWS Security Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://aws.amazon.com/blogs/security/detecting-cross-cloud-lateral-movement-with-aws-security-hub/",
+   "published": "2026-11-18T22:28:45+00:00",
+   "title": "Detetar movimentos laterais entre nuvens com o AWS Security Hub",
+   "summary": "Muitas organizações utilizam ambientes multicloud, o que é aproveitado por atacantes para transitar entre diferentes fornecedores através de identidades federadas. Para combater esta falta de visibilidade centralizada, o AWS Security Hub expandiu as suas capacidades de análise para incluir recursos do Microsoft Azure. O motor de correlação da plataforma unifica agora os dados de ambas as nuvens numa única consola para priorizar riscos e trajetórias de ataque. Desta forma, as equipas de segurança conseguem detetar e triar exposições críticas decorrentes de identidades comprometidas em vários serviços.",
+   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/18/3803.1.png",
+   "points": [
+    "Atacantes exploram identidades federadas para se movimentarem entre diferentes fornecedores de nuvem.",
+    "O AWS Security Hub passou a integrar a análise e monitorização de recursos do Microsoft Azure.",
+    "A plataforma centraliza dados de várias nuvens numa única consola para facilitar a triagem de riscos."
+   ],
+   "title_original": "Detecting cross-cloud lateral movement with AWS Security Hub",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Melhora a visibilidade em ambientes multicloud e ajuda a priorizar ameaças complexas numa única plataforma.",
+   "todo": "Configure a integração do Azure no AWS Security Hub e reveja regularmente as descobertas de exposição e caminhos de ataque."
+  },
+  {
+   "id": "3a88244cac9f9c52",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/big-techs/hoje-no-tecmundo-18-gpt-62-chegou-whatsapp-ganha-backup-proprio-e-mais/",
+   "published": "2026-11-18T22:16:00+00:00",
+   "title": "Hoje no TecMundo (18): GPT-6.2 chegou, WhatsApp ganha backup próprio e mais",
+   "summary": "O programa diário do TecMundo destacou várias novidades tecnológicas, incluindo o lançamento dos modelos GPT-6.2 Astra e Sol pela OpenAI e testes do WhatsApp com um serviço de backup em nuvem próprio com 2 GB gratuitos. A Microsoft reformulou o Copilot integrando ferramentas do Excel e do PowerPoint, enquanto um ataque cibernético utilizou sites de 178 empresas para distribuir códigos maliciosos. Além disso, um malware no Android começou a usar o Grok para roubar dados bancários dos utilizadores e a Samsung disponibilizou o beta público da One UI 9.5.",
+   "image": "https://www.estadao.com.br/resizer/v2/RUX4WVOGH5MY3LBFXEIF5G6NNI.jpg?quality=80&auth=a94e25f5a7a0dade2698330457f36b45836a037811ef5827fc524a8820d583bc&width=710",
+   "points": [
+    "A OpenAI revelou os novos modelos de inteligência artificial GPT-6.2 Astra e Sol.",
+    "O WhatsApp iniciou testes para um serviço de armazenamento próprio com 2 GB gratuitos.",
+    "Campanhas maliciosas utilizaram sites empresariais para distribuir códigos e um malware explorou o Grok para roubo bancário no Android."
+   ],
+   "title_original": null,
+   "category": "Malware",
+   "translated": false,
+   "enriched": true,
+   "why": "Mantém as empresas e o público informados sobre as principais ameaças de segurança e novidades tecnológicas do dia.",
+   "todo": "Mantenha as aplicações atualizadas e desconfie de links ou downloads inesperados em dispositivos móveis e computadores."
+  },
+  {
+   "id": "e0a5424d80069ea5",
+   "source": "Malwarebytes Labs",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.malwarebytes.com/blog/ai/2026/11/outage-or-attack-dont-let-social-media-fill-in-the-gaps",
+   "published": "2026-11-18T22:07:01+00:00",
+   "title": "Interrupção ou ataque? Não deixe que as redes sociais preencham as lacunas",
+   "summary": "Falhas técnicas recentes em serviços tecnológicos e aplicações bancárias geraram ondas de especulação e teorias da conspiração nas redes sociais. Situações causadas por erros de software, falhas de configuração ou problemas de hardware são frequentemente confundidas com ataques cibernéticos maliciosos. A falta de informação imediata durante uma interrupção cria um vazio que alimenta relatórios exagerados e pânico desnecessário. As autoridades e especialistas sublinham que nem todas as falhas operacionais resultam de incidentes de segurança.",
+   "image": null,
+   "points": [
+    "Falhas tecnológicas geram especulação rápida e alarmismo infundado nas redes sociais.",
+    "Problemas como erros de software e falhas de configuração são muitas vezes confundidos com ciberataques.",
+    "A incerteza inicial durante as interrupções de serviço cria um vazio de informação preenchido por boatos."
+   ],
+   "title_original": "Outage or attack? Don’t let social media fill in the gaps",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Evita o pânico generalizado e a desinformação quando ocorrem falhas técnicas inesperadas.",
+   "todo": "Consulte sempre fontes oficiais e aguarde comunicados verificados antes de partilhar informações sobre falhas tecnológicas."
+  },
+  {
+   "id": "bc8d73220a88e26e",
+   "source": "Malwarebytes Labs",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.malwarebytes.com/blog/scams/2026/11/gta-6-scams-could-cost-you-your-account-money-or-crypto",
+   "published": "2026-11-18T22:06:05+00:00",
+   "title": "Esquemas associados ao GTA 6 podem custar-lhe a conta, dinheiro ou criptomoedas",
+   "summary": "A forte expetativa em redor do lançamento do GTA 6 está a ser explorada por burlões para atrair jogadores através de promoções falsas, códigos de pré-encomenda e aplicações fraudulentas. Estas campanhas utilizam páginas de início de sessão falsas que imitam serviços legítimos para roubar credenciais de contas e dados pessoais. Outras ameaças incluem pedidos para ligar carteiras de criptomoedas, distribuição de malware para Android e venda de produtos falsificados. O impacto para as vítimas varia desde a perda de acesso a contas até prejuízos financeiros diretos.",
+   "image": "https://www.malwarebytes.com/wp-content/uploads/sites/2/2026/11/1_gta_google_phishing_1ee9e1.png?w=1024",
+   "points": [
+    "Cibercriminosos aproveitam o entusiasmo em redor do GTA 6 para lançar campanhas de burlas.",
+    "São utilizadas páginas de login falsas e ofertas fraudulentas para roubar credenciais e criptomoedas.",
+    "Alguns esquemas distribuem malware disfarçado de aplicações para dispositivos Android."
+   ],
+   "title_original": "GTA 6 scams could cost you your account, money, or crypto",
+   "category": "Phishing/Fraude",
+   "translated": true,
+   "enriched": true,
+   "why": "Protege os utilizadores contra fraudes financeiras e roubo de contas motivados pelo lançamento de jogos populares.",
+   "todo": "Ignore ofertas de acesso antecipado ou downloads não oficiais e nunca ligue a sua carteira de criptomoedas a sites desconhecidos."
+  },
   {
    "id": "df751380d9ea4643",
    "source": "TechCrunch Security",
@@ -321,15 +429,20 @@
    "lang": "en",
    "link": "https://techcrunch.com/2026/11/18/palmer-luckey-doesnt-deny-that-hes-a-prepper/",
    "published": "2026-11-18T22:04:03+00:00",
-   "title": "Palmer Luckey doesn’t deny that he’s a prepper",
-   "summary": "The Anduril founder said Wednesday that Americans should always have three days of food, water and medicine — just in case.",
+   "title": "Palmer Luckey não nega que é um 'prepper'",
+   "summary": "O fundador da Anduril declarou publicamente que os cidadãos devem manter sempre suprimentos essenciais para três dias, incluindo comida, água e medicamentos, de modo a estarem preparados para eventuais imprevistos ou emergências. A recomendação reflete uma postura de precaução perante possíveis interrupções de serviços ou crises imprevistas. Este tipo de planeamento visa garantir a autossuficiência temporária da população em cenários adversos.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O fundador da Anduril aconselhou a população a manter reservas básicas de emergência.",
+    "Os suprimentos essenciais recomendados incluem comida, água e medicamentos para três dias.",
+    "A medida visa garantir a preparação perante potenciais interrupções inesperadas."
+   ],
+   "title_original": "Palmer Luckey doesn’t deny that he’s a prepper",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "The Anduril founder said Wednesday that Americans should always have three days of food, water and medicine — just in case."
+   "translated": true,
+   "enriched": true,
+   "why": "Incentiva a preparação básica para mitigar o impacto de interrupções de curto prazo na cadeia de abastecimento.",
+   "todo": "Mantenha um kit básico de emergência com água potável, alimentos não perecíveis e medicamentos essenciais em sua casa ou empresa."
   },
   {
    "id": "84415312a0a78762",
@@ -338,15 +451,20 @@
    "lang": "en",
    "link": "https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another",
    "published": "2026-11-18T21:59:46+00:00",
-   "title": "Cold Relic Turns One Cloud Breach Into Another",
-   "summary": "The Russia-linked threat group is using data stolen from one victim to target others via convincing impersonations and social engineering attacks.",
+   "title": "Cold Relic transforma uma violação na nuvem noutra",
+   "summary": "O grupo de cibercriminalidade associado à Rússia, conhecido como Cold Relic, está a utilizar dados roubados de uma vítima anterior para atacar novos alvos. Os atacantes recorrem a táticas convincentes de impersonação e engenharia social para enganar as organizações afetadas. Esta abordagem permite prolongar campanhas maliciosas reutilizando informações obtidas em intrusões prévias na nuvem. O impacto afeta múltiplas entidades através de uma cadeia de ataques interligados.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt0cf0a0b934852050/6afe1492ac3412795c5370fe/russia_Skorzewiak_shutterstoc.jpg?width=720&quality=80&disable=upscale",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O grupo Cold Relic utiliza dados roubados para comprometer novos alvos na nuvem.",
+    "Os atacantes recorrem a campanhas de impersonação e engenharia social muito convincentes.",
+    "A reutilização de informações de vítimas anteriores facilita novas intrusões bem-sucedidas."
+   ],
+   "title_original": "Cold Relic Turns One Cloud Breach Into Another",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "The Russia-linked threat group is using data stolen from one victim to target others via convincing impersonations and social engineering attacks."
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra como dados comprometidos numa organização podem servir de trampolim para atacar outras.",
+   "todo": "Implemente autenticação multifator rigorosa e monitorize acessos anómalos para detetar tentativas de impersonação."
   },
   {
    "id": "48feb3ab27c887a6",
@@ -13663,116 +13781,6 @@
    "enriched": true,
    "why": "O roubo de contas de programadores compromete diretamente a segurança do código-fonte e da cadeia de fornecimento.",
    "todo": "Ative a autenticação multifator (MFA) em todas as contas de desenvolvimento e monitorize acessos suspeitos a repositórios."
-  },
-  {
-   "id": "d20b2da13e92f664",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities/",
-   "published": "2026-11-13T09:36:56+00:00",
-   "title": "Citrix corrige 10 vulnerabilidades críticas no NetScaler",
-   "summary": "A Citrix lançou atualizações para corrigir dez vulnerabilidades consideradas críticas que afetam o NetScaler. A exploração bem-sucedida destas falhas por parte de atacantes pode resultar em comportamento inesperado dos sistemas ou em condições de negação de serviço (DoS). As organizações afetadas devem aplicar os patches de segurança disponibilizados com urgência.",
-   "image": null,
-   "points": [
-    "Foram detetadas 10 vulnerabilidades críticas no NetScaler da Citrix.",
-    "A exploração pode causar negação de serviço ou comportamento anómalo.",
-    "A correção destas falhas requer a aplicação imediata de patches."
-   ],
-   "title_original": "Citrix Patches 10 Critical NetScaler Vulnerabilities",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Falhas em equipamentos de rede expõem a infraestrutura empresarial a interrupções e intrusões.",
-   "todo": "Atualize imediatamente os dispositivos NetScaler afetados com os patches oficiais fornecidos pela Citrix."
-  },
-  {
-   "id": "8762a201a24f4db2",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/",
-   "published": "2026-11-13T09:36:18+00:00",
-   "title": "Microsoft confirma falhas de ativação do Windows após atualizações de novembro",
-   "summary": "A Microsoft confirmou oficialmente que as atualizações de segurança lançadas na terça-feira de patches deste mês estão a provocar falhas de ativação e licenciamento no sistema operativo Windows. Os problemas afetam os utilizadores através da exibição do código de erro 0x80041008. A empresa está a analisar a situação decorrente da aplicação destes pacotes de correção.",
-   "image": null,
-   "points": [
-    "Atualizações de segurança mensais causam falhas de ativação no Windows.",
-    "O problema manifesta-se através do código de erro 0x80041008.",
-    "A Microsoft já confirmou publicamente a origem da falha."
-   ],
-   "title_original": "Microsoft confirms Windows activation failures after November updates",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Erros em atualizações oficiais podem bloquear sistemas operativos e perturbar a atividade empresarial.",
-   "todo": "Consulte os canais oficiais da Microsoft para verificar soluções temporárias ou novos patches antes de instalar atualizações problemáticas."
-  },
-  {
-   "id": "404b30e4ac881c5d",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/13/openai-daybreak-vulnerability-remediation-red-team-defense-factory-agents/",
-   "published": "2026-11-13T09:31:07+00:00",
-   "title": "Daybreak da OpenAI traz agentes de IA para testes de segurança e correção de vulnerabilidades",
-   "summary": "A OpenAI introduziu a ferramenta Daybreak para integrar inteligência artificial no processo de segurança de software, combinando testes de intrusão em aplicações web com a investigação e correção de vulnerabilidades. Através de componentes como o Red Team e a Defense Factory, a tecnologia conecta a identificação de falhas à aplicação de patches e respetivos testes. Esta abordagem visa agilizar a resposta a debilidades detetadas no código.",
-   "image": null,
-   "points": [
-    "OpenAI lança o Daybreak para testes de segurança com IA.",
-    "A ferramenta une testes de intrusão com a criação de correções.",
-    "Componentes examinam código-fonte e automatizam o ciclo de remediação."
-   ],
-   "title_original": "OpenAI’s Daybreak brings AI agents to security testing and vulnerability fixes",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "A automação de testes de intrusão e correções acelera a proteção de aplicações web.",
-   "todo": "Avalie a integração de ferramentas automatizadas de testes no ciclo de desenvolvimento de software para detetar falhas precocemente."
-  },
-  {
-   "id": "e4b47e3b9b3e94f4",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/",
-   "published": "2026-11-13T09:21:01+00:00",
-   "title": "OpenAI revela ferramentas de segurança Daybreak Red Team e Defense Factory",
-   "summary": "A OpenAI apresentou duas novas soluções de segurança denominadas Daybreak Red Team e Defense Factory. Enquanto a primeira se foca na realização de testes de penetração em aplicações web utilizando agentes de inteligência artificial, a segunda investiga os problemas descobertos e prepara os respetivos patches. Estas ferramentas conjugam a análise ofensiva com a remediação defensiva de vulnerabilidades.",
-   "image": null,
-   "points": [
-    "Daybreak Red Team executa testes de penetração com agentes de IA.",
-    "Defense Factory investiga vulnerabilidades e prepara correções.",
-    "As soluções ligam a descoberta de falhas à respetiva remediação."
-   ],
-   "title_original": "OpenAI Unveils Daybreak Red Team, Defense Factory Security Tools",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Combinar testes automatizados e criação de patches melhora a resiliência das aplicações.",
-   "todo": "Utilize ferramentas de teste e remediação automatizadas para complementar a auditoria humana de segurança."
-  },
-  {
-   "id": "89dc6600ed613266",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/ai-revolutionize-ransomware/",
-   "published": "2026-11-13T09:15:00+00:00",
-   "title": "IA prepara-se para revolucionar o ransomware após alguns anos de estagnação",
-   "summary": "De acordo com especialistas da TrendAI, as técnicas de ransomware deverão sofrer alterações significativas no próximo ano devido ao impacto da inteligência artificial. A tecnologia tem o potencial de tornar os ataques cibernéticos consideravelmente mais perigosos e lucrativos. Esta evolução surge após um período marcado pela estagnação nas táticas tradicionais de extorsão.",
-   "image": null,
-   "points": [
-    "Especialistas anteveem mudanças drásticas no ransomware impulsionado por IA.",
-    "A inteligência artificial tornará os ciberataques mais perigosos e lucrativos.",
-    "A evolução surge após um período de estagnação nas táticas de extorsão."
-   ],
-   "title_original": "AI Set to Revolutionize Ransomware Following “Stagnant” Few Years",
-   "category": "Ransomware",
-   "translated": true,
-   "enriched": true,
-   "why": "O uso de IA por cibercriminosos aumenta a escala e a eficácia das campanhas de ransomware.",
-   "todo": "Reforce as defesas contra ransomware com cópias de segurança imutáveis e monitorizadora comportamental avançada."
   }
  ]
 }

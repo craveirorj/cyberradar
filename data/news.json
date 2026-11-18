@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T21:25:53.140339+00:00",
+ "updated": "2026-11-18T21:46:58.984362+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -139,12 +139,12 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 4
+   "added": 5
   },
   {
    "source": "Microsoft Security Blog",
@@ -234,7 +234,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 13
+   "added": 12
   },
   {
    "source": "Help Net Security",
@@ -269,7 +269,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Check Point Research",
@@ -278,8 +278,8 @@
   },
   {
    "source": "Securelist (Kaspersky)",
-   "ok": false,
-   "error": "HTTPSConnectionPool(host='securelist.com', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection("
+   "ok": true,
+   "added": 5
   },
   {
    "source": "Risky Bulletin",
@@ -294,7 +294,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 20
+   "added": 18
   },
   {
    "source": "ACSC Austrália",
@@ -304,16 +304,39 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 24,
-  "pending": 284,
-  "unenriched": 172,
+  "done": 48,
+  "pending": 266,
+  "unenriched": 155,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting ':' delimiter: line 77 column 3 (char 6371)",
-   "Expecting property name enclosed in double quotes: line 45 column 5 (char 4306)"
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "48feb3ab27c887a6",
+   "source": "TechCrunch Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://techcrunch.com/2026/11/18/palmer-luckey-warns-ai-powered-cyberattacks-are-outpacing-defenses-its-time-to-start-running/",
+   "published": "2026-11-18T21:34:13+00:00",
+   "title": "Palmer Luckey alerta que os ciberataques alimentados por IA estão a ultrapassar as defesas",
+   "summary": "O cofundador da Anduril alertou que a tecnologia desatualizada está a expor os sistemas a uma nova vaga de ameaças impulsionadas por inteligência artificial. Segundo o responsável, a velocidade destes ataques já supera as defesas atuais. A situação deixa infraestruturas críticas e empresas em risco acrescido de comprometerem a sua segurança.",
+   "image": null,
+   "points": [
+    "Quem: Palmer Luckey, cofundador da Anduril.",
+    "O quê: Alerta sobre ciberataques impulsionados por IA a ultrapassarem as defesas.",
+    "Como: Utilizando tecnologia desatualizada para explorar vulnerabilidades rapidamente.",
+    "Impacto: Sistemas ficam altamente vulneráveis a uma nova vaga de ameaças velozes."
+   ],
+   "title_original": "Palmer Luckey warns AI-powered cyberattacks are outpacing defenses: ‘It’s time to start running’",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como a IA está a acelerar os ciberataques e a tornar obsoletas as defesas tradicionais das empresas.",
+   "todo": "Atualize urgentemente o seu parque tecnológico e adote soluções de segurança proativas com base em IA para contrariar ameaças rápidas."
+  },
   {
    "id": "341390730f1c6883",
    "source": "The Register Security",
@@ -321,15 +344,21 @@
    "lang": "en",
    "link": "https://www.theregister.com/security/2026/11/18/ai-found-more-critical-bugs-in-another-widely-used-technology-running-225m-websites/5310887",
    "published": "2026-11-18T21:11:04+00:00",
-   "title": "AI found more critical bugs in another widely used technology running 225M websites",
-   "summary": "Open source NGINX joins patchapalooza",
+   "title": "IA deteta falhas críticas em tecnologia amplamente utilizada que alimenta milhões de sites",
+   "summary": "Pesquisadores utilizaram inteligência artificial para descobrir vulnerabilidades críticas, incluindo falhas de execução remota de código, no servidor web NGINX. As falhas afetam milhões de sites e permitem que atacantes roubem dados sensíveis ou perturbem serviços. A F5 já emitiu patches de emergência para corrigir dez falhas de segurança identificadas.",
    "image": "https://image.theregister.com/?imageId=228044&width=800",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Investigadores usando IA e a empresa F5.",
+    "O quê: Descoberta de dez vulnerabilidades críticas em servidores NGINX.",
+    "Como: IA detetou falhas antigas de execução remota de código.",
+    "Impacto: Ameaça milhões de sites, permitindo roubo de dados e interrupção de serviços."
+   ],
+   "title_original": "AI found more critical bugs in another widely used technology running 225M websites",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Hot on the heels of serious vulnerabilities in seemingly every other widely used software powering the entire internet, F5 today released emergency patches for 10 bugs in open source NGINX. These include critical remote code execution flaws that let attackers hijack NGINX servers with HTTP/2 enabled, as well as the millions of websites running NGINX, to steal sensitive data and disrupt services. As with all of the other recently disclosed vulnerabilities in foundational technologies like PHP, Apache, and Java, these critical NGINX bugs were uncovered by researchers using AI. One of them has been hiding in the code for at least 10 years. Tomer Schwartz, Wiz’s chief technology officer of exposure management and AppSec, helped find the bug, along with researchers from Ikotas Labs, Metnir, Rapid7, and Xint working independently. Schwartz told The Register that this wave of AI-discovered flaws “point to a new reality.” “We need to treat every internet-connected system as potentially vulnerable,” Schwartz said. “AI has changed not only which vulnerabilities can be found, but how quickly longstanding risks can become real threats.” NGINX is the world’s most widely used open source web server, handling HTTPS requests and routing incoming traffic to the right application or API. It powers about a third of all websites (around 225 million), and F5 maintains the open source version. On Wednesday, F5 published an out-of-band security notification that addressed 10 CVEs in open source NGINIX. If you run NGINX, update to 1.31.9 as soon as possible. CVE-2026-123633 and CVE-2026-123007 Two of the vulns are especially serious as they allow a remote attacker to execute code on the NGINX server without authentication. These two, tracked as CVE-2026-123633 and CVE-2026-123007, both receive"
+   "translated": true,
+   "enriched": true,
+   "why": "Afeta uma das tecnologias web mais populares do mundo, expondo um terço dos sites da internet a ataques.",
+   "todo": "Atualize imediatamente o servidor NGINX para a versão 1.31.9 de forma a mitigar as vulnerabilidades críticas."
   },
   {
    "id": "b0d9354dce2cc6da",
@@ -338,15 +367,21 @@
    "lang": "en",
    "link": "https://databreaches.net/2026/11/18/uk-transport-for-london-photocard-breach-exposes-265000-customers/",
    "published": "2026-11-18T21:08:50+00:00",
-   "title": "UK: Transport for London photocard breach exposes 265,000 customers",
-   "summary": "The BBC reports: The personal details of about 265,000 Oyster photocard customers have been accessed in a cyber breach, Transport for London (TfL) has said. Names, email and home addresses, phone numbers, dates of birth and security questions and answers were compromised after “suspicious activity” was detected on the photocard website on Monday. TfL said...",
+   "title": "Reino Unido: Violação de dados no Transport for London expõe 265 mil clientes",
+   "summary": "O Transport for London detetou uma atividade suspeita no seu site de cartões Oyster, resultando no acesso não autorizado a dados pessoais de cerca de 265.000 clientes. Entre a informação comprometida encontram-se nomes, endereços de email, moradas, números de telefone, datas de nascimento e perguntas de segurança. O incidente afetou utilizadores dos fotocartões do sistema de transportes.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Transport for London (TfL).",
+    "O quê: Violação de dados pessoais de 265.000 clientes.",
+    "Como: Atividade suspeita detetada no website de fotocartões.",
+    "Impacto: Comprometeu dados sensíveis como moradas, datas de nascimento e perguntas de segurança."
+   ],
+   "title_original": "UK: Transport for London photocard breach exposes 265,000 customers",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "The BBC reports: The personal details of about 265,000 Oyster photocard customers have been accessed in a cyber breach, Transport for London (TfL) has said. Names, email and home addresses, phone numbers, dates of birth and security questions and answers were compromised after “suspicious activity” was detected on the photocard website on Monday. TfL said..."
+   "translated": true,
+   "enriched": true,
+   "why": "Ilustra o risco constante de roubo de dados pessoais em plataformas de serviços públicos e de transporte.",
+   "todo": "Monitorize as suas contas associadas e altere palavras-passe ou perguntas de segurança se suspeitar de exposição."
   },
   {
    "id": "78913f271efd4422",
@@ -355,15 +390,21 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/smartertools-security-advisory-av26-1177",
    "published": "2026-11-18T21:06:13+00:00",
-   "title": "SmarterTools security advisory (AV26-1177)",
-   "summary": "",
+   "title": "Aviso de segurança SmarterTools (AV26-1177)",
+   "summary": "Foi detetada uma vulnerabilidade no software SmarterMail em versões anteriores à Build 9817. O Centro de Cibersegurança emitiu um alerta instando os administradores a verificarem a situação. Os utilizadores devem aplicar as atualizações necessárias disponibilizadas pela entidade responsável.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Centro de Cibersegurança e SmarterTools.",
+    "O quê: Emissão de aviso de segurança para o SmarterMail.",
+    "Como: Identificação de falhas em versões anteriores à Build 9817.",
+    "Impacto: Sistemas de email ficam expostos a potenciais explorações se não forem atualizados."
+   ],
+   "title_original": "SmarterTools security advisory (AV26-1177)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1177 Date: November 18, 2026 As of November 17, 2026, SmarterTools is affected by vulnerabilities in the following product: SmarterMail Prior to Build 9817 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. SmarterMail Release Notes Download SmarterMail"
+   "translated": true,
+   "enriched": true,
+   "why": "Protege servidores de correio eletrónico contra explorações conhecidas através da aplicação atempada de patches.",
+   "todo": "Atualize o SmarterMail para a versão Build 9817 ou superior assim que possível."
   },
   {
    "id": "29c5c6f5d78c22be",
@@ -372,15 +413,21 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1176",
    "published": "2026-11-18T21:00:34+00:00",
-   "title": "JetBrains security advisory (AV26-1176)",
-   "summary": "",
+   "title": "Aviso de segurança JetBrains (AV26-1176)",
+   "summary": "A JetBrains foi afetada por vulnerabilidades no produto TeamCity em versões anteriores à 2025.11.7 e 2026.1.3. O Centro de Cibersegurança recomendou aos administradores que consultem os links oficiais. É fundamental aplicar as atualizações de segurança para mitigar os riscos associados.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: JetBrains e Centro de Cibersegurança.",
+    "O quê: Alerta de vulnerabilidades no software TeamCity.",
+    "Como: Identificação de falhas em versões específicas anteriores aos patches.",
+    "Impacto: Ambientes de desenvolvimento e integração contínua ficam vulneráveis."
+   ],
+   "title_original": "JetBrains security advisory (AV26-1176)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1176 Date: November 18, 2026 As of November 18, 2026, JetBrains is affected by vulnerabilities in the following product: TeamCity Prior to 2025.11.7 Prior to 2026.1.3 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. Fixed security issues Security - The JetBrains Blog"
+   "translated": true,
+   "enriched": true,
+   "why": "Garante a integridade dos ambientes de desenvolvimento de software, prevenindo o acesso indevido a servidores TeamCity.",
+   "todo": "Atualize o TeamCity para as versões corrigidas (2025.11.7 ou 2026.1.3, dependendo da linha) o mais rapidamente possível."
   },
   {
    "id": "f83f4afbf79de25c",
@@ -13736,28 +13783,6 @@
    "enriched": true,
    "why": "O comprometimento da camada de virtualização paralisa toda a infraestrutura empresarial de uma só vez.",
    "todo": "Proteja as consolas de gestão de hipervisores com autenticação forte e isole os backups da rede principal."
-  },
-  {
-   "id": "ab3795453c6710af",
-   "source": "CSO Online",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.csoonline.com/article/4247929/an-ai-kill-switch-isnt-enough-build-a-fallback-plan.html",
-   "published": "2026-11-13T09:00:00+00:00",
-   "title": "Um botão de emergência para a IA não basta. Construa um plano de contingência",
-   "summary": "Recentes interrupções e incidentes com agentes autónomos de inteligência artificial demonstraram que parar sistemas de IA em emergência é complexo e insuficiente. Embora exista um foco crescente na criação de botões de emergência para interromper modelos descontrolados, as organizações esquecem-se frequentemente de planear o que deve correr em alternativa. A ausência de um plano de contingência operacional paralisa os processos de negócio quando a tecnologia falha ou precisa de ser desligada.",
-   "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4247929-0-98187100-1794560593-tanveer-mahendra-sQK8HdKUvQA-unsplash.jpg?quality=50&strip=all",
-   "points": [
-    "Parar agentes de IA em funcionamento é mais difícil do que aparenta.",
-    "Os botões de emergência resolvem o corte, mas ignoram as operações seguintes.",
-    "A falta de planos de contingência paralisa processos críticos de negócio."
-   ],
-   "title_original": "An AI kill switch isn’t enough. Build a fallback plan",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Sem um plano alternativo, as empresas evitam usar o botão de emergência por medo de paralisar a atividade.",
-   "todo": "Desenvolva planos de contingência detalhados para os processos automatizados por IA, definindo claramente procedimentos manuais de substituição."
   }
  ]
 }

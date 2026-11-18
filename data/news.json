@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T18:26:37.010810+00:00",
+ "updated": "2026-11-18T18:47:30.860747+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -49,7 +49,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "CISA Advisories",
@@ -173,8 +173,8 @@
   },
   {
    "source": "Google Threat Intelligence",
-   "ok": false,
-   "error": "HTTPSConnectionPool(host='cloudblog.withgoogle.com', port=443): Read timed out. (read timeout=25)"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "Google Project Zero",
@@ -304,9 +304,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 24,
-  "pending": 325,
-  "unenriched": 211,
+  "done": 48,
+  "pending": 289,
+  "unenriched": 168,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -321,15 +321,21 @@
    "lang": "en",
    "link": "https://cert.europa.eu/publications/security-advisories/2026-022/",
    "published": "2026-11-18T18:30:42+00:00",
-   "title": "2026-022: Critical vulnerabilities in Nginx",
-   "summary": "On 18 November 2026, F5 published an advisory addressing five vulnerabilities in NGINX that allow an unauthenticated remote attacker to execute code with the privileges of the NGINX worker process. While researchers managed to successfully demonstrate the use of CVE-2026-123007, no exploitation in the wild has been reported yet. It is recommended to swiftly update NGINX as soon as possible, prioritising internet facing appliances.",
+   "title": "2026-022: Vulnerabilidades críticas no Nginx",
+   "summary": "A F5 publicou um aviso de segurança a alertar para cinco vulnerabilidades no NGINX, incluindo a CVE-2026-123007, que permitem a execução remota de código sem autenticação. Embora já exista uma demonstração de exploração para uma das falhas, ainda não foram reportados ataques ativos no terreno. O impacto afeta principalmente os equipamentos expostos à internet, exigindo uma atualização urgente.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: A F5 e investigadores de segurança.",
+    "O quê: Cinco falhas críticas no NGINX permitem executar código remotamente sem autenticação.",
+    "Como: Através da exploração de vulnerabilidades como a CVE-2026-123007.",
+    "Impacto: Risco potencial de comprometer processos do NGINX, especialmente em sistemas virados para a internet."
+   ],
+   "title_original": "2026-022: Critical vulnerabilities in Nginx",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "On 18 November 2026, F5 published an advisory addressing five vulnerabilities in NGINX that allow an unauthenticated remote attacker to execute code with the privileges of the NGINX worker process. While researchers managed to successfully demonstrate the use of CVE-2026-123007, no exploitation in the wild has been reported yet. It is recommended to swiftly update NGINX as soon as possible, prioritising internet facing appliances."
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes remotos executem código com privilégios elevados nos servidores afetados.",
+   "todo": "Atualize o NGINX o mais rapidamente possível, priorizando os equipamentos expostos diretamente à internet."
   },
   {
    "id": "5e796ea95b06b666",
@@ -339,14 +345,20 @@
    "link": "https://www.estadao.com.br/tecmundo/produto-e-review/one-ui-10-vazamento-revela-possivel-mudanca-de-design-na-interface-da-samsung/",
    "published": "2026-11-18T18:00:00+00:00",
    "title": "One UI 10: vazamento revela possível mudança de design na interface da Samsung",
-   "summary": "O primeiro banner da One UI 10 vazou com pistas sobre o provável design da interface.",
+   "summary": "Um banner promocional da One UI 10, divulgado pelo site SamMobile, revelou pistas sobre a futura identidade visual da interface da Samsung baseada no Android. O material sugere a introdução de efeitos visuais translúcidos e desfocados para celebrar o décimo aniversário do sistema. Embora não indique alterações profundas em ícones ou menus, aponta para uma reformulação estética há muito pedida pelos utilizadores.",
    "image": "https://www.estadao.com.br/resizer/v2/L5NJVU5SSNBWHFHTQXOZIGWKDQ.jpg?quality=80&auth=5bbf2f60b383c7e275920c7fcc69c3e48a5dc661b53a2add9b19d860dd21ef71&width=710",
-   "points": [],
+   "points": [
+    "Quem: A Samsung e o site SamMobile.",
+    "O quê: Vazamento de um banner promocional da One UI 10.",
+    "Como: Através da revelação de imagens que mostram novos efeitos visuais de transparência e desfoque.",
+    "Impacto: Antecipa uma grande mudança de design na interface dos futuros dispositivos Galaxy."
+   ],
    "title_original": null,
    "category": "Fuga de dados",
    "translated": false,
-   "enriched": false,
-   "raw": "A Samsung está atualmente disponibilizando a One UI 9.5 beta , mas já trabalha na próxima geração da interface dos dispositivos Galaxy, como mostra um banner promocional da One UI 10 vazado pelo site SamMobile nesta quarta-feira (18). A imagem revela pistas sobre a identidade visual que deverá ser adotada pela empresa . O material traz indícios de que a gigante sul-coreana planeja grandes mudanças no design do sistema baseado no Android para comemorar o aniversário de 10 anos da One UI. Apesar de a imagem mostrar apenas o número “10”, o estilo adotado sugere efeitos visuais inspirados em vidro e transparência . Mudanças na experiência de uso Como lembra a reportagem, usuários de smartphones da Samsung têm pedido, há anos, para que a big tech introduza atualizações de design na interface, para uma experiência mais fluida e consistente . E é provável que isso aconteça na comemoração de 10 anos do sistema, atendendo às solicitações. No vazamento, é possível notar que o número 10 aparece com dois efeitos visuais distintos; Iniciando pela parte superior, há uma aparência translúcida, com efeito semelhante ao de vidro ; Já na parte inferior, a companhia optou por um efeito desfocado, com elementos visuais borrados ; A combinação sugere uma possível reformulação no design do sistema, embora não indique mudanças em ícones, menus, apps ou animações. O primeiro banner da One UI 10 vazou com pistas sobre o provável design da interface. Foto: SamMobile/Reprodução Ainda conforme a publicação, é provável que a próxima geração da interface será baseada no Android 18 . A nova versão do sistema operacional móvel do Google deverá estar disponível em 2027, quando a atualização também estará nos smartphones da Samsung. Especula-se que a One UI 10 chegará primeiro à nova geração dos celular"
+   "enriched": true,
+   "why": "Revela antecipadamente a direção estética da próxima grande atualização de software da Samsung.",
+   "todo": ""
   },
   {
    "id": "d5ac8eaeba7bb330",
@@ -356,14 +368,20 @@
    "link": "https://www.theregister.com/security/2026/11/18/california-tells-waymo-to-take-the-next-exit-after-freeway-mishaps/5310841",
    "published": "2026-11-18T17:45:00+00:00",
    "title": "California tells Waymo to take the next exit after freeway mishaps",
-   "summary": "Robotaxi operator suspends driverless rides on high-speed roads nationwide after construction zone incursions and a run-in with patrol vehicles",
+   "summary": "O DMV da Califórnia baniu temporariamente a circulação de robotaxis da Waymo em autoestradas após dois incidentes graves em zonas de obras e manobras policiais. Na sequência da decisão, a empresa suspendeu voluntariamente os serviços autónomos em autoestradas em todo o país. A medida visa proteger a segurança pública face a falhas recorrentes dos veículos sem condutor.",
    "image": "https://image.theregister.com/?imageId=245405&width=800",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: O DMV da Califórnia e a empresa Waymo.",
+    "O quê: Suspensão de viagens autónomas em autoestradas em todo o território nacional dos EUA.",
+    "Como: Intervenção regulatória após veículos entrarem em zonas de obras ativas e contornarem a polícia.",
+    "Impacto: Paragem do serviço de robotaxis em autoestradas de várias grandes cidades norte-americanas."
+   ],
+   "title_original": "California tells Waymo to take the next exit after freeway mishaps",
    "category": "Regulação",
-   "translated": false,
-   "enriched": false,
-   "raw": "Waymo has suspended driverless freeway rides across the US after California regulators intervened over robotaxis entering construction zones and trying to bypass highway patrol vehicles. California's DMV banned Waymo from offering driverless trips on its freeways on Wednesday, November 11. The same day, Waymo pulled the handbrake on its freeway services countrywide. The move affects all areas in which Waymo operates on freeways, including San Francisco, Los Angeles, Miami, Phoenix, and Austin. The Alphabet-owned company has not indicated how long the suspension will last. Waymo says freeway testing will continue with trained specialists behind the wheel. Jonathan Groveman, spokesperson for the California DMV, told the Associated Press that the organization imposed the ban following two incidents involving Waymo's robotaxis that posed an \"imminent hazard to public safety.\" On November 5, three of the company's driverless cars entered an active construction zone on US 101 near Burlingame, south of San Francisco. The second incident occurred the following day, and in footage shared widely online, a Waymo vehicle can be seen trying to drive around highway patrol vehicles conducting a traffic break – a maneuver used to slow or stop traffic. \"The Department determined that Waymo's driverless freeway operations pose an imminent hazard to public safety due to recurring incursions by its vehicles into active construction zones where construction workers, vehicles and equipment are present,\" Groveman said in the statement. Groveman said the DMV had already imposed restrictions and required corrective action following similar incidents on May 18. Waymo subsequently recalled nearly 4,000 cars after some were caught ignoring road closure signs and cones designating construction zone"
+   "translated": true,
+   "enriched": true,
+   "why": "Evita riscos iminentes para a segurança pública causados por falhas de navegação autónoma em vias rápidas.",
+   "todo": "Garanta testes rigorosos e supervisão humana redobrada em sistemas de condução autónoma antes da implementação pública."
   },
   {
    "id": "708e52618cd98258",
@@ -372,15 +390,21 @@
    "lang": "en",
    "link": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/",
    "published": "2026-11-18T17:32:10+00:00",
-   "title": "More banks says customers using AI agents are on their own — even if they get hacked",
-   "summary": "Citi is the latest major financial institution to put the breaks on personal finance AI agents.",
+   "title": "Mais bancos dizem que clientes que usam agentes de IA ficam por sua conta — mesmo se forem hackeados",
+   "summary": "O Citi tornou-se a instituição financeira mais recente a distanciar-se da utilização de agentes de inteligência artificial para finanças pessoais. A decisão deixa os clientes sem proteção oficial da banca caso ocorram incidentes de segurança ou pirataria informática. A medida reflete a cautela do setor financeiro face aos riscos associados a estas ferramentas automatizadas.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: O Citi e grandes instituições financeiras.",
+    "O quê: Suspensão ou restrição do apoio a agentes de IA para finanças pessoais.",
+    "Como: Através de novas políticas que responsabilizam os utilizadores por falhas ou ataques.",
+    "Impacto: Clientes que utilizem agentes de IA ficam vulneráveis a perdas financeiras sem reembolso bancário."
+   ],
+   "title_original": "More banks says customers using AI agents are on their own — even if they get hacked",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "Citi is the latest major financial institution to put the breaks on personal finance AI agents."
+   "translated": true,
+   "enriched": true,
+   "why": "Transfere para o utilizador final o risco financeiro e de segurança decorrente do uso de assistentes de IA.",
+   "todo": "Evite utilizar agentes de IA autónomos em operações financeiras sensíveis sem garantias formais de segurança da sua instituição."
   },
   {
    "id": "29fd5c5793b64c35",
@@ -389,15 +413,21 @@
    "lang": "en",
    "link": "https://www.thezdi.com/blog/2026/11/17/hostile-inference-exploiting-docker-model-runner-for-container-escapes",
    "published": "2026-11-18T17:23:52+00:00",
-   "title": "Hostile Inference: Exploiting Docker Model Runner for Container Escapes",
-   "summary": "Local LLM inference is seeing adoption in default developer workflows, and the tooling that serves those models now ships inside products developers already trust. One of those is Docker Model Runner (DMR), the feature in Docker Desktop that pulls, runs, and serves models locally. In November 2025, we reported ZDI-26-150 / CVE-2026-28400 , a denial-of-service (on macOS) stemming from an unauthenticated argument-injection vulnerability in DMR. A container created with the default set of privileges could overwrite and corrupt the Docker Desktop VM’s data disk. Further analysis, under non-default",
+   "title": "Inferência Hostil: Exploração do Docker Model Runner para fugas de contentores",
+   "summary": "Investigadores descobriram falhas no Docker Model Runner (DMR), incluindo a CVE-2026-28400, que permitem a injeção de argumentos e corrupção de dados em sistemas macOS e Windows. Através de configurações específicas e extensões do Docker, esta falha inicial de escrita de ficheiros pôde ser transformada em execução arbitrária de código no sistema hospedeiro. O problema afeta fluxos de trabalho comuns de programadores que utilizam modelos de linguagem locais.",
    "image": "https://images.squarespace-cdn.com/content/v1/5894c269e4fcb5e65a1ed623/1794935549124-CY879LVRLLOTO6TWGFBX/pexels-gulin-yigiter-2160510905-36842554.jpg?format=1500w",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Investigadores de segurança e utilizadores do Docker Desktop.",
+    "O quê: Vulnerabilidades de injeção de argumentos e fuga de contentores no Docker Model Runner.",
+    "Como: Explorando falhas como a CVE-2026-28400 e fraquezas em sandboxes para escapar ao hospedeiro.",
+    "Impacto: Permite a execução arbitrária de código e leitura/escrita de ficheiros no sistema anfitrião."
+   ],
+   "title_original": "Hostile Inference: Exploiting Docker Model Runner for Container Escapes",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Local LLM inference is seeing adoption in default developer workflows, and the tooling that serves those models now ships inside products developers already trust. One of those is Docker Model Runner (DMR), the feature in Docker Desktop that pulls, runs, and serves models locally. In November 2025, we reported ZDI-26-150 / CVE-2026-28400 , a denial-of-service (on macOS) stemming from an unauthenticated argument-injection vulnerability in DMR. A container created with the default set of privileges could overwrite and corrupt the Docker Desktop VM’s data disk. Further analysis, under non-default configurations, turned the same primitive into arbitrary code execution on the host, on both macOS and Windows. In this post, we walk through the full chain: the argument-injection primitive, the host file read/write foothold it grants, how we take partial control of what gets written, and the payoff that turns a constrained file write into arbitrary code execution on the host through Docker Extensions. We then cover two further escapes we found along the way: one from an overly permissive Seatbelt sandbox configuration on macOS, and one that pivots the WSL2 VM-to-host boundary through Docker Extensions. Background: Docker Model Runner and the host boundary Docker Desktop helps run Docker containers on macOS, Windows, and Linux. Docker Desktop for Windows with Windows containers and Docker Desktop for Linux are out of scope for this blog. Since macOS and Windows don’t come with a Linux kernel to run Linux containers, Docker Desktop ships a LinuxKit VM that hosts the container runtime; on macOS the VM runs using the Apple Virtualization Framework , while on Windows it runs under WSL2 by default. Linux containers and the Docker Engine components (runc, containerd, dockerd) run in th"
+   "translated": true,
+   "enriched": true,
+   "why": "Compromete o isolamento entre contentores e o sistema operativo principal em ambientes de desenvolvimento.",
+   "todo": "Mantenha o Docker Desktop e respetivos componentes atualizados para mitigar falhas de isolamento e execução de código."
   },
   {
    "id": "55044eb187059b94",
@@ -406,15 +436,21 @@
    "lang": "en",
    "link": "https://www.theregister.com/security/2026/11/18/microsofts-official-python-agent-framework-hijacked-to-distribute-malware/5310858",
    "published": "2026-11-18T17:23:37+00:00",
-   "title": "Microsoft's official Python agent framework hijacked to distribute malware",
-   "summary": "In today's how-could-things-get-worse-for-Microsoft news, it seems someone's GitHub org admin creds have been compromised",
+   "title": "Framework oficial de agentes Python da Microsoft comprometida para distribuir malware",
+   "summary": "A framework oficial de agentes da Microsoft no repositório PyPI foi comprometida por atacantes que subiram versões maliciosas (1.26.1 e 1.26.2) capazes de roubar credenciais. O pacote infetado exfiltra variáveis de ambiente e ficheiros confidenciais de serviços como Azure, Git e Docker para um servidor externo. O código malicioso executa-se automaticamente assim que o pacote é instalado, mesmo sem ser importado no código.",
    "image": "https://image.theregister.com/?imageId=5309156&width=800",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: A equipa de open source da Microsoft e programadores que utilizam Python.",
+    "O quê: Injsessão de malware de roubo de dados nas versões 1.26.1 e 1.26.2 do pacote 'agent-framework'.",
+    "Como: Através do acesso não autorizado a uma conta de administrador no PyPI/GitHub.",
+    "Impacto: Roubo massivo de credenciais de programadores e chaves de acesso a serviços empresariais."
+   ],
+   "title_original": "Microsoft's official Python agent framework hijacked to distribute malware",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Microsoft’s official agent framework package hosted on PyPI has been hijacked and now installs info-stealing malware, multiple security research firms have discovered. CEO Satya Nadella may be on stage trying to wow investors and customers at his company’s annual Ignite conference, but somewhere in the bowels of a building in Redmond his open source team is likely panicking at what appears to be unauthorized access to an administrator account on Microsoft’s Github organization. The problem package is Microsoft’s agent-framework, versions 1.26.1 and 1.26.2, researchers reported late yesterday and this morning. According to OX Security, version 1.26.1 was reverted to a safe version, but the attacker later uploaded 1.26.2 through Microsoft’s official PyPI publisher account, suggesting that, at least at the time of their report, the credentials hadn’t been locked down. Safe to say, but if you find either version in your environment assume you have some account security work to do. Microsoft agent-framework for Python boasts nearly 200,000 downloads a month and is used to build and deploy AI agents. As of those latest releases, it’s also being used to exfiltrate environment variables, credential files, and other secrets for Azure, Git, Docker, Hugging Face, and other sensitive developer services. To make matters worse, the package never needs to be imported to do its dirty work – all it takes is a Python interpreter with the package installed to start up – the infected package still pulls the genuine 1.26.0 version of Microsoft’s agent-framework in order to keep itself running and looking legitimate, while in the background it gathers up credentials, encrypts them as a base64-encoded chunk of JSON, and sends them off to a webhook.site address hard coded into the malware. It "
+   "translated": true,
+   "enriched": true,
+   "why": "Expece dados sensíveis e credenciais de desenvolvimento de centenas de milhares de projetos através de um canal oficial de confiança.",
+   "todo": "Verifique imediatamente se utiliza as versões afetadas do pacote e revogue quaisquer credenciais ou chaves de API expostas."
   },
   {
    "id": "3408547b0745afd8",
@@ -468,14 +504,20 @@
    "link": "https://www.estadao.com.br/tecmundo/guia-de-compras/onde-comprar-o-gta-6-pelo-menor-preco/",
    "published": "2026-11-18T17:00:00+00:00",
    "title": "Onde comprar o GTA 6 pelo menor preço?",
-   "summary": "Veja onde comprar GAT 6 mais barato para curtir no lançamento e receber em casa com segurança",
+   "summary": "Com o lançamento de Grand Theft Auto VI a aproximar-se para as consolas PlayStation 5 e Xbox, o TecMundo preparou um guia de compras com várias opções de desconto. O artigo lista diferentes plataformas de e-commerce e cupons promocionais para adquirir o jogo de forma segura e económica. As ofertas variam entre diferentes lojas online para garantir o melhor preço no lançamento.",
    "image": "https://www.estadao.com.br/resizer/v2/6V2GGQGDUJFBDPAZZBG66HKYZM.jpg?quality=80&auth=17b1a2ea0b7f2ee8b6bce19cc71242c93accd5765860094136dc297846dac3e0&width=710",
-   "points": [],
+   "points": [
+    "Quem: O portal TecMundo e plataformas de e-commerce.",
+    "O quê: Um guia de preços e descontos para a compra do jogo GTA 6.",
+    "Como: Através da utilização de cupons promocionais em várias lojas online.",
+    "Impacto: Facilita a aquisição do jogo mais barato e em segurança pelos consumidores."
+   ],
    "title_original": null,
    "category": "Geral",
    "translated": false,
-   "enriched": false,
-   "raw": "Depois de anos e mais anos de espera, GTA 6 finalmente está chegando e jogadores poderão voltar à icônica Vice City e visitar diversas localidades do Estado fictício de Leonida a partir desta quinta-feira (19). O jogo de mundo aberto da Rockstar é um dos mais aguardados de todos os tempos , prometendo aos gamers muita liberdade para explorar e concluir todo tipo de missões. Com o lançamento já ali, tão pertinho, a ansiedade vai às alturas e tudo o que queremos é finalmente começar a jogar Grand Theft Auto VI . Para isso, é preciso comprar o novo título da Rockstar que já está à venda e pode ser adquirido em vários e-commercers com descontos e segurança . Onde comprar o GTA 6 pelo melhor preço? Veja onde comprar GAT 6 mais barato para curtir no lançamento e receber em casa com segurança Foto: Rockstar Games/Divulgação Ao contrário do próprio jogo, garantir um exemplar de GTA 6 não é uma tarefa cheia de desafios e surpresas. Para facilitar ainda mais o processo, o TecMundo montou este pequeno guia com algumas das melhores oportunidades para quem quer comprar o game mais barato na internet . GTA 6 para PS5 Abaixo, listamos alguns dos principais sites e plataformas de vendas onde você encontra Grand Theft Auto VI à venda. Há alternativas têm descontos e cupons disponíveis , confira: GTA 6 na Amazon por R$ 395,91 com o cupom PRIMEGAME5 para pagamento no Pix ou via NuPay. GTA 6 no Mercado Livre por R$ 417,57 GTA 6 na Fast Shop por R$ 400,41 - o cupom BEMVINDOAPP garante 5% off na primeira compra via app. GTA 6 no Kabum com cupom VEMGTA para R$ 50 off por R$ 371,91 GTA 6 no Magazine Luiza com cupom GTATECMUNDO de 10% de desconto por R$ 400,72 GTA 6 na Nuuvem com cupom NUUESTADAO de R$ 30 off em gift cards para comprar o jogo por R$ 419,90 GTA 6 para Xbox Diferentemente do Play"
+   "enriched": true,
+   "why": "Ajuda os consumidores a encontrar opções de compra mais económicas e seguras para o lançamento do jogo.",
+   "todo": ""
   },
   {
    "id": "4d21e756021aad15",
@@ -704,15 +746,21 @@
    "lang": "en",
    "link": "https://databreaches.net/2026/11/18/fake-gta-6-pc-downloads-spread-malware-targeting-crypto-wallets-and-passwords/",
    "published": "2026-11-18T15:32:37+00:00",
-   "title": "Fake GTA 6 PC Downloads Spread Malware Targeting Crypto Wallets and Passwords",
-   "summary": "From the this-was-predictable-wasn’t-it dept: A campaign distributing malware through websites offering a supposed free PC version of Grand Theft Auto VI has been confirmed, with the software designed to steal passwords, browser data and cryptocurrency information. The game is scheduled to launch on Nov. 19 for PlayStation 5 and Xbox Series X|S, but Rockstar Games...",
+   "title": "Downloads falsos de GTA 6 para PC propagam malware focado em carteiras de criptomoedas e passwords",
+   "summary": "Cibercriminosos lançaram uma campanha maliciosa que utiliza sites falsos a prometer uma versão gratuita para PC de Grand Theft Auto VI. O software distribuído esconde malware criado para roubar palavras-passe, dados de navegadores e informações de carteiras de criptomoedas. A ameaça aproveita-se da enorme expetativa em torno do jogo para enganar os utilizadores.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Cibercriminosos e utilizadores à procura do jogo.",
+    "O quê: Distribuição de malware disfarçado de uma versão para PC de GTA 6.",
+    "Como: Através de sites fraudulentos que oferecem downloads gratuitos do jogo.",
+    "Impacto: Roubo de dados pessoais, credenciais e ativos em criptomoedas das vítimas."
+   ],
+   "title_original": "Fake GTA 6 PC Downloads Spread Malware Targeting Crypto Wallets and Passwords",
    "category": "Malware",
-   "translated": false,
-   "enriched": false,
-   "raw": "From the this-was-predictable-wasn’t-it dept: A campaign distributing malware through websites offering a supposed free PC version of Grand Theft Auto VI has been confirmed, with the software designed to steal passwords, browser data and cryptocurrency information. The game is scheduled to launch on Nov. 19 for PlayStation 5 and Xbox Series X|S, but Rockstar Games..."
+   "translated": true,
+   "enriched": true,
+   "why": "Engana os utilizadores através de engenharia social para infetar os seus computadores com infostealers.",
+   "todo": "Evite descarregar software de fontes não oficiais e desconfie de ofertas de jogos ainda não lançados para certas plataformas."
   },
   {
    "id": "9c4ee0f21528bd66",
@@ -721,15 +769,21 @@
    "lang": "en",
    "link": "https://databreaches.net/2026/11/18/a-month-after-richmond-public-school-cyberattack-schools-are-far-from-normal/",
    "published": "2026-11-18T15:32:24+00:00",
-   "title": "A month after Richmond Public School cyberattack, schools are far from normal",
-   "summary": "Sabrina Moreno reports: School staff calling parents to verify who can pick up their children. Students huddling around tiny computers to see lessons. Teachers relying on personal devices to keep classes running. That’s how several RPS educators described to Axios the four weeks since the Oct. 21 cyberattack. Why it matters: The hack has disrupted...",
+   "title": "Um mês após o ciberataque às Escolas Públicas de Richmond, as escolas continuam longe da normalidade",
+   "summary": "Quatro semanas após o ciberataque sofrido pelas Escolas Públicas de Richmond, professores e funcionários continuam a recorrer a métodos manuais e dispositivos pessoais para manter o ensino. A falta de normalidade inclui pais a telefonar para confirmar autorizações de recolha e alunos a partilhar computadores minúsculos para assistir às aulas. O incidente demonstra o impacto prolongado de incidentes de ransomware em infraestruturas educativas.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: As Escolas Públicas de Richmond (RPS) e a comunidade escolar.",
+    "O quê: Perturbação prolongada das atividades letivas na sequência de um ciberataque.",
+    "Como: Funcionários a usar dispositivos pessoais e processos manuais para contornar a falha tecnológica.",
+    "Impacto: Atrasos operacionais severos e dificuldades na gestão diária das escolas um mês após o incidente."
+   ],
+   "title_original": "A month after Richmond Public School cyberattack, schools are far from normal",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Sabrina Moreno reports: School staff calling parents to verify who can pick up their children. Students huddling around tiny computers to see lessons. Teachers relying on personal devices to keep classes running. That’s how several RPS educators described to Axios the four weeks since the Oct. 21 cyberattack. Why it matters: The hack has disrupted..."
+   "translated": true,
+   "enriched": true,
+   "why": "Ilustra o impacto disruptivo a longo prazo que um ciberataque pode causar na continuidade de serviços educativos essenciais.",
+   "todo": "Implemente planos robustos de recuperação de desastres e cópias de segurança offline para acelerar a recuperação após um ciberataque."
   },
   {
    "id": "4007647799e11809",
@@ -738,15 +792,21 @@
    "lang": "en",
    "link": "https://www.securityweek.com/verosecurity-raises-11-million-for-ai-security-engineering-platform/",
    "published": "2026-11-18T15:30:42+00:00",
-   "title": "VeroSecurity Raises $11 Million for AI Security Engineering Platform",
-   "summary": "AI Security Engineering is a new and essential security discipline now being brought into focus by VeroSecurity.",
+   "title": "VeroSecurity angaria 11 milhões de dólares para plataforma de engenharia de segurança de IA",
+   "summary": "A VeroSecurity garantiu um financiamento de 11 milhões de dólares para desenvolver a sua plataforma focada na nova disciplina de Engenharia de Segurança de IA. A empresa pretende ajudar a proteger sistemas baseados em inteligência artificial contra ameaças emergentes. Esta ronda reflete a crescente prioridade empresarial na segurança de aplicações de IA.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: A empresa VeroSecurity e investidores.",
+    "O quê: Angariação de 11 milhões de dólares em financiamento.",
+    "Como: Através de investimento dedicado a uma plataforma de segurança para inteligência artificial.",
+    "Impacto: Impulsiona o desenvolvimento de ferramentas especializadas na proteção de sistemas de IA."
+   ],
+   "title_original": "VeroSecurity Raises $11 Million for AI Security Engineering Platform",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "AI Security Engineering is a new and essential security discipline now being brought into focus by VeroSecurity."
+   "translated": true,
+   "enriched": true,
+   "why": "Destaca a importância crescente de investir em soluções de segurança específicas para tecnologias de inteligência artificial.",
+   "todo": ""
   },
   {
    "id": "467b84f5cca8fd9e",
@@ -755,15 +815,21 @@
    "lang": "en",
    "link": "https://databreaches.net/2026/11/18/japan-to-postpone-launch-of-sex-offense-check-system-over-data-leak-risk/",
    "published": "2026-11-18T15:24:33+00:00",
-   "title": "Japan to postpone launch of sex offense check system over data leak risk",
-   "summary": "The Mainichi reports: Japan decided to postpone the planned Dec. 25 launch of a new system to check the sex offense histories of people working with children after vulnerabilities were found, the minister in charge of child policy said Wednesday. Hiroshi Nakatsuka apologized for the delayed launch of Japan’s version of the Disclosure and Barring...",
+   "title": "Japão adia lançamento de sistema de verificação de crimes sexuais devido a risco de fuga de dados",
+   "summary": "O governo japonês decidiu adiar o lançamento de um novo sistema destinado a verificar o historial de crimes sexuais de pessoas que trabalham com crianças após a descoberta de vulnerabilidades. O ministro responsável pela política infantil pediu desculpa pelo atraso na implementação da ferramenta de proteção. A decisão prioritizou a segurança dos dados face aos riscos detetados antes da estreia oficial.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: O governo do Japão e o ministro responsável pela política infantil.",
+    "O quê: Adiamento do lançamento de um sistema de verificação de antecedentes de crimes sexuais.",
+    "Como: Identificação prévia de vulnerabilidades técnicas que comprometiam a segurança dos dados.",
+    "Impacto: Atraso na proteção acrescida de crianças, prevenindo potenciais fugas de informação sensível."
+   ],
+   "title_original": "Japan to postpone launch of sex offense check system over data leak risk",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "The Mainichi reports: Japan decided to postpone the planned Dec. 25 launch of a new system to check the sex offense histories of people working with children after vulnerabilities were found, the minister in charge of child policy said Wednesday. Hiroshi Nakatsuka apologized for the delayed launch of Japan’s version of the Disclosure and Barring..."
+   "translated": true,
+   "enriched": true,
+   "why": "Evita uma potencial violação de dados sensíveis ao suspender o lançamento de um sistema vulnerável.",
+   "todo": "Realize auditorias de segurança rigorosas antes de lançar sistemas que processem dados pessoais altamente sensíveis."
   },
   {
    "id": "8d5ff285d4dca010",
@@ -772,15 +838,21 @@
    "lang": "en",
    "link": "https://databreaches.net/2026/11/18/il-wilmington-school-district-209u-reports-ransomware-attack-and-possible-data-breach/",
    "published": "2026-11-18T15:24:24+00:00",
-   "title": "IL: Wilmington School District 209U Reports Ransomware Attack And Possible Data Breach",
-   "summary": "WJOL reports: Officials in Wilmington are investigating a possible ransomware attack and data breach at Wilmington School District 209U. There was a message sent to district staff and student families from Superintendent Kevin Feeney that said cybersecurity experts are attempting to determine the extent of the attack and whether any sensitive information was accessed. The...",
+   "title": "IL: Distrito Escolar de Wilmington 209U reporta ataque de ransomware e possível violação de dados",
+   "summary": "O Distrito Escolar de Wilmington 209U está a investigar um ataque de ransomware e uma potencial fuga de dados que afetou a instituição. O superintendente local alertou o pessoal e as famílias dos alunos através de uma mensagem, indicando que peritos em cibersegurança estão a apurar a gravidade da ocorrência. As autoridades procuram determinar se informações sensíveis foram acedidas indevidamente.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Distrito Escolar de Wilmington 209U e peritos em cibersegurança.",
+    "O quê: Incidente de ransomware e suspeita de exfiltração de dados.",
+    "Como: Através de uma intrusão informática comunicada internamente aos encarregados de educação e funcionários.",
+    "Impacto: Risco de exposição de dados sensíveis e perturbação na administração escolar."
+   ],
+   "title_original": "IL: Wilmington School District 209U Reports Ransomware Attack And Possible Data Breach",
    "category": "Ransomware",
-   "translated": false,
-   "enriched": false,
-   "raw": "WJOL reports: Officials in Wilmington are investigating a possible ransomware attack and data breach at Wilmington School District 209U. There was a message sent to district staff and student families from Superintendent Kevin Feeney that said cybersecurity experts are attempting to determine the extent of the attack and whether any sensitive information was accessed. The..."
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para a vulnerabilidade contínua do setor educativo a ataques de ransomware e extorsão de dados.",
+   "todo": "Mantenha cópias de segurança isoladas da rede e reforce a autenticação multifator para travar ataques de ransomware."
   },
   {
    "id": "d4ae36431dd3f0bf",
@@ -1106,9 +1178,9 @@
     "O artigo original não contém informação descritiva.",
     "Não existem dados sobre alvos, atacantes ou impacto."
    ],
-   "title_original": "Open by Default, Already Occupied: Threat Actors are Renting your Compute",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "A ausência de dados no texto impede tirar conclusões práticas ou de segurança.",
    "todo": ""
@@ -1194,9 +1266,9 @@
     "O alvo principal da campanha continuam a ser organizações governamentais nas Filipinas.",
     "As alterações frequentes de código e hashes ajudam a evadir as ferramentas de segurança."
    ],
-   "title_original": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
+   "title_original": null,
    "category": "Malware",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Evidencia a capacidade dos grupos de ameaças avançadas em adaptar rapidamente o seu malware para contornar defesas tradicionais.",
    "todo": "Mantenha as soluções de deteção e resposta a endpoints (EDR) atualizadas e monitorize comportamentos anómalos na rede."
@@ -1414,9 +1486,9 @@
     "As versões anteriores a 158.0.8127.36/.37 (Windows/Mac) e 158.0.8127.36 (Linux) estão afetadas.",
     "O Centro Cibernético aconselha a atualização imediata do navegador."
    ],
-   "title_original": "Google security advisory (AV26-1171)",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Protege os utilizadores contra potenciais explorações ativas direcionadas a falhas conhecidas no navegador.",
    "todo": "Atualize o Google Chrome para a versão mais recente através das definições do próprio navegador."
@@ -1436,9 +1508,9 @@
     "Houve perturbações em vários serviços internos da organização.",
     "A produção de petróleo e gás manteve-se sem impacto decorrente do ataque."
    ],
-   "title_original": "Cyberattack hits Norwegian energy giant Equinor, disrupting internal services",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Demonstra os riscos contínuos de ataques cibernéticos a infraestruturas críticas e grandes empresas do setor energético.",
    "todo": "Assegure planos de contingência robustos e monitorize continuamente os acessos aos sistemas internos e redes corporativas."
@@ -11306,9 +11378,9 @@
     "A vulnerabilidade CVE-2026-123039 está a ser explorada ativamente e consta no catálogo KEV da CISA.",
     "A falha CVE-2026-107484 permite escales de privilégios autenticados no portal Gaia."
    ],
-   "title_original": "Check Point security advisory (AV26-1154) – Update 1",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mitiga falhas críticas em equipamentos de perimeter network que estão sob exploração ativa por atacantes.",
    "todo": "Aplique imediatamente as correções e atualizações recomendadas pela Check Point para os dispositivos afetados."

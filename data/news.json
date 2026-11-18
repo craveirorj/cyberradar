@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T13:07:18.870827+00:00",
+ "updated": "2026-11-18T13:28:30.808165+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -29,7 +29,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -104,7 +104,7 @@
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CSO Online",
@@ -133,8 +133,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 2
   },
   {
    "source": "DataBreaches.net",
@@ -204,7 +204,7 @@
   {
    "source": "Tenable",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "Zero Day Initiative",
@@ -269,7 +269,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Check Point Research",
@@ -304,9 +304,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 12,
-  "pending": 325,
-  "unenriched": 187,
+  "done": 84,
+  "pending": 260,
+  "unenriched": 119,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -314,6 +314,23 @@
   ]
  },
  "items": [
+  {
+   "id": "1895e5ba109e889f",
+   "source": "SAPO Tek",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://tek.sapo.pt/noticias/telecomunicacoes/artigos/china-critica-restricoes-portuguesas-a-huawei-no-5g-e-rejeita-politizacao-da-economia-e-comercio/",
+   "published": "2026-11-18T13:16:09+00:00",
+   "title": "China critica restrições portuguesas à Huawei no 5G e rejeita politização da economia e comércio",
+   "summary": "Em outubro, o Governo português renovou as restrições à utilização de fornecedores considerados de alto risco nas redes 5G, após uma nova avaliação de segurança. As restrições a empresas como a Huawei foram criticadas por Pequim, que considera que questões económicas e comerciais não devem ser transformadas em questões de segurança.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "Em outubro, o Governo português renovou as restrições à utilização de fornecedores considerados de alto risco nas redes 5G, após uma nova avaliação de segurança. As restrições a empresas como a Huawei foram criticadas por Pequim, que considera que questões económicas e comerciais não devem ser transformadas em questões de segurança."
+  },
   {
    "id": "bd7bead76e6f6509",
    "source": "Tenable",
@@ -359,6 +376,23 @@
    "enriched": true,
    "why": "Permite que atacantes executem código remotamente em aplicações empresariais críticas construídas em Java.",
    "todo": "Consulte os alertas oficiais da CISA e aplique as mitigações ou patches de segurança disponibilizados para o OpenJDK."
+  },
+  {
+   "id": "74d12e4423207d9d",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
+   "published": "2026-11-18T12:28:30+00:00",
+   "title": "New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years",
+   "summary": "On AMD-based PCs and some Intel PCs, the TPM lockout for Windows Hello and BitLocker PINs can be reset by someone who opens the PC's case, researchers at Technische Universität Berlin say. That leaves short PINs open to guessing. In lab tests, the researchers found a four-digit Hello PIN on an AMD laptop and a 6-digit BitLocker PIN on an Intel laptop this way. Both PINs were set by the",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpsv4GxAUbzCsIV1umrxZs6VxfD1eFwAeCgRHQQG_dNbP1fLiYe48hM-Wbd_8w5IxlacAwoidLqyQgBmG7YD7qKo0_XcqW2GhggfXshuK1uXz8BOma2H0Jjs8fabCO4IxHBfRopEUFDd0xHRRv43gMeog852Usv40sfcTwnO_9coyxtIMmteJxeJI_oPA/s1600/bitlocker.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": false,
+   "raw": "On AMD-based PCs and some Intel PCs, the TPM lockout for Windows Hello and BitLocker PINs can be reset by someone who opens the PC's case, researchers at Technische Universität Berlin say. That leaves short PINs open to guessing. In lab tests, the researchers found a four-digit Hello PIN on an AMD laptop and a 6-digit BitLocker PIN on an Intel laptop this way. Both PINs were set by the"
   },
   {
    "id": "c9f8dc26d8d07054",
@@ -13752,50 +13786,6 @@
    "enriched": true,
    "why": "Ilustra o risco crítico de roubo e indisponibilidade em plataformas de ativos digitais.",
    "todo": "Utilize carteiras de criptomoedas privadas e seguras fora de exchanges centralizadas para grandes montantes."
-  },
-  {
-   "id": "c398aa3e92265ca6",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
-   "published": "2026-11-12T15:38:49+00:00",
-   "title": "Citrix corrige 12 falhas no NetScaler e Secure Access Client, incluindo bypass de autenticação",
-   "summary": "A Citrix lançou atualizações para corrigir várias falhas críticas de segurança no NetScaler ADC, Gateway e Console. As vulnerabilidades podem permitir ataques de negação de serviço ou um bypass de autenticação. Entre as falhas destaca-se a CVE-2026-120868, uma vulnerabilidade de estouro de memória com pontuação CVSS elevada. Os administradores devem aplicar as correções para proteger os sistemas afetados.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDDv_B4B-cVtvwKyLiGQsL804yGC7_xHF7y3yD5_C284fRXBVRAn5Ashy2apgJr-jaoBHRa3ujgXv1jskM53EvP_pFt41CTazYqFT-tQdcukNBeOTzVIpZXVDsdgtup4MJOEdNNZP9SP0FAdIpG1Cnfgo0YgBXzmI_boLV4qSAsVrmYn5wA3GxnPuj21JO/s1600/citrix.jpg",
-   "points": [
-    "Quem: Citrix lançou correções para o NetScaler e Secure Access.",
-    "O quê: 12 falhas corrigidas, incluindo bypass de autenticação e negação de serviço.",
-    "Impacto: A falha CVE-2026-120868 apresenta um risco elevado de segurança."
-   ],
-   "title_original": "Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Estas falhas em infraestruturas de rede podem permitir o acesso não autorizado a redes corporativas.",
-   "todo": "Aplique urgentemente os patches de segurança disponibilizados pela Citrix nos dispositivos NetScaler."
-  },
-  {
-   "id": "16b72427cf58165b",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/",
-   "published": "2026-11-12T15:38:31+00:00",
-   "title": "Apache corrige falha crítica RCE em Servidor HTTP descoberta pela Anthropic e Google",
-   "summary": "Foi descoberta uma vulnerabilidade de condição de corrida no módulo HTTP/2 do Servidor HTTP Apache, registada como CVE-2026-119618. A falha foi descoberta por investigadores da Anthropic e da Google. Esta vulnerabilidade permite que atacantes não autenticados executem código remoto em servidores com o HTTP/2 ativado. A Apache já disponibilizou correções para mitigar este risco grave.",
-   "image": null,
-   "points": [
-    "Quem: Investigadores da Anthropic e Google descobriram a falha.",
-    "O quê: Vulnerabilidade CVE-2026-119618 (condição de corrida no mod_http2).",
-    "Impacto: Permite execução remota de código por atacantes não autenticados."
-   ],
-   "title_original": "Apache Patches Critical HTTP Server RCE Found by Anthropic, Google",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite o controlo remoto de servidores web que tenham o protocolo HTTP/2 ativo.",
-   "todo": "Atualize o Servidor HTTP Apache para a versão mais recente que inclui a correção."
   }
  ]
 }

@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-18T10:28:58.957726+00:00",
+ "updated": "2026-11-18T10:46:06.737367+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 1
   },
   {
    "source": "Pplware Segurança",
@@ -89,7 +89,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -104,7 +104,7 @@
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CSO Online",
@@ -144,7 +144,7 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 5
+   "added": 6
   },
   {
    "source": "Microsoft Security Blog",
@@ -173,8 +173,8 @@
   },
   {
    "source": "Google Threat Intelligence",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "500 Server Error: Internal Server Error for url: https://cloudblog.withgoogle.com/topics/threat-intelligence/rss/"
   },
   {
    "source": "Google Project Zero",
@@ -229,7 +229,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 22
+   "added": 21
   },
   {
    "source": "The Register Security",
@@ -269,7 +269,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 3
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -294,7 +294,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 7
+   "added": 10
   },
   {
    "source": "ACSC Austrália",
@@ -304,9 +304,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 267,
-  "unenriched": 154,
+  "done": 36,
+  "pending": 294,
+  "unenriched": 162,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -314,6 +314,29 @@
   ]
  },
  "items": [
+  {
+   "id": "94321d4b37d655bf",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/",
+   "published": "2026-11-18T10:37:08+00:00",
+   "title": "Exploração Crítica de RCE no Perforce Puppet Alvo de Ataques",
+   "summary": "Uma vulnerabilidade crítica identificada como CVE-2026-115731 afeta o Perforce Puppet, permitindo que um cliente com um certificado de agente assinado por CA execute código no servidor. A falha já está a ser ativamente explorada em ataques informáticos. Este problema representa um vetor de intrusão grave para infraestruturas que utilizam este software. Os atacantes conseguem comprometer os servidores afetados através de comandos executados remotamente.",
+   "image": null,
+   "points": [
+    "Vulnerabilidade CVE-2026-115731 afeta o Perforce Puppet.",
+    "Permite execução de código no servidor por clientes autenticados.",
+    "A falha está a ser explorada ativamente em ataques.",
+    "Exige atenção urgente para evitar o compromisso de servidores."
+   ],
+   "title_original": "Critical Perforce Puppet RCE Exploited in Attacks",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que agentes maliciosos executem código arbitrário diretamente em servidores corporativos vulneráveis.",
+   "todo": "Aplique imediatamente as atualizações de segurança disponibilizadas pelo fabricante para corrigir a falha CVE-2026-115731."
+  },
   {
    "id": "92333b5b9c3bfc02",
    "source": "CERT-EU",
@@ -2497,6 +2520,29 @@
    "todo": "Esteja ciente dos riscos associados ao uso de ferramentas de hardware portáteis não autorizadas nas redes corporativas."
   },
   {
+   "id": "eac2a630777ddb52",
+   "source": "Cybersecurity Dive",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cybersecuritydive.com/news/critical-flaw-screenconnect-malicious-files-msp/874900/",
+   "published": "2026-11-17T15:58:03+00:00",
+   "title": "Falha Crítica no ScreenConnect Explorada para Executar Ficheiros Maliciosos em Contas de Técnicos de MSP",
+   "summary": "Investigadores de segurança detetaram quase 690.000 pedidos de transferência de ficheiros em menos de um mês, decorrentes da exploração de uma falha crítica no ScreenConnect. Os atacantes utilizaram esta vulnerabilidade para executar ficheiros maliciosos em contas de técnicos de Managed Service Providers (MSPs). Esta campanha permitiu o acesso não autorizado a sistemas sensíveis através de ferramentas de gestão remota. O elevado volume de pedidos evidencia a escala e a persistência dos ataques direcionados a estes prestadores de serviços.",
+   "image": "https://imgproxy.divecdn.com/NKxA6Y3_uiBRYvdAhS6LFwPIoM7_3-GD5Rb5njtrwy4/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy05Mjk3NzIzMTBfaUlxV1FsbC5qcGc=.webp",
+   "points": [
+    "Quase 690.000 pedidos de ficheiros registados em menos de um mês.",
+    "Exploração direcionada a contas de técnicos de MSP no ScreenConnect.",
+    "Execução de ficheiros maliciosos através da plataforma vulnerável.",
+    "Ataques colocam em risco a segurança de múltiplos clientes geridos."
+   ],
+   "title_original": "Critical flaw in ScreenConnect exploited to run malicious files on MSP technician accounts",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Compromete contas de prestadores de serviços geridos, abrindo porta para ataques em cascata nos clientes.",
+   "todo": "Atualize o ScreenConnect para a versão mais recente e reforce a autenticação multifator (MFA) nas contas técnicas."
+  },
+  {
    "id": "6e65e608df54f4fb",
    "source": "Infosecurity Magazine",
    "region": "EU",
@@ -3699,9 +3745,9 @@
     "Afeta versões específicas da linha Mendix Studio Pro 11.",
     "Siemens disponibilizou atualizações corretivas."
    ],
-   "title_original": "Siemens Mendix Studio Pro",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa porque a exploração destas falhas pode levar ao compromisso total do sistema e acesso não autorizado a dados.",
    "todo": "Atualize o Mendix Studio Pro para a versão mais recente e mantenha políticas rigorosas de firewall para bloquear tráfego externo indesejado."
@@ -3745,9 +3791,9 @@
     "Manipulação de ficheiros permite execução de código como root.",
     "Siemens ainda não disponibilizou correção oficial."
    ],
-   "title_original": "Siemens meta-iot2050",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa porque a falha permite o controlo total de dispositivos de infraestruturas críticas por atacantes com acesso local ou de configuração.",
    "todo": "Proteja o acesso à rede dos dispositivos e siga rigorosamente as diretrizes operacionais de segurança industrial da Siemens."
@@ -3768,9 +3814,9 @@
     "Pode levar à execução de código arbitrário.",
     "Ainda sem correção disponível, exigindo mitigação operacional."
    ],
-   "title_original": "Siemens SIMATIC WinCC",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa porque a abertura de ficheiros maliciosos pode comprometer estações de trabalho em ambientes industriais.",
    "todo": "Abra apenas ficheiros de fontes totalmente confiáveis e restrinja a operação do software a profissionais devidamente qualificados."
@@ -3791,9 +3837,9 @@
     "Pode permitir que atacantes locais façam falhar o serviço CLI.",
     "Requer atualização do Fortigate NGFW para a versão V7.6.9."
    ],
-   "title_original": "Siemens RUGGEDCOM APE1808",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa porque falhas em componentes de rede integrados podem desestabilizar a operação de equipamentos em setores críticos.",
    "todo": "Atualize o Fortigate NGFW associado para a versão V7.6.9 ou posterior e minimize a exposição de rede dos sistemas de controlo."
@@ -3814,9 +3860,9 @@
     "Afeta versões até à 1.45.0 em sistemas de água e águas residuais.",
     "Fabricante disponibilizou a versão v1.46 como correção."
    ],
-   "title_original": "Dorsett Controls InfoScan",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa porque afeta infraestruturas críticas de água, expondo sistemas a roubo de credenciais e interceptação de rede.",
    "todo": "Atualize o InfoScan para a versão v1.46 ou superior utilizando a ferramenta de manutenção do sistema ou o portal do fornecedor."
@@ -3837,9 +3883,9 @@
     "Pode permitir execução de código por atacantes remotos.",
     "Siemens está a preparar correções e boletins de suporte."
    ],
-   "title_original": "Siemens Industrial Software Products",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa porque afeta uma enorme variedade de software empresarial e de engenharia com risco elevado de execução de código.",
    "todo": "Consulte os boletins de software específicos da Siemens e aplique as atualizações ou mitigações recomendadas para cada produto."
@@ -3860,9 +3906,9 @@
     "Risco de execução remota de código sem autenticação.",
     "Siemens lançou correções parciais e recomenda atualizações."
    ],
-   "title_original": "Siemens Industrial Automation Software Products",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa porque a gravidade da vulnerabilidade em componentes fundamentais coloca em risco a segurança de ambientes industriais inteiros.",
    "todo": "Identifique os produtos afetados na sua infraestrutura e instale as versões corrigidas disponibilizadas pela Siemens o mais rapidamente possível."
@@ -3883,9 +3929,9 @@
     "Permite a atacantes em posição de 'man-in-the-middle' roubar sessões.",
     "Siemens sugere configuração manual de encriptação em bases de dados."
    ],
-   "title_original": "Siemens SIMATIC",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa porque permite a sequestro de sessões em sistemas de controlo industrial através de ataques na rede local.",
    "todo": "Configure manualmente a encriptação de comunicação nas bases de dados SQL afetadas conforme indicado nas diretrizes do fabricante."
@@ -3906,9 +3952,9 @@
     "Como: Um atacante passa um ficheiro de definição de mensagens crafted para executar código.",
     "Impacto: Permite a injeção e execução de código arbitrário no programa gerado."
    ],
-   "title_original": "Siemens ROS#",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Permite que atacantes executem código malicioso através de ficheiros manipulados em ambientes industriais.",
    "todo": "Atualizar o Siemens ROS# para a versão 2.3.1 ou posterior e restringir o acesso à rede dos dispositivos."
@@ -3929,9 +3975,9 @@
     "Como: Um atacante utiliza ficheiros X_T maliciosos para desencadear a falha no processamento.",
     "Impacto: Risco de crash da aplicação ou execução de código no contexto do processo atual."
    ],
-   "title_original": "Siemens Simcenter Femap",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Pode comprometer a estabilidade do sistema e permitir a execução de código indesejado.",
    "todo": "Atualizar o Siemens Simcenter Femap para a versão 2606.0002 ou superior."
@@ -3952,9 +3998,9 @@
     "Como: Desenvolvimento de modelos de IA avançados sem salvaguardas após o hack do Hugging Face.",
     "Impacto: Ameaça de imposição de mudanças obrigatórias por decisão judicial."
    ],
-   "title_original": "California Sues OpenAI, Seeking Court-Ordered Changes After the Hugging Face Hack",
+   "title_original": null,
    "category": "IA",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Exemplifica o aumento da responsabilização legal e escrutínio regulatório sobre os criadores de IA.",
    "todo": ""
@@ -3975,9 +4021,9 @@
     "Como: Dados Base64 maliciosos enviados ao descodificador da aplicação.",
     "Impacto: Possibilidade de crash da JVM e execução remota de código não autenticado."
    ],
-   "title_original": "Critical Java Vulnerability Requires Immediate Patching",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Trata-se de uma falha grave de execução remota de código num componente amplamente utilizado.",
    "todo": "Identificar e atualizar todas as instalações Java afetadas, priorizando sistemas expostos à internet."
@@ -3998,9 +4044,9 @@
     "Como: Exploração ativa de uma vulnerabilidade de desserialização de dados não confiáveis.",
     "Impacto: Risco elevado de compromisso total de ativos expostos publicamente."
    ],
-   "title_original": "CISA Adds One Known Exploited Vulnerability to Catalog",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Alerta as organizações para priorizarem a correção de vulnerabilidades que já estão a ser exploradas ativamente por cibercriminosos.",
    "todo": "Adotar uma gestão de vulnerabilidades baseada no risco e aplicar patches rápidos nas falhas listadas no catálogo KEV."
@@ -4021,9 +4067,9 @@
     "Como: Exploração de uma vulnerabilidade para inserir JavaScript malicioso em projetos de clientes.",
     "Impacto: Exposição de utilizadores de vários sites corporativos a scripts não autorizados."
    ],
-   "title_original": "Malware spread through Optimizely hits 178 organizations, including BBC, CNN and Zoom",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra como a cadeia de fornecimento digital e serviços de terceiros podem ser instrumentalizados para distribuir ameaças em larga escala.",
    "todo": "Monitorizar scripts de terceiros carregados em websites e adotar políticas rigorosas de Content Security Policy (CSP)."
@@ -4044,9 +4090,9 @@
     "Como: Detetado internamente, levando à ativação de respostas a incidentes e especialistas externos.",
     "Impacto: Sem impacto operacional visível ou de atendimento ao cliente registado até ao momento."
    ],
-   "title_original": "Opinion pollster Ipsos 'fesses up to 'cybersecurity incident'",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Evidencia que organizações detentoras de grandes volumes de dados confidenciais e políticos continuam a ser alvo de incidentes.",
    "todo": "Manter planos de resposta a incidentes atualizados e reportar prontamente incidentes suspeitos às autoridades competentes."
@@ -4067,9 +4113,9 @@
     "Como: Através da identificação e alerta sobre credenciais corporativas vazadas.",
     "Impacto: Ajuda as empresas a prevenir o acesso não autorizado decorrente de credenciais expostas."
    ],
-   "title_original": "Leaked Credentials Are an Enterprise Problem: GitGuardian Extends Its Good Samaritan Program to Security Teams",
+   "title_original": null,
    "category": "Fuga de dados",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Ajuda as empresas a anteciparem-se aos atacantes na identificação de segredos e palavras-passe expostas.",
    "todo": "Implementar ferramentas automatizadas de deteção de segredos em repositórios de código e monitorizar credenciais comprometidas."
@@ -4090,9 +4136,9 @@
     "Como: Utilização de uma permissão única na app para aceder a toda a galeria de fotos sem consentimento granular.",
     "Impacto: Violação da privacidade ao expor fotografias pessoais não intencionadas."
    ],
-   "title_original": "Facebook may have access to your entire photo gallery",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Destaca a importância do princípio do consentimento granular e dos riscos de permissões excessivas em aplicações móveis.",
    "todo": "Verificar e restringir as permissões de acesso a fotografias nas definições de privacidade da aplicação Facebook."
@@ -4113,9 +4159,9 @@
     "Como: Uso de IA para fabricar imagens de produtos, avaliações e sites falsos convincentes.",
     "Impacto: Perdas financeiras e receio generalizado dos compradores online."
    ],
-   "title_original": "Holiday shopping in a world of fakes: How AI is changing the game",
+   "title_original": null,
    "category": "Malware",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Alerta para o uso de IA generativa por burlões para criar esquemas de compras altamente convincentes.",
    "todo": "Desconfiar de promoções demasiado vantajosas em sites desconhecidos e verificar a reputação do comerciante antes de comprar."
@@ -4136,9 +4182,9 @@
     "Como: Utilização de plataformas legítimas (GitHub e SharePoint) para comunicações C2 encobertas.",
     "Impacto: Dificuldade na deteção de tráfego malicioso por se misturar com serviços legítimos."
    ],
-   "title_original": "New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
+   "title_original": null,
    "category": "Malware",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Demonstra técnicas avançadas em que atacantes usam serviços cloud legítimos para camuflar atividades maliciosas.",
    "todo": "Monitorizar o tráfego de rede anómalo para serviços em nuvem legítimos e analisar padrões de acesso a repositórios e plataformas de colaboração."
@@ -4159,9 +4205,9 @@
     "Como: Ativação remota de bloqueio em computadores perdidos ou roubados.",
     "Impacto: Proteção de dados corporativos sem exigir a formatação imediata do equipamento."
    ],
-   "title_original": "Microsoft testing Remote Lock for lost or stolen Windows devices",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Oferece às empresas uma forma rápida e menos destrutiva de proteger dispositivos corporativos extraviados.",
    "todo": "Configurar as políticas de gestão de dispositivos móveis (MDM) e testar os procedimentos de bloqueio remoto para ativos empresariais."
@@ -13750,50 +13796,6 @@
    "enriched": true,
    "why": "Evidencia a resposta rápida necessária para conter acessos não autorizados em plataformas de desenvolvimento e APIs.",
    "todo": "Renove credenciais e tokens de API imediatamente se houver suspeita de comprometimento de plataformas de terceiros."
-  },
-  {
-   "id": "d31c8888b13f2710",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/microsoft-security-advisory-november-2026-monthly-rollup-av26-1142",
-   "published": "2026-11-12T14:31:09+00:00",
-   "title": "Aviso de segurança Microsoft – Acumulado mensal de novembro de 2026 (AV26-1142)",
-   "summary": "A Microsoft emitiu o seu aviso de segurança mensal relativo a novembro de 2026, cobrindo dezenas de produtos afetados, incluindo várias versões do .NET, Azure, Windows, Office e Exchange Server. Os relatórios indicam que a vulnerabilidade CVE-2026-124194 já se encontra a ser explorada ativamente em ataques. O Centro Cibernético recomenda aos utilizadores e administradores que revejam os links de atualização e apliquem os patches necessários.",
-   "image": null,
-   "points": [
-    "Aviso mensal da Microsoft abrange sistemas operativos, ferramentas de desenvolvimento e serviços cloud.",
-    "A vulnerabilidade CVE-2026-124194 está a ser explorada ativamente no terreno.",
-    "Administradores devem aplicar urgentemente as correções disponibilizadas."
-   ],
-   "title_original": "Microsoft security advisory – November 2026 monthly rollup (AV26-1142)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Trata-se do pacote de atualizações periódicas mais abrangente da Microsoft, essencial para travar explorações ativas.",
-   "todo": "Aplique as atualizações mensais de segurança da Microsoft em todos os servidores e estações de trabalho suportados."
-  },
-  {
-   "id": "d2da268662d3338f",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/silentair-liminal-panda-telco/",
-   "published": "2026-11-12T14:30:00+00:00",
-   "title": "Operadoras de telecomunicações asiáticas hackeadas usadas para intercetar chamadas e mensagens em Taiwan",
-   "summary": "A empresa de segurança Enea associou os grupos SilentAir e Liminal Panda a ataques direcionados contra operadores de redes móveis na Ásia. Os atacantes comprometeram a infraestrutura das operadoras para intercetar chamadas e mensagens de texto em Taiwan. Esta operação demonstra a capacidade de grupos cibcriminosos avançados em comprometer infraestruturas de telecomunicações críticas para espionagem.",
-   "image": null,
-   "points": [
-    "Operadores de telecomunicações asiáticos foram comprometidos por hackers.",
-    "Os grupos SilentAir e Liminal Panda estão ligados aos ataques.",
-    "O objetivo foi intercetar chamadas e mensagens direcionadas a Taiwan."
-   ],
-   "title_original": "Hacked Asian Telcos Used to Intercept Taiwanese Calls and Texts",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Revela o risco de comprometimento de infraestruturas de telecomunicações para a interceptação de comunicações sensíveis.",
-   "todo": "Reforce a monitorização de redes de telecomunicações e utilize encriptação de ponta a ponta nas comunicações sensíveis."
   }
  ]
 }

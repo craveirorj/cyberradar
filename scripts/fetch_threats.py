@@ -5,7 +5,7 @@ Fontes (gratuitas):
 - abuse.ch Feodo Tracker: servidores de comando e controlo de botnets (sem chave).
 - Cloudflare Radar: principais origens e alvos de ataques DDoS (camadas 3/4) e a aplicações web (camada 7).
   Precisa do segredo CLOUDFLARE_API_TOKEN (token gratuito com permissão Radar: Read). Sem ele, esta parte é ignorada.
-- abuse.ch URLhaus (sites que distribuem malware), abuse.ch ThreatFox (indicadores de malware),
+- abuse.ch URLhaus (sites que distribuem malware) e ThreatFox (indicadores de malware), estes dois com chave grátis ABUSECH_AUTH_KEY (auth.abuse.ch),
   OpenPhish (phishing) e SANS DShield (IPs que fazem scans e força bruta): todas sem chave.
 - País dos IPs: base DB-IP Lite (CC BY 4.0, https://db-ip.com), descarregada em cada execução.
 Cada fonte falha sozinha, sem estragar as outras.
@@ -47,6 +47,7 @@ def feodo():
         "online": len(online),
         "by_country": dict(by_country.most_common(40)),
         "by_malware": dict(by_malware.most_common(8)),
+        "ports": {c: dict(Counter(str(x.get("port")) for x in online if (x.get("country") or "").upper() == c and x.get("port")).most_common(5)) for c in list(by_country)[:40]},
         "detail": {c: dict(Counter(x.get("malware") or "?" for x in online if (x.get("country") or "").upper() == c).most_common(5)) for c in list(by_country)[:40]},
         "recent": [
             {"country": (x.get("country") or "").upper(), "malware": x.get("malware") or "?",
@@ -102,17 +103,24 @@ def resolve(host):
 
 
 def summarize(label, pairs, geo, extra=None):
-    """pairs: lista de (ip, etiqueta). Conta por país e guarda as etiquetas mais comuns de cada país."""
-    c, det = Counter(), {}
-    for ip, tag in pairs:
+    """pairs: lista de (ip, etiqueta[, porto]). Conta por país e guarda etiquetas e portos mais comuns de cada país."""
+    c, det, ports = Counter(), {}, {}
+    for row in pairs:
+        ip, tag = row[0], row[1]
+        port = row[2] if len(row) > 2 else None
         cc = geo.cc(ip)
         if not cc:
             continue
         c[cc] += 1
         det.setdefault(cc, Counter())[tag or "?"] += 1
+        if port:
+            ports.setdefault(cc, Counter())[str(port)] += 1
     top = [k for k, _ in c.most_common(40)]
-    return {"label": label, "total": len(pairs), "by_country": {k: c[k] for k in top},
-            "detail": {k: dict(det[k].most_common(5)) for k in top}, **(extra or {})}
+    out = {"label": label, "total": len(pairs), "by_country": {k: c[k] for k in top},
+           "detail": {k: dict(det[k].most_common(5)) for k in top}, **(extra or {})}
+    if ports:
+        out["ports"] = {k: dict(ports[k].most_common(5)) for k in top if k in ports}
+    return out
 
 
 def host_ips(urls, limit=250):
@@ -135,25 +143,34 @@ def host_ips(urls, limit=250):
     return hosts
 
 
+def abusech_key():
+    key = os.environ.get("ABUSECH_AUTH_KEY", "").strip()
+    if not key:
+        raise RuntimeError("falta o segredo ABUSECH_AUTH_KEY (chave grátis em auth.abuse.ch)")
+    return key
+
+
 def urlhaus(geo):
-    r = requests.get("https://urlhaus.abuse.ch/downloads/csv_recent/", headers=UA, timeout=45)
+    r = requests.get("https://urlhaus-api.abuse.ch/v1/urls/recent/limit/1000/",
+                     headers={**UA, "Auth-Key": abusech_key()}, timeout=60)
     r.raise_for_status()
+    j = r.json()
+    if j.get("query_status") not in (None, "ok"):
+        raise RuntimeError(f"URLhaus: {j.get('query_status')}")
     rows, tags = [], Counter()
-    for line in r.text.splitlines():
-        if not line or line.startswith("#"):
+    for x in j.get("urls", []):
+        if str(x.get("url_status", "")).lower() != "online":
             continue
-        row = next(csv.reader([line]))
-        if len(row) >= 7 and row[3].lower() == "online":
-            tl = [t.strip() for t in (row[6] or "").split(",") if t.strip()]
-            rows.append((row[2], tl[0] if tl else (row[5] or "?")))
-            for t in tl:
-                tags[t] += 1
+        tl = [t for t in (x.get("tags") or []) if t]
+        rows.append((x.get("url", ""), tl[0] if tl else (x.get("threat") or "?")))
+        for t in tl:
+            tags[t] += 1
     hosts = host_ips([u for u, _ in rows])
     pairs = []
     for u, tag in rows:
-        h = urlparse(u if "://" in u else "http://" + u).hostname
-        if hosts.get(h):
-            pairs.append((hosts[h], tag))
+        pu = urlparse(u if "://" in u else "http://" + u)
+        if hosts.get(pu.hostname):
+            pairs.append((hosts[pu.hostname], tag, pu.port or (443 if pu.scheme == "https" else 80)))
     return summarize("Sites que distribuem malware", pairs, geo, {"total": len(rows), "tags": dict(tags.most_common(6))})
 
 
@@ -171,17 +188,18 @@ def openphish(geo):
 
 
 def threatfox(geo):
-    r = requests.get("https://threatfox.abuse.ch/export/json/recent/", headers=UA, timeout=60)
+    r = requests.post("https://threatfox-api.abuse.ch/api/v1/", json={"query": "get_iocs", "days": 1},
+                      headers={**UA, "Auth-Key": abusech_key()}, timeout=60)
     r.raise_for_status()
     j = r.json()
-    items = []
-    for v in (j.values() if isinstance(j, dict) else j):
-        items.extend(v if isinstance(v, list) else [v])
+    if j.get("query_status") not in (None, "ok"):
+        raise RuntimeError(f"ThreatFox: {j.get('query_status')}")
     pairs, mal = [], Counter()
-    for x in items:
-        if isinstance(x, dict) and "ip" in str(x.get("ioc_type", "")):
+    for x in j.get("data") or []:
+        if "ip" in str(x.get("ioc_type", "")):
             m = x.get("malware_printable") or "?"
-            pairs.append((str(x.get("ioc_value", "")).split(":")[0], m))
+            ip, _, port = str(x.get("ioc", "")).partition(":")
+            pairs.append((ip, m, port or None))
             mal[m] += 1
     return summarize("Indicadores de malware (IPs)", pairs, geo, {"malware": dict(mal.most_common(6))})
 

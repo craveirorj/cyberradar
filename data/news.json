@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T11:45:57.711156+00:00",
+ "updated": "2026-11-18T12:07:36.129275+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "CISA Advisories",
    "ok": true,
-   "added": 11
+   "added": 10
   },
   {
    "source": "CISA Alertas (KEV)",
@@ -74,7 +74,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -89,7 +89,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -174,7 +174,7 @@
   {
    "source": "Google Threat Intelligence",
    "ok": false,
-   "error": "500 Server Error: Internal Server Error for url: https://cloudblog.withgoogle.com/topics/threat-intelligence/rss/"
+   "error": "HTTPSConnectionPool(host='cloudblog.withgoogle.com', port=443): Read timed out. (read timeout=25)"
   },
   {
    "source": "Google Project Zero",
@@ -244,7 +244,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -304,16 +304,131 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 24,
-  "pending": 308,
-  "unenriched": 176,
+  "done": 48,
+  "pending": 288,
+  "unenriched": 155,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "Expecting value: line 5 column 10 (char 105)"
+   "Expecting property name enclosed in double quotes: line 110 column 5 (char 9942)",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "f2058d689eec5dda",
+   "source": "CSO Online",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.csoonline.com/article/4250156/attackers-hijack-microsofts-agent-framework-package-to-steal-azure-and-ci-credentials.html",
+   "published": "2026-11-18T11:58:53+00:00",
+   "title": "Attackers hijack Microsoft’s agent-framework package to steal Azure and CI credentials",
+   "summary": "Piratas informáticos comprometeram brevemente o pacote oficial Agent Framework da Microsoft no repositório PyPI. Foram lançadas duas versões maliciosas que funcionavam como um roubo de credenciais para extrair segredos de nuvem e chaves de desenvolvimento. O código malicioso recolhia variáveis de ambiente e ficheiros de configuração de forma automática ao iniciar o Python. O impacto afetou o ecossistema de desenvolvimento, uma vez que o pacote continha centenas de milhares de descarregamentos mensais.",
+   "image": "https://www.csoonline.com/wp-content/uploads/2026/10/4235801-0-66913300-1792067584-shutterstock_2238529723.jpg?quality=50&strip=all",
+   "points": [
+    "Quem: Atacantes desconhecidos comprometeram o PyPI da Microsoft.",
+    "O quê: Inclusão de versões maliciosas para roubar credenciais e tokens.",
+    "Como: Recolha automática de variáveis de ambiente e ficheiros locais.",
+    "Impacto: Exposição de segredos de nuvem e dados de sistemas de compilação."
+   ],
+   "title_original": "Attackers hijack Microsoft’s agent-framework package to steal Azure and CI credentials",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes roubem segredos sensíveis e credenciais de nuvem diretamente de estações de trabalho de programadores.",
+   "todo": "Verifique se utilizou as versões afetadas (1.26.1 ou 1.26.2) do pacote e revogue imediatamente quaisquer credenciais ou tokens expostos."
+  },
+  {
+   "id": "57cf485fa9212e04",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/dizigom-illegal-streaming-service-with-21m-monthly-visits-shuts-down/",
+   "published": "2026-11-18T11:50:25+00:00",
+   "title": "Dizigom illegal streaming service with 21M monthly visits shuts down",
+   "summary": "A Aliança para a Criatividade e o Entretenimento encerrou o Dizigom, um dos maiores sites de pirataria na Turquia. O encerramento ocorreu após um acordo de resolução amigável estabelecido com os operadores da plataforma. A página contava com milhões de visitas mensais em ambiente digital. Esta ação visa combater a distribuição ilegal de conteúdos.",
+   "image": null,
+   "points": [
+    "Quem: A Alliance for Creativity and Entertainment e operadores do site.",
+    "O quê: Encerramento definitivo do serviço de streaming ilegal Dizigom.",
+    "Como: Através de um acordo de resolução negociado com os responsáveis.",
+    "Impacto: Fim de uma plataforma com cerca de 21 milhões de visitas mensais."
+   ],
+   "title_original": "Dizigom illegal streaming service with 21M monthly visits shuts down",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Reduz significativamente a disponibilidade de grandes redes de pirataria online na região.",
+   "todo": ""
+  },
+  {
+   "id": "787f32d48daf3d01",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/russian-star-blizzard-cloud-data/",
+   "published": "2026-11-18T11:45:00+00:00",
+   "title": "Russian Espionage Actor Star Blizzard Focuses on Cloud Identities for Mass Data Theft",
+   "summary": "A equipa de análise da Google divulgou um novo relatório sobre o grupo de espionagem Star Blizzard, também conhecido como Cold Relic. A investigação destaca a tendência crescente do grupo em visar ambientes na nuvem. O objetivo principal passa por roubar dados sensíveis e preparar futuras operações maliciosas. Esta evolução demonstra uma adaptação das táticas do grupo para infraestruturas modernas.",
+   "image": null,
+   "points": [
+    "Quem: O grupo de espionagem russa Star Blizzard (Cold Relic).",
+    "O quê: Foco reforçado na exploração de identidades e ambientes na nuvem.",
+    "Como: Através de campanhas direcionadas para roubo de dados em massa.",
+    "Impacto: Facilita ataques futuros e o acesso não autorizado a infraestruturas."
+   ],
+   "title_original": "Russian Espionage Actor Star Blizzard Focuses on Cloud Identities for Mass Data Theft",
+   "category": "Ataque/APT",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como os grupos de ameaças estatais estão a migrar o seu foco para ambientes em nuvem para maximizar o roubo de dados.",
+   "todo": "Reforce a autenticação multifator (MFA) em todas as contas de serviços em nuvem e monitorize acessos suspeitos."
+  },
+  {
+   "id": "ac7a12437b591221",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/chrome-158-patches-204-vulnerabilities/",
+   "published": "2026-11-18T11:43:22+00:00",
+   "title": "Chrome 158 Patches 204 Vulnerabilities",
+   "summary": "A Google lançou uma nova atualização para o navegador Chrome que corrige centenas de falhas de segurança. No âmbito deste ciclo, a empresa atribuiu recompensas financeiras a investigadores externos por vulnerabilidades reportadas. Várias falhas continuam sob análise para determinar o valor do prémio a atribuir. Estas correções visam manter a estabilidade e a segurança do software.",
+   "image": null,
+   "points": [
+    "Quem: A Google e investigadores de segurança externos.",
+    "O quê: Correção de 204 vulnerabilidades na nova versão do Chrome.",
+    "Como: Através do lançamento de patches e atribuição de recompensas.",
+    "Impacto: Melhora a proteção do navegador contra potenciais explorações."
+   ],
+   "title_original": "Chrome 158 Patches 204 Vulnerabilities",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Garante que o navegador web mais utilizado permanece protegido contra vulnerabilidades recém-descobertas.",
+   "todo": "Atualize o Google Chrome para a versão mais recente o mais rapidamente possível."
+  },
+  {
+   "id": "fd349f5a83c393ad",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203394/hacking/norwegian-gas-giant-equinor-says-its-under-cyberattack-production-keeps-running.html",
+   "published": "2026-11-18T11:36:00+00:00",
+   "title": "Norwegian Gas Giant Equinor Says It’s Under Cyberattack. Production Keeps Running",
+   "summary": "A empresa norueguesa Equinor detetou um ciberataque direcionado a alguns dos seus sistemas de TI internos. A gigante energética garantiu que a produção de gás e as operações principais não foram afetadas pelo incidente. Os recursos necessários foram mobilizados para neutralizar a ameaça e restaurar a integridade dos sistemas. As autoridades norueguesas acompanham a situação num contexto de elevado alerta de cibersegurança.",
+   "image": null,
+   "points": [
+    "Quem: A empresa energética norueguesa Equinor e a autoridade NSM.",
+    "O quê: Ciberataque a sistemas de TI internos e de escritório.",
+    "Como: Deteção de acessos e mobilização de recursos de resposta.",
+    "Impacto: Perturbação de aplicações diárias e email, sem afetar a produção."
+   ],
+   "title_original": "Norwegian Gas Giant Equinor Says It’s Under Cyberattack. Production Keeps Running",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia os riscos crescentes de ciberataques contra operadores de infraestruturas críticas e fornecedores de energia.",
+   "todo": "Mantenha os planos de resposta a incidentes atualizados e garanta a segmentação adequada entre redes corporativas e industriais."
+  },
   {
    "id": "594fa93fd9554080",
    "source": "Help Net Security",
@@ -428,6 +543,29 @@
    "enriched": true,
    "why": "Expõe sistemas estatais críticos a ataques persistentes devido à utilização prolongada de tecnologia obsoleta.",
    "todo": "Modernize as infraestruturas tecnológicas legadas e unifique a gestão de segurança entre diferentes camadas de sistemas."
+  },
+  {
+   "id": "88a05ccd26cbaca9",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203387/hacking/65-characters-to-rce-inside-the-java4shell-vulnerability.html",
+   "published": "2026-11-18T10:45:57+00:00",
+   "title": "65 Characters to RCE: Inside the Java4Shell Vulnerability",
+   "summary": "Investigadores da Calif revelaram uma falha crítica de corrupção de memória no descodificador Base64 do OpenJDK, identificada como CVE-2026-114938. A vulnerabilidade afeta múltiplos sistemas empresariais populares e plataformas em nuvem que utilizam o Java. Uma única sequência de caracteres malformada com um comprimento específico pode desencadear a execução remota de código sem autenticação. As correções já foram disponibilizadas pelos fornecedores.",
+   "image": "https://i0.wp.com/securityaffairs.com/wp-content/uploads/2026/11/image-46.png?resize=900%2C470&#038;ssl=1",
+   "points": [
+    "Quem: Investigadores da Calif e utilizadores do ecossistema OpenJDK.",
+    "O quê: Divulgação da vulnerabilidade Java4Shell (CVE-2026-114938).",
+    "Como: Exploitation através de uma string Base64 malformada de 65 carateres.",
+    "Impacto: Permite a execução remota de código em servidores e sistemas cloud."
+   ],
+   "title_original": "65 Characters to RCE: Inside the Java4Shell Vulnerability",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Abre portas à execução remota de código em milhões de servidores e aplicações empresariais baseadas em Java.",
+   "todo": "Atualize imediatamente as suas instalações e runtimes OpenJDK para as versões corrigidas."
   },
   {
    "id": "94321d4b37d655bf",
@@ -13664,144 +13802,6 @@
    "enriched": true,
    "why": "O desmantelamento de infraestruturas criminosas reduz temporariamente a capacidade de propagação destes malwares.",
    "todo": "Mantenha soluções de segurança atualizadas nos endpoints para detetar eventuais tentativas residuais de infeção."
-  },
-  {
-   "id": "74218da71f9d70bb",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/12/picus-autonomous-penetration-testing/",
-   "published": "2026-11-12T15:05:02+00:00",
-   "title": "Picus coloca agentes de IA na ofensiva com testes de penetração autónomos",
-   "summary": "A Picus Security lançou uma nova capacidade de testes de penetração baseada em agentes de inteligência artificial. Esta tecnologia adota uma perspetiva ofensiva, simulando o raciocínio de atacantes reais para encadear explorações contra os ativos mais críticos de uma organização. A solução opera sob regras de governação rígidas que os agentes não conseguem ultrapassar.",
-   "image": null,
-   "points": [
-    "Lançado o Picus Autonomous Penetration Testing.",
-    "Usa agentes de IA com mentalidade ofensiva.",
-    "Simula ataques encadeados a ativos críticos.",
-    "Funciona sob regras de governação estritas."
-   ],
-   "title_original": "Picus puts AI agents on the offensive with autonomous pentesting",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite às organizações testar a sua postura de segurança de forma automatizada e antecipar táticas de atacantes reais.",
-   "todo": "Considere adotar testes de intrusão automatizados para avaliar continuamente a resiliência das defesas da sua rede."
-  },
-  {
-   "id": "023203791c504e81",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/hpe-security-advisory-av26-1144",
-   "published": "2026-11-12T15:04:28+00:00",
-   "title": "Aviso de segurança da HPE (AV26-1144)",
-   "summary": "A Hewlett Packard Enterprise emitiu um alerta de segurança devido a vulnerabilidades detetadas no produto HPE Networking Private 5G Core, afetando versões iguais ou anteriores à 1.26.1.4. O Centro Cibernético insta os administradores de sistemas a consultarem os links fornecidos pela empresa. Os utilizadores devem aplicar as atualizações de correção logo que estejam disponíveis.",
-   "image": null,
-   "points": [
-    "Aviso emitido pela Hewlett Packard Enterprise.",
-    "Afeta o produto HPE Networking Private 5G Core.",
-    "Versões 1.26.1.4 e anteriores são vulneráveis.",
-    "Recomenda-se a revisão de links e aplicação de patches."
-   ],
-   "title_original": "HPE security advisory (AV26-1144)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Falhas em infraestruturas de rede privada 5G podem comprometer a confidencialidade e integridade das comunicações empresariais.",
-   "todo": "Consulte o boletim da HPE e aplique imediatamente as atualizações de segurança disponíveis para o Private 5G Core."
-  },
-  {
-   "id": "023d1c79ca20cb05",
-   "source": "TechCrunch Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/",
-   "published": "2026-11-12T15:02:28+00:00",
-   "title": "Ciberataque à Fireworks AI permitiu a hackers aceder a transcrições de chat de clientes da Notion",
-   "summary": "A empresa Fireworks AI foi alvo de um ciberataque que resultou no acesso indevido a transcrições de conversas de clientes da plataforma Notion. Este incidente representa a segunda violação de dados sofrida pela Fireworks no espaço de dois meses. A brecha expôs informações sensíveis tratadas através dos serviços afetados.",
-   "image": null,
-   "points": [
-    "Fireworks AI sofreu um ciberataque.",
-    "Hackers acederam a transcrições de chat da Notion.",
-    "É a segunda violação da empresa em dois meses.",
-    "Dados sensíveis de clientes foram expostos."
-   ],
-   "title_original": "Cyberattack on Fireworks AI allowed hackers to access Notion customers’ chat transcripts",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Incidentes em fornecedores de IA de terceiros podem expor dados confidenciais de utilizadores de plataformas integradas.",
-   "todo": "Reveja as permissões de partilha de dados com serviços de IA de terceiros e monitore alertas de segurança dos fornecedores."
-  },
-  {
-   "id": "1857708e01dda10e",
-   "source": "Unit 42 (Palo Alto)",
-   "region": "US",
-   "lang": "en",
-   "link": "https://unit42.paloaltonetworks.com/cairn-framework-ai-autonomous-attacks/",
-   "published": "2026-11-12T15:00:31+00:00",
-   "title": "Atacantes utilizam IA autónoma para visar setores de semicondutores, defesa e sociedade civil",
-   "summary": "Uma análise revelou que grupos maliciosos recorreram ao framework de agentes de IA de código aberto Cairn para atacar de forma autónoma alvos nos setores de semicondutores, defesa e organizações cívicas. A utilização desta tecnologia permitiu automatizar fases críticas da intrusão sem intervenção humana constante. A descoberta ilustra a nova realidade das ameaças impulsionadas por inteligência artificial.",
-   "image": "https://unit42.paloaltonetworks.com/wp-content/uploads/2026/11/AdobeStock_992950050-5.jpg",
-   "points": [
-    "Uso do framework de IA Cairn por atacantes.",
-    "Alvos incluíram defesa e semicondutores.",
-    "Ataques conduzidos de forma autónoma.",
-    "Automatização reduziu a necessidade de esforço humano."
-   ],
-   "title_original": "Attackers Use Autonomous AI to Target Semiconductor, Defense and Civil Society Sectors",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "O uso de IA para automatizar ataques direcionados aumenta drasticamente a velocidade e o alcance das intrusões em setores estratégicos.",
-   "todo": "Adote defesas baseadas em IA e reforce a monitorização comportamental para detetar comportamentos anómalos automatizados."
-  },
-  {
-   "id": "4864a8622c3d8c3b",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/12/cairn-autonomous-ai-cyberattacks/",
-   "published": "2026-11-12T15:00:29+00:00",
-   "title": "Atacadores invadiram 10 organizações com uma framework de testes de penetração de IA open-source",
-   "summary": "Piratas informáticos de língua chinesa utilizaram o framework open-source de testes de penetração de IA Cairn para realizar 25 operações contra pelo menos 19 organizações em agosto e setembro de 2026. A Unit 42 da Palo Alto Networks descobriu que os atacantes conseguiram acesso não autorizado ou extraíram dados em 10 dessas entidades, inserindo apenas o nome de um domínio e um objetivo simples. A maioria dos alvos concentra-se na cadeia de abastecimento de semicondutores e fabrico avançado, além de três no setor da defesa.",
-   "image": null,
-   "points": [
-    "Atacantes usaram o framework de IA Cairn em 25 operações.",
-    "10 de 19 organizações visadas sofreram acessos não autorizados ou roubo de dados.",
-    "Os alvos incluíram empresas de semicondutores e do setor da defesa.",
-    "A campanha foi descoberta pela Unit 42 da Palo Alto Networks."
-   ],
-   "title_original": "Attackers breached 10 organizations with an open-source AI pentest framework",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como ferramentas de IA open-source estão a ser ativamente usadas por cibercriminosos para comprometer cadeias de abastecimento críticas.",
-   "todo": "Monitorize o acesso a redes e sistemas críticos e reforce a deteção de intrusões automatizadas."
-  },
-  {
-   "id": "28ab9a11f8377371",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/your-endpoint-management-platform-could-be-your-biggest-security-risk/",
-   "published": "2026-11-12T15:00:10+00:00",
-   "title": "A sua plataforma de gestão de terminais pode ser o seu maior risco de segurança",
-   "summary": "As plataformas de gestão de terminais podem transformar-se em ferramentas de ataque perigosas se forem comprometidas, permitindo que os hackers implantem malware, executem comandos e perturbem milhares de dispositivos. A Action1 explica de que forma a autorização criptográfica controlada pelo cliente pode impedir que os atacantes abusem de operações sensíveis em terminais. Esta abordagem ajuda a mitigar os riscos associados ao controlo indevido destas plataformas críticas.",
-   "image": null,
-   "points": [
-    "Plataformas de gestão de terminais comprometidas permitem implantar malware e executar comandos.",
-    "O problema afeta milhares de dispositivos ligados à infraestrutura.",
-    "A Action1 propõe autorização criptográfica controlada pelo cliente como solução.",
-    "O objetivo é evitar o abuso de operações sensíveis nos terminais."
-   ],
-   "title_original": "Your Endpoint Management Platform Could Be Your Biggest Security Risk",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Destaca como ferramentas de administração centralizada podem ser weaponizadas contra a própria organização se não forem devidamente protegidas.",
-   "todo": "Implemente autorização criptográfica controlada e reforce a segurança e autenticação nas plataformas de gestão de terminais."
   }
  ]
 }

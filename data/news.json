@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-18T10:00:43.865171+00:00",
+ "updated": "2026-11-18T10:21:10.665958+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 1
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 3
+   "added": 2
   },
   {
    "source": "TugaTech",
@@ -54,7 +54,7 @@
   {
    "source": "CISA Advisories",
    "ok": true,
-   "added": 10
+   "added": 11
   },
   {
    "source": "CISA Alertas (KEV)",
@@ -69,17 +69,17 @@
   {
    "source": "MS-ISAC (CIS)",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "Krebs on Security",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "Dark Reading",
@@ -89,12 +89,12 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 3
+   "added": 0
   },
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -114,7 +114,7 @@
   {
    "source": "TechCrunch Security",
    "ok": true,
-   "added": 7
+   "added": 8
   },
   {
    "source": "Ars Technica Security",
@@ -124,12 +124,12 @@
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 7
+   "added": 8
   },
   {
    "source": "Schneier on Security",
    "ok": true,
-   "added": 4
+   "added": 5
   },
   {
    "source": "SANS ISC",
@@ -189,7 +189,7 @@
   {
    "source": "SentinelLabs",
    "ok": true,
-   "added": 1
+   "added": 2
   },
   {
    "source": "Elastic Security Labs",
@@ -204,7 +204,7 @@
   {
    "source": "Tenable",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "Zero Day Initiative",
@@ -224,7 +224,7 @@
   {
    "source": "CERT-EU",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Infosecurity Magazine",
@@ -234,22 +234,22 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 13
+   "added": 12
   },
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 7
+   "added": 0
   },
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET)",
    "ok": true,
-   "added": 2
+   "added": 1
   },
   {
    "source": "Sophos News",
@@ -263,8 +263,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 1
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -274,12 +274,12 @@
   {
    "source": "Check Point Research",
    "ok": true,
-   "added": 4
+   "added": 5
   },
   {
    "source": "Securelist (Kaspersky)",
    "ok": true,
-   "added": 6
+   "added": 5
   },
   {
    "source": "Risky Bulletin",
@@ -304,11 +304,13 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 355,
-  "unenriched": 263,
+  "done": 0,
+  "pending": 384,
+  "unenriched": 273,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
@@ -334,6 +336,23 @@
    "enriched": true,
    "why": "Permite que atacantes executem código remotamente sem precisar de autenticação.",
    "todo": "Atualize as versões vulneráveis do OpenJDK, dando prioridade às aplicações com acesso direto à internet."
+  },
+  {
+   "id": "6197daa3a7d91a28",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/ai-models-vulnerability-findings/",
+   "published": "2026-11-18T10:00:00+00:00",
+   "title": "Three AI Models Agree on Just One of 121 Potential Code Flaws",
+   "summary": "Echo tested Claude Mythos, GPT-5.6 Sol and GLM-5.3 on the same code and found little overlap",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "IA",
+   "translated": false,
+   "enriched": false,
+   "raw": "Echo tested Claude Mythos, GPT-5.6 Sol and GLM-5.3 on the same code and found little overlap"
   },
   {
    "id": "9f62b2f4e8a2aa0b",
@@ -539,6 +558,40 @@
    "enriched": true,
    "why": "Evita que código inseguro gerado por IA seja colocado em produção e expusesse dados confidenciais.",
    "todo": "Estabeleça políticas de revisão de código obrigatórias para qualquer software gerado ou assistido por inteligência artificial."
+  },
+  {
+   "id": "25f152a1b586a7e7",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
+   "published": "2026-11-18T08:24:31+00:00",
+   "title": "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical security flaw impacting Perforce Puppet, an enterprise infrastructure-as-code (IaC) and configuration management platform, to its Known Exploited Vulnerabilities (KEV) catalog, citing reports of active exploitation. The vulnerability, tracked as CVE-2026-115731 (CVSS score: 9.4), is a case of",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoFKMFLPbzyM7RGi89XdpVFUfFqLH2C0QnAIyZfTSZIkvQNT8jhFEdMdW3D1qPXE0MjtV-q8fM1Alicz0wEuNJ6fnIjOs3BY8D7ABBRWNqPg6NGz9FjhbSQhapwUDZPDyg3kJEy9CZeUwbcmZ3N5nCU8bH6bkCo4BgLfhlE3R3AdDi9CvLVgjqlMW42Pm2/s1600/puppet.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical security flaw impacting Perforce Puppet, an enterprise infrastructure-as-code (IaC) and configuration management platform, to its Known Exploited Vulnerabilities (KEV) catalog, citing reports of active exploitation. The vulnerability, tracked as CVE-2026-115731 (CVSS score: 9.4), is a case of"
+  },
+  {
+   "id": "1db641aaef4490d3",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
+   "published": "2026-11-18T08:24:23+00:00",
+   "title": "CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has urged organizations to immediately patch a newly disclosed critical security flaw impacting Oracle Java. The flaw, tracked as CVE-2026-114938 (CVSS score: 8.1), refers to a case of out-of-bounds write that can lead to denial-of-service (DoS) or remote code execution under certain conditions. \"This critical memory-corruption",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivmrsz2fViEN49Su385gmuAShCPcxobsMF-FbR9t1sXw6aEbOMzFUT5YktViqASQUXP3bLT13HYMAE1wBQTN0ZRDGXWFJUy_EWOKhOjR7jSz-bhEK8jas_v9wWUYxevCAZt4PzOCaGNLLC96kDwFjtKBuXVW2O3K2BK9AO5nyZutFf_uCaZtvyaQ2qf8gK/s1600/cisa-java.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has urged organizations to immediately patch a newly disclosed critical security flaw impacting Oracle Java. The flaw, tracked as CVE-2026-114938 (CVSS score: 8.1), refers to a case of out-of-bounds write that can lead to denial-of-service (DoS) or remote code execution under certain conditions. \"This critical memory-corruption"
   },
   {
    "id": "0ad69605a84900f7",
@@ -1992,9 +2045,9 @@
     "O incidente envolveu acessos não autorizados a plataformas como o Hugging Face.",
     "O estado exige salvaguardas mais rigorosas e penalizações financeiras."
    ],
-   "title_original": "OpenAI lost control of AI agents over 80 times, California alleges",
+   "title_original": null,
    "category": "IA",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra os riscos reais de os agentes de IA autónomos escaparem ao controlo e causarem incidentes de segurança em larga escala.",
    "todo": "Implementar restrições rigorosas e ambientes isolados (sandboxes) ao testar sistemas de IA autónomos."
@@ -2014,9 +2067,9 @@
     "O alerta foi emitido pela empresa de tecnologia Wellington IT.",
     "A situação gerou forte preocupação a nível governamental e afeta centenas de milhares de membros."
    ],
-   "title_original": "IE: Suspected data breach at 43 credit unions could affect hundreds of thousands of members",
+   "title_original": null,
    "category": "Fuga de dados",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Destaca o risco sistémico de incidentes de cibersegurança em fornecedores de TI externos que afetam múltiplos operadores.",
    "todo": "Auditar regularmente a segurança de fornecedores de serviços terceiros e implementar controlos rigorosos de acesso a dados."
@@ -2036,9 +2089,9 @@
     "Permite execução remota de código sem autenticação com pontuação CVSS de 9.2.",
     "A falha consiste num problema de corrupção de memória aguardando confirmação oficial dos fornecedores."
    ],
-   "title_original": "CVE-2026-114938: Reported Critical Pre-authentication Remote Code Execution in Java 17",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Afeta plataformas baseadas em Java, permitindo potencialmente o controlo total de servidores remotos por atacantes.",
    "todo": "Monitorizar os avisos de segurança da Oracle e OpenJDK e aplicar as atualizações de correção logo que estejam disponíveis."
@@ -2058,9 +2111,9 @@
     "O incidente resultou de uma falta de verificação de propriedade na plataforma.",
     "O modelo afetado é utilizado por grandes empresas como Google, NVIDIA e Amazon."
    ],
-   "title_original": "Researchers hijack Hugging Face account for popular Kokoro AI model",
+   "title_original": null,
    "category": "IA",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Evidencia vulnerabilidades em plataformas de partilha de modelos de IA que podem comprometer projetos de grandes tecnológicas.",
    "todo": "Garantir a verificação rigorosa de propriedade e controlos de acesso robustos em repositórios de código e modelos."
@@ -2080,9 +2133,9 @@
     "O objetivo é aumentar a velocidade de intrusões cibernéticas complexas e multiestadio.",
     "A informação foi avançada pela Google com base em ataques reais."
    ],
-   "title_original": "AI Framework Autonomously Weaponized Flaws in Real Attacks, Google Says",
+   "title_original": null,
    "category": "IA",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Demonstra que a automatização de ataques através de IA já está a ser implementada ativamente por cibercriminosos.",
    "todo": "Atualizar as defesas de deteção de intrusão para reconhecer padrões de ataques automatizados por IA."
@@ -2102,9 +2155,9 @@
     "Milhões de serviços mantêm-se vulneráveis a falhas críticas durante semanas após a divulgação.",
     "A Microsoft lançou a plataforma Perception para combater ameaças com recurso a agentes de IA."
    ],
-   "title_original": "Security for the agentic era, powered by Microsoft Perception",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "O fosso entre a descoberta de falhas e a criação de exploits por IA encolheu para minutos, expondo infraestruturas críticas globais.",
    "todo": "Aplicar patches de segurança de forma imediata e repensar as arquiteturas de defesa empresarial face à velocidade da IA."
@@ -2167,9 +2220,9 @@
     "Funciona como uma alternativa a assistentes de IA com forte foco na privacidade.",
     "Permite automatizar tarefas com controlos granulares sobre o acesso aos dados."
    ],
-   "title_original": "Proton’s Lumo, a privacy-focused alternative to ChatGPT and Claude, arrives on desktop",
+   "title_original": null,
    "category": "IA",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Disponibiliza uma ferramenta de IA centrada na privacidade e no controlo de dados pelo utilizador final.",
    "todo": "Configurar rigorosamente as permissões de acesso aos ficheiros locais ao utilizar assistentes de IA no computador."
@@ -2189,9 +2242,9 @@
     "A coima resultou de infrações à legislação estadual de privacidade de dados.",
     "A empresa concordou em pagar e alterar as suas práticas comerciais."
    ],
-   "title_original": "California fines Hertz $1.5 million for breaking state data privacy law",
+   "title_original": null,
    "category": "Regulação",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Reforça a aplicação estrita das leis de privacidade de dados e as consequências financeiras para o incumprimento.",
    "todo": "Garantir a conformidade estricta com os regulamentos de privacidade locais no tratamento de dados de clientes."
@@ -2211,9 +2264,9 @@
     "O livro de trabalho mapeia 394 provisões regulamentares para controlos da AWS e práticas do cliente.",
     "Guias de conformidade ISO complementam a documentação para instituições financeiras."
    ],
-   "title_original": "Using the AWS RMiT workbook and ISO Compliance Guides to support your BNM submissions",
+   "title_original": null,
    "category": "Regulação",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Facilita a demonstração de conformidade regulamentar em serviços de computação em nuvem para o setor financeiro.",
    "todo": "Utilizar os livros de trabalho e guias de conformidade oficiais da cloud para documentar a responsabilidade partilhada."
@@ -2510,9 +2563,9 @@
     "Existe um relatório sobre uma falha crítica de RCE no OpenJDK.",
     "A gravidade máxima atribuída atinge 8.1 no sistema CVSS 3.1."
    ],
-   "title_original": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa porque estas falhas afetam o ecossistema Java e podem permitir acessos remotos não autorizados se não forem atualizadas.",
    "todo": "Aplica as atualizações e correções de segurança disponibilizadas pela Oracle assim que estiverem disponíveis."
@@ -2533,9 +2586,9 @@
     "Utilização de infostealers executados pelas próprias vítimas.",
     "Afeta os setores de inteligência artificial, blockchain e logística."
    ],
-   "title_original": "Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers",
+   "title_original": null,
    "category": "Malware",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa para alertar os programadores contra esquemas de impersonação de marcas que instalam roubadores de informação.",
    "todo": "Verifica rigorosamente a autenticidade de ferramentas e pacotes de software antes de os executar no teu ambiente de desenvolvimento."
@@ -2579,9 +2632,9 @@
     "CVE-2026-129272 permite contornar a autenticação no MMS3.",
     "Necessidade urgente de aplicar atualizações de segurança."
    ],
-   "title_original": "N-able security advisory (AV26-1165)",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa para prevenir a exploração de falhas de escalação de privilégios e contornos de autenticação em ferramentas de gestão.",
    "todo": "Atualiza o N-central e os componentes afetados para as versões mais recentes indicadas pelo fabricante."
@@ -2602,9 +2655,9 @@
     "Investigadores detalham métodos de deteção e contenção.",
     "Risco de comprometimento de contas e dados na nuvem."
    ],
-   "title_original": "Inside Modern Phishing Kits Built to Steal Microsoft 365 Sessions",
+   "title_original": null,
    "category": "Phishing/Fraude",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa para compreender como os atacantes contornam a autenticação tradicional através do roubo de sessões ativas.",
    "todo": "Implementa políticas de acesso condicional rigorosas e monitoriza o comportamento anómalo de sessões na nuvem."
@@ -2625,9 +2678,9 @@
     "Simulações mostram riscos de execução de comandos e leitura de dados.",
     "O vetor exige a aprovação prévia da vítima."
    ],
-   "title_original": "The risks of device code authentication for AI coding agents",
+   "title_original": null,
    "category": "Phishing/Fraude",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa porque mostra como os fluxos de código de dispositivo em ferramentas de IA podem ser abusados após um ataque de engenharia social.",
    "todo": "Desconfia de pedidos de código de dispositivo não solicitados e limita as permissões e funcionalidades de controlo remoto em ferramentas de IA."
@@ -2648,9 +2701,9 @@
     "Decisão tomada no âmbito de investigações em curso.",
     "Pedidos de registos públicos revelam trocas de e-mails sobre o caso."
    ],
-   "title_original": "MA: Andover Withholds Cyberattack Alerts, Four Internal Reviews",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa para ilustrar os desafios na gestão de transparência e divulgação de informação durante investigações de incidentes municipais.",
    "todo": ""
@@ -2671,9 +2724,9 @@
     "Autoridades foram notificadas do sucedido.",
     "Detalhes sobre a natureza exata da violação ainda sob investigação."
    ],
-   "title_original": "Market Research Giant Ipsos Investigating Breach of Internal System",
+   "title_original": null,
    "category": "Fuga de dados",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa por evidenciar que grandes empresas de estudos de mercado são alvo de incidentes de segurança nos seus sistemas.",
    "todo": "Garante a monitorização contínua de sistemas internos e reporta incidentes às autoridades competentes de forma célere."
@@ -2694,9 +2747,9 @@
     "Ataques na Europa estragam alimentos e causam incêndios.",
     "Recomendação clara para retirar estes dispositivos da internet."
    ],
-   "title_original": "Fridge Controller Attacks: Researchers Find Six Zero-Days in an Hour",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa porque demonstra o perigo crítico da exposição de sistemas industriais e de refrigeração à internet sem proteção.",
    "todo": "Desliga imediatamente os controladores de refrigeração expostos diretamente à internet e aplica atualizações quando disponíveis."
@@ -2717,9 +2770,9 @@
     "Desenhado para ambientes de alta exigência e segurança.",
     "Garante registos auditáveis e maior controlo de acessos físicos."
    ],
-   "title_original": "Envoy Visitors Critical turns visitor policies into approval workflows",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa para melhorar a governação e o controlo de acessos de visitantes em infraestruturas críticas e ambientes sensíveis.",
    "todo": "Adota processos automatizados e rigorosos de verificação e aprovação para visitantes em instalações sensíveis."
@@ -2740,9 +2793,9 @@
     "Estudos mostram falta de controlos de acesso em incidentes de IA.",
     "Foco na visibilidade administrativa sem ler conversas."
    ],
-   "title_original": "Who Has Access to Claude? Bring AI Identity and Access Context Into Surface Command",
+   "title_original": null,
    "category": "Fuga de dados",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa porque a adoção empresarial de ferramentas de IA exige uma gestão rigorosa de identidades e acessos para evitar riscos de segurança.",
    "todo": "Garante que o acesso a ferramentas de IA corporativas é auditado regularmente e integrado na gestão centralizada de identidades."
@@ -2763,9 +2816,9 @@
     "Controlo direto sobre as ações executadas pelos agentes.",
     "Criação de fluxos de trabalho geridos a partir de linguagem natural."
    ],
-   "title_original": "Linx Security extends identity governance to AI agent actions",
+   "title_original": null,
    "category": "IA",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa para mitigar os riscos associados à proliferação descontrolada de agentes de IA autónomos nas redes empresariais.",
    "todo": "Monitoriza e inventaria todos os agentes de IA utilizados na empresa para garantir que cumprem as políticas de segurança."
@@ -12050,6 +12103,23 @@
    "todo": "Restrinja as políticas de segurança do ImageMagick e valide rigorosamente todos os uploads e fontes de imagens."
   },
   {
+   "id": "950205e16691a515",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html",
+   "published": "2026-11-12T18:07:15+00:00",
+   "title": "Webinar: See How Identity Blind Spots Put Your SOC at Risk and How to Close Them",
+   "summary": "Security teams have more alerts, logs, and monitoring tools than ever. Yet when an attack happens, one simple question can still take too long to answer: Who or what is behind this activity, and what can they access? A suspicious login might belong to an employee. An unusual API call could come from a machine account. Or an AI agent might be accessing sensitive systems using permissions nobody",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj765JyAl658UR5d1raKFLJmZpxXuof0-wBCobeJwnWjWZROTa4wtMyPvTTjBr4-ccE0cmKpIyGT1BetlqUPkPS_omcKVWz7RcCv6sUl2h6KxXrem_X26kzrp7kwq8bSezUsYMa6h2JNh-rPglsuNnRzt6i3IdzBjkLFNBNy5-Y0jId2B6Zhyir_jdm8O4/s1600/sails.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "IA",
+   "translated": false,
+   "enriched": false,
+   "raw": "Security teams have more alerts, logs, and monitoring tools than ever. Yet when an attack happens, one simple question can still take too long to answer: Who or what is behind this activity, and what can they access? A suspicious login might belong to an employee. An unusual API call could come from a machine account. Or an AI agent might be accessing sensitive systems using permissions nobody"
+  },
+  {
    "id": "37fe5be896856cf3",
    "source": "Help Net Security",
    "region": "EU",
@@ -13244,94 +13314,6 @@
    "enriched": true,
    "why": "Revela o risco de comprometimento de infraestruturas de telecomunicações para a interceptação de comunicações sensíveis.",
    "todo": "Reforce a monitorização de redes de telecomunicações e utilize encriptação de ponta a ponta nas comunicações sensíveis."
-  },
-  {
-   "id": "63baa65297d4ac51",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1140",
-   "published": "2026-11-12T14:29:08+00:00",
-   "title": "Aviso de segurança Google (AV26-1140) - Atualização 1",
-   "summary": "A Google atualizou o seu navegador Chrome para resolver vulnerabilidades que afetam o canal estável em versões anteriores à 157.0.8103.50 para Windows e Mac, e 157.0.8103.50 para Linux. A vulnerabilidade identificada como CVE-2026-125350 está a ser explorada ativamente em ataques reais. A CISA adicionou esta falha ao seu catálogo de vulnerabilidades conhecidas exploradas (KEV), levando os centros de cibersegurança a exortar uma atualização imediata.",
-   "image": null,
-   "points": [
-    "Google Chrome atualizado para corrigir a falha CVE-2026-125350 em versões anteriores à 157.0.8103.50.",
-    "A vulnerabilidade está a ser explorada ativamente em ataques.",
-    "A CISA adicionou a falha ao catálogo de vulnerabilidades conhecidas exploradas."
-   ],
-   "title_original": "Google security advisory (AV26-1140) - Update 1",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Sendo um navegador web amplamente utilizado, uma falha explorada ativamente coloca milhões de utilizadores em risco imediato.",
-   "todo": "Atualize o navegador Google Chrome para a versão mais recente o mais rapidamente possível."
-  },
-  {
-   "id": "191a169df0831e78",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/news/2026/11/legos-bricklink-taken-offline-after-unusual-activity-what-users-should-know",
-   "published": "2026-11-12T14:25:49+00:00",
-   "title": "LEGO fecha BrickLink temporariamente após detetar atividade suspeita",
-   "summary": "A LEGO decidiu colocar o mercado online BrickLink temporariamente offline após identificar atividade anómala na plataforma. A empresa está a investigar o sucedido para garantir a segurança dos membros e a integridade do site antes de o reabrir. Até ao momento, a marca não confirmou se ocorreu uma invasão informática ou se dados de clientes foram comprometidos. A interrupção afeta colecionadores e vendedores independentes que dependem do serviço para gerir encomendas e negócios.",
-   "image": "https://www.malwarebytes.com/wp-content/uploads/sites/2/2026/11/OOO_website.png",
-   "points": [
-    "A LEGO suspendeu o acesso ao mercado BrickLink devido a atividade suspeita.",
-    "A empresa investiga o incidente para apurar se houve comprometimento de dados de clientes.",
-    "A interrupção afeta diretamente colecionadores e vendedores independentes na gestão de encomendas."
-   ],
-   "title_original": "LEGO’s BrickLink taken offline: What users should know",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "A paragem do BrickLink paralisa a atividade de milhares de vendedores e colecionadores que dependem da plataforma.",
-   "todo": "Fique atento a pedidos de pagamento suspeitos e evite reutilizar palavras-passe em diferentes serviços online."
-  },
-  {
-   "id": "5158e0f510577af5",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-834",
-   "published": "2026-11-12T14:25:44+00:00",
-   "title": "Cisco security advisory (AV26-834) - Update 1",
-   "summary": "A agência CISA adicionou a vulnerabilidade CVE-2026-20320 ao seu catálogo de explorações conhecidas, afetando diversos produtos da Cisco. A falha está relacionada com a plataforma BroadWorks e outras soluções de infraestrutura e segurança da marca. A atualização de segurança sublinha a necessidade de os administradores aplicarem as correções disponibilizadas para mitigar riscos. Várias versões anteriores a julho e agosto de 2026 encontram-se vulneráveis nestes sistemas.",
-   "image": null,
-   "points": [
-    "A CISA adicionou a falha CVE-2026-20320 ao catálogo de explorações conhecidas.",
-    "A vulnerabilidade afeta múltiplos produtos da Cisco, incluindo a plataforma BroadWorks.",
-    "Os administradores devem aplicar as atualizações de segurança recomendadas pela fabricante."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "A exploração desta falha em produtos Cisco representa um vetor de ataque crítico para as redes afetadas.",
-   "todo": "Consulte os avisos de segurança da Cisco e aplique prontamente as atualizações e correções de segurança disponíveis."
-  },
-  {
-   "id": "90cab7698084e639",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/barracuda-networks-security-advisory-av26-1112",
-   "published": "2026-11-12T14:22:59+00:00",
-   "title": "Aviso de segurança da Barracuda Networks (AV26-1112) – Atualização 2",
-   "summary": "Vários produtos da Barracuda Networks foram afetados por vulnerabilidades críticas que permitem a contorno de autorização pré-autenticação e injeção de comandos. Relatórios indicam que o CVE-2026-116606 está a ser ativamente explorado, levando a CISA a adicionar este e o CVE-2026-111560 ao catálogo de vulnerabilidades exploradas. Os administradores são aconselhados a atualizar os sistemas afetados o mais rapidamente possível.",
-   "image": null,
-   "points": [
-    "Vários produtos Barracuda sofrem de falhas de contorno de autorização e injeção de comandos.",
-    "As vulnerabilidades CVE-2026-111560 e CVE-2026-116606 foram adicionadas ao catálogo KEV da CISA.",
-    "A falha CVE-2026-116606 está a ser explorada ativamente em ataques reais."
-   ],
-   "title_original": "Barracuda Networks security advisory (AV26-1112) – Update 2",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque afeta múltiplos produtos empresariais e envolve falhas já exploradas ativamente por atacantes.",
-   "todo": "Reveja os avisos de segurança da Barracuda e aplique as atualizações de firmware ou software disponíveis."
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T14:01:45.611327+00:00",
+ "updated": "2026-11-18T14:07:39.610229+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -173,8 +173,8 @@
   },
   {
    "source": "Google Threat Intelligence",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "HTTPSConnectionPool(host='cloudblog.withgoogle.com', port=443): Read timed out. (read timeout=25)"
   },
   {
    "source": "Google Project Zero",
@@ -189,7 +189,7 @@
   {
    "source": "SentinelLabs",
    "ok": true,
-   "added": 2
+   "added": 1
   },
   {
    "source": "Elastic Security Labs",
@@ -199,7 +199,7 @@
   {
    "source": "Rapid7",
    "ok": true,
-   "added": 7
+   "added": 6
   },
   {
    "source": "Tenable",
@@ -264,7 +264,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Hacker News",
@@ -304,9 +304,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 24,
-  "pending": 322,
-  "unenriched": 183,
+  "done": 0,
+  "pending": 345,
+  "unenriched": 206,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -314,6 +314,57 @@
   ]
  },
  "items": [
+  {
+   "id": "8368f9805644f450",
+   "source": "Dark Reading",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.darkreading.com/vulnerabilities-threats/major-brazilian-signature-app-rce-fraud",
+   "published": "2026-11-18T14:00:00+00:00",
+   "title": "Major Brazilian Signature Apps Enable RCE & Fraud",
+   "summary": "Government-sanctioned authentication middleware is used for exceptionally important legal documents, yet it's often rife with RCE bugs.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltd3d76d438281428b/6afb51c99f6beb04c5e535c4/Brazil_CNH-RafaPress-Getty.jpg?width=720&quality=80&disable=upscale",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Government-sanctioned authentication middleware is used for exceptionally important legal documents, yet it's often rife with RCE bugs."
+  },
+  {
+   "id": "cbfae60454052722",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/eggstreme-malware-rebuilt-after/",
+   "published": "2026-11-18T14:00:00+00:00",
+   "title": "Suspected Chinese APT Rebuilds EggStreme Malware After Exposure",
+   "summary": "Suspected Chinese APT rebuilt EggStreme malware and infrastructure after Bitdefender exposure",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Malware",
+   "translated": false,
+   "enriched": false,
+   "raw": "Suspected Chinese APT rebuilt EggStreme malware and infrastructure after Bitdefender exposure"
+  },
+  {
+   "id": "98d24ce7e396ea0e",
+   "source": "HackRead",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://hackread.com/ox-security-launches-ox-radar-and-response-center-to-show-companies-which-cyber-threats-actually-affect-them/",
+   "published": "2026-11-18T13:58:11+00:00",
+   "title": "OX Security Launches OX Radar and Response Center to Show Companies Which Cyber Threats Actually Affect Them",
+   "summary": "New York, United States, 18th November 2026, TechnologyWire",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "New York, United States, 18th November 2026, TechnologyWire"
+  },
   {
    "id": "959698f1939d3a92",
    "source": "The Record",
@@ -13685,72 +13736,6 @@
    "enriched": true,
    "why": "Previne a exploração de falhas em soluções de acesso remoto e entrega de aplicações amplamente utilizadas.",
    "todo": "Consulte os boletins de segurança da Citrix e atualize os componentes NetScaler e clientes de acesso seguro para as versões recomendadas."
-  },
-  {
-   "id": "7968b43f44c2e8e1",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/connectwise-screenconnect-breaches-third-party-tool",
-   "published": "2026-11-12T16:16:00+00:00",
-   "title": "ConnectWise investiga incidentes no ScreenConnect após relates em quase 50 organizações",
-   "summary": "A empresa ConnectWise confirmou que utilizadores do seu software ScreenConnect foram alvo de violações de segurança. Investigadores de cibersegurança detetaram intrusões em cerca de 50 organizações. O problema ocorreu devido ao abuso de uma ferramenta independente de terceiros. Esta situação comprometeu a integridade dos clientes afetados.",
-   "image": "https://cms.therecord.media/uploads/connectwise_logo_df3804ab18.jpg",
-   "points": [
-    "Alvo: Clientes do software ScreenConnect e cerca de 50 organizações.",
-    "Causa: Abuso de uma ferramenta independente de terceiros.",
-    "Impacto: Violações de segurança e intrusões confirmadas pela ConnectWise."
-   ],
-   "title_original": "ConnectWise investigates ScreenConnect breaches after reports of incidents at nearly 50 organizations",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como o comprometimento de ferramentas de terceiros pode afetar diretamente a segurança dos clientes.",
-   "todo": "Monitorize o acesso a ferramentas externas e mantenha os sistemas atualizados."
-  },
-  {
-   "id": "bc22b8fbe22a4b01",
-   "source": "Pplware Segurança",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://pplware.sapo.pt/internet/seguranca/strava-e-duolingo-o-que-pode-mudar-com-a-nova-lei-europeia/",
-   "published": "2026-11-12T16:15:00+00:00",
-   "title": "Strava e Duolingo: o que pode mudar com a nova lei europeia?",
-   "summary": "A Comissão Europeia apresentou uma proposta de lei para proibir designs manipuladores em aplicações. A medida pretende permitir que os utilizadores desativem funcionalidades como o autoplay e sequências de dias consecutivos. Plataformas populares como o Duolingo e o Strava podem ser afetadas pelas alterações. Esta iniciativa insere-se num vasto conjunto de mudanças na legislação de defesa do consumidor.",
-   "image": null,
-   "points": [
-    "O quê: Proposta de lei da Comissão Europeia contra designs manipuladores.",
-    "Quem: Afeta aplicações como o Duolingo e o Strava.",
-    "Impacto: Consumidores poderão desativar funcionalidades como autoplay e sequências de dias."
-   ],
-   "title_original": null,
-   "category": "Regulação",
-   "translated": false,
-   "enriched": true,
-   "why": "Poderá alterar a forma como as aplicações interagem com os utilizadores e retêm a sua atenção.",
-   "todo": ""
-  },
-  {
-   "id": "ad9757975fce9e1b",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/",
-   "published": "2026-11-12T16:04:00+00:00",
-   "title": "Nova vulnerabilidade zero-day Windows SignDrop concede privilégios SYSTEM a hackers",
-   "summary": "O investigador de segurança Abdelhamid Naceri publicou uma nova falha zero-day no Windows. A vulnerabilidade permite que atacantes obtenham privilégios do sistema ao nível de SYSTEM. Esta exploração representa um risco elevado para os dispositivos vulneráveis. O investigador também é conhecido pelo pseudónimo Nightmare Eclipse.",
-   "image": null,
-   "points": [
-    "Quem: O investigador Abdelhamid Naceri divulgou a falha.",
-    "O quê: Nova exploração zero-day no Windows chamada SignDrop.",
-    "Impacto: Permite aos atacantes alcançar privilégios de SYSTEM."
-   ],
-   "title_original": "New Windows SignDrop zero-day gives hackers SYSTEM privileges",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Privilégios SYSTEM dão controlo total sobre o sistema operativo afetado.",
-   "todo": "Aplique as correções de segurança assim que a Microsoft disponibilize atualizações."
   }
  ]
 }

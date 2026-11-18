@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T12:29:16.864735+00:00",
+ "updated": "2026-11-18T12:46:14.344553+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -64,7 +64,7 @@
   {
    "source": "CERT/CC (Carnegie Mellon)",
    "ok": true,
-   "added": 3
+   "added": 4
   },
   {
    "source": "MS-ISAC (CIS)",
@@ -89,7 +89,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "The Record",
@@ -109,7 +109,7 @@
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 4
+   "added": 5
   },
   {
    "source": "TechCrunch Security",
@@ -129,7 +129,7 @@
   {
    "source": "Schneier on Security",
    "ok": true,
-   "added": 5
+   "added": 4
   },
   {
    "source": "SANS ISC",
@@ -144,7 +144,7 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 6
+   "added": 5
   },
   {
    "source": "Microsoft Security Blog",
@@ -259,7 +259,7 @@
   {
    "source": "Graham Cluley",
    "ok": true,
-   "added": 3
+   "added": 4
   },
   {
    "source": "HackRead",
@@ -269,7 +269,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -304,15 +304,39 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 238,
-  "unenriched": 96,
+  "done": 36,
+  "pending": 303,
+  "unenriched": 165,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 84 column 5 (char 7988)"
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "7aa694effe302302",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/java4shell-vulnerability-remote/",
+   "published": "2026-11-18T12:35:00+00:00",
+   "title": "Vulnerabilidade Java4Shell Permite Ataques Remotos em Principais Aplicações Java",
+   "summary": "Uma falha crítica no OpenJDK foi descoberta, expondo aplicações Java importantes a ataques de execução remota de código. A CISA já apelou às organizações para implementarem medidas de mitigação imediatas. A vulnerabilidade afeta sistemas amplamente utilizados, elevando o risco de intrusão e comprometimento de infraestruturas.",
+   "image": null,
+   "points": [
+    "Alvo: Aplicações Java e OpenJDK.",
+    "O quê: Vulnerabilidade crítica de execução remota de código.",
+    "Impacto: Exposição de grandes sistemas a ataques externos.",
+    "Ação: A CISA exorta à aplicação urgente de mitigações."
+   ],
+   "title_original": "Java4Shell Vulnerability Allows Remote Attacks on Major Java Apps",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes executem código remotamente em aplicações empresariais críticas construídas em Java.",
+   "todo": "Consulte os alertas oficiais da CISA e aplique as mitigações ou patches de segurança disponibilizados para o OpenJDK."
+  },
   {
    "id": "c9f8dc26d8d07054",
    "source": "The Hacker News",
@@ -13772,29 +13796,6 @@
    "enriched": true,
    "why": "Evidencia que a inteligência artificial pode acelerar a descoberta de falhas, aumentando os riscos para infraestruturas críticas.",
    "todo": "Mantenha os dispositivos IoT atualizados e reforce a monitorização de segurança nas redes internas."
-  },
-  {
-   "id": "4d5ce3e56f7e60aa",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/fortinet-security-advisory-av26-1145",
-   "published": "2026-11-12T15:26:42+00:00",
-   "title": "Aviso de segurança da Fortinet (AV26-1145)",
-   "summary": "A Fortinet emitiu um alerta devido a vulnerabilidades detetadas em vários produtos e serviços da marca, incluindo o FortiAnalyzer, FortiClient e FortiOS. As falhas afetam diversas versões anteriores a atualizações específicas lançadas pela empresa. Os utilizadores e administradores são aconselhados a consultar as ligações oficiais para aplicar as correções necessárias.",
-   "image": null,
-   "points": [
-    "Alerta emitido pela Fortinet para vários produtos.",
-    "Vários softwares e appliances foram afetados.",
-    "Existem versões anteriores vulneráveis identificadas.",
-    "Recomenda-se a aplicação urgente de atualizações."
-   ],
-   "title_original": "Fortinet security advisory (AV26-1145)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Vulnerabilidades em múltiplos produtos Fortinet podem expor redes empresariais a acessos não autorizados se não forem corrigidas.",
-   "todo": "Consulte o boletim oficial da Fortinet e atualize imediatamente os softwares e equipamentos afetados."
   }
  ]
 }

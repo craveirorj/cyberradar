@@ -110,7 +110,7 @@ details input{width:100%;margin-top:6px;padding:9px;border-radius:8px;border:1px
 .tab.on{color:var(--text);border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
 #threats{display:none;padding-top:8px}
 .mapbox{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden}
-#map{display:block;width:100%;height:auto}
+#map{display:block;width:100%;height:auto;cursor:pointer}
 .mapbox .legend{position:absolute;left:12px;bottom:8px;right:12px;font-size:11px;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap}
 .leg{cursor:pointer;user-select:none}.leg.off{opacity:.35;text-decoration:line-through}
 .mapbox .legend i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px}
@@ -156,8 +156,8 @@ details input{width:100%;margin-top:6px;padding:9px;border-radius:8px;border:1px
     <div class="tabs sub" id="sub">
       <button class="tab on" data-m="https://livethreatmap.radware.com/">Radware</button>
       <button class="tab" data-m="https://threatmap.checkpoint.com/">Check Point</button>
-      <button class="tab" data-m="https://cybermap.kaspersky.com/">Kaspersky</button>
-      <button class="tab" data-m="https://fortiguard.com/threat-map">Fortinet</button>
+      <button class="tab" data-m="https://cybermap.kaspersky.com/" data-ext="1">Kaspersky ↗</button>
+      <button class="tab" data-m="https://fortiguard.com/threat-map" data-ext="1">Fortinet ↗</button>
       <button class="tab" data-m="mine">📊 O meu mapa</button>
     </div>
     <div id="live"><div class="mapbox"><iframe id="liveFrame" title="Mapa de ameaças em tempo real" referrerpolicy="no-referrer" loading="lazy" allowfullscreen></iframe></div>
@@ -165,6 +165,7 @@ details input{width:100%;margin-top:6px;padding:9px;border-radius:8px;border:1px
     <div id="mine" style="display:none">
     <div class="mapbox"><canvas id="map" width="1200" height="520"></canvas>
       <div class="legend" id="legend"></div></div>
+    <div id="cpanel" class="tbox" style="display:none;margin-top:12px"></div>
     <div class="tnote" id="tnote"></div>
     <div class="tgrid" id="tgrid"></div>
     <div class="tlinks">
@@ -315,7 +316,7 @@ async function loadThreats(){
 function bars(title,list,fmt,inner){
   if(!list||!list.length)return '';
   const mx=Math.max(...list.map(x=>x.v))||1;
-  const body=list.map(x=>`<div class="bar"><span class="n">${x.n}</span><span class="b"><span style="width:${Math.max(3,x.v/mx*100)}%"></span></span><span class="v">${fmt?fmt(x.v):x.v}</span></div>`).join('');
+  const body=list.map(x=>`<div class="bar" ${x.cc?`data-cc="${x.cc}" style="cursor:pointer"`:''}><span class="n">${x.n}</span><span class="b"><span style="width:${Math.max(3,x.v/mx*100)}%"></span></span><span class="v">${fmt?fmt(x.v):x.v}</span></div>`).join('');
   return inner?body:`<div class="tbox"><h4>${title}</h4>${body}</div>`;
 }
 function renderThreats(){
@@ -324,15 +325,15 @@ function renderThreats(){
   const f=d.feodo,c=d.cloudflare;TH.fx=[];
   let h='';
   const SER=[];
-  if(f)SER.push({key:'botnets',label:'Servidores de botnets',col:'244,63,94',total:f.online,by:f.by_country||{},extra:Object.entries(f.by_malware||{}).map(([k,v])=>`${k} (${v})`).join(', ')});
+  if(f)SER.push({key:'botnets',label:'Servidores de botnets',col:'244,63,94',total:f.online,by:f.by_country||{},det:f.detail||{},extra:Object.entries(f.by_malware||{}).map(([k,v])=>`${k} (${v})`).join(', ')});
   const T=d.types||{},COL={malware_urls:'251,146,60',phishing:'167,139,250',ioc:'244,114,182',scans:'52,211,153'};
-  for(const k of Object.keys(COL))if(T[k])SER.push({key:k,label:T[k].label,col:COL[k],total:T[k].total,by:T[k].by_country||{},extra:Object.entries(T[k].tags||T[k].malware||{}).map(([a,v])=>`${a} (${v})`).join(', ')});
+  for(const k of Object.keys(COL))if(T[k])SER.push({key:k,label:T[k].label,col:COL[k],total:T[k].total,by:T[k].by_country||{},det:T[k].detail||{},extra:Object.entries(T[k].tags||T[k].malware||{}).map(([a,v])=>`${a} (${v})`).join(', ')});
   TH.ser=SER;
   if(!TH.off)TH.off=new Set();
   $('#legend').innerHTML=SER.map(x=>`<span class="leg ${TH.off.has(x.key)?'off':''}" data-k="${x.key}"><i style="background:rgb(${x.col})"></i>${esc(x.label)}</span>`).join('')+'<span><i style="background:#22d3ee"></i>origem de ataques</span><span><i style="background:#fbbf24"></i>alvo</span>';
   for(const x of SER){
     const ent=Object.entries(x.by).sort((a,b)=>b[1]-a[1]);
-    h+=`<div class="tbox"><h4><i style="display:inline-block;width:8px;height:8px;border-radius:50%;background:rgb(${x.col});margin-right:6px"></i>${esc(x.label)}</h4><div class="big">${x.total}</div>${x.extra?`<div class="tnote" style="margin:2px 0 8px">${esc(x.extra)}</div>`:''}${bars('',ent.slice(0,5).map(([k,v])=>({n:flag(k)+' '+cname(k),v})),null,true)}</div>`;
+    h+=`<div class="tbox"><h4><i style="display:inline-block;width:8px;height:8px;border-radius:50%;background:rgb(${x.col});margin-right:6px"></i>${esc(x.label)}</h4><div class="big">${x.total}</div>${x.extra?`<div class="tnote" style="margin:2px 0 8px">${esc(x.extra)}</div>`:''}${bars('',ent.slice(0,5).map(([k,v])=>({n:flag(k)+' '+cname(k),v,cc:k})),null,true)}</div>`;
   }
   if(f)h+=`<div class="tbox"><h4>Botnets vistas mais recentemente</h4>${(f.recent||[]).slice(0,8).map(x=>`<div class="tl"><span>${flag(x.country)} ${esc(cname(x.country))} · ${esc(x.malware)}</span><span>${x.seen?ago(x.seen.replace(' ','T')+(x.seen.includes('Z')||x.seen.includes('+')?'':'Z')):''}</span></div>`).join('')}</div>`;
   const pc=x=>x.toFixed(1)+'%';
@@ -344,7 +345,7 @@ function renderThreats(){
     TH.tgt=t.filter(x=>MAP.cent[x.cc]).map(x=>({lat:MAP.cent[x.cc][0],lon:MAP.cent[x.cc][1],w:x.pct}));
   }else{TH.org=TH.tgt=[];h+='<div class="tbox"><h4>Cloudflare Radar</h4>Falta ligar o Cloudflare Radar para ver origens e alvos de ataques (ver README).</div>'}
   g.innerHTML=h;
-  $('#tnote').innerHTML=`Dados reais de várias fontes abertas (abuse.ch, OpenPhish, SANS DShield, Cloudflare Radar), atualizados de 20 em 20 minutos (última: ${ago(d.updated)}). Toca num tipo da legenda para o esconder. País dos IPs: DB-IP.com. Os pontos e as linhas no mapa são uma animação feita a partir destes números: mostram onde há mais atividade, não cada ataque individual.`;
+  $('#tnote').innerHTML=`Dados reais de várias fontes abertas (abuse.ch, OpenPhish, SANS DShield, Cloudflare Radar), atualizados de 20 em 20 minutos (última: ${ago(d.updated)}). Toca num país (no mapa ou nas listas) para ver o detalhe e num tipo da legenda para o esconder. País dos IPs: DB-IP.com. Os pontos e as linhas no mapa são uma animação feita a partir destes números: mostram onde há mais atividade, não cada ataque individual.`;
 }
 $('#legend').onclick=e=>{const l=e.target.closest('.leg');if(!l)return;const k=l.dataset.k;TH.off.has(k)?TH.off.delete(k):TH.off.add(k);l.classList.toggle('off')};
 function showMap(m){
@@ -352,7 +353,27 @@ function showMap(m){
   const mine=m==='mine';$('#mine').style.display=mine?'block':'none';$('#live').style.display=mine?'none':'block';
   if(mine){loadThreats();startMap()}else{stopMap();const f=$('#liveFrame');if(f.dataset.u!==m){f.src=m;f.dataset.u=m}$('#liveOpen').href=m}
 }
-$('#sub').onclick=e=>{const b=e.target.closest('.tab');if(b)showMap(b.dataset.m)};
+$('#sub').onclick=e=>{const b=e.target.closest('.tab');if(!b)return;if(b.dataset.ext){window.open(b.dataset.m,'_blank','noopener');return}showMap(b.dataset.m)};
+
+function openCountry(cc){
+  const P=$('#cpanel'),SER=TH.ser||[],c=(TH.data&&TH.data.cloudflare)||{};
+  let h=`<h4 style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:16px;color:var(--text)">${flag(cc)} ${esc(cname(cc))}</span><button class="iconbtn" id="cpX">✕</button></h4>`,any=false;
+  for(const x of SER){const n=x.by[cc];if(!n)continue;any=true;const det=Object.entries((x.det||{})[cc]||{}).map(([k,v])=>`${esc(k)} (${v})`).join(', ');
+    h+=`<div class="tl"><span><i style="display:inline-block;width:8px;height:8px;border-radius:50%;background:rgb(${x.col});margin-right:6px"></i>${esc(x.label)}${det?`<br><span style="color:var(--muted);font-size:11.5px">${det}</span>`:''}</span><span style="color:var(--text);font-weight:700">${n}</span></div>`}
+  const CF=[['l7_origin','Origem de ataques a sites'],['l7_target','Alvo de ataques a sites'],['l3_origin','Origem de DDoS'],['l3_target','Alvo de DDoS']];
+  for(const [k,l] of CF){const m=(c[k]||[]).find(x=>x.cc===cc);if(m){any=true;h+=`<div class="tl"><span>${l} (24 h, Cloudflare)</span><span style="color:var(--text);font-weight:700">${m.pct.toFixed(1)}%</span></div>`}}
+  if(!any)h+='<div class="tnote">Sem atividade registada neste país nos dados atuais.</div>';
+  h+='<div class="tnote">Números = servidores/endereços identificados neste país, não ataques individuais.</div>';
+  P.innerHTML=h;P.style.display='block';$('#cpX').onclick=()=>P.style.display='none';P.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+$('#tgrid').addEventListener('click',e=>{const b=e.target.closest('[data-cc]');if(b)openCountry(b.dataset.cc)});
+$('#map').addEventListener('click',e=>{
+  const r=e.target.getBoundingClientRect(),W=e.target.width,H=e.target.height,mx=(e.clientX-r.left)/r.width*W,my=(e.clientY-r.top)/r.height*H;
+  const ccs=new Set();(TH.ser||[]).forEach(x=>Object.keys(x.by).forEach(k=>ccs.add(k)));
+  const c=(TH.data&&TH.data.cloudflare)||{};Object.values(c).forEach(l=>l.forEach(x=>ccs.add(x.cc)));
+  let best=null,bd=1e9;for(const k of ccs){const m=MAP.cent[k];if(!m)continue;const[x,y]=xy({lat:m[0],lon:m[1]},W,H),d=Math.hypot(x-mx,y-my);if(d<bd){bd=d;best=k}}
+  if(best&&bd<45)openCountry(best);
+});
 function wpick(a){if(!a||!a.length)return null;let t=a.reduce((s,x)=>s+x.w,0),r=Math.random()*t;for(const x of a){r-=x.w;if(r<=0)return x}return a[a.length-1]}
 function xy(p,W,H){return [(p.lon+180)/360*W,(80-p.lat)/140*H]}
 function startMap(){

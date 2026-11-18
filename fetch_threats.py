@@ -47,6 +47,7 @@ def feodo():
         "online": len(online),
         "by_country": dict(by_country.most_common(40)),
         "by_malware": dict(by_malware.most_common(8)),
+        "detail": {c: dict(Counter(x.get("malware") or "?" for x in online if (x.get("country") or "").upper() == c).most_common(5)) for c in list(by_country)[:40]},
         "recent": [
             {"country": (x.get("country") or "").upper(), "malware": x.get("malware") or "?",
              "port": x.get("port"), "seen": x.get("last_online") or x.get("first_seen")}
@@ -100,55 +101,73 @@ def resolve(host):
         return ""
 
 
-def hosts_to_ips(urls, limit=250):
-    hosts = []
+def summarize(label, pairs, geo, extra=None):
+    """pairs: lista de (ip, etiqueta). Conta por país e guarda as etiquetas mais comuns de cada país."""
+    c, det = Counter(), {}
+    for ip, tag in pairs:
+        cc = geo.cc(ip)
+        if not cc:
+            continue
+        c[cc] += 1
+        det.setdefault(cc, Counter())[tag or "?"] += 1
+    top = [k for k, _ in c.most_common(40)]
+    return {"label": label, "total": len(pairs), "by_country": {k: c[k] for k in top},
+            "detail": {k: dict(det[k].most_common(5)) for k in top}, **(extra or {})}
+
+
+def host_ips(urls, limit=250):
+    """devolve {url: ip} para os primeiros URLs (resolve nomes em paralelo)."""
+    hosts = {}
     for u in urls:
         h = urlparse(u if "://" in u else "http://" + u).hostname
-        if h and h not in hosts:
-            hosts.append(h)
-    hosts = hosts[:limit]
-    ips = {}
+        if h:
+            hosts.setdefault(h, None)
+    names = list(hosts)[:limit]
     isip = re.compile(r"^\d+\.\d+\.\d+\.\d+$")
-    todo = [h for h in hosts if not isip.match(h)]
-    for h in hosts:
+    todo = [h for h in names if not isip.match(h)]
+    for h in names:
         if isip.match(h):
-            ips[h] = h
+            hosts[h] = h
     with ThreadPoolExecutor(24) as ex:
         for h, ip in zip(todo, ex.map(resolve, todo)):
             if ip:
-                ips[h] = ip
-    return [ips[h] for h in hosts if h in ips], hosts
-
-
-def summarize(label, ips, geo, extra=None):
-    c = Counter(geo.cc(ip) for ip in ips)
-    c.pop("", None)
-    return {"label": label, "total": len(ips), "by_country": dict(c.most_common(40)), **(extra or {})}
+                hosts[h] = ip
+    return hosts
 
 
 def urlhaus(geo):
     r = requests.get("https://urlhaus.abuse.ch/downloads/csv_recent/", headers=UA, timeout=45)
     r.raise_for_status()
-    urls, tags = [], Counter()
+    rows, tags = [], Counter()
     for line in r.text.splitlines():
         if not line or line.startswith("#"):
             continue
         row = next(csv.reader([line]))
         if len(row) >= 7 and row[3].lower() == "online":
-            urls.append(row[2])
-            for t in (row[6] or "").split(","):
-                if t.strip():
-                    tags[t.strip()] += 1
-    ips, hosts = hosts_to_ips(urls)
-    return summarize("Sites que distribuem malware", ips, geo, {"total": len(urls), "tags": dict(tags.most_common(6))})
+            tl = [t.strip() for t in (row[6] or "").split(",") if t.strip()]
+            rows.append((row[2], tl[0] if tl else (row[5] or "?")))
+            for t in tl:
+                tags[t] += 1
+    hosts = host_ips([u for u, _ in rows])
+    pairs = []
+    for u, tag in rows:
+        h = urlparse(u if "://" in u else "http://" + u).hostname
+        if hosts.get(h):
+            pairs.append((hosts[h], tag))
+    return summarize("Sites que distribuem malware", pairs, geo, {"total": len(rows), "tags": dict(tags.most_common(6))})
 
 
 def openphish(geo):
     r = requests.get("https://openphish.com/feed.txt", headers=UA, timeout=45)
     r.raise_for_status()
     urls = [x.strip() for x in r.text.splitlines() if x.strip()]
-    ips, hosts = hosts_to_ips(urls)
-    return summarize("Sites de phishing", ips, geo, {"total": len(urls)})
+    hosts = host_ips(urls)
+    pairs = []
+    for u in urls:
+        h = urlparse(u if "://" in u else "http://" + u).hostname
+        if hosts.get(h):
+            pairs.append((hosts[h], "phishing"))
+    return summarize("Sites de phishing", pairs, geo, {"total": len(urls)})
 
 
 def threatfox(geo):
@@ -158,27 +177,25 @@ def threatfox(geo):
     items = []
     for v in (j.values() if isinstance(j, dict) else j):
         items.extend(v if isinstance(v, list) else [v])
-    ips, mal = [], Counter()
+    pairs, mal = [], Counter()
     for x in items:
-        if not isinstance(x, dict):
-            continue
-        val = str(x.get("ioc_value", ""))
-        if "ip" in str(x.get("ioc_type", "")):
-            ips.append(val.split(":")[0])
-            mal[x.get("malware_printable") or "?"] += 1
-    return summarize("Indicadores de malware (IPs)", ips, geo, {"malware": dict(mal.most_common(6))})
+        if isinstance(x, dict) and "ip" in str(x.get("ioc_type", "")):
+            m = x.get("malware_printable") or "?"
+            pairs.append((str(x.get("ioc_value", "")).split(":")[0], m))
+            mal[m] += 1
+    return summarize("Indicadores de malware (IPs)", pairs, geo, {"malware": dict(mal.most_common(6))})
 
 
 def dshield(geo):
     r = requests.get("https://isc.sans.edu/api/sources/attacks/200?json", headers=UA, timeout=45)
     r.raise_for_status()
     rows = r.json()
-    ips = []
+    pairs = []
     for x in rows:
         ip = str(x.get("ip", "")).strip()
         if re.match(r"^\d+\.\d+\.\d+\.\d+$", ip):
-            ips.append(".".join(str(int(p)) for p in ip.split(".")))
-    return summarize("Scans e força bruta", ips, geo, {"reports": sum(int(x.get("reports") or x.get("count") or 0) for x in rows)})
+            pairs.append((".".join(str(int(p)) for p in ip.split(".")), "scan/força bruta"))
+    return summarize("Scans e força bruta", pairs, geo, {"reports": sum(int(x.get("reports") or x.get("count") or 0) for x in rows)})
 
 
 def radar(path, key, token):

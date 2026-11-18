@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T14:07:39.610229+00:00",
+ "updated": "2026-11-18T14:26:23.504862+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -9,7 +9,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 2
+   "added": 3
   },
   {
    "source": "TugaTech",
@@ -84,7 +84,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 25
+   "added": 24
   },
   {
    "source": "SecurityWeek",
@@ -94,7 +94,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -144,7 +144,7 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 5
+   "added": 4
   },
   {
    "source": "Microsoft Security Blog",
@@ -189,7 +189,7 @@
   {
    "source": "SentinelLabs",
    "ok": true,
-   "added": 1
+   "added": 2
   },
   {
    "source": "Elastic Security Labs",
@@ -264,7 +264,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -274,7 +274,7 @@
   {
    "source": "Check Point Research",
    "ok": true,
-   "added": 5
+   "added": 6
   },
   {
    "source": "Securelist (Kaspersky)",
@@ -294,7 +294,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 13
+   "added": 14
   },
   {
    "source": "ACSC Austrália",
@@ -305,8 +305,8 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 345,
-  "unenriched": 206,
+  "pending": 349,
+  "unenriched": 211,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -347,6 +347,23 @@
    "translated": false,
    "enriched": false,
    "raw": "Suspected Chinese APT rebuilt EggStreme malware and infrastructure after Bitdefender exposure"
+  },
+  {
+   "id": "0659e2489161c5d8",
+   "source": "SentinelLabs",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.sentinelone.com/labs/labscon26-replay-governing-just-in-time-intelligence-ai-dual-use-capabilities-and-the-limits-of-guardrails/",
+   "published": "2026-11-18T14:00:00+00:00",
+   "title": "LABScon26 Replay | Governing Just-in-Time Intelligence: AI, Dual-Use Capabilities, and the Limits of Guardrails",
+   "summary": "ICRC’s Mauro Vignati argues AI guardrails can’t fix a deeper problem: a 70-year-old distribution model now applied to dual-use cognitive capabilities.",
+   "image": "https://images.contentstack.io/v3/assets/blt53c99b43892c2378/bltf0d6eb4fdce2acfe/6afc8dac99559c1960e0acc8/labscon_mauro_ftr.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "IA",
+   "translated": false,
+   "enriched": false,
+   "raw": "In his LABScon 26 talk, Mauro Vignati, Advisor on Digital Technologies of Warfare at the International Committee of the Red Cross (ICRC), argues that guardrails cannot address the deeper problem with frontier AI. Advanced cognitive capabilities are now distributed through the same on-demand, as-a-service model that has shaped industry, and later cybercrime, for seventy years. That model was designed for industrial efficiency, not for technology this powerful. Vignati traces the model back to Toyota’s post-war just-in-time production system, built on the principle that customers get only what they need and pay only for what they get. The IT needed to coordinate that system helped give rise to application service providers and eventually to software-as-a-service. Cybercriminals later adopted the same logic for crimeware and ransomware, and hacktivists for DDoS campaigns. In each case the people taking part needed no technical skill of their own. Model-as-a-service differs from its predecessors because the capability is dual-use at the source, supplied by private technology firms largely independent of who the end users are or what they intend. Vignati explains why criminals who tried to build their own AI systems have largely turned to wrapping commercial ones instead, leaving the legitimate economy to carry the cost of training and infrastructure. He then draws on cybernetics’ law of requisite variety, the principle that any system regulating another must match its complexity, to argue that AI governance has no simple fix. In its place he proposes a layered framework for deciding what a model can do, for whom and under what conditions. His warning is that as long as the industry keeps offering powerful general-purpose models, criminals and activists will continue to para"
   },
   {
    "id": "98d24ce7e396ea0e",
@@ -2152,6 +2169,23 @@
    "enriched": true,
    "why": "Exemplifica o perigo de falhas estruturais em componentes fundamentais de software e o papel da IA na sua descoberta.",
    "todo": "Atualize urgentemente os runtimes Java e utilize ferramentas de gestão de vulnerabilidades para detetar componentes desatualizados."
+  },
+  {
+   "id": "ab680f54178a43d9",
+   "source": "Check Point Research",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://research.checkpoint.com/2026/the-state-of-ransomware-q3-2026/",
+   "published": "2026-11-17T22:01:28+00:00",
+   "title": "The State of Ransomware Q3 2026",
+   "summary": "Ransomware reached record levels in Q3 2026, but the scale of activity is only part of what changed. The ecosystem producing those attacks is becoming increasingly fragmented: more ransomware brands are claiming victims, the top groups account for a smaller share of overall activity, and several major organizations are pushing back against high-value ransom demands. […]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Ransomware",
+   "translated": false,
+   "enriched": false,
+   "raw": "Ransomware reached record levels in Q3 2026, but the scale of activity is only part of what changed. The ecosystem producing those attacks is becoming increasingly fragmented: more ransomware brands are claiming victims, the top groups account for a smaller share of overall activity, and several major organizations are pushing back against high-value ransom demands. At the same time, established operators such as Qilin and The Gentlemen remain firmly at the top, creating a landscape where strong leaders coexist with an increasingly crowded field of ransomware groups. Key observed findings Q3 2026 was the highest-volume quarter on record, with 2,830 victims published on data leak sites. July recorded 964 victims, August reached 1,042, and September recorded 824. The ransomware ecosystem became more fragmented. The top 10 groups’ share of victims fell for the third consecutive quarter, from 71% in Q1 to 58% in Q2 and 49% in Q3. For the first time, groups outside the top ten collectively accounted for the majority of observed victims. The number of active ransomware brands continued to grow. 117 distinct brands claimed at least one victim in Q3, up from 91 in Q2. Of these, 51 had not claimed a victim in Q2, and 42 made their first observed victim claims during Q3. Qilin remained on top with The Gentlemen still close by. Following the ending of Q2, when for the first time in 2026 Qilin briefly relinquished the leading position in favor of The Gentlemen for one month, Qilin reclaimed first place in July and August, before being overtaken yet again by The Gentlemen in September. Eventually Qilin remained in top position for yet another quarter by a narrow gap. LockBit’s decline continued throughout 2026. Once one of the most prolific ransomware operations, LockBit recorded fe"
   },
   {
    "id": "13ddb941471e675a",
@@ -13690,52 +13724,6 @@
    "enriched": true,
    "why": "Protege a confidencialidade e a integridade de imagens de contentores empresariais armazenadas em registos Quay.",
    "todo": "Atualize o Red Hat Quay para as versões corrigidas disponibilizadas pela empresa e verifique as definições de acesso anónimo."
-  },
-  {
-   "id": "023264eb01e1c2b6",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/european-authorities-take-down-stealic-malware-second-time",
-   "published": "2026-11-12T16:21:00+00:00",
-   "title": "Autoridades europeias retiram do ar servidores de 'malware' StealC pela segunda vez este ano",
-   "summary": "As autoridades alemãs anunciaram que investigadores conseguiram localizar e desmantelar uma infraestrutura reconstruída do 'malware' StealC. A operação focou-se no fornecedor de alojamento focado em atividades ilícitas Virtualine, previamente visado pelo FBI. A ação contou com a colaboração da polícia de Frankfurt e da unidade de combate ao crime de alta tecnologia dos Países Baixos. Esta intervenção representa um novo golpe contra a distribuição desta ferramenta de roubo de dados.",
-   "image": "https://cms.therecord.media/uploads/polizei_9dea82a5d6.jpg",
-   "points": [
-    "Investigadores alemães e internacionais desmantelaram servidores ligados ao 'malware' StealC.",
-    "A infraestrutura estava associada ao fornecedor de alojamento Virtualine.",
-    "A operação contou com a cooperação policial em Frankfurt e autoridades neerlandesas.",
-    "Representa a segunda intervenção bem-sucedida contra esta rede de roubo de dados no ano."
-   ],
-   "title_original": "European authorities take down SteaIC malware servers for second time this year",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Dificulta a operação de redes criminosas especializadas na extração e comercialização de dados roubados.",
-   "todo": "Monitorize regularmente os registos de atividade dos sistemas e utilize soluções de segurança atualizadas para detetar comportamentos de 'stealers'."
-  },
-  {
-   "id": "5ff135d39a0d9123",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/citrix-security-advisory-av26-1150",
-   "published": "2026-11-12T16:17:02+00:00",
-   "title": "Aviso de segurança da Citrix (AV26-1150)",
-   "summary": "A Citrix publicou avisos de segurança detalhando várias vulnerabilidades que afetam diversos produtos, incluindo NetScaler ADC, NetScaler Gateway, NetScaler Console e o Secure Access Client para Linux e Windows. Os problemas identificados exigem a instalação imediata de atualizações para evitar potenciais explorações por parte de agentes maliciosos. Os administradores de sistemas devem verificar os boletins específicos associados a cada identificador de CVE para aplicar as correções adequadas. A aplicação atempada destas correções protege infraestruturas de rede críticas contra acessos não autorizados.",
-   "image": null,
-   "points": [
-    "Vulnerabilidades detetadas em produtos Citrix como NetScaler ADC, Gateway e Secure Access Client.",
-    "Afeta várias versões de software para sistemas operativos Windows e Linux.",
-    "Identificadores associados incluem CVE-2026-120869, CVE-2026-118269 e CVE-2026-118268.",
-    "O Centro Cibernético recomenda a consulta de boletins e a aplicação de atualizações."
-   ],
-   "title_original": "Citrix security advisory (AV26-1150)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Previne a exploração de falhas em soluções de acesso remoto e entrega de aplicações amplamente utilizadas.",
-   "todo": "Consulte os boletins de segurança da Citrix e atualize os componentes NetScaler e clientes de acesso seguro para as versões recomendadas."
   }
  ]
 }

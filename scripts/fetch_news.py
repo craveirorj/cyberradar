@@ -181,20 +181,34 @@ def gemini_batch(batch, key, state):
     last = ""
     while state["idx"] < len(GEMINI_MODELS):
         model = GEMINI_MODELS[state["idx"]]
-        r = requests.post(
-            f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-            headers={"x-goog-api-key": key, "Content-Type": "application/json"},
-            json=body,
-            timeout=120,
-        )
-        if r.status_code == 429:
-            raise QuotaError("limite do plano grátis atingido")
-        if r.status_code in (400, 403, 404):
-            last = f"{model}: HTTP {r.status_code} {r.text[:160]}"
+        r = None
+        for attempt in range(3):
+            r = requests.post(
+                f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+                headers={"x-goog-api-key": key, "Content-Type": "application/json"},
+                json=body,
+                timeout=120,
+            )
+            if r.status_code in (500, 502, 503, 504):
+                time.sleep(5 * (attempt + 1))
+                continue
+            break
+        if r.status_code in (400, 403, 404, 429):
+            # este modelo não serve (chave, nome ou quota): tenta o seguinte
+            last = f"{model}: HTTP {r.status_code} {r.text[:200]}"
+            print(f"[IA] {last}")
+            state["errors"].append(last)
             state["idx"] += 1
             continue
         r.raise_for_status()
-        text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
+        j = r.json()
+        try:
+            text = j["candidates"][0]["content"]["parts"][0]["text"]
+        except (KeyError, IndexError, TypeError):
+            last = f"{model}: resposta sem texto {str(j)[:200]}"
+            print(f"[IA] {last}")
+            state["errors"].append(last)
+            return {}
         data = json.loads(text)
         if isinstance(data, dict):
             data = next((v for v in data.values() if isinstance(v, list)), [])
@@ -206,7 +220,7 @@ def gemini_batch(batch, key, state):
                 s = str(o.get("s") or "").strip()
             except (KeyError, TypeError, ValueError, AttributeError):
                 continue
-            if 0 <= n < len(batch) and s:
+            if 0 <= n < len(batch) and (s or t):
                 k = o.get("k") if isinstance(o.get("k"), list) else []
                 k = [str(x).strip()[:220] for x in k if str(x).strip()][:4]
                 out[n] = (t, s, str(o.get("w") or "").strip(), str(o.get("a") or "").strip(), k)
@@ -228,23 +242,27 @@ def apply_brief(item, title, summary, why, todo, points=()):
     item.pop("raw", None)
 
 
-def enrich_gemini(pending, key):
+def enrich_gemini(pending, key, diag):
     done = 0
-    state = {"idx": 0}
+    state = {"idx": 0, "errors": []}
+    fails = 0
     for start in range(0, len(pending), GEMINI_BATCH):
         batch = pending[start:start + GEMINI_BATCH]
         try:
             result = gemini_batch(batch, key, state)
-        except QuotaError as exc:
-            print(f"[IA] {exc}; o resto fica para a próxima execução")
-            break
         except Exception as exc:
             print(f"[IA] Gemini falhou: {exc}")
-            break
+            state["errors"].append(str(exc)[:300])
+            fails += 1
+            if fails >= 2 or state["idx"] >= len(GEMINI_MODELS):
+                break
+            time.sleep(GEMINI_PAUSE)
+            continue
         for n, (t, s, w, a, k) in result.items():
             apply_brief(batch[n], t, s, w, a, k)
             done += 1
         time.sleep(GEMINI_PAUSE)
+    diag["errors"] = state["errors"][-4:]
     return done
 
 
@@ -354,7 +372,7 @@ def main() -> int:
                 "enriched": False,
             }
             if has_key:  # o texto serve só de entrada para a IA e é apagado depois de resumido
-                items[uid]["raw"] = body[:2500]
+                items[uid]["raw"] = body[:1800]
             added += 1
         print(f"[OK] {name}: +{added}")
         status.append({"source": name, "ok": True, "added": added})
@@ -363,10 +381,11 @@ def main() -> int:
     by_date = lambda seq: sorted(seq, key=lambda i: i["published"], reverse=True)
     key = os.environ.get("GEMINI_API_KEY", "").strip()
     provider, done = "nenhum", 0
+    diag = {"errors": []}
     if key:
         todo = by_date(i for i in items.values() if not i["enriched"])[:MAX_AI_PER_RUN]
         if todo:
-            provider, done = "gemini", enrich_gemini(todo, key)
+            provider, done = "gemini", enrich_gemini(todo, key, diag)
     else:
         todo = by_date(i for i in items.values() if i["lang"] != "pt" and not i["translated"])[:MAX_AI_PER_RUN]
         if todo:
@@ -385,7 +404,8 @@ def main() -> int:
             {
                 "updated": datetime.now(timezone.utc).isoformat(),
                 "sources": status,
-                "translation": {"provider": provider, "done": done, "pending": pending, "unenriched": unenriched},
+                "translation": {"provider": provider, "done": done, "pending": pending, "unenriched": unenriched,
+                                "errors": diag["errors"]},
                 "items": kept,
             },
             ensure_ascii=False,

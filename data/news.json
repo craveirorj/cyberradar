@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T19:45:48.772718+00:00",
+ "updated": "2026-11-18T20:07:29.448611+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -64,7 +64,7 @@
   {
    "source": "CERT/CC (Carnegie Mellon)",
    "ok": true,
-   "added": 5
+   "added": 6
   },
   {
    "source": "MS-ISAC (CIS)",
@@ -74,7 +74,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -94,7 +94,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -269,7 +269,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 3
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -304,9 +304,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 24,
-  "pending": 304,
-  "unenriched": 187,
+  "done": 36,
+  "pending": 277,
+  "unenriched": 165,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -314,6 +314,28 @@
   ]
  },
  "items": [
+  {
+   "id": "ea9ba29c00155fe8",
+   "source": "SANS ISC",
+   "region": "US",
+   "lang": "en",
+   "link": "https://isc.sans.edu/diary/rss/33532",
+   "published": "2026-11-18T19:54:50+00:00",
+   "title": "Java4Shell, NGINX2Shell and more: Why we are not at \"Yellow\"",
+   "summary": "Foram recentemente detetadas várias vulnerabilidades críticas e falhas de funcionamento em tecnologias amplamente utilizadas, incluindo um grande apagão no Microsoft 365 e falhas graves no Java e no NGINX. Estes incidentes acumularam-se num curto espaço de tempo, elevando significativamente os riscos para a segurança das organizações. Embora a gravidade pudesse justificar um alerta de nível amarelo, a situação realça a contínua instabilidade e exposição dos sistemas digitais.",
+   "image": null,
+   "points": [
+    "Ocorreu um apagão importante no Microsoft 365.",
+    "Identificaram-se falhas críticas no Java e no NGINX.",
+    "A concentração de incidentes eleva os riscos operacionais."
+   ],
+   "title_original": "Java4Shell, NGINX2Shell and more: Why we are not at \"Yellow\", (Wed, Nov 18th)",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A ocorrência simultânea de falhas em plataformas essenciais aumenta drasticamente o risco de exploração por cibercriminosos.",
+   "todo": "Monitorize os alertas de segurança mais recentes e aplique imediatamente os patches de correção disponibilizados pelos fornecedores."
+  },
   {
    "id": "9f639cd35360f889",
    "source": "BleepingComputer",
@@ -13760,28 +13782,6 @@
    "enriched": true,
    "why": "Ajuda os profissionais a manterem-se informados sobre o panorama atual de ameaças.",
    "todo": ""
-  },
-  {
-   "id": "d1613bb1967c4482",
-   "source": "CyberScoop",
-   "region": "US",
-   "lang": "en",
-   "link": "https://cyberscoop.com/us-seizes-north-korea-hacking-infrastructure-binance/",
-   "published": "2026-11-13T00:32:19+00:00",
-   "title": "US seizes North Korean hacking infrastructure, $1.2 billion in cryptocurrency stolen from Binance",
-   "summary": "O Departamento de Justiça dos EUA e o FBI desmantelaram infraestruturas em nuvem e recuperaram 1,2 mil milhões de dólares em criptomoedas roubadas da Binance por hackers norte-coreanos. Os atacantes utilizaram técnicas de engenharia social e chamadas falsas em plataformas como Telegram e Slack para enganar vítimas e roubar credenciais. A campanha afetou o setor cripto e Web3, causando perdas superiores a 400 milhões de dólares.",
-   "image": null,
-   "points": [
-    "EUA apreenderam 1,2 mil milhões de dólares roubados da Binance por hackers norte-coreanos.",
-    "Criminosos usaram plataformas de mensagens para falsificar reuniões em vídeo e roubar dados.",
-    "Infraestrutura de engenharia social continha centenas de vídeos gravados de vítimas."
-   ],
-   "title_original": null,
-   "category": "Malware",
-   "translated": false,
-   "enriched": true,
-   "why": "Demonstra como grupos estatais utilizam engenharia social avançada para infiltrar organizações e roubar ativos digitais.",
-   "todo": "Valide a identidade dos participantes em videochamadas e evite clicar em links desconhecidos para software de conferência."
   }
  ]
 }

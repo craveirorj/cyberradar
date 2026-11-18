@@ -112,6 +112,10 @@ details input{width:100%;margin-top:6px;padding:9px;border-radius:8px;border:1px
 .mapbox{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden}
 #map{display:block;width:100%;height:auto;cursor:pointer}
 .mapbox .legend{position:absolute;left:12px;bottom:8px;right:12px;font-size:11px;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap}
+.hud{position:absolute;left:14px;top:10px;pointer-events:none}.hud small{display:block;font-size:11px;color:var(--muted)}.hud b{font-size:26px;color:var(--text);text-shadow:0 0 14px rgba(34,211,238,.6)}
+#ticker{position:absolute;right:10px;top:10px;width:min(260px,46%);pointer-events:none;display:flex;flex-direction:column;gap:4px}
+.tkr{font-size:11.5px;background:rgba(7,11,20,.72);border-left:3px solid;padding:3px 8px;border-radius:6px;animation:tin .35s ease;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@keyframes tin{from{opacity:0;transform:translateX(14px)}to{opacity:1;transform:none}}
 .leg{cursor:pointer;user-select:none}.leg.off{opacity:.35;text-decoration:line-through}
 .mapbox .legend i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px}
 .tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:12px}
@@ -164,7 +168,7 @@ details input{width:100%;margin-top:6px;padding:9px;border-radius:8px;border:1px
       <div class="tnote">Mapa em tempo real do próprio site, incorporado aqui. Se ficar em branco, esse site não permite ser mostrado dentro de outras páginas: <a id="liveOpen" href="#" target="_blank" rel="noopener" style="color:var(--accent)">abrir numa nova janela ↗</a></div></div>
     <div id="mine" style="display:none">
     <div class="mapbox"><canvas id="map" width="1200" height="520"></canvas>
-      <div class="legend" id="legend"></div></div>
+      <div class="hud"><small>ameaças identificadas agora</small><b id="liveCount">0</b></div><div id="ticker"></div><div class="legend" id="legend"></div></div>
     <div id="cpanel" class="tbox" style="display:none;margin-top:12px"></div>
     <div class="tnote" id="tnote"></div>
     <div class="tgrid" id="tgrid"></div>
@@ -345,7 +349,7 @@ function renderThreats(){
     TH.tgt=t.filter(x=>MAP.cent[x.cc]).map(x=>({lat:MAP.cent[x.cc][0],lon:MAP.cent[x.cc][1],w:x.pct}));
   }else{TH.org=TH.tgt=[];h+='<div class="tbox"><h4>Cloudflare Radar</h4>Falta ligar o Cloudflare Radar para ver origens e alvos de ataques (ver README).</div>'}
   g.innerHTML=h;
-  $('#tnote').innerHTML=`Dados reais de várias fontes abertas (abuse.ch, OpenPhish, SANS DShield, Cloudflare Radar), atualizados de 20 em 20 minutos (última: ${ago(d.updated)}). Toca num país (no mapa ou nas listas) para ver o detalhe e num tipo da legenda para o esconder. País dos IPs: DB-IP.com. Os pontos e as linhas no mapa são uma animação feita a partir destes números: mostram onde há mais atividade, não cada ataque individual.`;
+  $('#tnote').innerHTML=`Dados reais de várias fontes abertas (abuse.ch, OpenPhish, SANS DShield, Cloudflare Radar), atualizados de 20 em 20 minutos (última: ${ago(d.updated)}). Toca num país (no mapa ou nas listas) para ver o detalhe e num tipo da legenda para o esconder. País dos IPs: DB-IP.com. Os pontos, as linhas e a lista de eventos no mapa são uma animação feita a partir destes números: mostram onde há mais atividade, não cada ataque individual.`;
 }
 $('#legend').onclick=e=>{const l=e.target.closest('.leg');if(!l)return;const k=l.dataset.k;TH.off.has(k)?TH.off.delete(k):TH.off.add(k);l.classList.toggle('off')};
 function showMap(m){
@@ -379,27 +383,47 @@ function xy(p,W,H){return [(p.lon+180)/360*W,(80-p.lat)/140*H]}
 function startMap(){
   TH.cv=$('#map');TH.ctx=TH.cv.getContext('2d');cancelAnimationFrame(TH.raf);
   const W=TH.cv.width,H=TH.cv.height,cx=TH.ctx,rows=MAP.rows,cw=W/rows[0].length,ch=H/rows.length;
-  let last=0;
+  let last=0,lastArc=0,shown=0;const tk=$('#ticker');
+  const total=()=>(TH.ser||[]).filter(x=>!TH.off.has(x.key)).reduce((a,x)=>a+(x.total||0),0);
+  const addTick=(col,txt)=>{if(!tk)return;const d=document.createElement('div');d.className='tkr';d.style.borderColor=`rgb(${col})`;d.textContent=txt;tk.prepend(d);while(tk.children.length>6)tk.lastChild.remove()};
   const frame=t=>{
     TH.raf=requestAnimationFrame(frame);
-    cx.clearRect(0,0,W,H);cx.fillStyle='rgba(60,90,140,.45)';
-    for(let r=0;r<rows.length;r++)for(let c=0;c<rows[r].length;c++)if(rows[r][c]==='1'){cx.beginPath();cx.arc(c*cw+cw/2,r*ch+ch/2,cw*.28,0,7);cx.fill()}
-    if(t-last>380){last=t;
+    cx.clearRect(0,0,W,H);
+    // terra: pontos com leve cintilação
+    for(let r=0;r<rows.length;r++)for(let c=0;c<rows[r].length;c++)if(rows[r][c]==='1'){
+      const tw=.35+.15*Math.sin(t/900+c*.7+r*.5);cx.fillStyle=`rgba(70,105,160,${tw})`;cx.beginPath();cx.arc(c*cw+cw/2,r*ch+ch/2,cw*.28,0,7);cx.fill()}
+    // linha de varrimento
+    const sx=(t/18)%(W+200)-100,g=cx.createLinearGradient(sx-90,0,sx,0);g.addColorStop(0,'rgba(34,211,238,0)');g.addColorStop(1,'rgba(34,211,238,.10)');cx.fillStyle=g;cx.fillRect(sx-90,0,90,H);
+    // pontos permanentes ("calor") por país, a respirar
+    for(const sr of (TH.ser||[])){if(TH.off.has(sr.key))continue;const mx=Math.max(...Object.values(sr.by),1);
+      for(const [k,v] of Object.entries(sr.by)){const m=MAP.cent[k];if(!m)continue;const[x,y]=xy({lat:m[0],lon:m[1]},W,H),rad=3+Math.sqrt(v/mx)*9*(1+.12*Math.sin(t/500+x));
+        const gr=cx.createRadialGradient(x,y,0,x,y,rad*2.4);gr.addColorStop(0,`rgba(${sr.col},.55)`);gr.addColorStop(1,`rgba(${sr.col},0)`);cx.fillStyle=gr;cx.beginPath();cx.arc(x,y,rad*2.4,0,7);cx.fill()}}
+    // novos eventos
+    if(t-last>230){last=t;
       const on=(TH.ser||[]).filter(x=>!TH.off.has(x.key)),sr=wpick(on.map(x=>({w:x.total||1,x})));
-      if(sr){const cc=wpick(Object.entries(sr.x.by).filter(([k])=>MAP.cent[k]).map(([k,v])=>({w:v,cc:k})));if(cc){const m=MAP.cent[cc.cc];TH.fx.push({k:'ping',p:{lat:m[0],lon:m[1]},t0:t,col:sr.x.col})}}
-      const o=wpick(TH.org),d=wpick(TH.tgt);if(o&&d&&o!==d)TH.fx.push({k:'arc',o,d,t0:t});
-    }
-    TH.fx=TH.fx.filter(e=>t-e.t0<(e.k==='arc'?2600:2200));
+      if(sr){const cc=wpick(Object.entries(sr.x.by).filter(([k])=>MAP.cent[k]).map(([k,v])=>({w:v,cc:k})));if(cc){const m=MAP.cent[cc.cc];TH.fx.push({k:'ping',p:{lat:m[0],lon:m[1]},t0:t,col:sr.x.col});addTick(sr.x.col,`${flag(cc.cc)} ${cname(cc.cc)} · ${sr.x.label}`)}}}
+    if(t-lastArc>650){lastArc=t;
+      let o=wpick(TH.org),d=wpick(TH.tgt),col='34,211,238';
+      if(!o||!d){const on=(TH.ser||[]).filter(x=>!TH.off.has(x.key)),a1=wpick(on.map(x=>({w:x.total||1,x})));
+        if(a1){const f=k=>wpick(Object.entries(a1.x.by).filter(([c])=>MAP.cent[c]).map(([c,v])=>({w:v,lat:MAP.cent[c][0],lon:MAP.cent[c][1]})));o=f();
+          const all=[];on.forEach(x=>Object.entries(x.by).forEach(([c,v])=>MAP.cent[c]&&all.push({w:v,lat:MAP.cent[c][0],lon:MAP.cent[c][1]})));d=wpick(all);col=a1.x.col}}
+      if(o&&d&&o!==d&&(o.lat!==d.lat||o.lon!==d.lon))TH.fx.push({k:'arc',o,d,t0:t,col})}
+    TH.fx=TH.fx.filter(e=>t-e.t0<(e.k==='arc'?2800:2400));
     for(const e of TH.fx){
       const age=t-e.t0;
-      if(e.k==='ping'){const[x,y]=xy(e.p,W,H),u=age/2200;cx.strokeStyle=`rgba(${e.col},${1-u})`;cx.lineWidth=2;cx.beginPath();cx.arc(x,y,4+u*26,0,7);cx.stroke();cx.fillStyle=`rgba(${e.col},${1-u*.6})`;cx.beginPath();cx.arc(x,y,3.5,0,7);cx.fill()}
-      else{const[x1,y1]=xy(e.o,W,H),[x2,y2]=xy(e.d,W,H),u=Math.min(1,age/1800),mx=(x1+x2)/2,my=Math.max(14,Math.min(y1,y2)-Math.hypot(x2-x1,y2-y1)*.28);
+      if(e.k==='ping'){const[x,y]=xy(e.p,W,H);
+        for(let i=0;i<3;i++){const u=Math.max(0,Math.min(1,(age-i*260)/1900));if(u<=0||u>=1)continue;cx.strokeStyle=`rgba(${e.col},${(1-u)*.9})`;cx.lineWidth=2.2-i*.5;cx.beginPath();cx.arc(x,y,3+u*34,0,7);cx.stroke()}
+        cx.fillStyle=`rgba(${e.col},${Math.max(0,1-age/2400)})`;cx.beginPath();cx.arc(x,y,4,0,7);cx.fill()}
+      else{const[x1,y1]=xy(e.o,W,H),[x2,y2]=xy(e.d,W,H),u=Math.min(1,age/1700),mx=(x1+x2)/2,my=Math.max(14,Math.min(y1,y2)-Math.hypot(x2-x1,y2-y1)*.3);
         const q=(s)=>[(1-s)*(1-s)*x1+2*(1-s)*s*mx+s*s*x2,(1-s)*(1-s)*y1+2*(1-s)*s*my+s*s*y2];
-        const fade=age>1800?1-(age-1800)/800:1;cx.strokeStyle=`rgba(34,211,238,${.55*fade})`;cx.lineWidth=1.6;cx.beginPath();
-        for(let s=Math.max(0,u-.35);s<=u;s+=.03){const[px,py]=q(s);s===Math.max(0,u-.35)?cx.moveTo(px,py):cx.lineTo(px,py)}cx.stroke();
-        const[hx,hy]=q(u);cx.fillStyle=`rgba(251,191,36,${fade})`;cx.beginPath();cx.arc(hx,hy,3.2,0,7);cx.fill();
-        if(u>=1){cx.strokeStyle=`rgba(251,191,36,${fade})`;cx.beginPath();cx.arc(x2,y2,4+(age-1800)/40,0,7);cx.stroke()}}
+        const fade=age>1700?Math.max(0,1-(age-1700)/1100):1;
+        cx.lineWidth=2;cx.lineCap='round';
+        for(let s=Math.max(0,u-.4),n=0;s<u;s+=.02,n++){const[ax,ay]=q(s),[bx,by]=q(Math.min(u,s+.02));cx.strokeStyle=`rgba(${e.col},${fade*((s-(u-.4))/.4)*.85})`;cx.beginPath();cx.moveTo(ax,ay);cx.lineTo(bx,by);cx.stroke()}
+        const[hx,hy]=q(u);const hg=cx.createRadialGradient(hx,hy,0,hx,hy,9);hg.addColorStop(0,`rgba(255,255,255,${fade})`);hg.addColorStop(1,`rgba(${e.col},0)`);cx.fillStyle=hg;cx.beginPath();cx.arc(hx,hy,9,0,7);cx.fill();
+        if(u>=1){const v=(age-1700)/1100;cx.strokeStyle=`rgba(251,191,36,${fade})`;cx.lineWidth=2;cx.beginPath();cx.arc(x2,y2,4+v*22,0,7);cx.stroke()}}
     }
+    // contador a subir
+    const tt=total();shown+=(tt-shown)*.06;const el=$('#liveCount');if(el)el.textContent=Math.round(shown).toLocaleString('pt-PT');
   };
   TH.raf=requestAnimationFrame(frame);
 }

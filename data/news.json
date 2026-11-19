@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T15:07:41.134522+00:00",
+ "updated": "2026-11-19T15:27:05.643223+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -169,7 +169,7 @@
   {
    "source": "Cisco Talos",
    "ok": true,
-   "added": 3
+   "added": 4
   },
   {
    "source": "Unit 42 (Palo Alto)",
@@ -234,7 +234,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 19
+   "added": 18
   },
   {
    "source": "The Register Security",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Security Affairs",
@@ -269,12 +269,12 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 2
+   "added": 3
   },
   {
    "source": "Check Point Research",
@@ -309,16 +309,67 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 12,
-  "pending": 309,
-  "unenriched": 197,
+  "done": 0,
+  "pending": 325,
+  "unenriched": 208,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "Expecting property name enclosed in double quotes: line 5 column 1 (char 83)"
   ]
  },
  "items": [
+  {
+   "id": "5f26a746749acf70",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/european-commission-confirms-cyberattack-using-ai",
+   "published": "2026-11-19T15:15:00+00:00",
+   "title": "European Commission confirms cyberattack, says hackers used AI tool",
+   "summary": "POLITICO had reported CERT-EU had identified the attackers’ use of ARTEX, an open-source AI hacking platform that the FBI last week warned was being used both by criminals and state-sponsored groups.",
+   "image": "https://cms.therecord.media/uploads/30917367864_8dc9286dcf_o_dc03237cec.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "POLITICO had reported CERT-EU had identified the attackers’ use of ARTEX, an open-source AI hacking platform that the FBI last week warned was being used both by criminals and state-sponsored groups."
+  },
+  {
+   "id": "7008c485fa38b4e8",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
+   "published": "2026-11-19T15:11:06+00:00",
+   "title": "Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication",
+   "summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today. Fixed versions are out for all supported branches, and the company lists no workaround. vCenter is the central console for managing an organization's ESX hosts and virtual machines. The",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ5IDT81eb7KUE0LzwGJAzuAETft3pD5sOz2dJxnQin_-zR_hH8tDKFTsLNBNoe35KM4DhFJjP7K-0YwaMoVwz7xUhTiP2vKeNqmN3kenPgwflENu35qx-QlFj-rDFdyXx1HMz6ykegw6nlnPDXppYbotjoRj-ammlyUZ-Cr0JYLS5iyZXkJXkaIO5UAc/s1600/vmware.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today. Fixed versions are out for all supported branches, and the company lists no workaround. vCenter is the central console for managing an organization's ESX hosts and virtual machines. The"
+  },
+  {
+   "id": "75044bab3e7303d3",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/",
+   "published": "2026-11-19T15:00:10+00:00",
+   "title": "Five warning signs of ransomware breach before encryption or data theft",
+   "summary": "Ransomware attacks often involve credential theft, lateral movement, and attempts to disable security controls long before encryption begins. Acronis examines five warning signs that can help defenders detect intrusions earlier, contain malicious activity, and protect critical systems and backups. [...]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Ransomware",
+   "translated": false,
+   "enriched": false,
+   "raw": "Ransomware attacks often involve credential theft, lateral movement, and attempts to disable security controls long before encryption begins. Acronis examines five warning signs that can help defenders detect intrusions earlier, contain malicious activity, and protect critical systems and backups. [...]"
+  },
   {
    "id": "7cc3b724b66a2eb4",
    "source": "BleepingComputer",
@@ -334,12 +385,29 @@
     "As vulnerabilidades podem ser encadeadas com um erro do kernel do Linux.",
     "O objetivo final é alcançar privilégios de root para controlar os servidores."
    ],
-   "title_original": "Critical NGINX ‘NGINX2Root’ bugs let attackers hijack servers",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Permite que agentes maliciosos assumam o controle total de servidores web vulneráveis.",
    "todo": "Atualize o NGINX e o kernel do Linux para as versões mais recentes disponibilizadas pelos fornecedores."
+  },
+  {
+   "id": "f92f66411a812200",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
+   "published": "2026-11-19T14:45:06+00:00",
+   "title": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
+   "summary": "The PHP Foundation has released security updates to address multiple critical security flaws that could be exploited to achieve remote code execution on affected deployments, including CVE-2026-115560. The list of vulnerabilities is as follows - CVE-2026-115560 (CVSS score: 9.2) - An improper input validation vulnerability that could result in remote code execution, file modification,",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjD2D26Hu7r43uUrdDxmsmmbBe2oMxd-L3_DIVLqAPyDrOnSmdvXfkIq1_lNmWqr49gbrIZ0NeTmA2OYgyWgdUjRf_RTRfflyXn3Vgujkb9tiByOPfej1OqEszpQf2FeozeSqmK5L7aSj28GLwzKmzehIp9zJyeJqgRvbVOW91_pVEMhs3KY9_oXjwf5BE/s1600/php-flawss.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "The PHP Foundation has released security updates to address multiple critical security flaws that could be exploited to achieve remote code execution on affected deployments, including CVE-2026-115560. The list of vulnerabilities is as follows - CVE-2026-115560 (CVSS score: 9.2) - An improper input validation vulnerability that could result in remote code execution, file modification,"
   },
   {
    "id": "7bcb8213c83158e2",
@@ -356,9 +424,9 @@
     "A campanha colocou vários sistemas offline.",
     "Foram detetados indícios do uso da framework ARTEX pelos atacantes."
    ],
-   "title_original": "European Commission Confirms AI-Driven Cyber-Attack Took Systems Offline",
+   "title_original": null,
    "category": "Ataque/APT",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Evidencia a vulnerabilidade de instituições europeias a ataques impulsionados por inteligência artificial.",
    "todo": "Monitorize os registos de atividade dos sistemas e reforce a deteção de comportamentos anómalos."
@@ -378,9 +446,9 @@
     "Comparação focada em taxas, moedas de liquidação e taxas de câmbio.",
     "Avaliação da segurança e da facilidade de integração com lojas online."
    ],
-   "title_original": "Comparing Crypto Payment Processors for International Merchants",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Ajuda comerciantes globais a escolherem plataformas de pagamento seguras e eficientes.",
    "todo": "Analise os requisitos de segurança e as taxas antes de integrar um processador de criptomoedas."
@@ -400,12 +468,29 @@
     "O objetivo é enviar mensagens de phishing para enganar novas organizações-alvo.",
     "Os alvos incluem governos, empresas de defesa e ONGs na Europa e América do Norte."
    ],
-   "title_original": "Russian spies turn one cloud breach into a stepping stone for the next",
+   "title_original": null,
    "category": "Fuga de dados",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra como os atacantes reutilizam acessos comprometidos para expandir campanhas de phishing altamente credíveis.",
    "todo": "Implemente autenticação multifator rigorosa e verifique sempre pedidos inesperados de credenciais por parte de supostos colegas."
+  },
+  {
+   "id": "6e1cc48f217d3df0",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
+   "published": "2026-11-19T14:33:06+00:00",
+   "title": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
+   "summary": "Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site. That can lead to a site takeover or remote code execution, and the project rates the vulnerable configurations as uncommon. Fixed releases for all supported branches shipped yesterday. The Drupal Security Team disclosed",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4kxIzi1B-GPdS7pbaOI823BHxteL-8FbODKnAoDkr8tGhhjGYuRU9KIEAvOQ6kBZFQPCly3BIhQo6vkjxJy13zL7CxlRXsez_G_otFVaja2H5ObmzNMMilbewaweqqO5Paa0H49yaZdWB09xAIqeo7YLG0uyd05qjdbh2aLIRZd73_jwVGH26YexA3l8/s1600/drupal-flaws.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site. That can lead to a site takeover or remote code execution, and the project rates the vulnerable configurations as uncommon. Fixed releases for all supported branches shipped yesterday. The Drupal Security Team disclosed"
   },
   {
    "id": "abef5657ebf43b0e",
@@ -512,9 +597,9 @@
     "A exploração permitiu um bypass de autenticação e criação de sessões de administrador.",
     "Os atacantes acederam a comandos arbitrários e ficheiros de bases de dados sensíveis."
    ],
-   "title_original": "ARMORY CASTLE Exploits vSphere",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Expõe riscos críticos em plataformas de virtualização centrais utilizadas por várias empresas.",
    "todo": "Aplique imediatamente as correções de segurança disponibilizadas pela Broadcom para o vCenter Server."
@@ -13670,117 +13755,6 @@
    "enriched": true,
    "why": "Importa porque serve de ponto de encontro para debater tópicos de cibersegurança de forma aberta.",
    "todo": ""
-  },
-  {
-   "id": "0c34c8f3387b63b7",
-   "source": "TechCrunch Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://techcrunch.com/2026/11/13/u-s-government-grounds-all-flights-across-the-united-states-due-to-extraordinary-cirumstances/",
-   "published": "2026-11-13T21:44:38+00:00",
-   "title": "Governo dos EUA suspende todos os voos no país devido a 'circunstâncias extraordinárias'",
-   "summary": "A Administração Federal de Aviação dos Estados Unidos (FAA) emitiu uma ordem de paragem de voos a nível nacional. A decisão ocorreu na sequência de problemas de comunicação que afetaram múltiplos centros de controlo de tráfego aéreo. Estes centros gerem o espaço aéreo em todo o território norte-americano.",
-   "image": null,
-   "points": [
-    "Quem: FAA e centros de controlo de tráfego aéreo.",
-    "O quê: Suspensão de todos os voos nos Estados Unidos.",
-    "Impacto: Interrupção total da gestão do espaço aéreo devido a falhas de comunicação."
-   ],
-   "title_original": "US government grounds all flights across the United States ‘due to extraordinary circumstances’",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque evidencia a vulnerabilidade de infraestruturas críticas de transporte a falhas de comunicação.",
-   "todo": "Garanta a redundância de sistemas de comunicação em infraestruturas críticas para evitar interrupções operacionais."
-  },
-  {
-   "id": "11d7cc16194db7a1",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances/",
-   "published": "2026-11-13T21:33:27+00:00",
-   "title": "FAA emite paragem de voos devido a 'circunstâncias extraordinárias'",
-   "summary": "As autoridades federais norte-americanas suspenderam o tráfego aéreo em todo o país após falhas de comunicação em centros de controlo. Até ao momento, os responsáveis governamentais ainda não esclareceram a causa exata da interrupção. As autoridades mantêm em aberto a investigação sobre a possibilidade de um ciberataque.",
-   "image": null,
-   "points": [
-    "Quem: Oficiais federais e FAA.",
-    "O quê: Paragem de voos por circunstâncias extraordinárias e falhas de comunicação.",
-    "Impacto: Investigação em curso para apurar possível origem maliciosa."
-   ],
-   "title_original": "FAA Ground Stop Issued Due to ‘Extraordinary Circumstances’",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque sublinha a incerteza em torno de potenciais ciberataques a sistemas de transporte nacional.",
-   "todo": "Implemente planos de contingência robustos e investigue prontamente qualquer anomalia de comunicação em redes críticas."
-  },
-  {
-   "id": "f0f23fdb08d7bf54",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/artex-ai-tool-fbi-flash-alert",
-   "published": "2026-11-13T21:32:00+00:00",
-   "title": "Alerta do FBI indica que ferramenta Artex automatiza ciberataques à 'velocidade da máquina'",
-   "summary": "O FBI emitiu um alerta sobre a ferramenta de hacking de código aberto Artex. O software automatiza técnicas de ataque, reduzindo drasticamente o tempo necessário para comprometer sistemas. Algumas intrusões conseguem progredir desde a mira inicial até ao acesso privilegiado em menos de três horas.",
-   "image": "https://cms.therecord.media/uploads/fbi_1_c4c06390db.jpg",
-   "points": [
-    "Quem: FBI e utilizadores da ferramenta Artex.",
-    "O quê: Alerta sobre automação de ciberataques de código aberto.",
-    "Impacto: Redução drástica do tempo de invasão para menos de três horas."
-   ],
-   "title_original": "FBI flash alert says Artex tool automating cyberattacks at ‘machine speed’",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque mostra como a automação de ataques acelera a progressão de ameaças contra redes corporativas.",
-   "todo": "Reforce a monitorização de acessos privilegiados e utilize ferramentas de deteção comportamental para detetar intrusões rápidas."
-  },
-  {
-   "id": "78498214505c5f31",
-   "source": "Microsoft Security Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/",
-   "published": "2026-11-13T21:31:44+00:00",
-   "title": "SCKit abusa do ScreenConnect para implantar acesso remoto e visar sessões de técnicos",
-   "summary": "Atores maliciosos têm explorado a aplicação legítima ScreenConnect para instalar clientes de acesso remoto não autorizados e o worm SCKit em instâncias geridas por fornecedores de serviços geridos (MSPs). A campanha utiliza comandos para instalar silenciosamente clientes idênticos ligados a infraestruturas controladas pelos atacantes. O worm tem como alvo estações de trabalho de técnicos de suporte para distribuir payloads por dispositivos geridos. A Microsoft e a ConnectWise confirmaram a atividade maliciosa e aconselham a auditoria de postos de trabalho.",
-   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/image-38.webp",
-   "points": [
-    "O quê: Campanha com o worm SCKit e abuso do ScreenConnect.",
-    "Como: Utilização de sessões de suporte legítimas para instalar acessos não autorizados.",
-    "Impacto: Comprometimento de postos de trabalho de técnicos e dispositivos geridos."
-   ],
-   "title_original": "SCKit abuses ScreenConnect to deploy remote access and target technician sessions",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque demonstra como ferramentas legítimas de suporte remoto podem ser transformadas em vetores de infeção em massa.",
-   "todo": "Audite estações de trabalho de suporte técnico e garanta que a remoção de clientes não autorizados invalida sessões web expostas."
-  },
-  {
-   "id": "867f71b5e82273af",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/esquema-de-golpe-usa-chamadas-de-video-falsas-e-rouba-mais-de-r-2-bilhoes/",
-   "published": "2026-11-13T21:30:00+00:00",
-   "title": "Esquema de golpe usa chamadas de vídeo falsas e rouba mais de R$ 2 bilhões",
-   "summary": "Cibercriminosos associados à Coreia do Norte, identificados como BlueNoroff ou APT38, roubaram mais de 400 milhões de dólares em criptomoedas através de engenharia social. A campanha FaceStealer utiliza ferramentas de inteligência artificial generativa e vídeos gravados para simular reuniões virtuais legítimas em plataformas como Zoom e Teams. Durante as chamadas fingem problemas técnicos para induzir as vítimas a instalar softwares maliciosos. O grupo também visa programadores de código aberto para injetar códigos maliciosos em cadeias de fornecimento de software.",
-   "image": "https://www.estadao.com.br/resizer/v2/H3HHP347F5A5VIUTNECENLVQH4.png?quality=80&auth=4779046a2e8a1cf07861c820bdc25443be5ce0cddff845cdbf3a687510e00357&width=710",
-   "points": [
-    "Quem: Cibercriminosos da Coreia do Norte (BlueNoroff/APT38).",
-    "O quê: Campanha FaceStealer com videochamadas falsas e deepfakes.",
-    "Como: Uso de IA e engenharia social para roubar criptomoedas e infetar software.",
-    "Impacto: Roubo superior a 400 milhões de dólares e ameaça a desenvolvedores."
-   ],
-   "title_original": null,
-   "category": "Malware",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque revela táticas avançadas de deepfakes e engenharia social direcionadas ao setor cripto e tecnológico.",
-   "todo": "Desconfie de pedidos urgentes de instalação de software em reuniões virtuais e valide a identidade de contactos em canais seguros."
   }
  ]
 }

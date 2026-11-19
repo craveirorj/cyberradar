@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T08:07:16.731326+00:00",
+ "updated": "2026-11-19T08:26:49.082243+00:00",
  "errors": [],
  "feodo": {
   "total": 5,
@@ -58,8 +58,8 @@
    "label": "Sites que distribuem malware",
    "total": 884,
    "by_country": {
-    "US": 645,
-    "CN": 153,
+    "US": 641,
+    "CN": 156,
     "CA": 26,
     "BR": 10,
     "FR": 10,
@@ -68,6 +68,7 @@
     "TH": 4,
     "TW": 3,
     "IT": 3,
+    "ID": 2,
     "UA": 2,
     "AL": 2,
     "TR": 2,
@@ -80,19 +81,18 @@
     "VE": 1,
     "SG": 1,
     "BO": 1,
-    "ID": 1,
     "IE": 1
    },
    "detail": {
     "US": {
-     "DEVPOPPER": 237,
+     "DEVPOPPER": 234,
      "github": 154,
-     "DEVBOX": 123,
+     "DEVBOX": 122,
      "exe": 118,
      "crypto": 4
     },
     "CN": {
-     "malware_download": 106,
+     "malware_download": 109,
      "32-bit": 30,
      "fake-deepseek": 13,
      "elf": 3,
@@ -133,6 +133,9 @@
      "CoinMiner": 1,
      "malware_download": 1
     },
+    "ID": {
+     "malware_download": 2
+    },
     "UA": {
      "malware_download": 2
     },
@@ -169,24 +172,21 @@
     "BO": {
      "malware_download": 1
     },
-    "ID": {
-     "malware_download": 1
-    },
     "IE": {
      "bonboncraft.com": 1
     }
    },
    "tags": {
-    "github": 630,
-    "js": 445,
-    "VSCode": 398,
-    "TxDataHiding": 322,
-    "DEVPOPPER": 237,
-    "DEVBOX": 123
+    "github": 626,
+    "js": 441,
+    "VSCode": 395,
+    "TxDataHiding": 319,
+    "DEVPOPPER": 234,
+    "DEVBOX": 122
    },
    "ports": {
     "US": {
-     "443": 634,
+     "443": 630,
      "80": 4,
      "35146": 3,
      "8080": 2,
@@ -240,6 +240,10 @@
      "443": 2,
      "51303": 1
     },
+    "ID": {
+     "34665": 1,
+     "45898": 1
+    },
     "UA": {
      "14290": 1,
      "37193": 1
@@ -277,9 +281,6 @@
     },
     "BO": {
      "40501": 1
-    },
-    "ID": {
-     "45898": 1
     },
     "IE": {
      "2362": 1
@@ -348,16 +349,16 @@
   },
   "ioc": {
    "label": "Indicadores de malware (IPs)",
-   "total": 201,
+   "total": 198,
    "by_country": {
-    "US": 39,
     "HK": 39,
-    "CN": 34,
+    "US": 37,
+    "CN": 33,
     "DE": 16,
     "SG": 13,
-    "NL": 8,
-    "FR": 6,
+    "NL": 9,
     "JP": 5,
+    "FR": 5,
     "CA": 4,
     "PH": 4,
     "VN": 4,
@@ -365,7 +366,7 @@
     "IE": 2,
     "FI": 2,
     "AD": 2,
-    "SI": 2,
+    "AU": 1,
     "AT": 1,
     "SC": 1,
     "IR": 1,
@@ -375,6 +376,7 @@
     "ES": 1,
     "BR": 1,
     "KR": 1,
+    "SI": 1,
     "PA": 1,
     "PL": 1,
     "BE": 1,
@@ -387,13 +389,6 @@
     "CL": 1
    },
    "detail": {
-    "US": {
-     "Unknown malware": 18,
-     "AdaptixC2": 7,
-     "VShell": 2,
-     "Unknown Stealer": 2,
-     "Sliver": 2
-    },
     "HK": {
      "Unknown malware": 26,
      "VShell": 3,
@@ -401,9 +396,16 @@
      "AdaptixC2": 2,
      "PerlBot": 2
     },
+    "US": {
+     "Unknown malware": 18,
+     "AdaptixC2": 7,
+     "VShell": 2,
+     "Unknown Stealer": 2,
+     "Sliver": 2
+    },
     "CN": {
      "Unknown malware": 22,
-     "Cobalt Strike": 8,
+     "Cobalt Strike": 7,
      "VShell": 3,
      "AdaptixC2": 1
     },
@@ -421,17 +423,18 @@
     "NL": {
      "AsyncRAT": 3,
      "Unknown malware": 3,
-     "Cobalt Strike": 2
-    },
-    "FR": {
-     "Unknown malware": 2,
-     "XWorm": 2,
-     "LxBase RAT": 1,
-     "Jackskid": 1
+     "Cobalt Strike": 2,
+     "Potassium": 1
     },
     "JP": {
      "VShell": 3,
      "Unknown malware": 2
+    },
+    "FR": {
+     "Unknown malware": 2,
+     "LxBase RAT": 1,
+     "XWorm": 1,
+     "Jackskid": 1
     },
     "CA": {
      "Jackskid": 3,
@@ -460,9 +463,8 @@
     "AD": {
      "Unknown Stealer": 2
     },
-    "SI": {
-     "DCRat": 1,
-     "XWorm": 1
+    "AU": {
+     "Potassium": 1
     },
     "AT": {
      "Potassium": 1
@@ -490,6 +492,9 @@
     },
     "KR": {
      "Unknown malware": 1
+    },
+    "SI": {
+     "DCRat": 1
     },
     "PA": {
      "AsyncRAT": 1
@@ -524,20 +529,13 @@
    },
    "malware": {
     "Unknown malware": 93,
-    "Cobalt Strike": 15,
+    "Cobalt Strike": 14,
     "Jackskid": 14,
     "AdaptixC2": 12,
     "VShell": 11,
     "AsyncRAT": 10
    },
    "ports": {
-    "US": {
-     "443": 9,
-     "80": 6,
-     "8080": 3,
-     "7443": 3,
-     "4850": 2
-    },
     "HK": {
      "443": 15,
      "80": 10,
@@ -545,9 +543,16 @@
      "4321": 2,
      "8081": 1
     },
+    "US": {
+     "443": 9,
+     "80": 6,
+     "8080": 3,
+     "7443": 3,
+     "4850": 2
+    },
     "CN": {
      "8787": 13,
-     "80": 5,
+     "80": 4,
      "8080": 3,
      "21481": 1,
      "28080": 1
@@ -567,13 +572,9 @@
     "NL": {
      "443": 4,
      "1338": 2,
+     "7193": 1,
      "1444": 1,
      "4444": 1
-    },
-    "FR": {
-     "443": 3,
-     "7007": 2,
-     "4551": 1
     },
     "JP": {
      "443": 1,
@@ -581,6 +582,11 @@
      "18084": 1,
      "18086": 1,
      "18092": 1
+    },
+    "FR": {
+     "443": 3,
+     "4551": 1,
+     "7007": 1
     },
     "CA": {
      "443": 4
@@ -610,9 +616,8 @@
      "443": 1,
      "80": 1
     },
-    "SI": {
-     "4444": 1,
-     "7005": 1
+    "AU": {
+     "7193": 1
     },
     "AT": {
      "7193": 1
@@ -640,6 +645,9 @@
     },
     "KR": {
      "80": 1
+    },
+    "SI": {
+     "4444": 1
     },
     "PA": {
      "8081": 1
@@ -677,82 +685,34 @@
    "label": "Scans e força bruta",
    "total": 200,
    "by_country": {
-    "US": 121,
-    "FR": 27,
-    "NL": 17,
-    "HK": 7,
-    "DE": 7,
-    "AD": 5,
-    "SC": 4,
-    "KZ": 2,
+    "US": 181,
+    "DE": 8,
+    "NL": 6,
+    "GB": 3,
     "RU": 1,
-    "BG": 1,
-    "AM": 1,
-    "RO": 1,
-    "SG": 1,
-    "NO": 1,
-    "GB": 1,
-    "VN": 1,
-    "SE": 1,
-    "LU": 1
+    "CA": 1
    },
    "detail": {
     "US": {
-     "scan/força bruta": 121
-    },
-    "FR": {
-     "scan/força bruta": 27
-    },
-    "NL": {
-     "scan/força bruta": 17
-    },
-    "HK": {
-     "scan/força bruta": 7
+     "scan/força bruta": 181
     },
     "DE": {
-     "scan/força bruta": 7
+     "scan/força bruta": 8
     },
-    "AD": {
-     "scan/força bruta": 5
+    "NL": {
+     "scan/força bruta": 6
     },
-    "SC": {
-     "scan/força bruta": 4
-    },
-    "KZ": {
-     "scan/força bruta": 2
+    "GB": {
+     "scan/força bruta": 3
     },
     "RU": {
      "scan/força bruta": 1
     },
-    "BG": {
-     "scan/força bruta": 1
-    },
-    "AM": {
-     "scan/força bruta": 1
-    },
-    "RO": {
-     "scan/força bruta": 1
-    },
-    "SG": {
-     "scan/força bruta": 1
-    },
-    "NO": {
-     "scan/força bruta": 1
-    },
-    "GB": {
-     "scan/força bruta": 1
-    },
-    "VN": {
-     "scan/força bruta": 1
-    },
-    "SE": {
-     "scan/força bruta": 1
-    },
-    "LU": {
+    "CA": {
      "scan/força bruta": 1
     }
    },
-   "reports": 20334073
+   "reports": 5012031
   }
  },
  "cloudflare": {

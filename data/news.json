@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T14:47:03.776256+00:00",
+ "updated": "2026-11-19T15:07:41.134522+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -179,7 +179,7 @@
   {
    "source": "Google Threat Intelligence",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Google Project Zero",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Hacker News",
@@ -310,15 +310,103 @@
  "translation": {
   "provider": "gemini",
   "done": 12,
-  "pending": 307,
-  "unenriched": 194,
+  "pending": 309,
+  "unenriched": 197,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting value: line 98 column 5 (char 8645)",
-   "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)"
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "7cc3b724b66a2eb4",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/",
+   "published": "2026-11-19T14:57:24+00:00",
+   "title": "Critical NGINX ‘NGINX2Root’ bugs let attackers hijack servers",
+   "summary": "Foram descobertas duas vulnerabilidades críticas no NGINX, denominadas \"nginx2root\", que permitem a atacantes sem autenticação executar código remotamente em servidores web vulneráveis. Investigadores demonstraram que estas falhas podem ser combinadas com uma falha do kernel do Linux para obter acesso root. O impacto afeta diretamente a segurança dos servidores web expostos que utilizem versões vulneráveis.",
+   "image": null,
+   "points": [
+    "Atacantes sem autenticação conseguem executar código remotamente através das falhas \"nginx2root\".",
+    "As vulnerabilidades podem ser encadeadas com um erro do kernel do Linux.",
+    "O objetivo final é alcançar privilégios de root para controlar os servidores."
+   ],
+   "title_original": "Critical NGINX ‘NGINX2Root’ bugs let attackers hijack servers",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que agentes maliciosos assumam o controle total de servidores web vulneráveis.",
+   "todo": "Atualize o NGINX e o kernel do Linux para as versões mais recentes disponibilizadas pelos fornecedores."
+  },
+  {
+   "id": "7bcb8213c83158e2",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/commission-ai-attack-systems/",
+   "published": "2026-11-19T14:45:00+00:00",
+   "title": "European Commission Confirms AI-Driven Cyber-Attack Took Systems Offline",
+   "summary": "A Comissão Europeia confirmou que um ataque cibernético direcionado afetou sistemas individuais, deixando-os offline. Relatórios indicam que os atacantes utilizaram a ferramenta ARTEX durante esta campanha. O impacto consistiu na interrupção do funcionamento de sistemas específicos da instituição.",
+   "image": null,
+   "points": [
+    "Um ataque cibernético afetou sistemas individuais da Comissão Europeia.",
+    "A campanha colocou vários sistemas offline.",
+    "Foram detetados indícios do uso da framework ARTEX pelos atacantes."
+   ],
+   "title_original": "European Commission Confirms AI-Driven Cyber-Attack Took Systems Offline",
+   "category": "Ataque/APT",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia a vulnerabilidade de instituições europeias a ataques impulsionados por inteligência artificial.",
+   "todo": "Monitorize os registos de atividade dos sistemas e reforce a deteção de comportamentos anómalos."
+  },
+  {
+   "id": "e8217d7fb17045f9",
+   "source": "HackRead",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://hackread.com/crypto-payment-processors-international-merchants/",
+   "published": "2026-11-19T14:42:46+00:00",
+   "title": "Comparing Crypto Payment Processors for International Merchants",
+   "summary": "O artigo compara diferentes processadores de pagamentos em criptomoedas para comerciantes internacionais. A análise abrange as taxas cobradas, as moedas de liquidação, as taxas de câmbio, a segurança oferecida e a integração com lojas online. O objetivo é ajudar os comerciantes a avaliar as melhores opções para o seu negócio.",
+   "image": null,
+   "points": [
+    "Análise de processadores de pagamentos em criptomoedas para comerciantes internacionais.",
+    "Comparação focada em taxas, moedas de liquidação e taxas de câmbio.",
+    "Avaliação da segurança e da facilidade de integração com lojas online."
+   ],
+   "title_original": "Comparing Crypto Payment Processors for International Merchants",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda comerciantes globais a escolherem plataformas de pagamento seguras e eficientes.",
+   "todo": "Analise os requisitos de segurança e as taxas antes de integrar um processador de criptomoedas."
+  },
+  {
+   "id": "dcf0c6422c7ca607",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/19/russian-spies-impersonation-cloud-breach/",
+   "published": "2026-11-19T14:42:20+00:00",
+   "title": "Russian spies turn one cloud breach into a stepping stone for the next",
+   "summary": "Um grupo de ciberespionagem russo, rastreado pela Google como COLD RELIC (também conhecido como Star Blizzard, Callisto e Gossamer Bear) e associado ao FSB, está a fazer-se passar por funcionários de organizações já comprometidas para realizar ataques de phishing contra novos alvos. O grupo tem como alvo funcionários governamentais, entidades da defesa e ONGs na Europa e na América do Norte. Esta técnica transforma uma violação inicial numa plataforma para ataques subsequentes.",
+   "image": null,
+   "points": [
+    "O grupo russo COLD RELIC utiliza identidades falsas de empresas comprometidas.",
+    "O objetivo é enviar mensagens de phishing para enganar novas organizações-alvo.",
+    "Os alvos incluem governos, empresas de defesa e ONGs na Europa e América do Norte."
+   ],
+   "title_original": "Russian spies turn one cloud breach into a stepping stone for the next",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como os atacantes reutilizam acessos comprometidos para expandir campanhas de phishing altamente credíveis.",
+   "todo": "Implemente autenticação multifator rigorosa e verifique sempre pedidos inesperados de credenciais por parte de supostos colegas."
+  },
   {
    "id": "abef5657ebf43b0e",
    "source": "SecurityWeek",
@@ -417,14 +505,19 @@
    "link": "https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-vsphere/",
    "published": "2026-11-19T14:00:00+00:00",
    "title": "ARMORY CASTLE Exploits vSphere",
-   "summary": "Written by: Jayson Frost, Bryce Greathouse, Dhanesh Kizhakkinan, John Palmisano, Steve Rasch, Daniel Sislo, John Wolfram Introduction On Oct. 15, 2026, Mandiant and Google Threat Intelligence Group (GTIG) published a blog post detailing recent activity in which the suspected PRC-nexus threat actor ARMORY CASTLE (formerly tracked as UNC5221) exploited CVE-2026-102764, a zero-day vulnerability in BeyondTrust Remote Support, which was patched in BT26-05 . We also described some of the threat actor’s post-exploitation operations. In this blog we describe additional post-compromise activity involvi",
+   "summary": "O grupo de ameaças ARMORY CASTLE explorou a vulnerabilidade CVE-2026-123890 no VMware vCenter Server para contornar a autenticação remota e criar sessões de administrador. Através desta sessão, os atacantes executaram comandos arbitrários e obtiveram ficheiros sensíveis, incluindo a base de dados vmdirdbcp. Esta atividade complementa explorações anteriores de zero-days em soluções BeyondTrust.",
    "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Figure_1_ARMORY_CASTLE_lateral_movement_an.max-1000x1000.png",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O grupo ARMORY CASTLE explorou a falha CVE-2026-123890 no VMware vCenter.",
+    "A exploração permitiu um bypass de autenticação e criação de sessões de administrador.",
+    "Os atacantes acederam a comandos arbitrários e ficheiros de bases de dados sensíveis."
+   ],
+   "title_original": "ARMORY CASTLE Exploits vSphere",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Written by: Jayson Frost, Bryce Greathouse, Dhanesh Kizhakkinan, John Palmisano, Steve Rasch, Daniel Sislo, John Wolfram Introduction On Oct. 15, 2026, Mandiant and Google Threat Intelligence Group (GTIG) published a blog post detailing recent activity in which the suspected PRC-nexus threat actor ARMORY CASTLE (formerly tracked as UNC5221) exploited CVE-2026-102764, a zero-day vulnerability in BeyondTrust Remote Support, which was patched in BT26-05 . We also described some of the threat actor’s post-exploitation operations. In this blog we describe additional post-compromise activity involving the exploitation of a vulnerability in VMware vCenter and the deployment of additional malware families. On Nov. 19, 2026, VMware disclosed CVE-2026-123890, which impacts VMware vCenter Server deployments. vSphere consists of both ESXi (the hypervisor) and vCenter Server. The vCenter server is a centralized platform deployed as a Photon Linux virtual appliance and is used to configure, control, and monitor ESXi host environments. CVE-2026-123890 is an unauthenticated Secure Remote Password (SRP-6a) session key disclosure vulnerability over Distributed Computing Environment/Remote Procedure Calls (DCE/RPC). Successful exploitation results in a remote authentication bypass which creates an authenticated session established as administrator@vsphere.local . Using the authenticated administrator session, the attacker can execute arbitrary commands and acquire files, including the data.mdb database, by leveraging the vCenter Server Directory Service ( vmdird ) RPC interface vmdirdbcp . We strongly recommend that affected organizations immediately apply the security patches provided by Broadcom to remediate the vulnerability. ARMORY CASTLE exploited this vulnerability in early Septembe"
+   "translated": true,
+   "enriched": true,
+   "why": "Expõe riscos críticos em plataformas de virtualização centrais utilizadas por várias empresas.",
+   "todo": "Aplique imediatamente as correções de segurança disponibilizadas pela Broadcom para o vCenter Server."
   },
   {
    "id": "049017878e9b91ce",
@@ -13688,96 +13781,6 @@
    "enriched": true,
    "why": "Importa porque revela táticas avançadas de deepfakes e engenharia social direcionadas ao setor cripto e tecnológico.",
    "todo": "Desconfie de pedidos urgentes de instalação de software em reuniões virtuais e valide a identidade de contactos em canais seguros."
-  },
-  {
-   "id": "67e222e81e151015",
-   "source": "CyberScoop",
-   "region": "US",
-   "lang": "en",
-   "link": "https://cyberscoop.com/copeland-dixell-refrigeration-vulnerabilities/",
-   "published": "2026-11-13T21:20:51+00:00",
-   "title": "Investigadores continuam a encontrar vulnerabilidades graves em frigoríficos ligados à internet",
-   "summary": "Empresas de cibersegurança descobriram 14 vulnerabilidades graves em unidades de refrigeração Dixell, fabricadas pela Copeland, com pontuações de gravidade entre 8 e 9.8. As falhas, algumas das quais já sob exploração ativa, concedem acesso administrativo total aos sistemas infetados. Os investigadores descobriram que a página de início de sessão executava o nome de utilizador submetido como um comando de consola antes de verificar a palavra-passe. A empresa disponibilizou patches de correção, mas alertou os clientes para manterem os dispositivos fora da internet pública.",
-   "image": null,
-   "points": [
-    "Quem: Empresa VulnCheck e fabricante Copeland/Dixell.",
-    "O quê: Descoberta de 14 vulnerabilidades graves em sistemas de refrigeração.",
-    "Como: Falhas de controlo de acesso e execução de comandos na autenticação.",
-    "Impacto: Acesso administrativo total e exploração ativa em supermercados."
-   ],
-   "title_original": "Researchers continue to find serious vulnerabilities in internet connected refrigerators",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque expõe os riscos de segurança em dispositivos IoT industriais ligados diretamente à internet pública.",
-   "todo": "Mantenham os dispositivos IoT fora da internet pública e atualizem regularmente o ‘firmware’ para as versões mais recentes."
-  },
-  {
-   "id": "f5a4242735458978",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203012/cyber-crime/north-korea-crypto-theft-operations-doj-seizes-1-2-billion-and-disrupts-hacker-infrastructure.html",
-   "published": "2026-11-13T21:19:30+00:00",
-   "title": "Operações de roubo de criptomoedas da Coreia do Norte: DOJ apreende 1.200 milhões de dólares",
-   "summary": "O Departamento de Justiça dos Estados Unidos anunciou a apreensão de mais de 1.200 milhões de dólares associados a operações de roubo de criptomoedas da Coreia do Norte. A ação incluiu a desativação da infraestrutura em nuvem usada no esquema de engenharia social FaceStealer e a retenção de fundos ligados ao roubo à Binance. O grupo norte-coreano, também rastreado como BlueNoroff e APT38, utiliza chamadas de vídeo falsas com deepfakes e engenharia social para enganar profissionais. Além do roubo direto de ativos, os atacantes visam criadores de software de código aberto para comprometer repositórios.",
-   "image": "https://i0.wp.com/securityaffairs.com/wp-content/uploads/2026/11/image-31.png?resize=867%2C641&#038;ssl=1",
-   "points": [
-    "Quem: Departamento de Justiça dos EUA e hackers norte-coreanos.",
-    "O quê: Apreensão de 1.200 milhões de dólares e desmantelamento de infraestrutura.",
-    "Como: Interceção de esquemas FaceStealer e fundos roubados da Binance.",
-    "Impacto: Travagem de operações financeiras ilícitas e proteção de programadores."
-   ],
-   "title_original": "North Korea ‘s Crypto Theft Operations: DOJ Seizes $1.2 Billion and Disrupts Hacker Infrastructure",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque ilustra a resposta das autoridades globais contra esquemas multimilionários de financiamento ilícito estatal.",
-   "todo": "Proteja contas de desenvolvimento com autenticação multifator rigorosa e verifique a autenticidade de convites para reuniões."
-  },
-  {
-   "id": "b2acc152321c7606",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/gnss-spoofing-jamming-rtk-positioning-teams-spot/",
-   "published": "2026-11-13T20:58:12+00:00",
-   "title": "Falsificação e interferência GNSS: impactos no posicionamento RTK e deteção em campo",
-   "summary": "O posicionamento por satélite pode falhar mesmo quando um recetor aparenta estar a funcionar normalmente. As soluções de localização fixa podem desaparecer e as coordenadas geográficas podem ficar comprometidas. Equipas em campo precisam de identificar estes sinais de falha para evitar erros críticos.",
-   "image": null,
-   "points": [
-    "O quê: Falsificação e interferência em sistemas de posicionamento GNSS.",
-    "Impacto: Perda de soluções fixas de localização e desvio de coordenadas em campo."
-   ],
-   "title_original": "GNSS Spoofing and Jamming: What They Do to RTK Positioning and How Field Teams Can Spot Them",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque afeta a fiabilidade de dados de localização essenciais para operações técnicas e de campo.",
-   "todo": "Monitorize a consistência dos dados de posicionamento e utilize métodos alternativos de verificação de coordenadas."
-  },
-  {
-   "id": "3c3eab5ceb3d840c",
-   "source": "Cisco Talos",
-   "region": "US",
-   "lang": "en",
-   "link": "https://blog.talosintelligence.com/artex-and-beyond/",
-   "published": "2026-11-13T20:57:13+00:00",
-   "title": "ARTEX e além: plataformas de testes de intrusão habilitadas por IA",
-   "summary": "Empresas de segurança detetaram o uso crescente de frameworks de testes de intrusão baseados em inteligência artificial, como o ARTEX, por cibercriminosos. Estas ferramentas automatizam e aceleram a cadeia de ataques, desde a reconquista até à exploração de vulnerabilidades, permitindo operações à velocidade da máquina. O impacto reflete-se na redução do tempo de deteção e na facilidade com que operadores com menos competências técnicas conseguem realizar intrusões complexas.",
-   "image": null,
-   "points": [
-    "O quê: Utilização de frameworks de pentest baseados em IA por atacantes.",
-    "Quem: Grupos de ameaças cibernéticas monitorizados por investigadores de cibersegurança.",
-    "Como: Automação completa da cadeia de ataques através de agentes de IA e ferramentas integradas.",
-    "Impacto: Aceleração massiva das intrusões e redução do limiar técnico necessário para atacar."
-   ],
-   "title_original": "ARTEX and beyond: AI-enabled penetration testing platforms",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque a automação por IA permite aos atacantes escalar operações ofensivas e reduzir drasticamente os tempos de intrusão.",
-   "todo": "Implemente monitorização comportamental avançada para detetar movimentos laterais anómalos que ocorram sem indicadores tradicionais."
   }
  ]
 }

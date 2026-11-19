@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-19T19:46:02.205508+00:00",
+ "updated": "2026-11-19T20:05:50.324665+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "IT Security",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -238,8 +238,8 @@
   },
   {
    "source": "The Register Security",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 11
   },
   {
    "source": "Help Net Security",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 1
   },
   {
    "source": "The Hacker News",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 14
+   "added": 13
   },
   {
    "source": "ACSC Austrália",
@@ -309,16 +309,33 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 24,
-  "pending": 282,
-  "unenriched": 169,
+  "done": 12,
+  "pending": 298,
+  "unenriched": 189,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "Expecting value: line 5 column 10 (char 152)"
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "67df130650e4ee78",
+   "source": "HackRead",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://hackread.com/why-most-apps-do-not-scale-how-to-fix-them/",
+   "published": "2026-11-19T20:01:09+00:00",
+   "title": "Why Most Apps Don’t Scale (and How to Fix Them)",
+   "summary": "Most of what gets called a scaling problem has nothing to do with traffic. My text scanning app…",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "Most of what gets called a scaling problem has nothing to do with traffic. My text scanning app…"
+  },
   {
    "id": "0bb8cd3662a16247",
    "source": "Cyber Centre Canadá",
@@ -13752,28 +13769,6 @@
    "enriched": true,
    "why": "Importa porque oferece uma ferramenta otimizada e de código aberto para desenvolvedores que integram agentes de IA com páginas web.",
    "todo": ""
-  },
-  {
-   "id": "1a13d7025b37d20c",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
-   "published": "2026-11-16T06:53:34+00:00",
-   "title": "Grupo BO Team explora Log4Shell no VMware vCenter e compromete servidor de assinatura de código de empresa russa",
-   "summary": "Uma investigação revelou um compromisso prolongado na infraestrutura de uma empresa russa de desenvolvimento de software. Os atacantes, identificados como o grupo BO Team, exploraram a vulnerabilidade Log4Shell no VMware vCenter para aceder aos sistemas. Com este acesso, conseguiram infiltrar-se no servidor de assinatura de código da organização. O impacto afeta a integridade do software desenvolvido e distribuído pela empresa comprometida.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAvzoKykaMIpa6xx92YudipfUoEQnSkrE6p2CiWEVra5izr5GfuNQGOnfRuF0XV99v1IPRFe2Q6BF27UEq3BnWFS5onw97dt3hvszilQDANdtRdYi0_hTDOrKQvuwGn1mY_m-QTabV3jwWCNwXs_OizK2GLF3Eks5HJj5I7kbmA2IztruSBVjq5WOcxEM-/s1600/log4shell.jpg",
-   "points": [
-    "O grupo BO Team comprometeu uma empresa de software russa.",
-    "A intrusão utilizou a vulnerabilidade Log4Shell no VMware vCenter.",
-    "Os atacantes acederam ao servidor de assinatura de código da empresa."
-   ],
-   "title_original": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque demonstra como a exploração de falhas em servidores corporativos pode comprometer a cadeia de fornecimento de software.",
-   "todo": "Atualize imediatamente os sistemas vulneráveis ao Log4Shell e monitore acessos a servidores críticos de desenvolvimento e assinatura."
   }
  ]
 }

@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-19T16:26:16.465514+00:00",
+ "updated": "2026-11-19T16:46:09.970022+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -189,7 +189,7 @@
   {
    "source": "CrowdStrike Blog",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "SentinelLabs",
@@ -199,17 +199,17 @@
   {
    "source": "Elastic Security Labs",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "Rapid7",
    "ok": true,
-   "added": 6
+   "added": 5
   },
   {
    "source": "Tenable",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "Zero Day Initiative",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 13
+   "added": 12
   },
   {
    "source": "Help Net Security",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -310,8 +310,8 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 340,
-  "unenriched": 228,
+  "pending": 342,
+  "unenriched": 230,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,23 @@
   ]
  },
  "items": [
+  {
+   "id": "c5e7bc1c42387de6",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/",
+   "published": "2026-11-19T16:28:23+00:00",
+   "title": "PHP security updates fix 18 flaws, including critical RCE bugs",
+   "summary": "The PHP development team released security updates addressing 18 vulnerabilities, including critical flaws that could allow unauthenticated attackers to remotely execute code on vulnerable servers. [...]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "The PHP development team released security updates addressing 18 vulnerabilities, including critical flaws that could allow unauthenticated attackers to remotely execute code on vulnerable servers. [...]"
+  },
   {
    "id": "74c03507cc4ed031",
    "source": "CrowdStrike Blog",
@@ -369,6 +386,23 @@
    "translated": false,
    "enriched": false,
    "raw": "Tenable One now ingests identity findings from third-party sources, allowing you to assess and prioritize exposures related to stale and overprivileged accounts alongside your other security data, such as vulnerabilities and misconfigurations. Key takeaways Managing identity risk should be an essential part of any exposure management program. However, in many organizations, exposure management programs often don’t include their identity-security teams. Relying on siloed identity-security teams and tools leaves organizations vulnerable to attackers who chain identity flaws with other infrastructure vulnerabilities. Tenable One now ingests findings from third-party identity security providers, so that you can prioritize such findings alongside all other types of exposures in your attack surface. If your exposure management program can’t see identity risk, it’s missing a key piece of puzzle. According to SANS Institute’s “ 2026 State of Identity Threats & Defenses Survey Insights Event ” report, 55% of organizations suffered at least one identity-related breach during the 12-month survey period, and among those organizations, 21% suffered more than one breach. Attackers often chain identity flaws with other security issues, such as vulnerabilities and misconfigurations, to create attack paths to your most critical systems and data. However, in many security programs, identity security is siloed and managed by a separate team with its own tools. This is a significant problem. Identity risk simply can’t be managed in isolation. It belongs in your exposure management program, so that you can address identity exposures alongside other exposures in your on-premises infrastructure, cloud workloads, IoT devices, operational technology (OT) systems, and AI tools. Many organization"
+  },
+  {
+   "id": "6ddd580a0952d4db",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/apple-uk-encryption-notice",
+   "published": "2026-11-19T16:15:00+00:00",
+   "title": "UK court confirms British government served Apple with secret encryption notice",
+   "summary": "The British government served Apple with a secret legal notice targeting the company’s cryptographic protections for iCloud accounts, a tribunal has confirmed, ending almost two years of official refusal to acknowledge what had been widely reported.",
+   "image": "https://cms.therecord.media/uploads/Apple_logo_253a5988c4.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "The British government served Apple with a secret legal notice targeting the company’s cryptographic protections for iCloud accounts, a tribunal has confirmed, ending almost two years of official refusal to acknowledge what had been widely reported."
   },
   {
    "id": "54225f4d777eefef",
@@ -13609,50 +13643,6 @@
    "enriched": true,
    "why": "Evidencia o risco sistémico dos ataques à cadeia de abastecimento através de fornecedores terceiros com acesso privilegiado.",
    "todo": "Implementar políticas rigorosas de gestão de acessos privilegiados para fornecedores e parceiros externos."
-  },
-  {
-   "id": "d139aee1e4e2d79d",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/14/uber-data-breach-driver-licenses-stolen-via-fireworks-ai/",
-   "published": "2026-11-14T15:55:27+00:00",
-   "title": "Violação de dados da Uber: Cartas de condução roubadas através da Fireworks AI",
-   "summary": "A Uber começou a notificar milhares de condutores nos Estados Unidos de que as suas informações pessoais e cartas de condução foram roubadas em outubro de 2026. A exfiltração de dados ocorreu após os atacantes comprometerem a Fireworks AI, um fornecedor externo de inteligência artificial que armazenava dados da empresa. A situação foi divulgada num aviso formal submetido a vários estados a 10 de novembro de 2026.",
-   "image": null,
-   "points": [
-    "Condutores da Uber nos EUA foram afetados pelo roubo de dados pessoais e cartas de condução.",
-    "O incidente ocorreu em outubro de 2026 devido a um ataque a um fornecedor externo, a Fireworks AI.",
-    "A Uber formalizou a notificação do ataque a 10 de novembro de 2026."
-   ],
-   "title_original": "Uber Data Breach: Driver Licenses Stolen via Fireworks AI",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra como falhas de segurança em parceiros de IA podem expor dados sensíveis de clientes e colaboradores de grandes empresas.",
-   "todo": "Exigir padrões rigorosos de cibersegurança e encriptação a todos os fornecedores e parceiros de IA que armazenem dados empresariais."
-  },
-  {
-   "id": "e253199b5be00456",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
-   "published": "2026-11-14T15:15:49+00:00",
-   "title": "EUA neutralizam campanha norte-coreana responsável pelo roubo de 400 milhões de dólares em criptomoedas",
-   "summary": "O governo dos Estados Unidos desmantelou uma campanha de engenharia social norte-coreana denominada 'FaceStealer'. Esta operação maliciosa estava associada ao roubo de mais de 400 milhões de dólares em ativos de criptomoeda.",
-   "image": null,
-   "points": [
-    "Os EUA interromperam a campanha de engenharia social 'FaceStealer'.",
-    "A operação era conduzida a partir da Coreia do Norte.",
-    "O esquema resultou no roubo de mais de 400 milhões de dólares em criptomoedas."
-   ],
-   "title_original": "US disrupts North Korean campaign behind $400 million crypto theft",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Destaca o impacto financeiro de campanhas estatais de engenharia social e a importância da cooperação internacional na desativação de ameaças.",
-   "todo": "Formar os colaboradores para reconhecerem táticas avançadas de engenharia social e phishing direcionado."
   }
  ]
 }

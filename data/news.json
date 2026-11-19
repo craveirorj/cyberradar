@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T04:46:49.796168+00:00",
+ "updated": "2026-11-19T05:06:50.503115+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -304,15 +304,37 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 184,
-  "unenriched": 77,
+  "done": 117,
+  "pending": 187,
+  "unenriched": 80,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "d1202d3392a4ec40",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html",
+   "published": "2026-11-19T04:33:46+00:00",
+   "title": "PHP alerta para falhas de segurança críticas em todas as versões suportadas, correções chegam a 19 de novembro",
+   "summary": "Os responsáveis pela linguagem de programação PHP anunciaram a descoberta de vulnerabilidades críticas que afetam todas as versões atualmente suportadas. Está prevista a disponibilização de uma atualização de segurança para corrigir estas falhas no dia 19 de novembro de 2026. Esta medida faz parte do ciclo regular de manutenção da linguagem. Recomenda-se que os utilizadores estejam atentos para aplicar as correções assim que forem lançadas.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj86YA0ZvPrdlouN6GvSZ5P_I5HCaYLm2PBs_JA74wUDgHl8anwcqEN5_Z0kTlAggf0906enJmrtUnN_6jn9kqD8KguG8nOeh1yGS6AAPo1-JHORLQ5nZcpmS5Ss7liuqghFsq8Bb4ooabK29UcCbZlwWGM6HtyRPs4Ty5zv5d4FC5So6tVFUOaEhUylIFU/s1600/php-flaws.jpg",
+   "points": [
+    "Falhas críticas em todas as versões PHP",
+    "Correções agendadas para 19 de novembro",
+    "Atualização parte do ciclo de manutenção"
+   ],
+   "title_original": "PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A vulnerabilidade afeta todas as versões suportadas, exigindo atenção imediata para evitar a exploração de sistemas.",
+   "todo": "Prepare os seus sistemas para a atualização de segurança que será lançada a 19 de novembro."
+  },
   {
    "id": "5128ef42275011f7",
    "source": "SecurityWeek",
@@ -13766,29 +13788,6 @@
    "enriched": true,
    "why": "Evidencia os riscos críticos de segurança quando agentes autónomos de IA possuem privilégios excessivos.",
    "todo": "Aplique o princípio do privilégio mínimo nas ferramentas ligadas a IAs e implemente validações humanas em ações sensíveis."
-  },
-  {
-   "id": "0003d402f04c935f",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/202982/hacking/unpatched-check-point-gateways-are-being-wiped-exploiting-php2shell.html",
-   "published": "2026-11-13T11:35:05+00:00",
-   "title": "Unpatched Check Point Gateways Are Being Wiped exploiting PHP2Shell",
-   "summary": "Atores maliciosos exploraram gateways da Check Point não atualizados a nível global através do portal Mobile Access. Os atacantes utilizaram a técnica PHP2Shell para acesso inicial e escalaram privilégios até root explorando a vulnerabilidade CVE-2026-123039. A campanha ocorreu em duas vagas, afetando inicialmente organizações em Israel com ataques destrutivos e, posteriormente, empresas em vários países de forma oportunista. O impacto incluiu a instalação de webshells e a perda total de controlo sobre os dispositivos afetados.",
-   "image": "https://i0.wp.com/securityaffairs.com/wp-content/uploads/2026/11/image-27.png?resize=1024%2C599&#038;ssl=1",
-   "points": [
-    "Gateways Check Point sem correção foram alvo de ataques globais explorando falhas no Mobile Access.",
-    "Os atacantes obtiveram acesso total (root) através de falhas de escalação de privilégios como a CVE-2026-123039.",
-    "A campanha ocorreu em vagas distintas, causando ataques destrutivos em alguns alvos selecionados.",
-    "Foram instalados webshells maliciosos para garantir persistência nos sistemas comprometidos."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Demonstra a rapidez com que vulnerabilidades críticas em equipamentos de perímetro são exploradas para destruir redes.",
-   "todo": "Aplique imediatamente as correções de segurança disponibilizadas pelos fabricantes para os gateways e portais de acesso remoto."
   }
  ]
 }

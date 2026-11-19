@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-19T19:26:25.731659+00:00",
+ "updated": "2026-11-19T19:46:02.205508+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -164,7 +164,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 11
+   "added": 9
   },
   {
    "source": "Cisco Talos",
@@ -238,8 +238,8 @@
   },
   {
    "source": "The Register Security",
-   "ok": true,
-   "added": 11
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "Help Net Security",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 15
+   "added": 14
   },
   {
    "source": "ACSC Austrália",
@@ -309,16 +309,62 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 36,
-  "pending": 281,
-  "unenriched": 168,
+  "done": 24,
+  "pending": 282,
+  "unenriched": 169,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "Expecting value: line 5 column 10 (char 152)"
   ]
  },
  "items": [
+  {
+   "id": "0bb8cd3662a16247",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1186",
+   "published": "2026-11-19T19:29:19+00:00",
+   "title": "Aviso de segurança da Drupal (AV26-1186)",
+   "summary": "O núcleo do Drupal foi afetado por vulnerabilidades críticas que podem permitir a execução remota de código. O problema atinge versões anteriores à 10.6.22, 11.3.22 e 11.4.13. As autoridades aconselham os administradores a consultarem a informação disponível e a aplicarem as atualizações necessárias. A falha está identificada sob a referência SA-CORE-2026-017.",
+   "image": null,
+   "points": [
+    "Produto afetado: Núcleo do Drupal nas versões anteriores a 10.6.22, 11.3.22 e 11.4.13.",
+    "Tipo de falha: Vulnerabilidade crítica de execução remota de código.",
+    "Identificador: SA-CORE-2026-017.",
+    "Ação recomendada: Aplicar as atualizações de segurança disponibilizadas."
+   ],
+   "title_original": "Drupal security advisory (AV26-1186)",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite a execução remota de código por atacantes, colocando em risco a integridade dos sistemas afetados.",
+   "todo": "Consulte os links oficiais e atualize o núcleo do Drupal para as versões mais recentes."
+  },
+  {
+   "id": "bd2996802132899d",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/",
+   "published": "2026-11-19T19:21:06+00:00",
+   "title": "Falha recém-corrigida no VMware vCenter explorada como zero-day por grupo APT chinês",
+   "summary": "Um grupo de espionagem ligado à China explorou uma vulnerabilidade crítica de contorno de autenticação no VMware vCenter como um ataque zero-day. A descoberta foi avançada pela Google antes de a Broadcom conseguir lançar uma correção para o problema. A exploração afetou sistemas sem o devido remendo de segurança aplicado.",
+   "image": null,
+   "points": [
+    "Quem: Um grupo de espionagem associado à China.",
+    "O quê: Exploração de uma falha crítica de contorno de autenticação no VMware vCenter.",
+    "Como: Utilização da vulnerabilidade como zero-day antes do lançamento de um remendo.",
+    "Impacto: Acesso não autorizado e potencial espionagem em sistemas vulneráveis."
+   ],
+   "title_original": "Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A exploração de falhas zero-day por grupos estatais demonstra riscos elevados para infraestruturas empresariais.",
+   "todo": "Aplique imediatamente as correções e atualizações de segurança disponibilizadas pela Broadcom para o VMware vCenter."
+  },
   {
    "id": "ed2063d19c6b9f10",
    "source": "AWS Security Blog",
@@ -326,15 +372,21 @@
    "lang": "en",
    "link": "https://aws.amazon.com/blogs/security/how-aws-security-incident-response-triages-your-security-findings/",
    "published": "2026-11-19T19:20:58+00:00",
-   "title": "How AWS Security Incident Response triages your security findings",
-   "summary": "AWS Security Incident Response continuously triages the threat findings from Amazon GuardDuty and AWS Security Hub CSPM, but most of that work never shows up as a case. If cases are all you look at, it’s hard to tell whether the service is working at all, and that’s the question I hear most often when […]",
+   "title": "Como a Resposta a Incidentes de Segurança da AWS faz a triagem das suas descobertas de segurança",
+   "summary": "O serviço AWS Security Incident Response realiza a triagem contínua de alertas de ameaças gerados pelo Amazon GuardDuty e pelo AWS Security Hub CSPM. A maioria destas análises ocorre de forma automatizada em segundo plano e não resulta na abertura direta de casos. O processo de triagem foca-se em ameaças ativas, tais como credenciais comprometidas, mineração de criptomoedas ou exfiltração de dados. A utilização de painéis de resposta proativa permite às equipas acompanhar o fluxo e concentrar os esforços nos alertas que realmente exigem atenção.",
    "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/18/aws-security-incident-response-triage-b-hybrid-Figure-1.png",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O quê: Triagem contínua de alertas de segurança do GuardDuty e Security Hub CSPM pela AWS.",
+    "Como: Ingestão automática de dados de ameaças através de regras do Amazon EventBridge.",
+    "Impacto: Identificação e foco em ameaças ativas como credenciais comprometidas e roubo de dados.",
+    "Quem: Equipas de segurança das empresas que utilizam a infraestrutura da AWS."
+   ],
+   "title_original": "How AWS Security Incident Response triages your security findings",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "AWS Security Incident Response continuously triages the threat findings from Amazon GuardDuty and AWS Security Hub CSPM , but most of that work never shows up as a case. If cases are all you look at, it’s hard to tell whether the service is working at all, and that’s the question I hear most often when I help customers onboard. The Proactive response dashboard gives you a high-level view of this activity, and this post takes you behind the numbers to show what happens to an individual finding. In this post, I walk you through what happens to a finding after it’s ingested by the service, what gets triaged, where each finding is sent, and how a triage decision becomes a case. I then show you how to confirm triage is working day-to-day, so your team can focus on the findings that require attention. The process flow is shown in Figure 1. Figure 1: AWS Security Incident Response triage flow, from ingestion through to one of three outcomes Ingestion AWS Security Incident Response ingests threat findings from GuardDuty through Amazon EventBridge rules that are automatically deployed to your accounts during the onboarding process . If you send third-party detection findings to Security Hub CSPM from tools such as CrowdStrike, Trend Micro, or Lacework, their threat detection findings are also ingested. Each of those findings must carry complete payload information such as resource ID, account ID, timestamp, and threat details. GuardDuty findings are ingested directly, so these findings aren’t re-ingested through Security Hub CSPM and there’s no duplication. Triage The service triages findings that indicate an active threat, such as compromised credentials, cryptomining, or data exfiltration. These represent activity that’s underway or has already occurred. Posture and compliance"
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda as organizações a filtrar o ruído e a focar a atenção nas ameaças ativas que requerem intervenção urgente.",
+   "todo": "Configure e monitorize os painéis de resposta da AWS para garantir que a triagem diária funciona de forma eficaz na sua organização."
   },
   {
    "id": "f4159f374f79fe57",
@@ -343,15 +395,21 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/vmware-security-advisory-av26-1185",
    "published": "2026-11-19T19:02:48+00:00",
-   "title": "VMware security advisory (AV26-1185)",
-   "summary": "",
+   "title": "Aviso de segurança da VMware (AV26-1185)",
+   "summary": "Foram detetadas múltiplas vulnerabilidades em vários produtos VMware, incluindo o vCenter e o VMware Cloud Foundation. A falha identificada como CVE-2026-123890 está a ser ativamente explorada em ataques no terreno, segundo relatórios de código aberto. O Centro Ciber, juntamente com a VMware através do advisory VMSA-2026-0009, insta os utilizadores a aplicarem as atualizações corretivas. Os incidentes afetam diferentes versões anteriores aos lançamentos mais recentes de 2026.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Produtos afetados: VMware vCenter, Cloud Foundation, vSphere Foundation e Telco Cloud.",
+    "O quê: Múltiplas vulnerabilidades detetadas, incluindo CVE-2026-123890, CVE-2026-123891, CVE-2026-123892, CVE-2026-123893 e CVE-2026-123894.",
+    "Impacto: A falha CVE-2026-123890 está a ser ativamente explorada (em ambiente real).",
+    "Ação: Instalação urgente das atualizações indicadas no advisory VMSA-2026-0009."
+   ],
+   "title_original": "VMware security advisory (AV26-1185)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1185 Date: November 19, 2026 As of November 19, 2026, VMware is affected by vulnerabilities in the following products: VMware Cloud Foundation / VMware vSphere Foundation - vCenter 9.1.x.x Versions prior to 9.1.1.0200 9.0.x.x Versions prior to 9.0.2.0200 VMware vCenter 8.0 Versions prior to 8.0 U3m Version 7.0 VMware Cloud Foundation vCenter 5.x versions prior to 5.2.5 VMware Telco Cloud Platform vCenter Versions 3.0, 4.x, 5.0.x, 5.1.x, 5.2 VMware Telco Cloud Infrastructure vCenter Version 3.0 Open source reporting indicates that CVE-2026-123890 is exploited in the wild. The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. VMSA-2026-0009: VMware vCenter, Tools, and SDDC Manager updates address multiple vulnerabilities (CVE-2026-123890, CVE-2026-123891, CVE-2026-123892, CVE-2026-123893, CVE-2026-123894) Security Advisories - VMware Cloud Foundation"
+   "translated": true,
+   "enriched": true,
+   "why": "A exploração ativa destas falhas em produtos VMware coloca em risco infraestruturas críticas de centenas de organizações.",
+   "todo": "Reveja os avisos de segurança da VMware e atualize os componentes vCenter afetados para as versões corrigidas."
   },
   {
    "id": "d0c7e186c7e0b5aa",
@@ -13716,50 +13774,6 @@
    "enriched": true,
    "why": "Importa porque demonstra como a exploração de falhas em servidores corporativos pode comprometer a cadeia de fornecimento de software.",
    "todo": "Atualize imediatamente os sistemas vulneráveis ao Log4Shell e monitore acessos a servidores críticos de desenvolvimento e assinatura."
-  },
-  {
-   "id": "ec5543c64dc1d1a0",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/16/google-project-zero-disclosure-policy/",
-   "published": "2026-11-16T06:30:02+00:00",
-   "title": "Google Project Zero vai divulgar falhas após 90 dias, com ou sem correção",
-   "summary": "A equipa Project Zero da Google anunciou uma alteração na sua política de divulgação de vulnerabilidades. A partir de agora, as falhas serão tornadas públicas 90 dias após a notificação ao fornecedor, independentemente de existir uma correção disponível. Os prazos serão ainda reduzidos para 60 dias em 2027 e para 30 dias em 2028. O impacto obriga os fabricantes de software a acelerarem drasticamente a correção de falhas de segurança.",
-   "image": null,
-   "points": [
-    "A Google vai divulgar falhas 90 dias após o aviso ao fornecedor.",
-    "A política aplica-se mesmo que o fabricante não tenha lançado uma correção.",
-    "Os prazos serão reduzidos para 60 dias em 2027 e 30 dias em 2028."
-   ],
-   "title_original": "Google Project Zero will disclose bugs after 90 days, fixed or not",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque pressiona a indústria tecnológica a priorizar e acelerar o desenvolvimento de correções para vulnerabilidades conhecidas.",
-   "todo": "Estabeleça um processo ágil de gestão de patches e monitorize regularmente alertas de segurança para mitigar falhas antes da divulgação pública."
-  },
-  {
-   "id": "5388b4ab470eca0b",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/16/ory-hydra-oauth-server-open-source/",
-   "published": "2026-11-16T06:00:29+00:00",
-   "title": "Ory Hydra: Servidor OAuth 2.0 de código aberto e fornecedor OpenID Connect",
-   "summary": "O Ory Hydra funciona como um servidor OAuth 2.0 de código aberto e fornecedor OpenID Connect para emissão e validação de tokens. A plataforma foi desenhada para gerir a autenticação e as chaves de segurança sem armazenar nomes de utilizador ou palavras-passe. Desta forma, a gestão de acessos permanece integrada no sistema de identidade já utilizado pela organização. O impacto facilita a implementação de padrões complexos de autenticação com maior segurança.",
-   "image": null,
-   "points": [
-    "Ory Hydra é um servidor OAuth 2.0 e OpenID Connect de código aberto.",
-    "Gere tokens e chaves sem armazenar credenciais de utilizadores.",
-    "Integra-se com os sistemas de identidade existentes na empresa."
-   ],
-   "title_original": "Ory Hydra: Open-source OAuth 2.0 server and OpenID Connect provider",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque simplifica a implementação segura de protocolos complexos de autenticação em arquiteturas modernas.",
-   "todo": "Utilize soluções standard e validadas para a gestão de identidades e tokens em vez de desenvolver servidores de autenticação do zero."
   }
  ]
 }

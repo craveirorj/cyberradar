@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T20:45:14.110597+00:00",
+ "updated": "2026-11-19T21:07:19.024175+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -124,7 +124,7 @@
   {
    "source": "Ars Technica Security",
    "ok": true,
-   "added": 9
+   "added": 8
   },
   {
    "source": "WIRED Security",
@@ -149,7 +149,7 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 2
+   "added": 3
   },
   {
    "source": "Microsoft Security Blog",
@@ -309,13 +309,12 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 12,
-  "pending": 307,
-  "unenriched": 196,
+  "done": 108,
+  "pending": 216,
+  "unenriched": 101,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "Expecting value: line 33 column 7 (char 2855)"
+   "Expecting value: line 5 column 10 (char 146)"
   ]
  },
  "items": [
@@ -326,15 +325,21 @@
    "lang": "en",
    "link": "https://arstechnica.com/security/2026/11/man-charged-with-spying-on-silicon-valley-tech-and-defense-company-for-russia/",
    "published": "2026-11-19T20:29:46+00:00",
-   "title": "Man charged with spying on Silicon Valley tech and defense company for Russia",
-   "summary": "25-year-old accused of stalking employees at coffee shop and in an \"aggressive\" car pursuit.",
+   "title": "Homem acusado de espionar empresa de tecnologia e defesa de Silicon Valley para a Rússia",
+   "summary": "Um cidadão russo de 25 anos foi acusado de atuar como espião russo, vigiando funcionários de uma empresa em Silicon Valley que auxiliava a Ucrânia. O suspeito fotografou trabalhadores num café, recolheu moradias de funcionários e perseguiu uma trabalhadora até provocar-lhe stresse emocional. O incidente terminou quando a vítima alertou a polícia numa esquadra local, levando à retirada do indivíduo. A operação visava recolher informações sobre colaboradores de uma empresa ligada ao esforço de guerra ucraniano.",
    "image": "https://cdn.arstechnica.net/wp-content/uploads/2023/05/getty-digital-gavel-1152x648.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Suspeito russo Igor D’iu vigiou e fotografou funcionários de empresa de Silicon Valley.",
+    "Acusado recolheu moradias e perseguiu agressivamente uma funcionária até uma esquadra policial.",
+    "A empresa visada prestava assistência à Ucrânia no conflito atual.",
+    "Ações do espião deixaram a vítima em forte estado de sofrimento emocional."
+   ],
+   "title_original": "Man charged with spying on Silicon Valley tech and defense company for Russia",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "A Russian national has been indicted on suspicions he was a Russian spy who stalked and surveilled employees of a Silicon Valley company that was assisting Ukraine in its ongoing war with its western neighbor. Igor D’iu, 25, allegedly photographed the employees and their computer screens as they worked at a coffee shop located near the company’s Palo Alto office, federal prosecutors said Wednesday . He also kept a list of home addresses of employees and a senior executive. At one point, prosecutors said, D’iu trailed an employee as she traveled home from Palo Alto to San Francisco. An affidavit filed in the case referred to the employee as FEMP1, short for female employee, and said the event left her “in a state of emotional distress.” Evasive and irregular turns “FEMP1 made evasive and irregular turns, took back roads, and turned into a grocery store parking lot where D’IU continued aggressively following her vehicle,” an FBI special agent wrote. “D’IU followed FEMP1 through U-turns, illegal left turns, and ran a red light to stay with FEMP1 for nearly thirty miles. FEMP1 called 911 while driving and was instructed to drive directly to San Francisco Police Department (“SFPD”) Mission Station. Near SFPD Mission Station, FEMP1 flagged an SFPD patrol vehicle and reported the incident. D’IU left once FEMP1 made contact with the patrol vehicle.” Read full article Comments"
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como o espionagem industrial e estatal afeta diretamente a segurança física e psicológica de colaboradores do setor tecnológico.",
+   "todo": "Reforçar a vigilância em redor das instalações e formar os colaboradores para identificarem potenciais perseguições ou comportamentos suspeitos."
   },
   {
    "id": "67df130650e4ee78",
@@ -343,15 +348,20 @@
    "lang": "en",
    "link": "https://hackread.com/why-most-apps-do-not-scale-how-to-fix-them/",
    "published": "2026-11-19T20:01:09+00:00",
-   "title": "Why Most Apps Don’t Scale (and How to Fix Them)",
-   "summary": "Most of what gets called a scaling problem has nothing to do with traffic. My text scanning app…",
+   "title": "Porque é que a maioria das aplicações não escala (e como corrigi-lo)",
+   "summary": "A maioria dos problemas de escalabilidade em aplicações informáticas não decorre do volume de tráfego recebido. O texto aborda os desafios estruturais enfrentados por uma aplicação de análise de texto ao tentar crescer. A questão central foca-se em falhas de arquitetura e conceção de software em vez de sobrecargas de rede. O impacto reflete-se na incapacidade de certas plataformas lidarem com o crescimento sem reestruturações profundas.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Problemas de escala muitas vezes não estão relacionados com o tráfego.",
+    "Caso prático centrado numa aplicação de análise de texto.",
+    "Identificação de falhas estruturais na arquitetura de software."
+   ],
+   "title_original": "Why Most Apps Don’t Scale (and How to Fix Them)",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Most of what gets called a scaling problem has nothing to do with traffic. My text scanning app…"
+   "translated": true,
+   "enriched": true,
+   "why": "Ajude equipas técnicas a focarem os seus esforços de otimização nos locais corretos, evitando desperdício de recursos.",
+   "todo": "Analise a arquitetura interna do software e os gargalos de código antes de investir apenas em infraestrutura e servidores."
   },
   {
    "id": "20bd7f2d741599bf",
@@ -361,14 +371,20 @@
    "link": "https://www.estadao.com.br/tecmundo/produto-e-review/windows-11-tera-verificacao-de-seguranca-que-pode-bloquear-programas-e-jogos-entenda/",
    "published": "2026-11-19T20:00:00+00:00",
    "title": "Windows 11 terá verificação de segurança que pode bloquear programas e jogos; entenda",
-   "summary": "A nova ferramenta estará disponível na aba Segurança das configurações do sistema operacional.",
+   "summary": "A Microsoft lançou uma prévia da ferramenta Windows Baseline Protection para testadores, reunindo vários mecanismos de segurança do Windows 11 numa única verificação. A funcionalidade avalia oito requisitos de exigência mínima, incluindo processadores de segurança, arranque seguro e integridade da memória. Caso o computador não cumpra os critérios definidos, a ferramenta pode bloquear a execução de determinados programas e jogos. O objetivo principal é elevar o nível geral de proteção do sistema operativo contra ameaças.",
    "image": "https://www.estadao.com.br/resizer/v2/BRD62ME2CNBG7GLFXZQCBE7CD4.jpg?quality=80&auth=84f84890d8ffcea3673ae7de83ba131386e7ebd5d66916585db0fadfbb422ca2&width=710",
-   "points": [],
+   "points": [
+    "A Microsoft introduziu a ferramenta Windows Baseline Protection para testadores do Windows 11.",
+    "O sistema analisa oito requisitos essenciais de segurança de forma centralizada.",
+    "Computadores que não cumpram os padrões mínimos podem ver aplicações e jogos bloqueados.",
+    "A medida visa reforçar a integridade e a defesa geral dos PCs."
+   ],
    "title_original": null,
    "category": "Geral",
    "translated": false,
-   "enriched": false,
-   "raw": "O Windows 11 terá uma ferramenta que reúne diferentes mecanismos de proteção do sistema em uma única verificação, permitindo que softwares identifiquem se o computador atende aos requisitos mínimos de segurança para executar esses programas. A novidade teve a prévia liberada para testadores na última terça-feira (17). Denominada Windows Baseline Protection, ou Proteção de Linha de Base do Windows na tradução livre, a funcionalidade objetiva aumentar a segurança do PC . No entanto, pode impedir o funcionamento de um aplicativo ou jogo se a máquina não passar na avaliação . O que será verificado? A nova ferramenta de proteção básica do Windows vai checar se o computador está suficientemente protegido a partir da análise de um conjunto de requisitos de segurança. Em sua primeira versão, serão oito mecanismos verificados, de acordo com a Microsoft. Processador de segurança para dados sensíveis e inicialização segura que impede o carregamento de softwares maliciosos fazem parte da lista; Segurança baseada em virtualização , que protege processos críticos contra ataques, e a integridade da memória , que atua em partes protegidas do sistema, serão outros fatores analisados; Ela exigirá, ainda, drivers confiáveis e certificados para Windows , impedindo que componentes não autenticados façam o carregamento; Proteção do depurador de kernel para evitar que as proteções de segurança sejam dribladas e proteção de driver vulnerável também serão verificadas pela ferramenta. A nova ferramenta estará disponível na aba Segurança das configurações do sistema operacional. Foto: Microsoft/Divulgação Todos esses itens já estão disponíveis no Windows 11 , separadamente, e agora serão analisados de uma só vez, representando o mínimo exigido. A gigante de Redmond afirmou que novos critérios pod"
+   "enriched": true,
+   "why": "Garante que os sistemas cumprem padrões mínimos de segurança, embora possa causar incompatibilidades temporárias em software.",
+   "todo": "Mantenha o sistema operativo atualizado e verifique os requisitos de hardware e drivers para evitar bloqueios indesejados."
   },
   {
    "id": "dfb731a444878dea",
@@ -377,15 +393,21 @@
    "lang": "en",
    "link": "https://www.darkreading.com/vulnerabilities-threats/navigating-vulnerability-hysteria-ai-era",
    "published": "2026-11-19T19:46:44+00:00",
-   "title": "Navigating Vulnerability Hysteria in the AI Era",
-   "summary": "This installment of the Reporters' Notebook video series examines the fallout from recent high-severity flaw disclosures, exploring how fears of AI-assisted exploits trigger widespread panic, operational disruptions, and growing warning fatigue.",
+   "title": "Navegar pela histeria das vulnerabilidades na era da IA",
+   "summary": "Esta análise aborda as consequências da divulgação de falhas de segurança de alta gravidade recentes. Examina como o receio em torno de explorações auxiliadas por inteligência artificial gera pânico generalizado no setor. O fenómeno resulta em perturbações operacionais significativas e num crescente cansaço perante alertas constantes. O impacto traduz-se em reações desproporcionadas por parte das organizações perante novas vulnerabilidades.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt7d04c37959ab5304/6aff50a7d42cb182cb40c79e/panic_Kzenon_Alamy_REWORKED_FOR_16_BY_9_FORMAT.jpg?width=720&quality=80&disable=upscale",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Análise sobre o impacto de falhas de alta gravidade divulgadas recentemente.",
+    "Medos gerados por explorações assistidas por inteligência artificial.",
+    "Ocorrência de pânico generalizado e perturbações operacionais nas empresas.",
+    "Aumento do cansaço face aos avisos de segurança constantes."
+   ],
+   "title_original": "Navigating Vulnerability Hysteria in the AI Era",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "This installment of the Reporters' Notebook video series examines the fallout from recent high-severity flaw disclosures, exploring how fears of AI-assisted exploits trigger widespread panic, operational disruptions, and growing warning fatigue."
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda gestores e equipas a manterem a racionalidade perante notícias alarmistas sobre cibersegurança.",
+   "todo": "Adote uma abordagem baseada em risco para priorizar correções, em vez de reagir impulsivamente a cada novo alerta."
   },
   {
    "id": "0bb8cd3662a16247",
@@ -555,15 +577,20 @@
    "lang": "en",
    "link": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
    "published": "2026-11-19T18:47:58+00:00",
-   "title": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
-   "summary": "The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used to steal data, spread malware, and get people to hand over access. There's another shift worth watching. AI is making some attacks easier",
+   "title": "Ameaças do Dia: Falhas de jailbreak no GPT-6.2, malware BubbleLoader em PNG, pedidos de resgate de 500M e mais 17 histórias",
+   "summary": "Cibercriminosos estão a utilizar elementos comuns do dia a dia, como falsas ofertas de emprego ou falhas de serviços, para enganar vítimas e roubar dados. Estas táticas facilitam a disseminação de malware e a obtenção de acessos indevidos a sistemas. As ameaças semanais destacam também o papel da inteligência artificial em tornar os ataques mais sofisticados. O impacto afeta utilizadores e empresas expostas a fraudes cada vez mais dissimuladas.",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgTqUIWPjGeycl6xafh8Hx8n2UN3UCUgjhTpxUul68DHi7Y_IoHVYBvjDd5DpFg15sKI767hVEq-8CbGhK69JNusMh0OBBXfVMwJlZiKT2gNnTPAL9DyvTY85SB68WkvBxFCMF2_rNS9rUgYkQN8sKssDMBS8gO6YpMudQohf_JWnPztX_h8TdbSX6Vtfi/s1600/td.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Uso de situações quotidianas e familiares para enganar utilizadores.",
+    "Campanhas incluem roubo de dados, distribuição de malware e pedidos avultados de resgate.",
+    "A Inteligência Artificial está a facilitar a execução de ataques cibernéticos."
+   ],
+   "title_original": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
    "category": "Malware",
-   "translated": false,
-   "enriched": false,
-   "raw": "The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used to steal data, spread malware, and get people to hand over access. There's another shift worth watching. AI is making some attacks easier"
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para a evolução dos vetores de engenharia social que utilizam contextos legítimos para iludir utilizadores.",
+   "todo": "Desconfie de contactos inesperados com ofertas vantajosas ou notificações urgentes sobre serviços."
   },
   {
    "id": "412ac9b85cf67142",
@@ -1192,15 +1219,20 @@
    "lang": "en",
    "link": "https://www.cybersecuritydive.com/news/cisa-nominee-michael-losapio-confirmation-hearing/875197/",
    "published": "2026-11-19T16:12:14+00:00",
-   "title": "Trump’s CISA director pick ducks questions about budget, staffing, priorities",
-   "summary": "Michael LoSapio, a Palantir executive, also denied that the U.S. Capitol was attacked on Jan. 6, 2021.",
+   "title": "A escolha de Trump para a CISA evita perguntas sobre orçamento, pessoal e prioridades",
+   "summary": "Michael LoSapio, executivo da Palantir e indicado para liderar a CISA, evitou responder a questões sobre o orçamento, a gestão de pessoal e as prioridades da agência. Durante o processo, o nomeado também negou que o Capitólio dos EUA tenha sido atacado a 6 de janeiro de 2021. A situação gerou incerteza quanto à futura liderança e direção estratégica da principal agência de cibersegurança norte-americana. O impacto prende-se com a transparência e a preparação institucional para enfrentar ameaças nacionais.",
    "image": "https://imgproxy.divecdn.com/Ukhi8TdmnDmBNoBD1HmgG4JLy2GeQFMQGn8xLXhCr24/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMzA1OTA0NTYxLmpwZw==.webp",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Michael LoSapio evitou responder a questões cruciais sobre a CISA.",
+    "O indicado negou publicamente os acontecimentos do ataque ao Capitólio em 2021.",
+    "Geraram-se dúvidas sobre a competência e rumo estratégico para a cibersegurança federal."
+   ],
+   "title_original": "Trump’s CISA director pick ducks questions about budget, staffing, priorities",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Michael LoSapio, a Palantir executive, also denied that the U.S. Capitol was attacked on Jan. 6, 2021."
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia potenciais vulnerabilidades na liderança política de entidades críticas de cibersegurança.",
+   "todo": ""
   },
   {
    "id": "54225f4d777eefef",

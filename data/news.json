@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T12:46:48.548106+00:00",
+ "updated": "2026-11-19T13:06:38.879623+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -29,7 +29,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -49,7 +49,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CISA Advisories",
@@ -89,7 +89,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -119,7 +119,7 @@
   {
    "source": "Ars Technica Security",
    "ok": true,
-   "added": 7
+   "added": 8
   },
   {
    "source": "WIRED Security",
@@ -144,7 +144,7 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 3
+   "added": 2
   },
   {
    "source": "Microsoft Security Blog",
@@ -173,8 +173,8 @@
   },
   {
    "source": "Google Threat Intelligence",
-   "ok": false,
-   "error": "500 Server Error: Internal Server Error for url: https://cloudblog.withgoogle.com/topics/threat-intelligence/rss/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "Google Project Zero",
@@ -239,7 +239,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -304,14 +304,62 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 200,
-  "unenriched": 79,
+  "done": 24,
+  "pending": 292,
+  "unenriched": 175,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "509cec87bb7f36c5",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/19/microsoft-agent-framework-package-pypi-compromised/",
+   "published": "2026-11-19T12:53:44+00:00",
+   "title": "Roubo de credenciais introduzido no framework de agentes Python oficial da Microsoft",
+   "summary": "Duas versões recentes do pacote agent-framework da Microsoft, publicadas no Python Package Index (PyPI), continham código malicioso para roubar credenciais de sistemas de programadores. O incidente foi descoberto e analisado por três empresas de segurança da cadeia de fornecimento. As versões afetadas, 1.26.1 e 1.26.2, foram disponibilizadas a 17 de novembro de 2026. O impacto foca-se no comprometimento de dados sensíveis na cloud e em ambientes de integração e entrega contínuas (CI/CD).",
+   "image": null,
+   "points": [
+    "Pacotes afetados: Versões 1.26.1 e 1.26.2 do agent-framework da Microsoft no PyPI.",
+    "O que aconteceu: Código malicioso integrado roubava credenciais de programadores.",
+    "Quem descobriu: As empresas StepSecurity, OX Security e Socket.",
+    "Impacto: Exposição de acessos a ambientes de nuvem e CI/CD."
+   ],
+   "title_original": "Credential stealer slipped into Microsoft’s official Python agent framework",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Compromete a segurança dos sistemas dos programadores e as chaves de acesso a ambientes críticos de desenvolvimento.",
+   "todo": "Verifique e atualize imediatamente as dependências de projetos Python e reveja as credenciais de acesso à cloud e CI/CD."
+  },
+  {
+   "id": "3319273ed3218980",
+   "source": "SAPO Tek",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://tek.sapo.pt/noticias/negocios/artigos/anthropic-entra-hoje-em-bolsa-e-bate-recorde-da-spacex-como-se-tornou-tao-valiosa-e-quem-mais-ganha-com-o-negocio/",
+   "published": "2026-11-19T12:50:21+00:00",
+   "title": "Anthropic entra hoje em bolsa e bate recorde da SpaceX. Como se tornou tão valiosa e quem mais ganha com o negócio?",
+   "summary": "A empresa criadora do assistente Claude prepara-se para uma das maiores entradas em bolsa de sempre, superando o recorde da SpaceX num momento de forte interesse dos investidores em inteligência artificial. A organização tem registado um crescimento muito rápido, mas debate-se com custos de computação cada vez mais elevados e com uma concorrência intensa no setor. O grande desafio passa agora por conseguir equilibrar este ritmo acelerado de expansão com as exigências de segurança da IA.",
+   "image": null,
+   "points": [
+    "O que aconteceu: A Anthropic avança para uma entrada em bolsa histórica.",
+    "Contexto: A empresa ultrapassa o recorde anterior da SpaceX.",
+    "Desafios: Custos de computação elevados e forte concorrência no mercado.",
+    "Objetivo: Gerar valor enquanto equilibra o crescimento com a segurança da IA."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Marca um momento histórico no financiamento e avaliação de empresas ligadas à inteligência artificial.",
+   "todo": ""
+  },
   {
    "id": "3828451ef0f1eb3c",
    "source": "Malwarebytes Labs",
@@ -445,6 +493,29 @@
    "enriched": true,
    "why": "Ignorar os riscos de segurança na IA aberta pode resultar em exposições graves de dados e falhas de controlo.",
    "todo": "Implemente políticas rigorosas de governação de IA e avalie regularmente os riscos de segurança associados aos modelos de pesos abertos utilizados."
+  },
+  {
+   "id": "193208e89084b673",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
+   "published": "2026-11-19T11:52:23+00:00",
+   "title": "Tudo é uma aplicação web, incluindo a sua firewall",
+   "summary": "As interfaces de gestão de firewalls da Palo Alto Networks foram alvo de exploração devido a vulnerabilidades em PHP conhecidas como PHP2Shell. A 28 de outubro, a empresa confirmou que os atacantes estavam a explorar as falhas CVE-2026-109618 e CVE-2026-109619 em interfaces expostas diretamente à internet. Ambas as vulnerabilidades permitem a qualquer indivíduo executar código arbitrário no servidor web sem necessidade de autenticação. O processo de divulgação pública destas falhas acabou por apresentar alguns problemas.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiC0roCfV92el2-gLSGwmumyjXgCjHookzwGjft2a6UWPZA1QvyrazDNLTvlZrF1F5iagg74JxnPEXbnK60OEeJuFNo2Fc2xcNSnJCeNw9BLu_y-lsRhrpO6s1End2gdDDlRU_r4wysTiiJS4ZKPDTmWK152psFdhxRizlSJZFCjnYr6nnamRsUciEJui4/s1600/php-app.jpg",
+   "points": [
+    "O que aconteceu: Firewall da Palo Alto Networks explorada através de vulnerabilidades PHP.",
+    "CVEs envolvidos: CVE-2026-109618 e CVE-2026-109619.",
+    "Como funcionou: Execução de código sem autenticação em interfaces expostas à internet.",
+    "Impacto: Acesso direto e controlo de servidores web através da firewall."
+   ],
+   "title_original": "Everything Is a Web Application, Including Your Firewall",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Expõe falhas críticas em equipamentos de perímetro de rede que deveriam proteger as organizações.",
+   "todo": "Garanta que as interfaces de gestão de firewalls nunca estão expostas diretamente à internet e aplique as correções de segurança necessárias."
   },
   {
    "id": "937f390d6b182cf8",
@@ -13703,72 +13774,6 @@
    "enriched": true,
    "why": "Importa porque a falha permite o controlo total do servidor por utilizadores autenticados, exigindo ações complexas de remediação.",
    "todo": "Atualize imediatamente as instâncias do PostgreSQL e recompila as extensões em linguagem C afetadas."
-  },
-  {
-   "id": "d7bc555715b6841f",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/news/2026/11/new-york-city-council-votes-to-ban-surveillance-pricing",
-   "published": "2026-11-13T16:52:36+00:00",
-   "title": "Nova Iorque vota a proibição da fixação de preços por vigilância",
-   "summary": "O Conselho Municipal de Nova Iorque aprovou uma lei para proibir a prática de preços baseados em vigilância, que consiste na utilização de dados pessoais e algoritmos para cobrar preços diferentes a clientes distintos pelo mesmo produto. A legislação, que aguarda a assinatura do presidente da câmara para entrar em vigor dentro de um ano, restringe também a recolha, venda ou partilha de dados pessoais para este fim. O impacto destina-se a proteger os consumidores contra a exploração dos seus hábitos online e histórico de navegação para fins comerciais discriminatórios.",
-   "image": null,
-   "points": [
-    "Quem: Conselho Municipal de Nova Iorque e os consumidores locais.",
-    "O Quê: Aprovação de um projeto de lei contra a fixação de preços personalizada baseada em dados e algoritmos.",
-    "Impacto: Os comerciantes ficarão proibidos de praticar preços discriminatórios baseados no perfil digital dos clientes."
-   ],
-   "title_original": "New York City votes to ban surveillance pricing",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque regula o uso abusivo de dados pessoais para discriminação de preços no comércio.",
-   "todo": "Utilize ferramentas de privacidade, bloqueadores de rastreadores e navegação anónima para limitar a recolha excessiva de dados de navegação."
-  },
-  {
-   "id": "862c3998dd63db20",
-   "source": "Rapid7",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.rapid7.com/blog/post/dr-mdr-pricing-comparing-asset-ingestion-based-ingestion-costs",
-   "published": "2026-11-13T16:37:29+00:00",
-   "title": "Preços de MDR: Comparação entre custos baseados em ativos e baseados em ingestão",
-   "summary": "A escolha de um serviço de Deteção e Resposta Gerida (MDR) exige que as organizações compreendam a diferença entre modelos de preços baseados em ativos e baseados em ingestão de dados. Enquanto o modelo por ativos contabiliza estações de trabalho, servidores e recursos na nuvem, o modelo baseado em ingestão calcula o custo consoante o volume de dados recolhidos e processados. As empresas devem submeter os mesmos requisitos de inventário e retenção a vários fornecedores para obter propostas comparáveis. O impacto desta escolha reflete-se na capacidade financeira e na eficácia da investigação de incidentes de segurança.",
-   "image": "https://images.contentstack.io/v3/assets/blte4f029e766e6b253/blt09a532eac4a02570/6852c5968e72c44b89691ca4/PSN-gov-showcase-hero-image-2.png",
-   "points": [
-    "Quem: Líderes de segurança e fornecedores de serviços MDR.",
-    "O Quê: Análise comparativa entre modelos de faturação baseados em ativos versus volume de dados ingeridos.",
-    "Impacto: A escolha incorreta do modelo pode resultar em custos inesperados ou lacunas na cobertura de segurança."
-   ],
-   "title_original": "MDR Pricing: Comparing Asset-Based and Ingestion-Based Costs",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque ajuda as empresas a otimizar o orçamento de cibersegurança sem sacrificar a visibilidade contra ameaças.",
-   "todo": "Forneça o mesmo inventário de ativos e requisitos de retenção a todos os potenciais fornecedores para comparar propostas de forma transparente."
-  },
-  {
-   "id": "f6d06bee472cc946",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/german-parliament-passes-law-giving-spy-agencies-hacking-power",
-   "published": "2026-11-13T16:32:00+00:00",
-   "title": "Parlamento alemão aprova lei que confere poderes de pirataria e sabotagem a agências de espionagem",
-   "summary": "O Bundestag aprovou uma profunda reformulação das leis de espionagem do país no período pós-guerra, após a proposta ter sido assinada pelo gabinete do chanceler Friedrich Merz. A nova legislação foi aprovada por uma margem clara de votos a favor, apesar da oposição e das abstenções registadas. O impacto desta medida reside na atribuição de competências legais a agências governamentais para realizarem operações de pirataria informática e sabotagem. Esta mudança altera significativamente o enquadramento jurídico das operações de inteligência na Alemanha.",
-   "image": "https://cms.therecord.media/uploads/rasmus_gundorff_saederup_k_C_Dr4i_Pax7c_unsplash_cf20643196.jpg",
-   "points": [
-    "Quem: Parlamento alemão (Bundestag) e agências de espionagem.",
-    "O Quê: Aprovação de uma ampla reforma legislativa que concede poderes de hacking e sabotagem aos serviços secretos.",
-    "Impacto: Alargamento drástico das competências ofensivas legais das autoridades de segurança e espionagem do Estado."
-   ],
-   "title_original": "German parliament passes law giving spy agencies hacking, sabotage powers",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque redefine os limites legais das operações estatais no cyberspace e altera o equilíbrio de segurança e privacidade.",
-   "todo": ""
   }
  ]
 }

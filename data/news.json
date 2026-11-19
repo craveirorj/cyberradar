@@ -1,10 +1,15 @@
 {
- "updated": "2026-11-19T13:30:06.530730+00:00",
+ "updated": "2026-11-19T13:39:55.912518+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
    "ok": true,
    "added": 0
+  },
+  {
+   "source": "IT Security",
+   "ok": false,
+   "error": "404 Client Error: Not Found for url: https://www.itsecurity.pt/feed/"
   },
   {
    "source": "Pplware Segurança",
@@ -274,7 +279,7 @@
   {
    "source": "Check Point Research",
    "ok": true,
-   "added": 5
+   "added": 6
   },
   {
    "source": "Securelist (Kaspersky)",
@@ -304,15 +309,39 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 214,
-  "unenriched": 93,
+  "done": 84,
+  "pending": 236,
+  "unenriched": 118,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)"
+   "Expecting property name enclosed in double quotes: line 32 column 5 (char 2910)",
+   "Expecting ',' delimiter: line 26 column 12 (char 2404)"
   ]
  },
  "items": [
+  {
+   "id": "bb08ed3a2f59d244",
+   "source": "Check Point Research",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://research.checkpoint.com/2026/30-years-of-gatekeeper-asymmetry-doom-the-paradox-that-makes-powerful-llms-more-vulnerable/",
+   "published": "2026-11-19T13:19:10+00:00",
+   "title": "30 Years of Gatekeeper Asymmetry Doom: The Paradox that Makes Powerful LLMs More Vulnerable",
+   "summary": "Este artigo explora o princípio da 'Gatekeeper Asymmetry Doom' em cibersegurança, que dita que um sistema de validação de entradas adversariais com menor poder do que o sistema de processamento inevitavelmente falhará. Os autores demonstram este paradoxo através de vários exemplos práticos, incluindo a evasão de sandboxes e ferramentas de desvio de guardrails de IA. Conclui-se que a fenda entre os defensores e os atacantes deve ser ativamente reduzida através de uma maior potência dos porteiros lógicos. Embora os LLMs de fronteira possuam capacidades significativas para ajudar a mitigar este fosso, continuam vulneráveis ao mesmo princípio.",
+   "image": "https://research.checkpoint.com/wp-content/uploads/2026/11/810F1F5A68-image1.png",
+   "points": [
+    "O princípio dita que sistemas de validação mais fracos que os de processamento levam ao fracasso.",
+    "O problema aplica-se a classificações binárias estáticas, evasões de sandboxes e guardrails de IA.",
+    "Grandes modelos de linguagem (LLMs) podem ajudar a reduzir este fosso de segurança.",
+    "A recomendação passa por atualizar e potenciar as superfícies de ataque vulneráveis."
+   ],
+   "title_original": "30 Years of Gatekeeper Asymmetry Doom: The Paradox that Makes Powerful LLMs More Vulnerable",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como o desequilíbrio de poder entre a validação e o processamento de dados cria vulnerabilidades inevitáveis em sistemas de IA e software.",
+   "todo": "Aumente o poder e a abrangência dos mecanismos de validação e filtragem de entradas nos seus sistemas."
+  },
   {
    "id": "5e668a30271b8ef2",
    "source": "SecurityWeek",
@@ -320,20 +349,20 @@
    "lang": "en",
    "link": "https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/",
    "published": "2026-11-19T13:12:20+00:00",
-   "title": "Piratas informáticos exploram vulnerabilidade do Cisco Expressway após lançamento de PoC",
-   "summary": "Agressores atacaram dispositivos Cisco Expressway agrupados pertencentes a uma organização russa e prepararam ferramentas para movimentos laterais. A exploração ocorreu logo após a disponibilização pública de um código de conceito (PoC). O impacto foca-se no comprometimento da infraestrutura interna da entidade afetada. Este incidente demonstra a rapidez com que os atacantes aproveitam novas falhas conhecidas.",
+   "title": "Hackers Exploit Cisco Expressway Vulnerability Soon After PoC Release",
+   "summary": "Agentes maliciosos exploraram dispositivos Cisco Expressway agrupados pertencentes a uma organização russa logo após a divulgação de um exploit de prova de conceito. Os atacantes utilizaram a falha para preparar ferramentas direcionadas ao movimento lateral na rede comprometida. A exploração rápida demonstra a ameaça iminente colocada pela publicação de códigos vulneráveis.",
    "image": null,
    "points": [
-    "Alvo: Dispositivos agrupados Cisco Expressway de uma organização russa.",
-    "O quê: Exploração de falha logo após a publicação de PoC.",
-    "Impacto: Preparação de ferramentas para movimentos laterais na rede."
+    "Atacantes invadiram dispositivos Cisco Expressway agrupados numa organização russa.",
+    "A exploração ocorreu logo após o lançamento de um código de prova de conceito.",
+    "Os invasores prepararam ferramentas para facilitar o movimento lateral."
    ],
    "title_original": "Hackers Exploit Cisco Expressway Vulnerability Soon After PoC Release",
    "category": "Vulnerabilidade",
    "translated": true,
    "enriched": true,
-   "why": "Mostra como a publicação de código de exploração resulta rapidamente em ataques reais contra infraestruturas.",
-   "todo": "Atualize os dispositivos Cisco afetados de imediato e monitorize a rede para detetar atividades de movimento lateral."
+   "why": "Evidencia a rapidez com que os atacantes convertem PoCs públicos em ataques reais contra infraestruturas corporativas.",
+   "todo": "Aplique patches de segurança e atualizações de firmware nos dispositivos de perímetro o mais rapidamente possível."
   },
   {
    "id": "df5a560c1b8f6ae7",
@@ -342,20 +371,20 @@
    "lang": "en",
    "link": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/",
    "published": "2026-11-19T13:08:08+00:00",
-   "title": "Drupal corrige falha crítica de execução remota de código e alerta para exploração iminente",
-   "summary": "A Equipa de Segurança do Drupal lançou uma correção para uma vulnerabilidade crítica de execução remota de código. Esta falha pode permitir que atacantes assumam o controlo total de sites vulneráveis. As autoridades alertam que explorações ativas poderão surgir rapidamente. Os administradores devem atualizar os sistemas afetados sem demora.",
+   "title": "Drupal patches critical RCE flaw, warns exploits may surface quickly",
+   "summary": "A Equipa de Segurança do Drupal lançou uma correção urgente para colmatar uma vulnerabilidade crítica de execução remota de código (RCE). A falha pode permitir que atacantes assumam o controlo total de websites vulneráveis. Os responsáveis alertam que poderão surgir explorações ativas num futuro muito próximo.",
    "image": null,
    "points": [
-    "Quem: Equipa de Segurança do Drupal.",
-    "O quê: Correção de falha crítica de execução remota de código (RCE).",
-    "Impacto: Risco de tomada de controlo de sites vulneráveis por atacantes."
+    "O Drupal corrigiu uma falha crítica de execução remota de código (RCE).",
+    "A vulnerabilidade permite a tomada de controlo de sites vulneráveis por atacantes.",
+    "A equipa de segurança avisa que exploits públicos podem surgir rapidamente."
    ],
    "title_original": "Drupal patches critical RCE flaw, warns exploits may surface quickly",
    "category": "Vulnerabilidade",
    "translated": true,
    "enriched": true,
-   "why": "Protege os sites contra a apropriação total por parte de cibercriminosos através de falhas por corrigir.",
-   "todo": "Aplique as atualizações de segurança disponibilizadas pelo Drupal nos seus sites o mais rapidamente possível."
+   "why": "Protege os gestores de websites contra potenciais ataques de tomada de controlo através de falhas no CMS.",
+   "todo": "Atualize imediatamente o Drupal para a versão corrigida mais recente."
   },
   {
    "id": "bd53d182e5b7fd91",
@@ -364,20 +393,20 @@
    "lang": "en",
    "link": "https://www.helpnetsecurity.com/2026/11/19/puppet-enterprise-vulnerability-cve-2026-115731-exploited/",
    "published": "2026-11-19T13:07:41+00:00",
-   "title": "Falha explorada no Puppet coloca em risco servidores de gestão de terminais (CVE-2026-115731)",
-   "summary": "Atacantes estão a explorar ativamente a CVE-2026-115731, uma vulnerabilidade crítica de execução remota de código no Perforce Puppet Enterprise. Esta solução empresarial é utilizada por equipas de IT para gerir e automatizar endpoints de forma centralizada. A CISA adicionou a falha ao seu catálogo de vulnerabilidades conhecidas e ordenou a mitigação urgente. O impacto afeta os servidores centrais que gerem a frota de dispositivos.",
+   "title": "Exploited Puppet flaw puts the server that configures your endpoint fleet at risk (CVE-2026-115731)",
+   "summary": "Atacantes estão a explorar ativamente a CVE-2026-115731, uma vulnerabilidade crítica de execução remota de código no Perforce Puppet Enterprise. Esta solução é amplamente utilizada por equipas de TI para centralizar a gestão de endpoints. A CISA adicionou a falha ao seu catálogo de vulnerabilidades conhecidas e ordenou a respetiva mitigação.",
    "image": null,
    "points": [
-    "O quê: Exploração da falha crítica CVE-2026-115731 no Perforce Puppet Enterprise.",
-    "Quem: CISA ordenou a correção a agências federais norte-americanas.",
-    "Impacto: Servidores de gestão centralizada de endpoints em risco de execução remota de código."
+    "A CVE-2026-115731 afeta a solução de gestão centralizada Perforce Puppet Enterprise.",
+    "Trata-se de uma falha de execução remota de código que já está a ser explorada ativamente.",
+    "A CISA adicionou a vulnerabilidade ao catálogo de explorações conhecidas com prazos de correção."
    ],
    "title_original": "Exploited Puppet flaw puts the server that configures your endpoint fleet at risk (CVE-2026-115731)",
    "category": "Vulnerabilidade",
    "translated": true,
    "enriched": true,
-   "why": "Ataques ativos numa ferramenta central de gestão colocam em risco toda a frota de dispositivos empresariais.",
-   "todo": "Verifique os conselhos do fabricante e aplique os patches necessários para mitigar a CVE-2026-115731."
+   "why": "Ameaça diretamente os servidores centrais de configuração de frotas de endpoints nas empresas.",
+   "todo": "Consulte os alertas da CISA e aplique as atualizações de segurança recomendadas pelo fornecedor para a CVE-2026-115731."
   },
   {
    "id": "509cec87bb7f36c5",
@@ -13751,28 +13780,6 @@
    "enriched": true,
    "why": "Importa porque demonstra como os atacantes aproveitam fenómenos da cultura pop e grandes lançamentos para propagar software malicioso.",
    "todo": "Descarregue conteúdos apenas de fontes oficiais e desconfie de promessas de acesso antecipado a jogos em sites de terceiros."
-  },
-  {
-   "id": "f6f4a6d64aa85b9c",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/",
-   "published": "2026-11-13T17:31:56+00:00",
-   "title": "German military drone operations disrupted by cyberattack",
-   "summary": "A empresa alemã de tecnologia de defesa Quantum Systems confirmou ter detetado um incidente cibernético no final de outubro. A ocorrência integrou um ciberataque ativo perpetrado por atores hostis. O ataque afetou as operações relacionadas com os drones militares da empresa.",
-   "image": null,
-   "points": [
-    "A Quantum Systems detetou um incidente de cibersegurança nos seus sistemas.",
-    "O ataque foi levado a cabo por atores hostis no final de outubro.",
-    "As operações dos drones militares da empresa alemã foram interrompidas."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque ilustra os riscos geopolíticos e de segurança nacional associados a ataques direcionados a empresas de defesa.",
-   "todo": "Reforce a monitorização de redes industriais e de defesa contra intrusões de atores estatais ou grupos patrocinados."
   }
  ]
 }

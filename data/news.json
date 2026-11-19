@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T15:27:05.643223+00:00",
+ "updated": "2026-11-19T15:45:54.031942+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -119,7 +119,7 @@
   {
    "source": "TechCrunch Security",
    "ok": true,
-   "added": 7
+   "added": 8
   },
   {
    "source": "Ars Technica Security",
@@ -154,7 +154,7 @@
   {
    "source": "Microsoft Security Blog",
    "ok": true,
-   "added": 6
+   "added": 7
   },
   {
    "source": "Microsoft MSRC",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 3
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -310,15 +310,117 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 325,
-  "unenriched": 208,
+  "pending": 328,
+  "unenriched": 211,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "Expecting property name enclosed in double quotes: line 5 column 1 (char 83)"
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "8b1beec23f78639e",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/openvpn-security-advisory-av26-1179",
+   "published": "2026-11-19T15:39:51+00:00",
+   "title": "OpenVPN security advisory (AV26-1179)",
+   "summary": "",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Serial number: AV26-1179 Date: November 19, 2026 As of November 18, 2026, OpenVPN is affected by a vulnerability in the following product: OpenVPN Prior to or equal to 2.7.8 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. CVE-2026-121720 – community wiki Security Advisories & Updates | OpenVPN"
+  },
+  {
+   "id": "9c103a99a5947dcf",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1178",
+   "published": "2026-11-19T15:33:03+00:00",
+   "title": "F5 security advisory (AV26-1178)",
+   "summary": "",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Serial number: AV26-1178 Date: November 19, 2026 As of November 18, 2026, F5 is affected by vulnerabilities in the following products: BIG-IP 17.1.0 Prior to BIGIP-17.1.3.7.0.21.4-ENG 17.5.0 Prior to BIGIP-17.5.1.11.0.61.12-ENG 21.1.0 Prior to BIGIP-21.1.0.4.0.19.3-ENG BIG-IP (APM) 17.1.0 Prior to BIGIP-17.1.3.7.0.21.4-ENG 17.5.0 Prior to BIGIP-17.5.1.11.0.61.12-ENG 21.1.0 Prior to BIGIP-21.1.0.4.0.19.3-ENG BIG-IP SSL Orchestrator 17.1.0 Prior to BIGIP-17.1.3.7.0.21.4-ENG 17.5.0 Prior to BIGIP-17.5.1.11.0.61.12-ENG 21.1.0 Prior to BIGIP-21.1.0.4.0.19.3-ENG BIG-IP PEM 17.1.0 Prior to BIGIP-17.1.3.7.0.21.4-ENG 17.5.0 Prior to BIGIP-17.5.1.11.0.61.12-ENG 21.1.0 Prior to BIGIP-21.1.0.4.0.19.3-ENG BIG-IP CNF 2.2.0 Prior to CNF-2.2.5-EHF1 2.3.0 Prior to CNF-2.3.4-EHF1 2.4.0 Prior to CNF-2.4.2-EHF1 BIG-IP Next for Kubernetes 2.2.0 Prior to BNK-2.2.5-EHF1 2.3.0 Prior to BNK-2.3.4-EHF1 2.4.0 Prior to BNK-2.4.2-EHF1 BIG-IQ Centralized Management Prior to 8.4.2.3 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. K000163937: BIG-IP APM vulnerability CVE-2026-123637 K000163946: BIG-IP iRule vulnerability CVE-2026-121805 K000163940: BIG-IP iRule vulnerability CVE-2026-120292 K000163939: BIG-IP iRule vulnerability CVE-2026-120285 K000163941: BIG-IP iRule vulnerability CVE-2026-116953 K000163945: BIG-IP iRule vulnerability CVE-2026-120722 MyF5 New and Updated Articles"
+  },
+  {
+   "id": "41a84fbefbc879db",
+   "source": "TechCrunch Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://techcrunch.com/2026/11/19/u-k-government-forced-to-disclose-secret-apple-backdoor-order/",
+   "published": "2026-11-19T15:32:20+00:00",
+   "title": "U.K government forced to disclose secret Apple backdoor order",
+   "summary": "The U.K. tribunal's ruling rejected London's claim that disclosing the order would be damaging to national security.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Malware",
+   "translated": false,
+   "enriched": false,
+   "raw": "The U.K. tribunal's ruling rejected London's claim that disclosing the order would be damaging to national security."
+  },
+  {
+   "id": "235c84100afc4ae3",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/ups-software-abused-domain/",
+   "published": "2026-11-19T15:30:00+00:00",
+   "title": "CyberPower PowerPanel Exploited to Run Malicious Code on Domain Controller",
+   "summary": "Symantec found an attacker using CyberPower’s UPS software to run scripts on a domain controller",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Symantec found an attacker using CyberPower’s UPS software to run scripts on a domain controller"
+  },
+  {
+   "id": "71178773ef2a8420",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/php-releases-patches-fix-18/",
+   "published": "2026-11-19T15:28:00+00:00",
+   "title": "PHP Releases Patches to Fix 18 Vulnerabilities",
+   "summary": "PHP has released security updates addressing 18 vulnerabilities, including critical remote code execution flaws affecting session handling",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "PHP has released security updates addressing 18 vulnerabilities, including critical remote code execution flaws affecting session handling"
+  },
+  {
+   "id": "5b228a0fb7f06b0d",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/19/php-8-6-released/",
+   "published": "2026-11-19T15:22:36+00:00",
+   "title": "PHP 8.6 is out, and here’s what changes for your code",
+   "summary": "PHP 8.6 has been released. The new version adds partial function application, a Time\\Duration class, a polling API for event loops and a clamp() function. PHP 8.6 also changes defaults that existing apps could trip over. Sessions now start with session.use_strict_mode and session.cookie_httponly turned on and session.cookie_samesite set to Lax. Custom session handlers that don’t implement both create_sid() and validateId() are deprecated. If your app relied on the old defaults, test your login flows before … More →",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "PHP 8.6 has been released. The new version adds partial function application, a Time\\Duration class, a polling API for event loops and a clamp() function. PHP 8.6 also changes defaults that existing apps could trip over. Sessions now start with session.use_strict_mode and session.cookie_httponly turned on and session.cookie_samesite set to Lax. Custom session handlers that don’t implement both create_sid() and validateId() are deprecated. If your app relied on the old defaults, test your login flows before … More →"
+  },
   {
    "id": "5f26a746749acf70",
    "source": "The Record",
@@ -13622,139 +13724,6 @@
    "enriched": true,
    "why": "Importa porque compromete a segurança daquele que deveria ser o ponto mais protegido da rede corporativa.",
    "todo": "Aplique imediatamente as correções de emergência e hotfixes disponibilizados pela Check Point para os produtos afetados."
-  },
-  {
-   "id": "174a234b36a27074",
-   "source": "CSO Online",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.csoonline.com/article/4248672/thousands-of-github-repos-hit-with-secret-stealing-malware.html",
-   "published": "2026-11-13T23:53:42+00:00",
-   "title": "Milhares de repositórios do GitHub atingidos por malware de roubo de credenciais",
-   "summary": "Contas do GitHub comprometidas foram utilizadas para disseminar malware de roubo de credenciais através de mais de 1.800 repositórios. Os atacantes injetaram scripts maliciosos recorrendo a ganchos no npm e fluxos de trabalho comprometidos para extrair chaves de API, credenciais de nuvem e segredos de CI/CD. O impacto afetou inúmeros projetos de programadores, com os atacantes a eliminarem os registos de execução para apagar os rastos.",
-   "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4248672-0-48567500-1794614276-shutterstock_177668495.jpg?quality=50&strip=all",
-   "points": [
-    "O quê: Campanha de distribuição de malware de roubo de segredos em repositórios do GitHub.",
-    "Quem: Atacantes que utilizaram milhares de contas de programadores comprometidas.",
-    "Como: Injeção de scripts maliciosos via ficheiros package.json e fluxos do GitHub Actions.",
-    "Impacto: Extração massiva de chaves de API, credenciais de nuvem e segredos de desenvolvimento."
-   ],
-   "title_original": "Thousands of GitHub repos hit with secret-stealing malware",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque expõe credenciais críticas de desenvolvimento e serviços em nuvem de milhares de projetos.",
-   "todo": "Reveja regularmente os acessos aos seus repositórios, valide dependências npm e monitore alterações em ficheiros de configuração e workflows."
-  },
-  {
-   "id": "95f0b3b3018c6840",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/inteligencia-artificial/prompt-leaking-o-que-e-riscos-e-como-proteger-sistemas-de-ia/",
-   "published": "2026-11-13T23:15:00+00:00",
-   "title": "Prompt leaking: o que é e como uma IA pode revelar seus próprios comandos",
-   "summary": "O prompt leaking consiste na exposição indevida de instruções internas e dados confidenciais de modelos de linguagem de inteligência artificial. O problema surge quando utilizadores manipulam o chatbot para desobedecer às regras de sistema e revelar informações como códigos de acesso, propriedade intelectual e dados de clientes. A OWASP classificou este fenómeno como um dos dez principais riscos em aplicações de IA generativa em 2025. O impacto inclui a quebra de confidencialidade e a exposição de detalhes operacionais críticos das empresas.",
-   "image": "https://www.estadao.com.br/resizer/v2/6ENJ626DSZFURDF4V3N74N6FXQ.jpg?quality=80&auth=2f8532c53e650b86204d12a325c75617463b01d7097ec771eb4ff15084a8e65c&width=710",
-   "points": [
-    "O quê: Vazamento de instruções internas e dados confidenciais em IAs.",
-    "Como: Utilizadores manipulam chatbots para ignorar regras de sistema.",
-    "Impacto: Exposição de senhas, propriedade intelectual e dados de clientes."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque revela vulnerabilidades que expõem dados confidenciais de empresas e utilizadores através de simples comandos.",
-   "todo": "Trate os prompts de sistema como informação confidencial e implemente barreiras e filtros rigorosos contra manipulações de comandos."
-  },
-  {
-   "id": "dd593b4f3c665fc9",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/inteligencia-artificial/empresa-brasileira-de-ia-policial-entra-em-programa-de-seguranca-da-openai/",
-   "published": "2026-11-13T23:00:00+00:00",
-   "title": "Empresa brasileira de IA policial entra em programa de segurança da OpenAI",
-   "summary": "A empresa brasileira Pax, criadora de uma plataforma de inteligência artificial usada por polícias em mais de 200 municípios, foi integrada no projeto Daybreak Blue da OpenAI. Esta aliança concede acesso a ferramentas avançadas de cibersegurança e modelos de fronteira para identificar vulnerabilidades e reforçar sistemas. A tecnologia da Pax já auxiliou no esclarecimento de mais de 7 mil casos em vários estados brasileiros. O acesso a estes recursos exige aprovação rigorosa e destina-se estritamente a atividades legítimas de defesa cibernética.",
-   "image": "https://www.estadao.com.br/resizer/v2/SIQYORKV2RHYRE3J5D5WN7UYEQ.jpeg?quality=80&auth=15fffe11ef4d6d6a3bade4e9f1acab1e4d40b599280b1b7828c93c00f241d3bb&width=710",
-   "points": [
-    "Quem: A empresa brasileira Pax e a OpenAI.",
-    "O quê: Integração no programa de cibersegurança Daybreak Blue.",
-    "Como: Acesso a ferramentas avançadas de proteção e modelos de fronteira.",
-    "Impacto: Reforço na identificação de vulnerabilidades em investigações policiais."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque demonstra a adoção de tecnologia avançada de IA global na segurança pública nacional.",
-   "todo": "Adote processos rigorosos de validação e utilize apenas ferramentas de segurança aprovadas para proteger infraestruturas críticas."
-  },
-  {
-   "id": "205ed3ec6b910046",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/big-techs/hoje-no-tecmundo-13-jensen-huang-pode-enfrentar-congresso-dos-eua-e-microsoft-sofre-pane-global/",
-   "published": "2026-11-13T22:43:00+00:00",
-   "title": "Hoje no TecMundo (13): Jensen Huang pode enfrentar Congresso dos EUA e Microsoft sofre pane global",
-   "summary": "Uma pane global iniciada a 12 de novembro afetou diversos serviços da Microsoft, incluindo o Outlook, Teams e Microsoft 365, gerando instabilidade generalizada. Em simultâneo, o ex-CEO da Nvidia, Jensen Huang, concordou em prestar esclarecimentos ao Congresso dos Estados Unidos e enfrenta notícias sobre novos relacionamentos. Adicionalmente, o Tesouro Nacional confirmou um ataque informático que expôs dados e chaves Pix, enquanto o WhatsApp testa mensagens de visualização única para texto.",
-   "image": "https://www.estadao.com.br/resizer/v2/Z4S46K22FBD7XF3QFGM27T77LU.jpg?quality=80&auth=fac0f57da35e2e531d2aca75ddef86ae3415b5ca803ca079344ab80b0f126950&width=1150",
-   "points": [
-    "O quê: Pane global na Microsoft e incidente no Tesouro Nacional.",
-    "Quem: Microsoft, autoridades dos EUA e Tesouro Nacional.",
-    "Impacto: Instabilidade em serviços essenciais e exposição de dados de utilizadores."
-   ],
-   "title_original": null,
-   "category": "Ataque/APT",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque relata falhas globais em infraestruturas tecnológicas e incidentes de segurança com impacto direto em serviços essenciais.",
-   "todo": "Mantenha os sistemas atualizados e monitorize os avisos oficiais de pane para mitigar impactos operacionais."
-  },
-  {
-   "id": "2cf87a19124d5e79",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/cybersecurity-operations/test-takers-ai-exam-security-catch-up",
-   "published": "2026-11-13T22:27:00+00:00",
-   "title": "À medida que candidatos recorrem à IA, a segurança de exames tenta recuperar o atraso",
-   "summary": "A deteção do uso de inteligência artificial para batota em exames de certificação de TI tornou-se altamente desafiante para as entidades examinadoras. Para restabelecer a confiança nos processos de avaliação, estão a surgir novas ferramentas tecnológicas e procedimentos de verificação. O setor procura adaptar-se rapidamente à proliferação de meios automatizados de fraude.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltccdd6137653ede6b/6af4d346ef03ab8c2a6901d5/GettyImages-2228505019.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "Dificuldade crescente em detetar o uso de IA em exames de certificação de TI.",
-    "Surgem novas ferramentas e processos para garantir a integridade das avaliações.",
-    "O setor de exames procura recuperar o atraso tecnológico face à batota com IA."
-   ],
-   "title_original": "As Test Takers Turn to AI, Exam Security Plays Catch-Up",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Destaca a necessidade de novas salvaguardas para proteger a credibilidade das certificações profissionais.",
-   "todo": "Implementar plataformas de supervisão avançadas e métodos de avaliação resistentes à assistência de IA."
-  },
-  {
-   "id": "26bc7212e5d9b4f9",
-   "source": "Schneier on Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-pacific-flying-squid-populations-dropping-in-korean-waters.html",
-   "published": "2026-11-13T22:00:46+00:00",
-   "title": "Friday Squid Blogging: Pacific Flying Squid Populations Dropping in Korean Waters",
-   "summary": "As alterações climáticas estão a provocar uma diminuição das populações de lulas voadoras do Pacífico nas águas da Coreia. Este tipo de publicação semanal é utilizado para debater notícias de cibersegurança que ficaram de fora da cobertura regular. A discussão decorre sob a política de moderação do blogue.",
-   "image": null,
-   "points": [
-    "O quê: Declínio de lulas voadoras nas águas coreanas devido a alterações climáticas.",
-    "Contexto: Espaço usado para abordar temas de segurança e moderação."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque serve de ponto de encontro para debater tópicos de cibersegurança de forma aberta.",
-   "todo": ""
   }
  ]
 }

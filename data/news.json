@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T14:09:39.097128+00:00",
+ "updated": "2026-11-19T14:27:25.911416+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -89,12 +89,12 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 24
+   "added": 23
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -164,7 +164,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "Cisco Talos",
@@ -178,8 +178,8 @@
   },
   {
    "source": "Google Threat Intelligence",
-   "ok": false,
-   "error": "500 Server Error: Internal Server Error for url: https://cloudblog.withgoogle.com/topics/threat-intelligence/rss/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "Google Project Zero",
@@ -309,16 +309,60 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 48,
-  "pending": 270,
-  "unenriched": 156,
+  "done": 36,
+  "pending": 282,
+  "unenriched": 169,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)"
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "abef5657ebf43b0e",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/nvidia-responds-to-gentlemen-ransomware-claim/",
+   "published": "2026-11-19T14:17:32+00:00",
+   "title": "Nvidia Responde a Alegações do Ransomware Gentlemen",
+   "summary": "O grupo de ransomware Gentlemen incluiu a Nvidia na sua lista de vítimas recentes. Em resposta, a Nvidia declarou publicamente que não encontrou quaisquer indícios de que os seus sistemas tenham sido comprometidos. O impacto resume-se a um falso alarme gerado por alegações infundadas do grupo criminoso.",
+   "image": null,
+   "points": [
+    "O grupo Gentlemen listou a Nvidia como vítima de ransomware.",
+    "A Nvidia investigou e não encontrou sinais de comprometimento.",
+    "Nenhum sistema foi afetado segundo a empresa."
+   ],
+   "title_original": "Nvidia Responds to Gentlemen Ransomware Claim",
+   "category": "Ransomware",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como grandes empresas são frequentemente alvo de falsas reivindicações de grupos de ransomware.",
+   "todo": "Mantenha os sistemas monitorizados e verifique sempre fontes oficiais antes de reagir a notícias de incidentes."
+  },
+  {
+   "id": "1717d6a2f4260a1f",
+   "source": "HackRead",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://hackread.com/swap-bitcoin-ethereum-decentralized-exchange/",
+   "published": "2026-11-19T14:16:58+00:00",
+   "title": "Como Trocar Bitcoin por Ethereum num DEX",
+   "summary": "É possível realizar a troca direta de Bitcoin para Ethereum utilizando a THORChain, uma bolsa descentralizada de cross-chain. Esta tecnologia permite converter BTC nativo em ETH sem necessitar de tokens embrulhados ou de uma conta numa exchange centralizada. O impacto traduz-se numa maior facilidade e descentralização para os utilizadores realizarem transações entre diferentes criptomoedas.",
+   "image": null,
+   "points": [
+    "A THORChain permite trocar Bitcoin por Ethereum diretamente.",
+    "Usa uma plataforma descentralizada de cross-chain sem tokens embrulhados.",
+    "Dispensa a criação de conta numa exchange centralizada."
+   ],
+   "title_original": "How to Swap Bitcoin to Ethereum on a Decentralized Exchange",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Facilita a troca segura e descentralizada de ativos entre diferentes redes de criptomoedas.",
+   "todo": "Utilize apenas exchanges descentralizadas verificadas e garanta a segurança das suas carteiras digitais."
+  },
   {
    "id": "8ba163b7a11bb8b8",
    "source": "HackRead",
@@ -13739,52 +13783,6 @@
    "translated": true,
    "enriched": true,
    "why": "Importa porque tenta regular o mercado global de spyware e ferramentas de intrusão comercial através da cooperação entre estados.",
-   "todo": ""
-  },
-  {
-   "id": "cced99eaa1756ea0",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/13/this-years-bug-count-just-passed-100k/5309882",
-   "published": "2026-11-13T20:52:17+00:00",
-   "title": "A contagem de vulnerabilidades deste ano já ultrapassou as 100 mil",
-   "summary": "O número de vulnerabilidades (CVEs) divulgadas globalmente ultrapassou a marca histórica de 100 mil, impulsionado pelo uso generalizado de ferramentas de inteligência artificial na descoberta de falhas. Fornecedores de tecnologia e plataformas emitiram dezenas de milhares de alertas, reduzindo drasticamente o intervalo de tempo entre a publicação de correções e o aproveitamento das falhas por atacantes. O impacto traduz-se num risco acrescido para as organizações, que enfrentam um volume sem precedentes de falhas ativas.",
-   "image": "https://image.theregister.com/?imageId=262189&width=800",
-   "points": [
-    "O quê: Ultrapassagem da marca de 100 mil vulnerabilidades divulgadas num ano.",
-    "Quem: Vários centros de atribuição de CVEs e grandes fornecedores de software.",
-    "Como: Aceleração da descoberta de falhas através do recurso a inteligência artificial.",
-    "Impacto: Redução drástica do tempo até à exploração ativa por criminosos e sobrecarga de correções."
-   ],
-   "title_original": "This year’s bug count just passed 100K",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque a automação da descoberta de falhas por IA sobrecarrega as equipas de defesa e acelera os ataques.",
-   "todo": "Dê prioridade máxima à gestão de vulnerabilidades críticas e automatize a aplicação rápida de patches de segurança."
-  },
-  {
-   "id": "a9a3610e2e7ec666",
-   "source": "Cybersecurity Dive",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cybersecuritydive.com/news/ai-white-house-task-force-cybersecurity-regulation/874679/",
-   "published": "2026-11-13T20:36:02+00:00",
-   "title": "Força-tarefa da Casa Branca diz que as empresas merecem alívio de responsabilidade para ciberataques alimentados por IA",
-   "summary": "Um grupo de trabalho governamental concluiu que os padrões regulatórios atuais para a defesa cibernética estão desatualizados face à nova era da inteligência artificial. Como resposta ao aumento de incidentes impulsionados por IA, a força-tarefa sugeriu que as empresas devem receber algum tipo de alívio de responsabilidade. O objetivo é adaptar o ecossistema regulatório à nova realidade de ameaças automatizadas e sofisticadas.",
-   "image": "https://imgproxy.divecdn.com/DdqEFpCeaMtT5w-qT-QRDOwz7tyYWnqBXC3DOvozg8Y/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xNDk0MzExNDUuanBn.webp",
-   "points": [
-    "O quê: Proposta de alívio de responsabilidade para empresas face a ciberataques impulsionados por IA.",
-    "Quem: Grupo de trabalho governamental dos Estados Unidos.",
-    "Como: Revisão das normas e padrões de defesa cibernética considerados obsoletos.",
-    "Impacto: Discussão sobre a adequação das regulamentações de segurança na era da inteligência artificial."
-   ],
-   "title_original": "White House task force says companies deserve liability relief for AI-fueled cyberattacks",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque reflete a necessidade urgente de adaptar as leis e regulamentos de cibersegurança à realidade dos ataques automatizados por IA.",
    "todo": ""
   }
  ]

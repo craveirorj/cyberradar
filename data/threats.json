@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T03:06:46.944650+00:00",
+ "updated": "2026-11-19T03:26:54.638357+00:00",
  "errors": [],
  "feodo": {
   "total": 5,
@@ -58,8 +58,8 @@
    "label": "Sites que distribuem malware",
    "total": 850,
    "by_country": {
-    "US": 619,
-    "CN": 116,
+    "US": 614,
+    "CN": 121,
     "CA": 33,
     "TR": 17,
     "SE": 13,
@@ -85,17 +85,18 @@
    },
    "detail": {
     "US": {
-     "DEVPOPPER": 217,
-     "DEVBOX": 170,
+     "DEVPOPPER": 214,
+     "DEVBOX": 168,
      "exe": 117,
      "github": 72,
      "malware_download": 17
     },
     "CN": {
-     "malware_download": 82,
-     "32-bit": 17,
+     "malware_download": 83,
+     "32-bit": 20,
      "fake-deepseek": 13,
-     "elf": 4
+     "elf": 4,
+     "cowrie": 1
     },
     "CA": {
      "malware_download": 12,
@@ -178,26 +179,26 @@
     }
    },
    "tags": {
-    "github": 575,
-    "js": 391,
-    "VSCode": 322,
-    "TxDataHiding": 220,
-    "DEVPOPPER": 217,
-    "DEVBOX": 170
+    "github": 570,
+    "js": 386,
+    "VSCode": 318,
+    "TxDataHiding": 217,
+    "DEVPOPPER": 214,
+    "DEVBOX": 168
    },
    "ports": {
     "US": {
-     "443": 600,
+     "443": 595,
      "80": 17,
      "2050": 1,
      "41697": 1
     },
     "CN": {
      "443": 13,
+     "38498": 2,
      "38925": 2,
      "50633": 2,
-     "59791": 2,
-     "53210": 2
+     "59791": 2
     },
     "CA": {
      "443": 27,
@@ -298,9 +299,9 @@
     "IT": 8,
     "FR": 6,
     "DE": 4,
-    "HK": 4,
+    "NL": 3,
+    "HK": 3,
     "BR": 2,
-    "NL": 2,
     "GB": 2,
     "FI": 1,
     "SC": 1,
@@ -323,13 +324,13 @@
     "DE": {
      "phishing": 4
     },
+    "NL": {
+     "phishing": 3
+    },
     "HK": {
-     "phishing": 4
+     "phishing": 3
     },
     "BR": {
-     "phishing": 2
-    },
-    "NL": {
      "phishing": 2
     },
     "GB": {
@@ -351,13 +352,13 @@
   },
   "ioc": {
    "label": "Indicadores de malware (IPs)",
-   "total": 275,
+   "total": 272,
    "by_country": {
     "US": 57,
     "CN": 47,
     "NL": 42,
-    "HK": 31,
-    "DE": 21,
+    "HK": 30,
+    "DE": 19,
     "SG": 11,
     "FR": 7,
     "JP": 6,
@@ -416,15 +417,15 @@
      "Sliver": 1
     },
     "HK": {
-     "Unknown malware": 18,
+     "Unknown malware": 17,
      "VShell": 3,
      "Cobalt Strike": 3,
      "AdaptixC2": 2,
      "PerlBot": 2
     },
     "DE": {
-     "Unknown malware": 6,
      "AsyncRAT": 4,
+     "Unknown malware": 4,
      "CECbot": 3,
      "Sliver": 2,
      "MopsStealer": 1
@@ -557,7 +558,7 @@
     }
    },
    "malware": {
-    "Unknown malware": 98,
+    "Unknown malware": 95,
     "AsyncRAT": 40,
     "Cobalt Strike": 32,
     "AdaptixC2": 14,
@@ -591,7 +592,7 @@
      "80": 5,
      "8787": 3,
      "4321": 2,
-     "8888": 2
+     "8081": 1
     },
     "DE": {
      "10213": 3,
@@ -617,8 +618,8 @@
      "80": 1,
      "443": 1,
      "18084": 1,
-     "18086": 1,
-     "18092": 1
+     "18092": 1,
+     "18086": 1
     },
     "CA": {
      "443": 4,
@@ -627,8 +628,8 @@
     },
     "PH": {
      "8080": 1,
-     "22": 1,
      "443": 1,
+     "22": 1,
      "8000": 1
     },
     "VN": {
@@ -652,8 +653,8 @@
      "50050": 1
     },
     "AD": {
-     "443": 1,
-     "80": 1
+     "80": 1,
+     "443": 1
     },
     "SI": {
      "4444": 1,
@@ -756,7 +757,7 @@
      "scan/força bruta": 1
     }
    },
-   "reports": 4355351
+   "reports": 4354432
   }
  },
  "cloudflare": {

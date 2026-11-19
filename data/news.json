@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T19:07:43.752989+00:00",
+ "updated": "2026-11-19T19:26:25.731659+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -9,7 +9,7 @@
   {
    "source": "IT Security",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Pplware Segurança",
@@ -34,7 +34,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -139,7 +139,7 @@
   {
    "source": "SANS ISC",
    "ok": true,
-   "added": 2
+   "added": 3
   },
   {
    "source": "DataBreaches.net",
@@ -164,12 +164,12 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 10
+   "added": 11
   },
   {
    "source": "Cisco Talos",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "Unit 42 (Palo Alto)",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 12
+   "added": 11
   },
   {
    "source": "Help Net Security",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 16
+   "added": 15
   },
   {
    "source": "ACSC Austrália",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 48,
-  "pending": 277,
-  "unenriched": 160,
+  "done": 36,
+  "pending": 281,
+  "unenriched": 168,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,40 @@
   ]
  },
  "items": [
+  {
+   "id": "ed2063d19c6b9f10",
+   "source": "AWS Security Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://aws.amazon.com/blogs/security/how-aws-security-incident-response-triages-your-security-findings/",
+   "published": "2026-11-19T19:20:58+00:00",
+   "title": "How AWS Security Incident Response triages your security findings",
+   "summary": "AWS Security Incident Response continuously triages the threat findings from Amazon GuardDuty and AWS Security Hub CSPM, but most of that work never shows up as a case. If cases are all you look at, it’s hard to tell whether the service is working at all, and that’s the question I hear most often when […]",
+   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/18/aws-security-incident-response-triage-b-hybrid-Figure-1.png",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "AWS Security Incident Response continuously triages the threat findings from Amazon GuardDuty and AWS Security Hub CSPM , but most of that work never shows up as a case. If cases are all you look at, it’s hard to tell whether the service is working at all, and that’s the question I hear most often when I help customers onboard. The Proactive response dashboard gives you a high-level view of this activity, and this post takes you behind the numbers to show what happens to an individual finding. In this post, I walk you through what happens to a finding after it’s ingested by the service, what gets triaged, where each finding is sent, and how a triage decision becomes a case. I then show you how to confirm triage is working day-to-day, so your team can focus on the findings that require attention. The process flow is shown in Figure 1. Figure 1: AWS Security Incident Response triage flow, from ingestion through to one of three outcomes Ingestion AWS Security Incident Response ingests threat findings from GuardDuty through Amazon EventBridge rules that are automatically deployed to your accounts during the onboarding process . If you send third-party detection findings to Security Hub CSPM from tools such as CrowdStrike, Trend Micro, or Lacework, their threat detection findings are also ingested. Each of those findings must carry complete payload information such as resource ID, account ID, timestamp, and threat details. GuardDuty findings are ingested directly, so these findings aren’t re-ingested through Security Hub CSPM and there’s no duplication. Triage The service triages findings that indicate an active threat, such as compromised credentials, cryptomining, or data exfiltration. These represent activity that’s underway or has already occurred. Posture and compliance"
+  },
+  {
+   "id": "f4159f374f79fe57",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/vmware-security-advisory-av26-1185",
+   "published": "2026-11-19T19:02:48+00:00",
+   "title": "VMware security advisory (AV26-1185)",
+   "summary": "",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Serial number: AV26-1185 Date: November 19, 2026 As of November 19, 2026, VMware is affected by vulnerabilities in the following products: VMware Cloud Foundation / VMware vSphere Foundation - vCenter 9.1.x.x Versions prior to 9.1.1.0200 9.0.x.x Versions prior to 9.0.2.0200 VMware vCenter 8.0 Versions prior to 8.0 U3m Version 7.0 VMware Cloud Foundation vCenter 5.x versions prior to 5.2.5 VMware Telco Cloud Platform vCenter Versions 3.0, 4.x, 5.0.x, 5.1.x, 5.2 VMware Telco Cloud Infrastructure vCenter Version 3.0 Open source reporting indicates that CVE-2026-123890 is exploited in the wild. The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. VMSA-2026-0009: VMware vCenter, Tools, and SDDC Manager updates address multiple vulnerabilities (CVE-2026-123890, CVE-2026-123891, CVE-2026-123892, CVE-2026-123893, CVE-2026-123894) Security Advisories - VMware Cloud Foundation"
+  },
   {
    "id": "d0c7e186c7e0b5aa",
    "source": "Cisco Talos",
@@ -473,9 +507,9 @@
     "As vulnerabilidades podem permitir execução remota de código em determinadas condições.",
     "Não há registo de exploração ativa destas falhas em cenários reais."
    ],
-   "title_original": "NGINX2Root: F5 patches five critical NGINX vulnerabilities",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Sendo o NGINX um dos servidores web mais utilizados do mundo, falhas críticas exigem correção imediata para prevenir ataques futuros.",
    "todo": "Aplique os patches disponibilizados pela F5 para as versões do NGINX afetadas."
@@ -13726,52 +13760,6 @@
    "enriched": true,
    "why": "Importa porque simplifica a implementação segura de protocolos complexos de autenticação em arquiteturas modernas.",
    "todo": "Utilize soluções standard e validadas para a gestão de identidades e tokens em vez de desenvolver servidores de autenticação do zero."
-  },
-  {
-   "id": "4cf145c840a0ce0c",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/16/product-showcase-eset-mobile-security-ios/",
-   "published": "2026-11-16T05:30:19+00:00",
-   "title": "Product showcase: ESET Mobile Security brings phishing protection and security checks to iOS",
-   "summary": "A ESET lançou a aplicação ESET Mobile Security para dispositivos iOS na versão 18.0 ou posterior. A ferramenta ajuda os utilizadores de iPhone a detetar links suspeitos, verificar definições de segurança e analisar ligações Wi-Fi. A aplicação inclui funcionalidades gratuitas que podem ser utilizadas sem a necessidade de criar uma conta. O impacto traduz-se numa maior proteção e controlo da privacidade para os utilizadores da Apple.",
-   "image": null,
-   "points": [
-    "A ESET lançou o Mobile Security para iOS.",
-    "A aplicação analisa definições, permissões e ligações Wi-Fi.",
-    "Oferece proteção contra phishing e verificação de links.",
-    "Disponível para iOS 18.0 ou versões posteriores."
-   ],
-   "title_original": null,
-   "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": true,
-   "why": "Permite aos utilizadores de iPhone reforçarem a segurança do dispositivo contra ameaças e links maliciosos.",
-   "todo": "Mantenha o sistema operativo atualizado e utilize ferramentas de verificação para analisar definições e redes Wi-Fi."
-  },
-  {
-   "id": "30914c64fd7a3b29",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/16/forescout-ai-models-vulnerability-research/",
-   "published": "2026-11-16T05:00:22+00:00",
-   "title": "AI uncovers flaws in discontinued devices with no vendor left to patch them",
-   "summary": "Investigadores da Forescout criaram uma ferramenta para testar se modelos de IA disponíveis no mercado conseguiam encontrar falhas de segurança com um orçamento limitado. A equipa analisou código aberto e software compilado, descobrindo 99 vulnerabilidades em 10 stacks TCP/IP. Deste total, 66 eram desconhecidas e 52% foram classificadas como de alto risco. O impacto afeta dispositivos descontinuados que já não recebem correções dos fabricantes.",
-   "image": null,
-   "points": [
-    "Investigadores usaram IA para detetar vulnerabilidades.",
-    "Foram descobertas 99 falhas em 10 stacks TCP/IP.",
-    "Mais de metade das novas falhas são de alto risco.",
-    "O problema afeta dispositivos sem suporte de atualizações."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como a IA pode ser usada para descobrir falhas críticas em equipamentos antigos que já não têm suporte.",
-   "todo": "Substitua equipamentos descontinuados por modelos com suporte ativo e atualizações de segurança regulares."
   }
  ]
 }

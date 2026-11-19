@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T11:26:27.733954+00:00",
+ "updated": "2026-11-19T11:46:21.558645+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -119,7 +119,7 @@
   {
    "source": "Ars Technica Security",
    "ok": true,
-   "added": 8
+   "added": 7
   },
   {
    "source": "WIRED Security",
@@ -234,12 +234,12 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 13
+   "added": 12
   },
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Security Affairs",
@@ -304,14 +304,59 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 199,
-  "unenriched": 82,
+  "done": 108,
+  "pending": 208,
+  "unenriched": 91,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting ':' delimiter: line 53 column 3 (char 4251)"
   ]
  },
  "items": [
+  {
+   "id": "714886073da25dd0",
+   "source": "CSO Online",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.csoonline.com/article/4250669/palo-alto-networks-bets-4-5b-on-enterprise-ai-with-applied-compute-acquisition.html",
+   "published": "2026-11-19T11:36:10+00:00",
+   "title": "Palo Alto Networks aposta 4,5 mil milhões de dólares em IA empresarial com a compra da Applied Compute",
+   "summary": "A Palo Alto Networks concordou em adquirir a Applied Compute numa transação totalmente em ações avaliada em 4,5 mil milhões de dólares. O negócio visa integrar a plataforma e a equipa de investigação da startup para ajudar as empresas a adotar e proteger modelos de inteligência artificial de forma segura. O cofundador e CEO da Applied Compute, Yash Patil, assumirá o cargo de codiretor de IA na empresa adquirente. A conclusão da operação está prevista para o terceiro trimestre fiscal de 2027.",
+   "image": "https://www.csoonline.com/wp-content/uploads/2026/10/4235787-0-31296100-1792065592-shutterstock_691590181.jpg?quality=50&strip=all",
+   "points": [
+    "A Palo Alto Networks comprou a Applied Compute por 4,5 mil milhões de dólares.",
+    "A aquisição foca-se na segurança, treino e implementação de modelos de IA para empresas.",
+    "O CEO da Applied Compute, Yash Patil, tornará-se codiretor de IA da Palo Alto."
+   ],
+   "title_original": "Palo Alto Networks bets $4.5B on enterprise AI with Applied Compute acquisition",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite à Palo Alto expandir as suas capacidades de segurança e oferta de inteligência artificial para o mercado empresarial.",
+   "todo": "Garantir a monitorização e a avaliação de risco na adoção de novas ferramentas de inteligência artificial na nuvem."
+  },
+  {
+   "id": "3d382cf2ec8f5374",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/tfl-customers-personal-data-exposed/",
+   "published": "2026-11-19T11:35:00+00:00",
+   "title": "TfL alerta que 265.000 clientes de cartões fotográficos podem ter tido dados pessoais expostos",
+   "summary": "A entidade de transportes de Londres foi alertada para um incidente de segurança após o envio de emails através do seu sistema para os clientes de cartões Oyster Photocard. O problema resultou na potencial exposição de dados pessoais de milhares de utilizadores. A organização identificou a falha na sequência do envio destas comunicações automáticas.",
+   "image": null,
+   "points": [
+    "A entidade de transportes de Londres (TfL) enfrentou uma exposição de dados.",
+    "Cerca de 265.000 clientes de Oyster Photocard foram potencialmente afetados.",
+    "O alerta surgiu após o envio de emails a partir do próprio sistema da TfL."
+   ],
+   "title_original": "TfL Warns 265,000 Photocard Customers May Have Had Personal Data Exposed",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Expõe milhares de utilizadores a potenciais riscos de roubo de identidade e burlas direcionadas.",
+   "todo": "Ficar atento a comunicações suspeitas e verificar regularmente a segurança das contas associadas a serviços de transporte."
+  },
   {
    "id": "45584a3597b1228a",
    "source": "Ars Technica Security",
@@ -13726,52 +13771,6 @@
    "enriched": true,
    "why": "Demonstra como agentes automatizados conseguem fintar a correlação de alertas tradicionais em ambientes cloud.",
    "todo": "Implementa monitorização comportamental na cloud e limita estritamente os privilégios atribuídos a funções e identidades IAM."
-  },
-  {
-   "id": "fb5ac890be2a0d21",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
-   "published": "2026-11-13T15:27:05+00:00",
-   "title": "Novos ataques Mior e Skyfall permitem a anfitriões de nuvem maliciosos roubar segredos de VMs AMD SEV-SNP",
-   "summary": "Foram divulgados dois novos ataques, denominados Mior e Skyfall, que afetam máquinas virtuais protegidas por AMD SEV-SNP. Estas falhas permitem que um anfitrião malicioso leia dados confidenciais do interior das máquinas virtuais. Além disso, a variante Mior consegue modificar a memória e falsificar relatórios de estado do software. Para concretizar os ataques, é necessário controlo prévio do hipervisor e, no caso do Mior, também da BIOS do servidor.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi28SrA-dW0l0kreAg1vMHHOgBRMM7lzxv5qg2FT2HzRxReJ96pxZP4Fjpm15fYWDDgWpbBI8iC119aE37t_kmQ4guoA70NUlJsdiA4hFvTg8fflx9fsKqUsGuoB-S9VS5pPd38EBVYRGmvKIT5EylE3IwEK8bBCp5CkLrdTwhbyUA2xWN_0iOynP33yE8/s1600/amd-flaws.jpg",
-   "points": [
-    "Mior e Skyfall visam máquinas virtuais AMD SEV-SNP.",
-    "Anfitriões maliciosos conseguem ler dados protegidos.",
-    "Ataque Mior pode alterar memória e relatórios.",
-    "Exigem controlo prévio do hipervisor e da BIOS."
-   ],
-   "title_original": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Compromete garantias fundamentais de isolamento e confidencialidade em ambientes de computação confidencial.",
-   "todo": "Aplica atualizações de firmware e BIOS recomendadas pelos fabricantes de hardware e restringe o acesso físico e administrativo aos anfitriões."
-  },
-  {
-   "id": "c3cb9f9906170c50",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/in-other-news-new-cisa-director-nominee-connected-car-hacking-baker-tilly-data-breach/",
-   "published": "2026-11-13T15:20:00+00:00",
-   "title": "Outras Notícias: Novo candidato a Diretor da CISA, Hacking de Carros Conectados e Violação de Dados na Baker Tilly",
-   "summary": "Foram divulgados vários desenvolvimentos relevantes no setor que incluem novas políticas e riscos tecnológicos. A Siemens detalhou a sua política de advisories de segurança e surgiram alertas sobre vulnerabilidades na ferramenta OpenAI Codex. Adicionalmente, a Microsoft emitiu avisos relativos a riscos de backdoors ocultos em pesos de modelos de inteligência artificial. Estes tópicos destacam a diversidade de vetores de ameaça atualmente monitorizados pelos especialistas.",
-   "image": null,
-   "points": [
-    "Siemens detalha política de segurança.",
-    "Identificados riscos no OpenAI Codex.",
-    "Microsoft alerta para backdoors em modelos de IA.",
-    "Notícias recolhem vários alertas tecnológicos."
-   ],
-   "title_original": "In Other News: New CISA Director Nominee, Connected Car Hacking, Baker Tilly Data Breach",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra a amplitude de riscos emergentes que vão desde a cadeia de suprimentos de IA até às políticas de divulgação de vulnerabilidades.",
-   "todo": "Mantém uma política rigorosa de atualização para ferramentas de desenvolvimento e modelos de inteligência artificial."
   }
  ]
 }

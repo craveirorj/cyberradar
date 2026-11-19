@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T09:46:53.232946+00:00",
+ "updated": "2026-11-19T10:07:29.827921+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -29,7 +29,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -74,7 +74,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -244,7 +244,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -305,13 +305,35 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 184,
-  "unenriched": 79,
+  "pending": 185,
+  "unenriched": 80,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "7fde31af5d7966f7",
+   "source": "SAPO Tek",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://tek.sapo.pt/noticias/internet/artigos/ciberataque-a-comissao-europeia-afeta-sistemas-de-salarios-e-licencas-e-pode-ter-exposto-dados-pessoais/",
+   "published": "2026-11-19T09:47:03+00:00",
+   "title": "Ciberataque à Comissão Europeia afeta sistemas de salários e licenças e pode ter exposto dados pessoais",
+   "summary": "Um grupo de atacantes utilizou a ferramenta de inteligência artificial ARTEX num ciberataque direcionado à Comissão Europeia que já dura há mais de dez dias. O incidente afetou os sistemas de salários e de gestão de licenças da instituição. Atualmente, ainda não é possível confirmar se dados pessoais de funcionários foram comprometidos.",
+   "image": null,
+   "points": [
+    "Atacantes usaram a ferramenta de IA ARTEX num ataque à Comissão Europeia.",
+    "O ciberataque prolonga-se por mais de dez dias e afetou sistemas de salários e licenças.",
+    "Ainda não se sabe ao certo se dados pessoais de funcionários foram expostos."
+   ],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": true,
+   "why": "Compromete sistemas administrativos sensíveis de uma instituição europeia central com impacto potencial na privacidade dos funcionários.",
+   "todo": "Monitorizar sistemas internos de controlo de acessos e rever registos de atividade à procura de comportamentos anómalos."
+  },
   {
    "id": "7aba46b2e297d42b",
    "source": "BleepingComputer",
@@ -333,6 +355,29 @@
    "enriched": true,
    "why": "Incumbe as empresas de manterem a vigilância sobre potenciais fugas de dados na dark web.",
    "todo": "Monitorize regularmente os ativos corporativos e reforce a deteção de ameaças em canais subterrâneos."
+  },
+  {
+   "id": "bfadadb8ef76265d",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203440/hacking/nginx2rootai-discovers-five-critical-nginx-flaws-and-a-path-to-root.html",
+   "published": "2026-11-19T09:21:19+00:00",
+   "title": "nginx2root: IA descobre cinco falhas críticas no nginx e um caminho para root",
+   "summary": "Foram descobertas cinco vulnerabilidades críticas no nginx, juntamente com um erro no kernel do Linux, através de investigação que utilizou IA. A falha mais grave, catalogada como CVE-2026-123007, afeta o controlo de fluxo HTTP/2 e permite a execução remota de código sem autenticação. Ao encadear esta falha com o erro do kernel, um atacante pode alcançar privilégios de root num sistema vulnerável.",
+   "image": "https://i0.wp.com/securityaffairs.com/wp-content/uploads/2026/11/image-49.png?resize=1024%2C670&#038;ssl=1",
+   "points": [
+    "A descoberta expõe cinco falhas no nginx e um erro no kernel do Linux com exploits comprovados.",
+    "A vulnerabilidade CVE-2026-123007 permite execução remota de código através do fluxo HTTP/2.",
+    "Quase 10 milhões de serviços na Internet utilizam versões vulneráveis do Nginx.",
+    "A correção para o problema foi introduzida na versão 1.31.9."
+   ],
+   "title_original": "nginx2root:AI Discovers Five Critical nginx Flaws and a Path to Root",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Afeta milhões de servidores web públicos globalmente, permitindo acesso total não autorizado se não for corrigido.",
+   "todo": "Atualizar imediatamente o Nginx para a versão 1.31.9 ou superior para colmatar a falha no HTTP/2."
   },
   {
    "id": "c31168ebf53521e3",
@@ -13736,52 +13781,6 @@
    "enriched": true,
    "why": "Afeta a disponibilidade de ferramentas essenciais de comunicação e produtividade a nível mundial.",
    "todo": "Acompanhe os canais oficiais de estado dos serviços da Microsoft para obter atualizações sobre a recuperação."
-  },
-  {
-   "id": "8e464b1ec50065d3",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/hackers-ai-weaker-cyber-attacks/",
-   "published": "2026-11-13T13:45:00+00:00",
-   "title": "Excesso de confiança de hackers em IA pode resultar em ciberataques mais fracos, diz investigadora da Proofpoint",
-   "summary": "A investigadora Selena Larson, da Proofpoint, apontou que a dependência excessiva dos cibercriminosos em relação à inteligência artificial tem resultado em diversos erros operacionais. Segundo a análise, há poucas provas de que esta utilização tenha tornado os ataques mais sofisticados. Os atacantes acabam por tropeçar devido a falhas provocadas por essa automação descuidada.",
-   "image": null,
-   "points": [
-    "Quem: Investigadora Selena Larson da Proofpoint.",
-    "O quê: A análise da utilização de inteligência artificial por cibercriminosos.",
-    "Como: Através da observação de erros cometidos pelos atacantes.",
-    "Impacto: Ataques mais fracos e sem aumento real de sofisticação."
-   ],
-   "title_original": "Hackers' Overreliance on AI Can Result in Weaker Cyber-Attacks, Proofpoint Researcher Says",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra que a dependência cega da IA por parte de criminosos gera falhas que podem ser detetadas mais facilmente.",
-   "todo": "Mantenha as defesas tradicionais ativas, pois os atacantes continuam a cometer erros estruturais."
-  },
-  {
-   "id": "893498fc6e50ee32",
-   "source": "Pplware Segurança",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://pplware.sapo.pt/internet/seguranca/atencao-burloes-podem-usar-cenario-de-falha-da-microsoft-para-roubar-dados-e-dinheiro/",
-   "published": "2026-11-13T13:40:00+00:00",
-   "title": "Atenção: burlões podem usar cenário de falha da Microsoft para roubar dados e dinheiro!",
-   "summary": "Os recentes incidentes nos serviços da Microsoft estão a ser utilizados como pretexto para campanhas de fraude. Os criminosos aproveitam o momento de preocupação dos utilizadores para tentar capturar dados pessoais e credenciais de acesso. Contudo, adotar cuidados simples ajuda a mitigar o sucesso destas tentativas maliciosas durante falhas tecnológicas.",
-   "image": null,
-   "points": [
-    "Quem: Burlões e utilizadores dos serviços afetados.",
-    "O quê: Exploração da falha da Microsoft para campanhas fraudulentas.",
-    "Impacto: Roubo de dados pessoais e credenciais de acesso.",
-    "Como: Aproveitamento da preocupação dos utilizadores."
-   ],
-   "title_original": null,
-   "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": true,
-   "why": "Os atacantes aproveitam crises tecnológicas para enganar utilizadores distraídos e roubar informações sensíveis.",
-   "todo": "Desconfie de contactos inesperados relacionados com a falha tecnológica e nunca partilhe credenciais ou dados pessoais."
   }
  ]
 }

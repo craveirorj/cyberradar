@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T20:27:38.748900+00:00",
+ "updated": "2026-11-19T20:45:14.110597+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CISA Advisories",
@@ -89,7 +89,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 24
+   "added": 23
   },
   {
    "source": "SecurityWeek",
@@ -109,7 +109,7 @@
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CSO Online",
@@ -124,7 +124,7 @@
   {
    "source": "Ars Technica Security",
    "ok": true,
-   "added": 8
+   "added": 9
   },
   {
    "source": "WIRED Security",
@@ -284,7 +284,7 @@
   {
    "source": "Securelist (Kaspersky)",
    "ok": true,
-   "added": 6
+   "added": 7
   },
   {
    "source": "Risky Bulletin",
@@ -294,7 +294,7 @@
   {
    "source": "Troy Hunt",
    "ok": true,
-   "added": 2
+   "added": 3
   },
   {
    "source": "Cyber Centre Canadá",
@@ -309,15 +309,33 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 208,
-  "unenriched": 96,
+  "done": 12,
+  "pending": 307,
+  "unenriched": 196,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting ':' delimiter: line 61 column 3 (char 5095)"
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "Expecting value: line 33 column 7 (char 2855)"
   ]
  },
  "items": [
+  {
+   "id": "545852a9591f5a6b",
+   "source": "Ars Technica Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://arstechnica.com/security/2026/11/man-charged-with-spying-on-silicon-valley-tech-and-defense-company-for-russia/",
+   "published": "2026-11-19T20:29:46+00:00",
+   "title": "Man charged with spying on Silicon Valley tech and defense company for Russia",
+   "summary": "25-year-old accused of stalking employees at coffee shop and in an \"aggressive\" car pursuit.",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2023/05/getty-digital-gavel-1152x648.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "A Russian national has been indicted on suspicions he was a Russian spy who stalked and surveilled employees of a Silicon Valley company that was assisting Ukraine in its ongoing war with its western neighbor. Igor D’iu, 25, allegedly photographed the employees and their computer screens as they worked at a coffee shop located near the company’s Palo Alto office, federal prosecutors said Wednesday . He also kept a list of home addresses of employees and a senior executive. At one point, prosecutors said, D’iu trailed an employee as she traveled home from Palo Alto to San Francisco. An affidavit filed in the case referred to the employee as FEMP1, short for female employee, and said the event left her “in a state of emotional distress.” Evasive and irregular turns “FEMP1 made evasive and irregular turns, took back roads, and turned into a grocery store parking lot where D’IU continued aggressively following her vehicle,” an FBI special agent wrote. “D’IU followed FEMP1 through U-turns, illegal left turns, and ran a red light to stay with FEMP1 for nearly thirty miles. FEMP1 called 911 while driving and was instructed to drive directly to San Francisco Police Department (“SFPD”) Mission Station. Near SFPD Mission Station, FEMP1 flagged an SFPD patrol vehicle and reported the incident. D’IU left once FEMP1 made contact with the patrol vehicle.” Read full article Comments"
+  },
   {
    "id": "67df130650e4ee78",
    "source": "HackRead",
@@ -13726,28 +13744,6 @@
    "enriched": true,
    "why": "Expõe fragilidades críticas nas redes de telecomunicações globais que permitem a espionagem de utilizadores.",
    "todo": "Implementar firewalls de sinalização especializadas (como GTP firewalls) para bloquear sessões e comandos maliciosos."
-  },
-  {
-   "id": "0c129e9a6874ad13",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/uncategorized/2026/11/a-week-in-security-november-9-november-15-2",
-   "published": "2026-11-16T08:01:00+00:00",
-   "title": "Uma semana em segurança (9 de novembro – 15 de novembro)",
-   "summary": "O panorama semanal de cibersegurança registou vários incidentes globais de destaque. Entre eles contam-se uma interrupção mundial dos serviços da Microsoft 365 e a exposição de dados médicos de milhões de pessoas. Verificaram-se também ataques a infraestruturas de marcas conhecidas e explorações de falhas ativamente usadas por atacantes. O impacto distribui-se por vários setores afetados por fugas de dados e indisponibilidade de serviços.",
-   "image": null,
-   "points": [
-    "Ocorre uma interrupção global nos serviços da Microsoft 365.",
-    "Dados médicos de milhões de pessoas foram expostos.",
-    "Várias falhas de segurança foram corrigidas em atualizações de emergência."
-   ],
-   "title_original": "A week in security (November 9 – November 15)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque resume as principais ameaças e incidentes que afetaram utilizadores e empresas ao longo da semana.",
-   "todo": "Mantenha o software e os navegadores atualizados e adote práticas rigorosas de proteção contra phishing e roubo de dados."
   }
  ]
 }

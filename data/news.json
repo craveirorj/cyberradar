@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T22:26:59.560156+00:00",
+ "updated": "2026-11-19T22:48:14.288217+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -164,7 +164,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "Cisco Talos",
@@ -189,7 +189,7 @@
   {
    "source": "CrowdStrike Blog",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "SentinelLabs",
@@ -309,16 +309,81 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 213,
-  "unenriched": 94,
+  "done": 120,
+  "pending": 206,
+  "unenriched": 85,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "8236f5eb74b094df",
+   "source": "CrowdStrike Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.crowdstrike.com/en-us/blog/crowdstrike-helps-protect-against-nginx2root-cve-2026-123007/",
+   "published": "2026-11-19T22:41:18.646206+00:00",
+   "title": "NGINX2Root: Identificar e Proteger com a Plataforma CrowdStrike Falcon",
+   "summary": "A segurança de servidores e aplicações baseadas em NGINX tem sido foco de novas orientações técnicas. A plataforma CrowdStrike Falcon destaca-se na identificação proativa de vulnerabilidades e na proteção destas infraestruturas. Esta abordagem visa mitigar o risco de exploração por parte de agentes maliciosos que procuram elevar privilégios. O impacto direto traduz-se numa maior resiliência operativa para as organizações.",
+   "image": null,
+   "points": [
+    "Foco na segurança de ambientes NGINX.",
+    "Uso da plataforma CrowdStrike Falcon para proteção.",
+    "Mitigação de riscos de escalação de privilégios."
+   ],
+   "title_original": "NGINX2Root: Identify and Protect with the CrowdStrike Falcon Platform",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda a blindar servidores web críticos contra acessos não autorizados.",
+   "todo": "Implemente soluções de deteção e resposta em endpoints e mantenha os servidores NGINX atualizados."
+  },
+  {
+   "id": "82779fce477634aa",
+   "source": "AWS Security Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://aws.amazon.com/blogs/security/your-aws-security-identity-and-governance-guide-to-reinvent-2026/",
+   "published": "2026-11-19T22:31:34+00:00",
+   "title": "Guia AWS de Segurança, Identidade e Governança para o re:Invent 2026",
+   "summary": "A equipa de Segurança, Identidade e Governança da AWS convidou os utilizadores para o evento re:Invent em Las Vegas, agendado para o final de 2026. O evento aborda o impacto dos agentes de inteligência artificial autónomos na identidade, deteção e proteção de redes. Serão realizadas cerca de 120 sessões focadas em múltiplos temas de segurança, incluindo o dia dedicado no hotel Wynn. O objetivo é preparar as organizações para os novos desafios da governança na cloud.",
+   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/19/Security-Identity-Governance-guide-Figure-1.png",
+   "points": [
+    "Conferência AWS re:Invent marcada para o final de 2026 em Las Vegas.",
+    "Foco nos desafios de segurança trazidos por agentes de IA autónomos.",
+    "Mais de 120 sessões técnicas dedicadas à segurança e governança na cloud."
+   ],
+   "title_original": "Your AWS Security, Identity, and Governance guide to re:Invent 2026",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite antecipar as novas estratégias de segurança para ambientes em nuvem impulsionados por IA.",
+   "todo": "Acompanhe as novidades e sessões do evento para alinhar a estratégia de segurança na cloud da sua organização."
+  },
+  {
+   "id": "df29d71aedcbd867",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
+   "published": "2026-11-19T22:25:42+00:00",
+   "title": "Piratas informáticos roubam dados de 1,6 milhões de clientes do SBC Medical Group",
+   "summary": "O SBC Medical Group reportou à entidade reguladora norte-americana SEC que sofreu dois incidentes de cibersegurança. Estas ocorrências resultaram na exposição de informações sensíveis de clientes e colaboradores. No total, os dados pessoais de 1,6 milhões de pessoas foram comprometidos. O impacto centra-se no risco de utilização indevida destas informações privadas.",
+   "image": null,
+   "points": [
+    "Incidente reportado pelo SBC Medical Group à SEC.",
+    "Dois ataques cibernéticos expuseram dados sensíveis.",
+    "1,6 milhões de pessoas afetadas com roubo de dados pessoais."
+   ],
+   "title_original": "Hackers steal data of 1.6 million SBC Medical Group customers",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia o risco massivo de exposição de dados em empresas do setor da saúde.",
+   "todo": "Monitore contas afetadas e reforce a vigilância contra tentativas de phishing direcionadas."
+  },
   {
    "id": "db582c0dbbaec095",
    "source": "Security Affairs",
@@ -13705,73 +13770,6 @@
    "enriched": true,
    "why": "Evidencia que os riscos de segurança e privacidade também provêm de insiders com privilégios de acesso abusivos.",
    "todo": "Implemente controlos rigorosos de acesso aos dados e monitorize os registos de auditoria de utilizadores internos."
-  },
-  {
-   "id": "e9d254e7f0266904",
-   "source": "Cybersecurity Dive",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cybersecuritydive.com/spons/beyond-vulnerability-management-unified-exposure-management-turns-volume-i/873540/",
-   "published": "2026-11-16T10:00:00+00:00",
-   "title": "Além da gestão de vulnerabilidades: Gestão Unificada de Exposições transforma volume em ações priorizadas",
-   "summary": "A Gestão Unificada de Exposições une a visibilidade de sistemas, a priorização orientada por ameaças e a correção rápida. O modelo permite transformar o enorme volume de alertas gerados em ações concretas. Desta forma, as falhas mais críticas são eliminadas com maior eficácia.",
-   "image": null,
-   "points": [
-    "O quê: Solução de Gestão Unificada de Exposições (UEM).",
-    "Como: Agrega visibilidade, priorização de atacantes e remediação.",
-    "Impacto: Redução eficiente do volume de alertas em ações focadas."
-   ],
-   "title_original": "Beyond vulnerability management: Unified Exposure Management turns volume into prioritized action",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite às equipas de TI e segurança otimizar o tempo de resposta face ao excesso de avisos de vulnerabilidade.",
-   "todo": "Implemente ferramentas que centralizem a visibilidade e priorizem correções de segurança por ordem de criticidade."
-  },
-  {
-   "id": "ab141f2f3d91e8fe",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203188/ai/artex-how-cybercriminals-use-ai-agents-to-scale-their-attacks.html",
-   "published": "2026-11-16T09:55:32+00:00",
-   "title": "ARTEX: Como os cibercriminosos utilizam agentes de IA para escalar os seus ataques",
-   "summary": "A investigação da Amazon detetou agentes de IA executados através da framework ARTEX a roubar credenciais e a testar bypasses em identificações geradas por deepfake. Os dados recolhidos através de sensores engodos revelaram campanhas orquestradas presumivelmente por grupos ligados à China. Os agentes partilhavam grafos de conhecimento persistentes para coordenar missões de reconhecimento, avaliar credenciais e alimentar ferramentas automatizadas com chaves roubadas.",
-   "image": null,
-   "points": [
-    "Quem: Grupos suspeitos ligados à China e equipa de inteligência da Amazon.",
-    "O quê: Utilização da framework de IA ARTEX para roubo de credenciais.",
-    "Como: Agentes de IA autónomos a planear, executar e partilhar dados de campanhas maliciosas.",
-    "Impacto: Roubo de chaves e credenciais de modelos de IA para escalar ataques."
-   ],
-   "title_original": "ARTEX: How Cybercriminals Use AI Agents to Scale Their Attacks",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Revela a nova vaga de ataques automatizados onde agentes de IA coordenam operações cibernéticas complexas sem intervenção humana constante.",
-   "todo": "Proteja e rodeie as chaves de acesso a APIs e credenciais de IA com políticas rígidas de rotação e autenticação."
-  },
-  {
-   "id": "3b1ebac31945534a",
-   "source": "WeLiveSecurity (ESET)",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.welivesecurity.com/en/privacy/is-it-safe-upload-passport-id-online/",
-   "published": "2026-11-16T09:55:00+00:00",
-   "title": "É seguro carregar o meu passaporte ou documento de identificação online?",
-   "summary": "Muitas vezes, os cidadãos são obrigados a partilhar documentos de identificação altamente sensíveis e dados biométricos com serviços terceiros. Para mitigar potenciais incidentes de roubo de identidade, é fundamental adotar medidas defensivas rigorosas. Estas precauções ajudam a reduzir os riscos inerentes à exposição de dados pessoais na internet.",
-   "image": null,
-   "points": [
-    "O quê: Partilha online de documentos de identificação e dados biométricos.",
-    "Impacto: Exposição a riscos de roubo de identidade junto de terceiros.",
-    "Como: Necessidade de minimizar a exposição através de boas práticas."
-   ],
-   "title_original": "Is it safe to upload my passport or ID online?",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Lembra a importância de proteger dados de identificação pessoal essenciais ao interagir com plataformas online.",
-   "todo": "Partilhe documentos de identidade apenas com plataformas fidedignas e verifique as políticas de retenção de dados dos serviços."
   }
  ]
 }

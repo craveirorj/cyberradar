@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T12:06:33.578325+00:00",
+ "updated": "2026-11-19T12:26:39.523847+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -74,7 +74,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -89,12 +89,12 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -173,8 +173,8 @@
   },
   {
    "source": "Google Threat Intelligence",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "500 Server Error: Internal Server Error for url: https://cloudblog.withgoogle.com/topics/threat-intelligence/rss/"
   },
   {
    "source": "Google Project Zero",
@@ -194,7 +194,7 @@
   {
    "source": "Elastic Security Labs",
    "ok": true,
-   "added": 1
+   "added": 2
   },
   {
    "source": "Rapid7",
@@ -234,7 +234,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 12
+   "added": 11
   },
   {
    "source": "Help Net Security",
@@ -264,7 +264,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -305,13 +305,35 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 196,
-  "unenriched": 79,
+  "pending": 199,
+  "unenriched": 78,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "d02f8572d5f1ee4d",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/critical-apache-roller-axis-vulnerabilities-exploited-in-attacks/",
+   "published": "2026-11-19T12:13:24+00:00",
+   "title": "Vulnerabilidades críticas no Apache Roller e Axis exploradas em ataques",
+   "summary": "Atores maliciosos estão a direcionar ataques para o Confluence Data Center através de uma falha no Axis. Em simultâneo, a Apache emitiu um aviso relativamente a ataques direcionados ao Roller. Estas explorações aproveitam vulnerabilidades críticas nestas ferramentas para comprometer os sistemas afetados. As organizações que utilizam estes softwares devem monitorizar e aplicar as correções necessárias.",
+   "image": null,
+   "points": [
+    "Atacantes visam o Confluence Data Center explorando uma falha no Axis.",
+    "A Apache emitiu alertas sobre ataques direcionados ao Roller.",
+    "As vulnerabilidades críticas estão a ser ativamente exploradas."
+   ],
+   "title_original": "Critical Apache Roller, Axis Vulnerabilities Exploited in Attacks",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Estas falhas críticas permitem que atacantes comprometam plataformas empresariais amplamente utilizadas.",
+   "todo": "Consulte os avisos oficiais de segurança e aplique imediatamente as atualizações ou correções disponibilizadas para o Axis e o Apache Roller."
+  },
   {
    "id": "aa09e38c305a0ce9",
    "source": "HackRead",
@@ -327,12 +349,34 @@
     "Uma das vulnerabilidades data de 2015 e permitia execução de código sem login.",
     "As correções abrangem o NGINX Open Source e o NGINX Plus."
    ],
-   "title_original": "F5 Patches Two NGINX HTTP/2 Vulnerabilities, One Dating Back to 2015",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Permite que atacantes executem código remotamente sem autenticação nas versões afetadas.",
    "todo": "Atualize imediatamente o NGINX Open Source e o NGINX Plus para as versões corrigidas disponibilizadas pela F5."
+  },
+  {
+   "id": "4fc5c33492cc1356",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/the-governance-gap-in-open-weight-ai-and-what-to-do-about-it/",
+   "published": "2026-11-19T12:00:00+00:00",
+   "title": "A lacuna de governação na IA de pesos abertos e o que fazer quanto a isso",
+   "summary": "A adoção de inteligência artificial de pesos abertos tem crescido devido aos custos mais baixos, à privacidade dos dados e a um maior controlo. No entanto, muitas organizações estão a ignorar os riscos de segurança associados a esta tecnologia. A falta de uma governação adequada pode expor as empresas a vulnerabilidades significativas. É essencial que as entidades adotem medidas para mitigar estes perigos operacionais.",
+   "image": null,
+   "points": [
+    "Custos reduzidos e privacidade impulsionam a IA de pesos abertos.",
+    "Muitas organizações ignoram os riscos de segurança associados.",
+    "A falta de governação adequada cria lacunas operacionais."
+   ],
+   "title_original": "The Governance Gap in Open-Weight AI and What to Do About It",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Ignorar os riscos de segurança na IA aberta pode resultar em exposições graves de dados e falhas de controlo.",
+   "todo": "Implemente políticas rigorosas de governação de IA e avalie regularmente os riscos de segurança associados aos modelos de pesos abertos utilizados."
   },
   {
    "id": "937f390d6b182cf8",
@@ -349,9 +393,9 @@
     "A funcionalidade desativa as APIs WebGL, WebGL2 e WebGPU.",
     "O objetivo principal é reduzir a superfície de ataque."
    ],
-   "title_original": "Microsoft tests new Edge Lockdown Mode that disables GPU APIs",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Ajuda a diminuir a superfície de ataque do navegador ao desativar APIs gráficas.",
    "todo": "Mantenha o seu navegador atualizado e acompanhe o lançamento oficial de novas opções de segurança."
@@ -371,9 +415,9 @@
     "Cerca de 40 cooperativas de crédito irlandesas tiveram dados de beneficiários expostos.",
     "Foram expostos IBANs e nomes, mas as passwords e fundos não foram afetados."
    ],
-   "title_original": "Cyberattack on service provider exposes payee data at 40 Irish credit unions",
+   "title_original": null,
    "category": "Fuga de dados",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Expôs dados bancários de beneficiários de dezenas de instituições financeiras devido a uma falha num fornecedor.",
    "todo": "Monitore contas bancárias regularmente e evite transferências em resposta a contactos suspeitos."
@@ -1379,9 +1423,9 @@
     "O suspeito foi recrutado através da aplicação Telegram.",
     "O alvo da vigilância foram funcionários da Palantir Technologies."
    ],
-   "title_original": "Russian charged with spying on Palantir employees for Moscow",
+   "title_original": null,
    "category": "Ataque/APT",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Revela campanhas de espionagem e recrutamento de agentes direcionados a empresas de tecnologia de defesa.",
    "todo": ""
@@ -13723,50 +13767,6 @@
    "enriched": true,
    "why": "Importa porque protege os dados financeiros dos utilizadores ao delegar pagamentos em assistentes de inteligência artificial.",
    "todo": "Utilize cartões virtuais ou mecanismos de pagamento isolados sempre que recorrer a assistentes automatizados para compras online."
-  },
-  {
-   "id": "879a230695f79139",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/os-bastidores-da-operacao-cloudfire-a-engenharia-do-golpe-do-google-agenda/",
-   "published": "2026-11-13T16:00:00+00:00",
-   "title": "Os bastidores da ‘Operação CloudFire’: a engenharia do golpe do Google Agenda",
-   "summary": "A campanha maliciosa 'Operação CloudFire', descoberta pela Material Security em agosto, utilizou convites fraudulentos do Google Agenda para contornar a autenticação multifator (MFA) de utilizadores corporativos. O esquema recorreu a uma arquitetura de três camadas que incluiu iscas através de contas comprometidas, redirecionadores oficiais do Google para passar em filtros de segurança, verificação humana com Cloudflare Turnstile e um proxy reverso dinâmico em memória para roubar sessões de login. O impacto foca-se no roubo bem-sucedido de credenciais e sessões de funcionários de empresas.",
-   "image": "https://www.estadao.com.br/resizer/v2/SHLV6ENWMVA5BHF7MKBN3BM6RA.png?quality=80&auth=d05bd3325bd650c66c46d8a7f4335b4b6b70cd025a5967d27580d8e99e1103fb&width=710",
-   "points": [
-    "Quem: Os autores da Operação CloudFire e alvos corporativos.",
-    "O Quê: Campanha de phishing baseada em convites falsos do Google Agenda e proxies reversos para roubar sessões e burlar MFA.",
-    "Impacto: Compromisso de contas empresariais e bypass de mecanismos robustos de autenticação de duas etapas."
-   ],
-   "title_original": null,
-   "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque prova que os atacantes abusam de serviços legítimos de calendário e ferramentas de colaboração para enganar utilizadores e filtros de segurança.",
-   "todo": "Desconfie de convites de calendário inesperados de remetentes desconhecidos e valide sempre os domínios de autenticação antes de inserir credenciais."
-  },
-  {
-   "id": "19ad942142494871",
-   "source": "Elastic Security Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.elastic.co/security-labs/threat-command/agentic-offensive-frameworks-detection-artex",
-   "published": "2026-11-13T16:00:00+00:00",
-   "title": "Por dentro do ciclo: Cinco frameworks de ataque baseadas em IA que nunca pedem permissão",
-   "summary": "Cinco frameworks ofensivas baseadas em agentes de IA autónomos — ARTEX, CyberStrikeAI, Cairn, PentAGI e HexStrike — foram identificadas em intrusões reais e investigações de resposta a incidentes pela Google, Mandiant e Microsoft. Estas ferramentas utilizam modelos de linguagem de grande escala (LLM) para planear e executar ataques de forma automatizada, dispensando a intervenção humana contínua. O impacto afeta as equipas defensivas, uma vez que estas ferramentas operam rapidamente em rajadas, ignoram restrições de autorização por defeito e gerem tráfego ruidoso mas altamente dinâmico.",
-   "image": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt65a3888c587a2e5a/6af6ddafd41eec3efa5ffb68/agentic-offensive-frameworks.png",
-   "points": [
-    "Quem: Equipas de resposta a incidentes (Google, Microsoft, Mandiant) e atacantes a usar frameworks de IA.",
-    "O Quê: Adoção generalizada de ferramentas de pirataria autónomas geridas por inteligência artificial em ataques reais.",
-    "Impacto: Aceleração e automação de intrusões cibernéticas, exigindo defesas comportamentais mais rápidas das organizações."
-   ],
-   "title_original": "Inside the loop: Five AI attack frameworks that never ask permission",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque a automação de ataques por IA reduz drasticamente o tempo necessário para comprometer redes empresariais.",
-   "todo": "Implemente monitorização comportamental em tempo real na rede e endpoints para detetar rajadas rápidas de atividade maliciosa automatizada."
   }
  ]
 }

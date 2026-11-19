@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T03:26:54.465270+00:00",
+ "updated": "2026-11-19T03:46:52.575249+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -89,7 +89,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -173,8 +173,8 @@
   },
   {
    "source": "Google Threat Intelligence",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "500 Server Error: Internal Server Error for url: https://cloudblog.withgoogle.com/topics/threat-intelligence/rss/"
   },
   {
    "source": "Google Project Zero",
@@ -305,14 +305,36 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 186,
-  "unenriched": 78,
+  "pending": 187,
+  "unenriched": 79,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "5128ef42275011f7",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/palo-alto-networks-to-buy-ai-startup-applied-compute-for-4-5-billion/",
+   "published": "2026-11-19T03:25:23+00:00",
+   "title": "Palo Alto Networks compra startup de IA Applied Compute por 4,5 mil milhões de dólares",
+   "summary": "A empresa de cibersegurança Palo Alto Networks anunciou a aquisição da startup de inteligência artificial Applied Compute. O negócio, realizado inteiramente em ações, visa reforçar as capacidades da empresa no domínio da IA. A plataforma adquirida permitirá à Palo Alto Networks otimizar e executar modelos de IA de código aberto em nuvens públicas e soberanas.",
+   "image": null,
+   "points": [
+    "Palo Alto Networks adquire Applied Compute.",
+    "Negócio avaliado em 4,5 mil milhões de dólares.",
+    "Foco na execução de modelos de IA em nuvem."
+   ],
+   "title_original": "Palo Alto Networks to Buy AI Startup Applied Compute for $4.5 Billion",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Esta aquisição demonstra a aposta estratégica das empresas de segurança na integração de IA para melhorar a proteção de dados.",
+   "todo": ""
+  },
   {
    "id": "124ed4a5f3b266df",
    "source": "SANS ISC",
@@ -13767,28 +13789,6 @@
    "enriched": true,
    "why": "Demonstra a rapidez com que vulnerabilidades críticas em equipamentos de perímetro são exploradas para destruir redes.",
    "todo": "Aplique imediatamente as correções de segurança disponibilizadas pelos fabricantes para os gateways e portais de acesso remoto."
-  },
-  {
-   "id": "f9c805ed76036b95",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/13/apple-secure-exclaves-security-architecture/",
-   "published": "2026-11-13T11:27:56+00:00",
-   "title": "Apple details Secure Exclaves, isolated runtimes for camera and microphone data",
-   "summary": "A Apple detalhou a arquitetura de segurança Secure Exclaves, criada para isolar e proteger os dados recolhidos pelas câmaras e microfones durante o processamento em segundo plano. Esta tecnologia garante que nem o sistema operativo principal, nem aplicações de terceiros ou a própria empresa conseguem aceder aos dados analisados. A arquitetura é utilizada em funcionalidades como o reconhecimento de pessoas no HomeView, Siri Recap e Live Rewind. O impacto reflete-se num reforço significativo da privacidade do utilizador em dispositivos móveis.",
-   "image": null,
-   "points": [
-    "A arquitetura Secure Exclaves isola dados de câmara e microfone face ao sistema operativo.",
-    "O sistema impede que aplicações ou a própria Apple acedam a informações processadas em background.",
-    "A tecnologia protege recursos avançados como o reconhecimento de pessoas e assistentes virtuais."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Sublinha a importância de isolar dados sensíveis de hardware contra acessos indevidos por parte do sistema operativo.",
-   "todo": "Adote arquiteturas de isolamento de hardware e software sempre que necessite de processar dados biométricos ou de áudio sensíveis."
   }
  ]
 }

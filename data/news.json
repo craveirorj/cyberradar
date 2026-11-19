@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T01:03:59.380011+00:00",
+ "updated": "2026-11-19T01:10:32.418890+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -173,8 +173,8 @@
   },
   {
    "source": "Google Threat Intelligence",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "500 Server Error: Internal Server Error for url: https://cloudblog.withgoogle.com/topics/threat-intelligence/rss/"
   },
   {
    "source": "Google Project Zero",
@@ -321,20 +321,20 @@
    "link": "https://www.tenable.com/blog/nginx2root-cve-2026-123007-frequently-asked-questions-about-five-critical-nginx",
    "published": "2026-11-19T00:18:05+00:00",
    "title": "NGINX2Root (CVE-2026-123007): Perguntas frequentes sobre cinco vulnerabilidades críticas no NGINX",
-   "summary": "Foi publicada informação detalhada sobre cinco vulnerabilidades críticas de execução remota de código no NGINX, agrupadas sob a designação NGINX2Root. Estas falhas podem ser combinadas com uma falha de escalação de privilégios locais no kernel do Linux para obter acesso total de root. A vulnerabilidade mais urgente é a CVE-2026-123007, uma falha de execução remota sem autenticação na implementação HTTP/2. A F5 lançou correções a 18 de novembro para resolver estas e outras falhas no NGINX.",
+   "summary": "A F5 lançou uma atualização de segurança para corrigir cinco vulnerabilidades críticas de execução remota de código no NGINX, agrupadas como NGINX2Root, além de outras falhas. Entre os problemas destaca-se o CVE-2026-123007, uma falha de execução remota de código não autenticada no HTTP/2 que já possui um exploit público no GitHub. Os atacantes podem combinar estas falhas com uma vulnerabilidade por corrigir de escalação de privilégios locais no kernel do Linux para obter acesso total de root. Esta situação afeta os sistemas que utilizam as funcionalidades vulneráveis ativas.",
    "image": "https://www.tenable.com/sites/default/files/images/articles/NGINX2Root.png",
    "points": [
-    "Cinco falhas críticas de execução remota de código detetadas no NGINX.",
-    "A CVE-2026-123007 afeta a implementação HTTP/2 e já tem código de exploração público.",
-    "As falhas podem ser encadeadas com uma vulnerabilidade do kernel Linux para obter privilégios de root.",
-    "A F5 disponibilizou correções de segurança a 18 de novembro."
+    "Cinco falhas críticas de execução remota de código no NGINX foram corrigidas pela F5.",
+    "O CVE-2026-123007 afeta o HTTP/2 e já tem código de exploração público disponível.",
+    "As falhas podem ser encadeadas com uma vulnerabilidade no kernel do Linux para atingir privilégios de root.",
+    "A correção foi incluída num lançamento de segurança extraordinário a 18 de novembro."
    ],
    "title_original": "NGINX2Root (CVE-2026-123007): Frequently asked questions about five critical NGINX vulnerabilities",
    "category": "Vulnerabilidade",
    "translated": true,
    "enriched": true,
-   "why": "Permite que atacantes obtenham controlo total de servidores web afetados se não forem aplicadas as correções.",
-   "todo": "Instale imediatamente os patches de segurança disponibilizados pela F5 para o NGINX."
+   "why": "Permite que atacantes obtenham controlo total de root sobre os servidores afetados através do encadeamento de falhas críticas.",
+   "todo": "Instale imediatamente o pacote de segurança lançado pela F5 a 18 de novembro de 2026."
   },
   {
    "id": "c808af3473f2461a",

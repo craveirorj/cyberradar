@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T13:47:28.430312+00:00",
+ "updated": "2026-11-19T13:56:08.300726+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -178,8 +178,8 @@
   },
   {
    "source": "Google Threat Intelligence",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "500 Server Error: Internal Server Error for url: https://cloudblog.withgoogle.com/topics/threat-intelligence/rss/"
   },
   {
    "source": "Google Project Zero",
@@ -279,7 +279,7 @@
   {
    "source": "Check Point Research",
    "ok": true,
-   "added": 6
+   "added": 5
   },
   {
    "source": "Securelist (Kaspersky)",
@@ -309,13 +309,11 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 48,
-  "pending": 281,
-  "unenriched": 164,
+  "done": 120,
+  "pending": 213,
+  "unenriched": 91,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "Expecting property name enclosed in double quotes: line 32 column 5 (char 2610)"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
@@ -326,21 +324,21 @@
    "lang": "en",
    "link": "https://therecord.media/ukraine-ransomware-arrests-cyber",
    "published": "2026-11-19T13:30:00+00:00",
-   "title": "Ucrânia desmantela rede de ransomware que extorquia empresas americanas de petróleo e saúde",
-   "summary": "As autoridades ucranianas detiveram quatro suspeitos de integrarem uma rede internacional de ransomware. O grupo é acusado de extorquir mais de 40 milhões de dólares a empresas em todo o mundo. A operação policial visou desorganizar a atividade criminosa direcionada a setores críticos.",
+   "title": "Ucrânia desmantela rede de ransomware que extorquia empresas de petróleo e saúde dos EUA",
+   "summary": "As autoridades ucranianas detiveram quatro suspeitos de integrarem uma rede internacional de ransomware. O grupo é acusado de extorquir mais de 40 milhões de dólares a várias empresas a nível mundial. Entre as vítimas encontram-se organizações norte-americanas dos setores da saúde e do petróleo.",
    "image": "https://cms.therecord.media/uploads/Ukraine_prosecutor_office_c19ff7d532.jpg",
    "points": [
-    "Quatro suspeitos detidos na Ucrânia por autoridades locais.",
-    "Rede internacional focada em ataques de ransomware.",
+    "Quatro suspeitos detidos na Ucrânia.",
+    "Rede internacional focada em ransomware.",
     "Mais de 40 milhões de dólares extorquidos globalmente.",
-    "Empresas de saúde e petróleo foram os principais alvos."
+    "Afetou empresas petrolíferas e de saúde dos EUA."
    ],
    "title_original": "Ukraine exposes ransomware network extorting US oil, healthcare firms",
    "category": "Ransomware",
    "translated": true,
    "enriched": true,
-   "why": "Mostra como operações policiais internacionais conseguem desmantelar redes de extorsão com impactos multimilionários.",
-   "todo": "Mantenha cópias de segurança (backups) offline atualizadas e adote soluções robustas de deteção e resposta a ameaças."
+   "why": "Mostra como operações policiais internacionais conseguem desmantelar redes de extorsão cibernética altamente lucrativas.",
+   "todo": "Mantenha backups atualizados e isolados e utilize soluções robustas de deteção de ransomware."
   },
   {
    "id": "bb08ed3a2f59d244",
@@ -358,9 +356,9 @@
     "Recomenda-se elevar a robustez dos sistemas de filtragem para diminuir o risco.",
     "Grandes modelos de linguagem ajudam a colmatar lacunas, mas não são imunes."
    ],
-   "title_original": "30 Years of Gatekeeper Asymmetry Doom: The Paradox that Makes Powerful LLMs More Vulnerable",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Explica um princípio fundamental de vulnerabilidade estrutural na validação de dados e IA.",
    "todo": "Reforce os mecanismos de validação de entradas em sistemas críticos e evite confiar apenas em filtros básicos."
@@ -380,9 +378,9 @@
     "A exploração ocorreu logo após o lançamento de um código de prova de conceito.",
     "Os invasores prepararam ferramentas para facilitar o movimento lateral."
    ],
-   "title_original": "Hackers Exploit Cisco Expressway Vulnerability Soon After PoC Release",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Evidencia a rapidez com que os atacantes convertem PoCs públicos em ataques reais contra infraestruturas corporativas.",
    "todo": "Aplique patches de segurança e atualizações de firmware nos dispositivos de perímetro o mais rapidamente possível."
@@ -402,9 +400,9 @@
     "A vulnerabilidade permite a tomada de controlo de sites vulneráveis por atacantes.",
     "A equipa de segurança avisa que exploits públicos podem surgir rapidamente."
    ],
-   "title_original": "Drupal patches critical RCE flaw, warns exploits may surface quickly",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Protege os gestores de websites contra potenciais ataques de tomada de controlo através de falhas no CMS.",
    "todo": "Atualize imediatamente o Drupal para a versão corrigida mais recente."
@@ -424,9 +422,9 @@
     "Trata-se de uma falha de execução remota de código que já está a ser explorada ativamente.",
     "A CISA adicionou a vulnerabilidade ao catálogo de explorações conhecidas com prazos de correção."
    ],
-   "title_original": "Exploited Puppet flaw puts the server that configures your endpoint fleet at risk (CVE-2026-115731)",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Ameaça diretamente os servidores centrais de configuração de frotas de endpoints nas empresas.",
    "todo": "Consulte os alertas da CISA e aplique as atualizações de segurança recomendadas pelo fornecedor para a CVE-2026-115731."
@@ -1694,20 +1692,20 @@
    "link": "https://www.itsecurity.pt/news/threats/cinco-vulnerabilidades-criticas-afetam-servidores-nginx",
    "published": "2026-11-19T00:00:00+00:00",
    "title": "Cinco vulnerabilidades críticas afetam servidores NGINX",
-   "summary": "Investigadores descobriram cinco falhas de segurança críticas em servidores NGINX que possibilitam a execução remota de código sem qualquer autenticação prévia. A empresa F5 já disponibilizou as respetivas correções para mitigar o problema. Os administradores devem aplicar estas atualizações com urgência para evitar explorações.",
+   "summary": "Investigadores descobriram cinco falhas de segurança críticas em servidores NGINX que possibilitam a execução remota de código sem exigência de autenticação. A F5 já desenvolveu e disponibilizou correções para mitigar estes problemas. O impacto prende-se com o risco potencial de acesso não autorizado aos sistemas afetados.",
    "image": null,
    "points": [
-    "Cinco falhas críticas detetadas em servidores NGINX.",
-    "Permitem execução remota de código sem exigir autenticação.",
-    "A F5 já desenvolveu e disponibilizou as correções necessárias.",
-    "Afeta diretamente a segurança de infraestruturas web."
+    "Cinco falhas críticas descobertas no NGINX.",
+    "Permitem execução remota de código sem autenticação.",
+    "A F5 já disponibilizou correções.",
+    "Risco de compromisso total dos servidores."
    ],
    "title_original": null,
    "category": "Vulnerabilidade",
    "translated": false,
    "enriched": true,
-   "why": "Permite que atacantes comprometam servidores web sem precisarem de credenciais de acesso.",
-   "todo": "Atualize imediatamente os servidores NGINX com os patches de segurança disponibilizados pela F5."
+   "why": "Servidores web vulneráveis podem ser facilmente explorados por atacantes para assumirem o controlo dos sistemas.",
+   "todo": "Aplique imediatamente as correções disponibilizadas pela F5 nos seus servidores NGINX."
   },
   {
    "id": "0fc679bd70b9cd0a",
@@ -1717,20 +1715,20 @@
    "link": "https://www.itsecurity.pt/news/threats/comissao-europeia-investiga-possivel-fuga-de-dados-apos-ciberataque",
    "published": "2026-11-19T00:00:00+00:00",
    "title": "Comissão Europeia investiga possível fuga de dados após ciberataque",
-   "summary": "A Comissão Europeia foi alvo de um ciberataque que afetou vários sistemas internos durante cerca de dez dias. O incidente criou suspeitas de que dados pessoais possam ter sido comprometidos. A extensão total dos danos e dos dados afetados continua por esclarecer pelas autoridades.",
+   "summary": "A Comissão Europeia sofreu um ciberataque que pode ter comprometido dados pessoais de utilizadores. Vários sistemas internos ficaram inoperacionais durante aproximadamente dez dias devido à incidência. A extensão total dos danos e dos dados afetados continua por apurar.",
    "image": null,
    "points": [
-    "Comissão Europeia alvo de ciberataque recente.",
-    "Sistemas internos ficaram indisponíveis por cerca de dez dias.",
-    "Existe a suspeita de compromisso de dados pessoais.",
-    "A extensão exata do impacto ainda está sob investigação."
+    "Comissão Europeia alvo de ciberataque.",
+    "Possível fuga de dados pessoais.",
+    "Sistemas internos indisponíveis por cerca de dez dias.",
+    "Extensão do incidente ainda por esclarecer."
    ],
    "title_original": null,
    "category": "Fuga de dados",
    "translated": false,
    "enriched": true,
-   "why": "Evidencia que mesmo instituições de topo e governamentais são alvo de incidentes prolongados.",
-   "todo": "Monitore os acessos aos sistemas internos e implemente registos de auditoria rigorosos."
+   "why": "Evidencia que mesmo instituições de topo enfrentam incidentes graves com potenciais fugas de informação sensível.",
+   "todo": "Monitore os acessos aos sistemas e reforce os protocolos de resposta a incidentes e monitorização de redes."
   },
   {
    "id": "9b5c27bfe2178c5d",
@@ -1740,20 +1738,20 @@
    "link": "https://www.itsecurity.pt/news/news/ataques-a-cloud-aceleram-com-recurso-a-ia",
    "published": "2026-11-19T00:00:00+00:00",
    "title": "Ataques à cloud aceleram com recurso à IA",
-   "summary": "Um relatório da Fortinet registou 2,3 mil milhões de tentativas de ataques de força bruta direcionadas a ambientes em nuvem. O estudo alerta que os atacantes utilizam inteligência artificial para acelerar a exploração de vulnerabilidades logo após a respetiva divulgação. Esta automatização aumenta significativamente a pressão sobre as equipas de segurança.",
+   "summary": "Um estudo recente da Fortinet contabilizou 2,3 mil milhões de tentativas de ataques de força bruta direcionados a ambientes na cloud. O relatório alerta que a inteligência artificial está a encurtar significativamente o intervalo temporal entre a divulgação de vulnerabilidades e a respetiva exploração. Esta aceleração eleva o risco para as infraestruturas empresariais.",
    "image": null,
    "points": [
-    "Registadas 2,3 mil milhões de tentativas de força bruta na cloud.",
-    "Relatório divulgado pela Fortinet sobre ameaças atuais.",
-    "A inteligência artificial acelera a exploração de vulnerabilidades recém-divulgadas.",
-    "Aumenta a urgência na aplicação de correções de segurança."
+    "2,3 mil milhões de ataques de força bruta na cloud.",
+    "Dados divulgados num relatório da Fortinet.",
+    "Uso de IA acelera exploração de vulnerabilidades.",
+    "Redução drástica do tempo de resposta defensiva."
    ],
    "title_original": null,
    "category": "Vulnerabilidade",
    "translated": false,
    "enriched": true,
-   "why": "Demonstra como a inteligência artificial está a acelerar e a automatizar ameaças em ambientes em nuvem.",
-   "todo": "Utilize autenticação multifator em todos os acessos à cloud e aplique atualizações de segurança rapidamente."
+   "why": "A automação com IA por parte dos atacantes obriga as empresas a reagirem muito mais depressa na proteção da cloud.",
+   "todo": "Implemente autenticação multifator rigorosa e automatize a gestão de patches em ambientes cloud."
   },
   {
    "id": "58edaf73423ff8a5",
@@ -5484,20 +5482,20 @@
    "link": "https://www.itsecurity.pt/news/threats/falha-critica-no-java-ameaca-aplicacoes-empresariais",
    "published": "2026-11-18T00:00:00+00:00",
    "title": "Falha crítica no Java ameaça aplicações empresariais",
-   "summary": "A vulnerabilidade Java4Shell afeta plataformas empresariais populares como Jira, Jenkins e Keycloak. A falha possibilita a execução remota de código sem exigir autenticação por parte do atacante. A Oracle e o OpenJDK já lançaram atualizações corretivas para resolver o problema.",
+   "summary": "Foi identificada a vulnerabilidade Java4Shell, capaz de permitir a execução remota de código sem autenticação em plataformas empresariais amplamente utilizadas, como Jira, Jenkins e Keycloak. A Oracle e o OpenJDK já criaram e disponibilizaram patches de correção para mitigar a falha. Esta situação representa uma ameaça direta para a estabilidade e segurança de infraestruturas corporativas.",
    "image": null,
    "points": [
-    "Vulnerabilidade Java4Shell detetada em ambientes Java.",
-    "Afeta aplicações amplamente usadas como Jira, Jenkins e Keycloak.",
+    "Vulnerabilidade Java4Shell afeta o ecossistema Java.",
     "Permite execução remota de código sem autenticação.",
-    "Oracle e OpenJDK já disponibilizaram correções oficiais."
+    "Atinge aplicações como Jira, Jenkins e Keycloak.",
+    "Oracle e OpenJDK já lançaram correções."
    ],
    "title_original": null,
    "category": "Vulnerabilidade",
    "translated": false,
    "enriched": true,
-   "why": "Coloca em risco plataformas empresariais críticas usadas na gestão de projetos e automação.",
-   "todo": "Identifique aplicações baseadas em Java vulneráveis e instale as correções da Oracle ou OpenJDK."
+   "why": "Muitas empresas utilizam estas ferramentas empresariais, tornando a falha um vetor crítico de intrusão.",
+   "todo": "Atualize urgentemente os componentes Java e as aplicações afetadas para as versões corrigidas."
   },
   {
    "id": "a2ce80c56cbd709a",
@@ -5507,20 +5505,20 @@
    "link": "https://www.itsecurity.pt/news/threats/oracle-corrige-falhas-criticas-em-varios-produtos",
    "published": "2026-11-18T00:00:00+00:00",
    "title": "Oracle corrige falhas críticas em vários produtos",
-   "summary": "A Oracle lançou 655 novas correções de segurança para resolver cerca de 950 vulnerabilidades nos seus produtos. Mais de 300 destas falhas podem ser exploradas remotamente sem autenticação prévia. Do total, 62 vulnerabilidades foram classificadas com grau crítico de gravidade.",
+   "summary": "A Oracle lançou um pacote com 655 novas atualizações de segurança para resolver cerca de 950 vulnerabilidades nos seus produtos. Mais de 300 destas falhas podiam ser exploradas remotamente sem qualquer autenticação, sendo que 62 foram classificadas como críticas. A medida visa proteger os utilizadores contra potenciais explorações generalizadas.",
    "image": null,
    "points": [
-    "Oracle lança 655 correções para cerca de 950 falhas.",
-    "Mais de 300 vulnerabilidades exploráveis remotamente sem autenticação.",
-    "62 falhas classificadas como de nível crítico.",
-    "Atualizações abrangem vários produtos da marca."
+    "Oracle lança 655 novas correções de segurança.",
+    "Quase 950 vulnerabilidades endereçadas.",
+    "Mais de 300 falhas exploráveis remotamente sem autenticação.",
+    "62 vulnerabilidades catalogadas como críticas."
    ],
    "title_original": null,
    "category": "Vulnerabilidade",
    "translated": false,
    "enriched": true,
-   "why": "Representa um pacote massivo de correções para falhas que podem ser exploradas remotamente.",
-   "todo": "Consulte os boletins de segurança da Oracle e aplique os patches de atualização nos sistemas afetados."
+   "why": "Um volume tão elevado de correções demonstra a vasta superfície de ataque presente no software empresarial atual.",
+   "todo": "Consulte os boletins da Oracle e aplique as atualizações de segurança nos produtos afetados."
   },
   {
    "id": "0656fa74d40ad0ce",
@@ -5530,20 +5528,20 @@
    "link": "https://www.itsecurity.pt/news/threats/google-alerta-para-ciberataques-automatizados-com-ia",
    "published": "2026-11-18T00:00:00+00:00",
    "title": "Google alerta para ciberataques automatizados com IA",
-   "summary": "A Google emitiu um aviso sobre o uso crescente de inteligência artificial por cibercriminosos. As novas ferramentas maliciosas conseguem realizar ataques complexos divididos em várias etapas. Este cenário destaca-se pela redução drástica da necessidade de intervenção humana por parte dos atacantes.",
+   "summary": "A Google emitiu um aviso sobre uma nova vaga de ataques cibernéticos potenciados por inteligência artificial. Os cibercriminosos estão a utilizar ferramentas avançadas capazes de perpetrar ataques complexos em várias fases com intervenção humana quase nula. Isto eleva a sofisticação e a frequência das ameaças no panorama digital.",
    "image": null,
    "points": [
-    "Aviso emitido pela Google sobre IA em ciberataques.",
-    "Ferramentas criminosas executam ataques complexos e multi-etapas.",
-    "Necessidade de intervenção humana reduzida ao mínimo.",
-    "Nova fase na sofisticação das ameaças digitais."
+    "Alerta emitido pela Google sobre IA e ciberataques.",
+    "Ferramentas executam ataques complexos em várias etapas.",
+    "Necessidade mínima de intervenção humana pelos atacantes.",
+    "Marca uma nova fase no cibercrime."
    ],
    "title_original": null,
    "category": "Ataque/APT",
    "translated": false,
    "enriched": true,
-   "why": "Sinaliza uma evolução preocupante nos ataques automatizados em larga escala com recurso a IA.",
-   "todo": "Invista em soluções de segurança baseadas em comportamento e inteligência artificial para deteção precoce."
+   "why": "A automação inteligente de ataques torna a deteção tradicional menos eficaz, exigindo defesas igualmente avançadas.",
+   "todo": "Adote soluções de segurança baseadas em IA e analítica comportamental para detetar anomalias complexas."
   },
   {
    "id": "ef05a9552cd0df17",
@@ -9396,20 +9394,20 @@
    "link": "https://www.itsecurity.pt/news/analysis/bug-de-julho-na-origem-de-falha-global-do-microsoft-365",
    "published": "2026-11-17T00:00:00+00:00",
    "title": "Bug de julho na origem de falha global do Microsoft 365",
-   "summary": "Uma falha introduzida numa atualização de software em julho esteve na origem de uma interrupção global do Microsoft 365 a 12 de novembro. O problema técnico deixou mais de 80% dos servidores de gateway completamente sem resposta. O incidente afetou a estabilidade e o acesso aos serviços da plataforma.",
+   "summary": "Uma falha inserida num software em julho esteve na origem da interrupção global do Microsoft 365 que ocorreu a 12 de novembro. O problema técnico deixou mais de 80% dos servidores de gateway completamente sem resposta. O incidente demonstrou a fragilidade operacional associada a falhas em componentes específicos.",
    "image": null,
    "points": [
-    "Falha global do Microsoft 365 ocorreu a 12 de novembro.",
-    "Origem esteve num bug inserido numa atualização de julho.",
-    "Mais de 80% dos servidores de gateway ficaram sem resposta.",
-    "Afetou a disponibilidade do serviço a nível mundial."
+    "Bug introduzido em julho causou falha global.",
+    "Afetou o Microsoft 365 a 12 de novembro.",
+    "Mais de 80% dos servidores de gateway sem resposta.",
+    "Interrupção de serviços à escala mundial."
    ],
    "title_original": null,
    "category": "Geral",
    "translated": false,
    "enriched": true,
-   "why": "Ilustra como um erro de software antigo pode despoletar interrupções globais em serviços essenciais.",
-   "todo": "Teste rigorosamente as atualizações de software em ambientes controlados antes de as implementar em produção."
+   "why": "Mostra como um pequeno erro de software introduzido meses antes pode desencadear uma crise global.",
+   "todo": "Teste rigorosamente todas as atualizações de software em ambientes controlados antes da implementação em produção."
   },
   {
    "id": "ed25de99a0498f47",
@@ -9419,19 +9417,19 @@
    "link": "https://www.itsecurity.pt/news/news/ciiwa-summit-2026-debate-soberania-digital-ciberseguranca-e-inteligencia-artificial-em-cascais",
    "published": "2026-11-17T00:00:00+00:00",
    "title": "CIIWA Summit 2026 debate soberania digital, cibersegurança e inteligência artificial em Cascais",
-   "summary": "A Casa das Histórias Paula Rego, em Cascais, acolhe a 2 de dezembro o encontro CIIWA Summit 2026. A iniciativa assinala o 19.º aniversário da CIIWA com a presença do contra-almirante António Gameiro Marques. O evento conta com painéis focados na soberania digital, segurança, desinformação e inteligência artificial.",
+   "summary": "O evento realiza-se a 2 de dezembro na Casa das Histórias Paula Rego, em Cascais, contando com a intervenção do contra-almirante António Gameiro Marques. A iniciativa celebra o 19.º aniversário da CIIWA através de dois painéis de discussão. Os temas centrais incluem a soberania digital, a segurança, a desinformação e a inteligência artificial.",
    "image": null,
    "points": [
-    "CIIWA Summit 2026 realiza-se a 2 de dezembro em Cascais.",
-    "Evento celebra o 19.º aniversário da CIIWA.",
-    "Participação confirmada do contra-almirante António Gameiro Marques.",
-    "Debates centrados na soberania digital, IA e segurança."
+    "CIIWA Summit 2026 em Cascais a 2 de dezembro.",
+    "Presença confirmada do contra-almirante António Gameiro Marques.",
+    "Celebração do 19.º aniversário da CIIWA.",
+    "Debate focado em soberania digital, IA e segurança."
    ],
    "title_original": null,
    "category": "IA",
    "translated": false,
    "enriched": true,
-   "why": "Promove o debate nacional sobre desafios estratégicos de cibersegurança e soberania digital.",
+   "why": "Promove a discussão nacional e a partilha de conhecimento sobre os rumos da cibersegurança e soberania digital.",
    "todo": ""
   },
   {
@@ -12452,20 +12450,20 @@
    "link": "https://www.itsecurity.pt/news/threats/portugal-regista-mais-41-de-ciberataques-em-outubro",
    "published": "2026-11-16T00:00:00+00:00",
    "title": "Portugal regista mais 41% de ciberataques em outubro",
-   "summary": "As organizações em Portugal enfrentaram uma média de 2.829 ciberataques semanais durante o mês de outubro. Este valor representa um acréscimo de 41% em comparação com o período homólogo de 2025. Os dados evidenciam o aumento contínuo da pressão cibernética sobre o tecido empresarial e institucional nacional.",
+   "summary": "As organizações em Portugal enfrentaram uma média de 2.829 ciberataques semanais durante o mês de outubro. Este valor representa um aumento de 41% em comparação com o período homólogo de 2025. O crescimento evidencia a intensificação da ameaça digital sobre o tecido empresarial e institucional nacional.",
    "image": null,
    "points": [
-    "Média de 2.829 ciberataques semanais em Portugal em outubro.",
-    "Aumento de 41% em relação ao ano de 2025.",
-    "Maior exposição das organizações a ameaças digitais.",
-    "Dados refletem um crescimento acentuado da atividade maliciosa."
+    "Média de 2.829 ciberataques semanais em Portugal.",
+    "Dados registados no mês de outubro.",
+    "Aumento de 41% face a 2025.",
+    "Maior pressão sobre as organizações portuguesas."
    ],
    "title_original": null,
    "category": "Ataque/APT",
    "translated": false,
    "enriched": true,
-   "why": "Alerta para o aumento expressivo e preocupante da atividade maliciosa direcionada a organizações em Portugal.",
-   "todo": "Reforce a monitorização de redes e reforce as defesas contra ataques frequentes como o ransomware e phishing."
+   "why": "Alerta para a necessidade urgente de as empresas portuguesas reforçarem as suas defesas face ao crescimento da ameaça.",
+   "todo": "Reveja as políticas de segurança da empresa e assegure formação regular em cibersegurança para todos os colaboradores."
   },
   {
    "id": "cf84ff92eee742b8",
@@ -12475,20 +12473,20 @@
    "link": "https://www.itsecurity.pt/news/threats/microsoft-corrige-falhas-de-ativacao-do-windows",
    "published": "2026-11-16T00:00:00+00:00",
    "title": "Microsoft corrige falhas de ativação do Windows",
-   "summary": "A Microsoft disponibilizou atualizações de emergência para resolver problemas de ativação e licenciamento do sistema operativo. Estas falhas tinham sido introduzidas acidentalmente pelas correções de segurança lançadas em novembro. A medida visa repor o normal funcionamento dos dispositivos afetados.",
+   "summary": "A Microsoft disponibilizou atualizações de emergência para solucionar problemas de licenciamento e ativação do Windows. Estas falhas tinham sido inadvertidamente introduzidas pelas correções de segurança lançadas em novembro. Com esta medida, a fabricante pretende repor o normal funcionamento dos sistemas afetados.",
    "image": null,
    "points": [
-    "Atualizações de emergência lançadas pela Microsoft.",
-    "Destinadas a corrigir falhas de ativação do Windows.",
-    "Problemas foram causados pelos patches de segurança de novembro.",
-    "Repõem o licenciamento e o normal funcionamento dos sistemas."
+    "Microsoft lança atualizações de emergência.",
+    "Resolvidos problemas de ativação e licenciamento do Windows.",
+    "Falhas causadas por patches de segurança anteriores de novembro.",
+    "Correção direcionada para normalizar os sistemas."
    ],
    "title_original": null,
    "category": "Geral",
    "translated": false,
    "enriched": true,
-   "why": "Mostra a importância de corrigir rapidamente erros operacionais causados por patches de segurança.",
-   "todo": "Instale as atualizações de emergência da Microsoft para resolver problemas de licenciamento no Windows."
+   "why": "Ilustra os riscos operacionais associados a falhas em atualizações de rotina lançadas pelos fabricantes.",
+   "todo": "Instale as atualizações de emergência da Microsoft para restaurar o correto licenciamento dos sistemas."
   },
   {
    "id": "8d87100358658906",

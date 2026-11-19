@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T00:06:58.584610+00:00",
+ "updated": "2026-11-19T00:26:47.672933+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -49,7 +49,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -159,7 +159,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "Cisco Talos",
@@ -229,7 +229,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 20
+   "added": 19
   },
   {
    "source": "The Register Security",
@@ -239,7 +239,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -259,7 +259,7 @@
   {
    "source": "Graham Cluley",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "HackRead",
@@ -304,16 +304,59 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 96,
-  "pending": 217,
-  "unenriched": 102,
+  "done": 120,
+  "pending": 191,
+  "unenriched": 77,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 32 column 5 (char 3404)",
-   "Expecting value: line 73 column 7 (char 7473)"
+   "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "c808af3473f2461a",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/19/nist-quantum-position-verification/",
+   "published": "2026-11-19T00:07:39+00:00",
+   "title": "Verificação de posição quântica pode bloquear hackers remotos, mostra o NIST",
+   "summary": "Físicos do National Institute of Standards and Technology utilizaram fotões entrelaçados para confirmar fisicamente a localização exata de uma parte. A equipa executou com sucesso um protocolo de verificação de posição quântica num edifício de investigação em Boulder, eliminando falhas que permitiam fraudes em esquemas anteriores. Esta inovação visa impedir acessos não autorizados por parte de atacantes remotos.",
+   "image": null,
+   "points": [
+    "O NIST utilizou fotões entrelaçados para validar localizações físicas.",
+    "A experiência em Boulder eliminou vulnerabilidades de esquemas anteriores.",
+    "A técnica reforça a segurança contra hackers remotos."
+   ],
+   "title_original": "Quantum position verification could lock remote hackers out, NIST shows",
+   "category": "Ataque/APT",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite confirmar com exatidão a presença física de um elemento, impedindo fraudes de localização por atacantes.",
+   "todo": ""
+  },
+  {
+   "id": "a4d93bd0c731e6cc",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/produto-e-review/kit-da-maldade-usa-gta-6-para-infectar-computadores/",
+   "published": "2026-11-19T00:00:00+00:00",
+   "title": "Kit da ‘maldade’ usa GTA 6 para hackear computadores",
+   "summary": "Crimiosos colocaram à venda na dark web um pacote completo de golpes temáticos sobre o jogo GTA 6, descoberto pela NordVPN. O kit, comercializado por duzentos dólares em criptomoedas, explora a expectativa pelo lançamento de uma versão para PC através de páginas falsas e drenadores de carteiras. O impacto afeta utilizadores desatentos que procuram conteúdos antecipados e caem nestas burlas.",
+   "image": "https://www.estadao.com.br/resizer/v2/RPBJKKDUEZDSJNFLDFPC7MBYDM.png?quality=80&auth=3f07225ac5818b341c4e6aa90629a538acbf01d49ca4f361de41bc00d65f900b&width=710",
+   "points": [
+    "Crimiosos vendem um kit de golpes na dark web centrado em GTA 6 por duzentos dólares.",
+    "O pacote inclui páginas falsas e drenadores de carteiras de criptomoedas.",
+    "O golpe explora a ausência de uma versão oficial do jogo para computador."
+   ],
+   "title_original": null,
+   "category": "Phishing/Fraude",
+   "translated": false,
+   "enriched": true,
+   "why": "Facilita ataques informáticos a utilizadores comuns sem necessidade de conhecimentos técnicos avançados por parte dos compradores.",
+   "todo": "Desconfie de ofertas de versões antecipadas de jogos populares para PC e evite clicar em links desconhecidos."
+  },
   {
    "id": "58edaf73423ff8a5",
    "source": "AWS Security Blog",
@@ -13742,50 +13785,6 @@
    "enriched": true,
    "why": "Mostra a eficácia da cooperação policial internacional no desmantelamento de redes de comércio criminoso online.",
    "todo": "Mantenha-se afastado de mercados e fóruns ilícitos na dark web, uma vez que as autoridades monitorizam e desmantelam estas redes de forma permanente."
-  },
-  {
-   "id": "9de821d4818bec45",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/13/crackdown-on-uk-medical-record-snooping-after-staff-reported-sneaking-300-times-this-year/5309421",
-   "published": "2026-11-13T11:02:00+00:00",
-   "title": "Crackdown on UK medical record snooping after staff reported sneaking 300+ times this year",
-   "summary": "A autoridade de proteção de dados britânica (ICO) exigiu que os principais líderes de saúde do Reino Unido tomem medidas imediatas após receberem mais de 300 relatórios de funcionários a consultar indevidamente registos médicos em 2026. Os profissionais de saúde foram apanhados a coscuvilhar fichas de conhecidos ou por mera curiosidade, colocando em risco a privacidade dos pacientes e a confiança pública. O regulador exigiu que os diretores executivos confirmem pessoalmente até 27 de novembro a existência de salvaguardas e controlos de acesso adequados.",
-   "image": "https://image.theregister.com/?imageId=5276624&width=800",
-   "points": [
-    "A ICO exigiu garantias aos líderes de saúde devido a mais de 300 casos de acesso indevido a registos de pacientes.",
-    "Funcionários foram detetados a consultar fichas por curiosidade pessoal ou sobre conhecidos.",
-    "Os executivos do setor da saúde têm até 27 de novembro para comprovar a eficácia das salvaguardas de privacidade."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia o perigo interno do acesso ilegítimo a dados sensíveis de saúde por parte de colaboradores autorizados.",
-   "todo": "Implemente auditorias regulares de acesso a dados confidenciais e restrinja as permissões estritamente à necessidade profissional de cada colaborador."
-  },
-  {
-   "id": "5df4bf07aed5b496",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
-   "published": "2026-11-13T10:55:03+00:00",
-   "title": "Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins",
-   "summary": "Uma operação policial internacional desmantelou os servidores associados aos malwares Gootloader, CastleRAT e StealC, ferramentas utilizadas por criminosos para infetar computadores, roubar palavras-passe e preparar ataques de ransomware. As autoridades alemãs apreenderam também cerca de 6,4 milhões de credenciais roubadas que afetavam mais de 40.000 vítimas. A intervenção enfraqueceu significativamente a infraestrutura técnica de vários grupos cibercriminosos.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsu6ZFyYFr1dxp2XHIaG_pyTwkoH58ICgyXLuTthkuYSJVcqAwX_O_bEJYfheyxpYmI7nnok1xrj97q7s-9l8JHFt1ogBAOJAEUqM8_vf6H3a8eYPKzB34d6XrvnkRu8zGaoKMgSJqWsE6u2zYXLdJKTtcDvk3beN6_o40ygJ4MVSMomS3Q1aEFV_jSq8/s1600/gootloader.jpg",
-   "points": [
-    "Uma operação policial internacional neutralizou os servidores dos malwares Gootloader, CastleRAT e StealC.",
-    "As ferramentas eram usadas para roubar credenciais e facilitar ataques de ransomware.",
-    "Foram apreendidas cerca de 6,4 milhões de credenciais de início de sessão pertencentes a mais de 40.000 vítimas."
-   ],
-   "title_original": null,
-   "category": "Ransomware",
-   "translated": false,
-   "enriched": true,
-   "why": "Destaca o impacto de ações policiais conjuntas na destruição de infraestruturas centrais do cibercrime organizado.",
-   "todo": "Utilize gestores de palavras-passe robustos e altere credenciais imediatamente caso suspeite de infeção por infostealers."
   }
  ]
 }

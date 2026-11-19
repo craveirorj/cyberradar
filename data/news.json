@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-19T01:46:45.483731+00:00",
+ "updated": "2026-11-19T02:06:58.776857+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "Pplware Segurança",
@@ -259,12 +259,12 @@
   {
    "source": "Graham Cluley",
    "ok": true,
-   "added": 3
+   "added": 4
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -304,15 +304,60 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 188,
-  "unenriched": 77,
+  "done": 117,
+  "pending": 192,
+  "unenriched": 81,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "124ed4a5f3b266df",
+   "source": "SANS ISC",
+   "region": "US",
+   "lang": "en",
+   "link": "https://isc.sans.edu/diary/rss/33536",
+   "published": "2026-11-19T02:00:03+00:00",
+   "title": "ISC Stormcast For Thursday, November 19th, 2026",
+   "summary": "Este episódio do podcast Stormcast aborda as principais atualizações e análises de cibersegurança do dia 19 de novembro de 2026. A rubrica diária fornece contexto técnico sobre ameaças emergentes e vulnerabilidades ativas. O impacto foca-se na preparação e na conscienciação dos profissionais da área.",
+   "image": null,
+   "points": [
+    "O quê: Análise diária de cibersegurança e ameaças.",
+    "Quando: 19 de novembro de 2026.",
+    "Impacto: Apoio à tomada de decisão e resposta a incidentes."
+   ],
+   "title_original": "ISC Stormcast For Thursday, November 19th, 2026 https://isc.sans.edu/podcastdetail/10186, (Thu, Nov 19th)",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda os profissionais a manterem-se atualizados sobre o panorama de ameaças em constante evolução.",
+   "todo": "Subscreva fontes de inteligência de ameaças fidedignas e reveja os alertas diários."
+  },
+  {
+   "id": "e884bb9a4f7fd151",
+   "source": "SANS ISC",
+   "region": "US",
+   "lang": "en",
+   "link": "https://isc.sans.edu/diary/rss/33534",
+   "published": "2026-11-19T01:53:48+00:00",
+   "title": "Tratar a Análise de Honeypots como Código: Git, Pull Requests e Controlo Humano para IA",
+   "summary": "Um estagiário da SANS.edu partilhou uma abordagem para gerir a análise de honeypots utilizando metodologias de desenvolvimento de software. A técnica aplica ferramentas como Git, pedidos de submissão (pull requests) e validação humana para interagir com a inteligência artificial. O objetivo é otimizar a segurança e o rigor na monitorização de ameaças.",
+   "image": null,
+   "points": [
+    "Quem: Kevin Truong, estagiário da SANS.edu.",
+    "O quê: Gestão de honeypots com práticas de engenharia de software.",
+    "Como: Uso de Git, pull requests e validação humana para IA.",
+    "Impacto: Maior controlo e precisão na análise de segurança."
+   ],
+   "title_original": "Treat Your Honeypot Analysis Like Code: Git, Pull Requests and a Human Gate for AI [Guest Diary], (Wed, Nov 18th)",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Melhora a fiabilidade e a governação na utilização de IA para analisar dados de honeypots.",
+   "todo": "Adote processos de revisão por pares e controlo de versões em projetos de automatização de segurança."
+  },
   {
    "id": "3c8f5ba833ed1e38",
    "source": "Tenable",
@@ -335,6 +380,29 @@
    "enriched": true,
    "why": "Permite que atacantes obtenham controlo total de root sobre os servidores afetados através do encadeamento de falhas críticas.",
    "todo": "Instale imediatamente o pacote de segurança lançado pela F5 a 18 de novembro de 2026."
+  },
+  {
+   "id": "c39fbe2f26b94984",
+   "source": "Graham Cluley",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://grahamcluley.com/smashing-security-podcast-493/",
+   "published": "2026-11-19T00:14:52+00:00",
+   "title": "Podcast Smashing Security #493: Porque é que o seu modelo de IA pode ser um agente adormecido",
+   "summary": "O episódio 493 do podcast Smashing Security debate os riscos associados a modelos de inteligência artificial que podem funcionar como agentes adormecidos maliciosos. Os convidados discutem fraudes baseadas em falsas atualizações de microfones em videochamadas e formas de monitorizar o uso de ferramentas de IA nas empresas. O impacto centra-se na prevenção de fugas de dados corporativos sem proibir o uso de IA.",
+   "image": null,
+   "points": [
+    "Quem: Graham Cluley e Andrius Buinovskis.",
+    "O quê: Riscos de IA como agentes adormecidos e fugas de dados.",
+    "Como: Modificação de parâmetros em modelos e análise de ferramentas usadas pelos funcionários.",
+    "Impacto: Proteção de dados sensíveis nas organizações."
+   ],
+   "title_original": "Smashing Security podcast #493: Why your AI model could be a sleeper agent",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para os riscos ocultos de manipulação de IA e para a necessidade de visibilidade sobre o seu uso empresarial.",
+   "todo": "Monitore as ferramentas de IA utilizadas pelos colaboradores e implemente políticas claras de prevenção de perda de dados."
   },
   {
    "id": "c808af3473f2461a",
@@ -13721,71 +13789,6 @@
    "enriched": true,
    "why": "Sublinha a importância de isolar dados sensíveis de hardware contra acessos indevidos por parte do sistema operativo.",
    "todo": "Adote arquiteturas de isolamento de hardware e software sempre que necessite de processar dados biométricos ou de áudio sensíveis."
-  },
-  {
-   "id": "fbb3a90ff817bc8b",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/bugs/2026/11/google-pushes-second-chrome-update-this-week",
-   "published": "2026-11-13T11:20:50+00:00",
-   "title": "Google pushes second Chrome update this week",
-   "summary": "A Google lançou uma atualização de segurança para o canal Stable do navegador Chrome para corrigir 83 falhas, cinco das quais classificadas com gravidade crítica. Todas as vulnerabilidades críticas corrigidas são do tipo use-after-free (UAF), que ocorrem quando o software acede a memória já libertada. Estas falhas podem resultar em falhas de sistema, corrupção de dados ou execução de código arbitrário por atacantes. A distribuição está a ser feita de forma gradual para utilizadores de Windows, Mac e Linux.",
-   "image": "https://www.malwarebytes.com/wp-content/uploads/sites/2/2026/11/Chrome157-79-up-to-date.png",
-   "points": [
-    "O Google Chrome recebeu uma atualização urgente com 83 correções de segurança.",
-    "Cinco das vulnerabilidades corrigidas são críticas e do tipo use-after-free.",
-    "Falhas UAF podem permitir a execução de código malicioso se exploradas com sucesso."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Destaca a urgência de atualizar navegadores web para mitigar falhas de memória exploráveis por cibercriminosos.",
-   "todo": "Atualize o navegador Google Chrome para a versão mais recente e reinicie a aplicação para aplicar as correções."
-  },
-  {
-   "id": "364305a76537f9aa",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/phishing-rises-faster-europe/",
-   "published": "2026-11-13T11:15:00+00:00",
-   "title": "Phishing Rises Three Times Faster in Europe Than Globally, Proofpoint Finds",
-   "summary": "Novas investigações da Proofpoint revelam que as deteções de ataques de phishing na Europa cresceram 4,5 vezes em termos homólogos, ultrapassando largamente o aumento de 1,5 vezes registado a nível global. Este crescimento acentuado demonstra um foco acrescido dos atacantes no mercado europeu. O impacto traduz-se numa exposição muito superior das organizações e cidadãos europeus a tentativas de fraude digital.",
-   "image": null,
-   "points": [
-    "Os ataques de phishing na Europa cresceram a um ritmo 4,5 vezes superior ao do ano anterior.",
-    "O crescimento europeu supera significativamente a média de aumento registada a nível global."
-   ],
-   "title_original": null,
-   "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": true,
-   "why": "Alerta para a ameaça desproporcionada que o phishing representa atualmente para o contexto europeu.",
-   "todo": "Reforce a formação contínua dos colaboradores em cibersegurança e implemente soluções robustas de filtragem de correio eletrónico."
-  },
-  {
-   "id": "d030547d1ad319e1",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
-   "published": "2026-11-13T11:10:40+00:00",
-   "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
-   "summary": "Um grupo de espionagem estatal, denominado SilentAir, comprometeu equipamentos no interior de operadores móveis em pelo menos seis países asiáticos. Os atacantes utilizaram esta posição para intercetar chamadas e mensagens de texto, focando-se na roubo de códigos de autenticação de dois fatores (2FA) por SMS e na vigilância de utilizadores em Taiwan. A campanha evidencia a vulnerabilidade das infraestruturas de telecomunicações face a operações patrocinadas por estados.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjskRPNlV_kYE1N2eF2J_J0fBvF_nQxnvtaS78Grj04KqkEauvr-R5jO-ynD9nm51SgF2XtCCAsWUbJrHU0wGRnXC9yHmblhNCF8Jt9NdVahMju3voR2z9xb2uqoSi7Nc085UqDBelqg4XDRdjJ2lsF7EeN28rjq7oBc_NpBUWRqLWXiOh9FBRIH28teHM/s1600/telecom-hack.jpg",
-   "points": [
-    "O grupo SilentAir invadiu equipamentos de operadores de telecomunicações em vários países asiáticos.",
-    "O objetivo principal consistiu na interceção de chamadas, SMS e códigos de 2FA.",
-    "A operação visou principalmente espiar utilizadores em Taiwan através de acessos ao núcleo da rede móvel."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Demonstra o risco elevado de comprometimento de infraestruturas críticas de telecomunicações para fins de espionagem.",
-   "todo": "Evite o uso de autenticação por SMS (2FA) sempre que possível, substituindo-a por métodos baseados em aplicações autenticadoras ou chaves de segurança físicas."
   }
  ]
 }

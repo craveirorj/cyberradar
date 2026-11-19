@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-19T07:46:11.989227+00:00",
+ "updated": "2026-11-19T08:07:16.574010+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "Pplware Segurança",
@@ -89,7 +89,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -263,8 +263,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -305,14 +305,57 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 183,
-  "unenriched": 79,
+  "pending": 184,
+  "unenriched": 80,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "59d3b792db480830",
+   "source": "Dark Reading",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.darkreading.com/threat-intelligence/africa-top-spot-most-attacked-region-nigeria-surge",
+   "published": "2026-11-19T08:00:00+00:00",
+   "title": "África Volta ao Topo da Região Mais Ataque, Liderada por Subida na Nigéria",
+   "summary": "A Nigéria enfrentou mais do que o dobro das ameaças cibernéticas em comparação com o ano anterior. Angola e Kenya juntaram-se também aos cinco países mais atacados globalmente. Esta vaga elevou novamente África ao topo das regiões mais visadas.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltcfa70452a477c780/6afe245fab384927766a0238/africa-da-kuk-Getty-1386416241.jpg?width=720&quality=80&disable=upscale",
+   "points": [
+    "Nigéria viu as ameaças duplicar face ao ano anterior.",
+    "Angola e Kenya integram o top 5 global.",
+    "África reassumiu a liderança de região mais atacada."
+   ],
+   "title_original": "Africa Retakes Top Spot as Most Attacked Region, Led by Nigeria Surge",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra uma mudança geográfica significativa na concentração de ataques cibernéticos globais.",
+   "todo": "Reforçar a monitorização de ameaças e os controlos de segurança nas redes locais."
+  },
+  {
+   "id": "e2e32d524f45d098",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/",
+   "published": "2026-11-19T07:45:17+00:00",
+   "title": "PHP Prepara Atualizações Críticas de Segurança para Corrigir Outra Falha RCE",
+   "summary": "Foi divulgada publicamente a vulnerabilidade CVE-2026-115560, que afeta o progresso de carregamento de sessões no PHP. A falha surgiu poucos dias após a aplicação de correções para o PHP2Shell. A equipa prepara agora novas atualizações críticas de segurança.",
+   "image": null,
+   "points": [
+    "Nova falha RCE identificada no PHP.",
+    "CVE-2026-115560 afeta o carregamento de sessões.",
+    "Divulgação ocorreu logo após patches do PHP2Shell."
+   ],
+   "title_original": "PHP Readies Critical Security Updates to Patch Another RCE Flaw",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A linguagem PHP é amplamente utilizada, tornando estas falhas de execução remota altamente perigosas.",
+   "todo": "Aplicar as atualizações de segurança do PHP logo que sejam disponibilizadas pelos maintainers."
+  },
   {
    "id": "9e60f0b7013b6ce4",
    "source": "Help Net Security",
@@ -13745,52 +13788,6 @@
    "enriched": true,
    "why": "Demonstra a capacidade de atacantes avançados infiltrarem-se em infraestruturas de telecomunicações para espionagem.",
    "todo": "Utilize aplicações de mensagens com cifra de ponta a ponta para proteger comunicações sensíveis contra escutas na rede."
-  },
-  {
-   "id": "c927fbd884c6d1f1",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/como-funcionam-os-golpes-com-ia-veja-como-se-proteger/",
-   "published": "2026-11-13T12:15:00+00:00",
-   "title": "Golpes com IA: entenda como funcionam e como se proteger",
-   "summary": "A inteligência artificial generativa permitiu aos criminosos criar textos, áudios e vídeos convincentes, tornando as fraudes mais realistas e difíceis de detetar. Embora muitos ataques mantenham as bases da engenharia social, a IA reduziu os erros gramaticais e falsificou identidades de pessoas e empresas. Como os sinais tradicionais de alerta deixam de ser fiáveis, os utilizadores devem desconfiar de pedidos urgentes de dinheiro e confirmar sempre a identidade do remetente por outro canal.",
-   "image": "https://www.estadao.com.br/resizer/v2/K72APTWOGNNATLUWB6RCMEFCFQ.jpg?quality=80&auth=24a6e7859cdf76be85f28cf98e72738f171a329c7e8b46e29b8cfa59eacf07ed&width=710",
-   "points": [
-    "Quem: Cibercriminosos e utilizadores de serviços digitais.",
-    "O quê: Uso de IA geradora para criar fraudes e clonar identidades de forma realista.",
-    "Impacto: Fraudes mais personalizadas e difíceis de identificar através de erros básicos.",
-    "Como: Através da falsificação de voz, imagem e documentos com menor margem de erro."
-   ],
-   "title_original": null,
-   "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": true,
-   "why": "Facilita fraudes altamente convincentes que enganam mesmo utilizadores atentos, explorando a confiança em conhecidos.",
-   "todo": "Confirme pedidos urgentes de dinheiro ou dados sensíveis através de uma chamada telefónica direta ou canal oficial independente."
-  },
-  {
-   "id": "ae4babcc14fffa0e",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/big-techs/hoje-no-tecmundo-12-jensen-huang-deixa-a-nvidia-caixa-sofre-ataque-hacker-e-mais/",
-   "published": "2026-11-13T12:12:00+00:00",
-   "title": "Hoje no TecMundo (12): Jensen Huang deixa a Nvidia, Caixa sofre ataque hacker e mais",
-   "summary": "Jensen Huang renunciou aos cargos de liderança na Nvidia devido a escândalos pessoais e suspeitas de espionagem, com Colette Kress a assumir o comando temporariamente. A Caixa Vida e Previdência confirmou um ataque informático que expôs dados pessoais de 7,6 milhões de clientes, embora sem comprometer senhas ou dados bancários. Adicionalmente, a Apple integrou o Pix para pagamentos avulsos na App Store no Brasil e funcionários da Rockstar Games votaram pela sindicalização.",
-   "image": "https://www.estadao.com.br/resizer/v2/ZEEX5QPH2ZFEPMTHLWVSCNO5LE.jpeg?quality=80&auth=e77ca2f1ba766cf264b7e65cb72c2817518466309367f2841db4c2f3fa79925a&width=1150",
-   "points": [
-    "Jensen Huang abandonou a Nvidia na sequência de escândalos e suspeitas de espionagem.",
-    "A Caixa Vida e Previdência sofreu um ataque que expôs dados pessoais de 7,6 milhões de clientes.",
-    "A Apple começou a aceitar o Pix para compras pontuais na App Store brasileira.",
-    "Funcionários da Rockstar Games iniciaram votação para sindicalização antes de GTA 6."
-   ],
-   "title_original": null,
-   "category": "Ataque/APT",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como incidentes de segurança e decisões de executivos afetam grandes empresas e milhões de utilizadores.",
-   "todo": "Assegure-se de que monitoriza regularmente os seus dados pessoais e mantém práticas rigorosas de proteção contra exposições em massa."
   }
  ]
 }

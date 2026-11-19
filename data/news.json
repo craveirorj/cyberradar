@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T17:07:54.932892+00:00",
+ "updated": "2026-11-19T17:26:27.814570+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -99,17 +99,17 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CSO Online",
@@ -129,7 +129,7 @@
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 11
+   "added": 12
   },
   {
    "source": "Schneier on Security",
@@ -138,13 +138,13 @@
   },
   {
    "source": "SANS ISC",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 1
   },
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Malwarebytes Labs",
@@ -178,8 +178,8 @@
   },
   {
    "source": "Google Threat Intelligence",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "HTTPSConnectionPool(host='cloudblog.withgoogle.com', port=443): Read timed out. (read timeout=25)"
   },
   {
    "source": "Google Project Zero",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 12,
-  "pending": 330,
-  "unenriched": 218,
+  "done": 0,
+  "pending": 337,
+  "unenriched": 224,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,91 @@
   ]
  },
  "items": [
+  {
+   "id": "2ff5d2ac87e8dee7",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/19/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers/",
+   "published": "2026-11-19T17:16:31+00:00",
+   "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
+   "summary": "Ben Glickman and Alexander Saeedy report: Data from thousands of customers of Visa, Mastercard, and JPMorgan Chase have unnerved consumers in the last week. A Visa spokesman said no payments data, such as card numbers, were affected and Visa’s own systems weren’t involved or affected. It added that the incident involved a third-party service provider...",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "Ben Glickman and Alexander Saeedy report: Data from thousands of customers of Visa, Mastercard, and JPMorgan Chase have unnerved consumers in the last week. A Visa spokesman said no payments data, such as card numbers, were affected and Visa’s own systems weren’t involved or affected. It added that the incident involved a third-party service provider..."
+  },
+  {
+   "id": "82b92648e82def06",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/19/google-spots-first-ever-autonomous-ai-cyberattack-by-russian-speaking-hackers-targeting-france/",
+   "published": "2026-11-19T17:16:14+00:00",
+   "title": "Google spots first-ever autonomous AI cyberattack by Russian-speaking hackers targeting France",
+   "summary": "Jonah Davidov reports: An AI tool developed by Russian-speaking hackers carried out the first-ever fully automated cyberattack, according to a Monday report by Google’s Threat Intelligence Group. Multiple threat actors have been observed “abusing open-source, agentic penetration (pentesting) frameworks to autonomously name discrete phases and specific operational tasks during live intrusions,” the report said. The...",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Jonah Davidov reports: An AI tool developed by Russian-speaking hackers carried out the first-ever fully automated cyberattack, according to a Monday report by Google’s Threat Intelligence Group. Multiple threat actors have been observed “abusing open-source, agentic penetration (pentesting) frameworks to autonomously name discrete phases and specific operational tasks during live intrusions,” the report said. The..."
+  },
+  {
+   "id": "877d7505984d23d5",
+   "source": "CyberScoop",
+   "region": "US",
+   "lang": "en",
+   "link": "https://cyberscoop.com/michael-losapio-cisa-confirmation-hearing/",
+   "published": "2026-11-19T17:11:34+00:00",
+   "title": "Dems call CISA nominee ‘disqualified’ after nomination hearing",
+   "summary": "Michael LoSapio, the Palantir executive and Trump administration nominee for CISA, sparred with Democrats on the committee over who won the 2020 election, Jan. 6 and more.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "Michael LoSapio, the Palantir executive and Trump administration nominee for Director of the Cybersecurity and Infrastructure Security Agency, struck a combative tone with Democrats on Homeland Security and Government Affairs Committee and took sides in several partisan disputes that are likely to complicate his path to confirmation. LoSapio’s hearing lasted less than an hour, far less time than Congress has spent scrutinizing previous CISA nominees, as he was considered alongside a large tranche of other Trump administration nominees that Republicans are attempting to move through Congress during the lame duck session. CISA has lacked a confirmed director for the first two years of the Trump administration, and policymakers have fresh concerns about cyber insecurity in U.S. critical infrastructure, artificial intelligence and other threats. Despite that, LoSapio and senators on the committee spent little time discussing the specifics of his vision for the federal government’s primary defensive cybersecurity agency. When LoSapio was asked about cybersecurity issues, like how he intended to boost cybersecurity resilience of the nation in the wake of last week’s widespread outages, he said organizations should be more proactive implementing baseline protections around inventory, evaluation and patching internet-connected devices. “It’s really important to understand the landscape of the systems you have out in the wild,” said LoSapio. “The things that you operate day-to-day, the systems that you rely on, the systems that are ancillary, and do an extensive evaluation on their vulnerabilities, whether they’ve been patched or not, how they’ve been architected and their defensive capabilities, both things we need to add and the things that exist today, as to how that maps to "
+  },
+  {
+   "id": "c0b2110866740c07",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/cisa-losapio-nomination-trump",
+   "published": "2026-11-19T17:00:00+00:00",
+   "title": "CISA nominee LoSapio vows to bolster cyber defenses while denying Jan. 6 Capitol attack",
+   "summary": "President Donald Trump’s pick to lead the Cybersecurity and Infrastructure Security Agency pledged to lawmakers to uncover any “gaps” within the organization while also denying the Capitol came under attack on January 6, 2021.",
+   "image": "https://cms.therecord.media/uploads/Lo_Sapio_hearing_5a83421791.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "President Donald Trump’s pick to lead the Cybersecurity and Infrastructure Security Agency pledged to lawmakers to uncover any “gaps” within the organization while also denying the Capitol came under attack on January 6, 2021."
+  },
+  {
+   "id": "2a01bbcb107b1e63",
+   "source": "WIRED Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.wired.com/story/google-built-a-giant-mirror-dimension-internet-to-test-its-chrome-ai-agents/",
+   "published": "2026-11-19T17:00:00+00:00",
+   "title": "Google Built a Giant ‘Mirror Dimension’ Internet to Test Its Chrome AI Agents",
+   "summary": "The company’s alternate-universe internet serves as a massive sandbox that allows the Chrome team to properly train AI browsing agents—without the risk of them going rogue.",
+   "image": "https://media.wired.com/photos/6aff2988bee7350f3da10056/master/pass/GettyImages-2229158642.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "IA",
+   "translated": false,
+   "enriched": false,
+   "raw": "The company’s alternate-universe internet serves as a massive sandbox that allows the Chrome team to properly train AI browsing agents—without the risk of them going rogue."
+  },
   {
    "id": "c5e7bc1c42387de6",
    "source": "BleepingComputer",
@@ -1272,9 +1357,9 @@
     "Problemas: Falhas de autenticação e canais de firmware desprotegidos.",
     "Impacto: Perda de controlo de travões e funções de segurança em transportes."
    ],
-   "title_original": "Elecbrakes EB2, VM1, ELBC2000",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Evidencia riscos de cibersegurança em infraestruturas e sistemas de transporte físicos.",
    "todo": "Atualize o firmware dos dispositivos afetados através da aplicação móvel da Elecbrakes."
@@ -13587,117 +13672,6 @@
    "enriched": true,
    "why": "Evidencia o perigo de chaves de API comprometidas em cadeias de fornecedores de inteligência artificial.",
    "todo": "Rotacione chaves de API regularmente e restrinja estritamente os seus privilégios de acesso."
-  },
-  {
-   "id": "7bb4f5d60253726b",
-   "source": "Pplware Segurança",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://pplware.sapo.pt/smartphones-tablets/android/google-messages-ganha-protecao-melhorada-com-gemini-para-travar-burlas-por-sms/",
-   "published": "2026-11-15T07:00:00+00:00",
-   "title": "Google Messages ganha Proteção Melhorada com Gemini para travar burlas por SMS",
-   "summary": "A Google começou a disponibilizar uma nova funcionalidade de Proteção Melhorada com recurso ao Gemini na aplicação Google Messages para combater fraudes por SMS. Esta ferramenta foi criada para responder à evolução das burlas móveis, que deixaram de se centrar em prémios fáceis e passaram a utilizar falsas entregas de encomendas ou propostas de emprego falsas construídas ao longo de vários dias. O objetivo é detetar e bloquear padrões de engenharia social utilizados para enganar os utilizadores.",
-   "image": null,
-   "points": [
-    "Alvo: Utilizadores da aplicação Google Messages.",
-    "O quê: Integração da tecnologia Gemini para detetar e bloquear burlas por SMS.",
-    "Impacto: Protege os cidadãos contra esquemas prolongados de engenharia social e falsas entregas."
-   ],
-   "title_original": null,
-   "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": true,
-   "why": "Ajuda a mitigar o aumento de fraudes baseadas em mensagens de texto enganosas.",
-   "todo": "Ative as ferramentas de proteção automática contra spam nas suas aplicações de mensagens e desconfie de contactos inesperados."
-  },
-  {
-   "id": "f316d41a09fed9d0",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/meta-fined-887-million-in-italy-over-android-gallery-photos-and-videos-on-facebook/",
-   "published": "2026-11-14T19:00:00+00:00",
-   "title": "Meta Fined $887 Million in Italy Over Android Gallery Photos and Videos on Facebook",
-   "summary": "A autoridade italiana multou a Meta em 887 milhões de dólares devido ao acesso não autorizado a fotografias e vídeos da galeria do Android através do Facebook. Esta diretiva protege os smartphones como parte da esfera privada dos utilizadores. A autoridade sublinhou que este tipo de acesso exige um consentimento livre e informado.",
-   "image": null,
-   "points": [
-    "Quem: A autoridade reguladora italiana e a Meta.",
-    "O quê: Multa de 887 milhões de dólares aplicada à Meta.",
-    "Como: Através do acesso a fotografias e vídeos da galeria do Android na aplicação Facebook.",
-    "Impacto: Violação da esfera privada dos utilizadores por falta de consentimento livre e informado."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra a fiscalização rigorosa e as pesadas coimas aplicadas às grandes tecnológicas por violações da privacidade e proteção de dados.",
-   "todo": "Reveja e restrinja as permissões de acesso concedidas às aplicações móveis nas definições do seu smartphone."
-  },
-  {
-   "id": "2aae0ad36a1c0089",
-   "source": "TechCrunch Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://techcrunch.com/2026/11/14/transportation-secretary-blames-routine-equipment-upgrade-for-grounding-flights-nationwide/",
-   "published": "2026-11-14T17:45:04+00:00",
-   "title": "Secretário dos Transportes culpa atualização 'rotineira' de equipamento por interrupção de voos a nível nacional",
-   "summary": "O administrador da FAA, Bryan Bedford, confirmou que a recente paragem de voos a nível nacional se deveu a uma atualização rotineira de equipamentos. A autoridade esclareceu ainda que não existe qualquer indício de que o incidente esteja relacionado com inteligência artificial.",
-   "image": null,
-   "points": [
-    "O administrador da FAA, Bryan Bedford, atribuiu a falha a uma atualização rotineira.",
-    "A interrupção afetou os voos a nível nacional.",
-    "As autoridades confirmaram a inexistência de qualquer ligação a IA."
-   ],
-   "title_original": "Transportation secretary blames ‘routine’ equipment upgrade for grounding flights nationwide",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite esclarecer que falhas de infraestrutura em larga escala podem ter origem técnica convencional e não em incidentes maliciosos.",
-   "todo": "Manter planos de contingência atualizados para falhas operacionais e de infraestrutura tecnológica."
-  },
-  {
-   "id": "403e4bdfaeb6831b",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
-   "published": "2026-11-14T17:27:25+00:00",
-   "title": "Cursor confirma violação de segurança que resultou em extensão maliciosa do Claude Code",
-   "summary": "A Cursor confirmou que sofreu um incidente de segurança após credenciais terem sido roubadas ao fornecedor de infraestrutura de IA Fireworks AI. Esta falha permitiu aos piratas informáticos distribuir uma extensão maliciosa do Claude Code através do marketplace da empresa.",
-   "image": null,
-   "points": [
-    "A Cursor sofreu uma violação de segurança na sua plataforma.",
-    "O ataque teve origem no roubo de credenciais ao fornecedor Fireworks AI.",
-    "Houve distribuição de uma extensão maliciosa do Claude Code no marketplace."
-   ],
-   "title_original": "Cursor confirms security breach led to malicious Claude Code extension",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como a cadeia de abastecimento de software e os fornecedores terceiros de IA podem ser vetores críticos de ataque.",
-   "todo": "Auditar regularmente os acessos de fornecedores externos e verificar a integridade de extensões e plugins instalados."
-  },
-  {
-   "id": "10621b32b80dd191",
-   "source": "Schneier on Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.schneier.com/blog/archives/2026/11/upcoming-speaking-engagements-62.html",
-   "published": "2026-11-14T17:02:39+00:00",
-   "title": "Upcoming Speaking Engagements",
-   "summary": "O autor disponibilizou uma lista atualizada com as suas próximas intervenções públicas. Estão agendadas palestras para o Catalyst Summit em Ontário, Canadá, a 18 de novembro de 2026, e para a QT Qonference 2026, no dia seguinte. O calendário de eventos é mantido e atualizado diretamente na respetiva página.",
-   "image": null,
-   "points": [
-    "O autor vai discursar no Catalyst Summit a 18 de novembro de 2026.",
-    "Está prevista outra intervenção na QT Qonference 2026 a 19 de novembro de 2026.",
-    "Ambos os eventos realizam-se em Ontário, Canadá."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Informa o público sobre a agenda de palestras presenciais do autor.",
-   "todo": ""
   }
  ]
 }

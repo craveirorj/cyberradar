@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T10:28:15.498897+00:00",
+ "updated": "2026-11-19T10:47:45.435267+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -89,7 +89,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -144,7 +144,7 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "Microsoft Security Blog",
@@ -234,12 +234,12 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 14
+   "added": 13
   },
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 2
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -269,7 +269,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -294,7 +294,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 18
+   "added": 20
   },
   {
    "source": "ACSC Austrália",
@@ -304,14 +304,84 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 188,
-  "unenriched": 83,
+  "done": 108,
+  "pending": 204,
+  "unenriched": 93,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "da71ce67dae968b9",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/fifth-uk-employees-share-passwords/",
+   "published": "2026-11-19T10:30:00+00:00",
+   "title": "Um quinto dos trabalhadores do Reino Unido partilha palavras-passe com IA",
+   "summary": "Uma investigação da Dashlane concluiu que funcionários no Reino Unido estão a partilhar palavras-passe com ferramentas de inteligência artificial e a conceder acesso a dados confidenciais. Esta prática expõe as organizações a sérios riscos de segurança empresarial. O problema surge devido à utilização descuidada destas tecnologias no ambiente de trabalho.",
+   "image": null,
+   "points": [
+    "Trabalhadores no Reino Unido partilham passwords com ferramentas de IA.",
+    "A prática concede acesso a dados empresariais sensíveis.",
+    "A investigação foi conduzida pela Dashlane.",
+    "A situação levanta preocupações significativas de segurança nas empresas."
+   ],
+   "title_original": "A Fifth of UK Employees Share Passwords with AI",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "A partilha de credenciais com IA compromete dados empresariais sensíveis e abre portas a incidentes de segurança.",
+   "todo": "Proiba a introdução de palavras-passe e dados confidenciais em ferramentas de inteligência artificial não autorizadas."
+  },
+  {
+   "id": "e45c5124b0ac0b40",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/",
+   "published": "2026-11-19T10:26:51+00:00",
+   "title": "F5 corrige falhas críticas NGINX2Root enquanto exploits PoC tornam-se públicos",
+   "summary": "Foram detetadas cinco vulnerabilidades denominadas NGINX2Root que afetam produtos da F5. Estas falhas podem permitir que atacantes remotos e sem autenticação executem código arbitrário. A divulgação pública de códigos de exploit do tipo PoC aumenta o risco de exploração.",
+   "image": null,
+   "points": [
+    "Cinco vulnerabilidades NGINX2Root foram descobertas nos sistemas F5.",
+    "Permitem execução remota de código por atacantes não autenticados.",
+    "Exploits PoC já se encontram publicamente disponíveis.",
+    "A F5 disponibilizou correções para mitigar o problema."
+   ],
+   "title_original": "F5 Patches Critical NGINX2Root Flaws as PoC Exploits Go Public",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes remotos assumam o controlo de sistemas sem necessidade de autenticação.",
+   "todo": "Aplique imediatamente as atualizações e correções de segurança disponibilizadas pela F5."
+  },
+  {
+   "id": "f26a40aa350ac1d1",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/19/palo-alto-networks-acquires-applied-compute/",
+   "published": "2026-11-19T10:23:41+00:00",
+   "title": "Palo Alto Networks vai adquirir a Applied Compute por 4,5 mil milhões de dólares",
+   "summary": "A Palo Alto Networks anunciou a intenção de adquirir a Applied Compute, uma plataforma focada em modelos de IA de pesos abertos. A transação em ações está avaliada em 4,5 mil milhões de dólares e visa integrar a equipa de investigação e tecnologia da empresa adquirida. Com esta compra, a Palo Alto Networks pretende ajudar as empresas a adotar IA de forma segura num futuro híbrido.",
+   "image": null,
+   "points": [
+    "Palo Alto Networks compra a Applied Compute por 4,5 mil milhões de dólares.",
+    "A transação é realizada inteiramente em ações.",
+    "A Applied Compute foca-se em pós-treino e inferência de modelos de IA de pesos abertos.",
+    "O objetivo é reforçar a segurança na adoção empresarial de IA."
+   ],
+   "title_original": "Palo Alto Networks to acquire Applied Compute for $4.5 billion",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Reforça as capacidades de segurança para a adoção empresarial de inteligência artificial em ambientes híbridos.",
+   "todo": ""
+  },
   {
    "id": "98f0b311b2029510",
    "source": "The Register Security",
@@ -327,9 +397,9 @@
     "A credencial permitiu entrar na VPN e aceder a dados sensíveis de recursos humanos.",
     "A vulnerabilidade física comprometeu toda a rede e os ficheiros partilhados da empresa."
    ],
-   "title_original": "Sticky note on monitor provided keys to the company’s kingdom",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra como uma simples falha de segurança física pode expor toda a rede e dados confidenciais de uma organização.",
    "todo": "Nunca deixe palavras-passe visíveis em locais físicos e reforce a formação em segurança física para todos os colaboradores."
@@ -349,9 +419,9 @@
     "Os ataques visam roubar dados da Google, dinheiro e carteiras de criptomoedas.",
     "As burlas incluem falsas promoções, chaves falsas e aplicações móveis fraudulentas."
    ],
-   "title_original": "GTA 6 scams are after your Google password, money, and crypto wallet",
+   "title_original": null,
    "category": "Malware",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Ilustra como grandes lançamentos de entretenimento são explorados por atacantes para roubar dados pessoais e financeiros.",
    "todo": "Desconfie de ofertas de jogos gratuitos e utilize apenas canais oficiais para downloads e compras."
@@ -371,9 +441,9 @@
     "Os atacantes extorquiram mais de 40,5 milhões de dólares a pelo menos 28 empresas.",
     "O grupo utilizava chamadas telefónicas fingindo ser suporte técnico para entrar nas redes."
    ],
-   "title_original": "Ukraine arrests key members of ransomware gang that extorted $40.5 million posing as IT support",
+   "title_original": null,
    "category": "Ransomware",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Revela o desmantelamento de um grupo cibercriminoso de alto impacto que usava engenharia social por telefone.",
    "todo": "Implemente processos rigorosos de validação de identidade antes de prestar assistência técnica ou partilhar acessos."
@@ -415,9 +485,9 @@
     "O grupo roubou 11,6 milhões de dólares em criptomoedas através de ataques a várias empresas.",
     "Foram utilizadas mensagens falsas de texto e trocas de cartões SIM para enganar funcionários."
    ],
-   "title_original": "Scattered Spider’s phishing and SIM-swap tactics led to six-year sentence",
+   "title_original": null,
    "category": "Phishing/Fraude",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Destaca a responsabilização judicial de membros de grupos de cibercrime organizados por ataques de engenharia social.",
    "todo": "Proteja as suas contas e número de telemóvel com autenticação multifator robusta resistente a trocas de SIM."
@@ -437,9 +507,9 @@
     "O incidente causou a interrupção de interfaces de gestão e APIs em três regiões.",
     "A empresa implementou medidas de mitigação e continua a investigar a invasão."
    ],
-   "title_original": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
+   "title_original": null,
    "category": "Fuga de dados",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra como fornecedores de serviços na nuvem podem ser visados, afetando a gestão de segurança dos clientes.",
    "todo": "Monitorize os alertas de segurança dos seus fornecedores de serviços e aplique controlos de acesso rigorosos."
@@ -681,9 +751,9 @@
     "As vulnerabilidades afetam tecnologias da Synology, BerriAI, Apache e REDCap.",
     "Os problemas estão ligados a ameaças como ransomware e ataques de inteligência artificial."
    ],
-   "title_original": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
+   "title_original": null,
    "category": "Ransomware",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Alerta para vulnerabilidades críticas que estão a ser ativamente exploradas por atacantes em sistemas empresariais.",
    "todo": "Atualize urgentemente os softwares afetados para mitigar o risco de exploração ativa."
@@ -13706,75 +13776,6 @@
    "enriched": true,
    "why": "Importa porque o Gootloader funcionava como um canal crítico de acesso inicial para grupos de ransomware de alto nível.",
    "todo": "Forme os colaboradores para reconhecerem tentativas de engenharia social e descarreguem software apenas de fontes oficiais e fidedignas."
-  },
-  {
-   "id": "9dae410164b5ae37",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/ataque-hacker-ao-tesouro-o-que-se-sabe-ate-agora/",
-   "published": "2026-11-13T14:30:00+00:00",
-   "title": "Ataque hacker ao Tesouro; o que se sabe até agora",
-   "summary": "O Tesouro Nacional foi alvo de um ciberataque detetado a 4 de novembro, que resultou na exposição de 30.000 registos do portal e-Serviços e 4.000 chaves Pix. A Secretaria do Tesouro Nacional avançou que o incidente afetou duas bases de dados, embora sem causar impactos financeiros ou comprometer sistemas estruturantes. As autoridades competentes, incluindo a ANPD, foram informadas e encontram-se a investigar a origem da intrusão. O impacto foca-se na exposição de dados pessoais, aumentando o risco de tentativas de fraudes e phishing contra os cidadãos.",
-   "image": "https://www.estadao.com.br/resizer/v2/6X5HCD7SSFOW7GCSGJY3K3LEUU.jpg?quality=80&auth=84f7694b3f24f5015ded2184ce9d3877a58bb9b06683c91cb9d2dc7767b662ef&width=710",
-   "points": [
-    "O ciberataque expôs 30.000 registos do portal e-Serviços e 4.000 chaves Pix.",
-    "A Secretaria do Tesouro Nacional confirmou que os sistemas estruturantes não foram afetados.",
-    "O incidente foi detetado a 4 de novembro e comunicado ao abrigo da LGPD.",
-    "O impacto eleva o risco de campanhas de phishing e burlas direcionadas aos cidadãos afetados."
-   ],
-   "title_original": null,
-   "category": "Ataque/APT",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque a exposição de dados pessoais governamentais facilita campanhas direcionadas de engenharia social contra os cidadãos.",
-   "todo": "Desconfie de contactos inesperados que utilizem dados pessoais e valide sempre a autenticidade de comunicações sobre pagamentos ou serviços."
-  },
-  {
-   "id": "c6e1d6a772717416",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
-   "published": "2026-11-13T14:28:58+00:00",
-   "title": "FBI indica que hackers norte-coreanos roubaram mais de 400 milhões de dólares em criptomoedas através de videochamadas deepfake",
-   "summary": "O FBI determinou que atores maliciosos ligados à Coreia do Norte roubaram mais de 400 milhões de dólares em criptomoedas nos últimos 18 meses, utilizando uma campanha de engenharia social chamada FaceStealer. O esquema recorreu a tecnologias avançadas para enganar alvos no setor criptográfico. Esta operação coordenada do governo norte-americano visa travar as burlas financeiras do regime. O impacto reflete-se em perdas financeiras massivas para o ecossistema de ativos digitais.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDmjJA-t4vvigohRIfUR6JExYEPR0Dohh29eooVagQOvRyRDgdisxAy3wSWni5iFHjf2Dk8X2BavSeGO8hJ-wCTbDuffsdtamOuqj1PVTb75EWNF5vNe3tCsS6pyS_pSzNhEELOVU0DxHdmGx4Kt8KNqwz8YheAM9kEoVmpnHeVV1qsofLCBYDEt0E2IqX/s1600/flash.jpg",
-   "points": [
-    "Hackers norte-coreanos roubaram mais de 400 milhões de dólares em criptomoedas.",
-    "O esquema FaceStealer utilizou engenharia social avançada ao longo de 18 meses.",
-    "O FBI liderou a investigação e revelou o envolvimento estatal da Coreia do Norte.",
-    "O impacto traduz-se em perdas severas para investidores e plataformas de criptomoedas."
-   ],
-   "title_original": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque ilustra a evolução e sofisticação de ataques baseados em inteligência artificial e deepfakes para burlas financeiras.",
-   "todo": "Adote processos rigorosos de verificação de identidade fora de banda antes de autorizar transações financeiras ou partilhar dados sensíveis."
-  },
-  {
-   "id": "339bacdcefcfe9be",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/n8n-security-advisory-av26-1160",
-   "published": "2026-11-13T14:28:49+00:00",
-   "title": "Aviso de segurança n8n (AV26-1160)",
-   "summary": "O Centro Cibernético emitiu um alerta sobre vulnerabilidades na plataforma n8n que afetam versões anteriores à 2.45.5, 2.46.1 e 3.0.1. A falha identificada permite o sequestro de contas OAuth através de um fluxo de credenciais não autenticado. Os administradores são aconselhados a rever os links de suporte e a atualizar o software. O impacto prende-se com o risco de acesso não autorizado a sistemas automatizados.",
-   "image": null,
-   "points": [
-    "Vulnerabilidades críticas foram detetadas no software n8n.",
-    "As versões anteriores a 2.45.5, 2.46.1 e 3.0.1 encontram-se afetadas.",
-    "A falha permite o sequestro de contas OAuth através de callbacks não autenticados.",
-    "O impacto exige a atualização imediata para mitigar riscos de intrusão."
-   ],
-   "title_original": "n8n security advisory (AV26-1160)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque falhas em ferramentas de automatização podem expor fluxos de trabalho inteiros a atores maliciosos.",
-   "todo": "Atualize o software n8n para as versões corrigidas recomendadas pelo fabricante o mais rapidamente possível."
   }
  ]
 }

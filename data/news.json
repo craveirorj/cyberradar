@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T09:07:15.703192+00:00",
+ "updated": "2026-11-19T09:26:42.559245+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -89,7 +89,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -229,7 +229,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 20
+   "added": 21
   },
   {
    "source": "The Register Security",
@@ -264,12 +264,12 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 3
+   "added": 1
   },
   {
    "source": "Check Point Research",
@@ -305,13 +305,79 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 184,
-  "unenriched": 79,
+  "pending": 183,
+  "unenriched": 78,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "c31168ebf53521e3",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/rakuten-securities-breach-15/",
+   "published": "2026-11-19T09:20:00+00:00",
+   "title": "Violação de dados na Rakuten Securities pode afetar 15 milhões de clientes",
+   "summary": "A corretora japonesa Rakuten Securities revelou uma violação de dados que comprometeu os detalhes de conta de 15 milhões de clientes. Este incidente expõe informações sensíveis de um vasto número de utilizadores, aumentando o risco de fraudes e ataques direcionados. As autoridades e a empresa investigam o impacto total da brecha de segurança.",
+   "image": null,
+   "points": [
+    "A vítima foi a corretora japonesa Rakuten Securities.",
+    "Foram expostos detalhes de contas de 15 milhões de clientes.",
+    "O incidente constitui uma grande violação de dados corporativos."
+   ],
+   "title_original": "Rakuten Securities Breach Could Impact 15 Million Customers",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "A exposição de milhões de contas aumenta drasticamente o risco de fraudes financeiras e roubo de identidade para os clientes afetados.",
+   "todo": "Monitorize de perto as suas contas financeiras e altere as suas palavras-passe para credenciais fortes e únicas."
+  },
+  {
+   "id": "ce554e89b4049973",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/java4shell-exploitation-attempts-begin-as-vendors-rush-out-advisories/",
+   "published": "2026-11-19T09:10:58+00:00",
+   "title": "Iniciam-se tentativas de exploração do Java4Shell enquanto fornecedores correm a emitir avisos",
+   "summary": "Empresas como GreyNoise, WatchTowr e Cloudflare detetaram sondagens e tentativas ativas de exploração ligadas ao Java4Shell. Em simultâneo, fornecedores como Cisco, Elastic, Red Hat e Siemens apressaram-se a detalhar o impacto nas respetivas tecnologias. A situação exige atenção imediata por parte das equipas de segurança devido ao risco de ataques bem-sucedidos.",
+   "image": null,
+   "points": [
+    "GreyNoise, WatchTowr e Cloudflare detetaram tentativas de exploração.",
+    "Fornecedores como Cisco, Red Hat e Siemens avaliaram o impacto.",
+    "A falha afeta ecossistemas baseados em Java."
+   ],
+   "title_original": "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A atividade de exploração ativa em curso coloca em risco sistemas empresariais que utilizam componentes vulneráveis.",
+   "todo": "Aplique rapidamente as atualizações e correções de segurança disponibilizadas pelos fornecedores afetados."
+  },
+  {
+   "id": "1e6baf589630e0f8",
+   "source": "CSO Online",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.csoonline.com/article/4250261/vulnerability-management-the-cybersecurity-industry-is-still-solving-the-wrong-problem.html",
+   "published": "2026-11-19T09:00:00+00:00",
+   "title": "Gestão de vulnerabilidades: a indústria de cibersegurança continua a resolver o problema errado",
+   "summary": "A indústria de cibersegurança tem focado historicamente os seus esforços na deteção, catalogação e pontuação de vulnerabilidades, em vez da remediação efetiva. Grandes organizações acumulam pilhas de relatórios e painéis de controlo, mas falham na implementação prática das correções. O verdadeiro desafio organizacional reside na capacidade de executar o trabalho de correção e não apenas na identificação de falhas.",
+   "image": "https://www.csoonline.com/wp-content/uploads/2025/05/3486418-0-04544400-1746423859-clint-patterson-jCY4oEMA3o-unsplash.jpg?quality=50&strip=all",
+   "points": [
+    "O setor foca-se excessivamente na descoberta e pontuação de falhas.",
+    "As empresas acumulam relatórios mas falham na remediação.",
+    "O problema principal é organizacional e não tecnológico."
+   ],
+   "title_original": "Vulnerability management: The cybersecurity industry is still solving the wrong problem",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Focar apenas na deteção deixa as empresas expostas por falta de capacidade operacional para aplicar correções.",
+   "todo": "Estabeleça processos internos ágeis e colaborativos entre as equipas de infraestrutura e segurança para acelerar a correção de falhas."
+  },
   {
    "id": "fa104991146c2dfa",
    "source": "HackRead",
@@ -13717,75 +13783,6 @@
    "enriched": true,
    "why": "Paralisou ferramentas vitais para centenas de milhões de utilizadores e empresas em todo o mundo.",
    "todo": "Aguarde a recuperação oficial dos serviços e evite clicar em links de suporte não verificados."
-  },
-  {
-   "id": "ab323bb591ac51e4",
-   "source": "TechCrunch Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://techcrunch.com/2026/11/13/microsoft-latest-email-outage-turned-into-a-full-blown-global-cloud-crisis/",
-   "published": "2026-11-13T13:15:20+00:00",
-   "title": "A mais recente falha de e-mail da Microsoft transformou-se numa crise global de cloud",
-   "summary": "Uma interrupção nos serviços da Microsoft que durou um dia inteiro começou por afetar o Outlook e o Teams, acabando por derrubar grande parte dos serviços em nuvem da empresa. A situação gerou uma crise tecnológica global de larga escala. A Microsoft indicou que está a restabelecer os serviços de forma gradual.",
-   "image": null,
-   "points": [
-    "Quem: Microsoft e utilizadores dos serviços em nuvem.",
-    "O quê: Interrupção iniciada no Outlook e Teams que afetou a nuvem da empresa.",
-    "Impacto: Crise global de cloud com paralisação generalizada.",
-    "Como: Restauro gradual implementado pela tecnológica."
-   ],
-   "title_original": "Microsoft’s latest email outage turned into a full blown global cloud crisis",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra a vulnerabilidade de ecossistemas inteiros baseados na nuvem perante falhas internas.",
-   "todo": "Adote estratégias de redundância e cópias de segurança offline para mitigar a dependência exclusiva da nuvem."
-  },
-  {
-   "id": "56543c033de6d448",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/13/quantum-systems-drones-back-in-the-air-after-malware-scare/5309658",
-   "published": "2026-11-13T13:14:00+00:00",
-   "title": "Drones da Quantum Systems voltam a voar após alerta de malware",
-   "summary": "A Quantum Systems retomou os voos dos seus drones com os militares alemães após uma suspensão preventiva motivada por um ciberataque. A empresa detetou a intrusão no final de outubro e colaborou com as autoridades para conter a ameaça rapidamente, garantindo que não existem riscos para os operadores finais. O ataque envolveu software de controlo em solo, afetando servidores mas sem infetar diretamente os aparelhos.",
-   "image": "https://image.theregister.com/?imageId=246156&width=800",
-   "points": [
-    "Quem: Empresa Quantum Systems e exército alemão (Bundeswehr).",
-    "O quê: Deteção de malware no software de controlo QBase e suspensão preventiva de frota.",
-    "Como: Contenção rápida pela equipa de segurança e autoridades.",
-    "Impacto: Retoma normal das operações após resolução do incidente."
-   ],
-   "title_original": "Quantum Systems drones back in the air after malware scare",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia os riscos cibernéticos que afetam a cadeia de fornecimento e o setor da defesa.",
-   "todo": "Garanta que as atualizações de software de sistemas críticos passam por validações rigorosas antes de serem implementadas."
-  },
-  {
-   "id": "fff233faf327955c",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls",
-   "published": "2026-11-13T13:00:00+00:00",
-   "title": "Atacantes na violação da Binance visaram fraquezas conhecidas e falta de controlos",
-   "summary": "A complexidade associada à tecnologia blockchain, incluindo ferramentas maliciosas implementadas por atacantes, dificulta a eficácia dos controlos de segurança. Estes mecanismos foram desenhados para mitigar os danos decorrentes de um comprometimento numa exchange. Contudo, os atacantes exploraram pontos fracos já conhecidos e a ausência de controlos adequados.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt3c2322c93d29d2a7/6aed04e63037c1017f2823d8/binance-logo-on-black-bkgrd-Zulfugar_Graphics-shutterstockjpg.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "Quem: Atacantes e plataforma Binance.",
-    "O quê: Exploração de fraquezas conhecidas e falta de controlos de segurança.",
-    "Como: Aproveitamento da complexidade da blockchain e de ferramentas de ataque.",
-    "Impacto: Dificuldade em limitar os danos de um comprometimento."
-   ],
-   "title_original": "Attackers in Binance Breach Targeted Known Weakness, Missing Controls",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como a complexidade dos ambientes cripto pode dificultar a mitigação de ataques bem-sucedidos.",
-   "todo": "Reforce a monitorização de transações e implemente controlos de segurança multicamada em plataformas de ativos digitais."
   }
  ]
 }

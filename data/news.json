@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-19T17:50:50.934559+00:00",
+ "updated": "2026-11-19T18:07:21.462593+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
@@ -34,12 +34,12 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
    "ok": true,
-   "added": 5
+   "added": 4
   },
   {
    "source": "Canaltech Segurança",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -74,7 +74,7 @@
   {
    "source": "MS-ISAC (CIS)",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "BleepingComputer",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -149,7 +149,7 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 3
+   "added": 2
   },
   {
    "source": "Microsoft Security Blog",
@@ -178,8 +178,8 @@
   },
   {
    "source": "Google Threat Intelligence",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "500 Server Error: Internal Server Error for url: https://cloudblog.withgoogle.com/topics/threat-intelligence/rss/"
   },
   {
    "source": "Google Project Zero",
@@ -238,8 +238,8 @@
   },
   {
    "source": "The Register Security",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 12
   },
   {
    "source": "Help Net Security",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -264,12 +264,12 @@
   {
    "source": "Graham Cluley",
    "ok": true,
-   "added": 3
+   "added": 4
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 328,
-  "unenriched": 218,
+  "done": 24,
+  "pending": 305,
+  "unenriched": 189,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -320,21 +320,70 @@
  },
  "items": [
   {
+   "id": "508558726b913dfc",
+   "source": "SAPO Tek",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://tek.sapo.pt/noticias/ciencia/artigos/alverca-space-hub-portugal-vai-inaugurar-fabrica-de-satelites-em-dezembro/",
+   "published": "2026-11-19T17:55:55+00:00",
+   "title": "Alverca Space Hub: Portugal vai inaugurar fábrica de satélites em dezembro",
+   "summary": "Portugal vai inaugurar em dezembro uma nova fábrica de satélites situada em Alverca, segundo anunciou o ministro da Defesa Nacional, Nuno Melo. Este projeto tem como principal objetivo reforçar a capacidade produtiva nacional nas áreas da defesa e da segurança. Além disso, a iniciativa pretende potenciar a exportação de satélites desenvolvidos no país.",
+   "image": null,
+   "points": [
+    "Inauguração em dezembro de uma fábrica de satélites em Alverca.",
+    "Anúncio feito pelo ministro da Defesa Nacional, Nuno Melo.",
+    "O projeto visa reforçar a capacidade de Portugal na produção para defesa e segurança com foco na exportação."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "A criação desta fábrica reforça a autonomia estratégica e tecnológica de Portugal nos setores da defesa e segurança.",
+   "todo": ""
+  },
+  {
+   "id": "dcfabd667eaaeef4",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/voxel/gta-6-pode-ser-jogado-por-criancas-entenda-a-classificacao-indicativa-do-jogo/",
+   "published": "2026-11-19T17:45:00+00:00",
+   "title": "GTA 6 pode ser jogado por crianças? Entenda a classificação indicativa do jogo",
+   "summary": "O aguardado jogo GTA 6 foi oficialmente classificado como inadequado para menores de 18 anos pelas autoridades competentes. A decisão baseia-se na presença de conteúdos sensíveis como violência intensa, drogas, linguagem imprópria e elementos sexuais. Esta restrição aplica-se tanto ao mercado brasileiro como a outras regiões através de agências de avaliação de videojogos. Deste modo, o título destina-se estritamente a um público adulto.",
+   "image": "https://www.estadao.com.br/resizer/v2/D56EOPDENVADLETV44JZZ3XVUE.jpg?quality=80&auth=e940d1b36726c5fc90ebf8b829d2523fc8d9c27a539e8849efecd6e642391a00&width=710",
+   "points": [
+    "GTA 6 recebeu classificação indicativa para maiores de 18 anos.",
+    "O jogo contém violência, conteúdo sexual, drogas e linguagem imprópria.",
+    "A restrição aplica-se para proteger crianças e adolescentes de conteúdos inadequados."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "É essencial respeitar as classificações etárias para proteger os menores de conteúdos impróprios e violentos.",
+   "todo": "Verifique sempre a classificação indicativa dos videojogos antes de os disponibilizar a crianças e adolescentes."
+  },
+  {
    "id": "15afac09c340f0ac",
    "source": "Malwarebytes Labs",
    "region": "US",
    "lang": "en",
    "link": "https://www.malwarebytes.com/blog/ai/2026/11/deepfake-elon-musk-nearly-costs-viewers-4-7-million-in-crypto",
    "published": "2026-11-19T17:26:39+00:00",
-   "title": "Deepfake Elon Musk nearly costs viewers $4.7 million in crypto",
-   "summary": "Coinbase says it blocked $4.7 million in attempted payments to an Elon Musk deepfake scam.",
+   "title": "Deepfake de Elon Musk quase custa 4,7 milhões de dólares em criptomoedas aos utilizadores",
+   "summary": "Uma transmissão em direto falsa utilizou um deepfake de Elon Musk para promover um esquema fraudulento de criptomoedas. Os burlões convenceram os espectadores a enviar fundos voluntariamente sob a promessa de receberem o dobro em retorno. A plataforma Coinbase evitou que cerca de 4,7 milhões de dólares fossem transferidos para os atacantes. O golpe não resultou de intrusões em contas, mas sim da manipulação psicológica das vítimas.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Utilização de deepfake de Elon Musk numa transmissão falsa para promover burlas de criptomoedas.",
+    "A Coinbase bloqueou cerca de 4,7 milhões de dólares em transferências fraudulentas tentadas.",
+    "Os utilizadores foram persuadidos a enviar fundos voluntariamente na perspetiva de duplicarem o valor."
+   ],
+   "title_original": "Deepfake Elon Musk nearly costs viewers $4.7 million in crypto",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": ".kadence-column491016_350891-b2 > .kt-inside-inner-col{padding-top:20px;padding-right:20px;padding-bottom:10px;padding-left:20px;}.kadence-column491016_350891-b2 > .kt-inside-inner-col{column-gap:var(--global-kb-gap-sm, 1rem);}.kadence-column491016_350891-b2 > .kt-inside-inner-col{flex-direction:column;}.kadence-column491016_350891-b2 > .kt-inside-inner-col > .aligncenter{width:100%;}.kadence-column491016_350891-b2 > .kt-inside-inner-col{background-color:rgba(255, 229, 229, 0.83);}.kadence-column491016_350891-b2 > .kt-inside-inner-col:before{opacity:0.3;}.kadence-column491016_350891-b2{position:relative;}@media all and (max-width: 1024px){.kadence-column491016_350891-b2 > .kt-inside-inner-col{flex-direction:column;justify-content:center;}}@media all and (max-width: 767px){.kadence-column491016_350891-b2 > .kt-inside-inner-col{flex-direction:column;justify-content:center;}} In this article A fake Tesla livestream used an Elon Musk deepfake to push a crypto scam Coinbase says it blocked $4.7 million in attempted transfers A giveaway that asks you to send crypto first to get more back is a scam Coinbase says it stopped about $4.7 million in attempted payments to a fake cryptocurrency giveaway. The scam didn’t rely on breaking into customers’ accounts. It persuaded them to send money themselves. Imagine you’re watching a Tesla event on YouTube when Elon Musk appears with an unexpected offer: send cryptocurrency to the address shown, and you’ll get twice as much back. A QR code makes it easy to pay, while the livestream pressures you to act before the offer disappears. You open your crypto app, enter the payment details, and prepare to confirm. According to Coinbase , that is exactly what happened when a fake Elon Musk livestream prompted hundreds of its customers to attempt"
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como a manipulação audiovisual avançada pode enganar utilizadores e provocar avultadas perdas financeiras.",
+   "todo": "Desconfie de ofertas online que prometem duplicar criptomoedas em troca de um envio inicial."
   },
   {
    "id": "4692e0d9ed573f96",
@@ -343,15 +392,20 @@
    "lang": "en",
    "link": "https://therecord.media/doj-dhs-partner-on-new-unit-tackling-scams-cybercrime",
    "published": "2026-11-19T17:25:00+00:00",
-   "title": "DOJ, DHS partner on new unit tackling scams and cybercrime",
-   "summary": "The departments are partnering on the Threat Disruption Center to better triage victim complaints, map cybercriminal networks and provide a direct channel to private sector organizations that work with victims.",
+   "title": "DOJ e DHS criam nova unidade para combater fraudes e cibercrime",
+   "summary": "O Departamento de Justiça e o Departamento de Segurança Interna dos EUA uniram-se para criar o Threat Disruption Center. Esta nova unidade tem como objetivo melhorar a triagem de queixas de vítimas e mapear redes de cibercriminosos. Além disso, o centro pretende estabelecer um canal direto de comunicação com organizações do setor privado que apoiam as vítimas.",
    "image": "https://cms.therecord.media/uploads/doj_dhs_05d4d760e5.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Criação do Threat Disruption Center em parceria entre o DOJ e o DHS.",
+    "Foco na triagem de queixas e no mapeamento de redes cibercriminosas.",
+    "Estabelecimento de canais diretos com o setor privado para auxiliar vítimas."
+   ],
+   "title_original": "DOJ, DHS partner on new unit tackling scams and cybercrime",
    "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": false,
-   "raw": "The departments are partnering on the Threat Disruption Center to better triage victim complaints, map cybercriminal networks and provide a direct channel to private sector organizations that work with victims."
+   "translated": true,
+   "enriched": true,
+   "why": "A cooperação entre agências governamentais fortalece a resposta coordenada contra o cibercrime organizado.",
+   "todo": ""
   },
   {
    "id": "2ff5d2ac87e8dee7",
@@ -404,15 +458,20 @@
    "lang": "en",
    "link": "https://securityaffairs.com/203504/hacking/u-s-cisa-adds-apache-axis-vanderbilt-redcapberriai-litellm-and-synology-dsm-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
    "published": "2026-11-19T17:14:39+00:00",
-   "title": "U.S. CISA adds Apache Axis, Vanderbilt REDCap,BerriAI LiteLLM, and Synology DSM flaws to its Known Exploited Vulnerabilities catalog",
-   "summary": "U.S. Cybersecurity and Infrastructure Security Agency (CISA) adds Apache Axis, Vanderbilt REDCap,BerriAI LiteLLM, and Synology DSM flaws to its Known Exploited Vulnerabilities catalog. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added Check Point and UnrealIRCd vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog: Below are the flaws added to the catalog: The first vulnerability, CVE-2024-10441 (CVSS score […]",
+   "title": "CISA adiciona falhas do Apache Axis, Vanderbilt REDCap, BerriAI LiteLLM e Synology DSM ao catálogo de vulnerabilidades exploradas",
+   "summary": "A CISA adicionou várias falhas críticas de segurança ao seu catálogo de vulnerabilidades conhecidas e exploradas. Entre as falhas destacam-se problemas no Synology DSM, explorados por atacantes para instalar o ransomware C3RB3R em dispositivos NAS. Outra vulnerabilidade afeta o BerriAI LiteLLM, permitindo a escalação de privilégios e ataques de LLMjacking em infraestruturas de IA. Estas explorações colocam em risco dados e sistemas em vários setores de atividade.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A CISA atualizou o catálogo KEV com falhas no Synology DSM, BerriAI LiteLLM, Apache Axis e Vanderbilt REDCap.",
+    "A vulnerabilidade do Synology DSM (CVE-2024-10441) tem sido explorada para instalar ransomware em equipamentos NAS.",
+    "A falha do BerriAI LiteLLM (CVE-2026-40217) foi usada para roubar credenciais administrativas e abusar de infraestruturas de IA."
+   ],
+   "title_original": "U.S. CISA adds Apache Axis, Vanderbilt REDCap,BerriAI LiteLLM, and Synology DSM flaws to its Known Exploited Vulnerabilities catalog",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "U.S. Cybersecurity and Infrastructure Security Agency (CISA) adds Apache Axis, Vanderbilt REDCap,BerriAI LiteLLM, and Synology DSM flaws to its Known Exploited Vulnerabilities catalog. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added Check Point and UnrealIRCd vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog : Below are the flaws added to the catalog: CVE-2024-10441 (CVSS score of 9.8) Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability CVE-2026-40217 (CVSS score of 8.8) BerriAI LiteLLM Unprotected Alternate Channel Vulnerability CVE-2026-90436 (CVSS score of 9.8) Apache Axis Unsafe Reflection Vulnerability CVE-2026-90817 (CVSS score of 9.8) Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability The first vulnerability, CVE-2024-10441 (CVSS score 9.8), affects Synology DiskStation Manager (DSM) and is caused by improper encoding or escaping of output. Synology has confirmed that attackers are exploiting the flaw in ransomware attacks targeting network-attached storage (NAS) devices. The intrusions have resulted in the deployment of C3RB3R ransomware, putting data stored on vulnerable devices at risk. The second flaw, CVE-2026-40217 (CVSS score 8.8), affects BerriAI LiteLLM and is classified as an unprotected alternate channel vulnerability. Google Threat Intelligence Group reported that attackers have exploited it to escalate limited-access inference keys into full administrative credentials. They then established persistence to conduct LLMjacking attacks, abusing compromised AI infrastructure to access large language models. The campaigns targeted organizations in the financial services, retail, transportation and technology sectors across North America,"
+   "translated": true,
+   "enriched": true,
+   "why": "A exploração ativa destas falhas em sistemas empresariais e de armazenamento coloca dados críticos sob elevado risco de roubo ou sequestro.",
+   "todo": "Atualize de imediato os softwares afetados pelas vulnerabilidades listadas pela CISA para mitigar o risco de exploração."
   },
   {
    "id": "877d7505984d23d5",
@@ -429,12 +488,34 @@
     "A audição gerou tensão e forte oposição por parte dos democratas.",
     "O nomeado sublinhou a importância de inventariar e aplicar patches em dispositivos conectados."
    ],
-   "title_original": "Dems call CISA nominee ‘disqualified’ after nomination hearing",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Evidencia a politização na liderança da principal agência federal de cibersegurança dos EUA.",
    "todo": "Garanta um inventário rigoroso de todos os dispositivos ligados à rede e aplique patches de segurança regularmente."
+  },
+  {
+   "id": "d408505cc55d4fae",
+   "source": "Graham Cluley",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.fortra.com/blog/cold-relic-what-you-need-know",
+   "published": "2026-11-19T17:10:29+00:00",
+   "title": "Cold Relic: O que precisa de saber",
+   "summary": "Um grupo de espionagem russo, anteriormente conhecido como COLDRIVER e agora designado por Cold Relic, tem conseguido infiltrar-se em organizações. A tática utilizada pelos piratas informáticos consiste em fazer-se passar por entidades ou pessoas em quem as vítimas já confiam. Esta abordagem de engenharia social visa contornar as defesas humanas das empresas visadas.",
+   "image": null,
+   "points": [
+    "O grupo de hackers russos Cold Relic é a nova designação do coletivo anteriormente conhecido como COLDRIVER.",
+    "Os atacantes comprometem organizações através de táticas de impersonação de entidades de confiança.",
+    "A estratégia baseia-se em engenharia social avançada para enganar os alvos."
+   ],
+   "title_original": "Cold Relic: What you need to know",
+   "category": "Ataque/APT",
+   "translated": true,
+   "enriched": true,
+   "why": "A impersonação de contactos de confiança constitui uma ameaça altamente eficaz contra a segurança humana das organizações.",
+   "todo": "Valide sempre por canais alternativos e seguros os pedidos inesperados de contactos que alegam ser conhecidos ou autoridades."
   },
   {
    "id": "c0b2110866740c07",
@@ -451,9 +532,9 @@
     "LoSapio negou publicamente os acontecimentos do ataque ao Capitólio de 6 de janeiro.",
     "As declarações complicam o processo político para a sua confirmação."
    ],
-   "title_original": "CISA nominee LoSapio vows to bolster cyber defenses while denying Jan. 6 Capitol attack",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Demonstra como controvérsias políticas podem interferir na nomeação de figuras centrais para a segurança nacional.",
    "todo": ""
@@ -473,34 +554,12 @@
     "O objetivo é treinar agentes de IA do navegador Chrome de forma segura.",
     "Evita que os assistentes de IA desenvolvam comportamentos indesejados ou perigosos."
    ],
-   "title_original": "Google Built a Giant ‘Mirror Dimension’ Internet to Test Its Chrome AI Agents",
+   "title_original": null,
    "category": "IA",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Ilustra o esforço necessário para testar de forma segura ferramentas autónomas antes de as expor à internet real.",
    "todo": ""
-  },
-  {
-   "id": "9a6b7efdf6670f4c",
-   "source": "MS-ISAC (CIS)",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-nginx-could-allow-for-remote-code-execution_2026-136",
-   "published": "2026-11-19T16:55:05+00:00",
-   "title": "Multiple Vulnerabilities in NGINX Could Allow for Remote Code Execution",
-   "summary": "Foram detetadas várias vulnerabilidades no software NGINX, sendo a mais grave suscetível de permitir a execução remota de código. O NGINX é amplamente utilizado como servidor Web, proxy reverso, em cache e no balanceamento de carga. Uma exploração bem-sucedida permite que um atacante instale programas, manipule dados ou crie novas contas de utilizador com plenos direitos.",
-   "image": null,
-   "points": [
-    "Múltiplas falhas foram descobertas no servidor web NGINX.",
-    "A vulnerabilidade mais crítica permite execução remota de código.",
-    "Atacantes podem assumir controlo e manipular dados conforme as permissões da conta afetada."
-   ],
-   "title_original": "Multiple Vulnerabilities in NGINX Could Allow for Remote Code Execution",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Coloca em risco milhares de servidores web e serviços de proxy dependentes do NGINX.",
-   "todo": "Atualize o software NGINX para as versões corrigidas mais recentes e execute serviços com privilégios mínimos."
   },
   {
    "id": "648f4746253c461c",
@@ -509,15 +568,20 @@
    "lang": "en",
    "link": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
    "published": "2026-11-19T16:59:56+00:00",
-   "title": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
-   "summary": "PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the attacker to run code on the server. Today's PHP releases fix the flaw, called phpAfterShell. The flaw is tracked as CVE-2026-126714 and rated",
+   "title": "phpAfterShell Explicado: Como os hackers podem transformar uma falha de sessão PHP em execução de código",
+   "summary": "Investigadores detalharam uma vulnerabilidade em PHP, catalogada como CVE-2026-126714 e designada por phpAfterShell. O problema ocorre quando o armazenamento de sessões baseado em ficheiros padrão é interrompido no momento errado, devolvendo objetos escolhidos pelo atacante. Combinada com outra fraqueza na aplicação, esta falha permite que indivíduos maliciosos executem código remotamente no servidor. As novas versões de PHP já foram lançadas para corrigir o problema.",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEEFyvreIQgAheXoKRJxLcNgyzFh0rlydmiMfaOBIlmM7zGPc_71mCSG6zWGlpFcRQg59gVUw6NbpmFiNKIcDB3AqVA5eKpjYExWhMu-uBD_W5xu1wiYRtX5MklAgxeuHOBJOI8H9LmaIoXv7IrvFMVHvVhor06lj_ljcIDjIDAPYJ8w01X-BTA51EpOU/s1600/php-after-shell.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Descoberta da vulnerabilidade CVE-2026-126714, conhecida como phpAfterShell, no PHP.",
+    "A falha surge na gestão de sessões e pode conduzir à execução remota de código no servidor.",
+    "As autoridades e criadores já disponibilizaram atualizações do PHP para corrigir a vulnerabilidade."
+   ],
+   "title_original": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the attacker to run code on the server. Today's PHP releases fix the flaw, called phpAfterShell. The flaw is tracked as CVE-2026-126714 and rated"
+   "translated": true,
+   "enriched": true,
+   "why": "Permitir a execução remota de código em servidores web compromete totalmente a integridade e confidencialidade da infraestrutura.",
+   "todo": "Atualize imediatamente as instalações de PHP para as versões mais recentes que corrigem a falha CVE-2026-126714."
   },
   {
    "id": "9a6b7efdf6670f4c",
@@ -526,15 +590,20 @@
    "lang": "en",
    "link": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-nginx-could-allow-for-remote-code-execution_2026-136",
    "published": "2026-11-19T16:55:05+00:00",
-   "title": "Multiple Vulnerabilities in NGINX Could Allow for Remote Code Execution",
-   "summary": "Multiple vulnerabilities have been discovered in NGINX, the most severe of which could allow for remote code execution. NGINX is software used for web serving, reverse proxying, caching, and load balancing. Successful exploitation of the most severe of these vulnerabilities could result in remote code execution. Depending on the privileges associated with the account, an attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. Accounts configured to have fewer user rights on the system could be less impacted than those that operate with ",
+   "title": "Múltiplas vulnerabilidades no NGINX podem permitir a execução remota de código",
+   "summary": "Foram descobertas várias falhas de segurança no software NGINX, sendo a mais grave suscetível de permitir a execução remota de código. O NGINX é amplamente utilizado para servir páginas web, fazer proxy reverso e balanceamento de carga. Dependendo dos privilégios da conta comprometida, um atacante pode instalar programas, alterar dados ou criar novos utilizadores com direitos totais.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Descoberta de múltiplas vulnerabilidades no software NGINX.",
+    "A falha mais severa pode resultar em execução remota de código no servidor.",
+    "O impacto varia consoante os privilégios associados à conta afetada no sistema."
+   ],
+   "title_original": "Multiple Vulnerabilities in NGINX Could Allow for Remote Code Execution",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Multiple vulnerabilities have been discovered in NGINX, the most severe of which could allow for remote code execution. NGINX is software used for web serving, reverse proxying, caching, and load balancing. Successful exploitation of the most severe of these vulnerabilities could result in remote code execution. Depending on the privileges associated with the account, an attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. Accounts configured to have fewer user rights on the system could be less impacted than those that operate with administrative user rights."
+   "translated": true,
+   "enriched": true,
+   "why": "Vulnerabilidades em servidores web críticos expõem toda a infraestrutura digital a um controlo não autorizado por parte de atacantes.",
+   "todo": "Aplique as correções e atualizações de segurança disponibilizadas para o NGINX e garanta que os serviços correm com privilégios mínimos."
   },
   {
    "id": "c5e7bc1c42387de6",
@@ -551,9 +620,9 @@
     "Existem bugs críticos de execução remota de código (RCE).",
     "Atacantes não autenticados podiam explorar estas falhas nos servidores afetados."
    ],
-   "title_original": "PHP security updates fix 18 flaws, including critical RCE bugs",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Protege servidores web contra explorações remotas que poderiam comprometer todo o sistema.",
    "todo": "Atualize urgentemente os ambientes de desenvolvimento e produção PHP para as versões seguras disponibilizadas."
@@ -572,9 +641,9 @@
     "Funciona como um ponto de controlo unificado para tráfego de IA.",
     "Facilita a gestão de fluxos de dados associados a ferramentas de inteligência artificial."
    ],
-   "title_original": "Inside Falcon AI Gateway: One Control Point for AI Traffic",
+   "title_original": null,
    "category": "IA",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Permite centralizar a monitorização e a segurança do tráfego gerado por tecnologias de IA.",
    "todo": "Implemente pontos de controlo centralizados para monitorizar o uso de ferramentas de IA na sua rede."
@@ -594,9 +663,9 @@
     "Uma das vulnerabilidades manteve-se oculta por mais de dez anos.",
     "A exploração destas falhas é considerada difícil pelos especialistas."
    ],
-   "title_original": "Critical remote code execution flaws found in Nginx web server",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Revela que vulnerabilidades graves podem permanecer escondidas em softwares essenciais durante anos.",
    "todo": "Aplique imediatamente as correções de segurança disponibilizadas para o Nginx."
@@ -1570,9 +1639,9 @@
     "Permite ataques remotos de negação de serviço e corrupção de memória.",
     "Afeta setores industriais críticos em todo o mundo."
    ],
-   "title_original": "libumqtt",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mitiga riscos em componentes de software utilizados em infraestruturas industriais e tecnológicas.",
    "todo": "Minimize a exposição de dispositivos em rede e isole sistemas de controlo atrás de firewalls."
@@ -1592,9 +1661,9 @@
     "Permite a criação não autorizada de múltiplas contas de administrador.",
     "Afeta setores como energia, manufatura e transportes."
    ],
-   "title_original": "Autonomy Logic OpenPLC Runtime",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Evita que atacantes assumam o controlo administrativo de sistemas industriais essenciais.",
    "todo": "Atualize o OpenPLC Runtime para a versão 4.3.0 ou posterior e isole os sistemas da internet."
@@ -13702,72 +13771,6 @@
    "enriched": true,
    "why": "Permite monitorizar as tendências globais e as novas técnicas utilizadas por operadores de malware.",
    "todo": "Atualize regularmente o software de segurança e monitore os terminais contra comportamentos anómalos."
-  },
-  {
-   "id": "bbb8a67270856461",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
-   "published": "2026-11-15T15:23:48+00:00",
-   "title": "Violação de dados de funcionários da TSMC ligada a fornecedor de nuvem",
-   "summary": "A Taiwan Semiconductor Manufacturing Company confirmou que dados pessoais de colaboradores foram divulgados online. A confirmação surgiu depois de um atacante colocar à venda 6,9 gigabytes de informação alegadamente roubada à empresa. O incidente de segurança está associado a um fornecedor de serviços em nuvem.",
-   "image": null,
-   "points": [
-    "Alvo: Taiwan Semiconductor Manufacturing Company (TSMC).",
-    "O quê: Vazamento e tentativa de venda de 6,9GB de dados de colaboradores.",
-    "Impacto: Informação sensível de trabalhadores exposta através de um fornecedor cloud."
-   ],
-   "title_original": "TSMC employee data breach linked to cloud provider",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia os riscos de segurança associados a fornecedores de serviços em nuvem externos.",
-   "todo": "Audite regularmente os acessos e a segurança dos fornecedores terceiros que alojam dados da sua empresa."
-  },
-  {
-   "id": "dbc32ca8847e99fa",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203140/breaking-news/security-affairs-newsletter-round-604-by-pierluigi-paganini-international-edition.html",
-   "published": "2026-11-15T15:00:08+00:00",
-   "title": "Security Affairs newsletter Round 604 by Pierluigi Paganini – INTERNATIONAL EDITION",
-   "summary": "A edição 604 da newsletter internacional Security Affairs resume os principais incidentes de cibersegurança da semana, destacando ataques de extorsão, vulnerabilidades críticas e operações de agências governamentais. Entre os vários eventos, destacam-se a recuperação de fundos ilícitos ligados à Coreia do Norte, falhas corrigidas pela CISA e incidentes em infraestruturas e plataformas digitais globais. A publicação compila notícias sobre ransomware, espionagem digital e atualizações de segurança de grandes fabricantes.",
-   "image": null,
-   "points": [
-    "Compilação semanal de notícias internacionais de cibersegurança e relatórios de ameaças.",
-    "Aborda novas vulnerabilidades conhecidas, ataques de ransomware e ações de autoridades.",
-    "Destaca incidentes em plataformas de grandes empresas e ataques a infraestruturas."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Sintetiza o panorama semanal de ameaças e vulnerabilidades globais mais relevantes.",
-   "todo": "Aplique correções de segurança urgentes e acompanhe os alertas de agências especializadas."
-  },
-  {
-   "id": "49e862e5b0734344",
-   "source": "Pplware Segurança",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://pplware.sapo.pt/informacao/asae-ataque-informatico-jose-socrates/",
-   "published": "2026-11-15T13:04:38+00:00",
-   "title": "ASAE alvo de ataque informático. Hackers deixam mensagem com nome de José Sócrates",
-   "summary": "A Autoridade de Segurança Alimentar e Económica foi alegadamente alvo de um ciberataque que se destacou pela inclusão da mensagem “Hacked by José Sócrates”. O incidente levanta preocupações sobre a robustez e a proteção dos sistemas informáticos utilizados por organismos públicos em Portugal. Até ao momento, foram apontadas questões sobre a segurança digital destas entidades governamentais.",
-   "image": null,
-   "points": [
-    "Alvo: Autoridade de Segurança Alimentar e Económica (ASAE).",
-    "O quê: Ataque informático com uma mensagem personalizada associada a José Sócrates.",
-    "Impacto: Desperta preocupações em torno da segurança digital das entidades públicas portuguesas."
-   ],
-   "title_original": null,
-   "category": "Ataque/APT",
-   "translated": false,
-   "enriched": true,
-   "why": "Alerta para a vulnerabilidade das infraestruturas digitais de entidades públicas nacionais.",
-   "todo": "Reforce a monitorização de acessos e aplique protocolos rigorosos de resposta a incidentes em sistemas públicos."
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T14:27:25.911416+00:00",
+ "updated": "2026-11-19T14:47:03.776256+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -109,7 +109,7 @@
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CSO Online",
@@ -179,7 +179,7 @@
   {
    "source": "Google Threat Intelligence",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Google Project Zero",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 11
+   "added": 12
   },
   {
    "source": "Help Net Security",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -309,13 +309,13 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 36,
-  "pending": 282,
-  "unenriched": 169,
+  "done": 12,
+  "pending": 307,
+  "unenriched": 194,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "Expecting value: line 98 column 5 (char 8645)",
+   "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)"
   ]
  },
  "items": [
@@ -408,6 +408,23 @@
    "enriched": true,
    "why": "Evita que o esgotamento das equipas e as fraudes sazonais apanhem as empresas desprevenidas.",
    "todo": "Reforce a monitorização e treine os colaboradores contra esquemas de engenharia social antes dos períodos festivos."
+  },
+  {
+   "id": "fd0ccfc8354876b0",
+   "source": "Google Threat Intelligence",
+   "region": "US",
+   "lang": "en",
+   "link": "https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-vsphere/",
+   "published": "2026-11-19T14:00:00+00:00",
+   "title": "ARMORY CASTLE Exploits vSphere",
+   "summary": "Written by: Jayson Frost, Bryce Greathouse, Dhanesh Kizhakkinan, John Palmisano, Steve Rasch, Daniel Sislo, John Wolfram Introduction On Oct. 15, 2026, Mandiant and Google Threat Intelligence Group (GTIG) published a blog post detailing recent activity in which the suspected PRC-nexus threat actor ARMORY CASTLE (formerly tracked as UNC5221) exploited CVE-2026-102764, a zero-day vulnerability in BeyondTrust Remote Support, which was patched in BT26-05 . We also described some of the threat actor’s post-exploitation operations. In this blog we describe additional post-compromise activity involvi",
+   "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Figure_1_ARMORY_CASTLE_lateral_movement_an.max-1000x1000.png",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Written by: Jayson Frost, Bryce Greathouse, Dhanesh Kizhakkinan, John Palmisano, Steve Rasch, Daniel Sislo, John Wolfram Introduction On Oct. 15, 2026, Mandiant and Google Threat Intelligence Group (GTIG) published a blog post detailing recent activity in which the suspected PRC-nexus threat actor ARMORY CASTLE (formerly tracked as UNC5221) exploited CVE-2026-102764, a zero-day vulnerability in BeyondTrust Remote Support, which was patched in BT26-05 . We also described some of the threat actor’s post-exploitation operations. In this blog we describe additional post-compromise activity involving the exploitation of a vulnerability in VMware vCenter and the deployment of additional malware families. On Nov. 19, 2026, VMware disclosed CVE-2026-123890, which impacts VMware vCenter Server deployments. vSphere consists of both ESXi (the hypervisor) and vCenter Server. The vCenter server is a centralized platform deployed as a Photon Linux virtual appliance and is used to configure, control, and monitor ESXi host environments. CVE-2026-123890 is an unauthenticated Secure Remote Password (SRP-6a) session key disclosure vulnerability over Distributed Computing Environment/Remote Procedure Calls (DCE/RPC). Successful exploitation results in a remote authentication bypass which creates an authenticated session established as administrator@vsphere.local . Using the authenticated administrator session, the attacker can execute arbitrary commands and acquire files, including the data.mdb database, by leveraging the vCenter Server Directory Service ( vmdird ) RPC interface vmdirdbcp . We strongly recommend that affected organizations immediately apply the security patches provided by Broadcom to remediate the vulnerability. ARMORY CASTLE exploited this vulnerability in early Septembe"
   },
   {
    "id": "049017878e9b91ce",
@@ -13761,29 +13778,6 @@
    "enriched": true,
    "why": "Importa porque a automação por IA permite aos atacantes escalar operações ofensivas e reduzir drasticamente os tempos de intrusão.",
    "todo": "Implemente monitorização comportamental avançada para detetar movimentos laterais anómalos que ocorram sem indicadores tradicionais."
-  },
-  {
-   "id": "0a8d031b56377d85",
-   "source": "CyberScoop",
-   "region": "US",
-   "lang": "en",
-   "link": "https://cyberscoop.com/pall-mall-process-commercial-spyware-guidelines/",
-   "published": "2026-11-13T20:56:20+00:00",
-   "title": "Diretrizes da indústria para ferramentas cibernéticas ofensivas reveladas através do processo internacional Pall Mall",
-   "summary": "Vários governos, incluindo os Estados Unidos, o Reino Unido e a França, adotaram um conjunto de diretrizes industriais voluntárias para regular as capacidades comerciais de intrusão cibernética e spyware. A iniciativa visa promover a transparência, a devida diligência e o controlo de exportações para mitigar o uso irresponsável destas ferramentas. No entanto, grupos de direitos civis consideram as medidas insuficientes para traçar limites rigorosos à proliferação e abuso destes softwares.",
-   "image": null,
-   "points": [
-    "O quê: Lançamento de diretrizes internacionais para o setor de ferramentas cibernéticas ofensivas.",
-    "Quem: Governos internacionais, aliados a empresas tecnológicas e grupos de direitos humanos.",
-    "Como: Estabelecimento de pilares de conformidade, gestão de risco e due diligence.",
-    "Impacto: Maior regulação do mercado de spyware, embora criticada por ser branda por ativistas."
-   ],
-   "title_original": "Industry guidelines for offensive cyber tools unveiled through international Pall Mall Process",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque tenta regular o mercado global de spyware e ferramentas de intrusão comercial através da cooperação entre estados.",
-   "todo": ""
   }
  ]
 }

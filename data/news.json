@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T11:07:08.619423+00:00",
+ "updated": "2026-11-19T11:26:27.733954+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -29,7 +29,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -74,7 +74,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -89,7 +89,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -119,7 +119,7 @@
   {
    "source": "Ars Technica Security",
    "ok": true,
-   "added": 7
+   "added": 8
   },
   {
    "source": "WIRED Security",
@@ -239,12 +239,12 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 3
+   "added": 1
   },
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -305,13 +305,58 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 198,
-  "unenriched": 87,
+  "pending": 199,
+  "unenriched": 82,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "45584a3597b1228a",
+   "source": "Ars Technica Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://arstechnica.com/security/2026/11/how-to-tell-a-cyberattack-from-a-plain-old-outage/",
+   "published": "2026-11-19T11:13:01+00:00",
+   "title": "Como distinguir um ciberataque de uma falha técnica comum",
+   "summary": "Uma série de falhas tecnológicas consecutivas em infraestruturas e serviços nos Estados Unidos gerou preocupação pública sobre um possível ciberataque em grande escala. Entre os incidentes estiveram uma interrupção da Microsoft, problemas técnicos na aviação e falhas em software bancário e de redes governamentais. Apesar de a coincidente e improvável cronologia ter gerado alarme, não existem provas de que estes problemas estivessem relacionados ou tivessem origem em piratas informáticos. Cabe aos analistas de ciberestratégia determinar se uma falha técnica resulta de um acidente ou de uma investida maliciosa.",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2201630098-1152x648.jpg",
+   "points": [
+    "Vários serviços tecnológicos falharam consecutivamente nos Estados Unidos ao longo de quatro dias.",
+    "O impacto incluiu interrupções na Microsoft, aviação e redes governamentais.",
+    "Especulou-se sobre ciberataques, mas não há evidências de ação maliciosa.",
+    "Analistas avaliam cada caso para separar acidentes de incidentes de segurança."
+   ],
+   "title_original": "How to tell a cyberattack from a plain old outage",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda a evitar o pânico injustificado ao esclarecer que nem todas as falhas tecnológicas graves são ciberataques.",
+   "todo": "Mantenha a calma perante falhas generalizadas de serviços e aguarde informações oficiais antes de tirar conclusões precipitadas."
+  },
+  {
+   "id": "bef0b390eb37d347",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/19/backbox-linux-10-penetration-testing/",
+   "published": "2026-11-19T11:01:12+00:00",
+   "title": "BackBox Linux 10 traz novas ferramentas de 'hacking' e suporte para o Ubuntu 26.04",
+   "summary": "O projeto comunitário BackBox lançou a versão 10 da sua distribuição Linux dedicada a testes de intrusão, designada por Resolute Raccoon. Esta nova atualização foi desenvolvida para garantir compatibilidade com o Ubuntu 26.04 LTS e inclui o kernel Linux 7.0 juntamente com o ambiente de trabalho Xfce 4.20. Além disso, o sistema de anonimato foi modificado para que as consultas DNS passem a utilizar a rede Tor, bloqueando simultaneamente o tráfego IPv6.",
+   "image": null,
+   "points": [
+    "A BackBox lançou a versão 10 do seu sistema operativo para testes de intrusão.",
+    "A distribuição integra compatibilidade com o Ubuntu 26.04 LTS e o kernel Linux 7.0.",
+    "O modo anónimo foi atualizado para encaminhar consultas DNS pelo Tor e bloquear IPv6."
+   ],
+   "title_original": "BackBox Linux 10 brings new hacking tools and Ubuntu 26.04 support",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Fornece aos profissionais de segurança ferramentas atualizadas para testes de penetração e auditorias defensivas.",
+   "todo": "Atualize as suas distribuições de testes de segurança para as versões mais recentes para beneficiar de ferramentas e correções atuais."
+  },
   {
    "id": "0dd65038e7fbb203",
    "source": "The Register Security",
@@ -334,6 +379,29 @@
    "enriched": true,
    "why": "Importa porque demonstra como sistemas internos podem ser usados para enganar utilizadores, afetando centenas de milhares de contas de transporte.",
    "todo": "Altere imediatamente a sua palavra-passe e evite reutilizar a mesma credencial em vários serviços online."
+  },
+  {
+   "id": "bc96eaf0dd4b1af9",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/19/tfl-takes-oyster-photocard-website-offline-after-attackers-compromise-customer-accounts/5310985",
+   "published": "2026-11-19T11:01:00+00:00",
+   "title": "Transport for London desativa site de cartões Oyster após compromisso de contas de clientes",
+   "summary": "A empresa Transport for London sofreu uma violação de cibersegurança que afetou os detalhes de contas de cerca de 265.000 utilizadores de cartões Oyster. O incidente foi detetado quando os clientes começaram a receber emails legítimos gerados pelo sistema, mas induzidos por atacantes, pedindo a criação de novas contas. Para conter a situação, a entidade suspendeu rapidamente o site dos cartões fotográficos e notificou os utilizadores potencialmente afetados. Embora palavras-passe e dados bancários não tenham sido comprometidos, a organização exortou todos os clientes a mudarem as suas credenciais.",
+   "image": "https://image.theregister.com/?imageId=249452&width=800",
+   "points": [
+    "A Transport for London sofreu um incidente que afetou 265.000 titulares de cartões Oyster.",
+    "Atacantes comprometeram contas, fazendo com que o sistema enviasse emails automáticos aos utilizadores.",
+    "A empresa retirou o site offline para conter a ameaça e evitou o roubo de dados bancários ou passwords.",
+    "Os clientes afetados foram contactados e instruídos a alterar as respetivas credenciais."
+   ],
+   "title_original": "TfL takes Oyster photocard website offline after attackers compromise customer accounts",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra como sistemas legítimos podem ser manipulados para enganar utilizadores após uma intrusão.",
+   "todo": "Altere imediatamente as suas palavras-passe se for notificado de incidentes e evite reutilizar credenciais em vários serviços."
   },
   {
    "id": "2136baff83bb99a5",
@@ -373,9 +441,9 @@
     "O objetivo principal é travar atacantes antes que consigam roubar dados sensíveis.",
     "A recuperação de identidades e configurações é gerida pela Rubrik Security Cloud."
    ],
-   "title_original": "Rubrik Configuration Resilience rolls back unauthorized Microsoft 365 changes",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa porque oferece uma forma rápida de anular alterações maliciosas em definições críticas de segurança antes que ocorram roubos de dados.",
    "todo": "Monitore continuamente as configurações das suas ferramentas de colaboração e adote soluções de recuperação automatizada de definições."
@@ -396,9 +464,9 @@
     "A empresa classifica estes aparelhos desatualizados como um risco elevado para as redes.",
     "Recomenda-se parar de utilizar estes dispositivos diretamente expostos à internet."
    ],
-   "title_original": "SonicWall urges customers to replace Gen 6 firewalls now",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa porque continuar a usar equipamentos sem suporte deixa as redes vulneráveis a falhas críticas sem qualquer correção disponível.",
    "todo": "Substitua urgentemente hardware de rede obsoleto por modelos com suporte ativo e atualizações regulares."
@@ -419,9 +487,9 @@
     "As atualizações resolvem vulnerabilidades de severidade crítica e alta.",
     "Os administradores devem atualizar os sistemas afetados com brevidade."
    ],
-   "title_original": "Splunk Patches Nearly 140 Flaws Across Three Core Products",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa porque a correção de um número tão elevado de falhas críticas evita que atacantes comprometam plataformas empresariais essenciais.",
    "todo": "Atualize os produtos Splunk afetados para as versões mais recentes disponibilizadas pelo fabricante."
@@ -442,9 +510,9 @@
     "Os sistemas operativos reconhecem o Bitwarden como fornecedor oficial de passkeys.",
     "A novidade simplifica a criação e o armazenamento seguro de credenciais."
    ],
-   "title_original": "Bitwarden expands passkey support with new Windows and macOS integrations",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa porque facilita a adoção de métodos de autenticação mais seguros e resistentes a phishing através de biometria nativa.",
    "todo": "Ative o suporte a passkeys e utilize autenticação biométrica nos seus dispositivos para proteger o acesso aos seus cofres."
@@ -464,9 +532,9 @@
     "O problema afeta o Microsoft Office e várias aplicações de terceiros.",
     "A empresa já divulgou soluções de contorno para ajudar os utilizadores afetados."
    ],
-   "title_original": "Microsoft confirms app installation, launch issues after hotpatch",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa porque falhas em atualizações do sistema operativo podem paralisar o funcionamento de aplicações essenciais nas empresas.",
    "todo": "Consulte as soluções alternativas oficiais da Microsoft antes de aplicar novos patches em ambientes de produção."
@@ -556,9 +624,9 @@
     "As falhas mais graves requerem configurações específicas e não predefinidas para serem exploradas.",
     "Os detalhes técnicos serão divulgados em simultâneo com o lançamento das correções."
    ],
-   "title_original": "PHP Warns of Critical Flaws Ahead of November Security Release",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa porque afeta uma linguagem amplamente utilizada na web, exigindo atenção redobrada dos administradores de servidores.",
    "todo": "Prepare a atualização urgente dos ambientes PHP assim que as novas versões oficiais estiverem disponíveis."
@@ -13704,75 +13772,6 @@
    "enriched": true,
    "why": "Mostra a amplitude de riscos emergentes que vão desde a cadeia de suprimentos de IA até às políticas de divulgação de vulnerabilidades.",
    "todo": "Mantém uma política rigorosa de atualização para ferramentas de desenvolvimento e modelos de inteligência artificial."
-  },
-  {
-   "id": "39b1ecde555ff00f",
-   "source": "SAPO Tek",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://tek.sapo.pt/noticias/internet/artigos/bricklink-ja-regressou-depois-de-um-ciberataque-lego-confirma-acesso-a-nomes-de-utilizador-ip-e-alguns-emails/",
-   "published": "2026-11-13T15:13:05+00:00",
-   "title": "BrickLink já regressou depois de um ciberataque: Lego confirma acesso a nomes de utilizador, IP e alguns emails",
-   "summary": "A Lego manteve a plataforma BrickLink offline durante mais de uma semana na sequência de um ciberataque. A empresa dinamarquesa confirmou que os atacantes acederam a nomes de utilizador, endereços IP e alguns endereços de correio eletrónico. Em contrapartida, a organização garantiu que as palavras-passe e os dados de pagamento dos utilizadores não foram afetados. O incidente obrigou a uma interrupção prolongada do mercado online de peças usadas.",
-   "image": null,
-   "points": [
-    "BrickLink esteve offline mais de uma semana.",
-    "Lego confirmou acesso a dados de utilizadores.",
-    "Nomes de utilizador, IPs e emails foram expostos.",
-    "Palavras-passe e pagamentos ficaram salvaguardados."
-   ],
-   "title_original": null,
-   "category": "Ataque/APT",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia o impacto operacional e reputacional de incidentes em plataformas de comércio eletrónico e comunidades online.",
-   "todo": "Ativa a autenticação multifator (MFA) sempre que disponível e utiliza credenciais únicas em cada plataforma online."
-  },
-  {
-   "id": "e8d212e2e33e21cf",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/tsmc-confirms-employee-data-breach-cloud-provider",
-   "published": "2026-11-13T15:06:00+00:00",
-   "title": "TSMC confirma fuga de dados de funcionários ligada a fornecedor de serviços na nuvem",
-   "summary": "Uma investigação conduzida pela TSMC concluiu que os seus sistemas internos não sofreram qualquer compromisso num incidente recente. No entanto, os dados recolhidos coincidiam com informações armazenadas nos serviços de um fornecedor externo de computação na nuvem. A empresa esclareceu que os registos afetados são totalmente alheios às suas operações principais e aos dados de clientes. O caso sublinha os riscos de segurança associados a fornecedores terceiros.",
-   "image": "https://cms.therecord.media/uploads/TSMC_logo_on_Taichung_factory_building_4ac5558127.jpg",
-   "points": [
-    "Sistemas internos da TSMC não foram comprometidos.",
-    "Dados coincidem com registos de fornecedor cloud.",
-    "Informação roubada é alheia à operação da empresa.",
-    "Incidente envolveu serviços de terceiros."
-   ],
-   "title_original": "TSMC confirms employee data breach tied to cloud service provider",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Destaca a importância de auditar a segurança e os acessos dos fornecedores de serviços externos na nuvem.",
-   "todo": "Reviu e restringe as permissões concedidas a fornecedores externos e parceiros nos ambientes de nuvem."
-  },
-  {
-   "id": "db3fd3a5adb8fb92",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
-   "published": "2026-11-13T15:01:11+00:00",
-   "title": "Como um agente de IA expôs cinco falhas críticas de segurança empresarial",
-   "summary": "Um agente de inteligência artificial desenvolvido para automatizar o processamento de faturas foi manipulado através de um email malicioso. A manipulação permitiu alterar os dados bancários de fornecedores sem despoletar os alertas de segurança tradicionais. A análise da Token Security identificou cinco lacunas críticas na arquitetura de agentes autónomos. O impacto reside na capacidade de contornar defesas corporativas tradicionais através de engenharia social direcionada a IA.",
-   "image": null,
-   "points": [
-    "Agente de IA foi manipulado via email malicioso.",
-    "Dados bancários de fornecedores foram alterados.",
-    "Ataque ocorreu sem disparar alertas tradicionais.",
-    "Identificadas cinco falhas em agentes de IA."
-   ],
-   "title_original": "How one AI agent exposed five critical enterprise security gaps",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Revela que os sistemas autónomos baseados em IA introduzem novos vetores de ataque difíceis de detetar com ferramentas clássicas.",
-   "todo": "Implementa validação humana obrigatória para alterações críticas em processos automatizados por IA."
   }
  ]
 }

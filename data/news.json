@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T17:26:27.814570+00:00",
+ "updated": "2026-11-19T17:45:56.531924+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 3
+   "added": 4
   },
   {
    "source": "TugaTech",
@@ -74,7 +74,7 @@
   {
    "source": "MS-ISAC (CIS)",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "BleepingComputer",
@@ -104,7 +104,7 @@
   {
    "source": "CyberScoop",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Cybersecurity Dive",
@@ -119,7 +119,7 @@
   {
    "source": "TechCrunch Security",
    "ok": true,
-   "added": 7
+   "added": 8
   },
   {
    "source": "Ars Technica Security",
@@ -129,12 +129,12 @@
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 12
+   "added": 11
   },
   {
    "source": "Schneier on Security",
    "ok": true,
-   "added": 6
+   "added": 7
   },
   {
    "source": "SANS ISC",
@@ -144,7 +144,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "Malwarebytes Labs",
@@ -178,8 +178,8 @@
   },
   {
    "source": "Google Threat Intelligence",
-   "ok": false,
-   "error": "HTTPSConnectionPool(host='cloudblog.withgoogle.com', port=443): Read timed out. (read timeout=25)"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "Google Project Zero",
@@ -279,7 +279,7 @@
   {
    "source": "Check Point Research",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "Securelist (Kaspersky)",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 337,
-  "unenriched": 224,
+  "done": 36,
+  "pending": 303,
+  "unenriched": 192,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -320,21 +320,48 @@
  },
  "items": [
   {
+   "id": "4692e0d9ed573f96",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/doj-dhs-partner-on-new-unit-tackling-scams-cybercrime",
+   "published": "2026-11-19T17:25:00+00:00",
+   "title": "DOJ e DHS criam nova unidade para combater fraudes e cibercrime",
+   "summary": "Os departamentos juntaram-se para lançar o Threat Disruption Center. Esta nova unidade tem como objetivo melhorar a triagem de queixas de vítimas e mapear redes de cibercriminosos. Além disso, vai disponibilizar um canal direto para organizações do setor privado que colaboram com as vítimas.",
+   "image": "https://cms.therecord.media/uploads/doj_dhs_05d4d760e5.jpg",
+   "points": [
+    "DOJ e DHS criaram o Threat Disruption Center.",
+    "Melhora a triagem de queixas e o mapeamento de redes criminosas.",
+    "Cria um canal direto com organizações privadas que apoiam vítimas."
+   ],
+   "title_original": "DOJ, DHS partner on new unit tackling scams and cybercrime",
+   "category": "Phishing/Fraude",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite uma resposta mais coordenada e direta entre o Estado e o setor privado contra o cibercrime.",
+   "todo": ""
+  },
+  {
    "id": "2ff5d2ac87e8dee7",
    "source": "DataBreaches.net",
    "region": "US",
    "lang": "en",
    "link": "https://databreaches.net/2026/11/19/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers/",
    "published": "2026-11-19T17:16:31+00:00",
-   "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
-   "summary": "Ben Glickman and Alexander Saeedy report: Data from thousands of customers of Visa, Mastercard, and JPMorgan Chase have unnerved consumers in the last week. A Visa spokesman said no payments data, such as card numbers, were affected and Visa’s own systems weren’t involved or affected. It added that the incident involved a third-party service provider...",
+   "title": "Dados de clientes da Visa, Mastercard e JPMorgan divulgados por hackers",
+   "summary": "Dados de milhares de clientes da Visa, Mastercard e JPMorgan Chase foram expostos recentemente, gerando preocupação nos consumidores. Um porta-voz da Visa garantiu que os dados de pagamento, como números de cartões, não foram afetados e que os sistemas internos da empresa não sofreram impactos. O incidente ocorreu através de um fornecedor de serviços externo.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Dados de clientes de grandes entidades financeiras foram expostos.",
+    "A incidente afetou um prestador de serviços externo e não os sistemas diretos da Visa.",
+    "Informações sensíveis de pagamento, como números de cartões, não foram comprometidas."
+   ],
+   "title_original": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "Ben Glickman and Alexander Saeedy report: Data from thousands of customers of Visa, Mastercard, and JPMorgan Chase have unnerved consumers in the last week. A Visa spokesman said no payments data, such as card numbers, were affected and Visa’s own systems weren’t involved or affected. It added that the incident involved a third-party service provider..."
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como a vulnerabilidade num fornecedor terceiro pode expor os clientes de grandes marcas financeiras.",
+   "todo": "Monitore os extratos das suas contas e valide a segurança e conformidade dos fornecedores externos com quem partilha dados."
   },
   {
    "id": "82b92648e82def06",
@@ -343,15 +370,20 @@
    "lang": "en",
    "link": "https://databreaches.net/2026/11/19/google-spots-first-ever-autonomous-ai-cyberattack-by-russian-speaking-hackers-targeting-france/",
    "published": "2026-11-19T17:16:14+00:00",
-   "title": "Google spots first-ever autonomous AI cyberattack by Russian-speaking hackers targeting France",
-   "summary": "Jonah Davidov reports: An AI tool developed by Russian-speaking hackers carried out the first-ever fully automated cyberattack, according to a Monday report by Google’s Threat Intelligence Group. Multiple threat actors have been observed “abusing open-source, agentic penetration (pentesting) frameworks to autonomously name discrete phases and specific operational tasks during live intrusions,” the report said. The...",
+   "title": "Google deteta o primeiro ciberataque autónomo de IA por hackers russos contra a frança",
+   "summary": "Um relatório do grupo de inteligência de ameaças da Google revelou que hackers de idioma russo utilizaram uma ferramenta de inteligência artificial para executar o primeiro ciberataque totalmente automatizado. Os atacantes exploraram estruturas de testes de penetração de código aberto e baseadas em agentes para gerir fases operacionais de forma autónoma. Esta utilização demonstra novos riscos na execução de intrusões em tempo real.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Hackers russos executaram o primeiro ciberataque totalmente autónomo com IA.",
+    "A ferramenta usou frameworks de pentesting de código aberto.",
+    "O ataque direcionou-se contra a França, automatizando fases operacionais da intrusão."
+   ],
+   "title_original": "Google spots first-ever autonomous AI cyberattack by Russian-speaking hackers targeting France",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Jonah Davidov reports: An AI tool developed by Russian-speaking hackers carried out the first-ever fully automated cyberattack, according to a Monday report by Google’s Threat Intelligence Group. Multiple threat actors have been observed “abusing open-source, agentic penetration (pentesting) frameworks to autonomously name discrete phases and specific operational tasks during live intrusions,” the report said. The..."
+   "translated": true,
+   "enriched": true,
+   "why": "Marca uma nova era perigosa onde os ciberataques podem ser executados autonomamente por inteligência artificial.",
+   "todo": "Mantenha os sistemas atualizados e adote monitorização comportamental avançada para detetar anomalias automatizadas."
   },
   {
    "id": "877d7505984d23d5",
@@ -361,14 +393,19 @@
    "link": "https://cyberscoop.com/michael-losapio-cisa-confirmation-hearing/",
    "published": "2026-11-19T17:11:34+00:00",
    "title": "Dems call CISA nominee ‘disqualified’ after nomination hearing",
-   "summary": "Michael LoSapio, the Palantir executive and Trump administration nominee for CISA, sparred with Democrats on the committee over who won the 2020 election, Jan. 6 and more.",
+   "summary": "Michael LoSapio, executivo da Palantir e nomeado pela administração Trump para diretor da CISA, adotou um tom combativo perante os democratas e tomou partido em disputas partidárias durante a sua audição. A audição durou menos de uma hora, num momento em que a CISA está sem diretor confirmado há dois anos. Questionado sobre a cibersegurança das infraestruturas críticas, LoSapio defendeu que as organizações devem adotar medidas proativas, como inventário e aplicação de patches em dispositivos ligados à internet.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Michael LoSapio foi nomeado para liderar a agência de cibersegurança CISA.",
+    "A audição gerou tensão e forte oposição por parte dos democratas.",
+    "O nomeado sublinhou a importância de inventariar e aplicar patches em dispositivos conectados."
+   ],
+   "title_original": "Dems call CISA nominee ‘disqualified’ after nomination hearing",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Michael LoSapio, the Palantir executive and Trump administration nominee for Director of the Cybersecurity and Infrastructure Security Agency, struck a combative tone with Democrats on Homeland Security and Government Affairs Committee and took sides in several partisan disputes that are likely to complicate his path to confirmation. LoSapio’s hearing lasted less than an hour, far less time than Congress has spent scrutinizing previous CISA nominees, as he was considered alongside a large tranche of other Trump administration nominees that Republicans are attempting to move through Congress during the lame duck session. CISA has lacked a confirmed director for the first two years of the Trump administration, and policymakers have fresh concerns about cyber insecurity in U.S. critical infrastructure, artificial intelligence and other threats. Despite that, LoSapio and senators on the committee spent little time discussing the specifics of his vision for the federal government’s primary defensive cybersecurity agency. When LoSapio was asked about cybersecurity issues, like how he intended to boost cybersecurity resilience of the nation in the wake of last week’s widespread outages, he said organizations should be more proactive implementing baseline protections around inventory, evaluation and patching internet-connected devices. “It’s really important to understand the landscape of the systems you have out in the wild,” said LoSapio. “The things that you operate day-to-day, the systems that you rely on, the systems that are ancillary, and do an extensive evaluation on their vulnerabilities, whether they’ve been patched or not, how they’ve been architected and their defensive capabilities, both things we need to add and the things that exist today, as to how that maps to "
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia a politização na liderança da principal agência federal de cibersegurança dos EUA.",
+   "todo": "Garanta um inventário rigoroso de todos os dispositivos ligados à rede e aplique patches de segurança regularmente."
   },
   {
    "id": "c0b2110866740c07",
@@ -378,14 +415,19 @@
    "link": "https://therecord.media/cisa-losapio-nomination-trump",
    "published": "2026-11-19T17:00:00+00:00",
    "title": "CISA nominee LoSapio vows to bolster cyber defenses while denying Jan. 6 Capitol attack",
-   "summary": "President Donald Trump’s pick to lead the Cybersecurity and Infrastructure Security Agency pledged to lawmakers to uncover any “gaps” within the organization while also denying the Capitol came under attack on January 6, 2021.",
+   "summary": "O candidato escolhido para liderar a CISA prometeu aos legisladores que irá identificar falhas na organização. Em simultâneo, gerou controvérsia ao negar que tenha ocorrido um ataque ao Capitólio a 6 de janeiro de 2021. As declarações surgem durante o processo de escrutínio para a sua confirmação no cargo.",
    "image": "https://cms.therecord.media/uploads/Lo_Sapio_hearing_5a83421791.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O candidato à liderança da CISA prometeu detetar falhas operacionais na agência.",
+    "LoSapio negou publicamente os acontecimentos do ataque ao Capitólio de 6 de janeiro.",
+    "As declarações complicam o processo político para a sua confirmação."
+   ],
+   "title_original": "CISA nominee LoSapio vows to bolster cyber defenses while denying Jan. 6 Capitol attack",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "President Donald Trump’s pick to lead the Cybersecurity and Infrastructure Security Agency pledged to lawmakers to uncover any “gaps” within the organization while also denying the Capitol came under attack on January 6, 2021."
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra como controvérsias políticas podem interferir na nomeação de figuras centrais para a segurança nacional.",
+   "todo": ""
   },
   {
    "id": "2a01bbcb107b1e63",
@@ -395,14 +437,41 @@
    "link": "https://www.wired.com/story/google-built-a-giant-mirror-dimension-internet-to-test-its-chrome-ai-agents/",
    "published": "2026-11-19T17:00:00+00:00",
    "title": "Google Built a Giant ‘Mirror Dimension’ Internet to Test Its Chrome AI Agents",
-   "summary": "The company’s alternate-universe internet serves as a massive sandbox that allows the Chrome team to properly train AI browsing agents—without the risk of them going rogue.",
+   "summary": "A Google criou um universo de internet alternativo que funciona como uma enorme sandbox. Este ambiente simulado permite à equipa do Chrome treinar agentes de IA de navegação em segurança. O objetivo principal é evitar o risco de os agentes assumirem comportamentos imprevisíveis ou perigosos.",
    "image": "https://media.wired.com/photos/6aff2988bee7350f3da10056/master/pass/GettyImages-2229158642.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Google desenvolveu uma internet alternativa em formato sandbox.",
+    "O objetivo é treinar agentes de IA do navegador Chrome de forma segura.",
+    "Evita que os assistentes de IA desenvolvam comportamentos indesejados ou perigosos."
+   ],
+   "title_original": "Google Built a Giant ‘Mirror Dimension’ Internet to Test Its Chrome AI Agents",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "The company’s alternate-universe internet serves as a massive sandbox that allows the Chrome team to properly train AI browsing agents—without the risk of them going rogue."
+   "translated": true,
+   "enriched": true,
+   "why": "Ilustra o esforço necessário para testar de forma segura ferramentas autónomas antes de as expor à internet real.",
+   "todo": ""
+  },
+  {
+   "id": "9a6b7efdf6670f4c",
+   "source": "MS-ISAC (CIS)",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-nginx-could-allow-for-remote-code-execution_2026-136",
+   "published": "2026-11-19T16:55:05+00:00",
+   "title": "Multiple Vulnerabilities in NGINX Could Allow for Remote Code Execution",
+   "summary": "Foram detetadas várias vulnerabilidades no software NGINX, sendo a mais grave suscetível de permitir a execução remota de código. O NGINX é amplamente utilizado como servidor Web, proxy reverso, em cache e no balanceamento de carga. Uma exploração bem-sucedida permite que um atacante instale programas, manipule dados ou crie novas contas de utilizador com plenos direitos.",
+   "image": null,
+   "points": [
+    "Múltiplas falhas foram descobertas no servidor web NGINX.",
+    "A vulnerabilidade mais crítica permite execução remota de código.",
+    "Atacantes podem assumir controlo e manipular dados conforme as permissões da conta afetada."
+   ],
+   "title_original": "Multiple Vulnerabilities in NGINX Could Allow for Remote Code Execution",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Coloca em risco milhares de servidores web e serviços de proxy dependentes do NGINX.",
+   "todo": "Atualize o software NGINX para as versões corrigidas mais recentes e execute serviços com privilégios mínimos."
   },
   {
    "id": "c5e7bc1c42387de6",
@@ -412,14 +481,19 @@
    "link": "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/",
    "published": "2026-11-19T16:28:23+00:00",
    "title": "PHP security updates fix 18 flaws, including critical RCE bugs",
-   "summary": "The PHP development team released security updates addressing 18 vulnerabilities, including critical flaws that could allow unauthenticated attackers to remotely execute code on vulnerable servers. [...]",
+   "summary": "A equipa de desenvolvimento do PHP lançou atualizações de segurança para corrigir um total de 18 vulnerabilidades. Entre as falhas corrigidas encontram-se erros críticos que permitiriam a atacantes não autenticados executar código remotamente em servidores vulneráveis. Estas correções são essenciais para proteger a infraestrutura web baseada na linguagem.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O PHP corrigiu 18 falhas de segurança em novas atualizações.",
+    "Existem bugs críticos de execução remota de código (RCE).",
+    "Atacantes não autenticados podiam explorar estas falhas nos servidores afetados."
+   ],
+   "title_original": "PHP security updates fix 18 flaws, including critical RCE bugs",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "The PHP development team released security updates addressing 18 vulnerabilities, including critical flaws that could allow unauthenticated attackers to remotely execute code on vulnerable servers. [...]"
+   "translated": true,
+   "enriched": true,
+   "why": "Protege servidores web contra explorações remotas que poderiam comprometer todo o sistema.",
+   "todo": "Atualize urgentemente os ambientes de desenvolvimento e produção PHP para as versões seguras disponibilizadas."
   },
   {
    "id": "74c03507cc4ed031",
@@ -429,14 +503,18 @@
    "link": "https://www.crowdstrike.com/en-us/blog/falcon-ai-gateway-one-control-point-for-ai-traffic/",
    "published": "2026-11-19T16:21:23.052465+00:00",
    "title": "Inside Falcon AI Gateway: One Control Point for AI Traffic",
-   "summary": "",
+   "summary": "Ferramenta focada na gestão centralizada do tráfego de inteligência artificial através de um ponto de controlo único.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Funciona como um ponto de controlo unificado para tráfego de IA.",
+    "Facilita a gestão de fluxos de dados associados a ferramentas de inteligência artificial."
+   ],
+   "title_original": "Inside Falcon AI Gateway: One Control Point for AI Traffic",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": ""
+   "translated": true,
+   "enriched": true,
+   "why": "Permite centralizar a monitorização e a segurança do tráfego gerado por tecnologias de IA.",
+   "todo": "Implemente pontos de controlo centralizados para monitorizar o uso de ferramentas de IA na sua rede."
   },
   {
    "id": "d7156b706b0adab6",
@@ -446,14 +524,19 @@
    "link": "https://www.cybersecuritydive.com/news/critical-remote-code-execution-flaws-nginx-web-server/875196/",
    "published": "2026-11-19T16:20:12+00:00",
    "title": "Critical remote code execution flaws found in Nginx web server",
-   "summary": "The flaws, including one that remained hidden for more than a decade, are difficult to exploit.",
+   "summary": "Foram detetadas falhas críticas de execução remota de código no servidor web Nginx, incluindo uma vulnerabilidade que permaneceu oculta durante mais de uma década. Apesar da gravidade, os analistas indicam que estas falhas são difíceis de explorar na prática. A descoberta afeta componentes fundamentais para a infraestrutura de alojamento web.",
    "image": "https://imgproxy.divecdn.com/Q6uZdgXjvXvCk8EkEjaDcuJoI3DDphQ6HTdPQ6sW6ms/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9GNS1Ub3dlci1FeHRlcmlvci0wNS5qcGc=.webp",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Descobertas falhas críticas de execução de código no servidor Nginx.",
+    "Uma das vulnerabilidades manteve-se oculta por mais de dez anos.",
+    "A exploração destas falhas é considerada difícil pelos especialistas."
+   ],
+   "title_original": "Critical remote code execution flaws found in Nginx web server",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "The flaws, including one that remained hidden for more than a decade, are difficult to exploit."
+   "translated": true,
+   "enriched": true,
+   "why": "Revela que vulnerabilidades graves podem permanecer escondidas em softwares essenciais durante anos.",
+   "todo": "Aplique imediatamente as correções de segurança disponibilizadas para o Nginx."
   },
   {
    "id": "2df95cf4f563cfa3",
@@ -462,15 +545,20 @@
    "lang": "en",
    "link": "https://www.theregister.com/security/2026/11/19/russian-national-accused-of-stalking-san-francisco-techie-in-plot-against-us-defense-tech-giant/5311126",
    "published": "2026-11-19T16:20:00+00:00",
-   "title": "Russian national accused of stalking San Francisco techie in plot against US defense-tech giant",
-   "summary": "DoJ claims suspect part of 4-month operation to steal secrets, surveil employees",
+   "title": "Cidadão russo acusado de espionagem contra gigante tecnológica de defesa norte-americana",
+   "summary": "Um cidadão russo foi detido sob a acusação de espionar uma grande empresa de tecnologia de defesa em Palo Alto. O suspeito terá recolhido informações através da observação de ecrãs de funcionários em cafés e da colocação de dispositivos de vigilância nas proximidades. As autoridades norte-americanas confirmaram a operação após investigarem dispositivos apreendidos e mensagens trocadas via Telegram com alegados manipuladores dos serviços secretos russos (FSB).",
    "image": "https://image.theregister.com/?imageId=259265&width=800",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Um cidadão russo foi preso por espionagem a uma empresa tecnológica de defesa.",
+    "O suspeito usou técnicas de 'shoulder-surfing' e colocou dispositivos de escuta.",
+    "A investigação do FBI confirmou ordens recebidas através da aplicação Telegram."
+   ],
+   "title_original": "Russian national accused of stalking San Francisco techie in plot against US defense-tech giant",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "A Russian national is being held in custody after being arrested for allegedly spying on a US defense tech company in Palo Alto, shoulder-surfing employees, and dropping remote surveillance devices at their homes. Igor D'iu was indicted after FBI agents surveilled his activities between June and October 2026, which they say were issued as \"tasks\" from what is thought to be Russia’s Federal Security Service (FSB), according to an affidavit [PDF] signed by an FBI special agent. After FBI agents secured a warrant to raid D'iu's temporary premises in October, they say that Telegram messages harvested from his seized devices confirmed investigators' findings and revealed that he was spying on an unnamed company. Court documents describe the company in question as a large technology and defense company with offices in Palo Alto, and media-reported links to the Russia-Ukraine war. While unconfirmed officially, the company has widely been reported as Palantir, which did not respond to our request for confirmation. D'iu allegedly received instructions from Telegram contacts, whom he only suspected were representatives of the Russian government, weeks after entering the US illegally in July. The indictment alleges he was ordered to surveil employees' homes, take photographs of their screens while working remotely at coffee shops, and permit his handlers to remotely access his laptop for the purpose of capturing data from nearby devices owned by the company’s employees. In some cases, the filing alleges, D’iu was asked to leave a laptop outside one employee's apartment complex, all while allowing his Telegram handlers to remotely operate the device. The first time, he was asked to leave the laptop for one hour while the handlers worked, and another time, he was told to drop it off"
+   "translated": true,
+   "enriched": true,
+   "why": "Expõe ameaças de espionagem física e digital direcionadas a empresas críticas do setor de defesa.",
+   "todo": "Treine os colaboradores para estarem atentos a observadores em locais públicos ('shoulder-surfing') ao trabalhar com dados sensíveis."
   },
   {
    "id": "cc590fdc0878714b",
@@ -479,15 +567,20 @@
    "lang": "en",
    "link": "https://www.tenable.com/blog/identity-context-is-essential-for-exposure-management-tenable-one-adds-ways-to-bring-in",
    "published": "2026-11-19T16:15:00+00:00",
-   "title": "Identity context is essential for exposure management: Tenable One adds ways to bring in identity security data",
-   "summary": "Tenable One now ingests identity findings from third-party sources, allowing you to assess and prioritize exposures related to stale and overprivileged accounts alongside your other security data, such as vulnerabilities and misconfigurations. Key takeaways Managing identity risk should be an essential part of any exposure management program. However, in many organizations, exposure management programs often don’t include their identity-security teams. Relying on siloed identity-security teams and tools leaves organizations vulnerable to attackers who chain identity flaws with other infrastruc",
+   "title": "O contexto de identidade é essencial para a gestão de exposição: Tenable One adiciona dados de segurança de identidades",
+   "summary": "A plataforma Tenable One passou a integrar dados de segurança de identidades provenientes de fontes terceiras. Esta integração permite avaliar e priorizar exposições relacionadas com contas inativas e com excesso de privilégios em conjunto com outras vulnerabilidades. Dados do SANS Institute indicam que mais de metade das organizações sofreram quebras de segurança associadas a identidades no último ano, muitas vezes combinando falhas de identidade com fraquezas de infraestrutura.",
    "image": "https://www.tenable.com/sites/default/files/images/articles/Two%20new%20ways%20to%20bring%20identity%20security%20data%20into%20Tenable%20One.png",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Tenable One passa a recolher dados de segurança de identidades de terceiros.",
+    "Ajuda a priorizar contas com privilégios excessivos ou inativas.",
+    "Dados mostram que 55% das organizações sofreram violações ligadas a identidades."
+   ],
+   "title_original": "Identity context is essential for exposure management: Tenable One adds ways to bring in identity security data",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Tenable One now ingests identity findings from third-party sources, allowing you to assess and prioritize exposures related to stale and overprivileged accounts alongside your other security data, such as vulnerabilities and misconfigurations. Key takeaways Managing identity risk should be an essential part of any exposure management program. However, in many organizations, exposure management programs often don’t include their identity-security teams. Relying on siloed identity-security teams and tools leaves organizations vulnerable to attackers who chain identity flaws with other infrastructure vulnerabilities. Tenable One now ingests findings from third-party identity security providers, so that you can prioritize such findings alongside all other types of exposures in your attack surface. If your exposure management program can’t see identity risk, it’s missing a key piece of puzzle. According to SANS Institute’s “ 2026 State of Identity Threats & Defenses Survey Insights Event ” report, 55% of organizations suffered at least one identity-related breach during the 12-month survey period, and among those organizations, 21% suffered more than one breach. Attackers often chain identity flaws with other security issues, such as vulnerabilities and misconfigurations, to create attack paths to your most critical systems and data. However, in many security programs, identity security is siloed and managed by a separate team with its own tools. This is a significant problem. Identity risk simply can’t be managed in isolation. It belongs in your exposure management program, so that you can address identity exposures alongside other exposures in your on-premises infrastructure, cloud workloads, IoT devices, operational technology (OT) systems, and AI tools. Many organization"
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que a gestão do risco de identidade deve estar integrada na estratégia global de segurança da organização.",
+   "todo": "Reveja regularmente os privilégios das contas de utilizador e elimine contas inativas para reduzir a superfície de ataque."
   },
   {
    "id": "6ddd580a0952d4db",
@@ -496,15 +589,20 @@
    "lang": "en",
    "link": "https://therecord.media/apple-uk-encryption-notice",
    "published": "2026-11-19T16:15:00+00:00",
-   "title": "UK court confirms British government served Apple with secret encryption notice",
-   "summary": "The British government served Apple with a secret legal notice targeting the company’s cryptographic protections for iCloud accounts, a tribunal has confirmed, ending almost two years of official refusal to acknowledge what had been widely reported.",
+   "title": "Tribunal do Reino Unido confirma que o governo britânico emitiu uma notificação de encriptação secreta à Apple",
+   "summary": "Um tribunal confirmou que o governo britânico emitiu uma notificação legal secreta à Apple relacionada com as proteções criptográficas das contas iCloud. Esta decisão põe fim a quase dois anos de recusa oficial em reconhecer publicamente a medida, que já era amplamente falada. A ordem visava comprometer a segurança dos dados dos utilizadores.",
    "image": "https://cms.therecord.media/uploads/Apple_logo_253a5988c4.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O governo britânico emitiu uma ordem secreta à Apple.",
+    "A medida focava-se na encriptação das contas iCloud.",
+    "A confirmação surgiu através de um tribunal após anos de silêncio oficial."
+   ],
+   "title_original": "UK court confirms British government served Apple with secret encryption notice",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "The British government served Apple with a secret legal notice targeting the company’s cryptographic protections for iCloud accounts, a tribunal has confirmed, ending almost two years of official refusal to acknowledge what had been widely reported."
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra a pressão governamental contínua sobre as empresas tecnológicas para enfraquecerem a encriptação de ponta a ponta.",
+   "todo": "Acompanhe as atualizações de segurança da Apple e garanta que utiliza autenticação forte nas suas contas na cloud."
   },
   {
    "id": "54225f4d777eefef",
@@ -513,15 +611,20 @@
    "lang": "en",
    "link": "https://www.rapid7.com/blog/post/dr-what-is-preemptive-mdr-security-leaders-guide",
    "published": "2026-11-19T15:58:53+00:00",
-   "title": "What Is Preemptive MDR? A Guide For Security Leaders",
-   "summary": "When an MDR provider contains a compromised endpoint, your team needs to know whether the weakness that enabled the attack exists elsewhere and who is responsible for addressing it. Without that follow-through, the immediate incident may be resolved while another attacker still has a way in. Preemptive managed detection and response (MDR) is Rapid7's approach to connecting exposure context, threat intelligence, AI-assisted investigation, and human expertise. It supports proactive cybersecurity by helping teams prioritize weaknesses before exploitation, investigate threats with a clearer unders",
+   "title": "O que é o MDR Preventivo? Um guia para líderes de segurança",
+   "summary": "A Rapid7 apresentou o conceito de MDR Preventivo para ligar o contexto de exposição, inteligência de ameaças e investigação assistida por IA. O objetivo é ajudar as equipas a priorizar vulnerabilidades antes de serem exploradas por atacantes. Esta abordagem liga diretamente o trabalho de monitorização às condições que tornam uma organização vulnerável.",
    "image": "https://images.contentstack.io/v3/assets/blte4f029e766e6b253/bltb655c1b69f13c73b/6846a711536b63f12ca5f649/incident-response-findings-2025.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O MDR preventivo cruza dados de exposição com a resposta a incidentes.",
+    "Ajuda as equipas a priorizar falhas antes de sofrerem exploração.",
+    "Conecta a investigação de ameaças às vulnerabilidades específicas de cada infraestrutura."
+   ],
+   "title_original": "What Is Preemptive MDR? A Guide For Security Leaders",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "When an MDR provider contains a compromised endpoint, your team needs to know whether the weakness that enabled the attack exists elsewhere and who is responsible for addressing it. Without that follow-through, the immediate incident may be resolved while another attacker still has a way in. Preemptive managed detection and response (MDR) is Rapid7's approach to connecting exposure context, threat intelligence, AI-assisted investigation, and human expertise. It supports proactive cybersecurity by helping teams prioritize weaknesses before exploitation, investigate threats with a clearer understanding of risk, and use their findings to strengthen defenses. How does preemptive MDR differ from traditional MDR? Managed detection and response provides security specialists who monitor, investigate, and respond to threats around the clock. Many services also include proactive threat hunting and recommendations to improve security. Preemptive MDR connects that work more directly to what makes an organization vulnerable. When analysts investigate suspicious activity on a server, knowing that it is internet-facing, supports a critical application, and has a vulnerability under active exploitation helps them assess urgency and determine where to look next. In Rapid7’s model, exposure findings inform investigation and remediation priorities, while investigations reveal weaknesses that need attention. Security leaders gain a clearer connection between the threats their provider handles and the conditions their organization needs to address. Within a broader preemptive cybersecurity strategy, MDR connects exposure information with the people investigating and responding to threats. The aim is to reduce opportunities for compromise and intervene before an attack causes harm, while ret"
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda as empresas a mudarem de uma postura reativa para uma mitigação proativa de riscos.",
+   "todo": "Avalie se os seus fornecedores de segurança oferecem visibilidade integrada entre vulnerabilidades e monitorização de ameaças."
   },
   {
    "id": "3049d4149a83870d",
@@ -530,15 +633,20 @@
    "lang": "en",
    "link": "https://www.securityweek.com/php-patches-seven-critical-rce-vulnerabilities/",
    "published": "2026-11-19T15:54:20+00:00",
-   "title": "PHP Patches Seven Critical RCE Vulnerabilities",
-   "summary": "Successful exploitation could allow attackers to crash the worker process and execute code with the PHP worker’s privileges.",
+   "title": "PHP corrige sete vulnerabilidades críticas de Execução Remota de Código",
+   "summary": "Foram detetadas e corrigidas sete vulnerabilidades críticas de execução remota de código (RCE) na linguagem PHP. A exploração bem-sucedida destas falhas por parte de atacantes poderia provocar a interrupção do processo de trabalho. Adicionalmente, permitiria executar código com os privilégios do trabalhador PHP afetado.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O PHP corrigiu sete falhas críticas de RCE.",
+    "Os atacantes podiam causar a falha do processo de trabalho.",
+    "A exploração permitia executar código com privilégios elevados."
+   ],
+   "title_original": "PHP Patches Seven Critical RCE Vulnerabilities",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Successful exploitation could allow attackers to crash the worker process and execute code with the PHP worker’s privileges."
+   "translated": true,
+   "enriched": true,
+   "why": "Protege os servidores web contra o controlo remoto não autorizado por parte de cibercriminosos.",
+   "todo": "Atualize urgentemente os ambientes PHP para as versões mais recentes disponibilizadas pela fundação."
   },
   {
    "id": "3c9fd4e00765334a",
@@ -547,15 +655,20 @@
    "lang": "en",
    "link": "https://www.cybersecuritydive.com/news/technology-outages-cyberattacks-ai-house-hearing/875148/",
    "published": "2026-11-19T15:50:41+00:00",
-   "title": "‘What the hell is going on?’: Technology outages offer preview of US infrastructure’s messy, risky future",
-   "summary": "As AI keeps finding serious software vulnerabilities, businesses will struggle to upgrade aging computer systems that weren’t designed for the modern threat landscape.",
+   "title": "«O que raio se está a passar?»: Falhas tecnológicas antecipam futuro caótico e arriscado das infraestruturas dos EUA",
+   "summary": "À medida que a inteligência artificial descobre vulnerabilidades graves de software, as empresas enfrentam grandes dificuldades para atualizar sistemas informáticos envelhecidos. Estas infraestruturas antigas nunca foram desenhadas para responder ao panorama atual de ameaças cibernéticas. O cenário antecipa um futuro repleto de interrupções e riscos para os serviços essenciais.",
    "image": "https://imgproxy.divecdn.com/S8TeCB8xrcjTioF-pV3JUkIA0enbSveXDSWEwD5D9ko/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMzA1NzIxNzM5LmpwZw==.webp",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A IA está a acelerar a descoberta de falhas graves de software.",
+    "As empresas lutam para atualizar sistemas informáticos antigos.",
+    "As infraestruturas atuais não foram desenhadas para o risco moderno."
+   ],
+   "title_original": "‘What the hell is going on?’: Technology outages offer preview of US infrastructure’s messy, risky future",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "As AI keeps finding serious software vulnerabilities, businesses will struggle to upgrade aging computer systems that weren’t designed for the modern threat landscape."
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para o perigo estrutural de manter sistemas desatualizados face a ameaças impulsionadas por IA.",
+   "todo": "Faça um inventário rigoroso dos seus sistemas legados e planeie a sua substituição ou reforço de segurança."
   },
   {
    "id": "8b1beec23f78639e",
@@ -564,15 +677,20 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/openvpn-security-advisory-av26-1179",
    "published": "2026-11-19T15:39:51+00:00",
-   "title": "OpenVPN security advisory (AV26-1179)",
-   "summary": "",
+   "title": "Aviso de segurança OpenVPN (AV26-1179)",
+   "summary": "O Centro Cibernético emitiu um alerta relativo a uma vulnerabilidade que afeta o OpenVPN nas versões iguais ou anteriores a 2.7.8. A falha, rastreada como CVE-2026-121720, exige a atenção imediata de utilizadores e administradores de sistemas. É fortemente recomendado aplicar as atualizações de segurança assim que fiquem disponíveis.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O OpenVPN até à versão 2.7.8 está vulnerável.",
+    "A falha tem a referência CVE-2026-121720.",
+    "As autoridades recomendam a aplicação urgente de atualizações."
+   ],
+   "title_original": "OpenVPN security advisory (AV26-1179)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1179 Date: November 19, 2026 As of November 18, 2026, OpenVPN is affected by a vulnerability in the following product: OpenVPN Prior to or equal to 2.7.8 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. CVE-2026-121720 – community wiki Security Advisories & Updates | OpenVPN"
+   "translated": true,
+   "enriched": true,
+   "why": "Previne o acesso não autorizado a redes privadas virtuais utilizadas pelas empresas.",
+   "todo": "Consulte os conselhos oficiais e atualize o software OpenVPN para uma versão segura."
   },
   {
    "id": "9c103a99a5947dcf",
@@ -581,15 +699,20 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1178",
    "published": "2026-11-19T15:33:03+00:00",
-   "title": "F5 security advisory (AV26-1178)",
-   "summary": "",
+   "title": "Aviso de segurança F5 (AV26-1178)",
+   "summary": "Vários produtos da F5, incluindo o BIG-IP e o BIG-IQ, foram alvo de um aviso de segurança devido a múltiplas vulnerabilidades em iRules, APM e outros módulos. As falhas foram identificadas com vários identificadores CVE, como CVE-2026-123637 e CVE-2026-121805. Os administradores devem consultar os links de suporte para aplicar as correções necessárias.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Vários produtos F5 BIG-IP e BIG-IQ apresentam vulnerabilidades.",
+    "Foram identificadas falhas em iRules, APM e gestão centralizada.",
+    "Existem múltiplos CVEs associados a estes problemas de segurança."
+   ],
+   "title_original": "F5 security advisory (AV26-1178)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1178 Date: November 19, 2026 As of November 18, 2026, F5 is affected by vulnerabilities in the following products: BIG-IP 17.1.0 Prior to BIGIP-17.1.3.7.0.21.4-ENG 17.5.0 Prior to BIGIP-17.5.1.11.0.61.12-ENG 21.1.0 Prior to BIGIP-21.1.0.4.0.19.3-ENG BIG-IP (APM) 17.1.0 Prior to BIGIP-17.1.3.7.0.21.4-ENG 17.5.0 Prior to BIGIP-17.5.1.11.0.61.12-ENG 21.1.0 Prior to BIGIP-21.1.0.4.0.19.3-ENG BIG-IP SSL Orchestrator 17.1.0 Prior to BIGIP-17.1.3.7.0.21.4-ENG 17.5.0 Prior to BIGIP-17.5.1.11.0.61.12-ENG 21.1.0 Prior to BIGIP-21.1.0.4.0.19.3-ENG BIG-IP PEM 17.1.0 Prior to BIGIP-17.1.3.7.0.21.4-ENG 17.5.0 Prior to BIGIP-17.5.1.11.0.61.12-ENG 21.1.0 Prior to BIGIP-21.1.0.4.0.19.3-ENG BIG-IP CNF 2.2.0 Prior to CNF-2.2.5-EHF1 2.3.0 Prior to CNF-2.3.4-EHF1 2.4.0 Prior to CNF-2.4.2-EHF1 BIG-IP Next for Kubernetes 2.2.0 Prior to BNK-2.2.5-EHF1 2.3.0 Prior to BNK-2.3.4-EHF1 2.4.0 Prior to BNK-2.4.2-EHF1 BIG-IQ Centralized Management Prior to 8.4.2.3 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. K000163937: BIG-IP APM vulnerability CVE-2026-123637 K000163946: BIG-IP iRule vulnerability CVE-2026-121805 K000163940: BIG-IP iRule vulnerability CVE-2026-120292 K000163939: BIG-IP iRule vulnerability CVE-2026-120285 K000163941: BIG-IP iRule vulnerability CVE-2026-116953 K000163945: BIG-IP iRule vulnerability CVE-2026-120722 MyF5 New and Updated Articles"
+   "translated": true,
+   "enriched": true,
+   "why": "Protege equipamentos de rede críticos contra explorações que podem comprometer o perímetro empresarial.",
+   "todo": "Verifique os advisories da F5 e aplique os patches de segurança correspondentes aos seus equipamentos."
   },
   {
    "id": "41a84fbefbc879db",
@@ -598,15 +721,20 @@
    "lang": "en",
    "link": "https://techcrunch.com/2026/11/19/u-k-government-forced-to-disclose-secret-apple-backdoor-order/",
    "published": "2026-11-19T15:32:20+00:00",
-   "title": "U.K government forced to disclose secret Apple backdoor order",
-   "summary": "The U.K. tribunal's ruling rejected London's claim that disclosing the order would be damaging to national security.",
+   "title": "Governo do Reino Unido forçado a divulgar ordem secreta de 'backdoor' à Apple",
+   "summary": "Um tribunal britânico rejeitou os argumentos de Londres que alegavam que a revelação de uma ordem secreta prejudicaria a segurança nacional. Com esta decisão, caiu por terra a tentativa do governo de manter ocultas as exigências feitas à Apple. O processo forçou a divulgação pública da imposição de acessos encriptados.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O tribunal britânico rejeitou o argumento de segredo de Estado.",
+    "O governo foi forçado a admitir a ordem imposta à Apple.",
+    "A decisão reforça a transparência sobre exigências governamentais de acesso."
+   ],
+   "title_original": "U.K government forced to disclose secret Apple backdoor order",
    "category": "Malware",
-   "translated": false,
-   "enriched": false,
-   "raw": "The U.K. tribunal's ruling rejected London's claim that disclosing the order would be damaging to national security."
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra os limites legais da imposição governamental de acessos secretos a plataformas tecnológicas.",
+   "todo": ""
   },
   {
    "id": "235c84100afc4ae3",
@@ -1372,14 +1500,19 @@
    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03",
    "published": "2026-11-19T12:00:00+00:00",
    "title": "libumqtt",
-   "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow a remote attacker to cause a denial of service, memory corruption, or information disclosure. The following versions of libumqtt are affected: libumqtt <=1.1.1 (CVE-2026-125132) CVSS Vendor Equipment v3 8.6 libumqtt libumqtt 1 Vulnerability Integer Underflow (Wrap or Wraparound) Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology, Transportation Systems, Water and Wastewater Countries/Areas Deployed: Worldwide Company Headquarters Location: China Vulnerabilities CVE-2026-1",
+   "summary": "A biblioteca libumqtt nas versões 1.1.1 e anteriores foi afetada por uma vulnerabilidade de underflow de inteiros (CVE-2026-125132). Um atacante remoto pode explorar esta falha para provocar negação de serviço (DoS), corrupção de memória ou divulgação de informação. A vulnerabilidade afeta múltiplos setores industriais críticos a nível mundial.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A biblioteca libumqtt <=1.1.1 tem uma falha grave (CVE-2026-125132).",
+    "Permite ataques remotos de negação de serviço e corrupção de memória.",
+    "Afeta setores industriais críticos em todo o mundo."
+   ],
+   "title_original": "libumqtt",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "View CSAF Summary Successful exploitation of this vulnerability could allow a remote attacker to cause a denial of service, memory corruption, or information disclosure. The following versions of libumqtt are affected: libumqtt <=1.1.1 (CVE-2026-125132) CVSS Vendor Equipment v3 8.6 libumqtt libumqtt 1 Vulnerability Integer Underflow (Wrap or Wraparound) Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology, Transportation Systems, Water and Wastewater Countries/Areas Deployed: Worldwide Company Headquarters Location: China Vulnerabilities CVE-2026-125132 The affected product is vulnerable to an integer underflow which may allow a remote attacker to cause a denial of service, memory corruption, or information disclosure. Read More 1 Affected Product libumqtt libumqtt <=1.1.1 Product Status: known_affected Remediations None available The repository owners of libumqtt did not respond to CISA's request for coordination. Users are encouraged to reach out to libumqtt for support. Their GitHub page is located at https://github.com/zhaojh329/libumqtt. Additional Metrics Relevant CWE: CWE-191 Integer Underflow (Wrap or Wraparound) CVSS Version Base Score Base Severity Vector String 3.1 8.6 HIGH CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H 4.0 8.8 HIGH CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:H/SC:N/SI:N/SA:N View CVE Details Acknowledgments Joseph Devasia reported this vulnerability to CISA Recommended Practices CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities. Minimize network exposure for all control system devices and/or systems, ensuring they are not accessible from the internet . Locate control system networks and remote devices behind firewalls and isolating them f"
+   "translated": true,
+   "enriched": true,
+   "why": "Mitiga riscos em componentes de software utilizados em infraestruturas industriais e tecnológicas.",
+   "todo": "Minimize a exposição de dispositivos em rede e isole sistemas de controlo atrás de firewalls."
   },
   {
    "id": "7f8f338723412135",
@@ -1389,14 +1522,19 @@
    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01",
    "published": "2026-11-19T12:00:00+00:00",
    "title": "Autonomy Logic OpenPLC Runtime",
-   "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow several unauthenticated admin accounts to be created. The following versions of Autonomy Logic OpenPLC Runtime are affected: OpenPLC Runtime <=4.2.4 (CVE-2026-126088) CVSS Vendor Equipment v3 8.1 Autonomy Logic OpenPLC Runtime 1 Vulnerability Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition') Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Transportation Systems, Water and Wastewater Systems Countries/Areas Deployed: Worldwide Company Headquarters Loc",
+   "summary": "As versões 4.2.4 e anteriores do Autonomy Logic OpenPLC Runtime contêm uma vulnerabilidade de condição de corrida (CVE-2026-126088). Esta falha permite que pedidos concorrentes ultrapassem a validação inicial e criem várias contas de administrador sem autenticação. A vulnerabilidade afeta setores industriais essenciais a nível global.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O OpenPLC Runtime <=4.2.4 possui uma falha de condição de corrida.",
+    "Permite a criação não autorizada de múltiplas contas de administrador.",
+    "Afeta setores como energia, manufatura e transportes."
+   ],
+   "title_original": "Autonomy Logic OpenPLC Runtime",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "View CSAF Summary Successful exploitation of this vulnerability could allow several unauthenticated admin accounts to be created. The following versions of Autonomy Logic OpenPLC Runtime are affected: OpenPLC Runtime <=4.2.4 (CVE-2026-126088) CVSS Vendor Equipment v3 8.1 Autonomy Logic OpenPLC Runtime 1 Vulnerability Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition') Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Transportation Systems, Water and Wastewater Systems Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities CVE-2026-126088 In Autonomy Logic OpenPLC Runtime versions 4.2.4 and prior, a race condition allows multiple concurrent requests to pass the existence check before any user is committed, resulting in several unauthenticated admin accounts being created. Read More 1 Affected Product Autonomy Logic OpenPLC Runtime <=4.2.4 Product Status: known_affected Remediations Vendor fix Update to OpenPLC Runtime version 4.3.0 or later. Additional Metrics Relevant CWE: CWE-362 Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition') CVSS Version Base Score Base Severity Vector String 3.1 8.1 HIGH CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H 4.0 9.2 CRITICAL CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N View CVE Details Acknowledgments Noureddin Lutfi reported this vulnerability to CISA. Recommended Practices CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities. Minimize network exposure for all control system devices and/or systems, ensuring they are not accessible from the internet . Locate control system networks and remote devices behind firewalls an"
+   "translated": true,
+   "enriched": true,
+   "why": "Evita que atacantes assumam o controlo administrativo de sistemas industriais essenciais.",
+   "todo": "Atualize o OpenPLC Runtime para a versão 4.3.0 ou posterior e isole os sistemas da internet."
   },
   {
    "id": "193208e89084b673",
@@ -2706,15 +2844,20 @@
    "lang": "en",
    "link": "https://www.theregister.com/patches/2026/11/18/another-critical-php-security-release-has-dropped/5310911",
    "published": "2026-11-18T22:38:12+00:00",
-   "title": "Another critical PHP security release has dropped",
-   "summary": "At least one dangerous RCE bug gota fix on Thursday",
+   "title": "Outro lançamento crítico de segurança do PHP disponibilizado",
+   "summary": "A Fundação PHP lançou novas atualizações de segurança que incluem pelo menos uma vulnerabilidade classificada como crítica, rastreada como CVE-2026-115560. Embora exija configurações muito específicas e atípicas para ser explorada, o problema pode levar à execução remota de código. Os criadores recomendaram mitigações preventivas e a atualização célere dos sistemas.",
    "image": "https://image.theregister.com/?imageId=5310922&width=800",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Fundação PHP lançou uma correção para a falha CVE-2026-115560.",
+    "A vulnerabilidade de RCE exige configurações muito específicas para ser explorada.",
+    "Foram recomendadas definições temporárias de mitigação nos servidores."
+   ],
+   "title_original": "Another critical PHP security release has dropped",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Apologies in advance to all patch managers and security teams that thought they might get a break this week. The PHP Foundation has released several more patches, including at least one rated \"critical.\" These fortunately were not leaked leaked like last month’s critical PHP2Shell flaws – but a Wednesday advisory warned, “The issues rated critical require either non-default configuration or uncommon setups,” urging PHP users to “prepare to upgrade promptly once the releases become available.” One of the vulnerabilities is another remote code execution (RCE) flaw, tracked as CVE-2026-115560. In October, the PHP Foundation told The Register that it had reserved this CVE identifier for another RCE bug, but added it would not get an emergency fix like the earlier two PHP2Shell vulnerabilities because the third one doesn't pose the same risk. CVE-2026-115560 “requires a very unlikely combination of configuration and specific PHP application code, which we do not expect to occur in practical use of PHP,” Elizabeth Barron, executive director of the PHP Foundation, told The Register at the time. “The issue can be mitigated with a configuration setting. So for the moment the PHP Security Team has only published an informational advisory on the PHP website, explaining exactly this situation.” The earlier informational advisory urged users to “set session.upload_progress.enabled=0 until the next regular bugfix release, to fully protect from an unlikely RCE vector.” These unlikely RCE attacks require an application to set “session.serialize_handler to php_binary or php_serialize in its configuration and then switch it to php at runtime with ini_set() before calling session_start().” Additionally, the session upload progress feature must be enabled, which the PHP Foundation said is "
+   "translated": true,
+   "enriched": true,
+   "why": "Previne potenciais vetores de ataque remoto em aplicações que utilizam configurações específicas de PHP.",
+   "todo": "Mantenha o PHP atualizado e configure parâmetros de sessão seguros conforme recomendado pela fundação."
   },
   {
    "id": "75f233fd5082c1c3",
@@ -13628,50 +13771,6 @@
    "enriched": true,
    "why": "Sublinha o risco sistémico de violações de dados em cadeias de subcontratação digital.",
    "todo": "Valide as medidas de segurança adotadas por todos os subcontratados que lidam com dados de clientes."
-  },
-  {
-   "id": "8e707f9e30b1d6b6",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/15/week-in-review-secret-stealer-hits-github-repos-claude-code-turned-into-remote-controlled-implant/",
-   "published": "2026-11-15T09:00:37+00:00",
-   "title": "Week in review: Secret stealer hits GitHub repos, Claude Code turned into remote-controlled implant",
-   "summary": "O resumo semanal de cibersegurança destaca principais notícias, artigos e entrevistas sobre incidentes recentes. Entre os tópicos abordados encontram-se o roubo de credenciais que afetam repositórios no GitHub e a transformação de ferramentas de programação em implantes controlados remotamente. Inclui também perspetivas de líderes de segurança sobre a gestão de chaves expostas e a comunicação de riscos aos conselhos de administração.",
-   "image": null,
-   "points": [
-    "Resumo semanal com os principais artigos e entrevistas da indústria.",
-    "Aborda roubo de credenciais em repositórios e manipulação de ferramentas de código.",
-    "Discute a comunicação de riscos e credenciais expostas entre líderes e administrações."
-   ],
-   "title_original": null,
-   "category": "Malware",
-   "translated": false,
-   "enriched": true,
-   "why": "Ajuda os profissionais a acompanharem os vetores de ataque mais recentes contra repositórios e ferramentas de desenvolvimento.",
-   "todo": "Implemente a verificação contínua de segredos para evitar a exposição acidental de credenciais em repositórios de código."
-  },
-  {
-   "id": "960f41318ea903dd",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
-   "published": "2026-11-15T08:22:04+00:00",
-   "title": "Stolen Fireworks AI Key Led to Cursor Data Breach and Trojanized Claude Code Extension",
-   "summary": "A compilação de dados da Cursor e a alteração maliciosa da extensão Claude Code decorreram do roubo de uma chave de acesso emitida pela Fireworks AI. Um atacante obteve a chave exposta na sequência de uma violação sofrida pela Fireworks AI e utilizou-a para aceder a dados de leitura apenas. O incidente afetou a segurança dos marketplaces de extensões e os dados dos clientes associados.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg16ACawbG7rP_kT-8Boo4xdTje3BeTWyFSnNXwHhr5cvy2-1X3Ljhrc1IuZlseWd55tN8E1yjQ9ldhTnjWTU-GJBpX_Zen36YiLQGsRSRAoteqHyxx7mn_w0QgLfMKDLItA4p_jpHajucbglLnCR_zWBY_t82YvFkLa9dQFBfjP1BrTlrNdYufsGMSZiGn/s1600/cursor.jpg",
-   "points": [
-    "Alvo: Extensão Claude Code no marketplace da Cursor e Fireworks AI.",
-    "O quê: Roubo de chave de acesso exposta por violação em parceiro.",
-    "Impacto: Permitiu cópia de dados e comprometeu extensões de desenvolvimento."
-   ],
-   "title_original": null,
-   "category": "Malware",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia o perigo de chaves de API comprometidas em cadeias de fornecedores de inteligência artificial.",
-   "todo": "Rotacione chaves de API regularmente e restrinja estritamente os seus privilégios de acesso."
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T13:39:55.912518+00:00",
+ "updated": "2026-11-19T13:47:28.430312+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -8,8 +8,8 @@
   },
   {
    "source": "IT Security",
-   "ok": false,
-   "error": "404 Client Error: Not Found for url: https://www.itsecurity.pt/feed/"
+   "ok": true,
+   "added": 10
   },
   {
    "source": "Pplware Segurança",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -94,12 +94,12 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -129,7 +129,7 @@
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 8
+   "added": 9
   },
   {
    "source": "Schneier on Security",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Security Affairs",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 1
+   "added": 2
   },
   {
    "source": "Check Point Research",
@@ -309,16 +309,39 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 84,
-  "pending": 236,
-  "unenriched": 118,
+  "done": 48,
+  "pending": 281,
+  "unenriched": 164,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 32 column 5 (char 2910)",
-   "Expecting ',' delimiter: line 26 column 12 (char 2404)"
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "Expecting property name enclosed in double quotes: line 32 column 5 (char 2610)"
   ]
  },
  "items": [
+  {
+   "id": "049017878e9b91ce",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/ukraine-ransomware-arrests-cyber",
+   "published": "2026-11-19T13:30:00+00:00",
+   "title": "Ucrânia desmantela rede de ransomware que extorquia empresas americanas de petróleo e saúde",
+   "summary": "As autoridades ucranianas detiveram quatro suspeitos de integrarem uma rede internacional de ransomware. O grupo é acusado de extorquir mais de 40 milhões de dólares a empresas em todo o mundo. A operação policial visou desorganizar a atividade criminosa direcionada a setores críticos.",
+   "image": "https://cms.therecord.media/uploads/Ukraine_prosecutor_office_c19ff7d532.jpg",
+   "points": [
+    "Quatro suspeitos detidos na Ucrânia por autoridades locais.",
+    "Rede internacional focada em ataques de ransomware.",
+    "Mais de 40 milhões de dólares extorquidos globalmente.",
+    "Empresas de saúde e petróleo foram os principais alvos."
+   ],
+   "title_original": "Ukraine exposes ransomware network extorting US oil, healthcare firms",
+   "category": "Ransomware",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como operações policiais internacionais conseguem desmantelar redes de extorsão com impactos multimilionários.",
+   "todo": "Mantenha cópias de segurança (backups) offline atualizadas e adote soluções robustas de deteção e resposta a ameaças."
+  },
   {
    "id": "bb08ed3a2f59d244",
    "source": "Check Point Research",
@@ -327,20 +350,20 @@
    "link": "https://research.checkpoint.com/2026/30-years-of-gatekeeper-asymmetry-doom-the-paradox-that-makes-powerful-llms-more-vulnerable/",
    "published": "2026-11-19T13:19:10+00:00",
    "title": "30 Years of Gatekeeper Asymmetry Doom: The Paradox that Makes Powerful LLMs More Vulnerable",
-   "summary": "Este artigo explora o princípio da 'Gatekeeper Asymmetry Doom' em cibersegurança, que dita que um sistema de validação de entradas adversariais com menor poder do que o sistema de processamento inevitavelmente falhará. Os autores demonstram este paradoxo através de vários exemplos práticos, incluindo a evasão de sandboxes e ferramentas de desvio de guardrails de IA. Conclui-se que a fenda entre os defensores e os atacantes deve ser ativamente reduzida através de uma maior potência dos porteiros lógicos. Embora os LLMs de fronteira possuam capacidades significativas para ajudar a mitigar este fosso, continuam vulneráveis ao mesmo princípio.",
+   "summary": "O princípio da assimetria do guardião dita que sistemas de filtragem de entradas com menor capacidade que os sistemas de processamento conduzem inevitavelmente ao fracasso. O estudo demonstra este paradoxo através de vários exemplos na segurança da informação, incluindo evasões de sandbox e limites de classificação. Os investigadores recomendam a redução desta lacuna ao elevar a capacidade dos mecanismos de validação. Conclui-se que, apesar de ajudarem a mitigar o problema, os modelos de linguagem avançados continuam sujeitos a esta mesma vulnerabilidade.",
    "image": "https://research.checkpoint.com/wp-content/uploads/2026/11/810F1F5A68-image1.png",
    "points": [
-    "O princípio dita que sistemas de validação mais fracos que os de processamento levam ao fracasso.",
-    "O problema aplica-se a classificações binárias estáticas, evasões de sandboxes e guardrails de IA.",
-    "Grandes modelos de linguagem (LLMs) podem ajudar a reduzir este fosso de segurança.",
-    "A recomendação passa por atualizar e potenciar as superfícies de ataque vulneráveis."
+    "Sistemas de validação mais fracos que os de processamento geram falhas inevitáveis.",
+    "O princípio aplica-se a classificações estáticas, evasões de sandbox e salvaguardas de IA.",
+    "Recomenda-se elevar a robustez dos sistemas de filtragem para diminuir o risco.",
+    "Grandes modelos de linguagem ajudam a colmatar lacunas, mas não são imunes."
    ],
    "title_original": "30 Years of Gatekeeper Asymmetry Doom: The Paradox that Makes Powerful LLMs More Vulnerable",
    "category": "Vulnerabilidade",
    "translated": true,
    "enriched": true,
-   "why": "Mostra como o desequilíbrio de poder entre a validação e o processamento de dados cria vulnerabilidades inevitáveis em sistemas de IA e software.",
-   "todo": "Aumente o poder e a abrangência dos mecanismos de validação e filtragem de entradas nos seus sistemas."
+   "why": "Explica um princípio fundamental de vulnerabilidade estrutural na validação de dados e IA.",
+   "todo": "Reforce os mecanismos de validação de entradas em sistemas críticos e evite confiar apenas em filtros básicos."
   },
   {
    "id": "5e668a30271b8ef2",
@@ -1662,6 +1685,75 @@
    "enriched": true,
    "why": "Revela campanhas de espionagem e recrutamento de agentes direcionados a empresas de tecnologia de defesa.",
    "todo": ""
+  },
+  {
+   "id": "533922e55b7f3b8f",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/threats/cinco-vulnerabilidades-criticas-afetam-servidores-nginx",
+   "published": "2026-11-19T00:00:00+00:00",
+   "title": "Cinco vulnerabilidades críticas afetam servidores NGINX",
+   "summary": "Investigadores descobriram cinco falhas de segurança críticas em servidores NGINX que possibilitam a execução remota de código sem qualquer autenticação prévia. A empresa F5 já disponibilizou as respetivas correções para mitigar o problema. Os administradores devem aplicar estas atualizações com urgência para evitar explorações.",
+   "image": null,
+   "points": [
+    "Cinco falhas críticas detetadas em servidores NGINX.",
+    "Permitem execução remota de código sem exigir autenticação.",
+    "A F5 já desenvolveu e disponibilizou as correções necessárias.",
+    "Afeta diretamente a segurança de infraestruturas web."
+   ],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": true,
+   "why": "Permite que atacantes comprometam servidores web sem precisarem de credenciais de acesso.",
+   "todo": "Atualize imediatamente os servidores NGINX com os patches de segurança disponibilizados pela F5."
+  },
+  {
+   "id": "0fc679bd70b9cd0a",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/threats/comissao-europeia-investiga-possivel-fuga-de-dados-apos-ciberataque",
+   "published": "2026-11-19T00:00:00+00:00",
+   "title": "Comissão Europeia investiga possível fuga de dados após ciberataque",
+   "summary": "A Comissão Europeia foi alvo de um ciberataque que afetou vários sistemas internos durante cerca de dez dias. O incidente criou suspeitas de que dados pessoais possam ter sido comprometidos. A extensão total dos danos e dos dados afetados continua por esclarecer pelas autoridades.",
+   "image": null,
+   "points": [
+    "Comissão Europeia alvo de ciberataque recente.",
+    "Sistemas internos ficaram indisponíveis por cerca de dez dias.",
+    "Existe a suspeita de compromisso de dados pessoais.",
+    "A extensão exata do impacto ainda está sob investigação."
+   ],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": true,
+   "why": "Evidencia que mesmo instituições de topo e governamentais são alvo de incidentes prolongados.",
+   "todo": "Monitore os acessos aos sistemas internos e implemente registos de auditoria rigorosos."
+  },
+  {
+   "id": "9b5c27bfe2178c5d",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/news/ataques-a-cloud-aceleram-com-recurso-a-ia",
+   "published": "2026-11-19T00:00:00+00:00",
+   "title": "Ataques à cloud aceleram com recurso à IA",
+   "summary": "Um relatório da Fortinet registou 2,3 mil milhões de tentativas de ataques de força bruta direcionadas a ambientes em nuvem. O estudo alerta que os atacantes utilizam inteligência artificial para acelerar a exploração de vulnerabilidades logo após a respetiva divulgação. Esta automatização aumenta significativamente a pressão sobre as equipas de segurança.",
+   "image": null,
+   "points": [
+    "Registadas 2,3 mil milhões de tentativas de força bruta na cloud.",
+    "Relatório divulgado pela Fortinet sobre ameaças atuais.",
+    "A inteligência artificial acelera a exploração de vulnerabilidades recém-divulgadas.",
+    "Aumenta a urgência na aplicação de correções de segurança."
+   ],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": true,
+   "why": "Demonstra como a inteligência artificial está a acelerar e a automatizar ameaças em ambientes em nuvem.",
+   "todo": "Utilize autenticação multifator em todos os acessos à cloud e aplique atualizações de segurança rapidamente."
   },
   {
    "id": "58edaf73423ff8a5",
@@ -5383,6 +5475,75 @@
    "enriched": true,
    "why": "Ilustra a perigosidade dos ataques à cadeia de fornecimento de software de código aberto.",
    "todo": "Verifique as dependências de projetos Python e reverta imediatamente para a versão segura 1.26.0 caso tenha utilizado as versões afetadas."
+  },
+  {
+   "id": "37b4749af855efb9",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/threats/falha-critica-no-java-ameaca-aplicacoes-empresariais",
+   "published": "2026-11-18T00:00:00+00:00",
+   "title": "Falha crítica no Java ameaça aplicações empresariais",
+   "summary": "A vulnerabilidade Java4Shell afeta plataformas empresariais populares como Jira, Jenkins e Keycloak. A falha possibilita a execução remota de código sem exigir autenticação por parte do atacante. A Oracle e o OpenJDK já lançaram atualizações corretivas para resolver o problema.",
+   "image": null,
+   "points": [
+    "Vulnerabilidade Java4Shell detetada em ambientes Java.",
+    "Afeta aplicações amplamente usadas como Jira, Jenkins e Keycloak.",
+    "Permite execução remota de código sem autenticação.",
+    "Oracle e OpenJDK já disponibilizaram correções oficiais."
+   ],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": true,
+   "why": "Coloca em risco plataformas empresariais críticas usadas na gestão de projetos e automação.",
+   "todo": "Identifique aplicações baseadas em Java vulneráveis e instale as correções da Oracle ou OpenJDK."
+  },
+  {
+   "id": "a2ce80c56cbd709a",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/threats/oracle-corrige-falhas-criticas-em-varios-produtos",
+   "published": "2026-11-18T00:00:00+00:00",
+   "title": "Oracle corrige falhas críticas em vários produtos",
+   "summary": "A Oracle lançou 655 novas correções de segurança para resolver cerca de 950 vulnerabilidades nos seus produtos. Mais de 300 destas falhas podem ser exploradas remotamente sem autenticação prévia. Do total, 62 vulnerabilidades foram classificadas com grau crítico de gravidade.",
+   "image": null,
+   "points": [
+    "Oracle lança 655 correções para cerca de 950 falhas.",
+    "Mais de 300 vulnerabilidades exploráveis remotamente sem autenticação.",
+    "62 falhas classificadas como de nível crítico.",
+    "Atualizações abrangem vários produtos da marca."
+   ],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": true,
+   "why": "Representa um pacote massivo de correções para falhas que podem ser exploradas remotamente.",
+   "todo": "Consulte os boletins de segurança da Oracle e aplique os patches de atualização nos sistemas afetados."
+  },
+  {
+   "id": "0656fa74d40ad0ce",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/threats/google-alerta-para-ciberataques-automatizados-com-ia",
+   "published": "2026-11-18T00:00:00+00:00",
+   "title": "Google alerta para ciberataques automatizados com IA",
+   "summary": "A Google emitiu um aviso sobre o uso crescente de inteligência artificial por cibercriminosos. As novas ferramentas maliciosas conseguem realizar ataques complexos divididos em várias etapas. Este cenário destaca-se pela redução drástica da necessidade de intervenção humana por parte dos atacantes.",
+   "image": null,
+   "points": [
+    "Aviso emitido pela Google sobre IA em ciberataques.",
+    "Ferramentas criminosas executam ataques complexos e multi-etapas.",
+    "Necessidade de intervenção humana reduzida ao mínimo.",
+    "Nova fase na sofisticação das ameaças digitais."
+   ],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": true,
+   "why": "Sinaliza uma evolução preocupante nos ataques automatizados em larga escala com recurso a IA.",
+   "todo": "Invista em soluções de segurança baseadas em comportamento e inteligência artificial para deteção precoce."
   },
   {
    "id": "ef05a9552cd0df17",
@@ -9228,6 +9389,52 @@
    "todo": "Treine os colaboradores para desconfiarem de urgências injustificadas e valide notificações de IT pelos canais oficiais."
   },
   {
+   "id": "2acad705d878238b",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/analysis/bug-de-julho-na-origem-de-falha-global-do-microsoft-365",
+   "published": "2026-11-17T00:00:00+00:00",
+   "title": "Bug de julho na origem de falha global do Microsoft 365",
+   "summary": "Uma falha introduzida numa atualização de software em julho esteve na origem de uma interrupção global do Microsoft 365 a 12 de novembro. O problema técnico deixou mais de 80% dos servidores de gateway completamente sem resposta. O incidente afetou a estabilidade e o acesso aos serviços da plataforma.",
+   "image": null,
+   "points": [
+    "Falha global do Microsoft 365 ocorreu a 12 de novembro.",
+    "Origem esteve num bug inserido numa atualização de julho.",
+    "Mais de 80% dos servidores de gateway ficaram sem resposta.",
+    "Afetou a disponibilidade do serviço a nível mundial."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Ilustra como um erro de software antigo pode despoletar interrupções globais em serviços essenciais.",
+   "todo": "Teste rigorosamente as atualizações de software em ambientes controlados antes de as implementar em produção."
+  },
+  {
+   "id": "ed25de99a0498f47",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/news/ciiwa-summit-2026-debate-soberania-digital-ciberseguranca-e-inteligencia-artificial-em-cascais",
+   "published": "2026-11-17T00:00:00+00:00",
+   "title": "CIIWA Summit 2026 debate soberania digital, cibersegurança e inteligência artificial em Cascais",
+   "summary": "A Casa das Histórias Paula Rego, em Cascais, acolhe a 2 de dezembro o encontro CIIWA Summit 2026. A iniciativa assinala o 19.º aniversário da CIIWA com a presença do contra-almirante António Gameiro Marques. O evento conta com painéis focados na soberania digital, segurança, desinformação e inteligência artificial.",
+   "image": null,
+   "points": [
+    "CIIWA Summit 2026 realiza-se a 2 de dezembro em Cascais.",
+    "Evento celebra o 19.º aniversário da CIIWA.",
+    "Participação confirmada do contra-almirante António Gameiro Marques.",
+    "Debates centrados na soberania digital, IA e segurança."
+   ],
+   "title_original": null,
+   "category": "IA",
+   "translated": false,
+   "enriched": true,
+   "why": "Promove o debate nacional sobre desafios estratégicos de cibersegurança e soberania digital.",
+   "todo": ""
+  },
+  {
    "id": "aae8c4832e631e5c",
    "source": "TechCrunch Security",
    "region": "US",
@@ -12238,6 +12445,52 @@
    "todo": ""
   },
   {
+   "id": "4d9102be4c4e2834",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/threats/portugal-regista-mais-41-de-ciberataques-em-outubro",
+   "published": "2026-11-16T00:00:00+00:00",
+   "title": "Portugal regista mais 41% de ciberataques em outubro",
+   "summary": "As organizações em Portugal enfrentaram uma média de 2.829 ciberataques semanais durante o mês de outubro. Este valor representa um acréscimo de 41% em comparação com o período homólogo de 2025. Os dados evidenciam o aumento contínuo da pressão cibernética sobre o tecido empresarial e institucional nacional.",
+   "image": null,
+   "points": [
+    "Média de 2.829 ciberataques semanais em Portugal em outubro.",
+    "Aumento de 41% em relação ao ano de 2025.",
+    "Maior exposição das organizações a ameaças digitais.",
+    "Dados refletem um crescimento acentuado da atividade maliciosa."
+   ],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": true,
+   "why": "Alerta para o aumento expressivo e preocupante da atividade maliciosa direcionada a organizações em Portugal.",
+   "todo": "Reforce a monitorização de redes e reforce as defesas contra ataques frequentes como o ransomware e phishing."
+  },
+  {
+   "id": "cf84ff92eee742b8",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/threats/microsoft-corrige-falhas-de-ativacao-do-windows",
+   "published": "2026-11-16T00:00:00+00:00",
+   "title": "Microsoft corrige falhas de ativação do Windows",
+   "summary": "A Microsoft disponibilizou atualizações de emergência para resolver problemas de ativação e licenciamento do sistema operativo. Estas falhas tinham sido introduzidas acidentalmente pelas correções de segurança lançadas em novembro. A medida visa repor o normal funcionamento dos dispositivos afetados.",
+   "image": null,
+   "points": [
+    "Atualizações de emergência lançadas pela Microsoft.",
+    "Destinadas a corrigir falhas de ativação do Windows.",
+    "Problemas foram causados pelos patches de segurança de novembro.",
+    "Repõem o licenciamento e o normal funcionamento dos sistemas."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Mostra a importância de corrigir rapidamente erros operacionais causados por patches de segurança.",
+   "todo": "Instale as atualizações de emergência da Microsoft para resolver problemas de licenciamento no Windows."
+  },
+  {
    "id": "8d87100358658906",
    "source": "Security Affairs",
    "region": "EU",
@@ -13533,253 +13786,6 @@
    "enriched": true,
    "why": "Importa porque prova que os atacantes já utilizam agentes de IA autónomos para conduzir campanhas maliciosas de múltiplos objetivos.",
    "todo": "Monitore o tráfego direcionado a APIs de IA e proteja credenciais de acesso a modelos contra exfiltração automatizada."
-  },
-  {
-   "id": "e12779d5806a7d26",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/mobile-security/arcticrat-cybercrime-gang-profiles-victim-finances-ai",
-   "published": "2026-11-13T20:20:27+00:00",
-   "title": "Gangue de cibercrime ArcticRAT faz perfil financeiro de vítimas com IA",
-   "summary": "O malware para Android ArcticRAT evoluiu das suas origens centradas no roubo de criptomoedas para assumir o controlo total de dispositivos infetados. Os operadores integraram capacidades avançadas de análise potenciadas por inteligência artificial para examinar os dados financeiros roubados das vítimas. O impacto resulta numa capacidade acrescida dos atacantes para direcionarem os seus alvos e maximizarem o roubo de fundos.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt876ae2249da592eb/6af77117471ce44823395b3f/smartphone_Ao_Zaa_Studio_shutterstock.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "O quê: Evolução do malware Android ArcticRAT para controlo total de dispositivos e análise com IA.",
-    "Quem: Grupo de cibercriminosos por trás do desenvolvimento do ArcticRAT.",
-    "Como: Integração de análises automatizadas de dados financeiros roubados das vítimas.",
-    "Impacto: Maior precisão no roubo financeiro e compromisso absoluto dos dispositivos móveis infetados."
-   ],
-   "title_original": "ArcticRAT Cybercrime Gang Profiles Victim Finances With AI",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque demonstra a aplicação de IA por operadores de spyware móvel para otimizar o roubo financeiro.",
-   "todo": "Evite instalar aplicações fora das lojas oficiais e mantenha o sistema operativo do telemóvel devidamente atualizado."
-  },
-  {
-   "id": "4e9336adb015d722",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/produto-e-review/microsoft-confirma-falha-na-ativacao-do-windows-11-apos-atualizacao-de-seguranca/",
-   "published": "2026-11-13T20:00:00+00:00",
-   "title": "Microsoft confirma falha na ativação do Windows 11 após atualização de segurança",
-   "summary": "A Microsoft confirmou que as atualizações de segurança lançadas recentemente provocaram falhas na ativação do Windows em vários computadores empresariais. O erro, identificado pelo código 0x80041008, afeta utilizadores que recorrem à linha de comandos ou a processos automatizados para gerir licenças através do utilitário SLMGR. O impacto restringe-se a empresas com configurações específicas de KMS, estando uma correção oficial prevista para os próximos dias.",
-   "image": "https://www.estadao.com.br/resizer/v2/PYRNABGXCFEWBDHFYKEQJADEUM.jpg?quality=80&auth=fc60bfd0a9bd05b34792ca7dd07c6b573b39f4995ab215e07f4b1010a20598de&width=710",
-   "points": [
-    "O quê: Falha de ativação no Windows após instalação de atualizações de segurança.",
-    "Quem: Microsoft e utilizadores empresariais afetados pelo erro 0x80041008.",
-    "Como: Execução de comandos de gestão de licenças (SLMGR) em sistemas atualizados.",
-    "Impacto: Impossibilidade de concluir a ativação do Windows em computadores empresariais afetados."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque afeta a estabilidade do licenciamento e a gestão administrativa de sistemas Windows em ambiente empresarial.",
-   "todo": "Evite utilizar comandos de gestão de licenças afetados até que a Microsoft disponibilize a correção oficial ou contacte o suporte técnico."
-  },
-  {
-   "id": "376f5a4ba5d37494",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/13/curious-about-curious-worm/",
-   "published": "2026-11-13T19:59:35+00:00",
-   "title": "Curiosos sobre o “Curious Worm”",
-   "summary": "Uma nova entidade maliciosa denominada 'Curious Worm' emergiu recentemente, focando os seus ataques no setor da saúde. O grupo estreou-se com múltiplos incidentes registados num site de fugas na dark web em poucas semanas. O impacto desta nova ameaça prende-se com os riscos acrescidos para a segurança de dados sensíveis em organizações de saúde.",
-   "image": null,
-   "points": [
-    "O quê: Surgimento de um novo grupo de cibercrime denominado 'Curious Worm'.",
-    "Quem: Entidade maliciosa recentemente ativa na dark web.",
-    "Como: Realização de ataques direcionados a organizações, especialmente no setor da saúde.",
-    "Impacto: Exposição de dados sensíveis e aumento de incidentes em infraestruturas críticas de saúde."
-   ],
-   "title_original": "Curious about “Curious Worm”",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque sinaliza o aparecimento de um novo interveniente malicioso focado em setores críticos como o da saúde.",
-   "todo": "Reforce as defesas perimetrais e a monitorização de acessos em redes de organizações de saúde e setores essenciais."
-  },
-  {
-   "id": "810ecd44c3ac2c42",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/city-of-osaka-japan-email-data-breach",
-   "published": "2026-11-13T19:43:00+00:00",
-   "title": "City of Osaka warns of data breach impacting 1 million as Japan reels from dozens of cyber incidents",
-   "summary": "A cidade de Osaka, no Japão, emitiu um aviso aos seus residentes devido a uma violação de dados que afeta cerca de um milhão de pessoas. A população foi instada a redobrar a cautela perante potenciais emails suspeitos que aparentam ser enviados pelo governo local. O incidente ocorre numa altura em que o país enfrenta uma vaga de vários ciberincidentes.",
-   "image": "https://cms.therecord.media/uploads/Osaka_City_Hall_2026_19ba5dd07a.jpg",
-   "points": [
-    "A cidade de Osaka sofreu uma violação de dados que afeta um milhão de residentes.",
-    "As autoridades alertaram a população para o perigo de emails falsos em nome do município.",
-    "O caso insere-se numa vaga recente de incidentes cibernéticos registados no Japão."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque expõe o risco de campanhas de engenharia social direcionadas a cidadãos na sequência de fugas de dados municipais.",
-   "todo": "Desconfie sempre de comunicações inesperadas em nome de entidades públicas e evite clicar em links suspeitos."
-  },
-  {
-   "id": "ee274201614e1119",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/",
-   "published": "2026-11-13T19:38:36+00:00",
-   "title": "Trezor confirms crypto-stealing implants in three wallets, releases fix",
-   "summary": "A marca de carteiras de criptomoedas Trezor confirmou que três dispositivos Safe 5, vendidos por um revendedor no Sudeste Asiático, continham implantes de hardware maliciosos. Estes componentes foram desenhados para roubar as frases de recuperação das carteiras e transmiti-las a atacantes através de redes móveis. A empresa já veio a público confirmar o sucedido e disponibilizou uma correção para o problema.",
-   "image": null,
-   "points": [
-    "A Trezor detetou implantes de hardware maliciosos em três carteiras Safe 5.",
-    "Os componentes intercetavam e enviavam frases de recuperação a atacantes.",
-    "Os dispositivos comprometidos foram comercializados por um revendedor no Sudeste Asiático.",
-    "A fabricante já confirmou a situação e lançou uma correção oficial."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque ilustra o perigo da adulteração de hardware na cadeia de distribuição de dispositivos voltados para a segurança financeira.",
-   "todo": "Adquira hardware de criptomoedas estritamente através de canais oficiais e fabricantes autorizados."
-  },
-  {
-   "id": "1876ce8bb4f47670",
-   "source": "WIRED Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.wired.com/story/microsoft-365-crawls-back-to-life-after-a-24-hour-outage/",
-   "published": "2026-11-13T19:08:57+00:00",
-   "title": "Microsoft 365 Crawls Back to Life After a 24-Hour Outage",
-   "summary": "Os serviços da Microsoft começaram a recuperar gradualmente após enfrentarem uma interrupção global com a duração de cerca de 24 horas. A empresa esclareceu que o colapso dos servidores a nível mundial foi provocado por uma atualização incorreta e descartou qualquer cenário de ciberataque ou uso de inteligência artificial. O incidente provocou fortes perturbações operacionais em várias geografias.",
-   "image": "https://media.wired.com/photos/6af75c7bac6958eb8481a5e6/master/pass/Security_MicrosoftBackOnline_v1.jpg",
-   "points": [
-    "Os serviços da Microsoft 365 recuperaram após um apagão de 24 horas.",
-    "A causa do colapso global dos servidores foi uma atualização defeituosa.",
-    "A empresa garantiu que não se tratou de um ciberataque nem de uma falha de IA."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque evidencia a vulnerabilidade global gerada pela dependência de ecossistemas tecnológicos centralizados.",
-   "todo": "Tenha planos de contingência operacionais e soluções alternativas para mitigar o impacto de falhas repentinas em serviços na cloud."
-  },
-  {
-   "id": "2335b3c2f3b56b9a",
-   "source": "CSO Online",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.csoonline.com/article/4248553/how-ai-is-changing-the-nature-of-cyberattacks.html",
-   "published": "2026-11-13T19:02:39+00:00",
-   "title": "How AI is changing the nature of cyberattacks",
-   "summary": "Especialistas em segurança indicam que a inteligência artificial está a aumentar a velocidade e a escala dos ciberataques, embora os objetivos centrais e as técnicas tradicionais permaneçam inalterados. O phishing, o malware e a exploração de vulnerabilidades continuam a ser as principais armas dos atacantes, impulsionados agora pela automatização e pela descoberta mais rápida de falhas em código de fontes abertas. Campanhas recentes demonstram que a IA funciona como um acelerador e facilitador em várias fases do ciclo de intrusão, desde a reconhecimento até à exfiltração de dados.",
-   "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4248553-0-29990900-1794596573-shutterstock_1603390990.jpg?quality=50&strip=all",
-   "points": [
-    "A inteligência artificial acelera e aumenta a escala dos ciberataques modernos.",
-    "As técnicas fundamentais como phishing e malware continuam a ser a base dos ataques.",
-    "A IA permite detetar vulnerabilidades e automatizar intrusões com maior rapidez.",
-    "A exploração de falhas em software continua a ser a principal causa raiz das intrusões."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque revela como os atacantes utilizam a IA para automatizar e escalar ameaças tradicionais, exigindo defesas igualmente ágeis.",
-   "todo": "Adote práticas rigorosas de gestão de patches e utilize ferramentas de monitorização comportamental baseadas em IA para detetar ameaças atempadamente."
-  },
-  {
-   "id": "aa41f4c563286962",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/check-point-security-advisory-av26-1154",
-   "published": "2026-11-13T18:59:00+00:00",
-   "title": "Check Point security advisory (AV26-1154) – Update 1",
-   "summary": "A Check Point informou que múltiplos produtos, incluindo firewalls Force, servidores de gestão e o maestro orchestrator, são afetados por vulnerabilidades. A falha CVE-2026-123039, que permite escales de privilégios locais para root, está a ser ativamente explorada e foi adicionada ao catálogo KEV da CISA. Outra falha, CVE-2026-107484, permite escales de privilégios no portal Gaia para utilizadores autenticados.",
-   "image": null,
-   "points": [
-    "Múltiplos produtos Check Point apresentam falhas de segurança críticas.",
-    "A vulnerabilidade CVE-2026-123039 está a ser explorada ativamente e consta no catálogo KEV da CISA.",
-    "A falha CVE-2026-107484 permite escales de privilégios autenticados no portal Gaia."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Mitiga falhas críticas em equipamentos de perimeter network que estão sob exploração ativa por atacantes.",
-   "todo": "Aplique imediatamente as correções e atualizações recomendadas pela Check Point para os dispositivos afetados."
-  },
-  {
-   "id": "f016224a76b4735e",
-   "source": "SAPO Tek",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://tek.sapo.pt/noticias/internet/artigos/microsoft-365-servicos-em-recuperacao-e-uma-falha-global-ainda-sem-fim-a-vista-o-que-causou-um-dos-maiores-apagoes-da-historia-da-empresa/",
-   "published": "2026-11-13T18:55:42+00:00",
-   "title": "Microsoft 365: Serviços em recuperação e uma falha global ainda sem fim à vista. O que causou um dos maiores apagões da história da empresa?",
-   "summary": "Ferramentas como o Outlook, Teams e Copilot continuam a recuperar após mais de 24 horas de fortes perturbações globais. A Microsoft identificou a origem do problema técnico, aplicou correções e descartou a hipótese de um ciberataque. Em Portugal, o apagão afetou o funcionamento de serviços governamentais, do setor da saúde e de diversas empresas.",
-   "image": null,
-   "points": [
-    "O Outlook, Teams e Copilot enfrentaram perturbações prolongadas por mais de 24 horas.",
-    "A origem foi um problema técnico interno, sem qualquer ligação a ciberataques.",
-    "Em Portugal, o incidente atingiu o governo, a saúde e o tecido empresarial."
-   ],
-   "title_original": null,
-   "category": "Ataque/APT",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque demonstra o impacto sistémico que uma falha tecnológica num fornecedor crítico pode causar em serviços essenciais do país.",
-   "todo": "Diversifique os fornecedores de serviços críticos e garanta testes regulares aos planos de recuperação de desastres."
-  },
-  {
-   "id": "cf42b36aeb3f1a4f",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/nyc-council-passes-bill-ban-surveillance-pricing",
-   "published": "2026-11-13T18:35:00+00:00",
-   "title": "NYC to bar surveillance pricing as momentum for bans grows nationwide",
-   "summary": "A administração da cidade de Nova Iorque vai passar a multar as empresas que utilizem práticas de preços personalizados com base na vigilância digital dos consumidores. Cada infração comprovada poderá resultar numa coima de 1 000 dólares para as entidades prevaricadoras. A medida surge numa altura em que cresce o movimento a nível nacional nos Estados Unidos para banir este tipo de condutas comerciais.",
-   "image": "https://cms.therecord.media/uploads/new_york_stefan_suner_unsplash_bf865772e2.jpg",
-   "points": [
-    "A cidade de Nova Iorque vai proibir o recurso a preços baseados em vigilância.",
-    "As empresas infratoras enfrentarão coimas de 1.000 dólares por cada violação.",
-    "A iniciativa reflete o aumento de restrições legais a práticas comerciais invasivas."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque protege a privacidade financeira dos consumidores contra táticas de preços abusivas alimentadas pela recolha massiva de dados.",
-   "todo": ""
-  },
-  {
-   "id": "501b72f68cab0620",
-   "source": "WeLiveSecurity (ESET) PT",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.welivesecurity.com/pt/golpes-fraudes/gta-6-golpes-com-downloads-falsos-e-malware-aumentam-antes-do-lancamento/",
-   "published": "2026-11-13T18:05:22+00:00",
-   "title": "GTA 6: golpes com downloads falsos e malware aumentam antes do lançamento",
-   "summary": "Cibercriminosos estão a aproveitar a enorme expetativa em torno do lançamento do jogo GTA 6 para espalhar campanhas maliciosas. Os ataques incluem ficheiros de download infetados com malware, falsos vazamentos de informação, lojas fraudulentas e falsas promessas de acesso antecipado. Estas táticas visam enganar os fãs mais distraídos e comprometer os seus dispositivos.",
-   "image": null,
-   "points": [
-    "Criminosos exploram a popularidade de GTA 6 para lançar armadilhas online.",
-    "As fraudes incluem downloads com malware, lojas falsas e falsos acessos antecipados.",
-    "O objetivo é enganar os utilizadores através da expectativa gerada pelo jogo."
-   ],
-   "title_original": null,
-   "category": "Malware",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque demonstra como os atacantes aproveitam fenómenos da cultura pop e grandes lançamentos para propagar software malicioso.",
-   "todo": "Descarregue conteúdos apenas de fontes oficiais e desconfie de promessas de acesso antecipado a jogos em sites de terceiros."
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T21:07:19.208254+00:00",
+ "updated": "2026-11-19T21:28:27.180810+00:00",
  "errors": [],
  "feodo": {
   "total": 5,
@@ -56,11 +56,11 @@
  "types": {
   "malware_urls": {
    "label": "Sites que distribuem malware",
-   "total": 829,
+   "total": 827,
    "by_country": {
-    "US": 614,
-    "CN": 94,
-    "CA": 39,
+    "US": 611,
+    "CN": 97,
+    "CA": 37,
     "TR": 14,
     "GB": 8,
     "IN": 6,
@@ -90,20 +90,20 @@
    "detail": {
     "US": {
      "DEVPOPPER": 270,
-     "github": 181,
+     "github": 178,
      "DEVBOX": 90,
      "exe": 42,
      "hta": 13
     },
     "CN": {
-     "malware_download": 67,
-     "32-bit": 21,
+     "malware_download": 69,
+     "32-bit": 22,
      "elf": 4,
      "arm": 1,
      "cowrie": 1
     },
     "CA": {
-     "Password-protected": 28,
+     "Password-protected": 26,
      "IRAHook": 4,
      "malware_download": 4,
      "gitlab": 1,
@@ -205,28 +205,28 @@
     }
    },
    "tags": {
-    "github": 577,
-    "js": 491,
-    "VSCode": 471,
-    "TxDataHiding": 401,
+    "github": 574,
+    "js": 488,
+    "VSCode": 468,
+    "TxDataHiding": 398,
     "DEVPOPPER": 270,
     "DEVBOX": 90
    },
    "ports": {
     "US": {
-     "443": 597,
+     "443": 594,
      "80": 16,
      "8000": 1
     },
     "CN": {
+     "49712": 2,
      "37432": 2,
      "40685": 2,
      "57506": 2,
-     "56509": 2,
-     "56559": 2
+     "56509": 2
     },
     "CA": {
-     "443": 35,
+     "443": 33,
      "55033": 2,
      "36695": 1,
      "46167": 1
@@ -337,18 +337,18 @@
    "label": "Sites de phishing",
    "total": 300,
    "by_country": {
-    "CA": 156,
-    "US": 77,
+    "CA": 159,
+    "US": 73,
     "NL": 5,
     "IT": 5,
     "FR": 5,
     "DE": 3,
     "BR": 2,
     "JP": 2,
+    "MX": 2,
     "AR": 1,
     "LU": 1,
     "BG": 1,
-    "MX": 1,
     "ID": 1,
     "KE": 1,
     "BE": 1,
@@ -356,10 +356,10 @@
    },
    "detail": {
     "CA": {
-     "phishing": 156
+     "phishing": 159
     },
     "US": {
-     "phishing": 77
+     "phishing": 73
     },
     "NL": {
      "phishing": 5
@@ -379,6 +379,9 @@
     "JP": {
      "phishing": 2
     },
+    "MX": {
+     "phishing": 2
+    },
     "AR": {
      "phishing": 1
     },
@@ -386,9 +389,6 @@
      "phishing": 1
     },
     "BG": {
-     "phishing": 1
-    },
-    "MX": {
      "phishing": 1
     },
     "ID": {
@@ -407,12 +407,12 @@
   },
   "ioc": {
    "label": "Indicadores de malware (IPs)",
-   "total": 234,
+   "total": 239,
    "by_country": {
-    "US": 54,
-    "CN": 35,
+    "US": 55,
+    "CN": 37,
     "HK": 29,
-    "DE": 18,
+    "DE": 17,
     "SG": 15,
     "NL": 13,
     "JP": 10,
@@ -420,9 +420,9 @@
     "ID": 6,
     "IN": 5,
     "FR": 5,
+    "SC": 4,
     "BR": 4,
     "AU": 4,
-    "SC": 3,
     "CA": 3,
     "RO": 2,
     "LT": 2,
@@ -431,6 +431,8 @@
     "PL": 2,
     "KR": 2,
     "AT": 2,
+    "SE": 1,
+    "SI": 1,
     "PA": 1,
     "UA": 1,
     "CY": 1,
@@ -443,14 +445,14 @@
    },
    "detail": {
     "US": {
-     "Unknown malware": 17,
+     "Unknown malware": 18,
      "Unknown RAT": 5,
      "Potassium": 5,
      "PureRAT": 4,
      "AsyncRAT": 4
     },
     "CN": {
-     "Unknown malware": 25,
+     "Unknown malware": 27,
      "VShell": 6,
      "Sliver": 2,
      "Cobalt Strike": 2
@@ -464,9 +466,9 @@
     },
     "DE": {
      "AsyncRAT": 5,
-     "CECbot": 3,
      "Cobalt Strike": 2,
      "Quasar RAT": 2,
+     "CECbot": 2,
      "Evilginx": 1
     },
     "SG": {
@@ -503,6 +505,10 @@
      "Unknown malware": 4,
      "Remcos": 1
     },
+    "SC": {
+     "CECbot": 3,
+     "Remcos": 1
+    },
     "BR": {
      "PureRAT": 1,
      "DCRat": 1,
@@ -512,10 +518,6 @@
     "AU": {
      "Potassium": 3,
      "Sliver": 1
-    },
-    "SC": {
-     "CECbot": 2,
-     "Remcos": 1
     },
     "CA": {
      "Remcos": 1,
@@ -544,6 +546,12 @@
     },
     "AT": {
      "Potassium": 2
+    },
+    "SE": {
+     "CECbot": 1
+    },
+    "SI": {
+     "Unknown RAT": 1
     },
     "PA": {
      "AsyncRAT": 1
@@ -574,7 +582,7 @@
     }
    },
    "malware": {
-    "Unknown malware": 100,
+    "Unknown malware": 103,
     "Potassium": 18,
     "VShell": 14,
     "PureRAT": 14,
@@ -585,12 +593,12 @@
     "US": {
      "443": 10,
      "7193": 5,
+     "80": 4,
      "8082": 4,
-     "8000": 4,
-     "4850": 3
+     "8000": 4
     },
     "CN": {
-     "8787": 18,
+     "8787": 20,
      "80": 3,
      "31337": 2,
      "9998": 1,
@@ -604,7 +612,7 @@
      "7443": 1
     },
     "DE": {
-     "10213": 3,
+     "10213": 2,
      "7007": 1,
      "1990": 1,
      "8082": 1,
@@ -659,6 +667,12 @@
      "9111": 1,
      "38080": 1
     },
+    "SC": {
+     "80": 1,
+     "10213": 1,
+     "443": 1,
+     "16078": 1
+    },
     "BR": {
      "56001": 1,
      "7000": 1,
@@ -670,11 +684,6 @@
      "38429": 1,
      "31337": 1,
      "7193": 1
-    },
-    "SC": {
-     "10213": 1,
-     "443": 1,
-     "16078": 1
     },
     "CA": {
      "2112": 1,
@@ -707,6 +716,12 @@
     "AT": {
      "50792": 1,
      "7193": 1
+    },
+    "SE": {
+     "10213": 1
+    },
+    "SI": {
+     "443": 1
     },
     "PA": {
      "8081": 1
@@ -760,7 +775,7 @@
      "scan/força bruta": 1
     }
    },
-   "reports": 4578883
+   "reports": 4568427
   }
  },
  "cloudflare": {

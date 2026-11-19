@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T21:07:19.024175+00:00",
+ "updated": "2026-11-19T21:28:27.028962+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -164,7 +164,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "Cisco Talos",
@@ -204,7 +204,7 @@
   {
    "source": "Rapid7",
    "ok": true,
-   "added": 5
+   "added": 6
   },
   {
    "source": "Tenable",
@@ -309,15 +309,146 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 216,
-  "unenriched": 101,
+  "done": 120,
+  "pending": 203,
+  "unenriched": 87,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting value: line 5 column 10 (char 146)"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "3797ecb529a51da9",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/",
+   "published": "2026-11-19T21:15:59+00:00",
+   "title": "ASUS warns of critical hard-coded key flaw in Control Center Express",
+   "summary": "A ASUS lançou a versão 1.7.29 do Control Center Express para corrigir três vulnerabilidades críticas. Estas falhas permitiam que atacantes remotos obtivessem controlo administrativo da consola de gestão e dos dispositivos geridos. O impacto afeta a segurança operacional das infraestruturas que utilizam este software.",
+   "image": null,
+   "points": [
+    "A ASUS corrigiu três falhas críticas no Control Center Express v1.7.29.",
+    "Atacantes remotos podiam obter controlo administrativo total.",
+    "A vulnerabilidade afetava a consola de gestão e os dispositivos geridos."
+   ],
+   "title_original": "ASUS warns of critical hard-coded key flaw in Control Center Express",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Protege os sistemas contra o acesso administrativo não autorizado por parte de atacantes remotos.",
+   "todo": "Atualize o Control Center Express para a versão 1.7.29 o mais rapidamente possível."
+  },
+  {
+   "id": "07547d58b9a1af12",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/19/chase-visa-mastercard-confirm-third-party-cyberattacks-that-may-have-exposed-customers-info/5311175",
+   "published": "2026-11-19T21:12:33+00:00",
+   "title": "Chase, Visa, Mastercard confirm third-party cyberattacks that may have exposed customers' info",
+   "summary": "JPMorgan Chase, Visa e Mastercard confirmaram estar a investigar incidentes de segurança relacionados com fornecedores terceiros. Um grupo de extorsão e roubo de dados reivindicou o compromisso, expondo dados limitados como nomes e endereços de email de clientes. As gigantes financeiras asseguram que os seus principais redes de pagamento e sistemas internos não foram afetados.",
+   "image": "https://image.theregister.com/?imageId=5311179&width=800",
+   "points": [
+    "Alvos: JPMorgan Chase, Visa e Mastercard investigam violações em terceiros.",
+    "Impacto: Exposição potencial de dados de clientes, como nomes e emails.",
+    "Segurança: As redes de pagamento e sistemas centrais não foram comprometidos."
+   ],
+   "title_original": "Chase, Visa, Mastercard confirm third-party cyberattacks that may have exposed customers' info",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para os riscos de segurança associados à cadeia de fornecimento e a fornecedores externos.",
+   "todo": "Monitore contas bancárias e comunicações à procura de potenciais tentativas de phishing baseadas nos dados expostos."
+  },
+  {
+   "id": "8d134922cedfad57",
+   "source": "AWS Security Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://aws.amazon.com/blogs/security/introducing-the-new-aws-waf-security-analytics-dashboard/",
+   "published": "2026-11-19T21:10:43+00:00",
+   "title": "Introducing the new AWS WAF security analytics dashboard",
+   "summary": "A AWS lançou o painel de análises de segurança do AWS WAF, uma página global centralizada para investigar tráfego em pacotes de proteção e recursos regionais. A ferramenta permite analisar dados detalhados de pedidos sem requerer a criação de pipelines de registos próprios. O objetivo é ajudar as equipas de segurança a conter ameaças mais depressa e reduzir falsos positivos.",
+   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/18/Figure1-SecurityAnalyticsDashboard.png",
+   "points": [
+    "Lançamento do painel de análises de segurança global para o AWS WAF.",
+    "Permite investigar tráfego e picos em todos os recursos e regiões.",
+    "Ajuda a conter ameaças rapidamente e a minimizar falsos positivos."
+   ],
+   "title_original": "Introducing the new AWS WAF security analytics dashboard",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Facilita a monitorização e a resposta rápida a incidentes de segurança na cloud sem complexidade adicional.",
+   "todo": "Aceda à consola AWS WAF e configure o novo painel de análises de segurança para otimizar a gestão de tráfego."
+  },
+  {
+   "id": "9346f1ad67796351",
+   "source": "CSO Online",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.csoonline.com/article/4251012/critical-flaw-in-vmware-vcenter-allows-authentication-bypass-2.html",
+   "published": "2026-11-19T21:07:25+00:00",
+   "title": "Critical flaw in VMware vCenter allows authentication bypass",
+   "summary": "A Broadcom corrigiu cinco vulnerabilidades em produtos VMware, destacando-se uma falha crítica de contorno de autenticação no VMware vCenter com gravidade máxima. A vulnerabilidade, rastreada como CVE-2026-123890, permite a atacantes com acesso de rede obterem acesso não autorizado ao sistema. A empresa emitiu versões corrigidas e sublinha que não existem soluções alternativas disponíveis.",
+   "image": "https://www.csoonline.com/wp-content/uploads/2026/08/4211112-0-73786800-1787130145-shutterstock_2372690397.jpg?quality=50&strip=all",
+   "points": [
+    "A Broadcom corrigiu uma falha crítica de contorno de autenticação no vCenter.",
+    "CVE-2026-123890 tem uma pontuação de gravidade de 9.8 em 10.",
+    "Atacantes com acesso de rede podem obter acesso administrativo não autorizado."
+   ],
+   "title_original": "Critical flaw in VMware vCenter allows authentication bypass",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Evita o acesso total e não autorizado de intrusos aos sistemas de gestão VMware afetados.",
+   "todo": "Aplique imediatamente as atualizações de segurança fornecidas pela Broadcom para as versões afetadas."
+  },
+  {
+   "id": "71189ac539a86087",
+   "source": "Rapid7",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.rapid7.com/blog/post/etr-cve-2026-123890-critical-authentication-bypass-vmware-vcenter",
+   "published": "2026-11-19T21:06:24+00:00",
+   "title": "CVE-2026-123890: Critical Authentication Bypass in VMware vCenter",
+   "summary": "A Broadcom publicou um alerta de segurança para corrigir a vulnerabilidade crítica CVE-2026-123890 no VMware vCenter. A falha afeta o componente VMware Directory Service e permite que atacantes sem credenciais obtenham acesso de Administrador. A Mandiant confirmou a exploração ativa desta falha por um grupo associado ao estado chinês desde setembro de 2026.",
+   "image": "https://images.contentstack.io/v3/assets/blte4f029e766e6b253/blt65a432ba319f4043/6846abddaf18306debe6cf4d/ETR.webp",
+   "points": [
+    "Vulnerabilidade CVE-2026-123890 afeta o VMware Directory Service no vCenter.",
+    "Permite contornar a autenticação sem credenciais e obter privilégios de Administrador.",
+    "Grupo estatal chinês ARMORY CASTLE explorou ativamente a falha em ambiente real."
+   ],
+   "title_original": "CVE-2026-123890: Critical Authentication Bypass in VMware vCenter",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Protege infraestruturas críticas contra explorações ativas por grupos de ameaças persistentes avançadas.",
+   "todo": "Atualize o vCenter de forma urgente, seguindo as recomendações e versões corrigidas indicadas pelo fabricante."
+  },
+  {
+   "id": "413190ef9a98fbe1",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/produto-e-review/chrome-vai-usar-capturas-de-tela-e-analise-por-ia-para-detectar-sites-fraudulentos/",
+   "published": "2026-11-19T21:00:00+00:00",
+   "title": "Chrome vai usar capturas de tela e análise por IA para detectar sites fraudulentos",
+   "summary": "O Google Chrome vai introduzir um novo mecanismo de segurança que combina capturas de tela com inteligência artificial para detetar sites fraudulentos. A funcionalidade analisa o aspeto visual das páginas para identificar tentativas de imitação de serviços legítimos de forma mais rápida. Esta camada adicional de proteção estará disponível para os utilizadores que ativarem a Navegação Segura Avançada.",
+   "image": "https://www.estadao.com.br/resizer/v2/7MNTDYX6M5LPRM4QAZT2YGVQQM.jpg?quality=80&auth=ab9e66bf220dae3b2a302e1ef100c22857b2afb9ac9f3349d8c03ef54a0b6878&width=710",
+   "points": [
+    "O Chrome vai usar capturas de tela e IA para identificar sites de phishing.",
+    "A tecnologia analisa elementos visuais para detetar imitações de marcas e serviços.",
+    "A ferramenta será restrita à opção de Navegação Segura Avançada."
+   ],
+   "title_original": null,
+   "category": "Phishing/Fraude",
+   "translated": false,
+   "enriched": true,
+   "why": "Melhora a deteção precoce de páginas de phishing sofisticadas e recém-criadas.",
+   "todo": "Ative a opção de Navegação Segura Avançada nas definições do seu navegador Chrome."
+  },
   {
    "id": "545852a9591f5a6b",
    "source": "Ars Technica Security",
@@ -13642,140 +13773,6 @@
    "enriched": true,
    "why": "Demonstra como a IA acelera drasticamente a descoberta de falhas de segurança, tanto para defensores como para atacantes.",
    "todo": "Adotar ferramentas baseadas em IA para detetar e corrigir vulnerabilidades de forma mais rápida do que os atacantes."
-  },
-  {
-   "id": "aaca3d274aab1044",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/tor-updates-dos-defenses-again-as-relay-attacks-continue/",
-   "published": "2026-11-16T08:55:32+00:00",
-   "title": "Tor atualiza defesas contra DoS novamente à medida que os ataques a relays continuam",
-   "summary": "A nova versão Tor 0.4.9.17 introduz correções para vários problemas de segurança, incluindo uma alteração relevante na forma como as defesas nativas contra negação de serviço (DoS) lidam com o tráfego IPv6. Estas atualizações visam mitigar os ataques contínuos direcionados contra os relays da rede de anonimato. A manutenção destas defesas é crucial para garantir a estabilidade da rede.",
-   "image": null,
-   "points": [
-    "Lançamento da versão Tor 0.4.9.17 com correções de segurança.",
-    "Atualiza a gestão das defesas DoS em ligações IPv6.",
-    "Responde a ataques contínuos direcionados aos relays da rede Tor."
-   ],
-   "title_original": "Tor Updates DoS Defenses Again as Relay Attacks Continue",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Mantém a resiliência da rede Tor face a ataques persistentes de negação de serviço.",
-   "todo": "Atualizar os nós e relays da rede Tor para a versão mais recente."
-  },
-  {
-   "id": "0e38e3f472b75b90",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/arcticrat-android-malware-grok-ai-analyse-banking-texts/",
-   "published": "2026-11-16T08:28:18+00:00",
-   "title": "Malware para Android ArcticRAT usa IA Grok para analisar textos bancários roubados",
-   "summary": "O malware para Android ArcticRAT foi detetado com capacidades para inspecionar aplicações instaladas e analisar alertas SMS. A ameaça consegue recolher detalhes financeiros confidenciais das vítimas. Além disso, o software malicioso inclui funcionalidades de controlo remoto para os atacantes. O impacto afeta diretamente os utilizadores do sistema operativo móvel visados pela infeção.",
-   "image": null,
-   "points": [
-    "O malware ArcticRAT atinge dispositivos Android.",
-    "Inspeciona aplicações, SMS e dados financeiros.",
-    "Usa a IA Grok para analisar textos roubados.",
-    "Integra funcionalidades de controlo remoto."
-   ],
-   "title_original": "ArcticRAT Android Malware Uses Grok AI to Analyse Stolen Banking Texts",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque demonstra a utilização abusiva de ferramentas de inteligência artificial por cibercriminosos para processar dados financeiros roubados.",
-   "todo": "Evite instalar aplicações de fontes desconhecidas e mantenha o sistema operativo e as soluções de segurança do seu telemóvel atualizados."
-  },
-  {
-   "id": "a60b8a453d05816c",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-emergency-updates-fix-activation-licensing-failures/",
-   "published": "2026-11-16T08:26:52+00:00",
-   "title": "Microsoft lança atualizações de emergência para o Windows para corrigir falhas de ativação",
-   "summary": "A Microsoft disponibilizou atualizações de emergência fora do ciclo habitual para resolver problemas. As falhas afetavam a ativação e o licenciamento do sistema operativo Windows. Estes erros foram originados pelas atualizações de segurança lançadas no mesmo mês. O impacto centrou-se em falhas operacionais na gestão de licenças dos utilizadores afetados.",
-   "image": null,
-   "points": [
-    "A Microsoft lançou atualizações de emergência extraordinárias.",
-    "O objetivo foi corrigir falhas de ativação e licenciamento do Windows.",
-    "Os erros foram causados pelas atualizações de segurança mensais anteriores."
-   ],
-   "title_original": "Microsoft pushes Windows emergency updates to fix activation failures",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque estas falhas impediam o correto funcionamento e validação do sistema operativo em vários computadores.",
-   "todo": "Instale as atualizações de emergência disponibilizadas pela Microsoft para repor o normal funcionamento da ativação do Windows."
-  },
-  {
-   "id": "1e58b5bb0c0b8df3",
-   "source": "CSO Online",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.csoonline.com/article/4248687/ai-written-patches-are-becoming-attack-maps-for-hackers.html",
-   "published": "2026-11-16T08:25:00+00:00",
-   "title": "Correções escritas por IA estão a tornar-se mapas de ataque para hackers",
-   "summary": "Investigadores descobriram que correções de segurança geradas por inteligência artificial contêm vulnerabilidades que os atacantes conseguem explorar. Ferramentas de IA ajudaram a criar patches que deixaram falhas por resolver ou introduziram novos pontos fracos no código. Posteriormente, investigadores utilizaram agentes de IA para contornar essas mesmas correções com sucesso. O impacto afeta o desenvolvimento de software, mostrando que a IA defensiva ainda é superada pela ofensiva.",
-   "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4248687-0-91857500-1794817650-geojango-maps-Z8UgB80_46w-unsplash.jpg?quality=50&strip=all",
-   "points": [
-    "Modelos de IA ajudaram a criar correções de segurança vulneráveis.",
-    "Agentes de IA conseguiram contornar facilmente os patches gerados.",
-    "As correções servem de guia para os atacantes descobrirem falhas semelhantes."
-   ],
-   "title_original": "AI-written patches are becoming attack maps for hackers",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque revela que a utilização de IA para corrigir código pode criar uma falsa sensação de segurança e expor os sistemas a novos ataques.",
-   "todo": "Reveja manualmente e teste exaustivamente todo o código e patches gerados por ferramentas de inteligência artificial."
-  },
-  {
-   "id": "47ca43e224a0c950",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/",
-   "published": "2026-11-16T08:15:12+00:00",
-   "title": "Microsoft afasta ciberataque em falha e avisa sobre campanha de phishing",
-   "summary": "A Microsoft esclareceu que uma recente interrupção de serviços não foi motivada por um ciberataque. No entanto, criminosos aproveitaram a situação para lançar uma campanha de phishing direcionada. As mensagens falsas simulavam avisos do serviço Microsoft 365 e ameaçavam apagar mensagens guardadas. O impacto foca-se no risco de roubo de credenciais dos utilizadores através de engenharia social.",
-   "image": null,
-   "points": [
-    "A interrupção de serviços da Microsoft não foi um ciberataque.",
-    "Criminosos aproveitaram o incidente para criar emails de phishing.",
-    "As mensagens falsas imitavam avisos oficiais do Microsoft 365."
-   ],
-   "title_original": "Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign",
-   "category": "Phishing/Fraude",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque os atacantes exploram eventos mediáticos e falhas técnicas para enganar os utilizadores com engenharia social.",
-   "todo": "Desconfie de emails urgentes sobre interrupções de serviços e verifique sempre os remetentes antes de clicar em qualquer ligação."
-  },
-  {
-   "id": "fe19ff797276beb7",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203099/apt/silentair-and-liminal-panda-target-telecom-networks-to-spy-on-subscribers.html",
-   "published": "2026-11-16T08:11:01+00:00",
-   "title": "SilentAir e LIMINAL PANDA visam redes de telecomunicações para espionar subscritores",
-   "summary": "Investigadores descobriram dois grupos de ameaças, denominados SilentAir e LIMINAL PANDA, a explorar redes móveis para espionar utilizadores e intercetar chamadas e mensagens de texto. Os atacantes abusam da confiança e dos protocolos de sinalização partilhados entre operadoras, utilizando ferramentas como o malware GTPDoor através do protocolo GTP-C. O impacto afeta operadores em todo o mundo, com dezenas de redes potencialmente comprometidas.",
-   "image": "https://i0.wp.com/securityaffairs.com/wp-content/uploads/2026/11/image-34.png?resize=1024%2C747&#038;ssl=1",
-   "points": [
-    "SilentAir e LIMINAL PANDA comprometem operadores de redes móveis.",
-    "Utilizam protocolos de sinalização e o malware GTPDoor para espiar subscritores.",
-    "O ataque explora a confiança entre redes móveis através de infraestruturas IPX.",
-    "Várias operadoras a nível global foram infetadas."
-   ],
-   "title_original": "SilentAir and LIMINAL PANDA Target Telecom Networks to Spy on Subscribers",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Expõe fragilidades críticas nas redes de telecomunicações globais que permitem a espionagem de utilizadores.",
-   "todo": "Implementar firewalls de sinalização especializadas (como GTP firewalls) para bloquear sessões e comandos maliciosos."
   }
  ]
 }

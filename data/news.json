@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-19T18:07:21.462593+00:00",
+ "updated": "2026-11-19T18:26:00.916041+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "IT Security",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 4
+   "added": 5
   },
   {
    "source": "TugaTech",
@@ -34,7 +34,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -178,8 +178,8 @@
   },
   {
    "source": "Google Threat Intelligence",
-   "ok": false,
-   "error": "500 Server Error: Internal Server Error for url: https://cloudblog.withgoogle.com/topics/threat-intelligence/rss/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "Google Project Zero",
@@ -189,7 +189,7 @@
   {
    "source": "CrowdStrike Blog",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "SentinelLabs",
@@ -264,12 +264,12 @@
   {
    "source": "Graham Cluley",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 24,
-  "pending": 305,
-  "unenriched": 189,
+  "done": 12,
+  "pending": 312,
+  "unenriched": 197,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,94 @@
   ]
  },
  "items": [
+  {
+   "id": "6efc22951138a3c2",
+   "source": "CrowdStrike Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.crowdstrike.com/en-us/blog/crowdstrike-helps-protect-against-java4shell-cve-2026-114938/",
+   "published": "2026-11-19T18:21:28.962269+00:00",
+   "title": "Java4Shell (CVE-2026-114938): CrowdStrike Detects Exposure and Post-Exploitation Activity",
+   "summary": "A CrowdStrike detetou exposição e atividade maliciosa pós-exploração relacionada com a vulnerabilidade Java4Shell, identificada como CVE-2026-114938. Esta falha representa um risco significativo para os sistemas afetados devido à exploração ativa por parte de atacantes. A empresa identificou os vetores de exposição e os sinais de comprometimento associados a esta ameaça.",
+   "image": null,
+   "points": [
+    "CrowdStrike detetou exposição e pós-exploração da falha Java4Shell.",
+    "Identificada sob a referência CVE-2026-114938.",
+    "Atacantes estão a explorar ativamente esta vulnerabilidade de segurança."
+   ],
+   "title_original": "Java4Shell (CVE-2026-114938): CrowdStrike Detects Exposure and Post-Exploitation Activity",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite detetar e mitigar exposições críticas antes que os sistemas sejam comprometidos por atacantes.",
+   "todo": "Verifique os alertas da CrowdStrike e atualize os sistemas afetados pela vulnerabilidade Java4Shell."
+  },
+  {
+   "id": "1977168802e46550",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/",
+   "published": "2026-11-19T18:20:01+00:00",
+   "title": "Transport for London breach exposes 265,000 Oyster card users' data",
+   "summary": "A Transport for London (TfL) sofreu uma violação de dados que expôs informações de contas de cerca de 265.000 utilizadores do cartão Oyster photocard. O incidente resultou no acesso não autorizado a dados pessoais geridos pela entidade de transportes. A organização anunciou publicamente a ocorrência para alertar os cidadãos afetados.",
+   "image": null,
+   "points": [
+    "Transport for London sofreu uma violação de dados.",
+    "Cerca de 265.000 utilizadores de Oyster photocard foram afetados.",
+    "Detalhes de contas de clientes ficaram expostos."
+   ],
+   "title_original": "Transport for London breach exposes 265,000 Oyster card users' data",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Expõe milhares de utilizadores a potenciais riscos de engenharia social e utilização indevida de dados pessoais.",
+   "todo": "Fique atento a comunicações suspeitas e altere as palavras-passe das contas associadas aos serviços de transporte."
+  },
+  {
+   "id": "bf35392ba6106147",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/craftcms-security-advisory-av26-1180",
+   "published": "2026-11-19T18:19:24+00:00",
+   "title": "Aviso de segurança CraftCMS (AV26-1180)",
+   "summary": "O CraftCMS foi afetado por vulnerabilidades que atingem as versões anteriores à 5.11.5, conforme indicado no aviso de segurança AV26-1180. O Centro de Cibersegurança aconselhou os administradores a consultarem os recursos disponíveis e a aplicarem as atualizações necessárias. Esta situação exige atenção célere para mitigar eventuais riscos nos sites e servidores que utilizam o CMS.",
+   "image": null,
+   "points": [
+    "Vulnerabilidades detetadas no CraftCMS anteriores à versão 5.11.5.",
+    "Aviso de segurança emitido sob a referência AV26-1180.",
+    "Recomendada a aplicação de atualizações de segurança."
+   ],
+   "title_original": "CraftCMS security advisory (AV26-1180)",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Evita a exploração de falhas conhecidas em gestores de conteúdos que poderiam comprometer sites inteiros.",
+   "todo": "Atualize o CraftCMS para uma versão igual ou superior à 5.11.5 e reveja os avisos de segurança oficiais."
+  },
+  {
+   "id": "884e1c7b0b943a1b",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/ifood-confirma-vazamento-de-dados-de-clientes-parceiros-e-entregadores/",
+   "published": "2026-11-19T18:06:00+00:00",
+   "title": "iFood confirma vazamento de dados de clientes, parceiros e entregadores",
+   "summary": "O iFood sofreu uma invasão aos seus sistemas que resultou na exposição de dados cadastrais de clientes, parceiros, restaurantes e entregadores. A empresa confirmou que senhas, meios de pagamento e dados biométricos não foram acedidos, mantendo os serviços a funcionar normalmente. As informações expostas variam consoante o tipo de utilizador, tendo a ocorrência sido notificada à ANPD.",
+   "image": "https://www.estadao.com.br/resizer/v2/HPL6MLYSC5JXVILJFSU3VX5N3U.jpg?quality=80&auth=96e6cc16593fb2488703c9045dcd7f63c77ae3380f46a5ceb698a2736fdaf08b&width=1150",
+   "points": [
+    "iFood sofreu invasão e exposição de dados cadastrais.",
+    "Dados de clientes, parceiros e entregadores foram acedidos.",
+    "Senhas e cartões de crédito não foram comprometidos."
+   ],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": true,
+   "why": "Mostra como incidentes em plataformas de entrega podem expor dados sensíveis de milhares de utilizadores e parceiros.",
+   "todo": "Desconfie de contactos que solicitem códigos ou pagamentos e verifique os emails informativos enviados pela empresa."
+  },
   {
    "id": "508558726b913dfc",
    "source": "SAPO Tek",
@@ -13682,95 +13770,6 @@
    "enriched": true,
    "why": "Sublinha o rigor regulatório europeu face ao tratamento abusivo de dados e falta de consentimento transparente.",
    "todo": "Reveja e ajuste as permissões das aplicações móveis nas definições de privacidade do dispositivo."
-  },
-  {
-   "id": "c336f921881caf3b",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/novo-ataque-cibernetico-sequestra-redes-moveis-para-enganar-vitima-via-mensagens/",
-   "published": "2026-11-15T18:00:00+00:00",
-   "title": "Novo ataque cibernético sequestra redes móveis para enganar vítima via mensagens",
-   "summary": "Um grupo de atacantes apelidado de \"SilentAir\" sequestrou nós de redes móveis através de vulnerabilidades nos protocolos SS7 e Diameter. A campanha, monitorizada desde o ano passado, focou-se em assinantes em Taiwan e envolveu operadoras em seis países asiáticos para monitorizar políticos e autoridades. Os criminosos modificaram a localização das vítimas para intercetar códigos de autenticação de dois fatores e desviar chamadas. Esta invasão aproveitou a confiança inerente à rede global IPX para injetar comandos maliciosos.",
-   "image": "https://www.estadao.com.br/resizer/v2/LOY6WR3BZBB7HK7LTYO7LJLKDU.png?quality=80&auth=2345414e31f36bf8cf22bbda85b42dc9fa6c54a4be75eeb81a0f9416b1e1b3d3&width=710",
-   "points": [
-    "O grupo \"SilentAir\" explorou falhas nos protocolos SS7 e Diameter.",
-    "Foram sequestrados nós de redes móveis para intercetar chamadas e mensagens.",
-    "O ataque visou políticos e utilizadores, principalmente em Taiwan.",
-    "Os atacantes roubaram códigos de autenticação de dois fatores para invasões de contas."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Revela fragilidades críticas nas infraestruturas globais de telecomunicações que comprometem a autenticação e a privacidade.",
-   "todo": "Evite depender exclusivamente de SMS para a autenticação de dois fatores, preferindo aplicações autenticadoras ou chaves físicas."
-  },
-  {
-   "id": "17f0563e97138ce4",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203165/ai/security-affairs-ai-cybersecurity-newsletter-round-8.html",
-   "published": "2026-11-15T16:06:11+00:00",
-   "title": "SECURITY AFFAIRS AI-CYBERSECURITY NEWSLETTER ROUND 8",
-   "summary": "A edição número 8 da newsletter Security Affairs focada em inteligência artificial e cibersegurança destaca o impacto da IA nas operações ofensivas e defensivas. O documento aborda vários incidentes e investigações recentes, incluindo explorações de vulnerabilidades e campanhas autónomas. Entre os temas encontram-se falhas em plataformas como NEAR AI e ataques a serviços de emergência em Taiwan. A publicação sublinha a evolução rápida das ameaças tecnológicas e a incerteza em torno do futuro da IA.",
-   "image": null,
-   "points": [
-    "IA está a transformar táticas de atacantes e defensores na cibersegurança.",
-    "Newsletter cobre vulnerabilidades recentes, ferramentas de IA e campanhas maliciosas.",
-    "Destacam-se incidentes como falhas no NEAR AI e ataques direcionados a Taiwan."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Ajuda a compreender a evolução rápida da inteligência artificial nas ameaças e defesas cibernéticas.",
-   "todo": "Mantenha-se informado sobre as novas ferramentas de IA e adote controlos rigorosos para proteger chaves e credenciais."
-  },
-  {
-   "id": "81ffe66f4f296d9f",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/15/hack-at-french-postal-unit-exposes-22-million-peoples-data/",
-   "published": "2026-11-15T15:49:15+00:00",
-   "title": "Ciberataque a unidade postal francesa expõe dados de 22 milhões de pessoas",
-   "summary": "Um ataque informático à Maileva, subsidiária digital do grupo postal nacional francês La Poste, resultou na exposição de dados pessoais de cerca de 22 milhões de pessoas. O incidente, ocorrido em meados de setembro, comprometeu nomes próprios, apelidos e moradas postais. A empresa confirmou a ocorrência da violação após relatos nos meios de comunicação social franceses.",
-   "image": null,
-   "points": [
-    "Alvo: Maileva, subsidiária do grupo La Poste em França.",
-    "O quê: Ciberataque expôs nomes e moradas postais de 22 milhões de cidadãos.",
-    "Impacto: Dados de destinatários de clientes da empresa foram divulgados publicamente."
-   ],
-   "title_original": "Hack at French postal unit exposes 22 million people’s data",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como um ataque a um fornecedor digital pode expor em massa dados de cidadãos sem relação direta com a empresa.",
-   "todo": "Exija rigorosos padrões de segurança a fornecedores terceiros que processem dados confidenciais dos seus clientes."
-  },
-  {
-   "id": "1a28e03ea6191181",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203156/malware/security-affairs-malware-newsletter-round-123.html",
-   "published": "2026-11-15T15:49:04+00:00",
-   "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 123",
-   "summary": "A edição 123 da newsletter de malware do Security Affairs reúne uma análise detalhada das mais recentes ameaças e investigações internacionais sobre software malicioso. O documento aborda campanhas de intrusão, ferramentas de roubo de credenciais e operações de cibercrime à escala global. São destacados vários grupos e técnicas, incluindo o uso de web shells, cryptominers e implantes de controlo. A publicação serve de ponto de situação sobre o comportamento pós-infeção de diversas famílias de malware.",
-   "image": null,
-   "points": [
-    "Compilação semanal de investigação internacional sobre malware.",
-    "Aborda campanhas de roubo de credenciais, intrusões e implantes de comando e controlo.",
-    "Analisa comportamentos pós-infeção de várias famílias de software malicioso."
-   ],
-   "title_original": null,
-   "category": "Malware",
-   "translated": false,
-   "enriched": true,
-   "why": "Permite monitorizar as tendências globais e as novas técnicas utilizadas por operadores de malware.",
-   "todo": "Atualize regularmente o software de segurança e monitore os terminais contra comportamentos anómalos."
   }
  ]
 }

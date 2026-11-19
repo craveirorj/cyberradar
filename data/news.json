@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-19T05:26:26.809403+00:00",
+ "updated": "2026-11-19T05:46:28.142299+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "Pplware Segurança",
@@ -263,13 +263,13 @@
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 2
+   "added": 3
   },
   {
    "source": "Check Point Research",
@@ -304,15 +304,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 117,
-  "pending": 186,
-  "unenriched": 80,
+  "done": 120,
+  "pending": 183,
+  "unenriched": 78,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "9e60f0b7013b6ce4",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/19/slipping-past-ot-network-segmentation/",
+   "published": "2026-11-19T05:30:09+00:00",
+   "title": "Consolas de jogos e Teslas estão a contornar a segmentação de redes OT",
+   "summary": "Uma investigação da Claroty detetou milhares de dispositivos de consumo, como consolas de jogos e veículos Tesla, ligados a redes críticas de hospitais e fábricas. Muitos destes equipamentos não estão isolados em redes de convidados, encontrando-se em redes de produção. Esta falha de segmentação expõe infraestruturas sensíveis a riscos de segurança desnecessários. A presença destes dispositivos pode facilitar o acesso de atacantes a sistemas vitais.",
+   "image": null,
+   "points": [
+    "Dispositivos de consumo em redes críticas",
+    "Falha na segmentação de rede",
+    "Risco para hospitais e fábricas",
+    "Consolas e Teslas em redes de produção"
+   ],
+   "title_original": "Game consoles and Teslas are slipping past OT network segmentation",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "A mistura de dispositivos pessoais com redes industriais críticas aumenta drasticamente a superfície de ataque.",
+   "todo": "Implemente uma segmentação de rede rigorosa e utilize VLANs para isolar dispositivos de consumo da rede de produção."
+  },
   {
    "id": "1bcc132f92bd71e2",
    "source": "Help Net Security",
@@ -13767,28 +13790,6 @@
    "enriched": true,
    "why": "Alerta para a necessidade urgente de antecipar o impacto disruptivo da IA em regras e sistemas institucionais.",
    "todo": "Reveja e reforce a robustez das políticas internas e regras operacionais para prevenir utilizações imprevistas por sistemas automatizados."
-  },
-  {
-   "id": "1671c4ae2d79f276",
-   "source": "CISA Advisories",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-   "published": "2026-11-13T12:00:00+00:00",
-   "title": "CISA adiciona duas vulnerabilidades conhecidas e exploradas ao seu catálogo",
-   "summary": "A CISA adicionou duas novas falhas ao seu catálogo de Vulnerabilidades Conhecidas e Exploradas (KEV) com base em evidências de exploração ativa. As falhas afetam o UnrealIRCd e vários produtos da Check Point, representando riscos significativos para as agências federais e exigindo a correção prioritária. A diretiva BOD 26-04 obriga a agências governamentais a mitigar rapidamente estes riscos em ativos públicos.",
-   "image": null,
-   "points": [
-    "Adicionadas as falhas CVE-2026-114713 (UnrealIRCd) e CVE-2026-123039 (Check Point) ao KEV.",
-    "Existem evidências de exploração ativa destas vulnerabilidades.",
-    "A diretiva BOD 26-04 exige prioridade na correção por parte de agências federais."
-   ],
-   "title_original": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Ajuda as organizações a priorizar a correção de falhas que estão ativamente a ser exploradas por cibercriminosos.",
-   "todo": "Consultar o catálogo KEV da CISA e aplicar patches urgentes nos produtos afetados."
   }
  ]
 }

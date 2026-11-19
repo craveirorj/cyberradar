@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T00:46:32.660959+00:00",
+ "updated": "2026-11-19T01:03:59.380011+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -204,7 +204,7 @@
   {
    "source": "Tenable",
    "ok": true,
-   "added": 3
+   "added": 4
   },
   {
    "source": "Zero Day Initiative",
@@ -305,14 +305,37 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 189,
-  "unenriched": 77,
+  "pending": 190,
+  "unenriched": 78,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "3c8f5ba833ed1e38",
+   "source": "Tenable",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.tenable.com/blog/nginx2root-cve-2026-123007-frequently-asked-questions-about-five-critical-nginx",
+   "published": "2026-11-19T00:18:05+00:00",
+   "title": "NGINX2Root (CVE-2026-123007): Perguntas frequentes sobre cinco vulnerabilidades críticas no NGINX",
+   "summary": "Foi publicada informação detalhada sobre cinco vulnerabilidades críticas de execução remota de código no NGINX, agrupadas sob a designação NGINX2Root. Estas falhas podem ser combinadas com uma falha de escalação de privilégios locais no kernel do Linux para obter acesso total de root. A vulnerabilidade mais urgente é a CVE-2026-123007, uma falha de execução remota sem autenticação na implementação HTTP/2. A F5 lançou correções a 18 de novembro para resolver estas e outras falhas no NGINX.",
+   "image": "https://www.tenable.com/sites/default/files/images/articles/NGINX2Root.png",
+   "points": [
+    "Cinco falhas críticas de execução remota de código detetadas no NGINX.",
+    "A CVE-2026-123007 afeta a implementação HTTP/2 e já tem código de exploração público.",
+    "As falhas podem ser encadeadas com uma vulnerabilidade do kernel Linux para obter privilégios de root.",
+    "A F5 disponibilizou correções de segurança a 18 de novembro."
+   ],
+   "title_original": "NGINX2Root (CVE-2026-123007): Frequently asked questions about five critical NGINX vulnerabilities",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes obtenham controlo total de servidores web afetados se não forem aplicadas as correções.",
+   "todo": "Instale imediatamente os patches de segurança disponibilizados pela F5 para o NGINX."
+  },
   {
    "id": "c808af3473f2461a",
    "source": "Help Net Security",
@@ -13763,28 +13786,6 @@
    "enriched": true,
    "why": "Demonstra o risco elevado de comprometimento de infraestruturas críticas de telecomunicações para fins de espionagem.",
    "todo": "Evite o uso de autenticação por SMS (2FA) sempre que possível, substituindo-a por métodos baseados em aplicações autenticadoras ou chaves de segurança físicas."
-  },
-  {
-   "id": "1160767539d88597",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/13/europol-dark-web-arrests-cybercrime/",
-   "published": "2026-11-13T11:06:29+00:00",
-   "title": "354 dark web vendors and buyers arrested in Operation TorNado",
-   "summary": "Uma operação internacional coordenada pela Europol e autoridades policiais de 14 países, designada Operação TorNado, resultou na detenção de 354 vendedores e compradores na dark web. A investigação visou utilizadores que operavam em cinco mercados criminosos já encerrados: Archetyp, Bohemia, Nemesis, Kingdom e Tor2Door. A ação policial estendeu-se também a fóruns, lojas de um único vendedor e canais encriptados, demonstrando que os utilizadores continuavam vulneráveis após o fecho dos sites.",
-   "image": null,
-   "points": [
-    "A Operação TorNado resultou na detenção de 354 indivíduos ligados ao comércio ilícito na dark web.",
-    "A ação policial visou utilizadores de mercados ilícitos previamente desmantelados, como Archetyp e Tor2Door.",
-    "A investigação cobriu também fóruns e lojas encriptadas para apanhar tanto compradores como vendedores."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra a eficácia da cooperação policial internacional no desmantelamento de redes de comércio criminoso online.",
-   "todo": "Mantenha-se afastado de mercados e fóruns ilícitos na dark web, uma vez que as autoridades monitorizam e desmantelam estas redes de forma permanente."
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T23:46:43.883164+00:00",
+ "updated": "2026-11-19T00:06:58.584610+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -109,7 +109,7 @@
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "TechCrunch Security",
@@ -159,7 +159,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "Cisco Talos",
@@ -229,7 +229,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 19
+   "added": 20
   },
   {
    "source": "The Register Security",
@@ -239,7 +239,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Security Affairs",
@@ -304,14 +304,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 193,
-  "unenriched": 78,
+  "done": 96,
+  "pending": 217,
+  "unenriched": 102,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting property name enclosed in double quotes: line 32 column 5 (char 3404)",
+   "Expecting value: line 73 column 7 (char 7473)"
   ]
  },
  "items": [
+  {
+   "id": "58edaf73423ff8a5",
+   "source": "AWS Security Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://aws.amazon.com/blogs/security/step-up-authentication-how-to-right-size-authentication-to-risk/",
+   "published": "2026-11-18T23:49:07+00:00",
+   "title": "Autenticação gradual: como ajustar a autenticação ao risco",
+   "summary": "Muitas aplicações exigem apenas um início de sessão inicial, tratando todas as ações subsequentes com o mesmo nível de segurança, independentemente do risco. Isto cria um dilema entre a fricção excessiva nas tarefas diárias e a proteção insuficiente em operações sensíveis. Para resolver esta questão, a Amazon Cognito passou a suportar autenticação gradual, incluindo os níveis de garantia e métodos utilizados nos tokens JWT. Desta forma, as aplicações podem avaliar a força da autenticação e ajustá-la em tempo real ao risco de cada transação.",
+   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/18/Amazon-Cognito-post-Figure-1.png",
+   "points": [
+    "A Amazon Cognito adicionou suporte para autenticação gradual através de tokens JWT.",
+    "O sistema inclui reivindicações de nível e métodos de autenticação para validar operações.",
+    "Permite às aplicações adaptar a segurança ao risco potencial de cada ação realizada."
+   ],
+   "title_original": "Step-up authentication: how to right-size authentication to risk",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite equilibrar a segurança e a experiência do utilizador, protegendo operações críticas sem dificultar tarefas simples.",
+   "todo": "Implemente níveis de autenticação adaptativos em operações de alto risco, como transferências bancárias ou alterações de dados sensíveis."
+  },
   {
    "id": "6a80cc1b8fcf07bb",
    "source": "CSO Online",
@@ -13408,6 +13432,28 @@
    "todo": "Ative a autenticação multifator (MFA) nas contas de serviços online e monitore atividades suspeitas."
   },
   {
+   "id": "da110ad0aa4a88e1",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/microsoft-365-outage-security/",
+   "published": "2026-11-13T12:29:00+00:00",
+   "title": "Interrupção do Microsoft 365 aumenta riscos de segurança para as organizações",
+   "summary": "Uma falha global afetou os serviços do Microsoft 365 e do Outlook, gerando interrupções em empresas, escolas e serviços governamentais em várias regiões. Enquanto a Microsoft trabalha na resolução do problema, as equipas de cibersegurança encontram-se em alerta máximo. O principal motivo de preocupação é a possibilidade de os cibercriminosos aproveitarem o caos e a confusão gerados para lançar ataques direcionados.",
+   "image": null,
+   "points": [
+    "Uma interrupção global afetou o Microsoft 365, Outlook e outros serviços associados.",
+    "A falha impactou organizações, escolas e entidades governamentais a nível internacional.",
+    "As equipas de segurança estão em alerta para evitar aproveitamentos maliciosos do incidente."
+   ],
+   "title_original": "Microsoft 365 Outage Set to Ramp up Security Risks to Organizations",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Os períodos de indisponibilidade tecnológica criam oportunidades para agentes maliciosos explorarem a desorganização.",
+   "todo": "Mantenha a vigilância sobre os registos de acesso e reforce a atenção a comunicações suspeitas durante interrupções de serviços."
+  },
+  {
    "id": "293c69c9ee5ba956",
    "source": "BleepingComputer",
    "region": "US",
@@ -13740,50 +13786,6 @@
    "enriched": true,
    "why": "Destaca o impacto de ações policiais conjuntas na destruição de infraestruturas centrais do cibercrime organizado.",
    "todo": "Utilize gestores de palavras-passe robustos e altere credenciais imediatamente caso suspeite de infeção por infostealers."
-  },
-  {
-   "id": "e4df5d0ce341c2b5",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure/",
-   "published": "2026-11-13T10:48:40+00:00",
-   "title": "Law Enforcement Disrupts Gootloader, CastleRAT, and StealC Infrastructure",
-   "summary": "Investigadores internacionais confiscaram 235 servidores e 257 domínios no âmbito da Operação Endgame, comprometendo gravemente as operações das famílias de malware Gootloader, CastleRAT e StealC. A operação policial permitiu ainda recuperar 6,4 milhões de credenciais de utilizadores roubadas por estas ameaças. O esforço conjunto reduziu a capacidade operacional dos cibercriminosos que dependiam desta infraestrutura.",
-   "image": null,
-   "points": [
-    "A Operação Endgame apreendeu 235 servidores e 257 domínios ligados ao cibercrime.",
-    "A ação desmantelou a rede de suporte dos malwares Gootloader, CastleRAT e StealC.",
-    "Foram recuperados 6,4 milhões de dados de acesso de vítimas."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Reforça o valor estratégico da apreensão de domínios e servidores para travar campanhas de malware generalizadas.",
-   "todo": "Monitorize regularmente se as suas credenciais foram expostas em incidentes de roubo de dados divulgados pelas autoridades."
-  },
-  {
-   "id": "e49e186a5eabd302",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/",
-   "published": "2026-11-13T10:44:22+00:00",
-   "title": "Check Point avisa sobre vulnerabilidade zero-day explorada para acesso root",
-   "summary": "A Check Point Software lançou correções de emergência para resolver uma falha de alta gravidade que tem sido explorada por hackers. Esta vulnerabilidade tem permitido obter privilégios de root e estabelecer persistência em dispositivos vulneráveis desde o final de outubro. A rápida atuação da empresa visa mitigar os riscos associados a esta exploração ativa nos sistemas afetados.",
-   "image": null,
-   "points": [
-    "A Check Point Software lançou correções de emergência para uma falha grave.",
-    "Hackers exploraram a vulnerabilidade desde o final de outubro para obter acesso root.",
-    "O impacto inclui a perda de controlo e persistência não autorizada nos dispositivos."
-   ],
-   "title_original": "Check Point warns of zero-day flaw exploited for root access",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque a falha permite o controlo total dos dispositivos afetados e tem sido ativamente explorada por atacantes.",
-   "todo": "Instale imediatamente as correções de emergência disponibilizadas pela Check Point nos dispositivos afetados."
   }
  ]
 }

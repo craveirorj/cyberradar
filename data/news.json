@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T18:44:55.652595+00:00",
+ "updated": "2026-11-19T19:07:43.752989+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -34,7 +34,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -139,7 +139,7 @@
   {
    "source": "SANS ISC",
    "ok": true,
-   "added": 1
+   "added": 2
   },
   {
    "source": "DataBreaches.net",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Security Affairs",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 19
+   "added": 16
   },
   {
    "source": "ACSC Austrália",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 319,
-  "unenriched": 206,
+  "done": 48,
+  "pending": 277,
+  "unenriched": 160,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -320,21 +320,119 @@
  },
  "items": [
   {
+   "id": "d0c7e186c7e0b5aa",
+   "source": "Cisco Talos",
+   "region": "US",
+   "lang": "en",
+   "link": "https://blog.talosintelligence.com/the-internet-needs-a-nap-and-you-do-too/",
+   "published": "2026-11-19T19:00:00+00:00",
+   "title": "A internet precisa de uma sesta (e tu também)",
+   "summary": "O fluxo constante de notícias sobre vulnerabilidades e falhas em tecnologias como PHP, Java, Outlook, Apple e nginx sobrecarrega as equipas de segurança. Embora falhas e interrupções tenham causas distintas, todas resultam num volume excessivo de trabalho para os administradores. O artigo sublinha que a mitigação exige inventário rigoroso de ativos, atualizações de sistemas e gestão adequada de alertas para evitar que anomalias passem despercebidas.",
+   "image": "https://storage.ghost.io/c/af/a0/afa04ee3-414f-4481-8d23-7e7c146f192e/content/images/2026/11/threat_source-2.jpg",
+   "points": [
+    "O volume contínuo de vulnerabilidades e falhas tecnológicas sobrecarrega as equipas de cibersegurança.",
+    "As organizações devem identificar todos os sistemas, aplicações e dispositivos presentes no seu ambiente.",
+    "A gestão de ativos obsoletos e a aplicação de patches continuam a ser um desafio crítico.",
+    "A falta de tempo e o excesso de alertas dificultam a distinção entre atividade normal e anómala."
+   ],
+   "title_original": "The internet needs a nap (and you do, too)",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Conhecer o parque tecnológico e gerir eficazmente os alertas é essencial para evitar que falhas se transformem em incidentes graves.",
+   "todo": "Mantenha um inventário atualizado de todos os softwares e dispositivos da organização e planeie janelas regulares de atualização."
+  },
+  {
+   "id": "2269ea7d3413edee",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/19/nvidia-adds-possible-hack-to-list-of-very-bad-things-under-investigation/5311153",
+   "published": "2026-11-19T18:52:53+00:00",
+   "title": "Nvidia investiga alegada violação de dados por grupo de ransomware",
+   "summary": "A fabricante de chips Nvidia está a investigar um alegado ataque cibernético após o grupo de ransomware The Gentlemen reivindicar a invasão da empresa e o roubo de dados sensíveis. A empresa afirmou não ter encontrado indícios de que os seus sistemas ou redes tenham sido afetados, enquanto o grupo criminoso publicou uma contagem decrescente na sua página de fugas de dados. O grupo em causa tem sido altamente prolífico, acumulando centenas de vítimas a nível global em operações de ransomware-as-a-service.",
+   "image": "https://image.theregister.com/?imageId=5311157&width=800",
+   "points": [
+    "O grupo de ransomware The Gentlemen reivindicou a alegada pirataria informática à Nvidia.",
+    "A Nvidia declarou estar a investigar o caso, mas não encontrou indícios de afetação dos seus sistemas.",
+    "O grupo criminoso é conhecido por operações prolíficas de ransomware-as-a-service com centenas de vítimas registadas.",
+    "Investigações de terceiros apontam para um aumento generalizado de ataques de ransomware em ambientes corporativos e industriais."
+   ],
+   "title_original": "Nvidia adds possible hack to list of very bad things under investigation",
+   "category": "Ransomware",
+   "translated": true,
+   "enriched": true,
+   "why": "Incidentes envolvendo grandes gigantes tecnológicas demonstram a persistência e o alcance agressivo dos grupos de ransomware modernos.",
+   "todo": "Monitore continuamente os acessos à rede e implemente cópias de segurança offline e encriptadas para mitigar riscos de ransomware."
+  },
+  {
+   "id": "3300f4affd3eb871",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/mitel-security-advisory-av26-1184",
+   "published": "2026-11-19T18:51:37+00:00",
+   "title": "Aviso de segurança Mitel (AV26-1184)",
+   "summary": "A Mitel emitiu um aviso de segurança referente a vulnerabilidades detetadas no produto MiCollab em versões iguais ou anteriores à 10.3 (10.3.0.18). As autoridades competentes instam os administradores e utilizadores a consultarem a informação técnica disponibilizada. É recomendada a aplicação urgente das atualizações necessárias para mitigar os riscos associados.",
+   "image": null,
+   "points": [
+    "A Mitel reportou falhas de segurança afetando o produto MiCollab.",
+    "A vulnerabilidade afeta versões iguais ou anteriores à 10.3 (10.3.0.18).",
+    "O Centro Cibernético aconselha a consulta do aviso oficial e a aplicação de atualizações.",
+    "Administradores de sistemas devem priorizar a correção nestes softwares."
+   ],
+   "title_original": "Mitel security advisory (AV26-1184)",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A correção atempada de vulnerabilidades em ferramentas de colaboração impede o acesso não autorizado aos sistemas empresariais.",
+   "todo": "Consulte o boletim de segurança da Mitel e atualize o MiCollab para a versão recomendada."
+  },
+  {
+   "id": "412ac9b85cf67142",
+   "source": "SAPO Tek",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://tek.sapo.pt/noticias/internet/artigos/hackers-divulgam-150-mil-registos-de-visualizacao-de-televisoes-inteligentes-da-samsung/",
+   "published": "2026-11-19T18:44:14+00:00",
+   "title": "Hackers divulgam 150 mil registos de visualização de televisões inteligentes da Samsung",
+   "summary": "Um grupo de ransomware publicou na dark web um ficheiro de 220 MB com dados alegadamente pertencentes à Samsung. Entre a informação divulgada encontram-se registos de utilização de smart TVs, campanhas de publicidade política e material associado ao treino de inteligência artificial. Este incidente expõe dados operacionais e de visualização recolhidos por estes dispositivos.",
+   "image": null,
+   "points": [
+    "Um grupo de ransomware publicou 220 MB de dados atribuídos à Samsung na dark web.",
+    "Os ficheiros contêm 150 mil registos de visualização de televisões inteligentes.",
+    "A fuga inclui também dados de publicidade política e materiais de treino de IA.",
+    "O incidente resulta na exposição de informações sensíveis recolhidas por dispositivos conectados."
+   ],
+   "title_original": null,
+   "category": "Ransomware",
+   "translated": false,
+   "enriched": true,
+   "why": "A fuga de dados de dispositivos domésticos inteligentes demonstra os riscos associados à recolha massiva de dados de utilização.",
+   "todo": "Reveja as definições de privacidade e partilha de dados em dispositivos inteligentes conectados à rede."
+  },
+  {
    "id": "35ba881102163046",
    "source": "Cyber Centre Canadá",
    "region": "INT",
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/php-group-security-advisory-av26-1183",
    "published": "2026-11-19T18:33:33+00:00",
-   "title": "PHP Group security advisory (AV26-1183)",
-   "summary": "",
+   "title": "Aviso de segurança PHP Group (AV26-1183)",
+   "summary": "O PHP Group reportou vulnerabilidades que afetam múltiplas versões da linguagem PHP, nomeadamente versões anteriores a 8.2.36, 8.3.37, 8.4.28, 8.5.13 e 8.6.0. O Centro Cibernético recomenda que os administradores de sistemas consultem o registo de alterações e apliquem as atualizações de segurança assim que fiquem disponíveis. A aplicação destas correções é fundamental para proteger os servidores web.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O PHP Group detetou vulnerabilidades em várias ramificações da linguagem PHP.",
+    "As versões afetadas incluem iterações anteriores a 8.2.36, 8.3.37, 8.4.28, 8.5.13 e 8.6.0.",
+    "Recomenda-se a consulta do changelog oficial e a instalação de correções de segurança.",
+    "A atualização protege aplicações web contra potenciais explorações."
+   ],
+   "title_original": "PHP Group security advisory (AV26-1183)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1183 Date: November 19, 2026 As of November 19, 2026, PHP Group is affected by vulnerabilities in the following product: PHP Prior to 8.2.36 Prior to 8.3.37 Prior to 8.4.28 Prior to 8.5.13 Prior to 8.6.0 The Cyber Centre encourages users and administrators to review the provided web link and apply any necessary updates as they become available. PHP: PHP 8 ChangeLog"
+   "translated": true,
+   "enriched": true,
+   "why": "Como o PHP alimenta uma vasta fatia da web, falhas nesta tecnologia colocam em risco milhares de aplicações e servidores.",
+   "todo": "Atualize os ambientes PHP para as versões mais recentes disponibilizadas pelo fornecedor."
   },
   {
    "id": "068946ae29eaceb7",
@@ -343,15 +441,21 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/ubiquiti-security-advisory-av26-1182",
    "published": "2026-11-19T18:28:56+00:00",
-   "title": "Ubiquiti security advisory (AV26-1182)",
-   "summary": "",
+   "title": "Aviso de segurança Ubiquiti (AV26-1182)",
+   "summary": "A Ubiquiti foi afetada por vulnerabilidades de segurança no seu produto UniFi Access Application, especificamente em versões anteriores à 4.3.24. O Centro Cibernético apelou aos utilizadores e administradores para consultarem o boletim de segurança da comunidade Ubiquiti. A recomendação passa por aplicar as atualizações necessárias logo que estejam acessíveis.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Ubiquiti divulgou um alerta de segurança relativo ao UniFi Access Application.",
+    "A falha atinge versões anteriores à 4.3.24.",
+    "O Centro Cibernético incentiva a revisão do boletim de segurança comunitário.",
+    "Os administradores devem aplicar as atualizações de software disponibilizadas."
+   ],
+   "title_original": "Ubiquiti security advisory (AV26-1182)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1182 Date: November 19, 2026 As of November 18, 2026, Ubiquiti is affected by vulnerabilities in the following product: UniFi Access Application Prior to 4.3.24 The Cyber Centre encourages users and administrators to review the provided web link and apply any necessary updates as they become available. Ubiquiti Community Security Advisory Bulletin 073"
+   "translated": true,
+   "enriched": true,
+   "why": "Corrigir falhas em aplicações de controlo de acessos e redes evita que atacantes comprometam a infraestrutura física e lógica.",
+   "todo": "Verifique a versão do UniFi Access Application e proceda à atualização para a versão 4.3.24 ou superior."
   },
   {
    "id": "a818db1e5065f84b",
@@ -361,14 +465,20 @@
    "link": "https://www.helpnetsecurity.com/2026/11/19/nginx2root-nginx-vulnerabilities/",
    "published": "2026-11-19T18:25:50+00:00",
    "title": "NGINX2Root: F5 patches five critical NGINX vulnerabilities",
-   "summary": "F5 has patched five critical vulnerabilities in NGINX, the world’s most widely used open-source web server, that can allow remote code execution under certain conditions. Dubbed “NGINX2Root” by Xint researchers, two of the bunch (CVE-2026-123633 and CVE-2026-123007) were also independently unearthed and reported by Rapid7, Wiz, Ikotas Labs, Palo Alto Networks and Metnir researchers. There’s no evidence that any of them has been exploited in the wild, and none were on CISA’s Known Exploited Vulnerabilities … More →",
+   "summary": "A F5 corrigiu cinco vulnerabilidades críticas descobertas no servidor web NGINX, denominadas coletivamente de 'NGINX2Root' por investigadores da Xint. Estas falhas, que incluem vulnerabilidades detetadas de forma independente por várias empresas de cibersegurança, podem permitir a execução remota de código sob condições específicas. Atualmente, não existem evidências de exploração destas falhas em ambiente real nem constam na lista de vulnerabilidades conhecidas da CISA.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A F5 patches cinco vulnerabilidades críticas no servidor web NGINX.",
+    "A falha foi batizada de 'NGINX2Root' e detetada por vários investigadores independentes.",
+    "As vulnerabilidades podem permitir execução remota de código em determinadas condições.",
+    "Não há registo de exploração ativa destas falhas em cenários reais."
+   ],
+   "title_original": "NGINX2Root: F5 patches five critical NGINX vulnerabilities",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "F5 has patched five critical vulnerabilities in NGINX, the world’s most widely used open-source web server, that can allow remote code execution under certain conditions. Dubbed “NGINX2Root” by Xint researchers, two of the bunch (CVE-2026-123633 and CVE-2026-123007) were also independently unearthed and reported by Rapid7, Wiz, Ikotas Labs, Palo Alto Networks and Metnir researchers. There’s no evidence that any of them has been exploited in the wild, and none were on CISA’s Known Exploited Vulnerabilities … More →"
+   "translated": true,
+   "enriched": true,
+   "why": "Sendo o NGINX um dos servidores web mais utilizados do mundo, falhas críticas exigem correção imediata para prevenir ataques futuros.",
+   "todo": "Aplique os patches disponibilizados pela F5 para as versões do NGINX afetadas."
   },
   {
    "id": "88045d44367b4836",
@@ -377,15 +487,21 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1181",
    "published": "2026-11-19T18:24:30+00:00",
-   "title": "JetBrains security advisory (AV26-1181)",
-   "summary": "",
+   "title": "Aviso de segurança JetBrains (AV26-1181)",
+   "summary": "A JetBrains foi afetada por vulnerabilidades no produto TeamCity, nomeadamente em versões anteriores a 2026.2.1 e 2026.1.5. O Centro Cibernético encoraja os utilizadores e administradores a consultarem os links de segurança fornecidos pela empresa. Recomenda-se a aplicação célere das atualizações para salvaguardar os ambientes de desenvolvimento.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A JetBrains reportou falhas de segurança no software TeamCity.",
+    "As versões anteriores a 2026.2.1 e 2026.1.5 encontram-se vulneráveis.",
+    "O Centro Cibernético aconselha a análise dos boletins e avisos oficiais da marca.",
+    "É imperativa a aplicação de atualizações nos servidores afetados."
+   ],
+   "title_original": "JetBrains security advisory (AV26-1181)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1181 Date: November 19, 2026 As of November 19, 2026, JetBrains is affected by vulnerabilities in the following product: TeamCity Prior to 2026.2.1 Prior to 2026.1.5 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. JetBrains Fixed Security Advisories JetBrains Security Bulletin"
+   "translated": true,
+   "enriched": true,
+   "why": "Proteger ferramentas de integração contínua como o TeamCity impede que atacantes comprometam o código-fonte e os processos de desenvolvimento.",
+   "todo": "Atualize o TeamCity da JetBrains para as versões corrigidas mais recentes."
   },
   {
    "id": "6efc22951138a3c2",
@@ -13656,97 +13772,6 @@
    "enriched": true,
    "why": "Mostra como a IA pode ser usada para descobrir falhas críticas em equipamentos antigos que já não têm suporte.",
    "todo": "Substitua equipamentos descontinuados por modelos com suporte ativo e atualizações de segurança regulares."
-  },
-  {
-   "id": "201de7464188baf4",
-   "source": "SANS ISC",
-   "region": "US",
-   "lang": "en",
-   "link": "https://isc.sans.edu/diary/rss/33520",
-   "published": "2026-11-16T02:00:05+00:00",
-   "title": "ISC Stormcast For Monday, November 16th, 2026 https://isc.sans.edu/podcastdetail/10180, (Mon, Nov 16th)",
-   "summary": "Este registo corresponde a um episódio do podcast ISC Stormcast referente a segunda-feira, 16 de novembro de 2026. A publicação fornece atualizações e análises diárias sobre cibersegurança. O conteúdo está acessível através do link facultado para consulta na plataforma SANS Internet Storm Center. Trata-se de um resumo informativo regular sobre o estado das ameaças.",
-   "image": null,
-   "points": [
-    "Publicação do podcast diário ISC Stormcast.",
-    "Disponibilizado a 16 de novembro de 2026.",
-    "Foco na análise de atualizações de cibersegurança."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Mantém os profissionais informados sobre as últimas ocorrências e tendências de cibersegurança.",
-   "todo": ""
-  },
-  {
-   "id": "4d9102be4c4e2834",
-   "source": "IT Security",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://www.itsecurity.pt/news/threats/portugal-regista-mais-41-de-ciberataques-em-outubro",
-   "published": "2026-11-16T00:00:00+00:00",
-   "title": "Portugal regista mais 41% de ciberataques em outubro",
-   "summary": "As organizações em Portugal enfrentaram uma média de 2.829 ciberataques semanais durante o mês de outubro. Este valor representa um aumento de 41% em comparação com o período homólogo de 2025. O crescimento evidencia a intensificação da ameaça digital sobre o tecido empresarial e institucional nacional.",
-   "image": null,
-   "points": [
-    "Média de 2.829 ciberataques semanais em Portugal.",
-    "Dados registados no mês de outubro.",
-    "Aumento de 41% face a 2025.",
-    "Maior pressão sobre as organizações portuguesas."
-   ],
-   "title_original": null,
-   "category": "Ataque/APT",
-   "translated": false,
-   "enriched": true,
-   "why": "Alerta para a necessidade urgente de as empresas portuguesas reforçarem as suas defesas face ao crescimento da ameaça.",
-   "todo": "Reveja as políticas de segurança da empresa e assegure formação regular em cibersegurança para todos os colaboradores."
-  },
-  {
-   "id": "cf84ff92eee742b8",
-   "source": "IT Security",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://www.itsecurity.pt/news/threats/microsoft-corrige-falhas-de-ativacao-do-windows",
-   "published": "2026-11-16T00:00:00+00:00",
-   "title": "Microsoft corrige falhas de ativação do Windows",
-   "summary": "A Microsoft disponibilizou atualizações de emergência para solucionar problemas de licenciamento e ativação do Windows. Estas falhas tinham sido inadvertidamente introduzidas pelas correções de segurança lançadas em novembro. Com esta medida, a fabricante pretende repor o normal funcionamento dos sistemas afetados.",
-   "image": null,
-   "points": [
-    "Microsoft lança atualizações de emergência.",
-    "Resolvidos problemas de ativação e licenciamento do Windows.",
-    "Falhas causadas por patches de segurança anteriores de novembro.",
-    "Correção direcionada para normalizar os sistemas."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Ilustra os riscos operacionais associados a falhas em atualizações de rotina lançadas pelos fabricantes.",
-   "todo": "Instale as atualizações de emergência da Microsoft para restaurar o correto licenciamento dos sistemas."
-  },
-  {
-   "id": "8d87100358658906",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203189/security/the-microsoft-outage-left-15-hotel-guests-poisoned-by-chlorine.html",
-   "published": "2026-11-15T22:38:00+00:00",
-   "title": "A Falha da Microsoft Deixou 15 Hóspedes de Hotel Intoxicados por Cloro",
-   "summary": "Uma falha nos serviços em nuvem da Microsoft impediu o envio de alertas por email sobre níveis excessivos de cloro num hotel na Alemanha. Devido a esta interrupção, o sistema de segurança automatizado falhou e os níveis de cloro subiram na área da sauna. O incidente resultou em 15 hóspedes intoxicados e com problemas respiratórios, exigindo a intervenção dos serviços de emergência. A situação demonstra o perigo de depender exclusivamente de sistemas baseados na internet para avisos de segurança críticos.",
-   "image": null,
-   "points": [
-    "Uma falha na Microsoft 365 bloqueou alertas de cloro por email num hotel alemão.",
-    "O sistema de aviso falhou, provocando o aumento perigoso de cloro na água.",
-    "Quinze hóspedes sofreram intoxicação e irritação respiratória, necessitando de assistência médica.",
-    "O caso evidencia os riscos de depender apenas de alertas online para a segurança física."
-   ],
-   "title_original": "The Microsoft Outage Left 15 Hotel Guests Poisoned by Chlorine",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como uma falha informática na nuvem pode causar danos físicos reais e colocar vidas em risco.",
-   "todo": "Implemente alternativas físicas ou locais de backup para sistemas de segurança críticos que não dependam exclusivamente da ligação à internet."
   }
  ]
 }

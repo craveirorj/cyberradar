@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T20:05:50.324665+00:00",
+ "updated": "2026-11-19T20:27:38.748900+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -109,7 +109,7 @@
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CSO Online",
@@ -269,12 +269,12 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 1
+   "added": 2
   },
   {
    "source": "Check Point Research",
@@ -309,13 +309,12 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 12,
-  "pending": 298,
-  "unenriched": 189,
+  "done": 108,
+  "pending": 208,
+  "unenriched": 96,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "Expecting ':' delimiter: line 61 column 3 (char 5095)"
   ]
  },
  "items": [
@@ -335,6 +334,40 @@
    "translated": false,
    "enriched": false,
    "raw": "Most of what gets called a scaling problem has nothing to do with traffic. My text scanning app…"
+  },
+  {
+   "id": "20bd7f2d741599bf",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/produto-e-review/windows-11-tera-verificacao-de-seguranca-que-pode-bloquear-programas-e-jogos-entenda/",
+   "published": "2026-11-19T20:00:00+00:00",
+   "title": "Windows 11 terá verificação de segurança que pode bloquear programas e jogos; entenda",
+   "summary": "A nova ferramenta estará disponível na aba Segurança das configurações do sistema operacional.",
+   "image": "https://www.estadao.com.br/resizer/v2/BRD62ME2CNBG7GLFXZQCBE7CD4.jpg?quality=80&auth=84f84890d8ffcea3673ae7de83ba131386e7ebd5d66916585db0fadfbb422ca2&width=710",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "O Windows 11 terá uma ferramenta que reúne diferentes mecanismos de proteção do sistema em uma única verificação, permitindo que softwares identifiquem se o computador atende aos requisitos mínimos de segurança para executar esses programas. A novidade teve a prévia liberada para testadores na última terça-feira (17). Denominada Windows Baseline Protection, ou Proteção de Linha de Base do Windows na tradução livre, a funcionalidade objetiva aumentar a segurança do PC . No entanto, pode impedir o funcionamento de um aplicativo ou jogo se a máquina não passar na avaliação . O que será verificado? A nova ferramenta de proteção básica do Windows vai checar se o computador está suficientemente protegido a partir da análise de um conjunto de requisitos de segurança. Em sua primeira versão, serão oito mecanismos verificados, de acordo com a Microsoft. Processador de segurança para dados sensíveis e inicialização segura que impede o carregamento de softwares maliciosos fazem parte da lista; Segurança baseada em virtualização , que protege processos críticos contra ataques, e a integridade da memória , que atua em partes protegidas do sistema, serão outros fatores analisados; Ela exigirá, ainda, drivers confiáveis e certificados para Windows , impedindo que componentes não autenticados façam o carregamento; Proteção do depurador de kernel para evitar que as proteções de segurança sejam dribladas e proteção de driver vulnerável também serão verificadas pela ferramenta. A nova ferramenta estará disponível na aba Segurança das configurações do sistema operacional. Foto: Microsoft/Divulgação Todos esses itens já estão disponíveis no Windows 11 , separadamente, e agora serão analisados de uma só vez, representando o mínimo exigido. A gigante de Redmond afirmou que novos critérios pod"
+  },
+  {
+   "id": "dfb731a444878dea",
+   "source": "Dark Reading",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.darkreading.com/vulnerabilities-threats/navigating-vulnerability-hysteria-ai-era",
+   "published": "2026-11-19T19:46:44+00:00",
+   "title": "Navigating Vulnerability Hysteria in the AI Era",
+   "summary": "This installment of the Reporters' Notebook video series examines the fallout from recent high-severity flaw disclosures, exploring how fears of AI-assisted exploits trigger widespread panic, operational disruptions, and growing warning fatigue.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt7d04c37959ab5304/6aff50a7d42cb182cb40c79e/panic_Kzenon_Alamy_REWORKED_FOR_16_BY_9_FORMAT.jpg?width=720&quality=80&disable=upscale",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "This installment of the Reporters' Notebook video series examines the fallout from recent high-severity flaw disclosures, exploring how fears of AI-assisted exploits trigger widespread panic, operational disruptions, and growing warning fatigue."
   },
   {
    "id": "0bb8cd3662a16247",
@@ -496,6 +529,23 @@
    "enriched": true,
    "why": "A correção atempada de vulnerabilidades em ferramentas de colaboração impede o acesso não autorizado aos sistemas empresariais.",
    "todo": "Consulte o boletim de segurança da Mitel e atualize o MiCollab para a versão recomendada."
+  },
+  {
+   "id": "53e4a59238e8a8ae",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
+   "published": "2026-11-19T18:47:58+00:00",
+   "title": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
+   "summary": "The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used to steal data, spread malware, and get people to hand over access. There's another shift worth watching. AI is making some attacks easier",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgTqUIWPjGeycl6xafh8Hx8n2UN3UCUgjhTpxUul68DHi7Y_IoHVYBvjDd5DpFg15sKI767hVEq-8CbGhK69JNusMh0OBBXfVMwJlZiKT2gNnTPAL9DyvTY85SB68WkvBxFCMF2_rNS9rUgYkQN8sKssDMBS8gO6YpMudQohf_JWnPztX_h8TdbSX6Vtfi/s1600/td.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Malware",
+   "translated": false,
+   "enriched": false,
+   "raw": "The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used to steal data, spread malware, and get people to hand over access. There's another shift worth watching. AI is making some attacks easier"
   },
   {
    "id": "412ac9b85cf67142",
@@ -1116,6 +1166,23 @@
    "enriched": true,
    "why": "Mostra a pressão governamental contínua sobre as empresas tecnológicas para enfraquecerem a encriptação de ponta a ponta.",
    "todo": "Acompanhe as atualizações de segurança da Apple e garanta que utiliza autenticação forte nas suas contas na cloud."
+  },
+  {
+   "id": "a712b28d93dabb22",
+   "source": "Cybersecurity Dive",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cybersecuritydive.com/news/cisa-nominee-michael-losapio-confirmation-hearing/875197/",
+   "published": "2026-11-19T16:12:14+00:00",
+   "title": "Trump’s CISA director pick ducks questions about budget, staffing, priorities",
+   "summary": "Michael LoSapio, a Palantir executive, also denied that the U.S. Capitol was attacked on Jan. 6, 2021.",
+   "image": "https://imgproxy.divecdn.com/Ukhi8TdmnDmBNoBD1HmgG4JLy2GeQFMQGn8xLXhCr24/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMzA1OTA0NTYxLmpwZw==.webp",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "Michael LoSapio, a Palantir executive, also denied that the U.S. Capitol was attacked on Jan. 6, 2021."
   },
   {
    "id": "54225f4d777eefef",
@@ -13681,94 +13748,6 @@
    "enriched": true,
    "why": "Importa porque resume as principais ameaças e incidentes que afetaram utilizadores e empresas ao longo da semana.",
    "todo": "Mantenha o software e os navegadores atualizados e adote práticas rigorosas de proteção contra phishing e roubo de dados."
-  },
-  {
-   "id": "f159cf23a7b20d4c",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
-   "published": "2026-11-16T07:34:21+00:00",
-   "title": "Amazon descobre campanha de agentes de IA a apontar a LiteLLM, Dify e outras aplicações para chaves de API",
-   "summary": "A equipa de inteligência de ameaças da Amazon detetou agentes de IA maliciosos a procurar vulnerabilidades em aplicações expostas à internet. O objetivo dos atacantes era roubar chaves de API de fornecedores de inteligência artificial armazenadas nessas plataformas. As chaves roubadas foram depois utilizadas para alimentar os próprios modelos usados na busca por mais credenciais. O impacto atinge a segurança de aplicações de IA e os recursos associados.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigoyCtEKcD7TM_5vDkKiZYFdk_l4-js7HNuvMXzZbVqUbEgq1nnD2vEZgZ0kL9CdmOkITC0Rbd-ebTkSX-R4NPKwWZXzUD6zS0g9nEfnlXw3njm3oW2Se97qbT7lIfZEL56X3IIaZAildTni9-zQJu5sa4Lhvi_mVlbTeZFyFtezOMHJ_bDhJWfG7KQ8eh/s1600/amazon.jpg",
-   "points": [
-    "Agentes de IA atacaram aplicações expostas como LiteLLM e Dify.",
-    "O alvo principal era o roubo de chaves de API de IA.",
-    "As chaves roubadas serviram para alimentar novas pesquisas de acessos."
-   ],
-   "title_original": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque ilustra a automação de ataques à escala através de agentes de IA focados em roubar credenciais de serviços críticos.",
-   "todo": "Proteja e restrinja o acesso a aplicações de IA expostas na internet e evite armazenar chaves de API sem as devidas restrições."
-  },
-  {
-   "id": "f40bccb5d841eedd",
-   "source": "Troy Hunt",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://www.troyhunt.com/weekly-update-530/",
-   "published": "2026-11-16T07:09:38+00:00",
-   "title": "Atualização Semanal 530: Dependências de Email e Aplicações",
-   "summary": "A dependência crítica da sociedade em relação ao correio eletrónico foi posta em evidência após uma grande interrupção de serviços da Microsoft. O evento demonstrou como a falha de um utilitário essencial pode paralisar comunicações globais. Perante este cenário, especialistas sublinham a necessidade de criar redundâncias nos sistemas. O impacto afeta a continuidade de negócios e a receção de alertas críticos.",
-   "image": "https://storage.ghost.io/c/fb/33/fb3391dc-723d-4e74-b95a-d641b5feb38e/content/images/2026/11/maxresdefault.jpg",
-   "points": [
-    "A interrupção de serviços de email afetou a comunicação global.",
-    "O incidente realçou a dependência excessiva de serviços centralizados.",
-    "Especialistas recomendam a criação de canais de comunicação redundantes."
-   ],
-   "title_original": "Weekly Update 530: Email Dependencies & Apps",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque reforça a necessidade de as empresas criarem planos de contingência para falhas em serviços essenciais de comunicação.",
-   "todo": "Implemente canais de comunicação e alertas alternativos para garantir a continuidade operacional em caso de falha do email principal."
-  },
-  {
-   "id": "eb9de4818ae16063",
-   "source": "Securelist (Kaspersky)",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://securelist.com/retadup-delivers-coffeeloader/121908/",
-   "published": "2026-11-16T07:00:37+00:00",
-   "title": "Uma segunda vida para um worm USB: Retadup a propagar CoffeeLoader",
-   "summary": "Foi detetada uma nova variante do malware CoffeeLoader associada a um instalador modificado. A ameaça utiliza uma biblioteca de compressão legítima alterada para executar código malicioso e descarregar o Trojan principal. Para ocultar a sua atividade, o pacote recorre ao processamento gráfico do sistema através de bibliotecas como a OpenGL. O impacto traduz-se na infeção persistente de sistemas através de métodos sofisticados de evasão.",
-   "image": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2026/11/12144618/retadup-1_securelist-featured_1200x600_x2.jpg",
-   "points": [
-    "Foi detetada uma nova variante do malware CoffeeLoader.",
-    "Utiliza ficheiros legítimos modificados para descarregar a carga maliciosa.",
-    "Recorre à placa gráfica para ocultar a descriptografia do código."
-   ],
-   "title_original": "A USB worm’s second life: Retadup spreading CoffeeLoader",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque mostra a evolução de técnicas de ofuscação de malware que utilizam recursos de hardware como a placa gráfica para escapar aos antivírus.",
-   "todo": "Utilize soluções de segurança atualizadas com capacidade de análise comportamental para detetar processos anómalos no sistema."
-  },
-  {
-   "id": "2444f82f10c4dad1",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/16/cloudflare-kitesurf-open-source/",
-   "published": "2026-11-16T07:00:02+00:00",
-   "title": "Já pode alojar autonomamente o Kitesurf, o navegador de código aberto da Cloudflare para agentes de IA",
-   "summary": "A Cloudflare disponibilizou o código-fonte do Kitesurf, um navegador desenvolvido especificamente para agentes de IA. A ferramenta permite carregar páginas web e executar código JavaScript em Cloudflare Workers sem necessitar de um navegador de desktop completo. Os programadores podem agora inspecionar, modificar e implementar a solução nos seus próprios servidores. O impacto facilita a automatização segura de tarefas web para IA.",
-   "image": null,
-   "points": [
-    "A Cloudflare tornou público o código do navegador Kitesurf.",
-    "Permite executar JavaScript para IA sem um browser de desktop completo.",
-    "Pode ser alojado e testado autonomamente pelos programadores."
-   ],
-   "title_original": "You can now self-host Kitesurf, Cloudflare’s open-source browser for AI agents",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque oferece uma ferramenta otimizada e de código aberto para desenvolvedores que integram agentes de IA com páginas web.",
-   "todo": ""
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T21:28:27.028962+00:00",
+ "updated": "2026-11-19T21:46:28.196723+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CISA Advisories",
@@ -74,12 +74,12 @@
   {
    "source": "MS-ISAC (CIS)",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -164,7 +164,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "Cisco Talos",
@@ -204,7 +204,7 @@
   {
    "source": "Rapid7",
    "ok": true,
-   "added": 6
+   "added": 5
   },
   {
    "source": "Tenable",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 11
+   "added": 10
   },
   {
    "source": "Help Net Security",
@@ -310,13 +310,35 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 203,
-  "unenriched": 87,
+  "pending": 205,
+  "unenriched": 84,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "8dfce1d63ad40fde",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/lawmakers-launch-new-ai-safety-caucus",
+   "published": "2026-11-19T21:19:00+00:00",
+   "title": "Parlamentares lançam novo grupo de segurança de IA em resposta a preocupações crescentes",
+   "summary": "Foi lançado um novo grupo focado na segurança da inteligência artificial no Congresso, contando com um número notável de republicanos entre os membros fundadores. Esta adesão bipartidária destaca-se face à forte oposição da Casa Branca à regulação da tecnologia. A iniciativa surge num contexto de crescentes preocupações de segurança em torno do desenvolvimento da IA.",
+   "image": "https://cms.therecord.media/uploads/Congress_6ac7a14ca7.jpg",
+   "points": [
+    "Sete dos vinte e seis membros fundadores são republicanos.",
+    "A criação do grupo foca-se na segurança da inteligência artificial.",
+    "A iniciativa contrasta com a oposição da Casa Branca à regulamentação."
+   ],
+   "title_original": "Lawmakers launch new AI safety caucus amid rising security concerns",
+   "category": "Regulação",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque demonstra o aumento da atenção política e o debate bipartidário em torno da regulamentação e segurança da IA.",
+   "todo": ""
+  },
   {
    "id": "3797ecb529a51da9",
    "source": "BleepingComputer",
@@ -332,9 +354,9 @@
     "Atacantes remotos podiam obter controlo administrativo total.",
     "A vulnerabilidade afetava a consola de gestão e os dispositivos geridos."
    ],
-   "title_original": "ASUS warns of critical hard-coded key flaw in Control Center Express",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Protege os sistemas contra o acesso administrativo não autorizado por parte de atacantes remotos.",
    "todo": "Atualize o Control Center Express para a versão 1.7.29 o mais rapidamente possível."
@@ -354,9 +376,9 @@
     "Impacto: Exposição potencial de dados de clientes, como nomes e emails.",
     "Segurança: As redes de pagamento e sistemas centrais não foram comprometidos."
    ],
-   "title_original": "Chase, Visa, Mastercard confirm third-party cyberattacks that may have exposed customers' info",
+   "title_original": null,
    "category": "Fuga de dados",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Alerta para os riscos de segurança associados à cadeia de fornecimento e a fornecedores externos.",
    "todo": "Monitore contas bancárias e comunicações à procura de potenciais tentativas de phishing baseadas nos dados expostos."
@@ -376,9 +398,9 @@
     "Permite investigar tráfego e picos em todos os recursos e regiões.",
     "Ajuda a conter ameaças rapidamente e a minimizar falsos positivos."
    ],
-   "title_original": "Introducing the new AWS WAF security analytics dashboard",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Facilita a monitorização e a resposta rápida a incidentes de segurança na cloud sem complexidade adicional.",
    "todo": "Aceda à consola AWS WAF e configure o novo painel de análises de segurança para otimizar a gestão de tráfego."
@@ -398,9 +420,9 @@
     "CVE-2026-123890 tem uma pontuação de gravidade de 9.8 em 10.",
     "Atacantes com acesso de rede podem obter acesso administrativo não autorizado."
    ],
-   "title_original": "Critical flaw in VMware vCenter allows authentication bypass",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Evita o acesso total e não autorizado de intrusos aos sistemas de gestão VMware afetados.",
    "todo": "Aplique imediatamente as atualizações de segurança fornecidas pela Broadcom para as versões afetadas."
@@ -420,9 +442,9 @@
     "Permite contornar a autenticação sem credenciais e obter privilégios de Administrador.",
     "Grupo estatal chinês ARMORY CASTLE explorou ativamente a falha em ambiente real."
    ],
-   "title_original": "CVE-2026-123890: Critical Authentication Bypass in VMware vCenter",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Protege infraestruturas críticas contra explorações ativas por grupos de ameaças persistentes avançadas.",
    "todo": "Atualize o vCenter de forma urgente, seguindo as recomendações e versões corrigidas indicadas pelo fabricante."
@@ -448,6 +470,29 @@
    "enriched": true,
    "why": "Melhora a deteção precoce de páginas de phishing sofisticadas e recém-criadas.",
    "todo": "Ative a opção de Navegação Segura Avançada nas definições do seu navegador Chrome."
+  },
+  {
+   "id": "aa5dd63ab80089e6",
+   "source": "MS-ISAC (CIS)",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-google-chrome-could-allow-for-arbitrary-code-execution_2026-138",
+   "published": "2026-11-19T20:59:57+00:00",
+   "title": "Múltiplas Vulnerabilidades no Google Chrome Podem Permitir Execução de Código Arbitrário",
+   "summary": "Foram descobertas várias falhas de segurança no navegador Google Chrome, sendo a mais grave capaz de permitir a execução de código arbitrário. Se explorada com sucesso, um atacante pode obter os privilégios do utilizador conectado para instalar programas, manipular dados ou criar novas contas. Os utilizadores com menor nível de privilégios no sistema correm um risco menor de impacto severo.",
+   "image": null,
+   "points": [
+    "O Google Chrome foi afetado por múltiplas vulnerabilidades críticas.",
+    "A falha mais grave permite a execução de código arbitrário.",
+    "Os atacantes podem usar os privilégios da sessão para gerir dados e programas.",
+    "Contas com privilégios administrativos correm um risco superior."
+   ],
+   "title_original": "Multiple Vulnerabilities in Google Chrome Could Allow for Arbitrary Code Execution",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque o navegador é uma ferramenta essencial e a exploração pode dar controlo total do sistema ao atacante.",
+   "todo": "Atualize o Google Chrome para a versão mais recente o mais rapidamente possível."
   },
   {
    "id": "545852a9591f5a6b",
@@ -516,6 +561,28 @@
    "enriched": true,
    "why": "Garante que os sistemas cumprem padrões mínimos de segurança, embora possa causar incompatibilidades temporárias em software.",
    "todo": "Mantenha o sistema operativo atualizado e verifique os requisitos de hardware e drivers para evitar bloqueios indesejados."
+  },
+  {
+   "id": "7cf301393d67c629",
+   "source": "Dark Reading",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.darkreading.com/application-security/critical-php-flaws-code-execution-panic-php2shell",
+   "published": "2026-11-19T19:57:31+00:00",
+   "title": "Falhas Críticas no PHP Permitem Execução de Código, Mas Sem Pânico ao Estilo 'PHP2Shell'",
+   "summary": "A atualização mensal de segurança de novembro corrigiu sete falhas críticas no PHP que exigem atenção imediata por parte dos administradores. No entanto, os especialistas indicam que a possibilidade de exploração varia consideravelmente consoante a configuração de cada sistema. A aplicação destas correções deve ser feita rapidamente para mitigar potenciais riscos.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt63f30aa2e4f7a5b8/6aff560d615b4f7719adda8c/source_code_background-scanrail-GettyImages-832282452.jpg?width=720&quality=80&disable=upscale",
+   "points": [
+    "Sete falhas críticas no PHP foram corrigidas na atualização de novembro.",
+    "A explorabilidade destas vulnerabilidades depende muito da configuração do sistema.",
+    "Os especialistas recomendam a aplicação urgente dos patches disponíveis."
+   ],
+   "title_original": "Critical PHP Flaws Allow Code Execution, But Don't Panic 'PHP2Shell'-Style",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque o PHP alimenta uma vasta gama de aplicações web, tornando estas falhas alvos potenciais para intrusões.",
+   "todo": "Instale as atualizações de segurança mensais do PHP de imediato."
   },
   {
    "id": "dfb731a444878dea",
@@ -13705,74 +13772,6 @@
    "enriched": true,
    "why": "Protege os servidores de correio contra falhas de funcionamento e bypasses de autenticação de e-mail.",
    "todo": "Atualizar imediatamente o Rspamd para a versão 4.3.0 ou superior."
-  },
-  {
-   "id": "81705f9b4027b147",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203085/cyber-crime/german-military-grounds-quantum-systems-drones-following-reported-cyberattack.html",
-   "published": "2026-11-16T09:06:11+00:00",
-   "title": "Exército alemão imobiliza drones da Quantum Systems após alegado ciberataque",
-   "summary": "A empresa alemã Quantum Systems confirmou um ciberataque que perturbou as suas operações no final de outubro, com relatórios a apontar para uma atualização de software maliciosa. As equipas de segurança contiveram a ameaça em colaboração com as autoridades, garantindo que não existem riscos para os operadores finais dos drones de reconhecimento e interceção. A investigação sugere que os atacantes comprometeram o servidor de atualizações numa cadeia de abastecimento, visando uma empresa que apoia a Ucrânia.",
-   "image": null,
-   "points": [
-    "A fabricante de drones Quantum Systems sofreu um ciberataque no final de outubro.",
-    "Ataque suspeito de usar um ficheiro de atualização malicioso para o software QBase.",
-    "As equipas de segurança contiveram a ameaça sem colocar em risco os utilizadores finais.",
-    "O setor de defesa europeu continua a ser alvo devido ao apoio à Ucrânia."
-   ],
-   "title_original": "German Military Grounds Quantum Systems Drones Following Reported Cyberattack",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como ataques à cadeia de suprimentos de software podem afetar fabricantes de material de defesa sensível.",
-   "todo": "Verificar a integridade das fontes de atualização de software e reforçar oscontrolos na cadeia de distribuição."
-  },
-  {
-   "id": "b3392a7a96407b2c",
-   "source": "CSO Online",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.csoonline.com/article/4248451/the-benign-true-positive-when-trusted-ai-agents-look-like-attackers.html",
-   "published": "2026-11-16T09:00:00+00:00",
-   "title": "O verdadeiro positivo benigno: Quando agentes de IA fidedignos parecem atacantes",
-   "summary": "A implementação empresarial de agentes de IA em áreas como o desenvolvimento de software e o suporte ao cliente gera padrões de atividade que imitam comportamentos de ataques, como reconhecimento ou acesso a credenciais. Como estes agentes operam com uma velocidade, amplitude e autonomia muito superiores aos humanos, as plataformas de segurança geram alertas legítimos mas falsos em termos de intenção. Os líderes de segurança precisam de adaptar as linhas de base comportamentais para distinguir a automação legítima de ameaças reais.",
-   "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4248451-0-70139100-1794819806-sekatsky-OwR9cyMNe4c-unsplash.jpg?quality=50&strip=all",
-   "points": [
-    "Agentes de IA executam tarefas complexas em paralelo e a alta velocidade.",
-    "O comportamento assemelha-se a reconhecimento, exfiltração ou movimento lateral.",
-    "As ferramentas de segurança geram alertas corretos do ponto de vista técnico, mas benignos.",
-    "As empresas precisam de redefinir as linhas de base comportamentais para a IA."
-   ],
-   "title_original": "The benign true positive: When trusted AI agents look like attackers",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Evita a fadiga de alertas e falsos positivos nas equipas de SOC gerados pela atividade legítima de agentes de IA.",
-   "todo": "Ajustar as regras de deteção de comportamento para acomodar a atividade automatizada e rápida de agentes de IA autorizados."
-  },
-  {
-   "id": "51dc989a67b525a4",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/ai-cut-vulnerability-discover-nine/",
-   "published": "2026-11-16T09:00:00+00:00",
-   "title": "IA reduz a descoberta de vulnerabilidades de nove meses para 90 horas",
-   "summary": "Um relatório da Forescout afirma ter descoberto 66 novas falhas de segurança em apenas 90 horas através da utilização de inteligência artificial. Este salto na velocidade demonstra a capacidade da IA para acelerar significativamente a análise e identificação de pontos fracos em sistemas. A descoberta evidencia o avanço das capacidades automatizadas na investigação de vulnerabilidades.",
-   "image": null,
-   "points": [
-    "A Forescout descobriu 66 novas falhas usando inteligência artificial.",
-    "O processo demorou apenas 90 horas em vez de nove meses.",
-    "Evidencia o aumento da eficiência na descoberta de vulnerabilidades."
-   ],
-   "title_original": "AI Cuts Vulnerability Discovery from Nine Months to 90 Hours",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra como a IA acelera drasticamente a descoberta de falhas de segurança, tanto para defensores como para atacantes.",
-   "todo": "Adotar ferramentas baseadas em IA para detetar e corrigir vulnerabilidades de forma mais rápida do que os atacantes."
   }
  ]
 }

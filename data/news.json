@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T11:46:21.558645+00:00",
+ "updated": "2026-11-19T12:06:33.578325+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "CISA Advisories",
    "ok": true,
-   "added": 11
+   "added": 9
   },
   {
    "source": "CISA Alertas (KEV)",
@@ -74,7 +74,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -94,7 +94,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -109,7 +109,7 @@
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 2
+   "added": 1
   },
   {
    "source": "TechCrunch Security",
@@ -229,7 +229,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 20
+   "added": 19
   },
   {
    "source": "The Register Security",
@@ -264,12 +264,12 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 1
+   "added": 2
   },
   {
    "source": "Check Point Research",
@@ -304,15 +304,80 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 208,
-  "unenriched": 91,
+  "done": 120,
+  "pending": 196,
+  "unenriched": 79,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting ':' delimiter: line 53 column 3 (char 4251)"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "aa09e38c305a0ce9",
+   "source": "HackRead",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://hackread.com/f5-patches-nginx-http-2-vulnerabilities-dating-2015/",
+   "published": "2026-11-19T12:02:10+00:00",
+   "title": "F5 Patches Two NGINX HTTP/2 Vulnerabilities, One Dating Back to 2015",
+   "summary": "A F5 lançou correções para duas vulnerabilidades no NGINX HTTP/2 que permitem a execução de código por atacantes sem necessidade de autenticação. Uma das falhas remonta ao ano de 2015. As atualizações destinam-se às versões afetadas do NGINX Open Source e do NGINX Plus.",
+   "image": null,
+   "points": [
+    "A F5 corrigiu duas falhas de segurança no NGINX HTTP/2.",
+    "Uma das vulnerabilidades data de 2015 e permitia execução de código sem login.",
+    "As correções abrangem o NGINX Open Source e o NGINX Plus."
+   ],
+   "title_original": "F5 Patches Two NGINX HTTP/2 Vulnerabilities, One Dating Back to 2015",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes executem código remotamente sem autenticação nas versões afetadas.",
+   "todo": "Atualize imediatamente o NGINX Open Source e o NGINX Plus para as versões corrigidas disponibilizadas pela F5."
+  },
+  {
+   "id": "937f390d6b182cf8",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/",
+   "published": "2026-11-19T11:46:00+00:00",
+   "title": "Microsoft tests new Edge Lockdown Mode that disables GPU APIs",
+   "summary": "A Microsoft está a desenvolver um novo modo de segurança para o browser Edge chamado Edge Lockdown Mode. Esta funcionalidade visa reduzir a superfície de ataque ao desativar as APIs WebGL, WebGL2 e WebGPU. A ferramenta encontra-se atualmente em fase de testes.",
+   "image": null,
+   "points": [
+    "A Microsoft testa o Edge Lockdown Mode para o browser Edge.",
+    "A funcionalidade desativa as APIs WebGL, WebGL2 e WebGPU.",
+    "O objetivo principal é reduzir a superfície de ataque."
+   ],
+   "title_original": "Microsoft tests new Edge Lockdown Mode that disables GPU APIs",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda a diminuir a superfície de ataque do navegador ao desativar APIs gráficas.",
+   "todo": "Mantenha o seu navegador atualizado e acompanhe o lançamento oficial de novas opções de segurança."
+  },
+  {
+   "id": "796c0101f860286d",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/19/cyberattack-on-service-provider-exposes-payee-data-at-40-irish-credit-unions/5310979",
+   "published": "2026-11-19T11:45:00+00:00",
+   "title": "Cyberattack on service provider exposes payee data at 40 Irish credit unions",
+   "summary": "Um ciberataque ao fornecedor de software Wellington IT comprometeu dados de beneficiários guardados em cerca de 40 cooperativas de crédito irlandesas. O incidente ocorreu em outubro, mas muitas das instituições afetadas só foram notificadas dias mais tarde, gerando críticas do governo. Os dados expostos incluem nomes, IBANs, BIC e códigos de pagamento, embora as palavras-passe e fundos dos membros tenham permanecido seguros.",
+   "image": "https://image.theregister.com/?imageId=5298439&width=800",
+   "points": [
+    "O fornecedor de software Wellington IT sofreu um ciberataque em outubro.",
+    "Cerca de 40 cooperativas de crédito irlandesas tiveram dados de beneficiários expostos.",
+    "Foram expostos IBANs e nomes, mas as passwords e fundos não foram afetados."
+   ],
+   "title_original": "Cyberattack on service provider exposes payee data at 40 Irish credit unions",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Expôs dados bancários de beneficiários de dezenas de instituições financeiras devido a uma falha num fornecedor.",
+   "todo": "Monitore contas bancárias regularmente e evite transferências em resposta a contactos suspeitos."
+  },
   {
    "id": "714886073da25dd0",
    "source": "CSO Online",
@@ -1298,6 +1363,28 @@
    "enriched": true,
    "why": "Facilita ataques informáticos a utilizadores comuns sem necessidade de conhecimentos técnicos avançados por parte dos compradores.",
    "todo": "Desconfie de ofertas de versões antecipadas de jogos populares para PC e evite clicar em links desconhecidos."
+  },
+  {
+   "id": "4811bbf2d34d89f4",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/russian-charged-with-spying-on-palantir-for-moscow",
+   "published": "2026-11-19T00:00:00+00:00",
+   "title": "Russian charged with spying on Palantir employees for Moscow",
+   "summary": "Um cidadão russo chamado Igor Andreevich D’iu foi acusado nos Estados Unidos de atuar como agente de Moscovo. O indivíduo foi recrutado através do Telegram para realizar uma campanha de vigilância direcionada a funcionários de uma empresa de tecnologia de defesa, identificada como sendo a Palantir Technologies.",
+   "image": "https://cms.therecord.media/uploads/Screenshot_2026_11_19_at_11_26_47_f9cd6ce083.png",
+   "points": [
+    "Igor Andreevich D’iu foi acusado de espionagem nos Estados Unidos.",
+    "O suspeito foi recrutado através da aplicação Telegram.",
+    "O alvo da vigilância foram funcionários da Palantir Technologies."
+   ],
+   "title_original": "Russian charged with spying on Palantir employees for Moscow",
+   "category": "Ataque/APT",
+   "translated": true,
+   "enriched": true,
+   "why": "Revela campanhas de espionagem e recrutamento de agentes direcionados a empresas de tecnologia de defesa.",
+   "todo": ""
   },
   {
    "id": "58edaf73423ff8a5",
@@ -13680,97 +13767,6 @@
    "enriched": true,
    "why": "Importa porque a automação de ataques por IA reduz drasticamente o tempo necessário para comprometer redes empresariais.",
    "todo": "Implemente monitorização comportamental em tempo real na rede e endpoints para detetar rajadas rápidas de atividade maliciosa automatizada."
-  },
-  {
-   "id": "e4e9606f466dde4a",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/gootloader-ransomware-doj-details",
-   "published": "2026-11-13T15:59:00+00:00",
-   "title": "DOJ: Gootloader usado em pelo menos 44 ataques de ransomware que custaram 29 milhões de dólares desde 2018",
-   "summary": "Funcionários do governo dos Estados Unidos revelaram dados estatísticos sobre o impacto histórico do malware Gootloader durante uma operação internacional contra o cibercrime. Desde 2018, esta ferramenta esteve associada a pelo menos 44 ataques de ransomware direcionados, resultando em prejuízos financeiros acumulados avaliados em 29 milhões de dólares. O impacto destaca a persistência e a eficácia deste vetor inicial de infeção na extorsão financeira de organizações.",
-   "image": "https://cms.therecord.media/uploads/gootloader_page_operation_endgame_d490d02942.png",
-   "points": [
-    "Quem: Autoridades norte-americanas e operadores do Gootloader.",
-    "O Quê: Divulgação de dados sobre o envolvimento do Gootloader em dezenas de ataques de ransomware e custos multimilionários.",
-    "Impacto: Enorme prejuízo financeiro para as organizações visadas e persistência prolongada da ameaça no ecossistema de ransomware."
-   ],
-   "title_original": "DOJ: Gootloader used in at least 44 ransomware attacks costing $29 million since 2018",
-   "category": "Ransomware",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque quantifica o impacto financeiro devastador de um vetor de infeção frequentemente usado no acesso inicial a redes corporativas.",
-   "todo": "Forme os colaboradores para reconhecerem técnicas de engenharia social e restrinja a execução de scripts não autorizados nos computadores da empresa."
-  },
-  {
-   "id": "62dee2cf97b1b825",
-   "source": "Cybersecurity Dive",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cybersecuritydive.com/news/north-korea-cyberattacks-cryptocurrency-seizure-seizure-facestealer-binance/874622/",
-   "published": "2026-11-13T15:54:13+00:00",
-   "title": "EUA travam esquema norte-coreano de roubo de criptomoedas e recuperam fundos na Binance",
-   "summary": "Agentes federais norte-americanos utilizaram ordens judiciais para desmantelar operações cibernéticas ligadas à Coreia do Norte. A ação permitiu travar um esquema focado no roubo de criptomoedas. Como resultado da operação, foi possível recuperar fundos que estavam depositados na plataforma Binance. Esta intervenção demonstra a pressão contínua das autoridades sobre as infraestruturas financeiras dos atacantes.",
-   "image": "https://imgproxy.divecdn.com/_UnezC--funFbVCU3E88sVmqPnql0LaCmWKfOlOtPWo/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xNDU5NTA4MDQwLmpwZw==.webp",
-   "points": [
-    "Autoridades dos EUA usaram ordens judiciais.",
-    "Alvo foi um esquema norte-coreano de criptomoedas.",
-    "Operação recuperou fundos na Binance.",
-    "Ação mitiga as capacidades financeiras dos atacantes."
-   ],
-   "title_original": "US cracks down on North Korean cryptocurrency-theft scheme, recovers more Binance funds",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra a cooperação internacional e o uso da justiça para travar o financiamento ilícito de cibercriminosos estatais.",
-   "todo": "Utiliza autenticação forte e monitorização rigorosa em plataformas de criptomoedas para detetar transações suspeitas."
-  },
-  {
-   "id": "affb0a0191fb6db2",
-   "source": "Cybersecurity Dive",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cybersecuritydive.com/news/china-hacker-ai-tool-campaign-us-defense-semiconductor/874619/",
-   "published": "2026-11-13T15:38:10+00:00",
-   "title": "Ator associado à China usa ferramenta de IA em campanha contra indústrias de defesa e semicondutores dos EUA",
-   "summary": "Um grupo de ameaça com ligações à China utilizou uma ferramenta de inteligência artificial numa campanha de ciberespionagem. O principal alvo foram os setores norte-americanos de defesa e de fabrico de semicondutores. Numa operação distinta, foi explorada uma framework de testes de intrusão para roubar credenciais da AWS. Estas ações revelam a sofisticação crescente dos métodos utilizados contra infraestruturas críticas.",
-   "image": "https://imgproxy.divecdn.com/pBVJIPKoJVTgHHWWdEijzgeyV1DjfTOZKO-WTriU-9Y/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjA5NzUzNDc1LmpwZw==.webp",
-   "points": [
-    "Ator ligado à China usou IA em ataques.",
-    "Setores de defesa e semicondutores foram visados.",
-    "Campanha paralela roubou credenciais AWS.",
-    "Utilização de frameworks de testes de intrusão."
-   ],
-   "title_original": "China-nexus actor uses AI tool in campaign targeting US defense, semiconductor industries",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia a adoção de inteligência artificial por grupos estatais para automatizar e potenciar ataques a alvos estratégicos.",
-   "todo": "Protege as credenciais de serviços na cloud com gestão estrita de acessos e rotação frequente de chaves."
-  },
-  {
-   "id": "04d39ddabcc81277",
-   "source": "Elastic Security Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.elastic.co/security-labs/threat-command/cyberstrikeai-aws-cloudtrail-intrusion",
-   "published": "2026-11-13T15:27:20+00:00",
-   "title": "56 chamadas de API AWS em 141 milissegundos: Por dentro de uma intrusão operada por IA",
-   "summary": "Entre setembro e outubro de 2026, um servidor associado à plataforma CyberStrikeAI utilizou credenciais roubadas para comprometer quatro contas AWS. O invasor executou de forma automatizada dezenas de pedidos de dados a alta velocidade, passando despercebido pelos alertas convencionais devido ao intervalo temporal entre as ações. Esta ferramenta de código aberto combina agentes de IA com utilitários de segurança ofensiva. O impacto traduziu-se no acesso não autorizado a identidades e parâmetros sensíveis na nuvem.",
-   "image": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt6563bd994d897304/6af5db091380e64ad87e1178/image2.png",
-   "points": [
-    "Servidor CyberStrikeAI usou credenciais roubadas.",
-    "Atividade espalhou-se por quatro contas AWS.",
-    "Uso de automação gerou alta velocidade de pedidos.",
-    "Ferramenta combina IA com segurança ofensiva."
-   ],
-   "title_original": "56 AWS API calls in 141 milliseconds: Inside an AI-run intrusion",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra como agentes automatizados conseguem fintar a correlação de alertas tradicionais em ambientes cloud.",
-   "todo": "Implementa monitorização comportamental na cloud e limita estritamente os privilégios atribuídos a funções e identidades IAM."
   }
  ]
 }

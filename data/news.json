@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T08:50:37.788143+00:00",
+ "updated": "2026-11-19T09:07:15.703192+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -239,7 +239,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Security Affairs",
@@ -264,7 +264,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Hacker News",
@@ -305,13 +305,57 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 183,
+  "pending": 184,
   "unenriched": 79,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "fa104991146c2dfa",
+   "source": "HackRead",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://hackread.com/29-fake-bank-sites-using-contact-details-steal-logins/",
+   "published": "2026-11-19T08:55:45+00:00",
+   "title": "29 Sites Falsos de Bancos Apanhados a Usar os Mesmos Contactos para Roubar Credenciais",
+   "summary": "Investigadores detetaram dezenas de portais bancários falsos que utilizam dados de contacto e identificadores idênticos para parecerem legítimos. O objetivo destes sites fraudulentos é enganar os utilizadores e roubar as respetivas credenciais de início de sessão. Esta estratégia ajuda os criminosos a dar uma aparência profissional a páginas criadas para o roubo de dados. A descoberta evidencia os métodos recorrentes usados para simular instituições financeiras legítimas.",
+   "image": null,
+   "points": [
+    "Vários sites de bancos falsos usavam dados de contacto idênticos.",
+    "O objetivo foi fazer com que as páginas parecessem legítimas.",
+    "A estratégia visa enganar vítimas e roubar credenciais de acesso."
+   ],
+   "title_original": "29 Fake Bank Sites Caught Using the Same Contact Details to Steal Logins",
+   "category": "Phishing/Fraude",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como os atacantes duplicam elementos de contacto para tornar páginas de phishing financeiro mais credíveis.",
+   "todo": "Confirme sempre o endereço oficial do banco e desconfie de links recebidos por canais não verificados."
+  },
+  {
+   "id": "ef3cecb6fd503aee",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
+   "published": "2026-11-19T08:42:11+00:00",
+   "title": "Ruby Lança Correções para 7 Falhas de Regex e Strings, com Alerta de RCE",
+   "summary": "Os responsáveis pela linguagem Ruby corrigiram sete vulnerabilidades de segurança relacionadas com o motor de expressões regulares e a conversão de maiúsculas e minúsculas em strings. Para cinco destas falhas, existem provas de conceito públicas que demonstram a possibilidade de execução remota de código através de dados manipulados. A equipa responsável avançou com o lançamento de versões corrigidas para colmatar o problema. Estas falhas afetam a segurança de sistemas que processam entradas não confiáveis.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7rmcgZ7yffFsn_7SX4iQcfMhw1dgsxPFXXh6TUunbQ9VaxZh8O5-AFT2V3q0PE7Wx0rW9nLKuB73eluixYuM9N38Dvq_Gjs1nNOXVk3e71jjfhHoP7W97eeuc5AivI3CQNxIrwSaPR9IGV0f2NZ7900Ihtkdgiw1ZivTvgVrXWH2CrX2X5MZGjos6-bs/s1600/ruby.jpg",
+   "points": [
+    "Foram detetadas sete falhas de segurança na linguagem Ruby.",
+    "Cinco das vulnerabilidades têm provas de conceito para execução remota de código.",
+    "Os criadores disponibilizaram versões atualizadas para corrigir os problemas."
+   ],
+   "title_original": "Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A existência de provas de conceito para execução remota de código aumenta o risco de exploração destas falhas.",
+   "todo": "Atualize o ambiente Ruby para as versões mais recentes disponibilizadas pelos mantenedores."
+  },
   {
    "id": "1b4d43f7260defb0",
    "source": "Help Net Security",
@@ -328,12 +372,34 @@
     "Investigadores usam novas ferramentas para analisar queixas e mapear redes criminosas.",
     "O objetivo principal é impedir que o dinheiro das vítimas chegue aos burlões estrangeiros."
    ],
-   "title_original": "US enlists private firms to cut scammers off from victims’ cash",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa porque cria uma colaboração direta entre autoridades e empresas privadas para estrangular as fontes de financiamento das redes de cibercrime.",
    "todo": "Desconfie de esquemas de extorsão e promessas de ganhos fáceis, e denuncie de imediato qualquer atividade suspeita às autoridades competentes."
+  },
+  {
+   "id": "3d3c58459056e381",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html",
+   "published": "2026-11-19T08:14:00+00:00",
+   "title": "Investigador Demonstra Exploits de RCE em Bases de Dados Afetando PostgreSQL, MySQL e Oracle",
+   "summary": "Um investigador demonstrou que contas de base de dados com privilégios reduzidos podem ser utilizadas para executar código no servidor. O ataque explora falhas de corrupção de memória subjacentes ao motor de execução de comandos SQL. Foram publicadas provas de conceito direcionadas a sistemas como PostgreSQL, MySQL e ClickHouse, além de uma cadeia de exploração para Oracle. Esta técnica permite contornar restrições habituais associadas a utilizadores com permissões limitadas.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDE1pOkFxdtUcDqLptfhjaBnnEyzz2JfxUJICSOrW3vpcNlygN1XleKCdkv9CA3Zp901yQ884tOkPX9TmSYx5tpevenJw1CmW4oktkn2creXnB5-dvbiJB3crcILx4Kb8b6eVhiKjh-RRZTGnvWskqROJOjF3yaWFVK17fmh-tdT7WMas7MbdK-JsCBmw/s1600/database-rce.jpg",
+   "points": [
+    "Contas de base de dados com poucos privilégios conseguiram executar código no servidor.",
+    "Foram exploradas falhas de corrupção de memória em motores de bases de dados.",
+    "O investigador publicou provas de conceito para plataformas como PostgreSQL e MySQL."
+   ],
+   "title_original": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Revela um vetor de ataque avançado onde contas sem privilégios conseguem comprometer o servidor de base de dados.",
+   "todo": "Aplique patches de segurança recentes nos servidores de bases de dados e reveja as permissões atribuídas às contas."
   },
   {
    "id": "59d3b792db480830",
@@ -13720,74 +13786,6 @@
    "enriched": true,
    "why": "Mostra como a complexidade dos ambientes cripto pode dificultar a mitigação de ataques bem-sucedidos.",
    "todo": "Reforce a monitorização de transações e implemente controlos de segurança multicamada em plataformas de ativos digitais."
-  },
-  {
-   "id": "4084f96e5a59e128",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/apify-confirms-customer-data-accessed-in-cyberattack/",
-   "published": "2026-11-13T12:41:01+00:00",
-   "title": "Apify confirma acesso a dados de clientes num ciberataque",
-   "summary": "A empresa de web scraping Apify confirmou que um intruso conseguiu aceder a contas de clientes. Durante o incidente, foram obtidas informações de carácter pessoal bem como dados que se encontravam armazenados. A empresa já está a lidar com a situação decorrente da intrusão nos seus sistemas.",
-   "image": null,
-   "points": [
-    "Quem: Apify e respetivos clientes.",
-    "O quê: Acesso não autorizado a contas de utilizador e dados armazenados.",
-    "Impacto: Exposição de informações pessoais e dados de clientes.",
-    "Como: Através de uma intrusão bem-sucedida nos sistemas da empresa."
-   ],
-   "title_original": "Apify Confirms Customer Data Accessed in Cyberattack",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Compromete a privacidade e a segurança dos dados armazenados pelos utilizadores na plataforma.",
-   "todo": "Ative a autenticação multifator (MFA) nas contas de serviços online e monitore atividades suspeitas."
-  },
-  {
-   "id": "da110ad0aa4a88e1",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/microsoft-365-outage-security/",
-   "published": "2026-11-13T12:29:00+00:00",
-   "title": "Interrupção do Microsoft 365 aumenta riscos de segurança para as organizações",
-   "summary": "Uma falha global afetou os serviços do Microsoft 365 e do Outlook, gerando interrupções em empresas, escolas e serviços governamentais em várias regiões. Enquanto a Microsoft trabalha na resolução do problema, as equipas de cibersegurança encontram-se em alerta máximo. O principal motivo de preocupação é a possibilidade de os cibercriminosos aproveitarem o caos e a confusão gerados para lançar ataques direcionados.",
-   "image": null,
-   "points": [
-    "Uma interrupção global afetou o Microsoft 365, Outlook e outros serviços associados.",
-    "A falha impactou organizações, escolas e entidades governamentais a nível internacional.",
-    "As equipas de segurança estão em alerta para evitar aproveitamentos maliciosos do incidente."
-   ],
-   "title_original": "Microsoft 365 Outage Set to Ramp up Security Risks to Organizations",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Os períodos de indisponibilidade tecnológica criam oportunidades para agentes maliciosos explorarem a desorganização.",
-   "todo": "Mantenha a vigilância sobre os registos de acesso e reforce a atenção a comunicações suspeitas durante interrupções de serviços."
-  },
-  {
-   "id": "293c69c9ee5ba956",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/",
-   "published": "2026-11-13T12:27:40+00:00",
-   "title": "Microsoft diz que atualizações de segurança de novembro causam problemas de impressão",
-   "summary": "A Microsoft emitiu um aviso aos seus clientes informando que os pacotes de atualizações de segurança lançados em novembro de 2026 podem provocar falhas na impressão de documentos. O problema afeta especificamente ficheiros que contenham formatações complexas. A empresa alertou os utilizadores para este efeito colateral inesperado.",
-   "image": null,
-   "points": [
-    "Quem: Microsoft e utilizadores de sistemas informáticos.",
-    "O quê: Problemas de impressão causados pelas atualizações de segurança de novembro de 2026.",
-    "Impacto: Incapacidade de imprimir documentos com formatação complexa.",
-    "Como: Falha despoletada pelos patches de segurança instalados."
-   ],
-   "title_original": "Microsoft says November security updates cause printing issues",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Afeta operações diárias de escritório que dependem da funcionalidade de impressão de documentos.",
-   "todo": "Consulte as notas de lançamento da Microsoft para verificar soluções temporárias ou atualizações de correção."
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T23:06:41.100760+00:00",
+ "updated": "2026-11-19T23:26:25.032103+00:00",
  "errors": [],
  "feodo": {
   "total": 5,
@@ -56,28 +56,29 @@
  "types": {
   "malware_urls": {
    "label": "Sites que distribuem malware",
-   "total": 829,
+   "total": 822,
    "by_country": {
-    "US": 593,
-    "CN": 108,
+    "US": 583,
+    "CN": 107,
     "CA": 39,
     "TR": 14,
-    "IN": 9,
+    "IN": 8,
     "GB": 8,
-    "SE": 6,
+    "MX": 7,
+    "DE": 6,
     "LV": 6,
-    "BR": 6,
     "ET": 5,
-    "DE": 5,
+    "SE": 5,
+    "BR": 5,
     "TW": 4,
     "RU": 3,
     "TH": 3,
     "FR": 3,
     "ID": 2,
-    "NI": 2,
     "IR": 2,
     "PH": 1,
     "HK": 1,
+    "NI": 1,
     "UA": 1,
     "IT": 1,
     "MA": 1,
@@ -90,7 +91,7 @@
    },
    "detail": {
     "US": {
-     "DEVPOPPER": 234,
+     "DEVPOPPER": 231,
      "github": 145,
      "exe": 98,
      "DEVBOX": 85,
@@ -99,7 +100,7 @@
     "CN": {
      "malware_download": 77,
      "32-bit": 25,
-     "elf": 4,
+     "elf": 3,
      "arm": 1,
      "cowrie": 1
     },
@@ -114,7 +115,7 @@
      "ua-wget": 14
     },
     "IN": {
-     "malware_download": 6,
+     "malware_download": 5,
      "32-bit": 1,
      "elf": 1,
      "43-254-30-204": 1
@@ -126,29 +127,33 @@
      "hta": 1,
      "malware": 1
     },
-    "SE": {
-     "malware_download": 4,
-     "32-bit": 1,
-     "hta": 1
+    "MX": {
+     "ascii": 5,
+     "encrypted": 2
+    },
+    "DE": {
+     "malware_download": 2,
+     "32-bit": 2,
+     "exe": 1,
+     "miner": 1
     },
     "LV": {
      "encrypted": 3,
      "ascii": 3
     },
-    "BR": {
-     "malware_download": 4,
-     "exe": 1,
-     "ua-wget": 1
-    },
     "ET": {
      "malware_download": 4,
      "elf": 1
     },
-    "DE": {
-     "32-bit": 2,
-     "malware_download": 1,
+    "SE": {
+     "malware_download": 3,
+     "32-bit": 1,
+     "hta": 1
+    },
+    "BR": {
+     "malware_download": 3,
      "exe": 1,
-     "miner": 1
+     "ua-wget": 1
     },
     "TW": {
      "32-bit": 3,
@@ -169,9 +174,6 @@
      "32-bit": 1,
      "malware_download": 1
     },
-    "NI": {
-     "malware_download": 2
-    },
     "IR": {
      "32-bit": 2
     },
@@ -179,6 +181,9 @@
      "malware_download": 1
     },
     "HK": {
+     "malware_download": 1
+    },
+    "NI": {
      "malware_download": 1
     },
     "UA": {
@@ -210,25 +215,25 @@
     }
    },
    "tags": {
-    "github": 556,
-    "js": 413,
-    "VSCode": 396,
-    "TxDataHiding": 328,
-    "DEVPOPPER": 234,
+    "github": 553,
+    "js": 410,
+    "VSCode": 393,
+    "TxDataHiding": 325,
+    "DEVPOPPER": 231,
     "exe": 103
    },
    "ports": {
     "US": {
-     "443": 576,
+     "443": 566,
      "80": 16,
      "8000": 1
     },
     "CN": {
+     "33881": 2,
      "53447": 2,
      "40596": 2,
      "42540": 2,
-     "53645": 2,
-     "49712": 2
+     "53645": 2
     },
     "CA": {
      "443": 35,
@@ -241,10 +246,10 @@
     },
     "IN": {
      "47081": 2,
-     "34748": 2,
      "56578": 1,
      "58662": 1,
-     "45128": 1
+     "45128": 1,
+     "53916": 1
     },
     "GB": {
      "80": 4,
@@ -252,33 +257,36 @@
      "8040": 1,
      "8080": 1
     },
-    "SE": {
-     "52395": 2,
-     "39933": 1,
-     "39364": 1,
-     "80": 1,
-     "41249": 1
+    "MX": {
+     "443": 7
+    },
+    "DE": {
+     "36474": 2,
+     "41265": 2,
+     "8085": 1,
+     "443": 1
     },
     "LV": {
      "80": 6
     },
+    "ET": {
+     "53923": 2,
+     "44482": 1,
+     "59599": 1,
+     "59740": 1
+    },
+    "SE": {
+     "52395": 2,
+     "39364": 1,
+     "80": 1,
+     "41249": 1
+    },
     "BR": {
-     "50371": 1,
      "8000": 1,
      "52547": 1,
      "80": 1,
-     "39270": 1
-    },
-    "ET": {
-     "59740": 2,
-     "53923": 2,
-     "59599": 1
-    },
-    "DE": {
-     "41265": 2,
-     "36474": 1,
-     "8085": 1,
-     "443": 1
+     "39270": 1,
+     "60334": 1
     },
     "TW": {
      "56194": 2,
@@ -302,9 +310,6 @@
      "58257": 1,
      "60579": 1
     },
-    "NI": {
-     "60189": 2
-    },
     "IR": {
      "59624": 2
     },
@@ -313,6 +318,9 @@
     },
     "HK": {
      "42147": 1
+    },
+    "NI": {
+     "60189": 1
     },
     "UA": {
      "50406": 1
@@ -441,6 +449,7 @@
     "PL": 2,
     "KR": 2,
     "AT": 2,
+    "TW": 1,
     "SE": 1,
     "SI": 1,
     "PA": 1,
@@ -450,8 +459,7 @@
     "PE": 1,
     "IE": 1,
     "VN": 1,
-    "MX": 1,
-    "IR": 1
+    "MX": 1
    },
    "detail": {
     "US": {
@@ -557,6 +565,9 @@
     "AT": {
      "Potassium": 2
     },
+    "TW": {
+     "Unknown malware": 1
+    },
     "SE": {
      "CECbot": 1
     },
@@ -586,13 +597,10 @@
     },
     "MX": {
      "Jackskid": 1
-    },
-    "IR": {
-     "CECbot": 1
     }
    },
    "malware": {
-    "Unknown malware": 104,
+    "Unknown malware": 105,
     "Potassium": 19,
     "VShell": 14,
     "PureRAT": 14,
@@ -727,6 +735,9 @@
      "50792": 1,
      "7193": 1
     },
+    "TW": {
+     "80": 1
+    },
     "SE": {
      "10213": 1
     },
@@ -756,9 +767,6 @@
     },
     "MX": {
      "443": 1
-    },
-    "IR": {
-     "10213": 1
     }
    }
   },
@@ -766,22 +774,26 @@
    "label": "Scans e força bruta",
    "total": 200,
    "by_country": {
-    "US": 194,
-    "NL": 5,
+    "US": 179,
+    "DE": 16,
+    "NL": 4,
     "RU": 1
    },
    "detail": {
     "US": {
-     "scan/força bruta": 194
+     "scan/força bruta": 179
+    },
+    "DE": {
+     "scan/força bruta": 16
     },
     "NL": {
-     "scan/força bruta": 5
+     "scan/força bruta": 4
     },
     "RU": {
      "scan/força bruta": 1
     }
    },
-   "reports": 5372463
+   "reports": 4506983
   }
  },
  "cloudflare": {

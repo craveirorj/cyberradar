@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T23:06:40.976229+00:00",
+ "updated": "2026-11-19T23:26:24.881748+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -89,7 +89,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 21
+   "added": 20
   },
   {
    "source": "SecurityWeek",
@@ -124,7 +124,7 @@
   {
    "source": "Ars Technica Security",
    "ok": true,
-   "added": 8
+   "added": 7
   },
   {
    "source": "WIRED Security",
@@ -138,8 +138,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 3
   },
   {
    "source": "DataBreaches.net",
@@ -234,7 +234,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 17
+   "added": 18
   },
   {
    "source": "The Register Security",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -309,15 +309,37 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 201,
-  "unenriched": 80,
+  "done": 117,
+  "pending": 207,
+  "unenriched": 86,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "507f9b79c2397c6c",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/20/android-developer-verification-power-users/",
+   "published": "2026-11-19T23:03:24+00:00",
+   "title": "A verificação de programadores Android vai abranger todas as fontes de instalação, com uma alternativa para utilizadores avançados",
+   "summary": "A Google vai alargar o processo de verificação de identidade para programadores Android a todos os países a partir de janeiro de 2027. Os programadores que não verificarem a sua identidade e registarem as aplicações verão os seus programas perderem a experiência de instalação normal em dispositivos certificados. A implementação inicial envolve sete distribuidores de aplicações, incluindo a Google Play, e será alargada gradualmente ao longo de vários meses.",
+   "image": null,
+   "points": [
+    "A Google vai exigir verificação de programadores Android a nível global em janeiro de 2027.",
+    "Aplicações não registadas perderão o processo de instalação normal em dispositivos certificados.",
+    "Sete distribuidores de aplicações participam na fase inicial do lançamento."
+   ],
+   "title_original": "Android developer verification will reach every install source, with a side door for power users",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Protege os utilizadores ao garantir que todas as aplicações instaladas provêm de programadores com identidade verificada.",
+   "todo": "Certifique-se de que regista e verifica a sua identidade junto da Google caso desenvolva aplicações para Android."
+  },
   {
    "id": "8236f5eb74b094df",
    "source": "CrowdStrike Blog",
@@ -450,6 +472,28 @@
    "enriched": true,
    "why": "Levanta questões sobre a fiabilidade e interdependência das plataformas tecnológicas atuais.",
    "todo": "Implementar planos de redundância e recuperação rápida para serviços críticos."
+  },
+  {
+   "id": "b16e39aca4755dce",
+   "source": "Cybersecurity Dive",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cybersecuritydive.com/news/chinese-espionage-zero-day-flaw-vmware-vcenter/875273/",
+   "published": "2026-11-19T21:36:46+00:00",
+   "title": "Grupo de espionagem chinês visa falha crítica no VMware vCenter",
+   "summary": "Atentados recentes exploram uma vulnerabilidade zero-day Armoury Castle que já tinha sido alvo de ataques anteriores no BeyondTrust Remote Support. Os atacantes utilizaram esta falha como ponto de entrada inicial para dar início a atividades subsequentes. A campanha é atribuída a um grupo de espionagem com origem na China.",
+   "image": "https://imgproxy.divecdn.com/igV71hmYpJppUJFSLyoGFbbo0vPZlMVJk2XJO_HWeiQ/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjIxMDE0NTMwLmpwZw==.webp",
+   "points": [
+    "Um grupo de espionagem chinês explorou uma falha zero-day no VMware vCenter.",
+    "A vulnerabilidade baseia-se na ferramenta Armoury Castle utilizada anteriormente no BeyondTrust Remote Support.",
+    "A falha serviu como ponto de acesso inicial para ataques subsequentes."
+   ],
+   "title_original": "Chinese espionage group targets critical flaw in VMware vCenter",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Expõe a vulnerabilidade de infraestruturas críticas a campanhas de espionagem patrocinadas por Estados.",
+   "todo": "Atualize imediatamente o VMware vCenter para as versões corrigidas pelos fabricantes."
   },
   {
    "id": "8dfce1d63ad40fde",
@@ -13726,50 +13770,6 @@
    "enriched": true,
    "why": "Sublinha a urgência de antecipar riscos de segurança específicos associados ao uso de inteligência artificial avançada.",
    "todo": "Reveja a estratégia de segurança da sua empresa para abranger os riscos inerentes à adoção de IA."
-  },
-  {
-   "id": "d6418311a7c13b71",
-   "source": "Cybersecurity Dive",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cybersecuritydive.com/spons/ai-assisted-detection-is-easy-to-trust-ai-led-containment-isnt/874351/",
-   "published": "2026-11-16T10:00:00+00:00",
-   "title": "Deteção assistida por IA é fácil de confiar. Contenção liderada por IA não.",
-   "summary": "Um novo inquérito revelou que 91% dos profissionais de segurança tencionam dar maior autonomia à inteligência artificial até 2027. Contudo, existem aspetos cruciais que precisam de ser resolvidos antes de confiar plenamente na contenção autónoma de ameaças por máquinas.",
-   "image": null,
-   "points": [
-    "Quem: Profissionais de segurança.",
-    "O quê: 91% planeiam dar mais autonomia à IA até 2027.",
-    "Impacto: Necessidade de resolver dúvidas sobre a fiabilidade da contenção automatizada."
-   ],
-   "title_original": "AI-assisted detection is easy to trust. AI-led containment isn’t.",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Alerta para os desafios de confiar cegamente em decisões automatizadas de resposta a incidentes.",
-   "todo": "Mantenha a supervisão humana em processos críticos de mitigação e resposta a incidentes de segurança."
-  },
-  {
-   "id": "810df6d75e21d08e",
-   "source": "Cybersecurity Dive",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cybersecuritydive.com/spons/unified-exposure-management-quit-chasing-alerts-and-close-the-gaps-that-m/873540/",
-   "published": "2026-11-16T10:00:00+00:00",
-   "title": "Gestão Unificada de Exposições: Pare de correr atrás de alertas e feche as lacunas que importam",
-   "summary": "A Gestão Unificada de Exposições conecta a visibilidade de ativos, a priorização baseada no comportamento dos atacantes e a remediação. Esta integração visa colmatar falhas de segurança de forma mais célere, evitando que as equipas percam tempo a responder a alertas isolados.",
-   "image": null,
-   "points": [
-    "O quê: Abordagem de Gestão Unificada de Exposições (UEM).",
-    "Como: Combina visibilidade, priorização baseada em atacantes e remediação.",
-    "Impacto: Resolução mais rápida das lacunas de segurança cruciais."
-   ],
-   "title_original": "Unified Exposure Management: Quit chasing alerts, and close the gaps that matter",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Ajuda as empresas a focarem-se nas vulnerabilidades mais perigosas em vez de lidarem com falsos positivos.",
-   "todo": "Adote metodologias de priorização baseadas no risco real para otimizar a correção de vulnerabilidades."
   }
  ]
 }

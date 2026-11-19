@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T21:46:28.196723+00:00",
+ "updated": "2026-11-19T22:07:02.601703+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -74,7 +74,7 @@
   {
    "source": "MS-ISAC (CIS)",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "BleepingComputer",
@@ -89,7 +89,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 23
+   "added": 22
   },
   {
    "source": "SecurityWeek",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -114,7 +114,7 @@
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 4
+   "added": 5
   },
   {
    "source": "TechCrunch Security",
@@ -234,7 +234,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 16
+   "added": 17
   },
   {
    "source": "The Register Security",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -313,10 +313,56 @@
   "pending": 205,
   "unenriched": 84,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "db582c0dbbaec095",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203537/hacking/chaotic-eclipse-releases-fastunlock-a-new-windows-zero-day-vulnerability.html",
+   "published": "2026-11-19T21:43:09+00:00",
+   "title": "Chaotic Eclipse lança FastUnlock, uma nova vulnerabilidade zero-day no Windows",
+   "summary": "O investigador Chaotic Eclipse divulgou uma nova vulnerabilidade zero-day no Windows, apelidada de FastUnlock, que explora o Narrador para contornar o ecrã de bloqueio. A falha permite contornar a encriptação do BitLocker e executar código num sistema Windows 11 com as atualizações de novembro instaladas. O ataque exige acesso físico ao computador e afeta a segurança das estações de trabalho. Esta falha resulta de um problema introduzido pela Microsoft na reformulação do Narrador.",
+   "image": "https://i0.wp.com/securityaffairs.com/wp-content/uploads/2026/11/image-50.png?resize=1024%2C640&#038;ssl=1",
+   "points": [
+    "Investigador Chaotic Eclipse descobre zero-day no Windows.",
+    "Exploração do Narrador permite contornar o ecrã de bloqueio e BitLocker.",
+    "Ataque requer acesso físico e conta online associada.",
+    "Permite execução de código num sistema totalmente encriptado."
+   ],
+   "title_original": "Chaotic Eclipse Releases FastUnlock, a New Windows Zero-Day Vulnerability",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que um atacante com acesso físico contorne a encriptação BitLocker e execute código no Windows.",
+   "todo": "Manter os sistemas atualizados e restringir o acesso físico a dispositivos corporativos."
+  },
+  {
+   "id": "f2dddf2ea7d8bc56",
+   "source": "TechCrunch Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
+   "published": "2026-11-19T21:42:31+00:00",
+   "title": "Estas falhas técnicas lembram o efeito Y2K, ao estilo de agentes de IA",
+   "summary": "Especialistas em cibersegurança sugerem que as recentes interrupções em sistemas de reservas de companhias aéreas, plataformas bancárias e de produtividade podem estar ligadas a algo mais profundo. Estes incidentes geram preocupação sobre a estabilidade da infraestrutura tecnológica atual. O impacto afeta vários setores económicos dependentes destas plataformas. Ficam por apurar todos os detalhes técnicos das causas exatas.",
+   "image": null,
+   "points": [
+    "Interrupções recentes afetam companhias aéreas e bancos.",
+    "Especialistas apontam para causas profundas nestas falhas.",
+    "Paralelos com o efeito Y2K e novas tecnologias."
+   ],
+   "title_original": "These tech outages are giving Y2K, AI agent style",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Levanta questões sobre a fiabilidade e interdependência das plataformas tecnológicas atuais.",
+   "todo": "Implementar planos de redundância e recuperação rápida para serviços críticos."
+  },
   {
    "id": "8dfce1d63ad40fde",
    "source": "The Record",
@@ -516,6 +562,28 @@
    "enriched": true,
    "why": "Mostra como o espionagem industrial e estatal afeta diretamente a segurança física e psicológica de colaboradores do setor tecnológico.",
    "todo": "Reforçar a vigilância em redor das instalações e formar os colaboradores para identificarem potenciais perseguições ou comportamentos suspeitos."
+  },
+  {
+   "id": "150f8fb5544609cd",
+   "source": "Dark Reading",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached",
+   "published": "2026-11-19T20:14:15+00:00",
+   "title": "Segunda empresa de energia da Noruega atacada em dois dias",
+   "summary": "Uma segunda empresa energética norueguesa sofreu uma violação de segurança num espaço de dois dias. As autoridades ainda não encontraram uma ligação direta entre os dois incidentes registados. O impacto afeta o setor energético do país. Continua a investigação para apurar a origem e extensão dos danos.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blte4910babc7878a94/6aff5ad57ab982a4c314744c/Equinor-makasana-Getty.jpg?width=720&quality=80&disable=upscale",
+   "points": [
+    "Segunda empresa norueguesa de energia alvo de violação.",
+    "Incidente ocorre dois dias após outro caso semelhante.",
+    "Sem ligação oficial estabelecida entre os dois incidentes."
+   ],
+   "title_original": "Second Norwegian Energy Company Breached in Two Days",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra a vulnerabilidade contínua do setor crítico de energia a ataques consecutivos.",
+   "todo": "Reforçar a monitorização de redes e os controlos de acesso em infraestruturas críticas."
   },
   {
    "id": "67df130650e4ee78",
@@ -13703,75 +13771,6 @@
    "enriched": true,
    "why": "Lembra a importância de proteger dados de identificação pessoal essenciais ao interagir com plataformas online.",
    "todo": "Partilhe documentos de identidade apenas com plataformas fidedignas e verifique as políticas de retenção de dados dos serviços."
-  },
-  {
-   "id": "f0b3319bef6277d6",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
-   "published": "2026-11-16T09:32:57+00:00",
-   "title": "Malware de mineração de criptomoedas SANSAR para Linux usa biblioteca NVIDIA modificada para ocultar atividade da GPU",
-   "summary": "Um grupo de cibercriminosos financeiramente motivado, monitorizado como REF3364, tem explorado uma operação de mineração oculta em sistemas Linux. O ataque utiliza o SANSAR, um orquestrador em Rust que recebe comandos via rede TOR para gerir mineradores de CPU e GPU. O malware destaca-se por adulterar as métricas de leitura para esconder o consumo elevado de recursos gráficos.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmpR04waLSDZNCb2048kfy5iSlIXa_Ek3PI5qLRaBksxvyI9k_8Z6bwl6Og4Mc-AGqmHcpL7YlYVd48895FJtKlOoaqgi658-H3FZTxdjf_w32w5eJYzm_BUdXlH7M7Vb40uPUI73CDbXtQCdZAEkFruSBXvc0_B84hCQ-em0ZQk2uTIIHxRdGCxQ6bx1C/s1600/nv.jpg",
-   "points": [
-    "Quem: Grupo de cibercrime REF3364.",
-    "O quê: Malware Linux SANSAR para mineração de criptomoedas.",
-    "Como: Uso de biblioteca NVIDIA modificada para ocultar carga na GPU e comando via TOR.",
-    "Impacto: Utilização abusiva de recursos de hardware em sistemas infetados."
-   ],
-   "title_original": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra técnicas avançadas de evasão utilizadas por mineradores maliciosos para passar despercebidos em servidores Linux.",
-   "todo": "Monitore o desempenho e o consumo real de hardware nos seus servidores Linux para detetar processos de mineração ocultos."
-  },
-  {
-   "id": "7d4f6584a3c99034",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers/",
-   "published": "2026-11-16T09:30:04+00:00",
-   "title": "Nova vulnerabilidade NoisyTCP permite a atacantes fazerem crashar servidores Linux",
-   "summary": "Uma vulnerabilidade com 11 anos no kernel do Linux, denominada NoisyTCP, afeta quase todas as distribuições Linux e permite que atacantes façam crashar sistemas que executam servidores Nginx, Apache e SSH com configurações predefinidas. A falha expõe servidores a perturbações significativas no funcionamento através de ataques direcionados. Os administradores de sistemas devem estar atentos a esta falha estrutural antiga que agora vem a público.",
-   "image": null,
-   "points": [
-    "Afeta quase todas as distribuições Linux e servidores padrão.",
-    "Permite a atacantes fazer crashar sistemas Nginx, Apache e SSH.",
-    "Trata-se de uma falha com 11 anos presente no kernel do Linux.",
-    "Pode interromper a disponibilidade dos serviços afetados."
-   ],
-   "title_original": "New NoisyTCP vulnerability lets attackers crash Linux servers",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite que atacantes interrompam facilmente a disponibilidade de servidores Linux essenciais.",
-   "todo": "Atualizar o kernel do Linux e aplicar as correções de segurança disponibilizadas pelas distribuições."
-  },
-  {
-   "id": "9eeb64e3a2f0d6cd",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/16/rspamd-4-3-0-released/",
-   "published": "2026-11-16T09:27:24+00:00",
-   "title": "Rspamd 4.3.0 impede que correio reencaminhado enfraqueça rejeições DMARC",
-   "summary": "A versão 4.3.0 do Rspamd corrige falhas que permitiam a um atacante não autenticado fazer crashar os trabalhadores do filtro de spam ou contornar a validação de resultados de autenticação forjados. Os problemas variavam desde pedidos HTTP simples até cabeçalhos específicos que bloqueavam repetidamente o sistema. Adicionalmente, os sites que utilizavam o proxy milter enfrentavam um erro separado nas versões anteriores.",
-   "image": null,
-   "points": [
-    "Atacantes não autenticados podiam fazer crashar os trabalhadores do filtro de spam.",
-    "Falhas permitiam passar resultados de autenticação forjados.",
-    "Bastava um pedido HTTP ou cabeçalhos específicos para interromper o serviço.",
-    "A versão 4.3.0 e correções associadas resolvem estes problemas."
-   ],
-   "title_original": "Rspamd 4.3.0 stops forwarded mail from softening DMARC rejects",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Protege os servidores de correio contra falhas de funcionamento e bypasses de autenticação de e-mail.",
-   "todo": "Atualizar imediatamente o Rspamd para a versão 4.3.0 ou superior."
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T10:25:58.002084+00:00",
+ "updated": "2026-11-20T10:47:09.600695+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 6
+   "added": 5
   },
   {
    "source": "TugaTech",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -149,7 +149,7 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 5
+   "added": 6
   },
   {
    "source": "Microsoft Security Blog",
@@ -209,7 +209,7 @@
   {
    "source": "Tenable",
    "ok": true,
-   "added": 3
+   "added": 4
   },
   {
    "source": "Zero Day Initiative",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -309,16 +309,61 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 96,
-  "pending": 234,
-  "unenriched": 105,
+  "done": 108,
+  "pending": 224,
+  "unenriched": 95,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 30 column 5 (char 2634)",
-   "Expecting value: line 5 column 10 (char 81)"
+   "Expecting property name enclosed in double quotes: line 129 column 5 (char 11771)"
   ]
  },
  "items": [
+  {
+   "id": "f5b6ed0f978c7e42",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/",
+   "published": "2026-11-20T10:34:10+00:00",
+   "title": "Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE",
+   "summary": "A linguagem Ruby corrigiu uma vulnerabilidade de estouro de buffer baseada em heap, identificada como CVE-2026-132825. Esta falha, conhecida como Ruby2Shell, pode permitir que atacantes executem código remoto de forma não autorizada. A correção já foi disponibilizada para proteger os sistemas afetados. Os utilizadores devem atualizar o software o mais rapidamente possível para evitar explorações.",
+   "image": null,
+   "points": [
+    "O quê: Correção da falha CVE-2026-132825 (Ruby2Shell).",
+    "Tipo: Estouro de buffer baseado em heap.",
+    "Impacto: Execução remota de código (RCE).",
+    "Como resolver: Atualizar a linguagem Ruby."
+   ],
+   "title_original": "Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes assumam o controlo de sistemas vulneráveis se a falha não for corrigida.",
+   "todo": "Atualize a linguagem Ruby para a versão mais recente com patches."
+  },
+  {
+   "id": "28d85bc28999fc0e",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/20/transport-for-london-oyster-photocard-data-breach/",
+   "published": "2026-11-20T10:21:41+00:00",
+   "title": "265,000 Oyster photocard customers’ data exposed in Transport for London breach",
+   "summary": "A Transport for London (TfL) detetou atividade suspeita no seu site de cartões Oyster e sofreu uma violação de dados que comprometeu informações de cerca de 265.000 clientes. Entre os afetados estão crianças com cartões Zip e utilizadores com o cartão 60+ London Oyster. Para limitar o acesso e conter o incidente, a empresa colocou temporariamente o sistema de cartões offline. A investigação sobre o acesso não autorizado continua em curso.",
+   "image": null,
+   "points": [
+    "Quem: Transport for London (TfL) e 265.000 clientes.",
+    "O quê: Violação de dados e atividade suspeita no site.",
+    "Impacto: Exposição de detalhes de contas de portadores de cartões Oyster.",
+    "Ação: Sistema colocado offline para limitar acessos."
+   ],
+   "title_original": "265,000 Oyster photocard customers’ data exposed in Transport for London breach",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Expõe dados pessoais de centenas de milhares de utilizadores de transportes públicos, incluindo menores e idosos.",
+   "todo": "Monitore as suas contas financeiras e credenciais associadas a serviços de transporte e altere palavras-passe caso receba alertas."
+  },
   {
    "id": "3ee0dff29d7e7488",
    "source": "Pplware Segurança",
@@ -13726,50 +13771,6 @@
    "enriched": true,
    "why": "Comprova que a automatização com IA em ataques cibernéticos já é uma realidade operacional.",
    "todo": "Melhorar a visibilidade da rede e adotar contramedidas baseadas em IA para deteção rápida."
-  },
-  {
-   "id": "04b6c513371d9ab2",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/news/2026/11/hijacked-bitly-links-turn-old-brand-posts-into-offensive-redirects",
-   "published": "2026-11-16T13:50:47+00:00",
-   "title": "Links Bitly sequestrados transformam publicações antigas de marcas em redirecionamentos ofensivos",
-   "summary": "Criminosos exploraram uma falha relacionada com links expirados do encurtador Bitly para redirecionar utilizadores a partir de publicações antigas de marcas como o McDonald's e o Burger King. Os links legítimos passaram a apontar para páginas não relacionadas na Wikipédia, sem que os atacantes tivessem de invadir as contas das empresas. A Bitly suspendeu as contas envolvidas e desativou os links afetados.",
-   "image": "https://www.malwarebytes.com/wp-content/uploads/sites/2/2026/11/example1.png",
-   "points": [
-    "Links encurtados expirados do Bitly foram redirecionados por criminosos.",
-    "Publicações antigas de marcas famosas passaram a apontar para páginas da Wikipédia.",
-    "O Bitly suspendeu as contas associadas e desativou os links comprometidos."
-   ],
-   "title_original": "Hijacked Bitly links turn old brand posts into offensive redirects",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra que publicações antigas de marcas de confiança podem ser usadas para redirecionar utilizadores para destinos maliciosos.",
-   "todo": "Verificar sempre os URLs de destino antes de clicar em links, mesmo em publicações de fontes confiáveis."
-  },
-  {
-   "id": "db1f9f72c2e48e86",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/threat-intel/2026/11/fake-prime-gaming-x-fc-27-reward-site-harvests-ea-passwords-and-2fa-codes",
-   "published": "2026-11-16T13:38:18+00:00",
-   "title": "Falso site de recompensas Prime Gaming x FC 27 rouba palavras-passe da EA e códigos 2FA",
-   "summary": "Um site falso que imita uma parceria entre a Prime Gaming e o jogo EA SPORTS FC 27 foi criado para roubar credenciais de utilizadores. A página simula um processo de início de sessão da EA para recolher endereços de email, palavras-passe e códigos de autenticação de dois fatores (2FA). As informações são enviadas diretamente para um servidor controlado pelos criminosos.",
-   "image": "https://www.malwarebytes.com/wp-content/uploads/sites/2/2026/11/fc27_1_SD.png?w=1024",
-   "points": [
-    "Uma página falsa imita o site da EA e da Prime Gaming para oferecer recompensas inexistentes.",
-    "O site recolhe credenciais de acesso e códigos de 2FA dos jogadores.",
-    "As vítimas devem alterar imediatamente a palavra-passe da conta EA caso tenham acedido ao site."
-   ],
-   "title_original": "Fake Prime Gaming x FC 27 reward site harvests EA passwords and 2FA codes",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Põe em risco contas de jogos e dados pessoais através de esquemas de phishing sofisticados.",
-   "todo": "Desconfiar de ofertas de prémios em sites de terceiros e verificar sempre o endereço oficial antes de inserir credenciais."
   }
  ]
 }

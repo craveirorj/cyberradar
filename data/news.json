@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T22:06:55.213539+00:00",
+ "updated": "2026-11-20T22:22:10.252880+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -74,7 +74,7 @@
   {
    "source": "MS-ISAC (CIS)",
    "ok": true,
-   "added": 10
+   "added": 8
   },
   {
    "source": "BleepingComputer",
@@ -174,7 +174,7 @@
   {
    "source": "Unit 42 (Palo Alto)",
    "ok": true,
-   "added": 4
+   "added": 5
   },
   {
    "source": "Google Threat Intelligence",
@@ -310,14 +310,58 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 220,
-  "unenriched": 84,
+  "pending": 221,
+  "unenriched": 81,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "d20cb913632d0a35",
+   "source": "Schneier on Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-the-largest-squid-ever-filmed.html",
+   "published": "2026-11-20T22:04:12+00:00",
+   "title": "Blogue de Sexta-feira sobre Lulas: A Maior Lula Alguma Vez Filmada",
+   "summary": "Esta publicação aborda o registo da maior lula alguma vez filmada, ocorrido em dezembro de 2006 perto das ilhas Ogasawara, no Japão. O autor utiliza habitualmente este espaço sobre lulas para discutir notícias de segurança que não foram cobertas noutros artigos. Inclui ainda uma nota sobre a política de moderação do blogue.",
+   "image": null,
+   "points": [
+    "Registo em dezembro de 2006 da maior lula filmada perto do Japão.",
+    "Ocorrência nas ilhas Ogasawara.",
+    "Uso do espaço para debater notícias de segurança."
+   ],
+   "title_original": "Friday Squid Blogging: The Largest Squid Ever Filmed",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Serve como um espaço informal para partilhar atualizações de segurança e reflexões do autor.",
+   "todo": ""
+  },
+  {
+   "id": "ec3643e6e571f139",
+   "source": "Unit 42 (Palo Alto)",
+   "region": "US",
+   "lang": "en",
+   "link": "https://unit42.paloaltonetworks.com/com-affiliate-vishing-attacks/",
+   "published": "2026-11-20T22:00:25+00:00",
+   "title": "Marcação por Dados: Por Dentro dos Assaltos de Alto Perfil da Com",
+   "summary": "Esta análise foca-se nas campanhas de ataques de vishing, roubo de dados na cloud e extorsão perpetradas por afiliados do grupo Com. Os alvos principais destas ações maliciosas têm sido os setores da saúde e financeiro. O artigo inclui também orientações defensivas acionáveis para mitigar estas ameaças.",
+   "image": "https://unit42.paloaltonetworks.com/wp-content/uploads/2026/11/12_Cybercrime_Category_1920x900.jpg",
+   "points": [
+    "Ataques de vishing e roubo de dados na cloud por afiliados da Com.",
+    "Setores da saúde e financeiro como principais alvos.",
+    "Campanhas de extorsão direcionadas."
+   ],
+   "title_original": "Dialing for Data: Inside the Com’s High-Profile Heists",
+   "category": "Phishing/Fraude",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda organizações dos setores afetados a compreender e mitigar campanhas de extorsão e roubo de dados.",
+   "todo": "Implemente autenticação multifator rigorosa e reforce a formação dos funcionários contra tentativas de vishing."
+  },
   {
    "id": "f0b8696c25c4c4a7",
    "source": "The Record",
@@ -333,9 +377,9 @@
     "A disrupção começou numa quinta-feira e manteve-se no dia seguinte.",
     "O problema afetou apenas os sistemas da legislatura, sem se alastrar a outros órgãos."
    ],
-   "title_original": "West Virginia Legislature hit with cyber incident affecting IT systems",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra que as instituições públicas continuam a ser alvo vulnerável a perturbações tecnológicas inesperadas.",
    "todo": "Mantenha planos de contingência atualizados e garanta a segmentação de redes para travar a propagação de incidentes."
@@ -355,9 +399,9 @@
     "A análise concluiu que não há números de cartões ou passwords expostos.",
     "Foram vazados contactos e reservas, úteis para esquemas de engenharia social."
    ],
-   "title_original": "Visa, Mastercard theft included info useful for phishing, but not draining bank accounts, say researchers",
+   "title_original": null,
    "category": "Ransomware",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Evidencia que roubos de dados em terceiros podem alimentar campanhas de phishing direcionadas contra clientes.",
    "todo": "Desconfie sempre de contactos inesperados que utilizem dados pessoais detalhados para aparentar legitimidade."
@@ -468,9 +512,9 @@
     "Permite a atacantes sem autenticação contornar os controlos de acesso.",
     "Um invasor pode ganhar controlo total do sistema afetado."
    ],
-   "title_original": "A Vulnerability in VMware Products Could Allow for Authentication Bypass",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Permite que atacantes externos assumam o controlo de plataformas de virtualização centrais nas empresas.",
    "todo": "Aplique imediatamente as correções e atualizações de segurança disponibilizadas pelo fabricante para o VMware vCenter."
@@ -490,9 +534,9 @@
     "A vulnerabilidade mais grave possibilita a execução arbitrária de código.",
     "O impacto depende dos privilégios da conta, podendo levar ao comprometimento total."
    ],
-   "title_original": "Multiple Vulnerabilities in Mitel MiCollab Could Allow for Arbitrary Code Execution",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Coloca em risco plataformas de colaboração empresarial através da execução de código malicioso.",
    "todo": "Atualize o software Mitel MiCollab para as versões corrigidas mais recentes."
@@ -13759,52 +13803,6 @@
    "enriched": true,
    "why": "Ameaça diretamente a integridade e confidencialidade de servidores e postos de trabalho empresariais.",
    "todo": "Aplique imediatamente as atualizações de segurança e patches disponibilizados pela Microsoft."
-  },
-  {
-   "id": "9e6d37f183795e7c",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/16/roman-khlynovskiy-alleged-member-of-8-digits-team-ransomware-group-extradited-for-role-in-major-data-extortion-campaign-against-u-s-hospitals-healthcare-entities-and-schools/",
-   "published": "2026-11-17T00:30:50+00:00",
-   "title": "Roman Khlynovskiy, alegado membro do grupo de ransomware “8-Digits Team”, extraditado pelo seu papel em campanha de extorsão contra hospitais e escolas dos EUA",
-   "summary": "Roman Khlynovskiy, um cidadão cazaque de 43 anos, compareceu num tribunal federal no Tennessee após ser extraditado da Itália. O suspeito enfrenta acusações relacionadas com a sua participação numa conspiração de ransomware e extorsão. O grupo visado, denominado “8-Digits Team”, atacou entidades de saúde, hospitais e escolas nos Estados Unidos. Esta campanha de extorsão de dados destaca-se como uma das maiores do setor da saúde.",
-   "image": null,
-   "points": [
-    "Quem: Roman Khlynovskiy e o grupo de ransomware “8-Digits Team”.",
-    "O quê: Extradição de um suspeito por conspiração de ransomware e extorsão.",
-    "Impacto: Alvo de campanhas foram hospitais, entidades de saúde e escolas nos EUA.",
-    "Como: Detenção e extradição da Itália para tribunal federal nos EUA."
-   ],
-   "title_original": "Roman Khlynovskiy, Alleged Member of “8-Digits Team” Ransomware Group Extradited for Role in Major Data Extortion Campaign Against U.S. Hospitals, Healthcare Entities, and Schools",
-   "category": "Ransomware",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra a cooperação internacional na responsabilização criminal de operadores de ransomware.",
-   "todo": "Mantenha cópias de segurança (backups) offline e planos de resposta a incidentes atualizados."
-  },
-  {
-   "id": "3099ffeb8eda387c",
-   "source": "Microsoft Security Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/16/high-volume-phishing-campaign-uses-microsoft-365-outage-lures-target-multiple-industry-sectors-2/",
-   "published": "2026-11-17T00:08:41+00:00",
-   "title": "Campanha de phishing de alto volume usa pretextos de falha do Microsoft 365 para visar múltiplos setores industriais",
-   "summary": "A Microsoft identificou uma campanha global de phishing em larga escala que utilizou falsas notificações de interrupção do serviço Microsoft 365. Os atacantes enviaram e-mails urgentes alegando que mensagens importantes tinham sido retidas devido a uma falha e seriam apagadas em 24 horas caso o utilizador não clicasse num link de rastreio. O objetivo principal consistia no roubo de credenciais através de engenharia social, tirando partido de eventos de relevo para ludibriar as vítimas. As ferramentas de segurança da Microsoft bloquearam os domínios maliciosos e as mensagens associadas.",
-   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/image-55.webp",
-   "points": [
-    "Quem: Atores de ameaça e organizações de vários setores a nível global.",
-    "O quê: Campanha massiva de phishing com falsos alertas de falha do Microsoft 365.",
-    "Como: E-mails urgentes com links de rastreio para induzir o roubo de credenciais.",
-    "Impacto: Risco de comprometimento de contas, acesso a caixas de correio e dados corporativos."
-   ],
-   "title_original": "High volume phishing campaign uses Microsoft 365 outage lures to target multiple industry sectors",
-   "category": "Phishing/Fraude",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como os cibercriminosos exploram incidentes tecnológicos reais para aumentar a eficácia do phishing.",
-   "todo": "Treine os colaboradores para desconfiarem de urgências injustificadas e valide notificações de IT pelos canais oficiais."
   }
  ]
 }

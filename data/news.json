@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T12:08:01.822713+00:00",
+ "updated": "2026-11-20T12:27:28.870656+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -234,7 +234,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 18
+   "added": 17
   },
   {
    "source": "The Register Security",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -279,12 +279,12 @@
   {
    "source": "Check Point Research",
    "ok": true,
-   "added": 3
+   "added": 4
   },
   {
    "source": "Securelist (Kaspersky)",
-   "ok": false,
-   "error": "HTTPSConnectionPool(host='securelist.com', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection("
+   "ok": true,
+   "added": 6
   },
   {
    "source": "Risky Bulletin",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 14
+   "added": 15
   },
   {
    "source": "ACSC Austrália",
@@ -309,15 +309,81 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 225,
-  "unenriched": 90,
+  "done": 120,
+  "pending": 222,
+  "unenriched": 85,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 5 column 1 (char 78)"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "63ce2dd9ff54afb6",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/20/uk-government-cant-keep-its-encryption-busting-order-to-apple-a-secret-tribunal-rules/5311292",
+   "published": "2026-11-20T12:18:19+00:00",
+   "title": "Tribunal decide que o governo britânico não pode manter em segredo ordem de encriptação dirigida à Apple",
+   "summary": "O Tribunal de Poderes Investigatórios confirmou que o governo britânico emitiu uma Notificação de Capacidade Técnica secreta à Apple para exigir acesso a dados encriptados do iCloud. A medida levou a empresa a revogar a Proteção Avançada de Dados para utilizadores no Reino Unido. Face à pressão e a relatórios públicos, os EUA opuseram-se à exigência por afetar os seus cidadãos. Posteriormente, o governo britânico acabou por retirar a diretiva.",
+   "image": "https://image.theregister.com/?imageId=5220278&width=800",
+   "points": [
+    "O governo britânico emitiu uma ordem secreta à Apple para aceder a dados do iCloud.",
+    "A Apple revogou a Proteção Avançada de Dados no Reino Unido devido à pressão legal.",
+    "Políticos norte-americanos opuseram-se à medida por riscos à privacidade de cidadãos dos EUA.",
+    "O tribunal rejeitou o argumento de segurança nacional e confirmou a existência da diretiva."
+   ],
+   "title_original": "UK government can't keep its encryption-busting order to Apple a secret, tribunal rules",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra o conflito global entre as exigências de vigilância governamental e a privacidade dos dados encriptados dos utilizadores.",
+   "todo": "Utiliza sempre definições de segurança robustas e monitoriza alterações nas funcionalidades de privacidade das tuas plataformas."
+  },
+  {
+   "id": "fc7b1a32d55e6eab",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-now-automatically-installs-windows-11-26h2-on-personal-and-unmanaged-pcs/",
+   "published": "2026-11-20T12:14:28+00:00",
+   "title": "Microsoft instala automaticamente o Windows 11 26H2 em dispositivos não geridos",
+   "summary": "A Microsoft começou a atualizar de forma automática os dispositivos elegíveis e sem gestão por departamentos de TI para o Windows 11 26H2. Esta mudança afeta computadores que não se encontram sob controlo centralizado de empresas ou organizações. O processo iniciou-se esta semana.",
+   "image": null,
+   "points": [
+    "A Microsoft iniciou atualizações automáticas para o Windows 11 26H2.",
+    "A medida aplica-se a dispositivos elegíveis e não geridos por equipas de TI.",
+    "O desdobramento destas atualizações começou esta semana."
+   ],
+   "title_original": "Microsoft now automatically installs Windows 11 26H2 on unmanaged devices",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Garante que os sistemas operativos se mantêm atualizados, mas pode surpreender utilizadores sem controlo central de atualizações.",
+   "todo": "Verifica as definições de atualização do Windows nos computadores da tua empresa para evitar instalações inesperadas durante o horário de trabalho."
+  },
+  {
+   "id": "b4d165a3ec28bc9b",
+   "source": "Schneier on Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.schneier.com/blog/archives/2026/11/opening-a-400-year-old-cryptex.html",
+   "published": "2026-11-20T12:04:46+00:00",
+   "title": "A abrir um Criptex com 400 anos",
+   "summary": "Investigadores recorreram a tecnologia de tomografia computorizada para recuperar o código e conseguir abrir um cadeado criptex com 400 anos de idade. Estes dispositivos mecânicos de segurança funcionam com combinações de letras. Atualmente, existem inclusive versões comerciais adaptadas a unidades USB.",
+   "image": null,
+   "points": [
+    "Pesquisadores usaram tecnologia de tomografia computorizada para decifrar um criptex.",
+    "O objeto em causa é um cadeado de segurança com 400 anos.",
+    "O método permitiu descobrir o código secreto e abrir o dispositivo."
+   ],
+   "title_original": "Opening a 400-Year-Old Cryptex",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra como a tecnologia moderna de imagem consegue desvendar mecanismos históricos de criptografia física.",
+   "todo": ""
+  },
   {
    "id": "82d038c6d3891970",
    "source": "Infosecurity Magazine",
@@ -334,9 +400,9 @@
     "O objetivo é enganar os utilizadores para obter acesso às contas.",
     "O impacto resulta no roubo de credenciais e acesso não autorizado."
    ],
-   "title_original": "Mail Bombing Attacks Fuel IT Helpdesk Impersonation Scams",
+   "title_original": null,
    "category": "Phishing/Fraude",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra como os atacantes combinam volume de tráfego com engenharia social para roubar acessos.",
    "todo": "Desconfie de contactos inesperados do suporte técnico e valide sempre a identidade do remetente através de canais oficiais."
@@ -403,9 +469,9 @@
     "A interrupção na NSA resultou de manutenção de rotina, sem indícios de ciberataque.",
     "Kirsten Davies assumirá temporariamente a liderança da cibersegurança federal."
    ],
-   "title_original": "Trump’s First Move After the Outages: Fire the Cyber Director",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Evidencia a instabilidade institucional e o impacto político de falhas tecnológicas críticas em infraestruturas.",
    "todo": ""
@@ -4615,6 +4681,28 @@
    "enriched": true,
    "why": "A automação com IA por parte dos atacantes obriga as empresas a reagirem muito mais depressa na proteção da cloud.",
    "todo": "Implemente autenticação multifator rigorosa e automatize a gestão de patches em ambientes cloud."
+  },
+  {
+   "id": "6490e5f1cbbfbfed",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/threats/php-corrige-sete-falhas-criticas-de-seguranca",
+   "published": "2026-11-19T00:00:00+00:00",
+   "title": "PHP corrige sete falhas críticas de segurança",
+   "summary": "As atualizações recentes da linguagem PHP corrigem sete vulnerabilidades críticas que podiam permitir a execução remota de código por atacantes. Entre as falhas corrigidas encontram-se problemas relacionados com a gestão de memória, sessões e o componente PHP-FPM. Estas correções são essenciais para proteger aplicações web.",
+   "image": null,
+   "points": [
+    "O PHP corrigiu sete vulnerabilidades críticas de segurança.",
+    "As falhas permitiam potencial execução remota de código.",
+    "Os problemas afetavam a gestão de memória, sessões e o PHP-FPM."
+   ],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": true,
+   "why": "Evita que servidores web sejam comprometidos através de explorações de código remoto em aplicações PHP desatualizadas.",
+   "todo": "Atualiza imediatamente os teus servidores e ambientes PHP para as versões mais recentes disponibilizadas pelos mantenedores."
   },
   {
    "id": "58edaf73423ff8a5",
@@ -13690,94 +13778,6 @@
    "enriched": true,
    "why": "A fuga em massa de dados de identificação pessoal facilita campanhas direcionadas de phishing e fraudes de identidade.",
    "todo": "Esteja atento a comunicações inesperadas que utilizem o seu nome e morada para fins fraudulentos."
-  },
-  {
-   "id": "0f4c5e346584c603",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks/",
-   "published": "2026-11-16T15:07:32+00:00",
-   "title": "Barracuda atacada no âmbito de um aumento de ciberataques impulsionados por Artex",
-   "summary": "A empresa Barracuda foi alvo de um ataque informático num momento em que se regista um crescimento na utilização de ferramentas automatizadas. Atores de ameaça chineses estão a adotar largamente o framework de testes de intrusão com IA agêntica para acelerar as suas ações maliciosas. Esta tendência demonstra uma evolução na sofisticação e velocidade dos ataques cibernéticos. O impacto reflete-se na maior eficácia e escala das intrusões.",
-   "image": null,
-   "points": [
-    "A Barracuda foi alvo de um ataque informático recente.",
-    "Grupos de ameaça chineses adotam frameworks de IA agêntica.",
-    "A tecnologia acelera e automatiza os testes de intrusão maliciosos."
-   ],
-   "title_original": "Barracuda Hacked Amid Surge in Artex-Powered Cyberattacks",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "A utilização de inteligência artificial em ataques acelera o ritmo das intrusões, dificultando a resposta defensiva tradicional.",
-   "todo": "Reforce a monitorização comportamental de redes para detetar atividades automatizadas e anómalas com maior rapidez."
-  },
-  {
-   "id": "1cea14202697e149",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/",
-   "published": "2026-11-16T15:01:11+00:00",
-   "title": "7 Dicas para cumprir os requisitos de palavra-passe e MFA da CJIS",
-   "summary": "A política de segurança CJIS do FBI exige que as agências de aplicação da lei reforcem a proteção de credenciais. A diretiva obriga à implementação de autenticação multifator (MFA) em contas com e sem privilégios. A Specops Software apresentou sete passos práticos para ajudar as organizações a cumprir estas normas e bloquear palavras-passe comprometidas. O objetivo é garantir a conformidade regulamentar e elevar o nível de segurança.",
-   "image": null,
-   "points": [
-    "O FBI exige novas regras de palavra-passe e MFA através da política CJIS.",
-    "A medida aplica-se a contas privilegiadas e não privilegiadas na lei.",
-    "A Specops Software publicou sete passos para garantir a conformidade."
-   ],
-   "title_original": "7 Tips For Complying with CJIS Password and MFA Requirements",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "O cumprimento das normas de autenticação reduz drasticamente o risco de acesso não autorizado a sistemas sensíveis.",
-   "todo": "Adote a autenticação multifator em todas as contas e elimine o uso de palavras-passe fracas ou reutilizadas."
-  },
-  {
-   "id": "44a424ae53517a55",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1163",
-   "published": "2026-11-16T14:57:54+00:00",
-   "title": "Aviso de segurança da Red Hat (AV26-1163)",
-   "summary": "A Red Hat emitiu um aviso de segurança devido à deteção de vulnerabilidades que afetam vários produtos do seu ecossistema. Entre os sistemas atingidos encontram-se versões do Red Hat Enterprise Linux, Red Hat OpenShift e ferramentas como o Satellite e o Quay. O Centro Cibernético insta os utilizadores e administradores a consultarem os links fornecidos e a aplicarem as correções necessárias. O impacto abrange múltiplas plataformas empresariais.",
-   "image": null,
-   "points": [
-    "A Red Hat reportou vulnerabilidades em vários produtos e versões.",
-    "Os sistemas afetados incluem Red Hat Enterprise Linux, OpenShift e Satellite.",
-    "O Centro Cibernético recomenda a aplicação urgente de atualizações."
-   ],
-   "title_original": "Red Hat security advisory (AV26-1163)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Manter plataformas empresariais desatualizadas perante falhas conhecidas abre a porta a compromissos graves de infraestruturas.",
-   "todo": "Consulte o boletim da Red Hat e atualize os softwares e imagens afetadas para as versões seguras recomendadas."
-  },
-  {
-   "id": "e062147f78ff18e0",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203250/cyber-warfare-2/cognitive-warfare-the-new-battlefield-is-the-human-mind.html",
-   "published": "2026-11-16T14:50:44+00:00",
-   "title": "Guerra cognitiva: o novo campo de batalha é a mente humana",
-   "summary": "A guerra cognitiva utiliza inteligência artificial, deepfakes e medo para manipular opiniões e desestabilizar a sociedade. Esta estratégia visa influenciar a forma como as pessoas interpretam a realidade e tomam decisões autónomas, usando plataformas digitais e perfis comportamentais. Um relatório recente do Serviço Europeu de Ação Externa destacou um aumento expressivo de incidentes de manipulação de informação com recurso a IA em 2025. O impacto traduz-se na erosão da confiança pública e na distorção do consenso social.",
-   "image": null,
-   "points": [
-    "A guerra cognitiva manipula a perceção humana através de IA e deepfakes.",
-    "O objetivo é desestabilizar a sociedade e influenciar a tomada de decisões.",
-    "O uso de IA em campanhas de manipulação cresceu significativamente em 2025."
-   ],
-   "title_original": "Cognitive warfare: the new battlefield is the human mind",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "A manipulação em massa da informação ameaça a estabilidade democrática e a capacidade de discernimento dos cidadãos.",
-   "todo": "Adote o espírito crítico perante conteúdos sensacionaisistas online e verifique sempre a veracidade das fontes de informação."
   }
  ]
 }

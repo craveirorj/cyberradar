@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T21:46:43.393263+00:00",
+ "updated": "2026-11-20T22:06:55.213539+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -74,7 +74,7 @@
   {
    "source": "MS-ISAC (CIS)",
    "ok": true,
-   "added": 8
+   "added": 10
   },
   {
    "source": "BleepingComputer",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -119,7 +119,7 @@
   {
    "source": "TechCrunch Security",
    "ok": true,
-   "added": 8
+   "added": 9
   },
   {
    "source": "Ars Technica Security",
@@ -133,8 +133,8 @@
   },
   {
    "source": "Schneier on Security",
-   "ok": false,
-   "error": "403 Client Error: Forbidden for url: https://www.schneier.com/feed/atom/"
+   "ok": true,
+   "added": 7
   },
   {
    "source": "SANS ISC",
@@ -174,7 +174,7 @@
   {
    "source": "Unit 42 (Palo Alto)",
    "ok": true,
-   "added": 3
+   "added": 4
   },
   {
    "source": "Google Threat Intelligence",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 12
+   "added": 11
   },
   {
    "source": "Help Net Security",
@@ -309,12 +309,11 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 221,
-  "unenriched": 85,
+  "done": 120,
+  "pending": 220,
+  "unenriched": 84,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting ',' delimiter: line 69 column 16 (char 6459)",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
@@ -327,14 +326,19 @@
    "link": "https://therecord.media/west-virginia-legislature-cyberattack",
    "published": "2026-11-20T21:34:36+00:00",
    "title": "West Virginia Legislature hit with cyber incident affecting IT systems",
-   "summary": "A cybersecurity incident that began Thursday was still ongoing Friday in the West Virginia Legislature. A spokesperson said the disruption did not spread to other government entities.",
+   "summary": "O parlamento de West Virginia foi alvo de um incidente de cibersegurança que afetou os seus sistemas informáticos. A falha teve início numa quinta-feira e continuou ativa no dia seguinte. Um porta-voz garantiu que a perturbação tecnológica não se propagou a outras entidades governamentais.",
    "image": "https://cms.therecord.media/uploads/wva_state_capitol_blil_dickinson_flickr_a81eb98b4b.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O parlamento de West Virginia sofreu um incidente informático.",
+    "A disrupção começou numa quinta-feira e manteve-se no dia seguinte.",
+    "O problema afetou apenas os sistemas da legislatura, sem se alastrar a outros órgãos."
+   ],
+   "title_original": "West Virginia Legislature hit with cyber incident affecting IT systems",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "A cybersecurity incident that began Thursday was still ongoing Friday in the West Virginia Legislature. A spokesperson said the disruption did not spread to other government entities."
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que as instituições públicas continuam a ser alvo vulnerável a perturbações tecnológicas inesperadas.",
+   "todo": "Mantenha planos de contingência atualizados e garanta a segmentação de redes para travar a propagação de incidentes."
   },
   {
    "id": "1d4b67e404ea5230",
@@ -344,14 +348,19 @@
    "link": "https://www.theregister.com/cyber-crime/2026/11/20/visa-mastercard-theft-included-info-useful-for-phishing-but-not-draining-bank-accounts-say-researchers/5311478",
    "published": "2026-11-20T21:27:56+00:00",
    "title": "Visa, Mastercard theft included info useful for phishing, but not draining bank accounts, say researchers",
-   "summary": "No financial details, but plenty of other clues",
+   "summary": "Um grupo de extorsão chamado n5n reclamou a autoria de fugas de informação que afetaram a Visa e a Mastercard, expondo dados de clientes. Investigadores de cibersegurança analisaram os ficheiros divulgados e confirmaram que estes não contêm números de cartões, palavras-passe ou moradas. No entanto, foram divulgados números de telemóvel e registos de viagens, que podem ser aproveitados por burlões para campanhas de phishing.",
    "image": "https://image.theregister.com/?imageId=5311482&width=800",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O grupo n0n reivindicou o roubo de dados de clientes da Visa e Mastercard.",
+    "A análise concluiu que não há números de cartões ou passwords expostos.",
+    "Foram vazados contactos e reservas, úteis para esquemas de engenharia social."
+   ],
+   "title_original": "Visa, Mastercard theft included info useful for phishing, but not draining bank accounts, say researchers",
    "category": "Ransomware",
-   "translated": false,
-   "enriched": false,
-   "raw": "Visa and Mastercard customer info leaked by the data thieves and extortionists who claim to have stolen it from the financial giants doesn’t include card numbers, passwords, or home addresses. On Thursday, Visa, Mastercard, and JPMorgan Chase confirmed to The Register that they are investigating third-party breaches that may involve customer information. Ransomware and extortion crew n0n claimed to be responsible for all three, and on Thursday published samples of the stolen files – data-theft groups typically leak some of the compromised data ahead of the official extortion deadline in an effort to put more pressure on victim companies to pay the ransom demand. Researchers at SOCRadar, a threat-intelligence firm that has been tracking n0n since it emerged in September, have parsed all 14 files in the n0n’s published Visa and Mastercard archives, and told us that the files don’t contain any financial details belonging to banking customers. “We found no card numbers, expiry dates, CVVs, passwords, dates of birth, or home addresses in any file,” Ensar Seker, SOCRadar chief information security officer, told The Register. “Visa's statement that no card numbers were affected matches our scan.” Mastercard previously said that stolen data included a “limited amount of email addresses – non-payments information” from a subset of cardholders in a benefits program. According to SOCRadar’s analysis, the leaked files do contain mobile numbers, Bank Identification Number (BIN) prefixes, and dated airline, hotel, and restaurant bookings. So while the data doesn’t include card or account numbers that crooks could use to drain customers' bank accounts or rack up massive credit card bills, “that detail is what a fraudster needs to pose as a concierge desk or a bank,” in an email or voi"
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia que roubos de dados em terceiros podem alimentar campanhas de phishing direcionadas contra clientes.",
+   "todo": "Desconfie sempre de contactos inesperados que utilizem dados pessoais detalhados para aparentar legitimidade."
   },
   {
    "id": "a9aa37ceddf16814",
@@ -443,6 +452,50 @@
    "enriched": true,
    "why": "Protege as comunicações privadas contra a recolha abusiva de dados por assistentes de inteligência artificial integrados nos sistemas operativos.",
    "todo": "Mantenha as definições de bloqueio de capturas de ecrã ativadas nas aplicações de mensagens sensíveis."
+  },
+  {
+   "id": "195a7d84fcbd18c2",
+   "source": "MS-ISAC (CIS)",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cisecurity.org/advisory/a-vulnerability-in-vmware-products-could-allow-for-authentication-bypass_2026-140",
+   "published": "2026-11-20T20:40:39+00:00",
+   "title": "A Vulnerability in VMware Products Could Allow for Authentication Bypass",
+   "summary": "Foi descoberta uma vulnerabilidade no VMware vCenter que pode permitir a anulação de mecanismos de autenticação. Um atacante sem autenticação e com acesso à rede pode explorar esta falha para obter acesso não autorizado ao sistema. Dependendo das permissões da conta afetada, o intruso poderá executar comandos, gerir dados ou criar novos utilizadores com plenos poderes.",
+   "image": null,
+   "points": [
+    "Descoberta falha de segurança no VMware vCenter.",
+    "Permite a atacantes sem autenticação contornar os controlos de acesso.",
+    "Um invasor pode ganhar controlo total do sistema afetado."
+   ],
+   "title_original": "A Vulnerability in VMware Products Could Allow for Authentication Bypass",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes externos assumam o controlo de plataformas de virtualização centrais nas empresas.",
+   "todo": "Aplique imediatamente as correções e atualizações de segurança disponibilizadas pelo fabricante para o VMware vCenter."
+  },
+  {
+   "id": "537595fdc52e0494",
+   "source": "MS-ISAC (CIS)",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-mitel-micollab-could-allow-for-arbitrary-code-execution_2026-139",
+   "published": "2026-11-20T20:39:44+00:00",
+   "title": "Multiple Vulnerabilities in Mitel MiCollab Could Allow for Arbitrary Code Execution",
+   "summary": "Foram detetadas várias vulnerabilidades na plataforma de comunicações Mitel MiCollab, sendo a mais grave passível de execução arbitrária de código. A exploração bem-sucedida desta falha permite a um atacante executar comandos no contexto do sistema. Consoante os privilégios associados, o intruso pode manipular dados, instalar programas ou criar contas com privilégios máximos.",
+   "image": null,
+   "points": [
+    "Múltiplas falhas identificadas na plataforma Mitel MiCollab.",
+    "A vulnerabilidade mais grave possibilita a execução arbitrária de código.",
+    "O impacto depende dos privilégios da conta, podendo levar ao comprometimento total."
+   ],
+   "title_original": "Multiple Vulnerabilities in Mitel MiCollab Could Allow for Arbitrary Code Execution",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Coloca em risco plataformas de colaboração empresarial através da execução de código malicioso.",
+   "todo": "Atualize o software Mitel MiCollab para as versões corrigidas mais recentes."
   },
   {
    "id": "e010061a1eb7f0ca",
@@ -13752,52 +13805,6 @@
    "enriched": true,
    "why": "Mostra como os cibercriminosos exploram incidentes tecnológicos reais para aumentar a eficácia do phishing.",
    "todo": "Treine os colaboradores para desconfiarem de urgências injustificadas e valide notificações de IT pelos canais oficiais."
-  },
-  {
-   "id": "2acad705d878238b",
-   "source": "IT Security",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://www.itsecurity.pt/news/analysis/bug-de-julho-na-origem-de-falha-global-do-microsoft-365",
-   "published": "2026-11-17T00:00:00+00:00",
-   "title": "Bug de julho na origem de falha global do Microsoft 365",
-   "summary": "Uma falha inserida num software em julho esteve na origem da interrupção global do Microsoft 365 que ocorreu a 12 de novembro. O problema técnico deixou mais de 80% dos servidores de gateway completamente sem resposta. O incidente demonstrou a fragilidade operacional associada a falhas em componentes específicos.",
-   "image": null,
-   "points": [
-    "Bug introduzido em julho causou falha global.",
-    "Afetou o Microsoft 365 a 12 de novembro.",
-    "Mais de 80% dos servidores de gateway sem resposta.",
-    "Interrupção de serviços à escala mundial."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como um pequeno erro de software introduzido meses antes pode desencadear uma crise global.",
-   "todo": "Teste rigorosamente todas as atualizações de software em ambientes controlados antes da implementação em produção."
-  },
-  {
-   "id": "ed25de99a0498f47",
-   "source": "IT Security",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://www.itsecurity.pt/news/news/ciiwa-summit-2026-debate-soberania-digital-ciberseguranca-e-inteligencia-artificial-em-cascais",
-   "published": "2026-11-17T00:00:00+00:00",
-   "title": "CIIWA Summit 2026 debate soberania digital, cibersegurança e inteligência artificial em Cascais",
-   "summary": "O evento realiza-se a 2 de dezembro na Casa das Histórias Paula Rego, em Cascais, contando com a intervenção do contra-almirante António Gameiro Marques. A iniciativa celebra o 19.º aniversário da CIIWA através de dois painéis de discussão. Os temas centrais incluem a soberania digital, a segurança, a desinformação e a inteligência artificial.",
-   "image": null,
-   "points": [
-    "CIIWA Summit 2026 em Cascais a 2 de dezembro.",
-    "Presença confirmada do contra-almirante António Gameiro Marques.",
-    "Celebração do 19.º aniversário da CIIWA.",
-    "Debate focado em soberania digital, IA e segurança."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "Promove a discussão nacional e a partilha de conhecimento sobre os rumos da cibersegurança e soberania digital.",
-   "todo": ""
   }
  ]
 }

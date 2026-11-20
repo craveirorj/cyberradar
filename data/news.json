@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T18:07:39.424789+00:00",
+ "updated": "2026-11-20T18:29:23.123082+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "CISA Advisories",
@@ -89,7 +89,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 23
+   "added": 24
   },
   {
    "source": "SecurityWeek",
@@ -119,7 +119,7 @@
   {
    "source": "TechCrunch Security",
    "ok": true,
-   "added": 6
+   "added": 7
   },
   {
    "source": "Ars Technica Security",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 60,
-  "pending": 292,
-  "unenriched": 154,
+  "done": 96,
+  "pending": 255,
+  "unenriched": 112,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -454,6 +454,29 @@
    "enriched": true,
    "why": "Permite que mensagens maliciosas executem código e comprometam a segurança de smartphones Android.",
    "todo": "Atualize a aplicação Telegram para a versão mais recente e evite interagir com conteúdos ou mensagens desconhecidas."
+  },
+  {
+   "id": "705577b57ecf22bf",
+   "source": "Microsoft Security Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/20/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-siem/",
+   "published": "2026-11-20T17:00:00+00:00",
+   "title": "Microsoft distinguida como Líder no Gartner Magic Quadrant 2026 para SIEM",
+   "summary": "A Microsoft foi reconhecida como Líder no Quadrante Mágico da Gartner de 2026 para Gestão de Informação e Eventos de Segurança (SIEM). Num cenário de ameaças complexas, a empresa destaca a capacidade da sua solução cloud-native, o Microsoft Sentinel, em unificar dados, inteligência contra ameaças e automação. A ferramenta centraliza o histórico de segurança e dados em tempo real para ajudar as operações de segurança das organizações. Com centenas de conectores, o sistema procura melhorar a cobertura e a eficácia das equipas na deteção precoce de ataques.",
+   "image": null,
+   "points": [
+    "A Microsoft foi nomeada Líder no Gartner Magic Quadrant 2026 para SIEM.",
+    "O Microsoft Sentinel combina dados de segurança, automação e inteligência contra ameaças na cloud.",
+    "A solução centraliza dados em tempo real para otimizar operações e a deteção de ameaças.",
+    "O impacto foca-se em dar maior visibilidade e capacidade de ação rápida face a ataques complexos."
+   ],
+   "title_original": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for SIEM",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque demonstra as soluções tecnológicas disponíveis para ajudar as organizações a gerir ambientes de segurança complexos e atuar rapidamente.",
+   "todo": "Avalie soluções de SIEM robustas e centralizadas para melhorar a visibilidade e a resposta a incidentes na sua infraestrutura."
   },
   {
    "id": "9dbbebdeb6a3a85d",
@@ -648,9 +671,9 @@
     "Impacto: Compromete a integridade e segurança de sistemas de controlo industrial e de rede.",
     "Quem: Afeta produtos como ioLogik E1200, além das séries EDS-E, IKS, ICS, PT, SDS, TWS e TN da Moxa."
    ],
-   "title_original": "[Control Systems] Moxa security advisory (AV26-1187)",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Deixa infraestruturas industriais e de rede expostas a falhas de segurança críticas em equipamentos Moxa.",
    "todo": "Reveja os avisos de segurança oficiais da Moxa e aplique as atualizações de firmware disponíveis o mais rapidamente possível."
@@ -923,9 +946,9 @@
     "Impacto: Avaliar se atacantes conseguem quebrar o isolamento de ambientes em nuvem.",
     "Quem: Especialistas em cibersegurança e equipas de investigação externa."
    ],
-   "title_original": "Transcending the trust boundaries: how a cloud pentest works",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Ajuda a identificar falhas estruturais profundas que os testes de segurança tradicionais na camada externa frequentemente ignoram.",
    "todo": "Realize auditorias regulares de pentest na cloud focadas na verificação de limites de confiança e isolamento de tenants."
@@ -1083,9 +1106,9 @@
     "Impacto: Ameaça à encriptação de ponta a ponta e à privacidade dos utilizadores da Apple.",
     "Quem: Tribunal britânico, governo do Reino Unido e a empresa Apple."
    ],
-   "title_original": "Spy court blasts UK secrecy, forces government to admit Apple ‘backdoor’ demand",
+   "title_original": null,
    "category": "Malware",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Revela tentativas governamentais de enfraquecer sistemas de encriptação de ponta a ponta em plataformas tecnológicas de grande consumo.",
    "todo": "Utilize sempre ferramentas de armazenamento e comunicação com encriptação de ponta a ponta robusta e ative as proteções avançadas de dados disponíveis."
@@ -2011,9 +2034,9 @@
     "Impacto: Mudança na liderança da segurança cibernética e de IA a nível governamental.",
     "Quem: Sean Cairncross e responsáveis do governo."
    ],
-   "title_original": "National Cyber Director Sean Cairncross leaving the government",
+   "title_original": null,
    "category": "IA",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Altera a liderança governamental responsável pelas políticas estratégicas de cibersegurança e inteligência artificial.",
    "todo": ""
@@ -13778,28 +13801,6 @@
    "enriched": true,
    "why": "Protege a tecnologia sensível contra a proliferação não controlada em jurisdições de risco.",
    "todo": "Implemente controlos de acesso rigorosos e conheça a identidade real dos utilizadores e clientes dos seus serviços na nuvem."
-  },
-  {
-   "id": "f66e964ba9d367ad",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/",
-   "published": "2026-11-16T19:57:13+00:00",
-   "title": "Barracuda associa violação na nuvem a ciberataque impulsionado por IA ARTEX",
-   "summary": "A empresa de segurança de redes e e-mail Barracuda sofreu uma violação no seu ambiente de nuvem no início do mês. Os atacantes utilizaram uma chave de acesso à nuvem roubada e recorreram à framework de testes de penetração potenciada por inteligência artificial ARTEX. O incidente ilustra a utilização de ferramentas automatizadas por agentes maliciosos.",
-   "image": null,
-   "points": [
-    "A Barracuda sofreu uma invasão no seu ambiente cloud.",
-    "Os atacantes usaram uma chave de acesso roubada.",
-    "Foi empregue a framework de IA ARTEX no ataque."
-   ],
-   "title_original": "Barracuda links cloud breach to ARTEX AI-powered cyberattack",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia como as ameaças modernas utilizam ferramentas de IA para otimizar intrusões em infraestruturas empresariais.",
-   "todo": "Utilize autenticação multifator robusta e proteja rigorosamente as chaves de acesso e credenciais de nuvem."
   }
  ]
 }

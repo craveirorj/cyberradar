@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T21:07:27.372586+00:00",
+ "updated": "2026-11-20T21:26:19.147720+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -124,7 +124,7 @@
   {
    "source": "Ars Technica Security",
    "ok": true,
-   "added": 7
+   "added": 6
   },
   {
    "source": "WIRED Security",
@@ -164,7 +164,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 9
+   "added": 8
   },
   {
    "source": "Cisco Talos",
@@ -174,7 +174,7 @@
   {
    "source": "Unit 42 (Palo Alto)",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "Google Threat Intelligence",
@@ -238,8 +238,8 @@
   },
   {
    "source": "The Register Security",
-   "ok": true,
-   "added": 13
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "Help Net Security",
@@ -310,14 +310,36 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 221,
-  "unenriched": 84,
+  "pending": 204,
+  "unenriched": 68,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "a9aa37ceddf16814",
+   "source": "Dark Reading",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day",
+   "published": "2026-11-20T21:03:27+00:00",
+   "title": "O 'Armory Castle' da China ataca o zero-day do VMware vCenter",
+   "summary": "Durante o período de atualizações de segurança do VMware vCenter, um grupo de ameaças ligado à China já estaria a preparar uma nova falha do tipo zero-day. Este grupo utilizou táticas avançadas para visar sistemas vulneráveis, apanhando as organizações desprevenidas. O impacto desta investida afeta a integridade dos servidores afetados. As autoridades e especialistas continuam a monitorizar estas movimentações.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt911ff7b35a2a2c1d/6b009babdd63b308b3111bc2/Chinese_fortress-Lukas_Bischoff-Getty.jpg?width=720&quality=80&disable=upscale",
+   "points": [
+    "Um grupo associado à China preparou um zero-day para o VMware vCenter.",
+    "A exploração ocorreu durante o lançamento de atualizações de segurança.",
+    "O impacto foca-se na vulnerabilidade dos servidores VMware visados."
+   ],
+   "title_original": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como os atacantes aproveitam o timing das atualizações para explorar falhas críticas.",
+   "todo": "Aplique as correções e atualizações de segurança do VMware vCenter assim que forem disponibilizadas."
+  },
   {
    "id": "99727b65c29013d0",
    "source": "Ars Technica Security",
@@ -13787,29 +13809,6 @@
    "enriched": true,
    "why": "Revela a adoção de canais de comunicação modernos e menos inspecionados por malware de espionagem.",
    "todo": "Monitorize o tráfego de rede encriptado e implemente soluções de deteção avançada para comportamentos anómalos."
-  },
-  {
-   "id": "fbb3cef04b524d6f",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/produto-e-review/ios-233-beta-2-traz-face-id-capado-para-iphone-duo-e-franquia-de-uso-para-siri-ai/",
-   "published": "2026-11-16T23:00:00+00:00",
-   "title": "iOS 23.3 Beta 2 traz ‘Face ID’ capado para iPhone Duo e franquia de uso para Siri AI",
-   "summary": "A Apple começou a disponibilizar o iOS 27.3 Beta 2 para programadores, introduzindo novas funcionalidades de segurança e controlo de IA. O dobrável iPhone Duo recebeu uma versão mais simples e limitada de reconhecimento facial para desbloqueio, embora ainda exija Touch ID para compras e credenciais. Além disso, a atualização implementa um limite de uso diário para o processamento remoto das ferramentas da Siri AI e do Apple Intelligence. Estas medidas regulam a utilização de recursos avançados nos dispositivos compatíveis.",
-   "image": "https://www.estadao.com.br/resizer/v2/ON5VHV4OZJA6BHQ3HAXNAYZTKQ.png?quality=80&auth=86971f7f56eb0aec8c4d44156c0eeb14068ad848d11038bb4440931b7df74ae0&width=710",
-   "points": [
-    "Quem: Apple e programadores do ecossistema iOS.",
-    "O quê: Lançamento do iOS 27.3 Beta 2 com Face ID limitado no iPhone Duo e limites na Siri AI.",
-    "Como: Introdução de autenticação facial alternativa e controlo de franquias diárias de IA.",
-    "Impacto: Restrições no desbloqueio biométrico e limitação no uso diário de ferramentas de inteligência artificial."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "Informa os utilizadores sobre alterações nas opções de biometria e limites de utilização de ferramentas de IA da Apple.",
-   "todo": "Mantenha os dispositivos atualizados e configure corretamente os métodos de autenticação alternativos."
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T20:07:15.737763+00:00",
+ "updated": "2026-11-20T20:26:16.577580+00:00",
  "errors": [],
  "feodo": {
   "total": 5,
@@ -56,10 +56,10 @@
  "types": {
   "malware_urls": {
    "label": "Sites que distribuem malware",
-   "total": 882,
+   "total": 883,
    "by_country": {
-    "US": 674,
-    "CN": 133,
+    "US": 673,
+    "CN": 134,
     "CA": 19,
     "IN": 7,
     "BR": 6,
@@ -67,6 +67,7 @@
     "FR": 4,
     "NI": 4,
     "HK": 4,
+    "GB": 3,
     "ZA": 3,
     "IR": 2,
     "PK": 2,
@@ -74,7 +75,6 @@
     "ET": 2,
     "PH": 2,
     "MA": 2,
-    "GB": 2,
     "TW": 2,
     "VN": 2,
     "ID": 1,
@@ -88,12 +88,12 @@
     "US": {
      "DEVPOPPER": 239,
      "DEVBOX": 213,
-     "github": 110,
+     "github": 109,
      "exe": 78,
      "encrypted": 14
     },
     "CN": {
-     "malware_download": 97,
+     "malware_download": 98,
      "32-bit": 30,
      "elf": 6
     },
@@ -135,6 +135,11 @@
      "exe": 1,
      "AdaptixC2": 1
     },
+    "GB": {
+     "elf": 1,
+     "rat": 1,
+     "hta": 1
+    },
     "ZA": {
      "malware_download": 3
     },
@@ -157,10 +162,6 @@
     },
     "MA": {
      "malware_download": 2
-    },
-    "GB": {
-     "rat": 1,
-     "hta": 1
     },
     "TW": {
      "32-bit": 1,
@@ -190,7 +191,7 @@
     }
    },
    "tags": {
-    "github": 640,
+    "github": 639,
     "js": 500,
     "VSCode": 415,
     "TxDataHiding": 287,
@@ -199,17 +200,17 @@
    },
    "ports": {
     "US": {
-     "443": 668,
+     "443": 667,
      "80": 4,
      "8000": 1,
      "9003": 1
     },
     "CN": {
+     "49877": 2,
+     "59726": 2,
      "50550": 2,
      "40916": 2,
-     "54825": 2,
-     "35948": 2,
-     "53003": 2
+     "54825": 2
     },
     "CA": {
      "443": 15,
@@ -247,6 +248,10 @@
      "12306": 1,
      "8098": 1
     },
+    "GB": {
+     "80": 2,
+     "8123": 1
+    },
     "ZA": {
      "57981": 2,
      "56847": 1
@@ -270,9 +275,6 @@
     },
     "MA": {
      "58319": 2
-    },
-    "GB": {
-     "80": 2
     },
     "TW": {
      "42761": 1,
@@ -367,7 +369,7 @@
   },
   "ioc": {
    "label": "Indicadores de malware (IPs)",
-   "total": 457,
+   "total": 458,
    "by_country": {
     "US": 120,
     "CN": 54,
@@ -375,9 +377,9 @@
     "DE": 48,
     "NL": 34,
     "SG": 31,
+    "GB": 10,
     "JP": 10,
     "ID": 9,
-    "GB": 9,
     "IN": 8,
     "SE": 7,
     "RU": 6,
@@ -452,6 +454,10 @@
      "AsyncRAT": 1,
      "VShell": 1
     },
+    "GB": {
+     "Unknown malware": 9,
+     "Empire Downloader": 1
+    },
     "JP": {
      "Unknown malware": 6,
      "Sliver": 2,
@@ -464,10 +470,6 @@
      "Sliver": 1,
      "Mirai": 1,
      "Potassium": 1
-    },
-    "GB": {
-     "Unknown malware": 8,
-     "Empire Downloader": 1
     },
     "IN": {
      "Potassium": 4,
@@ -602,7 +604,7 @@
     }
    },
    "malware": {
-    "Unknown malware": 231,
+    "Unknown malware": 232,
     "Cobalt Strike": 32,
     "Sliver": 30,
     "AsyncRAT": 27,
@@ -652,6 +654,13 @@
      "8787": 2,
      "8080": 2
     },
+    "GB": {
+     "8443": 3,
+     "80": 2,
+     "8123": 1,
+     "8041": 1,
+     "2000": 1
+    },
     "JP": {
      "8443": 5,
      "31337": 2,
@@ -665,13 +674,6 @@
      "443": 1,
      "31337": 1,
      "3333": 1
-    },
-    "GB": {
-     "8443": 3,
-     "80": 2,
-     "8041": 1,
-     "2000": 1,
-     "8888": 1
     },
     "IN": {
      "8443": 1,
@@ -822,78 +824,34 @@
    "label": "Scans e força bruta",
    "total": 200,
    "by_country": {
-    "US": 117,
-    "FR": 22,
-    "NL": 18,
-    "DE": 8,
-    "HK": 7,
-    "AD": 5,
-    "CA": 5,
-    "SC": 4,
-    "BG": 3,
-    "SG": 2,
-    "VN": 2,
-    "KZ": 2,
+    "US": 167,
+    "GB": 15,
+    "DE": 11,
+    "NL": 5,
     "RU": 1,
-    "AM": 1,
-    "CN": 1,
-    "GB": 1,
-    "SE": 1
+    "SG": 1
    },
    "detail": {
     "US": {
-     "scan/força bruta": 117
+     "scan/força bruta": 167
     },
-    "FR": {
-     "scan/força bruta": 22
-    },
-    "NL": {
-     "scan/força bruta": 18
+    "GB": {
+     "scan/força bruta": 15
     },
     "DE": {
-     "scan/força bruta": 8
+     "scan/força bruta": 11
     },
-    "HK": {
-     "scan/força bruta": 7
-    },
-    "AD": {
+    "NL": {
      "scan/força bruta": 5
-    },
-    "CA": {
-     "scan/força bruta": 5
-    },
-    "SC": {
-     "scan/força bruta": 4
-    },
-    "BG": {
-     "scan/força bruta": 3
-    },
-    "SG": {
-     "scan/força bruta": 2
-    },
-    "VN": {
-     "scan/força bruta": 2
-    },
-    "KZ": {
-     "scan/força bruta": 2
     },
     "RU": {
      "scan/força bruta": 1
     },
-    "AM": {
-     "scan/força bruta": 1
-    },
-    "CN": {
-     "scan/força bruta": 1
-    },
-    "GB": {
-     "scan/força bruta": 1
-    },
-    "SE": {
+    "SG": {
      "scan/força bruta": 1
     }
    },
-   "reports": 28544063
+   "reports": 5212001
   }
  },
  "cloudflare": {
@@ -978,77 +936,77 @@
    {
     "cc": "US",
     "name": "United States",
-    "pct": 57.217439
+    "pct": 57.141337
    },
    {
     "cc": "CA",
     "name": "Canada",
-    "pct": 7.086437
+    "pct": 7.077924
    },
    {
     "cc": "GB",
     "name": "United Kingdom",
-    "pct": 2.826107
+    "pct": 2.829182
    },
    {
     "cc": "IL",
     "name": "Israel",
-    "pct": 2.819769
+    "pct": 2.824697
    },
    {
     "cc": "CN",
     "name": "China",
-    "pct": 2.600187
+    "pct": 2.61427
    },
    {
     "cc": "MY",
     "name": "Malaysia",
-    "pct": 2.404501
+    "pct": 2.421636
    },
    {
     "cc": "DE",
     "name": "Germany",
-    "pct": 2.121181
+    "pct": 2.124783
    },
    {
     "cc": "FR",
     "name": "France",
-    "pct": 2.059689
+    "pct": 2.054288
    },
    {
     "cc": "CY",
     "name": "Cyprus",
-    "pct": 1.310168
+    "pct": 1.324407
    },
    {
     "cc": "AU",
     "name": "Australia",
-    "pct": 1.25301
+    "pct": 1.250408
    },
    {
     "cc": "SE",
     "name": "Sweden",
-    "pct": 1.156968
+    "pct": 1.160962
    },
    {
     "cc": "IN",
     "name": "India",
-    "pct": 0.951615
+    "pct": 0.952287
    },
    {
     "cc": "HK",
     "name": "Hong Kong",
-    "pct": 0.931353
+    "pct": 0.931463
    },
    {
     "cc": "SG",
     "name": "Singapore",
-    "pct": 0.820749
+    "pct": 0.821859
    },
    {
     "cc": "UA",
     "name": "Ukraine",
-    "pct": 0.764952
+    "pct": 0.761766
    }
   ],
   "l3_origin": [

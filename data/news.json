@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T00:26:23.245504+00:00",
+ "updated": "2026-11-20T00:46:11.226491+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "Help Net Security",
@@ -309,15 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 202,
-  "unenriched": 81,
+  "done": 116,
+  "pending": 207,
+  "unenriched": 85,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "c5e24a06d3952b8f",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
+   "published": "2026-11-20T00:26:25+00:00",
+   "title": "VMware corrige zero-day do vCenter explorado em ataques desde setembro",
+   "summary": "A Broadcom lançou atualizações de segurança para corrigir uma vulnerabilidade crítica de contorno de autenticação no VMware vCenter Server. A falha tem sido explorada ativamente em ataques do tipo zero-day por hackers com ligações à China desde setembro de 2026. O impacto afeta a segurança de infraestruturas que utilizam este software de gestão.",
+   "image": null,
+   "points": [
+    "A Broadcom lançou atualizações para corrigir uma falha crítica no VMware vCenter Server.",
+    "A vulnerabilidade permite o contorno de autenticação e foi explorada desde setembro de 2026.",
+    "O grupo por trás dos ataques é constituído por hackers ligados à China.",
+    "O impacto foca-se na segurança de servidores e redes empresariais."
+   ],
+   "title_original": "VMware patches vCenter zero-day exploited in attacks since September",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes comprometam servidores centrais de gestão de infraestruturas críticas.",
+   "todo": "Instale imediatamente as atualizações de segurança disponibilizadas pela Broadcom para o VMware vCenter Server."
+  },
   {
    "id": "9b9f66e814c29bdd",
    "source": "The Register Security",
@@ -334,9 +357,9 @@
     "O sistema substitui os números de telefone por cartões de identidade virtuais.",
     "O objetivo é aumentar a privacidade e a confiança nas comunicações digitais."
    ],
-   "title_original": "Germ Network infects Android, but in a good way",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Permite compreender novas abordagens de privacidade e encriptação na comunicação móvel e em redes descentralizadas.",
    "todo": "Avalie aplicações de mensagens focadas na privacidade e verifique as permissões que partilha ao comunicar com terceiros."
@@ -13748,29 +13771,6 @@
    "enriched": true,
    "why": "Evidencia a tendência de integrar barreiras de segurança mais fortes em modelos de IA de nova geração.",
    "todo": "Considere adotar soluções de IA que incorporem mecanismos de proteção robustos contra riscos operacionais."
-  },
-  {
-   "id": "6cd44615cfe7b4a3",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/16/geovision-camera-software-vulnerabilities/",
-   "published": "2026-11-16T10:07:57+00:00",
-   "title": "Software não corrigido de câmaras GeoVision deu acesso a mineradores de criptomoedas em 13 organizações",
-   "summary": "Atores maliciosos exploraram o software de gestão de câmaras da GeoVision para invadir sistemas Windows. A investida afetou computadores em 13 organizações de vários setores, transformando-os em mineradores de criptomoedas. A atividade maliciosa ocorreu sobretudo entre os dias 8 e 10 de novembro.",
-   "image": null,
-   "points": [
-    "Quem: Cuidadores da segurança da Huntress e atacantes desconhecidos.",
-    "O quê: Invasão de computadores Windows via software GeoVision.",
-    "Como: Exploração de falhas em software de câmaras de vigilância.",
-    "Impacto: 13 organizações infetadas com mineradores de criptomoedas."
-   ],
-   "title_original": "Unpatched GeoVision camera software gave cryptojackers a side door into 13 organizations",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra como falhas em software de vigilância empresarial negligenciado podem servir de porta de entrada para ataques.",
-   "todo": "Atualize prontamente todo o software de gestão de câmaras e dispositivos IoT ligados à rede."
   }
  ]
 }

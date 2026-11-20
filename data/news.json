@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-20T10:09:02.224737+00:00",
+ "updated": "2026-11-20T10:25:58.002084+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "IT Security",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -268,13 +268,13 @@
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 1
   },
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 2
+   "added": 3
   },
   {
    "source": "Check Point Research",
@@ -283,8 +283,8 @@
   },
   {
    "source": "Securelist (Kaspersky)",
-   "ok": false,
-   "error": "HTTPSConnectionPool(host='securelist.com', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection("
+   "ok": true,
+   "added": 6
   },
   {
    "source": "Risky Bulletin",
@@ -309,15 +309,60 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 214,
-  "unenriched": 86,
+  "done": 96,
+  "pending": 234,
+  "unenriched": 105,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 126 column 5 (char 12783)"
+   "Expecting property name enclosed in double quotes: line 30 column 5 (char 2634)",
+   "Expecting value: line 5 column 10 (char 81)"
   ]
  },
  "items": [
+  {
+   "id": "3ee0dff29d7e7488",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/internet/seguranca/fastestvpn-black-friday-plano-vitalicio/",
+   "published": "2026-11-20T10:00:00+00:00",
+   "title": "FastestVPN Black Friday: plano vitalício a 25 dólares com o FastestPass incluído",
+   "summary": "A FastestVPN lançou uma campanha de Black Friday com um desconto de 93% num plano vitalício. A oferta inclui acesso a 10 dispositivos, servidores espalhados por mais de 100 localizações e um gestor de palavras-passe gratuito chamado FastestPass. Esta promoção foca-se na privacidade e poupança para os utilizadores na aquisição de ferramentas de segurança.",
+   "image": null,
+   "points": [
+    "Desconto de 93% na Black Friday da FastestVPN.",
+    "Plano vitalício disponível por 25 dólares.",
+    "Inclui 10 dispositivos e gestor de passwords."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Permite obter ferramentas de privacidade e gestão de acessos a um preço consideravelmente reduzido.",
+   "todo": "Avalie se as funcionalidades do serviço respondem às necessidades de segurança da sua atividade antes de subscrever."
+  },
+  {
+   "id": "384152c9138d4c44",
+   "source": "HackRead",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://hackread.com/jpmorgan-chase-visa-mastercard-vendor-incidents-n0n-leak/",
+   "published": "2026-11-20T09:50:52+00:00",
+   "title": "JPMorgan Chase, Visa e Mastercard confirmam incidentes em fornecedores após fugas do grupo n0n",
+   "summary": "Várias grandes instituições financeiras, incluindo o JPMorgan Chase, a Visa e a Mastercard, confirmaram incidentes de segurança em fornecedores terceiros. A confirmação surge na sequência de publicações feitas pelo grupo n0n, que expuseram mais de 27.000 endereços de email em ficheiros partilhados online. O impacto afeta a cadeia de fornecimento destas empresas de renome devido a falhas em parceiros externos.",
+   "image": null,
+   "points": [
+    "Alvo: JPMorgan Chase, Visa e Mastercard.",
+    "Incidente: Fuga de dados por fornecedores terceiros.",
+    "Impacto: Mais de 27.000 endereços de email expostos pelo grupo n0n."
+   ],
+   "title_original": "JPMorgan Chase, Visa and Mastercard confirm vendor incidents after n0n leak claims",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como a vulnerabilidade de um fornecedor externo pode expor dados de grandes organizações financeiras.",
+   "todo": "Reveja regularmente a segurança e o acesso de fornecedores e parceiros externos aos seus sistemas."
+  },
   {
    "id": "471f6faa5d753487",
    "source": "Pplware Segurança",
@@ -446,9 +491,9 @@
     "Foram roubadas credenciais de serviços como LastPass, IRS, Google e várias plataformas financeiras.",
     "O impacto incluiu o acesso não autorizado a dados de identidade federal e contas bancárias."
    ],
-   "title_original": "Hunt.io Uncovers Russian-Speaking Credential Theft Operation Targeting US Banks and Government Accounts",
+   "title_original": null,
    "category": "Fuga de dados",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra como operações de roubo de credenciais conseguem contornar proteções locais e aceder a cofres de palavras-passe em PCs infetados.",
    "todo": "Utilize autenticação multifator robusta e mantenha o software e os sistemas operativos atualizados para mitigar riscos de roubo de sessão e credenciais."
@@ -13725,50 +13770,6 @@
    "enriched": true,
    "why": "Põe em risco contas de jogos e dados pessoais através de esquemas de phishing sofisticados.",
    "todo": "Desconfiar de ofertas de prémios em sites de terceiros e verificar sempre o endereço oficial antes de inserir credenciais."
-  },
-  {
-   "id": "25e8c52daadb6882",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/ai/2026/11/criminals-are-using-artex-ai-agents-to-speed-up-cyberattacks-fbi-warns",
-   "published": "2026-11-16T13:34:35+00:00",
-   "title": "Criminosos usam agentes de IA ARTEX para acelerar ciberataques, avisa o FBI",
-   "summary": "O FBI emitiu um alerta sobre a utilização por criminosos da ferramenta ARTEX, um framework de testes de penetração de código aberto, para automatizar intrusões a nível global. Alguns ataques conseguiram atingir acessos privilegiados em menos de três horas. A ferramenta utiliza agentes de planeamento e LLMs externos para executar tarefas com pouca intervenção humana.",
-   "image": null,
-   "points": [
-    "O FBI alertou para o uso malicioso da ferramenta de IA ARTEX por criminosos.",
-    "Os ataques conseguiram obter acessos privilegiados em menos de três horas.",
-    "Setores como finanças, governo, saúde e tecnologia foram visados."
-   ],
-   "title_original": "Criminals are using ARTEX AI agents to speed up cyberattacks, FBI warns",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Reduz drasticamente o tempo que os defensores têm para detetar e responder a uma intrusão.",
-   "todo": "Monitorizar acessos privilegiados e implementar defesas automatizadas para mitigar ataques rápidos."
-  },
-  {
-   "id": "b2ab2e4705a71f68",
-   "source": "Tenable",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.tenable.com/blog/tenable-one-adversary-view-claude-mythos-break-attack-paths",
-   "published": "2026-11-16T13:30:00+00:00",
-   "title": "Tenable One Adversary View traz o raciocínio adversarial de Claude Mythos para o seu ambiente",
-   "summary": "A Tenable lançou o Tenable One Adversary View, uma ferramenta integrada com a Tenable Hexa AI que utiliza o modelo Claude Mythos para analisar dados de segurança a partir da perspetiva de um atacante. A funcionalidade mapeia caminhos de ataque e prioriza correções com base no impacto real na interrupção de ameaças. Esta abordagem ajuda as equipas de segurança a lidar com o volume crescente de vulnerabilidades.",
-   "image": "https://play.vidyard.com/AFryj2cnjNkKmQQKxnAJPT.jpg",
-   "points": [
-    "A ferramenta utiliza a tecnologia Claude Mythos para analisar vulnerabilidades como um atacante.",
-    "Permite priorizar correções com base nos caminhos de ataque que efetivamente bloqueiam riscos.",
-    "Encontra-se disponível para clientes da Tenable One com Tenable Hexa AI."
-   ],
-   "title_original": "Tenable One Adversary View brings Claude Mythos’ adversarial reasoning to your environment",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Ajuda a focar as defesas nas falhas que representam o maior risco real de intrusão.",
-   "todo": "Priorizar a correção de vulnerabilidades com base em análises de caminhos de ataque em vez de apenas na severidade isolada."
   }
  ]
 }

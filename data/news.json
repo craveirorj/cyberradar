@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T18:29:23.123082+00:00",
+ "updated": "2026-11-20T18:47:50.794136+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -39,7 +39,7 @@
   {
    "source": "WeLiveSecurity (ESET) PT",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "Canaltech Segurança",
@@ -74,7 +74,7 @@
   {
    "source": "MS-ISAC (CIS)",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "BleepingComputer",
@@ -154,7 +154,7 @@
   {
    "source": "Microsoft Security Blog",
    "ok": true,
-   "added": 7
+   "added": 6
   },
   {
    "source": "Microsoft MSRC",
@@ -309,16 +309,37 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 96,
-  "pending": 255,
-  "unenriched": 112,
+  "done": 120,
+  "pending": 231,
+  "unenriched": 87,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "316817c5e67e182a",
+   "source": "MS-ISAC (CIS)",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-php-could-allow-for-remote-code-execution_2026-137",
+   "published": "2026-11-20T18:02:56+00:00",
+   "title": "Múltiplas vulnerabilidades em PHP podem permitir a execução remota de código",
+   "summary": "Foram descobertas várias falhas de segurança no PHP, sendo a mais grave capaz de permitir a execução remota de código sem necessidade de autenticação. A exploração bem-sucedida desta falha num serviço afetado dá ao atacante permissões equivalentes à conta do serviço visado. Dependendo dos privilégios dessa conta, podem ser instalados programas, manipulados dados ou criadas novas contas de utilizador com acesso total. O impacto varia consoante o nível de privilégios configurado no serviço afetado.",
+   "image": null,
+   "points": [
+    "O quê: Descobertas várias vulnerabilidades no PHP com risco de execução remota de código.",
+    "Quem: Afeta sistemas que utilizam a linguagem de programação PHP.",
+    "Como: Um atacante sem autenticação pode explorar falhas graves através de contas de serviço.",
+    "Impacto: Pode resultar na instalação de programas, alteração de dados ou criação de novas contas."
+   ],
+   "title_original": "Multiple Vulnerabilities in PHP Could Allow for Remote Code Execution",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes assumam o controlo de servidores web se os serviços correrem com privilégios excessivos.",
+   "todo": "Atualize o PHP para as versões corrigidas e garanta que os serviços web correm com o mínimo de privilégios necessários."
+  },
   {
    "id": "ec99630010cb437c",
    "source": "AWS Security Blog",
@@ -13779,28 +13800,6 @@
    "enriched": true,
    "why": "Revela a evolução futura dos assistentes móveis baseados em inteligência artificial e a sua integração profunda nos dispositivos.",
    "todo": "Mantenha o sistema operativo e as aplicações atualizadas para beneficiar de melhorias de segurança e novas funcionalidades."
-  },
-  {
-   "id": "6fd5298e49bad549",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/trump-administration-moves-to-block-china-from-indirect-access-to-american-ai-technology/",
-   "published": "2026-11-16T20:00:00+00:00",
-   "title": "Administração Trump Toma Medidas para Bloquear o Acesso Indireto da China à Tecnologia de IA Americana",
-   "summary": "O governo norte-americano implementou uma nova regra para restringir o acesso indireto de determinados países à tecnologia de inteligência artificial dos EUA. A medida obriga centros de dados localizados no estrangeiro que servem nações como China, Rússia, Irão e Cuba a identificarem devidamente os seus utilizadores finais. O objetivo é evitar a utilização não autorizada de infraestruturas tecnológicas críticas.",
-   "image": null,
-   "points": [
-    "Nova regra restringe o acesso indireto a tecnologia de IA americana.",
-    "Centros de dados estrangeiros devem identificar utilizadores de países restritos.",
-    "A medida abrange nações como China, Rússia, Irão e Cuba."
-   ],
-   "title_original": "Trump Administration Moves to Block China From Indirect Access to American AI Technology",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Protege a tecnologia sensível contra a proliferação não controlada em jurisdições de risco.",
-   "todo": "Implemente controlos de acesso rigorosos e conheça a identidade real dos utilizadores e clientes dos seus serviços na nuvem."
   }
  ]
 }

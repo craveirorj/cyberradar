@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T11:09:20.364013+00:00",
+ "updated": "2026-11-20T11:26:28.929860+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -179,7 +179,7 @@
   {
    "source": "Google Threat Intelligence",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Google Project Zero",
@@ -204,7 +204,7 @@
   {
    "source": "Rapid7",
    "ok": true,
-   "added": 6
+   "added": 5
   },
   {
    "source": "Tenable",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 8
+   "added": 9
   },
   {
    "source": "Help Net Security",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 3
+   "added": 4
   },
   {
    "source": "Check Point Research",
@@ -309,15 +309,60 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 225,
-  "unenriched": 98,
+  "done": 120,
+  "pending": 217,
+  "unenriched": 86,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 76 column 5 (char 6324)"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "4ebef484f948ffe8",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/jpmorgan-data-breach-third-party/",
+   "published": "2026-11-20T11:15:00+00:00",
+   "title": "JPMorgan Confirms Customer Data Breach Following Third-Party Compromise",
+   "summary": "O grupo de ransomware N0n reivindicou ataques contra o JPMorgan, a Visa e a Mastercard, divulgando alegadamente dados de clientes na dark web. A violação ocorreu através de um fornecedor externo, resultando na exposição de informações confidenciais. Esta situação demonstra como os fornecedores terceiros podem representar um vetor de risco crítico para grandes instituições financeiras. O incidente levanta sérias preocupações sobre a segurança e o controlo de dados em cadeias de fornecimento interconectadas.",
+   "image": null,
+   "points": [
+    "O grupo de ransomware N0n atacou JPMorgan, Visa e Mastercard.",
+    "Dados de clientes foram alegadamente publicados na dark web.",
+    "A intrusão ocorreu através do compromisso de um sistema externo.",
+    "O impacto inclui a exposição de dados sensíveis de clientes."
+   ],
+   "title_original": "JPMorgan Confirms Customer Data Breach Following Third-Party Compromise",
+   "category": "Ransomware",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como falhas em parceiros externos podem comprometer a segurança de grandes organizações financeiras.",
+   "todo": "Avalie e audite regularmente a postura de cibersegurança dos seus fornecedores e parceiros externos."
+  },
+  {
+   "id": "33a6571603207c4b",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/20/windows-11-passkey-bug-cries-failure-after-successful-sign-in/5311263",
+   "published": "2026-11-20T11:09:44+00:00",
+   "title": "Windows 11 passkey bug cries failure after successful sign-in",
+   "summary": "Um erro no Windows 11 faz com que telemóveis Android exibam uma mensagem de falha de autenticação mesmo quando o início de sessão com passkey é bem-sucedido. O problema afeta utilizadores que entram num PC Windows utilizando chaves armazenadas no Android através de browsers como o Edge ou Chrome. A Microsoft já lançou uma correção nas versões 25H2 e 26H2 através da atualização KB5132057. O impacto traduz-se em confusão para os utilizadores e num aumento de chamadas para as equipas de suporte.",
+   "image": "https://image.theregister.com/?imageId=5289791&width=800",
+   "points": [
+    "Um erro no Windows 11 exibe falhas falsas em passkeys guardadas no Android.",
+    "Acontece durante o início de sessão cruzado entre o PC e o telemóvel.",
+    "A Microsoft corrigiu o problema na atualização opcional KB5132057.",
+    "O impacto é a desconfiança dos utilizadores e falsos alertas de erro."
+   ],
+   "title_original": "Windows 11 passkey bug cries failure after successful sign-in",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Evita o alarme desnecessário dos utilizadores e reduz o volume de pedidos de suporte técnico.",
+   "todo": "Instale as atualizações mais recentes do Windows e ignore a mensagem no Android se o login no PC funcionou."
+  },
   {
    "id": "6a744f24eada9345",
    "source": "BleepingComputer",
@@ -363,6 +408,29 @@
    "todo": "Mantenha os sistemas monitorizados e reforce os mecanismos de deteção rápida contra ameaças potenciadas por inteligência artificial."
   },
   {
+   "id": "b6dced9e8be0bdef",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html",
+   "published": "2026-11-20T10:38:22+00:00",
+   "title": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
+   "summary": "A SonicWall alertou os clientes para substituírem imediatamente as firewalls de geração 6, pois estes equipamentos deixaram de receber correções de segurança, mesmo para falhas críticas. A empresa sublinha que os atacantes utilizam agora automação e inteligência artificial para detetar e explorar mais depressa dispositivos sem suporte na internet. Esta exposição coloca em risco elevado todas as redes que continuam a utilizar hardware obsoleto na linha de frente da internet. O impacto direto é a vulnerabilidade total destas organizações a intrusões automatizadas.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGn5oji8gd4l_d6wKemSflqTX-q-eiuu4CbbV2ROvzK6Gzpeq8zPsQyGb-UO80f_M8L2pDNNyNqF1ZIdyMPGReyW0KmPb7uuAuRu1M-ZVyNu-GJvx1CRaBsaEOVjV-asFG0P__0MK0Jp3WPJmcNxATiSd6NeBzcCmy-6dLvS5yvpen0cRrwLZvgVpYAvn0/s1600/sonicwall.jpg",
+   "points": [
+    "A SonicWall descontinuou o suporte a patches nas firewalls de Geração 6.",
+    "Criminosos usam IA para explorar rapidamente equipamentos desatualizados na internet.",
+    "A recomendação é retirar e substituir o hardware afetado de imediato.",
+    "O impacto deixa as redes expostas a ataques automatizados e críticos."
+   ],
+   "title_original": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Manter equipamento de rede sem suporte abre uma porta direta e sem defesa para os atacantes.",
+   "todo": "Substitua o equipamento de rede obsoleto e garanta que nenhuma firewall sem suporte fica exposta diretamente à internet."
+  },
+  {
    "id": "f5b6ed0f978c7e42",
    "source": "SecurityWeek",
    "region": "US",
@@ -384,6 +452,29 @@
    "enriched": true,
    "why": "Permite que atacantes assumam o controlo de sistemas vulneráveis se a falha não for corrigida.",
    "todo": "Atualize a linguagem Ruby para a versão mais recente com patches."
+  },
+  {
+   "id": "c9ddefa65f5030a8",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
+   "published": "2026-11-20T10:32:50+00:00",
+   "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
+   "summary": "Vários atacantes exploraram uma falha crítica de segurança em dispositivos Cisco Expressway para invadir uma organização russa. A exploração focou-se na vulnerabilidade CVE-2026-76466 com uma pontuação CVSS de 9.8, permitindo que utilizadores remotos não autenticados acedam à rede. Esta atividade foi detetada logo após a disponibilização pública de um exploit de prova de conceito. O impacto consistiu no comprometimento de vários dispositivos e no acesso bem-sucedido à rede interna da vítima.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrMm7M_HyuVDt9NknngHSgyfGKu0DR8VTc_GYL-tr_hMhTmi3EAZnM8x5byJQRYEqcUAZlDTR_Xi4RcMm4lidmk9UR_iyTWpDa5Mn6xRBoNwAf3auen2u6guKxnvoIrcQOfq7Mm1clmsyBMYVcjaOqVFYiN4mXgYSyR5_DUSrmVOLDK5mQeAS8BBB3X5-5/s1600/cisco-cyberattacks.jpg",
+   "points": [
+    "Atacantes exploraram a vulnerabilidade CVE-2026-76466 num Cisco Expressway.",
+    "A falha tem uma gravidade máxima e afeta dispositivos expostos à rede.",
+    "A exploração ocorreu logo após a publicação de uma prova de conceito.",
+    "O impacto permitiu o acesso não autorizado à rede interna da organização."
+   ],
+   "title_original": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A exploração rápida de falhas críticas recém-divulgadas compromete redes internas em minutos.",
+   "todo": "Aplique imediatamente as correções de segurança disponibilizadas pela Cisco para o CVE-2026-76466."
   },
   {
    "id": "d7d1043ff4ae8fc6",
@@ -13682,95 +13773,6 @@
    "enriched": true,
    "why": "O uso de deepfakes em tempo real em videochamadas supera a desconfiança tradicional baseada em exibições visuais.",
    "todo": "Desconfie de pedidos financeiros ou profissionais feitos por vídeo e implemente processos rigorosos de validação fora de canal."
-  },
-  {
-   "id": "69b76f0fd14e4423",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/cyber-risk/nist-finalizes-post-quantum-cryptography-guidance-gao-offers-a-reality-check",
-   "published": "2026-11-16T14:22:15+00:00",
-   "title": "NIST finaliza orientações de criptografia pós-quântica e GAO oferece uma perspetiva realista",
-   "summary": "O NIST finalizou as suas diretrizes sobre criptografia pós-quântica para proteger dados sensíveis contra futuras quebras tecnológicas. Paralelamente, um relatório do GAO revelou que as agências governamentais estão atrasadas na implementação destas defesas. Esta lacuna deixa infraestruturas críticas vulneráveis à futura evolução da computação quântica.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltfe572d94baa464a0/67bf001706ed6e9954636f2b/pqc-quantum-adam121AdobeStock.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "Quem: NIST, GAO e agências governamentais.",
-    "O quê: Publicação de orientações de criptografia e avaliação de preparação.",
-    "Como: Através de novos padrões criptográficos e auditorias governamentais.",
-    "Impacto: Riscos de segurança devido ao atraso na transição para defesas pós-quânticas."
-   ],
-   "title_original": "NIST Finalizes Post-Quantum Cryptography Guidance, GAO Offers a Reality Check",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "A chegada da computação quântica tornará obsoleta a criptografia atual, exigindo transições urgentes.",
-   "todo": "Avalie o inventário criptográfico da sua organização e planeie a migração para padrões pós-quânticos."
-  },
-  {
-   "id": "96e4cedac8bf9e8e",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/british-government-complacent-foreign-cyber-threats",
-   "published": "2026-11-16T14:21:00+00:00",
-   "title": "Governo britânico considerado \"complacente\" face a ameaças cibernéticas de estados hostis, alertam pares",
-   "summary": "Um relatório do National Resilience Committee alerta que a futura legislação sobre cibersegurança do Reino Unido é insuficiente para proteger o país. O documento foi publicado a poucos dias de uma votação importante sobre o Cyber Security and Resilience Bill. Os pares criticam a falta de padrões de segurança adequados face às ameaças de estados hostis.",
-   "image": "https://cms.therecord.media/uploads/uk_parliament_1_bc27c77ca2.jpg",
-   "points": [
-    "O National Resilience Committee publicou um relatório crítico sobre a segurança nacional.",
-    "A legislação proposta falha em introduzir padrões de segurança necessários.",
-    "O alerta surge dias antes de uma votação chave sobre o Cyber Security and Resilience Bill."
-   ],
-   "title_original": "British government ‘complacent’ on cyber threats from hostile states, peers warn",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra que as leis atuais podem não proteger o Reino Unido contra ameaças estatais.",
-   "todo": "Acompanhar a evolução legislativa e reforçar os padrões internos de cibersegurança."
-  },
-  {
-   "id": "807a12fbb315b934",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/dell-security-advisory-av26-1161",
-   "published": "2026-11-16T14:12:42+00:00",
-   "title": "Aviso de segurança da Dell (AV26-1161)",
-   "summary": "A Dell emitiu um aviso de segurança devido a vulnerabilidades que afetam vários produtos, incluindo o Ansible Storage para diferentes plataformas e módulos OpenManage. Outros componentes como o PowerScale InsightIQ, PowerStore e o Terraform Provider também foram afetados. O Centro Cibernético encoraja os utilizadores e administradores a consultarem os links fornecidos e a aplicarem as atualizações necessárias.",
-   "image": null,
-   "points": [
-    "Várias vulnerabilidades afetam produtos Dell como Ansible Storage e PowerStore.",
-    "O aviso de segurança foi catalogado sob a referência AV26-1161.",
-    "Utilizadores e administradores devem verificar e aplicar atualizações de segurança."
-   ],
-   "title_original": "Dell security advisory (AV26-1161)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Deixar estes sistemas desatualizados pode expor a infraestrutura a explorações.",
-   "todo": "Rever os avisos da Dell e aplicar imediatamente as correções de software disponíveis."
-  },
-  {
-   "id": "2e40619c86da1dec",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/google-warns-that-fully-automated-ai-attacks-are-coming-soon/",
-   "published": "2026-11-16T14:00:00+00:00",
-   "title": "Google avisa que ataques de IA totalmente automatizados estão para breve",
-   "summary": "Os cibercriminosos estão a utilizar fluxos de trabalho baseados em agentes e frameworks ofensivas de inteligência artificial para automatizar a descoberta e exploração de vulnerabilidades. Esta evolução acelera os ataques para a velocidade das máquinas. O alerta foi emitido pela Google face ao aumento destas capacidades.",
-   "image": null,
-   "points": [
-    "Agentes de ameaças usam estruturas ofensivas baseadas em IA.",
-    "O objetivo é automatizar a descoberta e exploração de falhas.",
-    "Os ataques ocorrem agora à velocidade da máquina."
-   ],
-   "title_original": "Google warns that fully-automated AI attacks are coming soon",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Torna os ataques cibernéticos muito mais rápidos e difíceis de prever por humanos.",
-   "todo": "Adotar ferramentas de defesa automatizadas e monitorizar comportamentos anómalos em tempo real."
   }
  ]
 }

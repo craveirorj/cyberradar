@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T16:06:44.603206+00:00",
+ "updated": "2026-11-20T16:25:15.381547+00:00",
  "errors": [],
  "feodo": {
   "total": 5,
@@ -58,13 +58,14 @@
    "label": "Sites que distribuem malware",
    "total": 872,
    "by_country": {
-    "US": 622,
-    "CN": 135,
+    "US": 617,
+    "CN": 139,
     "CA": 42,
     "BR": 7,
     "GB": 6,
     "LV": 6,
     "ZA": 5,
+    "IN": 4,
     "NI": 4,
     "HK": 4,
     "RU": 4,
@@ -72,7 +73,6 @@
     "TR": 3,
     "ET": 3,
     "MA": 3,
-    "IN": 3,
     "AL": 2,
     "PH": 2,
     "ID": 2,
@@ -91,14 +91,14 @@
    },
    "detail": {
     "US": {
-     "DEVPOPPER": 237,
-     "DEVBOX": 204,
-     "github": 74,
+     "DEVPOPPER": 236,
+     "DEVBOX": 202,
+     "github": 72,
      "exe": 59,
      "ascii": 17
     },
     "CN": {
-     "malware_download": 97,
+     "malware_download": 101,
      "32-bit": 32,
      "elf": 6
     },
@@ -128,6 +128,11 @@
     "ZA": {
      "malware_download": 3,
      "32-bit": 2
+    },
+    "IN": {
+     "malware_download": 2,
+     "32-bit": 1,
+     "AdaptixC2": 1
     },
     "NI": {
      "32-bit": 3,
@@ -160,10 +165,6 @@
     "MA": {
      "malware_download": 2,
      "32-bit": 1
-    },
-    "IN": {
-     "malware_download": 2,
-     "AdaptixC2": 1
     },
     "AL": {
      "32-bit": 2
@@ -217,25 +218,25 @@
     }
    },
    "tags": {
-    "github": 571,
-    "js": 495,
-    "VSCode": 420,
-    "TxDataHiding": 291,
-    "DEVPOPPER": 237,
-    "DEVBOX": 204
+    "github": 566,
+    "js": 490,
+    "VSCode": 415,
+    "TxDataHiding": 288,
+    "DEVPOPPER": 236,
+    "DEVBOX": 202
    },
    "ports": {
     "US": {
-     "443": 612,
+     "443": 607,
      "80": 9,
      "8000": 1
     },
     "CN": {
+     "54580": 2,
+     "58807": 2,
      "39590": 2,
      "38460": 2,
-     "58640": 2,
-     "54822": 2,
-     "42124": 2
+     "58640": 2
     },
     "CA": {
      "443": 37,
@@ -262,6 +263,12 @@
      "38169": 2,
      "57981": 2,
      "56847": 1
+    },
+    "IN": {
+     "39107": 1,
+     "53916": 1,
+     "38472": 1,
+     "56578": 1
     },
     "NI": {
      "60954": 2,
@@ -293,11 +300,6 @@
     "MA": {
      "58319": 2,
      "43267": 1
-    },
-    "IN": {
-     "53916": 1,
-     "38472": 1,
-     "56578": 1
     },
     "AL": {
      "39733": 2
@@ -354,11 +356,12 @@
    "label": "Sites de phishing",
    "total": 300,
    "by_country": {
-    "CA": 121,
-    "US": 78,
+    "CA": 122,
+    "US": 73,
     "AU": 69,
     "IT": 8,
     "DE": 4,
+    "MX": 4,
     "NL": 3,
     "GB": 2,
     "JP": 2,
@@ -371,10 +374,10 @@
    },
    "detail": {
     "CA": {
-     "phishing": 121
+     "phishing": 122
     },
     "US": {
-     "phishing": 78
+     "phishing": 73
     },
     "AU": {
      "phishing": 69
@@ -383,6 +386,9 @@
      "phishing": 8
     },
     "DE": {
+     "phishing": 4
+    },
+    "MX": {
      "phishing": 4
     },
     "NL": {
@@ -871,34 +877,82 @@
    "label": "Scans e força bruta",
    "total": 200,
    "by_country": {
-    "US": 176,
-    "DE": 16,
-    "NL": 5,
+    "NL": 141,
+    "CA": 18,
+    "FR": 12,
+    "DE": 9,
+    "PL": 3,
+    "AD": 2,
+    "GB": 2,
+    "US": 2,
+    "SG": 2,
+    "HK": 1,
     "BG": 1,
-    "RU": 1,
-    "CN": 1
+    "ES": 1,
+    "KZ": 1,
+    "AR": 1,
+    "TR": 1,
+    "LU": 1,
+    "CH": 1,
+    "FI": 1
    },
    "detail": {
-    "US": {
-     "scan/força bruta": 176
+    "NL": {
+     "scan/força bruta": 141
+    },
+    "CA": {
+     "scan/força bruta": 18
+    },
+    "FR": {
+     "scan/força bruta": 12
     },
     "DE": {
-     "scan/força bruta": 16
+     "scan/força bruta": 9
     },
-    "NL": {
-     "scan/força bruta": 5
+    "PL": {
+     "scan/força bruta": 3
+    },
+    "AD": {
+     "scan/força bruta": 2
+    },
+    "GB": {
+     "scan/força bruta": 2
+    },
+    "US": {
+     "scan/força bruta": 2
+    },
+    "SG": {
+     "scan/força bruta": 2
+    },
+    "HK": {
+     "scan/força bruta": 1
     },
     "BG": {
      "scan/força bruta": 1
     },
-    "RU": {
+    "ES": {
      "scan/força bruta": 1
     },
-    "CN": {
+    "KZ": {
+     "scan/força bruta": 1
+    },
+    "AR": {
+     "scan/força bruta": 1
+    },
+    "TR": {
+     "scan/força bruta": 1
+    },
+    "LU": {
+     "scan/força bruta": 1
+    },
+    "CH": {
+     "scan/força bruta": 1
+    },
+    "FI": {
      "scan/força bruta": 1
     }
    },
-   "reports": 5008484
+   "reports": 28476465
   }
  },
  "cloudflare": {

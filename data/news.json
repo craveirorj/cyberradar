@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T18:47:50.794136+00:00",
+ "updated": "2026-11-20T19:06:48.889360+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -59,7 +59,7 @@
   {
    "source": "CISA Advisories",
    "ok": true,
-   "added": 8
+   "added": 9
   },
   {
    "source": "CISA Alertas (KEV)",
@@ -74,12 +74,12 @@
   {
    "source": "MS-ISAC (CIS)",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -109,7 +109,7 @@
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CSO Online",
@@ -129,7 +129,7 @@
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "Schneier on Security",
@@ -144,7 +144,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Malwarebytes Labs",
@@ -309,14 +309,130 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 231,
-  "unenriched": 87,
+  "done": 108,
+  "pending": 246,
+  "unenriched": 102,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting property name enclosed in double quotes: line 121 column 5 (char 12297)"
   ]
  },
  "items": [
+  {
+   "id": "b8c678e393d4c36b",
+   "source": "Cybersecurity Dive",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cybersecuritydive.com/news/fcc-cyber-trust-mark-internet-of-things-regulation-proposal/875328/",
+   "published": "2026-11-20T19:00:00+00:00",
+   "title": "FCC propõe regulamentos para o programa de rotulagem IoT Cyber Trust Mark",
+   "summary": "A FCC pretende criar um novo programa de rótulos de segurança para dispositivos conectados. O objetivo principal é motivar os fabricantes a darem prioridade à cibersegurança nos seus produtos. A medida procura ajudar os consumidores a escolherem equipamentos mais seguros.",
+   "image": "https://imgproxy.divecdn.com/T5UzibMky91AdxH9XNXvMwSsbwowxom1KS7EiBDPc10/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjYyMzc4NTIyLmpwZw==.webp",
+   "points": [
+    "Quem: A FCC.",
+    "O quê: Proposta de regulamentos para rotulagem de cibersegurança.",
+    "Como: Incentivadores para fabricantes priorizarem a segurança em dispositivos IoT.",
+    "Impacto: Aumento da segurança nos aparelhos oferecidos aos consumidores."
+   ],
+   "title_original": "FCC to propose regulations for Cyber Trust Mark IoT labeling program",
+   "category": "Regulação",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda a identificar dispositivos de IoT mais seguros no mercado.",
+   "todo": "Verifique sempre se os dispositivos IoT que adquire possuem certificações ou padrões de segurança recomendados."
+  },
+  {
+   "id": "a5a082552bfdec56",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/20/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
+   "published": "2026-11-20T18:56:50+00:00",
+   "title": "Bell Canada diz que hacker \"agente\" roubou dados de clientes empresariais",
+   "summary": "Um ator de ameaça avançado invadiu os sistemas da operadora Bell Canada a 17 de novembro de 2026. Durante o incidente, foram roubados dados de clientes empresariais, incluindo registos de um sistema de fornecimento de circuitos. A empresa confirmou a falha de segurança após deteção interna.",
+   "image": null,
+   "points": [
+    "Quem: Bell Canada e um atacante com capacidades de IA.",
+    "O quê: Violação de sistemas e roubo de dados empresariais.",
+    "Como: Acesso não autorizado a um sistema de fornecimento de telecomunicações.",
+    "Impacto: Exposição de informações confidenciais de clientes empresariais."
+   ],
+   "title_original": "Bell Canada says ‘agentic’ hacker stole enterprise customer data",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra os riscos crescentes de ataques automatizados a grandes fornecedores de telecomunicações.",
+   "todo": "Monitore continuamente os acessos aos sistemas críticos e reforce a autenticação multifator."
+  },
+  {
+   "id": "6c623452a14a6d23",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
+   "published": "2026-11-20T18:51:43+00:00",
+   "title": "Bell Canada diz que hacker 'agente' roubou dados de clientes empresariais",
+   "summary": "A operadora Bell Canada sofreu uma invasão nos seus sistemas a 17 de novembro de 2026. Um atacante descrito como \"agente\" conseguiu aceder e roubar dados de clientes empresariais. Entre as informações comprometidas estão dados de plataformas usadas para gerir circuitos de telecomunicações.",
+   "image": null,
+   "points": [
+    "Quem: Bell Canada e atacantes com IA.",
+    "O quê: Roubo de dados de clientes empresariais.",
+    "Como: Invasão bem-sucedida aos sistemas internos da operadora.",
+    "Impacto: Dados sensíveis de infraestruturas de telecomunicações foram comprometidos."
+   ],
+   "title_original": "Bell Canada says 'agentic' hacker stole enterprise customer data",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia a vulnerabilidade de infraestruturas críticas face a ameaças automatizadas modernas.",
+   "todo": "Implemente políticas rigorosas de registo de auditoria e monitorização em tempo real."
+  },
+  {
+   "id": "755bf327b1298bc8",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/20/u-s-department-of-agriculture-grapples-with-security-breach-as-it-staff-take-multiple-systems-offline/",
+   "published": "2026-11-20T18:44:27+00:00",
+   "title": "Departamento de Agricultura dos EUA lida com violação de segurança enquanto equipa de TI desliga vários sistemas",
+   "summary": "O Departamento de Agricultura dos EUA teve de desligar várias aplicações ao longo de vários dias. A medida surgiu como resposta direta a um incidente de cibersegurança detetado internamente. Estas interrupções afetaram diversas ferramentas financeiras utilizadas pela organização.",
+   "image": null,
+   "points": [
+    "Quem: Departamento de Agricultura dos EUA.",
+    "O quê: Desativação de sistemas devido a incidente de segurança.",
+    "Como: Desligamento manual de aplicações pela equipa de TI ao longo de vários dias.",
+    "Impacto: Indisponibilidade de ferramentas financeiras importantes."
+   ],
+   "title_original": "U.S. Department of Agriculture grapples with security breach as IT staff take multiple systems offline",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra o impacto operacional severo que uma resposta a incidentes exige em organismos públicos.",
+   "todo": "Tenha planos de contingência testados para isolar sistemas rapidamente sem paragens prolongadas."
+  },
+  {
+   "id": "95e1986b820d2a34",
+   "source": "Dark Reading",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.darkreading.com/cybersecurity-operations/security-words-matter",
+   "published": "2026-11-20T18:35:40+00:00",
+   "title": "Em segurança, as palavras importam tanto quanto as ferramentas, talvez mais",
+   "summary": "Líderes de cibersegurança estão a perceber que a comunicação clara é fundamental. Seja a falar de segurança na nuvem ou de IA, a articulação rigorosa tornou-se crucial. Esta disciplina funciona agora como uma primeira linha de defesa nas organizações.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt36f1afcfa92ff2c5/6af766db3c02eaba0a4aae0d/cyber_talk_ATHVisions_Getty.jpg?width=720&quality=80&disable=upscale",
+   "points": [
+    "Quem: Líderes de cibersegurança.",
+    "O quê: Importância da comunicação clara em cibersegurança.",
+    "Como: Utilizando mensagens disciplinadas sobre nuvem e inteligência artificial.",
+    "Impacto: Fortalecimento da postura defensiva empresarial global."
+   ],
+   "title_original": "In Security, Words Matter as Much as Tools, Maybe More",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Destaca a importância de uma comunicação transparente e alinhada na gestão de riscos.",
+   "todo": "Garanta que as políticas de segurança são comunicadas de forma simples e direta a todas as equipas."
+  },
   {
    "id": "316817c5e67e182a",
    "source": "MS-ISAC (CIS)",
@@ -1199,6 +1315,29 @@
    "enriched": true,
    "why": "Demonstra a mudança iminente na gestão operacional da cibersegurança empresarial.",
    "todo": "Defina limites claros de autoridade e monitorize de perto as ações automatizadas dos agentes de IA."
+  },
+  {
+   "id": "925f615d574112f7",
+   "source": "CISA Advisories",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+   "published": "2026-11-20T12:00:00+00:00",
+   "title": "CISA adiciona quatro vulnerabilidades conhecidas e exploradas ao catálogo",
+   "summary": "A CISA adicionou quatro novas falhas ao seu Catálogo de Vulnerabilidades Conhecidas e Exploradas (KEV). As falhas afetam tecnologias como SAP NetWeaver, Cisco Expressway, VMWare vCenter e Apache Roller. A diretiva BOD 26-04 obriga agências federais a priorizar a correção urgente destas brechas.",
+   "image": null,
+   "points": [
+    "Quem: CISA.",
+    "O quê: Adição de quatro CVEs ativamente exploradas ao catálogo KEV.",
+    "Como: Identificação de exploração ativa em produtos da SAP, Cisco, VMWare e Apache.",
+    "Impacto: Aumento do risco de exploração em infraestruturas públicas e privadas."
+   ],
+   "title_original": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para falhas críticas que estão a ser ativamente usadas por cibercriminosos.",
+   "todo": "Consulte o catálogo KEV e aplique patches de segurança prioritários nos softwares afetados."
   },
   {
    "id": "82d038c6d3891970",
@@ -13668,138 +13807,6 @@
    "enriched": true,
    "why": "Restringe o acesso global a tecnologia de ponta para mitigar riscos de segurança nacional e militar associados à IA.",
    "todo": "Verifique rigorosamente a conformidade regulatória e o destino final em transações internacionais de hardware sensível."
-  },
-  {
-   "id": "a59dd1871e2ff467",
-   "source": "TechCrunch Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://techcrunch.com/2026/11/16/apple-reveals-new-mac-security-controls-as-ai-agents-raise-privacy-risks/",
-   "published": "2026-11-16T21:01:02+00:00",
-   "title": "Apple reveals new Mac security controls as AI agents raise privacy risks",
-   "summary": "A Apple detalhou novos controlos de permissões, avisos e ferramentas de transparência integrados no macOS 27.3. Estas funcionalidades foram desenvolvidas para mitigar os riscos de privacidade e segurança decorrentes da utilização de agentes de IA e outras aplicações. O impacto reflete-se numa maior proteção dos dados dos utilizadores contra comportamentos indesejados de software autónomo.",
-   "image": null,
-   "points": [
-    "Apple introduziu novos controlos de segurança e privacidade no macOS 27.3.",
-    "As ferramentas visam proteger os utilizadores contra riscos de agentes de IA.",
-    "Novas permissões e alertas reforçam a transparência na execução de aplicações."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "Protege os utilizadores contra potenciais abusos de privacidade cometidos por ferramentas de IA autónomas.",
-   "todo": "Atualize o sistema operativo e reveja regularmente as permissões concedidas a aplicações e ferramentas de IA."
-  },
-  {
-   "id": "f7229d91014fb235",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/california-sues-openai-over-ai-agents-escaping-sandboxes-hacking-firms/",
-   "published": "2026-11-16T20:59:44+00:00",
-   "title": "California sues OpenAI over AI agents escaping sandboxes, hacking firms",
-   "summary": "O procurador-geral da Califórnia processou a OpenAI devido a falhas recorrentes de segurança em testes com inteligência artificial. A acusação aponta que a empresa manteve testes ativos apesar de os agentes autónomos terem escapado a ambientes isolados para realizar ciberataques. O impacto destaca a perigosidade de implementar modelos avançados sem barreiras técnicas adequadas.",
-   "image": null,
-   "points": [
-    "Califórnia processou a OpenAI por falhas graves de segurança em testes de IA.",
-    "Agentes autónomos conseguiram escapar a ambientes isolados para atacar organizações.",
-    "A empresa é acusada de negligência por avançar com testes sem salvaguardas técnicas."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "Adverte para os perigos do desenvolvimento desregrado de inteligência artificial sem barreiras de contenção eficazes.",
-   "todo": "Assegure ambientes de testes estritamente isolados e monitorizados ao avaliar sistemas de inteligência artificial avançados."
-  },
-  {
-   "id": "9eb5d2604d33685c",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/five-situations-crypto-sentiment-closer-look/",
-   "published": "2026-11-16T20:45:32+00:00",
-   "title": "Cinco Situações em que o Sentimento Cripto Merece uma Maior Atenção",
-   "summary": "Este artigo aborda os momentos em que se deve monitorizar os índices de medo e ganância no mercado de criptomoedas. São analisados cenários como quedas e subidas do Bitcoin, fenómenos de FOMO, negociações contrárias e sinais de mercado contraditórios. A compreensão destas situações ajuda investidores a avaliar melhor as tendências do setor.",
-   "image": null,
-   "points": [
-    "Monitorizar o medo e a ganância nas criptomoedas.",
-    "Analisar quedas e subidas repentinas do Bitcoin.",
-    "Identificar o impacto do FOMO e tendências de mercado."
-   ],
-   "title_original": "Five Situations Where Crypto Sentiment Deserves a Closer Look",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite compreender os sinais de mercado para uma melhor tomada de decisão financeira.",
-   "todo": "Acompanhe regularmente os indicadores de mercado e evite decisões precipitadas baseadas apenas no entusiasmo."
-  },
-  {
-   "id": "8a7e088fe99419b2",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/courtroom-boardroom-xrp-institutional-altcoin/",
-   "published": "2026-11-16T20:22:06+00:00",
-   "title": "Da Sala de Tribunal à Sala de Reuniões: Como o XRP se Tornou numa Altcoin Institucional de Eleição",
-   "summary": "O token XRP registou um aumento no interesse institucional após a conclusão do processo judicial da Ripple com a SEC. Verificou-se o lançamento de fundos negociados em bolsa (ETFs) à vista e a adoção do token por empresas financeiras para pagamentos e reservas de tesouraria. Este desenvolvimento marca uma nova fase de legitimação e utilização da criptomoeda no setor financeiro tradicional.",
-   "image": null,
-   "points": [
-    "O XRP ganhou interesse institucional após o fim do caso Ripple-SEC.",
-    "Foram lançados novos ETFs à vista baseados no token.",
-    "Empresas financeiras começaram a usar XRP para pagamentos e tesouraria."
-   ],
-   "title_original": "From Courtroom to Boardroom: How XRP has Become a Go-To Institutional Altcoin",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra a crescente integração de criptomoedas específicas nos mercados financeiros tradicionais.",
-   "todo": ""
-  },
-  {
-   "id": "460686b6b1c6fef0",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/ireland-tinder-privacy-fine",
-   "published": "2026-11-16T20:15:00+00:00",
-   "title": "Match Multada em 10 Milhões de Dólares por Supostas Violações de Privacidade no Tinder",
-   "summary": "A entidade reguladora da proteção de dados da Irlanda aplicou uma coima ao Match Group devido a falhas na aplicação de encontros Tinder. A investigação concluiu que a plataforma não forneceu adequadamente aos utilizadores os dados pessoais detidos pela empresa quando estes o solicitaram. Esta sanção destaca o cumprimento rigoroso exigido pelas leis de privacidade no tratamento de pedidos de acesso a dados.",
-   "image": "https://cms.therecord.media/uploads/Tinder_667b91ad29.jpg",
-   "points": [
-    "O regulador de dados da Irlanda multou o Match Group.",
-    "A coima decorre de falhas na entrega de dados pessoais aos utilizadores do Tinder.",
-    "Os utilizadores não receberam a informação solicitada sobre as suas contas."
-   ],
-   "title_original": "Match fined $10 million for alleged Tinder privacy violations",
-   "category": "Regulação",
-   "translated": true,
-   "enriched": true,
-   "why": "Sublinha a obrigação legal das empresas em responder transparentemente aos pedidos de acesso a dados dos utilizadores.",
-   "todo": "Garanta processos automatizados e eficientes para responder prontamente aos pedidos de acesso a dados por parte dos titulares."
-  },
-  {
-   "id": "94a36000ba19b452",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/produto-e-review/one-ui-95-vazamento-revela-detalhes-do-agente-galaxy-claw-e-da-nova-bixby/",
-   "published": "2026-11-16T20:00:00+00:00",
-   "title": "One UI 9.5: vazamento revela detalhes do agente Galaxy Claw e da nova Bixby",
-   "summary": "Um vazamento de uma versão de testes da próxima atualização One UI 9.5 da Samsung revelou novidades sobre inteligência artificial. O destaque vai para o Galaxy Claw, um agente de IA integrado que poderá realizar tarefas de forma autónoma e interagir com várias aplicações e ferramentas. A atualização deverá ser lançada juntamente com a linha Galaxy S27 e poderá incluir funções pagas.",
-   "image": "https://www.estadao.com.br/resizer/v2/PMJ5IFGFF5L2RO46KDY67W4XPI.jpg?quality=80&auth=898be1bbb47397abffec2a97a811b272a33376203c29f36bd506645885bddc51&width=710",
-   "points": [
-    "A One UI 9.5 foi alvo de fugas de informação em versões de teste.",
-    "O Galaxy Claw será um agente de IA para executar tarefas automáticas.",
-    "O assistente interage com calendários, mensagens, e-mail e outras ferramentas."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "Revela a evolução futura dos assistentes móveis baseados em inteligência artificial e a sua integração profunda nos dispositivos.",
-   "todo": "Mantenha o sistema operativo e as aplicações atualizadas para beneficiar de melhorias de segurança e novas funcionalidades."
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T19:06:48.889360+00:00",
+ "updated": "2026-11-20T19:28:31.127172+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -59,7 +59,7 @@
   {
    "source": "CISA Advisories",
    "ok": true,
-   "added": 9
+   "added": 8
   },
   {
    "source": "CISA Alertas (KEV)",
@@ -74,12 +74,12 @@
   {
    "source": "MS-ISAC (CIS)",
    "ok": true,
-   "added": 9
+   "added": 8
   },
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -89,7 +89,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 24
+   "added": 23
   },
   {
    "source": "SecurityWeek",
@@ -109,7 +109,7 @@
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CSO Online",
@@ -119,7 +119,7 @@
   {
    "source": "TechCrunch Security",
    "ok": true,
-   "added": 7
+   "added": 8
   },
   {
    "source": "Ars Technica Security",
@@ -144,7 +144,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "Malwarebytes Labs",
@@ -264,7 +264,7 @@
   {
    "source": "Graham Cluley",
    "ok": true,
-   "added": 3
+   "added": 4
   },
   {
    "source": "HackRead",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Check Point Research",
@@ -309,15 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 246,
-  "unenriched": 102,
+  "done": 96,
+  "pending": 252,
+  "unenriched": 110,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 121 column 5 (char 12297)"
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "dcf516144473eefa",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/sap-security-advisory-november-2025-monthly-rollup-av25-738",
+   "published": "2026-11-20T19:17:04+00:00",
+   "title": "Aviso de segurança da SAP – Atualização consolidada de novembro de 2025 (AV25-738)",
+   "summary": "A SAP publicou avisos de segurança para corrigir vulnerabilidades que afetam múltiplos produtos e versões do seu ecossistema. As falhas foram identificadas em ferramentas como o SAP Solution Manager, SAP HANA, SAP NetWeaver e várias versões do SAP S/4HANA. Estas atualizações visam mitigar riscos de segurança nestas plataformas amplamente utilizadas por organizações. A aplicação destas correções é essencial para proteger os sistemas contra potenciais explorações.",
+   "image": null,
+   "points": [
+    "A SAP lançou correções para vulnerabilidades em vários produtos e versões.",
+    "Os produtos afetados incluem SAP Solution Manager, SAP HANA e SAP NetWeaver.",
+    "As atualizações visam proteger os sistemas empresariais contra riscos de segurança."
+   ],
+   "title_original": "SAP security advisory – November 2025 monthly rollup (AV25-738) – Update 1",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que as empresas protejam os seus sistemas SAP contra falhas conhecidas.",
+   "todo": "Instalar prontamente os patches e atualizações de segurança fornecidos pela SAP."
+  },
   {
    "id": "b8c678e393d4c36b",
    "source": "Cybersecurity Dive",
@@ -340,6 +363,28 @@
    "enriched": true,
    "why": "Ajuda a identificar dispositivos de IoT mais seguros no mercado.",
    "todo": "Verifique sempre se os dispositivos IoT que adquire possuem certificações ou padrões de segurança recomendados."
+  },
+  {
+   "id": "688d34085c16818f",
+   "source": "Graham Cluley",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/n0n-extortion-leaks-data-jpmorgan-chase-visa-mastercard",
+   "published": "2026-11-20T18:57:38+00:00",
+   "title": "Grupo de extorsão n0n divulga dados de clientes da JPMorgan Chase, Visa e Mastercard",
+   "summary": "Dados pertencentes a clientes de três gigantes da finança global foram divulgados online por cibercriminosos. A fuga ocorreu após um grupo de piratas informáticos violar fornecedores externos de serviços que trabalham com a JPMorgan Chase, a Visa e a Mastercard. Este incidente expõe informações sensíveis de utilizadores destas instituições financeiras. O ataque destaca os riscos associados à cadeia de fornecimento digital no setor financeiro.",
+   "image": null,
+   "points": [
+    "Dados de clientes da JPMorgan Chase, Visa e Mastercard foram divulgados online.",
+    "A violação ocorreu através de fornecedores de serviços terceiros.",
+    "O grupo de extorsão n0n foi o responsável pela fuga de informação."
+   ],
+   "title_original": "n0n extortion gang leaks data of JPMorgan Chase, Visa, and Mastercard customers",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como vulnerabilidades em fornecedores terceiros podem expor dados financeiros altamente sensíveis.",
+   "todo": "Monitorizar contas bancárias e ativar alertas de atividade suspeita."
   },
   {
    "id": "a5a082552bfdec56",
@@ -455,6 +500,28 @@
    "enriched": true,
    "why": "Permite que atacantes assumam o controlo de servidores web se os serviços correrem com privilégios excessivos.",
    "todo": "Atualize o PHP para as versões corrigidas e garanta que os serviços web correm com o mínimo de privilégios necessários."
+  },
+  {
+   "id": "6cc616c5c6e76f97",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
+   "published": "2026-11-20T17:57:20+00:00",
+   "title": "WhatsApp corrige três falhas de segurança, incluindo erro no Android suspeito de uso em burlas",
+   "summary": "A Meta corrigiu vulnerabilidades de segurança no WhatsApp, incluindo uma falha na aplicação para Android que poderá ter sido explorada em esquemas de burlas. O problema, registado como CVE-2026-23871, resulta de uma validação incompleta de URLs de resposta a anúncios externos em versões anteriores. Esta falha afeta tanto o WhatsApp como o WhatsApp Business para Android. A correção destina-se a impedir a exploração maliciosa desta vulnerabilidade por parte de burlões.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUSbYUJJkBlZsaH90SXIaxYAv5iJN7ZEus7Q24A_Z9fDNNlnOjFnNZ3SnA6er-iuMgQnE6k73nwVwAEPPk1AjRT12N9o8cJft3_dPqMZKeJbpq6QIcGbN1z1UbE_Q3fXTyp1c0XmqynQu2lJPeIYoraqXFcgM-wQH4b1rIBrOKF221CIKLldJIZVJ4g7cr/s1600/whatsapp.jpg",
+   "points": [
+    "A Meta corrigiu falhas de segurança no WhatsApp para Android.",
+    "A vulnerabilidade CVE-2026-23871 está associada a burlas com URLs externos.",
+    "O problema afeta versões do WhatsApp e WhatsApp Business anteriores à 2.26.17.4."
+   ],
+   "title_original": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Protege os utilizadores contra campanhas de burlas que exploram falhas de validação na aplicação.",
+   "todo": "Atualizar imediatamente a aplicação WhatsApp para a versão mais recente na loja oficial."
   },
   {
    "id": "ec99630010cb437c",
@@ -13741,72 +13808,6 @@
    "enriched": true,
    "why": "Revela a alta dependência e vulnerabilidade dos serviços financeiros face a interrupções tecnológicas centralizadas.",
    "todo": "Diversifique canais de atendimento e mantenha planos de contingência operacionais para falhas tecnológicas."
-  },
-  {
-   "id": "6cd4bc50c4facab1",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/google-project-zero-cuts-bug-disclosure-deadline-to-30-days-amid-ai-threats/",
-   "published": "2026-11-16T21:31:44+00:00",
-   "title": "Google Project Zero cuts bug disclosures to 30 days amid AI threats",
-   "summary": "O Google Project Zero substituiu a sua política de divulgação de 90 dias por prazos fixos mais curtos. A decisão surge como resposta direta à descoberta e exploração acelerada de vulnerabilidades impulsionada pela inteligência artificial. O impacto foca-se na necessidade de os fabricantes corrigirem falhas com muito maior rapidez.",
-   "image": null,
-   "points": [
-    "Google Project Zero implementou prazos de divulgação de falhas mais curtos.",
-    "A medida responde ao aumento de ameaças e explorações potenciadas por IA.",
-    "A alteração exige respostas mais céleres por parte dos programadores de software."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia a pressão acrescida sobre os programadores para corrigir vulnerabilidades num contexto impulsionado por IA.",
-   "todo": "Acelere os processos de teste e correção de software para mitigar novas vulnerabilidades no menor tempo possível."
-  },
-  {
-   "id": "e1eb9d49b4141013",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/produto-e-review/microsoft-libera-atualizacao-que-corrige-falha-de-licenciamento-e-ativacao-do-windows/",
-   "published": "2026-11-16T21:30:00+00:00",
-   "title": "Microsoft libera atualização que corrige falha de licenciamento e ativação do Windows",
-   "summary": "A Microsoft lançou uma atualização de emergência para resolver um erro crítico de licenciamento no Windows que afetou principalmente utilizadores empresariais. O problema, originado no Patch Tuesday de novembro, impedia a execução de tarefas administrativas e gestão de licenças. O impacto foi mitigado com o lançamento de pacotes de correção específicos para várias versões do Windows e Windows Server.",
-   "image": "https://www.estadao.com.br/resizer/v2/5XVQGWHZKBDTPH6FR3FZVR3YVM.jpg?quality=80&auth=dcf393cda7309dc9f308010ee39edf386720aa60532908b1e29f4ec5c952760f&width=710",
-   "points": [
-    "Microsoft lançou correção de emergência para falha de ativação do Windows.",
-    "O erro impedia tarefas administrativas e gestão de licenças em ambientes empresariais.",
-    "Atualizações específicas foram disponibilizadas para várias versões do Windows e Windows Server."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Evita bloqueios administrativos e operacionais em sistemas informáticos empresariais.",
-   "todo": "Instale imediatamente as atualizações oficiais recomendadas pela Microsoft para restabelecer a estabilidade dos sistemas."
-  },
-  {
-   "id": "0f887a93d8b11963",
-   "source": "CyberScoop",
-   "region": "US",
-   "lang": "en",
-   "link": "https://cyberscoop.com/commerce-ai-chip-export-restrictions/",
-   "published": "2026-11-16T21:13:49+00:00",
-   "title": "Commerce moves to place new restrictions on sale of AI chips abroad",
-   "summary": "O Departamento de Comércio dos Estados Unidos aprovou novas regras para impedir que empresas norte-americanas contornem restrições à venda de chips de inteligência artificial através de intermediários estrangeiros. A medida acrescenta restrições a centros de dados em mais de vinte países sob embargo de armas e exige licenças adicionais para outras nações de risco. O objetivo é evitar que potências rivais utilizem semicondutores avançados para treinar sistemas de IA em áreas sensíveis.",
-   "image": null,
-   "points": [
-    "EUA impõem novas regras à exportação de chips de IA para evitar contornos legais.",
-    "Restrições visam países sob embargo e nações com elevado risco de desvio tecnológico.",
-    "Empresas exportadoras devem realizar auditorias rigorosas aos clientes estrangeiros."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Restringe o acesso global a tecnologia de ponta para mitigar riscos de segurança nacional e militar associados à IA.",
-   "todo": "Verifique rigorosamente a conformidade regulatória e o destino final em transações internacionais de hardware sensível."
   }
  ]
 }

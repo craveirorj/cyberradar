@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T14:10:55.096798+00:00",
+ "updated": "2026-11-20T14:26:36.858046+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CISA Advisories",
@@ -209,7 +209,7 @@
   {
    "source": "Tenable",
    "ok": true,
-   "added": 5
+   "added": 4
   },
   {
    "source": "Zero Day Initiative",
@@ -234,12 +234,12 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 18
+   "added": 19
   },
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 7
+   "added": 8
   },
   {
    "source": "Help Net Security",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -309,15 +309,39 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 231,
-  "unenriched": 95,
+  "done": 24,
+  "pending": 313,
+  "unenriched": 178,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "8c71d1d140fee16b",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/ransomware-recovery-20-days/",
+   "published": "2026-11-20T14:15:00+00:00",
+   "title": "Recuperação de ransomware demora 20 dias para a vítima típica, revela relatório",
+   "summary": "Um estudo recente da Rubrik concluiu que as vítimas de ataques de ransomware enfrentam um período médio de 20 dias para conseguir recuperar os seus sistemas. Além disso, o relatório indica que cerca de 28% dos casos de recuperação ultrapassam um prazo de seis semanas. Esta demora prolongada acentuou o impacto operacional e financeiro nas organizações afetadas.",
+   "image": null,
+   "points": [
+    "Rubrik publicou um relatório sobre o tempo de recuperação de ataques de ransomware.",
+    "A mediana do tempo de recuperação situa-se nos 20 dias para as vítimas.",
+    "Mais de um quarto dos casos analisados demorou mais de seis semanas a recuperar.",
+    "O impacto traduz-se em longos períodos de inatividade para as empresas afetadas."
+   ],
+   "title_original": "Ransomware Recovery Takes 20 Days for the Typical Victim, Report Finds",
+   "category": "Ransomware",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que os ataques de ransomware causam paragens prolongadas que afetam gravemente a continuidade do negócio.",
+   "todo": "Invista em cópias de segurança offline e imutáveis e teste regularmente os seus planos de recuperação de desastres."
+  },
   {
    "id": "096e0ef0231d7dec",
    "source": "Tenable",
@@ -334,12 +358,35 @@
     "Necessidade de mapear caminhos de escalação de privilégios.",
     "Priorização de correções baseada em evidências de exploração."
    ],
-   "title_original": "How exposure management can help public sector prepare for PHP2Shell-like vulnerabilities",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "A aceleração no tempo de exploração de falhas críticas exige uma gestão rigorosa da exposição e mapeamento prévio de ativos.",
    "todo": "Mapeie todos os ativos onde o PHP executa na sua infraestrutura e estabeleça planos de contingência para sistemas que não podem ser corrigidos de imediato."
+  },
+  {
+   "id": "56f258bfaf45ca74",
+   "source": "Malwarebytes Labs",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.malwarebytes.com/blog/news/2026/11/us-launches-center-to-disrupt-scams-and-warn-victims-sooner",
+   "published": "2026-11-20T13:49:11+00:00",
+   "title": "EUA lançam centro para interromper fraudes e alertar vítimas mais rapidamente",
+   "summary": "Foi criada uma nova iniciativa governamental nos Estados Unidos para combater redes criminosas focadas em fraudes. O Threat Disruption Center une investigadores e empresas participantes com o objetivo de congelar pagamentos e bloquear contas maliciosas. A tecnologia de inteligência blockchain fornecida pela TRM Labs apoia este esforço de intervenção célere.",
+   "image": null,
+   "points": [
+    "O governo dos EUA lançou o Threat Disruption Center para combater burlas.",
+    "A entidade junta investigadores e empresas privadas para congelar fundos e bloquear domínios.",
+    "A TRM Labs fornece a tecnologia de inteligência em blockchain para a investigação.",
+    "O impacto foca-se em travar o dinheiro roubado antes que desapareça."
+   ],
+   "title_original": "US launches center to disrupt scams and warn victims sooner",
+   "category": "Phishing/Fraude",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite uma resposta mais rápida contra fraudadores financeiros, dificultando a retenção de fundos roubados.",
+   "todo": "Desconfie de contactos inesperados sobre dinheiro e reporte imediatamente qualquer suspeita de burla às autoridades competentes."
   },
   {
    "id": "6a9674fffab60e12",
@@ -402,9 +449,9 @@
     "Primeiro caso conhecido de exploração desta falha no terreno.",
     "A Cisco disponibilizou uma correção para o problema."
    ],
-   "title_original": "Hackers Exploit Cisco Expressway Flaw CVE-2026-76466 to Breach Russian Organization",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "A rápida weaponização de falhas após a divulgação pública coloca em risco imediato os dispositivos perimetrais expostos.",
    "todo": "Aplique imediatamente as atualizações de segurança disponibilizadas pela Cisco para os dispositivos afetados e restrinja o acesso à Internet."
@@ -13737,50 +13784,6 @@
    "enriched": true,
    "why": "Revela como discrepâncias subtis de codificação de caracteres podem ser exploradas para subverter controlos de acesso locais.",
    "todo": "Aplicar atualizações de segurança para as ferramentas afetadas e validar a normalização de caminhos no código."
-  },
-  {
-   "id": "14f862c2b309ef7e",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/systems/2026/11/16/us-allies-deepen-deal-to-guard-ai-supply-chains-against-hostile-actors-cough-china-cough/5310094",
-   "published": "2026-11-16T16:15:00+00:00",
-   "title": "Aliados dos EUA aprofundam acordo para proteger cadeias de abastecimento de IA contra 'atores hostis'",
-   "summary": "Vários países aliados assinaram uma declaração conjunta promovida pelos Estados Unidos para blindar as cadeias de abastecimento de tecnologias de inteligência artificial. A iniciativa visa proteger componentes essenciais, semicondutores e infraestruturas críticas contra a apropriação por parte de agentes estatais hostis. O acordo representa uma tentativa concertada de mitigar riscos económicos e de segurança nacional.",
-   "image": "https://image.theregister.com/?imageId=5244738&width=800",
-   "points": [
-    "Nove países assinam acordo para proteger cadeias de abastecimento de IA.",
-    "Foco na segurança de semicondutores e tecnologias fundamentais.",
-    "Esforço conjunto para afastar ameaças de atores hostis."
-   ],
-   "title_original": "US allies deepen deal to guard AI supply chains against 'hostile actors' (cough, China, cough)",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia a crescente militarização e proteção geopolítica das cadeias de valor tecnológico global.",
-   "todo": "Diversificar fornecedores tecnológicos e verificar a proveniência de componentes críticos de hardware e software."
-  },
-  {
-   "id": "c5483d554284f28c",
-   "source": "Cybersecurity Dive",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cybersecuritydive.com/news/ai-agentic-frameworks-artex-google-fbi/874753/",
-   "published": "2026-11-16T16:00:20+00:00",
-   "title": "Frameworks de IA agêntica elevam ameaça de pirataria informática a 'ponto de viragem', avisa a Google",
-   "summary": "A gigante tecnológica alertou as organizações para os perigos decorrentes de uma nova geração de ferramentas de pirataria informática totalmente automatizadas. Estas tecnologias baseadas em IA agêntica facilitam a execução de ataques complexos de forma autónoma e a baixo custo. O aviso aponta para uma mudança drástica no panorama de risco para as equipas de segurança.",
-   "image": "https://imgproxy.divecdn.com/O3l_kgFFloXc_KXt7ZbLrsseB_Lqr2BsEBGEMARwk2g/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjMzOTU5MTc3LmpwZw==.webp",
-   "points": [
-    "Google alerta para o impacto da IA agêntica nas ameaças cibernéticas.",
-    "Ferramentas automatizadas tornam os ataques mais acessíveis e rápidos.",
-    "Necessidade urgente de adaptação das defesas organizacionais."
-   ],
-   "title_original": "Agentic AI frameworks push hacking threat to ‘inflection point,’ Google warns",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Marca uma mudança de paradigma onde a automação inteligente barateia e acelera drasticamente a atividade maliciosa.",
-   "todo": "Adotar abordagens de segurança baseadas em IA para antecipar e combater ataques automatizados em tempo real."
   }
  ]
 }

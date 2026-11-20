@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T07:26:21.335889+00:00",
+ "updated": "2026-11-20T07:46:24.306752+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -311,13 +311,59 @@
   "provider": "gemini",
   "done": 120,
   "pending": 202,
-  "unenriched": 78,
+  "unenriched": 79,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "009f6643a8548564",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/",
+   "published": "2026-11-20T07:35:46+00:00",
+   "title": "JPMorgan, Visa e Mastercard citam incidentes de terceiros após fuga de dados",
+   "summary": "As empresas JPMorgan, Visa e Mastercard foram alvo de uma fuga de dados que expôs informações dos seus clientes. O incidente foi atribuído ao grupo de extorsão N0n. As instituições financeiras indicaram que a origem do problema reside em fornecedores externos de serviços. O impacto direto reflete-se na segurança dos dados dos utilizadores destas plataformas.",
+   "image": null,
+   "points": [
+    "Grupo N0n expôs dados de clientes.",
+    "Incidente originado em fornecedores terceiros.",
+    "Afeta JPMorgan, Visa e Mastercard.",
+    "Dados sensíveis de utilizadores comprometidos."
+   ],
+   "title_original": "JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra como a segurança de uma empresa depende da resiliência dos seus parceiros e fornecedores.",
+   "todo": "Avalie regularmente a postura de segurança dos seus fornecedores e limite o acesso a dados sensíveis ao estritamente necessário."
+  },
+  {
+   "id": "ba74506a96acc2d3",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
+   "published": "2026-11-20T07:11:39+00:00",
+   "title": "Ataques ROMULUS ClickFix distribuem RAT para espionar utilizadores e controlar PCs",
+   "summary": "Cibercriminosos estão a utilizar a plataforma ROMULUS ClickFix para disseminar um novo trojan de acesso remoto (RAT). Este malware partilha semelhanças com o CNCMachineRMS e permite o controlo total dos computadores infetados. A técnica envolve o uso de binários assinados para contornar defesas. O objetivo é a espionagem e a tomada de controlo de sistemas.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjugg63OPJwZuh94vDIg7MkA4YoeLKr5sjiqI6CEgjvDjUvJ-pBJOfUrUBxPUTbartqVwdldczbKSYo6lpkcVic1EDQYIDyWq12zMdMONjpDtK4NKCgkppAWvnOJpXe7prfmRG8WNpH0RrQ0bhX2nZKGpRy33y0OMZraBjEPoDorp9h3kNJSa-IQrJC7Nl5/s1600/cf.jpg",
+   "points": [
+    "Plataforma ROMULUS ClickFix usada para ataques.",
+    "Novo RAT permite espionagem e controlo remoto.",
+    "Utiliza técnicas de sideloading de binários assinados.",
+    "Semelhanças com o malware CNCMachineRMS."
+   ],
+   "title_original": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "A utilização de binários assinados torna estes ataques mais difíceis de detetar por soluções de segurança tradicionais.",
+   "todo": "Mantenha o software atualizado e utilize soluções de segurança que detetem comportamentos anómalos, não apenas assinaturas de ficheiros."
+  },
   {
    "id": "dc6901c8a6d8ff52",
    "source": "The Hacker News",
@@ -13723,52 +13769,6 @@
    "enriched": true,
    "why": "Evidencia o equilíbrio entre a redução de custos na IA e a necessidade de salvaguardas contra usos maliciosos.",
    "todo": "Teste e valide modelos de IA generativa num ambiente controlado antes de os integrar em processos críticos de negócio."
-  },
-  {
-   "id": "85e7b1ab4fdf2798",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/podcast/2026/11/how-to-prepare-your-data-for-your-death-lock-and-code-s07e23",
-   "published": "2026-11-16T12:20:44+00:00",
-   "title": "Como preparar os seus dados para após a morte",
-   "summary": "A gestão de espólios digitais tornou-se um desafio complexo devido à quantidade de contas online que cada utilizador possui atualmente. Especialistas apontam que o cidadão médio acumula centenas de contas em plataformas geridas por empresas terceiras. Perder estes dados coloca em risco o património cultural e familiar armazenado em formato digital. Para mitigar este problema, a medida mais importante não é técnica, mas sim comunicar claramente os desejos aos familiares.",
-   "image": null,
-   "points": [
-    "O utilizador médio possui centenas de contas online associadas à sua identidade.",
-    "A ausência de planeamento pode resultar na perda permanente de memórias digitais.",
-    "A maior dificuldade reside na gestão dos dados por parte de empresas e plataformas.",
-    "O passo mais importante é comunicar verbalmente os desejos aos familiares."
-   ],
-   "title_original": "How to prepare your data for your death (Lock and Code S07E23)",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Salva memórias e dados pessoais valiosos da perda permanente após o falecimento do titular.",
-   "todo": "Converse abertamente com os seus familiares sobre o destino que pretende dar às suas contas e fotografias digitais."
-  },
-  {
-   "id": "64c0dc284c8fc37f",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/project-zero-disclosure-deadline/",
-   "published": "2026-11-16T12:15:00+00:00",
-   "title": "Google Project Zero vai reduzir o prazo de divulgação de falhas para 30 dias até 2028",
-   "summary": "A equipa Project Zero da Google planeia encurtar o prazo para a divulgação pública de falhas de segurança. Até 2028, os detalhes das vulnerabilidades detetadas serão publicados 30 dias após a notificação inicial, independentemente de já existirem correções disponíveis. Esta medida pretende pressionar os fabricantes a acelerarem a disponibilização de atualizações. O objetivo é aumentar a proteção dos utilizadores finais contra explorações ativas.",
-   "image": null,
-   "points": [
-    "O Project Zero da Google vai reduzir o prazo de divulgação para 30 dias.",
-    "A medida será totalmente implementada até 2028.",
-    "Os detalhes serão publicados independentemente de existirem correções.",
-    "A iniciativa visa forçar uma resposta mais rápida por parte dos fornecedores."
-   ],
-   "title_original": "Google Project Zero to Cut Disclosure Deadline to 30 Days by 2028",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Aumenta a urgência na correção de vulnerabilidades por parte dos fabricantes de software.",
-   "todo": "Estabeleça processos internos ágeis para aplicar atualizações de segurança assim que sejam disponibilizadas pelos fornecedores."
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T10:47:09.600695+00:00",
+ "updated": "2026-11-20T11:09:20.364013+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -149,7 +149,7 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 6
+   "added": 8
   },
   {
    "source": "Microsoft Security Blog",
@@ -204,7 +204,7 @@
   {
    "source": "Rapid7",
    "ok": true,
-   "added": 5
+   "added": 6
   },
   {
    "source": "Tenable",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Security Affairs",
@@ -310,14 +310,58 @@
  "translation": {
   "provider": "gemini",
   "done": 108,
-  "pending": 224,
-  "unenriched": 95,
+  "pending": 225,
+  "unenriched": 98,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 129 column 5 (char 11771)"
+   "Expecting property name enclosed in double quotes: line 76 column 5 (char 6324)"
   ]
  },
  "items": [
+  {
+   "id": "6a744f24eada9345",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/",
+   "published": "2026-11-20T10:57:43+00:00",
+   "title": "F5 lança correções de emergência para falhas críticas de RCE em BIG-IP",
+   "summary": "A empresa de cibersegurança F5 emitiu um aviso aos clientes para aplicarem patches a cinco vulnerabilidades críticas em sistemas BIG-IP. Estas falhas podem ser exploradas por atacantes mal intencionados para provocar negação de serviço (DoS) ou obter execução remota de código. O impacto afeta a estabilidade e a segurança das infraestruturas empresariais que utilizam estes equipamentos.",
+   "image": null,
+   "points": [
+    "A F5 alertou para cinco vulnerabilidades críticas em equipamentos BIG-IP.",
+    "Atacantes podem explorar as falhas para causar DoS ou execução remota de código.",
+    "Os utilizadores devem aplicar urgentemente as correções de emergência disponibilizadas."
+   ],
+   "title_original": "F5 releases emergency patches for critical BIG-IP RCE flaws",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A exploração destas falhas críticas pode permitir o controlo remoto de sistemas empresariais ou derrubar serviços essenciais.",
+   "todo": "Instale imediatamente os patches de segurança fornecidos pela F5 para mitigar as vulnerabilidades identificadas."
+  },
+  {
+   "id": "2be32b97a1a664f4",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/",
+   "published": "2026-11-20T10:51:42+00:00",
+   "title": "Comissão Europeia confirma que ciberataque assistido por IA interrompeu serviços",
+   "summary": "A Comissão Europeia sofreu um ciberataque que afetou a disponibilidade de vários serviços online. Como medida de contenção, a instituição decidiu colocar determinados serviços offline para traçar o incidente. Até ao momento, as autoridades não encontraram quaisquer evidências de que tenha ocorrido uma fuga ou roubo de dados.",
+   "image": null,
+   "points": [
+    "A Comissão Europeia foi alvo de um ciberataque auxiliado por inteligência artificial.",
+    "Alguns serviços foram desativados temporariamente para conter a ameaça.",
+    "Não existem provas de que os dados tenham sido comprometidos no incidente."
+   ],
+   "title_original": "European Commission Confirms AI-Assisted Cyberattack Disrupted Services",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como os ataques cibernéticos baseados em IA já afetam diretamente instituições de elevada importância estratégica.",
+   "todo": "Mantenha os sistemas monitorizados e reforce os mecanismos de deteção rápida contra ameaças potenciadas por inteligência artificial."
+  },
   {
    "id": "f5b6ed0f978c7e42",
    "source": "SecurityWeek",
@@ -334,12 +378,34 @@
     "Impacto: Execução remota de código (RCE).",
     "Como resolver: Atualizar a linguagem Ruby."
    ],
-   "title_original": "Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Permite que atacantes assumam o controlo de sistemas vulneráveis se a falha não for corrigida.",
    "todo": "Atualize a linguagem Ruby para a versão mais recente com patches."
+  },
+  {
+   "id": "d7d1043ff4ae8fc6",
+   "source": "Rapid7",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.rapid7.com/blog/post/pt-metasploit-wrap-up-breaking-zimbra-s-identity-boundaries",
+   "published": "2026-11-20T10:30:36+00:00",
+   "title": "Metasploit atualizado com módulos para contornar fronteiras de identidade do Zimbra",
+   "summary": "O Metasploit integrou novos módulos e correções focados em problemas de fronteira de identidade no Zimbra, baseados em investigações recentes. As adições incluem um componente partilhado para autenticação SOAP e módulos que visam falhas específicas de autorização e de limitação de taxa. Estas ferramentas permitem validar a segurança em instâncias do Zimbra Network Edition.",
+   "image": "https://images.contentstack.io/v3/assets/blte4f029e766e6b253/blt0d50271a40a5f14f/6849ab419621d9f3824d5017/metasploit-sky.png",
+   "points": [
+    "Foram adicionados novos módulos ao Metasploit focados na plataforma Zimbra.",
+    "As ferramentas testam falhas como desvios de autorização e contornos de limite de taxa.",
+    "A investigação ajuda a identificar vulnerabilidades em ambientes corporativos de correio eletrónico."
+   ],
+   "title_original": "Metasploit Wrap Up: Breaking Zimbra's Identity Boundaries",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que os profissionais de segurança testem e identifiquem vulnerabilidades críticas em servidores de colaboração e email.",
+   "todo": "Atualize os servidores Zimbra para as versões mais recentes e verifique se existem desvios de autenticação ou limites de taxa mal configurados."
   },
   {
    "id": "28d85bc28999fc0e",
@@ -357,9 +423,9 @@
     "Impacto: Exposição de detalhes de contas de portadores de cartões Oyster.",
     "Ação: Sistema colocado offline para limitar acessos."
    ],
-   "title_original": "265,000 Oyster photocard customers’ data exposed in Transport for London breach",
+   "title_original": null,
    "category": "Fuga de dados",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Expõe dados pessoais de centenas de milhares de utilizadores de transportes públicos, incluindo menores e idosos.",
    "todo": "Monitore as suas contas financeiras e credenciais associadas a serviços de transporte e altere palavras-passe caso receba alertas."
@@ -13705,72 +13771,6 @@
    "enriched": true,
    "why": "Torna os ataques cibernéticos muito mais rápidos e difíceis de prever por humanos.",
    "todo": "Adotar ferramentas de defesa automatizadas e monitorizar comportamentos anómalos em tempo real."
-  },
-  {
-   "id": "b5e1ece521f345a8",
-   "source": "Google Threat Intelligence",
-   "region": "US",
-   "lang": "en",
-   "link": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold/",
-   "published": "2026-11-16T14:00:00+00:00",
-   "title": "GTIG AI Threat Tracker: Atividade de ameaças de agentes cruza um limiar significativo",
-   "summary": "O Google Threat Intelligence Group e a Mandiant detetaram um aumento no uso de frameworks multiagentes autónomas por parte de cibercriminosos e grupos de espionagem. Estas ferramentas permitem automatizar a pesquisa de vulnerabilidades, a exploração em cadeia e operações de influência com IA. Observou-se também a exploração de infraestruturas através de esquemas como o LLMJacking para revender recursos de IA.",
-   "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Figure_1_Multi-agent_LLM_offensive_framewo.max-1000x1000.jpg",
-   "points": [
-    "Grupos maliciosos utilizam frameworks autónomas como ARTEX e CAIRN.",
-    "Há um aumento da exploração automatizada de vulnerabilidades com recurso a LLMs.",
-    "Verificou-se a monetização ilícita de recursos de IA através de esquemas de LLMJacking."
-   ],
-   "title_original": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia a transição dos atacantes para táticas totalmente autónomas e baseadas em IA.",
-   "todo": "Proteger as credenciais de serviços de IA e monitorizar acessos anómalos à cloud."
-  },
-  {
-   "id": "7666465cea4bbfe3",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/research/2026/11/16/google-ai-agent-turned-a-security-patch-into-a-working-exploit-with-no-human-help/5309926",
-   "published": "2026-11-16T14:00:00+00:00",
-   "title": "Google: Agente de IA transformou um patch de segurança num exploit funcional sem intervenção humana",
-   "summary": "Um operador suspeito de falar russo utilizou um agente de IA para converter patches de segurança em exploits funcionais de forma totalmente autónoma, um marco inédito segundo o Google Threat Intelligence Group. A ferramenta, denominada exploit_agent, realizou análises diferenciais de código e executou ataques direcionados a sites em França. Além disso, foram usadas outras frameworks como ARTEX e PentAGI para intrusões em vários setores.",
-   "image": "https://image.theregister.com/?imageId=5298454&width=800",
-   "points": [
-    "Um agente de IA criou exploits a partir de patches sem ajuda humana.",
-    "A ferramenta exploit_agent automatizou a análise de código e a criação de ataques.",
-    "O ataque visou setores de media, entretenimento e educação em França."
-   ],
-   "title_original": "Google: AI agent turned a security patch into a working exploit with no human help",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra que a IA já consegue transformar correções de segurança em ameaças ativas sem intervenção humana.",
-   "todo": "Aplicar patches de segurança com a máxima rapidez e reforçar a monitorização de servidores expostos."
-  },
-  {
-   "id": "5adf36e942dec2e1",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
-   "published": "2026-11-16T14:00:00+00:00",
-   "title": "Google deteta hackers a usar agentes de IA para criar e executar exploits a partir de patches de software",
-   "summary": "A Google revelou que os atacantes deixaram de depender apenas de comandos manuais e passaram a implementar frameworks ofensivas multiagentes autónomas. Ferramentas como ARTEX, CAIRN, CyberStrikeAI e PentAGI estão a ser utilizadas para executar intrusões complexas em várias fases. Esta mudança resulta num aumento significativo da velocidade operacional dos ataques.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpEBmKLWFpEn8sSoJLtj1ZR7FPMd8GxxKN2v4IzyBkydma_g4gXzaWEEkK5CTPwidrBPw6QPdoByiEC14ufVP2pvezWKtH_dmqHttARDKzDOopkw0vzUdTYZubCh9Qy76nlmVSbhtTSvDOuT1c70E4TVPw8T4hUhMdR-saHjQPW1S9IZNmg2_RfsMsmJLb/s1600/google.jpg",
-   "points": [
-    "Ataques cibernéticos recorrem a frameworks multiagentes autónomas.",
-    "Ferramentas como ARTEX e PentAGI aceleram a velocidade das intrusões.",
-    "A IA é usada para potenciar os grandes modelos de linguagem (LLMs) em ataques."
-   ],
-   "title_original": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Comprova que a automatização com IA em ataques cibernéticos já é uma realidade operacional.",
-   "todo": "Melhorar a visibilidade da rede e adotar contramedidas baseadas em IA para deteção rápida."
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T01:07:49.834824+00:00",
+ "updated": "2026-11-20T01:27:06.868507+00:00",
  "errors": [],
  "feodo": {
   "total": 5,
@@ -58,8 +58,8 @@
    "label": "Sites que distribuem malware",
    "total": 790,
    "by_country": {
-    "US": 560,
-    "CN": 107,
+    "US": 558,
+    "CN": 109,
     "CA": 37,
     "TR": 14,
     "DE": 8,
@@ -88,14 +88,14 @@
    },
    "detail": {
     "US": {
-     "DEVPOPPER": 215,
+     "DEVPOPPER": 213,
      "github": 137,
      "exe": 98,
      "DEVBOX": 82,
      "hta": 13
     },
     "CN": {
-     "malware_download": 78,
+     "malware_download": 80,
      "32-bit": 24,
      "elf": 3,
      "arm": 1,
@@ -201,25 +201,25 @@
     }
    },
    "tags": {
-    "github": 526,
-    "js": 383,
-    "VSCode": 367,
-    "TxDataHiding": 301,
-    "DEVPOPPER": 215,
+    "github": 524,
+    "js": 381,
+    "VSCode": 365,
+    "TxDataHiding": 299,
+    "DEVPOPPER": 213,
     "exe": 103
    },
    "ports": {
     "US": {
-     "443": 543,
+     "443": 541,
      "80": 16,
      "8000": 1
     },
     "CN": {
+     "45968": 2,
      "56294": 2,
      "59985": 2,
      "55988": 2,
-     "43531": 2,
-     "52899": 2
+     "43531": 2
     },
     "CA": {
      "443": 32,
@@ -405,11 +405,11 @@
   },
   "ioc": {
    "label": "Indicadores de malware (IPs)",
-   "total": 249,
+   "total": 250,
    "by_country": {
     "US": 56,
     "CN": 41,
-    "HK": 34,
+    "HK": 35,
     "SG": 16,
     "DE": 15,
     "NL": 13,
@@ -458,9 +458,9 @@
     "HK": {
      "Unknown malware": 27,
      "VShell": 4,
+     "ValleyRAT": 2,
      "PureRAT": 1,
-     "AdaptixC2": 1,
-     "ValleyRAT": 1
+     "AdaptixC2": 1
     },
     "SG": {
      "Unknown malware": 10,
@@ -750,10 +750,172 @@
   },
   "scans": {
    "label": "Scans e força bruta",
-   "total": 0,
-   "by_country": {},
-   "detail": {},
-   "reports": 0
+   "total": 200,
+   "by_country": {
+    "US": 42,
+    "CN": 25,
+    "CA": 16,
+    "FR": 12,
+    "DE": 10,
+    "AR": 9,
+    "IN": 8,
+    "NL": 7,
+    "BR": 6,
+    "ID": 5,
+    "RU": 5,
+    "CL": 4,
+    "GB": 3,
+    "ZA": 3,
+    "PK": 3,
+    "AD": 2,
+    "BD": 2,
+    "PH": 2,
+    "TW": 2,
+    "VN": 2,
+    "AU": 2,
+    "IR": 2,
+    "UA": 2,
+    "UY": 2,
+    "MU": 1,
+    "ET": 1,
+    "NP": 1,
+    "MM": 1,
+    "MA": 1,
+    "JP": 1,
+    "HK": 1,
+    "AF": 1,
+    "CU": 1,
+    "DZ": 1,
+    "CM": 1,
+    "SE": 1,
+    "SG": 1,
+    "PY": 1,
+    "TH": 1,
+    "MY": 1
+   },
+   "detail": {
+    "US": {
+     "scan/força bruta": 42
+    },
+    "CN": {
+     "scan/força bruta": 25
+    },
+    "CA": {
+     "scan/força bruta": 16
+    },
+    "FR": {
+     "scan/força bruta": 12
+    },
+    "DE": {
+     "scan/força bruta": 10
+    },
+    "AR": {
+     "scan/força bruta": 9
+    },
+    "IN": {
+     "scan/força bruta": 8
+    },
+    "NL": {
+     "scan/força bruta": 7
+    },
+    "BR": {
+     "scan/força bruta": 6
+    },
+    "ID": {
+     "scan/força bruta": 5
+    },
+    "RU": {
+     "scan/força bruta": 5
+    },
+    "CL": {
+     "scan/força bruta": 4
+    },
+    "GB": {
+     "scan/força bruta": 3
+    },
+    "ZA": {
+     "scan/força bruta": 3
+    },
+    "PK": {
+     "scan/força bruta": 3
+    },
+    "AD": {
+     "scan/força bruta": 2
+    },
+    "BD": {
+     "scan/força bruta": 2
+    },
+    "PH": {
+     "scan/força bruta": 2
+    },
+    "TW": {
+     "scan/força bruta": 2
+    },
+    "VN": {
+     "scan/força bruta": 2
+    },
+    "AU": {
+     "scan/força bruta": 2
+    },
+    "IR": {
+     "scan/força bruta": 2
+    },
+    "UA": {
+     "scan/força bruta": 2
+    },
+    "UY": {
+     "scan/força bruta": 2
+    },
+    "MU": {
+     "scan/força bruta": 1
+    },
+    "ET": {
+     "scan/força bruta": 1
+    },
+    "NP": {
+     "scan/força bruta": 1
+    },
+    "MM": {
+     "scan/força bruta": 1
+    },
+    "MA": {
+     "scan/força bruta": 1
+    },
+    "JP": {
+     "scan/força bruta": 1
+    },
+    "HK": {
+     "scan/força bruta": 1
+    },
+    "AF": {
+     "scan/força bruta": 1
+    },
+    "CU": {
+     "scan/força bruta": 1
+    },
+    "DZ": {
+     "scan/força bruta": 1
+    },
+    "CM": {
+     "scan/força bruta": 1
+    },
+    "SE": {
+     "scan/força bruta": 1
+    },
+    "SG": {
+     "scan/força bruta": 1
+    },
+    "PY": {
+     "scan/força bruta": 1
+    },
+    "TH": {
+     "scan/força bruta": 1
+    },
+    "MY": {
+     "scan/força bruta": 1
+    }
+   },
+   "reports": 12594627
   }
  },
  "cloudflare": {

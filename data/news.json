@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T15:08:49.373561+00:00",
+ "updated": "2026-11-20T15:14:29.526635+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -254,7 +254,7 @@
   {
    "source": "WeLiveSecurity (ESET)",
    "ok": true,
-   "added": 3
+   "added": 4
   },
   {
    "source": "Sophos News",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 24,
-  "pending": 319,
-  "unenriched": 184,
+  "done": 12,
+  "pending": 331,
+  "unenriched": 198,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -320,26 +320,50 @@
  },
  "items": [
   {
+   "id": "19cca4f1450a3e90",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/",
+   "published": "2026-11-20T15:00:10+00:00",
+   "title": "Ainda a monitorizar palavras-passe em folhas de cálculo? Está a voar às cegas.",
+   "summary": "A gestão de credenciais corporativas através de folhas de cálculo deixa as empresas vulneráveis a palavras-passe fracas, reorquestradas ou comprometidas sem que a equipa de TI se aperceba. A NordPass explica que a adoção de um sistema centralizado melhora a visibilidade das credenciais e simplifica a partilha segura. O impacto traduz-se num risco acrescido de incidentes de segurança devido à falta de controlo sobre dados partilhados fora de sistemas aprovados.",
+   "image": null,
+   "points": [
+    "Empresas usam folhas de cálculo para rastrear palavras-passe corporativas.",
+    "Falta de visibilidade expõe credenciais fracas ou comprometidas.",
+    "Gestão centralizada melhora a segurança e simplifica a partilha.",
+    "Risco elevado de acessos não autorizados fora de sistemas aprovados."
+   ],
+   "title_original": "Still tracking company passwords in spreadsheets? You’re flying blind.",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "A utilização de folhas de cálculo para palavras-passe cria pontos cegos perigosos que facilitam ciberataques.",
+   "todo": "Migre para um gestor de palavras-passe empresarial centralizado e elimine o uso de folhas de cálculo para credenciais."
+  },
+  {
    "id": "1722752aee2d029e",
    "source": "SecurityWeek",
    "region": "US",
    "lang": "en",
    "link": "https://www.securityweek.com/in-other-news-norwegian-energy-firm-cyberattacks-supercomputer-hack-new-nightmare-eclipse-exploit/",
    "published": "2026-11-20T14:56:23+00:00",
-   "title": "Notícias breves de cibersegurança: ataques na Noruega, supercomputador violado e novo exploit Nightmare Eclipse",
-   "summary": "Várias ocorrências de cibersegurança mereceram destaque recente, incluindo ataques cibernéticos a uma empresa de energia na Noruega e a pirataria de um supercomputador. A União Europeia adicionou o grupo NoName057(16) à sua lista de sanções cibernéticas. Além disso, malware tem visado credenciais de acesso armazenadas em computadores pessoais e agentes da Gemini foram visados pela Epoch AI.",
+   "title": "Noutras notícias: Ciberataques a empresas de energia norueguesas, ataque a supercomputador e nova falha Eclipse",
+   "summary": "Vários incidentes recentes passaram despercebidos, incluindo a adição do grupo NoName057(16) à lista de sanções cibernéticas da União Europeia. Destacam-se também campanhas de malware direcionadas a computadores pessoais e agentes Gemini visando a Epoch AI. Estes eventos demonstram a persistência de ameaças direcionadas a infraestruturas e inteligência artificial.",
    "image": null,
    "points": [
-    "A UE adicionou o grupo NoName057(16) às sanções cibernéticas.",
-    "Empresa de energia norueguesa e supercomputador foram alvo de ataques.",
-    "Malware visa roubar credenciais guardadas em computadores pessoais."
+    "UE adiciona grupo NoName057(16) a sanções cibernéticas.",
+    "Malware foca-se em computadores pessoais.",
+    "Agentes Gemini foram visados pela Epoch AI.",
+    "Empresas de energia na Noruega sofreram ciberataques."
    ],
    "title_original": "In Other News: Norwegian Energy Firm Cyberattacks, Supercomputer Hack, New Nightmare Eclipse Exploit",
    "category": "Vulnerabilidade",
    "translated": true,
    "enriched": true,
-   "why": "Mostra como ameaças diversas, desde grupos sancionados a malware focado em credenciais, continuam a afetar organizações e sistemas globais.",
-   "todo": "Garanta que as credenciais em computadores pessoais estão protegidas e mantenha os sistemas atualizados contra novas ameaças."
+   "why": "Monitorizar ameaças menos mediáticas é essencial para antecipar tendências e proteger os ativos das organizações.",
+   "todo": "Mantenha-se informado sobre sanções e novas vagas de malware para ajustar as defesas da sua organização."
   },
   {
    "id": "57375f482cd69943",
@@ -348,19 +372,20 @@
    "lang": "en",
    "link": "https://therecord.media/sean-cairncross-out-as-national-cyber-director",
    "published": "2026-11-20T14:30:00+00:00",
-   "title": "Diretor cibernético Sean Cairncross sai da Casa Branca na remodelação da liderança",
-   "summary": "Sean Cairncross vai abandonar a Casa Branca num momento de reestruturação da liderança de cibersegurança. Para o seu lugar foi nomeada Kirsten Davies, diretora de informação do Pentágono, que assume funções como czar cibernético interino. Esta alteração reflete mudanças na liderança governamental para a segurança digital.",
+   "title": "Diretor cibernético Cairncross sai da Casa Branca em remodelação da liderança",
+   "summary": "Sean Cairncross vai abandonar o seu cargo na Casa Branca, surgindo uma nova liderança na cibersegurança norte-americana. Kirsten Davies, que exercia funções como diretora de informação do Pentágono, foi nomeada como a nova czar interina para a cibersegurança. Esta mudança reflete uma reorganização estratégica nas chefias de segurança digital do governo dos EUA.",
    "image": "https://cms.therecord.media/uploads/cairncross_billington_2025_d9233ef5de.jpg",
    "points": [
     "Sean Cairncross deixa a Casa Branca.",
-    "Kirsten Davies assume o cargo de czar cibernético interino.",
-    "A alteração ocorre no âmbito de uma reestruturação da liderança de cibersegurança."
+    "Kirsten Davies assume o cargo de czar interina para a cibersegurança.",
+    "Davies ocupava anteriormente o cargo de CIO do Pentágono.",
+    "A alteração representa uma remodelação na liderança cibernética governamental."
    ],
    "title_original": "Cyber Director Cairncross out as White House resets cyber leadership",
    "category": "Geral",
    "translated": true,
    "enriched": true,
-   "why": "A mudança de liderança em cargos federais cruciais pode influenciar futuras diretrizes e prioridades de cibersegurança a nível nacional.",
+   "why": "Mudanças na liderança governamental de cibersegurança podem alterar prioridades e políticas de regulação digital.",
    "todo": ""
   },
   {
@@ -370,20 +395,21 @@
    "lang": "en",
    "link": "https://therecord.media/dozens-of-credit-unions-hit-by-supplier-breach",
    "published": "2026-11-20T14:24:00+00:00",
-   "title": "Dezenas de caixas económicas atingidas por violação em fornecedor que passou despercebida durante seis semanas",
-   "summary": "A Comissão de Proteção de Dados da Irlanda recebeu mais de 40 notificações de violação por parte de caixas económicas. As instituições utilizavam uma empresa com sede em Belfast como processadora de dados. O incidente de segurança no fornecedor passou despercebido durante um período de seis semanas, afetando várias entidades.",
+   "title": "Dezenas de cooperativas de crédito atingidas por violação em fornecedor que passou despercebida durante seis semanas",
+   "summary": "A Comissão de Proteção de Dados da Irlanda confirmou ter recebido mais de 40 notificações de violação de segurança por parte de cooperativas de crédito. O incidente teve origem num fornecedor sediado em Belfast que atuava como processador de dados destas instituições. A falha permaneceu totalmente indetetada durante um período de seis semanas, expondo dados sensíveis geridos por terceiros.",
    "image": "https://cms.therecord.media/uploads/bank_safe_33ac6c970a.jpg",
    "points": [
-    "Mais de 40 notificações de violação enviadas à autoridade irlandesa.",
-    "O incidente afetou caixas económicas que utilizavam o mesmo processador de dados.",
-    "A falha no fornecedor passou despercebida durante seis semanas."
+    "Mais de 40 cooperativas de crédito irlandesas afetadas por violação.",
+    "Incidente originado num fornecedor e processador de dados de Belfast.",
+    "Violação passou inteiramente despercebida durante seis semanas.",
+    "Autoridade de proteção de dados irlandesa recebeu as notificações."
    ],
    "title_original": "Dozens of credit unions hit by supplier breach that went unnoticed for six weeks",
    "category": "Fuga de dados",
    "translated": true,
    "enriched": true,
-   "why": "Demonstra o risco sistémico associado aos fornecedores terceiros e como uma falha numa cadeia de abastecimento pode comprometer múltiplos clientes em simultâneo.",
-   "todo": "Avalie regularmente a postura de segurança dos seus fornecedores e parceiros externos que processam dados sensíveis."
+   "why": "Ataques à cadeia de fornecedores demonstram que parceiros terceiros representam um vetor de risco crítico para as empresas.",
+   "todo": "Audite regularmente a segurança dos seus fornecedores e parceiros tecnológicos com acesso a dados confidenciais."
   },
   {
    "id": "8c71d1d140fee16b",
@@ -416,19 +442,20 @@
    "link": "https://www.estadao.com.br/tecmundo/voxel/gta-6-pirata-hacker-cyberleek-esta-de-volta-com-build-ilegal-do-jogo/",
    "published": "2026-11-20T14:14:00+00:00",
    "title": "GTA 6 pirata? Hacker Cyberleek está de volta com build ilegal do jogo",
-   "summary": "O hacker conhecido como Cyberleek regressou à atividade e publicou uma versão de desenvolvimento de GTA 6 para consolas Xbox, com cerca de 209 GB. O material está incompleto por faltar o executável principal, mas o grupo tenta extorquir dinheiro exigindo que a sua criptomoeda atinja uma capitalização de 15 milhões de dólares para libertar o ficheiro em falta, embora o hacker prometa divulgá-lo de qualquer forma. Especialistas em segurança analisaram os ficheiros e consideram que o material aparenta ser legítimo.",
+   "summary": "O hacker Cyberleek reapareceu e publicou uma suposta versão de desenvolvimento de GTA 6 para consolas Xbox, com cerca de 209 GB, obtida via torrent. A distribuição faz parte de uma tentativa de promover e lucrar com uma criptomoeda própria chamada $CYBERLEEK, condicionando a libertação do executável a metas de mercado. Especialistas em segurança analisaram os ficheiros e consideram o material legítimo, embora existam dúvidas técnicas sobre a sua integridade.",
    "image": "https://www.estadao.com.br/resizer/v2/M2ZQDJK4INKQFDVBHR43ME7V5M.jpg?quality=80&auth=130f2befce38fe571dfa47701805272bab3554298a287fc25fd4539629160722&width=710",
    "points": [
-    "O hacker Cyberleek divulgou uma versão de desenvolvimento de GTA 6 para Xbox.",
-    "Os ficheiros ocupam cerca de 209 GB mas faltam componentes essenciais para iniciar o jogo.",
-    "O atacante exige doações em criptomoeda para libertar o executável em falta."
+    "Hacker Cyberleek vazou uma build de desenvolvimento de GTA 6 para Xbox.",
+    "Ficheiros foram distribuídos por torrent e rondam os 209 GB.",
+    "Ação serve para promover a criptomoeda $CYBERLEEK e angariar fundos.",
+    "Especialistas consideram o material legítimo, apesar de faltarem componentes essenciais."
    ],
    "title_original": null,
    "category": "Fuga de dados",
    "translated": false,
    "enriched": true,
-   "why": "Ilustra como vazamentos de grandes marcas são aproveitados por cibercriminosos para esquemas de extorsão e distribuição de software potencialmente perigoso.",
-   "todo": "Evite descarregar software não oficial, versões 'leak' ou ficheiros de fontes desconhecidas para prevenir infeções por malware."
+   "why": "O download de software não oficial e ilegal de fontes desconhecidas é um vetor clássico para a propagação de malware.",
+   "todo": "Evite descarregar conteúdos de fontes não oficiais e mantenha as soluções de endpoint atualizadas."
   },
   {
    "id": "096e0ef0231d7dec",
@@ -4727,6 +4754,29 @@
    "enriched": true,
    "why": "Alerta para vulnerabilidades críticas que estão a ser ativamente exploradas por atacantes em sistemas empresariais.",
    "todo": "Atualize urgentemente os softwares afetados para mitigar o risco de exploração ativa."
+  },
+  {
+   "id": "de81157016f8e474",
+   "source": "WeLiveSecurity (ESET)",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.welivesecurity.com/en/internet-of-things/iot-devices-no-longer-supported-smart-home-safe/",
+   "published": "2026-11-19T08:00:00+00:00",
+   "title": "Os meus dispositivos IoT já não têm suporte – a minha casa inteligente está segura?",
+   "summary": "Dispositivos inteligentes que atingiram o fim de vida útil e deixam de receber atualizações representam um risco de segurança significativo para os utilizadores se não forem geridos adequadamente. A falta de patches deixa portas abertas a potenciais intrusos na rede doméstica. É necessário adotar medidas preventivas para mitigar vulnerabilidades em equipamentos antigos.",
+   "image": null,
+   "points": [
+    "Dispositivos IoT sem suporte criam riscos de segurança.",
+    "Falta de atualizações deixa equipamentos vulneráveis a intrusões.",
+    "Equipamentos obsoletos sem gestão colocam a rede inteligente em perigo.",
+    "Existem recomendações práticas para mitigar estes riscos."
+   ],
+   "title_original": "My IoT devices are no longer supported – is my smart home safe?",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Equipamentos sem suporte oficial são alvos fáceis para invasores comprometerem a segurança de toda a rede.",
+   "todo": "Isole dispositivos IoT sem suporte numa rede de convidados e substitua-os logo que possível por modelos atualizados."
   },
   {
    "id": "e2e32d524f45d098",
@@ -13739,51 +13789,6 @@
    "enriched": true,
    "why": "Demonstra como plataformas legítimas podem ser instrumentalizadas de forma abusiva para propagar campanhas massivas de phishing.",
    "todo": "Desconfie de notificações urgentes sobre direitos de autor e verifique sempre os remetentes antes de clicar em links ou inserir credenciais."
-  },
-  {
-   "id": "d3018d93b7178980",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/16/crook-turns-learnworlds-free-trials-into-phishing-factory-sends-13000-fake-youtube-copyright-notices/5310122",
-   "published": "2026-11-16T17:03:00+00:00",
-   "title": "Criminoso transforma testes gratuitos da LearnWorlds numa fábrica de phishing e envia 13.000 falsos avisos de direitos de autor do YouTube",
-   "summary": "Um atacante utilizou contas de teste gratuitas na plataforma LearnWorlds para enviar cerca de 13.000 emails de phishing disfarçados de avisos de direitos de autor do YouTube. O infrator contornou os limites de subscrição e manipulou o sistema de boas-vindas para distribuir os links maliciosos por listas externas. A empresa confirmou que os seus sistemas principais não foram comprometidos, tendo bloqueado as contas envolvidas e reforçado as defesas.",
-   "image": "https://image.theregister.com/?imageId=262937&width=800",
-   "points": [
-    "Quem: Criadores de conteúdo do YouTube e a plataforma LearnWorlds.",
-    "O quê: Envio massivo de 13.000 emails de phishing com falsos avisos de direitos de autor.",
-    "Como: Exploração de contas de teste gratuitas e automatização de mensagens de boas-vindas.",
-    "Impacto: Potencial exposição de criadores a páginas falsas de recolha de credenciais."
-   ],
-   "title_original": "Crook turns LearnWorlds' free trials into phishing factory, sends 13,000 fake YouTube copyright notices",
-   "category": "Phishing/Fraude",
-   "translated": true,
-   "enriched": true,
-   "why": "Plataformas online com testes gratuitos podem ser abusadas por criminosos para campanhas em massa.",
-   "todo": "Valide sempre a autenticidade de avisos de direitos de autor recebidos por email antes de clicar em links."
-  },
-  {
-   "id": "6bde6c886ad3a824",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/romania-russia-cyberattack-espionage",
-   "published": "2026-11-16T17:00:00+00:00",
-   "title": "Rússia nega interceção de e-mails do governo romeno",
-   "summary": "As autoridades russas rejeitaram publicamente as acusações de que piratas informáticos apoiados pelo Estado teriam visado uma instituição governamental romena. O objetivo da alegada operação seria interceptar mensagens de correio eletrónico trocadas com a União Europeia e a NATO. Com esta negação, o governo russo afasta o envolvimento em manobras de espionagem contra parceiros internacionais.",
-   "image": "https://cms.therecord.media/uploads/Romania_flag_8e4d3e5ecd.jpg",
-   "points": [
-    "Rússia nega acusações de ciberespionagem contra a Roménia.",
-    "Alvo pretendido incluía comunicações com a UE e a NATO.",
-    "Atores estatais foram apontados inicialmente ao ataque."
-   ],
-   "title_original": "Russia denies intercepting Romanian government emails",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia a tensão geopolítica contínua e as acusações cruzadas de espionagem informática entre potências.",
-   "todo": ""
   }
  ]
 }

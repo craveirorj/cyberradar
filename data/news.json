@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-20T03:07:21.766764+00:00",
+ "updated": "2026-11-20T03:26:18.791607+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
@@ -238,8 +238,8 @@
   },
   {
    "source": "The Register Security",
-   "ok": true,
-   "added": 8
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "Help Net Security",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -309,15 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
+  "done": 114,
   "pending": 201,
-  "unenriched": 78,
+  "unenriched": 76,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "ec3944c17308c742",
+   "source": "CSO Online",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.csoonline.com/article/4251117/a-single-pull-request-could-have-handed-attackers-the-keys-to-microsofts-software-supply-chain.html",
+   "published": "2026-11-20T03:10:04+00:00",
+   "title": "Um único pedido de alteração poderia ter entregue aos atacantes as chaves da cadeia de fornecimento de software da Microsoft",
+   "summary": "Investigadores da Cycode descobriram uma vulnerabilidade crítica de 'zero-click' no gestor de pacotes do Windows (WinGet). A falha permitiria que um atacante, através de um simples pedido de alteração (pull request), obtivesse acesso aos tokens de autenticação dos moderadores da Microsoft. Embora não existam provas de exploração ativa, o incidente destaca o risco crescente da automatização como vetor de ataque. A vulnerabilidade reside na ferramenta interna utilizada pelos moderadores para validar alterações no repositório público.",
+   "image": "https://www.csoonline.com/wp-content/uploads/2025/12/4105950-0-78326900-1765590477-shutterstock_1555135388.jpg?quality=50&strip=all",
+   "points": [
+    "Falha crítica no WinGet da Microsoft",
+    "Acesso indevido a tokens de moderadores",
+    "Risco na automatização de repositórios",
+    "Potencial compromisso de toda a cadeia"
+   ],
+   "title_original": "A single pull request could have handed attackers the keys to Microsoft’s software supply chain",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra como a automatização de confiança pode tornar-se um ponto de entrada para atacantes em ecossistemas de software amplamente utilizados.",
+   "todo": "As empresas devem auditar as permissões das suas ferramentas de automatização e implementar princípios de privilégio mínimo."
+  },
   {
    "id": "e640697064297c0b",
    "source": "CSO Online",
@@ -13748,29 +13771,6 @@
    "enriched": true,
    "why": "Setores críticos como o retalho são alvos frequentes de incidentes que exigem resposta rápida.",
    "todo": "Mantenha planos de resposta a incidentes atualizados para mitigar rapidamente qualquer intrusão."
-  },
-  {
-   "id": "f67825a82ae87958",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/recent-unrealircd-vulnerability-exploited-in-attacks/",
-   "published": "2026-11-16T11:15:48+00:00",
-   "title": "Vulnerabilidade recente no UnrealIRCd explorada em ataques",
-   "summary": "Uma falha de segurança de alta severidade no UnrealIRCd, catalogada como CVE-2026-114713, está a ser ativamente explorada por atacantes. A vulnerabilidade permite que indivíduos mal intencionados executem comandos com privilégios de servidor ou operador de IRC. Os ataques recentes confirmam a exploração ativa desta falha nos sistemas afetados.",
-   "image": null,
-   "points": [
-    "Quem: Administradores de servidores IRC e atacantes.",
-    "O quê: Exploração ativa da vulnerabilidade CVE-2026-114713.",
-    "Como: Execução de comandos arbitrários com privilégios elevados.",
-    "Impacto: Compromisso total do servidor IRC por parte de entidades não autorizadas."
-   ],
-   "title_original": "Recent UnrealIRCd Vulnerability Exploited in Attacks",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Falhas em servidores de comunicação com privilégios elevados representam riscos graves de controlo total.",
-   "todo": "Atualize imediatamente os servidores UnrealIRCd para a versão corrigida mais recente."
   }
  ]
 }

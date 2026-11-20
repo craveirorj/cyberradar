@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T17:46:04.680504+00:00",
+ "updated": "2026-11-20T18:07:39.424789+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "CISA Advisories",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -164,7 +164,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "Cisco Talos",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 12,
-  "pending": 343,
-  "unenriched": 211,
+  "done": 60,
+  "pending": 292,
+  "unenriched": 154,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -408,6 +408,52 @@
    "enriched": true,
    "why": "Alerta para a capacidade da IA em testar múltiplos vetores de ataque de forma autónoma até encontrar uma falha explorável.",
    "todo": "Implemente defesas em profundidade e remova o acesso público desnecessário a ferramentas e servidores de teste."
+  },
+  {
+   "id": "a7cf3e12a3be7357",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/falha-critica-em-java-permite-invasao-remota-a-aplicacoes-corporativas/",
+   "published": "2026-11-20T17:30:00+00:00",
+   "title": "Falha crítica em Java permite invasão remota a aplicações corporativas",
+   "summary": "Uma falha de segurança grave identificada no OpenJDK, apelidada de “Java4Shell” e com a referência CVE-2026-114938, coloca em risco servidores e aplicações corporativas globais. O problema afeta um recurso de otimização de hardware em processadores modernos, permitindo que invasores sem credenciais corrompam a memória e executem código malicioso à distância. Softwares populares como Jira, Confluence, Keycloak e Jenkins foram atingidos pela vulnerabilidade. A Oracle já disponibilizou atualizações de segurança para corrigir o problema nos seus produtos afetados.",
+   "image": "https://www.estadao.com.br/resizer/v2/VJDLNZEOV5DHJL3KRFLYJ3R5U4.png?quality=80&auth=5622b891849012536728b6c8cd1cffe3d967ad8f5107171e6f8deb6cd98bbc8f&width=710",
+   "points": [
+    "O quê: Falha crítica de segurança no OpenJDK (Java4Shell) com pontuação 9,2.",
+    "Como: Exploração de um recurso de otimização AVX-512 para corrompar memória e executar código à distância.",
+    "Impacto: Roubo de dados confidenciais e controlo total de servidores e aplicações corporativas.",
+    "Quem: Afeta softwares como Jira, Confluence, Keycloak e Jenkins."
+   ],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": true,
+   "why": "Permite que atacantes assumam o controlo total de servidores e aplicações corporativas sem necessidade de credenciais.",
+   "todo": "Aplique imediatamente os pacotes de correção de segurança disponibilizados pela Oracle e pelos fornecedores dos softwares afetados."
+  },
+  {
+   "id": "0b4f3c2e24378974",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/widgets-brechas-de-seguranca-ameacam-o-telegram/",
+   "published": "2026-11-20T17:30:00+00:00",
+   "title": "‘Widgets’: brechas de segurança ameaçam o Telegram",
+   "summary": "A introdução de uma ferramenta de widgets no Telegram abriu espaço para invasões graves em dispositivos Android. Pesquisadores de segurança descobriram que falhas no motor JavaScript QuickJS permitem contornar as defesas do sistema operativo e executar código malicioso à distância através de mensagens. Apesar da implementação do filtro de segurança seccomp pelos desenvolvedores, os especialistas encontraram formas de driblar a barreira. O impacto demonstra que estes componentes podem ser explorados para comprometer a segurança dos telemóveis dos utilizadores.",
+   "image": "https://www.estadao.com.br/resizer/v2/S5CO43RH55BO3H52H3S7M2ESZ4.png?quality=80&auth=0a1a70f4b2e98ac1f9d6636a56b54c6cdeab7e642acc36e1f820d8c4589352db&width=710",
+   "points": [
+    "O quê: Vulnerabilidades no Telegram exploradas através do novo recurso de widgets.",
+    "Como: Utilização de falhas no motor JavaScript QuickJS e contornos à barreira seccomp do Android.",
+    "Impacto: Execução de códigos maliciosos e controlo remoto em telemóveis de testes.",
+    "Quem: Investigadores da NebuSec detetaram as brechas que afetam a aplicação no Android."
+   ],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": true,
+   "why": "Permite que mensagens maliciosas executem código e comprometam a segurança de smartphones Android.",
+   "todo": "Atualize a aplicação Telegram para a versão mais recente e evite interagir com conteúdos ou mensagens desconhecidas."
   },
   {
    "id": "9dbbebdeb6a3a85d",
@@ -594,14 +640,20 @@
    "link": "https://cyber.gc.ca/en/alerts-advisories/control-systems-moxa-security-advisory-av26-1187",
    "published": "2026-11-20T15:39:31+00:00",
    "title": "[Control Systems] Moxa security advisory (AV26-1187)",
-   "summary": "",
+   "summary": "A Moxa emitiu um aviso de segurança enumerando múltiplas vulnerabilidades que afetam diversos equipamentos industriais e de rede da marca. As falhas incluem problemas de estouro de buffer em dispositivos Ethernet Remote I/Os e várias vulnerabilidades em switches Ethernet de várias séries. O Centro de Cibersegurança recomenda aos utilizadores e administradores que consultem os links disponíveis e apliquem as atualizações necessárias. O impacto foca-se na segurança dos sistemas de controlo afetados por estas falhas.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O quê: Vulnerabilidades de estouro de buffer e outras falhas em equipamentos Moxa.",
+    "Como: Explorando falhas em séries específicas de switches Ethernet e controladores remotos.",
+    "Impacto: Compromete a integridade e segurança de sistemas de controlo industrial e de rede.",
+    "Quem: Afeta produtos como ioLogik E1200, além das séries EDS-E, IKS, ICS, PT, SDS, TWS e TN da Moxa."
+   ],
+   "title_original": "[Control Systems] Moxa security advisory (AV26-1187)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1187 Date: November 20, 2026 As of November 20, 2026, Moxa is affected by vulnerabilities in the following product: ioLogik E1200 Series Firmware v4.0 and prior EDS-E Series All firmware versions IKS Series All firmware versions ICS Series All firmware versions PT Series All firmware versions SDS Series All firmware versions TWS Series All firmware versions TN Series All firmware versions The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. CVE-2026-129971, CVE-2026-129972: Buffer Overflow Vulnerabilities in Ethernet Remote I/Os CVE-2026-130493, CVE-2026-130494: Multiple Vulnerabilities in Ethernet Switches | Moxa Security Advisories | Moxa"
+   "translated": true,
+   "enriched": true,
+   "why": "Deixa infraestruturas industriais e de rede expostas a falhas de segurança críticas em equipamentos Moxa.",
+   "todo": "Reveja os avisos de segurança oficiais da Moxa e aplique as atualizações de firmware disponíveis o mais rapidamente possível."
   },
   {
    "id": "19cca4f1450a3e90",
@@ -633,15 +685,21 @@
    "lang": "en",
    "link": "https://securityaffairs.com/203614/data-breach/jpmorgan-visa-and-mastercard-report-third-party-data-breaches-after-n0n-claims.html",
    "published": "2026-11-20T14:56:32+00:00",
-   "title": "JPMorgan, Visa and Mastercard Report Third-Party Data Breaches After N0n Claims",
-   "summary": "JPMorgan, Visa and Mastercard disclose third-party data breaches after the N0n extortion group claims to have stolen customer information. The disclosures involving JPMorgan Chase, Visa and Mastercard highlight a familiar but often underestimated security problem: the risks introduced by third-party service providers. All three companies have confirmed incidents involving external vendors after the N0n extortion […]",
+   "title": "JPMorgan, Visa e Mastercard Report Third-Party Data Breaches After N0n Claims",
+   "summary": "As empresas JPMorgan, Visa e Mastercard divulgaram incidentes de segurança envolvendo fornecedores terceiros após o grupo de extorsão N0n reivindicar o roubo de dados de clientes. As investigações iniciais indicam que a própria infraestrutura de pagamentos das instituições financeiras não foi afetada, mas sim dados de marketing detidos por fornecedores externos. O incidente incluiu a exposição potencial de nomes de clientes e endereços de correio eletrónico. As empresas afetadas estão a contactar diretamente os clientes lesados para mitigar os riscos.",
    "image": "https://i0.wp.com/securityaffairs.com/wp-content/uploads/2026/11/image-55.png?resize=1024%2C415&#038;ssl=1",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O quê: Violações de dados em fornecedores terceiros reportadas por JPMorgan, Visa e Mastercard.",
+    "Como: O grupo de extorsão N0n acedeu a dados detidos por fornecedores externos das instituições.",
+    "Impacto: Exposição de informações de marketing, como nomes e emails de clientes.",
+    "Quem: Envolve os fornecedores externos de JPMorgan Chase, Visa na região Ásia-Pacífico e Mastercard."
+   ],
+   "title_original": "JPMorgan, Visa and Mastercard Report Third-Party Data Breaches After N0n Claims",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "JPMorgan, Visa and Mastercard disclose third-party data breaches after the N0n extortion group claims to have stolen customer information. The disclosures involving JPMorgan Chase, Visa and Mastercard highlight a familiar but often underestimated security problem: the risks introduced by third-party service providers. All three companies have confirmed incidents involving external vendors after the N0n extortion group claimed it had stolen customer information and published data allegedly taken from their systems. The important distinction is that the companies haven’t reported breaches of their own payment infrastructure. Instead, the incidents appear to involve information held by outside providers, showing how a security failure at a supplier can expose data belonging to major financial institutions and their customers. JPMorgan said the attackers may have accessed marketing information held by its service providers, including customer names and email addresses. “Based on our ​investigation so far, we believe the attackers accessed certain marketing data held by those vendors, which may include some customer names ‌and email addresses,” a JPMorgan spokesperson told Reuters, adding that the company would be contacting the affected customers directly. The bank stressed that its services weren’t affected and that the incident had no connection to the technical problems some customers experienced earlier in the week. Where necessary, it plans to contact affected customers and offer free credit monitoring. Visa confirmed that the incident it was investigating involved a third-party provider in the Asia-Pacific region. The company said its own systems hadn’t been affected and that there was no evidence that payment information, including card numbers, had been exposed. Mas"
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como uma falha de segurança num fornecedor externo pode expor dados de grandes instituições financeiras.",
+   "todo": "Monitore regularmente os seus extratos bancários e adote serviços de proteção contra roubo de identidade caso seja contactado pela instituição afetada."
   },
   {
    "id": "1722752aee2d029e",
@@ -857,14 +915,20 @@
    "link": "https://securelist.com/how-a-cloud-pentest-works/121921/",
    "published": "2026-11-20T13:00:53+00:00",
    "title": "Transcending the trust boundaries: how a cloud pentest works",
-   "summary": "This is the first article in a series on cloud penetration testing. We'll cover the three cloud layers (External, Overlay, and Underlay), common architectures (OpenStack and Kubernetes), typical attack chains, and real-world incidents.",
+   "summary": "Os testes de intrusão em ambientes de cloud requerem uma abordagem que vai além da camada externa tradicional, focando-se na complexidade das fronteiras de confiança. A infraestrutura em nuvem pode ser comparada a um hotel com várias zonas, onde o objetivo principal é avaliar se um atacante consegue violar os limites entre as camadas. Um teste de pentest eficaz não se mede apenas pelo número de vulnerabilidades encontradas, mas sim pela análise profunda da segurança do ambiente. O impacto reside na garantia de que os dados alojados permanecem estritamente confidenciais e protegidos contra acessos indesejados.",
    "image": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2026/11/12092808/cloud1_securelist-featured_1200x600.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O quê: Metodologia e abordagem para testes de intrusão (pentest) em ambientes de cloud.",
+    "Como: Analisando as fronteiras de confiança entre a camada externa, lógica e de infraestrutura.",
+    "Impacto: Avaliar se atacantes conseguem quebrar o isolamento de ambientes em nuvem.",
+    "Quem: Especialistas em cibersegurança e equipas de investigação externa."
+   ],
+   "title_original": "Transcending the trust boundaries: how a cloud pentest works",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Users trust a cloud provider to configure and maintain their IT services, including data storage. In turn, the provider guarantees that hosted services will stay up and that data will remain strictly confidential. To demonstrate that their platforms are secure, providers choose different strategies: some run bug bounty programs, some rely on regular internal audits, and some bring in external research teams. However, cloud pentest methodology still has plenty of blind spots: there’s no single standard, and the outcome depends on the experience and skill of the team. Most pentests in this area have historically focused on the external layer: the management console, customer interfaces, APIs, and the basic network perimeter. This layer is important, but it’s only the surface. In this introductory article, we share our approach to penetration testing of cloud environments, which we’ve developed over several years and dozens of projects. We don’t claim to cover every possible scenario. Instead, we want to show the reasoning behind our pentests and highlight less obvious points that are easy to miss. Key points Cloud infrastructure is more complex than a traditional web application. To simplify, you can think of it as a hotel with three zones: the booking website (External, the outermost layer), the guest rooms (Overlay, the logical layer), and the staff area (Underlay, the infrastructure or base layer). A cloud service is well protected if the trust boundaries between these zones cannot be breached. A cloud pentest’s value isn’t measured by the number of vulnerabilities found or by the mere fact that code ran. Remote command execution in an isolated tenant container is only the beginning of a pentest, not the end. The main goal is to assess whether an attacker can violate t"
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda a identificar falhas estruturais profundas que os testes de segurança tradicionais na camada externa frequentemente ignoram.",
+   "todo": "Realize auditorias regulares de pentest na cloud focadas na verificação de limites de confiança e isolamento de tenants."
   },
   {
    "id": "a6cdc463c1597485",
@@ -1011,14 +1075,20 @@
    "link": "https://www.theregister.com/security/2026/11/20/spy-court-blasts-uk-secrecy-forces-government-to-admit-apple-backdoor-demand/5311292",
    "published": "2026-11-20T12:18:19+00:00",
    "title": "Spy court blasts UK secrecy, forces government to admit Apple ‘backdoor’ demand",
-   "summary": "Notice's existence can be acknowledged without harming national security, but its precise demands remain under wraps",
+   "summary": "O Tribunal de Poderes de Investigação do Reino Unido confirmou que o governo britânico emitiu uma Notificação de Capacidade Técnica (TCN) secreta exigindo acesso aos dados cifrados do iCloud da Apple. O governo tinha tentado ocultar a exigência ao abrigo da política de neutralidade, mas o tribunal rejeitou essa argumentação devido à extensa repercussão pública. Esta ordem colocava a Apple perante o dilema de enfraquecer a tecnologia de encriptação esperada pelos utilizadores ou desafiar a lei britânica. Eventualmente, o Reino Unido acabou por abandonar a exigência após pressão internacional.",
    "image": "https://image.theregister.com/?imageId=5220278&width=800",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O quê: Tribunal confirma que o Reino Unido exigiu à Apple uma porta traseira (backdoor) no iCloud.",
+    "Como: Emissão secreta de uma Notificação de Capacidade Técnica (TCN) ao abrigo da lei de vigilância.",
+    "Impacto: Ameaça à encriptação de ponta a ponta e à privacidade dos utilizadores da Apple.",
+    "Quem: Tribunal britânico, governo do Reino Unido e a empresa Apple."
+   ],
+   "title_original": "Spy court blasts UK secrecy, forces government to admit Apple ‘backdoor’ demand",
    "category": "Malware",
-   "translated": false,
-   "enriched": false,
-   "raw": "The Investigatory Powers Tribunal (IPT) has confirmed that the UK government served Apple with a secret Technical Capability Notice (TCN), rejecting the Home Office's argument that acknowledging its existence would damage national security. The order has been widely reported as demanding access to end-to-end encrypted iCloud data. The three judges pointed to extensive public reporting, statements by US officials, and media briefings they concluded had been authorized by the UK government. The Home Office had previously adopted its \"neither confirm nor deny\" (NCND) policy, as is standard when discussing national security matters. The story broke in February 2025, when The Washington Post reported that the Home Office had demanded an iCloud backdoor the previous month. A TCN is a notice issued under the Investigatory Powers Act 2016, which compels recipients, such as tech companies, to implement technical changes that facilitate the UK government's legal surveillance powers. For Apple, a company that has long made privacy central to its marketing, and famously rejected an FBI order to break open an iPhone to assist a terror probe, being served the TCN meant it either had to somehow defy a legal order issued by the UK, or undermine the encryption technology that customers expected. While it remained officially unconfirmed at the time, Apple's decision to revoke Advanced Data Protection (ADP) for UK users in February 2025 was widely interpreted as indirect confirmation of the demand. At the same time, US policymakers urged then-director of national intelligence Tulsi Gabbard to oppose the UK's demands under the assumption that they also sought to backdoor Apple's data in a way that would affect US citizens. In August 2025, Gabbard announced that the UK had agreed to drop it"
+   "translated": true,
+   "enriched": true,
+   "why": "Revela tentativas governamentais de enfraquecer sistemas de encriptação de ponta a ponta em plataformas tecnológicas de grande consumo.",
+   "todo": "Utilize sempre ferramentas de armazenamento e comunicação com encriptação de ponta a ponta robusta e ative as proteções avançadas de dados disponíveis."
   },
   {
    "id": "fc7b1a32d55e6eab",
@@ -1933,14 +2003,20 @@
    "link": "https://www.cybersecuritydive.com/news/national-cyber-director-sean-cairncross-trump-white-house/875294/",
    "published": "2026-11-20T01:04:39+00:00",
    "title": "National Cyber Director Sean Cairncross leaving the government",
-   "summary": "Cairncross, once a close ally of the president, lost favor as he clashed with other officials over AI security.",
+   "summary": "Sean Cairncross, Diretor Nacional de Cibersegurança, vai abandonar o governo após perder o apoio político. A saída ocorre num contexto de divergências com outros funcionários governamentais em relação a políticas de segurança de inteligência artificial. O impacto reflete-se na liderança da estratégia de cibersegurança nacional.",
    "image": "https://imgproxy.divecdn.com/PI0C9X-5YLPf33QDepaydX-F1XP1-NpMIfO3NtruHNA/g:nowe:0:396/c:3200:1807/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9QWExfMjAyNjA5MTBfMTIyNjI4MzM2LmpwZw==.webp",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O quê: Saída de Sean Cairncross do cargo de Diretor Nacional de Cibersegurança.",
+    "Como: Demissão após conflitos com outros oficiais governamentais.",
+    "Impacto: Mudança na liderança da segurança cibernética e de IA a nível governamental.",
+    "Quem: Sean Cairncross e responsáveis do governo."
+   ],
+   "title_original": "National Cyber Director Sean Cairncross leaving the government",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "Cairncross, once a close ally of the president, lost favor as he clashed with other officials over AI security."
+   "translated": true,
+   "enriched": true,
+   "why": "Altera a liderança governamental responsável pelas políticas estratégicas de cibersegurança e inteligência artificial.",
+   "todo": ""
   },
   {
    "id": "1fe5c6c3b7969d24",
@@ -2063,14 +2139,20 @@
    "link": "https://www.itsecurity.pt/news/news/palavras-passe-fracas-persistem-em-portugal",
    "published": "2026-11-20T00:00:00+00:00",
    "title": "Palavras-passe fracas persistem em Portugal",
-   "summary": "O estudo anual da NordPass revela que “123456” continua a liderar as palavras-passe mais comuns em Portugal. Referências ao futebol, música e cultura digital também surgem nas credenciais expostas",
+   "summary": "O estudo anual da NordPass revela que a palavra-passe “123456” continua a ser a mais utilizada e exposta em Portugal. Além disso, as credenciais comprometidas incluem frequentemente referências a temas populares como o futebol, a música e a cultura digital. Este cenário demonstra a persistência de fracos hábitos de cibersegurança no país. O impacto traduz-se num risco elevado de acesso não autorizado a contas pessoais e empresariais.",
    "image": null,
-   "points": [],
+   "points": [
+    "O quê: Divulgação do estudo anual da NordPass sobre as palavras-passe mais comuns em Portugal.",
+    "Como: Análise de credenciais expostas em incidentes de segurança.",
+    "Impacto: Facilita o acesso indevido de criminosos a contas online devido à fragilidade das passwords.",
+    "Quem: Utilizadores em Portugal que utilizam termos simples, futebol e cultura digital."
+   ],
    "title_original": null,
    "category": "Geral",
    "translated": false,
-   "enriched": false,
-   "raw": "O estudo anual da NordPass revela que “123456” continua a liderar as palavras-passe mais comuns em Portugal. Referências ao futebol, música e cultura digital também surgem nas credenciais expostas"
+   "enriched": true,
+   "why": "Expõe contas online a acessos não autorizados devido à utilização continuada de passwords fáceis de adivinhar.",
+   "todo": "Utilize um gestor de palavras-passe para criar credenciais complexas, únicas e ative sempre a autenticação multifator (MFA)."
   },
   {
    "id": "507f9b79c2397c6c",
@@ -13718,50 +13800,6 @@
    "enriched": true,
    "why": "Evidencia como as ameaças modernas utilizam ferramentas de IA para otimizar intrusões em infraestruturas empresariais.",
    "todo": "Utilize autenticação multifator robusta e proteja rigorosamente as chaves de acesso e credenciais de nuvem."
-  },
-  {
-   "id": "9899fc2c80e3e1c6",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline",
-   "published": "2026-11-16T19:56:05+00:00",
-   "title": "Ataques de Ransomware Aumentam Impulsionados por IA, Mas Pagamentos Diminuem",
-   "summary": "Grupos de ransomware estão a recorrer a modelos de linguagem grande e outros sistemas de IA para escalar as suas atividades ilícidas. Estas tecnologias permitem criar e-mails de phishing mais convincentes e identificar dados sensíveis de forma muito mais rápida. Em contrapartida, regista-se uma diminuição nos pagamentos de resgates por parte das vítimas.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt80dac13b14975660/6af7368e89398e7e289817aa/global-cyber-map-alestudio996-shutterstock.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "Modelos de IA ajudam grupos de ransomware a criar phishing convincente.",
-    "A tecnologia acelera a identificação de dados confidenciais.",
-    "Verifica-se uma redução nos pagamentos de resgates pelas vítimas."
-   ],
-   "title_original": "Ransomware Attacks Increase Behind AI, But Payments Decline",
-   "category": "Ransomware",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra como a IA aumenta a eficiência dos ataques, alterando a dinâmica das extorsões.",
-   "todo": "Invista em formação contra phishing e reforce os backups para mitigar o impacto de potenciais ataques de ransomware."
-  },
-  {
-   "id": "e7daa89d962c4074",
-   "source": "TechCrunch Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://techcrunch.com/2026/11/16/uber-confirms-hackers-stole-thousands-of-drivers-license-information-in-data-breach/",
-   "published": "2026-11-16T19:53:00+00:00",
-   "title": "Uber diz que hackers roubaram informações de quase 150.000 cartas de condução em violação de dados",
-   "summary": "A empresa de transporte partilhado Uber sofreu um incidente de segurança que resultou no roubo de dados de cartas de condução. A informação afetada estava armazenada na empresa de nuvem de IA Fireworks AI e continha registos de cerca de 150.000 condutores. O caso salienta os riscos associados ao armazenamento de dados sensíveis em fornecedores terceiros.",
-   "image": null,
-   "points": [
-    "A Uber foi alvo de uma violação de dados de condutores.",
-    "Foram roubadas informações de cerca de 150.000 cartas de condução.",
-    "Os dados estavam armazenados no fornecedor Fireworks AI."
-   ],
-   "title_original": "Uber says hackers stole information on close to 150,000 driver’s licenses during data breach",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Alerta para a necessidade de auditar rigorosamente a segurança dos parceiros e fornecedores de serviços em nuvem.",
-   "todo": "Monitore o acesso a dados sensíveis armazenados em fornecedores externos e valide as suas políticas de segurança."
   }
  ]
 }

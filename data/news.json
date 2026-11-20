@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T05:26:03.693285+00:00",
+ "updated": "2026-11-20T05:46:15.978745+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -310,14 +310,60 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 200,
-  "unenriched": 77,
+  "pending": 201,
+  "unenriched": 78,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "09866cb18e2f4169",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/20/ai-agent-api-security-production/",
+   "published": "2026-11-20T05:30:11+00:00",
+   "title": "A segurança das APIs de agentes de IA não acompanhou o ritmo dos agentes já em produção",
+   "summary": "Um inquérito da Postman a cerca de 9.000 profissionais revelou que muitas empresas colocam agentes de IA a trabalhar em produção antes de garantirem a sua segurança. Cerca de um quarto das organizações já tem agentes a interagir com as suas APIs. No entanto, quatro em dez inquiridos ainda não definiram como gerir as credenciais e a identidade, expondo falhas críticas.",
+   "image": null,
+   "points": [
+    "Quase 9.000 programadores e arquitetos foram inquiridos pela Postman sobre a gestão de agentes de IA.",
+    "Um quarto das organizações já utiliza agentes de IA a aceder a APIs em ambiente de produção.",
+    "Cerca de 40% dos inquiridos ainda não resolveram a questão das credenciais e da identidade.",
+    "A falta de planeamento em segurança expõe APIs e sistemas a acessos não autorizados."
+   ],
+   "title_original": "AI agent API security hasn’t caught up with agents already running in production",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A adoção precipitada de IA sem controlo de acessos cria vulnerabilidades graves nas APIs corporativas.",
+   "todo": "Audite e restrinja as permissões das credenciais atribuídas aos agentes de IA em ambiente de produção."
+  },
+  {
+   "id": "fa700a4eb8ceffe8",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
+   "published": "2026-11-20T05:30:01+00:00",
+   "title": "Novo zero-day do Windows, FastUnlock, permite a execução de programas num PC bloqueado",
+   "summary": "Uma nova técnica de zero-day chamada FastUnlock foi divulgada por investigadores, permitindo que quem tenha acesso físico a um computador Windows bloqueado consiga iniciar programas sem iniciar sessão. Embora o método conceda apenas uma conta limitada e não privilégios de administrador, a falha permanece sem correção oficial. A vulnerabilidade foi tornada pública pelos investigadores conhecidos como MSNightmare e Nightmare Eclipse, juntamente com a empresa ThreatLocker.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRnUdcazdCteyaE1EC_aLit8CioDaJ5yvsWnawFVWQrJvYFktNRJXlW9MOJLimG_-aS1IZChVHJbjPI4CXjIbNFLjn5W686xynepfC0oWyEG81NX5CxdS-9ayumfRljgy32e2bYXDD72T6VpIFFzeCcPKwG48RDKiZExwNdF-4XDFicISSaaRtT3W2dt0/s1600/windows-lockscreen.jpg",
+   "points": [
+    "O método FastUnlock permite iniciar programas num PC Windows bloqueado sem fazer login.",
+    "A exploração requer acesso físico direto à máquina afetada.",
+    "O acesso obtido restringe-se a uma conta limitada, sem privilégios de administrador.",
+    "A falha de zero-day foi divulgada publicamente sem correção disponível da Microsoft."
+   ],
+   "title_original": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "O acesso físico a computadores com falhas por corrigir pode comprometer a integridade local do sistema.",
+   "todo": "Bloqueie fisicamente os dispositivos e restrinja o acesso não autorizado às estações de trabalho."
+  },
   {
    "id": "5cdfc826b45c2f05",
    "source": "Help Net Security",
@@ -13724,52 +13770,6 @@
    "enriched": true,
    "why": "Ferramentas avançadas de IA em código aberto estão a ser adaptadas para acelerar ataques maliciosos.",
    "todo": "Monitorize redes contra comportamentos automatizados de reconhecimento e ferramentas de IA conhecidas."
-  },
-  {
-   "id": "f592fc7cd9c1bb2f",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/16/microsoft-remote-lock-feature-preview/",
-   "published": "2026-11-16T11:57:54+00:00",
-   "title": "Microsoft avança com bloqueio remoto para dispositivos Windows perdidos ou roubados",
-   "summary": "A Microsoft introduziu em pré-visualização a funcionalidade de bloqueio remoto através do Intune para dispositivos Windows perdidos, roubados ou comprometidos. A ferramenta encerra sessões ativas, oculta opções de início de sessão e apresenta um ecrã de bloqueio que persiste mesmo após reinicializações ou sem ligação à internet. O recurso permite proteger dados empresariais sem necessidade de apagar o dispositivo por completo.",
-   "image": null,
-   "points": [
-    "Quem: Administradores de TI e utilizadores de Windows.",
-    "O quê: Lançamento em pré-visualização da função de bloqueio remoto via Intune.",
-    "Como: Encerramento de sessões e exibição persistente de ecrã de bloqueio.",
-    "Impacto: Proteção imediata de dados corporativos em dispositivos extraviados sem perda total de dados."
-   ],
-   "title_original": "Microsoft previews remote lock for lost or stolen Windows devices",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "O controlo remoto de dispositivos perdidos é essencial para mitigar roubos de dados sem apagar sistemas.",
-   "todo": "Configure ferramentas de gestão de dispositivos móveis (MDM) como o Intune para proteger equipamentos corporativos."
-  },
-  {
-   "id": "3c6d27eca8a0c168",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203230/hacking/from-report-to-tested-detection-in-hours-the-artex-signature-pack.html",
-   "published": "2026-11-16T11:50:46+00:00",
-   "title": "De relatório a deteção testada em horas: O pacote de assinaturas ARTEX",
-   "summary": "O investigador MalwareMustDie publicou um pacote de deteção em código aberto para a framework ARTEX, disponível em sete formatos para combater ameaças rápidas. Como os atacantes reduzem o tempo de intrusão de semanas para horas, o foco foi colocado em regras comportamentais em vez de apenas indicadores de compromisso (IoCs) estáticos. O conjunto valida sequências de ações suspeitas, como reconhecimento acelerado e força bruta de passwords.",
-   "image": "https://i0.wp.com/securityaffairs.com/wp-content/uploads/2026/11/image-38.png?resize=1024%2C683&#038;ssl=1",
-   "points": [
-    "Quem: O investigador MalwareMustDie e equipas de segurança.",
-    "O quê: Lançamento de um pacote de deteção comportamental para a ferramenta ARTEX.",
-    "Como: Publicação de regras em formatos como Sigma, Suricata e YARA.",
-    "Impacto: Capacidade de resposta rápida face a ataques rápidos orquestrados por IA."
-   ],
-   "title_original": "From Report to Tested Detection in Hours: The ARTEX Signature Pack",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "A deteção baseada em comportamento é vital quando os atacantes mudam rapidamente as suas infraestruturas.",
-   "todo": "Implemente regras de deteção comportamental nos sistemas de monitorização para identificar padrões de ataque."
   }
  ]
 }

@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-20T12:48:19.266834+00:00",
+ "updated": "2026-11-20T13:05:44.776794+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "Pplware Segurança",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -234,17 +234,17 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 17
+   "added": 18
   },
   {
    "source": "The Register Security",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 7
   },
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Security Affairs",
@@ -268,13 +268,13 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 16
+   "added": 17
   },
   {
    "source": "ACSC Austrália",
@@ -309,15 +309,39 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 226,
-  "unenriched": 90,
+  "done": 36,
+  "pending": 298,
+  "unenriched": 165,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 66 column 5 (char 5085)"
+   "Expecting value: line 34 column 5 (char 3181)",
+   "Expecting property name enclosed in double quotes: line 5 column 1 (char 83)"
   ]
  },
  "items": [
+  {
+   "id": "da07337d7560d129",
+   "source": "Malwarebytes Labs",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.malwarebytes.com/blog/data-breaches/2026/11/hackers-leak-data-linked-to-visa-mastercard-and-jpmorgan-customers",
+   "published": "2026-11-20T12:51:36+00:00",
+   "title": "Fuga de dados afeta clientes da Visa, Mastercard e JPMorgan",
+   "summary": "Um grupo de ransomware divulgou dados de clientes associados à Visa, Mastercard e JPMorgan Chase, obtidos através de ataques a fornecedores externos. A informação vazada inclui contactos e reservas, mas as empresas confirmam que os sistemas de pagamento não foram afetados. Os dados recolhidos podem agora ser explorados por burlões para tornar mensagens fraudulentas mais convincentes.",
+   "image": "https://www.malwarebytes.com/wp-content/uploads/sites/2/2026/11/n0n_leak_site.png",
+   "points": [
+    "Alvo: Clientes da Visa, Mastercard e JPMorgan Chase através de fornecedores externos.",
+    "O quê: Fuga de dados com nomes, emails e histórico de reservas.",
+    "Impacto: Sem dados de pagamento expostos, mas riscos de burlas direcionadas.",
+    "Como: Ciberataques a prestadores de serviços de terceiros."
+   ],
+   "title_original": "Hackers leak data linked to Visa, Mastercard, and JPMorgan customers",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como vulnerabilidades em fornecedores terceiros podem expor dados sensíveis de clientes de grandes empresas.",
+   "todo": "Monitorize a sua atividade e desconfie de mensagens ou contactos inesperados que utilizem os seus dados pessoais."
+  },
   {
    "id": "5b364ed36dab9469",
    "source": "SecurityWeek",
@@ -13756,29 +13780,6 @@
    "enriched": true,
    "why": "Marca a responsabilização judicial de um dos incidentes de fuga de propriedade intelectual mais notórios da indústria dos videojogos.",
    "todo": "Adotar controlos rigorosos de acesso interno e monitorização de dispositivos para prevenir fugas de dados por colaboradores ou terceiros."
-  },
-  {
-   "id": "e2934b3e81caab1f",
-   "source": "Cybersecurity Dive",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cybersecuritydive.com/news/php2shell-exploited-chained-attacks-check-point/874751/",
-   "published": "2026-11-16T15:47:25+00:00",
-   "title": "Falha PHP2Shell explorada em ataques em cadeia contra gateways Check Point não corrigidas",
-   "summary": "Atacantes cibernéticos exploraram a falha PHP2Shell em ataques encadeados direcionados a dispositivos de gateway da Check Point que não tinham recebido as correções necessárias. Em determinados casos observados durante as intrusões, os cibercriminosos instalaram software malicioso destrutivo do tipo wiper para apagar dados. Além disso, os invasores utilizaram mensagens de cariz político durante as suas ações maliciosas nos sistemas comprometidos.",
-   "image": "https://imgproxy.divecdn.com/JxVR1QHLPVFteBc7dqk3fxdQromcahBdm3_ZZyejzYg/g:nowe:0:1064/c:5197:2936/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xMzcwMjMzMzIwLmpwZw==.webp",
-   "points": [
-    "A vulnerabilidade PHP2Shell foi utilizada em ataques encadeados.",
-    "Os alvos principais foram gateways da Check Point sem patches aplicados.",
-    "Foram instalados programas wiper destrutivos para apagar dados em alguns casos.",
-    "Os atacantes deixaram também mensagens com teor político nos sistemas."
-   ],
-   "title_original": "PHP2Shell flaw exploited in chained attacks targeting unpatched Check Point gateways",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "A exploração de falhas conhecidas em equipamentos de perímetro expõe redes inteiras a destruição de dados e intrusões profundas.",
-   "todo": "Aplique imediatamente as correções de segurança (patches) disponibilizadas pelos fabricantes para gateways e firewalls de perímetro."
   }
  ]
 }

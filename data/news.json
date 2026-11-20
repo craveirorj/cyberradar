@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T21:26:19.147720+00:00",
+ "updated": "2026-11-20T21:46:43.393263+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -89,7 +89,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 23
+   "added": 22
   },
   {
    "source": "SecurityWeek",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -133,8 +133,8 @@
   },
   {
    "source": "Schneier on Security",
-   "ok": true,
-   "added": 7
+   "ok": false,
+   "error": "403 Client Error: Forbidden for url: https://www.schneier.com/feed/atom/"
   },
   {
    "source": "SANS ISC",
@@ -238,8 +238,8 @@
   },
   {
    "source": "The Register Security",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 12
   },
   {
    "source": "Help Net Security",
@@ -309,15 +309,50 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 204,
-  "unenriched": 68,
+  "done": 108,
+  "pending": 221,
+  "unenriched": 85,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting ',' delimiter: line 69 column 16 (char 6459)",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "f0b8696c25c4c4a7",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/west-virginia-legislature-cyberattack",
+   "published": "2026-11-20T21:34:36+00:00",
+   "title": "West Virginia Legislature hit with cyber incident affecting IT systems",
+   "summary": "A cybersecurity incident that began Thursday was still ongoing Friday in the West Virginia Legislature. A spokesperson said the disruption did not spread to other government entities.",
+   "image": "https://cms.therecord.media/uploads/wva_state_capitol_blil_dickinson_flickr_a81eb98b4b.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "A cybersecurity incident that began Thursday was still ongoing Friday in the West Virginia Legislature. A spokesperson said the disruption did not spread to other government entities."
+  },
+  {
+   "id": "1d4b67e404ea5230",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/cyber-crime/2026/11/20/visa-mastercard-theft-included-info-useful-for-phishing-but-not-draining-bank-accounts-say-researchers/5311478",
+   "published": "2026-11-20T21:27:56+00:00",
+   "title": "Visa, Mastercard theft included info useful for phishing, but not draining bank accounts, say researchers",
+   "summary": "No financial details, but plenty of other clues",
+   "image": "https://image.theregister.com/?imageId=5311482&width=800",
+   "points": [],
+   "title_original": null,
+   "category": "Ransomware",
+   "translated": false,
+   "enriched": false,
+   "raw": "Visa and Mastercard customer info leaked by the data thieves and extortionists who claim to have stolen it from the financial giants doesn’t include card numbers, passwords, or home addresses. On Thursday, Visa, Mastercard, and JPMorgan Chase confirmed to The Register that they are investigating third-party breaches that may involve customer information. Ransomware and extortion crew n0n claimed to be responsible for all three, and on Thursday published samples of the stolen files – data-theft groups typically leak some of the compromised data ahead of the official extortion deadline in an effort to put more pressure on victim companies to pay the ransom demand. Researchers at SOCRadar, a threat-intelligence firm that has been tracking n0n since it emerged in September, have parsed all 14 files in the n0n’s published Visa and Mastercard archives, and told us that the files don’t contain any financial details belonging to banking customers. “We found no card numbers, expiry dates, CVVs, passwords, dates of birth, or home addresses in any file,” Ensar Seker, SOCRadar chief information security officer, told The Register. “Visa's statement that no card numbers were affected matches our scan.” Mastercard previously said that stolen data included a “limited amount of email addresses – non-payments information” from a subset of cardholders in a benefits program. According to SOCRadar’s analysis, the leaked files do contain mobile numbers, Bank Identification Number (BIN) prefixes, and dated airline, hotel, and restaurant bookings. So while the data doesn’t include card or account numbers that crooks could use to drain customers' bank accounts or rack up massive credit card bills, “that detail is what a fraudster needs to pose as a concierge desk or a bank,” in an email or voi"
+  },
   {
    "id": "a9aa37ceddf16814",
    "source": "Dark Reading",
@@ -13763,52 +13798,6 @@
    "enriched": true,
    "why": "Promove a discussão nacional e a partilha de conhecimento sobre os rumos da cibersegurança e soberania digital.",
    "todo": ""
-  },
-  {
-   "id": "aae8c4832e631e5c",
-   "source": "TechCrunch Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
-   "published": "2026-11-16T23:32:32+00:00",
-   "title": "Startup de IA de cibersegurança Corma atinge avaliação de 1.000 milhões de dólares em cerca de 3 meses",
-   "summary": "A startup de cibersegurança baseada em inteligência artificial Corma angariou 125 milhões de dólares numa ronda de financiamento de Série A, liderada pela NEA. Esta operação elevou a avaliação da empresa para mil milhões de dólares, apenas três meses após o lançamento do seu produto no mercado. O rápido crescimento reflete o elevado interesse e investimento em soluções de segurança impulsionadas por IA. A startup destaca-se assim no ecossistema tecnológico atual.",
-   "image": null,
-   "points": [
-    "Quem: Startup de IA de cibersegurança Corma e a investidora NEA.",
-    "O quê: Angariação de 125 milhões de dólares numa ronda de Série A.",
-    "Impacto: Atingiu uma avaliação de mil milhões de dólares em apenas três meses.",
-    "Quando: Três meses após o lançamento do produto."
-   ],
-   "title_original": "Cybersecurity AI startup Corma reaches $1B valuation in about 3 months",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Ilustra o boom massivo de investimento em tecnologias de inteligência artificial aplicadas à cibersegurança.",
-   "todo": ""
-  },
-  {
-   "id": "ccf02002c5acae85",
-   "source": "Unit 42 (Palo Alto)",
-   "region": "US",
-   "lang": "en",
-   "link": "https://unit42.paloaltonetworks.com/custom-rats-target-southeast-asia-governments/",
-   "published": "2026-11-16T23:00:55+00:00",
-   "title": "QUIC e encoberto: Novos RATs alimentados por HTTP/3 têm como alvo governos do Sudeste Asiático",
-   "summary": "Investigadores descobriram uma campanha de ciberespionagem no Sudeste Asiático direcionada a entidades governamentais. A operação utilizou o PerfectPioneer RAT, o KUKURAT modular e canais de comando e controlo baseados no protocolo HTTP/3. Estas ferramentas furtivas permitiram aos atacantes manterem-se ocultos enquanto espionavam as redes das vítimas. O uso de tecnologias inovadoras evidencia a evolução técnica das ameaças na região.",
-   "image": "https://unit42.paloaltonetworks.com/wp-content/uploads/2026/11/06_Nation-State-cyberattacks_1920x900-3.jpg",
-   "points": [
-    "Quem: Atores de ciberespionagem e governos do Sudeste Asiático.",
-    "O quê: Campanha de espionagem com o PerfectPioneer RAT e KUKURAT modular.",
-    "Como: Utilização de canais de comando e controlo HTTP/3 e protocolos QUIC.",
-    "Impacto: Infiltração furtiva em redes governamentais da região."
-   ],
-   "title_original": "QUIC and Covert: Novel HTTP/3-Powered RATs Target Southeast Asian Governments",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Revela a adoção de canais de comunicação modernos e menos inspecionados por malware de espionagem.",
-   "todo": "Monitorize o tráfego de rede encriptado e implemente soluções de deteção avançada para comportamentos anómalos."
   }
  ]
 }

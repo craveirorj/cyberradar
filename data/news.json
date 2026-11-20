@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T02:07:19.942057+00:00",
+ "updated": "2026-11-20T02:26:13.163507+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -139,7 +139,7 @@
   {
    "source": "SANS ISC",
    "ok": true,
-   "added": 3
+   "added": 2
   },
   {
    "source": "DataBreaches.net",
@@ -309,15 +309,39 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 202,
-  "unenriched": 80,
+  "done": 108,
+  "pending": 213,
+  "unenriched": 91,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting ',' delimiter: line 28 column 68 (char 2427)",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "e640697064297c0b",
+   "source": "CSO Online",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.csoonline.com/article/4251068/european-commission-hr-hit-by-cyber-attack.html",
+   "published": "2026-11-20T02:08:48+00:00",
+   "title": "Recursos Humanos da Comissão Europeia atingidos por ciberataque",
+   "summary": "A Comissão Europeia confirmou que sistemas de recursos humanos foram alvo de um ataque cibernético perpetrado com a ferramenta ARTEX. O incidente foi detetado a 22 de outubro e obrigou ao corte de acessos aos sistemas durante mais de dez dias como medida preventiva. A campanha envolveu uma série de incidentes e a EDPS foi devidamente informada sobre o sucedido. As autoridades asseguraram que não existem, até ao momento, provas de uma fuga de dados que afete o pessoal da Comissão.",
+   "image": "https://www.csoonline.com/wp-content/uploads/2026/10/4229824-0-32639600-1790929680-shutterstock_318496325.jpg?quality=50&strip=all",
+   "points": [
+    "Ataque a sistemas de recursos humanos da Comissão Europeia através da ferramenta ARTEX.",
+    "Acesso aos sistemas cortado por mais de dez dias para mitigação e prevenção.",
+    "Envolvimento de uma campanha com múltiplos incidentes reportados à EDPS.",
+    "Ausência de indícios de violação de dados de funcionários da Comissão."
+   ],
+   "title_original": "European Commission HR hit by cyber attack",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como ferramentas de teste de penetração de código aberto podem ser ativamente weaponizadas por atacantes contra infraestruturas governamentais críticas.",
+   "todo": "Monitorizar e restringir o uso não autorizado de ferramentas de pentest nas redes e manter canais de comunicação ativos com as equipas de CERT."
+  },
   {
    "id": "e60f53cef3c69b10",
    "source": "SANS ISC",
@@ -13748,29 +13772,6 @@
    "enriched": true,
    "why": "Falhas em servidores de comunicação com privilégios elevados representam riscos graves de controlo total.",
    "todo": "Atualize imediatamente os servidores UnrealIRCd para a versão corrigida mais recente."
-  },
-  {
-   "id": "2b1b80c8b882e016",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/hackers-probe-newly-disclosed-flaws-in-copeland-refrigeration-controllers/",
-   "published": "2026-11-16T11:05:42+00:00",
-   "title": "Hackers sondam falhas recentemente divulgadas em controladores Copeland Refrigeration",
-   "summary": "A Vulncheck divulgou a existência de 14 vulnerabilidades que afetam os controladores Copeland XWEB EVO, tendo duas delas sido rapidamente visadas por atacantes. Os cibercriminosos começaram a sondar ativamente estas falhas logo após a respetiva divulgação pública. A situação sublinha a urgência de mitigar falhas em equipamentos industriais e de controlo.",
-   "image": null,
-   "points": [
-    "Quem: A empresa Vulncheck e atacantes cibernéticos.",
-    "O quê: Descoberta e sondagem de 14 vulnerabilidades em controladores Copeland.",
-    "Como: Exploração rápida de falhas recém-divulgadas por parte de agentes maliciosos.",
-    "Impacto: Risco elevado de compromisso em sistemas de refrigeração e controlo industrial."
-   ],
-   "title_original": "Hackers Probe Newly Disclosed Flaws in Copeland Refrigeration Controllers",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Dispositivos IoT industriais são frequentemente visados logo após a revelação pública de falhas.",
-   "todo": "Aplique patches de segurança nos controladores afetados ou restrinja o seu acesso à rede."
   }
  ]
 }

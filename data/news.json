@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T11:46:25.811983+00:00",
+ "updated": "2026-11-20T12:08:01.822713+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,12 +54,12 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CISA Advisories",
    "ok": true,
-   "added": 9
+   "added": 8
   },
   {
    "source": "CISA Alertas (KEV)",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -283,8 +283,8 @@
   },
   {
    "source": "Securelist (Kaspersky)",
-   "ok": true,
-   "added": 6
+   "ok": false,
+   "error": "HTTPSConnectionPool(host='securelist.com', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection("
   },
   {
    "source": "Risky Bulletin",
@@ -310,14 +310,37 @@
  "translation": {
   "provider": "gemini",
   "done": 108,
-  "pending": 232,
-  "unenriched": 98,
+  "pending": 225,
+  "unenriched": 90,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 5 column 1 (char 83)"
+   "Expecting property name enclosed in double quotes: line 5 column 1 (char 78)"
   ]
  },
  "items": [
+  {
+   "id": "82d038c6d3891970",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/mail-bombing-attacks-it-helpdesk/",
+   "published": "2026-11-20T11:55:00+00:00",
+   "title": "Mail Bombing Attacks Fuel IT Helpdesk Impersonation Scams",
+   "summary": "Investigadores descobriram uma campanha em larga escala onde os atacantes inundam caixas de correio eletrónico com mensagens em massa. De seguida, fazem-se passar por funcionários do suporte técnico de IT para enganar os utilizadores e obter acesso às respetivas contas. Esta tática combina ataques de negação de serviço na caixa de entrada com engenharia social direcionada. O impacto principal traduz-se no comprometimento de contas de utilizador devido à falsa identidade de suporte.",
+   "image": null,
+   "points": [
+    "Atacantes inundam caixas de correio com emails em massa.",
+    "Crimisuosos fingem ser funcionários do suporte técnico de IT.",
+    "O objetivo é enganar os utilizadores para obter acesso às contas.",
+    "O impacto resulta no roubo de credenciais e acesso não autorizado."
+   ],
+   "title_original": "Mail Bombing Attacks Fuel IT Helpdesk Impersonation Scams",
+   "category": "Phishing/Fraude",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como os atacantes combinam volume de tráfego com engenharia social para roubar acessos.",
+   "todo": "Desconfie de contactos inesperados do suporte técnico e valide sempre a identidade do remetente através de canais oficiais."
+  },
   {
    "id": "3827cbac510e9c51",
    "source": "SecurityWeek",
@@ -363,6 +386,29 @@
    "enriched": true,
    "why": "Evidencia a profissionalização do cibercrime através da inteligência artificial para contornar os controlos de segurança tradicionais.",
    "todo": "Forme os colaboradores para reconhecerem sinais de phishing e utilize soluções de segurança avançadas capazes de detetar anomalias no tráfego de e-mail."
+  },
+  {
+   "id": "dd4cf6646af136a9",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203581/intelligence/trumps-first-move-after-the-outages-fire-the-cyber-director.html",
+   "published": "2026-11-20T11:23:45+00:00",
+   "title": "Trump’s First Move After the Outages: Fire the Cyber Director",
+   "summary": "O diretor nacional de cibersegurança, Sean Cairncross, foi despedido dias após falhas tecnológicas afetarem a Microsoft, voos nos Estados Unidos e a rede classificada da NSA. A administração tomou esta decisão após uma série de perturbações que incluíram uma falha global no Outlook e Microsoft 365, paragens de voos e uma interrupção na rede NSANet. Fontes oficiais indicam que a falha na NSA ocorreu após manutenção de rotina, sem evidências de um ciberataque. Kirsten Davies assumirá o cargo de forma temporária.",
+   "image": null,
+   "points": [
+    "O diretor nacional de cibersegurança Sean Cairncross foi despedido pela administração.",
+    "A decisão surge após falhas globais na Microsoft, voos e na rede interna da NSA.",
+    "A interrupção na NSA resultou de manutenção de rotina, sem indícios de ciberataque.",
+    "Kirsten Davies assumirá temporariamente a liderança da cibersegurança federal."
+   ],
+   "title_original": "Trump’s First Move After the Outages: Fire the Cyber Director",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia a instabilidade institucional e o impacto político de falhas tecnológicas críticas em infraestruturas.",
+   "todo": ""
   },
   {
    "id": "4ebef484f948ffe8",
@@ -13732,50 +13778,6 @@
    "enriched": true,
    "why": "A manipulação em massa da informação ameaça a estabilidade democrática e a capacidade de discernimento dos cidadãos.",
    "todo": "Adote o espírito crítico perante conteúdos sensacionaisistas online e verifique sempre a veracidade das fontes de informação."
-  },
-  {
-   "id": "487e61f1d80c82d2",
-   "source": "Check Point Research",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://research.checkpoint.com/2026/16th-november-threat-intelligence-report/",
-   "published": "2026-11-16T14:44:36+00:00",
-   "title": "Relatório de Inteligência de Ameaças – 16 de novembro",
-   "summary": "Vários incidentes de cibersegurança marcaram a semana, incluindo violações de dados e campanhas com IA. A fabricante TSMC sofreu uma fuga de dados de funcionários através de um fornecedor de nuvem, enquanto a Maersk enfrentou um roubo de dados num sistema legado reivindicado pelo grupo WhiteArmor. A cidade japonesa de Osaka viu expostos milhões de endereços de email e a ConnectWise reportou ataques à plataforma ScreenConnect. Adicionalmente, foram detetadas campanhas de intrusão autónoma recorrendo a agentes de inteligência artificial.",
-   "image": null,
-   "points": [
-    "TSMC, Maersk e Osaka enfrentaram incidentes de roubo de dados.",
-    "A ConnectWise reportou ataques direcionados à ferramenta ScreenConnect.",
-    "Investigadores detetaram campanhas de pirataria baseadas em agentes de IA."
-   ],
-   "title_original": "16th November – Threat Intelligence Report",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "A diversidade de ataques a grandes empresas e entidades públicas demonstra que os riscos afetam cadeias de abastecimento globais.",
-   "todo": "Audite regularmente sistemas legados e restrinja acessos de terceiros para mitigar o risco de intrusão em cascata."
-  },
-  {
-   "id": "ecfec591e28f2fcf",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/ibm-security-advisory-av26-1162",
-   "published": "2026-11-16T14:41:37+00:00",
-   "title": "Aviso de segurança da IBM (AV26-1162)",
-   "summary": "A IBM informou que vários dos seus produtos e operadores de contentores contêm vulnerabilidades de segurança. As falhas afetam soluções como o App Connect Operator, ContextForge MCP Gateway, QRadar EDR e webMethods Integration Server. Estas fragilidades podem resultar em perda de confidencialidade, negação de serviço e exposição de dados sensíveis. O Centro Cibernético aconselha a consulta dos boletins e a aplicação célere das correções.",
-   "image": null,
-   "points": [
-    "A IBM publicou alertas de segurança para múltiplos produtos e plataformas.",
-    "Foram identificadas falhas que permitem perda de dados e negação de serviço.",
-    "O Centro Cibernético apela à atualização imediata dos softwares afetados."
-   ],
-   "title_original": "IBM security advisory (AV26-1162)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "As falhas em ferramentas de gestão de segurança e integração da IBM podem conceder acesso indevido a redes empresariais.",
-   "todo": "Consulte os avisos específicos da IBM e aplique as correções recomendadas para fechar potenciais vetores de ataque."
   }
  ]
 }

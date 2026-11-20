@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T00:46:11.226491+00:00",
+ "updated": "2026-11-20T01:07:49.654091+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -309,15 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 116,
-  "pending": 207,
-  "unenriched": 85,
+  "done": 117,
+  "pending": 205,
+  "unenriched": 83,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "1fe5c6c3b7969d24",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/20/flaws-in-vmware-and-kvm-need-attention-if-you-have-time-while-fixing-java-php-and-everything-else/5311193",
+   "published": "2026-11-20T00:57:45+00:00",
+   "title": "Falhas em VMware e KVM exigem atenção, juntamente com correções para Java e PHP",
+   "summary": "A VMware publicou dois novos avisos de segurança críticos que afetam vários produtos da marca. O advisório VMSA-2026-0009 inclui uma falha grave com pontuação 9.8 no vCenter, permitindo a bypass de autenticação e acesso não autorizado. Adicionalmente, foi detetada uma vulnerabilidade crítica de execução remota de código no Apache utilizado em múltiplas soluções da empresa. Em paralelo, surgiu um bug no Linux KVM que afeta utilizadores de processadores AMD com virtualização aninhada.",
+   "image": "https://image.theregister.com/?imageId=262623&width=800",
+   "points": [
+    "A VMware lançou avisos de segurança para resolver falhas críticas.",
+    "Uma vulnerabilidade no vCenter permite o bypass de autenticação.",
+    "Produtos da VMware utilizam componentes Apache afetados por execução remota de código.",
+    "O Linux KVM apresenta um bug que afeta a segurança entre máquinas virtuais e o hospedeiro."
+   ],
+   "title_original": "Flaws in VMware and KVM need attention, if you have time while fixing Java, PHP, and everything else",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Estas vulnerabilidades críticas expõem infraestruturas virtuais a acessos não autorizados e ataques remotos.",
+   "todo": "Atualize urgentemente os softwares VMware e os pacotes afetados conforme as recomendações dos fabricantes."
+  },
   {
    "id": "c5e24a06d3952b8f",
    "source": "BleepingComputer",
@@ -13748,29 +13771,6 @@
    "enriched": true,
    "why": "Ilustra a evolução contínua das capacidades de IA e o seu impacto direto nas ferramentas de cibersegurança.",
    "todo": "Monitore e teste o comportamento de ferramentas de IA integradas nos seus fluxos de trabalho tecnológicos."
-  },
-  {
-   "id": "7cc704d9702d9e73",
-   "source": "Pplware Segurança",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://pplware.sapo.pt/inteligencia-artificial/gigante-chinesa-apresenta-um-novo-modelo-de-ia-de-topo-com-reforco-na-seguranca/",
-   "published": "2026-11-16T10:56:06+00:00",
-   "title": "Gigante chinesa apresenta um novo modelo de IA de topo, com reforço na segurança",
-   "summary": "A Alibaba revelou o Qwen4-Max, o seu mais recente modelo de inteligência artificial de topo. A nova ferramenta foi desenvolvida para lidar com tarefas profissionais e científicas complexas, destacando-se por gastar menos tokens do que o antecessor Qwen3.8-Max. Além disso, o sistema conta com proteções reforçadas contra riscos de segurança.",
-   "image": null,
-   "points": [
-    "Quem: Alibaba.",
-    "O quê: Lançamento do modelo de IA Qwen4-Max.",
-    "Como: Trabalho complexo com menor consumo de tokens e proteções melhoradas.",
-    "Impacto: Maior eficiência e segurança em tarefas científicas e profissionais."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia a tendência de integrar barreiras de segurança mais fortes em modelos de IA de nova geração.",
-   "todo": "Considere adotar soluções de IA que incorporem mecanismos de proteção robustos contra riscos operacionais."
   }
  ]
 }

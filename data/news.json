@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-20T09:47:07.225909+00:00",
+ "updated": "2026-11-20T10:09:02.224737+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 7
+   "added": 6
   },
   {
    "source": "TugaTech",
@@ -34,7 +34,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -139,7 +139,7 @@
   {
    "source": "SANS ISC",
    "ok": true,
-   "added": 2
+   "added": 3
   },
   {
    "source": "DataBreaches.net",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -283,8 +283,8 @@
   },
   {
    "source": "Securelist (Kaspersky)",
-   "ok": true,
-   "added": 7
+   "ok": false,
+   "error": "HTTPSConnectionPool(host='securelist.com', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection("
   },
   {
    "source": "Risky Bulletin",
@@ -309,11 +309,12 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 210,
-  "unenriched": 82,
+  "done": 108,
+  "pending": 214,
+  "unenriched": 86,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting property name enclosed in double quotes: line 126 column 5 (char 12783)"
   ]
  },
  "items": [
@@ -428,6 +429,29 @@
    "enriched": true,
    "why": "Ajuda a compreender como ataques a plataformas de email na cloud podem expor credenciais sensíveis.",
    "todo": "Ative a autenticação multifator (MFA) em todas as contas e monitorize acessos suspeitos."
+  },
+  {
+   "id": "17c3a4b45a20dbc3",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203554/cyber-crime/hunt-io-uncovers-russian-speaking-credential-theft-operation-targeting-us-banks-and-government-accounts.html",
+   "published": "2026-11-20T09:03:11+00:00",
+   "title": "Hunt.io Uncovers Russian-Speaking Credential Theft Operation Targeting US Banks and Government Accounts",
+   "summary": "Uma investigação da Hunt.io descobriu uma operação de roubo de credenciais que comprometeu centenas de computadores com Windows e expôs dados sensíveis. Os atacantes utilizaram ferramentas personalizadas como HavoX, Phantom53 e Kraken Bridge para gerir infeções e roubar chaves de gestores de passwords e dados bancários. O impacto incluiu o acesso ilícito a cofres digitais e a serviços federais e de autenticação norte-americanos. A operação afetou dezenas de vítimas com contas governamentais ou bancárias associadas.",
+   "image": "https://i0.wp.com/securityaffairs.com/wp-content/uploads/2026/11/image-53.png?resize=1024%2C624&#038;ssl=1",
+   "points": [
+    "Operação russa comprometeu 603 PCs com Windows e expôs dados bancários e governamentais.",
+    "Atacantes usaram ferramentas como HavoX, Phantom53 e Kraken Bridge para comunicação e gestão.",
+    "Foram roubadas credenciais de serviços como LastPass, IRS, Google e várias plataformas financeiras.",
+    "O impacto incluiu o acesso não autorizado a dados de identidade federal e contas bancárias."
+   ],
+   "title_original": "Hunt.io Uncovers Russian-Speaking Credential Theft Operation Targeting US Banks and Government Accounts",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como operações de roubo de credenciais conseguem contornar proteções locais e aceder a cofres de palavras-passe em PCs infetados.",
+   "todo": "Utilize autenticação multifator robusta e mantenha o software e os sistemas operativos atualizados para mitigar riscos de roubo de sessão e credenciais."
   },
   {
    "id": "10bc282c54eecba4",
@@ -13745,28 +13769,6 @@
    "enriched": true,
    "why": "Ajuda a focar as defesas nas falhas que representam o maior risco real de intrusão.",
    "todo": "Priorizar a correção de vulnerabilidades com base em análises de caminhos de ataque em vez de apenas na severidade isolada."
-  },
-  {
-   "id": "f9828b77234b7e3a",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
-   "published": "2026-11-16T13:27:20+00:00",
-   "title": "Resumo Semanal: 0-Days em N-able, Windows, Chrome, Frigoríficos e outros problemas",
-   "summary": "Várias falhas de segurança recentes demonstraram que as ferramentas concebidas para proteção nem sempre cumprem o seu papel, desde passwords predefinidas a atualizações comprometidas. A inteligência artificial continua a acelerar a descoberta de erros por parte de atacantes, enquanto falhas antigas continuam a ser exploradas. Os incidentes destacam a facilidade com que alguns acessos indesejados continuam a ocorrer.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMhM3PBYlJasSU7OztYuQsJDnDRFYwqV1-X9Nt1mTlAhFe0YQXSr0XrdCfo47u2DGAE8qSNw32LuPlMxoeTOBjakeXiHpHjFSXw7rsy8FdCldY2E6MuX9uKGM2McoGsaXUGDY2MYBsRAGXUDMGqzkT4wWlEezGDQho_f7d6MYNG2HAeW9FKeldRJrh0kj3/s1600/recaps.jpg",
-   "points": [
-    "Vulnerabilidades em sistemas populares continuam a ser exploradas por atacantes.",
-    "A IA acelera a caça a erros de software por parte dos cibercriminosos.",
-    "Falhas de configuração e passwords padrão continuam a abrir portas a intrusões."
-   ],
-   "title_original": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Ilustra a variedade e persistência de vetores de ataque que afetam a segurança digital.",
-   "todo": "Manter os softwares atualizados e eliminar palavras-passe predefinidas em todos os dispositivos."
   }
  ]
 }

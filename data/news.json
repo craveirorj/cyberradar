@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T12:27:28.870656+00:00",
+ "updated": "2026-11-20T12:48:19.266834+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -134,7 +134,7 @@
   {
    "source": "Schneier on Security",
    "ok": true,
-   "added": 8
+   "added": 7
   },
   {
    "source": "SANS ISC",
@@ -238,13 +238,13 @@
   },
   {
    "source": "The Register Security",
-   "ok": true,
-   "added": 8
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 15
+   "added": 16
   },
   {
    "source": "ACSC Austrália",
@@ -309,14 +309,83 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 222,
-  "unenriched": 85,
+  "done": 108,
+  "pending": 226,
+  "unenriched": 90,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting property name enclosed in double quotes: line 66 column 5 (char 5085)"
   ]
  },
  "items": [
+  {
+   "id": "5b364ed36dab9469",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/industry-reactions-to-major-outages-and-ai-patching-questions-feedback-friday/",
+   "published": "2026-11-20T12:38:55+00:00",
+   "title": "Reações da Indústria a Grandes Falhas e Questões de Correção com IA: Feedback Friday",
+   "summary": "Especialistas discutiram recentemente o impacto potencial da automação de correções por inteligência artificial em incidentes graves. Foram também destacados o valor de planos de reversão devidamente testados e a vulnerabilidade inerente aos sistemas altamente interconectados atuais. O debate focou-se na resiliência operacional face a falhas sistémicas complexas.",
+   "image": null,
+   "points": [
+    "Especialistas debateram o papel da IA em correções rápidas.",
+    "Destacou-se a necessidade de planos de reversão testados.",
+    "Alertou-se para a fragilidade de sistemas interconectados."
+   ],
+   "title_original": "Industry Reactions to Major Outages and AI Patching Questions: Feedback Friday",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda as organizações a prepararem melhor os seus sistemas contra falhas em cadeia.",
+   "todo": "Teste regularmente os planos de reversão e garanta redundância nos sistemas interligados."
+  },
+  {
+   "id": "56d6acf1943fbd7c",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/20/vmware-vcenter-zero-day-cve-2026-123890-exploited/",
+   "published": "2026-11-20T12:30:19+00:00",
+   "title": "Zero-day do VMware vCenter explorado durante meses antes da correção (CVE-2026-123890)",
+   "summary": "Um grupo de espionagem ligado à China, denominado Armory Castle, explorou ativamente uma vulnerabilidade zero-day no VMware vCenter desde o início de setembro. A falha, catalogada como CVE-2026-123890 com uma pontuação CVSS de 9.8, permite a invasores remotos não autenticados obterem sessões de administrador. A Broadcom acabou por lançar uma atualização de segurança para corrigir o problema.",
+   "image": null,
+   "points": [
+    "Grupo Armory Castle explorou falha zero-day no VMware vCenter.",
+    "Vulnerabilidade CVE-2026-123890 tem pontuação CVSS máxima de 9.8.",
+    "Permite acesso de administrador remoto sem autenticação.",
+    "Broadcom disponibilizou uma correção para o problema."
+   ],
+   "title_original": "VMware vCenter zero-day exploited for months before patch (CVE-2026-123890)",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permitia o acesso total não autorizado a servidores virtuais críticos das empresas.",
+   "todo": "Aplique imediatamente as atualizações de segurança fornecidas pela Broadcom para o vCenter."
+  },
+  {
+   "id": "f80afcc478575741",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
+   "published": "2026-11-20T12:20:00+00:00",
+   "title": "Falha no KVM do Linux (CVE-2026-99312) permite que VMs convidadas acedam à memória do anfitrião em sistemas AMD",
+   "summary": "Investigadores descobriram uma falha no hipervisor KVM do núcleo Linux que permitia ler cerca de 127 GB de memória de servidores em nuvem a partir de uma máquina virtual própria. A vulnerabilidade afeta exclusivamente servidores anfitriões com processadores AMD e com a virtualização aninhada ativada, podendo expor dados de outros clientes em ambientes partilhados. Os kernels corrigidos já foram disponibilizados.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg-jisyf4SWwWYA_RUtOoVqBviv2uNAUl6vEeGjsuBA0aOhfLYw7yHitbRBxAoWcf5ZP0UcGovNmyk-u-320fLFYIyUz7jtR77GiveyLdqsZWJ0DohwBfEFyN0KlNAIpIcpS9B6jHEZJybmTu7nuKM-PhSNPco-Z1QmacaSfwWyOWLXzT2WqaEdbZ810M/s1600/vms.jpg",
+   "points": [
+    "Falha CVE-2026-99312 afeta o hipervisor KVM em sistemas Linux.",
+    "Permitia a leitura de memória do anfitrião a partir de VMs.",
+    "Apenas afeta anfitriões com processadores AMD e virtualização aninhada.",
+    "Kernel com a correção já se encontra disponível."
+   ],
+   "title_original": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Comprometia o isolamento de dados entre diferentes clientes em servidores cloud partilhados.",
+   "todo": "Atualize o kernel do Linux nos servidores afetados com processadores AMD."
+  },
   {
    "id": "63ce2dd9ff54afb6",
    "source": "The Register Security",
@@ -383,6 +452,28 @@
    "enriched": true,
    "why": "Demonstra como a tecnologia moderna de imagem consegue desvendar mecanismos históricos de criptografia física.",
    "todo": ""
+  },
+  {
+   "id": "d9e0b261f40899fb",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html",
+   "published": "2026-11-20T12:00:00+00:00",
+   "title": "O Caminho para a Autonomia da IA no SOC",
+   "summary": "Líderes de segurança estão prestes a conferir maior autonomia aos agentes de inteligência artificial nos centros de operações de segurança. Um inquérito recente revelou que 36% dos CISO já confiam em IA para ações de baixo risco, perspetivando-se que este valor suba para 60% no próximo ano. A integração de agentes de IA nos SOC tornou-se a iniciativa principal para o ano de 2027.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGn0ym0Vqfakc2h3h2W6AT6gf5qd6RPkfrgV-Z2UgwDErad91v-nJoIu3OYwEC3IvLQ6rVGm6FIQypMcoTahAgL5_62ipKE1aQsZvqGsdJzu_4ZGaiFlCYKEpg1N5z3FRSk7O5n4uRlfDuNz7i99Ls9z1Ysee3iV4OCMTxG2rF8YLgCtfTOL2KA-hSQXY/s1600/INT.png",
+   "points": [
+    "36% dos CISO confiam atualmente em IA para ações de baixo risco.",
+    "60% esperam atingir esse nível de confiança daqui a um ano.",
+    "Automação do SOC lidera as prioridades de investimento para 2027."
+   ],
+   "title_original": "The Path to AI Autonomy in the SOC",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra a mudança iminente na gestão operacional da cibersegurança empresarial.",
+   "todo": "Defina limites claros de autoridade e monitorize de perto as ações automatizadas dos agentes de IA."
   },
   {
    "id": "82d038c6d3891970",
@@ -1291,6 +1382,50 @@
    "enriched": true,
    "why": "Permite compreender novas abordagens de privacidade e encriptação na comunicação móvel e em redes descentralizadas.",
    "todo": "Avalie aplicações de mensagens focadas na privacidade e verifique as permissões que partilha ao comunicar com terceiros."
+  },
+  {
+   "id": "8a368316c39190f7",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/news/cncs-coloca-certificacao-de-ciberseguranca-em-consulta-publica",
+   "published": "2026-11-20T00:00:00+00:00",
+   "title": "CNCS coloca certificação de cibersegurança em consulta pública",
+   "summary": "O Centro Nacional de Cibersegurança disponibilizou em consulta pública, até 4 de dezembro, o novo esquema de certificação de cibersegurança. A proposta introduz novos perfis destinados a avaliar a conformidade das organizações face ao novo regime jurídico em vigor. O processo visa recolher contributos para consolidar a regulamentação no setor.",
+   "image": null,
+   "points": [
+    "Consulta pública aberta pelo CNCS até 4 de dezembro.",
+    "Proposta define perfis de avaliação de conformidade.",
+    "Objetivo é alinhar entidades com o novo regime jurídico."
+   ],
+   "title_original": null,
+   "category": "Regulação",
+   "translated": false,
+   "enriched": true,
+   "why": "Define as futuras obrigações de conformidade legal e cibersegurança para as organizações em Portugal.",
+   "todo": "Analise a proposta em consulta pública e participe com feedback através dos canais oficiais do CNCS."
+  },
+  {
+   "id": "cfa442951ef1ebb9",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/opinion/o-trabalho-invisivel-da-equipa-de-suporte",
+   "published": "2026-11-20T00:00:00+00:00",
+   "title": "O trabalho invisível da equipa de suporte",
+   "summary": "A gestão eficaz de uma equipa de suporte exige saber o momento exato em que se deve deixar de tratar incidentes de forma isolada para passar a investigá-los em conjunto. Esta transição permite identificar padrões ocultos e problemas sistémicos mais amplos. A abordagem coletiva transforma o suporte diário numa linha de defesa mais proativa.",
+   "image": null,
+   "points": [
+    "Coordenadores devem transitar de incidentes isolados para investigações conjuntas.",
+    "Abordagem ajuda a detetar padrões ocultos de problemas.",
+    "Melhora a eficácia global da equipa de suporte."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Ajuda a detetar ameaças recorrentes ou falhas sistémicas mais rapidamente.",
+   "todo": "Implemente análises periódicas de tickets para identificar incidentes recorrentes com a mesma causa raiz."
   },
   {
    "id": "507f9b79c2397c6c",
@@ -13644,140 +13779,6 @@
    "enriched": true,
    "why": "A exploração de falhas conhecidas em equipamentos de perímetro expõe redes inteiras a destruição de dados e intrusões profundas.",
    "todo": "Aplique imediatamente as correções de segurança (patches) disponibilizadas pelos fabricantes para gateways e firewalls de perímetro."
-  },
-  {
-   "id": "793082517c417479",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/16/gta-6-hacker-arion-kurtag-pleads-guilty-after-release-from-secure-hospital/",
-   "published": "2026-11-16T15:47:13+00:00",
-   "title": "Hacker de GTA 6 Arion Kurtaj declara-se culpado após libertação de hospital psiquiátrico de segurança",
-   "summary": "O jovem Arion Kurtaj declarou-se culpado de vários crimes informáticos, incluindo a tentativa de extorsão contra os criadores do Grand Theft Auto 6. O pirata informático de 21 anos realizou o ataque em 2022, altura em que roubou dezenas de clipes inacabados do jogo. Inicialmente, tinha sido condenado a uma medida de internamento psiquiátrico por tempo indeterminado antes de ser considerado apto para enfrentar um julgamento convencional.",
-   "image": null,
-   "points": [
-    "Arion Kurtaj confessou a autoria dos crimes informáticos ligados à Rockstar.",
-    "O ataque de 2022 incluiu roubro de conteúdos e tentativas de extorsão.",
-    "O autor, agora com 21 anos, esteve anteriormente internado num hospital psiquiátrico.",
-    "A mudança no estado de saúde permitiu que respondesse perante a justiça criminal."
-   ],
-   "title_original": "GTA 6 hacker Arion Kurtag pleads guilty after release from secure hospital",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia o desfecho judicial de um dos maiores ataques de extorsão e roubo de segredos comerciais na indústria de entretenimento.",
-   "todo": "Reforce a segurança de acessos remotos e contas de colaboradores com autenticação multifator para travar intrusões iniciais."
-  },
-  {
-   "id": "67c2edf757288722",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/cursor-supply-chain-attack-started-at-fireworks/",
-   "published": "2026-11-16T15:45:43+00:00",
-   "title": "Ataque à cadeia de fornecimento do Cursor teve origem na Fireworks AI",
-   "summary": "Um atacante conseguiu roubar uma chave de acesso pertencente à Fireworks AI e utilizou-a para exfiltrar credenciais corporativas. Com esses dados obtidos de forma ilegítima, o cibercriminoso conseguiu publicar cópias infetadas da extensão Claude Code destinadas ao editor Cursor. O incidente demonstra como uma brecha inicial num fornecedor parceiro pode ser alavancada para comprometer software distribuído a utilizadores finais.",
-   "image": null,
-   "points": [
-    "O atacante roubou uma chave de acesso inicial na Fireworks AI.",
-    "As credenciais exfiltradas permitiram o acesso a contas e sistemas de publicação.",
-    "Foram enviadas cópias maliciosas da extensão Claude Code para o editor Cursor.",
-    "Trata-se de um ataque clássico de cadeia de fornecimento através de parceiros."
-   ],
-   "title_original": "Cursor Supply Chain Attack Started at Fireworks AI",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Ilustra como a vulnerabilidade de um fornecedor externo pode ser utilizada para distribuir extensões de software comprometidas.",
-   "todo": "Valide a integridade das extensões de software instaladas e restrinja a partilha e o ciclo de vida de chaves de API e credenciais."
-  },
-  {
-   "id": "d29e040f404457ab",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
-   "published": "2026-11-16T15:44:21+00:00",
-   "title": "Fandango diz que piratas informáticos roubaram dados de cartões de pagamento nas páginas de finalização de compra",
-   "summary": "A plataforma de venda de bilhetes Fandango Media está a alertar os clientes sobre uma violação de dados que comprometeu as informações de cartões de pagamento inseridas nas páginas de checkout. O incidente ocorreu num contexto de cibersegurança sensível, expondo dados financeiros dos utilizadores durante o processo de compra. A empresa já iniciou o processo de notificação aos afetados para mitigar riscos associados. O impacto recai sobre a privacidade financeira dos consumidores que utilizaram o serviço.",
-   "image": null,
-   "points": [
-    "A Fandango Media notificou os utilizadores sobre uma violação de dados.",
-    "Foram expostos detalhes de cartões de pagamento nas páginas de checkout.",
-    "O incidente afeta os clientes que realizaram compras na plataforma."
-   ],
-   "title_original": "Fandango says hackers stole payment card details from checkout pages",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "A exposição de dados financeiros de cartões de pagamento coloca os utilizadores em risco imediato de fraude e uso indevido.",
-   "todo": "Monitorize regularmente os extratos bancários e ative alertas de transações para detetar atividade suspeita no cartão."
-  },
-  {
-   "id": "1a111809b4d3d4a8",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/qualcomm-security-advisory-av26-1164",
-   "published": "2026-11-16T15:31:52+00:00",
-   "title": "Aviso de segurança da Qualcomm (AV26-1164)",
-   "summary": "A Qualcomm publicou um boletim de segurança para corrigir vulnerabilidades que afetam vários produtos da marca. O Centro Cibernético aconselha os administradores e utilizadores a consultarem a informação disponibilizada online. É recomendada a aplicação célere das atualizações necessárias à medida que fiquem disponíveis. O objetivo é mitigar falhas de segurança nestes sistemas.",
-   "image": null,
-   "points": [
-    "A Qualcomm emitiu um boletim de segurança para corrigir vulnerabilidades.",
-    "O aviso afeta diversos produtos da marca Qualcomm.",
-    "Recomenda-se a revisão do boletim e aplicação de atualizações."
-   ],
-   "title_original": "Qualcomm security advisory (AV26-1164)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Ignorar falhas de segurança conhecidas em hardware e software da Qualcomm pode permitir a exploração maliciosa dos sistemas afetados.",
-   "todo": "Consulte o boletim oficial da Qualcomm e aplique as atualizações de segurança recomendadas o mais rapidamente possível."
-  },
-  {
-   "id": "eea617c7ce178745",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/google-project-zero-sets-course-for-30-day-disclosure-deadline/",
-   "published": "2026-11-16T15:31:25+00:00",
-   "title": "Google Project Zero define rumo para prazo de divulgação de 30 dias",
-   "summary": "O Google Project Zero vai alterar a sua janela de divulgação de vulnerabilidades para 60 dias a partir de fevereiro de 2027. Posteriormente, o prazo será encurtado para uma janela de 30 dias a partir de janeiro de 2028. Esta mudança pretende acelerar a correção de falhas de segurança na indústria. A medida altera o tempo concedido para mitigar problemas antes da revelação pública.",
-   "image": null,
-   "points": [
-    "O Google Project Zero altera o prazo de divulgação de vulnerabilidades.",
-    "A janela passa para 60 dias em fevereiro de 2027.",
-    "O prazo será reduzido para 30 dias em janeiro de 2028."
-   ],
-   "title_original": "Google Project Zero Sets Course for 30-Day Disclosure Deadline",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Prazos mais curtos de divulgação pressionam os fabricantes a corrigir falhas mais depressa, reduzindo a janela de exposição a ataques.",
-   "todo": ""
-  },
-  {
-   "id": "dcfc43b1ba46a48d",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/maileva-docaposte-22-million-breach/",
-   "published": "2026-11-16T15:25:00+00:00",
-   "title": "Violação na subsidiária da La Poste, Maileva, expõe 22 milhões de pessoas",
-   "summary": "Uma falha de segurança na Maileva, subsidiária da La Poste, resultou na exposição de dados de milhões de cidadãos. O incidente revelou nomes e moradas postais de vinte e dois milhões de pessoas. A situação comprometeu uma vasta quantidade de informação pessoal gerida pela empresa. O impacto centra-se na perda massiva de privacidade dos indivíduos afetados.",
-   "image": null,
-   "points": [
-    "A Maileva, subsidiária da La Poste, sofreu uma violação de dados.",
-    "Foram expostos nomes e moradas postais de 22 milhões de pessoas.",
-    "O incidente afeta severamente a privacidade dos cidadãos envolvidos."
-   ],
-   "title_original": "La Poste Subsidiary Maileva Breach Exposes 22 Million People",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "A fuga em massa de dados de identificação pessoal facilita campanhas direcionadas de phishing e fraudes de identidade.",
-   "todo": "Esteja atento a comunicações inesperadas que utilizem o seu nome e morada para fins fraudulentos."
   }
  ]
 }

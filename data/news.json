@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T09:26:33.650352+00:00",
+ "updated": "2026-11-20T09:47:07.225909+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -34,7 +34,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -119,7 +119,7 @@
   {
    "source": "TechCrunch Security",
    "ok": true,
-   "added": 7
+   "added": 6
   },
   {
    "source": "Ars Technica Security",
@@ -149,7 +149,7 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 4
+   "added": 5
   },
   {
    "source": "Microsoft Security Blog",
@@ -310,13 +310,79 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 206,
-  "unenriched": 81,
+  "pending": 210,
+  "unenriched": 82,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "471f6faa5d753487",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/internet/seguranca/cuidado-com-o-winrar-e-o-firefox-novo-malware-esconde-se-em-programas-normais/",
+   "published": "2026-11-20T09:30:00+00:00",
+   "title": "Cuidado com o WinRAR e o Firefox: novo malware esconde-se em programas normais",
+   "summary": "Uma nova ameaça cibernética denominada BubbleLoader foi identificada por investigadores da ReversingLabs. Esta técnica transforma software legítimo e comum, como o WinRAR, o Firefox ou o Windows Media Player, em veículos de infeção. O objetivo é executar código oculto em segundo plano nos sistemas Windows, manipulando aplicações do dia a dia. O impacto afeta a segurança dos utilizadores que correm programas que parecem inofensivos.",
+   "image": null,
+   "points": [
+    "O investigador ReversingLabs detetou o BubbleLoader a infetar software legítimo.",
+    "Aplicações comuns como WinRAR e Firefox são usadas para ocultar código malicioso.",
+    "O malware executa ações em segundo plano no sistema operativo Windows."
+   ],
+   "title_original": null,
+   "category": "Malware",
+   "translated": false,
+   "enriched": true,
+   "why": "Aproveita a confiança em programas do quotidiano para executar código malicioso sem que o utilizador suspeite.",
+   "todo": "Mantenha o software atualizado e utilize soluções de segurança capazes de analisar o comportamento das aplicações em execução."
+  },
+  {
+   "id": "3270c493c152a36b",
+   "source": "SAPO Tek",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://tek.sapo.pt/noticias/internet/artigos/imt-e-alvo-de-varios-ciberataques-e-suspende-os-servicos/",
+   "published": "2026-11-20T09:25:40+00:00",
+   "title": "IMT é alvo de “vários ciberataques” e suspende os serviços. Site já foi reposto",
+   "summary": "O Instituto da Mobilidade e dos Transportes foi alvo de múltiplos ciberataques, o que levou à suspensão temporária dos seus serviços digitais e deixou o site inacessível desde sábado. As autoridades competentes já estão a investigar a origem da ocorrência para apurar responsabilidades. O organismo garantiu publicamente que, até ao momento, não existem indícios de comprometimento ou de exfiltração de dados.",
+   "image": null,
+   "points": [
+    "O Instituto da Mobilidade e dos Transportes sofreu vários ciberataques.",
+    "Os serviços digitais e o site foram suspensos temporariamente.",
+    "As autoridades investigam o caso, sem indícios de roubo de dados."
+   ],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": true,
+   "why": "Mostra a vulnerabilidade de serviços públicos essenciais a paralisações decorrentes de ataques informáticos.",
+   "todo": "As entidades públicas e privadas devem reforçar os planos de contingência e monitorização contínua dos sistemas."
+  },
+  {
+   "id": "09d3f14eaae718fb",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132057-update-released-with-28-changes-and-fixes/",
+   "published": "2026-11-20T09:25:35+00:00",
+   "title": "Atualização KB5132057 do Windows 11 lançada com 28 alterações e correções",
+   "summary": "A Microsoft disponibilizou a atualização de pré-visualização KB5132057 para o Windows 11, introduzindo um total de 28 alterações e correções. Esta nova versão traz melhorias significativas em ferramentas nativas do sistema operativo, destacando-se aspetos como o Windows Search, o Windows Hello e a caixa de diálogo Executar. Estas modificações visam otimizar a experiência e a estabilidade para os utilizadores.",
+   "image": null,
+   "points": [
+    "A Microsoft lançou a atualização de pré-visualização KB5132057 do Windows 11.",
+    "Foram introduzidas 28 alterações e correções no sistema operativo.",
+    "Inclui melhorias no Windows Search, Windows Hello e na caixa Executar."
+   ],
+   "title_original": "Windows 11 KB5132057 update released with 28 changes and fixes",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Corrige erros e melhora funcionalidades essenciais do sistema operativo Windows 11.",
+   "todo": "Instale as atualizações oficiais do sistema operativo de forma regular para garantir a estabilidade e segurança."
+  },
   {
    "id": "8165d9521735285d",
    "source": "TechCrunch Security",
@@ -333,9 +399,9 @@
     "Como: A saída coincide com relatos de falhas técnicas pelo país.",
     "Impacto: Aumenta a incerteza enquanto as causas das falhas continuam por apurar."
    ],
-   "title_original": "The U.S. national cyber director is stepping down",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Permanece incerto o impacto destas falhas técnicas e a liderança futura da cibersegurança norte-americana.",
    "todo": ""
@@ -356,9 +422,9 @@
     "Como: Incidente atingiu Mail Assure e SpamExperts Hosted Cloud.",
     "Impacto: Risco potencial de roubo de credenciais de acesso."
    ],
-   "title_original": "N-able Blames Service Disruption on Cyberattack",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Ajuda a compreender como ataques a plataformas de email na cloud podem expor credenciais sensíveis.",
    "todo": "Ative a autenticação multifator (MFA) em todas as contas e monitorize acessos suspeitos."
@@ -13701,74 +13767,6 @@
    "enriched": true,
    "why": "Ilustra a variedade e persistência de vetores de ataque que afetam a segurança digital.",
    "todo": "Manter os softwares atualizados e eliminar palavras-passe predefinidas em todos os dispositivos."
-  },
-  {
-   "id": "1515975bd342d1cc",
-   "source": "SANS ISC",
-   "region": "US",
-   "lang": "en",
-   "link": "https://isc.sans.edu/diary/rss/33522",
-   "published": "2026-11-16T13:11:04+00:00",
-   "title": "Varreduras detetadas para LiteLLM/Starlette (CVE-2026-42271, CVE-2026-48710)",
-   "summary": "Foram detetados pedidos direcionados a honeypots a tentar explorar as vulnerabilidades CVE-2026-42271 e CVE-2026-48710. Estas falhas, recentemente documentadas pela Horizon3.ai, podem ser encadeadas para permitir a execução remota de código sem necessidade de autenticação. Os ataques parecem focar-se em endpoints específicos associados a estas ferramentas.",
-   "image": null,
-   "points": [
-    "Detetadas tentativas de exploração das CVE-2026-42271 e CVE-2026-48710 em honeypots.",
-    "As vulnerabilidades afetam LiteLLM/Starlette e podem ser encadeadas.",
-    "Permitem a execução remota de código sem autenticação prévia."
-   ],
-   "title_original": "Scans for LiteLLM/Starlette (CVE-2026-42271, CVE-2026-48710), (Mon, Nov 16th)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Representa um risco crítico de execução de código remoto por atacantes não autenticados.",
-   "todo": "Atualizar imediatamente os componentes afetados e monitorizar os registos de tráfego à procura de pedidos suspeitos."
-  },
-  {
-   "id": "071d1acbb1ab99db",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/16/ai-powered-infostealer-marketplace-victim-profiles/",
-   "published": "2026-11-16T13:03:56+00:00",
-   "title": "Mercado criminoso vende registos de roubo de dados com perfis gerados por IA",
-   "summary": "Uma empresa de segurança descobriu um mercado criminoso em fóruns de cibersegurança que comercializa dados roubados por 'malware' de extração de informação. Os pacotes de dados incluem perfis detalhados gerados por inteligência artificial sobre as vítimas, indicando o local de trabalho e as contas mais valiosas. O serviço disponibiliza uma barra de pesquisa que permite aos compradores consultar estas descrições em linguagem natural. Esta evolução facilita a seleção de alvos lucrativos pelos atacantes.",
-   "image": null,
-   "points": [
-    "Mercado de crimes cibernéticos comercializa dados de 'infostealers'.",
-    "Perfis criados por IA detalham a identidade e o local de trabalho das vítimas.",
-    "Compradores podem pesquisar os perfis usando linguagem natural.",
-    "A descoberta foi feita pela empresa de segurança Hudson Rock."
-   ],
-   "title_original": "Criminal marketplace sells infostealer logs with AI-written profiles of their owners",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como os criminosos usam inteligência artificial para aumentar a eficiência e o valor dos dados roubados.",
-   "todo": "Utilize soluções anti-malware atualizadas e adote a autenticação multifator para proteger as contas contra roubo de credenciais."
-  },
-  {
-   "id": "770e470dce9dfadf",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/16/five-boston-u-alumni-sue-university-over-reported-data-breach/",
-   "published": "2026-11-16T13:00:42+00:00",
-   "title": "Cinco antigos alunos processam a Universidade de Boston devido a violação de dados",
-   "summary": "Cinco antigos alunos da Universidade de Boston apresentaram três ações judiciais coletivas separadas contra a instituição. Os processos alegam que a universidade falhou na proteção adequada de informações pessoais durante uma recente fuga de dados. A instituição reconheceu que houve acesso não autorizado a registos do seu sistema de informação de estudantes. Este sistema é gerido por um fornecedor externo.",
-   "image": null,
-   "points": [
-    "Cinco antigos alunos processam a Universidade de Boston.",
-    "Foram apresentadas três ações judiciais coletivas em novembro.",
-    "Em causa está uma falha na proteção de dados pessoais.",
-    "O sistema afetado é gerido por um fornecedor externo."
-   ],
-   "title_original": "Five Boston U. alumni sue University over reported data breach",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia a responsabilidade legal das instituições perante falhas de segurança em sistemas geridos por terceiros.",
-   "todo": "Exija auditorias de segurança rigorosas aos fornecedores externos que gerem dados sensíveis da sua organização."
   }
  ]
 }

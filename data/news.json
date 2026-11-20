@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T06:26:14.874785+00:00",
+ "updated": "2026-11-20T06:46:24.736121+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -310,14 +310,36 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 201,
-  "unenriched": 77,
+  "pending": 202,
+  "unenriched": 78,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "8b38735d044ef4d6",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/20/ai-prompt-injection-red-team/",
+   "published": "2026-11-20T06:30:20+00:00",
+   "title": "A sua equipa de 'red team' de IA pode estar a encontrar a mesma injeção de 'prompts' milhares de vezes",
+   "summary": "Investigadores descobriram que agentes de IA retreinados com um volume maior de ataques de injeção de 'prompts' tornaram-se mais fáceis de comprometer em três de quatro testes realizados. A ferramenta automatizada de 'red-teaming' que detetou mais ataques funcionantes acabou por produzir defesas mais fracas. O problema surge quando instruções ocultas em emails, páginas web ou saídas de ferramentas são processadas pelo agente de IA.",
+   "image": null,
+   "points": [
+    "Investigadores de várias universidades testaram agentes de IA retreinados com ataques de injeção de 'prompts'.",
+    "Ferramentas automáticas detetaram mais ataques mas resultaram em defesas mais fracas.",
+    "Instruções ocultas em conteúdos digitais continuam a enganar agentes de IA."
+   ],
+   "title_original": "Your AI red team may be finding the same prompt injection thousands of times",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que treinar defesas de IA com mais dados de ataque nem sempre resulta em sistemas mais seguros.",
+   "todo": "Reveja regularmente os métodos de validação e testes de segurança aplicados aos modelos de IA na sua organização."
+  },
   {
    "id": "9d409aafac3684e5",
    "source": "Help Net Security",
@@ -13747,28 +13769,6 @@
    "enriched": true,
    "why": "Mostra as limitações das dicas genéricas de cibersegurança em ambientes profissionais focados no atendimento ao cliente.",
    "todo": "Implemente processos de verificação secundária para transações financeiras e pedidos sensíveis enviados por email."
-  },
-  {
-   "id": "39e81b15c70b5228",
-   "source": "Pplware Segurança",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://pplware.sapo.pt/informacao/estonia-prepara-se-para-uma-invasao-conheca-o-plano-do-governo/",
-   "published": "2026-11-16T12:00:00+00:00",
-   "title": "Estónia prepara-se para uma invasão: conheça o plano do governo!",
-   "summary": "O governo da Estónia está a desenvolver uma estratégia de continuidade para assegurar o funcionamento dos serviços estatais digitais a partir do estrangeiro. O plano prevê a gestão do país através da nuvem caso o território nacional seja ocupado ou os centros de dados físicos destruídos. Esta abordagem inovadora garante que um governo exilado possa manter a administração pública ativa. A medida serve de precaução face a cenários extremos de conflito.",
-   "image": null,
-   "points": [
-    "A Estónia prepara um plano para manter serviços digitais a partir do estrangeiro.",
-    "A estratégia prevê um governo exilado a gerir o país através da nuvem.",
-    "O objetivo é mitigar a ocupação do território ou a destruição de centros de dados."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Ilustra a importância de planear a resiliência digital e a continuidade de serviços críticos contra ameaças geopolíticas.",
-   "todo": "Crie cópias de segurança redundantes e deslocalizadas dos dados críticos da sua organização para garantir a continuidade operacional."
   }
  ]
 }

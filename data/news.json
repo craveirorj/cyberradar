@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T19:46:39.673179+00:00",
+ "updated": "2026-11-20T20:07:15.516469+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -89,7 +89,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 23
+   "added": 22
   },
   {
    "source": "SecurityWeek",
@@ -99,12 +99,12 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Cybersecurity Dive",
@@ -129,7 +129,7 @@
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "Schneier on Security",
@@ -138,8 +138,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": true,
-   "added": 3
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "DataBreaches.net",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 15
+   "added": 14
   },
   {
    "source": "ACSC Austrália",
@@ -310,13 +310,35 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 224,
-  "unenriched": 84,
+  "pending": 220,
+  "unenriched": 80,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "0a863e6f7d52efa1",
+   "source": "CyberScoop",
+   "region": "US",
+   "lang": "en",
+   "link": "https://cyberscoop.com/signal-blocks-apple-google-ai-screenshots/",
+   "published": "2026-11-20T19:54:25+00:00",
+   "title": "Signal bloqueia captura de ecrã por IA da Apple e Google para proteger privacidade",
+   "summary": "A aplicação de mensagens encriptadas Signal vai passar a bloquear por defeito os sistemas operativos da Apple e da Google de tirarem capturas de ecrã das mensagens dos utilizadores. Esta medida surge para travar as funcionalidades de inteligência artificial integradas, como a Siri AI e o Gemini Intelligence, que analisam os ecrãs para responder a pedidos. A liderança da Signal considera estas integrações baseadas em agentes uma ameaça existencial à privacidade da aplicação. A empresa apela aos fabricantes para fornecerem ferramentas técnicas simples que permitam aos programadores impedir este acesso indesejado.",
+   "image": null,
+   "points": [
+    "A Signal bloqueia sistemas da Apple e Google de capturarem ecrãs com mensagens.",
+    "A medida protege contra assistentes de IA que analisam o ecrã, como Gemini e Siri.",
+    "A liderança da Signal classifica estas ferramentas de IA como uma ameaça existencial à privacidade."
+   ],
+   "title_original": "Signal blocks Apple, Google AI screenshotting in response to ‘existential threat’ to privacy app",
+   "category": "Ataque/APT",
+   "translated": true,
+   "enriched": true,
+   "why": "Protege as conversas privadas dos utilizadores contra a leitura automatizada por assistentes de inteligência artificial dos sistemas operativos.",
+   "todo": "Desative assistentes de IA com acesso global ao ecrã ou utilize versões atualizadas da aplicação com estas proteções ativas."
+  },
   {
    "id": "84075b2874ae36b5",
    "source": "Cyber Centre Canadá",
@@ -332,9 +354,9 @@
     "CVE-2026-76466 adicionada à base de dados de exploração da CISA.",
     "Administradores devem verificar links oficiais e aplicar correções."
    ],
-   "title_original": "Cisco security advisory (AV26-1073) – Update 1",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Permite mitigar falhas críticas ativamente exploradas em infraestruturas empresariais.",
    "todo": "Consulte os avisos de segurança da Cisco e instale as atualizações de software disponíveis o mais rapidamente possível."
@@ -354,9 +376,9 @@
     "Website e sistemas foram totalmente restaurados.",
     "Aviso divulgado pela empresa-mãe Neighborhood Intelligence."
    ],
-   "title_original": "Container Store restores systems after cyberattack",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra como incidentes informáticos podem interromper o negócio e exigir recuperação rápida.",
    "todo": "Mantenha planos de recuperação de desastres atualizados e cópias de segurança testadas para responder a incidentes."
@@ -716,9 +738,9 @@
     "Inclui a demissão de Jensen Huang da Nvidia.",
     "Aborda também a recente falha na cloud da Microsoft."
    ],
-   "title_original": "What We Missed: Nvidia CEO Scandal Rocks AI Industry",
+   "title_original": null,
    "category": "IA",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Ajuda a compreender acontecimentos corporativos importantes que afetam o ecossistema tecnológico.",
    "todo": ""
@@ -13784,28 +13806,6 @@
    "enriched": true,
    "why": "Evidencia os riscos críticos de segurança associados à implementação precipitada de ferramentas de inteligência artificial autónoma.",
    "todo": "Implemente salvaguardas rigorosas e monitorização constante ao testar ou utilizar ferramentas de inteligência artificial."
-  },
-  {
-   "id": "59d64c7e0e97e0c8",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/16/infoblox-customer-and-staff-data-exposed-in-sharepoint-breach/5310280",
-   "published": "2026-11-16T21:53:28+00:00",
-   "title": "Infoblox customer and staff data exposed in Sharepoint breach",
-   "summary": "A Infoblox sofreu uma violação de segurança num fornecedor terceirizado de migração de dados que acedeu ao seu SharePoint. Os intrusos roubaram dados confidenciais de clientes, incluindo configurações de redes, e informações financeiras e pessoais de colaboradores. A empresa acionou a resposta a incidentes, contratou peritos e ofereceu proteção de crédito aos funcionários afetados. O impacto inclui o risco de fraudes e phishing para os trabalhadores e exposição de dados de redes de clientes.",
-   "image": "https://image.theregister.com/?imageId=256807&width=800",
-   "points": [
-    "Fornecedor terceirizado comprometeu o SharePoint da Infoblox.",
-    "Dados de configuração de clientes e informações de funcionários foram roubados.",
-    "Empresa contratou peritos e ofereceu apoio aos trabalhadores afetados."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "Demonstra como as falhas de segurança em fornecedores terceiros podem expor dados críticos de redes e funcionários.",
-   "todo": "Monitore estritamente os acessos de parceiros externos e adote autenticação multifator em todas as plataformas partilhadas."
   }
  ]
 }

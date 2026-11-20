@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T23:26:57.005535+00:00",
+ "updated": "2026-11-20T23:47:22.669767+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -310,14 +310,36 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 225,
-  "unenriched": 84,
+  "pending": 223,
+  "unenriched": 82,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "9b2dca1639f78a8a",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/devops/2026/11/20/php-86-things-are-gonna-get-a-lot-more-strict-around-here/5311486",
+   "published": "2026-11-20T23:28:47+00:00",
+   "title": "PHP 8.6: As coisas vão tornar-se muito mais restritas por aqui",
+   "summary": "A linguagem PHP lançou a versão 8.6 no seu habitual ciclo anual, trazendo correções cruciais para diversas vulnerabilidades recentes. Desde outubro, uma vaga de falhas permitia a atacantes não autenticados executar código remoto ou bloquear servidores em aplicações como WordPress, Laravel e Symfony. Para mitigar o problema, a comunidade corrigiu sete falhas críticas de execução remota de código numa única atualização. Adicionalmente, a nova versão endurece configurações predefinidas historicamente liberais da extensão de sessões para aumentar a segurança.",
+   "image": "https://image.theregister.com/?imageId=5247128&width=800",
+   "points": [
+    "O PHP lançou a versão 8.6 e correções para fechar sete falhas críticas de execução remota de código.",
+    "As vulnerabilidades afetavam aplicações como WordPress, Laravel e Symfony desde outubro.",
+    "A nova versão adota predefinições mais seguras para as configurações de sessão propostas por Jörg Sowa."
+   ],
+   "title_original": "PHP 8.6: Things are gonna get a lot more strict around here",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A atualização corrige falhas críticas que permitiam a execução remota de código em servidores e endurece as predefinições de segurança.",
+   "todo": "Atualize imediatamente as suas instâncias de PHP para as versões corrigidas mais recentes."
+  },
   {
    "id": "e8806155abb34644",
    "source": "AWS Security Blog",
@@ -13780,29 +13802,6 @@
    "enriched": true,
    "why": "Alerta para os novos vetores de ataque direcionados a componentes de inteligência artificial na cadeia de abastecimento.",
    "todo": "Valide e verifique a integridade dos modelos de IA e fontes de dados de terceiros antes da integração."
-  },
-  {
-   "id": "05b6417e274f8133",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/",
-   "published": "2026-11-17T02:12:17+00:00",
-   "title": "Ataque à cadeia de abastecimento da Optimizely infeta sites de marcas importantes com malware",
-   "summary": "Um ataque à cadeia de abastecimento visou a Optimizely, resultando no carregamento de JavaScript malicioso em vários sites populares, incluindo Zoom, CNN, BBC e GitLab. O script malicioso foi desenhado para expor os visitantes a esquemas de roubo de criptomoedas, dados de pagamento e exploração de vulnerabilidades em dispositivos iOS. Este incidente demonstra o alcance massivo que um ataque a um único fornecedor pode atingir. Várias marcas de renome ficaram infetadas de forma indireta.",
-   "image": null,
-   "points": [
-    "Quem: A Optimizely e vários sites populares como Zoom, CNN e BBC.",
-    "O quê: Ataque à cadeia de abastecimento que injetou código JavaScript malicioso.",
-    "Como: Carregamento de scripts maliciosos em páginas de marcas de grande visibilidade.",
-    "Impacto: Exposição de visitantes a roubo de dados de pagamento, criptomoedas e falhas em iOS."
-   ],
-   "title_original": "Optimizely supply chain attack infects major brands' sites with malware",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Sublinha o perigo crítico de compromissos em plataformas de terceiros amplamente integradas na web.",
-   "todo": "Implemente Content Security Policy (CSP) rigorosas e monitorize scripts de terceiros executados no seu website."
   }
  ]
 }

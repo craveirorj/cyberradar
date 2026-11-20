@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T22:46:09.248073+00:00",
+ "updated": "2026-11-20T23:06:51.628663+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -74,7 +74,7 @@
   {
    "source": "MS-ISAC (CIS)",
    "ok": true,
-   "added": 8
+   "added": 9
   },
   {
    "source": "BleepingComputer",
@@ -164,7 +164,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 8
+   "added": 9
   },
   {
    "source": "Cisco Talos",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -309,15 +309,32 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 221,
-  "unenriched": 81,
+  "done": 108,
+  "pending": 236,
+  "unenriched": 95,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
+   "Expecting value: line 59 column 7 (char 5739)"
   ]
  },
  "items": [
+  {
+   "id": "e8806155abb34644",
+   "source": "AWS Security Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://aws.amazon.com/blogs/security/scope-down-permissions-of-existing-sessions-using-aws-sts-getscopedcredentials/",
+   "published": "2026-11-20T22:57:22+00:00",
+   "title": "Scope down permissions of existing sessions using AWS STS GetScopedCredentials",
+   "summary": "When you build AI agents, you often want each agent or sub-agent to have only the permissions its tasks require, rather than the full permissions of the session that started it. GetScopedCredentials is a new AWS Security Token Service (AWS STS) API that you can use to scope down the permissions of existing temporary security […]",
+   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/20/Vaishnavi-Merugu-author.jpeg",
+   "points": [],
+   "title_original": null,
+   "category": "IA",
+   "translated": false,
+   "enriched": false,
+   "raw": "When you build AI agents, you often want each agent or sub-agent to have only the permissions its tasks require, rather than the full permissions of the session that started it. GetScopedCredentials is a new AWS Security Token Service (AWS STS) API that you can use to scope down the permissions of existing temporary security credentials. You can assign each agent, sub-agent, or process its own set of credentials that keep the caller’s AWS Identity and Access Management (IAM) identity but carry reduced permissions, a shorter session duration, or both. You can call GetScopedCredentials with the temporary security credentials you already use, such as those from aws login, an Amazon Elastic Compute Cloud (Amazon EC2) instance profile, or an AWS Lambda function. In each call, you pass a scope down policy, a shorter session duration, or both. A scope down policy is an inline policy that describes the maximum permissions for the new credentials. The resulting permissions are the intersection of your session’s effective permissions and the scope down policy, so they can only be reduced. Similarly, the session duration you request can’t exceed the remaining duration of the calling session. You can also call GetScopedCredentials again with the resulting credentials to scope down permissions or reduce session duration even further. GetScopedCredentials is designed as a building block. Because it scopes down permissions on the credentials you already have, you can build it into agent frameworks, services that issue credentials to other components, continuous integration and deployment (CI/CD) pipelines, and your own applications. You can also call it again with scoped-down credentials, so an orchestrating agent can give each sub-agent narrower access than its own. In this post, we "
+  },
   {
    "id": "931f9a9053dff1e2",
    "source": "HackRead",
@@ -333,12 +350,29 @@
     "Critérios avaliados: Segurança, LTV, taxas de juro e velocidade.",
     "Foco: Riscos de colateral e condições de financiamento em XRP."
    ],
-   "title_original": "4 Best XRP Lending Platforms Compared by Security, LTV, and Speed",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Ajuda os utilizadores a escolherem plataformas seguras para empréstimos em criptomoedas.",
    "todo": "Avalie sempre os riscos de colateral e a segurança da plataforma antes de depositar ativos digitais."
+  },
+  {
+   "id": "0a6dc192a1954684",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203622/security/cve-2026-23871-whatsapp-bug-helped-scammers-make-messages-look-legitimate.html",
+   "published": "2026-11-20T22:21:12+00:00",
+   "title": "CVE-2026-23871: WhatsApp Bug Helped Scammers Make Messages Look Legitimate",
+   "summary": "WhatsApp patched three security flaws, including one exploited in a real scam campaign to make fraudulent messages appear more credible. WhatsApp’s November security advisory fixes three flaws, including CVE-2026-23871, a vulnerability in Click to WhatsApp ads affecting WhatsApp and WhatsApp Business for Android versions earlier than 2.26.17.4. “Incomplete validation of external ad-reply URLs in WhatsApp […]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "WhatsApp patched three security flaws, including one exploited in a real scam campaign to make fraudulent messages appear more credible. WhatsApp’s November security advisory fixes three flaws, including CVE-2026-23871, a vulnerability in Click to WhatsApp ads affecting WhatsApp and WhatsApp Business for Android versions earlier than 2.26.17.4. “Incomplete validation of external ad-reply URLs in WhatsApp for Android and WhatsApp Business for Android before 2.26.17.4 could have caused a target’s device to reveal its IP information to an attacker if an attacker sent media from an attacker-controlled URL when a crafted Click to WhatsApp ad-reply message was rendered and displayed in a message thread.” reads the advisory. “This issue may have been abused in conjunction with specific spam messages.” The issue was caused by incomplete checks on external ad-reply URLs. An attacker could use a server under their control to send media through a crafted ad-reply message. When the message appeared in a chat, it could cause the victim’s device to reveal its IP address to the attacker. SecurityWeek reported that WhatsApp discovered the flaw while investigating a real scam campaign. The company’s security team found that a scammer was exploiting the issue to make fraudulent messages appear more credible. “Our team found this issue while disrupting a scam campaign, and we believe a scammer was using it to make their scam message seem more credible.” a WhatsApp spokesperson told SecurityWeek. The second fix is more serious on paper, though WhatsApp has seen no sign it was ever used. CVE-2026-102769 is a SQL injection on WhatsApp for Android before 2.26.35.74, triggered when someone taps a specially crafted “order details” message sent from an unofficial client. “A SQL injection vulnera"
   },
   {
    "id": "d20cb913632d0a35",
@@ -13757,52 +13791,6 @@
    "enriched": true,
    "why": "Sublinha o perigo crítico de compromissos em plataformas de terceiros amplamente integradas na web.",
    "todo": "Implemente Content Security Policy (CSP) rigorosas e monitorize scripts de terceiros executados no seu website."
-  },
-  {
-   "id": "50204565d4ff3ec5",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/",
-   "published": "2026-11-17T02:12:17+00:00",
-   "title": "Ataque à cadeia de fornecimento da Optimizely infetou sites da CNN, Fox News, BBC e Salesforce com malware",
-   "summary": "Um ataque à cadeia de fornecimento direcionado à Optimizely permitiu a injeção de código JavaScript malicioso em várias páginas web de relevo mundial. Sites muito visitados, como os da CNN, BBC, Fox News, Zoom, Salesforce e GitLab, acabaram por carregar scripts maliciosos. Esta ameaça expôs os visitantes a esquemas orientados para roubar criptomoedas, dados de pagamento e explorar vulnerabilidades em dispositivos móveis da Apple.",
-   "image": null,
-   "points": [
-    "O ataque de cadeia de fornecimento comprometeu a plataforma Optimizely.",
-    "Vários sites de notícias e tecnologia de topo carregaram scripts maliciosos.",
-    "Entre as marcas afetadas estão CNN, BBC, Salesforce e Zoom.",
-    "O malware visava roubar criptomoedas, dados de pagamento e explorar falhas em iOS."
-   ],
-   "title_original": "Optimizely hack infected CNN, Fox News, BBC, Salesforce sites with malware",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra o enorme perigo dos ataques à cadeia de fornecimento, capazes de transformar sites legítimos e populares em vetores de infeção em massa.",
-   "todo": "Utilize bloqueadores de scripts de terceiros e mantenha o navegador e o sistema operativo dos dispositivos móveis atualizados."
-  },
-  {
-   "id": "e65b54b96a122d5a",
-   "source": "SANS ISC",
-   "region": "US",
-   "lang": "en",
-   "link": "https://isc.sans.edu/diary/rss/33524",
-   "published": "2026-11-17T02:05:15+00:00",
-   "title": "ISC Stormcast para terça-feira, 17 de novembro de 2026",
-   "summary": "O podcast ISC Stormcast apresentou a análise diária de cibersegurança referente a terça-feira, 17 de novembro de 2026. A emissão abordou os principais acontecimentos e alertas de segurança recentes no panorama digital. O boletim informativo serve para atualizar os profissionais sobre ameaças ativas. Não foram detalhados incidentes específicos adicionais no texto fornecido.",
-   "image": null,
-   "points": [
-    "Quem: ISC Stormcast.",
-    "O quê: Emissão de podcast diário sobre cibersegurança.",
-    "Quando: Terça-feira, 17 de novembro de 2026.",
-    "Impacto: Atualização técnica para profissionais do setor."
-   ],
-   "title_original": "ISC Stormcast For Tuesday, November 17th, 2026 https://isc.sans.edu/podcastdetail/10182, (Tue, Nov 17th)",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Mantém os operadores informados sobre o panorama diário de ameaças e vulnerabilidades.",
-   "todo": "Acompanhe regularmente boletins e fontes de advisories de cibersegurança fidedignos."
   }
  ]
 }

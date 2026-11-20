@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T20:26:16.335183+00:00",
+ "updated": "2026-11-20T20:46:25.502315+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CISA Advisories",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -309,15 +309,37 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 234,
-  "unenriched": 96,
+  "done": 120,
+  "pending": 222,
+  "unenriched": 84,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting ',' delimiter: line 122 column 56 (char 10127)"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "e010061a1eb7f0ca",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/chinese-open-weight-AI-use-by-US-companies-house-investigation",
+   "published": "2026-11-20T20:25:00+00:00",
+   "title": "A utilização de IA aberta chinesa por empresas norte-americanas gera críticas de presidentes da Câmara",
+   "summary": "Uma investigação liderada pelo comité de Segurança Interna da Câmara dos Representantes focou-se nos perigos associados à utilização, por parte de empresas dos EUA, de modelos de IA de pesos abertos de baixo custo em determinados projetos. Esta prática tem levantado preocupações de segurança nacional e gerado fortes reações críticas por parte dos líderes políticos. O impacto centra-se na potencial exposição a riscos geopolíticos e de cibersegurança decorrentes da adoção destas tecnologias estrangeiras económicas.",
+   "image": "https://cms.therecord.media/uploads/garbarino_20230423_515e2f0b4a.png",
+   "points": [
+    "Investigação liderada pelo comité de Segurança Interna da Câmara dos EUA.",
+    "Empresas norte-americanas utilizam modelos de IA de pesos abertos chineses de baixo custo.",
+    "Críticas políticas devido a potenciais riscos associados à tecnologia.",
+    "Impacto focado na segurança nacional e na adoção de ferramentas externas."
+   ],
+   "title_original": "US companies’ use of Chinese open weight AI draws rebuke from House chairmen",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra a crescente vigilância política sobre a dependência empresarial de tecnologias de IA de origem estrangeira.",
+   "todo": "Avalie cuidadosamente a origem e a segurança dos modelos de IA utilizados nos projetos da sua organização."
+  },
   {
    "id": "5ee6e41c0741bf18",
    "source": "Tecmundo",
@@ -13786,28 +13808,6 @@
    "enriched": true,
    "why": "Mostra que até os gigantes da cibersegurança podem ser vítimas de brechas através de fornecedores externos.",
    "todo": "Audite regularmente o acesso de fornecedores externos e reforce o controlo de permissões a sistemas críticos."
-  },
-  {
-   "id": "99636bab8a5ad1d9",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/vulnerabilities-threats/google-project-zero-bug-disclosure-deadlines",
-   "published": "2026-11-16T22:08:20+00:00",
-   "title": "Google Project Zero Slashes Bug Disclosure Deadlines, Splitting Experts",
-   "summary": "O programa Google Project Zero decidiu encurtar os prazos de divulgação pública de vulnerabilidades para os fornecedores. O período passará de 120 dias para 30 dias ao longo dos próximos catorze meses. Esta alteração visa responder à velocidade com que as falhas são descobertas e exploradas. A medida gerou divisão entre os especialistas de cibersegurança.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt9eb0a69ea15c3e0c/6afb7143ea20de309e24d604/zero_day_over_text-JUN_LI-GettyImages-2179992195.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "Google Project Zero reduziu o prazo de divulgação de falhas de 120 para 30 dias.",
-    "A mudança será implementada gradualmente ao longo de 14 meses.",
-    "A decisão gerou divisão e debate entre os especialistas da indústria."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Pressupõe uma resposta mais rápida dos fornecedores para corrigir falhas antes que sejam exploradas.",
-   "todo": "Estabeleça processos internos ágeis para aplicar patches de segurança assim que forem disponibilizados."
   }
  ]
 }

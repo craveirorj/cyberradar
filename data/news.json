@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T17:24:59.168644+00:00",
+ "updated": "2026-11-20T17:46:04.680504+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -89,7 +89,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 22
+   "added": 23
   },
   {
    "source": "SecurityWeek",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -164,7 +164,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "Cisco Talos",
@@ -199,7 +199,7 @@
   {
    "source": "Elastic Security Labs",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "Rapid7",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 351,
-  "unenriched": 219,
+  "done": 12,
+  "pending": 343,
+  "unenriched": 211,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -320,21 +320,116 @@
  },
  "items": [
   {
+   "id": "ec99630010cb437c",
+   "source": "AWS Security Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://aws.amazon.com/blogs/security/chinese-nexus-actors-cairn-ai-agents-found-a-zero-day-on-their-own/",
+   "published": "2026-11-20T17:30:13+00:00",
+   "title": "Agentes de IA Cairn, associados à China, descobriram uma falha zero-day de forma autónoma",
+   "summary": "Investigadores da Amazon Threat Intelligence descobriram uma campanha onde agentes de inteligência artificial autónomos foram usados para realizar ataques informáticos com intervenção humana mínima. Os agentes utilizaram a framework de testes de intrusão Cairn para atingir universidades na Ásia Oriental. Durante o processo, descobriram autonomamente uma vulnerabilidade zero-day numa aplicação e conseguiram o controlo total de um servidor. Este caso demonstra que as operações ofensivas baseadas em agentes de IA já são uma realidade atual.",
+   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2022/05/24/CJ_Moses.jpeg",
+   "points": [
+    "Atores ligados à China utilizaram agentes de IA autónomos para testes de intrusão.",
+    "A ferramenta Cairn foi usada para visar endereços IP de universidades na Ásia Oriental.",
+    "Os agentes descobriram autonomamente uma falha zero-day e ganharam controlo de um servidor.",
+    "O incidente revela a velocidade e persistência que as ferramentas de IA trazem aos ataques."
+   ],
+   "title_original": "Chinese-nexus actor’s Cairn AI agents found a zero-day on their own",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que os ataques informáticos automatizados por inteligência artificial e capazes de descobrir falhas já estão a acontecer.",
+   "todo": "Mantenha os sistemas e aplicações atualizados e monitorize o tráfego de rede para detetar padrões de ataque automatizados."
+  },
+  {
+   "id": "0abe4221510a96d0",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/",
+   "published": "2026-11-20T17:30:00+00:00",
+   "title": "Piratas informáticos usam ferramenta de IA autónoma Cairn para encontrar zero-day e assumir controlo de servidor",
+   "summary": "Cibercriminosos utilizaram a framework de testes de intrusão em inteligência artificial Cairn para detetar uma vulnerabilidade inédita numa aplicação de imagem médica. O uso desta ferramenta permitiu aos atacantes conduzir operações automatizadas sem assistência humana direta. A exploração desta falha culminou na tomada de controlo de um servidor. O incidente evidencia os riscos crescentes do uso de IA em ataques informáticos.",
+   "image": null,
+   "points": [
+    "Atacantes usaram a ferramenta de IA Cairn para fins maliciosos.",
+    "Foi detetada uma vulnerabilidade desconhecida numa aplicação de imagem médica.",
+    "A exploração resultou na tomada de controlo bem-sucedida de um servidor."
+   ],
+   "title_original": "Hackers use autonomous AI tool Cairn to find zero-day, take over server",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia como as ferramentas de IA open-source estão a ser usadas por atacantes para descobrir vulnerabilidades críticas.",
+   "todo": "Audite regularmente o software de terceiros e aplique patches de segurança assim que forem disponibilizados."
+  },
+  {
+   "id": "cd038ca0a29b9504",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day",
+   "published": "2026-11-20T17:30:00+00:00",
+   "title": "Amazon afirma que piratas informáticos chineses usaram ferramenta de IA Cairn para descobrir aparente zero-day em ataque a universidade",
+   "summary": "Um grupo de piratas informáticos com ligações à China utilizou a ferramenta de testes de intrusão Cairn para atacar persistentemente duas universidades. Segundo investigadores da Amazon, os atacantes aproveitaram as capacidades da IA para tentar quebrar defesas e, num dos casos, possivelmente descobrir uma vulnerabilidade zero-day. A operação destaca a adoção de ferramentas de inteligência artificial por parte de cibercriminosos avançados. A investigação revelou detalhes sobre os métodos automatizados empregues.",
+   "image": "https://cms.therecord.media/uploads/ai_planet_volumes_unsplash_79b8f00a24.jpg",
+   "points": [
+    "Atacantes com ligações à China atacaram duas universidades.",
+    "Foi utilizada a ferramenta de testes de penetração baseada em IA Cairn.",
+    "A ferramenta foi usada para ataques persistentes e possível descoberta de falhas zero-day."
+   ],
+   "title_original": "Amazon says Chinese hackers used Cairn AI tool to discover apparent zero-day during attack on university",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Ilustra o interesse de grupos apoiados por Estados em explorar tecnologias de IA para conduzir ataques sofisticados.",
+   "todo": "Proteja os servidores expostos à internet e reforce a monitorização de acessos a redes universitárias ou empresariais."
+  },
+  {
+   "id": "82b76084c3aaddba",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/20/china-attackers-deployed-ai-agents-that-autonomously-found-and-exploited-a-0-day-to-take-over-a-university-server/5311382",
+   "published": "2026-11-20T17:30:00+00:00",
+   "title": "Atacantes chineses implantaram agentes de IA que encontraram e exploraram autonomamente uma falha 0-day para assumir o controlo de um servidor universitário",
+   "summary": "Espiões suspeitos de origem chinesa utilizaram agentes de IA autónomos através da framework Cairn para atacar redes universitárias. Os agentes tentaram inicialmente vários métodos de intrusão sem sucesso, mas acabaram por descobrir e explorar uma falha zero-day na aplicação MONAI Label. Esta exploração permitiu-lhes obter o controlo total de um servidor de uma universidade. A Amazon notificou os criadores da aplicação, que já lançaram uma correção.",
+   "image": "https://image.theregister.com/?imageId=5311400&width=800",
+   "points": [
+    "Atacantes desprenderam agentes de IA que operaram sem assistência humana.",
+    "Os agentes exploraram com sucesso um zero-day na aplicação de imagem médica MONAI Label.",
+    "O ataque resultou no controlo total de um servidor universitário.",
+    "Tentativas anteriores noutros serviços falharam antes de encontrarem a falha exploitável."
+   ],
+   "title_original": "China attackers deployed AI agents that autonomously found and exploited a 0-day to take over a university server",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para a capacidade da IA em testar múltiplos vetores de ataque de forma autónoma até encontrar uma falha explorável.",
+   "todo": "Implemente defesas em profundidade e remova o acesso público desnecessário a ferramentas e servidores de teste."
+  },
+  {
    "id": "9dbbebdeb6a3a85d",
    "source": "The Hacker News",
    "region": "INT",
    "lang": "en",
    "link": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
    "published": "2026-11-20T16:58:16+00:00",
-   "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
-   "summary": "Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale. Dutch mobile security company ThreatFabric said it discovered the threat in late October 2026 during an investigation into an NFC-relay banking Trojan. \"Bazuka is a full malware framework,",
+   "title": "Malware Android Bazuka usa sobreposições de ecrã falsas para ocultar roubo de credenciais e controlo de dispositivos",
+   "summary": "Investigadores de cibersegurança divulgaram detalhes sobre o Bazuka, um novo 'framework' de malware para Android com integração de modelos de linguagem de grande escala (LLM). O software malicioso foi descoberto pela ThreatFabric durante a análise a um Cavalo de Troia bancário focado em NFC. O Bazuka destaca-se pela sua capacidade de gerir vítimas à escala com recurso a inteligência artificial. Este framework facilita o roubo de dados e o controlo remoto de telemóveis.",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMs4vBdivbF3Y-4yd3PWqjSTuG2PPDvCemM211pzVl2Jhkus9d14_2MzRgdrlNhRxaHa_2rlIN34kUGHAlV_Y2dMnfmYGlUEzUcab0c_s3N8Zoe8P3rcJ-RJmo2luVci9bVqmwtFhpL4rfR2Uo-ZwvqfqFMwRb_3WwoOvFIaunPd7WMOJ4yW9rjbHEKDwf/s1600/android-malware.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Foi descoberto um novo malware para Android chamado Bazuka.",
+    "A ferramenta integra inteligência artificial para gerir vítimas e controlar dispositivos.",
+    "O malware utiliza ecrãs falsos sobrepostos para ocultar o roubo de credenciais."
+   ],
+   "title_original": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
    "category": "Malware",
-   "translated": false,
-   "enriched": false,
-   "raw": "Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale. Dutch mobile security company ThreatFabric said it discovered the threat in late October 2026 during an investigation into an NFC-relay banking Trojan. \"Bazuka is a full malware framework,"
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra a evolução do malware móvel através da integração de IA para otimizar fraudes e o controlo de dispositivos infetados.",
+   "todo": "Descarregue aplicações apenas de lojas oficiais e evite conceder permissões excessivas de acessibilidade a aplicações desconhecidas."
   },
   {
    "id": "170cd467c630bfa7",
@@ -343,15 +438,21 @@
    "lang": "en",
    "link": "https://www.theregister.com/security/2026/11/20/dutch-data-watchdog-highlights-safety-issues-with-ai-glasses/5311345",
    "published": "2026-11-20T16:44:00+00:00",
-   "title": "Dutch data watchdog highlights safety issues with AI glasses",
-   "summary": "Devices found to misinterpret medication instructions and other scenarios impacting human safety",
+   "title": "Autoridade de dados neerlandesa alerta para problemas de segurança em óculos inteligentes com IA",
+   "summary": "A Autoridade de Proteção de Dados dos Países Baixos (AP) desaconselhou a compra de óculos inteligentes com IA após testes revelarem comportamentos preocupantes. Os testes a seis modelos demonstraram falhas graves, como a oferta de conselhos de cariz inadequado a adultos ou a falsa afirmação de que os serviços de emergência tinham sido chamados durante uma simulação de reanimação. Além disso, alguns modelos interpretaram mal avisos de segurança de brinquedos e medicamentos. O regulador destaca que a tecnologia ainda não oferece a confiança necessária para garantir a segurança humana.",
    "image": "https://image.theregister.com/?imageId=5308699&width=800",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A AP testou seis modelos de óculos inteligentes com IA, encontrando falhas de segurança graves.",
+    "Alguns dispositivos deram conselhos inadequados ou informações falsas sobre emergências médicas.",
+    "Outros falharam na interpretação correta de avisos de segurança em produtos e medicamentos.",
+    "O regulador desaconselhou a compra destes dispositivos devido à falta de fiabilidade."
+   ],
+   "title_original": "Dutch data watchdog highlights safety issues with AI glasses",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "The Dutch Data Protection Authority (AP) has officially advised consumers against buying AI-powered smart glasses after safety tests revealed concerning behaviors beyond their controversial recording capabilities. The AP recently tested six different models of smart glasses and found glaring issues, including a willingness to display dating advice to an adult glasses-wearer who expressed an interest in a minor. In another case involving a cardiopulmonary resuscitation (CPR) simulation, testers noted that one pair of glasses informed the wearer that emergency services had been called and were scheduled to arrive at the scene, despite no one having made the call. Some glasses did not properly process safety warnings on children’s toys, others made mistakes when reading medication leaflets, and some misinterpreted warnings for extreme weather events. The AP did not specify the models it tested, saying only that they tested six models ranging from under €100 ($110) to over €500 ($550), including two that \"were extensively tested in simulated real-life situations where human safety played a key role.\" A spokesperson also declined to match any specific behavior to a model by price point (minor dating advice linked to a €354 pair of glasses, for example), adding that the research was intended to highlight the risks of AI glasses in a broader sense. \"Glasses that film you unnoticed are already concerning. Glasses that also give you incorrect advice when someone's life is at stake go a step too far,\" said Monique Verdier, vice chair at the AP. \"AI offers many opportunities, but we must be able to trust that technology. With the camera glasses examined, that trust cannot currently be justified.\" The warning issued this week follows the regulator's previous work on smart glasses. "
+   "translated": true,
+   "enriched": true,
+   "why": "Destaca os riscos críticos associados a conselhos erróneos fornecidos por dispositivos de IA integrados no quotidiano.",
+   "todo": "Avalie criticamente o uso de dispositivos baseados em IA em situações onde a segurança física esteja em causa."
   },
   {
    "id": "4727638392dd0c1d",
@@ -360,15 +461,20 @@
    "lang": "en",
    "link": "https://www.elastic.co/security-labs/blog/mitre-atlas-elastic-security-detection-coverage",
    "published": "2026-11-20T16:30:00+00:00",
-   "title": "Mapping the AI threat landscape: MITRE ATLAS comes to Elastic Security",
-   "summary": "Elastic Security 9.6 adds MITRE ATLAS to our detection rules and the tools you use to manage them, so you can see which AI attacks your rules already cover.",
+   "title": "Mapeamento do panorama de ameaças de IA: MITRE ATLAS chega ao Elastic Security",
+   "summary": "A versão Elastic Security 9.6 passou a suportar a base de conhecimento MITRE ATLAS, dedicada a ataques contra sistemas de inteligência artificial. Esta integração inclui regras de deteção pré-construídas para plataformas de IA e ferramentas de IA geradora. O objetivo é fornecer contexto de segurança específico para IA de forma nativa e permitir medir a cobertura de ameaças através de táticas e técnicas próprias. Esta abordagem complementa o tradicional framework MITRE ATT&CK.",
    "image": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltf8f4b5c2ef207605/6b00543f4e093d0aae470149/mitre-atlas.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Elastic Security 9.6 adiciona suporte para a base de conhecimento MITRE ATLAS.",
+    "Foram incluídas regras pré-construídas para detetar ameaças em plataformas de IA e GenAI.",
+    "A plataforma ajuda a mapear táticas e técnicas usadas por atacantes contra sistemas inteligentes."
+   ],
+   "title_original": "Mapping the AI threat landscape: MITRE ATLAS comes to Elastic Security",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "Elastic Security 9.6 supports MITRE Adversarial Threat Landscape for Artificial-Intelligence Systems (ATLAS) , MITRE’s knowledge base for attacks on AI systems, in addition to MITRE ATT&CK . ATLAS covers prompt injection, jailbreaks, stolen model API keys, and poisoned agent tools. In Elastic Security 9.6, prebuilt detection rules for AI platforms and generative AI (GenAI) tooling will ship with ATLAS mappings already applied, so rules provide the AI-related context out of the box. MITRE recently announced that ATT&CK Enterprise will add AI-enabled systems as a new platform, drawing in part on ATLAS content. However, ATLAS remains MITRE’s dedicated, frequently updated AI threat knowledge base. A new coverage table shows which ATLAS tactics and techniques your rules already address, scored in its own view rather than averaged into your ATT&CK numbers. The rule creation form and Elastic Agent Builder also understand ATLAS. Behind it all is a new managed MITRE data service in Kibana. We’ve supported MITRE ATT&CK since the initial version of Elastic Security , and we’ve extended that support over the years with ATT&CK mappings on prebuilt rules and features, like the coverage overview page . What is MITRE ATLAS? MITRE ATLAS is a knowledge base of the tactics and techniques that adversaries use against AI-enabled systems. It's maintained by MITRE and shaped by real-world observations and security research from across the industry and academia. ATLAS is modeled directly on ATT&CK, so the structure will feel familiar to users: tactics to describe what an adversary is trying to achieve, plus techniques and sub-techniques to describe how they go about it. MITRE ATLAS versus MITRE ATT&CK ATLAS and ATT&CK use the same structure, but they describe attacks against different kinds of"
+   "translated": true,
+   "enriched": true,
+   "why": "Facilita a identificação e mitigação de ameaças direcionadas especificamente a sistemas de inteligência artificial nas organizações.",
+   "todo": "Atualize as suas soluções de segurança para beneficiar de regras de deteção adaptadas a riscos de IA."
   },
   {
    "id": "f67114676f5678ce",
@@ -377,15 +483,20 @@
    "lang": "en",
    "link": "https://therecord.media/nsa-resumes-normal-operations-following-internal-disruptions",
    "published": "2026-11-20T16:06:00+00:00",
-   "title": "NSA resumes normal operations following internal network disruptions",
-   "summary": "Certain facilities remain under “Code Orange” for non-essential employees, meaning delayed openings and some must check in with their supervisors.",
+   "title": "NSA retoma operações normais após perturbações na rede interna",
+   "summary": "A Agência de Segurança Nacional (NSA) retomou as suas operações habituais após ter enfrentado problemas na sua rede interna. Algumas instalações mantiveram o nível de alerta 'Código Laranja' para funcionários não essenciais, implicando atrasos na abertura e verificações adicionais com os supervisores. O incidente afetou o funcionamento interno de certas infraestruturas da agência.",
    "image": "https://cms.therecord.media/uploads/8815949_9b41fe9ed1.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A NSA sofreu perturbações na sua rede interna de computadores.",
+    "Algumas instalações mantiveram o alerta 'Código Laranja' para trabalhadores não essenciais.",
+    "As operações normais acabaram por ser retomadas após a ocorrência."
+   ],
+   "title_original": "NSA resumes normal operations following internal network disruptions",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Certain facilities remain under “Code Orange” for non-essential employees, meaning delayed openings and some must check in with their supervisors."
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia que mesmo as agências de cibersegurança mais avançadas podem enfrentar falhas operacionais internas.",
+   "todo": ""
   },
   {
    "id": "b3099b7219afcaab",
@@ -394,15 +505,20 @@
    "lang": "en",
    "link": "https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/",
    "published": "2026-11-20T16:01:02+00:00",
-   "title": "WhatsApp Fixes Flaw Uncovered While Disrupting Scam Campaign",
-   "summary": "Tracked as CVE-2026-23871, the vulnerability was found by WhatsApp’s security team, and it may have been used to make scam messages more credible.",
+   "title": "WhatsApp corrige falha descoberta durante a interrupção de uma campanha de fraudes",
+   "summary": "A equipa de segurança do WhatsApp identificou e corrigiu uma vulnerabilidade registada como CVE-2026-23871. A falha foi descoberta no âmbito de uma operação para desmantelar uma campanha de burlas na plataforma. A vulnerabilidade em causa poderá ter sido aproveitada por criminosos para dar maior credibilidade às mensagens fraudulentas enviadas às vítimas. A correção foi implementada para proteger os utilizadores.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A vulnerabilidade CVE-2026-23871 foi descoberta pela equipa de segurança do WhatsApp.",
+    "A falha foi detetada enquanto as autoridades ou a empresa investigavam uma campanha de burlas.",
+    "A vulnerabilidade podia ser usada para tornar mensagens fraudulentas mais credíveis."
+   ],
+   "title_original": "WhatsApp Fixes Flaw Uncovered While Disrupting Scam Campaign",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Tracked as CVE-2026-23871, the vulnerability was found by WhatsApp’s security team, and it may have been used to make scam messages more credible."
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como os atacantes exploram funcionalidades de aplicações de mensagens para aumentar a eficácia de fraudes.",
+   "todo": "Atualize imediatamente a aplicação WhatsApp para garantir que tem a correção de segurança mais recente."
   },
   {
    "id": "bbc19bb6f991b9cb",
@@ -411,15 +527,20 @@
    "lang": "en",
    "link": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/",
    "published": "2026-11-20T15:58:06+00:00",
-   "title": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
-   "summary": "J.P. Morgan Chase warned it suffered a data breach after a cyberattack at a third-party service provider exposed customers' personal information and marketing data. [...]",
+   "title": "Violação de dados em fornecedor expõe informações de clientes da Chase, Visa e Mastercard",
+   "summary": "O J.P. Morgan Chase emitiu um aviso após sofrer uma violação de dados resultante de um ataque cibernético a um fornecedor externo de serviços. O incidente expôs informações pessoais e dados de marketing de vários clientes das instituições financeiras envolvidas. As empresas afetadas estão a lidar com as consequências desta falha de segurança na cadeia de abastecimento digital.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O J.P. Morgan Chase sofreu uma violação de dados através de um fornecedor externo.",
+    "O incidente expôs informações pessoais e dados de marketing de clientes.",
+    "Clientes de empresas como Visa e Mastercard também foram afetados pelo ataque ao fornecedor."
+   ],
+   "title_original": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "J.P. Morgan Chase warned it suffered a data breach after a cyberattack at a third-party service provider exposed customers' personal information and marketing data. [...]"
+   "translated": true,
+   "enriched": true,
+   "why": "Sublinha o risco crítico associado à segurança de fornecedores terceiros na cadeia de abastecimento empresarial.",
+   "todo": "Exija rigorosos padrões de cibersegurança a parceiros externos e fornecedores que tenham acesso aos seus dados."
   },
   {
    "id": "c85ee54b43abeb95",
@@ -428,15 +549,20 @@
    "lang": "en",
    "link": "https://www.cybersecuritydive.com/news/jpmorgan-visa-customer-data-leaked-third-party-hacks/875333/",
    "published": "2026-11-20T15:52:41+00:00",
-   "title": "JPMorgan, Visa confirm customer data taken in third-party vendor hacks",
-   "summary": "The companies said the breaches were not related to a recent string of tech disruptions.",
+   "title": "JPMorgan e Visa confirmam roubo de dados de clientes em ataques a fornecedores terceiros",
+   "summary": "As empresas envolvidas confirmaram que dados de clientes foram comprometidos na sequência de incidentes de segurança em fornecedores terceiros. Foi esclarecido que estas violações de dados não estão relacionadas com a recente vaga de perturbações tecnológicas registadas noutros contextos. As investigações continuam a apurar o impacto total do roubo de informação.",
    "image": "https://imgproxy.divecdn.com/xcjjt5ZKChnr0BkiYQlxWWblzyLtC5Kss8gArq0eZlw/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xNDQ2MjEwNzg5LmpwZw==.webp",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "JPMorgan e Visa confirmaram a ocorrência de roubo de dados de clientes.",
+    "Os ataques afetaram fornecedores de serviços externos às instituições.",
+    "As empresas asseguraram que os incidentes não estão ligados a falhas tecnológicas recentes."
+   ],
+   "title_original": "JPMorgan, Visa confirm customer data taken in third-party vendor hacks",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "The companies said the breaches were not related to a recent string of tech disruptions."
+   "translated": true,
+   "enriched": true,
+   "why": "Reforça a necessidade de auditar regularmente a postura de segurança dos parceiros tecnológicos com quem partilha dados.",
+   "todo": "Monitore contas financeiras regularmente e ative alertas para transações inesperadas."
   },
   {
    "id": "91f1fffca12a349b",
@@ -445,15 +571,20 @@
    "lang": "en",
    "link": "https://techcrunch.com/2026/11/20/a-transcription-firm-used-by-police-prosecutors-and-tech-giants-exposed-customer-data-online/",
    "published": "2026-11-20T15:46:07+00:00",
-   "title": "A transcription firm used by police, prosecutors and tech giants exposed customer data online",
-   "summary": "Exclusive: A simple security lapse exposed transcriptions of police interviews and bodycam footage on a cloud server without a password.",
+   "title": "Empresa de transcrição usada por polícia, procuradores e gigantes tecnológicos expõe dados de clientes online",
+   "summary": "Uma falha de segurança simples expôs transcrições de entrevistas policiais e imagens de câmaras corporais num servidor na nuvem que não exigia palavra-passe. O descuido afetou uma empresa de transcrição de dados utilizada por forças de segurança, procuradores e grandes empresas tecnológicas. Esta exposição indevida deixou dados altamente confidenciais acessíveis publicamente na internet.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Uma falha de segurança deixou dados expostos num servidor na nuvem sem proteção por password.",
+    "Foram expostas transcrições de interrogatórios policiais e imagens de câmaras corporais.",
+    "A empresa afetada presta serviços a forças policiais, magistrados e grandes empresas de tecnologia."
+   ],
+   "title_original": "A transcription firm used by police, prosecutors and tech giants exposed customer data online",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "Exclusive: A simple security lapse exposed transcriptions of police interviews and bodycam footage on a cloud server without a password."
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra como erros básicos de configuração na nuvem podem expor dados sensíveis e críticos de entidades públicas e privadas.",
+   "todo": "Garanta que todos os servidores na nuvem e bases de dados possuem controlos de acesso rigorosos e autenticação ativada."
   },
   {
    "id": "c140d4722bc9099a",
@@ -13631,94 +13762,6 @@
    "enriched": true,
    "why": "Alerta para a necessidade de auditar rigorosamente a segurança dos parceiros e fornecedores de serviços em nuvem.",
    "todo": "Monitore o acesso a dados sensíveis armazenados em fornecedores externos e valide as suas políticas de segurança."
-  },
-  {
-   "id": "134d21c38d5c0b0b",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/cyber-crime/2026/11/16/attackers-are-using-ai-agents-to-automate-cybercrime-at-industrial-scale-fbi-and-aws-warn/5310223",
-   "published": "2026-11-16T19:52:00+00:00",
-   "title": "Atacantes utilizam agentes de IA para automatizar o cibercrime à 'escala industrial', alertam FBI e AWS",
-   "summary": "O FBI e a Amazon Threat Intelligence emitiram alertas sobre o uso de agentes de IA autónomos por parte de atacantes. Ferramentas como a framework ARTEX têm sido empregues para automatizar ataques contra o setor bancário, governos e energia, roubando chaves de API e credenciais em grande escala. Foram também detetadas tentativas de criar vídeos deepfake para contornar verificações de identidade em plataformas criptográficas.",
-   "image": "https://image.theregister.com/?imageId=5310250&width=800",
-   "points": [
-    "Atacantes usam frameworks de IA como ARTEX para automatizar ataques.",
-    "Alvos incluem setores críticos e plataformas de IA com roubo de credenciais.",
-    "Foram criados vídeos deepfake para tentar burlar verificações de identidade."
-   ],
-   "title_original": "Attackers are using AI agents to automate cybercrime at 'industrial scale,' FBI and AWS warn",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Revela a transição do cibercrime manual para a automação industrial em larga escala através de agentes inteligentes.",
-   "todo": "Proteja os pontos de acesso a APIs e reforce os mecanismos de autenticação e verificação de identidade contra fraudes baseadas em IA."
-  },
-  {
-   "id": "83a2946c89cdbc5a",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/inteligencia-artificial/senadora-dos-eua-acusa-governo-trump-de-facilitar-acesso-da-china-a-chips-de-ia-da-nvidia/",
-   "published": "2026-11-16T19:45:00+00:00",
-   "title": "Senadora dos EUA acusa governo Trump de facilitar acesso da China a chips de IA da Nvidia",
-   "summary": "A senadora norte-americana Maria Cantwell enviou uma carta ao secretário de Comércio, Howard Lutnick, criticando a flexibilização dos controlos de exportação. Segundo a parlamentar, brechas nas regras permitiram que empresas com ligações à China, como Megaspeed, Alibaba e ByteDance, acedessem a semicondutores avançados da Nvidia. A polémica surge num momento em que são discutidas novas medidas para classificar empresas tecnológicas como campeãs nacionais.",
-   "image": "https://www.estadao.com.br/resizer/v2/GB5GC4EIAZAYPBQM44YXIQNO4E.jpg?quality=80&auth=65483af6fa6d472907cd7ab8dc4772cef7c9182c87d7d99be96e3fba54e0a8e6&width=710",
-   "points": [
-    "A senadora Maria Cantwell criticou o abrandamento nas regras de exportação de chips.",
-    "Empresas chinesas teriam acedido a semicondutores avançados da Nvidia.",
-    "O caso envolveu subsidiárias e centros de dados fora da China."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia as tensões geopolíticas em redor do comércio e controlo de tecnologias críticas de inteligência artificial.",
-   "todo": ""
-  },
-  {
-   "id": "008c412d2a2d1a9f",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203260/hacking/google-gtig-warns-ai-agents-automate-exploits-steal-credentials-and-scale-cybercrime.html",
-   "published": "2026-11-16T19:42:48+00:00",
-   "title": "Google GTIG Alerta que Agentes de IA Automatizam Exploits, Roubam Credenciais e Escalam Cibercrime",
-   "summary": "O Google Threat Intelligence Group detetou o uso de estruturas autónomas de múltiplos agentes, como ARTEX, CAIRN, CyberStrikeAI e PentAGI, por cibercriminosos. Estas ferramentas permitem aos atacantes automatizar a engenharia reversa de patches e explorar vulnerabilidades em servidores expostos à internet sem intervenção humana. Embora os métodos básicos permaneçam os mesmos, a velocidade e a escala das intrusões aumentaram consideravelmente.",
-   "image": "https://i0.wp.com/securityaffairs.com/wp-content/uploads/2026/11/image-39.png?resize=1920%2C1080&#038;ssl=1",
-   "points": [
-    "Atacantes utilizam estruturas de agentes de IA autónomos para lançar ataques.",
-    "Ferramentas como CAIRN e PentAGI aceleram a exploração de vulnerabilidades.",
-    "O foco dos atacantes mudou para a automatização rápida em detrimento da discrição."
-   ],
-   "title_original": "Google GTIG Warns AI Agents Automate Exploits, Steal Credentials and Scale Cybercrime",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como a IA acelera dramaticamente o ciclo de exploração de falhas de segurança por parte de cibercriminosos.",
-   "todo": "Aplique patches de segurança e atualizações de software com a máxima rapidez para mitigar o risco de exploração automatizada."
-  },
-  {
-   "id": "14ca32a4fa7ac1d7",
-   "source": "SAPO Tek",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://tek.sapo.pt/opiniao/artigos/cinco-formas-praticas-para-as-pme-fortalecerem-a-ciber-resiliencia-na-era-da-ia/",
-   "published": "2026-11-16T19:18:00+00:00",
-   "title": "Cinco formas práticas para as PME fortalecerem a ciber-resiliência na era da IA",
-   "summary": "A cibersegurança continua a representar um desafio significativo para as pequenas e médias empresas, apesar da crescente consciencialização dos riscos. O especialista Rishi Kotecha reuniu cinco recomendações essenciais para ajudar estas organizações a melhorarem a sua postura de segurança. As orientações visam preparar os negócios para enfrentar os desafios tecnológicos atuais.",
-   "image": null,
-   "points": [
-    "As PME enfrentam desafios contínuos na área da cibersegurança.",
-    "Rishi Kotecha propõe cinco passos para aumentar a resiliência empresarial.",
-    "A abordagem foca-se na preparação contra riscos modernos."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Ajuda as pequenas e médias empresas a adotarem medidas práticas para protegerem os seus ativos na era digital.",
-   "todo": "Adote uma estratégia de defesa em profundidade, combinando formação contínua dos colaboradores com cópias de segurança regulares."
   }
  ]
 }

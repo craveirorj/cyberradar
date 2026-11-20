@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T13:47:34.780420+00:00",
+ "updated": "2026-11-20T14:10:55.096798+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -204,12 +204,12 @@
   {
    "source": "Rapid7",
    "ok": true,
-   "added": 5
+   "added": 4
   },
   {
    "source": "Tenable",
    "ok": true,
-   "added": 4
+   "added": 5
   },
   {
    "source": "Zero Day Initiative",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -310,14 +310,60 @@
  "translation": {
   "provider": "gemini",
   "done": 108,
-  "pending": 229,
-  "unenriched": 94,
+  "pending": 231,
+  "unenriched": 95,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 84 column 5 (char 7123)"
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "096e0ef0231d7dec",
+   "source": "Tenable",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.tenable.com/blog/public-sector-exposure-management-php2shell",
+   "published": "2026-11-20T14:00:00+00:00",
+   "title": "How exposure management can help public sector prepare for PHP2Shell-like vulnerabilities",
+   "summary": "As vulnerabilidades conhecidas como PHP2Shell demonstraram a rapidez com que falhas ao nível do 'runtime' passam da revelação pública para a exploração ativa por parte de cibercriminosos. O principal desafio para as equipas de segurança foi identificar a localização exata do PHP nos seus ativos de TI, aplicações Web e ambientes em nuvem. As autoridades e organizações públicas viram-se obrigadas a adotar medidas drásticas, incluindo desativar temporariamente websites para travar as tentativas de ataque. Esta situação evidenciou a urgência de antecipar o impacto na borda da rede e priorizar correções com base em evidências reais de exploração.",
+   "image": "https://www.tenable.com/sites/default/files/images/articles/How%20exposure%20management%20can%20help%20public%20sector%20prepare%20for%20the%20next%20PHP2Shell.png",
+   "points": [
+    "Falhas PHP2Shell exploradas rapidamente após a revelação.",
+    "Dificuldade das equipas em localizar o PHP nos ambientes.",
+    "Necessidade de mapear caminhos de escalação de privilégios.",
+    "Priorização de correções baseada em evidências de exploração."
+   ],
+   "title_original": "How exposure management can help public sector prepare for PHP2Shell-like vulnerabilities",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A aceleração no tempo de exploração de falhas críticas exige uma gestão rigorosa da exposição e mapeamento prévio de ativos.",
+   "todo": "Mapeie todos os ativos onde o PHP executa na sua infraestrutura e estabeleça planos de contingência para sistemas que não podem ser corrigidos de imediato."
+  },
+  {
+   "id": "6a9674fffab60e12",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/falhas-graves-no-nginx-permitem-invasao-e-controle-de-servidores/",
+   "published": "2026-11-20T13:30:00+00:00",
+   "title": "Falhas graves no NGINX permitem invasão e controle de servidores",
+   "summary": "Investigadores de segurança descobriram cinco falhas críticas no software NGINX e uma brecha adicional no sistema Linux, coletivamente denominadas \"nginx2root\". Este conjunto de vulnerabilidades permite que atacantes remotos enviem comandos à distância e assumam o controlo total de servidores vulneráveis sem precisarem de autenticação. A exploração bem-sucedida concede o nível mais elevado de permissão do sistema, conhecido como root, permitindo inclusive escapar de ambientes isolados em nuvem. A F5 e outras entidades de segurança confirmaram o risco e divulgaram atualizações urgentes para mitigar o problema.",
+   "image": "https://www.estadao.com.br/resizer/v2/Q4HRU747GBEHNL6HWBW36ACJLU.png?quality=80&auth=c2ad8a2d78a0dee0b472ec22168905485cdbea1692ae7a4b4d44e3d6b1de1718&width=710",
+   "points": [
+    "Cinco falhas críticas no NGINX e uma no Linux detetadas.",
+    "Permitem controlo total (root) à distância sem autenticação.",
+    "Vulnerabilidades monitorizadas como CVE-2026-123633 e CVE-2026-123007.",
+    "Empresas de segurança confirmam exploração bem-sucedida em laboratório."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Estas brechas críticas permitem que atacantes externos assumam o controlo total de servidores essenciais sem qualquer credencial.",
+   "todo": "Atualize o NGINX e os sistemas afetados para as versões corrigidas mais recentes disponibilizadas pelos fabricantes o mais rapidamente possível."
+  },
   {
    "id": "d9a325150570d699",
    "source": "BleepingComputer",
@@ -339,6 +385,29 @@
    "enriched": true,
    "why": "Mostra como a invasão de um único fornecedor de serviços em nuvem pode desestabilizar comunicações empresariais à escala global.",
    "todo": "Monitorize o estado dos seus fornecedores de serviços em nuvem e mantenha planos de contingência para falhas de comunicação."
+  },
+  {
+   "id": "a6cdc463c1597485",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203598/hacking/hackers-exploit-cisco-expressway-flaw-cve-2026-76466-to-breach-russian-organization.html",
+   "published": "2026-11-20T12:52:40+00:00",
+   "title": "Hackers Exploit Cisco Expressway Flaw CVE-2026-76466 to Breach Russian Organization",
+   "summary": "Uma vulnerabilidade crítica no serviço de base de dados do Cisco Expressway, identificada como CVE-2026-76466, foi ativamente explorada para invadir uma organização russa. Os atacantes utilizaram um código de exploração público para comprometer dispositivos expostos à Internet e obter privilégios de root. A partir daí, conseguiram avançar para nós internos da rede e preparar ferramentas para movimentos laterais. A Cisco tinha lançado uma correção dias antes, mas a exploração ocorreu logo após o surgimento de um exploit na Internet.",
+   "image": null,
+   "points": [
+    "Falha CVE-2026-76466 explorada em dispositivos Cisco Expressway.",
+    "Atacantes obtiveram acesso root e moveram-se para a rede interna.",
+    "Primeiro caso conhecido de exploração desta falha no terreno.",
+    "A Cisco disponibilizou uma correção para o problema."
+   ],
+   "title_original": "Hackers Exploit Cisco Expressway Flaw CVE-2026-76466 to Breach Russian Organization",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A rápida weaponização de falhas após a divulgação pública coloca em risco imediato os dispositivos perimetrais expostos.",
+   "todo": "Aplique imediatamente as atualizações de segurança disponibilizadas pela Cisco para os dispositivos afetados e restrinja o acesso à Internet."
   },
   {
    "id": "da07337d7560d129",
@@ -13712,72 +13781,6 @@
    "enriched": true,
    "why": "Marca uma mudança de paradigma onde a automação inteligente barateia e acelera drasticamente a atividade maliciosa.",
    "todo": "Adotar abordagens de segurança baseadas em IA para antecipar e combater ataques automatizados em tempo real."
-  },
-  {
-   "id": "f50b797c968d423e",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/typosquatters-target-new-brand/",
-   "published": "2026-11-16T16:00:00+00:00",
-   "title": "Typosquatters visam novos domínios de marcas em menos de 24 horas após o registo",
-   "summary": "Empresas de segurança detetaram que atacantes registam rapidamente domínios falsos semelhantes a sites recém-criados por grandes marcas. Estas páginas fraudulentas são utilizadas para encadear atividades maliciosas subsequentes contra utilizadores desatentos. O fenómeno demonstra a rapidez com que os cibercriminosos aproveitam novas campanhas de marketing ou lançamentos.",
-   "image": null,
-   "points": [
-    "Atacantes criam domínios falsos logo após o registo de marcas legítimas.",
-    "Uso de técnicas de typosquatting para enganar utilizadores.",
-    "Objetivo é canalizar tráfego para atividades maliciosas subsequentes."
-   ],
-   "title_original": "Typosquatters Target New Brand Domains Within 24 Hours of Registration",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Facilita campanhas de phishing altamente credíveis associadas a marcas conhecidas recém-lançadas.",
-   "todo": "monitorizar proativamente e registar preventivamente variações óbvias dos domínios da empresa."
-  },
-  {
-   "id": "380bb0f0275351ff",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/16/partner-content-has-ais-black-october-changed-the-way-you-secure-your-code/5309775",
-   "published": "2026-11-16T16:00:00+00:00",
-   "title": "Terá o 'Outubro Negro' da IA mudado a forma como protege o seu código?",
-   "summary": "O mês de outubro de 2026 marcou um ponto de viragem para programadores e equipas de segurança devido ao uso generalizado de agentes de IA em ataques informáticos. Agentes autónomos demonstraram capacidade para explorar sistemas, roubar credenciais e corrigir falhas em tempo real durante investidas automatizadas. Adicionalmente, o baixo custo operacional destas ferramentas torna os ataques acessíveis a qualquer ator malicioso.",
-   "image": "https://image.theregister.com/?imageId=5309813&width=800",
-   "points": [
-    "Agentes de IA automatizam a exploração de código e sistemas.",
-    "Custos de execução de ataques caíram drasticamente para valores mínimos.",
-    "As defesas tradicionais de desenvolvimento deixaram de ser suficientes."
-   ],
-   "title_original": "Has AI’s ‘Black October’ changed the way you secure your code?",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Exige uma reformulação total da segurança de aplicações perante a capacidade dos atacantes usarem IA barata e autónoma.",
-   "todo": "Integrar testes de segurança contínuos e verificação automatizada em todo o ciclo de vida do desenvolvimento de software."
-  },
-  {
-   "id": "cb085db9c0140186",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/uk-ofcom-child-safety-rules-client-side-scanning-left-out",
-   "published": "2026-11-16T15:56:00+00:00",
-   "title": "Reino Unido deixa escaneamento do lado do cliente fora das novas regras de segurança infantil",
-   "summary": "O regulador britânico Ofcom esclareceu que não dispõe de poderes legais para obrigar as empresas tecnológicas a examinar os dispositivos pessoais dos cidadãos em busca de conteúdos ilegais. A decisão exclui a inspeção direta de mensagens privadas das novas diretrizes de proteção infantil. Deste modo, a privacidade das comunicações nos equipamentos dos utilizadores permanece salvaguardada face ao escrutínio automático.",
-   "image": "https://cms.therecord.media/uploads/phone_alexander_grey_unsplash_3003b5bb7d.jpg",
-   "points": [
-    "Ofcom confirma falta de poderes para exigir escaneamento de dispositivos.",
-    "Dispositivos pessoais e mensagens privadas ficam excluídos da fiscalização.",
-    "Decisão protege a privacidade dos utilizadores no Reino Unido."
-   ],
-   "title_original": "UK leaves client-side scanning out of new child safety rules",
-   "category": "Regulação",
-   "translated": true,
-   "enriched": true,
-   "why": "Estabelece um limite regulatório claro entre a segurança pública e a privacidade inviolável das comunicações pessoais.",
-   "todo": ""
   }
  ]
 }

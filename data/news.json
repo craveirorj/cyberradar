@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T15:14:29.526635+00:00",
+ "updated": "2026-11-20T15:26:16.923676+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -89,17 +89,17 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 21
+   "added": 22
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "Help Net Security",
@@ -254,7 +254,7 @@
   {
    "source": "WeLiveSecurity (ESET)",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "Sophos News",
@@ -310,8 +310,8 @@
  "translation": {
   "provider": "gemini",
   "done": 12,
-  "pending": 331,
-  "unenriched": 198,
+  "pending": 327,
+  "unenriched": 194,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -547,6 +547,23 @@
    "enriched": true,
    "why": "Mostra como a invasão de um único fornecedor de serviços em nuvem pode desestabilizar comunicações empresariais à escala global.",
    "todo": "Monitorize o estado dos seus fornecedores de serviços em nuvem e mantenha planos de contingência para falhas de comunicação."
+  },
+  {
+   "id": "efdcd7b00458ccae",
+   "source": "Securelist (Kaspersky)",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://securelist.com/how-a-cloud-pentest-works/121921/",
+   "published": "2026-11-20T13:00:53+00:00",
+   "title": "Transcending the trust boundaries: how a cloud pentest works",
+   "summary": "This is the first article in a series on cloud penetration testing. We'll cover the three cloud layers (External, Overlay, and Underlay), common architectures (OpenStack and Kubernetes), typical attack chains, and real-world incidents.",
+   "image": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2026/11/12092808/cloud1_securelist-featured_1200x600.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "Users trust a cloud provider to configure and maintain their IT services, including data storage. In turn, the provider guarantees that hosted services will stay up and that data will remain strictly confidential. To demonstrate that their platforms are secure, providers choose different strategies: some run bug bounty programs, some rely on regular internal audits, and some bring in external research teams. However, cloud pentest methodology still has plenty of blind spots: there’s no single standard, and the outcome depends on the experience and skill of the team. Most pentests in this area have historically focused on the external layer: the management console, customer interfaces, APIs, and the basic network perimeter. This layer is important, but it’s only the surface. In this introductory article, we share our approach to penetration testing of cloud environments, which we’ve developed over several years and dozens of projects. We don’t claim to cover every possible scenario. Instead, we want to show the reasoning behind our pentests and highlight less obvious points that are easy to miss. Key points Cloud infrastructure is more complex than a traditional web application. To simplify, you can think of it as a hotel with three zones: the booking website (External, the outermost layer), the guest rooms (Overlay, the logical layer), and the staff area (Underlay, the infrastructure or base layer). A cloud service is well protected if the trust boundaries between these zones cannot be breached. A cloud pentest’s value isn’t measured by the number of vulnerabilities found or by the mere fact that code ran. Remote command execution in an isolated tenant container is only the beginning of a pentest, not the end. The main goal is to assess whether an attacker can violate t"
   },
   {
    "id": "a6cdc463c1597485",
@@ -13767,28 +13784,6 @@
    "enriched": true,
    "why": "Evidencia a vulnerabilidade de portais institucionais públicos a ataques de desfiguração e interrupção de serviço.",
    "todo": "Implemente mecanismos rigorosos de controlo de acessos, autenticação forte para administradores e monitorização de integridade de ficheiros."
-  },
-  {
-   "id": "0a957c945abfc8fe",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/16/crook-turns-free-trials-into-phishing-factory-as-learnworlds-sends-13000-fake-youtube-copyright-notices/5310122",
-   "published": "2026-11-16T17:03:00+00:00",
-   "title": "Plataforma LearnWorlds usada para enviar 13.000 falsos avisos de direitos de autor do YouTube",
-   "summary": "Um atacante explorou as contas de teste gratuito da plataforma de cursos LearnWorlds para enviar cerca de 13.000 e-mails de phishing disfarçados de avisos de direitos de autor do YouTube. A empresa confirmou que os seus sistemas internos não sofreram nenhuma intrusão direta, tendo o atacante abusado das funcionalidades automatizadas de boas-vindas. Como impacto, os destinatários receberam mensagens fraudulentas concebidas para induzir em erro e recolher credenciais.",
-   "image": "https://image.theregister.com/?imageId=262937&width=800",
-   "points": [
-    "Atacantes criaram centenas de contas de teste gratuitas no LearnWorlds para contornar limites de envio.",
-    "Foram disparados 13.000 e-mails falsos simulando notificações de infração de direitos de autor no YouTube.",
-    "A empresa assegura que os servidores principais não foram comprometidos, mas reforçou os controlos contra bots."
-   ],
-   "title_original": "Crook turns free trials into phishing factory, as LearnWorlds sends 13,000 fake YouTube copyright notices",
-   "category": "Phishing/Fraude",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra como plataformas legítimas podem ser instrumentalizadas de forma abusiva para propagar campanhas massivas de phishing.",
-   "todo": "Desconfie de notificações urgentes sobre direitos de autor e verifique sempre os remetentes antes de clicar em links ou inserir credenciais."
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T11:26:28.929860+00:00",
+ "updated": "2026-11-20T11:46:25.811983+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -89,12 +89,12 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 20
+   "added": 21
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -234,12 +234,12 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 19
+   "added": 18
   },
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 9
+   "added": 8
   },
   {
    "source": "Help Net Security",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 4
+   "added": 2
   },
   {
    "source": "Check Point Research",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 13
+   "added": 14
   },
   {
    "source": "ACSC Austrália",
@@ -309,14 +309,61 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 217,
-  "unenriched": 86,
+  "done": 108,
+  "pending": 232,
+  "unenriched": 98,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting property name enclosed in double quotes: line 5 column 1 (char 83)"
   ]
  },
  "items": [
+  {
+   "id": "3827cbac510e9c51",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/sbc-medical-group-data-breach-impacts-over-2-million/",
+   "published": "2026-11-20T11:36:51+00:00",
+   "title": "Violação de dados no SBC Medical Group afeta mais de 2 milhões de pessoas",
+   "summary": "Atores maliciosos conseguiram aceder a bases de dados que continham informações de clientes ligadas a clínicas no Japão. Este incidente resultou na exposição de dados sensíveis de mais de dois milhões de pessoas. A situação demonstra os riscos persistentes a que as infraestruturas de saúde e clínicas estão expostas perante ataques cibernéticos. O acesso não autorizado comprometeu a privacidade dos utentes afetados.",
+   "image": null,
+   "points": [
+    "Quem: Atores maliciosos e SBC Medical Group.",
+    "O quê: Acesso não autorizado a bases de dados com informação de clientes.",
+    "Onde: Clínicas associadas no Japão.",
+    "Impacto: Mais de dois milhões de pessoas afetadas pela violação de dados."
+   ],
+   "title_original": "SBC Medical Group Data Breach Impacts Over 2 Million",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como o setor da saúde continua a ser um alvo prioritário para o roubo massivo de dados de clientes.",
+   "todo": "Monitorize regularmente os acessos às bases de dados e reforce as políticas de autenticação e encriptação de dados sensíveis."
+  },
+  {
+   "id": "cf0779df78aa4b0a",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/cibercriminosos-russos-usam-ia-para-aplicar-golpes-no-brasil/",
+   "published": "2026-11-20T11:30:00+00:00",
+   "title": "Cibercriminosos russos usam IA para aplicar golpes no Brasil",
+   "summary": "Cibercriminosos que falam russo lançaram uma campanha direcionada ao Brasil e a outros países para roubar dados confidenciais de empresas e utilizadores. Os atacantes combinam engenharia social, serviços legítimos de internet e inteligência artificial para criar centenas de páginas falsas personalizadas. A infraestrutura utilizada emprega ferramentas como XaocMail, Phantom53 e Havoc para dificultar o bloqueio tradicional por parte das defesas. O setor tecnológico lidera a lista de alvos afetados por esta operação estruturada.",
+   "image": "https://www.estadao.com.br/resizer/v2/MHRSOGIMABDORBN5ZYNGFIFKMA.png?quality=80&auth=9773b1640e8307fc2cdfcd8286ef0339975496f52e8b07363531afaf59ef35e3&width=710",
+   "points": [
+    "Quem: Hackers russos e utilizadores ou empresas no Brasil.",
+    "O quê: Campanha de phishing e roubo de dados auxiliada por inteligência artificial.",
+    "Como: Uso de e-mails falsos, páginas fraudulentas e ferramentas como XaocMail e Havoc.",
+    "Impacto: Criação de quase mil páginas falsas e roubo de dados confidenciais em setores como a tecnologia."
+   ],
+   "title_original": null,
+   "category": "Phishing/Fraude",
+   "translated": false,
+   "enriched": true,
+   "why": "Evidencia a profissionalização do cibercrime através da inteligência artificial para contornar os controlos de segurança tradicionais.",
+   "todo": "Forme os colaboradores para reconhecerem sinais de phishing e utilize soluções de segurança avançadas capazes de detetar anomalias no tráfego de e-mail."
+  },
   {
    "id": "4ebef484f948ffe8",
    "source": "Infosecurity Magazine",
@@ -333,9 +380,9 @@
     "A intrusão ocorreu através do compromisso de um sistema externo.",
     "O impacto inclui a exposição de dados sensíveis de clientes."
    ],
-   "title_original": "JPMorgan Confirms Customer Data Breach Following Third-Party Compromise",
+   "title_original": null,
    "category": "Ransomware",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra como falhas em parceiros externos podem comprometer a segurança de grandes organizações financeiras.",
    "todo": "Avalie e audite regularmente a postura de cibersegurança dos seus fornecedores e parceiros externos."
@@ -356,9 +403,9 @@
     "A Microsoft corrigiu o problema na atualização opcional KB5132057.",
     "O impacto é a desconfiança dos utilizadores e falsos alertas de erro."
    ],
-   "title_original": "Windows 11 passkey bug cries failure after successful sign-in",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Evita o alarme desnecessário dos utilizadores e reduz o volume de pedidos de suporte técnico.",
    "todo": "Instale as atualizações mais recentes do Windows e ignore a mensagem no Android se o login no PC funcionou."
@@ -423,9 +470,9 @@
     "A recomendação é retirar e substituir o hardware afetado de imediato.",
     "O impacto deixa as redes expostas a ataques automatizados e críticos."
    ],
-   "title_original": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Manter equipamento de rede sem suporte abre uma porta direta e sem defesa para os atacantes.",
    "todo": "Substitua o equipamento de rede obsoleto e garanta que nenhuma firewall sem suporte fica exposta diretamente à internet."
@@ -469,9 +516,9 @@
     "A exploração ocorreu logo após a publicação de uma prova de conceito.",
     "O impacto permitiu o acesso não autorizado à rede interna da organização."
    ],
-   "title_original": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "A exploração rápida de falhas críticas recém-divulgadas compromete redes internas em minutos.",
    "todo": "Aplique imediatamente as correções de segurança disponibilizadas pela Cisco para o CVE-2026-76466."
@@ -13729,50 +13776,6 @@
    "enriched": true,
    "why": "As falhas em ferramentas de gestão de segurança e integração da IBM podem conceder acesso indevido a redes empresariais.",
    "todo": "Consulte os avisos específicos da IBM e aplique as correções recomendadas para fechar potenciais vetores de ataque."
-  },
-  {
-   "id": "0399f3b56d496a57",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/16/google-ai-agent-turned-a-security-patch-into-a-working-exploit-with-no-human-help/",
-   "published": "2026-11-16T14:29:05+00:00",
-   "title": "Google: agente de IA transformou um patch de segurança num exploit funcional sem ajuda humana",
-   "summary": "Um operador ligado a ataques cibernéticos utilizou um agente de inteligência artificial para converter patches de segurança em exploits funcionais sem intervenção humana. Esta ocorrência inédita foi documentada pelo Google Threat Intelligence Group no seu relatório do quarto trimestre de 2026. O sistema automatizado permitiu acelerar a exploração de vulnerabilidades e culminou no roubo de dados de organizações-alvo. O impacto evidencia a capacidade autónoma da IA maliciosa na criação rápida de ameaças.",
-   "image": null,
-   "points": [
-    "Um operador usou um agente de IA para criar exploits a partir de patches.",
-    "A Google identificou este feito inédito sem intervenção humana.",
-    "O ataque resultou na exploração de vulnerabilidades e roubo de dados."
-   ],
-   "title_original": "Google: AI agent turned a security patch into a working exploit with no human help",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "A capacidade da IA para transformar correções de segurança em ataques automatizados reduz drasticamente o tempo de defesa das empresas.",
-   "todo": "Acelere a aplicação de correções de segurança críticas antes que agentes automatizados possam criar exploits funcionais."
-  },
-  {
-   "id": "1be52a8543e186f0",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/16/fbi-says-north-korean-hackers-stole-over-400-million-in-crypto-using-deepfake-video-calls/",
-   "published": "2026-11-16T14:28:37+00:00",
-   "title": "FBI diz que piratas informáticos norte-coreanos roubaram mais de 400 milhões de dólares em criptomoedas usando videochamadas deepfake",
-   "summary": "O FBI apurou que atores maliciosos ligados à Coreia do Norte roubaram mais de 400 milhões de dólares em criptomoedas. O esquema de engenharia social, denominado FaceStealer, decorreu ao longo de um ano e meio. Os atacantes utilizaram videochamadas com recurso a deepfakes para enganar as vítimas e concretizar o furto. O impacto financeiro desta operação ilícita foi severo.",
-   "image": null,
-   "points": [
-    "Hackers norte-coreanos roubaram mais de 400 milhões em criptomoedas.",
-    "A operação foi realizada através do esquema de engenharia social FaceStealer.",
-    "Foram utilizadas videochamadas com deepfakes para enganar as vítimas."
-   ],
-   "title_original": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "O uso de deepfakes em tempo real em videochamadas supera a desconfiança tradicional baseada em exibições visuais.",
-   "todo": "Desconfie de pedidos financeiros ou profissionais feitos por vídeo e implemente processos rigorosos de validação fora de canal."
   }
  ]
 }

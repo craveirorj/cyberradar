@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T19:28:31.127172+00:00",
+ "updated": "2026-11-20T19:46:39.673179+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -264,7 +264,7 @@
   {
    "source": "Graham Cluley",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "HackRead",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 16
+   "added": 15
   },
   {
    "source": "ACSC Austrália",
@@ -309,16 +309,58 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 96,
-  "pending": 252,
-  "unenriched": 110,
+  "done": 120,
+  "pending": 224,
+  "unenriched": 84,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "84075b2874ae36b5",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-1073",
+   "published": "2026-11-20T19:33:11+00:00",
+   "title": "Cisco security advisory (AV26-1073) – Update 1",
+   "summary": "A Cisco emitiu um aviso de segurança devido a vulnerabilidades que afetam vários produtos da marca, incluindo o Cisco IOS XR Software, Snort 3 e Unified CM. A CISA adicionou recentemente a falha CVE-2026-76466 à sua base de dados de vulnerabilidades exploradas. Esta situação representa um risco para a integridade e segurança das redes e sistemas empresariais que utilizam estas soluções. Os utilizadores e administradores devem consultar os avisos oficiais e aplicar as atualizações necessárias.",
+   "image": null,
+   "points": [
+    "Vários produtos Cisco afetados por falhas de segurança.",
+    "CVE-2026-76466 adicionada à base de dados de exploração da CISA.",
+    "Administradores devem verificar links oficiais e aplicar correções."
+   ],
+   "title_original": "Cisco security advisory (AV26-1073) – Update 1",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite mitigar falhas críticas ativamente exploradas em infraestruturas empresariais.",
+   "todo": "Consulte os avisos de segurança da Cisco e instale as atualizações de software disponíveis o mais rapidamente possível."
+  },
+  {
+   "id": "edfeced150c6a6c3",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/container-store-restores-systems-cyberattack",
+   "published": "2026-11-20T19:32:00+00:00",
+   "title": "Container Store restores systems after cyberattack",
+   "summary": "A empresa-mãe da The Container Store, Neighborhood Intelligence, anunciou que a marca conseguiu recuperar o seu website e sistemas. A interrupção ocorreu na sequência de um incidente de cibersegurança registado durante o fim de semana anterior. O impacto centrou-se na indisponibilidade temporária das plataformas digitais da empresa. A situação foi resolvida com a restauração bem-sucedida dos serviços afetados.",
+   "image": "https://cms.therecord.media/uploads/the_container_store_78204f1ab6.jpg",
+   "points": [
+    "The Container Store foi alvo de um incidente de cibersegurança.",
+    "Website e sistemas foram totalmente restaurados.",
+    "Aviso divulgado pela empresa-mãe Neighborhood Intelligence."
+   ],
+   "title_original": "Container Store restores systems after cyberattack",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como incidentes informáticos podem interromper o negócio e exigir recuperação rápida.",
+   "todo": "Mantenha planos de recuperação de desastres atualizados e cópias de segurança testadas para responder a incidentes."
+  },
   {
    "id": "dcf516144473eefa",
    "source": "Cyber Centre Canadá",
@@ -658,6 +700,28 @@
    "enriched": true,
    "why": "Permite que mensagens maliciosas executem código e comprometam a segurança de smartphones Android.",
    "todo": "Atualize a aplicação Telegram para a versão mais recente e evite interagir com conteúdos ou mensagens desconhecidas."
+  },
+  {
+   "id": "35aed7f27fbb0710",
+   "source": "Dark Reading",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.darkreading.com/cyber-risk/what-we-missed-nvidia-ceo-scandal-rocks-ai-industry",
+   "published": "2026-11-20T17:04:04+00:00",
+   "title": "What We Missed: Nvidia CEO Scandal Rocks AI Industry",
+   "summary": "Num vídeo recente, os editores da Dark Reading debateram notícias marcantes que não tinham sido cobertas anteriormente. Entre os temas abordados encontram-se a demissão de Jensen Huang da Nvidia e uma recente falha na cloud da Microsoft. Estes acontecimentos geraram ondas de choque na indústria tecnológica e no setor da inteligência artificial. A discussão destacou o impacto destes eventos na estabilidade do mercado.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltafa9df51f75884e4/6b007fead61f59302a23c588/nvidia-Benjamin_Fanjoy_-Getty-2304259055.jpg?width=720&quality=80&disable=upscale",
+   "points": [
+    "Editores da Dark Reading discutem notícias tecnológicas menos cobertas.",
+    "Inclui a demissão de Jensen Huang da Nvidia.",
+    "Aborda também a recente falha na cloud da Microsoft."
+   ],
+   "title_original": "What We Missed: Nvidia CEO Scandal Rocks AI Industry",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda a compreender acontecimentos corporativos importantes que afetam o ecossistema tecnológico.",
+   "todo": ""
   },
   {
    "id": "705577b57ecf22bf",
@@ -13742,72 +13806,6 @@
    "enriched": true,
    "why": "Demonstra como as falhas de segurança em fornecedores terceiros podem expor dados críticos de redes e funcionários.",
    "todo": "Monitore estritamente os acessos de parceiros externos e adote autenticação multifator em todas as plataformas partilhadas."
-  },
-  {
-   "id": "54c0ac053bf0ca2c",
-   "source": "WIRED Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.wired.com/story/jpmorganchase-bank-outage-oh-come-on/",
-   "published": "2026-11-16T21:45:45+00:00",
-   "title": "The Bank Outage May Have Nothing to Do With Your Bank",
-   "summary": "Vários bancos nos Estados Unidos registaram falhas e perturbações operacionais. A JPMorganChase indicou que um problema técnico em sistemas de hardware locais poderá estar na origem da lentidão em transações de outras instituições bancárias. O impacto afetou a fluidez das operações financeiras externas.",
-   "image": "https://media.wired.com/photos/6afb6caffd92a97bc81f1ed9/master/pass/Security_YesYourBankIsHavinganOutage_v1-ezgif.com-video-to-gif-converter.gif",
-   "points": [
-    "Bancos norte-americanos enfrentaram falhas operacionais e interrupções.",
-    "JPMorganChase apontou problemas em hardware local como causa potencial.",
-    "A situação provocou lentidão em transações de bancos externos."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Ilustra como falhas técnicas locais em grandes instituições podem gerar disfunções em cascata no setor financeiro.",
-   "todo": ""
-  },
-  {
-   "id": "a9e3754443636956",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/california-sues-openai-hugging-face",
-   "published": "2026-11-16T21:40:00+00:00",
-   "title": "California sues OpenAI for Hugging Face and other incidents, alleging deception and recklessness",
-   "summary": "O estado da Califórnia avançou com um processo contra a OpenAI por comportamento imprudente e enganador. A acusação sustenta que a empresa dificultou as investigações oficiais sobre incidentes de segurança. A OpenAI recusou-se a fornecer detalhes completos sobre o universo de falhas conhecidas pela organização.",
-   "image": "https://cms.therecord.media/uploads/sam_altman_wef_flickr53470643027_5e36f13b10_o_25656afdee.jpg",
-   "points": [
-    "Califórnia processou a OpenAI por falta de transparência e imprudência.",
-    "A empresa recusou partilhar detalhes completos sobre incidentes de segurança.",
-    "As autoridades alegam obstrução nos esforços de investigação governamental."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Sublinha a importância da transparência e cooperação das empresas tecnológicas com os reguladores de segurança.",
-   "todo": "Garanta total transparência e cooperação com auditorias externas e reguladores em questões de segurança."
-  },
-  {
-   "id": "1c0a010584c55e7b",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203272/security/u-s-banks-struggle-with-outages-amid-wider-technology-disruptions.html",
-   "published": "2026-11-16T21:38:35+00:00",
-   "title": "U.S. Banks Struggle With Outages Amid Wider Technology Disruptions",
-   "summary": "Vários grandes bancos norte-americanos sofreram perturbações generalizadas que afetaram o acesso ao banco online e pagamentos digitais. Instituições como JPMorgan Chase, Bank of America e Wells Fargo registaram milhares de queixas de clientes incapazes de aceder a contas ou efetuar transações. Os bancos afetados esclareceram tratar-se de um problema técnico interno e não de um ataque cibernético, com impacto na normalidade das operações diárias.",
-   "image": "https://i0.wp.com/securityaffairs.com/wp-content/uploads/2026/11/image-41.png?resize=1024%2C544&#038;ssl=1",
-   "points": [
-    "Grandes bancos dos EUA enfrentaram interrupções nos serviços digitais.",
-    "Clientes relataram falhas no acesso a contas, ATMs e aplicações de pagamento.",
-    "As instituições afetadas atribuíram o problema a uma falha técnica interna e não a ciberataques."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Revela a alta dependência e vulnerabilidade dos serviços financeiros face a interrupções tecnológicas centralizadas.",
-   "todo": "Diversifique canais de atendimento e mantenha planos de contingência operacionais para falhas tecnológicas."
   }
  ]
 }

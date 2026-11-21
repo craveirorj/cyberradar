@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T22:46:09.737649+00:00",
+ "updated": "2026-11-21T23:07:02.974708+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 6
+   "added": 5
   },
   {
    "source": "TugaTech",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -309,15 +309,37 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 119,
-  "pending": 226,
-  "unenriched": 83,
+  "done": 112,
+  "pending": 232,
+  "unenriched": 90,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "9f2af01a2aa93e76",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+   "published": "2026-11-21T22:59:58+00:00",
+   "title": "Violação na Rackspace Spot dá acesso a segredos do Kubernetes a piratas informáticos",
+   "summary": "A Rackspace alertou os clientes de que a sua plataforma de nuvem Rackspace Spot foi alvo de um ataque cibernético. Os atacantes utilizaram credenciais comprometidas para aceder à infraestrutura. Isto permitiu-lhes implementar cargas de trabalho não autorizadas e aceder a segredos do Kubernetes nos clusters dos clientes.",
+   "image": null,
+   "points": [
+    "Plataforma afetada: Rackspace Spot.",
+    "Método de entrada: Utilização de credenciais comprometidas.",
+    "Impacto: Acesso não autorizado a segredos do Kubernetes e implementação de cargas de trabalho."
+   ],
+   "title_original": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes comprometam dados sensíveis e recursos em ambientes de nuvem de clientes.",
+   "todo": "Reveja e reforce as políticas de gestão de acessos e credenciais na nuvem, aplicando autenticação forte."
+  },
   {
    "id": "c2b3f051f52745aa",
    "source": "Pplware Segurança",
@@ -13780,29 +13802,6 @@
    "enriched": true,
    "why": "Os atacantes utilizam interrupções reais de serviços para enganar funcionários através de engenharia social.",
    "todo": "Desconfie de notificações urgentes sobre recuperação de contas e verifique sempre os canais oficiais de suporte."
-  },
-  {
-   "id": "cb74b2746cc6b172",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/apple-tightens-macos-app-permissions-to.html",
-   "published": "2026-11-17T11:07:31+00:00",
-   "title": "Apple reforça permissões de aplicações no macOS para limitar acesso a dados devido a riscos de segurança de agentes de IA",
-   "summary": "A Apple introduziu novos controlos no macOS para conceder aos utilizadores maior granularidade no acesso aos dados por parte das aplicações, incluindo agentes de IA. As alterações em fase de pré-visualização focam-se na transparência e em novas opções para as APIs de Controlo de Dispositivos, Acesso a Dados e Acesso Total ao Disco. Estas medidas surgem para mitigar os riscos associados à permissão excessiva concedida a ferramentas autónomas.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpfVz_pnzHGcrDTsga77xG6yDhi_sMihXsGCjULyapjweerWHdHByPuWqWYmWQsDAAV37EfmctWtSZgYCHJ-2FMGEE6K94YRDVFjHVO0i1jZxn-TIewKbDqIn3y-pNMH7pqJ9SA1X2Sk_r_vn_SfRdxbPB2kH9-hHkNrigumGuQKXaA6xlHqCdWu4ZDAFH/s1600/apple-macos.jpg",
-   "points": [
-    "Quem: Utilizadores de Mac e desenvolvimentos da Apple.",
-    "O quê: Novos controlos e APIs para gestão de permissões de aplicações e IA.",
-    "Como: Através de maior transparência e opções granulares no macOS.",
-    "Impacto: Limitação do acesso indevido a dados sensíveis por parte de software automatizado."
-   ],
-   "title_original": "Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "O uso crescente de agentes de IA exige restrições mais apertadas sobre o acesso aos dados do sistema.",
-   "todo": "Reveja regularmente as permissões concedidas às aplicações no sistema operativo e restrinja o acesso ao disco."
   }
  ]
 }

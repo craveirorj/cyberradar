@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T21:26:22.343873+00:00",
+ "updated": "2026-11-21T21:46:27.029222+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -133,8 +133,8 @@
   },
   {
    "source": "Schneier on Security",
-   "ok": true,
-   "added": 6
+   "ok": false,
+   "error": "403 Client Error: Forbidden for url: https://www.schneier.com/feed/atom/"
   },
   {
    "source": "SANS ISC",
@@ -309,15 +309,37 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 119,
-  "pending": 226,
-  "unenriched": 83,
+  "done": 120,
+  "pending": 219,
+  "unenriched": 76,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "8d54d4add32f2fcc",
+   "source": "TechCrunch Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+   "published": "2026-11-21T21:37:10+00:00",
+   "title": "Signal restringe capturas de ecrã móveis para enfrentar a \"ameaça existencial\" da vigilância por IA",
+   "summary": "A aplicação de mensagens Signal está a limitar a capacidade dos utilizadores de efetuarem capturas de ecrã nas suas versões para Android e iOS. Esta medida surge como uma resposta preventiva face à crescente ameaça da vigilância baseada em Inteligência Artificial. O objetivo é proteger a privacidade das conversas dos utilizadores contra ferramentas automatizadas que possam explorar estas imagens.",
+   "image": null,
+   "points": [
+    "Signal bloqueia capturas de ecrã",
+    "Medida visa combater vigilância por IA",
+    "Proteção reforçada da privacidade do utilizador"
+   ],
+   "title_original": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "A medida é crucial para garantir que a privacidade das comunicações não é comprometida por ferramentas de análise de imagem automatizadas.",
+   "todo": "Verifique as definições de privacidade da sua aplicação e mantenha-a sempre atualizada para a versão mais recente."
+  },
   {
    "id": "eb3fc971b476db8d",
    "source": "CrowdStrike Blog",
@@ -13781,29 +13803,6 @@
    "enriched": true,
    "why": "Destaca a urgência de alinhar as políticas governamentais com a realidade atual das vulnerabilidades descobertas por IA.",
    "todo": "Implemente programas formais de divulgação de vulnerabilidades para aceitar e tratar relatórios de investigadores externos."
-  },
-  {
-   "id": "1ca9179671e73280",
-   "source": "Pplware Segurança",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://pplware.sapo.pt/inteligencia-artificial/pela-primeira-vez-uma-ia-tera-conduzido-um-ciberataque-totalmente-sozinha/",
-   "published": "2026-11-17T11:00:00+00:00",
-   "title": "“Pela primeira vez”, uma IA terá conduzido um ciberataque totalmente sozinha",
-   "summary": "A Google identificou um sistema de Inteligência Artificial operado por grupos russos que consegue analisar código, desenvolver e executar exploits de forma totalmente autónoma. Este marco tecnológico representa a primeira vez que uma IA conduz um ciberataque sem intervenção humana direta em todas as fases. A descoberta consta no relatório trimestral da empresa sobre atividades de ameaças baseadas em agentes.",
-   "image": null,
-   "points": [
-    "Quem: Atacantes com base em russo e sistemas de IA identificados pela Google.",
-    "O quê: Condução de um ciberataque autónomo por inteligência artificial.",
-    "Como: Comparação automática de código e desenvolvimento de exploits.",
-    "Impacto: Aceleração e automatização de ameaças cibernéticas a um novo nível."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "A automatização total de ataques por IA eleva drasticamente a velocidade e escala das ameaças.",
-   "todo": "Mantenha os sistemas atualizados e adote defesas baseadas em comportamento para detetar ataques automatizados."
   }
  ]
 }

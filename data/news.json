@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T09:05:54.358733+00:00",
+ "updated": "2026-11-21T09:25:27.015143+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -269,12 +269,12 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Check Point Research",
@@ -309,12 +309,12 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 48,
-  "pending": 291,
-  "unenriched": 153,
+  "done": 24,
+  "pending": 314,
+  "unenriched": 178,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting ':' delimiter: line 5 column 649 (char 772)",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
@@ -334,12 +334,56 @@
     "O quê: Instalação de malware de roubo de dados.",
     "Impacto: Roubo de credenciais guardadas e carteiras de criptomoedas."
    ],
-   "title_original": "Fake GTA VI Streaming Client Installs Data-Stealing Malware on Windows PCs",
+   "title_original": null,
    "category": "Malware",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra como os atacantes exploram títulos de videojogos populares para distribuir malware de roubo de dados pessoais.",
    "todo": "Evite descarregar clientes de streaming ou software não oficial de fontes desconhecidas e utilize soluções de segurança atualizadas."
+  },
+  {
+   "id": "9da47b8efcbbfaa0",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
+   "published": "2026-11-21T08:49:20+00:00",
+   "title": "Signal bloqueia agentes de IA de lerem chats privados através de capturas de ecrã no Android e iOS",
+   "summary": "A plataforma Signal implementou restrições automáticas de capturas de ecrã para impedir que assistentes de inteligência artificial leiam conversas privadas. A funcionalidade protege contra sistemas integrados em dispositivos móveis. No entanto, a própria empresa admite que esta barreira de proteção não é totalmente perfeita. A medida abrange versões do Android e do iOS onde a aplicação consegue detetar a ação da IA.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1cVX1DZUDMTkSc3kGcO8KsGd-MIBr6py39SuaRxG1wCxVVfKIQhiQaywRpjn95FQV4tMy0dWyNc49745cwqBBLpGzVK_eut-DGLBaidiiYCdIH65bXGtopuPJ7dofJzAJVJ6cWrKp2JJb5gNrODQuWtK7vZZp824ecrz4_DHWWJIaC5wS6aYfsMsKshg4/s1600/signal.jpg",
+   "points": [
+    "Signal restringe capturas de ecrã para bloquear assistentes de IA.",
+    "A proteção aplica-se a sistemas integrados no Android e iOS.",
+    "A própria empresa reconhece que a eficácia da medida é incompleta."
+   ],
+   "title_original": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa para proteger a privacidade das conversas encriptadas contra a leitura automatizada por ferramentas de inteligência artificial.",
+   "todo": "Mantenha a aplicação Signal atualizada com a versão mais recente para garantir que beneficia das defesas de privacidade disponíveis."
+  },
+  {
+   "id": "a3eac34b29cf4ec4",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+   "published": "2026-11-21T08:49:13+00:00",
+   "title": "Hackers exploram falhas críticas em produtos VMware, Cisco e Apache em ataques de espionagem",
+   "summary": "A agência norte-americana CISA adicionou quatro vulnerabilidades críticas à sua lista de falhas ativamente exploradas. O alerta surge no seguimento de campanhas de espionagem digital que visam sistemas empresariais. Entre os softwares afetados encontram-se soluções da Apache, Cisco, SAP e Broadcom VMware. Esta inclusão baseia-se em evidências concretas de exploração bem-sucedida por parte de cibercriminosos.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFnWnBDigw8RogBTSInXktn1vUISbzwjHm5GuAFBNX0_ClLBk83WOa2BYiHUbgtva76TY8Oz2kJvEZtvEjqZlFFCuvQ-u-l-4l5dzo2MXw7zHLEuklv_Gn1mB-f5TL9GP_3n1NxQkzkZ-fAX7UpcqfZqUefQiRQZm21sq6IZOzmyuQ1hYs4AFHWQAj83WX/s1600/vmware-cisco.jpg",
+   "points": [
+    "CISA adicionou quatro novas falhas à lista de exploração ativa.",
+    "Produtos afetados incluem tecnologias da Cisco, Apache, SAP e VMware.",
+    "Ataques estão associados a campanhas de espionagem cibernética."
+   ],
+   "title_original": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque estas vulnerabilidades críticas estão a ser ativamente exploradas por atacantes em cenários de espionagem.",
+   "todo": "Consulte os avisos de segurança oficiais e aplique imediatamente os patches de atualização fornecidos pelos fabricantes afetados."
   },
   {
    "id": "573a216a902f84f4",
@@ -13756,51 +13800,6 @@
    "enriched": true,
    "why": "Alerta para a persistência de explorações em software de acesso remoto que permaneça desatualizado.",
    "todo": "Atualize imediatamente o software de acesso remoto e desative extensões ou componentes de terceiros desnecessários."
-  },
-  {
-   "id": "3131b7ab0fd88ec9",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/17/cybersecurity-seed-funding-deals/",
-   "published": "2026-11-17T06:19:27+00:00",
-   "title": "Segurança de IA atrai mais de um em cada três investimentos iniciais em cibersegurança",
-   "summary": "Os investimentos iniciais em startups de cibersegurança registaram uma ligeira descida no terceiro trimestre, embora o capital global se esteja a concentrar em rondas maiores e em menos projetos. Dados recolhidos através de informações de mercado mostram que o setor da segurança de IA continua a captar uma fatia muito significativa do financiamento seed.",
-   "image": null,
-   "points": [
-    "Ligeira descida nos investimentos seed em cibersegurança.",
-    "Concentração de capital em rondas de financiamento maiores.",
-    "A segurança de IA destaca-se na captação de mais de um terço dos investimentos."
-   ],
-   "title_original": "AI security took more than one in three cybersecurity seed funding deals",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra o forte interesse do mercado de capitais em soluções de cibersegurança baseadas em inteligência artificial.",
-   "todo": "Acompanhe as inovações em IA no mercado para identificar soluções que possam mitigar os vetores de ameaça emergentes."
-  },
-  {
-   "id": "ac4348c02375300d",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/17/microsoft-windows-autopatch-controls/",
-   "published": "2026-11-17T06:00:48+00:00",
-   "title": "Microsoft dá aos administradores uma única política para gerir atualizações do Windows e PCs que não arrancam",
-   "summary": "A Microsoft expandiu os controlos de atualizações de qualidade do Windows Autopatch através do Microsoft Intune. Esta novidade permite aos administradores gerir atualizações de qualidade do Windows, do .NET Framework e de recuperação rápida de máquinas utilizando apenas uma única política centralizada. O serviço em nuvem ajuda a automatizar processos para melhorar a segurança e a produtividade nas organizações. Os administradores passam a contar com suporte para aprovação manual ou automática e monitorização de dispositivos.",
-   "image": null,
-   "points": [
-    "A Microsoft integrou várias opções de atualização numa política única no Intune.",
-    "A ferramenta faz parte do serviço em nuvem Windows Autopatch.",
-    "O sistema suporta aprovação automática ou manual para diferentes tipos de correções.",
-    "Ajuda a melhorar a segurança e a produtividade na gestão de dispositivos."
-   ],
-   "title_original": "Microsoft gives admins one policy to manage Windows patches and fixes for PCs that won’t boot",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Simplifica e centraliza a gestão crítica de atualizações e recuperação de sistemas para os administradores de TI.",
-   "todo": "Mantenha os sistemas atualizados e configure políticas centralizadas para monitorizar o estado de funcionamento dos dispositivos."
   }
  ]
 }

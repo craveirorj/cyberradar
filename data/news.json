@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T12:47:48.926699+00:00",
+ "updated": "2026-11-21T13:08:51.717675+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -144,7 +144,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 5
+   "added": 1
   },
   {
    "source": "Malwarebytes Labs",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Hacker News",
@@ -284,7 +284,7 @@
   {
    "source": "Securelist (Kaspersky)",
    "ok": true,
-   "added": 5
+   "added": 7
   },
   {
    "source": "Risky Bulletin",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 72,
-  "pending": 271,
-  "unenriched": 132,
+  "done": 84,
+  "pending": 264,
+  "unenriched": 119,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,72 @@
   ]
  },
  "items": [
+  {
+   "id": "9dd04be51f1df2a0",
+   "source": "WIRED Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.wired.com/story/brace-yourself-for-years-of-outage-chaos/",
+   "published": "2026-11-21T13:00:00+00:00",
+   "title": "As interrupções estão apenas a começar",
+   "summary": "A inteligência artificial está a obrigar as empresas a corrigir os seus sistemas com maior rapidez, enquanto os atacantes tentam explorar vulnerabilidades recém-descobertas. Esta corrida tecnológica e de segurança está a gerar um cenário de instabilidade generalizada na internet. A situação resulta numa pressão acrescida para fechar falhas antes que sejam aproveitadas por agentes maliciosos. O impacto reflete-se num ambiente digital cada vez mais propício a falhas de funcionamento em larga escala.",
+   "image": "https://media.wired.com/photos/6b00ba06fb286bb31d23be2b/master/pass/Kernel-Panic-Brace-for-More-Outages-Security.jpg",
+   "points": [
+    "A IA força as empresas a corrigirem sistemas rapidamente.",
+    "Atacantes competem para explorar novas vulnerabilidades descobertas.",
+    "O cenário atual gera instabilidade e falhas generalizadas na internet."
+   ],
+   "title_original": "The Outages Are Just Getting Started",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como a corrida entre a correção rápida de falhas e a sua exploração por IA está a destabilizar a internet.",
+   "todo": "Acelere a aplicação de patches e atualizações de segurança nos sistemas da sua empresa."
+  },
+  {
+   "id": "21520cce0b83a7ba",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/21/php-security-updates-fix-18-flaws-including-critical-rce-bugs/",
+   "published": "2026-11-21T12:59:16+00:00",
+   "title": "Atualizações de segurança do PHP corrigem 18 falhas, incluindo graves bugs de execução remota de código",
+   "summary": "A equipa de desenvolvimento do PHP lançou atualizações de segurança para corrigir 18 vulnerabilidades, incluindo falhas críticas que permitem a atacantes remotos sem autenticação executar código em servidores vulneráveis. Os patches foram disponibilizados para todos os ramos suportados, abrangendo as versões recentes. A empresa de segurança Aikido reportou a existência destes problemas. O impacto afeta os servidores que utilizam as versões afetadas do PHP.",
+   "image": null,
+   "points": [
+    "A equipa PHP corrigiu 18 vulnerabilidades em servidores.",
+    "Foram detetadas falhas críticas de execução remota de código sem autenticação.",
+    "As atualizações aplicam-se a vários ramos suportados da linguagem."
+   ],
+   "title_original": "PHP security updates fix 18 flaws, including critical RCE bugs",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Protege servidores contra a execução remota de código malicioso por atacantes não autenticados.",
+   "todo": "Atualize imediatamente os servidores PHP para as versões mais recentes disponíveis (8.5.13, 8.4.28, 8.3.37 ou 8.2.36)."
+  },
+  {
+   "id": "4265baf9dd064b62",
+   "source": "HackRead",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://hackread.com/hackers-email-bombing-it-support-microsoft-teams/",
+   "published": "2026-11-21T12:54:31+00:00",
+   "title": "Piratas informáticos utilizam bombardeamento de e-mails antes de se fingirem de suporte de TI no Microsoft Teams",
+   "summary": "A Fortra emitiu um alerta sobre uma campanha maliciosa em que os atacantes inundam as caixas de correio de trabalho das vítimas com e-mails em massa. Após esta fase de bombardeamento, os piratas informáticos fingem ser o suporte técnico de TI na plataforma Microsoft Teams. Esta estratégia visa enganar os funcionários através de engenharia social. O impacto foca-se no comprometimento de contas e na manipulação de utilizadores em ambiente corporativo.",
+   "image": null,
+   "points": [
+    "Atacantes inundam caixas de correio com e-mails em massa.",
+    "Os criminosos fingem ser suporte de TI no Microsoft Teams.",
+    "A campanha utiliza táticas de engenharia social direcionadas a empresas."
+   ],
+   "title_original": "Hackers Using Email Bombing Before Posing as IT Support on Microsoft Teams",
+   "category": "Ataque/APT",
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para táticas combinadas de spam por e-mail e falsificação de suporte em ferramentas de colaboração.",
+   "todo": "Forme os colaboradores para desconfiarem de contactos inesperados do suporte técnico no chat e valide sempre pelos canais internos oficiais."
+  },
   {
    "id": "08dc4192c03efe8f",
    "source": "DataBreaches.net",
@@ -334,9 +400,9 @@
     "O quê: Aparente violação de segurança reportada por fontes próximas.",
     "Impacto: Aumenta a preocupação com ataques a agências governamentais dos EUA."
    ],
-   "title_original": "FBI hacked again; criminal information database targeted",
+   "title_original": null,
    "category": "Fuga de dados",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Evidencia a vulnerabilidade persistente de agências governamentais de topo face a ataques informáticos.",
    "todo": "Manter os sistemas atualizados e monitorizar o acesso a bases de dados sensíveis."
@@ -356,9 +422,9 @@
     "Onde: Barragem de Algonquin, em Illinois.",
     "Impacto: A intervenção rápida evitou o acesso não autorizado e manteve a infraestrutura operacional."
    ],
-   "title_original": "Officials probe attempted cyberattack on Algonquin Dam",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra como infraestruturas críticas continuam a ser alvo de tentativas de intrusão digital.",
    "todo": "Implementar uma segmentação rigorosa entre redes operacionais (OT) e redes corporativas (IT)."
@@ -378,9 +444,9 @@
     "O quê: Acedeu ilegalmente a um portal de testes e tentou vender dados de 4.000 pessoas na dark web.",
     "Impacto: Exposição de informações privadas de candidatos a programas governamentais."
    ],
-   "title_original": "India: 14-year-old hacker held for trying to sell private data of 4,000 Agniveers on dark web",
+   "title_original": null,
    "category": "Ataque/APT",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Demonstra que atores de ameaça com pouca idade conseguem explorar vulnerabilidades em plataformas web.",
    "todo": "Reforçar os testes de segurança e os controlos de acesso em websites de registo e pré-seleção."
@@ -400,9 +466,9 @@
     "O quê: Violação de cibersegurança num portal e base de dados associados.",
     "Impacto: Vazamento de dados pessoais e números de identificação de utilizadores."
    ],
-   "title_original": "SG: YMCA’s Youth For Causes portal, associated database hit by cybersecurity breach",
+   "title_original": null,
    "category": "Fuga de dados",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Alerta para a necessidade de proteger portais associados a organizações e eventos públicos.",
    "todo": "Cifrar dados sensíveis em repouso e limitar a recolha de informação pessoal desnecessária."
@@ -422,9 +488,9 @@
     "O quê: Acusado criminalmente de fraude eletrónica.",
     "Impacto: Desmantelamento da credibilidade de um serviço que ludibriava vítimas de ransomware."
    ],
-   "title_original": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+   "title_original": null,
    "category": "Ransomware",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Expõe esquemas fraudulentos que tentam lucrar com o desespero de vítimas de ataques de ransomware.",
    "todo": "Recorrer apenas a autoridades oficiais e especialistas de cibersegurança idóneos em caso de incidente."
@@ -13736,72 +13802,6 @@
    "enriched": true,
    "why": "Revela o impacto severo de um ataque à cadeia de fornecimento web em marcas globais de renome.",
    "todo": "Assegure a implementação de Content Security Policy (CSP) rigorosas para bloquear carregamento de scripts não fidedignos."
-  },
-  {
-   "id": "3b94bca926af7e1b",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/fully-autonomous-agentic-attacks/",
-   "published": "2026-11-17T09:30:00+00:00",
-   "title": "Fully Autonomous Agentic Attacks Are Three Months Away, Google Warns",
-   "summary": "O Google Threat Intelligence Group alertou para uma mudança de paradigma devido ao uso de frameworks de testes de intrusão baseados em agentes de IA. A empresa avisa que ataques totalmente autónomos podem estar muito próximos de se concretizar. Esta evolução acelera as técnicas tradicionais e coloca nova pressão sobre as defesas corporativas.",
-   "image": null,
-   "points": [
-    "Google alerta para mudança de paradigma com IA autónoma.",
-    "Frameworks de pentesting estão a ser convertidos em armas de ataque.",
-    "Ataques totalmente autónomos representam uma ameaça iminente."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Sublinha a necessidade urgente de automatizar também a resposta defensiva face à velocidade dos novos ataques.",
-   "todo": "Acelere os processos de remediação de vulnerabilidades e adote ferramentas de resposta automatizada a incidentes."
-  },
-  {
-   "id": "e821f480db7747b9",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/17/ai-powered-cyberattacks-gtig-report/",
-   "published": "2026-11-17T08:45:24+00:00",
-   "title": "Google descobre agente de IA a criar e lançar exploits sem intervenção humana",
-   "summary": "A Google Threat Intelligence Group e a Mandiant revelaram que os atacantes começaram a utilizar agentes de inteligência artificial para executar fases inteiras de intrusões ativas. Pelo menos uma operação já não necessita de humanos para transformar um patch recém-lançado num ataque funcional. Embora a mecânica das intrusões permaneça idêntica, a velocidade e a escala destas explorações aumentaram consideravelmente.",
-   "image": null,
-   "points": [
-    "Agentes de IA executam intrusões sem humanos.",
-    "Pelo menos uma operação converte patches em ataques de forma autónoma.",
-    "A velocidade e a escala dos ataques aumentaram."
-   ],
-   "title_original": "Google finds AI agent writing and launching exploits with no human in the loop",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como a IA está a acelerar e a automatizar a exploração de vulnerabilidades.",
-   "todo": "Aplique patches de segurança com a máxima celeridade para mitigar ataques automatizados."
-  },
-  {
-   "id": "3ad387c63ed54320",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/",
-   "published": "2026-11-17T08:35:42+00:00",
-   "title": "Uber notifica motoristas de violação de dados que afeta quase 150.000 pessoas",
-   "summary": "A empresa de transporte partilhado Uber está a notificar cerca de 150.000 motoristas de que os seus dados foram roubados por atacantes. O incidente ocorreu após uma violação de segurança no fornecedor de infraestruturas de IA Fireworks, registada no início de outubro.",
-   "image": null,
-   "points": [
-    "Quase 150.000 motoristas da Uber foram afetados.",
-    "Dados roubados na sequência de um ataque a um fornecedor externo.",
-    "O fornecedor comprometido foi a Fireworks."
-   ],
-   "title_original": "Uber notifies drivers of data breach affecting nearly 150,000 people",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia o risco de segurança associado a fornecedores terceiros e infraestruturas de IA.",
-   "todo": "Monitore os acessos de parceiros externos e adote medidas rigorosas de gestão de risco na cadeia de fornecimento."
   }
  ]
 }

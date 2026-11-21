@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T15:05:10.459323+00:00",
+ "updated": "2026-11-21T15:26:31.080331+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CISA Advisories",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -309,16 +309,33 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 12,
-  "pending": 328,
-  "unenriched": 189,
+  "done": 60,
+  "pending": 283,
+  "unenriched": 141,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "Expecting property name enclosed in double quotes: line 55 column 5 (char 5001)"
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "4b6021947b3ef390",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
+   "published": "2026-11-21T15:17:27+00:00",
+   "title": "BADBOX 3.0 botnet returns with record-breaking 40 billion daily ad requests",
+   "summary": "The BADBOX malware found in a broad range of generic Android TV boxes has returned to large-scale ad-fraud operations following last year's disruptions. [...]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Malware",
+   "translated": false,
+   "enriched": false,
+   "raw": "The BADBOX malware found in a broad range of generic Android TV boxes has returned to large-scale ad-fraud operations following last year's disruptions. [...]"
+  },
   {
    "id": "adbc56c71c689bb2",
    "source": "Tecmundo",
@@ -13780,28 +13797,6 @@
    "enriched": true,
    "why": "Evidencia o risco sistémico de vulnerabilidades em plataformas de testes e personalização web amplamente usadas.",
    "todo": "Reveja as políticas de segurança de conteúdo (CSP) para mitigar a execução de scripts não autorizados."
-  },
-  {
-   "id": "b262cf1dbe350426",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/ico-gta-6-scam-warning-release/",
-   "published": "2026-11-17T10:15:00+00:00",
-   "title": "ICO Issues GTA 6 Scam Warning as Release Date Nears",
-   "summary": "O regulador britânico de dados emitiu um alerta contra campanhas de ciberataques e fraudes relacionadas com o jogo Grand Theft Auto 6. Com a proximidade do lançamento, os criminosos aproveitam a expetativa do público para espalhar esquemas maliciosos. Os utilizadores devem redobrar a cautela perante ofertas e downloads associados ao título.",
-   "image": null,
-   "points": [
-    "Regulador britânico avisa para fraudes sobre GTA 6.",
-    "Criminosos exploram a expetativa em torno do lançamento.",
-    "Campanhas visam enganar fãs com falsas promessas."
-   ],
-   "title_original": null,
-   "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": true,
-   "why": "Alerta para o uso de grandes marcos culturais e de entretenimento em campanhas de engenharia social.",
-   "todo": "Desconfie de ofertas ou downloads antecipados relacionados com produtos de grande consumo muito aguardados."
   }
  ]
 }

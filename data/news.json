@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T18:46:39.943002+00:00",
+ "updated": "2026-11-21T19:08:18.683629+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -309,14 +309,60 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 224,
-  "unenriched": 82,
+  "done": 108,
+  "pending": 237,
+  "unenriched": 95,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "df0cbaf8a585da39",
+   "source": "TechCrunch Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://techcrunch.com/2026/11/21/trump-says-reported-fbi-database-hack-is-not-good/",
+   "published": "2026-11-21T18:44:53+00:00",
+   "title": "Trump says reported FBI database hack is ‘not good’",
+   "summary": "Foi reportada uma investigação a uma violação de segurança na base de dados do National Crime Information Center do FBI. O incidente gerou reações públicas, incluindo comentários de Donald Trump sobre a gravidade da situação. O impacto prende-se com o compromisso potencial de informações sensíveis geridas por agências federais de aplicação da lei.",
+   "image": null,
+   "points": [
+    "Alvo: National Crime Information Center do FBI.",
+    "O quê: Investigação a um ataque informático à base de dados.",
+    "Impacto: Potencial acesso não autorizado a dados sensíveis de aplicação da lei."
+   ],
+   "title_original": "Trump says reported FBI database hack is ‘not good’",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que até as bases de dados de agências federais de segurança estão vulneráveis a ataques graves.",
+   "todo": "Manter os sistemas atualizados e monitorizar o acesso a bases de dados críticas."
+  },
+  {
+   "id": "a4f7124565533b69",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203680/hacking/cyberattack-on-austrian-foreign-ministry-exposes-diplomatic-staff-data.html",
+   "published": "2026-11-21T18:22:52+00:00",
+   "title": "Cyberattack on Austrian Foreign Ministry Exposes Diplomatic Staff Data",
+   "summary": "O Ministério dos Negócios Estrangeiros da Áustria foi alvo de um ataque informático que expôs dados de contacto de funcionários da sede e de missões diplomáticas no estrangeiro. Os atacantes acederam sem autorização a um website gerido por um fornecedor externo durante uma falha global da Microsoft. As autoridades detetaram a intrusão de imediato e pararam a atividade após uma investigação pericial.",
+   "image": null,
+   "points": [
+    "Quem: Ministério dos Negócios Estrangeiros da Áustria e fornecedor externo.",
+    "O quê: Acesso não autorizado a dados de contacto de pessoal diplomático.",
+    "Como: Exploração durante uma falha global da Microsoft num site externo.",
+    "Impacto: Exposição de informações profissionais de funcionários no ativo."
+   ],
+   "title_original": "Cyberattack on Austrian Foreign Ministry Exposes Diplomatic Staff Data",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia os riscos de segurança associados a serviços externos geridos por fornecedores terceiros.",
+   "todo": "Auditar regularmente os fornecedores externos e reforçar a monitorização de websites institucionais."
+  },
   {
    "id": "1e1dbef95d66a94a",
    "source": "BleepingComputer",
@@ -13758,51 +13804,6 @@
    "enriched": true,
    "why": "Lembrete de que nem todas as tentativas de phishing têm o mesmo objetivo e algumas visam mapear a infraestrutura de correio.",
    "todo": "Analise detalhadamente os incidentes de phishing para identificar potenciais recolhas de inteligência sobre a sua rede."
-  },
-  {
-   "id": "eb3fc971b476db8d",
-   "source": "CrowdStrike Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-november-2026/",
-   "published": "2026-11-17T10:54:57.432310+00:00",
-   "title": "November 2026 Patch Tuesday: 1,252 CVEs Include One Zero-Day and 68 Critical Vulnerabilities",
-   "summary": "A atualização mensal de segurança da Microsoft corrigiu mais de mil vulnerabilidades identificadas por códigos CVE. Entre as falhas corrigidas encontram-se dezenas de problemas classificados como críticos. Destaca-se ainda a presença de pelo menos uma vulnerabilidade do tipo zero-day que exigia atenção imediata. Estas correções visam proteger os sistemas contra explorações ativas.",
-   "image": null,
-   "points": [
-    "Atualização massiva corrigiu mais de 1.250 vulnerabilidades.",
-    "Inclui 68 falhas de gravidade crítica.",
-    "Detetada pelo menos uma vulnerabilidade do tipo zero-day."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia o volume constante de falhas que requerem aplicação urgente de correções nas empresas.",
-   "todo": "Aplique as atualizações de segurança mensais o mais rapidamente possível para mitigar falhas críticas e zero-days."
-  },
-  {
-   "id": "380b276640831c63",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203309/data-breach/infoblox-confirms-supply-chain-breach-after-attackers-access-sensitive-data.html",
-   "published": "2026-11-17T10:54:35+00:00",
-   "title": "Infoblox confirma violação na cadeia de abastecimento após atacantes acederem a dados sensíveis",
-   "summary": "A Infoblox sofreu uma violação de segurança através de um fornecedor externo de migração de dados que acedeu ao seu ambiente Microsoft SharePoint. Os atacantes roubaram informações internas, incluindo registos de funcionários e snapshots de redes de clientes com configurações de DNS e DHCP. A empresa ativou imediatamente os procedimentos de resposta a incidentes e investiga o sucedido com especialistas.",
-   "image": null,
-   "points": [
-    "Quem: A empresa Infoblox e um fornecedor externo comprometido.",
-    "O quê: Acesso não autorizado a dados internos e configurações de clientes.",
-    "Como: Através do abuso de credenciais de um fornecedor de migração com acesso ao SharePoint.",
-    "Impacto: Exposição de dados sensíveis de funcionários e snapshots de redes NIOS de clientes."
-   ],
-   "title_original": "Infoblox Confirms Supply Chain Breach After Attackers Access Sensitive Data",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Os fornecedores terceiros constituem vetores críticos de ataque para aceder a redes empresariais sensíveis.",
-   "todo": "Audite e restrinja rigorosamente os acessos de terceiros e fornecedores aos sistemas internos."
   }
  ]
 }

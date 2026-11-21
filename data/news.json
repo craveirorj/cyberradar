@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T12:07:32.179341+00:00",
+ "updated": "2026-11-21T12:25:15.752513+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Check Point Research",
@@ -309,15 +309,60 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 233,
-  "unenriched": 91,
+  "done": 24,
+  "pending": 313,
+  "unenriched": 177,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "Expecting property name enclosed in double quotes: line 32 column 5 (char 3014)",
+   "Expecting value: line 5 column 10 (char 154)"
   ]
  },
  "items": [
+  {
+   "id": "6231e48f3bee97e2",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
+   "published": "2026-11-21T12:08:50+00:00",
+   "title": "Amazon: Agentes de IA de piratas informáticos ligados à China exploraram falha de dia zero em software médico",
+   "summary": "Um grupo de piratas informáticos utilizou agentes autónomos Cairn IA para detetar e explorar uma vulnerabilidade crítica no MONAI Label. O incidente envolveu a exploração de uma falha de dia zero num software médico. O impacto foca-se na vulnerabilidade dos sistemas afetados perante ataques impulsionados por inteligência artificial.",
+   "image": null,
+   "points": [
+    "Agentes autónomos Cairn IA detetaram e exploraram uma falha crítica.",
+    "O alvo foi uma vulnerabilidade de dia zero no software MONAI Label.",
+    "Atores ligados à China conduziram a exploração da falha médica."
+   ],
+   "title_original": "Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como a IA está a ser usada por atacantes para automatizar a descoberta e exploração rápida de vulnerabilidades.",
+   "todo": "Atualize o software MONAI Label e aplique ascorreções de segurança disponíveis para mitigar vulnerabilidades de dia zero."
+  },
+  {
+   "id": "0ad755f2681c3730",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
+   "published": "2026-11-21T11:53:07+00:00",
+   "title": "Uma única página web maliciosa permitiu a investigadores sequestrar o Meta Muse e aceder a conversas privadas",
+   "summary": "Investigadores demonstraram que uma página web maliciosa consegue extrair conversas privadas e memórias guardadas por utilizadores no assistente Meta Muse, sem gerar pedidos de aprovação. O ataque também pode alcançar credenciais armazenadas para contas ligadas ao serviço. Tratou-se de uma demonstração laboratorial que permaneceu confinada ao ambiente do utilizador individual.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYiVrbfn3FWfI_uNyjj8q9SZ38d2mHKu2ehdtYYKPwyg-05yKJBYUAPEaVxJq5KDGwU11X2tmEKNUKPIHQY9s67e1K9w_8NRdEOxVCDJqqMbQ6F27kfOj3GKjcQ3-0WHFNg7uYT6QeIU90qX1YW_Zvyn7WhZwpV41i5Pj6watQsF7Ti8NN1GIQLxw-jPc/s1600/muse-ai.jpg",
+   "points": [
+    "Investigadores comprometeram conversas privadas no Meta Muse através de uma página web.",
+    "O ataque extraiu memórias e credenciais guardadas sem requerer aprovação.",
+    "A demonstração ocorreu num ambiente de laboratório controlado."
+   ],
+   "title_original": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia riscos de segurança em assistentes de IA que armazenam dados sensíveis e credenciais de utilizador.",
+   "todo": "Evite aceder a páginas web desconhecidas enquanto utiliza assistentes de inteligência artificial e reveja as permissões concedidas."
+  },
   {
    "id": "761885e6c02d6550",
    "source": "The Hacker News",
@@ -13757,50 +13802,6 @@
    "enriched": true,
    "why": "Mostra a cooperação internacional na responsabilização criminal de operadores de ransomware.",
    "todo": "Mantenha sistemas atualizados e reforce as defesas contra engenharia social e acessos não autorizados."
-  },
-  {
-   "id": "50868e3a64c24731",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html",
-   "published": "2026-11-17T07:12:13+00:00",
-   "title": "Scripts comprometidos da Optimizely injetam skimmers e kits de exploits em visitantes da CNN, BBC e Zoom",
-   "summary": "Um atacante explorou uma vulnerabilidade no serviço Optimizely Web Experimentation para injetar código malicioso em scripts carregados por vários sites de clientes. Visitantes de mais de 178 organizações, incluindo a CNN, a BBC e o Zoom, foram expostos ao código malicioso. O incidente foi detetado por uma empresa de monitorização de scripts.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCKDXT71QJSnAqaPKmcBticVRjN0Q1diDWoOGKhoZ-wL5WIgLAPHX6dmetOkddYjLcZGIfxDAfLLN1LwbOV4zHqzONN7i8cIyMJLR-rc2t6LF7MnTzJAAoN54aIPEYoWPBf01znenuq43oDLwcVksxZbvP5xPnFsC-G-sDSjpzDegalBNU87YIe7z0YcI/s1600/Optimizely-hacked.jpg",
-   "points": [
-    "Exploração de falha na Optimizely Web Experimentation.",
-    "Código malicioso injetado em sites de mais de 178 organizações.",
-    "Afetou visitantes de plataformas como CNN, BBC e Zoom."
-   ],
-   "title_original": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia os riscos críticos de segurança associados a dependências e scripts de terceiros em websites.",
-   "todo": "Implemente políticas rigorosas de Content Security Policy (CSP) e monitorize a integridade de recursos externos carregados no seu site."
-  },
-  {
-   "id": "9162316f4aff4b99",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/17/peter-stockli-github-ai-security-audits/",
-   "published": "2026-11-17T07:00:54+00:00",
-   "title": "Excesso de instruções pode limitar auditorias de segurança por IA",
-   "summary": "Investigadores de segurança do GitHub explicaram como utilizam agentes de IA para auditar código à procura de vulnerabilidades, focando-se inicialmente em bugs de autenticação e autorização. O processo envolve testar e otimizar prompts para cada modelo, além de contar com validação humana em todos os relatórios gerados para filtrar falsos positivos.",
-   "image": null,
-   "points": [
-    "Uso de agentes de IA para auditar código em busca de vulnerabilidades.",
-    "Necessidade de otimizar prompts específicos para cada modelo.",
-    "Revisão humana obrigatória para filtrar falsos positivos."
-   ],
-   "title_original": "Too many instructions can hold back AI security audits",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Destaca a importância da validação humana na integração de ferramentas de IA para segurança de software.",
-   "todo": "Combine sempre a automação baseada em IA com a revisão manual especializada para garantir a fiabilidade dos resultados."
   }
  ]
 }

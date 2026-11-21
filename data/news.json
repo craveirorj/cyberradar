@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T14:27:23.902461+00:00",
+ "updated": "2026-11-21T14:48:02.851349+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -309,16 +309,37 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 48,
-  "pending": 293,
-  "unenriched": 152,
+  "done": 108,
+  "pending": 238,
+  "unenriched": 93,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "efef5bd50b96f7db",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
+   "published": "2026-11-21T14:26:04+00:00",
+   "title": "FBI reportedly hacked again, this time targeting nationwide police database",
+   "summary": "Os sistemas do FBI foram alegadamente violados pela segunda vez em dois meses, visando desta vez o Centro Nacional de Informações sobre Crimes (NCIC). Esta base de dados é utilizada para partilhar informações entre as forças de segurança locais, estatais e federais. O incidente levanta sérias preocupações sobre a segurança de dados sensíveis de aplicação da lei nos Estados Unidos.",
+   "image": null,
+   "points": [
+    "Alvo: Base de dados do NCIC do FBI.",
+    "O quê: Segunda violação de sistemas em dois meses.",
+    "Impacto: Comprometimento potencial da partilha de dados policiais."
+   ],
+   "title_original": "FBI reportedly hacked again, this time targeting nationwide police database",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra vulnerabilidades críticas em agências federais de topo, expondiendo dados sensíveis de segurança pública.",
+   "todo": "Reforçar os controlos de acesso e monitorizar estritamente os acessos a bases de dados governamentais críticas."
+  },
   {
    "id": "d52c03bd18a46e73",
    "source": "Cyber Centre Canadá",
@@ -13780,28 +13801,6 @@
    "enriched": true,
    "why": "Ilustra os desafios legais e complexidades técnicas associados a crimes financeiros no ecossistema cripto.",
    "todo": ""
-  },
-  {
-   "id": "a714ed794235a92a",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/17/apple-macos-app-permission-changes/",
-   "published": "2026-11-17T09:41:58+00:00",
-   "title": "Apple splits Mac app permissions fearing overreaching AI agents",
-   "summary": "A Apple introduziu permissões mais granulares e maior transparência no macOS em antecipação a riscos futuros. A medida surge devido ao receio de que agentes de inteligência artificial autónomos possam aceder a dados sensíveis de forma abusiva. Foram divididos controlos relativos ao acesso ao disco e controlo de dispositivos.",
-   "image": null,
-   "points": [
-    "Apple divide permissões de aplicações no macOS.",
-    "Ação preventiva contra riscos de agentes de IA autónomos.",
-    "Maior controlo sobre o acesso a dados e disco."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra a preocupação dos fabricantes de sistemas operativos com a autonomia excessiva de ferramentas baseadas em IA.",
-   "todo": "Reveja e restrinja as permissões de acesso ao disco e sistema atribuídas a aplicações e ferramentas de IA."
   }
  ]
 }

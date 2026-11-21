@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T18:07:10.986646+00:00",
+ "updated": "2026-11-21T18:18:27.181704+00:00",
  "errors": [],
  "feodo": {
   "total": 5,
@@ -58,14 +58,14 @@
    "label": "Sites que distribuem malware",
    "total": 790,
    "by_country": {
-    "US": 599,
-    "CN": 67,
+    "US": 593,
+    "CN": 71,
     "KH": 54,
+    "TR": 13,
     "FR": 12,
-    "TR": 12,
     "DE": 10,
     "BR": 8,
-    "IN": 5,
+    "IN": 6,
     "TW": 4,
     "AT": 3,
     "CA": 3,
@@ -82,31 +82,31 @@
    },
    "detail": {
     "US": {
-     "DEVPOPPER": 243,
+     "DEVPOPPER": 239,
      "exe": 120,
      "mirai": 104,
      "github": 41,
      "Ngioweb": 26
     },
     "CN": {
-     "Mozi": 20,
-     "32-bit": 18,
+     "Mozi": 21,
+     "32-bit": 19,
      "mirai": 16,
-     "malware_download": 5,
+     "malware_download": 7,
      "elf": 3
     },
     "KH": {
      "botnet": 54
     },
+    "TR": {
+     "malware_download": 6,
+     "mirai": 4,
+     "arm": 2,
+     "botnet": 1
+    },
     "FR": {
      "elf": 11,
      "apk ": 1
-    },
-    "TR": {
-     "malware_download": 6,
-     "mirai": 3,
-     "arm": 2,
-     "botnet": 1
     },
     "DE": {
      "mirai": 7,
@@ -120,6 +120,7 @@
     },
     "IN": {
      "Mozi": 4,
+     "malware_download": 1,
      "elf": 1
     },
     "TW": {
@@ -169,16 +170,16 @@
     }
    },
    "tags": {
-    "github": 424,
-    "js": 288,
-    "VSCode": 284,
-    "TxDataHiding": 275,
-    "DEVPOPPER": 243,
-    "mirai": 185
+    "github": 419,
+    "js": 283,
+    "VSCode": 279,
+    "TxDataHiding": 271,
+    "DEVPOPPER": 239,
+    "mirai": 187
    },
    "ports": {
     "US": {
-     "443": 425,
+     "443": 420,
      "8113": 40,
      "8112": 40,
      "8102": 12,
@@ -194,12 +195,12 @@
     "KH": {
      "8080": 54
     },
+    "TR": {
+     "80": 13
+    },
     "FR": {
      "80": 11,
      "443": 1
-    },
-    "TR": {
-     "80": 12
     },
     "DE": {
      "8000": 7,
@@ -213,6 +214,7 @@
     },
     "IN": {
      "46833": 2,
+     "60668": 1,
      "45661": 1,
      "43041": 1,
      "53212": 1
@@ -265,8 +267,10 @@
    "label": "Sites de phishing",
    "total": 300,
    "by_country": {
-    "US": 132,
+    "US": 102,
     "CA": 101,
+    "MX": 15,
+    "VU": 15,
     "IT": 7,
     "DE": 3,
     "HK": 3,
@@ -274,16 +278,21 @@
     "ES": 1,
     "CO": 1,
     "NL": 1,
-    "MY": 1,
     "ID": 1,
     "GB": 1
    },
    "detail": {
     "US": {
-     "phishing": 132
+     "phishing": 102
     },
     "CA": {
      "phishing": 101
+    },
+    "MX": {
+     "phishing": 15
+    },
+    "VU": {
+     "phishing": 15
     },
     "IT": {
      "phishing": 7
@@ -304,9 +313,6 @@
      "phishing": 1
     },
     "NL": {
-     "phishing": 1
-    },
-    "MY": {
      "phishing": 1
     },
     "ID": {
@@ -709,25 +715,22 @@
    "label": "Scans e força bruta",
    "total": 200,
    "by_country": {
-    "US": 164,
+    "US": 170,
     "DE": 16,
     "CA": 7,
-    "GB": 7,
     "NL": 4,
     "RU": 1,
-    "SE": 1
+    "SE": 1,
+    "GB": 1
    },
    "detail": {
     "US": {
-     "scan/força bruta": 164
+     "scan/força bruta": 170
     },
     "DE": {
      "scan/força bruta": 16
     },
     "CA": {
-     "scan/força bruta": 7
-    },
-    "GB": {
      "scan/força bruta": 7
     },
     "NL": {
@@ -738,9 +741,12 @@
     },
     "SE": {
      "scan/força bruta": 1
+    },
+    "GB": {
+     "scan/força bruta": 1
     }
    },
-   "reports": 3679690
+   "reports": 3648832
   }
  },
  "cloudflare": {

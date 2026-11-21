@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T16:48:09.353045+00:00",
+ "updated": "2026-11-21T17:07:56.227325+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -310,14 +310,37 @@
  "translation": {
   "provider": "gemini",
   "done": 108,
-  "pending": 236,
-  "unenriched": 93,
+  "pending": 237,
+  "unenriched": 94,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "fdf2ca3c607854a9",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203639/security/u-s-cisa-adds-cisco-expressway-sap-netweaver-broadcom-vmware-vcenter-and-apache-roller-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+   "published": "2026-11-21T16:09:38+00:00",
+   "title": "U.S. CISA adds Cisco Expressway, SAP NetWeaver, Broadcom VMware vCenter, and Apache Roller flaws to its Known Exploited Vulnerabilities catalog",
+   "summary": "A agência norte-americana CISA atualizou o seu catálogo de vulnerabilidades conhecidas exploradas com falhas em produtos como Cisco Expressway, SAP NetWeaver, Broadcom VMware vCenter e Apache Roller. Entre os problemas destaca-se uma falha no SAP NetWeaver e uma vulnerabilidade crítica de credenciais hard-coded no Cisco Expressway Series. Estas falhas permitem a atacantes não autenticados aceder a sistemas e executar chamadas de procedimento remoto. A inclusão destas falhas confirma que já estão a ser exploradas ativamente em ataques no terreno.",
+   "image": null,
+   "points": [
+    "Alvo: Falhas adicionadas ao catálogo KEV da CISA afetando Cisco, SAP, VMware e Apache.",
+    "O quê: Vulnerabilidades críticas incluindo execução remota e bypass de autenticação.",
+    "Impacto: Acesso não autorizado a servidores e execução de comandos remotos.",
+    "Como: Exploradas ativamente por atacantes em campanhas no terreno."
+   ],
+   "title_original": "U.S. CISA adds Cisco Expressway, SAP NetWeaver, Broadcom VMware vCenter, and Apache Roller flaws to its Known Exploited Vulnerabilities catalog",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda as organizações a priorizar a correção urgente de falhas críticas que já estão a ser usadas por atacantes.",
+   "todo": "Consulte o catálogo da CISA e aplique imediatamente os patches de segurança fornecidos pelos fabricantes para os softwares afetados."
+  },
   {
    "id": "4b6021947b3ef390",
    "source": "BleepingComputer",
@@ -13779,28 +13802,6 @@
    "enriched": true,
    "why": "Mostra como a cadeia de fornecimento digital e scripts de terceiros podem ser armas letais para os utilizadores.",
    "todo": "Monitore e verifique a integridade dos scripts de terceiros integrados nos seus websites."
-  },
-  {
-   "id": "d70ba4ae16f03869",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/optimizely-vulnerability-exploited-to-serve-malware-on-major-websites/",
-   "published": "2026-11-17T10:22:20+00:00",
-   "title": "Optimizely Vulnerability Exploited to Serve Malware on Major Websites",
-   "summary": "Uma vulnerabilidade na plataforma Optimizely foi explorada para injetar código malicioso em páginas de grandes organizações. Entre as entidades afetadas encontram-se nomes sonantes como a BBC, CNN, Zoom, IKEA e Salesforce. O incidente expôs os visitantes destes sites a riscos de segurança através de scripts adulterados.",
-   "image": null,
-   "points": [
-    "Falha na Optimizely permitiu injeção de código malicioso.",
-    "Grandes empresas mundiais figuram na lista de afetados.",
-    "Visitantes dos sites sofreram exposição a ameaças."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia o risco sistémico de vulnerabilidades em plataformas de testes e personalização web amplamente usadas.",
-   "todo": "Reveja as políticas de segurança de conteúdo (CSP) para mitigar a execução de scripts não autorizados."
   }
  ]
 }

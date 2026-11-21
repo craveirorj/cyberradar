@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T00:06:36.875935+00:00",
+ "updated": "2026-11-21T00:26:46.879327+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -144,7 +144,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Malwarebytes Labs",
@@ -189,7 +189,7 @@
   {
    "source": "CrowdStrike Blog",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "SentinelLabs",
@@ -309,16 +309,61 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 235,
-  "unenriched": 94,
+  "done": 120,
+  "pending": 224,
+  "unenriched": 83,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 30 column 5 (char 1924)",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "963228c15b1d2e3e",
+   "source": "CrowdStrike Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.crowdstrike.com/en-us/blog/supply-chain-risk-from-backdoored-lora-models/",
+   "published": "2026-11-21T00:21:30.013455+00:00",
+   "title": "Escondido nos Pesos: Risco na Cadeia de Abastecimento de Modelos LoRA com Backdoors",
+   "summary": "A investigação revela riscos de segurança na cadeia de abastecimento de modelos de Inteligência Artificial, especificamente em modelos LoRA (Low-Rank Adaptation). Estes modelos podem conter backdoors ocultos nos seus pesos, permitindo comportamentos maliciosos. O impacto é significativo, uma vez que a confiança cega em modelos pré-treinados pode comprometer sistemas que os integram. A vulnerabilidade reside na dificuldade de auditar o código malicioso inserido diretamente nos parâmetros do modelo.",
+   "image": null,
+   "points": [
+    "Modelos LoRA podem conter backdoors ocultos.",
+    "Ataque compromete a cadeia de abastecimento de IA.",
+    "Dificuldade em auditar pesos de modelos.",
+    "Risco de execução de código malicioso."
+   ],
+   "title_original": "Hidden in the Weights: Supply Chain Risk from Backdoored LoRA Models",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "A integridade dos modelos de IA é crítica, pois um modelo comprometido pode atuar como um cavalo de Troia dentro de aplicações empresariais.",
+   "todo": "Utilize apenas modelos provenientes de fontes fidedignas e implemente processos de validação e verificação de segurança antes de integrar modelos de IA no seu ambiente de produção."
+  },
+  {
+   "id": "0120c46b3eac32c1",
+   "source": "CSO Online",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.csoonline.com/article/4251711/f5-scrambles-to-fix-more-critical-big-ip-security-flaws-2.html",
+   "published": "2026-11-21T00:16:44+00:00",
+   "title": "F5 apressa-se a corrigir mais falhas críticas de segurança no BIG-IP",
+   "summary": "A F5 lançou correções de emergência para vulnerabilidades críticas nos produtos BIG-IP Access Policy Manager (APM) e BIG-IP iRule. Foram identificadas cinco falhas com uma pontuação de gravidade de 9.8, que permitem a um atacante não autenticado causar a terminação do Traffic Management Microkernel (TMM). Esta interrupção pode levar à execução remota de código (RCE) nos sistemas afetados. As falhas estão relacionadas com o processamento de comandos específicos em iRules e configurações de políticas de acesso.",
+   "image": "https://www.csoonline.com/wp-content/uploads/2025/12/4094475-0-93324400-1765319251-cloud-technology-protection-information-cybersecurity-indentity-100937522-orig-100943311-orig.jpg?quality=50&strip=all",
+   "points": [
+    "Cinco vulnerabilidades críticas (CVE-2026-121805 e outras).",
+    "Afeta BIG-IP APM e iRules da F5.",
+    "Permite execução remota de código (RCE).",
+    "Correções de emergência já disponíveis."
+   ],
+   "title_original": "F5 scrambles to fix more critical BIG-IP security flaws",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A exploração destas falhas permite o controlo total de dispositivos de rede críticos, colocando em risco a infraestrutura de acesso das empresas.",
+   "todo": "Aplique as atualizações de segurança fornecidas pela F5 imediatamente e verifique se as configurações de iRules nos seus dispositivos estão protegidas."
+  },
   {
    "id": "658edd0f5c0a38ca",
    "source": "DataBreaches.net",
@@ -326,15 +371,21 @@
    "lang": "en",
    "link": "https://databreaches.net/2026/11/20/ransomware-what-we-know-about-the-arrests-of-chaos-affiliates/",
    "published": "2026-11-20T23:50:20+00:00",
-   "title": "Ransomware: What we know about the arrests of Chaos affiliates",
-   "summary": "Valéry Rieß-Marchive reports: The Ukraininan authorities have released further details regarding four individuals arrested as part of a wider ransomware investigation into the cyber criminal ransomware underground. The four detainees linked to the so-called Chaos ransomware operation – a group that has only recently come to light – are described as members of a 27-person...",
+   "title": "Ransomware: O que sabemos sobre as detenções de afiliados do Chaos",
+   "summary": "As autoridades ucranianas divulgaram detalhes sobre a detenção de quatro indivíduos ligados ao grupo de ransomware Chaos. Estes suspeitos fazem parte de uma rede criminosa mais vasta, composta por 27 membros, que tem operado no submundo do cibercrime. O grupo Chaos é uma ameaça relativamente recente que tem vindo a ser investigada pelas forças da ordem. Esta operação marca um passo importante no combate às infraestruturas de ransomware.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quatro membros do grupo Chaos detidos.",
+    "Investigação abrange rede de 27 criminosos.",
+    "Esforço coordenado pelas autoridades ucranianas.",
+    "Grupo focado em operações de ransomware."
+   ],
+   "title_original": "Ransomware: What we know about the arrests of Chaos affiliates",
    "category": "Ransomware",
-   "translated": false,
-   "enriched": false,
-   "raw": "Valéry Rieß-Marchive reports: The Ukraininan authorities have released further details regarding four individuals arrested as part of a wider ransomware investigation into the cyber criminal ransomware underground. The four detainees linked to the so-called Chaos ransomware operation – a group that has only recently come to light – are described as members of a 27-person..."
+   "translated": true,
+   "enriched": true,
+   "why": "A desarticulação de grupos de ransomware é essencial para reduzir a ameaça global de extorsão digital contra empresas e organizações.",
+   "todo": "Mantenha backups offline atualizados e garanta que os sistemas de deteção de intrusão estão ativos para mitigar riscos de ransomware."
   },
   {
    "id": "9b2dca1639f78a8a",
@@ -13751,52 +13802,6 @@
    "enriched": true,
    "why": "A procura contínua por profissionais qualificados reflete a necessidade premente de colmatar lacunas de talento em cibersegurança.",
    "todo": ""
-  },
-  {
-   "id": "20a6495fc6f9426e",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/16/customer-personal-information-leak-at-legoland-even-annual-pass-barcodes-stolen/",
-   "published": "2026-11-17T03:04:19+00:00",
-   "title": "Fuga de informação pessoal de clientes na Legoland expõe até códigos de barras de passes anuais",
-   "summary": "A Legoland foi alvo de um incidente de cibersegurança que resultou na fuga de dados pessoais sensíveis dos seus clientes. Entre a informação comprometida encontram-se nomes, moradas residenciais, números de telefone e os códigos de barras dos passes anuais. A empresa divulgou publicamente a ocorrência do ataque e os respetivos itens exfiltrados após detetar a brecha de segurança.",
-   "image": null,
-   "points": [
-    "A Legoland sofreu um incidente de pirataria informática com fuga de dados.",
-    "Foram comprometidos seis tipos de dados de clientes.",
-    "Entre os dados roubados estão nomes, moradas, contactos e códigos de passes anuais.",
-    "A empresa comunicou o incidente logo após a confirmação do caso."
-   ],
-   "title_original": "Customer Personal Information Leak at Legoland… Even Annual Pass Barcodes Stolen",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "O roubo de dados pessoais em parques temáticos e plataformas de lazer coloca os clientes em risco de fraudes e engenharia social.",
-   "todo": "Esteja atento a tentativas de phishing que utilizem os seus dados pessoais legítimos e contacte o suporte caso suspeite de uso indevido."
-  },
-  {
-   "id": "ab3a694d5cb0c3b1",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/16/bank-outage-reports-spike-jpmorgan-says-issues-are-resolved-blames-internal-software-bug-for-transaction-delays/",
-   "published": "2026-11-17T03:03:59+00:00",
-   "title": "Picos de relatos de falhas em bancos: JPMorgan diz que problemas estão resolvidos e culpa bug de software interno",
-   "summary": "Vários utilizadores reportaram problemas e perturbações no acesso a aplicações bancárias e serviços de pagamento em grandes instituições financeiras norte-americanas. Embora algumas instituições tenham mantido as operações normais, o volume de queixas disparou online, afetando clientes do JPMorgan Chase e do Bank of America. O JPMorgan veio a público esclarecer que a situação ficou resolvida e atribuiu as falhas e os atrasos nas transações a um erro interno de software.",
-   "image": null,
-   "points": [
-    "Houve um aumento súbito de queixas em aplicações de bancos dos Estados Unidos.",
-    "Instituições como JPMorgan Chase e Bank of America viram os seus serviços gerarem relatos de falhas.",
-    "O JPMorgan confirmou que os problemas já se encontram resolvidos.",
-    "A causa apontada foi um erro interno no software de transações."
-   ],
-   "title_original": "Bank outage reports spike: JPMorgan says issues are resolved, blames internal software bug for transaction delays",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Falhas em serviços bancários afetam imediatamente a confiança dos consumidores e a circulação de pagamentos.",
-   "todo": "Consulte os canais oficiais da instituição financeira em caso de falhas na aplicação antes de tentar reescrever transações."
   }
  ]
 }

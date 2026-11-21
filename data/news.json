@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T23:47:22.669767+00:00",
+ "updated": "2026-11-21T00:06:36.875935+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -144,7 +144,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Malwarebytes Labs",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 11
+   "added": 10
   },
   {
    "source": "Help Net Security",
@@ -309,15 +309,33 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 223,
-  "unenriched": 82,
+  "done": 108,
+  "pending": 235,
+  "unenriched": 94,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting property name enclosed in double quotes: line 30 column 5 (char 1924)",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "658edd0f5c0a38ca",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/20/ransomware-what-we-know-about-the-arrests-of-chaos-affiliates/",
+   "published": "2026-11-20T23:50:20+00:00",
+   "title": "Ransomware: What we know about the arrests of Chaos affiliates",
+   "summary": "Valéry Rieß-Marchive reports: The Ukraininan authorities have released further details regarding four individuals arrested as part of a wider ransomware investigation into the cyber criminal ransomware underground. The four detainees linked to the so-called Chaos ransomware operation – a group that has only recently come to light – are described as members of a 27-person...",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Ransomware",
+   "translated": false,
+   "enriched": false,
+   "raw": "Valéry Rieß-Marchive reports: The Ukraininan authorities have released further details regarding four individuals arrested as part of a wider ransomware investigation into the cyber criminal ransomware underground. The four detainees linked to the so-called Chaos ransomware operation – a group that has only recently come to light – are described as members of a 27-person..."
+  },
   {
    "id": "9b2dca1639f78a8a",
    "source": "The Register Security",
@@ -13779,29 +13797,6 @@
    "enriched": true,
    "why": "Falhas em serviços bancários afetam imediatamente a confiança dos consumidores e a circulação de pagamentos.",
    "todo": "Consulte os canais oficiais da instituição financeira em caso de falhas na aplicação antes de tentar reescrever transações."
-  },
-  {
-   "id": "963228c15b1d2e3e",
-   "source": "CrowdStrike Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.crowdstrike.com/en-us/blog/supply-chain-risk-from-backdoored-lora-models/",
-   "published": "2026-11-17T02:22:56.613472+00:00",
-   "title": "Escondido nos Pesos: Risco na Cadeia de Abastecimento com Modelos LoRA Modificados com Portas dos Fundos",
-   "summary": "O texto aborda os riscos de segurança na cadeia de abastecimento associados a modelos LoRA que contêm portas dos fundos escondidas nos seus pesos. Esta ameaça pode comprometer sistemas de inteligência artificial que utilizam estes componentes modificados. Os atacantes conseguem introduzir código malicioso de forma discreta nestes modelos. O impacto traduz-se em potenciais brechas de segurança em ambientes que dependem de machine learning.",
-   "image": null,
-   "points": [
-    "O quê: Risco na cadeia de abastecimento com modelos LoRA modificados.",
-    "Como: Inclusão de portas dos fundos escondidas nos pesos dos modelos.",
-    "Impacto: Comprometimento de sistemas e aplicações baseadas em inteligência artificial.",
-    "Quem: Afeta developers e organizações que utilizam estes modelos."
-   ],
-   "title_original": "Hidden in the Weights: Supply Chain Risk from Backdoored LoRA Models",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Alerta para os novos vetores de ataque direcionados a componentes de inteligência artificial na cadeia de abastecimento.",
-   "todo": "Valide e verifique a integridade dos modelos de IA e fontes de dados de terceiros antes da integração."
   }
  ]
 }

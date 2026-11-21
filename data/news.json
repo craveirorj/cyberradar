@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T12:25:15.752513+00:00",
+ "updated": "2026-11-21T12:47:48.926699+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -144,7 +144,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 0
+   "added": 5
   },
   {
    "source": "Malwarebytes Labs",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -309,16 +309,126 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 24,
-  "pending": 313,
-  "unenriched": 177,
+  "done": 72,
+  "pending": 271,
+  "unenriched": 132,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 32 column 5 (char 3014)",
-   "Expecting value: line 5 column 10 (char 154)"
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "08dc4192c03efe8f",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/21/fbi-hacked-again-criminal-information-database-targeted/",
+   "published": "2026-11-21T12:37:22+00:00",
+   "title": "FBI hacked again; criminal information database targeted",
+   "summary": "A base de dados de informação criminal do FBI foi alvo de um novo ciberataque nos Estados Unidos. Duas fontes próximas do processo confirmaram à CNN que ocorreu uma aparente intrusão nesta infraestrutura nacional. O incidente levanta sérias preocupações sobre a crescente vaga de ataques informáticos direcionados a instituições governamentais norte-americanas.",
+   "image": null,
+   "points": [
+    "Alvo: Base de dados de informação criminal do FBI.",
+    "O quê: Aparente violação de segurança reportada por fontes próximas.",
+    "Impacto: Aumenta a preocupação com ataques a agências governamentais dos EUA."
+   ],
+   "title_original": "FBI hacked again; criminal information database targeted",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia a vulnerabilidade persistente de agências governamentais de topo face a ataques informáticos.",
+   "todo": "Manter os sistemas atualizados e monitorizar o acesso a bases de dados sensíveis."
+  },
+  {
+   "id": "6569893361d72dfa",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/21/officials-probe-attempted-cyberattack-on-algonquin-dam/",
+   "published": "2026-11-21T12:37:13+00:00",
+   "title": "Officials probe attempted cyberattack on Algonquin Dam",
+   "summary": "As autoridades do estado de Illinois estão a investigar um alegado ciberataque contra a barragem de Algonquin, situada no rio Fox. O incidente ocorreu numa segunda-feira e levou a equipa local a agir de imediato para impedir acessos não autorizados. Graças à pronta intervenção, o funcionamento da barragem manteve-se assegurado sem interrupções.",
+   "image": null,
+   "points": [
+    "O quê: Investigação de um aparente ciberataque.",
+    "Onde: Barragem de Algonquin, em Illinois.",
+    "Impacto: A intervenção rápida evitou o acesso não autorizado e manteve a infraestrutura operacional."
+   ],
+   "title_original": "Officials probe attempted cyberattack on Algonquin Dam",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como infraestruturas críticas continuam a ser alvo de tentativas de intrusão digital.",
+   "todo": "Implementar uma segmentação rigorosa entre redes operacionais (OT) e redes corporativas (IT)."
+  },
+  {
+   "id": "3769e86da6daf2d9",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/21/india-14-year-old-hacker-held-for-trying-to-sell-private-data-of-4000-agniveers-on-dark-web/",
+   "published": "2026-11-21T12:37:00+00:00",
+   "title": "India: 14-year-old hacker held for trying to sell private data of 4,000 Agniveers on dark web",
+   "summary": "Um jovem de 14 anos foi detido na Índia após obter acesso não autorizado a um site de testes direcionado a antigos candidatos a programas governamentais. O adolescente extraiu os dados pessoais de cerca de 4.000 pessoas e tentou vendê-los na dark web. A investigação policial permitiu travar o menor e expor o esquema.",
+   "image": null,
+   "points": [
+    "Quem: Um jovem hacker de 14 anos.",
+    "O quê: Acedeu ilegalmente a um portal de testes e tentou vender dados de 4.000 pessoas na dark web.",
+    "Impacto: Exposição de informações privadas de candidatos a programas governamentais."
+   ],
+   "title_original": "India: 14-year-old hacker held for trying to sell private data of 4,000 Agniveers on dark web",
+   "category": "Ataque/APT",
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra que atores de ameaça com pouca idade conseguem explorar vulnerabilidades em plataformas web.",
+   "todo": "Reforçar os testes de segurança e os controlos de acesso em websites de registo e pré-seleção."
+  },
+  {
+   "id": "4945b68dabbd339d",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/21/sg-ymcas-youth-for-causes-portal-associated-database-hit-by-cybersecurity-breach/",
+   "published": "2026-11-21T12:36:54+00:00",
+   "title": "SG: YMCA’s Youth For Causes portal, associated database hit by cybersecurity breach",
+   "summary": "A YMCA de Singapura sofreu uma violação de cibersegurança que afetou o portal online da iniciativa Youth For Causes e a respetiva base de dados. O incidente comprometeu informações pessoais, incluindo números de identificação (NRIC) parciais ou completos. A organização começou a alertar os participantes e mentores afetados através de correio eletrónico.",
+   "image": null,
+   "points": [
+    "Quem: YMCA de Singapura.",
+    "O quê: Violação de cibersegurança num portal e base de dados associados.",
+    "Impacto: Vazamento de dados pessoais e números de identificação de utilizadores."
+   ],
+   "title_original": "SG: YMCA’s Youth For Causes portal, associated database hit by cybersecurity breach",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para a necessidade de proteger portais associados a organizações e eventos públicos.",
+   "todo": "Cifrar dados sensíveis em repouso e limitar a recolha de informação pessoal desnecessária."
+  },
+  {
+   "id": "55e143d758f8f401",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/21/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+   "published": "2026-11-21T12:36:47+00:00",
+   "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+   "summary": "O diretor técnico do site 'RansomwareHelp' foi formalmente acusado de fraude eletrónica. A plataforma enganava as vítimas de ransomware ao prometer ferramentas criptográficas avançadas capazes de recuperar a totalidade dos dados sem pagar resgates. Na realidade, o serviço funcionava de forma ilícita e enganosa.",
+   "image": null,
+   "points": [
+    "Quem: Diretor técnico do 'RansomwareHelp'.",
+    "O quê: Acusado criminalmente de fraude eletrónica.",
+    "Impacto: Desmantelamento da credibilidade de um serviço que ludibriava vítimas de ransomware."
+   ],
+   "title_original": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+   "category": "Ransomware",
+   "translated": true,
+   "enriched": true,
+   "why": "Expõe esquemas fraudulentos que tentam lucrar com o desespero de vítimas de ataques de ransomware.",
+   "todo": "Recorrer apenas a autoridades oficiais e especialistas de cibersegurança idóneos em caso de incidente."
+  },
   {
    "id": "6231e48f3bee97e2",
    "source": "SecurityWeek",
@@ -13692,116 +13802,6 @@
    "enriched": true,
    "why": "Evidencia o risco de segurança associado a fornecedores terceiros e infraestruturas de IA.",
    "todo": "Monitore os acessos de parceiros externos e adote medidas rigorosas de gestão de risco na cadeia de fornecimento."
-  },
-  {
-   "id": "a2d446a02eca6bbe",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/17/openai-nato-ai-cyber-defense/",
-   "published": "2026-11-17T08:33:27+00:00",
-   "title": "Trabalho de ciberdefesa com IA da NATO consome até 300 mil milhões de tokens da OpenAI por mês",
-   "summary": "A Agência de Comunicação e Informação da NATO tem dado às instituições centrais acesso aos modelos de cibersegurança da OpenAI através do programa Daybreak. O objetivo é ajudar a proteger as redes aliadas, utilizando até 300 mil milhões de tokens de entrada e saída por mês. A exposição ocorre em software utilizado diariamente por instituições europeias, incluindo a agência de cibersegurança da UE, a ENISA.",
-   "image": null,
-   "points": [
-    "A NATO utiliza modelos de cibersegurança da OpenAI.",
-    "O consumo atinge até 300 mil milhões de tokens mensais.",
-    "O acesso é feito através do programa Daybreak para defensores."
-   ],
-   "title_original": "NATO’s AI cyber defense work hits up to 300 billion OpenAI tokens a month",
-   "category": "Regulação",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra a adoção em larga escala de modelos avançados de IA para a defesa de redes críticas.",
-   "todo": "Avalie a integração de ferramentas de IA para reforçar a monitorização e a análise de código na sua organização."
-  },
-  {
-   "id": "8b3b3b977d3f4414",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203279/cyber-crime/germany-greiz-hospital-reopens-emergency-room-after-ransom-attack.html",
-   "published": "2026-11-17T08:20:03+00:00",
-   "title": "Alemanha: Hospital de Greiz reabre urgências após ataque de ransomware",
-   "summary": "O hospital distrital de Greiz-Ronneburg, na Turíngia, sofreu uma falha de sistema devido a um ataque de extorsão que forçou o encerramento temporário do serviço de urgências. A mensagem de resgate foi recebida num domingo e a infraestrutura começou a ser reaberta de forma gradual na segunda-feira. A investigação está a cargo da polícia criminal estatal e do Ministério Público, num contexto de crescentes ataques híbridos na região.",
-   "image": null,
-   "points": [
-    "Hospital de Greiz alvo de ataque de extorsão com ransomware.",
-    "Serviço de urgências esteve temporariamente encerrado.",
-    "Investigação entregue à polícia criminal e ao Ministério Público."
-   ],
-   "title_original": "Germany: Greiz Hospital Reopens Emergency Room After Ransom Attack",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Sublinha a vulnerabilidade das infraestruturas de saúde críticas a ataques de extorsão.",
-   "todo": "Garanta a existência de cópias de segurança offline e planos de contingência robustos para continuidade operacional."
-  },
-  {
-   "id": "e8de38078ddac041",
-   "source": "Securelist (Kaspersky)",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://securelist.com/operation-shadowcloud-graphdoor/122005/",
-   "published": "2026-11-17T08:00:43+00:00",
-   "title": "Operação ShadowCloud: backdoors baseados em serviços na nuvem visam redes governamentais na Ásia e em África (Parte 2)",
-   "summary": "Esta segunda parte da análise detalha o backdoor GraphDoor e o conjunto de plugins utilizados, incluindo versões modificadas dos proxies Erfrp e Ably. O malware cria uma conduta nomeada e diretórios específicos para recolher informações detalhadas do sistema infetado. Utiliza técnicas avançadas de chamadas indiretas à API do Windows e comunicação encriptada com o servidor de comando e controlo.",
-   "image": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2026/11/16202435/shadowcloud-2_securelist-featured_1200x600_x2.jpg",
-   "points": [
-    "Análise aprofundada do backdoor GraphDoor e respetivos plugins.",
-    "Recolha de dados do sistema e uso de chamadas indiretas à API.",
-    "Comunicação encriptada com servidores C2."
-   ],
-   "title_original": "Operation ShadowCloud: cloud service–based backdoors targeting government networks in Asia and Africa. Part 2",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Revela táticas avançadas de persistência e evasão baseadas em infraestruturas cloud legítimas.",
-   "todo": "Monitorize o tráfego de rede anómalo para serviços em nuvem legítimos e utilize soluções de deteção baseadas em comportamentos."
-  },
-  {
-   "id": "319b78cde3f8d11c",
-   "source": "Securelist (Kaspersky)",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://securelist.com/operation-shadowcloud-gitdoor/122004/",
-   "published": "2026-11-17T08:00:37+00:00",
-   "title": "Operação ShadowCloud: backdoors baseados em serviços na nuvem visam redes governamentais na Ásia e em África (Parte 1)",
-   "summary": "Foi identificada uma nova campanha de intrusão ativa que explora a ferramenta legítima MeshAgent para infetar redes do setor governamental na Ásia e em África. Os atacantes utilizam os backdoors GraphDoor e GitDoor, ocultando o tráfego de comando e controlo em serviços cloud como Microsoft SharePoint, GitHub e Ably. A campanha utiliza descarregamento dinâmico de plugins e injeção de shellcode diretamente na memória.",
-   "image": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2026/11/16202435/shadowcloud-2_securelist-featured_1200x600_x2.jpg",
-   "points": [
-    "Nova campanha denominada Operation ShadowCloud visa governos.",
-    "Abuso da ferramenta MeshAgent e serviços cloud para comando e controlo.",
-    "Utilização dos backdoors GraphDoor e GitDoor."
-   ],
-   "title_original": "Operation ShadowCloud: cloud service–based backdoors targeting government networks in Asia and Africa. Part 1",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Ilustra como os atacantes mascaram tráfego malicioso em plataformas cloud legítimas para evitar deteções.",
-   "todo": "Audite regularmente o uso de ferramentas de administração remota e restrinja acessos não autorizados a serviços cloud."
-  },
-  {
-   "id": "d51a92f2bc9a5405",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/",
-   "published": "2026-11-17T07:25:44+00:00",
-   "title": "Suspeito de aflição a ransomware extraditado para os EUA enfrenta 27 anos de prisão",
-   "summary": "Um cidadão cazaque foi extraditado de Itália para os Estados Unidos para enfrentar acusações de ter visado escolas, hospitais e entidades de saúde em ataques de ransomware. O indivíduo é apontado como afiliado a redes de extorsão que afetaram infraestruturas críticas norte-americanas.",
-   "image": null,
-   "points": [
-    "Cidadão cazaque extraditado de Itália para os EUA.",
-    "Acusado de ataques de ransomware a escolas e hospitais.",
-    "Enfrenta uma pena que pode chegar a 27 anos de prisão."
-   ],
-   "title_original": "Ransomware affiliate suspect extradited to US, faces 27 years in prison",
-   "category": "Ransomware",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra a cooperação internacional na responsabilização criminal de operadores de ransomware.",
-   "todo": "Mantenha sistemas atualizados e reforce as defesas contra engenharia social e acessos não autorizados."
   }
  ]
 }

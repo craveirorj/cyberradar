@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T17:46:19.793351+00:00",
+ "updated": "2026-11-21T18:07:10.860060+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -310,13 +310,36 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 224,
-  "unenriched": 81,
+  "pending": 225,
+  "unenriched": 82,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "a80afcb1d850204c",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203664/ai/cairn-ai-framework-used-in-autonomous-zero-day-exploitation.html",
+   "published": "2026-11-21T16:50:49+00:00",
+   "title": "Framework de IA Cairn Utilizado em Exploração Autónoma de Zero-Day",
+   "summary": "A Amazon descobriu ataques impulsionados por inteligência artificial direcionados a universidades, onde agentes autónomos detetaram uma vulnerabilidade zero-day e obtiveram acesso root sem intervenção humana. Uma entidade ligada à China utilizou a ferramenta de testes de penetração Cairn para executar uma campanha de cerca de 48 horas contra endereços IP na Ásia Oriental. O incidente ocorreu porque o operador deixou um servidor público exposto sem autenticação, revelando configurações e prompts. Esta atividade demonstra a capacidade de agentes autónomos planearem e executarem ataques de forma independente.",
+   "image": null,
+   "points": [
+    "Agentes de IA autónomos descobriram uma zero-day sem intervenção humana.",
+    "Ataque executado por ator ligado à China contra universidades na Ásia Oriental.",
+    "Servidor público sem autenticação expôs o histórico e configurações operacionais.",
+    "O impacto inclui o acesso root não autorizado a sistemas vulneráveis."
+   ],
+   "title_original": "Cairn AI Framework Used in Autonomous Zero-Day Exploitation",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como os agentes de IA autónomos já conseguem descobrir e explorar vulnerabilidades zero-day sem intervenção humana.",
+   "todo": "Garanta que todos os servidores expostos publicamente possuem autenticação forte e revise regularmente as permissões de acesso."
+  },
   {
    "id": "fdf2ca3c607854a9",
    "source": "Security Affairs",
@@ -13779,28 +13802,6 @@
    "enriched": true,
    "why": "Demonstra uma mudança de paradigma em que os ataques tiram partido da automação avançada por IA à escala.",
    "todo": "Atualize os sistemas rapidamente após a divulgação de patches para se defender contra a exploração automatizada."
-  },
-  {
-   "id": "eaafbd85704efc50",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/optimizely-hack-malware-scripts-178-organisations/",
-   "published": "2026-11-17T10:44:45+00:00",
-   "title": "Optimizely Hack Serves Malware Through Scripts Used by 178 Organisations",
-   "summary": "Atacantes comprometeram scripts da Optimizely utilizados por centenas de organizações para infetar visitantes com malware. A campanha distribuiu ferramentas de roubo de cartões bancários e criptomoedas. Várias entidades de destaque global foram afetadas por esta injeção maliciosa.",
-   "image": null,
-   "points": [
-    "Scripts da Optimizely foram comprometidos por atacantes.",
-    "Afetou 178 organizações a nível global.",
-    "Visitantes foram expostos a malware de roubo financeiro."
-   ],
-   "title_original": null,
-   "category": "Malware",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como a cadeia de fornecimento digital e scripts de terceiros podem ser armas letais para os utilizadores.",
-   "todo": "Monitore e verifique a integridade dos scripts de terceiros integrados nos seus websites."
   }
  ]
 }

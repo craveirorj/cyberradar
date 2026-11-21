@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T00:46:56.135085+00:00",
+ "updated": "2026-11-21T01:06:52.479145+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -9,7 +9,7 @@
   {
    "source": "IT Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Pplware Segurança",
@@ -84,7 +84,7 @@
   {
    "source": "Krebs on Security",
    "ok": true,
-   "added": 3
+   "added": 2
   },
   {
    "source": "Dark Reading",
@@ -114,7 +114,7 @@
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 2
+   "added": 1
   },
   {
    "source": "TechCrunch Security",
@@ -243,8 +243,8 @@
   },
   {
    "source": "Help Net Security",
-   "ok": false,
-   "error": "Exceeded 30 redirects."
+   "ok": true,
+   "added": 0
   },
   {
    "source": "Security Affairs",
@@ -310,8 +310,8 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 222,
-  "unenriched": 81,
+  "pending": 221,
+  "unenriched": 80,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
@@ -409,6 +409,28 @@
    "enriched": true,
    "why": "A exploração destas falhas permite o controlo total de dispositivos de rede críticos, colocando em risco a infraestrutura de acesso das empresas.",
    "todo": "Aplique as atualizações de segurança fornecidas pela F5 imediatamente e verifique se as configurações de iRules nos seus dispositivos estão protegidas."
+  },
+  {
+   "id": "4b67abb568bc1c45",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/x-ray/relatorio-enisa-ue-reforca-ciberseguranca-mas-ameacas-persistem",
+   "published": "2026-11-21T00:00:00+00:00",
+   "title": "Relatório ENISA: UE reforça cibersegurança, mas ameaças persistem",
+   "summary": "A Agência da União Europeia para a Cibersegurança publicou o seu relatório de 2026, atribuindo uma pontuação de 71,53 à maturidade da segurança digital no bloco comunitário. No entanto, o documento adverte para o aumento dos riscos nas cadeias de abastecimento de tecnologia. Além disso, as ameaças impulsionadas por inteligência artificial continuam a preocupar as autoridades europeias. O impacto traduz-se na necessidade urgente de reforçar a resiliência das organizações perante cenários de ataque cada vez mais complexos.",
+   "image": null,
+   "points": [
+    "A ENISA avaliou a maturidade da cibersegurança na UE com 71,53 pontos.",
+    "Identificados riscos crescentes nas cadeias de abastecimento tecnológico.",
+    "Ameaças potenciadas por inteligência artificial destacadas no relatório."
+   ],
+   "title_original": null,
+   "category": "Regulação",
+   "translated": false,
+   "enriched": true,
+   "why": "Mostra que, apesar dos avanços regulatórios, as empresas europeias enfrentam vectores de ataque mais sofisticados.",
+   "todo": "Reveja regularmente a segurança dos seus fornecedores e adote práticas robustas de gestão de riscos na cadeia de abastecimento."
   },
   {
    "id": "658edd0f5c0a38ca",
@@ -13779,29 +13801,6 @@
    "enriched": true,
    "why": "A falta de visibilidade sobre a atividade da IA em ambientes de nuvem aumenta significativamente o risco de falhas de segurança.",
    "todo": "Limite as permissões atribuídas a agentes autónomos e reforce a monitorização e auditoria das alterações feitas em código e nuvem."
-  },
-  {
-   "id": "3c89973ca788a5a4",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/17/japans-fugaku-supercomputer-has-decidedly-un-super-security/5310333",
-   "published": "2026-11-17T05:27:04+00:00",
-   "title": "Supercomputador Fugaku do Japão sofre incidente de segurança grave",
-   "summary": "O centro japonês RIKEN detentor do supercomputador Fugaku sofreu um ataque informático que comprometeu os seus sistemas após um acesso não autorizado a um painel web. Os atacantes conseguiram mover-se pela rede interna até servidores com dados de utilizadores e instalaram malware, afetando milhares de registos e credenciais. O incidente obrigou a desligar a máquina, causando perturbações significativas na investigação científica agendada. As autoridades e os responsáveis continuam a investigar a extensão total do roubo de dados.",
-   "image": "https://image.theregister.com/?imageId=5310340&width=800",
-   "points": [
-    "Uma entidade desconhecida atacou o painel web do supercomputador Fugaku.",
-    "Os atacantes alcançaram servidores com dados e credenciais de utilizadores e instalaram malware.",
-    "O incidente afetou milhares de utilizadores registados e obrigou a desligar o supercomputador.",
-    "A investigação ainda procura apurar exatamente que informações foram exfiltradas."
-   ],
-   "title_original": "Japan's Fugaku supercomputer has decidedly un-super security",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra que infraestruturas científicas de topo e altamente sensíveis continuam vulneráveis a intrusões com impactos graves na investigação.",
-   "todo": "Proteja painéis de controlo e interfaces web de administração com autenticação robusta e monitorize o movimento lateral na rede."
   }
  ]
 }

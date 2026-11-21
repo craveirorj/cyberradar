@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T13:27:08.424769+00:00",
+ "updated": "2026-11-21T13:47:57.059905+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 14
+   "added": 13
   },
   {
    "source": "ACSC Austrália",
@@ -309,12 +309,11 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 84,
-  "pending": 263,
-  "unenriched": 117,
+  "done": 108,
+  "pending": 237,
+  "unenriched": 93,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
@@ -326,15 +325,20 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/apache-security-advisory-av26-1188",
    "published": "2026-11-21T13:17:12+00:00",
-   "title": "Apache security advisory (AV26-1188)",
-   "summary": "",
+   "title": "Aviso de segurança Apache (AV26-1188)",
+   "summary": "Foi detetada uma vulnerabilidade no Apache Tomcat que afeta as versões 10.1.62 e anteriores, 9.0.124 e anteriores, e 11.0.29 e anteriores. A falha, identificada como CVE-2026-133325, afeta o Cluster TLS-PSK configurado com TLS 1.3, que falha na validação do parceiro. O Centro Cibernético recomenda que os utilizadores e administradores consultem os links indicados e apliquem as atualizações necessárias assim que estiverem disponíveis.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Produto afetado: Apache Tomcat em várias versões anteriores ou iguais a 10.1.62, 9.0.124 e 11.0.29.",
+    "Falha detetada: CVE-2026-133325 no Cluster TLS-PSK configurado a usar TLS 1.3 sem validação de parceiro.",
+    "Ação recomendada: Revisão de links de segurança e aplicação de atualizações disponíveis."
+   ],
+   "title_original": "Apache security advisory (AV26-1188)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1188 Date: November 21, 2026 As of November 19, 2026, Apache is affected by a vulnerability in the following product: Apache Tomcat Prior to or equal to 10.1.62 Prior or equal to 9.0.124 Prior to or equal to 11.0.29 The Cyber Centre encourages users and administrators to review the provided web link and apply any necessary updates as they become available. [SECURITY] CVE-2026-133325 Apache Tomcat - Cluster TLS-PSK configured to use TLS 1.3 does not validate peer - ASF Mailing List Archives"
+   "translated": true,
+   "enriched": true,
+   "why": "Permite mitigar falhas críticas de validação em clusters Tomcat vulneráveis.",
+   "todo": "Verifique a versão do Apache Tomcat em uso e aplique as atualizações de segurança disponibilizadas pelo fabricante."
   },
   {
    "id": "9dd04be51f1df2a0",

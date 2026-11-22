@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T20:26:58.733338+00:00",
+ "updated": "2026-11-22T20:47:11.718498+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -243,8 +243,8 @@
   },
   {
    "source": "Help Net Security",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "Exceeded 30 redirects."
   },
   {
    "source": "Security Affairs",
@@ -263,8 +263,8 @@
   },
   {
    "source": "Graham Cluley",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 3
   },
   {
    "source": "HackRead",
@@ -278,8 +278,8 @@
   },
   {
    "source": "Check Point Research",
-   "ok": false,
-   "error": "429 Client Error: Too Many Requests for url: https://research.checkpoint.com/feed/"
+   "ok": true,
+   "added": 4
   },
   {
    "source": "Securelist (Kaspersky)",
@@ -310,14 +310,36 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 222,
-  "unenriched": 88,
+  "pending": 229,
+  "unenriched": 95,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "8015620ee9b6b6c3",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/internet/seguranca/como-proteger-as-suas-contas-online/",
+   "published": "2026-11-22T20:30:00+00:00",
+   "title": "Como proteger as suas contas online?",
+   "summary": "Face à crescente dependência tecnológica e exposição a ameaças digitais, torna-se essencial adotar medidas preventivas para salvaguardar dados pessoais e impedir intrusões não autorizadas. O artigo destaca a importância de implementar cuidados básicos para garantir a segurança das contas utilizadas no dia a dia. Entre as recomendações fundamentais encontra-se a utilização de credenciais robustas e diferenciadas para cada serviço.",
+   "image": null,
+   "points": [
+    "Adotar cuidados diários contra ameaças digitais.",
+    "Proteger dados pessoais e evitar acessos indesejados.",
+    "Utilizar palavras-passe fortes e diferentes nas contas."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Ajuda a prevenir o roubo de dados pessoais e o acesso não autorizado às suas contas online.",
+   "todo": "Utilize palavras-passe fortes e distintas em cada um dos seus serviços online."
+  },
   {
    "id": "e84afceb005f0d48",
    "source": "BleepingComputer",
@@ -13760,29 +13782,6 @@
    "enriched": true,
    "why": "Mostra que a monitorização passiva é insuficiente e requer uma postura defensiva mais ativa.",
    "todo": "Adote práticas regulares de caça proativa a ameaças em vez de depender apenas de alertas automáticos."
-  },
-  {
-   "id": "91c22df4b393758c",
-   "source": "CISA Advisories",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-05",
-   "published": "2026-11-17T12:00:00+00:00",
-   "title": "Siemens Mendix Studio Pro",
-   "summary": "O Siemens Mendix Studio Pro contém múltiplas vulnerabilidades no Servidor MCP que afetam várias versões do produto. As falhas podem permitir que um atacante com acesso à rede interaja remotamente com o servidor ou manipule o navegador do utilizador para enviar pedidos não autorizados. Isto pode resultar em acesso indevido a dados, execução de ferramentas ou compromisso do sistema. A Siemens já lançou novas versões para corrigir estas falhas e recomenda a atualização imediata.",
-   "image": null,
-   "points": [
-    "Vulnerabilidades no Servidor MCP do Mendix Studio Pro.",
-    "Permite acesso remoto não autorizado ou ataques CSRF.",
-    "Afeta versões específicas da linha Mendix Studio Pro 11.",
-    "Siemens disponibilizou atualizações corretivas."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque a exploração destas falhas pode levar ao compromisso total do sistema e acesso não autorizado a dados.",
-   "todo": "Atualize o Mendix Studio Pro para a versão mais recente e mantenha políticas rigorosas de firewall para bloquear tráfego externo indesejado."
   }
  ]
 }

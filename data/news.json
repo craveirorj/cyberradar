@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T05:27:56.920607+00:00",
+ "updated": "2026-11-22T05:46:22.609947+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -294,7 +294,7 @@
   {
    "source": "Troy Hunt",
    "ok": true,
-   "added": 3
+   "added": 4
   },
   {
    "source": "Cyber Centre Canadá",
@@ -309,16 +309,37 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 106,
-  "pending": 235,
-  "unenriched": 96,
+  "done": 116,
+  "pending": 228,
+  "unenriched": 87,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do",
-   "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)"
+   "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "50699f46d53a5c82",
+   "source": "Troy Hunt",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://www.troyhunt.com/weekly-update-531/",
+   "published": "2026-11-22T05:24:12+00:00",
+   "title": "Weekly Update 531: Optimizely. Script Dependencies & Third Parties",
+   "summary": "Um incidente recente de segurança envolvendo a Optimizely evidenciou a questão da responsabilização quando ocorrem falhas em fornecedores terceiros. Embora a responsabilidade técnica pareça recair sobre o fornecedor, cabe às entidades parceiras, como a Norwegian Airlines, decidir como e quando contactar as pessoas afetadas. No entanto, o terceiro envolvido nem sequer foi publicamente nomeado pelas empresas afetadas. Esta situação demonstra os desafios na gestão de dependências externas e na transparência da comunicação de incidentes.",
+   "image": "https://storage.ghost.io/c/fb/33/fb3391dc-723d-4e74-b95a-d641b5feb38e/content/images/2026/11/maxresdefault.webp",
+   "points": [
+    "A Optimizely esteve envolvida num incidente de segurança relacionado com terceiros.",
+    "Empresas parceiras, como a Norwegian Airlines, decidem a comunicação aos afetados.",
+    "A entidade terceirizada responsável não foi identificada publicamente no processo."
+   ],
+   "title_original": "Weekly Update 531: Optimizely. Script Dependencies & Third Parties",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como a dependência de fornecedores terceiros complica a responsabilização e a transparência em cibersegurança.",
+   "todo": "Avalie e audite regularmente os riscos associados a fornecedores terceiros e dependências de scripts externos."
+  },
   {
    "id": "aeb7ef21f8ed11a6",
    "source": "SecurityWeek",
@@ -13779,29 +13800,6 @@
    "enriched": true,
    "why": "Alerta para o uso de IA generativa por burlões para criar esquemas de compras altamente convincentes.",
    "todo": "Desconfiar de promoções demasiado vantajosas em sites desconhecidos e verificar a reputação do comerciante antes de comprar."
-  },
-  {
-   "id": "5e43b1695ab68241",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html",
-   "published": "2026-11-17T11:20:18+00:00",
-   "title": "New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
-   "summary": "Uma campanha de ciberespionagem denominada Operation ShadowCloud, descoberta pela Kaspersky em 2026, visou o setor governamental em África e na Ásia. A campanha utilizou duas novas portas traseiras, batizadas de GitDoor e GraphDoor. Estes malwares abusam de serviços legítimos, como o Microsoft SharePoint e o GitHub, para servirem de canais encobertos de comando e controlo (C2).",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhGYnRRqAfAZ2q0dS56dC5lC86Kx69VT0moHy1Pxt67C0ic8RbLOL9LR68b4atQmvb7O6Gq3Btm1axv2aCRaNkhagPKbFHvThWlye3QPpK1xnEj4kovoJn8dsbTlCmAjXOIb8EHV3RJuhNQdVNKRxc4uwiuIfws_a63koiBaCQvs5jwbnTFG8EUwuA0RiA/s1600/git-share.jpg",
-   "points": [
-    "O quê: Descoberta de duas novas backdoors (GitDoor e GraphDoor) na Operação ShadowCloud.",
-    "Quem: Identificado pela Kaspersky, visando entidades governamentais na Ásia e em África.",
-    "Como: Utilização de plataformas legítimas (GitHub e SharePoint) para comunicações C2 encobertas.",
-    "Impacto: Dificuldade na deteção de tráfego malicioso por se misturar com serviços legítimos."
-   ],
-   "title_original": null,
-   "category": "Malware",
-   "translated": false,
-   "enriched": true,
-   "why": "Demonstra técnicas avançadas em que atacantes usam serviços cloud legítimos para camuflar atividades maliciosas.",
-   "todo": "Monitorizar o tráfego de rede anómalo para serviços em nuvem legítimos e analisar padrões de acesso a repositórios e plataformas de colaboração."
   }
  ]
 }

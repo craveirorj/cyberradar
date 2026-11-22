@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T15:46:59.602149+00:00",
+ "updated": "2026-11-22T16:07:45.140711+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -309,14 +309,37 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 229,
-  "unenriched": 91,
+  "done": 108,
+  "pending": 242,
+  "unenriched": 104,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting property name enclosed in double quotes: line 31 column 5 (char 2655)"
   ]
  },
  "items": [
+  {
+   "id": "855a50efe0f3bb9d",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
+   "published": "2026-11-22T15:43:04+00:00",
+   "title": "Cleverbridge avisa que hackers roubaram números de cartões de crédito e CVVs em violação de dados",
+   "summary": "A plataforma de comércio eletrónico Cleverbridge sofreu uma violação de sistemas que permitiu a hackers o roubo de informações de pagamento de clientes. Entre os dados comprometidos encontram-se números de cartões de crédito e códigos de segurança CVV. A empresa já emitiu um aviso público para alertar os utilizadores afetados sobre o incidente de segurança.",
+   "image": null,
+   "points": [
+    "A plataforma de comércio eletrónico Cleverbridge foi alvo de uma violação de segurança nos seus sistemas.",
+    "Hackers roubaram informações sensíveis de pagamento, incluindo números de cartões e códigos CVV.",
+    "A empresa já iniciou avisos públicos para alertar os clientes afetados pelo roubo de dados."
+   ],
+   "title_original": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A exposição de dados financeiros de clientes coloca os utilizadores em risco imediato de fraude e uso indevido dos cartões.",
+   "todo": "Monitorize regularmente os extratos bancários e ative alertas de transações para detetar rapidamente qualquer atividade suspeita no seu cartão."
+  },
   {
    "id": "2361e0929a29e0d7",
    "source": "BleepingComputer",
@@ -13764,29 +13787,6 @@
    "enriched": true,
    "why": "Importa porque falhas em componentes de rede integrados podem desestabilizar a operação de equipamentos em setores críticos.",
    "todo": "Atualize o Fortigate NGFW associado para a versão V7.6.9 ou posterior e minimize a exposição de rede dos sistemas de controlo."
-  },
-  {
-   "id": "2662cf713828e239",
-   "source": "CISA Advisories",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01",
-   "published": "2026-11-17T12:00:00+00:00",
-   "title": "Dorsett Controls InfoScan",
-   "summary": "O Dorsett Controls InfoScan contém múltiplas vulnerabilidades que, se exploradas com sucesso, permitem obter informações sensíveis, aceder a dados sem autorização ou intercetar comunicações de rede. O cliente de ambiente de trabalho InfoScan Electron aceita certificados TLS sem validar a respetiva fiabilidade e desativa defesas importantes como a segurança web. A empresa recomenda a atualização imediata da aplicação para a versão v1.46 ou superior. Os utilizadores podem efetuar o processo através da manutenção do sistema ou do portal de clientes.",
-   "image": null,
-   "points": [
-    "Múltiplas vulnerabilidades no Dorsett Controls InfoScan.",
-    "Cliente Electron falha na validação de certificados TLS.",
-    "Afeta versões até à 1.45.0 em sistemas de água e águas residuais.",
-    "Fabricante disponibilizou a versão v1.46 como correção."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque afeta infraestruturas críticas de água, expondo sistemas a roubo de credenciais e interceptação de rede.",
-   "todo": "Atualize o InfoScan para a versão v1.46 ou superior utilizando a ferramenta de manutenção do sistema ou o portal do fornecedor."
   }
  ]
 }

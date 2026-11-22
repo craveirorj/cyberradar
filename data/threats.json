@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T21:26:23.603102+00:00",
+ "updated": "2026-11-22T21:46:15.528782+00:00",
  "errors": [
   "ioc: Response ended prematurely"
  ],
@@ -58,26 +58,26 @@
  "types": {
   "malware_urls": {
    "label": "Sites que distribuem malware",
-   "total": 790,
+   "total": 811,
    "by_country": {
-    "US": 498,
-    "CN": 172,
+    "US": 531,
+    "CN": 163,
     "CA": 19,
     "TW": 19,
-    "ID": 15,
+    "ID": 16,
     "NL": 13,
     "HK": 5,
     "AL": 5,
     "RU": 5,
-    "FI": 4,
     "ET": 4,
-    "PH": 4,
     "IN": 3,
+    "FI": 3,
     "BR": 3,
     "ZA": 3,
-    "UA": 3,
+    "PH": 3,
     "MA": 2,
     "DE": 2,
+    "UA": 2,
     "GB": 1,
     "IL": 1,
     "IR": 1,
@@ -87,23 +87,22 @@
     "TH": 1,
     "KR": 1,
     "SE": 1,
-    "PK": 1,
-    "AU": 1
+    "PK": 1
    },
    "detail": {
     "US": {
-     "DEVPOPPER": 361,
-     "github": 109,
-     "mirai": 12,
-     "EtherRAT": 5,
-     "CoinMiner": 2
+     "DEVPOPPER": 327,
+     "github": 106,
+     "exe": 77,
+     "mirai": 7,
+     "EtherRAT": 5
     },
     "CN": {
-     "Mozi": 92,
-     "32-bit": 36,
-     "mirai": 29,
+     "Mozi": 89,
+     "32-bit": 34,
+     "mirai": 24,
      "malware_download": 12,
-     "elf": 3
+     "elf": 4
     },
     "CA": {
      "IRAHook": 8,
@@ -118,7 +117,8 @@
      "Mozi": 1
     },
     "ID": {
-     "elf": 15
+     "elf": 15,
+     "mirai": 1
     },
     "NL": {
      "honeypot": 11,
@@ -139,22 +139,16 @@
      "malware_download": 3,
      "32-bit": 2
     },
-    "FI": {
-     "elf": 2,
-     "malware_download": 1,
-     "mirai": 1
-    },
     "ET": {
      "mirai": 3,
      "elf": 1
     },
-    "PH": {
-     "32-bit": 2,
-     "mirai": 1,
-     "Mozi": 1
-    },
     "IN": {
      "Mozi": 2,
+     "malware_download": 1
+    },
+    "FI": {
+     "elf": 2,
      "malware_download": 1
     },
     "BR": {
@@ -164,9 +158,10 @@
     "ZA": {
      "mirai": 3
     },
-    "UA": {
-     "Mozi": 2,
-     "mirai": 1
+    "PH": {
+     "mirai": 1,
+     "32-bit": 1,
+     "Mozi": 1
     },
     "MA": {
      "Mozi": 2
@@ -174,6 +169,9 @@
     "DE": {
      "stealer": 1,
      "ClickFix": 1
+    },
+    "UA": {
+     "Mozi": 2
     },
     "GB": {
      "mirai": 1
@@ -204,31 +202,27 @@
     },
     "PK": {
      "32-bit": 1
-    },
-    "AU": {
-     "32-bit": 1
     }
    },
    "tags": {
-    "github": 472,
-    "js": 369,
-    "TxDataHiding": 369,
-    "VSCode": 369,
-    "DEVPOPPER": 361,
-    "Mozi": 158
+    "github": 512,
+    "js": 332,
+    "TxDataHiding": 332,
+    "VSCode": 332,
+    "DEVPOPPER": 327,
+    "Mozi": 151
    },
    "ports": {
     "US": {
-     "443": 482,
-     "8110": 14,
-     "43448": 2
+     "443": 522,
+     "8110": 9
     },
     "CN": {
+     "60062": 2,
      "54128": 2,
      "57733": 2,
      "35351": 2,
-     "33803": 2,
-     "43869": 2
+     "33803": 2
     },
     "CA": {
      "443": 16,
@@ -244,6 +238,7 @@
     },
     "ID": {
      "80": 14,
+     "52631": 1,
      "51054": 1
     },
     "NL": {
@@ -266,25 +261,18 @@
      "4073": 2,
      "33109": 1
     },
-    "FI": {
-     "57789": 2,
-     "80": 1,
-     "18080": 1
-    },
     "ET": {
      "44663": 3,
      "48151": 1
-    },
-    "PH": {
-     "60643": 1,
-     "52227": 1,
-     "40304": 1,
-     "39717": 1
     },
     "IN": {
      "57052": 1,
      "53916": 1,
      "33529": 1
+    },
+    "FI": {
+     "57789": 2,
+     "80": 1
     },
     "BR": {
      "44313": 1,
@@ -295,9 +283,10 @@
      "36293": 2,
      "49335": 1
     },
-    "UA": {
-     "34150": 2,
-     "59096": 1
+    "PH": {
+     "60643": 1,
+     "52227": 1,
+     "40304": 1
     },
     "MA": {
      "51769": 2
@@ -305,6 +294,9 @@
     "DE": {
      "80": 1,
      "443": 1
+    },
+    "UA": {
+     "34150": 2
     },
     "GB": {
      "43620": 1
@@ -335,9 +327,6 @@
     },
     "PK": {
      "60539": 1
-    },
-    "AU": {
-     "35403": 1
     }
    }
   },
@@ -401,38 +390,42 @@
    "label": "Scans e força bruta",
    "total": 200,
    "by_country": {
-    "GB": 107,
-    "US": 69,
+    "GB": 87,
+    "US": 83,
     "DE": 16,
+    "CA": 7,
     "NL": 4,
-    "CA": 2,
     "RU": 1,
-    "SE": 1
+    "SE": 1,
+    "CN": 1
    },
    "detail": {
     "GB": {
-     "scan/força bruta": 107
+     "scan/força bruta": 87
     },
     "US": {
-     "scan/força bruta": 69
+     "scan/força bruta": 83
     },
     "DE": {
      "scan/força bruta": 16
     },
+    "CA": {
+     "scan/força bruta": 7
+    },
     "NL": {
      "scan/força bruta": 4
-    },
-    "CA": {
-     "scan/força bruta": 2
     },
     "RU": {
      "scan/força bruta": 1
     },
     "SE": {
      "scan/força bruta": 1
+    },
+    "CN": {
+     "scan/força bruta": 1
     }
    },
-   "reports": 4294411
+   "reports": 4291249
   }
  },
  "cloudflare": {
@@ -594,154 +587,154 @@
    {
     "cc": "US",
     "name": "United States",
-    "pct": 30.061091
+    "pct": 29.500035
    },
    {
     "cc": "BR",
     "name": "Brazil",
-    "pct": 11.986111
+    "pct": 12.046681
    },
    {
     "cc": "SG",
     "name": "Singapore",
-    "pct": 3.695438
+    "pct": 3.796358
    },
    {
     "cc": "HK",
     "name": "Hong Kong",
-    "pct": 3.562908
+    "pct": 3.499623
    },
    {
     "cc": "IN",
     "name": "India",
-    "pct": 3.098621
+    "pct": 3.063354
    },
    {
     "cc": "BD",
     "name": "Bangladesh",
-    "pct": 2.849141
-   },
-   {
-    "cc": "UA",
-    "name": "Ukraine",
-    "pct": 2.48785
+    "pct": 2.839638
    },
    {
     "cc": "CL",
     "name": "Chile",
-    "pct": 2.465007
-   },
-   {
-    "cc": "RU",
-    "name": "Russian Federation",
-    "pct": 2.439224
-   },
-   {
-    "cc": "PL",
-    "name": "Poland",
-    "pct": 2.363421
+    "pct": 2.523141
    },
    {
     "cc": "FR",
     "name": "France",
-    "pct": 2.357804
+    "pct": 2.50045
+   },
+   {
+    "cc": "UA",
+    "name": "Ukraine",
+    "pct": 2.494644
+   },
+   {
+    "cc": "RU",
+    "name": "Russian Federation",
+    "pct": 2.434954
+   },
+   {
+    "cc": "PL",
+    "name": "Poland",
+    "pct": 2.376712
    },
    {
     "cc": "GB",
     "name": "United Kingdom",
-    "pct": 2.314158
+    "pct": 2.293587
    },
    {
     "cc": "AR",
     "name": "Argentina",
-    "pct": 1.865137
-   },
-   {
-    "cc": "CO",
-    "name": "Colombia",
-    "pct": 1.768852
+    "pct": 1.903587
    },
    {
     "cc": "MX",
     "name": "Mexico",
-    "pct": 1.757904
+    "pct": 1.796951
+   },
+   {
+    "cc": "CO",
+    "name": "Colombia",
+    "pct": 1.777744
    }
   ],
   "l3_target": [
    {
     "cc": "US",
     "name": "United States",
-    "pct": 53.269921
+    "pct": 54.861355
    },
    {
     "cc": "HK",
     "name": "Hong Kong",
-    "pct": 20.584661
+    "pct": 19.89785
    },
    {
     "cc": "FI",
     "name": "Finland",
-    "pct": 18.621675
+    "pct": 17.963196
    },
    {
     "cc": "IN",
     "name": "India",
-    "pct": 4.03107
+    "pct": 3.902591
    },
    {
     "cc": "AE",
     "name": "United Arab Emirates",
-    "pct": 0.94625
+    "pct": 0.912795
    },
    {
     "cc": "KR",
     "name": "Korea, South",
-    "pct": 0.825983
+    "pct": 0.796775
    },
    {
     "cc": "BR",
     "name": "Brazil",
-    "pct": 0.71321
+    "pct": 0.688001
    },
    {
     "cc": "DE",
     "name": "Germany",
-    "pct": 0.562394
+    "pct": 0.542507
    },
    {
     "cc": "NG",
     "name": "Nigeria",
-    "pct": 0.142293
+    "pct": 0.137322
    },
    {
     "cc": "CN",
     "name": "China",
-    "pct": 0.136927
+    "pct": 0.136674
    },
    {
     "cc": "CA",
     "name": "Canada",
-    "pct": 0.053728
+    "pct": 0.05183
    },
    {
     "cc": "TW",
     "name": "Taiwan",
-    "pct": 0.045579
+    "pct": 0.044409
    },
    {
     "cc": "JP",
     "name": "Japan",
-    "pct": 0.044276
+    "pct": 0.042745
    },
    {
     "cc": "BG",
     "name": "Bulgaria",
-    "pct": 0.011325
+    "pct": 0.011392
    },
    {
     "cc": "MV",
     "name": "Maldives",
-    "pct": 0.007229
+    "pct": 0.006973
    }
   ]
  }

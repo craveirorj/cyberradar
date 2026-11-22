@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T14:46:33.011766+00:00",
+ "updated": "2026-11-22T15:05:40.395438+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -138,8 +138,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": true,
-   "added": 5
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "DataBreaches.net",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 36,
-  "pending": 306,
-  "unenriched": 172,
+  "done": 12,
+  "pending": 326,
+  "unenriched": 193,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,40 @@
   ]
  },
  "items": [
+  {
+   "id": "5b216973c02909e7",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203725/ai/security-affairs-ai-cybersecurity-newsletter-round-9.html",
+   "published": "2026-11-22T14:31:35+00:00",
+   "title": "SECURITY AFFAIRS AI-CYBERSECURITY NEWSLETTER ROUND 9",
+   "summary": "Security Affairs AI-CYBERSECURITY newsletter includes a collection of the best articles and research on AI in the international landscape Artificial intelligence is rapidly changing cybersecurity, reshaping both the techniques used by attackers and the tools available to defenders. AI agents can automate tasks, analyze large amounts of data, discover vulnerabilities and accelerate offensive operations. At […]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Security Affairs AI-CYBERSECURITY newsletter includes a collection of the best articles and research on AI in the international landscape Artificial intelligence is rapidly changing cybersecurity, reshaping both the techniques used by attackers and the tools available to defenders. AI agents can automate tasks, analyze large amounts of data, discover vulnerabilities and accelerate offensive operations. At the same time, AI is creating new capabilities for threat detection, incident analysis and response. Security Affairs’ new newsletter follows this evolution, covering every week the latest threats, attacks, vulnerabilities and developments at the intersection of AI and cybersecurity. Amazon Threat Intelligence observes threat actors running cybercrime campaigns with ARTEX AI agents GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold Claude Fable 5.2 and Mythos 5.2 Inside the AI-Powered Marketplace Turning Infected Computers Into Searchable Profiles California sues OpenAI for Hugging Face and other incidents, alleging deception and recklessness Hidden in the Weights: Supply Chain Risk from Backdoored LoRA Models ARTEX: Agentic Asbestos Microsoft agent-framework Compromised: Credential Stealer Targets Azure and CI Pipelines Google gives Gemini the ability to use your Mac for you Meta’s AI agent Muse is mixing up conversations and exposing private data, report says At Nasdaq opening bell, Anthropic CEO recommits to pacing AI development Polite, methodical, machine-driven: reading an AI attack cluster in your logs Attackers Use Autonomous AI to Target Semiconductor, Defense and Civil Society Sectors PHP2Shell Exploited by AI Agents from Day One: Inside a Credential-Harvesting Campaign Why the smartest AI teams are building their own benchmarks D"
+  },
+  {
+   "id": "e53b3b51e88564ba",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203714/malware/security-affairs-malware-newsletter-round-123-2.html",
+   "published": "2026-11-22T13:56:43+00:00",
+   "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 123",
+   "summary": "Security Affairs Malware newsletter includes a collection of the best articles and research on malware in the international landscape Malware Newsletter MMD-073-2026 – Linux/EasyShell, a new Rust RAT implant and beacon aims Linux and MacOS Supply chain attack: BO Team in a software developer’s infrastructure 0% GPU utilization: How SANSAR hides Linux cryptomining Inside the […]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Security Affairs Malware newsletter includes a collection of the best articles and research on malware in the international landscape Malware Newsletter MMD-073-2026 – Linux/EasyShell, a new Rust RAT implant and beacon aims Linux and MacOS Supply chain attack: BO Team in a software developer’s infrastructure 0% GPU utilization: How SANSAR hides Linux cryptomining Inside the AI-Powered Marketplace Turning Infected Computers Into Searchable Profiles World’s Largest Brands Infected With Malware Via Optimizely Poisoned Scripts on BBC, Zoom and Other Major Websites Linked to iPhone Exploit Loaders Operation ShadowCloud: cloud service–based backdoors targeting government networks in Asia and Africa. Part 1 Microsoft agent-framework Compromised: Credential Stealer Targets Azure and CI Pipelines EggStreme Malware: Rebuilt Under Scrutiny US bank and federal logins stolen off victims’ own PCs by a Russian-speaking operation To Catch a Ransomware Scammer, FBI Posed as Both Victim and Attacker CNN Architecture Comparison for Malware Classification with Limited Training Data A First Look at System One Decision Models for Malware Detection Ensemble Learning for Android Malware Detection: Stability Across Malware Categories and Feature Representations Lightweight Vulnerability-Aware Malware Triage: Operational Value and Generalization Under Family and Temporal Shift Follow me on Twitter: @securityaffairs and Facebook and Mastodon Pierluigi Paganini ( SecurityAffairs – hacking, newsletter )"
+  },
   {
    "id": "d3ddd154f18944e5",
    "source": "DataBreaches.net",
@@ -13746,52 +13780,6 @@
    "enriched": true,
    "why": "Importa porque afeta uma enorme variedade de software empresarial e de engenharia com risco elevado de execução de código.",
    "todo": "Consulte os boletins de software específicos da Siemens e aplique as atualizações ou mitigações recomendadas para cada produto."
-  },
-  {
-   "id": "72572082204e71dc",
-   "source": "CISA Advisories",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03",
-   "published": "2026-11-17T12:00:00+00:00",
-   "title": "Siemens Industrial Automation Software Products",
-   "summary": "Produtos de automação industrial da Siemens foram identificados como vulneráveis à falha crítica no descodificador Brotli integrada no Node.js, amplamente designada por Node2Shell. O problema de estouro de buffer afeta versões do Google Brotli e possibilita a execução de código arbitrário ou corrupção de memória por atacantes remotos sem autenticação. A Siemens já lançou novas versões para alguns produtos afetados e continua a preparar correções adicionais. Enquanto isso, são recomendadas medidas de mitigação específicas.",
-   "image": null,
-   "points": [
-    "Afetados por falha de overflow no descodificador Brotli.",
-    "Inclui múltiplos produtos SIMATIC e ferramentas de automação.",
-    "Risco de execução remota de código sem autenticação.",
-    "Siemens lançou correções parciais e recomenda atualizações."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque a gravidade da vulnerabilidade em componentes fundamentais coloca em risco a segurança de ambientes industriais inteiros.",
-   "todo": "Identifique os produtos afetados na sua infraestrutura e instale as versões corrigidas disponibilizadas pela Siemens o mais rapidamente possível."
-  },
-  {
-   "id": "9c3818e954e8d173",
-   "source": "CISA Advisories",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-08",
-   "published": "2026-11-17T12:00:00+00:00",
-   "title": "Siemens SIMATIC",
-   "summary": "Vários produtos SIMATIC da Siemens contêm uma vulnerabilidade de contorno de autenticação devido à utilização do protocolo NTLM. Um atacante posicionado no meio da rede pode retransmitir a autenticação e assumir a sessão de um utilizador legítimo com os respetivos privilégios. O impacto potencial varia consoante os serviços acessíveis, como bases de dados SQL associadas ao WinCC. A Siemens planeia mitigações manuais para alguns sistemas, uma vez que não existem correções planeadas para vários dos produtos afetados.",
-   "image": null,
-   "points": [
-    "Vulnerabilidade de autenticação fraca baseada em NTLM.",
-    "Afeta SIMATIC BATCH, PCS 7, WinCC Runtime e outros.",
-    "Permite a atacantes em posição de 'man-in-the-middle' roubar sessões.",
-    "Siemens sugere configuração manual de encriptação em bases de dados."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque permite a sequestro de sessões em sistemas de controlo industrial através de ataques na rede local.",
-   "todo": "Configure manualmente a encriptação de comunicação nas bases de dados SQL afetadas conforme indicado nas diretrizes do fabricante."
   }
  ]
 }

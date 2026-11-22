@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T18:47:27.783482+00:00",
+ "updated": "2026-11-22T19:08:03.371076+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -59,7 +59,7 @@
   {
    "source": "CISA Advisories",
    "ok": true,
-   "added": 16
+   "added": 18
   },
   {
    "source": "CISA Alertas (KEV)",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -139,7 +139,7 @@
   {
    "source": "SANS ISC",
    "ok": true,
-   "added": 5
+   "added": 4
   },
   {
    "source": "DataBreaches.net",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -311,12 +311,34 @@
   "provider": "gemini",
   "done": 120,
   "pending": 230,
-  "unenriched": 93,
+  "unenriched": 95,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "e84afceb005f0d48",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+   "published": "2026-11-22T18:45:37+00:00",
+   "title": "Hackers exploram falha na cloud da GL.iNet para infetar routers e dispositivos KVM",
+   "summary": "A GL.iNet confirmou que atacantes exploraram uma vulnerabilidade nos seus serviços de gestão remota na cloud para instalar malware personalizado em routers e dispositivos KVM de clientes. Vários utilizadores afetados relataram a presença de backdoors e reverse shells, concedendo acesso remoto não autorizado aos equipamentos infetados. Este incidente compromete a segurança de infraestruturas de rede e dispositivos ligados.",
+   "image": null,
+   "points": [
+    "Atacantes exploraram falha em serviços de gestão remota na cloud da GL.iNet.",
+    "Foram instalados malware personalizado, backdoors e reverse shells em routers e KVM.",
+    "O impacto inclui a perda de controlo e acesso remoto não autorizado aos dispositivos."
+   ],
+   "title_original": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes ganhem acesso remoto total e controlo sobre routers e dispositivos de rede.",
+   "todo": "Atualize o firmware dos dispositivos afetados para a versão mais recente disponibilizada pelo fabricante e restrinja o acesso à gestão remota."
+  },
   {
    "id": "f6ee8bdc262f5053",
    "source": "SANS ISC",
@@ -360,6 +382,28 @@
    "enriched": true,
    "why": "Importa para proteger a reputação corporativa e prevenir fraudes direcionadas a colaboradores e parceiros de negócio.",
    "todo": "Monitore regularmente a existência de perfis falsos ou domínios fraudulentos associados à empresa e aos seus dirigentes."
+  },
+  {
+   "id": "6ed1dae5249a698b",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203742/ai/signal-is-blocking-ai-agents-from-reading-your-screen.html",
+   "published": "2026-11-22T18:01:22+00:00",
+   "title": "Signal está a bloquear agentes de IA de lerem o seu ecrã",
+   "summary": "A Signal está a bloquear agentes de inteligência artificial a nível do sistema operativo, como o Gemini e o Siri AI, de lerem o conteúdo da aplicação no iOS 27 e Android. A empresa tomou esta medida para proteger a privacidade dos utilizadores, alertando que a leitura de ecrãs por IA compromete as suas garantias de encriptação. Esta restrição junta-se a ações anteriores implementadas no Windows contra o Microsoft Recall. O objetivo é impedir que dados confidenciais sejam capturados antes de serem encriptados.",
+   "image": null,
+   "points": [
+    "A Signal bloqueia agentes de IA do sistema operativo no iOS 27 e Android.",
+    "Ferramentas como Gemini e Siri AI tentam ler dados do ecrã para responder a perguntas.",
+    "A medida visa proteger as conversas encriptadas contra capturas de ecrã por assistentes de IA."
+   ],
+   "title_original": "Signal Is Blocking AI Agents From Reading Your Screen",
+   "category": "Ataque/APT",
+   "translated": true,
+   "enriched": true,
+   "why": "Evita que assistentes de IA capturem dados de conversas privadas diretamente do ecrã antes da encriptação.",
+   "todo": "Desative as funcionalidades de IA ao nível do sistema operativo que analisam o ecrã se pretender reforçar a privacidade."
   },
   {
    "id": "855a50efe0f3bb9d",
@@ -13738,52 +13782,6 @@
    "enriched": true,
    "why": "Importa porque a exploração destas falhas pode levar ao compromisso total do sistema e acesso não autorizado a dados.",
    "todo": "Atualize o Mendix Studio Pro para a versão mais recente e mantenha políticas rigorosas de firewall para bloquear tráfego externo indesejado."
-  },
-  {
-   "id": "dc2d43865fd43cf0",
-   "source": "CISA Advisories",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-02",
-   "published": "2026-11-17T12:00:00+00:00",
-   "title": "Siemens .NET Client Library para SIMATIC S7 Webserver API",
-   "summary": "A biblioteca de cliente .NET para a API do Webserver SIMATIC S7 da Siemens apresenta várias vulnerabilidades que podem expor informações sensíveis ou permitir a escrita de ficheiros arbitrários. O primeiro problema decorre de uma validação inadequada de nomes de ficheiros durante transferências, permitindo a escrita fora do diretório pretendido. A segunda falha expõe palavras-passe de restauro de PLC em mensagens de erro HTTP. A Siemens lançou versões atualizadas para mitigar estes riscos.",
-   "image": null,
-   "points": [
-    "Vulnerabilidades de Path Traversal e exposição de dados.",
-    "Afeta versões anteriores da biblioteca cliente .NET.",
-    "Permite escrita de ficheiros e fuga de passwords de PLC.",
-    "Siemens disponibilizou correções nas versões mais recentes."
-   ],
-   "title_original": "Siemens .NET Client Library for SIMATIC S7 Webserver API",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque a revelação de credenciais e a manipulação de ficheiros colocam em risco a integridade dos sistemas industriais afetados.",
-   "todo": "Atualize a biblioteca .NET Client Library para a versão mais recente recomendada pelo fabricante."
-  },
-  {
-   "id": "21dc163c1f757f4d",
-   "source": "CISA Advisories",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11",
-   "published": "2026-11-17T12:00:00+00:00",
-   "title": "Siemens meta-iot2050",
-   "summary": "O pacote meta-iot2050 da Siemens contém uma vulnerabilidade de injeção de comandos na ferramenta de atualização de firmware a partir da versão V01.03.01. Esta falha permite que um atacante capaz de manipular um ficheiro de configuração execute comandos arbitrários com privilégios de root no dispositivo. A Siemens encontra-se a preparar correções oficiais para o problema. Enquanto isso, o fabricante recomenda a proteção do acesso à rede e a configuração dos dispositivos em ambientes de TI seguros.",
-   "image": null,
-   "points": [
-    "Injeção de comandos na ferramenta de firmware.",
-    "Afeta o meta-iot2050 a partir da versão V01.03.01.",
-    "Manipulação de ficheiros permite execução de código como root.",
-    "Siemens ainda não disponibilizou correção oficial."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque a falha permite o controlo total de dispositivos de infraestruturas críticas por atacantes com acesso local ou de configuração.",
-   "todo": "Proteja o acesso à rede dos dispositivos e siga rigorosamente as diretrizes operacionais de segurança industrial da Siemens."
   }
  ]
 }

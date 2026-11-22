@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T12:05:08.489419+00:00",
+ "updated": "2026-11-22T12:10:08.962975+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -309,15 +309,39 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 236,
-  "unenriched": 97,
+  "done": 24,
+  "pending": 316,
+  "unenriched": 181,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 30 column 5 (char 2726)"
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "Expecting property name enclosed in double quotes: line 58 column 5 (char 5437)"
   ]
  },
  "items": [
+  {
+   "id": "0a7cbee92aad3a6f",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/truques-dicas/dica-como-criar-um-cartao-virtual-mb-way-para-comprar-online-em-seguranca/",
+   "published": "2026-11-22T12:00:00+00:00",
+   "title": "Dica: como criar um cartão virtual MB WAY para comprar online em segurança",
+   "summary": "O serviço MB WAY permite aos utilizadores gerir cartões virtuais MB NET para efetuar pagamentos em compras online de forma segura, sem expor os dados bancários reais. Esta funcionalidade serve como uma camada adicional de proteção, especialmente útil em períodos de grande volume de compras como a Black Friday. Para começar a utilizar esta ferramenta, os utilizadores precisam apenas de ter a aplicação móvel instalada e um cartão bancário devidamente associado. A preparação da aplicação antecipadamente garante transações mais seguras na internet.",
+   "image": null,
+   "points": [
+    "O que é: Geração de cartões virtuais MB NET através do MB WAY para compras online.",
+    "Como funciona: Permite pagar na internet sem partilhar os dados do cartão bancário real.",
+    "Impacto: Oferece uma proteção extra contra fraudes em períodos de grande atividade comercial como a Black Friday.",
+    "Requisito: É necessário ter a aplicação instalada com um cartão associado antes de iniciar as compras."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Protege os dados bancários reais contra roubos e fraudes durante compras online.",
+   "todo": "Utilize sempre cartões virtuais temporários ou descartáveis ao realizar compras em lojas online desconhecidas."
+  },
   {
    "id": "cee6ea3378f23cdb",
    "source": "Help Net Security",
@@ -13773,29 +13797,6 @@
    "enriched": true,
    "why": "Alerta as organizações para priorizarem a correção de vulnerabilidades que já estão a ser exploradas ativamente por cibercriminosos.",
    "todo": "Adotar uma gestão de vulnerabilidades baseada no risco e aplicar patches rápidos nas falhas listadas no catálogo KEV."
-  },
-  {
-   "id": "1ae5476a6eaf7dcc",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/17/optimizely-vulnerability-malicious-javascript/",
-   "published": "2026-11-17T11:53:40+00:00",
-   "title": "Malware spread through Optimizely hits 178 organizations, including BBC, CNN and Zoom",
-   "summary": "Um atacante explorou uma vulnerabilidade na plataforma de experimentação web da Optimizely para injetar JavaScript malicioso em sites de clientes. A falha permitiu colocar código indesejado em 178 organizações, incluindo marcas conhecidas como a BBC, CNN e Zoom. A empresa confirmou o incidente, removeu o código injetado e corrigiu a vulnerabilidade.",
-   "image": null,
-   "points": [
-    "O quê: Injeção de malware através de um ataque à plataforma Optimizely.",
-    "Quem: Afetou 178 organizações, incluindo BBC, CNN e Zoom.",
-    "Como: Exploração de uma vulnerabilidade para inserir JavaScript malicioso em projetos de clientes.",
-    "Impacto: Exposição de utilizadores de vários sites corporativos a scripts não autorizados."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como a cadeia de fornecimento digital e serviços de terceiros podem ser instrumentalizados para distribuir ameaças em larga escala.",
-   "todo": "Monitorizar scripts de terceiros carregados em websites e adotar políticas rigorosas de Content Security Policy (CSP)."
   }
  ]
 }

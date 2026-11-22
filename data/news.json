@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T20:05:58.748762+00:00",
+ "updated": "2026-11-22T20:26:58.733338+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -263,8 +263,8 @@
   },
   {
    "source": "Graham Cluley",
-   "ok": true,
-   "added": 3
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "HackRead",
@@ -278,8 +278,8 @@
   },
   {
    "source": "Check Point Research",
-   "ok": true,
-   "added": 4
+   "ok": false,
+   "error": "429 Client Error: Too Many Requests for url: https://research.checkpoint.com/feed/"
   },
   {
    "source": "Securelist (Kaspersky)",
@@ -309,13 +309,12 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 48,
-  "pending": 297,
-  "unenriched": 167,
+  "done": 120,
+  "pending": 222,
+  "unenriched": 88,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 58 column 5 (char 5050)",
-   "Expecting value: line 88 column 7 (char 8319)"
+   "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [

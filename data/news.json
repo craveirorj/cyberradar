@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T07:46:35.606512+00:00",
+ "updated": "2026-11-22T08:06:50.588778+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Hacker News",
@@ -309,15 +309,37 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 225,
-  "unenriched": 84,
+  "done": 108,
+  "pending": 238,
+  "unenriched": 97,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
+   "Expecting property name enclosed in double quotes: line 83 column 5 (char 7582)"
   ]
  },
  "items": [
+  {
+   "id": "0d058164673ced6c",
+   "source": "HackRead",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://hackread.com/usda-cyber-incident-disrupts-farmer-payments/",
+   "published": "2026-11-22T07:50:49+00:00",
+   "title": "Incidente Cibernético no USDA Perturba Pagamentos a Agricultores",
+   "summary": "Um incidente cibernético afetou o Departamento de Agricultura dos Estados Unidos (USDA), interrompendo serviços de empréstimos e pagamentos destinados aos agricultores. Especialistas em segurança alertam que o setor agrícola continua vulnerável a riscos digitais mais amplos. Este acontecimento demonstra a dependência crítica dos serviços essenciais em relação à infraestrutura tecnológica.",
+   "image": null,
+   "points": [
+    "O USDA sofreu um incidente cibernético que afetou os agricultores.",
+    "Serviços de empréstimos e pagamentos foram interrompidos.",
+    "Especialistas alertam para a contínua exposição do setor agrícola a riscos."
+   ],
+   "title_original": "USDA Cyber Incident Disrupts Farmer Payments",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como falhas em infraestruturas públicas essenciais podem paralisar setores fundamentais como a agricultura.",
+   "todo": "Avalie regularmente os fornecedores e parceiros críticos para garantir que cumprem padrões rigorosos de cibersegurança."
+  },
   {
    "id": "50699f46d53a5c82",
    "source": "Troy Hunt",
@@ -13775,29 +13797,6 @@
    "enriched": true,
    "why": "Evidencia que organizações detentoras de grandes volumes de dados confidenciais e políticos continuam a ser alvo de incidentes.",
    "todo": "Manter planos de resposta a incidentes atualizados e reportar prontamente incidentes suspeitos às autoridades competentes."
-  },
-  {
-   "id": "de602d50e6ee130e",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/leaked-credentials-are-an-enterprise-problem-gitguardian-extends-its-good-samaritan-program-to-security-teams/",
-   "published": "2026-11-17T11:43:15+00:00",
-   "title": "Leaked Credentials Are an Enterprise Problem: GitGuardian Extends Its Good Samaritan Program to Security Teams",
-   "summary": "A GitGuardian alargou o seu programa 'Good Samaritan' diretamente às equipas de segurança corporativas. Esta iniciativa visa combater o problema empresarial das credenciais divulgadas acidentalmente. A solução pretende ajudar as organizações a detetar e mitigar fugas de dados antes que sejam exploradas por terceiros mal-intencionados.",
-   "image": null,
-   "points": [
-    "O quê: Extensão do programa 'Good Samaritan' da GitGuardian para equipas de segurança.",
-    "Quem: GitGuardian e equipas de segurança empresarial.",
-    "Como: Através da identificação e alerta sobre credenciais corporativas vazadas.",
-    "Impacto: Ajuda as empresas a prevenir o acesso não autorizado decorrente de credenciais expostas."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "Ajuda as empresas a anteciparem-se aos atacantes na identificação de segredos e palavras-passe expostas.",
-   "todo": "Implementar ferramentas automatizadas de deteção de segredos em repositórios de código e monitorizar credenciais comprometidas."
   }
  ]
 }

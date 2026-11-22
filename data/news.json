@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T23:06:44.463040+00:00",
+ "updated": "2026-11-22T23:26:35.185723+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -89,7 +89,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 22
+   "added": 21
   },
   {
    "source": "SecurityWeek",
@@ -224,7 +224,7 @@
   {
    "source": "NCSC UK",
    "ok": true,
-   "added": 1
+   "added": 2
   },
   {
    "source": "CERT-EU",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -263,8 +263,8 @@
   },
   {
    "source": "Graham Cluley",
-   "ok": true,
-   "added": 3
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "HackRead",
@@ -309,15 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 113,
-  "pending": 235,
-  "unenriched": 102,
+  "done": 114,
+  "pending": 232,
+  "unenriched": 99,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "d9d2b8e7310259b0",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/23/debian-13-8-released/",
+   "published": "2026-11-22T23:05:09+00:00",
+   "title": "Debian 13.8 bundles kernel and Chromium security fixes with a 122-package bugfix list",
+   "summary": "O projeto Debian lançou a versão 13.8 da sua série estável, focando-se na correção de falhas de segurança e erros graves. Esta atualização agrupa vários avisos de segurança publicados anteriormente de forma isolada. O impacto abrange múltiplos pacotes e programas amplamente utilizados, como o Chromium, Firefox ESR e PostgreSQL 17. Os utilizadores desta série devem verificar e aplicar as atualizações disponíveis.",
+   "image": null,
+   "points": [
+    "O projeto Debian lançou a atualização 13.8 para a série \"trixie\".",
+    "Inclui correções de segurança e correção de vários erros graves em 122 pacotes.",
+    "Abrange software crítico como Chromium, Firefox ESR, OpenJDK e bases de dados.",
+    "Atualizar o sistema assegura a proteção contra vulnerabilidades conhecidas nestes componentes."
+   ],
+   "title_original": "Debian 13.8 bundles kernel and Chromium security fixes with a 122-package bugfix list",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Mantém os sistemas operativos e aplicações atualizados contra falhas recentemente descobertas.",
+   "todo": "Verifique e instale as atualizações mais recentes nos sistemas que executam a versão trixie do Debian."
+  },
   {
    "id": "8015620ee9b6b6c3",
    "source": "Pplware Segurança",
@@ -2774,9 +2797,9 @@
     "O foco é a proteção de sistemas empresariais.",
     "Foram introduzidos novos padrões de transparência."
    ],
-   "title_original": "Microsoft Debuts Offensive, Defensive Security Tools for the AI Era",
+   "title_original": null,
    "category": "IA",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa para ajudar as empresas a protegerem os seus sistemas empresariais utilizando novas defesas baseadas em IA.",
    "todo": "Acompanhe as novidades oficiais da Microsoft e avalie a adoção de novas ferramentas de segurança de IA nas defesas corporativas."
@@ -13760,29 +13783,6 @@
    "enriched": true,
    "why": "Importa porque a falha comprometia diretamente a privacidade do utilizador ao contornar restrições explícitas de hardware.",
    "todo": "Atualize imediatamente os dispositivos iOS e iPadOS para a versão mais recente disponibilizada pela Apple."
-  },
-  {
-   "id": "f61744a14edae5e8",
-   "source": "Schneier on Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.schneier.com/blog/archives/2026/11/formal-verification-of-the-signal-protocol-using-ai.html",
-   "published": "2026-11-17T12:05:43+00:00",
-   "title": "Verificação Formal do Protocolo Signal Utilizando IA",
-   "summary": "Investigadores da Google DeepMind utilizaram inteligência artificial baseada em agentes para provar matematicamente as garantias criptográficas do protocolo Signal. O projeto-piloto demonstrou a capacidade do novo quadro AlphaProof Code para gerar milhões de linhas de código de verificação formal com validação humana pontual. Embora não tenham sido encontradas novas vulnerabilidades no Signal, a ferramenta identificou corretamente falhas conhecidas em versões anteriores. A iniciativa valida a criptografia usada em aplicações de mensagens em massa e poupa tempo significativo aos especialistas.",
-   "image": null,
-   "points": [
-    "Investigadores usaram IA para verificar o protocolo Signal.",
-    "AlphaProof Code gerou provas matemáticas em linguagem Lean.",
-    "Revisão humana focada em apenas um por cento do código.",
-    "Ferramenta detetou com sucesso vulnerabilidades antigas."
-   ],
-   "title_original": "Formal Verification of the Signal Protocol Using AI",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque demonstra como a IA pode validar a segurança criptográfica de comunicações utilizadas à escala global.",
-   "todo": ""
   }
  ]
 }

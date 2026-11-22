@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T08:46:57.013545+00:00",
+ "updated": "2026-11-22T09:07:27.871213+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -138,8 +138,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": true,
-   "added": 5
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "DataBreaches.net",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -309,16 +309,36 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 60,
-  "pending": 282,
-  "unenriched": 144,
+  "done": 120,
+  "pending": 220,
+  "unenriched": 80,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "cee6ea3378f23cdb",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/22/week-in-review-java4shell-proves-tricky-to-exploit-malware-planted-via-optimizely-hits-178-orgs/",
+   "published": "2026-11-22T09:00:25+00:00",
+   "title": "Resumo semanal: Java4Shell revela-se difícil de explorar e malware distribuído via Optimizely afeta 178 organizações",
+   "summary": "Um atacante explorou uma vulnerabilidade na plataforma Optimizely para inserir código JavaScript malicioso em sites de clientes, afetando 178 organizações, incluindo marcas como BBC, CNN e Zoom. Adicionalmente, foi analisada a falha CVE-2026-114938 no OpenJDK, conhecida como Java4Shell. Esta vulnerabilidade de corrupção de memória afeta o descodificador Base64 e exige condições específicas de CPU para ser explorada com sucesso.",
+   "image": null,
+   "points": [
+    "Um atacante comprometeu a plataforma Optimizely para injetar código malicioso em 178 organizações.",
+    "A falha CVE-2026-114938 no OpenJDK afeta o descodificador Base64 e apresenta uma exploração difícil.",
+    "A exploração da vulnerabilidade Java4Shell depende de arquiteturas de CPU específicas."
+   ],
+   "title_original": "Week in review: Java4Shell proves tricky to exploit, malware planted via Optimizely hits 178 orgs",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Campanhas de cadeia de suprimentos e novas falhas de componentes exigem monitorização constante das plataformas utilizadas.",
+   "todo": "Mantenha os softwares e componentes atualizados e verifique regularmente a integridade dos scripts de terceiros integrados nos seus websites."
+  },
   {
    "id": "0d058164673ced6c",
    "source": "HackRead",
@@ -13775,29 +13795,6 @@
    "enriched": true,
    "why": "Mostra como a cadeia de fornecimento digital e serviços de terceiros podem ser instrumentalizados para distribuir ameaças em larga escala.",
    "todo": "Monitorizar scripts de terceiros carregados em websites e adotar políticas rigorosas de Content Security Policy (CSP)."
-  },
-  {
-   "id": "7a4747fd2c1b6712",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/17/opinion-pollster-ipsos-fesses-up-to-cybersecurity-incident/5310405",
-   "published": "2026-11-17T11:44:00+00:00",
-   "title": "Opinion pollster Ipsos 'fesses up to 'cybersecurity incident'",
-   "summary": "A gigante de estudos de mercado Ipsos está a investigar um incidente de cibersegurança e reportou o caso às autoridades em Paris. Após a descoberta, a empresa ativou os procedimentos de resposta a incidentes e contratou especialistas externos. Até ao momento, a empresa confirmou que não houve impacto nas operações ou no atendimento ao cliente, mantendo a investigação em curso.",
-   "image": "https://image.theregister.com/?imageId=5269572&width=800",
-   "points": [
-    "O quê: Incidente de cibersegurança numa empresa global de sondagens e estudos de mercado.",
-    "Quem: A empresa Ipsos, com sede em Paris.",
-    "Como: Detetado internamente, levando à ativação de respostas a incidentes e especialistas externos.",
-    "Impacto: Sem impacto operacional visível ou de atendimento ao cliente registado até ao momento."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia que organizações detentoras de grandes volumes de dados confidenciais e políticos continuam a ser alvo de incidentes.",
-   "todo": "Manter planos de resposta a incidentes atualizados e reportar prontamente incidentes suspeitos às autoridades competentes."
   }
  ]
 }

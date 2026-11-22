@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T06:06:36.953453+00:00",
+ "updated": "2026-11-22T06:26:13.135302+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -138,8 +138,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 5
   },
   {
    "source": "DataBreaches.net",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Check Point Research",
@@ -310,8 +310,8 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 218,
-  "unenriched": 77,
+  "pending": 225,
+  "unenriched": 84,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
@@ -339,6 +339,50 @@
    "enriched": true,
    "why": "Mostra como a dependência de fornecedores terceiros complica a responsabilização e a transparência em cibersegurança.",
    "todo": "Avalie e audite regularmente os riscos associados a fornecedores terceiros e dependências de scripts externos."
+  },
+  {
+   "id": "78074d39dfa2deb1",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+   "published": "2026-11-22T05:06:55+00:00",
+   "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
+   "summary": "Investigadores descobriram que atacantes roubaram dados do interior de três fornecedores de inferência de IA durante meses, sem que estes se apercebessem. Vários dos pedidos comprometidos estavam sinalizados com a definição Zero Data Retention, que supostamente garantia que nunca seriam guardados. Na sequência do sucedido, a OpenRouter removeu os três fornecedores afetados da sua rede.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEGP3P_elvK4C-QnSx5onZ67viDXCIgPCUYqtTF_RDNcLJfyQ4QMbegUmn8AJy5nEmnXfN4ACr6hHztG_DdqXlj54S21toacPQaZgRx2rgqZltN3lvREpZR2xlvgXF_iZ7zW0XT0b91mMiRDVaEB6TUvMFlWwaSa3_C7gwpxdKcNhLtIq15KqwaZrR3VI/s1600/openrouter.png",
+   "points": [
+    "Atacantes roubaram dados em três fornecedores de IA durante meses.",
+    "A campanha afetou pedidos com a opção Zero Data Retention.",
+    "A empresa OpenRouter retirou os três fornecedores após o alerta de investigadores."
+   ],
+   "title_original": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque demonstra que as garantias de retenção zero de dados em serviços de IA podem falhar e ser exploradas por atacantes.",
+   "todo": "Reveja os fornecedores de serviços de IA que utiliza e valide as políticas reais de tratamento e armazenamento de dados sensíveis."
+  },
+  {
+   "id": "0be8ff22df4a77bf",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+   "published": "2026-11-22T05:03:41+00:00",
+   "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
+   "summary": "Uma falha recentemente corrigida no Ghostscript permitia que ficheiros maliciosos escapassem à sandbox de segurança do programa e executassem comandos nos servidores de processamento. A vulnerabilidade afetava servidores Linux que convertem documentos carregados, como PDFs e imagens, sem que a aplicação o solicitasse diretamente. A empresa de segurança pwn.ai demonstrou como carregamentos de ficheiros comuns podiam ser explorados.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1BiCJUIrSJXNfKPZEkM46ynK6Rs7gba2xMaTUdoJ7yOK6Y8kcKMqJ_6PhbUIog_U1E8gRCpbj2HrkQ9UEpbPi1HOvkxdxCE5Afa5LbkNhUPvgU7Sa60IVHAWqSvgJaX1p6frMAN335QncL5UTZ3a4v1-agyb8ZXIlMGZTOtzsC0Gll2qRI0NJNMHTsf8/s1600/ghostscript.jpg",
+   "points": [
+    "Uma vulnerabilidade no Ghostscript permitia escapar à sandbox de segurança.",
+    "Ficheiros maliciosos permitiam a execução remota de códigos em servidores Linux.",
+    "A falha afetava a conversão automática de formatos como PDFs e imagens."
+   ],
+   "title_original": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque o Ghostscript é amplamente utilizado de forma invisível por muitos servidores para processar uploads de utilizadores.",
+   "todo": "Atualize o software Ghostscript para a versão mais recente disponibilizada pelo fornecedor."
   },
   {
    "id": "aeb7ef21f8ed11a6",
@@ -13754,52 +13798,6 @@
    "enriched": true,
    "why": "Ajuda as empresas a anteciparem-se aos atacantes na identificação de segredos e palavras-passe expostas.",
    "todo": "Implementar ferramentas automatizadas de deteção de segredos em repositórios de código e monitorizar credenciais comprometidas."
-  },
-  {
-   "id": "e6dd290f2e8c315b",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/mobile/2026/11/facebook-may-have-access-to-your-entire-photo-gallery",
-   "published": "2026-11-17T11:34:09+00:00",
-   "title": "Facebook may have access to your entire photo gallery",
-   "summary": "A autoridade de proteção de dados italiana (Garante) aplicou uma coima de 805 milhões de euros à Meta devido à forma como a aplicação do Facebook acede às galerias fotográficas dos utilizadores de Android. A aplicação pedia uma permissão global única para sugestões de fotografias, expondo todo o rolo da câmara sem consentimento específico adequado. O regulador apontou que a violação continua ativa para alguns utilizadores.",
-   "image": "https://www.malwarebytes.com/wp-content/uploads/sites/2/2026/04/Iphone_mobile_page_update-CTA.png?w=126",
-   "points": [
-    "O quê: Coima de 805 milhões de euros aplicada à Meta pela autoridade de privacidade italiana.",
-    "Quem: A autoridade Garante e a Meta (Facebook) afetando utilizadores Android.",
-    "Como: Utilização de uma permissão única na app para aceder a toda a galeria de fotos sem consentimento granular.",
-    "Impacto: Violação da privacidade ao expor fotografias pessoais não intencionadas."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Destaca a importância do princípio do consentimento granular e dos riscos de permissões excessivas em aplicações móveis.",
-   "todo": "Verificar e restringir as permissões de acesso a fotografias nas definições de privacidade da aplicação Facebook."
-  },
-  {
-   "id": "624a51153dd2c8f8",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/threat-intel/2026/11/holiday-shopping-in-a-world-of-fakes-how-ai-is-changing-the-game",
-   "published": "2026-11-17T11:29:09+00:00",
-   "title": "Holiday shopping in a world of fakes: How AI is changing the game",
-   "summary": "Os cibercriminosos estão a utilizar inteligência artificial para criar lojas online falsas, produtos manipulados, avaliações forjadas e promoções fraudulentas durante a época de compras natalícia. Uma investigação da Malwarebytes revela que 77% dos consumidores estão preocupados com estes esquemas de comércio eletrónico gerados por IA. Além disso, mais de um em cada quatro consumidores já experienciou fraudes deste género no último ano.",
-   "image": "https://www.malwarebytes.com/wp-content/uploads/sites/2/2026/07/catface.jpg?w=792",
-   "points": [
-    "O quê: Aumento de fraudes e lojas falsas geradas por inteligência artificial em compras online.",
-    "Quem: Consumidores e burlões durante a época de compras festivas.",
-    "Como: Uso de IA para fabricar imagens de produtos, avaliações e sites falsos convincentes.",
-    "Impacto: Perdas financeiras e receio generalizado dos compradores online."
-   ],
-   "title_original": null,
-   "category": "Malware",
-   "translated": false,
-   "enriched": true,
-   "why": "Alerta para o uso de IA generativa por burlões para criar esquemas de compras altamente convincentes.",
-   "todo": "Desconfiar de promoções demasiado vantajosas em sites desconhecidos e verificar a reputação do comerciante antes de comprar."
   }
  ]
 }

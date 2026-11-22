@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T15:05:40.395438+00:00",
+ "updated": "2026-11-22T15:27:28.784203+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -59,7 +59,7 @@
   {
    "source": "CISA Advisories",
    "ok": true,
-   "added": 12
+   "added": 14
   },
   {
    "source": "CISA Alertas (KEV)",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -138,8 +138,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 5
   },
   {
    "source": "DataBreaches.net",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -309,16 +309,36 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 12,
-  "pending": 326,
-  "unenriched": 193,
+  "done": 120,
+  "pending": 229,
+  "unenriched": 93,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "2361e0929a29e0d7",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/",
+   "published": "2026-11-22T15:15:25+00:00",
+   "title": "Signal to block Siri, Gemini AI from capturing chats on iOS, Android",
+   "summary": "A aplicação Signal introduziu novas medidas de proteção para reforçar a privacidade dos utilizadores. Estas ferramentas bloqueiam a captura de ecrã no iOS 27 e impedem que assistentes de Inteligência Artificial captem conversas em dispositivos Android compatíveis. A medida visa proteger o conteúdo das mensagens contra acessos indesejados por parte de ferramentas de IA e capturas não autorizadas.",
+   "image": null,
+   "points": [
+    "Signal implementa novas proteções de privacidade contra IA.",
+    "Funcionalidade bloqueia capturas de ecrã no iOS 27.",
+    "Assistentes virtuais impedidos de aceder a conversas no Android."
+   ],
+   "title_original": "Signal to block Siri, Gemini AI from capturing chats on iOS, Android",
+   "category": "Ataque/APT",
+   "translated": true,
+   "enriched": true,
+   "why": "Protege as conversas privadas dos utilizadores contra a recolha indesejada de dados por assistentes de IA.",
+   "todo": "Atualize a aplicação Signal para a versão mais recente e verifique as definições de privacidade e bloqueio de ecrã."
+  },
   {
    "id": "5b216973c02909e7",
    "source": "Security Affairs",
@@ -327,14 +347,19 @@
    "link": "https://securityaffairs.com/203725/ai/security-affairs-ai-cybersecurity-newsletter-round-9.html",
    "published": "2026-11-22T14:31:35+00:00",
    "title": "SECURITY AFFAIRS AI-CYBERSECURITY NEWSLETTER ROUND 9",
-   "summary": "Security Affairs AI-CYBERSECURITY newsletter includes a collection of the best articles and research on AI in the international landscape Artificial intelligence is rapidly changing cybersecurity, reshaping both the techniques used by attackers and the tools available to defenders. AI agents can automate tasks, analyze large amounts of data, discover vulnerabilities and accelerate offensive operations. At […]",
+   "summary": "A nona edição da newsletter da Security Affairs focada em IA e cibersegurança reuniu artigos sobre o impacto da inteligência artificial no setor. A tecnologia está a transformar tanto as técnicas dos atacantes como as ferramentas de defesa, automatizando tarefas e acelerando a descoberta de vulnerabilidades. Foram destacados vários casos, campanhas maliciosas e investigações que envolvem o uso de agentes autónomos e modelos comprometidos.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "IA altera táticas de atacantes e defensores na cibersegurança.",
+    "Agentes autónomos automatizam ameaças e análise de vulnerabilidades.",
+    "Newsletter compila incidentes recentes envolvendo IA e campanhas maliciosas."
+   ],
+   "title_original": "SECURITY AFFAIRS AI-CYBERSECURITY NEWSLETTER ROUND 9",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Security Affairs AI-CYBERSECURITY newsletter includes a collection of the best articles and research on AI in the international landscape Artificial intelligence is rapidly changing cybersecurity, reshaping both the techniques used by attackers and the tools available to defenders. AI agents can automate tasks, analyze large amounts of data, discover vulnerabilities and accelerate offensive operations. At the same time, AI is creating new capabilities for threat detection, incident analysis and response. Security Affairs’ new newsletter follows this evolution, covering every week the latest threats, attacks, vulnerabilities and developments at the intersection of AI and cybersecurity. Amazon Threat Intelligence observes threat actors running cybercrime campaigns with ARTEX AI agents GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold Claude Fable 5.2 and Mythos 5.2 Inside the AI-Powered Marketplace Turning Infected Computers Into Searchable Profiles California sues OpenAI for Hugging Face and other incidents, alleging deception and recklessness Hidden in the Weights: Supply Chain Risk from Backdoored LoRA Models ARTEX: Agentic Asbestos Microsoft agent-framework Compromised: Credential Stealer Targets Azure and CI Pipelines Google gives Gemini the ability to use your Mac for you Meta’s AI agent Muse is mixing up conversations and exposing private data, report says At Nasdaq opening bell, Anthropic CEO recommits to pacing AI development Polite, methodical, machine-driven: reading an AI attack cluster in your logs Attackers Use Autonomous AI to Target Semiconductor, Defense and Civil Society Sectors PHP2Shell Exploited by AI Agents from Day One: Inside a Credential-Harvesting Campaign Why the smartest AI teams are building their own benchmarks D"
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como a inteligência artificial está a acelerar e a transformar o panorama atual das ameaças cibernéticas.",
+   "todo": "Mantenha-se informado sobre as novas tendências de ameaças baseadas em IA e reforce a monitorização de logs e acessos."
   },
   {
    "id": "e53b3b51e88564ba",
@@ -344,14 +369,19 @@
    "link": "https://securityaffairs.com/203714/malware/security-affairs-malware-newsletter-round-123-2.html",
    "published": "2026-11-22T13:56:43+00:00",
    "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 123",
-   "summary": "Security Affairs Malware newsletter includes a collection of the best articles and research on malware in the international landscape Malware Newsletter MMD-073-2026 – Linux/EasyShell, a new Rust RAT implant and beacon aims Linux and MacOS Supply chain attack: BO Team in a software developer’s infrastructure 0% GPU utilization: How SANSAR hides Linux cryptomining Inside the […]",
+   "summary": "A centésima vigésima terceira edição da newsletter de malware da Security Affairs destacou diversas investigações sobre ameaças recentes a nível internacional. Entre os incidentes mencionados constam novos implantes como o Linux/EasyShell, campanhas de cadeias de suprimentos e ataques baseados em serviços na cloud que visam redes governamentais. A publicação também aborda técnicas de ocultação de criptominedores e roubo de credenciais bancárias.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Novo implante Linux/EasyShell e ameaças em ambientes macOS e Linux.",
+    "Campanhas de ataques à cadeia de suprimentos e serviços cloud.",
+    "Operações focadas no roubo de credenciais e infeção por malware."
+   ],
+   "title_original": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 123",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Security Affairs Malware newsletter includes a collection of the best articles and research on malware in the international landscape Malware Newsletter MMD-073-2026 – Linux/EasyShell, a new Rust RAT implant and beacon aims Linux and MacOS Supply chain attack: BO Team in a software developer’s infrastructure 0% GPU utilization: How SANSAR hides Linux cryptomining Inside the AI-Powered Marketplace Turning Infected Computers Into Searchable Profiles World’s Largest Brands Infected With Malware Via Optimizely Poisoned Scripts on BBC, Zoom and Other Major Websites Linked to iPhone Exploit Loaders Operation ShadowCloud: cloud service–based backdoors targeting government networks in Asia and Africa. Part 1 Microsoft agent-framework Compromised: Credential Stealer Targets Azure and CI Pipelines EggStreme Malware: Rebuilt Under Scrutiny US bank and federal logins stolen off victims’ own PCs by a Russian-speaking operation To Catch a Ransomware Scammer, FBI Posed as Both Victim and Attacker CNN Architecture Comparison for Malware Classification with Limited Training Data A First Look at System One Decision Models for Malware Detection Ensemble Learning for Android Malware Detection: Stability Across Malware Categories and Feature Representations Lightweight Vulnerability-Aware Malware Triage: Operational Value and Generalization Under Family and Temporal Shift Follow me on Twitter: @securityaffairs and Facebook and Mastodon Pierluigi Paganini ( SecurityAffairs – hacking, newsletter )"
+   "translated": true,
+   "enriched": true,
+   "why": "Permite acompanhar as novas famílias de malware e táticas de ataque que ameaçam sistemas operativos e infraestruturas.",
+   "todo": "Garanta que os sistemas operativos e soluções antimalware estão atualizados para detetar e bloquear ameaças recentes."
   },
   {
    "id": "d3ddd154f18944e5",
@@ -13757,29 +13787,6 @@
    "enriched": true,
    "why": "Importa porque afeta infraestruturas críticas de água, expondo sistemas a roubo de credenciais e interceptação de rede.",
    "todo": "Atualize o InfoScan para a versão v1.46 ou superior utilizando a ferramenta de manutenção do sistema ou o portal do fornecedor."
-  },
-  {
-   "id": "877e907402b91d81",
-   "source": "CISA Advisories",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
-   "published": "2026-11-17T12:00:00+00:00",
-   "title": "Siemens Industrial Software Products",
-   "summary": "Vários produtos de software industrial da Siemens foram afetados por uma vulnerabilidade crítica de escrita fora de limites no descodificador Brotli integrado no Node.js, conhecida como Node2Shell. Esta falha de segurança pode permitir que um atacante remoto provoque corrupção de memória e execute código arbitrário nos sistemas afetados. A Siemens encontra-se a preparar correções e a emitir boletins informativos para linhas como Teamcenter e Opcenter. Os utilizadores devem consultar as orientações específicas para mitigar o risco.",
-   "image": null,
-   "points": [
-    "Vulnerabilidade crítica Node2Shell no descodificador Brotli.",
-    "Afeta ampla gama de softwares industriais da Siemens.",
-    "Pode permitir execução de código por atacantes remotos.",
-    "Siemens está a preparar correções e boletins de suporte."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque afeta uma enorme variedade de software empresarial e de engenharia com risco elevado de execução de código.",
-   "todo": "Consulte os boletins de software específicos da Siemens e aplique as atualizações ou mitigações recomendadas para cada produto."
   }
  ]
 }

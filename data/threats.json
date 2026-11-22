@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T03:33:46.955159+00:00",
+ "updated": "2026-11-22T03:48:24.001911+00:00",
  "errors": [],
  "feodo": {
   "total": 5,
@@ -56,11 +56,11 @@
  "types": {
   "malware_urls": {
    "label": "Sites que distribuem malware",
-   "total": 777,
+   "total": 779,
    "by_country": {
-    "US": 535,
-    "CN": 127,
-    "KH": 29,
+    "US": 534,
+    "CN": 131,
+    "KH": 28,
     "IN": 11,
     "TR": 11,
     "CA": 10,
@@ -77,30 +77,30 @@
     "HK": 2,
     "DE": 2,
     "NL": 2,
+    "NO": 1,
     "PK": 1,
     "FI": 1,
     "AU": 1,
     "VN": 1,
-    "RU": 1,
-    "SE": 1
+    "RU": 1
    },
    "detail": {
     "US": {
      "DEVPOPPER": 272,
      "exe": 120,
-     "mirai": 61,
+     "mirai": 60,
      "github": 35,
-     "Ngioweb": 13
+     "gafgyt": 12
     },
     "CN": {
-     "Mozi": 52,
-     "32-bit": 31,
+     "Mozi": 53,
+     "32-bit": 32,
      "mirai": 28,
-     "malware_download": 7,
+     "malware_download": 9,
      "elf": 5
     },
     "KH": {
-     "botnet": 29
+     "botnet": 28
     },
     "IN": {
      "Mozi": 9,
@@ -171,6 +171,9 @@
     "NL": {
      "elf": 2
     },
+    "NO": {
+     "malware_download": 1
+    },
     "PK": {
      "32-bit": 1
     },
@@ -185,9 +188,6 @@
     },
     "RU": {
      "malware_download": 1
-    },
-    "SE": {
-     "mirai": 1
     }
    },
    "tags": {
@@ -196,25 +196,25 @@
     "TxDataHiding": 302,
     "VSCode": 302,
     "DEVPOPPER": 272,
-    "mirai": 154
+    "mirai": 151
    },
    "ports": {
     "US": {
-     "443": 437,
+     "443": 438,
      "8113": 23,
      "8110": 19,
-     "8112": 19,
+     "8112": 18,
      "80": 5
     },
     "CN": {
+     "51585": 2,
      "46513": 2,
      "55958": 2,
      "57506": 2,
-     "42078": 2,
-     "45556": 2
+     "42078": 2
     },
     "KH": {
-     "8080": 29
+     "8080": 28
     },
     "IN": {
      "37663": 2,
@@ -285,6 +285,9 @@
     "NL": {
      "80": 2
     },
+    "NO": {
+     "45887": 1
+    },
     "PK": {
      "60539": 1
     },
@@ -299,9 +302,6 @@
     },
     "RU": {
      "38165": 1
-    },
-    "SE": {
-     "80": 1
     }
    }
   },
@@ -309,17 +309,17 @@
    "label": "Sites de phishing",
    "total": 300,
    "by_country": {
-    "CA": 118,
-    "US": 102,
+    "CA": 129,
+    "US": 87,
     "IT": 18,
     "DE": 6,
+    "MX": 3,
     "NL": 3,
     "FI": 2,
     "SG": 2,
     "AE": 2,
     "CN": 1,
     "GB": 1,
-    "AZ": 1,
     "CL": 1,
     "HK": 1,
     "RU": 1,
@@ -328,16 +328,19 @@
    },
    "detail": {
     "CA": {
-     "phishing": 118
+     "phishing": 129
     },
     "US": {
-     "phishing": 102
+     "phishing": 87
     },
     "IT": {
      "phishing": 18
     },
     "DE": {
      "phishing": 6
+    },
+    "MX": {
+     "phishing": 3
     },
     "NL": {
      "phishing": 3
@@ -355,9 +358,6 @@
      "phishing": 1
     },
     "GB": {
-     "phishing": 1
-    },
-    "AZ": {
      "phishing": 1
     },
     "CL": {
@@ -383,9 +383,9 @@
    "by_country": {
     "US": 117,
     "CN": 110,
-    "HK": 101,
-    "DE": 38,
-    "NL": 29,
+    "HK": 100,
+    "DE": 39,
+    "NL": 30,
     "SG": 28,
     "JP": 27,
     "TH": 17,
@@ -396,8 +396,8 @@
     "RU": 7,
     "VN": 7,
     "GB": 6,
-    "CH": 4,
     "MY": 4,
+    "CH": 3,
     "SI": 3,
     "RO": 3,
     "FI": 2,
@@ -438,7 +438,7 @@
      "Sliver": 1
     },
     "HK": {
-     "Unknown malware": 92,
+     "Unknown malware": 91,
      "Cobalt Strike": 6,
      "Evilginx": 1,
      "Empire Downloader": 1,
@@ -446,13 +446,13 @@
     },
     "DE": {
      "Unknown malware": 23,
+     "Cobalt Strike": 4,
      "Tofsee": 3,
-     "Cobalt Strike": 3,
      "Mirai": 2,
      "AMOS": 2
     },
     "NL": {
-     "Unknown malware": 14,
+     "Unknown malware": 15,
      "NetSupportManager RAT": 6,
      "Unknown Stealer": 3,
      "PureRAT": 3,
@@ -505,13 +505,12 @@
     "GB": {
      "Unknown malware": 6
     },
-    "CH": {
-     "Unknown Stealer": 2,
-     "Unknown malware": 1,
-     "Cobalt Strike": 1
-    },
     "MY": {
      "Unknown malware": 4
+    },
+    "CH": {
+     "Unknown Stealer": 2,
+     "Unknown malware": 1
     },
     "SI": {
      "Tofsee": 3
@@ -620,7 +619,7 @@
      "3333": 1
     },
     "DE": {
-     "443": 15,
+     "443": 16,
      "8080": 8,
      "429": 2,
      "31337": 2,
@@ -689,12 +688,11 @@
      "8080": 2,
      "8123": 1
     },
-    "CH": {
-     "443": 3,
-     "2083": 1
-    },
     "MY": {
      "8080": 4
+    },
+    "CH": {
+     "443": 3
     },
     "SI": {
      "429": 2,
@@ -777,22 +775,30 @@
    "label": "Scans e força bruta",
    "total": 200,
    "by_country": {
-    "US": 195,
+    "US": 193,
     "NL": 4,
-    "RU": 1
+    "RU": 1,
+    "DE": 1,
+    "SE": 1
    },
    "detail": {
     "US": {
-     "scan/força bruta": 195
+     "scan/força bruta": 193
     },
     "NL": {
      "scan/força bruta": 4
     },
     "RU": {
      "scan/força bruta": 1
+    },
+    "DE": {
+     "scan/força bruta": 1
+    },
+    "SE": {
+     "scan/força bruta": 1
     }
    },
-   "reports": 5243533
+   "reports": 5281125
   }
  },
  "cloudflare": {
@@ -800,77 +806,77 @@
    {
     "cc": "US",
     "name": "United States",
-    "pct": 18.84696
+    "pct": 18.902047
    },
    {
     "cc": "CN",
     "name": "China",
-    "pct": 16.5526
+    "pct": 16.523096
    },
    {
     "cc": "ID",
     "name": "Indonesia",
-    "pct": 4.924395
+    "pct": 4.928783
    },
    {
     "cc": "SG",
     "name": "Singapore",
-    "pct": 4.573139
+    "pct": 4.5881
    },
    {
     "cc": "DE",
     "name": "Germany",
-    "pct": 3.599839
+    "pct": 3.603209
    },
    {
     "cc": "IN",
     "name": "India",
-    "pct": 3.476394
+    "pct": 3.450197
    },
    {
     "cc": "BE",
     "name": "Belgium",
-    "pct": 3.467754
+    "pct": 3.395497
    },
    {
     "cc": "BR",
     "name": "Brazil",
-    "pct": 3.064167
+    "pct": 3.072544
    },
    {
     "cc": "FR",
     "name": "France",
-    "pct": 2.689604
+    "pct": 2.69587
    },
    {
     "cc": "NL",
     "name": "Netherlands",
-    "pct": 2.466456
+    "pct": 2.473636
    },
    {
     "cc": "GB",
     "name": "United Kingdom",
-    "pct": 1.774286
+    "pct": 1.780184
    },
    {
     "cc": "KR",
     "name": "Korea, South",
-    "pct": 1.70944
+    "pct": 1.735728
    },
    {
     "cc": "JP",
     "name": "Japan",
-    "pct": 1.620981
+    "pct": 1.645069
    },
    {
     "cc": "HK",
     "name": "Hong Kong",
-    "pct": 1.603926
+    "pct": 1.612887
    },
    {
     "cc": "RU",
     "name": "Russian Federation",
-    "pct": 1.371264
+    "pct": 1.366273
    }
   ],
   "l7_target": [

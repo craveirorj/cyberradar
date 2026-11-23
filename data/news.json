@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T08:16:50.865136+00:00",
+ "updated": "2026-11-23T08:26:31.807715+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "TugaTech",
@@ -149,7 +149,7 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "Microsoft Security Blog",
@@ -238,13 +238,13 @@
   },
   {
    "source": "The Register Security",
-   "ok": true,
-   "added": 11
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Security Affairs",
@@ -309,12 +309,11 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 248,
-  "unenriched": 111,
+  "done": 119,
+  "pending": 226,
+  "unenriched": 88,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 32 column 5 (char 2752)"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
@@ -333,12 +332,35 @@
     "Caixas de TV de baixo custo infetadas geravam tráfego publicitário oculto em massa.",
     "O esquema utilizava a internet doméstica dos donos sem o seu consentimento."
    ],
-   "title_original": "Infected TV boxes in BADBOX 3.0 rent out their owners’ home internet",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra como dispositivos domésticos comuns podem ser subvertidos para gerar tráfego fraudulento em larga escala.",
    "todo": "Desative ou substitua dispositivos de streaming de marcas desconhecidas ou não verificadas."
+  },
+  {
+   "id": "de68de01a828e34f",
+   "source": "Malwarebytes Labs",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.malwarebytes.com/blog/news/2026/11/a-week-in-security-november-16-november-22",
+   "published": "2026-11-23T08:01:00+00:00",
+   "title": "Uma semana em segurança (16 de novembro a 22 de novembro)",
+   "summary": "O site Malwarebytes Labs publicou um balanço semanal com vários incidentes e alertas de cibersegurança a nível global. Entre os destaques encontram-se o lançamento de um centro nos EUA para combater fraudes, fugas de dados e campanhas de phishing e engenharia social. Foram também divulgadas vulnerabilidades críticas em softwares e novas táticas de ataques baseadas em inteligência artificial. O impacto abrange desde a perda financeira de utilizadores até falhas em grandes plataformas e serviços digitais.",
+   "image": null,
+   "points": [
+    "Lançamento de um novo centro nos EUA para travar fraudes e alertar vítimas.",
+    "Fuga de dados afetou utilizadores de grandes instituições financeiras e de pagamentos.",
+    "Ataques de phishing e engenharia social continuam a explorar marcas populares.",
+    "Descobertas e correções de falhas críticas em navegadores e sistemas."
+   ],
+   "title_original": "A week in security (November 16 – November 22)",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite acompanhar de forma rápida as principais tendências e ameaças globais que podem afetar utilizadores e empresas.",
+   "todo": "Mantenha todos os softwares e sistemas operativos atualizados com as correções mais recentes."
   },
   {
    "id": "e973aa63d8e4dcf3",
@@ -13754,29 +13776,6 @@
    "enriched": true,
    "why": "Mostra como sites legítimos de alto tráfego podem ser transformados em veículos de distribuição de malware.",
    "todo": "Mantenha os dispositivos móveis e navegadores sempre atualizados com as correções de segurança mais recentes."
-  },
-  {
-   "id": "cd4dec6447a0ff99",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/17/8-digits-team-ransomware-suspect-extradited-us-italy/",
-   "published": "2026-11-17T13:42:04+00:00",
-   "title": "Afiliado de ransomware suspeito extraditado para os EUA por extorsões de 500 milhões de dólares",
-   "summary": "Um cidadão do Cazaquistão de 43 anos foi extraditado de Itália para os Estados Unidos, segundo o Departamento de Justiça norte-americano. O suspeito é acusado de integrar o grupo \"8-Digits Team\", associado às operações de ransomware INC e Lynx. O coletivo infiltrava-se em redes de hospitais e escolas, roubava dados confidenciais e exigia pagamentos avultados para evitar a publicação de informações médicas de pacientes.",
-   "image": null,
-   "points": [
-    "Roman Khlynovskiy foi extraditado de Itália para os Estados Unidos.",
-    "É acusado de pertencer ao grupo '8-Digits Team' ligado a operações de ransomware.",
-    "O grupo visava hospitais e escolas roubando dados sensíveis.",
-    "Exigia resgates avultados sob ameaça de divulgar informações de pacientes."
-   ],
-   "title_original": "Suspected ransomware affiliate extradited to US over $500 million in extortion demands",
-   "category": "Ransomware",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia a cooperação internacional na captura de operadores de ransomware que atacam setores críticos.",
-   "todo": "Implemente cópias de segurança offline e reforce os controlos de acesso para mitigar ataques de ransomware."
   }
  ]
 }

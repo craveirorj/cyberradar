@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T10:46:51.484506+00:00",
+ "updated": "2026-11-23T11:08:08.925296+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -138,8 +138,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": true,
-   "added": 3
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "DataBreaches.net",
@@ -263,8 +263,8 @@
   },
   {
    "source": "Graham Cluley",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 3
   },
   {
    "source": "HackRead",
@@ -318,6 +318,51 @@
  },
  "items": [
   {
+   "id": "ade3122cc9bd6da8",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/23/cairn-ai-agents-autonomous-attacks/",
+   "published": "2026-11-23T10:49:38+00:00",
+   "title": "Framework de IA de código aberto Cairn descoberto em ataques reais",
+   "summary": "Agentes de IA autónomos operados por um grupo ligado à China utilizaram o framework Cairn para explorar uma vulnerabilidade zero-day numa aplicação médica de IA. A ofensiva começou após falhas em servidores universitários e decorreu com pouca intervenção humana. Os operadores forneceram apenas endereços IP e o objetivo de obter acesso por shell, segundo a Amazon Threat Intelligence. O incidente demonstra a utilização maliciosa de ferramentas de pentesting de inteligência artificial em cenários reais.",
+   "image": null,
+   "points": [
+    "Agentes de IA autónomos exploraram uma zero-day em software médico.",
+    "Ataque executado com o framework de código aberto Cairn.",
+    "Atores maliciosos ligados à China obtiveram acesso inicial após dias de tentativas.",
+    "Operadores forneceram apenas IPs alvo e o objetivo de obter shell."
+   ],
+   "title_original": "Open-source AI pentesting framework Cairn keeps turning up in real-world attacks",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como ferramentas legítimas de testes de intrusão baseadas em IA podem ser instrumentalizadas por atacantes para campanhas automatizadas.",
+   "todo": "Monitorize o tráfego de rede para detetar padrões anómalos de sondagem e mantenha todo o software médico e de infraestrutura devidamente atualizado."
+  },
+  {
+   "id": "e561a4b35863f029",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/cleverbridge-payment-card-breached/",
+   "published": "2026-11-23T10:45:00+00:00",
+   "title": "Cleverbridge Confirma Roubo de Dados de Cartões de Pagamento de Clientes",
+   "summary": "A empresa Cleverbridge confirmou que sofreu uma violação de segurança que resultou no roubo de dados de cartões de pagamento dos seus clientes. A informação comprometida inclui números de cartões e respetivos códigos de segurança que estavam armazenados na plataforma. Como resultado direto desta exposição, os utilizadores afetados enfrentam agora um risco imediato de fraude financeira. A confirmação surge após relatórios indicarem o rouuo destes dados sensíveis.",
+   "image": null,
+   "points": [
+    "Cleverbridge confirmou uma violação de dados de cartões de pagamento.",
+    "Informação roubada inclui números de cartões e códigos de segurança.",
+    "Utilizadores afetados enfrentam um risco imediato de fraude."
+   ],
+   "title_original": "Cleverbridge Confirms Customers’ Payment Card Data Breached",
+   "category": "Phishing/Fraude",
+   "translated": true,
+   "enriched": true,
+   "why": "Exposição direta de credenciais financeiras coloca utilizadores em risco iminente de transações fraudulentas.",
+   "todo": "Monitorize regularmente os extratos bancários e desative ou substitua os cartões associados a plataformas de pagamento vulneráveis."
+  },
+  {
    "id": "1e1c6072e5e38b54",
    "source": "Help Net Security",
    "region": "EU",
@@ -339,6 +384,28 @@
    "enriched": true,
    "why": "Importa porque a exposição de dados de configuração e contactos técnicos pode facilitar futuros ataques à infraestrutura de identidade das empresas.",
    "todo": "Verifique os avisos e as comunicações de segurança enviados pela Microsoft e aplique as atualizações e mitigações recomendadas."
+  },
+  {
+   "id": "e5cfe1fec19dd3b5",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/inteligencia-artificial/black-friday-e-natal-cuidado-com-as-lojas-que-o-chatgpt-e-o-gemini-recomendam/",
+   "published": "2026-11-23T10:30:00+00:00",
+   "title": "Black Friday e Natal: cuidado com as lojas que o ChatGPT e o Gemini recomendam",
+   "summary": "Testes realizados aos assistentes de IA ChatGPT, Gemini e Perplexity revelaram que cerca de 9% das respostas sobre onde comprar determinadas marcas apontavam para sites considerados de risco. A maioria destas recomendações problemáticas (57%) incentivava diretamente o utilizador a efetuar compras nessas páginas suspeitas. Esta tendência surge numa altura em que os consumidores recorrem cada vez mais a ferramentas de inteligência artificial para pesquisar produtos online. O impacto traduz-se num risco acrescido de fraude para os compradores durante épocas festivas.",
+   "image": null,
+   "points": [
+    "Assistentes de IA recomendaram sites de risco em cerca de 9% dos testes.",
+    "57% das respostas perigosas aconselhavam o site como local de compra.",
+    "Utilizadores recorrem a IA para pesquisar produtos, aumentando a exposição a fraudes."
+   ],
+   "title_original": null,
+   "category": "IA",
+   "translated": false,
+   "enriched": true,
+   "why": "Os consumidores confiam cegamente em recomendações de IA, arriscando-se a comprar em lojas fraudulentas.",
+   "todo": "Verifique sempre a autenticidade das lojas online através de canais oficiais antes de efetuar qualquer pagamento."
   },
   {
    "id": "ca72045b083c31c9",
@@ -13707,75 +13774,6 @@
    "enriched": true,
    "why": "Importa porque demonstra o perigo crítico da exposição de sistemas industriais e de refrigeração à internet sem proteção.",
    "todo": "Desliga imediatamente os controladores de refrigeração expostos diretamente à internet e aplica atualizações quando disponíveis."
-  },
-  {
-   "id": "ad0a36a96b95d49d",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/17/envoy-visitors-critical/",
-   "published": "2026-11-17T14:28:49+00:00",
-   "title": "Envoy Visitors Critical turns visitor policies into approval workflows",
-   "summary": "A Envoy lançou o Visitors Critical, uma solução de segurança para visitantes direcionada a ambientes de alto risco. A ferramenta combina verificação de identidade, triagem e fluxos de aprovação numa arquitetura partilhada. O objetivo é colmatar falhas em políticas de visitantes e garantir registos protegidos e prontos para auditoria.",
-   "image": null,
-   "points": [
-    "Envoy lança o produto Visitors Critical.",
-    "Integra verificação de identidade e fluxos de aprovação.",
-    "Desenhado para ambientes de alta exigência e segurança.",
-    "Garante registos auditáveis e maior controlo de acessos físicos."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa para melhorar a governação e o controlo de acessos de visitantes em infraestruturas críticas e ambientes sensíveis.",
-   "todo": "Adota processos automatizados e rigorosos de verificação e aprovação para visitantes em instalações sensíveis."
-  },
-  {
-   "id": "ada4eb2a4b5215fa",
-   "source": "Rapid7",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.rapid7.com/blog/post/em-claude-access-brings-ai-context-into-surface-command-asm-easm",
-   "published": "2026-11-17T14:26:29+00:00",
-   "title": "Who Has Access to Claude? Bring AI Identity and Access Context Into Surface Command",
-   "summary": "A integração do Rapid7 Surface Command com a API de conformidade do Claude permite às equipas de segurança monitorizar identidades, papéis e permissões associadas ao uso corporativo da ferramenta. Um estudo recente indicou que a maioria das organizações com incidentes de IA carece de controlos de acesso adequados. Esta solução ajuda a colmatar essa lacuna ao dar visibilidade administrativa sobre o uso de IA na empresa.",
-   "image": "https://images.contentstack.io/v3/assets/blte4f029e766e6b253/blt0b0762ca94c50b0b/6846a711eac0e395093e52e3/AI.jpg",
-   "points": [
-    "Rapid7 integra dados do Claude no Surface Command.",
-    "Permite auditar utilizadores, papéis e grupos associados à IA.",
-    "Estudos mostram falta de controlos de acesso em incidentes de IA.",
-    "Foco na visibilidade administrativa sem ler conversas."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque a adoção empresarial de ferramentas de IA exige uma gestão rigorosa de identidades e acessos para evitar riscos de segurança.",
-   "todo": "Garante que o acesso a ferramentas de IA corporativas é auditado regularmente e integrado na gestão centralizada de identidades."
-  },
-  {
-   "id": "697ff91b93402f00",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/17/linx-security-agent-identity-control/",
-   "published": "2026-11-17T14:23:26+00:00",
-   "title": "Linx Security extends identity governance to AI agent actions",
-   "summary": "A Linx Security introduziu quatro novas capacidades para alargar o controlo de identidades a agentes de IA, sejam geridos ou não. As funcionalidades incluem a deteção de agentes de IA ocultos, controlo em tempo real de ações de agentes em gateways, e ferramentas para criar fluxos de trabalho automatizados e seguros. O impacto foca-se na governação de agentes de inteligência artificial em ambiente empresarial.",
-   "image": null,
-   "points": [
-    "Linx Security alarga governação de identidade a agentes de IA.",
-    "Nova deteção de agentes de IA não autorizados (Shadow AI).",
-    "Controlo direto sobre as ações executadas pelos agentes.",
-    "Criação de fluxos de trabalho geridos a partir de linguagem natural."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa para mitigar os riscos associados à proliferação descontrolada de agentes de IA autónomos nas redes empresariais.",
-   "todo": "Monitoriza e inventaria todos os agentes de IA utilizados na empresa para garantir que cumprem as políticas de segurança."
   }
  ]
 }

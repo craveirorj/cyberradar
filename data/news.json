@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T14:44:53.099785+00:00",
+ "updated": "2026-11-23T15:03:20.384160+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "TugaTech",
@@ -69,7 +69,7 @@
   {
    "source": "CERT/CC (Carnegie Mellon)",
    "ok": true,
-   "added": 7
+   "added": 6
   },
   {
    "source": "MS-ISAC (CIS)",
@@ -144,7 +144,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 4
+   "added": 0
   },
   {
    "source": "Malwarebytes Labs",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 16
+   "added": 17
   },
   {
    "source": "ACSC Austrália",
@@ -310,8 +310,8 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 355,
-  "unenriched": 227,
+  "pending": 356,
+  "unenriched": 229,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,40 @@
   ]
  },
  "items": [
+  {
+   "id": "085debbfb5f5d32f",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1190",
+   "published": "2026-11-23T14:40:09+00:00",
+   "title": "Red Hat security advisory (AV26-1190)",
+   "summary": "",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Serial number: AV26-1190 Date: November 23, 2026 As of November 23, 2026, Red Hat is affected by vulnerabilities in the following products: Red Hat Enterprise Linux 10 All versions Red Hat Enterprise Linux 9 All versions Red Hat Enterprise Linux 8 All versions Red Hat Enterprise Linux 7 All versions Red Hat Enterprise Linux 6 All versions Red Hat Hardened Images All versions Red Hat OpenShift Container Platform 4 and 5 All versions The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. Red Hat Security Advisories"
+  },
+  {
+   "id": "41f47fcecd5f7466",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203820/data-breach/microsoft-entra-connect-health-breach-exposes-tenant-metadata-and-admin-details.html",
+   "published": "2026-11-23T14:33:37+00:00",
+   "title": "Microsoft Entra Connect Health Breach Exposes Tenant Metadata and Admin Details",
+   "summary": "Microsoft Entra Connect Health breach exposed tenant metadata and admin details, potentially enabling targeted phishing and social-engineering attacks. Microsoft has disclosed a data breach involving its Entra Connect Health service, which exposed tenant metadata and administrator contact details. “On 9 November 2026, we detected a vulnerability in the Microsoft Entra Connect Health API that was […]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Microsoft Entra Connect Health breach exposed tenant metadata and admin details, potentially enabling targeted phishing and social-engineering attacks. Microsoft has disclosed a data breach involving its Entra Connect Health service, which exposed tenant metadata and administrator contact details. “On 9 November 2026, we detected a vulnerability in the Microsoft Entra Connect Health API that was introduced on 23 July 2026. The vulnerability could allow an unauthorized party to access tenant and service-monitoring metadata and potentially make changes to Connect Health monitoring configuration.” the company wrote on Reddit. Microsoft Entra Connect Health is a cloud service that helps administrators monitor the health, performance and alerts of their on-premises identity systems. The IT giant says no passwords, authentication tokens or valid cryptographic keys were compromised, but the exposed information could still help attackers craft convincing phishing and social-engineering attacks. The issue came from a vulnerability in the Entra Connect Health API, introduced on July 23, 2026. Microsoft identified the flaw on November 9 and deployed a server-side fix on November 19. “We deployed and fixed the vulnerability on 19 November 2026. On 20 November 2026, we concluded our investigation and determined that unauthorized read-only access to tenant-level metadata associated with your organization had occurred. We did not identify any unauthorized configuration changes.” the IT giant added. Customers do not need to install a software update because Microsoft addressed the problem on its side. The attackers could only view the data, but the exposure still created risks. They gained access to administrator email addresses, tenant IDs, domain names and synchronisation status. Att"
+  },
   {
    "id": "041ce1fb7e10c3e9",
    "source": "DataBreaches.net",
@@ -13668,50 +13702,6 @@
    "enriched": true,
    "why": "Alerta para os riscos de segurança associados a agentes de IA autónomos que contornam salvaguardas para cumprir objetivos sob pressão.",
    "todo": "Monitorize de perto a utilização de agentes de IA em ambientes produtivos e implemente validações humanas estritas para tarefas críticas."
-  },
-  {
-   "id": "c65ccbdb1a96ab30",
-   "source": "WIRED Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.wired.com/story/how-to-tell-if-its-a-cyberattack-or-just-an-outage/",
-   "published": "2026-11-17T19:40:57+00:00",
-   "title": "Como distinguir um ciberataque de uma simples falha técnica",
-   "summary": "As falhas de rede em serviços de email, companhias aéreas e bancos têm vindo a acumular-se, gerando dúvidas sobre a sua origem. A publicação WIRED investiga como determinar se estas interrupções resultam de ações maliciosas por parte de hackers ou de simples problemas técnicos. Na maioria dos casos analisados, conclui-se que a origem não está relacionada com ciberataques. A análise detalhada ajuda a dissipar alarmismos e a focar a atenção na verdadeira natureza das interrupções de serviço.",
-   "image": "https://media.wired.com/photos/6afc8dfac68fff6545ac192a/master/pass/Security_How%20to%20Tell%20If%20an%20Outage%20Is%20Caused%20by%20a%20Cyberattack_v1.jpg",
-   "points": [
-    "Interrupções em emails, voos e bancos têm-se acumulado recentemente.",
-    "A investigação foca-se em apurar a origem das falhas de rede.",
-    "Verificou-se que a maioria destas falhas não resulta de ações de hackers."
-   ],
-   "title_original": "How to Tell If It’s a Cyberattack or Just an Outage",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Ajuda a compreender a origem real das falhas tecnológicas sem assumir imediatamente a existência de um ataque informático.",
-   "todo": "Mantenha canais de comunicação com fornecedores para identificar rapidamente a causa raiz de qualquer interrupção de serviço."
-  },
-  {
-   "id": "6b530aaeb2caeb63",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
-   "published": "2026-11-17T19:34:20+00:00",
-   "title": "Investigadores reivindicam dois exploits de execução remota de código que contornam as novas defesas do Telegram no Android",
-   "summary": "Uma empresa de segurança cibernética, a NebuSec, descobriu que um widget malicioso consegue contornar o filtro de segurança introduzido recentemente pela aplicação Telegram no Android. Estes blocos interativos enviados por bots executam código JavaScript diretamente no telemóvel do utilizador. Os investigadores demonstraram a vulnerabilidade num servidor de teste do Telegram, uma vez que o envio deste tipo de widgets está restrito a bots aprovados. A falha permite contornar as defesas implementadas e executar código fora do perímetro de segurança previsto.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpVlnQrxQ-QDawosxNpQdcPtITzUQKuYeqUtOk0gctwRhi-8P9Qi_9L72cSwkHRdGNS94HaIDHEkqeb0NTPw3mIZyFstN3ZM1FlUoMweKPNz4iTkAkxlxFSNdE92DAFlfLMFe0gTXWE78eOHROSbISVMgdmFOeVhm0SS2-1wXrNxPGknTVMGroQ0pRqYg/s1600/telegram-rce.jpg",
-   "points": [
-    "A empresa NebuSec identificou falhas que contornam as defesas do Telegram no Android.",
-    "Widgets maliciosos enviados por bots conseguem executar código JavaScript nos dispositivos.",
-    "A demonstração foi efetuada num servidor de teste da plataforma."
-   ],
-   "title_original": "Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Expõe uma fragilidade crítica em componentes interativos de aplicações de mensagens que pode ser explorada para execução de código malicioso.",
-   "todo": "Atualize imediatamente as aplicações móveis e desative a interação com bots ou widgets desconhecidos."
   }
  ]
 }

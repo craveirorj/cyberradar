@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T12:27:05.974736+00:00",
+ "updated": "2026-11-23T12:46:46.386039+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -23,8 +23,8 @@
   },
   {
    "source": "Exame Informática",
-   "ok": false,
-   "error": "HTTPSConnectionPool(host='visao.pt', port=443): Read timed out. (read timeout=25)"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "Computerworld Portugal",
@@ -34,7 +34,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CISA Advisories",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -94,12 +94,12 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -134,7 +134,7 @@
   {
    "source": "Schneier on Security",
    "ok": true,
-   "added": 7
+   "added": 6
   },
   {
    "source": "SANS ISC",
@@ -234,17 +234,17 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 19
+   "added": 20
   },
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -309,14 +309,84 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 235,
-  "unenriched": 96,
+  "done": 108,
+  "pending": 245,
+  "unenriched": 107,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting property name enclosed in double quotes: line 38 column 5 (char 3555)"
   ]
  },
  "items": [
+  {
+   "id": "9d23693381162a52",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/23/norway-links-energy-firm-cyberattacks-to-critical-azure-api-management-flaw/5311598",
+   "published": "2026-11-23T12:29:00+00:00",
+   "title": "Noruega liga ciberataques a empresa de energia a falha crítica na API Management do Azure",
+   "summary": "A Microsoft emitiu um aviso de segurança devido a ataques que visaram instâncias do Azure API Management (APIM) Classic para roubar segredos e realizar operações administrativas. Duas grandes empresas de energia foram afetadas por estas intrusões, que exploraram configurações que não seguiam as orientações de segurança. A Autoridade de Segurança Nacional da Noruega aconselhou as organizações a assumirem que os seus dados foram expostos e a rotacionarem todas as credenciais.",
+   "image": "https://image.theregister.com/?imageId=260104&width=800",
+   "points": [
+    "Alvo: Instâncias do Azure API Management Classic de empresas de energia.",
+    "Ataque: Roubo de segredos e execução de operações administrativas por atacantes.",
+    "Causa: Configurações que não seguiam as orientações de segurança da Microsoft.",
+    "Impacto: Exposição potencial de chaves, tokens e acesso a serviços protegidos."
+   ],
+   "title_original": "Norway links energy firm cyberattacks to critical Azure API Management flaw",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes acedam a segredos e serviços protegidos através de credenciais roubadas.",
+   "todo": "Migre das instâncias Classic para o Azure API Management v2, siga as orientações de segurança da Microsoft e proceda à rotação de todos os segredos e tokens."
+  },
+  {
+   "id": "d77f865b12d3f534",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/23/cisco-expressway-vulnerability-exploited-cve-2026-76466/",
+   "published": "2026-11-23T12:26:10+00:00",
+   "title": "Vulnerabilidade no Cisco Expressway explorada para invadir redes internas (CVE-2026-76466)",
+   "summary": "Atacantes exploraram ativamente uma falha crítica de segurança em gateways Cisco Expressway para aceder a redes organizacionais. A vulnerabilidade, identificada como CVE-2026-76466, permite a um atacante remoto não autenticado com acesso à rede realizar ações maliciosas. O caso foi revelado por uma empresa de segurança russa e levou a CISA a adicionar a falha ao seu catálogo de vulnerabilidades conhecidas.",
+   "image": null,
+   "points": [
+    "O quê: Exploração da vulnerabilidade CVE-2026-76466 em gateways Cisco Expressway.",
+    "Quem: Atacantes remotos não autenticados com acesso à rede.",
+    "Como: Aproveitamento de uma falha crítica para realizar intrusões em redes internas.",
+    "Impacto: Comprometimento de redes organizacionais e adição do problema ao catálogo da CISA."
+   ],
+   "title_original": "Cisco Expressway vulnerability exploited to breach internal networks (CVE-2026-76466)",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Abre portas a atacantes remotos não autenticados para entrarem diretamente nas redes internas das organizações.",
+   "todo": "Consulte os boletins de segurança da Cisco e aplique imediatamente as atualizações de correção disponíveis para o Cisco Expressway."
+  },
+  {
+   "id": "17e792aba6bb75ee",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/ai-inference-providers-failed-to-detect-hacking-and-prompt-theft-says-dragos/",
+   "published": "2026-11-23T12:16:20+00:00",
+   "title": "Fornecedores de inferência de IA falharam na deteção de hacking e roubo de prompts, diz Dragos",
+   "summary": "A empresa Dragos detetou intrusões que não tinham sido identificadas em três fornecedores de serviços de inteligência artificial baseados em inferência. A descoberta ocorreu após o envio de quase dois milhões de prompts para os referidos serviços de IA. O incidente demonstra falhas na capacidade destas plataformas detetarem acessos não autorizados e roubo de dados.",
+   "image": null,
+   "points": [
+    "Quem: A Dragos e três fornecedores de inferência de IA.",
+    "O quê: Deteção de intrusões não identificadas após testes com dois milhões de prompts.",
+    "Como: Através da análise e envio massivo de pedidos para os serviços de IA.",
+    "Impacto: Revelação de lacunas graves na deteção de ciberataques por parte dos fornecedores."
+   ],
+   "title_original": "AI Inference Providers Failed to Detect Hacking and Prompt Theft, Says Dragos",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia a vulnerabilidade dos prestadores de serviços de IA perante intrusões e o roubo de dados.",
+   "todo": "Implemente sistemas de monitorização rigorosos e auditorias de segurança contínuas nas plataformas e APIs de inteligência artificial."
+  },
   {
    "id": "271b7cc1e2032100",
    "source": "SAPO Tek",
@@ -13698,75 +13768,6 @@
    "enriched": true,
    "why": "Evidencia constrangimentos logísticos e operacionais decorrentes de falhas em redes críticas.",
    "todo": ""
-  },
-  {
-   "id": "072c66d8c3e51662",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/zyxel-security-advisory-av26-1167",
-   "published": "2026-11-17T16:20:00+00:00",
-   "title": "Aviso de segurança Zyxel (AV26-1167)",
-   "summary": "Foram detetadas vulnerabilidades de escrita fora de limites e de injeção de comandos pós-autenticação em vários produtos Zyxel. Os modelos afetados incluem os routers e extensores DX3300-T0, DX3301-T0 e EX3301-T0 com versões de firmware específicas. O Centro Cibernético insta os administradores a verificarem os avisos e a aplicarem as correções disponíveis. O impacto afeta a integridade e segurança de dispositivos de rede CPE e ONTs.",
-   "image": null,
-   "points": [
-    "Dispositivos Zyxel afetados por falhas de escrita fora de limites e injeção de comandos.",
-    "Os modelos impactados incluem as séries DX3300-T0, DX3301-T0 e EX3301-T0.",
-    "O Centro Cibernético recomenda a consulta de avisos e a atualização de firmware.",
-    "O impacto deixa os equipamentos de rede vulneráveis a explorações maliciosas."
-   ],
-   "title_original": "Zyxel security advisory (AV26-1167)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Protege os equipamentos de rede contra ataques remotos que exploram falhas de firmware.",
-   "todo": "Verifique a versão do firmware dos seus equipamentos Zyxel e atualize para uma versão superior à afetada."
-  },
-  {
-   "id": "fefdba50a8b539d6",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/17/hackers-smash-n-grab-ai-vendor-take-off-with-license-data-of-uber-drivers/5310464",
-   "published": "2026-11-17T16:15:00+00:00",
-   "title": "Piratas informáticos atacam fornecedor de IA e roubam dados de licenças de condutores da Uber",
-   "summary": "Piratas informáticos invadiram um fornecedor de IA da Uber, comprometendo dados pessoais de quase 150.000 pessoas, incluindo imagens e números de cartas de condução, moradas e datas de nascimento. O fornecedor afetado foi a Fireworks AI, que sofreu múltiplos incidentes de segurança após atacantes utilizarem credenciais legítimas sem disparar alarmes. A Uber cortou o acesso aos dados assim que foi alertada, revogando as credenciais associadas. O impacto afetou também outras empresas clientes da Fireworks AI, como a Notion.",
-   "image": "https://image.theregister.com/?imageId=5310468&width=800",
-   "points": [
-    "Quase 150.000 pessoas tiveram dados de cartas de condução expostos num ataque à Fireworks AI.",
-    "Os atacantes usaram credenciais legítimas, contornando os sistemas de monitorização.",
-    "A Uber revogou o acesso do fornecedor e investigou o incidente.",
-    "Outras empresas, como a Notion, também foram afetadas pela violação no mesmo fornecedor."
-   ],
-   "title_original": "Hackers smash 'n' grab AI vendor: Take off with license data of Uber drivers",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Revela os riscos de segurança associados a fornecedores terceiros e ao uso de credenciais legítimas comprometidas.",
-   "todo": "Audite regularmente os acessos e a segurança dos fornecedores externos que partilham dados com a sua empresa."
-  },
-  {
-   "id": "669e38d056a01398",
-   "source": "Cybersecurity Dive",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cybersecuritydive.com/news/healthcare-ai-cybersecurity-monitoring/874902/",
-   "published": "2026-11-17T16:03:24+00:00",
-   "title": "Empresas de saúde falham na monitorização de ferramentas de IA, enquanto a IA sombra gera violações",
-   "summary": "O setor da saúde tem adotado novas tecnologias de inteligência artificial, mas as equipas de segurança encontram-se sobrecarregadas para monitorizar todas as ferramentas utilizadas. Esta falta de supervisão tem dado origem ao fenómeno da IA sombra, que já está a provocar violações de segurança. O impacto traduz-se num risco acrescido de exposição de dados sensíveis de saúde devido ao uso não gerido destas tecnologias. As organizações enfrentam dificuldades em acompanhar o ritmo da inovação tecnológica com os recursos atuais.",
-   "image": "https://imgproxy.divecdn.com/nEGabtuozs5h9xOTMQjgaEsiKXoGJ4v3doMXVGBX688/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMzAwMTczMTY2LmpwZw==.webp",
-   "points": [
-    "O setor da saúde adota IA rapidamente sem monitorização adequada.",
-    "As equipas de segurança estão sobrecarregadas e não conseguem supervisionar todas as ferramentas.",
-    "A proliferação de IA sombra está a causar violações de dados.",
-    "O impacto resulta na exposição potencial de informações sensíveis devido ao uso descoberto de tecnologias."
-   ],
-   "title_original": "Healthcare firms fail to monitor AI tools, even as shadow AI begins leading to breaches",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Alerta para os perigos da utilização não controlada de ferramentas de IA nas organizações.",
-   "todo": "Implemente uma política clara de utilização de IA e descubra ferramentas não autorizadas usadas pelos colaboradores (IA sombra)."
   }
  ]
 }

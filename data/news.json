@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T11:08:08.925296+00:00",
+ "updated": "2026-11-23T11:26:22.522604+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 3
+   "added": 2
   },
   {
    "source": "TugaTech",
@@ -104,7 +104,7 @@
   {
    "source": "CyberScoop",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Cybersecurity Dive",
@@ -129,7 +129,7 @@
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 8
+   "added": 9
   },
   {
    "source": "Schneier on Security",
@@ -138,8 +138,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 3
   },
   {
    "source": "DataBreaches.net",
@@ -204,7 +204,7 @@
   {
    "source": "Rapid7",
    "ok": true,
-   "added": 6
+   "added": 7
   },
   {
    "source": "Tenable",
@@ -234,7 +234,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 20
+   "added": 19
   },
   {
    "source": "The Register Security",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Security Affairs",
@@ -309,14 +309,83 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 241,
-  "unenriched": 93,
+  "done": 108,
+  "pending": 254,
+  "unenriched": 109,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting property name enclosed in double quotes: line 18 column 5 (char 1448)"
   ]
  },
  "items": [
+  {
+   "id": "f1ae0c7fa7174d23",
+   "source": "CyberScoop",
+   "region": "US",
+   "lang": "en",
+   "link": "https://cyberscoop.com/finding-software-vulnerability-with-ai-wordpress-patchstack/",
+   "published": "2026-11-23T11:00:00+00:00",
+   "title": "I’ve never hunted for a software vulnerability before. AI helped me find one in six hours.",
+   "summary": "Um repórter sem grandes conhecimentos técnicos utilizou ferramentas de inteligência artificial para descobrir e reportar uma vulnerabilidade de segurança num plugin do WordPress em apenas seis horas. A falha descoberta, validada posteriormente por terceiros, recebeu a designação CVE-2026-124251. Este caso demonstra como a barreira para a descoberta de bugs de software diminuiu drasticamente com o recurso a LLMs acessíveis a qualquer pessoa.",
+   "image": "https://cyberscoop.com/wp-content/uploads/sites/3/2026/11/image-1.png?w=1024",
+   "points": [
+    "Um repórter sem experiência encontrou uma vulnerabilidade usando IA.",
+    "O processo demorou apenas seis horas com ferramentas gratuitas.",
+    "A falha afetou um plugin do WordPress com mais de 40.000 instalações.",
+    "A vulnerabilidade foi validada e recebeu o identificador CVE-2026-124251."
+   ],
+   "title_original": "I’ve never hunted for a software vulnerability before. AI helped me find one in six hours.",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como a inteligência artificial reduziu a barreira técnica para encontrar falhas de segurança.",
+   "todo": "Mantenha todos os plugins do WordPress e softwares atualizados com as versões mais recentes."
+  },
+  {
+   "id": "1cfea13344026141",
+   "source": "CyberScoop",
+   "region": "US",
+   "lang": "en",
+   "link": "https://cyberscoop.com/wpide-csrf-vulnerability-cve-2026-124251/",
+   "published": "2026-11-23T11:00:00+00:00",
+   "title": "WPIDE ≤ 3.6.4 — CVE-2026-124251",
+   "summary": "Uma falha de segurança crítica no plugin WPIDE para WordPress permite que atacantes não autenticados executem código remotamente através de um ataque CSRF. O problema surge porque a correção anterior implementada pelo fabricante continha uma validação de segurança demasiado restrita que ignorava vários submenus do plugin. Um atacante pode explorar esta falha para manipular um administrador autenticado e executar código PHP malicioso no servidor.",
+   "image": "https://cyberscoop.com/wp-content/uploads/sites/3/2026/11/ray-so-export-1.jpg?w=1024",
+   "points": [
+    "O plugin WPIDE continha uma falha de validação CSRF nas versões 3.6.0 a 3.6.4.",
+    "Atacantes não autenticados podiam explorar a falha através de um administrador logado.",
+    "A vulnerabilidade permitia a execução remota de código PHP malicioso.",
+    "A falha foi corrigida na versão 3.6.5 do plugin."
+   ],
+   "title_original": "WPIDE ≤ 3.6.4 — CSRF Nonce Bypass Leading to Unauthenticated RCE (CVE-2026-124251)",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes assumam o controlo de servidores através de sites WordPress vulneráveis.",
+   "todo": "Atualize imediatamente o plugin WPIDE para a versão 3.6.5 ou posterior."
+  },
+  {
+   "id": "c82dcfbd0de1cf61",
+   "source": "WIRED Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.wired.com/story/states-sue-spacex-over-grok-deepfakes/",
+   "published": "2026-11-23T11:00:00+00:00",
+   "title": "States Sue SpaceX Over Grok Deepfakes",
+   "summary": "Os procuradores-gerais de dois estados norte-americanos processaram várias empresas ligadas a Elon Musk devido a falhas de segurança graves. A ação judicial alega que as ferramentas implementadas continham controlos insuficientes para evitar a geração de imagens sexualizadas falsas de pessoas reais, incluindo menores. O impacto afeta a proteção da privacidade e a prevenção de abusos gerados por inteligência artificial.",
+   "image": "https://media.wired.com/photos/6b00c213fb286bb31d23bec0/master/pass/Security_Virginia%20and%20Oregon%20Sue%20Grok%20Over%20Nonconsensual%20Intimate%20Imagery_v1.jpg",
+   "points": [
+    "Os estados de Oregon e Virgínia processaram empresas de Elon Musk.",
+    "O processo acusa as empresas de falta de salvaguardas contra deepfakes sexuais.",
+    "As imagens geradas afetavam pessoas reais, incluindo crianças."
+   ],
+   "title_original": "States Sue SpaceX Over Grok Deepfakes",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia os riscos legais e éticos associados à falta de restrições em ferramentas de IA generativa.",
+   "todo": ""
+  },
   {
    "id": "ade3122cc9bd6da8",
    "source": "Help Net Security",
@@ -13705,75 +13774,6 @@
    "enriched": true,
    "why": "Importa porque mostra como os fluxos de código de dispositivo em ferramentas de IA podem ser abusados após um ataque de engenharia social.",
    "todo": "Desconfia de pedidos de código de dispositivo não solicitados e limita as permissões e funcionalidades de controlo remoto em ferramentas de IA."
-  },
-  {
-   "id": "06d3575971b3282f",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/17/ma-andover-withholds-cyberattack-alerts-four-internal-reviews/",
-   "published": "2026-11-17T14:57:59+00:00",
-   "title": "MA: Andover Withholds Cyberattack Alerts, Four Internal Reviews",
-   "summary": "A cidade de Andover identificou cerca de 13 alertas e incidentes relacionados com um ciberataque ocorrido em agosto, mas optou por reter a informação enquanto decorre a investigação. Foram também divulgadas cadeias de e-mails e relatórios preliminares de revisão interna sobre o sucedido. O impacto prende-se com a transparência e a gestão da comunicação pública do incidente.",
-   "image": null,
-   "points": [
-    "Cidade de Andover retém detalhes de ciberataque de agosto.",
-    "Identificados 13 alertas e vários relatórios internos.",
-    "Decisão tomada no âmbito de investigações em curso.",
-    "Pedidos de registos públicos revelam trocas de e-mails sobre o caso."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa para ilustrar os desafios na gestão de transparência e divulgação de informação durante investigações de incidentes municipais.",
-   "todo": ""
-  },
-  {
-   "id": "76496683beb3cb8e",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/market-research-giant-ipsos-investigating-breach-of-internal-system/",
-   "published": "2026-11-17T14:55:30+00:00",
-   "title": "Market Research Giant Ipsos Investigating Breach of Internal System",
-   "summary": "A empresa de estudos de mercado Ipsos tornou público que está a investigar uma violação de segurança num sistema interno. O anúncio ocorreu cinco dias depois de a empresa ter apresentado uma queixa formal junto das autoridades competentes. O impacto centra-se na potencial exposição de dados internos devido à intrusão.",
-   "image": null,
-   "points": [
-    "Ipsos investiga incidente num sistema interno.",
-    "Empresa tornou o caso público após cinco dias da queixa.",
-    "Autoridades foram notificadas do sucedido.",
-    "Detalhes sobre a natureza exata da violação ainda sob investigação."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa por evidenciar que grandes empresas de estudos de mercado são alvo de incidentes de segurança nos seus sistemas.",
-   "todo": "Garante a monitorização contínua de sistemas internos e reporta incidentes às autoridades competentes de forma célere."
-  },
-  {
-   "id": "4f7cda8e754c7914",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203324/security/fridge-controller-attacks-researchers-find-six-zero-days-in-an-hour.html",
-   "published": "2026-11-17T14:41:36+00:00",
-   "title": "Fridge Controller Attacks: Researchers Find Six Zero-Days in an Hour",
-   "summary": "Investigadores descobriram seis vulnerabilidades zero-day de execução remota de código em controladores de refrigeração Danfoss AK-SM800A em menos de uma hora de análise. Controladores expostos à internet na Europa têm sido explorados desde outubro, provocando estragos avultados em alimentos e incêndios. O impacto inclui a falha de sistemas de frio e danos materiais significativos.",
-   "image": null,
-   "points": [
-    "Seis falhas zero-day descobertas em controladores Danfoss.",
-    "Vulnerabilidades de overflow exploradas sem necessidade de login.",
-    "Ataques na Europa estragam alimentos e causam incêndios.",
-    "Recomendação clara para retirar estes dispositivos da internet."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque demonstra o perigo crítico da exposição de sistemas industriais e de refrigeração à internet sem proteção.",
-   "todo": "Desliga imediatamente os controladores de refrigeração expostos diretamente à internet e aplica atualizações quando disponíveis."
   }
  ]
 }

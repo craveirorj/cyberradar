@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T09:47:15.239300+00:00",
+ "updated": "2026-11-23T10:07:12.525905+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -129,7 +129,7 @@
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 9
+   "added": 8
   },
   {
    "source": "Schneier on Security",
@@ -234,7 +234,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 22
+   "added": 21
   },
   {
    "source": "The Register Security",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -263,8 +263,8 @@
   },
   {
    "source": "Graham Cluley",
-   "ok": true,
-   "added": 3
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "HackRead",
@@ -310,13 +310,57 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 238,
-  "unenriched": 96,
+  "pending": 234,
+  "unenriched": 92,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "505be551115bc962",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/critical-cisco-expressway-flaw/",
+   "published": "2026-11-23T10:00:00+00:00",
+   "title": "Falha crítica no Cisco Expressway explorada em ataques",
+   "summary": "Investigadores alertam que a vulnerabilidade CVE-2026-76466, com uma pontuação CVSS de 9.8, está a ser ativamente explorada por atacantes. O impacto decorre da gravidade da falha, permitindo a exploração de sistemas afetados. Nomes de investigadores e detalhes adicionais de vítimas não foram especificados no texto.",
+   "image": null,
+   "points": [
+    "Vulnerabilidade CVE-2026-76466 identificada no Cisco Expressway.",
+    "Pontuação CVSS de 9.8 indica criticidade máxima.",
+    "A falha está a ser ativamente explorada em ataques no terreno."
+   ],
+   "title_original": "Critical Cisco Expressway Flaw Exploited in Attacks",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A exploração ativa de uma vulnerabilidade com pontuação máxima representa um risco iminente de compromisso para as organizações que utilizam o equipamento.",
+   "todo": "Atualize o software do Cisco Expressway para a versão corrigida mais recente disponibilizada pelo fabricante."
+  },
+  {
+   "id": "a2d48fff9151fd27",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203794/intelligence/bulgaria-discovers-massive-government-breach-after-five-years-of-undetected-spying.html",
+   "published": "2026-11-23T09:46:56+00:00",
+   "title": "Bulgária descobre enorme violação governamental após cinco anos de espionagem não detetada",
+   "summary": "A Bulgária descobriu uma operação de ciberespionagem em curso desde 2021 que resultou no descarregamento de mais de 130 GB de documentos governamentais. A intrusão só foi detetada após a implementação de um novo sistema nacional de monitorização de cibersegurança em agosto, embora não existam provas de compromisso de dados pessoais de cidadãos. Vários grupos internacionais de hackers estiveram envolvidos, mas a autoria exata e o impacto total continuam por apurar.",
+   "image": null,
+   "points": [
+    "Campanha de ciberespionagem ativa na Bulgária desde 2021 detetada em agosto.",
+    "Mais de 130 GB de documentos governamentais foram roubados por grupos internacionais.",
+    "A deteção só foi possível com a introdução de um novo sistema nacional de monitorização."
+   ],
+   "title_original": "Bulgaria Discovers Massive Government Breach After Five Years of Undetected Spying",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia como a ausência de monitorização interna em redes governamentais pode permitir que intrusões persistentes passem despercebidas durante anos.",
+   "todo": "Implemente ferramentas robustas de monitorização e deteção de intrusões em tempo real nas redes organizacionais."
+  },
   {
    "id": "c52ec4f9aa5798e1",
    "source": "Infosecurity Magazine",
@@ -13730,52 +13774,6 @@
    "enriched": true,
    "why": "Disponibiliza mecanismos de controlo necessários para conter comportamentos indesejados em agentes de inteligência artificial.",
    "todo": "Definir limites rigorosos e barreiras de contenção (guardrails) para qualquer assistente ou agente de IA em ambiente de trabalho."
-  },
-  {
-   "id": "054aa61d197206d0",
-   "source": "CyberScoop",
-   "region": "US",
-   "lang": "en",
-   "link": "https://cyberscoop.com/pakistani-hackers-defense-workers-fake-job-sites/",
-   "published": "2026-11-17T14:00:00+00:00",
-   "title": "Piratas informáticos do Paquistão espionam trabalhadores da defesa através de sites de emprego falsos",
-   "summary": "Um grupo de piratas informáticos alegadamente alinhado com o governo paquistanês, conhecido como SpaceCobra ou Cosmic Leopard, tem visado contratados de defesa e militares indianos através de uma campanha de ciberespionagem. Os atacantes utilizaram sites de emprego falsos e altamente detalhados, que incluíam logótipos de grandes empresas globais de defesa, para enganar as vítimas e levá-las a instalar o spyware GravityRAT. O impacto consiste no roubo de dados pessoais, registos de chamadas, mensagens e contactos, com potencial para atingir o setor da defesa a nível global.",
-   "image": null,
-   "points": [
-    "Atacantes associados ao Paquistão visaram pessoal militar e da defesa com sites de emprego falsos.",
-    "A campanha utiliza o malware GravityRAT para infetar dispositivos móveis e computadores.",
-    "Os sites falsos exibiam logótipos de multinacionais da defesa para ganhar credibilidade.",
-    "O spyware consegue roubar diretórios de contactos, registos de chamadas e mensagens do WhatsApp."
-   ],
-   "title_original": "Pakistani hackers are spying on defense workers with fake job sites",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Alerta para campanhas de engenharia social altamente elaboradas direcionadas a setores estratégicos como a defesa.",
-   "todo": "Verificar a autenticidade de portais de emprego e evitar transferir aplicações ou ficheiros de fontes não oficiais."
-  },
-  {
-   "id": "f2cd3341b495386e",
-   "source": "Google Threat Intelligence",
-   "region": "US",
-   "lang": "en",
-   "link": "https://cloud.google.com/blog/topics/threat-intelligence/cold-relic-a-case-study-in-impersonation-and-compromise/",
-   "published": "2026-11-17T14:00:00+00:00",
-   "title": "COLD RELIC: Um estudo de caso sobre impersonação e compromisso",
-   "summary": "Investigações da Mandiant revelaram como o grupo estatal russo COLD RELIC (também conhecido como COLDRIVER, Star Blizzard ou Callisto) reutiliza compromissos na cloud para alimentar novas intrusões e espionagem contra alvos de alto valor na Europa e América do Norte. O grupo utiliza campanhas sofisticadas de phishing e dados roubados de contactos corporativos para se fantasiar de fontes fidedignas junto de subsequentes vítimas. O impacto reflete-se na exploração contínua de identidades e redes profissionais e governamentais para espionagem estratégica.",
-   "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Figure_2_Redacted_LLM-generated_depiction_.max-1000x1000.png",
-   "points": [
-    "O grupo de espionagem russo COLD RELIC reutiliza dados de acessos comprometidos para novos ataques.",
-    "Os atacantes fazem-se passar por contactos legítimos utilizando dados e emails roubados.",
-    "O alvo principal inclui funcionários governamentais, ONGs e contratados de defesa.",
-    "As campanhas combinam phishing avançado, proxies residenciais e abuso de identidades na cloud."
-   ],
-   "title_original": "COLD RELIC: A Case Study in Impersonation and Compromise",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Descreve táticas sofisticadas de engenharia social baseadas em redes de contactos reais usadas por grupos estatais.",
-   "todo": "Utilizar autenticação resistente a phishing (como chaves FIDO2) e validar cuidadosamente pedidos de contactos através de canais alternativos."
   }
  ]
 }

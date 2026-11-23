@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T09:07:08.179259+00:00",
+ "updated": "2026-11-23T09:26:49.440116+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -44,7 +44,7 @@
   {
    "source": "Canaltech Segurança",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Tecnoblog Segurança",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -239,12 +239,12 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 11
+   "added": 10
   },
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Security Affairs",
@@ -263,8 +263,8 @@
   },
   {
    "source": "Graham Cluley",
-   "ok": true,
-   "added": 3
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "HackRead",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -309,14 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 237,
-  "unenriched": 99,
+  "done": 36,
+  "pending": 315,
+  "unenriched": 177,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "d0dd2916cf583a59",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/",
+   "published": "2026-11-23T09:11:15+00:00",
+   "title": "Microsoft confirms Windows printing issues affecting Forcepoint users",
+   "summary": "A Microsoft confirmou problemas de impressão em sistemas que utilizam o software Forcepoint DLP, após a instalação do hotpatch KB5132043 do Windows 11 lançado em novembro de 2026. A falha afeta o funcionamento normal da impressão nestes dispositivos corporativos. O impacto restringe-se aos utilizadores que combinam o sistema operativo da Microsoft com a solução da Forcepoint.",
+   "image": null,
+   "points": [
+    "A Microsoft confirmou problemas de impressão no Windows 11.",
+    "A falha afeta sistemas com o software Forcepoint DLP instalado.",
+    "O problema surgiu após a aplicação do hotpatch KB5132043 de novembro de 2026."
+   ],
+   "title_original": "Microsoft confirms Windows printing issues affecting Forcepoint users",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Afeta a capacidade de impressão em computadores empresariais que utilizam software de segurança específico.",
+   "todo": "Acompanhe os comunicados da Microsoft para obter uma correção oficial para o hotpatch afetado."
+  },
   {
    "id": "939cb25ec4735328",
    "source": "Canaltech Segurança",
@@ -356,9 +380,9 @@
     "Como: Restrições contra a leitura de ecrãs por ferramentas como a Siri e o Gemini.",
     "Impacto: Proteção da privacidade dos utilizadores contra fugas de dados."
    ],
-   "title_original": "Signal blocks AI assistants from peeking at your private messages",
+   "title_original": null,
    "category": "Ataque/APT",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Impede que assistentes de inteligência artificial acedam indevidamente a dados confidenciais de conversas privadas.",
    "todo": "Reveja as permissões dos assistentes virtuais no seu telemóvel e desative o acesso ao ecrã por parte de ferramentas de IA."
@@ -379,9 +403,9 @@
     "Como: Erros em atualizações, sistemas antiquados e falhas de configuração.",
     "Impacto: Interrupções globais e indisponibilidade de serviços essenciais."
    ],
-   "title_original": "When Microsoft, Apple, and the FAA can't keep it up, it's a system of a down",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Demonstra a vulnerabilidade de infraestruturas tecnológicas críticas a falhas operacionais e atualizações defeituosas.",
    "todo": "Implemente testes rigorosos antes de aplicar atualizações e modernize sistemas informáticos obsoletos."
@@ -425,9 +449,9 @@
     "Como: Exploração de ativos de tecnologias de informação e comunicação.",
     "Impacto: Transações financeiras não autorizadas e roubo de fundos."
    ],
-   "title_original": "AI-Assisted Cyberattacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms",
+   "title_original": null,
    "category": "IA",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Alerta para o uso malicioso de inteligência artificial em ataques direcionados ao setor bancário.",
    "todo": "Reforce os mecanismos de autenticação multifator e monitorize em tempo real transações financeiras anómalas."
@@ -13753,29 +13777,6 @@
    "enriched": true,
    "why": "Ajuda as empresas a focar os esforços de correção nas vulnerabilidades que representam um risco real de exploração.",
    "todo": "Dar prioridade à correção de vulnerabilidades com provas ativas de exploração e integrar ferramentas automatizadas de triagem."
-  },
-  {
-   "id": "015adde8a0d91da6",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/optimizely-hack-malware-178-orgs/",
-   "published": "2026-11-17T13:45:00+00:00",
-   "title": "Falha no Optimizely explorada para injetar código malicioso em visitantes de 178 organizações",
-   "summary": "Um atacante tirou partido de uma vulnerabilidade na plataforma Optimizely para comprometer vários websites. O incidente resultou na colocação de código malicioso nas páginas de 178 organizações diferentes. Esta ação afetou diretamente os utilizadores que visitaram os sites visados durante o ataque.",
-   "image": null,
-   "points": [
-    "Um atacante abusou de uma falha na plataforma Optimizely.",
-    "Foram instalados códigos maliciosos em websites corporativos.",
-    "A ação afetou os sites de 178 organizações distintas.",
-    "Os visitantes das páginas infetadas ficaram expostos à ameaça."
-   ],
-   "title_original": "Optimizely Flaw Exploited to Serve Malicious Code to Visitors of 178 Organizations",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Compromete a confiança dos clientes e expõe os visitantes de sites legítimos a ameaças informáticas.",
-   "todo": "Garanta que os serviços de terceiros e plataformas web utilizados estão devidamente atualizados e monitorizados."
   }
  ]
 }

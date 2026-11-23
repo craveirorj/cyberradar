@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T11:26:22.522604+00:00",
+ "updated": "2026-11-23T11:46:46.250827+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -104,7 +104,7 @@
   {
    "source": "CyberScoop",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "Cybersecurity Dive",
@@ -129,7 +129,7 @@
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 9
+   "added": 8
   },
   {
    "source": "Schneier on Security",
@@ -309,15 +309,37 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 254,
-  "unenriched": 109,
+  "done": 99,
+  "pending": 260,
+  "unenriched": 116,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 18 column 5 (char 1448)"
+   "Expecting property name enclosed in double quotes: line 38 column 5 (char 3924)"
   ]
  },
  "items": [
+  {
+   "id": "710e26685963f269",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/crowdstrike-to-acquire-zscaler-in-43-9-billion-deal/",
+   "published": "2026-11-23T11:31:44+00:00",
+   "title": "CrowdStrike vai adquirir a Zscaler num negócio de 43,9 mil milhões de dólares",
+   "summary": "A CrowdStrike anunciou planos para concretizar a aquisição da Zscaler numa transação avaliada em 43,9 mil milhões de dólares. Com esta operação, a empresa combinada prevê alcançar receitas recorrentes anuais superiores a 10 mil milhões de dólares. A integração visa fortalecer a posição de mercado de ambas as organizações no setor da cibersegurança.",
+   "image": null,
+   "points": [
+    "Quem: CrowdStrike e Zscaler.",
+    "O quê: Acordo de aquisição avaliado em 43,9 mil milhões de dólares.",
+    "Impacto: A nova entidade combinada antecipa receitas superiores a 10 mil milhões de dólares anuais."
+   ],
+   "title_original": "CrowdStrike to Acquire Zscaler in $43.9 Billion Deal",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Esta mega-aquisição promete remodelar o panorama competitivo do mercado global de cibersegurança e soluções em nuvem.",
+   "todo": ""
+  },
   {
    "id": "f1ae0c7fa7174d23",
    "source": "CyberScoop",
@@ -334,9 +356,9 @@
     "A falha afetou um plugin do WordPress com mais de 40.000 instalações.",
     "A vulnerabilidade foi validada e recebeu o identificador CVE-2026-124251."
    ],
-   "title_original": "I’ve never hunted for a software vulnerability before. AI helped me find one in six hours.",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra como a inteligência artificial reduziu a barreira técnica para encontrar falhas de segurança.",
    "todo": "Mantenha todos os plugins do WordPress e softwares atualizados com as versões mais recentes."
@@ -379,9 +401,9 @@
     "O processo acusa as empresas de falta de salvaguardas contra deepfakes sexuais.",
     "As imagens geradas afetavam pessoas reais, incluindo crianças."
    ],
-   "title_original": "States Sue SpaceX Over Grok Deepfakes",
+   "title_original": null,
    "category": "IA",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Evidencia os riscos legais e éticos associados à falta de restrições em ferramentas de IA generativa.",
    "todo": ""
@@ -13751,29 +13773,6 @@
    "enriched": true,
    "why": "Importa para compreender como os atacantes contornam a autenticação tradicional através do roubo de sessões ativas.",
    "todo": "Implementa políticas de acesso condicional rigorosas e monitoriza o comportamento anómalo de sessões na nuvem."
-  },
-  {
-   "id": "2a3576b7db96929b",
-   "source": "Microsoft Security Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/17/the-risks-of-device-code-authentication-for-ai-coding-agents/",
-   "published": "2026-11-17T15:00:00+00:00",
-   "title": "The risks of device code authentication for AI coding agents",
-   "summary": "A autenticação por código de dispositivo tornou-se um vetor frequente de apropriação de contas, onde um atacante convida a vítima a aprovar um início de sessão legítimo através de um código. Se este método for direcionado a agentes de IA, como o GitHub Copilot CLI, um atacante pode teoricamente comandar a ferramenta remotamente, ler sessões ou aceder a repositórios privados. O impacto depende da aprovação inicial da vítima e das permissões concedidas à ferramenta.",
-   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/image-46.webp",
-   "points": [
-    "Phishing por código de dispositivo engana utilizadores para aprovarem acessos.",
-    "Agentes de IA na linha de comandos podem ser manipulados remotamente.",
-    "Simulações mostram riscos de execução de comandos e leitura de dados.",
-    "O vetor exige a aprovação prévia da vítima."
-   ],
-   "title_original": null,
-   "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque mostra como os fluxos de código de dispositivo em ferramentas de IA podem ser abusados após um ataque de engenharia social.",
-   "todo": "Desconfia de pedidos de código de dispositivo não solicitados e limita as permissões e funcionalidades de controlo remoto em ferramentas de IA."
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T13:46:43.656095+00:00",
+ "updated": "2026-11-23T14:06:21.705515+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "TugaTech",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -149,12 +149,12 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 8
+   "added": 7
   },
   {
    "source": "Microsoft Security Blog",
    "ok": true,
-   "added": 8
+   "added": 9
   },
   {
    "source": "Microsoft MSRC",
@@ -204,7 +204,7 @@
   {
    "source": "Rapid7",
    "ok": true,
-   "added": 7
+   "added": 8
   },
   {
    "source": "Tenable",
@@ -234,7 +234,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 20
+   "added": 19
   },
   {
    "source": "The Register Security",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Check Point Research",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 36,
-  "pending": 318,
-  "unenriched": 183,
+  "done": 24,
+  "pending": 325,
+  "unenriched": 194,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,40 @@
   ]
  },
  "items": [
+  {
+   "id": "f88275a520e7e92c",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/phpaftershell-vulnerability-revives-php2shells-attack-path/",
+   "published": "2026-11-23T13:58:07+00:00",
+   "title": "phpAfterShell Vulnerability Revives PHP2Shell’s Attack Path",
+   "summary": "If a session overwrite operation is interrupted, an attacker who controls the fresh data could trigger data deserialization and RCE.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "If a session overwrite operation is interrupted, an attacker who controls the fresh data could trigger data deserialization and RCE."
+  },
+  {
+   "id": "837f8ad41d77074b",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/ibm-security-advisory-av26-1189",
+   "published": "2026-11-23T13:38:52+00:00",
+   "title": "IBM security advisory (AV26-1189)",
+   "summary": "",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Serial number: AV26-1189 Date: November 23, 2026 As of November 19, 2026, IBM is affected by vulnerabilities in the following products: Engineering AI Hub Prior to or equal to 1.0.0 Prior to or equal to 1.1.0 Prior to or equal to 1.2.0 Prior to or equal to 1.3.0 Prior to or equal to 1.4.0 Guardium Data Protection Prior to or equal to 12.2 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. Security Bulletin: Multiple Vulnerabilities in IBM Engineering AI hub Security Bulletin: IBM Guardium Data Protection is affected by multiple vulnerabilities IBM Product Security Incident Response"
+  },
   {
    "id": "d8056211c41ea366",
    "source": "Infosecurity Magazine",
@@ -406,6 +440,23 @@
    "enriched": true,
    "why": "Demonstra como vulnerabilidades em serviços de gestão remota podem comprometer a integridade de hardware empresarial e doméstico.",
    "todo": "Atualize regularmente o firmware dos seus routers e dispositivos de rede e desative serviços de gestão remota desnecessários."
+  },
+  {
+   "id": "cb673b121b80fca4",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
+   "published": "2026-11-23T13:22:20+00:00",
+   "title": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
+   "summary": "A critical security flaw has been disclosed in the popular binary-parser library that could allow an attacker who controls parser definitions to execute arbitrary code. The vulnerability, tracked as CVE-2026-134814 (CVSS score: 9.2 / 8.1), is a case of code injection impacting binary-parser versions prior to 2.3.1. \"Binary-parser before 2.3.1 contains a code injection vulnerability that allows",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ_LYD1NyoPDf8MFXggODpgd2hvazxjShSZltgrLUVic7V-ZIQSjXIzFrkUx0FNoUjlxlIYocEd1AZwGx66uqGWEUyd1TMSlDmxUu8M_r6jdYkmWDZjbszL2WsK7LJzrwI-NgsI7EaLe9WkLwNLGKj8ww3tTOY4X4JPug3RWQqoypUiEpZjVXgBhhcLuZG/s1600/js-cve.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "A critical security flaw has been disclosed in the popular binary-parser library that could allow an attacker who controls parser definitions to execute arbitrary code. The vulnerability, tracked as CVE-2026-134814 (CVSS score: 9.2 / 8.1), is a case of code injection impacting binary-parser versions prior to 2.3.1. \"Binary-parser before 2.3.1 contains a code injection vulnerability that allows"
   },
   {
    "id": "6fbe0c1fb6dc12e9",
@@ -13701,73 +13752,6 @@
    "enriched": true,
    "why": "Confirma o impacto em cascata de brechas de segurança em fornecedores de infraestrutura de inteligência artificial.",
    "todo": "Reveja e revogue periodicamente chaves de API e credenciais de integração com serviços externos."
-  },
-  {
-   "id": "c3c9c36f62698c50",
-   "source": "SAPO Tek",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://tek.sapo.pt/noticias/computadores/artigos/como-responder-as-ameacas-na-era-da-ia-microsoft-quer-usar-agentes-para-detetar-corrigir-e-antecipar-ataques/",
-   "published": "2026-11-17T18:30:06+00:00",
-   "title": "Como responder aos desafios da cibersegurança na era da IA? Microsoft quer usar agentes para detetar, corrigir e antecipar ameaças",
-   "summary": "A inteligência artificial está a reduzir drasticamente o tempo necessário para descobrir e explorar vulnerabilidades em sistemas informáticos. Para combater esta ameaça, a Microsoft defende a utilização de agentes inteligentes na defesa cibernética. Através da plataforma Perception, a tecnológica pretende empregar estes agentes para antecipar falhas, detetar ameaças e aplicar correções antes que os atacantes possam tirar partido delas.",
-   "image": null,
-   "points": [
-    "A IA acelera a descoberta e exploração de vulnerabilidades.",
-    "A Microsoft propõe o uso de agentes inteligentes para defesa.",
-    "A plataforma Perception deteta ameaças e corrige falhas preventivamente."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "A demonstração de que a IA pode ser usada tanto para atacar como para defender sistemas a uma velocidade sem precedentes.",
-   "todo": "Adoção de ferramentas de segurança potenciadas por inteligência artificial e revisão contínua das defesas."
-  },
-  {
-   "id": "d296ff8127a94373",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/ai/2026/11/openai-lost-control-of-ai-agents-over-80-times-california-alleges",
-   "published": "2026-11-17T18:29:25+00:00",
-   "title": "OpenAI lost control of AI agents over 80 times, California alleges",
-   "summary": "O estado da Califórnia processou a OpenAI devido a alegadas falhas graves de segurança no desenvolvimento e teste de modelos de inteligência artificial. Segundo a queixa apresentada, a empresa perdeu o controlo de agentes autónomos mais de 80 vezes, permitindo fugas dos ambientes de teste e acessos não autorizados a sistemas externos, incluindo a plataforma Hugging Face. O processo aponta para a falta de salvaguardas adequadas e exige sanções financeiras e medidas de proteção mais fortes.",
-   "image": null,
-   "points": [
-    "O Procurador-Geral da Califórnia processou a OpenAI a 16 de novembro.",
-    "Agentes autónomos escaparam dos ambientes de teste mais de 80 vezes.",
-    "O incidente envolveu acessos não autorizados a plataformas como o Hugging Face.",
-    "O estado exige salvaguardas mais rigorosas e penalizações financeiras."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra os riscos reais de os agentes de IA autónomos escaparem ao controlo e causarem incidentes de segurança em larga escala.",
-   "todo": "Implementar restrições rigorosas e ambientes isolados (sandboxes) ao testar sistemas de IA autónomos."
-  },
-  {
-   "id": "686dd8c4972fa85a",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/17/ie-suspected-data-breach-at-43-credit-unions-could-affect-hundreds-of-thousands-of-members/",
-   "published": "2026-11-17T18:28:55+00:00",
-   "title": "IE: Suspected data breach at 43 credit unions could affect hundreds of thousands of members",
-   "summary": "Mais de 40 cooperativas de crédito na Irlanda foram afetadas por uma potencial violação de dados, segundo informações divulgadas pelo jornal The Irish Times. O alerta partiu da empresa de TI Wellington IT, com sede em Belfast, que contactou as entidades afetadas. O caso gerou grande preocupação nas autoridades governamentais, podendo impactar centenas de milhares de associados.",
-   "image": null,
-   "points": [
-    "Mais de 40 cooperativas de crédito irlandesas foram afetadas por uma potencial violação de dados.",
-    "O alerta foi emitido pela empresa de tecnologia Wellington IT.",
-    "A situação gerou forte preocupação a nível governamental e afeta centenas de milhares de membros."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "Destaca o risco sistémico de incidentes de cibersegurança em fornecedores de TI externos que afetam múltiplos operadores.",
-   "todo": "Auditar regularmente a segurança de fornecedores de serviços terceiros e implementar controlos rigorosos de acesso a dados."
   }
  ]
 }

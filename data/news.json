@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T16:24:59.290371+00:00",
+ "updated": "2026-11-23T16:46:51.694733+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -9,7 +9,7 @@
   {
    "source": "IT Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Pplware Segurança",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CISA Advisories",
@@ -69,7 +69,7 @@
   {
    "source": "CERT/CC (Carnegie Mellon)",
    "ok": true,
-   "added": 6
+   "added": 5
   },
   {
    "source": "MS-ISAC (CIS)",
@@ -104,7 +104,7 @@
   {
    "source": "CyberScoop",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Cybersecurity Dive",
@@ -114,12 +114,12 @@
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 2
+   "added": 3
   },
   {
    "source": "TechCrunch Security",
    "ok": true,
-   "added": 8
+   "added": 7
   },
   {
    "source": "Ars Technica Security",
@@ -143,8 +143,8 @@
   },
   {
    "source": "DataBreaches.net",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "Malwarebytes Labs",
@@ -164,7 +164,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "Cisco Talos",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 10
+   "added": 11
   },
   {
    "source": "Help Net Security",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 10
+   "added": 11
   },
   {
    "source": "ACSC Austrália",
@@ -310,12 +310,12 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 375,
-  "unenriched": 249,
+  "pending": 378,
+  "unenriched": 253,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)"
   ]
  },
  "items": [
@@ -2477,6 +2477,23 @@
    "enriched": true,
    "why": "Alerta para o uso de IA por atacantes para acelerar e automatizar a exploração de falhas críticas em infraestruturas empresariais.",
    "todo": "Aplique imediatamente as correções de segurança disponibilizadas pela Cisco para o Expressway e verifique sinais de intrusão."
+  },
+  {
+   "id": "2f1b51ccb5d12aef",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/news/crowdstrike-anuncia-aquisicao-da-zscaler-por-439-mil-milhoes-de-dolares",
+   "published": "2026-11-23T00:00:00+00:00",
+   "title": "CrowdStrike anuncia aquisição da Zscaler por 43,9 mil milhões de dólares",
+   "summary": "A operação, realizada exclusivamente através de ações, vai juntar duas das principais empresas de cibersegurança numa plataforma que combina proteção de endpoints, redes e zero trust. O negócio deverá estar concluído na segunda metade do ano fiscal de 2028 da CrowdStrike e dará origem a uma empresa com mais de dez mil milhões de dólares em receitas recorrentes anuais",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "A operação, realizada exclusivamente através de ações, vai juntar duas das principais empresas de cibersegurança numa plataforma que combina proteção de endpoints, redes e zero trust. O negócio deverá estar concluído na segunda metade do ano fiscal de 2028 da CrowdStrike e dará origem a uma empresa com mais de dez mil milhões de dólares em receitas recorrentes anuais"
   },
   {
    "id": "d9d2b8e7310259b0",
@@ -13548,29 +13565,6 @@
    "enriched": true,
    "why": "Um volume tão elevado de correções demonstra a vasta superfície de ataque presente no software empresarial atual.",
    "todo": "Consulte os boletins da Oracle e aplique as atualizações de segurança nos produtos afetados."
-  },
-  {
-   "id": "0656fa74d40ad0ce",
-   "source": "IT Security",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://www.itsecurity.pt/news/threats/google-alerta-para-ciberataques-automatizados-com-ia",
-   "published": "2026-11-18T00:00:00+00:00",
-   "title": "Google alerta para ciberataques automatizados com IA",
-   "summary": "A Google emitiu um aviso sobre uma nova vaga de ataques cibernéticos potenciados por inteligência artificial. Os cibercriminosos estão a utilizar ferramentas avançadas capazes de perpetrar ataques complexos em várias fases com intervenção humana quase nula. Isto eleva a sofisticação e a frequência das ameaças no panorama digital.",
-   "image": null,
-   "points": [
-    "Alerta emitido pela Google sobre IA e ciberataques.",
-    "Ferramentas executam ataques complexos em várias etapas.",
-    "Necessidade mínima de intervenção humana pelos atacantes.",
-    "Marca uma nova fase no cibercrime."
-   ],
-   "title_original": null,
-   "category": "Ataque/APT",
-   "translated": false,
-   "enriched": true,
-   "why": "A automação inteligente de ataques torna a deteção tradicional menos eficaz, exigindo defesas igualmente avançadas.",
-   "todo": "Adote soluções de segurança baseadas em IA e analítica comportamental para detetar anomalias complexas."
   }
  ]
 }

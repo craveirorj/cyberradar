@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T15:08:22.517836+00:00",
+ "updated": "2026-11-23T15:24:49.034547+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -129,7 +129,7 @@
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 8
+   "added": 9
   },
   {
    "source": "Schneier on Security",
@@ -164,7 +164,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "Cisco Talos",
@@ -199,7 +199,7 @@
   {
    "source": "Elastic Security Labs",
    "ok": true,
-   "added": 3
+   "added": 5
   },
   {
    "source": "Rapid7",
@@ -234,22 +234,22 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 19
+   "added": 18
   },
   {
    "source": "The Register Security",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 10
   },
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -279,7 +279,7 @@
   {
    "source": "Check Point Research",
    "ok": true,
-   "added": 4
+   "added": 5
   },
   {
    "source": "Securelist (Kaspersky)",
@@ -299,19 +299,19 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 17
+   "added": 15
   },
   {
    "source": "ACSC Austrália",
    "ok": false,
-   "error": "403 Client Error: Forbidden for url: https://www.cyber.gov.au/rss/alerts"
+   "error": "HTTPSConnectionPool(host='www.cyber.gov.au', port=443): Read timed out. (read timeout=25)"
   }
  ],
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 348,
-  "unenriched": 221,
+  "pending": 365,
+  "unenriched": 238,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,91 @@
   ]
  },
  "items": [
+  {
+   "id": "03c70569c66c49b0",
+   "source": "Check Point Research",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://research.checkpoint.com/2026/23rd-november-threat-intelligence-report/",
+   "published": "2026-11-23T15:16:27+00:00",
+   "title": "23rd November – Threat Intelligence Report",
+   "summary": "For the latest discoveries in cyber research for the week of 23rd November, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES The FBI has reportedly experienced a second cyber incident in recent months, this time targeting its National Crime Information Center (NCIC). The database shares records on fugitives, warrants, criminal histories, and missing […]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "For the latest discoveries in cyber research for the week of 23rd November, please download our Threat Intelligence Bulletin . TOP ATTACKS AND BREACHES The FBI has reportedly experienced a second cyber incident in recent months, this time targeting its National Crime Information Center (NCIC). The database shares records on fugitives, warrants, criminal histories, and missing persons among US law enforcement agencies. The attackers’ identities, entry method, and potential data exposure were not disclosed by the FBI. Japan’s RIKEN research institute, which operates one the world’s strongest supercomputers ‘Fugaku’, suspended operations after attackers breached its operations network and tampered with servers between November 10 and 13. The intrusion potentially exposed account information belonging to 4,597 users, including credentials that could provide access to external systems. The European Commission, the EU’s executive body, has suffered a cyberattack that disrupted internal systems for more than ten days. Affected services included payroll, health insurance, and translation systems. Officials claimed that they contained most of the disruption, and that the attack was assisted by AI tools. US-based cybersecurity and networking provider Infoblox has confirmed unauthorized access to company information through a compromised third-party data migration vendor. The breach reportedly involved sensitive customer data stored in a migration environment. Infoblox stated that its products and services were unaffected and did not disclose the number of customers impacted. AI THREATS Check Point Research has demonstrated how differences in capability between AI security filters and underlying language models can enable attackers to bypass safeguards. The analysis describes this"
+  },
+  {
+   "id": "0f976cf9e6b137ed",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/crowdstrike-to-acquire-zscaler/",
+   "published": "2026-11-23T15:15:00+00:00",
+   "title": "CrowdStrike to Acquire Zscaler in Record $44 Billion Deal",
+   "summary": "CrowdStrike's proposed $43.9bn acquisition of Zscaler would add network security capabilities to its portfolio and bring together two major cybersecurity platforms",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "CrowdStrike's proposed $43.9bn acquisition of Zscaler would add network security capabilities to its portfolio and bring together two major cybersecurity platforms"
+  },
+  {
+   "id": "87d207ebb620a975",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1192",
+   "published": "2026-11-23T15:11:22+00:00",
+   "title": "JetBrains security advisory (AV26-1192)",
+   "summary": "",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Serial number: AV26-1192 Date: November 23, 2026 As of November 19, 2026, JetBrains is affected by vulnerabilities in the following products: Junie Prior to 252.819.35 Prior to 253.819.35 Prior to 252.284.50 Prior to 251.284.50 Prior to 243.284.50 Junie CLI Prior to 26.11.2 Prior to 26.6.29 Junie GitHub Action Prior to 1.8.0 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. JetBrains Fixed Security Advisories JetBrains Security Bulletin"
+  },
+  {
+   "id": "ed11d95a721bf67d",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/",
+   "published": "2026-11-23T15:06:49+00:00",
+   "title": "N-able Patches Critical Flaw Disclosed After Mail Assure Cyberattack",
+   "summary": "The company has restored access to the affected services and continues to monitor the affected environments.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "The company has restored access to the affected services and continues to monitor the affected environments."
+  },
+  {
+   "id": "309b2650e83769d4",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/23/gl-inet-cloud-compromise-malware-backdoors/",
+   "published": "2026-11-23T15:05:50+00:00",
+   "title": "GL.iNet cloud compromise hits routers and KVMs, older backdoors also found",
+   "summary": "Attackers compromised GoodCloud, GL.iNet’s cloud remote management service, and used it to install malware on routers and KVM (keyboard, video and mouse) devices connected to it. The Chinese company, best known for its small travel routers, is still investigating, and it’s not yet known how many devices have been affected. The incident has also sparked additional research by RemoteToHome Consulting (RTH), a GL.iNet Services Partner, and a number of users, some of whom reported finding … More →",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Malware",
+   "translated": false,
+   "enriched": false,
+   "raw": "Attackers compromised GoodCloud, GL.iNet’s cloud remote management service, and used it to install malware on routers and KVM (keyboard, video and mouse) devices connected to it. The Chinese company, best known for its small travel routers, is still investigating, and it’s not yet known how many devices have been affected. The incident has also sparked additional research by RemoteToHome Consulting (RTH), a GL.iNet Services Partner, and a number of users, some of whom reported finding … More →"
+  },
   {
    "id": "594a8d6fa69747ba",
    "source": "BleepingComputer",
@@ -779,6 +864,23 @@
    "todo": "Atualize imediatamente o software ConnectWise ScreenConnect para a versão mais recente."
   },
   {
+   "id": "a8a7dae833325ac8",
+   "source": "Elastic Security Labs",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.elastic.co/security-labs/blog/elastic-security-9-6-release-highlights",
+   "published": "2026-11-23T12:34:52+00:00",
+   "title": "Press play on Elastic Security 9.6, banger after banger",
+   "summary": "AlertZero works your alert queue in the background and nothing consequential it proposes runs until you approve it. 9.6 also brings entity resolution, MITRE ATLAS mappings, 143 AI detection rules, and Linux ransomware protection.",
+   "image": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltb6e4fd380d735a92/6b02e1d3456a4368ed1335f2/9.6_security_launch_blog_graphic.png",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "You’ve clocked in for your shift and just hit play on your 10-hour lo-fi playlist. The caffeine is kicking in, and you’re pumped because the handoff notes from the last shift are really useful. Every case has all the evidence and the rationale behind the disposition, along with the affected hosts and users. Plus, you only have five alerts to review in your queue. This security operations center (SOC) shift is exactly why we built AlertZero , now available as a technical preview in Elastic Security in Elastic Cloud Serverless (Serverless). It’s also coming in early December 2026 to Elastic Security 9.6 for Elastic Cloud Hosted (ECH) and Elastic Self-Managed deployments with an Enterprise subscription or an Elastic Security 9.6 trial license. AlertZero is big news in Elastic Security 9.6, but there’s a lot more to this release: Feature What’s new AlertZero Four teams of agents, called Watches, covering alert triage, threat hunting, detection engineering, and forensic analysis Entity Analytics A refreshed overview, expanded entity resolution, and an AI brief Ransomware protection for Linux Elastic Defend’s behavior-based ransomware protection now extends to Linux YARA memory scanning Bring your own YARA rules to scan process memory Automatic Migration Agentic editing for migrated detection rules AI detection and response MITRE Adversarial Threat Landscape for Artificial-Intelligence Systems (ATLAS) support, 143 AI security detection rules, and the Security for AI integration package in technical preview Grab your coffee, and take a look at what’s new. Where there’s a deeper dive, we’ve linked it. AlertZero, the agentic layer of Elastic Security First, explore the four Watches in AlertZero, along with the Workers that perform specific security tasks. Then, learn about propo"
+  },
+  {
    "id": "9d23693381162a52",
    "source": "The Register Security",
    "region": "EU",
@@ -1117,6 +1219,23 @@
    "enriched": true,
    "why": "Esta mega-aquisição promete remodelar o panorama competitivo do mercado global de cibersegurança e soluções em nuvem.",
    "todo": ""
+  },
+  {
+   "id": "093ee410276f1227",
+   "source": "Elastic Security Labs",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.elastic.co/security-labs/blog/ai-soc-agents-alertzero-workers",
+   "published": "2026-11-23T11:12:50+00:00",
+   "title": "AlertZero in Elastic Security: Every alert answered. Every decision yours",
+   "summary": "Agents triage alerts, hunt threats, tune noisy rules and reconstruct what happened on a host. Each hands you a proposed action with the evidence behind it, and you set how far it goes alone and which model it uses.",
+   "image": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltc21d06524c101a2a/6b02ce6fe4fef3c2c7fefd9c/alertzero_org_chart_16x9.png",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "Most security operations center (SOC) teams we talk to describe the same problem. There are more alerts than people to work them, so the queue decides what gets looked at, and threat hunting and detection rule tuning keep slipping to the following week. And most of the time that an alert eats up isn't spent deciding what to do with it; it’s spent digging up context first, like whether this rule has fired on this host before and what else was going on around it. We built AlertZero to do that digging for you, so your analysts can spend their time on the calls that really need them. Starting today, with Elastic Security 9.6, AlertZero is available in technical preview in Elastic Cloud Serverless and is expected to be available for ECH and Self-Managed deployments in 9.6 in early December. In October 2026, we offered an early look at AlertZero , where we followed one suspicious login from the first alert, through the evidence gathered in an investigation, to a proposed host isolation waiting for an analyst's approval. Today, we’re giving you the full breakdown on what’s in the technical preview release: the six Workers and what each one proposes, how much they can do at each level of autonomy, how to choose models, and how to get started in both written and video form. What’s inside AlertZero: 4 Watches and 6 Workers Let’s start with an overview. AlertZero covers four areas of SOC work: alert triage, threat hunting, detection engineering, and endpoint forensics. Each Watch covers one of these four areas, and they hold the Workers that do that work. A Worker has one specific job, such as triaging new alerts or tuning a noisy rule. Under the hood, each Worker is an AI-powered unit of work that belongs to a Watch. It runs in the background, either on a schedule or in response "
   },
   {
    "id": "f1ae0c7fa7174d23",
@@ -13531,160 +13650,6 @@
    "enriched": true,
    "why": "Demonstra que a preparação para futuras ameaças quânticas pode ser feita aproveitando grande parte da infraestrutura tecnológica atual.",
    "todo": "Faça um inventário dos sistemas criptográficos da sua organização e planeie gradualmente a migração para padrões resistentes a computadores quânticos."
-  },
-  {
-   "id": "3b265baa72776967",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/de-aluno-de-curso-gratuito-a-cacador-de-falhas-brasileiro-encontra-brecha-em-software-global/",
-   "published": "2026-11-17T21:15:00+00:00",
-   "title": "De aluno de curso gratuito a caçador de falhas: brasileiro encontra brecha em software global",
-   "summary": "O engenheiro de computação brasileiro Bruno Lowczy descobriu uma vulnerabilidade grave num software da Autodesk enquanto estudava num programa público e gratuito de cibercapacitação. A falha, registada com o código CVE-2026-15102, consistia num token de autorização exposto no ADP Desktop SDK que funcionava como uma chave mestra para serviços em nuvem. Após superar uma rejeição inicial e apresentar provas técnicas robustas através da plataforma HackerOne, a falha foi corrigida em conjunto com a empresa.",
-   "image": "https://www.estadao.com.br/resizer/v2/KP7OADL5BFAWJMWBMIWUYBIG3U.jpeg?quality=80&auth=7447ee6cbb2ac1dbe3b1318101b97931a84f8d5f4381c60c7a57b73438aa013a&width=710",
-   "points": [
-    "O brasileiro Bruno Lowczy descobriu a vulnerabilidade CVE-2026-15102 num software da Autodesk.",
-    "O achado resultou de estudos num programa público de capacitação em cibersegurança.",
-    "A falha expunha um token de acesso a serviços em nuvem, permitindo potencial acesso não autorizado."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como a formação acessível em cibersegurança pode potenciar talentos capazes de identificar e corrigir falhas críticas em sistemas globais.",
-   "todo": "Implemente análises rigorosas de código e monitorize o tráfego de SDKs para detetar tokens de autenticação expostos antes da distribuição."
-  },
-  {
-   "id": "ba36bcaaae494012",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/perimeter/themailer-phishing-kit-ai-drivers-seat",
-   "published": "2026-11-17T20:58:13+00:00",
-   "title": "Kit de phishing 'TheMailer' coloca a IA no comando",
-   "summary": "Um novo kit comercial de phishing utiliza modelos de inteligência artificial fornecidos pelos próprios atacantes para personalizar mensagens falsas e iludir filtros de spam. A ferramenta permite escalar campanhas maliciosas para dezenas de milhares de alvos em simultâneo com maior precisão. O impacto traduz-se numa ameaça acrescida de engenharia social automatizada e altamente direcionada.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt6f7643977746699c/6afcac2049ae9b70b9695c91/red_mailbox_white_brick_wall-Liudmila_Chernetska-GettyImages-1477282383.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "O kit comercial 'TheMailer' integra inteligência artificial em campanhas de phishing.",
-    "A ferramenta personaliza iscas e ajuda a contornar filtros de spam de forma automatizada.",
-    "Os ataques podem ser escalados rapidamente para dezenas de milhares de alvos."
-   ],
-   "title_original": "'TheMailer' Phishing Kit Puts AI in the Driver's Seat",
-   "category": "Phishing/Fraude",
-   "translated": true,
-   "enriched": true,
-   "why": "Ilustra a crescente sofisticação e automatização impulsionada por IA nas ameaças de engenharia social e phishing.",
-   "todo": "Reforce a formação dos colaboradores para reconhecerem e-mails de phishing altamente personalizados e utilize soluções avançadas de filtragem baseadas em IA."
-  },
-  {
-   "id": "7bf4d52be0403af0",
-   "source": "CyberScoop",
-   "region": "US",
-   "lang": "en",
-   "link": "https://cyberscoop.com/cisa-100-critical-infrastructure-companies-fed-talks/",
-   "published": "2026-11-17T20:52:59+00:00",
-   "title": "Como a CISA está a priorizar empresas para conversas sobre melhorias de segurança",
-   "summary": "A Agência de Cibersegurança e Infraestrutura dos EUA (CISA) identificou cerca de 100 empresas detentoras de infraestruturas críticas para iniciar conversas sobre o reforço dos seus sistemas. A seleção baseou-se em grupos de trabalho governamentais cruzados com anos de dados de inteligência sobre as preferências e alvos dos atacantes cibernéticos. O objetivo é recolher lições aprendidas e promover uma resiliência coletiva a longo prazo entre fornecedores e operadores essenciais.",
-   "image": null,
-   "points": [
-    "A CISA selecionou cerca de 100 empresas de infraestruturas críticas para diálogo de segurança.",
-    "A lista resultou da cruzamento de dados económicos, de segurança nacional e inteligência de ameaças.",
-    "O foco reside em promover a resiliência coletiva e a colaboração entre fornecedores de TI e OT."
-   ],
-   "title_original": "How CISA is prioritizing companies for talks about security improvements",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Sublinha a necessidade de cooperação público-privada e de priorização na proteção de infraestruturas críticas nacionais.",
-   "todo": "Estabeleça canais de comunicação com entidades reguladoras e colabore com parceiros da cadeia de abastecimento para alinhar práticas de resiliência."
-  },
-  {
-   "id": "c7731ed1bb074085",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203354/security/apple-outages-add-to-growing-concerns-over-technology-service-disruptions.html",
-   "published": "2026-11-17T20:52:24+00:00",
-   "title": "Serviços da Apple afetados após falha na rede da NSA e ciberataque à Equinor",
-   "summary": "Utilizadores da Apple enfrentaram interrupções generalizadas em serviços como o iCloud, App Store e Apple Music devido a um problema causado por uma atualização interna. Em simultâneo, a norueguesa Equinor sofreu um ciberataque nos seus sistemas de TI e a rede interna classificada da NSA registou uma falha técnica. Os incidentes coincidiram no mesmo período, evidenciando os riscos operacionais e de conectividade que afetam infraestruturas tecnológicas globais.",
-   "image": "https://i0.wp.com/securityaffairs.com/wp-content/uploads/2026/11/image-45.png?resize=1024%2C476&#038;ssl=1",
-   "points": [
-    "Os serviços da Apple sofreram falhas devido a uma atualização interna problemática.",
-    "A empresa norueguesa Equinor reportou um ciberataque aos seus sistemas de TI.",
-    "A rede interna da NSA e outros serviços tecnológicos registaram interrupções no mesmo período."
-   ],
-   "title_original": "Apple Services Disrupted as NSA Network Goes Down and Equinor Faces Cyberattack",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia a vulnerabilidade das infraestruturas digitais modernas a falhas internas e incidentes simultâneos de várias origens.",
-   "todo": "Adote processos rigorosos de teste e validação para atualizações de software internas de modo a prevenir interrupções de serviço não planeadas."
-  },
-  {
-   "id": "1dff6dd6c93a2fcc",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/",
-   "published": "2026-11-17T20:51:21+00:00",
-   "title": "Japão desliga supercomputador Fugaku após ciberataque",
-   "summary": "O supercomputador Fugaku, gerido pelo Centro RIKEN de Ciência Computacional no Japão, foi temporariamente desligado após a deteção de uma violação de segurança. A medida drástica foi tomada para conter a brecha e mitigar potenciais danos nos sistemas afetados. Este incidente comprometeu um dos recursos computacionais mais avançados do país.",
-   "image": null,
-   "points": [
-    "O supercomputador Fugaku do Japão foi desligado na sequência de um incidente de segurança.",
-    "A infraestrutura é operada pelo RIKEN Center for Computational Science.",
-    "A interrupção ocorreu para conter uma brecha detetada nos sistemas."
-   ],
-   "title_original": "Japan takes Fugaku supercomputer offlline after cyberattack",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra que mesmo supercomputadores de alta tecnologia e instalações de investigação científica são alvos vulneráveis a ataques informáticos.",
-   "todo": "Garanta uma monitorização contínua de redes de alto desempenho e mantenha planos de resposta a incidentes para isolamento rápido de sistemas comprometidos."
-  },
-  {
-   "id": "918174e4844d2ee2",
-   "source": "Unit 42 (Palo Alto)",
-   "region": "US",
-   "lang": "en",
-   "link": "https://unit42.paloaltonetworks.com/optimjack-supply-chain-attack/",
-   "published": "2026-11-17T20:43:14+00:00",
-   "title": "Código emprestado, consequências reais: o que o OPTIMJACK nos ensina",
-   "summary": "O ataque à cadeia de abastecimento denominado OPTIMJACK revelou como a utilização de scripts de fornecedores comprometidos pode expor vários websites a riscos severos. O incidente enfatiza a necessidade premente de adotar práticas rigorosas de segmentação de rede e controlo de componentes externos. O impacto afeta a integridade dos sites que confiam cegamente em código de terceiros.",
-   "image": "https://unit42.paloaltonetworks.com/wp-content/uploads/2026/11/09_Opinion_Category_1505x922.jpg",
-   "points": [
-    "O ataque OPTIMJACK focou-se na exploração de scripts de fornecedores em cadeias de abastecimento.",
-    "A vulnerabilidade expôs vários websites a acessos indevidos através de código comprometido.",
-    "O caso demonstra a urgência de implementar uma segmentação rigorosa."
-   ],
-   "title_original": "Borrowed Code, Real Consequences: What OPTIMJACK Teaches Us",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Alerta para os perigos inerentes à dependência de scripts e fornecedores externos nos ecossistemas web modernos.",
-   "todo": "Audite e restrinja estritamente as permissões de scripts de terceiros integrados nas suas páginas web, utilizando políticas de segurança de conteúdo robustas."
-  },
-  {
-   "id": "8ab54bdc145dd99e",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/fast-people-search-removal-2026-how-to-opt-out-remove/",
-   "published": "2026-11-17T20:37:14+00:00",
-   "title": "Remoção do Fast People Search (2026): como remover os seus dados",
-   "summary": "Ferramentas de pesquisa de pessoas como o FastPeopleSearch permitem que qualquer utilizador consulte informações pessoais públicas, tais como idade, morada atual e números de telefone. Para proteger a privacidade, os cidadãos podem recorrer a processos de exclusão voluntária ('opt-out') para remover os seus dados das respetivas plataformas. O impacto direto prende-se com a exposição da privacidade individual a terceiros.",
-   "image": null,
-   "points": [
-    "Plataformas como o FastPeopleSearch expõem dados pessoais como moradas e contactos.",
-    "Existe a possibilidade de efetuar a remoção de dados através de processos de exclusão voluntária.",
-    "A medida protege a privacidade contra a visualização pública não desejada."
-   ],
-   "title_original": "Fast People Search Removal (2026): How to Opt Out & Remove Yourself",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Destaca a importância de controlar e apagar dados pessoais expoliados em diretórios públicos de pesquisa na internet.",
-   "todo": "Consulte regularmente sites de agregação de dados e utilize os formulários de remoção voluntária ('opt-out') disponibilizados por cada plataforma."
   }
  ]
 }

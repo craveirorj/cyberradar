@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T08:06:42.579579+00:00",
+ "updated": "2026-11-23T08:16:50.865136+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -89,7 +89,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 20
+   "added": 21
   },
   {
    "source": "SecurityWeek",
@@ -138,8 +138,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 3
   },
   {
    "source": "DataBreaches.net",
@@ -239,17 +239,17 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 10
+   "added": 11
   },
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -294,7 +294,7 @@
   {
    "source": "Troy Hunt",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "Cyber Centre Canadá",
@@ -309,14 +309,59 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 230,
-  "unenriched": 96,
+  "done": 108,
+  "pending": 248,
+  "unenriched": 111,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting property name enclosed in double quotes: line 32 column 5 (char 2752)"
   ]
  },
  "items": [
+  {
+   "id": "e5628202eea687d5",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/23/badbox-3-0-ad-fraud-operation/",
+   "published": "2026-11-23T08:06:18+00:00",
+   "title": "Infected TV boxes in BADBOX 3.0 rent out their owners’ home internet",
+   "summary": "A equipa Satori Threat Intelligence and Research da HUMAN desmantelou a operação BADBOX 3.0, baseada em caixas de televisão de baixo custo infetadas. Estas boxes reproduziam anúncios de vídeo em janelas ocultas dos utilizadores, gerando milhares de milhões de pedidos diários de publicidade. O impacto consistiu no aproveitamento massivo de tráfego de TV ligada e na utilização indevida da internet doméstica dos proprietários.",
+   "image": null,
+   "points": [
+    "A operação BADBOX 3.0 foi neutralizada pela equipa Satori da HUMAN.",
+    "Caixas de TV de baixo custo infetadas geravam tráfego publicitário oculto em massa.",
+    "O esquema utilizava a internet doméstica dos donos sem o seu consentimento."
+   ],
+   "title_original": "Infected TV boxes in BADBOX 3.0 rent out their owners’ home internet",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como dispositivos domésticos comuns podem ser subvertidos para gerar tráfego fraudulento em larga escala.",
+   "todo": "Desative ou substitua dispositivos de streaming de marcas desconhecidas ou não verificadas."
+  },
+  {
+   "id": "e973aa63d8e4dcf3",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/internet/seguranca/windows-11-falha-fastunlock-bitlocker-ecra-bloqueio-narrador/",
+   "published": "2026-11-23T08:00:00+00:00",
+   "title": "Windows 11 tem falha que ignora BitLocker com um simples atalho de teclado",
+   "summary": "Uma nova falha zero-day no Windows 11, designada por FastUnlock, permite contornar o ecrã de bloqueio e aceder a ficheiros protegidos pela encriptação BitLocker. O problema afeta o sistema operativo mesmo com os patches de novembro de 2026 aplicados e não requer a utilização de malware. Esta vulnerabilidade compromete a última linha de defesa física e digital de portáteis que caiam em mãos alheias.",
+   "image": null,
+   "points": [
+    "A falha zero-day FastUnlock afeta a segurança do Windows 11.",
+    "Permite ignorar o ecrã de bloqueio e aceder a dados protegidos pelo BitLocker.",
+    "Não necessita de malware e persiste com os patches de novembro de 2026 instalados."
+   ],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": true,
+   "why": "Anula a eficácia da encriptação de disco como barreira de segurança física em computadores portáteis.",
+   "todo": "Mantenha o sistema operativo atualizado e desligue ou encerre completamente o computador em vez de usar apenas o modo de suspensão."
+  },
   {
    "id": "2e92de5c4e423ff8",
    "source": "Troy Hunt",
@@ -332,9 +377,9 @@
     "Empresas priorizam interesses comerciais e recorrem a advogados para atrasar divulgações.",
     "A falta de transparência empresarial dificulta o trabalho de suporte às vítimas afetadas."
    ],
-   "title_original": "Here's Why Data Breach Disclosure is so Hard: Lessons from Hundreds of Emails with Hacked Companies",
+   "title_original": null,
    "category": "Fuga de dados",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Compreender os obstáculos na revelação de incidentes ajuda a melhorar a transparência e a proteção dos dados dos utilizadores.",
    "todo": "Estabeleça procedimentos claros de resposta a incidentes que priorizem a comunicação atempada e transparente com os afetados."
@@ -354,9 +399,9 @@
     "A operação atingiu um pico de 40 mil milhões de pedidos de licitação diários.",
     "Os dispositivos comprometidos foram usados simultaneamente para fraude e redes de 'proxies'."
    ],
-   "title_original": "BADBOX 3.0 Exposed: Massive Botnet Hides Ad Fraud Inside Android TV Boxes",
+   "title_original": null,
    "category": "Malware",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "A proliferação de botnets em dispositivos domésticos de baixo custo ameaça a segurança das redes e a integridade do ecossistema publicitário.",
    "todo": "Adquira dispositivos IoT e leitores multimédia apenas a marcas de confiança e mantenha o 'software' sempre atualizado."
@@ -376,9 +421,9 @@
     "O equipamento afetado é o Cisco Expressway.",
     "Atacantes estão a tirar partido da vulnerabilidade em ataques reais."
    ],
-   "title_original": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "A exploração ativa de falhas críticas em dispositivos de rede expõe as organizações a intrusões e comprometimento total dos sistemas.",
    "todo": "Aplique imediatamente as atualizações e correções de segurança disponibilizadas pela Cisco para o Expressway."
@@ -13732,52 +13777,6 @@
    "enriched": true,
    "why": "Evidencia a cooperação internacional na captura de operadores de ransomware que atacam setores críticos.",
    "todo": "Implemente cópias de segurança offline e reforce os controlos de acesso para mitigar ataques de ransomware."
-  },
-  {
-   "id": "605c9dd607d98cf4",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/17/airlock-digital-agentic-control/",
-   "published": "2026-11-17T13:39:57+00:00",
-   "title": "Airlock Digital bloqueia ações não autorizadas de agentes de IA nos endpoints",
-   "summary": "A Airlock Digital lançou a versão 7.1 da sua solução, introduzindo a funcionalidade de Controlo de Agentes (Agentic Control). Esta ferramenta estende o modelo tradicional de controlo de aplicações baseado em negação prévia (\"Deny by Default\") à inteligência artificial. O sistema avalia o comportamento pretendido por um agente de IA em tempo de execução para travar ações não autorizadas antes que sejam executadas.",
-   "image": null,
-   "points": [
-    "A Airlock Digital lançou a versão 7.1 com a tecnologia Agentic Control.",
-    "A solução estende o controlo de aplicações 'Deny by Default' à inteligência artificial.",
-    "Avalia os pedidos dos agentes de IA em tempo de execução.",
-    "Bloqueia comportamentos não autorizados antes da sua execução nos endpoints."
-   ],
-   "title_original": "Airlock Digital blocks unauthorized AI agent actions at the endpoint",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Oferece proteção contra os riscos operacionais e de segurança introduzidos pela autonomia dos agentes de IA nas empresas.",
-   "todo": "Adote políticas restritivas de controlo de execução de software para abranger novas ferramentas autónomas."
-  },
-  {
-   "id": "66b7b5620cc6b3cc",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/threat-intel/2026/11/amazon-job-offer-promises-5000-a-month-but-its-got-all-the-signs-of-a-scam",
-   "published": "2026-11-17T13:37:48+00:00",
-   "title": "Oferta de emprego da \"Amazon\" promete 5.000 dólares por mês, mas tem todos os sinais de burlas",
-   "summary": "Foram detetados vários websites fraudulentos que utilizam marcas semelhantes à da Amazon para atrair candidatos a falsos empregos remotos com salários elevados. Os portais falsos pedem dados e aplicação a funções que contradizem a descrição do cargo, como o manuseamento de pacotes e disponibilidade de veículos. A Amazon esclarece que todas as ofertas legítimas são publicadas exclusivamente nos seus canais oficiais.",
-   "image": "https://www.malwarebytes.com/wp-content/uploads/sites/2/2026/11/amazonjobs4-1.png?w=1024",
-   "points": [
-    "Existem sites falsos de recrutamento a usar marcas associadas à Amazon.",
-    "Prometem funções remotas com ordenados mensais até 5.000 dólares.",
-    "Os formulários de candidatura incluem perguntas incoerentes com o cargo anunciado.",
-    "A Amazon já tinha alertado para o aumento de burlas com falsos recrutadores."
-   ],
-   "title_original": "“Amazon” job offer promises $5,000 a month, but it’s got all the signs of a scam",
-   "category": "Phishing/Fraude",
-   "translated": true,
-   "enriched": true,
-   "why": "Protege os cidadãos contra esquemas de phishing e roubo de identidade disfarçados de oportunidades laborais.",
-   "todo": "Confirme sempre as vagas de emprego nos portais oficiais das empresas antes de submeter dados pessoais."
   }
  ]
 }

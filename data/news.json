@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T00:34:14.430142+00:00",
+ "updated": "2026-11-23T00:46:12.386497+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -238,13 +238,13 @@
   },
   {
    "source": "The Register Security",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 12
   },
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -310,14 +310,60 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 218,
-  "unenriched": 84,
+  "pending": 231,
+  "unenriched": 97,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "9b531e94180b1d5e",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/23/google-semantic-governance-policies/",
+   "published": "2026-11-23T00:27:25+00:00",
+   "title": "Políticas de governação semântica da Google podem bloquear chamadas de ferramentas de agentes de IA",
+   "summary": "A Google introduziu políticas de governação semântica na plataforma Gemini para aumentar a segurança dos agentes de IA. Estas políticas funcionam como um ponto de controlo externo que analisa cada chamada de ferramenta proposta pelo modelo antes da sua execução. Se a ação não corresponder ao pedido do utilizador ou violar regras empresariais, o sistema bloqueia-a automaticamente. Esta funcionalidade permite às empresas definir permissões granulares sobre o que os seus agentes podem ou não fazer.",
+   "image": null,
+   "points": [
+    "Google implementa verificação externa para agentes de IA.",
+    "Políticas bloqueiam chamadas de ferramentas não autorizadas.",
+    "Controlo ocorre antes da execução da ação.",
+    "Aumenta a segurança e conformidade em ambientes empresariais."
+   ],
+   "title_original": "Google’s semantic governance policies can block an AI agent’s tool call before it runs",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "É importante porque permite às empresas controlar e limitar o comportamento de agentes de IA, prevenindo ações não autorizadas ou perigosas.",
+   "todo": "Configure políticas de governação semântica para restringir as capacidades dos seus agentes de IA apenas ao estritamente necessário."
+  },
+  {
+   "id": "9a79a19be2ddac33",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/23/1-of-gpt-51-tokens-finds-new-ways-around-chinas-great-firewall/5311532",
+   "published": "2026-11-23T00:23:31+00:00",
+   "title": "Tokens de 1 dólar do GPT-5.1 encontram novas formas de contornar a Grande Firewall da China",
+   "summary": "Investigadores utilizaram modelos de linguagem (LLM) para descobrir métodos de contornar sistemas de censura na Internet, como a Grande Firewall da China. Com um investimento de apenas um dólar em tokens, criaram a ferramenta 'CircumVolve', que automatiza a descoberta de estratégias de evasão através da manipulação de pacotes e protocolos de rede. O sistema gera e testa código Python para contornar bloqueios em cenários reais e simulados. O estudo demonstra como a IA pode acelerar drasticamente a exploração de vulnerabilidades em infraestruturas de rede.",
+   "image": "https://image.theregister.com/?imageId=246780&width=800",
+   "points": [
+    "Ferramenta CircumVolve automatiza a evasão de censura.",
+    "Uso de LLMs para gerar técnicas de manipulação de rede.",
+    "Testado com sucesso em cenários de censura reais.",
+    "Demonstra a eficácia da IA na exploração de vulnerabilidades."
+   ],
+   "title_original": "$1 of GPT-5.1 tokens finds new ways around China’s Great Firewall",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque revela como a IA pode ser usada para contornar defesas de rede complexas com baixo custo e alta eficiência.",
+   "todo": ""
+  },
   {
    "id": "d9d2b8e7310259b0",
    "source": "Help Net Security",
@@ -13737,52 +13783,6 @@
    "enriched": true,
    "why": "Invalida uma das principais defesas utilizadas para garantir a integridade de pipelines de integração contínua.",
    "todo": "Audite regularmente as dependências e as ações de CI/CD utilizadas nos repositórios de código."
-  },
-  {
-   "id": "ca39552f12735045",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/pam-secures-ai-agents-password-vaults-cant/",
-   "published": "2026-11-17T12:16:10+00:00",
-   "title": "Como o PAM Moderno Protege os Agentes de IA que os Cofres de Palavras-passe Não Conseguem",
-   "summary": "A gestão de acessos privilegiados tradicional foi desenhada exclusivamente para utilizadores humanos. No entanto, os agentes de inteligência artificial operam cada vez mais ao lado desses utilizadores nas empresas. Esta realidade cria novos desafios de segurança que os cofres de palavras-passe convencionais não conseguem resolver eficazmente. O artigo aborda a necessidade de adaptação das ferramentas de PAM para proteger estes novos intervenientes automatizados.",
-   "image": null,
-   "points": [
-    "PAM tradicional focado em humanos.",
-    "Agentes de IA operam junto dos utilizadores.",
-    "Cofres de passwords falham na proteção de IA.",
-    "Necessidade de novas soluções de segurança."
-   ],
-   "title_original": "How Modern PAM Secures the AI Agents That Password Vaults Can’t",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque a integração de agentes de IA sem proteção adequada cria novos vetores de ataque nas organizações.",
-   "todo": "Reveja os acessos atribuídos a ferramentas de inteligência artificial e garanta que utilizam mecanismos de autenticação modernos."
-  },
-  {
-   "id": "b69860df42181d85",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html",
-   "published": "2026-11-17T12:14:36+00:00",
-   "title": "Investigadores Detalham Falha no iPhone que Permitiam a Aplicações Gravar Áudio Apesar de Negada a Permissão de Microfone",
-   "summary": "Uma vulnerabilidade recentemente corrigida no serviço de áudio da Apple permitia que aplicações em iPhones e iPads gravassem som mesmo após o utilizador recusar a permissão no aviso do microfone. Os detalhes técnicos foram publicados por investigadores, tendo a Apple lançado as primeiras atualizações com a correção em agosto. Não existem registos de que esta falha tenha sido explorada em ataques reais. A correção impede que aplicações não autorizadas contornem as restrições de privacidade dos utilizadores.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoRknesoqi26EwwYMrgBhBudDMiej0sO7-228OvrBIj2ivaPcOUo7GJgoIHAd9fI_VFlK4su0xn1L_BqUgFsldNJgAkQwE4wAvAZzUao-wHUHSoq8NQUo_UdyILYYFoshEgONLhibaGHRQ_cKFVo0Psl1kehyphenhyphenNjlCrkECk16huiU6WecKlpBr0YDN3nus/s1600/iphone-recording.jpg",
-   "points": [
-    "Falha no serviço de áudio da Apple em iPhones e iPads.",
-    "Permitia gravação de áudio com permissão negada.",
-    "Detalhes publicados por investigadores da Meta Red Team X.",
-    "Sem evidências de exploração maliciosa em ataques."
-   ],
-   "title_original": "Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque a falha comprometia diretamente a privacidade do utilizador ao contornar restrições explícitas de hardware.",
-   "todo": "Atualize imediatamente os dispositivos iOS e iPadOS para a versão mais recente disponibilizada pela Apple."
   }
  ]
 }

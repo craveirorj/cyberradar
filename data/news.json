@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T01:47:13.208101+00:00",
+ "updated": "2026-11-23T02:06:44.504045+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -263,8 +263,8 @@
   },
   {
    "source": "Graham Cluley",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 3
   },
   {
    "source": "HackRead",
@@ -309,15 +309,32 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 114,
-  "pending": 232,
-  "unenriched": 98,
+  "done": 119,
+  "pending": 230,
+  "unenriched": 96,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "4a7e4b34034f604c",
+   "source": "SANS ISC",
+   "region": "US",
+   "lang": "en",
+   "link": "https://isc.sans.edu/diary/rss/33548",
+   "published": "2026-11-23T02:00:04+00:00",
+   "title": "ISC Stormcast For Monday, November 23rd, 2026 https://isc.sans.edu/podcastdetail/10190, (Mon, Nov 23rd)",
+   "summary": "",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": ""
+  },
   {
    "id": "9b531e94180b1d5e",
    "source": "Help Net Security",
@@ -13760,29 +13777,6 @@
    "enriched": true,
    "why": "Corrige múltiplas portas de entrada críticas que estavam a ser exploradas ativamente contra sistemas de gestão.",
    "todo": "Atualize imediatamente os servidores N-central para as versões corrigidas pela N-able."
-  },
-  {
-   "id": "6085ef54790f43b5",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
-   "published": "2026-11-17T12:25:06+00:00",
-   "title": "Hackers encontram forma de contornar a fixação de SHA no GitHub",
-   "summary": "A fixação de versões do GitHub Actions através de hashes SHA, considerada uma defesa fundamental contra ataques à cadeia de fornecimento de software, foi contornada por atacantes. Os cibercriminosos conseguiram plantar código malicioso disfarçado de ferramentas oficiais durante o sequestro de um popular scanner de segurança de código aberto. O incidente demonstra a evolução das técnicas de ataque em ambientes de desenvolvimento.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYUhfLA6wixTr6AiVmOSa8uxO2mHxPqG7rHalDaUtYlOaTwUSIzi3JAP78cfEUhwwaoijNe8vJ0ZFiBqDmfrG9LVOzItxMxCYcTCbEc4f7W8iWgKSvzR6DrT0XtK_cM4eTKQ2Edvz-QG5P8iXF_GV_-k6CXMN_-D_QAJags-LpeuXmJ5C6DDz7mDRSBMY/s1600/git-actions.jpg",
-   "points": [
-    "Atacantes contornaram a fixação de SHA no GitHub Actions.",
-    "Técnica foi usada no ataque ao scanner open-source Trivy.",
-    "Código malicioso disfarçou-se de ferramenta oficial de checkout.",
-    "Ameaça afeta a segurança da cadeia de fornecimento de software."
-   ],
-   "title_original": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Invalida uma das principais defesas utilizadas para garantir a integridade de pipelines de integração contínua.",
-   "todo": "Audite regularmente as dependências e as ações de CI/CD utilizadas nos repositórios de código."
   }
  ]
 }

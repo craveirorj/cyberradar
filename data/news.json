@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T20:44:48.796032+00:00",
+ "updated": "2026-11-23T21:05:24.358708+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 1
+   "added": 2
   },
   {
    "source": "TugaTech",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -89,7 +89,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 21
+   "added": 20
   },
   {
    "source": "SecurityWeek",
@@ -164,7 +164,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 11
+   "added": 9
   },
   {
    "source": "Cisco Talos",
@@ -310,8 +310,8 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 395,
-  "unenriched": 271,
+  "pending": 396,
+  "unenriched": 273,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,23 @@
   ]
  },
  "items": [
+  {
+   "id": "f1397973b7c60ba0",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/",
+   "published": "2026-11-23T20:54:51+00:00",
+   "title": "South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
+   "summary": "A threat actor breached the internal network of Korea Electric Power Corporation (KEPCO) and accessed two systems containing customer, employee, and contractor data. [...]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "A threat actor breached the internal network of Korea Electric Power Corporation (KEPCO) and accessed two systems containing customer, employee, and contractor data. [...]"
+  },
   {
    "id": "9ba29cbfa4c26782",
    "source": "AWS Security Blog",
@@ -13423,29 +13440,6 @@
    "enriched": true,
    "why": "A exploração ativa de uma falha com pontuação máxima de gravidade ameaça diretamente os servidores corporativos.",
    "todo": "Aplique imediatamente as atualizações de segurança disponibilizadas para o Perforce Puppet."
-  },
-  {
-   "id": "1db641aaef4490d3",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
-   "published": "2026-11-18T08:24:23+00:00",
-   "title": "CISA insta a correção imediata de falha Java4Shell que pode permitir a execução remota de código",
-   "summary": "A CISA emitiu um aviso para que as organizações corrijam de imediato uma nova falha crítica de segurança no Oracle Java. A vulnerabilidade, rastreada como CVE-2026-114938 com um nível CVSS de 8.1, consiste num problema de escrita fora de limites. Sob determinadas condições, esta falha pode provocar a interrupção do serviço ou a execução remota de código.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivmrsz2fViEN49Su385gmuAShCPcxobsMF-FbR9t1sXw6aEbOMzFUT5YktViqASQUXP3bLT13HYMAE1wBQTN0ZRDGXWFJUy_EWOKhOjR7jSz-bhEK8jas_v9wWUYxevCAZt4PzOCaGNLLC96kDwFjtKBuXVW2O3K2BK9AO5nyZutFf_uCaZtvyaQ2qf8gK/s1600/cisa-java.jpg",
-   "points": [
-    "A CISA apelou à correção imediata de uma falha no Oracle Java.",
-    "A vulnerabilidade é identificada como CVE-2026-114938 com CVSS 8.1.",
-    "Trata-se de um problema de corrupção de memória e escrita fora de limites.",
-    "Pode causar negação de serviço ou execução remota de código."
-   ],
-   "title_original": "CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Deixa sistemas vulneráveis a ataques que podem comprometer total ou parcialmente a estabilidade e segurança da rede.",
-   "todo": "Atualize o software Oracle Java afetado para a versão mais recente segura."
   }
  ]
 }

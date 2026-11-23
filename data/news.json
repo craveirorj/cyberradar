@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T11:46:46.250827+00:00",
+ "updated": "2026-11-23T12:07:27.379946+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -59,7 +59,7 @@
   {
    "source": "CISA Advisories",
    "ok": true,
-   "added": 21
+   "added": 20
   },
   {
    "source": "CISA Alertas (KEV)",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 2
   },
   {
    "source": "The Record",
@@ -143,8 +143,8 @@
   },
   {
    "source": "DataBreaches.net",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "Malwarebytes Labs",
@@ -154,7 +154,7 @@
   {
    "source": "Microsoft Security Blog",
    "ok": true,
-   "added": 7
+   "added": 8
   },
   {
    "source": "Microsoft MSRC",
@@ -309,15 +309,154 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 99,
-  "pending": 260,
-  "unenriched": 116,
+  "done": 60,
+  "pending": 298,
+  "unenriched": 156,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 38 column 5 (char 3924)"
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "bf5a11debc57d81b",
+   "source": "CSO Online",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.csoonline.com/article/4252013/crowdstrike-buys-missing-network-security-piece-in-43-9b-zscaler-deal.html",
+   "published": "2026-11-23T11:56:27+00:00",
+   "title": "CrowdStrike compra Zscaler por 43.9 mil milhões de dólares para reforçar segurança de rede",
+   "summary": "A CrowdStrike chegou a acordo para adquirir a empresa de segurança na cloud Zscaler numa transação avaliada em 43.9 mil milhões de dólares. A operação combina as plataformas de proteção de endpoints e segurança em nuvem da CrowdStrike com a segurança de rede baseada em cloud e zero-trust da Zscaler. Com esta aquisição, a empresa combinada pretende alcançar mais de 10 mil milhões de dólares em receitas recorrentes anuais. O negócio, que visa preencher uma lacuna estratégica na área da segurança de rede, aguarda a aprovação dos acionistas e reguladores.",
+   "image": "https://www.csoonline.com/wp-content/uploads/2025/12/4110018-0-73223200-1767078163-shutterstock_2460677957.jpg?quality=50&strip=all",
+   "points": [
+    "A CrowdStrike comprou a Zscaler por 43.9 mil milhões de dólares.",
+    "A operação une a proteção de endpoints à segurança de rede zero-trust.",
+    "O negócio visa expandir a oferta para o mercado de segurança de rede.",
+    "A conclusão da transação está sujeita à aprovação de acionistas e reguladores."
+   ],
+   "title_original": "CrowdStrike buys missing network security piece in $43.9B Zscaler deal",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite à CrowdStrike entrar no maior segmento de mercado da cibersegurança e criar uma plataforma unificada baseada em IA.",
+   "todo": ""
+  },
+  {
+   "id": "86a9a6a52fe411ac",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/cyber-crime/2026/11/23/cleverbridge-admits-attackers-stole-customers-credit-card-and-cvv-numbers-yep-you-read-that-right/5311573",
+   "published": "2026-11-23T11:48:00+00:00",
+   "title": "Cleverbridge admite roubo de números de cartões de crédito e códigos CVV de clientes",
+   "summary": "A plataforma de e-commerce de software Cleverbridge detetou uma atividade não autorizada nos seus sistemas que resultou no roubo de dados de cartões de pagamento de clientes. Entre os dados comprometidos encontram-se números de cartões, datas de validade, códigos de segurança CVV/CVC e contactos pessoais. O incidente gerou preocupação devido ao roubo dos códigos CVV, cuja retenção após a autorização é proibida pelas regras do PCI DSS. A empresa já cortou o acesso dos intrusos e iniciou uma investigação para apurar o sucedido.",
+   "image": "https://image.theregister.com/?imageId=258553&width=800",
+   "points": [
+    "A Cleverbridge foi alvo de um incidente que expôs dados de cartões de pagamento.",
+    "Foram roubados números de cartões, validades, contactos e códigos CVV.",
+    "O roubo de códigos CVV viola as normas de segurança PCI DSS.",
+    "A empresa cortou o acesso não autorizado e investiga o caso."
+   ],
+   "title_original": "Cleverbridge admits attackers stole customers' credit card and CVV numbers. Yep, you read that right",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Compromete dados financeiros sensíveis de clientes, incluindo códigos de segurança que nunca deveriam ser armazenados.",
+   "todo": "Monitore os extratos bancários e os cartões afetados para detetar transações fraudulentas não autorizadas."
+  },
+  {
+   "id": "c412b57f8a94b4cf",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/badbox-3-0-ad-fraud-operation-generating-40-billion-daily-bid-requests-disrupted/",
+   "published": "2026-11-23T11:44:18+00:00",
+   "title": "Operação de fraude publicitária BadBox 3.0 que gerava 40 mil milhões de pedidos diários foi desmantelada",
+   "summary": "Dispositivos de consumo de baixo custo foram infetados com 'backdoors' que permitiram executar módulos de fraude publicitária e transformar os equipamentos em proxies residenciais. Esta infraestrutura maliciosa gerava diariamente cerca de 40 mil milhões de pedidos de licitação. A operação associada ao esquema foi recentemente desmanchada pelas autoridades ou entidades competentes. O ataque explorava hardwares económicos para fins ilícitos à revelia dos utilizadores.",
+   "image": null,
+   "points": [
+    "Dispositivos de consumo baratos continham backdoors maliciosas.",
+    "O malware servia para fraude publicitária e criação de proxies residenciais.",
+    "A rede gerava cerca de 40 mil milhões de pedidos de licitação por dia.",
+    "A operação nefasta foi desmantelada."
+   ],
+   "title_original": "BadBox 3.0 Ad Fraud Operation Generating 40 Billion Daily Bid Requests Disrupted",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como dispositivos domésticos económicos podem ser transformados em ferramentas em larga escala para fraude cibernética.",
+   "todo": "Mantenha o firmware e o software dos dispositivos de IoT e eletrónicos sempre atualizados com as correções mais recentes do fabricante."
+  },
+  {
+   "id": "e84470f94267e5e6",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/internet/seguranca/centenas-de-escolas-alemas-recebem-ameacas-de-bomba-por-e-mail/",
+   "published": "2026-11-23T11:37:22+00:00",
+   "title": "Centenas de escolas alemãs recebem ameaças de bomba por e-mail",
+   "summary": "Cerca de 450 escolas na Alemanha foram alvo de ameaças de bomba enviadas através de correio eletrónico durante a manhã de segunda-feira. As autoridades policiais mobilizaram-se para avaliar a situação em vários estabelecimentos de ensino afetados. Para já, a polícia indica que não existem indícios que permitam considerar as ameaças como credíveis. As investigações continuam em curso para identificar a origem das mensagens.",
+   "image": null,
+   "points": [
+    "Cerca de 450 escolas alemãs receberam ameaças de bomba por e-mail.",
+    "As autoridades policiais responderam ao elevado número de alertas.",
+    "Não existem atualmente motivos para considerar as ameaças credíveis.",
+    "A polícia investiga a origem desta vaga de mensagens."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Cria pânico generalizado e perturba a atividade letiva de centenas de instituições de ensino.",
+   "todo": "Siga rigorosamente os protocolos de segurança e as instruções das autoridades policiais em caso de alerta ou ameaça."
+  },
+  {
+   "id": "82eb1e7bc2f57954",
+   "source": "Malwarebytes Labs",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.malwarebytes.com/blog/threat-intel/2026/11/oxloader-abuses-dll-hijacking-to-distribute-different-malware-families",
+   "published": "2026-11-23T11:35:39+00:00",
+   "title": "OXLoader abusa de sequestro de DLL para distribuir várias famílias de malware",
+   "summary": "O loader OXLoader tem sido utilizado em campanhas maliciosas para instalar diversos tipos de malware em computadores Windows. Os atacantes distribuem a ameaça através de ficheiros ZIP maliciosos disfarçados de reclamações por direitos de autor ou ativadores de software pirata. Dependendo do payload descarregado, o malware pode roubar palavras-passe guardadas no navegador, extrair dados ou conceder acesso remoto aos atacantes. Entre as famílias distribuídas encontram-se ameaças como Remcos, PureRAT e Lunex Stealer.",
+   "image": "https://www.malwarebytes.com/wp-content/uploads/sites/2/2026/11/oxloader.png",
+   "points": [
+    "O OXLoader instala vários tipos de malware em sistemas Windows.",
+    "A ameaça é propagada através de falsas queixas de direitos de autor e software crackeado.",
+    "Utiliza técnicas de sequestro de DLL para operar de forma oculta.",
+    "Permite o roubo de dados, passwords e controlo remoto do PC."
+   ],
+   "title_original": "OXLoader abuses DLL hijacking to distribute different malware families",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "Facilita a infeção por múltiplos ransomwares e stealers através de vetores de engenharia social comuns.",
+   "todo": "Evite descarregar software pirata e desconfie sempre de anexos inesperados em e-mails sobre alegadas infrações de direitos de autor."
+  },
+  {
+   "id": "bc11c30f893ab623",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks/",
+   "published": "2026-11-23T11:35:15+00:00",
+   "title": "Falhas em SAP NetWeaver e Cisco Expressway exploradas em ataques",
+   "summary": "Foram detetadas vulnerabilidades de segurança nos produtos SAP NetWeaver e Cisco Expressway que estão a ser ativamente exploradas por atacantes. Estas falhas permitem aos cibercriminosos extrair ou modificar informações confidenciais dos servidores afetados. Adicionalmente, a exploração bem-sucedida destas vulnerabilidades possibilita a execução de comandos com privilégios de root. Os administradores de sistemas devem aplicar as correções de segurança necessárias para mitigar o risco.",
+   "image": null,
+   "points": [
+    "Vulnerabilidades em SAP NetWeaver e Cisco Expressway estão sob ataque.",
+    "Os atacantes conseguem ler ou modificar dados em servidores infetados.",
+    "As falhas permitem a execução arbitrária de comandos com privilégios máximos de root.",
+    "É necessária a aplicação urgente de atualizações de correção."
+   ],
+   "title_original": "SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Concede acesso total aos servidores vulneráveis, permitindo o roubo de dados ou o comprometimento completo da infraestrutura.",
+   "todo": "Aplique imediatamente os patches e atualizações de segurança disponibilizados pela SAP e pela Cisco para os produtos afetados."
+  },
   {
    "id": "710e26685963f269",
    "source": "SecurityWeek",
@@ -13635,144 +13774,6 @@
    "enriched": true,
    "why": "Melhora significativamente a gestão de segurança corporativa em dispositivos móveis ou portáteis perdidos.",
    "todo": "Ative e configure ferramentas de gestão de dispositivos móveis, como o Intune, para proteger computadores corporativos."
-  },
-  {
-   "id": "31c8b3c45be60580",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/atlassian-security-advisory-av26-1166",
-   "published": "2026-11-17T15:22:04+00:00",
-   "title": "Aviso de segurança Atlassian (AV26-1166)",
-   "summary": "A Atlassian foi afetada por uma vulnerabilidade de autorização imprópria no Jira Service Management. As versões impactadas incluem o Data Center até às versões 10.3.27 e 11.3.13, bem como as versões Server entre 5.12.16 e 5.12.42. O Centro Cibernético recomenda vivamente que os administradores consultem os avisos oficiais e apliquem as atualizações necessárias. O impacto decorre do risco de acesso indevido devido a falhas de autorização.",
-   "image": null,
-   "points": [
-    "Vulnerabilidade de autorização imprópria afeta o Jira Service Management.",
-    "Os produtos afetados incluem versões Data Center e Server específicas.",
-    "O Centro Cibernético aconselha a revisão de links e aplicação de atualizações.",
-    "O impacto expõe os sistemas a falhas de controlo de acessos se não forem corrigidos."
-   ],
-   "title_original": "Atlassian security advisory (AV26-1166)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Ajuda a prevenir o aproveitamento de falhas de autorização em ferramentas colaborativas essenciais.",
-   "todo": "Reveja os avisos da Atlassian e atualize as instalações do Jira Service Management para as versões seguras."
-  },
-  {
-   "id": "7a7b2eaa4aa991d0",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
-   "published": "2026-11-17T15:17:36+00:00",
-   "title": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
-   "summary": "A Oracle está a preparar a publicação de correções de segurança para resolver 11 vulnerabilidades no Java SE que podem ser exploradas remotamente sem autenticação. Em paralelo, existem alertas sobre uma falha crítica de execução remota de código no OpenJDK. Estas vulnerabilidades apresentam uma pontuação máxima de gravidade CVSS 3.1 de 8.1. O impacto foca-se no risco potencial de exploração remota nestas plataformas.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw1l9jYXUC-XLNjqqVjPvFicpQvkj-fwml16Gl43nsTc5TrBGGzijFoCzpxHpfninWaxrDxoCW4J6FKkgO1rPsnVFgFAcMbm9hl9YxeVO6fM4sBrs_tvUOXG8MnKPqDXRal3qNJ2VY7RzqAlj5vJzYI6xVFOxVGV7TyDliY-AIBqKm2bst1d6rCNl2qkhv/s1600/java4shell.jpg",
-   "points": [
-    "Oracle vai corrigir 11 vulnerabilidades no Java SE.",
-    "As falhas permitem exploração remota sem autenticação.",
-    "Existe um relatório sobre uma falha crítica de RCE no OpenJDK.",
-    "A gravidade máxima atribuída atinge 8.1 no sistema CVSS 3.1."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque estas falhas afetam o ecossistema Java e podem permitir acessos remotos não autorizados se não forem atualizadas.",
-   "todo": "Aplica as atualizações e correções de segurança disponibilizadas pela Oracle assim que estiverem disponíveis."
-  },
-  {
-   "id": "033b7c10af0dad75",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
-   "published": "2026-11-17T15:17:28+00:00",
-   "title": "Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers",
-   "summary": "Uma campanha em grande escala chamada Trigram tem como alvo programadores nos setores da inteligência artificial, blockchain e logística na Europa e nos EUA. Os atacantes fingem ser cerca de 50 marcas conhecidas para enganar as vítimas e levá-las a executar infostealers. O objetivo principal é o roubo de dados sensíveis através de engenharia social direcionada.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXvywoP0qreCtUhDgAD1y24HevVHwAH9bGo904BuaQ7-amvdkk6Oi8gz8WjF-Hwiu3SinN266QM0KwUX6lDnayGOtMaSEff_b5vybBsdwvDhiai2uGsAlYfMgCdquPmKqaqM6eY54pG9HsMR7X5Sf7M4nkbIaHmWJMBG1uL3ggpJMMvfQR6FbMagqug2QG/s1600/target.jpg",
-   "points": [
-    "Campanha Trigram visa programadores na Europa e EUA.",
-    "Falsificação de cerca de 50 marcas de IA e blockchain.",
-    "Utilização de infostealers executados pelas próprias vítimas.",
-    "Afeta os setores de inteligência artificial, blockchain e logística."
-   ],
-   "title_original": null,
-   "category": "Malware",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa para alertar os programadores contra esquemas de impersonação de marcas que instalam roubadores de informação.",
-   "todo": "Verifica rigorosamente a autenticidade de ferramentas e pacotes de software antes de os executar no teu ambiente de desenvolvimento."
-  },
-  {
-   "id": "6e6dc720e11fedbc",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/17/cyberattack-on-japans-fugaku-supercomputer-puts-data-of-4597-users-at-risk/",
-   "published": "2026-11-17T15:13:38+00:00",
-   "title": "Cyberattack on Japan’s Fugaku Supercomputer Puts Data of 4,597 Users at Risk",
-   "summary": "O supercomputador japonês Fugaku foi alvo de um ciberataque que envolveu acesso não autorizado ao seu sistema operativo. Esta intrusão colocou em risco dados pessoais e de investigação sensíveis pertencentes a 4.597 utilizadores. Como medida de precaução, o instituto de investigação Riken suspendeu temporariamente as operações do supercomputador.",
-   "image": null,
-   "points": [
-    "Supercomputador Fugaku no Japão sofreu acesso não autorizado.",
-    "Dados de 4.597 utilizadores e pesquisas postos em risco.",
-    "Instituto Riken suspendeu temporariamente as operações.",
-    "Investigações em curso para apurar a extensão da intrusão."
-   ],
-   "title_original": "​Cyberattack on Japan’s Fugaku Supercomputer Puts Data of 4,597 Users at Risk",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque demonstra que infraestruturas de computação de alto desempenho e dados de milhares de utilizadores são alvos vulneráveis.",
-   "todo": "Monitoriza ativamente os acessos aos sistemas e implementa controlos rigorosos de privilégios."
-  },
-  {
-   "id": "81ef5da00e5a5726",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/n-able-security-advisory-av26-1165",
-   "published": "2026-11-17T15:02:31+00:00",
-   "title": "N-able security advisory (AV26-1165)",
-   "summary": "A N-able divulgou um aviso de segurança devido a vulnerabilidades identificadas nos produtos N-central e no componente Patch Management. As falhas incluem uma vulnerabilidade de escalação de privilégios locais e uma desativação de autenticação num aparelho MMS3. Os utilizadores e administradores são encorajados a aplicar as atualizações necessárias.",
-   "image": null,
-   "points": [
-    "Vulnerabilidades detetadas em produtos N-able e N-central.",
-    "CVE-2026-129271 afeta o Patch Management com escalação de privilégios.",
-    "CVE-2026-129272 permite contornar a autenticação no MMS3.",
-    "Necessidade urgente de aplicar atualizações de segurança."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa para prevenir a exploração de falhas de escalação de privilégios e contornos de autenticação em ferramentas de gestão.",
-   "todo": "Atualiza o N-central e os componentes afetados para as versões mais recentes indicadas pelo fabricante."
-  },
-  {
-   "id": "148f7e8fc320b8f8",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/inside-modern-phishing-kits-built-to-steal-microsoft-365-sessions/",
-   "published": "2026-11-17T15:01:11+00:00",
-   "title": "Inside Modern Phishing Kits Built to Steal Microsoft 365 Sessions",
-   "summary": "Investigadores da Huntress analisaram o funcionamento de kits de phishing modernos, como EvilTokens, Knight Office e Kali365, focados em roubar e reutilizar tokens de sessão do Microsoft 365. O estudo detalha os mecanismos usados por estas ferramentas para capturar dados de autenticação e indica formas de os defensores detetarem e conterem a ameaça. O impacto traduz-se no risco de acesso não autorizado a contas corporativas.",
-   "image": null,
-   "points": [
-    "Kits como EvilTokens e Kali365 visam o Microsoft 365.",
-    "Foco no roubo e reutilização de tokens de sessão.",
-    "Investigadores detalham métodos de deteção e contenção.",
-    "Risco de comprometimento de contas e dados na nuvem."
-   ],
-   "title_original": null,
-   "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa para compreender como os atacantes contornam a autenticação tradicional através do roubo de sessões ativas.",
-   "todo": "Implementa políticas de acesso condicional rigorosas e monitoriza o comportamento anómalo de sessões na nuvem."
   }
  ]
 }

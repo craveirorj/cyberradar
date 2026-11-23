@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T19:45:06.800453+00:00",
+ "updated": "2026-11-23T20:05:00.654927+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Krebs on Security",
@@ -124,7 +124,7 @@
   {
    "source": "Ars Technica Security",
    "ok": true,
-   "added": 6
+   "added": 5
   },
   {
    "source": "WIRED Security",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "Help Net Security",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -310,8 +310,8 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 389,
-  "unenriched": 264,
+  "pending": 391,
+  "unenriched": 266,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,40 @@
   ]
  },
  "items": [
+  {
+   "id": "ad3d2932dda18cd6",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/",
+   "published": "2026-11-23T20:00:20+00:00",
+   "title": "OpenRouter drops AI providers over leaked prompts and secrets",
+   "summary": "OpenRouter removed three AI providers from its platform after discovering that they had violated their stated data-handling policies and exposed sensitive data. [...]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "OpenRouter removed three AI providers from its platform after discovering that they had violated their stated data-handling policies and exposed sensitive data. [...]"
+  },
+  {
+   "id": "53716c4432abe034",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/",
+   "published": "2026-11-23T19:42:20+00:00",
+   "title": "Microsoft Azure flaw exploited to steal customers' API credentials",
+   "summary": "Microsoft is warning customers that a security vulnerability in Azure API Management (APIM) Classic tiers was exploited to steal stored API credentials, with Norwegian authorities linking the flaw to cyberattacks against energy companies. [...]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Microsoft is warning customers that a security vulnerability in Azure API Management (APIM) Classic tiers was exploited to steal stored API credentials, with Norwegian authorities linking the flaw to cyberattacks against energy companies. [...]"
+  },
   {
    "id": "879adbc122737255",
    "source": "The Register Security",
@@ -335,6 +369,23 @@
    "translated": false,
    "enriched": false,
    "raw": "Imagine something as mission-critical as the brakes on a trailer being vulnerable to unauthorized control. One Australian manufacturer made the interesting choice of building Bluetooth into a trailer brake controller without adequately securing its critical braking functions. Anyone within Bluetooth range of an unpatched Elecbrakes trailer controller could potentially trigger its brakes or apply more braking force than intended, without needing to authenticate. The discovery comes courtesy of a pair of security researchers from Element Digital, Patrick Forck and Jeremy McCarthy. Their investigation began earlier this year when Forck was driving down the road and noticed that his physical Elecbrakes In-Car Remote had connected to someone else's trailer without pairing or prompting him. “It had connected mid-drive, without pairing or a prompt, to a brake controller that wasn’t mine, on a trailer I’d never seen, belonging to a driver who had no idea,” the researchers wrote. That one-off connection triggered a full-scale investigation by the pair. For those unfamiliar with trailer brake controllers, these devices are commonly used on larger trailers. Australian manufacturer Elecbrakes sells such controllers in Australia and New Zealand. Depending on jurisdiction, trailers over a certain weight are required to have their own braking system, which Elecbrakes manufactures. Elecbrakes offers two versions that are designed to be easier to install than traditional controllers: One that’s mounted in a vehicle, and one that is mounted directly on a trailer. That trailer-mounted unit can receive Bluetooth commands from the Elecbrakes smartphone app or a separate in-car remote. Given the importance of such control units to road safety, it’s easy to imagine how serious such a vulnerab"
+  },
+  {
+   "id": "5d44e0733752a103",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203851/data-breach/cleverbridge-confirms-attackers-copied-payment-card-data-from-its-platform.html",
+   "published": "2026-11-23T19:14:17+00:00",
+   "title": "Cleverbridge Confirms Attackers Copied Payment Card Data From Its Platform",
+   "summary": "Cleverbridge confirms attackers stole payment card numbers, expiry dates and CVV codes, warning customers to watch for fraudulent transactions. Cleverbridge, which runs checkouts, payments and subscriptions for other companies, has confirmed that attackers copied payment card data from its platform. The company says it found the problem on 4 November and started notifying affected people […]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Phishing/Fraude",
+   "translated": false,
+   "enriched": false,
+   "raw": "Cleverbridge confirms attackers stole payment card numbers, expiry dates and CVV codes, warning customers to watch for fraudulent transactions. Cleverbridge, which runs checkouts, payments and subscriptions for other companies, has confirmed that attackers copied payment card data from its platform. The company says it found the problem on 4 November and started notifying affected people on 20 November. That’s a gap of 16 days. “On 4 November 2026, Cleverbridge detected unauthorised activity in our platform and took immediate steps to contain the incident.” reads the incident update published by the company. “Whilst our investigation remains ongoing, regretfully, we have been able to determine that a third party copied payment card data stored on our platform.” Affected systems went offline for a short time and were back online the same day. Only later did the investigation show that a third party had copied payment card data stored on the platform, and the company says that the investigation is still running. The company’s website lists customers such as SUSE, Red Hat and Parallels, but the company has not said which businesses were affected. If you bought a product or service from a company that uses Cleverbridge, it may have handled your payment and stored your card details. Cleverbridge provides payment and subscription services to software and SaaS companies. Cleverbridge has not clearly explained what information was stolen on its public incident page. It says the exposed data may include payment card details and directs affected customers to check their individual notifications. However, a notification reviewed by BleepingComputer provides more details: the stolen information may include card numbers, expiration dates and CVV or CVC security codes. That last item"
   },
   {
    "id": "f714b48247a9be7f",
@@ -13431,75 +13482,6 @@
    "enriched": true,
    "why": "Combina táticas de ransomware com falsas auditorias para extorquir dinheiro após comprometer sistemas.",
    "todo": "Mantenha os sistemas de deteção de endpoints atualizados e monitore atividades anómalas associadas a ferramentas de administração."
-  },
-  {
-   "id": "1df53018af16af50",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
-   "published": "2026-11-18T06:45:26+00:00",
-   "title": "Atacantes comprometem pacote PyPI do agent-framework da Microsoft para roubar credenciais da cloud",
-   "summary": "Várias empresas de cibersegurança detetaram que o pacote agent-framework da Microsoft no repositório PyPI foi comprometido por agentes maliciosos. Foram publicadas versões falsas que incluíam código malicioso desenhado para roubar credenciais sempre que o Python fosse iniciado. Esta situação afetou utilizadores que descarregaram as versões infetadas pouco após a sua publicação.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_LozO7RAz13Jr3eqWHIjlAF6M0Cs-mJXX2mKUqU0TxVS02piD1na92TAZjICmeySD4z0zS-Y_BFvceERBdk-UZvV1DUh1LGN6wK-T-yt_TROJ5fcuvROu807jqESQo93CFP3faBbReKMZQxvgYOAGl_vS2VzfO67O24NdAgh6d9jMO2mTSy2jaNJMPD9T/s1600/ms-python.jpg",
-   "points": [
-    "Quem: Atacantes desconhecidos e várias empresas de segurança detetoras.",
-    "O quê: Compromisso de um pacote oficial no repositório Python PyPI.",
-    "Como: Inclusão de um roubador de credenciais acionado no arranque do Python.",
-    "Impacto: Exposição de credenciais de serviços na cloud dos utilizadores afetados."
-   ],
-   "title_original": "Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Ataques a repositórios de código oficiais colocam em risco direto as credenciais e os ambientes em nuvem das empresas.",
-   "todo": "Verifique as dependências dos seus projetos Python e evite utilizar versões de pacotes não verificadas."
-  },
-  {
-   "id": "73f99f24243eacdc",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/18/tapmap-network-map-open-source/",
-   "published": "2026-11-18T06:30:24+00:00",
-   "title": "TapMap: Mapa de rede gratuito e de código aberto",
-   "summary": "O TapMap é uma aplicação de desktop gratuita e de código aberto que mapeia conexões de rede ativas num mapa mundial interativo. A ferramenta analisa sockets abertos, identifica os endereços IP remotos e consulta uma base de dados GeoIP local. De seguida, apresenta visualmente os resultados num navegador, permitindo associar facilmente cada ligação à aplicação respetiva. Os locais exibidos baseiam-se em dados de geolocalização IP aproximados.",
-   "image": null,
-   "points": [
-    "O quê: Lançamento da aplicação TapMap para visualização de redes.",
-    "Como: Através da análise de sockets ativos e consulta de base de dados GeoIP.",
-    "Impacto: Facilita a identificação visual rápida das conexões de rede ativas num computador.",
-    "Disponibilidade: Ferramenta gratuita e de código aberto para desktop."
-   ],
-   "title_original": "TapMap: Free, open-source network map",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Facilita a monitorização visual do tráfego de rede e das conexões ativas num computador pessoal ou empresarial.",
-   "todo": "Utilize ferramentas de mapeamento de rede para auditar e compreender as conexões externas estabelecidas pelos seus sistemas."
-  },
-  {
-   "id": "c1286bf528ca48d5",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/18/winrar-bubbleloader-malware/",
-   "published": "2026-11-18T06:00:03+00:00",
-   "title": "Malware BubbleLoader transforma cópias do WinRAR e do Windows Media Player em vetores de infeção",
-   "summary": "Empresas de segurança analisam o BubbleLoader, um carregador que transforma programas legítimos do Windows em portadores de outros malwares. Os atacantes modificam instruções no ponto de entrada do software original e integram imagens PNG que transportam código oculto. Entre os programas utilizados como hospedeiros encontram-se ferramentas populares como o WinRAR e o Windows Media Player. Esta ameaça tem sido monitorizada em campanhas ativas desde o início do ano.",
-   "image": null,
-   "points": [
-    "Quem: Investigadores da ReversingLabs e operadores do BubbleLoader.",
-    "O quê: Malware que utiliza aplicações legítimas do Windows para se propagar.",
-    "Como: Reescrita de instruções de arranque de programas e ocultação de código em imagens.",
-    "Impacto: Facilita a ocultação e execução de cargas maliciosas em software de uso comum."
-   ],
-   "title_original": "BubbleLoader malware turns copies of WinRAR and Windows Media Player into carriers",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite que ameaças iludam os controlos de segurança ao mascararem-se em programas legítimos e de confiança.",
-   "todo": "Garanta que obtém o software sempre de fontes oficiais e mantenha as soluções antimalware ativas e atualizadas."
   }
  ]
 }

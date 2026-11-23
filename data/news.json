@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T12:07:27.379946+00:00",
+ "updated": "2026-11-23T12:27:05.974736+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 2
+   "added": 1
   },
   {
    "source": "TugaTech",
@@ -23,8 +23,8 @@
   },
   {
    "source": "Exame Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "HTTPSConnectionPool(host='visao.pt', port=443): Read timed out. (read timeout=25)"
   },
   {
    "source": "Computerworld Portugal",
@@ -34,7 +34,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -94,12 +94,12 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -114,7 +114,7 @@
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 3
+   "added": 2
   },
   {
    "source": "TechCrunch Security",
@@ -143,13 +143,13 @@
   },
   {
    "source": "DataBreaches.net",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 9
+   "added": 8
   },
   {
    "source": "Microsoft Security Blog",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "Help Net Security",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 13
+   "added": 15
   },
   {
    "source": "ACSC Austrália",
@@ -309,16 +309,102 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 60,
-  "pending": 298,
-  "unenriched": 156,
+  "done": 120,
+  "pending": 235,
+  "unenriched": 96,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "271b7cc1e2032100",
+   "source": "SAPO Tek",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://tek.sapo.pt/multimedia/artigos/do-maior-lancamento-da-historia-as-referencias-a-portugal-os-numeros-e-curiosidades-de-gta-vi/",
+   "published": "2026-11-23T12:11:00+00:00",
+   "title": "Do maior lançamento da história às referências a Portugal: os números (e curiosidades) de GTA VI",
+   "summary": "A Take-Two confirmou que o GTA VI bateu recordes e tornou-se num dos maiores lançamentos da indústria do entretenimento. Enquanto os jogadores exploram o mapa de Leonida e encontram referências a Portugal, os especialistas em cibersegurança deixam alertas. O grande impacto reside no surgimento de campanhas de burlas que aproveitam a enorme expetativa em torno do jogo para enganar os utilizadores.",
+   "image": null,
+   "points": [
+    "A Take-Two confirmou o sucesso histórico do lançamento de GTA VI.",
+    "Jogadores encontraram referências a Portugal no mapa do jogo em Leonida.",
+    "Especialistas detetaram burlas a explorar a expetativa em torno do título."
+   ],
+   "title_original": null,
+   "category": "Phishing/Fraude",
+   "translated": false,
+   "enriched": true,
+   "why": "Os cibercriminosos aproveitam o entusiasmo em redor de grandes lançamentos para roubar dados e dinheiro através de fraudes.",
+   "todo": "Desconfie de ofertas exclusivas ou links suspeitos relacionados com o jogo e utilize apenas canais oficiais."
+  },
+  {
+   "id": "f8665cc5b1ef467b",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans/",
+   "published": "2026-11-23T12:02:23+00:00",
+   "title": "Operador de call center condenado a 8 anos por ajudar a burlar 30.000 americanos",
+   "summary": "Um operador de um centro de chamadas peruano foi condenado a oito anos de prisão nos Estados Unidos. O indivíduo participou num esquema de fraude de falsa impersonação governamental que durou vários anos. A operação criminosa roubou milhões de dólares a mais de 30.000 residentes norte-americanos de expressão espanhola.",
+   "image": null,
+   "points": [
+    "Um operador de call center peruano recebeu uma pena de oito anos de prisão.",
+    "O esquema consistia em fingir ser funcionário do governo para enganar vítimas.",
+    "Mais de 30.000 residentes nos EUA perderam milhões de dólares."
+   ],
+   "title_original": "Call center operator gets 8 years for helping scam 30,000 Americans",
+   "category": "Phishing/Fraude",
+   "translated": true,
+   "enriched": true,
+   "why": "Esquemas de impersonação de entidades oficiais continuam a causar perdas financeiras milionárias a cidadãos vulneráveis.",
+   "todo": "Nunca partilhe dados sensíveis nem transfira dinheiro por telefone sem confirmar a identidade real da entidade contactante."
+  },
+  {
+   "id": "2a48f9c8ed410a5f",
+   "source": "Schneier on Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.schneier.com/blog/archives/2026/11/humans-have-rights-machines-do-not.html",
+   "published": "2026-11-23T12:00:54+00:00",
+   "title": "Humanos têm direitos. As máquinas não têm.",
+   "summary": "Várias empresas tecnológicas, como Character.AI, OpenAI, xAI e Google, têm enfrentado processos judiciais na sequência de incidentes graves associados aos seus chatbots e sistemas de inteligência artificial. Para se defenderem em tribunal, estas organizações têm recorrido a diversos argumentos legais, incluindo a proteção da liberdade de expressão e a alegação de que prestam serviços e não produtos. O impacto reflete-se na tentativa destas empresas de recusarem responsabilidades diretas quando as ferramentas causam danos reais aos utilizadores.",
+   "image": null,
+   "points": [
+    "Grandes empresas enfrentam processos judiciais devido a danos causados por chatbots e IA.",
+    "As companhias invocam a liberdade de expressão e o estatuto de serviço para se defenderem.",
+    "As tecnológicas negam responsabilidade direta quando os seus sistemas provocam tragédias ou erros graves."
+   ],
+   "title_original": "Humans Have Rights. Machines Do Not.",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "A ausência de responsabilização jurídica clara para os criadores de IA dificulta a proteção dos utilizadores contra danos graves.",
+   "todo": ""
+  },
+  {
+   "id": "5bfc665b9265b633",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/produto-e-review/motorola-razr-flex-confira-tudo-o-que-se-sabe-sobre-o-dobravel-rival-do-iphone-duo/",
+   "published": "2026-11-23T12:00:00+00:00",
+   "title": "Motorola Razr Flex: confira tudo o que se sabe sobre o dobrável ‘rival’ do iPhone Duo",
+   "summary": "Novas fugas de informação revelaram detalhes sobre o Motorola Razr Flex, um futuro smartphone dobrável compacto com formato wide. O dispositivo pretende concorrer com equipamentos como o Galaxy Z Fold 8 e o iPhone Duo, oferecendo especificações de topo e opções de acabamento diferenciadas. Embora a Motorola ainda não tenha oficializado o modelo, as fugas mostram as dimensões, ecrãs e o processador esperado.",
+   "image": "https://www.estadao.com.br/resizer/v2/B2LKX64POVCU5PS5VOEL4DLWB4.webp?quality=80&auth=3ba6b6627177aab9e8851666e8626100894c091923cf955ee4abeb93f0aa55b2&width=710",
+   "points": [
+    "O Motorola Razr Flex adota um formato dobrável wide semelhante a rivais de mercado.",
+    "Fugas detalham ecrãs, dimensões e opções de acabamento com texturas e tecidos.",
+    "O smartphone deverá integrar hardware topo de linha, incluindo o chip Snapdragon."
+   ],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": true,
+   "why": "O acompanhamento de fugas tecnológicas permite antecipar tendências de design e hardware no mercado móvel.",
+   "todo": ""
+  },
   {
    "id": "bf5a11debc57d81b",
    "source": "CSO Online",
@@ -1381,6 +1467,28 @@
    "enriched": true,
    "why": "Importa porque promove o debate académico e profissional sobre a soberania digital e a proteção de infraestruturas críticas.",
    "todo": ""
+  },
+  {
+   "id": "5e4209ae374025b4",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/austrian-foreign-ministry-says-website-hacked",
+   "published": "2026-11-23T00:00:00+00:00",
+   "title": "Piratas informáticos invadem website do Ministério dos Negócios Estrangeiros da Áustria",
+   "summary": "O Ministério dos Negócios Estrangeiros da Áustria confirmou que sofreu um ataque cibernético a um dos seus websites. Os atacantes conseguiram aceder aos nomes e aos contactos oficiais de funcionários em funções na sede em Viena e em missões diplomáticas no estrangeiro. O incidente foi divulgado pelo próprio ministério no final da semana passada.",
+   "image": "https://cms.therecord.media/uploads/Screenshot_2026_11_23_at_11_58_27_ae01419cdf.png",
+   "points": [
+    "O Ministério dos Negócios Estrangeiros austríaco foi alvo de uma intrusão informática.",
+    "Os atacantes comprometeram um dos websites oficiais da instituição.",
+    "Foram acedidos nomes e contactos profissionais de diplomatas e funcionários."
+   ],
+   "title_original": "Hackers breach Austrian Foreign Ministry website, access diplomats' contact details",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "A invasão de infraestruturas governamentais expõe dados sensíveis de funcionários e pode comprometer a segurança diplomática.",
+   "todo": "Mantenha sistemas atualizados e reforce os controlos de acesso a portais e bases de dados institucionais."
   },
   {
    "id": "d9d2b8e7310259b0",
@@ -13659,121 +13767,6 @@
    "enriched": true,
    "why": "Alerta para os perigos da utilização não controlada de ferramentas de IA nas organizações.",
    "todo": "Implemente uma política clara de utilização de IA e descubra ferramentas não autorizadas usadas pelos colaboradores (IA sombra)."
-  },
-  {
-   "id": "03c87d26416ee844",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/sites-da-bbc-cnn-e-zoom-distribuiram-codigo-malicioso-apos-apos-hackers-aproveitarem-brecha/",
-   "published": "2026-11-17T16:00:00+00:00",
-   "title": "Sites de mais de 170 empresas incluindo BBC, HSBC e Zoom distribuíram código malicioso após brecha",
-   "summary": "Pelo menos 178 organizações, incluindo marcas como BBC, HSBC, Zoom e IKEA, foram utilizadas involuntariamente para distribuir código malicioso através de uma brecha na ferramenta Optimizely Web Experimentation. Os atacantes conseguiram injetar scripts para roubar criptomoedas, dados de cartões, credenciais e tentar explorar vulnerabilidades em iPhones com kits como Coruna e DarkSword. O incidente permitiu que os visitantes navegassem normalmente nos sites sem desconfiarem do perigo. O impacto coloca em risco os utilizadores que acederam a estas páginas oficiais durante o ataque.",
-   "image": "https://www.estadao.com.br/resizer/v2/LHZRAAU4K5FU3JP7WNJ2SUZ5VI.jpg?quality=80&auth=33f43a468f845189da274a1834402ce7fd49e401783caae60a923cddd903bf21&width=710",
-   "points": [
-    "Mais de 170 sites de grandes empresas distribuíram código malicioso após uma falha no Optimizely.",
-    "Os scripts visavam roubar criptomoedas, dados pessoais e credenciais de utilizadores.",
-    "Em iPhones, os atacantes tentaram explorar vulnerabilidades dos sistemas através de kits de exploração.",
-    "O impacto expôs visitantes desprevenidos de sites legítimos a infeções e roubo de dados."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Demonstra como a cadeia de fornecimento digital e ferramentas de terceiros podem ser usadas para comprometer utilizadores em massa.",
-   "todo": "Mantenha os sistemas operativos dos seus dispositivos móveis atualizados e utilize soluções de segurança Web adequadas."
-  },
-  {
-   "id": "3241c5d0e909d790",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/hardware/flipper-devices-launches-399-flipper-one-linux-based-multi-tool/",
-   "published": "2026-11-17T16:00:00+00:00",
-   "title": "Flipper Devices lança 'Flipper One', uma multi-ferramenta baseada em Linux por 399 dólares",
-   "summary": "A Flipper Devices, criadora do popular dispositivo de pentesting Flipper Zero, iniciou uma campanha de financiamento coletivo para o Flipper One. Este novo equipamento consiste num computador portátil baseado em Linux e numa multi-ferramenta de redes. O impacto desta revelação prende-se com a disponibilização de novas capacidades portáteis para profissionais de segurança e entusiastas de redes. O dispositivo expande o ecossistema de hardware da marca para testes de intrusão.",
-   "image": null,
-   "points": [
-    "A Flipper Devices lançou uma campanha de financiamento para o Flipper One.",
-    "O dispositivo é um computador Linux portátil e uma multi-ferramenta de redes.",
-    "O equipamento sucede ao popular Flipper Zero.",
-    "O impacto foca-se na introdução de novas capacidades de teste de segurança em formato portátil."
-   ],
-   "title_original": "Flipper Devices launches $399 ‘Flipper One’ Linux-based multi-tool",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Apresenta uma nova ferramenta de hardware com impacto relevante para profissionais de testes de intrusão e cibersegurança.",
-   "todo": "Esteja ciente dos riscos associados ao uso de ferramentas de hardware portáteis não autorizadas nas redes corporativas."
-  },
-  {
-   "id": "eac2a630777ddb52",
-   "source": "Cybersecurity Dive",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cybersecuritydive.com/news/critical-flaw-screenconnect-malicious-files-msp/874900/",
-   "published": "2026-11-17T15:58:03+00:00",
-   "title": "Falha Crítica no ScreenConnect Explorada para Executar Ficheiros Maliciosos em Contas de Técnicos de MSP",
-   "summary": "Investigadores de segurança detetaram quase 690.000 pedidos de transferência de ficheiros em menos de um mês, decorrentes da exploração de uma falha crítica no ScreenConnect. Os atacantes utilizaram esta vulnerabilidade para executar ficheiros maliciosos em contas de técnicos de Managed Service Providers (MSPs). Esta campanha permitiu o acesso não autorizado a sistemas sensíveis através de ferramentas de gestão remota. O elevado volume de pedidos evidencia a escala e a persistência dos ataques direcionados a estes prestadores de serviços.",
-   "image": "https://imgproxy.divecdn.com/NKxA6Y3_uiBRYvdAhS6LFwPIoM7_3-GD5Rb5njtrwy4/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy05Mjk3NzIzMTBfaUlxV1FsbC5qcGc=.webp",
-   "points": [
-    "Quase 690.000 pedidos de ficheiros registados em menos de um mês.",
-    "Exploração direcionada a contas de técnicos de MSP no ScreenConnect.",
-    "Execução de ficheiros maliciosos através da plataforma vulnerável.",
-    "Ataques colocam em risco a segurança de múltiplos clientes geridos."
-   ],
-   "title_original": "Critical flaw in ScreenConnect exploited to run malicious files on MSP technician accounts",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Compromete contas de prestadores de serviços geridos, abrindo porta para ataques em cascata nos clientes.",
-   "todo": "Atualize o ScreenConnect para a versão mais recente e reforce a autenticação multifator (MFA) nas contas técnicas."
-  },
-  {
-   "id": "6e65e608df54f4fb",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/anthropic-disclosure-deadline-30/",
-   "published": "2026-11-17T15:30:00+00:00",
-   "title": "Anthropic reduz prazo de divulgação para 30 dias para falhas graves",
-   "summary": "A Anthropic comprometeu-se a publicar falhas de segurança graves detetadas pelos seus modelos de IA no prazo de 30 dias após a respetiva reportagem. Esta medida visa acelerar a transparência e a consciencialização sobre vulnerabilidades críticas. O impacto desta decisão obriga a uma resposta mais célere na correção dos problemas identificados. A empresa passa assim a adotar um limite temporal mais restrico para a divulgação pública.",
-   "image": null,
-   "points": [
-    "A Anthropic reduziu o prazo de divulgação de falhas graves para 30 dias.",
-    "A medida aplica-se a vulnerabilidades descobertas pelos seus modelos de IA.",
-    "O objetivo é aumentar a transparência na segurança.",
-    "O impacto acelera a necessidade de correção célere de vulnerabilidades reportadas."
-   ],
-   "title_original": "Anthropic Cuts Disclosure Deadline to 30 Days For Serious Bugs",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Incentiva a transparência e pressiona o setor tecnológico a corrigir falhas de segurança com maior rapidez.",
-   "todo": "Estabeleça processos internos ágeis para corrigir vulnerabilidades reportadas dentro de prazos apertados."
-  },
-  {
-   "id": "63617dc37e283c3f",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/os-platforms/2026/11/17/windows-11-previews-remote-padlock-only-it-can-open/5310402",
-   "published": "2026-11-17T15:29:00+00:00",
-   "title": "Windows 11 testa cadeado remoto que só a TI pode abrir",
-   "summary": "A Microsoft está a testar uma nova versão experimental do Windows 11 que introduz o Remote Lock, uma funcionalidade controlada via Intune para administradores de empresas. Esta ferramenta permite bloquear remotamente um dispositivo perdido ou roubado sem apagar os dados, impedindo o desbloqueio local por qualquer utilizador até que a administração o reverta. O impacto fornece às equipas de TI uma forma não destrutiva de proteger equipamentos desaparecidos. A atualização também inclui melhorias na gestão de passkeys e do Microsoft Pluton.",
-   "image": "https://image.theregister.com/?imageId=5241973&width=800",
-   "points": [
-    "O Windows 11 introduz o Remote Lock gerido pelo Intune para empresas.",
-    "A funcionalidade bloqueia remotamente dispositivos sem apagar os dados.",
-    "O desbloqueio só pode ser feito pela administração de TI, ignorando credenciais locais.",
-    "O impacto oferece uma resposta segura e não destrutiva em caso de perda ou roubo de equipamentos."
-   ],
-   "title_original": "Windows 11 previews remote padlock only IT can open",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Melhora significativamente a gestão de segurança corporativa em dispositivos móveis ou portáteis perdidos.",
-   "todo": "Ative e configure ferramentas de gestão de dispositivos móveis, como o Intune, para proteger computadores corporativos."
   }
  ]
 }

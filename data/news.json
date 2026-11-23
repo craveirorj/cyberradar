@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T04:26:46.644248+00:00",
+ "updated": "2026-11-23T04:47:30.325048+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -309,15 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 114,
-  "pending": 234,
-  "unenriched": 100,
+  "done": 120,
+  "pending": 228,
+  "unenriched": 94,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "3f820b37d30aa112",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/virtualization/2026/11/23/google-claims-last-weeks-critical-vmware-bug-was-under-attack-since-september/5311547",
+   "published": "2026-11-23T04:39:19+00:00",
+   "title": "Google afirma que falha crítica no VMware da semana passada estava a ser explorada desde setembro",
+   "summary": "Um grupo de ameaças ligado à China, denominado ARMORY CASTLE, explorou ativamente a falha crítica CVE-2026-123890 no vCenter da VMware. Os atacantes utilizaram aplicações vulneráveis da BeyondTrust para aceder às redes e instalar a ferramenta de malware BONESAW. Esta ameaça permitiu aos intrusos contornar a autenticação multifator, falsificar tokens e extrair dados sensíveis dos sistemas ESXi. A investigação da Google revelou que o grupo já utilizava ferramentas semelhantes desde julho.",
+   "image": "https://image.theregister.com/?imageId=261387&width=800",
+   "points": [
+    "Grupo ARMORY CASTLE explorou a vulnerabilidade CVE-2026-123890 no VMware vCenter.",
+    "Invasores usaram eletrodomésticos remotos da BeyondTrust e malware BONESAW para o ataque.",
+    "O malware permitiu contornar a autenticação multifator e roubar dados dos sistemas.",
+    "A campanha maliciosa inclui várias ferramentas de reconhecimento e roubo de dados."
+   ],
+   "title_original": "Google claims last week’s critical VMware bug was under attack since September",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como agentes maliciosos sofisticados comprometem infraestruturas críticas através de falhas de autenticação em software de gestão.",
+   "todo": "Atualize imediatamente os produtos VMware afetados e aplique as correções de segurança disponibilizadas pelo fabricante."
+  },
   {
    "id": "4a7e4b34034f604c",
    "source": "SANS ISC",
@@ -1516,6 +1539,29 @@
    "enriched": true,
    "why": "Importa porque estas vulnerabilidades críticas estão a ser ativamente exploradas por atacantes em cenários de espionagem.",
    "todo": "Consulte os avisos de segurança oficiais e aplique imediatamente os patches de atualização fornecidos pelos fabricantes afetados."
+  },
+  {
+   "id": "a03f51601e713e60",
+   "source": "Dark Reading",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.darkreading.com/identity-access-management-security/ai-agents-bring-enterprises-new-access-control-challenges",
+   "published": "2026-11-21T01:31:23+00:00",
+   "title": "Como os fornecedores de segurança estão a abordar os desafios de controlo de acessos para agentes de IA",
+   "summary": "As empresas enfrentam o desafio de manter os agentes de inteligência artificial confinados às tarefas que lhes foram atribuídas. Para resolver esta questão, os controlos de identidade, de tempo de execução e de desenvolvimento estão a convergir. Contudo, os fornecedores utilizam abordagens distintas, o que obriga os responsáveis de segurança da informação (CISOs) a avaliarem cuidadosamente as suas opções.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt64d615142d7be882/6882572f618f869f048e5227/Agentic_AI_(1800)_Pattara_Alamy.jpg?width=720&quality=80&disable=upscale",
+   "points": [
+    "Empresas precisam de limitar a atuação de agentes de IA às tarefas atribuídas.",
+    "Verifica-se uma convergência entre controlos de identidade, de tempo de execução e de desenvolvimento.",
+    "Os fornecedores apresentam abordagens variadas para resolver o problema de controlo.",
+    "Os CISOs têm de selecionar a melhor estratégia para o seu ambiente."
+   ],
+   "title_original": "How Security Vendors Are Tackling Access-Control Challenges for AI Agents",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda a compreender a evolução das ferramentas de segurança na gestão de acessos para novas tecnologias de IA.",
+   "todo": "Defina políticas rigorosas de controlo de acessos e monitorize o comportamento dos agentes de IA implementados na organização."
   },
   {
    "id": "573a216a902f84f4",
@@ -13736,52 +13782,6 @@
    "enriched": true,
    "why": "Revela falhas de segurança significativas no desenvolvimento de sistemas de inteligência artificial autónoma.",
    "todo": "Estabeleça mecanismos rigorosos de testes de segurança e auditorias externas para sistemas de IA autónoma."
-  },
-  {
-   "id": "809cacde9c23bebd",
-   "source": "Pplware Segurança",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://pplware.sapo.pt/internet/seguranca/embaixada-dos-eua-emite-alerta-de-seguranca-para-a-europa/",
-   "published": "2026-11-17T12:30:00+00:00",
-   "title": "Embaixada dos EUA emite alerta de segurança para a Europa",
-   "summary": "A representação diplomática dos Estados Unidos em Londres emitiu um aviso de segurança direcionado aos cidadãos norte-americanos no Reino Unido e no resto da Europa. O comunicado aconselha a adoção de medidas de vigilância redobrada durante o período da época festiva. O alerta foi divulgado publicamente através dos canais oficiais da embaixada.",
-   "image": null,
-   "points": [
-    "Embaixada dos EUA em Londres emitiu alerta de segurança.",
-    "Aviso abrange o Reino Unido e o continente europeu.",
-    "Recomenda-se vigilância redobrada durante a época festiva.",
-    "Alerta foca-se na segurança de cidadãos norte-americanos."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Chama a atenção para potenciais riscos de segurança pública para viajantes e expatriados na Europa.",
-   "todo": "Mantenha-se atento a avisos locais e adote medidas básicas de precaução em locais públicos."
-  },
-  {
-   "id": "7d141681ccc20124",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/n-able-kills-legacy-apis-patches-17-n-central-zero-days/",
-   "published": "2026-11-17T12:28:45+00:00",
-   "title": "N-able elimina APIs legadas e corrige 17 falhas zero-day no N-central",
-   "summary": "A N-able lançou correções de segurança para resolver 17 vulnerabilidades zero-day recentemente descovirtas no seu software N-central. As atualizações também abordam falhas que já tinham sido ativamente exploradas por atacantes. Adicionalmente, a empresa procedeu à eliminação de APIs legadas para mitigar riscos estruturais.",
-   "image": null,
-   "points": [
-    "N-able corrigiu 17 vulnerabilidades zero-day no N-central.",
-    "Atualizações combatem falhas já exploradas por atacantes.",
-    "Empresa eliminou o suporte a APIs legadas.",
-    "Medidas visam reforçar a segurança da plataforma de gestão."
-   ],
-   "title_original": "N-able Kills Legacy APIs, Patches 17 N-central Zero-Days",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Corrige múltiplas portas de entrada críticas que estavam a ser exploradas ativamente contra sistemas de gestão.",
-   "todo": "Atualize imediatamente os servidores N-central para as versões corrigidas pela N-able."
   }
  ]
 }

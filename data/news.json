@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T20:30:16.015892+00:00",
+ "updated": "2026-11-23T20:44:48.796032+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CISA Advisories",
@@ -109,7 +109,7 @@
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CSO Online",
@@ -164,7 +164,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 9
+   "added": 11
   },
   {
    "source": "Cisco Talos",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -284,7 +284,7 @@
   {
    "source": "Securelist (Kaspersky)",
    "ok": true,
-   "added": 7
+   "added": 8
   },
   {
    "source": "Risky Bulletin",
@@ -310,15 +310,66 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 392,
-  "unenriched": 268,
+  "pending": 395,
+  "unenriched": 271,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)"
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "9ba29cbfa4c26782",
+   "source": "AWS Security Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://aws.amazon.com/blogs/security/introducing-aws-waf-simplified-pricing/",
+   "published": "2026-11-23T20:35:03+00:00",
+   "title": "Introducing AWS WAF simplified pricing",
+   "summary": "Starting today, AWS WAF pricing is easier to predict. Your bill is now based on three dimensions: the resources you protect, the traffic AWS WAF inspects, and the level of protection you apply to that traffic. Existing AWS WAF customers move to the new pricing on February 1, 2027. Until then, you keep your current […]",
+   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/19/waf-old-vs-new-pricing-flow-Figure-1.png",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "Starting today, AWS WAF pricing is easier to predict. Your bill is now based on three dimensions: the resources you protect, the traffic AWS WAF inspects, and the level of protection you apply to that traffic. Existing AWS WAF customers move to the new pricing on February 1, 2027. Until then, you keep your current pricing, and you don’t need to do anything at launch. This post explains what’s changing, how to estimate your costs under the new model, and where to find full pricing details and examples on the AWS WAF pricing page . For new or smaller workloads, the Free plan of CloudFront flat-rate pricing plans is another way to start. If your application serves fewer than 1 million requests per month, the Free plan costs $0 per month for each CloudFront distribution. It includes AWS WAF protection against common web threats, DDoS protection, and the CloudFront CDN, with no overage charges. Why the pricing is changing Under the previous model, adding a protection often meant adding a charge, so every security decision was also a billing decision. The new pricing separates those two questions and makes the trade off between cost and security posture easy to see. Turning on a rule, the Bot Control common protection, or the Anti-DDoS rule group doesn’t add a subscription or a separate per-request charge. Those requests bill at the base request rate. Capacity also stops affecting your rate. Each protection pack (web ACL) now includes up to 2,500 web ACL capacity units (WCUs), up from 1,500, and going past your included capacity no longer raises what you pay per request. The premium request fee applies only to the traffic you choose to send through advanced protections. You can estimate costs before writing a single rule, and those estimates hold even as your rules change. Se"
+  },
+  {
+   "id": "583b4462d50c3555",
+   "source": "AWS Security Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://aws.amazon.com/blogs/security/introducing-api-and-ai-security-on-aws-from-discovery-to-protection/",
+   "published": "2026-11-23T20:25:17+00:00",
+   "title": "Introducing API and AI security on AWS, from discovery to protection",
+   "summary": "APIs have run digital businesses for more than a decade. For a while, there seemed to be nothing new left to say about them. That changed in 2026, when AI endpoints joined them. Teams now run large language model (LLM) inference endpoints, Model Context Protocol (MCP) servers, and Agent2Agent (A2A) servers beside their REST APIs, […]",
+   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/19/Figure-1-1.png",
+   "points": [],
+   "title_original": null,
+   "category": "IA",
+   "translated": false,
+   "enriched": false,
+   "raw": "APIs have run digital businesses for more than a decade. For a while, there seemed to be nothing new left to say about them. That changed in 2026, when AI endpoints joined them. Teams now run large language model (LLM) inference endpoints, Model Context Protocol (MCP) servers, and Agent2Agent (A2A) servers beside their REST APIs, on services such as Amazon Bedrock, Amazon Bedrock AgentCore, and Amazon Elastic Kubernetes Service (Amazon EKS), and more companies sell their API as the product itself. On the other end, AI agents read API descriptions, pick the tools they need, and chain calls with no person clicking through an app. APIs have always had two kinds of callers: other services and people who use an app. Now there’s a third: AI agents that act on a person’s behalf. It feels like everyone has a personal AI agent that can call APIs for them. Who knew curl would be important again? Today, we’re launching capabilities across AWS WAF , Amazon CloudFront, Application Load Balancer, and Amazon API Gateway that help you discover and protect the APIs and AI endpoints that services, apps, and AI agents call: API Portal , a new feature in Amazon API Gateway, discovers your APIs and AI endpoints. API Security , a new managed rule group in AWS WAF, protects your APIs. AI Security , a new managed rule group in AWS WAF, protects your AI endpoints. All three are generally available today. You can enable discovery in API Portal for one account or for your organization in AWS Organizations . The two rule groups protect the resources that you associate with your protection pack (web ACL). They work together: API Portal shows which discovered endpoints AWS WAF protects, and the security events that AWS WAF detects appear on each managed API’s detail page. Same APIs, new callers, new"
+  },
+  {
+   "id": "c01f8c41d8fc5759",
+   "source": "Dark Reading",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.darkreading.com/cybersecurity-operations/us-cyber-director-pick-signals-shift-toward-expertise",
+   "published": "2026-11-23T20:13:48+00:00",
+   "title": "US Cyber Director Pick Signals Shift Toward Expertise",
+   "summary": "Trump named Kirsten Davies as Acting National Cyber Director, bringing greater industry experience to the role amid recent outages and rising geopolitical tensions.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt9a0966356bb6bbf4/6b048a6e805d232dd3e79e51/white_house-uschools-GettyImages-160196566.jpg?width=720&quality=80&disable=upscale",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "Trump named Kirsten Davies as Acting National Cyber Director, bringing greater industry experience to the role amid recent outages and rising geopolitical tensions."
+  },
   {
    "id": "9be28c5a452509a1",
    "source": "HackRead",
@@ -13395,75 +13446,6 @@
    "enriched": true,
    "why": "Deixa sistemas vulneráveis a ataques que podem comprometer total ou parcialmente a estabilidade e segurança da rede.",
    "todo": "Atualize o software Oracle Java afetado para a versão mais recente segura."
-  },
-  {
-   "id": "0ad69605a84900f7",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/british-scattered-spider-hacker-sentenced-to-6-years-in-prison/",
-   "published": "2026-11-18T08:24:18+00:00",
-   "title": "Hacker britânico do grupo Scattered Spider condenado a seis anos de prisão",
-   "summary": "Um dos líderes do coletivo cibercriminoso Scattered Spider foi condenado a seis anos de prisão nos Estados Unidos. O indivíduo foi responsabilizado pelo roubo de milhões em criptomoeda e pela conspiração para atacar mais de uma dezena de empresas. A sentença reflete o esforço das autoridades no combate aos crimes cibernéticos organizados.",
-   "image": null,
-   "points": [
-    "Líder do grupo Scattered Spider condenado nos EUA.",
-    "Pena aplicada de seis anos de prisão.",
-    "Envolvido no roubo de milhões em criptomoeda.",
-    "Conspirou para atacar cerca de doze empresas."
-   ],
-   "title_original": "British Scattered Spider hacker sentenced to 6 years in prison",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra a responsabilização judicial internacional de figuras centrais em redes de ciberdelicundência.",
-   "todo": ""
-  },
-  {
-   "id": "6b3cc3cbba830437",
-   "source": "Pplware Segurança",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://pplware.sapo.pt/microsoft/microsoft-porque-falhou-o-outlook-e-o-teams-por-24-horas-erro-explica-tudo/",
-   "published": "2026-11-18T08:00:00+00:00",
-   "title": "Microsoft: porque falhou o Outlook e o Teams por 24 horas? Erro explica tudo",
-   "summary": "Milhões de utilizadores em 74 países ficaram sem acesso ao Outlook, Teams e Copilot durante quase 24 horas devido a uma falha técnica. O incidente teve início a 12 de novembro e afetou gravemente empresas e serviços públicos até ao dia seguinte. A Microsoft esclareceu que se tratou de um erro operacional e afastou liminarmente a hipótese de um ciberataque.",
-   "image": null,
-   "points": [
-    "Interrupção de serviços afetou o Outlook, Teams e Copilot.",
-    "Impactou utilizadores em 74 países durante quase um dia inteiro.",
-    "Microsoft afastou a hipótese de ciberataque na análise preliminar.",
-    "Incidente começou a 12 de novembro pelas 16h20 de Lisboa."
-   ],
-   "title_original": null,
-   "category": "Ataque/APT",
-   "translated": false,
-   "enriched": true,
-   "why": "Explica a origem de uma falha global massiva que paralisou serviços empresariais e públicos essenciais.",
-   "todo": "Implemente planos de continuidade de negócio e canais de comunicação alternativos para mitigar falhas em serviços na cloud."
-  },
-  {
-   "id": "c5f6c87fa0f7f386",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/java4shell-vulnerability-puts-many-enterprise-applications-at-risk-of-takeover/",
-   "published": "2026-11-18T07:43:34+00:00",
-   "title": "Vulnerabilidade Java4Shell coloca várias aplicações empresariais em risco de tomada de controlo",
-   "summary": "A vulnerabilidade Java4Shell afeta o OpenJDK e coloca várias aplicações empresariais conhecidas em risco de ataque. Investigadores demonstraram a execução remota de código em plataformas como Jira, Jenkins e Keycloak. Embora os riscos sejam reais, especialistas referem que a exploração prática à medida exige trabalho direcionado por cada alvo. As empresas utilizadoras devem estar atentas para mitigar possíveis intrusões.",
-   "image": null,
-   "points": [
-    "O quê: Vulnerabilidade de execução remota de código chamada Java4Shell.",
-    "Como: Afeta o descodificador Base64 do OpenJDK em determinados processadores.",
-    "Impacto: Risco de tomada de controlo em aplicações empresariais populares.",
-    "Quem: Afeta utilizadores de software como Jira, Jenkins e Keycloak."
-   ],
-   "title_original": "Java4Shell Vulnerability Puts Many Enterprise Applications at Risk of Takeover",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite que atacantes obtenham controlo remoto de aplicações empresariais críticas sem autenticação.",
-   "todo": "Atualize imediatamente o Java e as aplicações afetadas para as versões corrigidas mais recentes."
   }
  ]
 }

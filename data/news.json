@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T13:07:37.040840+00:00",
+ "updated": "2026-11-23T13:25:03.140730+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -9,7 +9,7 @@
   {
    "source": "IT Security",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Pplware Segurança",
@@ -144,7 +144,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Malwarebytes Labs",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 16
+   "added": 17
   },
   {
    "source": "ACSC Austrália",
@@ -309,16 +309,82 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 72,
-  "pending": 282,
-  "unenriched": 145,
+  "done": 12,
+  "pending": 345,
+  "unenriched": 208,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 25 column 5 (char 1971)",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "6fbe0c1fb6dc12e9",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/23/cleverbridge-data-breach-card-numbers-cvv/",
+   "published": "2026-11-23T13:00:14+00:00",
+   "title": "Cleverbridge alerta clientes que hackers roubaram números de cartões de crédito e CVV",
+   "summary": "A plataforma de comércio eletrónico Cleverbridge confirmou ter sofrido uma violação de segurança que comprometeu dados de cartões de pagamento armazenados. A empresa presta serviços a várias marcas conhecidas, embora ainda não tenha especificado quais os clientes finais afetados. A atividade não autorizada foi detetada pela própria organização, que iniciou imediatamente medidas de resposta. O incidente expõe dados sensíveis de transações financeiras geridas pela plataforma.",
+   "image": null,
+   "points": [
+    "Ataque informático à plataforma Cleverbridge comprometeu dados de cartões de pagamento.",
+    "A empresa gere serviços de e-commerce e subscrições para várias marcas globais.",
+    "A intrusão foi detetada internamente, espoletando ações imediatas de contenção."
+   ],
+   "title_original": "Cleverbridge alerts customers that hackers stole their credit card and CVV numbers",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como o comprometimento de uma plataforma intermediária de pagamentos pode expor os dados financeiros de utilizadores de várias marcas.",
+   "todo": "Monitorize regularmente as suas extratos bancários e faturas de cartão de crédito para detetar transações não autorizadas."
+  },
+  {
+   "id": "1b05051fde597631",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/23/new-york-state-department-of-financial-services-secures-6-75-million-in-cybersecurity-settlements-with-rocket-mortgage-and-mr-cooper/",
+   "published": "2026-11-23T12:45:40+00:00",
+   "title": "Departamento de Serviços Financeiros de Nova Iorque garante 6,75 milhões de dólares em acordos de cibersegurança com Rocket Mortgage e Mr. Cooper",
+   "summary": "O Departamento de Serviços Financeiros de Nova Iorque alcançou acordos financeiros com a Rocket Mortgage e a Nationstar Mortgage, conhecida como Mr. Cooper. As empresas vão pagar milhões na sequência de falhas ligadas a controlos de autenticação multifator e à comunicação tardia de incidentes. O anúncio foi feito pela superintendente interina Kaitlin Asrow. Estes acordos sublinham a importância de cumprir as normas regulamentares de segurança.",
+   "image": null,
+   "points": [
+    "Rocket Mortgage e Mr. Cooper vão pagar 6,75 milhões de dólares em acordos.",
+    "O caso envolve falhas na autenticação multifator e atrasos na notificação de incidentes.",
+    "As coimas foram aplicadas pelo regulador financeiro do Estado de Nova Iorque."
+   ],
+   "title_original": "New York State Department of Financial Services Secures $6.75 Million in Cybersecurity Settlements with Rocket Mortgage and Mr. Cooper",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia as consequências legais e financeiras severas para empresas que negligenciam a autenticação forte e a comunicação atempada de incidentes.",
+   "todo": "Implemente autenticação multifator robusta em todos os acessos críticos e estabeleça procedimentos rigorosos para notificar incidentes atempadamente."
+  },
+  {
+   "id": "000261bc0c29015b",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/23/peninsula-energy-warns-of-disruption-after-wyoming-cyber-incident/",
+   "published": "2026-11-23T12:45:27+00:00",
+   "title": "Peninsula Energy avisa para perturbações após incidente cibernético no Wyoming",
+   "summary": "A Peninsula Energy reportou um incidente de cibersegurança no projeto de urânio Lance, localizado no Wyoming, que afetará temporariamente as operações. A empresa com cotação na Austrália solicitou uma suspensão da negociação das suas ações para preparar um comunicado oficial sobre o sucedido. O problema surgiu num sistema operativo e motivou uma investigação preliminar. A situação gerou interrupções na atividade normal da empresa mineira.",
+   "image": null,
+   "points": [
+    "Incidente cibernético afetou o projeto de urânio Lance no Wyoming.",
+    "A empresa Peninsula Energy suspendeu a negociação das suas ações na bolsa.",
+    "As operações locais sofreram perturbações temporárias devido ao ataque aos sistemas."
+   ],
+   "title_original": "Peninsula Energy warns of disruption after Wyoming cyber incident",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra como ataques informáticos a sistemas operativos industriais podem paralisar operações no setor energético e afetar a atividade bolsista.",
+   "todo": "Assegure que os sistemas operativos industriais possuem mecanismos de monitorização contínua e planos de contingência testados."
+  },
   {
    "id": "6078bd158252748a",
    "source": "Help Net Security",
@@ -1628,6 +1694,50 @@
    "enriched": true,
    "why": "A invasão de infraestruturas governamentais expõe dados sensíveis de funcionários e pode comprometer a segurança diplomática.",
    "todo": "Mantenha sistemas atualizados e reforce os controlos de acesso a portais e bases de dados institucionais."
+  },
+  {
+   "id": "9ef5eda3443a3f36",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/compliance/whatsapp-corrige-vulnerabilidade-associada-a-burlas",
+   "published": "2026-11-23T00:00:00+00:00",
+   "title": "WhatsApp corrige vulnerabilidade associada a burlas",
+   "summary": "Uma falha de segurança nas aplicações WhatsApp e WhatsApp Business para Android permitia a exposição de endereços IP dos utilizadores. O problema foi descoberto durante o decorrer de uma operação policial direcionada a uma campanha de fraudes. A vulnerabilidade representava um risco para a privacidade ao revelar dados de ligação. A correção foi implementada para proteger a comunidade de utilizadores.",
+   "image": null,
+   "points": [
+    "Falha no WhatsApp para Android expunha endereços IP dos utilizadores.",
+    "A vulnerabilidade foi detetada no âmbito de uma operação contra burlas.",
+    "A correção visa proteger a privacidade e mitigar riscos de exploração por burlões."
+   ],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": true,
+   "why": "Revela como vulnerabilidades em aplicações de mensagens populares são aproveitadas para fins fraudulentos e comprometimento de privacidade.",
+   "todo": "Atualize imediatamente as aplicações WhatsApp e WhatsApp Business no seu dispositivo Android para a versão mais recente."
+  },
+  {
+   "id": "b4f77005033184fd",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/threats/cisa-alerta-para-exploracao-com-ia-de-vulnerabilidade-critica",
+   "published": "2026-11-23T00:00:00+00:00",
+   "title": "CISA alerta para exploração com IA de vulnerabilidade crítica",
+   "summary": "A agência norte-americana CISA confirmou que uma falha crítica no Cisco Expressway está a ser ativamente explorada com recurso a inteligência artificial. A vulnerabilidade permite a execução remota de comandos no sistema com privilégios máximos de administrador. Esta situação aumenta drasticamente o risco para as organizações que utilizam o software afetado. A exploração bem-sucedida dá controlo total aos atacantes.",
+   "image": null,
+   "points": [
+    "Vulnerabilidade crítica detetada no Cisco Expressway.",
+    "A falha está a ser ativamente explorada com auxílio de inteligência artificial.",
+    "O problema permite a execução remota de comandos com privilégios de administrador."
+   ],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": true,
+   "why": "Alerta para o uso de IA por atacantes para acelerar e automatizar a exploração de falhas críticas em infraestruturas empresariais.",
+   "todo": "Aplique imediatamente as correções de segurança disponibilizadas pela Cisco para o Expressway e verifique sinais de intrusão."
   },
   {
    "id": "d9d2b8e7310259b0",
@@ -13658,116 +13768,6 @@
    "enriched": true,
    "why": "Ilustra a vulnerabilidade de infraestruturas críticas governamentais a falhas técnicas generalizadas.",
    "todo": "Manter redundâncias robustas em sistemas de comunicação internos para mitigar falhas operacionais inesperadas."
-  },
-  {
-   "id": "6b32b3a765865b84",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/",
-   "published": "2026-11-17T18:04:15+00:00",
-   "title": "Tor releases emergency update amid ongoing DDoS update",
-   "summary": "O projeto Tor lançou uma atualização de emergência para mitigar um ataque de negação de serviço distribuído (DDoS) que tem vindo a afetar a sua rede. A correção visa estabilizar o funcionamento dos serviços e proteger a infraestrutura contra o tráfego malicioso direcionado.",
-   "image": null,
-   "points": [
-    "O projeto Tor disponibilizou uma atualização de emergência.",
-    "A medida surge no seguimento de um ataque DDoS contínuo contra a rede."
-   ],
-   "title_original": "Tor releases emergency update amid ongoing DDoS attack",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Protege a disponibilidade de uma rede essencial para a privacidade e anonimato online contra ataques disruptivos.",
-   "todo": "Atualizar imediatamente os nós e clientes Tor para as versões mais recentes disponibilizadas pelos programadores."
-  },
-  {
-   "id": "42c4fd05f3f446d0",
-   "source": "TechCrunch Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://techcrunch.com/2026/11/17/protons-lumo-a-privacy-focused-alternative-to-chatgpt-and-claude-arrives-on-desktop/",
-   "published": "2026-11-17T17:32:25+00:00",
-   "title": "Proton’s Lumo, a privacy-focused alternative to ChatGPT and Claude, arrives on desktop",
-   "summary": "A Proton lançou a aplicação Lumo Desktop para Windows, Mac e Linux, apresentando-a como uma alternativa focada na privacidade face a ferramentas como o ChatGPT e o Claude. A nova solução permite aos utilizadores automatizar tarefas em ficheiros e aplicações ligadas, oferecendo controlos granulares sobre os dados a que a inteligência artificial pode aceder.",
-   "image": null,
-   "points": [
-    "A Proton lançou a aplicação de desktop Lumo para Windows, Mac e Linux.",
-    "Funciona como uma alternativa a assistentes de IA com forte foco na privacidade.",
-    "Permite automatizar tarefas com controlos granulares sobre o acesso aos dados."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "Disponibiliza uma ferramenta de IA centrada na privacidade e no controlo de dados pelo utilizador final.",
-   "todo": "Configurar rigorosamente as permissões de acesso aos ficheiros locais ao utilizar assistentes de IA no computador."
-  },
-  {
-   "id": "7e0cfef95a8a90ca",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/california-fines-hertz-state-data-privacy-law",
-   "published": "2026-11-17T17:13:00+00:00",
-   "title": "California fines Hertz $1.5 million for breaking state data privacy law",
-   "summary": "A empresa Hertz concordou em pagar uma multa de 1,5 milhões de dólares após violar a lei de privacidade de dados do estado da Califórnia. O acordo foi revelado através de um processo judicial partilhado pela Agência de Proteção de Privacidade da Califórnia (CPPA). Além da coima financeira, a empresa comprometeu-se a alterar as suas práticas comerciais relativas à gestão de dados.",
-   "image": "https://cms.therecord.media/uploads/hertz_5598ef5477.jpg",
-   "points": [
-    "A Hertz foi multada em 1,5 milhões de dólares pela CPPA na Califórnia.",
-    "A coima resultou de infrações à legislação estadual de privacidade de dados.",
-    "A empresa concordou em pagar e alterar as suas práticas comerciais."
-   ],
-   "title_original": null,
-   "category": "Regulação",
-   "translated": false,
-   "enriched": true,
-   "why": "Reforça a aplicação estrita das leis de privacidade de dados e as consequências financeiras para o incumprimento.",
-   "todo": "Garantir a conformidade estricta com os regulamentos de privacidade locais no tratamento de dados de clientes."
-  },
-  {
-   "id": "b64be28f9bb8177a",
-   "source": "AWS Security Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://aws.amazon.com/blogs/security/using-the-aws-rmit-workbook-and-iso-compliance-guides-to-support-your-bnm-submissions/",
-   "published": "2026-11-17T17:12:08+00:00",
-   "title": "Using the AWS RMiT workbook and ISO Compliance Guides to support your BNM submissions",
-   "summary": "As instituições financeiras na Malásia dispõem agora de novos recursos para fundamentar as suas submissões regulamentares ao Bank Negara Malaysia (BNM) em conformidade com os requisitos de Gestão de Risco em Tecnologia (RMiT). Os documentos incluem um livro de trabalho Excel da AWS e guias de conformidade baseados em normas ISO. Estes recursos ajudam a mapear responsabilidades entre a infraestrutura da AWS e as cargas de trabalho dos clientes.",
-   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2024/10/21/Jonathan-Jenkyn-Author.jpg",
-   "points": [
-    "Novos recursos da AWS ajudam na conformidade com o RMiT do Bank Negara Malaysia.",
-    "O livro de trabalho mapeia 394 provisões regulamentares para controlos da AWS e práticas do cliente.",
-    "Guias de conformidade ISO complementam a documentação para instituições financeiras."
-   ],
-   "title_original": null,
-   "category": "Regulação",
-   "translated": false,
-   "enriched": true,
-   "why": "Facilita a demonstração de conformidade regulamentar em serviços de computação em nuvem para o setor financeiro.",
-   "todo": "Utilizar os livros de trabalho e guias de conformidade oficiais da cloud para documentar a responsabilidade partilhada."
-  },
-  {
-   "id": "f479cb5dcfaac979",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/fbi-artex-ai-tool-hackers-gain-privileged-access/",
-   "published": "2026-11-17T16:51:49+00:00",
-   "title": "FBI avisa que ferramenta de IA ARTEX ajudou piratas informáticos a obter acesso privilegiado em menos de 3 horas",
-   "summary": "O FBI emitiu um alerta sobre o ARTEX, um novo framework que automatiza várias fases de um ciberataque, desde a fase inicial de reconhecimento até à obtenção de acessos. A ferramenta permitiu a piratas informáticos obterem privilégios elevados em menos de três horas. O impacto prende-se com a facilidade e rapidez acrescidas na execução de ataques complexos. As autoridades alertam as organizações para estarem atentas a esta nova ameaça automatizada.",
-   "image": null,
-   "points": [
-    "O FBI emitiu um alerta sobre o framework ARTEX.",
-    "A ferramenta automatiza várias etapas de um ciberataque.",
-    "Piratas informáticos conseguiram acessos privilegiados em menos de três horas.",
-    "O impacto resulta da maior velocidade e facilidade na execução de intrusões."
-   ],
-   "title_original": "FBI Says ARTEX AI Tool Helped Hackers Gain Privileged Access in Under 3 Hours",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como a inteligência artificial está a ser usada para acelerar e automatizar ataques cibernéticos perigosos.",
-   "todo": "Mantenha os sistemas atualizados e reforce a monitorização de acessos privilegiados na sua rede."
   }
  ]
 }

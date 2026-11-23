@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T22:05:05.600691+00:00",
+ "updated": "2026-11-23T22:25:34.619800+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -89,7 +89,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 20
+   "added": 19
   },
   {
    "source": "SecurityWeek",
@@ -114,7 +114,7 @@
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 5
+   "added": 6
   },
   {
    "source": "TechCrunch Security",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 9
+   "added": 8
   },
   {
    "source": "Help Net Security",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 389,
-  "unenriched": 265,
+  "done": 12,
+  "pending": 382,
+  "unenriched": 255,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -320,21 +320,73 @@
  },
  "items": [
   {
+   "id": "6a57f5edfd55bc34",
+   "source": "Dark Reading",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure",
+   "published": "2026-11-23T22:02:46+00:00",
+   "title": "Gateways Industriais Seriais Emitem Avisos Sobre a Sua Própria Insegurança",
+   "summary": "Dispositivos críticos de acesso operacional (OT) expõem publicamente se estão ou não protegidos por mecanismos de autenticação. Esta falha informativa facilita a ação de atacantes ao revelar quais os equipamentos que carecem de defesas básicas. O impacto afeta infraestruturas industriais que utilizam estes componentes sem proteção adequada.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt301a7a187c53b85f/6b04a5d4187d8b84c6ba02e4/Serial_to_IP-Gri-spb-Getty.jpg?width=720&quality=80&disable=upscale",
+   "points": [
+    "Equipamentos afetados: dispositivos críticos de acesso operacional (OT) e gateways seriais industriais.",
+    "O problema: os aparelhos divulgam publicamente se possuem ou não autenticação ativa.",
+    "Impacto: exposição de redes industriais vulneráveis a potenciais acessos não autorizados.",
+    "Como ocorre: falha de configuração nativa nos próprios dispositivos ligados à rede."
+   ],
+   "title_original": "Industrial Serial Gateways Broadcast That They're Insecure",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que qualquer atacante identifique rapidamente alvos industriais vulneráveis e sem proteção.",
+   "todo": "Verifique a configuração de autenticação dos gateways industriais e restrinja o acesso direto a partir de redes externas."
+  },
+  {
+   "id": "372c05cb64263c48",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/inteligencia-artificial/ceo-da-anthropic-teria-sugerido-usar-games-para-acalmar-desempregados-pela-ia/",
+   "published": "2026-11-23T22:00:00+00:00",
+   "title": "CEO da Anthropic teria sugerido usar games para acalmar ‘desempregados pela IA'",
+   "summary": "Dario Amodei, atual CEO da Anthropic, terá sugerido o uso de videojogos imersivos para apaziguar potenciais conflitos sociais decorrentes do desemprego em massa provocado pela inteligência artificial. A proposta surgiu através de mensagens internas trocadas na época em que trabalhava na OpenAI, reveladas recentemente pelo The Wall Street Journal. O objetivo seria manter as pessoas desempregadas entretenidas para reduzir reclamações e tensões políticas.",
+   "image": "https://www.estadao.com.br/resizer/v2/FBDO5BU3LRPSFI2TBTUQPNW6NI.jpg?quality=80&auth=326c40c98ed17b7b6946f7a18073a18596a8194a0ccd1365a1b130ece4593df2&width=710",
+   "points": [
+    "Quem: Dario Amodei, CEO da Anthropic e ex-colaborador da OpenAI.",
+    "O quê: sugestão de utilizar videojogos imersivos para ocupar e acalmar trabalhadores afetados pelo desemprego gerado pela IA.",
+    "Como: através de mensagens internas na plataforma Slack reveladas pelo The Wall Street Journal.",
+    "Impacto: levanta debates sobre a resposta das empresas tecnológicas às consequências económicas da automação."
+   ],
+   "title_original": null,
+   "category": "IA",
+   "translated": false,
+   "enriched": true,
+   "why": "Revela a perspetiva interna de líderes tecnológicos sobre os impactos socioeconómicos da automação por IA.",
+   "todo": ""
+  },
+  {
    "id": "ef949789e56feb86",
    "source": "The Register Security",
    "region": "EU",
    "lang": "en",
    "link": "https://www.theregister.com/security/2026/11/23/inception-possibly-a-shinyhunters-reboot-claims-seven-victims-in-a-week/5311768",
    "published": "2026-11-23T21:52:23+00:00",
-   "title": "Inception - possibly a ShinyHunters reboot - claims seven victims in a week",
-   "summary": "Whatever they call themselves these days: be on the lookout for voice phishing attempts",
+   "title": "Inception - possivelmente um regresso dos ShinyHunters - reivindica sete vítimas numa semana",
+   "summary": "O grupo de extorsão conhecido como Inception é apontado por investigadores de segurança como um possível renascimento da fação cibercriminosa ShinyHunters. O cluster de ameaças tem visado organizações através de campanhas de vishing e roubo de contas para exfiltração de dados e extorsão. Entre as vítimas recentes divulgadas num novo site de fugas de informação encontram-se várias empresas de grande dimensão.",
    "image": "https://image.theregister.com/?imageId=5311772&width=800",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: o grupo de cibercrime Inception, associado ao cluster O-UNC-053 e aos antigos ShinyHunters.",
+    "O quê: campanhas de ataques por vishing e roubo de contas que resultaram em roubo de dados e extorsão.",
+    "Como: utilizando engenharia social para roubar credenciais e aprovações de autenticação multifator (MFA).",
+    "Impacto: compromisso de dados e publicação de informações de várias empresas num novo portal de fugas."
+   ],
+   "title_original": "Inception - possibly a ShinyHunters reboot - claims seven victims in a week",
    "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": false,
-   "raw": "Don't mind the recent arrests. The ShinyHunters extortion gang may still be operating, just under the new name of Inception, according to Okta's threat intelligence group. ShinyHunters is the brash cybercriminal group that, most recently, breached rival gang Clop before hacking the FBI, resulting in at least three arrests of key suspects in September and October. The crims - and their old data leak site - have since gone dark. “While this threat cluster has changed their brand affiliation, the operators remain active in targeting organizations with voice phishing attacks and account takeovers resulting in data theft and extortion,” Okta threat hunters Moussa Diallo and Katie Nickels said on Monday. Okta tracks this threat cluster as O-UNC-053 - the “O-UNC” prefix stands for an Okta Uncategorized cluster, and it uses this label before formally attributing the activity to a named threat group. While Okta hasn't formally confirmed O-UNC-053 to be the same crime crew as ShinyHunters, the identity and access management provider’s researchers note that it does use nearly identical social engineering tactics: voice phishing, during which the scammers trick targets into entering credentials into phishing pages and approving multi-factor authentication (MFA). Plus, they note: O-UNC-053 operators change the themes of their phishing domains about every four to six weeks, and they also post claimed victims on ShinyHunters’ data leak site. In November, however, organizations targeted by O-UNC-053 began appearing on a new data leak site branded as Inception and not ShinyHunters. The first five - Advanced Micro Devices, Cigna Healthcare, Paychex, PepsiCo, and Henry Schein - appeared November 17 on the site, and all were marked “leaked.” Soon after, security maven Dominic Alvieri quest"
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra a resiliência de grupos criminosos que mudam de identidade para continuar campanhas de extorsão.",
+   "todo": "Reforce a formação dos colaboradores para reconhecer tentativas de vishing e valide sempre pedidos inesperados de MFA."
   },
   {
    "id": "1e06e3bf439b4985",
@@ -343,15 +395,21 @@
    "lang": "en",
    "link": "https://cyberscoop.com/virginia-oregon-sue-spacex-grok-deepfakes/",
    "published": "2026-11-23T21:32:33+00:00",
-   "title": "Virginia, Oregon hit SpaceX with fresh lawsuits over Grok-created CSAM",
-   "summary": "The lawsuit alleges that weak safeguards around nudification were a primary selling point for Musk’s business strategy to differentiate Grok and other competing AI models.",
+   "title": "Virgínia e Oregon processam SpaceX devido a conteúdos de abuso sexual infantil criados pelo Grok",
+   "summary": "Os procuradores-gerais dos estados da Virgínia e do Oregon intentaram ações judiciais contra a SpaceX e subsidiárias por violação de leis de proteção do consumidor. Os processos alegam que a empresa permitiu que a ferramenta de inteligência artificial Grok gerasse imagens íntimas falsas e materiais de abuso sexual infantil. As autoridades exigem restrições à publicidade da ferramenta, indemnizações e o pagamento de coimas civis.",
    "image": "https://cyberscoop.com/wp-content/uploads/sites/3/2026/11/image_f4ed95.png",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: os procuradores-gerais de Virgínia e Oregon contra a SpaceX e Elon Musk.",
+    "O quê: processos judiciais por violação de leis de comércio e consumo devido a conteúdos ilícitos gerados pelo Grok.",
+    "Como: a ferramenta permitiu a criação sem consentimento de imagens íntimas e material de abuso infantil.",
+    "Impacto: responsabilidade jurídica acrescida para empresas tecnológicas que negligenciam a segurança de IA."
+   ],
+   "title_original": "Virginia, Oregon hit SpaceX with fresh lawsuits over Grok-created CSAM",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "Two new lawsuits accuse SpaceX and its subsidiaries of violating state consumer and trade laws by allowing its AI tool, Grok, to create deepfake nudes of millions of people earlier this year. Virginia Attorney General Jay Jones and Oregon Attorney General Dan Rayfield, both Democrats, filed the lawsuits. They allege SpaceX and owner Elon Musk repeatedly failed to block Grok’s nudification feature after it became clear the tool was being used to break the law by creating nude or defamatory images of real people. The attorneys general want a court to bar SpaceX from advertising or profiting from the tool’s capabilities, pay restitution to victims and impose civil penalties. “Time and again, xAI and X told consumers they were being protected from abuses. That was false,” Jones said in a statement. “Instead, the tool permitted users to routinely create and circulate non-consensual intimate imagery and sexualized images, and child sexual abuse material (CSAM), causing harm to individuals and children. Companies that deploy powerful tools don’t get to ignore consumer safety and call it innovation. The law applies to everyone, and this office will hold big tech accountable when they break the law.” The lawsuits say Grok launched when other AI companies already knew about the harms of deepfake pornography to adults and children. Many of those companies built safeguards to keep their models from generating such content. Musk, by contrast, is facing separate lawsuits from former victims of child sexual abuse material. Those plaintiffs allege Grok can easily nudify children because it was partly trained on real abuse material found online. “Led by founder Elon Musk, Defendants chose to ignore this growing industry concern, and instead saw a market opportunity for more profits,” th"
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra que os criadores de ferramentas de IA podem ser responsabilizados judicialmente pela falta de salvaguardas contra conteúdos ilícitos.",
+   "todo": "Implemente políticas rigorosas de moderação e salvaguardas técnicas robustas em ferramentas baseadas em IA generativa."
   },
   {
    "id": "7b215851527b0536",
@@ -361,14 +419,20 @@
    "link": "https://pplware.sapo.pt/internet/seguranca/ha-6-falhas-de-seguranca-que-podem-entregar-a-sua-conta-aos-hackers/",
    "published": "2026-11-23T21:30:00+00:00",
    "title": "Há 6 falhas de segurança que podem entregar a sua conta aos hackers",
-   "summary": "Pode ter uma palavra-passe longa, complexa e praticamente impossível de adivinhar. Pode até acreditar que a sua conta está completamente protegida. Mas há um detalhe que muitos desconhecem e que os piratas informáticos podem explorar. Sim, são seis falhas de segurança muito usadas atualmente. Os piratas informáticos podem entrar sem conhecer a palavra-passe Quando nos […]",
+   "summary": "Mesmo com o uso de palavras-passe fortes, existem vulnerabilidades e detalhes negligenciados que os cibercriminosos podem explorar para aceder a contas. Os atacantes aproveitam-se frequentemente destas brechas para contornar os mecanismos de autenticação convencionais. O impacto traduz-se no compromisso indevido de dados e acessos pessoais.",
    "image": null,
-   "points": [],
+   "points": [
+    "Quem: cibercriminosos que exploram falhas de segurança em contas de utilizadores.",
+    "O quê: exploração de seis falhas comuns que permitem o acesso não autorizado a sistemas.",
+    "Impacto: perda de controlo sobre contas pessoais, mesmo utilizando palavras-passe complexas.",
+    "Como: tirando partido de aspetos de segurança que muitos utilizadores desconhecem."
+   ],
    "title_original": null,
    "category": "Ataque/APT",
    "translated": false,
-   "enriched": false,
-   "raw": "Pode ter uma palavra-passe longa, complexa e praticamente impossível de adivinhar. Pode até acreditar que a sua conta está completamente protegida. Mas há um detalhe que muitos desconhecem e que os piratas informáticos podem explorar. Sim, são seis falhas de segurança muito usadas atualmente. Os piratas informáticos podem entrar sem conhecer a palavra-passe Quando nos […]"
+   "enriched": true,
+   "why": "Alerta para o facto de que uma palavra-passe forte não é suficiente para garantir a segurança total de uma conta.",
+   "todo": "Ative a autenticação multifator (MFA) em todas as contas e mantenha-se atento a práticas comuns de engenharia social."
   },
   {
    "id": "52ea33250c16dbd4",
@@ -378,14 +442,20 @@
    "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/hacker-vaza-suposto-arquivo-executavel-de-gta-6/",
    "published": "2026-11-23T21:30:00+00:00",
    "title": "Hacker vaza suposto arquivo executável de GTA 6",
-   "summary": "GTA 6 é um dos maiores lançamentos da história da indústria do entretenimento, mas ainda não chegou aos PCs.",
+   "summary": "O grupo cibercriminoso Cyberleek disponibilizou online um ficheiro executável associado a uma versão de desenvolvimento de Grand Theft Auto VI para a consola Xbox. Os atacantes já tinham partilhado anteriormente vários recursos do jogo da Rockstar Games, facilitando projetos de engenharia reversa por parte de terceiros. Este novo avanço pode acelerar a criação não oficial de versões adaptadas para computadores.",
    "image": "https://www.estadao.com.br/resizer/v2/YI73C57YBBGGPBGPSZM6CR43GY.jpg?quality=80&auth=8f8b411243e5e3f97d1012a68703d8fc0fced3df593e00cb274cbdfc44135063&width=710",
-   "points": [],
+   "points": [
+    "Quem: o grupo de hackers Cyberleek.",
+    "O quê: vazamento de um ficheiro executável (.exe) de desenvolvimento de GTA 6 para Xbox.",
+    "Como: disponibilizando online os binários e recursos obtidos de forma ilícita.",
+    "Impacto: aceleração de projetos não oficiais de engenharia reversa para computadores."
+   ],
    "title_original": null,
    "category": "Fuga de dados",
    "translated": false,
-   "enriched": false,
-   "raw": "Cyberleek, grupo hacker responsável pela série de vazamentos de Grand Theft Auto VI (GTA 6), disponibilizou o arquivo executável do jogo nesta segunda-feira (23). Chamando de “presente antecipado de Natal”, os cibercriminosos alegam que o binário refere-se à versão de Xbox do novo jogo da Rockstar Games, oficialmente disponível apenas para PlayStation 5 e consoles da Microsoft. Anteriormente, eles também disponibilizaram um conjunto extenso de arquivos e recursos do título, que agora pode ser usado para acelerar sua “tradução” antecipada e ilegal para computadores. O TecMundo examinou os arquivos e identificou indícios compatíveis com uma versão de desenvolvimento do jogo para Xbox. Um executável, também chamado de “.exe”, é um arquivo que possibilita iniciar um programa em sistemas Windows. Em termos simples, ele funciona como uma chave para dar a partida em um carro, porém, utilizando uma série de comandos e instruções reunidas em um só lugar. No contexto de um jogo de grande porte, por outro lado, ainda é necessário ter o conjunto de recursos, texturas e modelos para tudo funcionar como deveria. Na última semana, Cyberleek compartilhou arquivos de uma “versão de desenvolvimento” de GTA 6 para Xbox . Apesar de contar com recursos oficiais do título, o conjunto carecia de um executável para torná-los funcionais. O empecilho, no entanto, não impediu que desenvolvedores iniciassem projetos de engenharia reversa para criar uma versão jogável. O mais famoso deles, “Leonida”, reúne pelo menos 10,8 mil atualizações no GitHub. Por esse motivo, o executável vazado por Cyberleek pode significar um avanço expressivo nesses projetos, especialmente com o apoio de inteligências artificiais. Embora o projeto “Leonida” ainda não permita inicializar GTA 6, segundo sua descrição oficia"
+   "enriched": true,
+   "why": "Expõe riscos de propriedade intelectual e acelera tentativas não autorizadas de portabilidade de software proprietário.",
+   "todo": "Evite descarregar ficheiros executáveis ou recursos de fontes não oficiais para prevenir infeções por malware."
   },
   {
    "id": "adc0fa1468e4ced6",
@@ -394,15 +464,21 @@
    "lang": "en",
    "link": "https://www.darkreading.com/endpoint-security/crowdstrike-ai-security-push-zscaler-deal",
    "published": "2026-11-23T21:21:42+00:00",
-   "title": "CrowdStrike Makes AI Security Push With Blockbuster Zscaler Deal",
-   "summary": "CrowdStrike's $44 billion acquisition of Zscaler would unite endpoint protection and zero-trust network security to obtain greater control over AI agents.",
+   "title": "CrowdStrike Faz Aposta na Segurança de IA com Compra Histórica da Zscaler",
+   "summary": "A CrowdStrike planeia adquirir a Zscaler num negócio avultado avaliado em 44 mil milhões de dólares. A operação visa unir a proteção de endpoints à segurança de redes baseadas em confiança zero (zero-trust). O objetivo principal é obter maior controlo e segurança sobre o funcionamento de agentes de inteligência artificial.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltffaa274e5fcd829e/68386b0dd0a57a8348fa8ace/Zscaler_SundryPhotography_Alamy.jpg?width=720&quality=80&disable=upscale",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: as empresas de cibersegurança CrowdStrike e Zscaler.",
+    "O quê: acordo de aquisição avaliado em 44 mil milhões de dólares.",
+    "Como: integrando a proteção de endpoints com a segurança de redes zero-trust.",
+    "Impacto: reforço do controlo sobre agentes de IA e unificação de ecossistemas de cibersegurança."
+   ],
+   "title_original": "CrowdStrike Makes AI Security Push With Blockbuster Zscaler Deal",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "CrowdStrike's $44 billion acquisition of Zscaler would unite endpoint protection and zero-trust network security to obtain greater control over AI agents."
+   "translated": true,
+   "enriched": true,
+   "why": "Redefine o panorama do mercado de cibersegurança com foco na proteção de ambientes integrados de IA.",
+   "todo": "Considere a adoção de arquiteturas zero-trust para proteger o acesso a sistemas e agentes de IA na sua organização."
   },
   {
    "id": "ada985c96bdeff41",
@@ -412,14 +488,20 @@
    "link": "https://www.estadao.com.br/tecmundo/guia-de-compras/o-que-comprar-na-black-friday-do-magazine-luiza/",
    "published": "2026-11-23T21:15:00+00:00",
    "title": "O que comprar na Black Friday do Magazine Luiza",
-   "summary": "A geladeira está entre os itens mais desejados para a Black Friday do Magalu.",
+   "summary": "A campanha promocional da Black Friday do Magazine Luiza destaca-se pela procura elevada de eletrodomésticos, eletrónicos e mobiliário. Com base em dados de pesquisa, os consumidores procuram oportunidades em artigos de alto valor, como frigoríficos e telemóveis. A retalhista aposta em condições especiais de pagamento e descontos para atrair o público no e-commerce.",
    "image": "https://www.estadao.com.br/resizer/v2/PMIEJLHQFJDJJGS7HR462QGR54.jpg?quality=80&auth=6c50e363d6acae8286a5f12bd334eb5fdfe154d5e691ccd2a617fab438222b67&width=710",
-   "points": [],
+   "points": [
+    "Quem: a retalhista Magazine Luiza e os consumidores da Black Friday.",
+    "O quê: destaque para produtos mais procurados, como frigoríficos, guarda-roupas e telemóveis.",
+    "Como: através de campanhas de descontos e ofertas divulgadas no site e aplicação.",
+    "Impacto: aumento do volume de compras online durante o período promocional."
+   ],
    "title_original": null,
    "category": "Geral",
    "translated": false,
-   "enriched": false,
-   "raw": "A Black Friday do Magazine Luiza reforça a popularidade da varejista nas compras de eletrodomésticos e eletrônicos. Com descontos que podem chegar a 80% na data promocional, o público busca itens de alto valor no Magalu pela segurança na compra e pelas condições especiais de pagamento. Com base nas pesquisas mais relevantes atreladas à marca, via dados da Semrush , preparamos este artigo com os produtos nos quais mais vale a pena ficar de olho na BF de 2026. O que comprar na Black Friday do Magalu Geladeira A geladeira é o produto com maior volume de buscas atrelado ao Magazine Luiza; por isso, é bem provável que haja muitos modelos em oferta na data promocional. Na página de geladeiras , há diversos filtros para você utilizar na hora de escolher a sua, com opções duplex, french door , acabamentos em inox e marcas populares, como Electrolux, Brastemp, Midea e Consul . Separamos também alguns modelos de sucesso para ficar de olho: Geladeira Midea Duplex 294L Cycle Defrost MD-RT411 Geladeira Electrolux Duplex 260L Super Freezer DC35A Geladeira Philco Eco Inverter Duplex 413L PRF501TI Geladeira Electrolux Frost Free Inverter 596L 3 Portas IM8S Geladeira Midea Smart Side by Side Inox 511L MDRS710FGD46 Guarda-roupa Os móveis também possuem grande relevância em buscas na varejista, e o guarda-roupa está entre os itens mais buscados . Se o seu objetivo é equipar o quarto nesta Black Friday, vale a pena colocar o app e o site do Magalu no radar para acompanhar as ofertas. Para explorar todas as opções disponíveis e filtrar os modelos por tamanho, número de portas, material e outras especificações, acesse a página ! Celulares Os eletrônicos não ficam de fora das ofertas de BF do Magazine Luiza, e os celulares são os que geram mais interesse do público no e-commerce. O destaque f"
+   "enriched": true,
+   "why": "Ajuda os consumidores a identificar tendências de consumo e oportunidades de compra durante épocas promocionais.",
+   "todo": "Utilize apenas os canais oficiais da marca e desconfie de promoções excessivamente apelativas em sites desconhecidos."
   },
   {
    "id": "f1397973b7c60ba0",
@@ -428,15 +510,21 @@
    "lang": "en",
    "link": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/",
    "published": "2026-11-23T20:54:51+00:00",
-   "title": "South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
-   "summary": "A threat actor breached the internal network of Korea Electric Power Corporation (KEPCO) and accessed two systems containing customer, employee, and contractor data. [...]",
+   "title": "Gigante energética sul-coreana KEPCO confirma violação de dados que afeta 1,5 milhões",
+   "summary": "A Korea Electric Power Corporation (KEPCO) foi alvo de uma intrusão na sua rede interna por parte de um agente malicioso. O atacante conseguiu aceder a dois sistemas distintos que continham informações confidenciais sobre clientes, colaboradores e prestadores de serviços. O incidente resultou na exposição de dados de cerca de 1,5 milhões de afetados.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: a empresa de energia sul-coreana KEPCO e um grupo cibercriminoso não especificado.",
+    "O quê: violação de dados na rede interna que atingiu 1,5 milhões de pessoas.",
+    "Como: intrusão em sistemas que armazenavam dados de clientes, funcionários e parceiros.",
+    "Impacto: compromisso de informação sensível de uma grande empresa de serviços públicos."
+   ],
+   "title_original": "South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "A threat actor breached the internal network of Korea Electric Power Corporation (KEPCO) and accessed two systems containing customer, employee, and contractor data. [...]"
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia a vulnerabilidade de infraestruturas críticas e empresas de serviços essenciais a ataques de exfiltração de dados.",
+   "todo": "Monitore constantemente o tráfego de rede e implemente segmentação rigorosa para proteger bases de dados críticas."
   },
   {
    "id": "9ba29cbfa4c26782",
@@ -445,15 +533,21 @@
    "lang": "en",
    "link": "https://aws.amazon.com/blogs/security/introducing-aws-waf-simplified-pricing/",
    "published": "2026-11-23T20:35:03+00:00",
-   "title": "Introducing AWS WAF simplified pricing",
-   "summary": "Starting today, AWS WAF pricing is easier to predict. Your bill is now based on three dimensions: the resources you protect, the traffic AWS WAF inspects, and the level of protection you apply to that traffic. Existing AWS WAF customers move to the new pricing on February 1, 2027. Until then, you keep your current […]",
+   "title": "AWS Introduz Preços Simplificados para o WAF",
+   "summary": "A Amazon Web Services (AWS) atualizou o modelo de preços do seu serviço WAF para o tornar mais previsível para os utilizadores. A nova faturação passa a basear-se em três dimensões principais: recursos protegidos, tráfego inspecionado e nível de segurança aplicado. As alterações eliminam custos associados a regras individuais e à capacidade utilizada, facilitando a gestão orçamental.",
    "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/19/waf-old-vs-new-pricing-flow-Figure-1.png",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: a Amazon Web Services (AWS) e os utilizadores do AWS WAF.",
+    "O quê: transição para um modelo de preços simplificado e previsível.",
+    "Como: faturação calculada com base nos recursos protegidos, tráfego analisado e nível de proteção.",
+    "Impacto: maior facilidade em prever custos de segurança sem penalizações por aumento de capacidade de regras."
+   ],
+   "title_original": "Introducing AWS WAF simplified pricing",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Starting today, AWS WAF pricing is easier to predict. Your bill is now based on three dimensions: the resources you protect, the traffic AWS WAF inspects, and the level of protection you apply to that traffic. Existing AWS WAF customers move to the new pricing on February 1, 2027. Until then, you keep your current pricing, and you don’t need to do anything at launch. This post explains what’s changing, how to estimate your costs under the new model, and where to find full pricing details and examples on the AWS WAF pricing page . For new or smaller workloads, the Free plan of CloudFront flat-rate pricing plans is another way to start. If your application serves fewer than 1 million requests per month, the Free plan costs $0 per month for each CloudFront distribution. It includes AWS WAF protection against common web threats, DDoS protection, and the CloudFront CDN, with no overage charges. Why the pricing is changing Under the previous model, adding a protection often meant adding a charge, so every security decision was also a billing decision. The new pricing separates those two questions and makes the trade off between cost and security posture easy to see. Turning on a rule, the Bot Control common protection, or the Anti-DDoS rule group doesn’t add a subscription or a separate per-request charge. Those requests bill at the base request rate. Capacity also stops affecting your rate. Each protection pack (web ACL) now includes up to 2,500 web ACL capacity units (WCUs), up from 1,500, and going past your included capacity no longer raises what you pay per request. The premium request fee applies only to the traffic you choose to send through advanced protections. You can estimate costs before writing a single rule, and those estimates hold even as your rules change. Se"
+   "translated": true,
+   "enriched": true,
+   "why": "Torna a implementação de defesas web mais acessível e transparente, dissociando decisões de segurança de custos por regra.",
+   "todo": "Reveja a utilização do AWS WAF na sua infraestrutura para planear a transição para o novo modelo de custos."
   },
   {
    "id": "583b4462d50c3555",
@@ -462,15 +556,21 @@
    "lang": "en",
    "link": "https://aws.amazon.com/blogs/security/introducing-api-and-ai-security-on-aws-from-discovery-to-protection/",
    "published": "2026-11-23T20:25:17+00:00",
-   "title": "Introducing API and AI security on AWS, from discovery to protection",
-   "summary": "APIs have run digital businesses for more than a decade. For a while, there seemed to be nothing new left to say about them. That changed in 2026, when AI endpoints joined them. Teams now run large language model (LLM) inference endpoints, Model Context Protocol (MCP) servers, and Agent2Agent (A2A) servers beside their REST APIs, […]",
+   "title": "AWS Lança Ferramentas de Segurança para APIs e IA, da Descoberta à Proteção",
+   "summary": "A AWS introduziu novas funcionalidades na sua infraestrutura para ajudar a descobrir e proteger APIs tradicionais e endpoints de inteligência artificial. Com o crescimento do uso de modelos de linguagem e agentes autónomos, os serviços passam a incluir ferramentas de monitorização centralizada e regras geridas de segurança. Estas soluções permitem identificar e defender endpoints utilizados por serviços, aplicações e agentes inteligentes.",
    "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/19/Figure-1-1.png",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: a Amazon Web Services (AWS) e empresas utilizadoras de APIs e IA.",
+    "O quê: lançamento de ferramentas de descoberta e proteção para endpoints de IA e APIs.",
+    "Como: através de novas funcionalidades no API Portal e regras geridas em grupos WAF.",
+    "Impacto: reforço da segurança face a novos tipos de chamadas automatizadas realizadas por agentes de IA."
+   ],
+   "title_original": "Introducing API and AI security on AWS, from discovery to protection",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "APIs have run digital businesses for more than a decade. For a while, there seemed to be nothing new left to say about them. That changed in 2026, when AI endpoints joined them. Teams now run large language model (LLM) inference endpoints, Model Context Protocol (MCP) servers, and Agent2Agent (A2A) servers beside their REST APIs, on services such as Amazon Bedrock, Amazon Bedrock AgentCore, and Amazon Elastic Kubernetes Service (Amazon EKS), and more companies sell their API as the product itself. On the other end, AI agents read API descriptions, pick the tools they need, and chain calls with no person clicking through an app. APIs have always had two kinds of callers: other services and people who use an app. Now there’s a third: AI agents that act on a person’s behalf. It feels like everyone has a personal AI agent that can call APIs for them. Who knew curl would be important again? Today, we’re launching capabilities across AWS WAF , Amazon CloudFront, Application Load Balancer, and Amazon API Gateway that help you discover and protect the APIs and AI endpoints that services, apps, and AI agents call: API Portal , a new feature in Amazon API Gateway, discovers your APIs and AI endpoints. API Security , a new managed rule group in AWS WAF, protects your APIs. AI Security , a new managed rule group in AWS WAF, protects your AI endpoints. All three are generally available today. You can enable discovery in API Portal for one account or for your organization in AWS Organizations . The two rule groups protect the resources that you associate with your protection pack (web ACL). They work together: API Portal shows which discovered endpoints AWS WAF protects, and the security events that AWS WAF detects appear on each managed API’s detail page. Same APIs, new callers, new"
+   "translated": true,
+   "enriched": true,
+   "why": "Protege as empresas contra riscos emergentes decorrentes da interação automatizada entre agentes de IA e infraestruturas de API.",
+   "todo": "Ative ferramentas de descoberta de endpoints nas suas contas AWS para mapear e proteger todas as APIs e modelos de IA em uso."
   },
   {
    "id": "c01f8c41d8fc5759",
@@ -479,15 +579,21 @@
    "lang": "en",
    "link": "https://www.darkreading.com/cybersecurity-operations/us-cyber-director-pick-signals-shift-toward-expertise",
    "published": "2026-11-23T20:13:48+00:00",
-   "title": "US Cyber Director Pick Signals Shift Toward Expertise",
-   "summary": "Trump named Kirsten Davies as Acting National Cyber Director, bringing greater industry experience to the role amid recent outages and rising geopolitical tensions.",
+   "title": "Nomeação para Diretor Cibernético dos EUA Sinaliza Mudança em Direção à Especialização",
+   "summary": "Donald Trump nomeou Kirsten Davies como Diretora Nacional de Cibersegurança em regime de interinidade. A escolha introduz maior experiência técnica e industrial no cargo governamental, num momento marcado por falhas recentes de sistemas e tensões geopolíticas. A decisão reflete uma aposta em perfis mais especializados para liderar a estratégia de cibersegurança do país.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt9a0966356bb6bbf4/6b048a6e805d232dd3e79e51/white_house-uschools-GettyImages-160196566.jpg?width=720&quality=80&disable=upscale",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Donald Trump e Kirsten Davies, nova Diretora Nacional de Cibersegurança interina dos EUA.",
+    "O quê: nomeação de um perfil com vasta experiência na indústria para o cargo de liderança cibernética.",
+    "Como: assumindo funções de direção num contexto de crescentes tensões geopolíticas e falhas tecnológicas.",
+    "Impacto: maior foco na competência técnica para mitigar riscos de segurança nacional."
+   ],
+   "title_original": "US Cyber Director Pick Signals Shift Toward Expertise",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Trump named Kirsten Davies as Acting National Cyber Director, bringing greater industry experience to the role amid recent outages and rising geopolitical tensions."
+   "translated": true,
+   "enriched": true,
+   "why": "Indica uma maior valorização de peritos da indústria na liderança de políticas públicas de cibersegurança.",
+   "todo": ""
   },
   {
    "id": "9be28c5a452509a1",
@@ -13416,51 +13522,6 @@
    "enriched": true,
    "why": "Evidencia lacunas críticas na tomada de decisões governamentais devido a uma gestão de riscos deficiente.",
    "todo": ""
-  },
-  {
-   "id": "3cd71e7ae0422613",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/ai-and-ml/2026/11/18/uk-mps-want-ai-watchdog-with-power-to-pull-the-plug-on-dangerous-models/5310567",
-   "published": "2026-11-18T09:30:00+00:00",
-   "title": "Parlamentares britânicos querem entidade reguladora de IA com poder para suspender modelos perigosos",
-   "summary": "Um comité parlamentar britânico propôs a criação de uma nova lei para regular a inteligência artificial, conferindo a um regulador poderes para travar modelos perigosos. Atualmente, gigantes tecnológicos como a OpenAI e a Google decidem de forma autónoma a segurança dos seus sistemas sem escrutínio externo obrigatório. O novo organismo poderá intervir durante a fase de desenvolvimento e teste para bloquear implementações de alto risco.",
-   "image": "https://image.theregister.com/?imageId=2918046&width=800",
-   "points": [
-    "Proposta de um comité parlamentar britânico por nova lei de segurança de IA.",
-    "Regulador teria o poder de travar modelos de IA perigosos.",
-    "Critica a dependência exclusiva nas garantias dadas pelos fabricantes.",
-    "A supervisão abrangeria as fases de construção e testes."
-   ],
-   "title_original": "UK MPs want AI watchdog with power to pull the plug on dangerous models",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Protege o público ao impedir que empresas lancem sistemas de IA altamente arriscados sem supervisão independente.",
-   "todo": "Estabeleça processos internos rigorosos de validação e testes de segurança antes de adotar ferramentas avançadas de IA."
-  },
-  {
-   "id": "4ccf67b96d4a380e",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/",
-   "published": "2026-11-18T09:24:31+00:00",
-   "title": "Microsoft anuncia Windows Server 2028 com segurança reforçada",
-   "summary": "A Microsoft revelou o Windows Server 2028, a próxima grande versão do seu sistema operativo para servidores. O anúncio foi feito durante a conferência Ignite 2026. A nova edição traz melhorias significativas focadas no endurecimento da segurança da infraestrutura.",
-   "image": null,
-   "points": [
-    "Anunciado pela Microsoft na conferência Ignite 2026.",
-    "Trata-se da próxima versão do sistema operativo para servidores.",
-    "Inclui mecanismos de segurança reforçada."
-   ],
-   "title_original": "Microsoft announces Windows Server 2028 with hardened security",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Antecipa melhorias estruturais de segurança para a gestão de infraestruturas de servidores.",
-   "todo": "Acompanhe o lançamento e planeie futuros testes de migração e atualização para as novas versões seguras."
   }
  ]
 }

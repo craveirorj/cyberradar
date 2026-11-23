@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T17:05:44.806607+00:00",
+ "updated": "2026-11-23T17:24:52.487260+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -89,7 +89,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 24
+   "added": 23
   },
   {
    "source": "SecurityWeek",
@@ -99,22 +99,22 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 3
+   "added": 4
   },
   {
    "source": "TechCrunch Security",
@@ -164,7 +164,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 11
+   "added": 10
   },
   {
    "source": "Cisco Talos",
@@ -199,7 +199,7 @@
   {
    "source": "Elastic Security Labs",
    "ok": true,
-   "added": 3
+   "added": 4
   },
   {
    "source": "Rapid7",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 11
+   "added": 10
   },
   {
    "source": "Help Net Security",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -310,8 +310,8 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 384,
-  "unenriched": 259,
+  "pending": 387,
+  "unenriched": 262,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,23 @@
   ]
  },
  "items": [
+  {
+   "id": "c23cd2a7d9a6c495",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/crowdstrike-zscaler",
+   "published": "2026-11-23T17:14:00+00:00",
+   "title": "CrowdStrike to purchase Zscaler for $43.9 billion",
+   "summary": "“We see a path to become the largest AI safety and security company the world has ever seen,” CrowdStrike CEO George Kurtz said.",
+   "image": "https://cms.therecord.media/uploads/zscaler_sign_d3fa4be7dd.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "IA",
+   "translated": false,
+   "enriched": false,
+   "raw": "“We see a path to become the largest AI safety and security company the world has ever seen,” CrowdStrike CEO George Kurtz said."
+  },
   {
    "id": "150147ab1470bb5d",
    "source": "The Register Security",
@@ -13495,29 +13512,6 @@
    "enriched": true,
    "why": "Mantém os profissionais informados sobre o panorama atual de ameaças.",
    "todo": ""
-  },
-  {
-   "id": "d365ad8c28621b79",
-   "source": "Cisco Talos",
-   "region": "US",
-   "lang": "en",
-   "link": "https://blog.talosintelligence.com/java4shell/",
-   "published": "2026-11-18T01:53:03+00:00",
-   "title": "CVE-2026-114938: Vulnerabilidade crítica no OpenJDK Java",
-   "summary": "A Cisco Talos está a acompanhar a divulgação da falha crítica CVE-2026-114938, apelidada de Java4Shell, com uma pontuação CVSS de 9.2. A vulnerabilidade permite a execução remota de código sem autenticação através do envio de entradas Base64 malformadas para a Java Virtual Machine. O problema afeta o OpenJDK em versões recentes a correr em processadores x86-64 com suporte para AVX-512 VBMI. Embora não haja registo de exploração ativa, os especialistas recomendam a aplicação imediata de patches ou a desativação temporária do suporte AVX-512.",
-   "image": "https://storage.ghost.io/c/af/a0/afa04ee3-414f-4481-8d23-7e7c146f192e/content/images/2026/11/threat_advisory-1.jpg",
-   "points": [
-    "Identificada a falha crítica CVE-2026-114938 (Java4Shell) com pontuação CVSS 9.2.",
-    "Despoletada pelo envio de dados Base64 malformados para a JVM.",
-    "Afeta OpenJDK em CPUs x86-64 com instruções AVX-512 VBMI ativas.",
-    "Recomenda-se a aplicação de atualizações ou a desativação temporária do AVX-512."
-   ],
-   "title_original": "CVE-2026-114938: Critical vulnerability in OpenJDK JAVA",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Apresenta um risco elevado de execução remota de código em ambientes locais e na nuvem.",
-   "todo": "Aplicar o patch de segurança fornecido ou iniciar a JVM com o suporte AVX-512 desativado (=XX:UseAVX=2)."
   }
  ]
 }

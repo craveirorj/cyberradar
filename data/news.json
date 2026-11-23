@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T12:46:46.386039+00:00",
+ "updated": "2026-11-23T13:07:37.040840+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Check Point Research",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 15
+   "added": 16
   },
   {
    "source": "ACSC Austrália",
@@ -309,15 +309,61 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 245,
-  "unenriched": 107,
+  "done": 72,
+  "pending": 282,
+  "unenriched": 145,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 38 column 5 (char 3555)"
+   "Expecting property name enclosed in double quotes: line 25 column 5 (char 1971)",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "6078bd158252748a",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/23/crowdstrike-zscaler-43-9-billion-acquisition/",
+   "published": "2026-11-23T12:41:18+00:00",
+   "title": "CrowdStrike vai adquirir a Zscaler por 43,9 mil milhões de dólares",
+   "summary": "A CrowdStrike chegou a acordo para comprar a Zscaler numa transação totalmente em ações avaliada em cerca de 43,9 mil milhões de dólares. Os acionistas da Zscaler vão receber 1,135 ações da CrowdStrike por cada título que possuem, representando um prémio de aproximadamente 34%. Após a conclusão do negócio, os atuais acionistas da CrowdStrike deverão deter cerca de 84,1% da empresa combinada. O impacto foca-se na consolidação do mercado de cibersegurança através da junção destas duas grandes empresas.",
+   "image": null,
+   "points": [
+    "A CrowdStrike vai comprar a Zscaler num negócio avaliado em 43,9 mil milhões de dólares.",
+    "Cada ação da Zscaler será trocada por 1,135 ações da CrowdStrike.",
+    "Os acionistas da CrowdStrike ficarão com cerca de 84,1% da nova empresa combinada."
+   ],
+   "title_original": "CrowdStrike to acquire Zscaler for $43.9 billion",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Redefine o panorama do mercado de cibersegurança através da fusão de dois gigantes do setor.",
+   "todo": ""
+  },
+  {
+   "id": "33d65726f50ee8a4",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
+   "published": "2026-11-23T12:41:04+00:00",
+   "title": "Hackers exploram falha crítica no ScreenConnect para sequestrar PCs de técnicos de MSP sem aviso",
+   "summary": "Atores maliciosos estão a explorar ativamente uma falha de segurança já corrigida no ConnectWise ScreenConnect, direcionando-se a servidores de fornecedores de serviços geridos. O problema, rastreado como CVE-2026-84869 com uma pontuação CVSS de 9.9, permite que um convidado transfira e execute um payload malicioso no anfitrião de um técnico em ligação. Esta exploração coloca em risco os computadores dos técnicos e a integridade das redes geridas.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWAI03mMW-UNs2bdUuZEiugVBMZq3speEoo8tbQ7TZVITD4fnXiK4l657Tn4-G9fX2w8xLz2zkP9-RTrg3QZPtNMHL_Lg7YRoruCnp8TJA4tbA5bW1YsBZU8QR2FIqSb3_IpN1Le-Xoq2MQ82ZQyRNmYxr8q70PPzijzypDcIDKMIOjrzBweBUiKJ_nuJY/s1600/screens.jpg",
+   "points": [
+    "Alvo: Servidores e computadores de técnicos de fornecedores de serviços geridos (MSPs).",
+    "O quê: Exploração da falha crítica CVE-2026-84869 no ConnectWise ScreenConnect.",
+    "Como: Um utilizador convidado transfere e executa código malicioso na máquina do técnico.",
+    "Impacto: Acesso não autorizado e compromisso potencial dos PCs dos técnicos de suporte."
+   ],
+   "title_original": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes comprometam diretamente as estações de trabalho de profissionais de suporte técnico.",
+   "todo": "Atualize imediatamente o software ConnectWise ScreenConnect para a versão mais recente."
+  },
   {
    "id": "9d23693381162a52",
    "source": "The Register Security",
@@ -340,6 +386,29 @@
    "enriched": true,
    "why": "Permite que atacantes acedam a segredos e serviços protegidos através de credenciais roubadas.",
    "todo": "Migre das instâncias Classic para o Azure API Management v2, siga as orientações de segurança da Microsoft e proceda à rotação de todos os segredos e tokens."
+  },
+  {
+   "id": "759d50b40080dffe",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
+   "published": "2026-11-23T12:28:09+00:00",
+   "title": "N-able divulga vulnerabilidade crítica no Mail Assure descoberta durante investigação de violação",
+   "summary": "A N-able revelou uma falha crítica descoberta enquanto investigava uma violação no seu serviço de filtragem de correio eletrónico Mail Assure e SpamExperts Hosted Cloud. A vulnerabilidade, identificada como CVE-2026-134624, consiste num problema de falsificação de pedidos do lado do servidor (SSRF). O erro permitia que um utilizador com acesso avançado à API abrisse ligações para sistemas internos à sua escolha.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcXbCG8v5Kc2mTfNCFEiow0EHLJWtsrsrEodqvL8qF8awCnrDzw2TfxtPq7rYI3u78mviB8ekGNGL1Of8FZrSM6uZT1lhz2mfRHwHQyhQT8234u03WGZ9M4UZzmj2cYMs8qlsJ54PwNPvVMb2awEzinXAYL0Y25iOGjjikMvq4NQ-v03mqluZnI53PNdk/s1600/nables.jpg",
+   "points": [
+    "Quem: A N-able detetou a falha durante a investigação de uma violação anterior.",
+    "O quê: Uma vulnerabilidade de SSRF (CVE-2026-134624) no Mail Assure e SpamExperts.",
+    "Como: Através do acesso à API de alto nível, permitia ligar a sistemas internos arbitrários.",
+    "Impacto: Exposição e potencial acesso não autorizado a infraestruturas internas da organização."
+   ],
+   "title_original": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Abre a porta ao acesso interno não autorizado através de uma falha grave na API do serviço.",
+   "todo": "Consulte os avisos de segurança da N-able e aplique as correções e atualizações recomendadas."
   },
   {
    "id": "d77f865b12d3f534",
@@ -13699,75 +13768,6 @@
    "enriched": true,
    "why": "Mostra como a inteligência artificial está a ser usada para acelerar e automatizar ataques cibernéticos perigosos.",
    "todo": "Mantenha os sistemas atualizados e reforce a monitorização de acessos privilegiados na sua rede."
-  },
-  {
-   "id": "68a0598f3c892fc7",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/gitlab-security-advisory-av26-1168",
-   "published": "2026-11-17T16:42:08+00:00",
-   "title": "Aviso de segurança GitLab (AV26-1168)",
-   "summary": "A GitLab foi afetada por vulnerabilidades que exigem a atualização urgente de versões anteriores dos seus produtos. O Centro Cibernético recomenda que os utilizadores e administradores consultem os links disponíveis e apliquem os patches necessários. As falhas foram identificadas em várias versões, motivando o lançamento de novas compilações de correção. A falta de atualização pode expor os servidores a potenciais explorações por parte de atacantes.",
-   "image": null,
-   "points": [
-    "Vulnerabilidades afetam versões anteriores dos produtos GitLab.",
-    "Foram lançadas as versões de correção 19.5.6, 19.4.8 e 19.3.9.",
-    "O Centro Cibernético aconselha a aplicação imediata das atualizações.",
-    "O impacto envolve o risco de segurança nos servidores se não forem aplicados os patches."
-   ],
-   "title_original": "GitLab security advisory (AV26-1168)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite evitar que falhas conhecidas no GitLab sejam exploradas para comprometer infraestruturas.",
-   "todo": "Atualize o GitLab para as versões corrigidas mais recentes (19.5.6, 19.4.8 ou 19.3.9)."
-  },
-  {
-   "id": "2571aa8a00cf5524",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/17/highly-classified-nsa-communications-network-is-down-cnn-sources/",
-   "published": "2026-11-17T16:23:18+00:00",
-   "title": "Rede de comunicações altamente classificada da NSA está em baixo — fontes da CNN",
-   "summary": "A rede interna altamente classificada utilizada pela Agência de Segurança Nacional (NSA) dos EUA sofreu uma interrupção. A situação foi reportada pela CNN como um acontecimento em desenvolvimento. Numa declaração preliminar, a NSA afirmou não existir qualquer evidência de que a falha estivesse relacionada com um ciberataque. Os técnicos encontram-se a trabalhar para resolver o problema e restaurar o funcionamento.",
-   "image": null,
-   "points": [
-    "A rede interna classificada da NSA ficou inoperacional.",
-    "A informação foi avançada por fontes da CNN.",
-    "A NSA declarou preliminarmente não haver indícios de ciberataque.",
-    "O impacto traduz-se na indisponibilidade temporária das comunicações internas da agência."
-   ],
-   "title_original": "Highly classified NSA communications network is down — CNN sources",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra que mesmo infraestruturas governamentais altamente secretas podem sofrer falhas operacionais graves.",
-   "todo": ""
-  },
-  {
-   "id": "bb59c1759a0ea149",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/nsa-net-disruptions",
-   "published": "2026-11-17T16:21:00+00:00",
-   "title": "NSA Net, rede interna classificada da agência, enfrenta perturbações não especificadas",
-   "summary": "A NSA ordenou chegadas faseadas à sua sede em Fort Meade, Maryland, devido a problemas técnicos na rede interna classificada NSA Net. Os técnicos estão concentrados em restaurar totalmente o funcionamento desta rede de comunicações. Esta perturbação surge na sequência de falhas anteriormente reportadas nas comunicações da agência. O impacto reflete-se na alteração da rotina de trabalho dos funcionários no local.",
-   "image": "https://cms.therecord.media/uploads/ave_calvar_8_8xu_Jp8_M_unsplash_6f3e8537f6.jpg",
-   "points": [
-    "A rede interna NSA Net sofreu perturbações não especificadas.",
-    "A agência ordenou chegadas faseadas dos trabalhadores a Fort Meade.",
-    "Os técnicos trabalham na restauração total da rede.",
-    "O impacto afeta a normalidade operacional e o acesso às comunicações internas."
-   ],
-   "title_original": "NSA Net, agency’s classified internal network, faces unspecified disruptions",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia constrangimentos logísticos e operacionais decorrentes de falhas em redes críticas.",
-   "todo": ""
   }
  ]
 }

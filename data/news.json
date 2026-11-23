@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T17:44:59.011363+00:00",
+ "updated": "2026-11-23T18:05:48.527862+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Check Point Research",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 387,
-  "unenriched": 262,
+  "done": 12,
+  "pending": 376,
+  "unenriched": 251,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -320,21 +320,94 @@
  },
  "items": [
   {
+   "id": "3e0e8a60cada458e",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/23/critical-cisco-remote-code-execution-bug-under-attack/5311722",
+   "published": "2026-11-23T17:56:56+00:00",
+   "title": "Erro crítico de execução remota de código na Cisco sob ataque",
+   "summary": "Atacantes estão a explorar ativamente uma falha crítica de segurança, identificada como CVE-2026-76466, nos gateways Cisco Expressway. Esta vulnerabilidade permite a execução remota de comandos como root sem necessidade de autenticação. A exploração já afetou dispositivos expostos à internet, permitindo o acesso não autorizado a nós internos da rede. A Cisco já tinha disponibilizado uma atualização de software para corrigir o problema.",
+   "image": "https://image.theregister.com/?imageId=5249134&width=800",
+   "points": [
+    "O quê: Vulnerabilidade crítica (CVE-2026-76466) de execução remota de código na Cisco Expressway.",
+    "Como: Exploração sem autenticação através de credenciais embutidas e falhas de validação de certificados.",
+    "Impacto: Permite acesso root e comprometimento de nós de rede internos.",
+    "Quem: Atacantes não especificados estão a explorar ativamente os sistemas."
+   ],
+   "title_original": "Critical Cisco remote code execution bug under attack",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A falha permite o controlo total de dispositivos de gateway sem autenticação, constituindo um risco grave de intrusão na rede.",
+   "todo": "Instale imediatamente as atualizações de software disponibilizadas pela Cisco para corrigir a vulnerabilidade."
+  },
+  {
+   "id": "5e9db5537b61e7b8",
+   "source": "Dark Reading",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors",
+   "published": "2026-11-23T17:45:52+00:00",
+   "title": "Por trás do pseudónimo: Como um investigador desmascarou uma década de atores de ransomware",
+   "summary": "O ransomware continua a representar uma ameaça persistente e sem abrandamento. Para combater este problema, foi desenvolvido um novo enquadramento tecnológico. Este sistema visa dar às equipas de segurança uma vantagem para rastrear os atacantes até à sua origem.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt525c0b544f1eeec1/6afe238519e68185a02d38c2/GettyImages-1428094247.jpg?width=720&quality=80&disable=upscale",
+   "points": [
+    "O quê: Lançamento de um novo enquadramento para rastreio de ransomware.",
+    "Para quê: Dar às equipas de segurança ferramentas para identificar a origem dos atacantes.",
+    "Contexto: A atividade de ransomware mantém-se elevada e sem abrandamento."
+   ],
+   "title_original": "Behind the Alias: How One Researcher Unmasked a Decade of Ransomware Actors",
+   "category": "Ransomware",
+   "translated": true,
+   "enriched": true,
+   "why": "Facilita a identificação dos autores de ataques de ransomware, ajudando a travar campanhas prolongadas.",
+   "todo": "Adote quadros de inteligência de ameaças para melhorar a capacidade de rastreio e resposta a incidentes."
+  },
+  {
+   "id": "1ab128c432ff969e",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
+   "published": "2026-11-23T17:45:15+00:00",
+   "title": "Webworm suspeito de modificar SoftEther VPN para evadir deteção e ocultar acesso remoto",
+   "summary": "O grupo de ameaça Webworm está a utilizar uma versão modificada da ferramenta de código aberto SoftEther VPN Bridge. O objetivo é remover impressões digitais reconhecíveis pelas ferramentas de segurança. A ferramenta modificada disfarça-se de software de monitorização de rede para estabelecer acessos remotos encobertos.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9_mXkFA2_QQWa_ajcGxgoc3rSAfxGJqP-uIREqPGAfJGM7D7-mLrjwSE_F1egX-pwVRvMRinRGs4QbcBE1yJrmHFw4Fa_ILg6ZuTIOy1bf86-wPQ-Zgsqa-6hqdBapRROk97rOeT-Vfa002vHuWF6fCSE1KPttjswyjUeBxjrJzrmVU9KY724e75Giq1T/s1600/chinese-malware.jpg",
+   "points": [
+    "Quem: O grupo de ameaça Webworm.",
+    "O quê: Uso de uma versão personalizada do SoftEther VPN Bridge.",
+    "Como: Disfarça a ferramenta de software de monitorização para esconder a atividade de ferramentas de segurança.",
+    "Impacto: Estabelecimento de acessos remotos ocultos em redes comprometidas."
+   ],
+   "title_original": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes mantenham acessos furtivos em redes infetadas sem serem detetados por defesas tradicionais.",
+   "todo": "Monitorize o tráfego de rede e valide a integridade de ferramentas VPN para detetar comportamentos anómalos."
+  },
+  {
    "id": "c23cd2a7d9a6c495",
    "source": "The Record",
    "region": "US",
    "lang": "en",
    "link": "https://therecord.media/crowdstrike-zscaler",
    "published": "2026-11-23T17:14:00+00:00",
-   "title": "CrowdStrike to purchase Zscaler for $43.9 billion",
-   "summary": "“We see a path to become the largest AI safety and security company the world has ever seen,” CrowdStrike CEO George Kurtz said.",
+   "title": "CrowdStrike vai comprar a Zscaler por 43,9 mil milhões de dólares",
+   "summary": "A empresa de cibersegurança CrowdStrike planeia adquirir a Zscaler por um valor avultado. A transação visa criar uma empresa focada em segurança e IA. O objetivo estratégico é posicionar a organização na área da segurança para inteligência artificial.",
    "image": "https://cms.therecord.media/uploads/zscaler_sign_d3fa4be7dd.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: CrowdStrike e Zscaler.",
+    "O quê: Anúncio de compra da Zscaler pela CrowdStrike por 43,9 mil milhões de dólares.",
+    "Impacto: Criação de uma grande empresa focada em segurança e IA."
+   ],
+   "title_original": "CrowdStrike to purchase Zscaler for $43.9 billion",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "“We see a path to become the largest AI safety and security company the world has ever seen,” CrowdStrike CEO George Kurtz said."
+   "translated": true,
+   "enriched": true,
+   "why": "Representa uma consolidação massiva no setor tecnológico, unindo capacidades de segurança e IA.",
+   "todo": ""
   },
   {
    "id": "150147ab1470bb5d",
@@ -343,15 +416,21 @@
    "lang": "en",
    "link": "https://www.theregister.com/security/2026/11/23/bulgaria-evicts-cyber-snoops-who-lurked-inside-government-networks-for-5-years/5311629",
    "published": "2026-11-23T17:01:00+00:00",
-   "title": "Bulgaria evicts cyber snoops who lurked inside government networks for 5 years",
-   "summary": "Minister says intruders downloaded more than 130 GB of data as political churn left security neglected",
+   "title": "Bulgária expulsa espiões cibernéticos que estiveram em redes governamentais durante 5 anos",
+   "summary": "A Bulgária desmantelou uma operação de ciberespionagem que manteve acesso a redes governamentais durante cinco anos. Os atacantes descarregaram mais de 130 GB de dados, correspondentes a milhões de páginas de informação sensível. A intrusão prolongou-se porque os sistemas de proteção anteriores não funcionavam de forma integrada, tendo sido detetada apenas com a implementação de um novo sistema nacional.",
    "image": "https://image.theregister.com/?imageId=256287&width=800",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Governo da Bulgária e atacantes não identificados.",
+    "O quê: Infiltração em redes governamentais durante cinco anos com roubo de dados.",
+    "Impacto: Mais de 130 GB de dados descarregados de instituições do Estado.",
+    "Como: A deteção só foi possível graças à implementação de um novo sistema nacional de cibersegurança."
+   ],
+   "title_original": "Bulgaria evicts cyber snoops who lurked inside government networks for 5 years",
    "category": "Ataque/APT",
-   "translated": false,
-   "enriched": false,
-   "raw": "The Ancient Thracian heartland of Bulgaria says it has shut down a cyberespionage operation that gave intruders access to government networks for five years – the longest-running known campaign against its administration. Bulgaria's Ministry of Innovation and Digital Transformation said the unauthorized and officially unattributed attackers first gained access to infrastructure used by government institutions to exchange information in 2021. It explained that the intrusion went unnoticed for so long because \"the previous means of protection did not work as a single, integrated system,\" and that without a new, recently installed product, it may have gone undetected for much longer. \"The incident was discovered thanks to the new national cybersecurity system, which for the first time provides a single picture of what is happening in state networks,\" the ministry added. \"Without it, this activity would most likely have remained hidden for an indefinite period of time.\" Bulgaria acknowledged that \"sensitive information related to the work of the state\" was accessed, but did not specify the scale of the compromise. Innovation and Digital Transformation Minister Ivan Vasilev said attackers had downloaded more than 130 GB of data over five years. He also put the volume at 62 million pages. The Register contacted the Bulgarian government for confirmation of these numbers. The ministry said that it has not yet found any evidence that citizens' personal data was compromised, and that the affected infrastructure \"will be under increased surveillance for 90 days\" in case the attackers try to regain access. Vasilev said multiple international hacking groups had accessed government systems since 2021. He did not specify the names of these groups, however, nor did he name any specific"
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia o perigo de intrusões prolongadas em infraestruturas estatais devido a deficiências de integração na segurança.",
+   "todo": "Integre as ferramentas de proteção numa arquitetura unificada para garantir visibilidade total sobre a rede."
   },
   {
    "id": "58827c77fb83a03c",
@@ -360,15 +439,20 @@
    "lang": "en",
    "link": "https://hackread.com/splitsecure-launches-new-access-control-architecture-for-humans-and-ai-agents/",
    "published": "2026-11-23T17:00:07+00:00",
-   "title": "SplitSecure Launches New Access Control Architecture for Humans and AI Agents",
-   "summary": "San Francisco, United States, 23rd November 2026, CyberNewswire",
+   "title": "SplitSecure lança nova arquitetura de controlo de acessos para humanos e agentes de IA",
+   "summary": "A empresa SplitSecure anunciou o lançamento de uma nova arquitetura de controlo de acessos a partir de São Francisco. A solução destina-se a gerir permissões tanto para utilizadores humanos como para agentes de inteligência artificial. O anúncio foi divulgado através de uma plataforma de notícias de cibersegurança.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: SplitSecure.",
+    "O quê: Lançamento de uma nova arquitetura de controlo de acessos.",
+    "Alvo: Humanos e agentes de IA."
+   ],
+   "title_original": "SplitSecure Launches New Access Control Architecture for Humans and AI Agents",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "San Francisco, United States, 23rd November 2026, CyberNewswire"
+   "translated": true,
+   "enriched": true,
+   "why": "Oferece novos métodos de gestão de acessos num cenário onde a IA assume papéis operacionais nas empresas.",
+   "todo": "Reveja as políticas de controlo de acessos para incluir de forma segura identidades automatizadas e agentes de IA."
   },
   {
    "id": "4cf6189c290c29f8",
@@ -377,15 +461,20 @@
    "lang": "en",
    "link": "https://cyberscoop.com/kirsten-davies-jay-clayton-national-cyber-director/",
    "published": "2026-11-23T16:59:03+00:00",
-   "title": "Kirsten Davies to become national cyber director nominee, Jay Clayton takes acting director job",
-   "summary": "After a brief stint as acting director, Davies will become the pick to succeed Sean Cairncross and National Cyber Director Clayton will do double duty.",
+   "title": "Kirsten Davies vai ser nomeada diretora cibernética nacional e Jay Clayton assume cargo interino",
+   "summary": "O presidente Donald Trump vai nomear Kirsten Davies para o cargo permanente de diretora cibernética nacional. Até à confirmação oficial, a função interina será assumida por Jay Clayton, diretor de inteligência nacional. A decisão surge após alterações recentes na liderança federal na sequência de movimentações políticas.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Donald Trump, Kirsten Davies e Jay Clayton.",
+    "O quê: Nomeação de Kirsten Davies para diretora cibernética nacional e Jay Clayton como interino.",
+    "Contexto: Reestruturação na liderança federal de cibersegurança nos Estados Unidos."
+   ],
+   "title_original": "Kirsten Davies to become national cyber director nominee, Jay Clayton takes acting director job",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "President Donald Trump will nominate Kirsten Davies for permanent national cyber director, giving the acting role she just received last week for the post to Director of National Intelligence Jay Clayton pending her confirmation. A White House official told CyberScoop Monday that “following the overwhelming support Kirsten received from industry and across government after Thursday’s announcement, President Trump has decided to nominate her to serve as national cyber director.” Davies, in the meantime, will serve as senior adviser for the Office of the National Cyber Director. The same person cannot serve in the acting role of a position while also being the nominee for it. The move is one of several in a recent federal cyber leadership shuffle, all following the November elections that saw Democrats take control of the House and Senate. The departure of Sean Cairncross as Trump’s national cyber director opened up his job. Davies was the chief information officer at the Department of Defense prior to receiving the acting national cyber director position, in addition to a background of holding leading cyber roles at big companies like Siemens and Estée Lauder. Trump also nominated Palantir CISO Michael LoSapio for permanent director of the Cybersecurity and Infrastructure Security Agency following the election, although multiple senators have already placed holds on his nomination that look to delay his confirmation until next year — and that’s only if he overcomes Democrats’ early poor reception to him . The White House official touted Clayton’s cybersecurity experience as chair of the White House Super Intelligence Force, among other work. “I’m excited to work more with Kirsten, who has the experience and capabilities needed to help America navigate our increasingly co"
+   "translated": true,
+   "enriched": true,
+   "why": "Define a liderança estratégica de cibersegurança a nível federal nos Estados Unidos.",
+   "todo": ""
   },
   {
    "id": "0af9a7510182f44f",
@@ -394,15 +483,20 @@
    "lang": "en",
    "link": "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/",
    "published": "2026-11-23T16:50:01+00:00",
-   "title": "GlobeTopper loses $2.5 million after hackers steal $70k in gift cards",
-   "summary": "A cyberattack disrupted operations at B2B top-up solutions provider GlobeTopper, causing an estimated $2.5 million in lost revenue, while the attacker redeemed digital gift cards worth $70,000. [...]",
+   "title": "GlobeTopper perde 2,5 milhões de dólares após hackers roubarem 70 mil dólares em cartões-oferta",
+   "summary": "A empresa de serviços B2B GlobeTopper sofreu um ataque cibernético que perturbou as suas operações. O incidente resultou numa perda estimada de 2,5 milhões de dólares em receitas. Além disso, os atacantes conseguiram resgatar cartões-oferta digitais num valor de 70 000 dólares.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: GlobeTopper.",
+    "O quê: Ataque cibernético com roubo de cartões-oferta.",
+    "Impacto: 2,5 milhões de dólares em receitas perdidas e 70 mil dólares em cartões roubados."
+   ],
+   "title_original": "GlobeTopper loses $2.5 million after hackers steal $70k in gift cards",
    "category": "Ataque/APT",
-   "translated": false,
-   "enriched": false,
-   "raw": "A cyberattack disrupted operations at B2B top-up solutions provider GlobeTopper, causing an estimated $2.5 million in lost revenue, while the attacker redeemed digital gift cards worth $70,000. [...]"
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como ataques a fornecedores B2B podem causar permias financeiras avultadas e perturbações operacionais.",
+   "todo": "Refforce a monitorização de transações financeiras e o controlo de emissão de cartões e vales digitais."
   },
   {
    "id": "f4cbc913239a39f5",
@@ -411,15 +505,21 @@
    "lang": "en",
    "link": "https://aws.amazon.com/blogs/security/protect-identity-data-with-point-in-time-recovery-in-amazon-cognito/",
    "published": "2026-11-23T16:43:50+00:00",
-   "title": "Protect identity data with point-in-time recovery in Amazon Cognito",
-   "summary": "Amazon Cognito helps you implement secure sign-in and access control for users, microservices, and AI agents in minutes. Many of you rely on it for some of the most critical data you operate: the identities and attributes your applications use to authenticate and authorize every request. Recently, we launched point-in-time recovery (PITR) for Amazon Cognito […]",
+   "title": "Proteja dados de identidade com recuperação pontual no Amazon Cognito",
+   "summary": "A Amazon introduziu a recuperação pontual (PITR) para os conjuntos de utilizadores do Amazon Cognito. Esta funcionalidade permite restaurar dados de identidade e atributos para um momento anterior em caso de eliminações acidentais ou operações em massa erróneas. A ativação é feita de forma automática nos planos elegíveis, eliminando a necessidade de exportações manuais complexas.",
    "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/20/cognito-1.png",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Amazon.",
+    "O quê: Lançamento da recuperação pontual (PITR) no Amazon Cognito.",
+    "Para quê: Restaurar dados de identidade e perfis de utilizador para um ponto anterior no tempo.",
+    "Impacto: Simplifica a recuperação após erros operacionais ou eliminações acidentais."
+   ],
+   "title_original": "Protect identity data with point-in-time recovery in Amazon Cognito",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "Amazon Cognito helps you implement secure sign-in and access control for users, microservices, and AI agents in minutes. Many of you rely on it for some of the most critical data you operate: the identities and attributes your applications use to authenticate and authorize every request. Recently, we launched point-in-time recovery (PITR) for Amazon Cognito user pools, which lets you restore a user pool to an earlier point in time if an accidental deletion, a faulty migration, or an erroneous bulk operation changes data you need. It’s turned on automatically for user pools on the eligible feature plans. Before this launch, protecting user pool data meant building your own solution, such as exporting user attributes and group data on a schedule. That approach was time-consuming to build and operate, versioning the exports to find a clean point in time was another challenge, and reconstructing a pool from them was complicated. Users also got new sub identifiers as part of the restore process, which might break any downstream reference to the originals. Passwords, multi-factor authentication (MFA) settings, and passkeys might not be recovered, so every affected user had to reset. In this post, we show you how to recover a user pool after an erroneous bulk operation, using the preview to review changes before you approve them. How PITR works On eligible user pools (see Prerequisites), Amazon Cognito now tracks changes so you can recover the pool to any point within the recovery window. The length of that window depends on your user pool feature plan. The window accrues from the time the pool is on an eligible feature plan, and you can only recover to a point at which PITR coverage already existed. One behavior to understand is what happens to passwords during a recovery. A "
+   "translated": true,
+   "enriched": true,
+   "why": "Facilita a recuperação rápida de dados críticos de autenticação após erros humanos ou falhas operacionais.",
+   "todo": "Ative e configure mecanismos de recuperação pontual para dados de identidade e testes de restauração regulares."
   },
   {
    "id": "a4213b5ac4cf47fa",
@@ -428,15 +528,20 @@
    "lang": "en",
    "link": "https://www.cybersecuritydive.com/news/water-cybersecurity-watch-center-initial-support/875486/",
    "published": "2026-11-23T16:27:10+00:00",
-   "title": "Water utilities in 26 states getting free cybersecurity help",
-   "summary": "Rural water utilities are some of the nation’s most vulnerable critical infrastructure operators. A new group is helping them access resources.",
+   "title": "Serviços de água em 26 estados recebem ajuda gratuita em cibersegurança",
+   "summary": "As empresas de serviços de água em zonas rurais enfrentam riscos elevados por integrarem infraestruturas críticas vulneráveis. Para colmatar esta falha, um novo grupo começou a fornecer recursos de apoio. A iniciativa visa ajudar estas entidades a aceder a defesas e apoios de cibersegurança.",
    "image": "https://imgproxy.divecdn.com/gDu2KNrJi-KeXcwvyYb7loivSvffSovyW-3Iqc0rW5g/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjQwODU4MDU2LmpwZw==.webp",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O quê: Disponibilização de ajuda gratuita em cibersegurança.",
+    "Alvo: Serviços de água em zonas rurais de vários estados.",
+    "Impacto: Melhoria da postura de segurança em infraestruturas críticas vulneráveis."
+   ],
+   "title_original": "Water utilities in 26 states getting free cybersecurity help",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Rural water utilities are some of the nation’s most vulnerable critical infrastructure operators. A new group is helping them access resources."
+   "translated": true,
+   "enriched": true,
+   "why": "Protege setores essenciais e vulneráveis contra interrupções provocadas por ataques cibernéticos.",
+   "todo": "Aproveite recursos e parcerias externas gratuitas para reforçar a segurança em infraestruturas essenciais."
   },
   {
    "id": "c32e65acfc497d43",
@@ -445,15 +550,20 @@
    "lang": "en",
    "link": "https://techcrunch.com/2026/11/23/crowdstrike-to-acquire-zscaler-for-44-billion/",
    "published": "2026-11-23T16:20:11+00:00",
-   "title": "CrowdStrike to acquire Zscaler for $44 billion",
-   "summary": "The cybersecurity giant said that the deal to buy Zscaler, which provides zero-trust products to large enterprises, will better equip their customers to use AI agents.",
+   "title": "CrowdStrike vai adquirir a Zscaler por 44 mil milhões de dólares",
+   "summary": "A gigante da cibersegurança CrowdStrike anunciou a compra da Zscaler, fornecedora de produtos de arquitetura zero-trust para grandes empresas. A operação tem como objetivo dotar os clientes de melhores ferramentas para a utilização segura de agentes de inteligência artificial. O acordo reforça a consolidação de soluções de segurança avançadas.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: CrowdStrike e Zscaler.",
+    "O quê: Aquisição da Zscaler por 44 mil milhões de dólares.",
+    "Impacto: Integração de produtos zero-trust para apoiar a utilização de agentes de IA."
+   ],
+   "title_original": "CrowdStrike to acquire Zscaler for $44 billion",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "The cybersecurity giant said that the deal to buy Zscaler, which provides zero-trust products to large enterprises, will better equip their customers to use AI agents."
+   "translated": true,
+   "enriched": true,
+   "why": "Combina tecnologias de zero-trust e proteção de IA numa única oferta de mercado para grandes empresas.",
+   "todo": ""
   },
   {
    "id": "f1ad342921358c94",
@@ -462,15 +572,21 @@
    "lang": "en",
    "link": "https://www.darkreading.com/cyberattacks-data-breaches/ai-agents-flaw-discovery-root-access-11-minutes",
    "published": "2026-11-23T16:17:21+00:00",
-   "title": "AI Agents Zip From Flaw Discovery to Root Access in 11 Minutes",
-   "summary": "A China-nexus actor used the Cairn penetration testing tool in attacks against East Asian universities, exploiting a zero-day in a medical imaging app.",
+   "title": "Agentes de IA passam da descoberta de falhas ao acesso root em 11 minutos",
+   "summary": "Um grupo de ameaças com ligações à China utilizou a ferramenta de testes de penetração Cairn contra universidades na Ásia Oriental. Os ataques exploraram uma vulnerabilidade do tipo zero-day numa aplicação de imagem médica. O processo automatizado permitiu avançar rapidamente desde a descoberta da falha até à obtenção de privilégios de root.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt068557e4f1edea18/6b0424213e73ecdcfb851a70/working-with-AI-agents-ImageFlow-shutterstock.png?width=720&quality=80&disable=upscale",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Atores com ligações à China.",
+    "O quê: Ataques com recurso à ferramenta Cairn e exploração de um zero-day.",
+    "Alvo: Universidades na Ásia Oriental e aplicações de imagem médica.",
+    "Impacto: Obtenção rápida de acesso root em apenas 11 minutos."
+   ],
+   "title_original": "AI Agents Zip From Flaw Discovery to Root Access in 11 Minutes",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "A China-nexus actor used the Cairn penetration testing tool in attacks against East Asian universities, exploiting a zero-day in a medical imaging app."
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra a velocidade alarmante com que ferramentas automatizadas e IA exploram vulnerabilidades até ao comprometimento total.",
+   "todo": "Aplique correções urgentes para falhas zero-day e monitorize a utilização de ferramentas de teste de intrusão não autorizadas."
   },
   {
    "id": "c84c34ff84745037",
@@ -13448,69 +13564,6 @@
    "translated": true,
    "enriched": true,
    "why": "Garante a segurança dos ambientes de nuvem onde corre a IA.",
-   "todo": ""
-  },
-  {
-   "id": "c398452d61b2b595",
-   "source": "CrowdStrike Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.crowdstrike.com/en-us/blog/crowdstrike-agentic-adversary-emulation-counters-ai-enabled-adversaries/",
-   "published": "2026-11-18T02:13:40.609397+00:00",
-   "title": "CrowdStrike introduz emulação de adversários baseada em agentes para combater ameaças com IA",
-   "summary": "",
-   "image": null,
-   "points": [
-    "Introdução de emulação de adversários baseada em agentes.",
-    "Medida desenvolvida para combater ataques potenciados por IA."
-   ],
-   "title_original": "CrowdStrike Introduces Agentic Adversary Emulation to Counter AI-Enabled Adversaries",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Ajuda as organizações a anteciparem-se a atacantes que utilizam inteligência artificial.",
-   "todo": ""
-  },
-  {
-   "id": "4be5b1b33e187ea6",
-   "source": "CrowdStrike Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.crowdstrike.com/en-us/blog/crowdstrike-detects-and-stops-agent-insider-threats/",
-   "published": "2026-11-18T02:13:40.609335+00:00",
-   "title": "CrowdStrike expande SOC agêntico para detetar e parar ameaças internas de agentes",
-   "summary": "",
-   "image": null,
-   "points": [
-    "Expansão das capacidades do SOC agêntico.",
-    "Foco na deteção e interceção de ameaças internas."
-   ],
-   "title_original": "CrowdStrike Extends the Agentic SOC to Detect and Stop Agent Insider Threats",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Melhora a capacidade de resposta face a riscos originados no interior da organização.",
-   "todo": ""
-  },
-  {
-   "id": "308973400f63ffc5",
-   "source": "SANS ISC",
-   "region": "US",
-   "lang": "en",
-   "link": "https://isc.sans.edu/diary/rss/33528",
-   "published": "2026-11-18T02:00:03+00:00",
-   "title": "ISC Stormcast para quarta-feira, 18 de novembro de 2026",
-   "summary": "",
-   "image": null,
-   "points": [
-    "Resumo diário de cibersegurança do ISC Stormcast.",
-    "Análise de eventos e vulnerabilidades recentes."
-   ],
-   "title_original": "ISC Stormcast For Wednesday, November 18th, 2026 https://isc.sans.edu/podcastdetail/10184, (Wed, Nov 18th)",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Mantém os profissionais informados sobre o panorama atual de ameaças.",
    "todo": ""
   }
  ]

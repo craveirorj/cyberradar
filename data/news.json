@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T09:26:49.440116+00:00",
+ "updated": "2026-11-23T09:47:15.239300+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -234,7 +234,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 21
+   "added": 22
   },
   {
    "source": "The Register Security",
@@ -263,8 +263,8 @@
   },
   {
    "source": "Graham Cluley",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 3
   },
   {
    "source": "HackRead",
@@ -309,16 +309,37 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 36,
-  "pending": 315,
-  "unenriched": 177,
+  "done": 120,
+  "pending": 238,
+  "unenriched": 96,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "c52ec4f9aa5798e1",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/badbox-spread-ad-fraud/",
+   "published": "2026-11-23T09:30:00+00:00",
+   "title": "Badbox Regressa para Disseminar Fraudes de Anúncios e Cargas Úteis de Proxyjacking",
+   "summary": "Investigadores da Human Satori indicam que a nova versão Badbox 3.0 está atualmente a gerar cerca de 40 mil milhões de pedidos de licitação por dia. Esta ameaça informática foca-se na distribuição de fraudes publicitárias e de cargas úteis maliciosas de proxyjacking. O impacto reflete-se na utilização abusiva de recursos e na exposição de redes afetadas a atividades ilícitas em larga escala.",
+   "image": null,
+   "points": [
+    "Atores maliciosos lançaram a nova versão Badbox 3.0 para alargar campanhas de cibercrime.",
+    "A ameaça é responsável por gerar um volume massivo de 40 mil milhões de pedidos diários.",
+    "O esquema utiliza cargas úteis focadas em fraudes de anúncios e operações de proxyjacking.",
+    "O impacto resulta no abuso sistémico de infraestruturas e dispositivos comprometidos."
+   ],
+   "title_original": "Badbox Returns to Spread Ad Fraud and Proxyjacking Payloads",
+   "category": "Phishing/Fraude",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque o Badbox 3.0 afeta gravemente a integridade das redes e consome recursos através de fraudes massivas.",
+   "todo": "Monitorize o tráfego de rede para detetar padrões anómalos de pedidos e mantenha todos os dispositivos e aplicações atualizados."
+  },
   {
    "id": "d0dd2916cf583a59",
    "source": "BleepingComputer",
@@ -334,9 +355,9 @@
     "A falha afeta sistemas com o software Forcepoint DLP instalado.",
     "O problema surgiu após a aplicação do hotpatch KB5132043 de novembro de 2026."
    ],
-   "title_original": "Microsoft confirms Windows printing issues affecting Forcepoint users",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Afeta a capacidade de impressão em computadores empresariais que utilizam software de segurança específico.",
    "todo": "Acompanhe os comunicados da Microsoft para obter uma correção oficial para o hotpatch afetado."
@@ -13755,28 +13776,6 @@
    "enriched": true,
    "why": "Descreve táticas sofisticadas de engenharia social baseadas em redes de contactos reais usadas por grupos estatais.",
    "todo": "Utilizar autenticação resistente a phishing (como chaves FIDO2) e validar cuidadosamente pedidos de contactos através de canais alternativos."
-  },
-  {
-   "id": "5a31f321e5e83a16",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/17/connectsecure-agentic-ai-penetration-testing/",
-   "published": "2026-11-17T13:49:13+00:00",
-   "title": "ConnectSecure introduz testes de IA adaptativos na gestão de vulnerabilidades",
-   "summary": "A ConnectSecure anunciou a capacidade de Testes de Penetração com IA Baseada em Agentes, destinada a ajudar fornecedores de serviços geridos e equipas de segurança a identificar vulnerabilidades exploráveis. Com a enorme quantidade de falhas conhecidas, a nova ferramenta auxilia a determinar quais as fraquezas que podem ser ativamente exploradas e exigem remediação prioritária. O impacto traduz-se na otimização do tempo e da capacidade técnica das equipas na priorização de riscos.",
-   "image": null,
-   "points": [
-    "A ConnectSecure lançou testes de penetração baseados em IA adaptativa para gestão de vulnerabilidades.",
-    "A tecnologia ajuda a identificar que falhas são realmente exploráveis num contexto de ataque.",
-    "Permite às equipas de segurança priorizar as correções que exigem atenção imediata."
-   ],
-   "title_original": "ConnectSecure brings adaptive AI testing to vulnerability management",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Ajuda as empresas a focar os esforços de correção nas vulnerabilidades que representam um risco real de exploração.",
-   "todo": "Dar prioridade à correção de vulnerabilidades com provas ativas de exploração e integrar ferramentas automatizadas de triagem."
   }
  ]
 }

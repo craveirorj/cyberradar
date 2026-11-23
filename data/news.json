@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T19:24:56.243028+00:00",
+ "updated": "2026-11-23T19:45:06.800453+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -319,6 +319,23 @@
   ]
  },
  "items": [
+  {
+   "id": "879adbc122737255",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/23/bluetooth-brakes-are-broken-as-researchers-find-anyone-can-control-them/5311748",
+   "published": "2026-11-23T19:29:59+00:00",
+   "title": "Bluetooth brakes are broken as researchers find anyone can control them",
+   "summary": "Security fixes are available for two Elecbrakes models, but an older controller remains vulnerable and unpatched",
+   "image": "https://image.theregister.com/?imageId=229180&width=800",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Imagine something as mission-critical as the brakes on a trailer being vulnerable to unauthorized control. One Australian manufacturer made the interesting choice of building Bluetooth into a trailer brake controller without adequately securing its critical braking functions. Anyone within Bluetooth range of an unpatched Elecbrakes trailer controller could potentially trigger its brakes or apply more braking force than intended, without needing to authenticate. The discovery comes courtesy of a pair of security researchers from Element Digital, Patrick Forck and Jeremy McCarthy. Their investigation began earlier this year when Forck was driving down the road and noticed that his physical Elecbrakes In-Car Remote had connected to someone else's trailer without pairing or prompting him. “It had connected mid-drive, without pairing or a prompt, to a brake controller that wasn’t mine, on a trailer I’d never seen, belonging to a driver who had no idea,” the researchers wrote. That one-off connection triggered a full-scale investigation by the pair. For those unfamiliar with trailer brake controllers, these devices are commonly used on larger trailers. Australian manufacturer Elecbrakes sells such controllers in Australia and New Zealand. Depending on jurisdiction, trailers over a certain weight are required to have their own braking system, which Elecbrakes manufactures. Elecbrakes offers two versions that are designed to be easier to install than traditional controllers: One that’s mounted in a vehicle, and one that is mounted directly on a trailer. That trailer-mounted unit can receive Bluetooth commands from the Elecbrakes smartphone app or a separate in-car remote. Given the importance of such control units to road safety, it’s easy to imagine how serious such a vulnerab"
+  },
   {
    "id": "f714b48247a9be7f",
    "source": "BleepingComputer",
@@ -13483,29 +13500,6 @@
    "enriched": true,
    "why": "Permite que ameaças iludam os controlos de segurança ao mascararem-se em programas legítimos e de confiança.",
    "todo": "Garanta que obtém o software sempre de fontes oficiais e mantenha as soluções antimalware ativas e atualizadas."
-  },
-  {
-   "id": "ee9a23761ba06bf0",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
-   "published": "2026-11-18T05:58:04+00:00",
-   "title": "Hackers russos do grupo Cold Relic usam dados roubados do Google Workspace para atacar segunda organização nos EUA",
-   "summary": "O grupo de espionagem cibernética russo Cold Relic foi observado a utilizar um único compromisso na cloud como ponto de partida para novas intrusões. A investigação conduzida pela Google indicou que os atacantes aproveitaram o acesso inicial a uma organização norte-americana para lançar ataques a terceiros. Esta tática evidencia a capacidade do grupo em expandir o seu alcance a partir de brechas em ambientes de produtividade na nuvem.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLbxlzqi-uBPlDXGecxrfXQ8kZLpAKsDO5c7KmTTyYyNQQE6bdI0TqT7Rk_JrKRie2pMB_xrLRKy1Cksp1GYHfUGHXz7UGg5nWOAQmPmiRKoUJkMCHrMvW7A72W9x7_I7KESMQmJLQVrJth_Ozj7i1nF7IPB4W_WV-NQyy0afEMgGVbGdaSNfIjolqtC4-/s1600/cloud.jpg",
-   "points": [
-    "Quem: Grupo russo Cold Relic e investigadores da Google.",
-    "O quê: Exploração de dados roubados do Google Workspace para novos ataques.",
-    "Impacto: Compromisso em cadeia de uma segunda organização nos Estados Unidos.",
-    "Contexto: Operação de espionagem cibernética direcionada na cloud."
-   ],
-   "title_original": "Russian COLD RELIC Hackers Use Stolen Google Workspace Data to Breach Second U.S. Organization",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como um incidente de segurança numa plataforma de colaboração pode ser escalado para atacar outras entidades.",
-   "todo": "Implemente autenticação multifator robusta e reveja regularmente as permissões de acesso em plataformas de colaboração na cloud."
   }
  ]
 }

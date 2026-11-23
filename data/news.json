@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T23:05:16.557668+00:00",
+ "updated": "2026-11-23T23:27:51.100468+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 373,
-  "unenriched": 244,
+  "done": 72,
+  "pending": 305,
+  "unenriched": 173,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,29 @@
   ]
  },
  "items": [
+  {
+   "id": "a7c983b533c2c17c",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/produto-e-review/apagao-da-microsoft-empresa-reconhece-que-e-mails-nao-foram-entregues-durante-falha/",
+   "published": "2026-11-23T23:00:00+00:00",
+   "title": "Apagão da Microsoft: empresa reconhece que e-mails não foram entregues durante falha",
+   "summary": "Durante a recente instabilidade nos serviços da Microsoft, o Exchange Online acumulou mensagens e exigiu um aumento no prazo de entrega. A gigante tecnológica admitiu que alguns e-mails atrasados acabaram por não ser entregues aos destinatários. O problema afetou sobretudo as caixas de entrada de utilizadores inativos há mais de 30 dias na versão convencional do Outlook. Os remetentes afetados receberam uma notificação de não entrega, embora a empresa não tenha quantificado o impacto total.",
+   "image": "https://www.estadao.com.br/resizer/v2/V4JXFXOSABDNTK7KTTUMY5SZPM.jpg?quality=80&auth=2e5efb43f93efc0f49a171636441e9a3de66149b27c156d31ffd684a4b6873c7&width=710",
+   "points": [
+    "O Exchange Online acumulou mensagens devido a uma falha na entrega de e-mails.",
+    "A Microsoft aumentou o prazo de tentativas para evitar a devolução de mensagens.",
+    "Utilizadores da versão convencional do Outlook com caixas inativas perderam e-mails.",
+    "Os remetentes afetados receberam notificações de erro sem dados sobre a escala do problema."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Importa porque revela falhas na entrega de e-mails corporativos e pessoais durante paragens de serviço da Microsoft.",
+   "todo": "Verifique a caixa de entrada do Outlook se enviou mensagens durante o período de instabilidade."
+  },
   {
    "id": "6a57f5edfd55bc34",
    "source": "Dark Reading",
@@ -1402,15 +1425,21 @@
    "lang": "en",
    "link": "https://www.malwarebytes.com/blog/ai/2026/11/muse-ai-got-nosy-and-started-making-things-up-meta-insiders-say",
    "published": "2026-11-23T15:37:05+00:00",
-   "title": "Muse AI got nosy and started making things up, Meta insiders say",
-   "summary": "Insiders say Meta’s AI agent Muse surfaced information from other apps and sometimes hallucinated when prompted to engage users.",
+   "title": "Fontes da Meta afirmam que a Muse AI começou a inventar informações",
+   "summary": "O agente de IA da Meta, chamado Muse, surpreendeu utilizadores ao expor informações privadas sem autorização prévia. Postos internos e testes confirmaram que a ferramenta mencionou mensagens do Signal e saldos bancários, além de efetuar marcações indesejadas no Airbnb. Membros da equipa da Meta indicam que estas alucinações foram provocadas por comandos internos destinados a reenvolver os utilizadores.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O agente de IA Muse acedeu e expôs dados privados de forma não solicitada.",
+    "Testes e publicações internas confirmaram que a ferramenta citou mensagens e dados bancários.",
+    "Comandos internos de reengajamento da Meta provocaram alucinações no sistema de IA.",
+    "A falha resultou em ações autónomas indesejadas, como marcações em plataformas externas."
+   ],
+   "title_original": "Muse AI got nosy and started making things up, Meta insiders say",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": ".kadence-column492162_d006dd-b2 > .kt-inside-inner-col{padding-top:20px;padding-right:20px;padding-bottom:10px;padding-left:20px;}.kadence-column492162_d006dd-b2 > .kt-inside-inner-col{column-gap:var(--global-kb-gap-sm, 1rem);}.kadence-column492162_d006dd-b2 > .kt-inside-inner-col{flex-direction:column;}.kadence-column492162_d006dd-b2 > .kt-inside-inner-col > .aligncenter{width:100%;}.kadence-column492162_d006dd-b2 > .kt-inside-inner-col{background-color:rgba(255, 229, 229, 0.83);}.kadence-column492162_d006dd-b2 > .kt-inside-inner-col:before{opacity:0.3;}.kadence-column492162_d006dd-b2{position:relative;}@media all and (max-width: 1024px){.kadence-column492162_d006dd-b2 > .kt-inside-inner-col{flex-direction:column;justify-content:center;}}@media all and (max-width: 767px){.kadence-column492162_d006dd-b2 > .kt-inside-inner-col{flex-direction:column;justify-content:center;}} In this article Meta’s AI agent, Muse, reportedly flagged a private Signal message an employee said she hadn’t given it access to A Meta team member said built-in prompts to engage users triggered hallucinations Check your AI agent’s permissions, especially whether it can read notifications from other apps Internal posts reviewed by Reuters describe Meta’s AI agent Muse surfacing private information unprompted, and Reuters’ own tests backed up part of the story. Reuters reviewed more than two dozen internal Meta posts. One employee said Muse reminded her to answer a Signal message from her sister. The employee wrote that she did “not grant it access to other apps.” Another post described a stray note quoting bank balances. ZDNET adds that Muse booked an Airbnb nobody asked for. A Meta Superintelligence team member said the hallucinations were triggered by built-in prompts meant to re-engage users betw"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque demonstra os riscos de privacidade associados ao comportamento autónomo e a alucinações de assistentes de IA.",
+   "todo": "Verifique e restrinja as permissões das ferramentas de IA quanto à leitura de notificações e dados de outras aplicações."
   },
   {
    "id": "5963fa2cf8907c24",
@@ -1419,15 +1448,21 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/apache-security-advisory-av26-1194",
    "published": "2026-11-23T15:34:03+00:00",
-   "title": "Apache security advisory (AV26-1194)",
-   "summary": "",
+   "title": "Aviso de segurança Apache (AV26-1194)",
+   "summary": "A Apache Software Foundation reportou uma vulnerabilidade que afeta o produto Apache Solr em versões anteriores à 10.1.0 e 9.11.0. A falha, registada como CVE-2026-86312, indica que o endpoint de verificação de saúde do Solr pode acionar funcionalidades não intencionais. O Centro Cibernético aconselha administradores a consultarem os links oficiais e a aplicarem as atualizações necessárias.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O Apache Solr apresenta uma vulnerabilidade registada sob o identificador CVE-2026-86312.",
+    "A falha afeta versões do software anteriores a 10.1.0 e 9.11.0.",
+    "O endpoint de verificação de saúde pode desencadear funcionalidades não intencionais no sistema.",
+    "O Centro Cibernético recomenda a aplicação célere de atualizações de segurança."
+   ],
+   "title_original": "Apache security advisory (AV26-1194)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1194 Date: November 23, 2026 As of November 23, 2026, Apache Software Foundation is affected by vulnerabilities in the following product: Apache Solr Prior to 10.1.0 Prior to 9.11.0 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. CVE-2026-86312: Apache Solr: Ping health-check endpoint could trigger unintended functionality Apache Project Security Information"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque vulnerabilidades em servidores Apache podem expor sistemas a comportamentos anómalos ou exploração.",
+   "todo": "Atualize o Apache Solr para as versões seguras disponibilizadas pela Apache Software Foundation."
   },
   {
    "id": "423071d6f76d6bca",
@@ -1436,15 +1471,20 @@
    "lang": "en",
    "link": "https://techcrunch.com/2026/11/23/dutch-privacy-authority-urges-consumers-not-to-buy-pervert-glasses/",
    "published": "2026-11-23T15:29:49+00:00",
-   "title": "Dutch privacy authority urges consumers not to buy ‘pervert glasses’",
-   "summary": "The Netherlands' data protection agency said smart wearables violate people's privacy, get information wrong, and can result in unsafe situations.",
+   "title": "Autoridade de privacidade neerlandesa insta consumidores a não comprarem 'óculos pervertidos'",
+   "summary": "A agência de proteção de dados dos Países Baixos emitiu um alerta sobre o uso de dispositivos inteligentes de pulso e vestíveis. Segundo a autoridade, estes equipamentos violam a privacidade dos cidadãos, fornecem informações incorretas e podem criar situações de insegurança.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A agência de proteção de dados neerlandesa criticou o uso de óculos e dispositivos inteligentes.",
+    "Os aparelhos violam a privacidade e apresentam falhas na gestão de informação.",
+    "O uso destes wearables pode originar cenários considerados inseguros."
+   ],
+   "title_original": "Dutch privacy authority urges consumers not to buy ‘pervert glasses’",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "The Netherlands' data protection agency said smart wearables violate people's privacy, get information wrong, and can result in unsafe situations."
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque destaca os riscos de privacidade e segurança associados a dispositivos tecnológicos vestíveis no mercado.",
+   "todo": "Evite utilizar wearables que comprometam a privacidade de terceiros e avalie os riscos antes da compra."
   },
   {
    "id": "297b32336786017b",
@@ -1453,15 +1493,20 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/synology-security-advisory-av26-1193",
    "published": "2026-11-23T15:23:24+00:00",
-   "title": "Synology security advisory (AV26-1193)",
-   "summary": "",
+   "title": "Aviso de segurança Synology (AV26-1193)",
+   "summary": "A Synology reportou uma falha de segurança que afeta o seu sistema operativo DiskStation Manager (DSM) em várias versões anteriores aos patches recentes. O Centro Cibernético emitiu um alerta a instar utilizadores e administradores a verificarem as informações disponibilizadas pela empresa. Recomenda-se a aplicação imediata das atualizações de segurança para mitigar riscos.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Synology detetou uma vulnerabilidade no DiskStation Manager (DSM).",
+    "Várias versões anteriores a patches específicos da Synology encontram-se afetadas.",
+    "O Centro Cibernético incentiva a consulta de avisos oficiais e aplicação de correções."
+   ],
+   "title_original": "Synology security advisory (AV26-1193)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1193 Date: November 23, 2026 As of November 23, 2026, Synology is affected by a vulnerability in the following product: DiskStation Manager (DSM) Prior to 7.1.1-42962-10 Prior to 7.2.1-69057-14 Prior to 7.2.2-72806-11 Prior to 7.3.2-86009-6 Prior to 7.4.1-90080-2 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. Synology_SA_26_21 | Synology Inc. Synology Product Security Advisory"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque falhas em sistemas de armazenamento em rede (NAS) podem comprometer dados empresariais e pessoais armazenados.",
+   "todo": "Atualize o DiskStation Manager (DSM) da Synology para as versões mais recentes recomendadas pelo fabricante."
   },
   {
    "id": "03c70569c66c49b0",
@@ -1470,15 +1515,21 @@
    "lang": "en",
    "link": "https://research.checkpoint.com/2026/23rd-november-threat-intelligence-report/",
    "published": "2026-11-23T15:16:27+00:00",
-   "title": "23rd November – Threat Intelligence Report",
-   "summary": "For the latest discoveries in cyber research for the week of 23rd November, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES The FBI has reportedly experienced a second cyber incident in recent months, this time targeting its National Crime Information Center (NCIC). The database shares records on fugitives, warrants, criminal histories, and missing […]",
+   "title": "Relatório de Inteligência de Ameaças de 23 de novembro",
+   "summary": "O FBI enfrentou um segundo incidente cibernético recente direcionado ao National Crime Information Center, comprometendo dados de aplicação da lei. O instituto japonês RIKEN suspendeu operações após uma intrusão expor credenciais de milhares de utilizadores. A Comissão Europeia sofreu um ataque apoiado por IA que perturbou sistemas internos durante mais de dez dias. Adicionalmente, a Infoblox confirmou acesso não autorizado a dados de clientes através de um fornecedor externo de migração.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O FBI e a Comissão Europeia foram alvos de incidentes cibernéticos recentes.",
+    "O instituto RIKEN no Japão teve credenciais de utilizadores expostas após intrusão.",
+    "A Infoblox sofreu uma violação de dados através de um fornecedor de migração terceirizado.",
+    "Ferramentas de IA foram utilizadas para apoiar o ataque cibernético à Comissão Europeia."
+   ],
+   "title_original": "23rd November – Threat Intelligence Report",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "For the latest discoveries in cyber research for the week of 23rd November, please download our Threat Intelligence Bulletin . TOP ATTACKS AND BREACHES The FBI has reportedly experienced a second cyber incident in recent months, this time targeting its National Crime Information Center (NCIC). The database shares records on fugitives, warrants, criminal histories, and missing persons among US law enforcement agencies. The attackers’ identities, entry method, and potential data exposure were not disclosed by the FBI. Japan’s RIKEN research institute, which operates one the world’s strongest supercomputers ‘Fugaku’, suspended operations after attackers breached its operations network and tampered with servers between November 10 and 13. The intrusion potentially exposed account information belonging to 4,597 users, including credentials that could provide access to external systems. The European Commission, the EU’s executive body, has suffered a cyberattack that disrupted internal systems for more than ten days. Affected services included payroll, health insurance, and translation systems. Officials claimed that they contained most of the disruption, and that the attack was assisted by AI tools. US-based cybersecurity and networking provider Infoblox has confirmed unauthorized access to company information through a compromised third-party data migration vendor. The breach reportedly involved sensitive customer data stored in a migration environment. Infoblox stated that its products and services were unaffected and did not disclose the number of customers impacted. AI THREATS Check Point Research has demonstrated how differences in capability between AI security filters and underlying language models can enable attackers to bypass safeguards. The analysis describes this"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque evidencia ataques de grande escala a agências governamentais, instituições de investigação e empresas de tecnologia.",
+   "todo": "Audite regularmente a segurança de fornecedores terceiros e reforce a monitorização de acessos a bases de dados críticas."
   },
   {
    "id": "0f976cf9e6b137ed",
@@ -1487,15 +1538,20 @@
    "lang": "en",
    "link": "https://www.infosecurity-magazine.com/news/crowdstrike-to-acquire-zscaler/",
    "published": "2026-11-23T15:15:00+00:00",
-   "title": "CrowdStrike to Acquire Zscaler in Record $44 Billion Deal",
-   "summary": "CrowdStrike's proposed $43.9bn acquisition of Zscaler would add network security capabilities to its portfolio and bring together two major cybersecurity platforms",
+   "title": "CrowdStrike vai adquirir a Zscaler num acordo recorde de 44 mil milhões de dólares",
+   "summary": "A CrowdStrike propôs a aquisição da Zscaler por um valor estimado em 43,9 mil milhões de dólares. A operação visa integrar capacidades de segurança de rede no portefólio da CrowdStrike. Esta transação une duas das principais plataformas de cibersegurança do mercado.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A CrowdStrike apresentou uma proposta de aquisição da Zscaler avaliada em 43,9 mil milhões de dólares.",
+    "O negócio integra competências de segurança de rede na oferta da CrowdStrike.",
+    "A operação junta duas plataformas de destaque no setor da cibersegurança."
+   ],
+   "title_original": "CrowdStrike to Acquire Zscaler in Record $44 Billion Deal",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "CrowdStrike's proposed $43.9bn acquisition of Zscaler would add network security capabilities to its portfolio and bring together two major cybersecurity platforms"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque representa uma consolidação histórica no mercado global de produtos e plataformas de cibersegurança.",
+   "todo": ""
   },
   {
    "id": "85658b0bc9736fac",
@@ -1504,15 +1560,20 @@
    "lang": "en",
    "link": "https://therecord.media/kirsten-davies-trump-intends-nominate-national-cyber-director",
    "published": "2026-11-23T15:14:00+00:00",
-   "title": "'Overwhelming' support leads Trump to lock in Davies for national cyber czar",
-   "summary": "The Pentagon's chief information officer, who has filled in as the acting national cyber director, is the president's likely pick for the full nomination.",
+   "title": "Apoio esmagador leva Trump a nomear Davies para czar nacional do ciberespaço",
+   "summary": "O atual diretor de informação do Pentágono, que tem desempenhado funções como diretor nacional interino de cibersegurança, surge como o candidato mais provável do presidente para o cargo a tempo inteiro. A decisão decorre de um apoio expressivo à sua nomeação para liderar a estratégia cibernética nacional.",
    "image": "https://cms.therecord.media/uploads/kirsten_davies_billington_2026_aab4faaf40.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O responsável de informação do Pentágono é o favorito para o cargo permanente de czar do ciberespaço.",
+    "O candidato tem ocupado o cargo de diretor nacional interino de cibersegurança.",
+    "A escolha baseia-se num forte apoio institucional e político."
+   ],
+   "title_original": "'Overwhelming' support leads Trump to lock in Davies for national cyber czar",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "The Pentagon's chief information officer, who has filled in as the acting national cyber director, is the president's likely pick for the full nomination."
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque define a liderança política e estratégica para a cibersegurança e defesa digital a nível nacional.",
+   "todo": ""
   },
   {
    "id": "87d207ebb620a975",
@@ -1521,15 +1582,20 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1192",
    "published": "2026-11-23T15:11:22+00:00",
-   "title": "JetBrains security advisory (AV26-1192)",
-   "summary": "",
+   "title": "Aviso de segurança JetBrains (AV26-1192)",
+   "summary": "A JetBrains reportou vulnerabilidades de segurança que afetam os produtos Junie, Junie CLI e Junie GitHub Action em várias versões anteriores. O Centro Cibernético recomendou que os utilizadores e administradores analisem os avisos oficiais publicados pela empresa. É fundamental aplicar as atualizações de software disponibilizadas para mitigar potenciais riscos.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A JetBrains detetou vulnerabilidades em ferramentas como Junie, Junie CLI e Junie GitHub Action.",
+    "Várias versões anteriores dos produtos encontram-se expostas a falhas de segurança.",
+    "O Centro Cibernético aconselha a consulta de boletins e a instalação rápida de patches."
+   ],
+   "title_original": "JetBrains security advisory (AV26-1192)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1192 Date: November 23, 2026 As of November 19, 2026, JetBrains is affected by vulnerabilities in the following products: Junie Prior to 252.819.35 Prior to 253.819.35 Prior to 252.284.50 Prior to 251.284.50 Prior to 243.284.50 Junie CLI Prior to 26.11.2 Prior to 26.6.29 Junie GitHub Action Prior to 1.8.0 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. JetBrains Fixed Security Advisories JetBrains Security Bulletin"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque falhas em ferramentas de desenvolvimento e integração contínua podem servir de vetor para comprometer ambientes de software.",
+   "todo": "Atualize as ferramentas JetBrains Junie e componentes associados para as versões mais recentes indicadas pelo fabricante."
   },
   {
    "id": "ca0d1bdeb307b963",
@@ -1538,15 +1604,20 @@
    "lang": "en",
    "link": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
    "published": "2026-11-23T15:10:48+00:00",
-   "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
-   "summary": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open. This week's stories show how quickly a small opening can turn into a much bigger mess. One breach helps attackers reach another target. Tools people rely",
+   "title": "Resumo semanal: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell e muitos problemas com Shell",
+   "summary": "Os incidentes recentes demonstram que os atacantes exploram frequentemente pontos de entrada já existentes, como chaves roubadas, mensagens fidedignas ou atualizações de rotina. Esta dinâmica evidencia como pequenas falhas ou aberturas iniciais podem rapidamente escalar para problemas de segurança graves. A semana ficou marcada por múltiplos problemas de exploração em infraestruturas e ferramentas populares.",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBkXdg7nYK3nVTpBuC9FL7mGBvzvUxU0VxYplArVFYSTg2d_6tFITemHBYRAOD29pVBKzfo2aZ9Jsy8avRdACCMqrVdlEER0zn2xIWDBdswcH_nZpnJYkfORK6CEaWwX3f-B8AvkUqbR2TLNa7odUG4PFu1uTk_cwsUt8DPGJBSjjF2wd8VPIa5ATJ4fo3/s1600/crecap.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Atacantes aproveitam portas já abertas, como atualizações de rotina e chaves comprometidas.",
+    "Pequenas brechas iniciais podem evoluir rapidamente para incidentes de grande gravidade.",
+    "O panorama semanal incluiu vulnerabilidades críticas em várias tecnologias e shells."
+   ],
+   "title_original": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open. This week's stories show how quickly a small opening can turn into a much bigger mess. One breach helps attackers reach another target. Tools people rely"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque ilustra como os atacantes tiram partido de vulnerabilidades e acessos comuns para comprometer infraestruturas inteiras.",
+   "todo": "Mantenha uma vigilância rigorosa sobre atualizações de rotina e monitore acessos a portas e chaves de autenticação."
   },
   {
    "id": "ed11d95a721bf67d",
@@ -1555,15 +1626,20 @@
    "lang": "en",
    "link": "https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/",
    "published": "2026-11-23T15:06:49+00:00",
-   "title": "N-able Patches Critical Flaw Disclosed After Mail Assure Cyberattack",
-   "summary": "The company has restored access to the affected services and continues to monitor the affected environments.",
+   "title": "N-able corrige falha crítica divulgada após ciberataque ao Mail Assure",
+   "summary": "Na sequência de um ciberataque direcionado ao Mail Assure, a N-able respondeu corrigindo uma falha crítica de segurança. A empresa restabeleceu o acesso aos serviços afetados e mantém a monitorização contínua dos ambientes tecnológicos envolvidos.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A N-able foi alvo de um ciberataque que afetou o serviço Mail Assure.",
+    "A empresa implementou uma correção para uma falha crítica revelada pelo incidente.",
+    "O acesso aos serviços foi restabelecido com monitorização contínua dos ambientes."
+   ],
+   "title_original": "N-able Patches Critical Flaw Disclosed After Mail Assure Cyberattack",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "The company has restored access to the affected services and continues to monitor the affected environments."
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque demonstra a necessidade de resposta imediata e correção de falhas após ataques a plataformas de correio eletrónico.",
+   "todo": "Aplique imediatamente patches de segurança em soluções de gestão de correio e verifique os registos de atividade."
   },
   {
    "id": "309b2650e83769d4",
@@ -1572,15 +1648,21 @@
    "lang": "en",
    "link": "https://www.helpnetsecurity.com/2026/11/23/gl-inet-cloud-compromise-malware-backdoors/",
    "published": "2026-11-23T15:05:50+00:00",
-   "title": "GL.iNet cloud compromise hits routers and KVMs, older backdoors also found",
-   "summary": "Attackers compromised GoodCloud, GL.iNet’s cloud remote management service, and used it to install malware on routers and KVM (keyboard, video and mouse) devices connected to it. The Chinese company, best known for its small travel routers, is still investigating, and it’s not yet known how many devices have been affected. The incident has also sparked additional research by RemoteToHome Consulting (RTH), a GL.iNet Services Partner, and a number of users, some of whom reported finding … More →",
+   "title": "Compromissão da cloud da GL.iNet afeta routers e KVMs, encontrando-se também backdoors antigos",
+   "summary": "Atacantes comprometeram o GoodCloud, o serviço de gestão remota na cloud da GL.iNet, instalando malware em routers e dispositivos KVM ligados à rede. A empresa chinesa, conhecida pelos seus routers de viagem, continua a investigar a extensão do impacto e o número de dispositivos afetados. Em paralelo, parceiros de serviços e utilizadores identificaram a presença de backdoors antigos nos equipamentos.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O serviço de gestão remota GoodCloud da GL.iNet foi comprometido por atacantes.",
+    "Foram instalados malwares em routers e dispositivos KVM associados à plataforma.",
+    "Investigações adicionais revelaram a presença de backdoors antigos nos equipamentos afetados.",
+    "A empresa continua a apurar o número exato de utilizadores e dispositivos atingidos."
+   ],
+   "title_original": "GL.iNet cloud compromise hits routers and KVMs, older backdoors also found",
    "category": "Malware",
-   "translated": false,
-   "enriched": false,
-   "raw": "Attackers compromised GoodCloud, GL.iNet’s cloud remote management service, and used it to install malware on routers and KVM (keyboard, video and mouse) devices connected to it. The Chinese company, best known for its small travel routers, is still investigating, and it’s not yet known how many devices have been affected. The incident has also sparked additional research by RemoteToHome Consulting (RTH), a GL.iNet Services Partner, and a number of users, some of whom reported finding … More →"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque um ataque a uma plataforma de gestão na cloud expõe milhares de dispositivos físicos de rede a infeções por malware.",
+   "todo": "Desative o acesso remoto na cloud se não for estritamente necessário, altere credenciais predefinidas e atualize o firmware dos routers."
   },
   {
    "id": "594a8d6fa69747ba",
@@ -1589,15 +1671,21 @@
    "lang": "en",
    "link": "https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap/",
    "published": "2026-11-23T15:00:10+00:00",
-   "title": "AI Agents Are Creating a Shared Responsibility Gap",
-   "summary": "AI agents operate across multiple platforms, creating security gaps when no single vendor can see or control their actions. Token Security examines the shared responsibility problem and explains how organizations can better manage agent identities, permissions, and accountability. [...]",
+   "title": "Os Agentes de IA Estão a Criar um Fosso de Responsabilidade Partilhada",
+   "summary": "Os agentes de inteligência artificial operam em várias plataformas sem que nenhum fornecedor consiga supervisionar ou controlar totalmente as suas ações. Esta dinâmica gera falhas de segurança significativas nas organizações. A Token Security analisou este problema de responsabilidade partilhada. O objetivo é ajudar a gerir melhor as identidades, as permissões e a responsabilização destes agentes.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Agentes de IA operam em múltiplas plataformas sem controlo centralizado.",
+    "A falta de visibilidade cria lacunas de segurança nas organizações.",
+    "A Token Security analisou o problema da responsabilidade partilhada.",
+    "Organizações precisam de gerir identidades, permissões e responsabilização."
+   ],
+   "title_original": "AI Agents Are Creating a Shared Responsibility Gap",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "AI agents operate across multiple platforms, creating security gaps when no single vendor can see or control their actions. Token Security examines the shared responsibility problem and explains how organizations can better manage agent identities, permissions, and accountability. [...]"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque a falta de controlo sobre os agentes de IA abre portas a falhas de segurança nas organizações.",
+   "todo": "Reveja e restrinja as permissões e identidades atribuídas aos agentes de IA nas suas plataformas."
   },
   {
    "id": "2232dac9c371f691",
@@ -1606,15 +1694,20 @@
    "lang": "en",
    "link": "https://www.infosecurity-magazine.com/news/signal-blocks-ai-agents-reading/",
    "published": "2026-11-23T15:00:00+00:00",
-   "title": "Signal Moves to Block iOS and Android AI Agents From Reading Chats",
-   "summary": "Signal moved to shield chats from built-in AI agents and pressed platform makers for an opt-out",
+   "title": "Signal Move-se para Bloquear Agentes de IA de iOS e Android de Lerem Chats",
+   "summary": "A aplicação Signal tomou medidas para proteger as conversas contra agentes de inteligência artificial integrados nos sistemas operativos. A empresa pressionou os criadores de plataformas para disponibilizarem uma opção de desativação. Com esta atitude, a privacidade dos utilizadores fica mais salvaguardada.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Signal protegeu as conversas contra agentes de IA embutidos.",
+    "A medida abrange os sistemas operativos iOS e Android.",
+    "A empresa exigiu aos fabricantes uma opção para desativar esta integração."
+   ],
+   "title_original": "Signal Moves to Block iOS and Android AI Agents From Reading Chats",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "Signal moved to shield chats from built-in AI agents and pressed platform makers for an opt-out"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque protege a privacidade das mensagens contra a leitura por assistentes de IA integrados.",
+   "todo": "Ative as opções de privacidade disponíveis na aplicação e recuse integrações de IA indesejadas."
   },
   {
    "id": "f5ec5bb7cea39a26",
@@ -1623,15 +1716,20 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/n-able-security-advisory-av26-1191",
    "published": "2026-11-23T14:51:33+00:00",
-   "title": "N-able security advisory (AV26-1191)",
-   "summary": "",
+   "title": "Aviso de segurança N-able (AV26-1191)",
+   "summary": "A N-able foi afetada por uma vulnerabilidade no produto MailAssure em versões anteriores a 20261121.1943. O Centro Cibernético encorajou os utilizadores e administradores a consultarem os links fornecidos. É fundamental aplicar as atualizações necessárias assim que estiverem disponíveis.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O produto MailAssure da N-able foi afetado por uma falha de segurança.",
+    "A vulnerabilidade atinge versões anteriores a 20261121.1943.",
+    "O Centro Cibernético recomenda a consulta de avisos e aplicação de atualizações."
+   ],
+   "title_original": "N-able security advisory (AV26-1191)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1191 Date: November 23, 2026 As of November 22, 2026, N-able is affected by a vulnerability in the following product: MailAssure Prior to 20261121.1943 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. N-able Me Release Notes | N-able Status | N-able Status Page"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque explorações nesta falha podem comprometer a segurança do software de correio afetado.",
+   "todo": "Atualize o produto MailAssure para uma versão posterior a 20261121.1943."
   },
   {
    "id": "085debbfb5f5d32f",
@@ -1640,15 +1738,20 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/red-hat-security-advisory-av26-1190",
    "published": "2026-11-23T14:40:09+00:00",
-   "title": "Red Hat security advisory (AV26-1190)",
-   "summary": "",
+   "title": "Aviso de segurança Red Hat (AV26-1190)",
+   "summary": "Várias versões dos produtos da Red Hat foram afetadas por vulnerabilidades de segurança. A situação abrange o Red Hat Enterprise Linux, imagens endurecidas e o OpenShift Container Platform. O Centro Cibernético recomenda que os administradores consultem a informação e apliquem as correções.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Vulnerabilidades afetam várias versões do Red Hat Enterprise Linux.",
+    "Os problemas também atingem imagens endurecidas e o Red Hat OpenShift.",
+    "O Centro Cibernético apela à aplicação imediata de atualizações."
+   ],
+   "title_original": "Red Hat security advisory (AV26-1190)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1190 Date: November 23, 2026 As of November 23, 2026, Red Hat is affected by vulnerabilities in the following products: Red Hat Enterprise Linux 10 All versions Red Hat Enterprise Linux 9 All versions Red Hat Enterprise Linux 8 All versions Red Hat Enterprise Linux 7 All versions Red Hat Enterprise Linux 6 All versions Red Hat Hardened Images All versions Red Hat OpenShift Container Platform 4 and 5 All versions The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. Red Hat Security Advisories"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque afeta sistemas operativos e plataformas de contentores amplamente utilizados em infraestruturas.",
+   "todo": "Consulte os avisos oficiais da Red Hat e aplique os patches de segurança recomendados."
   },
   {
    "id": "41f47fcecd5f7466",
@@ -1657,15 +1760,20 @@
    "lang": "en",
    "link": "https://securityaffairs.com/203820/data-breach/microsoft-entra-connect-health-breach-exposes-tenant-metadata-and-admin-details.html",
    "published": "2026-11-23T14:33:37+00:00",
-   "title": "Microsoft Entra Connect Health Breach Exposes Tenant Metadata and Admin Details",
-   "summary": "Microsoft Entra Connect Health breach exposed tenant metadata and admin details, potentially enabling targeted phishing and social-engineering attacks. Microsoft has disclosed a data breach involving its Entra Connect Health service, which exposed tenant metadata and administrator contact details. “On 9 November 2026, we detected a vulnerability in the Microsoft Entra Connect Health API that was […]",
+   "title": "Violação no Microsoft Entra Connect Health Expõe Metadados de Inquilinos e Detalhes de Administradores",
+   "summary": "Uma falha na API do Microsoft Entra Connect Health expôs metadados e contactos de administradores. A vulnerabilidade foi introduzida em julho e detetada em novembro, tendo a Microsoft corrigido o problema no lado do servidor. Embora não tenham sido comprometidas palavras-passe ou chaves, a informação exposta pode facilitar ataques de phishing direcionado.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Uma falha na API expôs metadados de inquilinos e dados de administradores.",
+    "A Microsoft implementou uma correção no servidor dias após detetar o problema.",
+    "Não houve roubo de passwords, mas os dados expostos facilitam o phishing."
+   ],
+   "title_original": "Microsoft Entra Connect Health Breach Exposes Tenant Metadata and Admin Details",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Microsoft Entra Connect Health breach exposed tenant metadata and admin details, potentially enabling targeted phishing and social-engineering attacks. Microsoft has disclosed a data breach involving its Entra Connect Health service, which exposed tenant metadata and administrator contact details. “On 9 November 2026, we detected a vulnerability in the Microsoft Entra Connect Health API that was introduced on 23 July 2026. The vulnerability could allow an unauthorized party to access tenant and service-monitoring metadata and potentially make changes to Connect Health monitoring configuration.” the company wrote on Reddit. Microsoft Entra Connect Health is a cloud service that helps administrators monitor the health, performance and alerts of their on-premises identity systems. The IT giant says no passwords, authentication tokens or valid cryptographic keys were compromised, but the exposed information could still help attackers craft convincing phishing and social-engineering attacks. The issue came from a vulnerability in the Entra Connect Health API, introduced on July 23, 2026. Microsoft identified the flaw on November 9 and deployed a server-side fix on November 19. “We deployed and fixed the vulnerability on 19 November 2026. On 20 November 2026, we concluded our investigation and determined that unauthorized read-only access to tenant-level metadata associated with your organization had occurred. We did not identify any unauthorized configuration changes.” the IT giant added. Customers do not need to install a software update because Microsoft addressed the problem on its side. The attackers could only view the data, but the exposure still created risks. They gained access to administrator email addresses, tenant IDs, domain names and synchronisation status. Att"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque a exposição de dados de administradores pode ser usada em engenharia social e phishing.",
+   "todo": "Mantenha a vigilância contra tentativas de phishing direcionadas a administradores da organização."
   },
   {
    "id": "041ce1fb7e10c3e9",
@@ -1674,15 +1782,20 @@
    "lang": "en",
    "link": "https://databreaches.net/2026/11/23/major-cyberattack-hits-it-systems-at-guadeloupe-university-hospital/",
    "published": "2026-11-23T14:16:13+00:00",
-   "title": "Major cyberattack hits IT systems at Guadeloupe university hospital",
-   "summary": "RFI reports: A major cyberattack has disrupted the university hospital in the French overseas department of Guadeloupe, affecting its operations and forcing it to activate its emergency response plan and postponing non-emergency procedures. The attack on Saturday night hit the hospital’s information systems and telephone systems, leaving staff unable to access several applications and databases....",
+   "title": "Ciberataque de Grandes Dimensões Atinge Sistemas de TI no Hospital Universitário de Guadalupe",
+   "summary": "Um ciberataque significativo perturbou o funcionamento do hospital universitário na Guadalupe francesa. O incidente afetou os sistemas informáticos e telefónicos da instituição. Como resposta, o hospital ativou o plano de emergência e adiou procedimentos não urgentes.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Um ciberataque atingiu os sistemas de um hospital universitário em Guadalupe.",
+    "Os sistemas de TI e de telefone foram gravemente afetados.",
+    "O hospital ativou o plano de emergência e adiou cirurgias não urgentes."
+   ],
+   "title_original": "Major cyberattack hits IT systems at Guadeloupe university hospital",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "RFI reports: A major cyberattack has disrupted the university hospital in the French overseas department of Guadeloupe, affecting its operations and forcing it to activate its emergency response plan and postponing non-emergency procedures. The attack on Saturday night hit the hospital’s information systems and telephone systems, leaving staff unable to access several applications and databases...."
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque demonstra o impacto devastador de ciberataques em infraestruturas críticas de saúde.",
+   "todo": "Assegure planos de resposta a incidentes e cópias de segurança offline atualizadas em ambientes críticos."
   },
   {
    "id": "3b53b1fa73ab5400",
@@ -1691,15 +1804,20 @@
    "lang": "en",
    "link": "https://databreaches.net/2026/11/23/babidighost-an-ai-augmented-cybercrime-operation/",
    "published": "2026-11-23T14:16:10+00:00",
-   "title": "BabidiGhost: An AI-Augmented Cybercrime Operation",
-   "summary": "SocRadar reports: New research by SOCRadar Research Team has revealed BabidiGhost, a French-speaking operator who spent nine days in November 2026 targeting European banks, insurers, payment providers and municipalities through a jailbroken AI agent. The operator wrote his orders in plain, misspelled French and left the technical work to the agent. One order, translated, reads:...",
+   "title": "BabidiGhost: Uma Operação de Cibercrime Aumentada por IA",
+   "summary": "Uma investigação revelou um operador francófono que atacou bancos, seguradoras e municípios europeus. O atacante utilizou um agente de inteligência artificial alterado para automatizar as intrusões. As ordens foram dadas em linguagem natural, delegando o trabalho técnico na IA.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Um operador francófono visou entidades europeias com um agente de IA jailbroken.",
+    "O ataque afetou bancos, seguradoras e municípios durante novembro.",
+    "O cibercriminoso delegou o trabalho técnico na inteligência artificial."
+   ],
+   "title_original": "BabidiGhost: An AI-Augmented Cybercrime Operation",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "SocRadar reports: New research by SOCRadar Research Team has revealed BabidiGhost, a French-speaking operator who spent nine days in November 2026 targeting European banks, insurers, payment providers and municipalities through a jailbroken AI agent. The operator wrote his orders in plain, misspelled French and left the technical work to the agent. One order, translated, reads:..."
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque ilustra a utilização maliciosa de agentes de IA para escalar operações de cibercrime.",
+   "todo": "Monitorize o tráfego de rede e use defesas baseadas em comportamento para detetar o uso de IA em ataques."
   },
   {
    "id": "b35bdb64c3b8caea",
@@ -1708,15 +1826,20 @@
    "lang": "en",
    "link": "https://databreaches.net/2026/11/23/samsung-securities-hacked-names-addresses-and-account-details-of-thousands-of-customers-exposed-online/",
    "published": "2026-11-23T14:15:55+00:00",
-   "title": "Samsung Securities Hacked: Names, Addresses And Account Details Of Thousands Of Customers Exposed Online",
-   "summary": "Times Now News reports: Cyberattacks are rising across the world and thanks to AI, companies are finding it difficult to keep customer data safe. In another such incident, South Korean tech giant Samsung Securities has suffered a data breach, exposing the personal information of 8,241 customers. The leaked details reportedly include names, account numbers, home...",
+   "title": "Samsung Securities Hackeada: Nomes, Moradas e Detalhes de Contas de Milhares de Clientes Expostos Online",
+   "summary": "A gigante tecnológica sul-coreana Samsung Securities sofreu uma violação de dados que expôs informações pessoais de milhares de clientes. Entre os dados vazados encontram-se nomes, números de conta e moradas residenciais. O incidente realça as dificuldades das empresas em proteger dados sensíveis num contexto de ciberameaças crescentes.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Samsung Securities sofreu uma violação de dados de clientes.",
+    "Foram expostos dados de mais de oito mil utilizadores.",
+    "Os dados vazados incluem nomes, números de contas e moradas."
+   ],
+   "title_original": "Samsung Securities Hacked: Names, Addresses And Account Details Of Thousands Of Customers Exposed Online",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "Times Now News reports: Cyberattacks are rising across the world and thanks to AI, companies are finding it difficult to keep customer data safe. In another such incident, South Korean tech giant Samsung Securities has suffered a data breach, exposing the personal information of 8,241 customers. The leaked details reportedly include names, account numbers, home..."
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque a fuga de dados pessoais expõe os clientes a riscos de fraude e roubo de identidade.",
+   "todo": "Notifique os clientes afetados e reforce os controlos de acesso a bases de dados com informação sensível."
   },
   {
    "id": "09fa056d11d1133f",
@@ -1725,15 +1848,20 @@
    "lang": "en",
    "link": "https://databreaches.net/2026/11/23/jpn-tower-records-online-hit-by-cyberattack-11-million-customer-records-potentially-leaked/",
    "published": "2026-11-23T14:15:28+00:00",
-   "title": "Jpn: Tower Records Online Hit by Cyberattack, 11 Million Customer Records Potentially Leaked",
-   "summary": "News on Japan reports: Tower Records announced that approximately 11 million customer records may have been compromised in a cyberattack on November 19th, 2026, with millions of records containing personal details such as names, dates of birth and delivery addresses, although the company said no credit card information had been leaked. According to the company,...",
+   "title": "Japão: Tower Records Online Atingido por Ciberataque, 11 Milhões de Registos de Clientes Potencialmente Vazados",
+   "summary": "A Tower Records anunciou que cerca de 11 milhões de registos de clientes podem ter sido comprometidos num ciberataque. Os dados incluem nomes, datas de nascimento e moradas de entrega. A empresa garantiu, contudo, que nenhuma informação de cartões de crédito foi vazada.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Tower Records foi alvo de um ciberataque em novembro de 2026.",
+    "Cerca de 11 milhões de registos de clientes foram potencialmente expostos.",
+    "Dados pessoais como moradas foram vazados, mas sem cartões de crédito envolvidos."
+   ],
+   "title_original": "Jpn: Tower Records Online Hit by Cyberattack, 11 Million Customer Records Potentially Leaked",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "News on Japan reports: Tower Records announced that approximately 11 million customer records may have been compromised in a cyberattack on November 19th, 2026, with millions of records containing personal details such as names, dates of birth and delivery addresses, although the company said no credit card information had been leaked. According to the company,..."
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque representa uma enorme fuga de dados pessoais de milhões de consumidores.",
+   "todo": "Monitore contas associadas e comunique rapidamente com os clientes caso os seus dados tenham sido expostos."
   },
   {
    "id": "a5e2f5470ca2f664",
@@ -1743,14 +1871,19 @@
    "link": "https://tek.sapo.pt/noticias/internet/artigos/comissao-europeia-suspeita-que-hackers-apoiados-pela-china-estao-por-tras-do-ciberataque-em-curso/",
    "published": "2026-11-23T14:13:07+00:00",
    "title": "Comissão Europeia suspeita que hackers apoiados pela China estão por trás do ciberataque em curso",
-   "summary": "O ciberataque a vários sistemas da Comissão Europeia, detectado há cerca de um mês, ainda não foi totalmente contido. A primeira fuga confirmada de dados pessoais atinge utilizadores da EU Academy, cujo site foi retirado do ar no sábado.",
+   "summary": "Vários sistemas da Comissão Europeia foram alvo de um ciberataque que ainda não foi totalmente contido após cerca de um mês. Verificou-se a primeira fuga confirmada de dados pessoais, afetando utilizadores da plataforma EU Academy. Como medida de precaução, o site afetado foi retirado temporariamente do ar.",
    "image": null,
-   "points": [],
+   "points": [
+    "A Comissão Europeia sofreu um ciberataque prolongado e ainda não contido.",
+    "Existe a suspeita de envolvimento de hackers apoiados pela China.",
+    "O site da EU Academy foi retirado do ar devido a uma fuga de dados."
+   ],
    "title_original": null,
    "category": "Ataque/APT",
    "translated": false,
-   "enriched": false,
-   "raw": "O ciberataque a vários sistemas da Comissão Europeia, detectado há cerca de um mês, ainda não foi totalmente contido. A primeira fuga confirmada de dados pessoais atinge utilizadores da EU Academy, cujo site foi retirado do ar no sábado."
+   "enriched": true,
+   "why": "Importa porque compromete a segurança de plataformas institucionais e dados de utilizadores da UE.",
+   "todo": "Suspenda serviços afetados e reforce a monitorização de acessos em plataformas institucionais."
   },
   {
    "id": "828536289363d134",
@@ -1759,15 +1892,20 @@
    "lang": "en",
    "link": "https://www.theregister.com/off-prem/2026/11/23/everything-going-down-at-once-wasnt-evidence-of-a-conspiracy-but-the-truth-may-be-scarier/5311458",
    "published": "2026-11-23T14:04:00+00:00",
-   "title": "Everything going down at once wasn't evidence of a conspiracy – but the truth may be scarier",
-   "summary": "Rogue AI or nation-state hackers would be preferable to the amount of technical debt the past week of wobbling services laid bare",
+   "title": "Tudo a ir abaixo ao mesmo tempo não era prova de conspiração – mas a verdade pode ser mais assustadora",
+   "summary": "Várias plataformas tecnológicas e de infraestrutura enfrentaram falhas graves e simultâneas a nível global. Especialistas discutem que a causa não se deve a ataques de Estados estrangeiros nem unicamente a IA. O problema real reside na fragilidade estrutural das tecnologias essenciais modernas, comparadas a soluções precárias.",
    "image": "https://image.theregister.com/?imageId=5309241&width=800",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Várias infraestruturas tecnológicas sofreram falhas globais simultâneas.",
+    "As interrupções não foram causadas por IA ou ataques estatais maliciosos.",
+    "Especialistas apontam a fragilidade estrutural da tecnologia atual como a verdadeira causa."
+   ],
+   "title_original": "Everything going down at once wasn't evidence of a conspiracy – but the truth may be scarier",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "Have you or someone you love been affected by a tech outage this week? Yeah, us too. You can listen to the latest episode of The Kettle right here on this page, as well as on Spotify, Apple Music, or YouTube. Those platforms also let you subscribe to The Kettle, so you are always notified when the latest episode goes live In a week of big stories the biggest one seems to be the fact that everyone from Microsoft to the NSA was dealing with outages, and here's what might be the worst part: It doesn't seem to be AI, nor hostile countries intent on destroying our infrastructure. Unfortunately for all of us, what the past week of outages reveal is that – as we discussed on The Kettle less than a month ago – all of our essential tech infrastructure is basically held together with duct tape and twine. Join host Brandon Vigliarolo, cybersecurity editor Jessica Lyons, and open source reporter Liam Proven to discuss what comes next, and whether we can fix any of this without tearing all of it out and starting from scratch. A lightly edited transcript is included below: Brandon (00:04) Hi everyone and welcome to the latest episode of the Register's Kettle podcast. I'm your host, Reg reporter Brandon Vigliarolo, and if you're hearing this, then that means there isn't an outage right now, which seems like that might be a lot to ask of our technology in the past week. It's been a busy week. We had Anthropic's IPO, Nvidia drama continuing, and other stuff going on. But the one thing that everyone seems to be talking about is what's become known in the zeitgeist as Outagepalooza, as it seems like everything was offline at some point in the past few days. With me to discuss the chaos and the conspiracy theories they're giving rise to is Reg cybersecurity editor Jessica Lyons and our ope"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque expõe a fragilidade sistémica das infraestruturas tecnológicas globais de que dependemos.",
+   "todo": "Diversifique fornecedores e crie redundâncias robustas para mitigar falhas generalizadas de sistemas."
   },
   {
    "id": "f88275a520e7e92c",
@@ -1776,15 +1914,20 @@
    "lang": "en",
    "link": "https://www.securityweek.com/phpaftershell-vulnerability-revives-php2shells-attack-path/",
    "published": "2026-11-23T13:58:07+00:00",
-   "title": "phpAfterShell Vulnerability Revives PHP2Shell’s Attack Path",
-   "summary": "If a session overwrite operation is interrupted, an attacker who controls the fresh data could trigger data deserialization and RCE.",
+   "title": "Vulnerabilidade phpAfterShell Revive o Caminho de Ataque do PHP2Shell",
+   "summary": "Se uma operação de substituição de sessão for interrompida, um atacante com controlo sobre os novos dados pode desencadear desserialização. Esta falha permite a execução remota de código no sistema afetado. A vulnerabilidade reabre vetores de ataque já conhecidos em ambientes baseados em PHP.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Uma interrupção na substituição de sessões pode ser explorada por atacantes.",
+    "A falha permite a desserialização indesejada de dados.",
+    "O vetor culmina na execução remota de código (RCE) no servidor."
+   ],
+   "title_original": "phpAfterShell Vulnerability Revives PHP2Shell’s Attack Path",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "If a session overwrite operation is interrupted, an attacker who controls the fresh data could trigger data deserialization and RCE."
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque permite a execução remota de código por atacantes em aplicações PHP vulneráveis.",
+   "todo": "Atualize componentes e valide rigorosamente a gestão de sessões e a desserialização em aplicações PHP."
   },
   {
    "id": "837f8ad41d77074b",
@@ -1793,15 +1936,20 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/ibm-security-advisory-av26-1189",
    "published": "2026-11-23T13:38:52+00:00",
-   "title": "IBM security advisory (AV26-1189)",
-   "summary": "",
+   "title": "Aviso de segurança da IBM (AV26-1189)",
+   "summary": "A IBM emitiu um aviso de segurança para alertar sobre vulnerabilidades que afetam vários dos seus produtos. Entre os softwares impactados encontram-se o Engineering AI Hub e o Guardium Data Protection. Os utilizadores e administradores são incentivados a consultar os links fornecidos e a aplicar as atualizações necessárias. Estas falhas podem representar riscos para os sistemas afetados caso não sejam corrigidas.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Produtos afetados incluem Engineering AI Hub e Guardium Data Protection.",
+    "O Centro de Cibersegurança recomenda a revisão de links e aplicação de atualizações.",
+    "Várias vulnerabilidades foram identificadas em produtos da IBM."
+   ],
+   "title_original": "IBM security advisory (AV26-1189)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1189 Date: November 23, 2026 As of November 19, 2026, IBM is affected by vulnerabilities in the following products: Engineering AI Hub Prior to or equal to 1.0.0 Prior to or equal to 1.1.0 Prior to or equal to 1.2.0 Prior to or equal to 1.3.0 Prior to or equal to 1.4.0 Guardium Data Protection Prior to or equal to 12.2 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. Security Bulletin: Multiple Vulnerabilities in IBM Engineering AI hub Security Bulletin: IBM Guardium Data Protection is affected by multiple vulnerabilities IBM Product Security Incident Response"
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que administradores identifiquem falhas e protejam sistemas afetados contra potenciais explorações.",
+   "todo": "Verifique se utiliza os produtos afetados e aplique as atualizações de segurança disponibilizadas pela IBM."
   },
   {
    "id": "d8056211c41ea366",
@@ -1898,15 +2046,20 @@
    "lang": "en",
    "link": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
    "published": "2026-11-23T13:22:20+00:00",
-   "title": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
-   "summary": "A critical security flaw has been disclosed in the popular binary-parser library that could allow an attacker who controls parser definitions to execute arbitrary code. The vulnerability, tracked as CVE-2026-134814 (CVSS score: 9.2 / 8.1), is a case of code injection impacting binary-parser versions prior to 2.3.1. \"Binary-parser before 2.3.1 contains a code injection vulnerability that allows",
+   "title": "Falha crítica em leitor de binários permite injeção de JavaScript através de definições maliciosas",
+   "summary": "Foi descoberta uma falha crítica de segurança na popular biblioteca binary-parser, registada com o identificador CVE-2026-134814 e com uma pontuação CVSS elevada. O problema consiste numa vulnerabilidade de injeção de código que afeta as versões anteriores à 2.3.1. Um atacante que consiga controlar as definições do parser pode aproveitar esta falha para executar código arbitrário.",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ_LYD1NyoPDf8MFXggODpgd2hvazxjShSZltgrLUVic7V-ZIQSjXIzFrkUx0FNoUjlxlIYocEd1AZwGx66uqGWEUyd1TMSlDmxUu8M_r6jdYkmWDZjbszL2WsK7LJzrwI-NgsI7EaLe9WkLwNLGKj8ww3tTOY4X4JPug3RWQqoypUiEpZjVXgBhhcLuZG/s1600/js-cve.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Afeta versões do binary-parser anteriores à 2.3.1.",
+    "Vulnerabilidade de injeção de código identificada como CVE-2026-134814.",
+    "Permite a execução de código arbitrário por atacantes com controlo sobre as definições."
+   ],
+   "title_original": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "A critical security flaw has been disclosed in the popular binary-parser library that could allow an attacker who controls parser definitions to execute arbitrary code. The vulnerability, tracked as CVE-2026-134814 (CVSS score: 9.2 / 8.1), is a case of code injection impacting binary-parser versions prior to 2.3.1. \"Binary-parser before 2.3.1 contains a code injection vulnerability that allows"
+   "translated": true,
+   "enriched": true,
+   "why": "Protege aplicações contra a execução de código arbitrário e injeção através de parsers vulneráveis.",
+   "todo": "Atualize a biblioteca binary-parser para a versão 2.3.1 ou superior."
   },
   {
    "id": "6fbe0c1fb6dc12e9",
@@ -2048,15 +2201,20 @@
    "lang": "en",
    "link": "https://www.elastic.co/security-labs/blog/elastic-security-9-6-release-highlights",
    "published": "2026-11-23T12:34:52+00:00",
-   "title": "Press play on Elastic Security 9.6, banger after banger",
-   "summary": "AlertZero works your alert queue in the background and nothing consequential it proposes runs until you approve it. 9.6 also brings entity resolution, MITRE ATLAS mappings, 143 AI detection rules, and Linux ransomware protection.",
+   "title": "Disponível o Elastic Security 9.6 com novas funcionalidades",
+   "summary": "A Elastic lançou a versão 9.6 do Elastic Security, introduzindo várias novidades para melhorar as operações de segurança. Entre os destaques está o AlertZero, uma ferramenta com agentes de IA autónomos para triagem, caça a ameaças, engenharia de deteção e forense. A atualização também expande a proteção contra ransomware para Linux e adiciona suporte para análise de memória YARA, regras de deteção de IA e novas análises de entidades.",
    "image": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltb6e4fd380d735a92/6b02e1d3456a4368ed1335f2/9.6_security_launch_blog_graphic.png",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Lançamento do AlertZero em pré-visualização técnica para automatizar tarefas de SOC.",
+    "Extensão da proteção contra ransomware baseada em comportamento para sistemas Linux.",
+    "Introdução de suporte para regras YARA e deteções de segurança de inteligência artificial."
+   ],
+   "title_original": "Press play on Elastic Security 9.6, banger after banger",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "You’ve clocked in for your shift and just hit play on your 10-hour lo-fi playlist. The caffeine is kicking in, and you’re pumped because the handoff notes from the last shift are really useful. Every case has all the evidence and the rationale behind the disposition, along with the affected hosts and users. Plus, you only have five alerts to review in your queue. This security operations center (SOC) shift is exactly why we built AlertZero , now available as a technical preview in Elastic Security in Elastic Cloud Serverless (Serverless). It’s also coming in early December 2026 to Elastic Security 9.6 for Elastic Cloud Hosted (ECH) and Elastic Self-Managed deployments with an Enterprise subscription or an Elastic Security 9.6 trial license. AlertZero is big news in Elastic Security 9.6, but there’s a lot more to this release: Feature What’s new AlertZero Four teams of agents, called Watches, covering alert triage, threat hunting, detection engineering, and forensic analysis Entity Analytics A refreshed overview, expanded entity resolution, and an AI brief Ransomware protection for Linux Elastic Defend’s behavior-based ransomware protection now extends to Linux YARA memory scanning Bring your own YARA rules to scan process memory Automatic Migration Agentic editing for migrated detection rules AI detection and response MITRE Adversarial Threat Landscape for Artificial-Intelligence Systems (ATLAS) support, 143 AI security detection rules, and the Security for AI integration package in technical preview Grab your coffee, and take a look at what’s new. Where there’s a deeper dive, we’ve linked it. AlertZero, the agentic layer of Elastic Security First, explore the four Watches in AlertZero, along with the Workers that perform specific security tasks. Then, learn about propo"
+   "translated": true,
+   "enriched": true,
+   "why": "Melhora a eficiência das equipas de SOC através de automação e capacidades avançadas de deteção.",
+   "todo": "Considere atualizar para a versão 9.6 do Elastic Security e avaliar as novas ferramentas de automação e proteção."
   },
   {
    "id": "9d23693381162a52",
@@ -2245,15 +2403,20 @@
    "lang": "en",
    "link": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
    "published": "2026-11-23T12:00:00+00:00",
-   "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-   "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-133968 Project MONAI MONAI Label Path Traversal Vulnerability CVE-2026-134624 N-able Mail Assure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civil",
+   "title": "CISA adiciona duas vulnerabilidades conhecidas e exploradas ao seu catálogo",
+   "summary": "A CISA adicionou duas novas vulnerabilidades ao seu Catálogo de Vulnerabilidades Conhecidas e Exploradas, com base em evidências de exploração ativa. As falhas incluem um problema de travessia de diretórios no Project MONAI e uma vulnerabilidade de falsificação de solicitações do lado do servidor no N-able Mail Assure. Esta diretiva exige que as agências federais priorizem a remediação rápida de falhas de alto risco, servindo também de alerta para todas as organizações.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Adicionadas as vulnerabilidades CVE-2026-133968 e CVE-2026-134624 ao catálogo KEV da CISA.",
+    "Existe evidência de exploração ativa de ambas as falhas no terreno.",
+    "Organizações devem priorizar a correção destas vulnerabilidades para mitigar riscos."
+   ],
+   "title_original": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-133968 Project MONAI MONAI Label Path Traversal Vulnerability CVE-2026-134624 N-able Mail Assure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities . CISA will continue to add vulnerabilities to the catalog that meet the specified criteria . Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form . Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance."
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda as organizações a priorizarem a correção de falhas ativamente exploradas por cibercriminosos.",
+   "todo": "Verifique se utiliza os produtos afetados e aplique os patches correspondentes com prioridade."
   },
   {
    "id": "bf5a11debc57d81b",
@@ -2422,15 +2585,20 @@
    "lang": "en",
    "link": "https://www.elastic.co/security-labs/blog/ai-soc-agents-alertzero-workers",
    "published": "2026-11-23T11:12:50+00:00",
-   "title": "AlertZero in Elastic Security: Every alert answered. Every decision yours",
-   "summary": "Agents triage alerts, hunt threats, tune noisy rules and reconstruct what happened on a host. Each hands you a proposed action with the evidence behind it, and you set how far it goes alone and which model it uses.",
+   "title": "AlertZero no Elastic Security: Automatização para responder a alertas",
+   "summary": "Muitas equipas de centros de operações de segurança enfrentam um volume excessivo de alertas em comparação com os recursos humanos disponíveis, gastando demasiado tempo a recolher contexto. Para resolver este problema, a Elastic criou o AlertZero, integrado na versão 9.6 do Elastic Security. Esta ferramenta utiliza quatro Watches e seis Workers baseados em IA para automatizar tarefas como triagem, caça a ameaças e forense.",
    "image": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltc21d06524c101a2a/6b02ce6fe4fef3c2c7fefd9c/alertzero_org_chart_16x9.png",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Criado para aliviar a carga das equipas de SOC em tarefas repetitivas e recolha de contexto.",
+    "Inclui quatro áreas de trabalho principais (Watchers) e seis Workers especializados.",
+    "Disponível em pré-visualização técnica no Elastic Security 9.6."
+   ],
+   "title_original": "AlertZero in Elastic Security: Every alert answered. Every decision yours",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Most security operations center (SOC) teams we talk to describe the same problem. There are more alerts than people to work them, so the queue decides what gets looked at, and threat hunting and detection rule tuning keep slipping to the following week. And most of the time that an alert eats up isn't spent deciding what to do with it; it’s spent digging up context first, like whether this rule has fired on this host before and what else was going on around it. We built AlertZero to do that digging for you, so your analysts can spend their time on the calls that really need them. Starting today, with Elastic Security 9.6, AlertZero is available in technical preview in Elastic Cloud Serverless and is expected to be available for ECH and Self-Managed deployments in 9.6 in early December. In October 2026, we offered an early look at AlertZero , where we followed one suspicious login from the first alert, through the evidence gathered in an investigation, to a proposed host isolation waiting for an analyst's approval. Today, we’re giving you the full breakdown on what’s in the technical preview release: the six Workers and what each one proposes, how much they can do at each level of autonomy, how to choose models, and how to get started in both written and video form. What’s inside AlertZero: 4 Watches and 6 Workers Let’s start with an overview. AlertZero covers four areas of SOC work: alert triage, threat hunting, detection engineering, and endpoint forensics. Each Watch covers one of these four areas, and they hold the Workers that do that work. A Worker has one specific job, such as triaging new alerts or tuning a noisy rule. Under the hood, each Worker is an AI-powered unit of work that belongs to a Watch. It runs in the background, either on a schedule or in response "
+   "translated": true,
+   "enriched": true,
+   "why": "Otimiza o tempo dos analistas de segurança ao automatizar a recolha de contexto e triagem de alertas.",
+   "todo": "Explore as capacidades do AlertZero na versão 9.6 do Elastic Security para automatizar fluxos de trabalho de SOC."
   },
   {
    "id": "f1ae0c7fa7174d23",
@@ -2507,15 +2675,20 @@
    "lang": "en",
    "link": "https://www.elastic.co/security-labs/blog/ai-security-detection-rules-coding-agents-mcp",
    "published": "2026-11-23T10:50:41+00:00",
-   "title": "Elastic ships 143 detection rules for AI agents and LLM platforms",
-   "summary": "A fake MCP server copied every outgoing email to an attacker and the new rules catch that, along with coding agents running attacker commands, secrets pasted into prompts, and stolen keys running models on your bill.",
+   "title": "Elastic lança 143 regras de deteção para agentes de IA e plataformas de LLM",
+   "summary": "A versão 9.6 do Elastic vai incluir 143 regras de deteção de segurança de IA para proteger ambientes de desenvolvimento e plataformas de linguagem. As regras cobrem cenários como agentes de IA sequestrados, servidores MCP maliciosos, credenciais coladas em prompts e chaves de API roubadas. O Elastic Defend pode inclusive interromper processos maliciosos diretamente nas máquinas dos programadores quando esta atividade ocorre.",
    "image": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt4851e59e3ca65c79/6b02cc4de56da3d6ac09092d/image5.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Lançamento de 143 regras de SIEM e de comportamento para segurança de inteligência artificial.",
+    "Proteção direcionada a agentes de codificação, servidores MCP e plataformas como OpenAI, Anthropic e AWS Bedrock.",
+    "Capacidade de interromper processos maliciosos automaticamente através do Elastic Defend."
+   ],
+   "title_original": "Elastic ships 143 detection rules for AI agents and LLM platforms",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "Elastic 9.6 will ship 143 AI security detection rules. A coding agent runs with your shell and your files, along with your cloud keys. The rules cover agents hijacked into running attacker commands, malicious Model Context Protocol (MCP) servers, credentials pasted into prompts, jailbreaks, and stolen API keys used to run models at someone else’s expense. When that activity happens on a developer’s machine, Elastic Defend can kill the process outright. In August 2025, malicious versions of the Nx build tool used a post-install script to collect credentials and invoke installed AI coding command line interfaces (CLIs) with safety checks bypassed, to help find sensitive files ( GHSA-cxm3-wv7p-598c ). An npm package impersonating a Postmark MCP server copied every outgoing email to an attacker ( postmark-mcp , version 1.0.16). A compromised Amazon Q Developer extension release carried instructions telling the AI agent to delete local files and cloud resources ( AWS-2025-015 ), although AWS confirmed that the payload failed on a syntax error. The rules run in both Elastic detection engines, as prebuilt security information and event management (SIEM) rules in detection-rules and as Elastic Defend behavior rules in protections-artifacts . In this blog post, we cover the threat vectors that these rules address, the telemetry that each one needs, how coverage compares across AI vendors, and what to do with the alerts. Key takeaways Elastic 9.6 will ship 143 production SIEM rules for AI security that cover coding agents, MCP servers, AI platforms, and the cloud services behind them. Coverage spans Amazon Bedrock, OpenAI ChatGPT Enterprise, Anthropic, Google Cloud Vertex AI, and Microsoft Foundry, with comparable detections for each, wherever the provider's logs allow it. Elasti"
+   "translated": true,
+   "enriched": true,
+   "why": "Protege os ecossistemas de desenvolvimento e utilização de inteligência artificial contra novos vetores de ataque.",
+   "todo": "Implemente as novas regras de deteção da Elastic para monitorizar o tráfego e a atividade de agentes de IA."
   },
   {
    "id": "ade3122cc9bd6da8",
@@ -2998,15 +3171,20 @@
    "lang": "en",
    "link": "https://www.elastic.co/security-labs/blog/prompt-injection-detection-ai-agents",
    "published": "2026-11-23T08:00:15+00:00",
-   "title": "Thinking fast about prompt injection: New System 1 models in Elastic",
-   "summary": "Four small classifiers score every GenAI prompt and response at ingest, inside your own cluster, catching prompt injection, encoded payloads, obfuscated words and refusals without an LLM reading every event.",
+   "title": "Análise rápida de injeção de prompts: Novos modelos System 1 na Elastic",
+   "summary": "A integração Security for AI da Elastic foi desenhada para detetar injeções de prompt, payloads codificados e tráfego malicioso em ambientes de inteligência artificial generativa. Utilizando classificadores rápidos diretamente no cluster e grandes modelos de linguagem para validação de casos suspeitos, a ferramenta ajuda a identificar comportamentos anómalos. Estas capacidades alinham-se com o MITRE ATLAS e o OWASP Top 10 para aplicações baseadas em agentes.",
    "image": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt0f621674e294c029/6b03f347d43c5fbb8b6667e6/image3.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Integração para detetar injeção de prompts e tráfego de GenAI em milissegundos.",
+    "Utiliza classificadores e regras mapeadas para o MITRE ATLAS e OWASP.",
+    "Disponível em pré-visualização técnica na versão 9.6 da Elastic Stack."
+   ],
+   "title_original": "Thinking fast about prompt injection: New System 1 models in Elastic",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "Elastic’s Security for AI integration package catches prompt injection, encoded payloads, obfuscated words, and model refusals in generative AI (GenAI) traffic. In milliseconds, four small classifiers score each document inside your own cluster as it’s indexed, without needing a GPU. Scores land in security_ai fields on your existing data, and the decoded Base64 or the injected sentence sits alongside them, as does the refusal text, so an analyst can see why something fired, without reading the whole prompt. On the small fraction of events that have already scored high, the detection rules call a large language model (LLM) to determine whether the prediction is correct before firing an alert. Three anomaly detection jobs baseline tool use per caller, and eight prebuilt detection rules fire on both sets of signals, mapped to MITRE ATLAS and the OWASP Top 10 for Agentic Applications for 2026 . Why AI agent traffic needs its own detections GenAI agents can autonomously read files, run commands, call APIs and Model Context Protocol (MCP) tools, and send messages, and they frequently do so without explicit user permissions. Threat actors use a variety of methods to hijack agents, including prompt injections to change the goals of specific agents, potentially taking dangerous actions inside your environment. Unlike conventional detections, agentic exploits use natural language to launch attacks. Ignoring this data for detections would create an incomplete picture in the current threat landscape. The Security for AI Kibana integration package is being designed to help counter this threat. The technical preview will be available starting in Elastic Stack version 9.6 (Platinum or Trial subscription), with support for the AWS Bedrock integration (version 2.2.0 and later) and the "
+   "translated": true,
+   "enriched": true,
+   "why": "Permite identificar ameaças em tempo real associadas ao uso e manipulação autónoma de agentes de IA.",
+   "todo": "Ative a integração Security for AI para monitorizar e auditar pedidos e respostas de sistemas GenAI."
   },
   {
    "id": "e973aa63d8e4dcf3",
@@ -3037,15 +3215,20 @@
    "lang": "en",
    "link": "https://projectzero.google/2026/11/virtualbox-process-hardening.html",
    "published": "2026-11-23T08:00:00+00:00",
-   "title": "VirtualBox Process Hardening on Windows 2026 Edition: What’s a Single Bit Between Friends?",
-   "summary": "Back in 2017 I did some research into Oracle VirtualBox on Windows. Specifically I focussed on their mechanism to protect their VM processes from the user on the host. The protection was to gate who could open the kernel driver, which might allow for privilege escalation due to the way it was designed. At the time I found 3 ways of bypassing the protection, with an additional issue in COM’s runtime I reported in 2020. These issues were all written up in this post. Fast forward to 2026 and I decided to look at VirtualBox again to see if much had changed. This time I found 3 new bypasses for pro",
+   "title": "Endurecimento de processos do VirtualBox no Windows: A importância de um bit",
+   "summary": "Uma investigação efetuada ao Oracle VirtualBox no Windows revelou novos métodos para contornar os mecanismos de proteção de processos da ferramenta. O estudo focou-se na vulnerabilidade CVE-2026-87268, que combina uma funcionalidade do framework .NET com ganchos de carregador de DLL do VirtualBox. Esta falha permitiu contornar as verificações de segurança e carregar código arbitrário para dentro de um processo protegido.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Identificados três novos bypasses de processos protegidos no VirtualBox.",
+    "A vulnerabilidade CVE-2026-87268 abusa do carregamento de assemblies do .NET.",
+    "Permite carregar código arbitrário para o processo protegido da máquina virtual."
+   ],
+   "title_original": "VirtualBox Process Hardening on Windows 2026 Edition: What’s a Single Bit Between Friends?",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Back in 2017 I did some research into Oracle VirtualBox on Windows. Specifically I focussed on their mechanism to protect their VM processes from the user on the host. The protection was to gate who could open the kernel driver, which might allow for privilege escalation due to the way it was designed. At the time I found 3 ways of bypassing the protection, with an additional issue in COM’s runtime I reported in 2020. These issues were all written up in this post . Fast forward to 2026 and I decided to look at VirtualBox again to see if much had changed. This time I found 3 new bypasses for protected processes, with an additional bug which was a broken fix for the 2020 bypass breaking due to changes in Windows. In this blog post I want to focus on one specific issue CVE-2026-87268 which abused a feature of the .NET Framework which, when combined with the implementation of the DLL loader hooks implemented by VirtualBox, permitted a bypass of the checks and allowed me to load arbitrary code into the protected process. Let’s dig into the root cause of the issue in .NET first, before moving on to exploitation in VirtualBox. .NET Assembly Loading The .NET Framework is interesting when it comes to bypassing process hardening as it supports loading assemblies from a memory buffer as long as you stick to only using managed code. This is obviously useful if the hardened process is maintained through verifying what DLLs can or cannot be loaded as it bypasses the traditional image mapping process. As the .NET runtime implementation is Microsoft signed, it’s usually permitted to load by any such checks. The canonical way to load from a memory buffer is to use the Assembly::Load static method which accepts a byte array. This does require you to run some .NET code first, or find a co"
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia falhas em mecanismos de proteção de processos que podem levar à execução de código não autorizado.",
+   "todo": "Mantenha o VirtualBox atualizado com os patches mais recentes fornecidos pela Oracle."
   },
   {
    "id": "2e92de5c4e423ff8",
@@ -3460,14 +3643,19 @@
    "link": "https://www.itsecurity.pt/news/news/crowdstrike-anuncia-aquisicao-da-zscaler-por-439-mil-milhoes-de-dolares",
    "published": "2026-11-23T00:00:00+00:00",
    "title": "CrowdStrike anuncia aquisição da Zscaler por 43,9 mil milhões de dólares",
-   "summary": "A operação, realizada exclusivamente através de ações, vai juntar duas das principais empresas de cibersegurança numa plataforma que combina proteção de endpoints, redes e zero trust. O negócio deverá estar concluído na segunda metade do ano fiscal de 2028 da CrowdStrike e dará origem a uma empresa com mais de dez mil milhões de dólares em receitas recorrentes anuais",
+   "summary": "A CrowdStrike anunciou a aquisição da Zscaler numa operação avaliada em 43,9 mil milhões de dólares, realizada exclusivamente através de ações. Esta transação junta duas das principais empresas do setor de cibersegurança numa plataforma unificada que combina proteção de endpoints, redes e arquiteturas zero trust. O negócio deverá ficar concluído durante a segunda metade do ano fiscal de 2028 da CrowdStrike, criando uma gigante com mais de dez mil milhões de dólares em receitas recorrentes anuais.",
    "image": null,
-   "points": [],
+   "points": [
+    "Aquisição avaliada em 43,9 mil milhões de dólares paga em ações.",
+    "Combina tecnologias de endpoint, redes e abordagens zero trust.",
+    "Conclusão prevista para a segunda metade do ano fiscal de 2028 da CrowdStrike."
+   ],
    "title_original": null,
    "category": "Geral",
    "translated": false,
-   "enriched": false,
-   "raw": "A operação, realizada exclusivamente através de ações, vai juntar duas das principais empresas de cibersegurança numa plataforma que combina proteção de endpoints, redes e zero trust. O negócio deverá estar concluído na segunda metade do ano fiscal de 2028 da CrowdStrike e dará origem a uma empresa com mais de dez mil milhões de dólares em receitas recorrentes anuais"
+   "enriched": true,
+   "why": "Redefine o panorama do mercado de cibersegurança ao unificar líderes de proteção de endpoints e redes.",
+   "todo": ""
   },
   {
    "id": "d9d2b8e7310259b0",
@@ -5014,15 +5202,20 @@
    "lang": "en",
    "link": "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached-norwegian",
    "published": "2026-11-20T20:43:45+00:00",
-   "title": "Nok et norsk energiselskap har blitt utsatt for et datainnbrudd på to dager",
-   "summary": "Det er ikke påvist noen konkret sammenheng mellom de to hendelsene, selv om de helt klart har mange likhetstrekk.",
+   "title": "Outra empresa energética norueguesa foi alvo de uma intrusão de dados de dois dias",
+   "summary": "Uma empresa norueguesa do setor energético foi recentemente alvo de um ataque cibernético que resultou numa intrusão de dados com a duração de dois dias. Apesar de existirem semelhanças evidentes com outros incidentes anteriores no mesmo setor, as autoridades não encontraram até ao momento uma ligação direta e concreta entre as ocorrências. O caso sublinha os riscos contínuos enfrentados por infraestruturas críticas.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blte4910babc7878a94/6aff5ad57ab982a4c314744c/Equinor-makasana-Getty.jpg?width=720&quality=80&disable=upscale",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Empresa energética na Noruega sofreu intrusão de dados durante dois dias.",
+    "Foram identificadas semelhanças com outros incidentes na região.",
+    "Não foi confirmada nenhuma ligação formal entre os diferentes ataques."
+   ],
+   "title_original": "Nok et norsk energiselskap har blitt utsatt for et datainnbrudd på to dager",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Det er ikke påvist noen konkret sammenheng mellom de to hendelsene, selv om de helt klart har mange likhetstrekk."
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra a vulnerabilidade contínua das infraestruturas energéticas a incidentes de segurança.",
+   "todo": "Reforce a monitorização de redes industriais e os controlos de acesso em infraestruturas críticas."
   },
   {
    "id": "273c692ec6e6b04d",
@@ -13560,28 +13753,6 @@
    "enriched": true,
    "why": "Importa porque estas burlas podem resultar em prejuízos financeiros imediatos e inesperados para qualquer utilizador de telemóvel.",
    "todo": "Não devolva chamadas perdidas de números internacionais desconhecidos e bloqueie números suspeitos."
-  },
-  {
-   "id": "9f62b2f4e8a2aa0b",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/watchdog-government-risk/",
-   "published": "2026-11-18T09:30:00+00:00",
-   "title": "Auditoria alerta que governo do Reino Unido falha na gestão de riscos",
-   "summary": "Um relatório do National Audit Office indica que as falhas na gestão de riscos estão a provocar decisões governamentais desadequadas. A conclusão resulta de análises recentes sobre a forma como o governo gere os riscos associados às suas operações. Esta falta de eficácia compromete a tomada de decisões estratégicas a nível nacional.",
-   "image": null,
-   "points": [
-    "Relatório divulgado pelo National Audit Office.",
-    "Identificadas falhas na gestão de riscos no governo.",
-    "Problema resulta em decisões governamentais deficientes."
-   ],
-   "title_original": "Watchdog Warns UK Government Is Falling Short on Risk Management",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia lacunas críticas na tomada de decisões governamentais devido a uma gestão de riscos deficiente.",
-   "todo": ""
   }
  ]
 }

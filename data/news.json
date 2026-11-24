@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T18:45:46.085348+00:00",
+ "updated": "2026-11-24T19:05:28.787895+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -34,7 +34,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -149,7 +149,7 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 7
+   "added": 8
   },
   {
    "source": "Microsoft Security Blog",
@@ -164,7 +164,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 8
+   "added": 7
   },
   {
    "source": "Cisco Talos",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 12,
-  "pending": 397,
-  "unenriched": 282,
+  "done": 0,
+  "pending": 399,
+  "unenriched": 284,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,40 @@
   ]
  },
  "items": [
+  {
+   "id": "5f76ac4f7ca9daa3",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/",
+   "published": "2026-11-24T18:59:52+00:00",
+   "title": "Turnitin discloses cyberattack affecting customer-facing systems",
+   "summary": "Turnitin disclosed via a statement from its CEO, Chris Caren, that it recently detected unauthorized activity involving certain customer-facing systems. [...]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "Turnitin disclosed via a statement from its CEO, Chris Caren, that it recently detected unauthorized activity involving certain customer-facing systems. [...]"
+  },
+  {
+   "id": "24dda7695830a06b",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/vmware-security-advisory-av26-1203",
+   "published": "2026-11-24T18:43:41+00:00",
+   "title": "VMware security advisory (AV26-1203)",
+   "summary": "",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Serial number: AV26-1203 Date: November 24, 2026 As of November 24, 2026, VMware is affected by vulnerabilities in the following products: VMware Cloud Foundation / VMware vSphere Foundation - vCenter 9.1.x.x versions prior to 9.1.2 9.0.x.x versions prior to 9.0.2.0300 VMware vCenter 8.0 versions prior to 8.0 U3m Version 7.0 VMware Cloud Foundation vCenter 5.x versions prior to 5.2.5 VMware Telco Cloud Platform vCenter Versions 3.0, 4.x, 5.0.x, 5.1.x and 5.2 VMware Telco Cloud Infrastructure vCenter Version 3.0 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. VMSA-2026-0011: VMware ESX, vCenter, Workstation, Fusion, and, Avi Load Balancer updates address multiple vulnerabilities Security Advisories - VMware Cloud Foundation"
+  },
   {
    "id": "d5d1221d1d607e83",
    "source": "SAPO Tek",
@@ -13400,50 +13434,6 @@
    "enriched": true,
    "why": "Permite mitigar falhas críticas de execução remota de código antes que sejam exploradas por atacantes.",
    "todo": "Atualize o PHP prontamente assim que a nova versão for lançada e configure session.upload_progress.enabled=0 como precaução."
-  },
-  {
-   "id": "fae8e99e76e129e3",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/patches/2026/11/18/another-critical-php-security-release-has-dropped/5310911",
-   "published": "2026-11-18T22:38:12+00:00",
-   "title": "Outro lançamento crítico de segurança do PHP disponibilizado",
-   "summary": "A Fundação PHP lançou novas atualizações de segurança que incluem pelo menos uma vulnerabilidade classificada como crítica, rastreada como CVE-2026-115560. Embora exija configurações muito específicas e atípicas para ser explorada, o problema pode levar à execução remota de código. Os criadores recomendaram mitigações preventivas e a atualização célere dos sistemas.",
-   "image": "https://image.theregister.com/?imageId=5310922&width=800",
-   "points": [
-    "A Fundação PHP lançou uma correção para a falha CVE-2026-115560.",
-    "A vulnerabilidade de RCE exige configurações muito específicas para ser explorada.",
-    "Foram recomendadas definições temporárias de mitigação nos servidores."
-   ],
-   "title_original": "Another critical PHP security release has dropped",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Previne potenciais vetores de ataque remoto em aplicações que utilizam configurações específicas de PHP.",
-   "todo": "Mantenha o PHP atualizado e configure parâmetros de sessão seguros conforme recomendado pela fundação."
-  },
-  {
-   "id": "75f233fd5082c1c3",
-   "source": "AWS Security Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://aws.amazon.com/blogs/security/detecting-cross-cloud-lateral-movement-with-aws-security-hub/",
-   "published": "2026-11-18T22:28:45+00:00",
-   "title": "Detetar movimentos laterais entre nuvens com o AWS Security Hub",
-   "summary": "Muitas organizações utilizam ambientes multicloud, o que é aproveitado por atacantes para transitar entre diferentes fornecedores através de identidades federadas. Para combater esta falta de visibilidade centralizada, o AWS Security Hub expandiu as suas capacidades de análise para incluir recursos do Microsoft Azure. O motor de correlação da plataforma unifica agora os dados de ambas as nuvens numa única consola para priorizar riscos e trajetórias de ataque. Desta forma, as equipas de segurança conseguem detetar e triar exposições críticas decorrentes de identidades comprometidas em vários serviços.",
-   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/18/3803.1.png",
-   "points": [
-    "Atacantes exploram identidades federadas para se movimentarem entre diferentes fornecedores de nuvem.",
-    "O AWS Security Hub passou a integrar a análise e monitorização de recursos do Microsoft Azure.",
-    "A plataforma centraliza dados de várias nuvens numa única consola para facilitar a triagem de riscos."
-   ],
-   "title_original": "Detecting cross-cloud lateral movement with AWS Security Hub",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Melhora a visibilidade em ambientes multicloud e ajuda a priorizar ameaças complexas numa única plataforma.",
-   "todo": "Configure a integração do Azure no AWS Security Hub e reveja regularmente as descobertas de exposição e caminhos de ataque."
   }
  ]
 }

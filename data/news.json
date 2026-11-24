@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T14:05:49.420691+00:00",
+ "updated": "2026-11-24T14:25:00.283320+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -144,7 +144,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 0
+   "added": 3
   },
   {
    "source": "Malwarebytes Labs",
@@ -189,7 +189,7 @@
   {
    "source": "CrowdStrike Blog",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "SentinelLabs",
@@ -204,7 +204,7 @@
   {
    "source": "Rapid7",
    "ok": true,
-   "added": 11
+   "added": 8
   },
   {
    "source": "Tenable",
@@ -234,7 +234,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 18
+   "added": 17
   },
   {
    "source": "The Register Security",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 11
+   "added": 12
   },
   {
    "source": "ACSC Austrália",
@@ -310,8 +310,8 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 357,
-  "unenriched": 237,
+  "pending": 360,
+  "unenriched": 240,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,40 @@
   ]
  },
  "items": [
+  {
+   "id": "5d09561e7229eb1e",
+   "source": "Check Point Research",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://research.checkpoint.com/2026/volant-manticore-flying-under-the-radar/",
+   "published": "2026-11-24T14:13:55+00:00",
+   "title": "Volant Manticore: Flying Under the Radar",
+   "summary": "Key Points Introduction Check Point Research is tracking a previously undocumented Iran-nexus threat group who we named Volant Manticore. What started in July 2026 as a single backdoor delivered to a Cyprus-based airline through a fake CV has since expanded into a broader cluster of activity that we traced back to September 2025. MuddyWater is […]",
+   "image": "https://research.checkpoint.com/wp-content/uploads/2026/11/Figure-1-1024x335.png",
+   "points": [],
+   "title_original": null,
+   "category": "Malware",
+   "translated": false,
+   "enriched": false,
+   "raw": "Key Points Check Point Research identified Volant Manticore , a previously undocumented Iranian threat group linked to Iran’s Ministry of Intelligence and Security (MOIS). Based on our observations, we believe this is the first Iranian group to designate Cyprus as a primary espionage target, focusing on telecommunications companies, airlines, and critical infrastructure. The group uses KuboShell , a new backdoor that utilizes IPFS for command-and-control (C2) functions, to deploy the Homa Framework , a post-compromise framework built on a reimplementation of MuddyWater’s MuddyC2Go client. Alongside custom malware, Volant Manticore delivers RMM tools and runs credential-harvesting campaigns. Further analysis shed light on the operators’ internal setup, including development, testing, and operational environments, both on-premise and in the cloud. We observed the group testing their tooling against antivirus products before deployment, as well as using Fortinet SSL VPN clients which suggests access to the victims’ networks via VPN. While we identified multiple links to MuddyWater , we assess that Volant Manticore likely consists of former MuddyWater operators who branched off from the group and currently operate as a separate threat cluster . Volant Manticore’s targeting priorities appear responsive to regional geopolitical developments. A recent shift toward Saudi Arabian targets , including the healthcare sector, may reflect the escalating tensions between Saudi Arabia and the Iranian-backed Houthis. Introduction Check Point Research is tracking a previously undocumented Iran-nexus threat group who we named Volant Manticore . What started in July 2026 as a single backdoor delivered to a Cyprus-based airline through a fake CV has since expanded into a broader cluster of "
+  },
+  {
+   "id": "230a967c24e64f71",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/",
+   "published": "2026-11-24T14:09:37+00:00",
+   "title": "McDonald's Japan data breach exposes customer location information",
+   "summary": "McDonald's Japan, the fast-food giant's Japanese subsidiary, has disclosed a data breach after attackers accessed a database containing sensitive information for users of the company's official smartphone app. [...]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "McDonald's Japan, the fast-food giant's Japanese subsidiary, has disclosed a data breach after attackers accessed a database containing sensitive information for users of the company's official smartphone app. [...]"
+  },
   {
    "id": "f3ef8a4b5dc168c1",
    "source": "CrowdStrike Blog",
@@ -335,6 +369,57 @@
    "translated": false,
    "enriched": false,
    "raw": ""
+  },
+  {
+   "id": "261fc9e910282215",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/24/hk-gleneagles-hospital-suspends-app-after-data-breach/",
+   "published": "2026-11-24T14:00:34+00:00",
+   "title": "HK: Gleneagles Hospital suspends app after data breach",
+   "summary": "The Standard reports: Gleneagles Hospital Hong Kong has suspended its patient mobile app after detecting unauthorized access to personal data, including patients’ names, identity document numbers and contact details. In a statement posted on its website on Tuesday, the hospital said it detected unauthorized activity on November 18 involving security infrastructure supporting its My Gleneagles...",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "The Standard reports: Gleneagles Hospital Hong Kong has suspended its patient mobile app after detecting unauthorized access to personal data, including patients’ names, identity document numbers and contact details. In a statement posted on its website on Tuesday, the hospital said it detected unauthorized activity on November 18 involving security infrastructure supporting its My Gleneagles..."
+  },
+  {
+   "id": "c790a2af9d1e0a39",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/24/two-unrelated-database-leaks-expose-3-5-billion-uusernames-passwords-and-documents/",
+   "published": "2026-11-24T14:00:22+00:00",
+   "title": "Two unrelated database leaks expose 3.5 billion Uusernames, passwords, and documents",
+   "summary": "Matt Burgess and Lily Hay Newman report two large entries for the “No need to hack when it’s leaking” files: More than 3.5 billion usernames, passwords, national identity numbers, and documents were left exposed to anyone online in two unrelated databases, according to new findings shared with WIRED. The massive troves included data from people...",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "Matt Burgess and Lily Hay Newman report two large entries for the “No need to hack when it’s leaking” files: More than 3.5 billion usernames, passwords, national identity numbers, and documents were left exposed to anyone online in two unrelated databases, according to new findings shared with WIRED. The massive troves included data from people..."
+  },
+  {
+   "id": "a1f36d355026915b",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/24/state-shuts-down-mycolorado-app-after-data-breach-up-to-150000-people-may-be-affected/",
+   "published": "2026-11-24T14:00:06+00:00",
+   "title": "State shuts down myColorado app after data breach; up to 150,000 people may be affected",
+   "summary": "Kiowa County Press reports: The state’s myColorado app will stay offline while officials investigate a data breach that may have exposed information belonging to as many as 150,000 people. The Governor’s Office of Information Technology found on November 18 that an unauthorized user had been able to get into data on the app’s platform, the...",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "Kiowa County Press reports: The state’s myColorado app will stay offline while officials investigate a data breach that may have exposed information belonging to as many as 150,000 people. The Governor’s Office of Information Technology found on November 18 that an unauthorized user had been able to get into data on the app’s platform, the..."
   },
   {
    "id": "f11098c507607eb0",
@@ -13522,116 +13607,6 @@
    "enriched": true,
    "why": "Afeta um dos servidores web mais populares globalmente, expondo infraestruturas a ataques severos.",
    "todo": "Atualizar imediatamente o software NGINX para as versões corrigidas."
-  },
-  {
-   "id": "03bfba8ed46b931b",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/vulnerabilities-threats/java4shell-flaw-threatens-global-java-application-ecosystem",
-   "published": "2026-11-18T16:54:52+00:00",
-   "title": "Falha Java4Shell ameaça empresas globais e o ecossistema de aplicações Java",
-   "summary": "Uma vulnerabilidade de corrupção de memória, descoberta com recurso a inteligência artificial, afeta o tempo de execução do OpenJDK. Conhecida como Java4Shell, a falha pode permitir que atacantes não autenticados assumam o controlo de sistemas vulneráveis. A ameaça abrange empresas em todo o mundo e o ecossistema Java.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt99cd31a80daa3833/6afdaa35fe696e77159c89b6/dangerous_coffee_cup_Nikreats_Alamy.png?width=720&quality=80&disable=upscale",
-   "points": [
-    "Nova falha de corrupção de memória chamada Java4Shell.",
-    "Descoberta através de ferramentas de inteligência artificial.",
-    "Permite a tomada de sistemas por atacantes não autenticados."
-   ],
-   "title_original": "Java4Shell Flaw Threatens Global Enterprises, Java Application Ecosystem",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Coloca em risco um vasto ecossistema tecnológico global devido à ubiquidade do Java.",
-   "todo": "Aplicar patches de segurança e atualizar os ambientes OpenJDK afetados."
-  },
-  {
-   "id": "2d4652f602101788",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/what-github-actions-cache-expose-to-pull-request/",
-   "published": "2026-11-18T16:51:11+00:00",
-   "title": "O que uma cache do GitHub Actions pode expor a qualquer pessoa que abra um Pull Request",
-   "summary": "As caches do GitHub Actions podem expor credenciais sensíveis a atacantes através de pedidos de pull request em repositórios bifurcados (forks). O problema decorre de fugas de segredos que ocorrem nestes fluxos de trabalho automatizados. Os programadores devem adotar medidas para prevenir estas exposições acidentais.",
-   "image": null,
-   "points": [
-    "Caches do GitHub Actions podem vazar credenciais.",
-    "O risco manifesta-se através de pull requests em forks.",
-    "Atacantes podem aceder a segredos expostos."
-   ],
-   "title_original": "What a GitHub Actions Cache Can Expose to Anyone Who Opens a Pull Request",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Revela como configurações incorretas em ambientes de desenvolvimento facilitam o roubo de credenciais.",
-   "todo": "Rever as políticas de acesso e a gestão de segredos em pipelines de integração contínua."
-  },
-  {
-   "id": "c0bdf578bee45e85",
-   "source": "WIRED Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.wired.com/story/artex-ai-hacking-tools/",
-   "published": "2026-11-18T16:35:24+00:00",
-   "title": "Criminosos têm uma nova arma de hacking de IA 'apontar e disparar'",
-   "summary": "Ferramentas de testes de intrusão como o Artex estão a ser utilizadas por hackers com pouca experiência para automatizar ataques. Através de simples instruções (prompts) enviadas a chatbots, estes indivíduos conseguem analisar sistemas em busca de vulnerabilidades e conduzir investidas bem-sucedidas. Esta facilidade de uso democratiza o acesso a técnicas maliciosas.",
-   "image": "https://media.wired.com/photos/6afdd3316a27dda013bf584c/master/pass/Security_Criminals%20Have%20a%20New%20Favorite%20AI%20Hacking%20Tool_v2.jpg",
-   "points": [
-    "Ferramentas como o Artex facilitam ataques a novatos.",
-    "Uso de prompts em chatbots para detetar falhas e atacar.",
-    "Reduz a barreira técnica para cibercriminosos executarem invasões."
-   ],
-   "title_original": "Criminals Have a New Favorite ‘Point-and-Shoot’ AI Hacking Weapon",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como a IA acessível capacita atacantes inexperientes a causar danos significativos.",
-   "todo": "Monitorizar tráfego anómalo e reforçar a segurança perimétrica contra testes automatizados."
-  },
-  {
-   "id": "e798ab68d19f6e21",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/nsa-continues-response-to-nsa-net-problems",
-   "published": "2026-11-18T16:19:00+00:00",
-   "title": "NSA continua resposta a interrupções na rede interna classificada",
-   "summary": "A NSA enfrentou o segundo dia consecutivo de perturbações na sua rede interna classificada, conhecida como NSA Net, obrigando a procedimentos como entradas e autenticações desfasadas em Fort Meade. Apesar dos constrangimentos técnicos, fontes oficiais garantiram que o trabalho afeto à segurança nacional continuou a decorrer sem impedimentos.",
-   "image": "https://cms.therecord.media/uploads/nsa_seal_fort_meade_conference_room_c314a0a4cd.jpg",
-   "points": [
-    "NSA afetada por falhas na sua rede interna classificada.",
-    "Implementados procedimentos como logins desfasados em Fort Meade.",
-    "O trabalho crítico de segurança nacional prosseguiu sem interrupções."
-   ],
-   "title_original": "NSA continues response to interruptions in classified internal network",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Ilustra a vulnerabilidade de infraestruturas governamentais altamente sensíveis a falhas internas.",
-   "todo": ""
-  },
-  {
-   "id": "bdb650441debacd9",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/18/partner-content-cyber-insurers-now-want-proof-you-can-actually-recover/5309325",
-   "published": "2026-11-18T16:00:00+00:00",
-   "title": "Seguradoras de cibersegurança exigem agora provas de capacidade de recuperação",
-   "summary": "Os preços dos seguros de cibersegurança estão a descer globalmente devido a exigências mais apertadas por parte das seguradoras. Para além de requisitos como MFA, EDR e equipas de monitorização, as seguradoras exigem agora provas concretas de que a empresa consegue recuperar de um ataque, como testes de backups bem-sucedidos recentes. Esta mudança ocorre porque os atacantes visam ativamente as infraestruturas de cópia de segurança para duplicar o impacto do ransomware.",
-   "image": "https://image.theregister.com/?imageId=5309330&width=800",
-   "points": [
-    "Seguradoras exigem provas de capacidade de recuperação e backups.",
-    "Atacantes visam diretamente as infraestruturas de cópias de segurança.",
-    "Exigências adicionais incluem MFA, EDR e monitorização contínua."
-   ],
-   "title_original": "Cyber insurers now want proof you can actually recover",
-   "category": "Ransomware",
-   "translated": true,
-   "enriched": true,
-   "why": "Sublinha que ter backups já não basta; é preciso demonstrar que funcionam contra ransomware.",
-   "todo": "Testar regularmente os restauros de backups e garantir que cumpram os requisitos das apólices de seguros."
   }
  ]
 }

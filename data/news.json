@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T06:49:31.178621+00:00",
+ "updated": "2026-11-24T07:09:12.078592+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -129,7 +129,7 @@
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 8
+   "added": 7
   },
   {
    "source": "Schneier on Security",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 24,
-  "pending": 323,
-  "unenriched": 190,
+  "done": 0,
+  "pending": 342,
+  "unenriched": 211,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do",
@@ -320,6 +320,23 @@
   ]
  },
  "items": [
+  {
+   "id": "d305226424f3c59e",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/24/chris-betz-google-agentic-ai-security/",
+   "published": "2026-11-24T07:00:16+00:00",
+   "title": "Google Cloud CISO talks agentic AI security and the future of the SOC",
+   "summary": "In this interview with Help Net Security, Chris Betz, CISO of Google Cloud, answers five questions about security as AI agents spread. He says the old belief that human-led workflows would stay the norm has aged badly, since attackers use automation to move through networks in minutes. Betz explains how agents could change the junior analyst role, why espionage groups can be hard to spot, which controls companies should drop, and what boards should ask … More →",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": false,
+   "raw": "In this interview with Help Net Security, Chris Betz, CISO of Google Cloud, answers five questions about security as AI agents spread. He says the old belief that human-led workflows would stay the norm has aged badly, since attackers use automation to move through networks in minutes. Betz explains how agents could change the junior analyst role, why espionage groups can be hard to spot, which controls companies should drop, and what boards should ask … More →"
+  },
   {
    "id": "0dcf600d68f6f824",
    "source": "Help Net Security",
@@ -13726,28 +13743,6 @@
    "enriched": true,
    "why": "Garante que o navegador web mais utilizado permanece protegido contra vulnerabilidades recém-descobertas.",
    "todo": "Atualize o Google Chrome para a versão mais recente o mais rapidamente possível."
-  },
-  {
-   "id": "293f2105b9f21630",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/bugs/2026/11/java4shell-a-critical-flaw-with-a-narrow-reach",
-   "published": "2026-11-18T11:41:07+00:00",
-   "title": "Java4Shell: Uma falha crítica com alcance limitado",
-   "summary": "Foi descoberta uma vulnerabilidade crítica de corrupção de memória no descodificador Base64 do Java, batizada de Java4Shell e registada sob o identificador CVE-2026-114938. A exploração desta falha depende de fatores específicos como o runtime do Java, o processador e a aplicação utilizada. Embora os utilizadores domésticos dificilmente sejam afetados, as organizações que utilizam ferramentas como Jira, Confluence ou Jenkins correm riscos. A CISA e os fornecedores emitiram alertas urgentes para que as correções sejam aplicadas de imediato.",
-   "image": "https://www.malwarebytes.com/wp-content/uploads/sites/2/2026/04/CNET_Editors_Choice.png?w=819",
-   "points": [
-    "Descoberta a falha CVE-2026-114938 de corrupção de memória no Java.",
-    "A exploração depende do ambiente Java, processador e tipo de aplicação.",
-    "Empresas que usam ferramentas como Jira, Confluence ou Jenkins devem atualizar."
-   ],
-   "title_original": "Java4Shell: A critical flaw with a narrow reach",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Protege infraestruturas empresariais contra a execução remota de código através de falhas no Java.",
-   "todo": "Atualize o Java e aplique prontamente as correções de segurança disponibilizadas pela Oracle e OpenJDK."
   }
  ]
 }

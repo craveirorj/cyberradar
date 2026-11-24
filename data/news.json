@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T22:47:10.686397+00:00",
+ "updated": "2026-11-24T23:07:15.851084+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -138,8 +138,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": true,
-   "added": 5
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "DataBreaches.net",
@@ -154,7 +154,7 @@
   {
    "source": "Microsoft Security Blog",
    "ok": true,
-   "added": 8
+   "added": 7
   },
   {
    "source": "Microsoft MSRC",
@@ -309,14 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 119,
-  "pending": 212,
-  "unenriched": 93,
+  "done": 60,
+  "pending": 266,
+  "unenriched": 147,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "ae79bb5847a54156",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/",
+   "published": "2026-11-24T22:41:58+00:00",
+   "title": "Sistema não classificado da CIA foi alvo de um ciberataque",
+   "summary": "Um sistema não classificado da CIA sofreu uma violação de segurança num ciberataque recente. Atualmente, ainda não foi determinado o tipo exato de informação que acabou por ser comprometida. As autoridades também continuam sem saber quem foi o responsável por esta intrusão.",
+   "image": null,
+   "points": [
+    "O que aconteceu: Um sistema não classificado da CIA foi violado.",
+    "O quê: Houve um ciberataque com dados ainda por apurar.",
+    "Impacto: A informação comprometida e os responsáveis continuam por esclarecer."
+   ],
+   "title_original": "An Unclassified CIA System Was Breached in a Cyberattack, AP Source Says",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que mesmo agências de inteligência altamente sensíveis continuam vulneráveis a incidentes de cibersegurança e espionagem.",
+   "todo": "Manter controlos rigorosos de acesso e monitorizar continuamente os registos de atividade para detetar acessos não autorizados."
+  },
   {
    "id": "6a6218931c47e3bc",
    "source": "Dark Reading",
@@ -13733,29 +13757,6 @@
    "enriched": true,
    "why": "A mistura de dispositivos pessoais com redes industriais críticas aumenta drasticamente a superfície de ataque.",
    "todo": "Implemente uma segmentação de rede rigorosa e utilize VLANs para isolar dispositivos de consumo da rede de produção."
-  },
-  {
-   "id": "1bcc132f92bd71e2",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/19/ai-agents-employee-credentials-nudge-security-report/",
-   "published": "2026-11-19T05:00:37+00:00",
-   "title": "Agentes de IA herdam acessos de funcionários e ninguém monitoriza a sua utilização",
-   "summary": "Agentes de IA criados por colaboradores em ferramentas de gestão de projetos e CRM operam frequentemente com as credenciais dos seus criadores. Segundo a Nudge Security, isto significa que estes agentes herdam todos os privilégios de acesso aos dados da empresa que o funcionário possui. A falta de supervisão sobre estas ferramentas automatizadas cria riscos de segurança significativos. As organizações desconhecem, muitas vezes, que agentes estão ativos e a que sistemas estão ligados.",
-   "image": null,
-   "points": [
-    "Agentes de IA utilizam credenciais dos criadores",
-    "Acesso indevido a dados corporativos sensíveis",
-    "Falta de visibilidade sobre ferramentas de IA",
-    "Risco elevado em CRMs e automações"
-   ],
-   "title_original": "AI agents inherit employee access, and nobody’s watching how they use it",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "A automatização via IA pode expandir inadvertidamente a superfície de ataque ao conceder privilégios excessivos a sistemas autónomos.",
-   "todo": "Implemente políticas de gestão de identidade e monitorize rigorosamente as permissões atribuídas a ferramentas de IA integradas."
   }
  ]
 }

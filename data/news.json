@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T02:26:17.992653+00:00",
+ "updated": "2026-11-24T02:48:12.131935+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 113,
-  "pending": 232,
-  "unenriched": 100,
+  "done": 119,
+  "pending": 226,
+  "unenriched": 94,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
@@ -319,21 +319,48 @@
  },
  "items": [
   {
+   "id": "74976701e7615db5",
+   "source": "SANS ISC",
+   "region": "US",
+   "lang": "en",
+   "link": "https://isc.sans.edu/diary/rss/33550",
+   "published": "2026-11-24T02:32:00+00:00",
+   "title": "Varrimento a partir da sub-rede 109.160.32.0/24",
+   "summary": "Uma sub-rede associada ao fornecedor de alojamento web e VPS BANATSYNC SRL, na Roménia, tem gerado atividade de sensores DShield. A atividade foi registada por um período prolongado de noventa dias. Esta investigação destaca a persistência de varrimentos originados nesta infraestrutura específica.",
+   "image": null,
+   "points": [
+    "Sub-rede afetada: 109.160.32.0/24 operada pela BANATSYNC SRL na Roménia.",
+    "Atividade detetada por sensores DShield ao longo de 90 dias.",
+    "O comportamento de varrimento contínuo mantém-se ativo."
+   ],
+   "title_original": "Scanning from Subnet 109.160.32.0/24, (Mon, Nov 23rd)",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda a identificar origens persistentes de tráfego de varrimento suspeito na internet.",
+   "todo": "Monitorize os registos de perímetro e bloqueie tráfego não solicitado proveniente de sub-redes associadas a atividade maliciosa."
+  },
+  {
    "id": "732957406cb22dd9",
    "source": "SANS ISC",
    "region": "US",
    "lang": "en",
    "link": "https://isc.sans.edu/diary/rss/33552",
    "published": "2026-11-24T02:00:04+00:00",
-   "title": "ISC Stormcast For Tuesday, November 24th, 2026 https://isc.sans.edu/podcastdetail/10192, (Tue, Nov 24th)",
-   "summary": "",
+   "title": "ISC Stormcast para terça-feira, 24 de novembro de 2026",
+   "summary": "Este episódio do podcast Stormcast aborda as principais atualizações e análises de cibersegurança do dia. A rubrica foca-se nos incidentes e alertas mais recentes monitorizados pelo SANS ISC. O conteúdo serve para manter os profissionais informados sobre o panorama de ameaças atual.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Podcast diário do ISC Stormcast com atualizações de segurança.",
+    "Análise de eventos e vulnerabilidades recentes pelo SANS.",
+    "Informação essencial para profissionais de cibersegurança."
+   ],
+   "title_original": "ISC Stormcast For Tuesday, November 24th, 2026 https://isc.sans.edu/podcastdetail/10192, (Tue, Nov 24th)",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": ""
+   "translated": true,
+   "enriched": true,
+   "why": "Permite acompanhar rapidamente as tendências e alertas diários de cibersegurança.",
+   "todo": "Subscreva e reveja regularmente os podcasts e boletins de fontes fidedignas como o SANS ISC."
   },
   {
    "id": "a3dc1c3f9c0a28fb",
@@ -13723,29 +13750,6 @@
    "enriched": true,
    "why": "Permite que agentes maliciosos executem código arbitrário diretamente em servidores corporativos vulneráveis.",
    "todo": "Aplique imediatamente as atualizações de segurança disponibilizadas pelo fabricante para corrigir a falha CVE-2026-115731."
-  },
-  {
-   "id": "4f4cc6f190747ed0",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/",
-   "published": "2026-11-18T10:35:05+00:00",
-   "title": "Apache alerta para vulnerabilidade de execução remota de código no Roller explorada em ataques",
-   "summary": "A Apache lançou atualizações de segurança para corrigir uma falha crítica no Roller que está a ser ativamente explorada por atacantes. A vulnerabilidade permite que agentes maliciosos obtenham execução de código em servidores vulneráveis. As organizações que utilizam o software devem aplicar os patches disponibilizados com urgência. A exploração bem-sucedida pode comprometer totalmente os sistemas afetados.",
-   "image": null,
-   "points": [
-    "O quê: Falha crítica de execução remota de código no Apache Roller.",
-    "Quem: Servidores que executam versões vulneráveis do Apache Roller.",
-    "Como: Atacantes exploram a vulnerabilidade para obter controlo sobre os servidores.",
-    "Impacto: Compromisso total da integridade e confidencialidade dos servidores afetados."
-   ],
-   "title_original": "Apache warns of Roller RCE vulnerability exploited in attacks",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite o controlo remoto de servidores vulneráveis através de exploração ativa em curso.",
-   "todo": "Aplique imediatamente as atualizações de segurança disponibilizadas pela Apache para o Roller."
   }
  ]
 }

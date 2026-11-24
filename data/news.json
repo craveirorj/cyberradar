@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T12:29:19.924952+00:00",
+ "updated": "2026-11-24T12:45:59.403323+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -89,12 +89,12 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 18
+   "added": 19
   },
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -124,7 +124,7 @@
   {
    "source": "Ars Technica Security",
    "ok": true,
-   "added": 5
+   "added": 6
   },
   {
    "source": "WIRED Security",
@@ -134,7 +134,7 @@
   {
    "source": "Schneier on Security",
    "ok": true,
-   "added": 7
+   "added": 6
   },
   {
    "source": "SANS ISC",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 2
   },
   {
    "source": "Security Affairs",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 96,
-  "pending": 248,
-  "unenriched": 123,
+  "done": 12,
+  "pending": 328,
+  "unenriched": 205,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,108 @@
   ]
  },
  "items": [
+  {
+   "id": "ca1277f0d6397260",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/24/bedrock-data-agent-dlp/",
+   "published": "2026-11-24T12:34:02+00:00",
+   "title": "Bedrock Data enhances AI agent governance with intent-aware DLP",
+   "summary": "Bedrock Data has announced that Agent DLP, its runtime data loss prevention for AI agents, now infers a user’s intent (the business purpose behind the task) and evaluates the agent’s behavior (the sum of its actions across every tool and LLM call) against that intent and the organization’s policy. By weighing both intent and behavior, Agent DLP lets employees keep working with AI agents while sensitive data stays protected. Agent DLP adds support for off-the-shelf … More →",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "IA",
+   "translated": false,
+   "enriched": false,
+   "raw": "Bedrock Data has announced that Agent DLP, its runtime data loss prevention for AI agents, now infers a user’s intent (the business purpose behind the task) and evaluates the agent’s behavior (the sum of its actions across every tool and LLM call) against that intent and the organization’s policy. By weighing both intent and behavior, Agent DLP lets employees keep working with AI agents while sensitive data stays protected. Agent DLP adds support for off-the-shelf … More →"
+  },
+  {
+   "id": "21c67f84759f6dc5",
+   "source": "Ars Technica Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
+   "published": "2026-11-24T12:30:05+00:00",
+   "title": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
+   "summary": "The Cairn AI framework is proving to be a boon for defenders and attackers.",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/cairn-banner.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Amazon said AI agents recently found and exploited a zero-day vulnerability with no human oversight beyond a simple instruction to get root access on an East Asian university server. The agents were running on Cairn, an open source AI penetration-testing framework. The hackers, who provided prompts in simplified Chinese and configured the model to the Chinese Standard Time zone, gave the agents a list of IP addresses and the goal: “obtain shell access.” In short order, the agents discovered a zero-day in an open source medical imaging AI application running on one of the target servers. The agents then exploited the vulnerability and gained full control of the system. “These findings show that agentic offensive operations are already happening, and defenders should prepare for the speed and persistence these tools enable,” Amazon said . Read full article Comments"
+  },
+  {
+   "id": "c717d04d5f559b69",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/24/elastic-security-9-6-features/",
+   "published": "2026-11-24T12:27:45+00:00",
+   "title": "Elastic puts AI agents to work on the SOC alert backlog",
+   "summary": "Elastic announced Elastic Security 9.6, which introduces AlertZero, a set of AI agents that triage alerts, hunt threats and tune detection rules in the background. The release also adds ransomware protection for Linux, expanded entity resolution and an expanded set of 143 detection rules covering AI agents and large language model platforms. AlertZero takes on the alert queue AlertZero organizes its agents, called Workers, into four teams known as Watches: triage, threat hunting, detection engineering … More →",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Ransomware",
+   "translated": false,
+   "enriched": false,
+   "raw": "Elastic announced Elastic Security 9.6, which introduces AlertZero, a set of AI agents that triage alerts, hunt threats and tune detection rules in the background. The release also adds ransomware protection for Linux, expanded entity resolution and an expanded set of 143 detection rules covering AI agents and large language model platforms. AlertZero takes on the alert queue AlertZero organizes its agents, called Workers, into four teams known as Watches: triage, threat hunting, detection engineering … More →"
+  },
+  {
+   "id": "f8f388caca53544a",
+   "source": "Malwarebytes Labs",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.malwarebytes.com/blog/news/2026/11/new-windows-security-check-could-let-apps-block-access",
+   "published": "2026-11-24T12:22:17+00:00",
+   "title": "New Windows security check could let apps block access",
+   "summary": "Windows baseline protection will show which of eight safeguards your PC is missing and help you turn them on.",
+   "image": "https://www.malwarebytes.com/wp-content/uploads/sites/2/2026/11/new_settings_menu.png",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": ".kadence-column492404_9b1ca1-64 > .kt-inside-inner-col{padding-top:20px;padding-right:20px;padding-bottom:10px;padding-left:20px;}.kadence-column492404_9b1ca1-64 > .kt-inside-inner-col{column-gap:var(--global-kb-gap-sm, 1rem);}.kadence-column492404_9b1ca1-64 > .kt-inside-inner-col{flex-direction:column;}.kadence-column492404_9b1ca1-64 > .kt-inside-inner-col > .aligncenter{width:100%;}.kadence-column492404_9b1ca1-64 > .kt-inside-inner-col{background-color:rgba(255, 229, 229, 0.83);}.kadence-column492404_9b1ca1-64 > .kt-inside-inner-col:before{opacity:0.3;}.kadence-column492404_9b1ca1-64{position:relative;}@media all and (max-width: 1024px){.kadence-column492404_9b1ca1-64 > .kt-inside-inner-col{flex-direction:column;justify-content:center;}}@media all and (max-width: 767px){.kadence-column492404_9b1ca1-64 > .kt-inside-inner-col{flex-direction:column;justify-content:center;}} In this article Microsoft plans to bring eight Windows security checks together in 2027 Windows baseline protection will flag missing safeguards and let you turn some on with one click Apps could use the result to warn you, limit features, or block access Microsoft announced plans to introduce Windows baseline protection , a feature that brings eight existing safeguards together into a single, verifiable security status. With the feature expected to become generally available in 2027, Microsoft wants to make a familiar Windows security problem less confusing. Your PC has a collection of built-in protections, but working out which ones are enabled and what to do when they aren’t can take some digging. Windows baseline protection will show you what’s missing and help you fix it. It will also give software developers a simpler way to check whether your computer meets their requirements and decide whether"
+  },
+  {
+   "id": "ba152944e2e86ab6",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/24/crowdstrike-splashes-44b-on-zscaler-customers-brace-for-the-bill/5311877",
+   "published": "2026-11-24T12:22:17+00:00",
+   "title": "CrowdStrike splashes $44B on Zscaler, customers brace for the bill",
+   "summary": "Record-breaking cybersecurity deal promises tighter integration, but sysadmins fear higher prices and vendor lock-in",
+   "image": "https://image.theregister.com/?imageId=252462&width=800",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "CrowdStrike has agreed to buy Zscaler for $43.9 billion in what would be the biggest cybersecurity acquisition on record, and customers are already bracing for pricier renewals. The all-stock deal, announced on Monday, will see Zscaler shareholders receive 1.135 CrowdStrike shares for every share they own, representing a 34 percent premium on Friday's closing price. The transaction dwarfs even Google's $32 billion acquisition of cloud security upstart Wiz. Buying Zscaler gives CrowdStrike a sizeable foothold in the network security market, where it will be going up against the likes of Palo Alto Networks and Fortinet. The plan is to combine Falcon's endpoint protection capabilities with Zscaler's zero-trust network security technology, giving customers a single platform for securing devices and the connections between them. Naturally, there's an AI angle to the biggest cyber deal in history. CrowdStrike reckons owning both technologies will allow it to keep tabs on what AI agents are doing on corporate devices, where they're connecting, and what data they're getting their hands on. CrowdStrike CEO George Kurtz described the proposed combination as \"cybersecurity’s operating system.\" The acquisition also gives CrowdStrike's salespeople plenty to get excited about. Around 8,000 Zscaler customers don't currently buy CrowdStrike's wares, and the companies already have more than 2,000 customers in common. CrowdStrike reckons it can boost its annualized revenue by around $1 billion within 30 months of closing the deal by selling more products to the two companies' existing customers. Some of those customers, however, don't sound particularly keen on being cross-sold to. Over on Reddit's r/sysadmin subreddit, news of the purchase was met with a familiar set of concerns from IT"
+  },
+  {
+   "id": "70ffa0cfd81dd026",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/openai-cisco-unveil-open-source-tool-to-shield-unpatched-linux-systems/",
+   "published": "2026-11-24T12:20:41+00:00",
+   "title": "OpenAI, Cisco Unveil Open Source Tool to Shield Unpatched Linux Systems",
+   "summary": "OpenAI and Cisco’s Shirudo uses AI-generated shields to block Linux exploits while patches are prepared, but it’s not yet production-ready.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "OpenAI and Cisco’s Shirudo uses AI-generated shields to block Linux exploits while patches are prepared, but it’s not yet production-ready."
+  },
   {
    "id": "1f5f949117f5dc51",
    "source": "Schneier on Security",
@@ -13623,139 +13725,6 @@
    "enriched": true,
    "why": "Demonstra a responsabilização judicial de líderes de redes de cibercrime financeiro.",
    "todo": "Garantir defesas robustas em carteiras e plataformas de criptomoedas contra esquemas de cibercrime."
-  },
-  {
-   "id": "4f7936fd956ec9a6",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203408/cyber-crime/scattered-spider-member-gets-six-years-for-phishing-and-sim-swapping-attacks.html",
-   "published": "2026-11-18T14:46:34+00:00",
-   "title": "Membro dos Scattered Spider condenado a seis anos por phishing e ataques de SIM-swapping",
-   "summary": "Um pirata informático escocês de 24 anos foi condenado a 72 meses de prisão federal nos EUA por liderar ataques de phishing por SMS e roubo de SIM-swapping. Tyler Robert Buchanan fez parte do grupo cibercriminoso Scattered Spider, também conhecido como UNC3944 ou 0ktapus. O esquema roubou mais de 11,6 milhões de dólares em criptomoeda a vítimas norte-americanas e comprometeu dezenas de empresas. A detenção ocorreu na Escócia e em Espanha, numa operação conjunta do FBI e da polícia espanhola.",
-   "image": null,
-   "points": [
-    "Tyler Robert Buchanan foi condenado a 72 meses de prisão federal nos EUA.",
-    "O grupo Scattered Spider visou empresas e indivíduos com campanhas de phishing por SMS.",
-    "Foram roubados mais de 11,6 milhões de dólares em criptomoeda e credenciais corporativas.",
-    "A detenção resultou de uma operação conjunta entre o FBI e as autoridades europeias."
-   ],
-   "title_original": "Scattered Spider Member Gets Six Years for Phishing and SIM-Swapping Attacks",
-   "category": "Phishing/Fraude",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como operações internacionais de aplicação da lei conseguem desmantelar membros de grupos de cibercrime altamente ativos.",
-   "todo": "Forme os colaboradores para reconhecerem campanhas de phishing por SMS e utilize autenticação multifator robusta resistente a phishing."
-  },
-  {
-   "id": "e359b576628c9898",
-   "source": "SAPO Tek",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://tek.sapo.pt/noticias/internet/artigos/falha-na-optimizely-expos-178-organizacoes-a-malware-zoom-salesforce-bbc-e-cnn-entre-as-empresas-afetadas/",
-   "published": "2026-11-18T14:40:00+00:00",
-   "title": "Falha na Optimizely expôs 178 organizações a malware. Zoom, Salesforce, BBC e CNN entre as empresas afetadas",
-   "summary": "Um atacante explorou uma vulnerabilidade na plataforma Optimizely para injetar código malicioso em 178 organizações. Entre as entidades afetadas encontram-se grandes nomes como Zoom, BBC, CNN, IKEA e HSBC. O incidente resultou na troca de endereços de criptomoedas, roubo de dados de cartões e ações direcionadas a dispositivos iOS.",
-   "image": null,
-   "points": [
-    "Ator malicioso explorou falha na Optimizely.",
-    "Código malicioso afetou 178 organizações globais.",
-    "Impacto incluiu roubo de cartões e fraude de criptomoedas.",
-    "Empresas como Zoom, BBC e HSBC foram atingidas."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como uma falha num fornecedor externo pode comprometer em simultâneo dezenas de grandes organizações.",
-   "todo": "Monitorize os fornecedores terceiros e mantenha os sistemas atualizados para mitigar vulnerabilidades de cadeia de suprimentos."
-  },
-  {
-   "id": "e2a24e43ecaa9dbd",
-   "source": "Rapid7",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.rapid7.com/blog/post/tr-self-hosted-ai-renting-compute-exposed-servers",
-   "published": "2026-11-18T14:38:55+00:00",
-   "title": "Open by Default, Already Occupied: Threat Actors are Renting your Compute",
-   "summary": "O texto original fornecido encontra-se vazio, não contendo detalhes específicos sobre incidentes, atacantes ou o impacto gerado. Como tal, não existem factos adicionais para descrever o sucedido ou os alvos afetados. A ausência de conteúdo impede a formulação de um resumo detalhado.",
-   "image": "https://images.contentstack.io/v3/assets/blte4f029e766e6b253/blt77f5564b49102b80/6abfb804cd0bd934c1d4e56b/Copy_of_Rapid7_intelligence_report_template.png",
-   "points": [
-    "O artigo original não contém informação descritiva.",
-    "Não existem dados sobre alvos, atacantes ou impacto."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "A ausência de dados no texto impede tirar conclusões práticas ou de segurança.",
-   "todo": ""
-  },
-  {
-   "id": "ef99d4f0243c1573",
-   "source": "Pplware Segurança",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://pplware.sapo.pt/internet/seguranca/as-piores-passwords-em-portugal-foram-reveladas-e-a-sua-pode-estar-nesta-lista/",
-   "published": "2026-11-18T14:30:00+00:00",
-   "title": "As piores passwords em Portugal foram reveladas e a sua pode estar nesta lista",
-   "summary": "Um novo estudo global da NordPass revelou os hábitos de segurança e as palavras-passe mais comuns utilizadas em dezenas de países. Em Portugal, a clássica sequência numérica «123456» continua a liderar de forma destacada a tabela das escolhas mais populares. Os dados demonstram que a conveniência continua a sobrepor-se à segurança na proteção de contas online.",
-   "image": null,
-   "points": [
-    "Estudo anual da NordPass analisa palavras-passe em 44 países.",
-    "Sequência «123456» mantém-se como a mais usada em Portugal.",
-    "Utilizadores continuam a privilegiar a facilidade em detrimento da segurança."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Passwords fracas facilitam o acesso não autorizado a contas pessoais e empresariais através de ataques de força bruta.",
-   "todo": "Utilize palavras-passe fortes e complexas, combine-as com um gestor de credenciais e ative a autenticação multifator (MFA)."
-  },
-  {
-   "id": "24d2f47323be4ea1",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/big-techs/servicos-da-apple-tambem-ficaram-fora-do-ar-empresa-descarta-ataque-hacker/",
-   "published": "2026-11-18T14:30:00+00:00",
-   "title": "Serviços da Apple também ficaram fora do ar; empresa descarta ataque hacker",
-   "summary": "Diversos serviços da Apple, incluindo a App Store, iCloud e Apple Pay, sofreram interrupções temporárias em vários países. A empresa descartou qualquer tipo de ataque cibernético e atribuiu a falha a uma atualização interna realizada durante a manhã. A situação afetou o acesso de utilizadores, funcionários e sistemas internos de suporte.",
-   "image": "https://www.estadao.com.br/resizer/v2/5TQQWD7TS5HGDFEXIUFNA5VROI.png?quality=80&auth=c815f6ed8e672e10d5b8f6cf4f11d0301ed7ba7f28397a1262f3eac1899abf1a&width=710",
-   "points": [
-    "Serviços como iCloud e App Store ficaram indisponíveis.",
-    "Apple descartou a hipótese de um ataque cibernético.",
-    "Problema foi provocado por uma atualização interna da empresa."
-   ],
-   "title_original": null,
-   "category": "Ataque/APT",
-   "translated": false,
-   "enriched": true,
-   "why": "Interrupções em infraestruturas tecnológicas podem paralisar operações comerciais e deixar utilizadores sem acesso a ferramentas críticas.",
-   "todo": "Consulte as páginas de estado dos fornecedores em caso de falha súbita e garanta planos de contingência operacionais."
-  },
-  {
-   "id": "ae8a45c47c7a4c88",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/armornet-debuts-ai-security-for-the-code-and-vendors-companies-trust/",
-   "published": "2026-11-18T14:24:37+00:00",
-   "title": "Armornet Debuts AI Security for the Code and Vendors Companies Trust",
-   "summary": "A Armornet lançou uma nova solução de segurança baseada em inteligência artificial focada no código e nos fornecedores em que as empresas confiam. A ferramenta pretende ajudar as organizações a protegerem os seus ecossistemas digitais contra ameaças emergentes. O anúncio foi feito a partir de Grand Rapids, no estado norte-americano do Michigan.",
-   "image": null,
-   "points": [
-    "Armornet lança nova solução de segurança de IA.",
-    "Foco colocado na proteção de código e fornecedores.",
-    "Anúncio realizado a 18 de novembro de 2026."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "A segurança da cadeia de fornecedores de software é vital para prevenir a introdução de vulnerabilidades nas empresas.",
-   "todo": "Avalie regularmente a segurança do código desenvolvido internamente e dos fornecedores externos utilizados pela organização."
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T09:05:50.448616+00:00",
+ "updated": "2026-11-24T09:24:51.984426+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -34,7 +34,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -74,7 +74,7 @@
   {
    "source": "MS-ISAC (CIS)",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "BleepingComputer",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -138,8 +138,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 2
   },
   {
    "source": "DataBreaches.net",
@@ -234,7 +234,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 18
+   "added": 19
   },
   {
    "source": "The Register Security",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 12,
-  "pending": 327,
-  "unenriched": 197,
+  "done": 0,
+  "pending": 338,
+  "unenriched": 211,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,40 @@
   ]
  },
  "items": [
+  {
+   "id": "d0b87a53ea5742d4",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/24/anthropic-claude-ship-beta/",
+   "published": "2026-11-24T09:02:02+00:00",
+   "title": "Claude Ship gives AI a seat on both sides of code review",
+   "summary": "Anthropic launched Claude Ship in beta, a suite of agents that reviews pull requests, fixes issues and approves changes permitted by a team’s policy. Teams decide where it runs and which changes require human approval. Anthropic said Claude writes most of the code on its Claude Code team. With Claude Ship, the company aims to help teams “ship code as fast as teams write it.” How Claude Ship works Claude Ship combines Code Review, which … More →",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "IA",
+   "translated": false,
+   "enriched": false,
+   "raw": "Anthropic launched Claude Ship in beta, a suite of agents that reviews pull requests, fixes issues and approves changes permitted by a team’s policy. Teams decide where it runs and which changes require human approval. Anthropic said Claude writes most of the code on its Claude Code team. With Claude Ship, the company aims to help teams “ship code as fast as teams write it.” How Claude Ship works Claude Ship combines Code Review, which … More →"
+  },
+  {
+   "id": "37000e2774a3f896",
+   "source": "SAPO Tek",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://tek.sapo.pt/extras/site-do-dia/artigos/esquema-de-certificacao-de-ciberseguranca-em-consulta-publica/",
+   "published": "2026-11-24T09:01:49+00:00",
+   "title": "Esquema de certificação de cibersegurança em consulta pública",
+   "summary": "O Centro Nacional de Cibersegurança colocou em consulta pública uma versão, ainda preliminar, do esquemaa de certificação do Quadro Nacional de Referência para a Cibersegurança, uma peça importante para a adaptação à NIS2.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": false,
+   "raw": "O Centro Nacional de Cibersegurança colocou em consulta pública uma versão, ainda preliminar, do esquemaa de certificação do Quadro Nacional de Referência para a Cibersegurança, uma peça importante para a adaptação à NIS2."
+  },
   {
    "id": "602d63e2c253f86c",
    "source": "HackRead",
@@ -13699,52 +13733,6 @@
    "enriched": true,
    "why": "Ilumina a perspetiva de liderança e a tomada de decisões críticas na gestão de cibersegurança.",
    "todo": "Priorize iniciativas de segurança críticas e aprenda a gerir eficazmente os recursos disponíveis."
-  },
-  {
-   "id": "122413bd849f4f44",
-   "source": "CISA Advisories",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-   "published": "2026-11-18T12:00:00+00:00",
-   "title": "CISA adiciona quatro vulnerabilidades conhecidas e exploradas ao seu catálogo",
-   "summary": "A CISA atualizou o seu catálogo de vulnerabilidades conhecidas exploradas (KEV) com quatro novas falhas devido a evidências de exploração ativa no terreno. A lista inclui falhas em produtos como o Synology DiskStation Manager, BerriAI LiteLLM, Apache Axis e o sistema REDCap da Universidade de Vanderbilt. Esta inclusão obriga as agências federais a priorizarem a remediação rápida destas falhas em ativos expostos. A agência recomenda vivamente que todas as organizações adotem uma gestão de riscos idêntica.",
-   "image": null,
-   "points": [
-    "O quê: Adição de quatro novas falhas ao catálogo KEV da CISA.",
-    "Alvos: Afeta produtos da Synology, BerriAI, Apache Axis e REDCap.",
-    "Impacto: Aumento do risco de exploração ativa em ativos expostos na internet.",
-    "Ação: Obrigatoriedade de correção rápida para entidades federais e recomendação geral para empresas."
-   ],
-   "title_original": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Sinaliza falhas que estão a ser ativamente exploradas por cibercriminosos, exigindo prioridade máxima de correção.",
-   "todo": "Consulte o catálogo KEV da CISA e aplique patches prioritários nos produtos afetados se estiverem presentes na sua rede."
-  },
-  {
-   "id": "f2058d689eec5dda",
-   "source": "CSO Online",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.csoonline.com/article/4250156/attackers-hijack-microsofts-agent-framework-package-to-steal-azure-and-ci-credentials.html",
-   "published": "2026-11-18T11:58:53+00:00",
-   "title": "Attackers hijack Microsoft’s agent-framework package to steal Azure and CI credentials",
-   "summary": "Piratas informáticos comprometeram brevemente o pacote oficial Agent Framework da Microsoft no repositório PyPI. Foram lançadas duas versões maliciosas que funcionavam como um roubo de credenciais para extrair segredos de nuvem e chaves de desenvolvimento. O código malicioso recolhia variáveis de ambiente e ficheiros de configuração de forma automática ao iniciar o Python. O impacto afetou o ecossistema de desenvolvimento, uma vez que o pacote continha centenas de milhares de descarregamentos mensais.",
-   "image": "https://www.csoonline.com/wp-content/uploads/2026/10/4235801-0-66913300-1792067584-shutterstock_2238529723.jpg?quality=50&strip=all",
-   "points": [
-    "Quem: Atacantes desconhecidos comprometeram o PyPI da Microsoft.",
-    "O quê: Inclusão de versões maliciosas para roubar credenciais e tokens.",
-    "Como: Recolha automática de variáveis de ambiente e ficheiros locais.",
-    "Impacto: Exposição de segredos de nuvem e dados de sistemas de compilação."
-   ],
-   "title_original": null,
-   "category": "Malware",
-   "translated": false,
-   "enriched": true,
-   "why": "Permite que atacantes roubem segredos sensíveis e credenciais de nuvem diretamente de estações de trabalho de programadores.",
-   "todo": "Verifique se utilizou as versões afetadas (1.26.1 ou 1.26.2) do pacote e revogue imediatamente quaisquer credenciais ou tokens expostos."
   }
  ]
 }

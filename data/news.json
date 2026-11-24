@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T08:46:20.243323+00:00",
+ "updated": "2026-11-24T09:05:50.448616+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -138,8 +138,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": true,
-   "added": 2
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "DataBreaches.net",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Hacker News",
@@ -309,16 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 60,
-  "pending": 281,
-  "unenriched": 150,
+  "done": 12,
+  "pending": 327,
+  "unenriched": 197,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting value: line 48 column 7 (char 4900)",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "602d63e2c253f86c",
+   "source": "HackRead",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://hackread.com/uk-retailer-next-cyber-incident-online-supplier/",
+   "published": "2026-11-24T08:56:13+00:00",
+   "title": "Retalhista britânico Next revela incidente cibernético num fornecedor online",
+   "summary": "A empresa britânica Next reportou um incidente de cibersegurança num fornecedor online que expôs informações corporativas internas. A investigação inicial não encontrou quaisquer indícios de que dados pessoais de clientes tenham sido comprometidos. O acontecimento destaca os riscos associados à cadeia de abastecimento digital e a dependência de parceiros externos.",
+   "image": null,
+   "points": [
+    "A Next sofreu um incidente cibernético através de um fornecedor online.",
+    "Informações da empresa foram expostas, mas os dados dos clientes ficaram a salvo.",
+    "Não foram encontradas provas de fugas de dados pessoais de consumidores."
+   ],
+   "title_original": "UK Retailer Next Discloses Cyber Incident at Online Supplier",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como uma falha num fornecedor externo pode expor dados sensíveis de uma empresa.",
+   "todo": "Avalie e audite regularmente os níveis de segurança e acessos dos seus fornecedores e parceiros externos."
+  },
   {
    "id": "42e5f99f0a8baf4c",
    "source": "Security Affairs",
@@ -632,6 +654,28 @@
    "enriched": true,
    "why": "Permite proteger infraestruturas críticas contra vulnerabilidades conhecidas quando a aplicação imediata de patches não é viável.",
    "todo": "Avalie a implementação de controlos compensatórios em sistemas legados e mantenha uma rotina rigorosa de gestão de vulnerabilidades."
+  },
+  {
+   "id": "3e9064fe72c037e1",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/gta-vi-hacker-arion-kurtaj-released-on-license",
+   "published": "2026-11-24T00:00:00+00:00",
+   "title": "Hacker de 'Grand Theft Auto VI' condenado a sete anos e libertado no mesmo dia",
+   "summary": "Um cibercriminoso britânico responsável por invadir a Rockstar Games e vazar imagens do jogo Grand Theft Auto VI foi condenado a sete anos de prisão. No entanto, acabou por ser libertado em regime de liberdade condicional no próprio dia da sentença. A libertação ocorreu devido ao tempo que já tinha cumprido em prisão preventiva enquanto aguardava julgamento.",
+   "image": "https://cms.therecord.media/uploads/Screenshot_2026_11_24_at_08_46_37_19fb62f1fe.png",
+   "points": [
+    "O hacker da Rockstar Games foi condenado a sete anos de prisão.",
+    "O criminoso divulgou imagens não autorizadas do jogo Grand Theft Auto VI.",
+    "Foi libertado no mesmo dia devido ao tempo de pena já cumprido."
+   ],
+   "title_original": "‘Grand Theft Auto VI’ hacker sentenced to seven years, released the same day",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Ilustra o desfecho judicial de um dos maiores ataques de violação de dados na indústria de jogos.",
+   "todo": ""
   },
   {
    "id": "453252f9d2559d7e",
@@ -13701,52 +13745,6 @@
    "enriched": true,
    "why": "Permite que atacantes roubem segredos sensíveis e credenciais de nuvem diretamente de estações de trabalho de programadores.",
    "todo": "Verifique se utilizou as versões afetadas (1.26.1 ou 1.26.2) do pacote e revogue imediatamente quaisquer credenciais ou tokens expostos."
-  },
-  {
-   "id": "57cf485fa9212e04",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/dizigom-illegal-streaming-service-with-21m-monthly-visits-shuts-down/",
-   "published": "2026-11-18T11:50:25+00:00",
-   "title": "Dizigom illegal streaming service with 21M monthly visits shuts down",
-   "summary": "A Aliança para a Criatividade e o Entretenimento encerrou o Dizigom, um dos maiores sites de pirataria na Turquia. O encerramento ocorreu após um acordo de resolução amigável estabelecido com os operadores da plataforma. A página contava com milhões de visitas mensais em ambiente digital. Esta ação visa combater a distribuição ilegal de conteúdos.",
-   "image": null,
-   "points": [
-    "Quem: A Alliance for Creativity and Entertainment e operadores do site.",
-    "O quê: Encerramento definitivo do serviço de streaming ilegal Dizigom.",
-    "Como: Através de um acordo de resolução negociado com os responsáveis.",
-    "Impacto: Fim de uma plataforma com cerca de 21 milhões de visitas mensais."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Reduz significativamente a disponibilidade de grandes redes de pirataria online na região.",
-   "todo": ""
-  },
-  {
-   "id": "787f32d48daf3d01",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/russian-star-blizzard-cloud-data/",
-   "published": "2026-11-18T11:45:00+00:00",
-   "title": "Russian Espionage Actor Star Blizzard Focuses on Cloud Identities for Mass Data Theft",
-   "summary": "A equipa de análise da Google divulgou um novo relatório sobre o grupo de espionagem Star Blizzard, também conhecido como Cold Relic. A investigação destaca a tendência crescente do grupo em visar ambientes na nuvem. O objetivo principal passa por roubar dados sensíveis e preparar futuras operações maliciosas. Esta evolução demonstra uma adaptação das táticas do grupo para infraestruturas modernas.",
-   "image": null,
-   "points": [
-    "Quem: O grupo de espionagem russa Star Blizzard (Cold Relic).",
-    "O quê: Foco reforçado na exploração de identidades e ambientes na nuvem.",
-    "Como: Através de campanhas direcionadas para roubo de dados em massa.",
-    "Impacto: Facilita ataques futuros e o acesso não autorizado a infraestruturas."
-   ],
-   "title_original": null,
-   "category": "Ataque/APT",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como os grupos de ameaças estatais estão a migrar o seu foco para ambientes em nuvem para maximizar o roubo de dados.",
-   "todo": "Reforce a autenticação multifator (MFA) em todas as contas de serviços em nuvem e monitorize acessos suspeitos."
   }
  ]
 }

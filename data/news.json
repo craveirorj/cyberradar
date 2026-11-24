@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T04:57:29.329816+00:00",
+ "updated": "2026-11-24T05:08:21.032931+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -129,7 +129,7 @@
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 9
+   "added": 8
   },
   {
    "source": "Schneier on Security",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -318,6 +318,29 @@
   ]
  },
  "items": [
+  {
+   "id": "5d936f899015cf8f",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/24/stalwart-microsoft-exchange-replacement/",
+   "published": "2026-11-24T05:00:26+00:00",
+   "title": "Stalwart: Substituição open-source para o Microsoft Exchange",
+   "summary": "O servidor de correio open-source Stalwart lançou a versão 1.2.0, que introduz suporte para protocolos nativos do Microsoft Exchange. Esta atualização permite que clientes como o Outlook e o Apple Mail se liguem ao servidor para gerir e-mail, calendários e contactos. A funcionalidade está disponível na edição gratuita Community, sob licença AGPL. É uma alternativa para organizações que procuram substituir o Exchange.",
+   "image": null,
+   "points": [
+    "Suporte para protocolos MAPI, EWS e ActiveSync.",
+    "Compatível com clientes Outlook e Apple Mail.",
+    "Edição gratuita disponível sob licença AGPL.",
+    "Centraliza e-mail, tarefas e calendários."
+   ],
+   "title_original": "Stalwart: Open-source Microsoft Exchange replacement",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Oferece uma alternativa de código aberto para empresas que dependem do ecossistema Exchange.",
+   "todo": "Avalie a compatibilidade dos seus clientes de e-mail antes de migrar e garanta que a equipa técnica domina a gestão de servidores open-source."
+  },
   {
    "id": "f31f66f6df8f5c30",
    "source": "AWS Security Blog",
@@ -13727,29 +13750,6 @@
    "enriched": true,
    "why": "Expõe sistemas estatais críticos a ataques persistentes devido à utilização prolongada de tecnologia obsoleta.",
    "todo": "Modernize as infraestruturas tecnológicas legadas e unifique a gestão de segurança entre diferentes camadas de sistemas."
-  },
-  {
-   "id": "88a05ccd26cbaca9",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203387/hacking/65-characters-to-rce-inside-the-java4shell-vulnerability.html",
-   "published": "2026-11-18T10:45:57+00:00",
-   "title": "65 Characters to RCE: Inside the Java4Shell Vulnerability",
-   "summary": "Investigadores da Calif revelaram uma falha crítica de corrupção de memória no descodificador Base64 do OpenJDK, identificada como CVE-2026-114938. A vulnerabilidade afeta múltiplos sistemas empresariais populares e plataformas em nuvem que utilizam o Java. Uma única sequência de caracteres malformada com um comprimento específico pode desencadear a execução remota de código sem autenticação. As correções já foram disponibilizadas pelos fornecedores.",
-   "image": "https://i0.wp.com/securityaffairs.com/wp-content/uploads/2026/11/image-46.png?resize=900%2C470&#038;ssl=1",
-   "points": [
-    "Quem: Investigadores da Calif e utilizadores do ecossistema OpenJDK.",
-    "O quê: Divulgação da vulnerabilidade Java4Shell (CVE-2026-114938).",
-    "Como: Exploitation através de uma string Base64 malformada de 65 carateres.",
-    "Impacto: Permite a execução remota de código em servidores e sistemas cloud."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Abre portas à execução remota de código em milhões de servidores e aplicações empresariais baseadas em Java.",
-   "todo": "Atualize imediatamente as suas instalações e runtimes OpenJDK para as versões corrigidas."
   }
  ]
 }

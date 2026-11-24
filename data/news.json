@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T17:06:17.326016+00:00",
+ "updated": "2026-11-24T17:24:58.259188+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -74,7 +74,7 @@
   {
    "source": "MS-ISAC (CIS)",
    "ok": true,
-   "added": 8
+   "added": 6
   },
   {
    "source": "BleepingComputer",
@@ -89,7 +89,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 20
+   "added": 21
   },
   {
    "source": "SecurityWeek",
@@ -189,7 +189,7 @@
   {
    "source": "CrowdStrike Blog",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "SentinelLabs",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 9
+   "added": 8
   },
   {
    "source": "Help Net Security",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 12
+   "added": 11
   },
   {
    "source": "ACSC Austrália",
@@ -311,7 +311,7 @@
   "provider": "gemini",
   "done": 0,
   "pending": 392,
-  "unenriched": 275,
+  "unenriched": 277,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,57 @@
   ]
  },
  "items": [
+  {
+   "id": "f0ed0fdc40d96a21",
+   "source": "CrowdStrike Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-2026-gartner-mq-siem/",
+   "published": "2026-11-24T17:21:38.699686+00:00",
+   "title": "CrowdStrike Is Building the Engine of the Agentic SOC with Falcon Next-Gen SIEM",
+   "summary": "",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": ""
+  },
+  {
+   "id": "cbf383c5a42e1074",
+   "source": "CrowdStrike Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.crowdstrike.com/en-us/blog/reprioritizing-automated-leads-crowdstrike-signal/",
+   "published": "2026-11-24T17:21:38.699594+00:00",
+   "title": "Reprioritizing Automated Leads with CrowdStrike Signal",
+   "summary": "",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": ""
+  },
+  {
+   "id": "900fce837958a210",
+   "source": "Malwarebytes Labs",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.malwarebytes.com/blog/ai/2026/11/a-bot-tested-an-aws-key-within-8-seconds-of-exposure",
+   "published": "2026-11-24T17:08:51+00:00",
+   "title": "A bot tested an AWS key within 8 seconds of exposure",
+   "summary": "If you accidentally publish a cloud access key, a bot could find it before you have time to take it down.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": ".kadence-column492445_8da46d-6f > .kt-inside-inner-col{padding-top:20px;padding-right:20px;padding-bottom:10px;padding-left:20px;}.kadence-column492445_8da46d-6f > .kt-inside-inner-col{column-gap:var(--global-kb-gap-sm, 1rem);}.kadence-column492445_8da46d-6f > .kt-inside-inner-col{flex-direction:column;}.kadence-column492445_8da46d-6f > .kt-inside-inner-col > .aligncenter{width:100%;}.kadence-column492445_8da46d-6f > .kt-inside-inner-col{background-color:rgba(255, 229, 229, 0.83);}.kadence-column492445_8da46d-6f > .kt-inside-inner-col:before{opacity:0.3;}.kadence-column492445_8da46d-6f{position:relative;}@media all and (max-width: 1024px){.kadence-column492445_8da46d-6f > .kt-inside-inner-col{flex-direction:column;justify-content:center;}}@media all and (max-width: 767px){.kadence-column492445_8da46d-6f > .kt-inside-inner-col{flex-direction:column;justify-content:center;}} In this article A bot tested an AWS key just 7.86 seconds after researchers published it Attackers used up about $60 in prepaid OpenAI and Anthropic credit If you accidentally publish a key, revoke it and check your account for unexpected usage and charges Eight seconds is barely enough time to notice a mistake, let alone fix it. But researchers at Stony Brook University found that it was enough time for a bot to test a cloud access key they’d deliberately left inside a publicly available software package. The fastest observed use came just 7.86 seconds after publication. You don’t need a company cloud account to have a key worth stealing. If you’ve created an API key for an AI service and used it in an app or script, someone who gets hold of it can run up charges on your account. OpenAI warns that they could also use up your quote and interrupt your service. To see who was collecting those secrets, B"
+  },
   {
    "id": "f6e8b2ad0e789497",
    "source": "The Register Security",
@@ -335,6 +386,23 @@
    "translated": false,
    "enriched": false,
    "raw": "A Romanian hacker, armed with only an open source coding agent, a Chrome browser, and a Mac, tried multiple ways to break into a financial services firm, ultimately found an access key - luckily, it was a decoy - and carried out an entire (almost) attack in under six minutes. It’s a stark reminder that miscreants don’t need sophisticated malware - as in the Binance heist - or AI pen-testing tools like ARTEX to carry out intrusions into critical networks. Open source coding agents, and specifically OpenCode in this case, also work just fine. “What surprised me most was how little it took and the toolkit: a free coding agent, the curl that comes with every Mac and an ordinary Chrome, all from one laptop,” Jesta co-founder and CTO Lior Finkelshtein told The Register. “Until now I thought that we had more time until tools like OpenCode are used in offensive operations. This incident shows us that it's already in use in the field, and we will probably see more of that in the future.” Jesta is a Tel Aviv-based security startup that builds defensive tools to detect and stop autonomous AI attacks. In a report shared exclusively with The Register, Finkelshtein documented an attempted intrusion targeting a major financial services company that’s also a Jesta customer - the security shop declined to say which one. Jesta’s investigation into the incident determined that someone in Bucharest downloaded a free AI coding agent called OpenCode and pointed it at the financial services customer on November 16 at 4:24:57 a.m. ET. 'Nothing in OpenCode was built for hacking' OpenCode is an open source coding agent that lets users connect to more than 200 model providers or local models, including Anthropic’s Claude models, OpenAI’s GPTs, Google’s Gemini, DeepSeek, and Z.ai’s GLM. Jesta does"
+  },
+  {
+   "id": "9e4440d5c4e6b9e7",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/produto-e-review/motorola-lanca-edge-70-neo-com-bateria-de-7000-mah-confira-especificacoes/",
+   "published": "2026-11-24T17:00:00+00:00",
+   "title": "Motorola lança Edge 70 Neo com bateria de 7.000 mAh; confira especificações",
+   "summary": "Motorola Edge 70 Neo possui certificação IP64 contra água e poeira",
+   "image": "https://www.estadao.com.br/resizer/v2/W3ZBYBKW2BD3RIGQXH3RCQABRY.jpg?quality=80&auth=c98858fa5f4b78de84f6441bc3d7635f5b908168ef80bd9430d1adf78653900f&width=710",
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "Após diversos rumores e vazamentos, a Motorola enfim anunciou a chegada do Motorola Edge 70 Neo , seu novo smartphone intermediário da série 70. O modelo traz um conjunto de especificações até bem competente, como uma câmera primária de 50 megapixels e uma bateria de 7.000 mAh. O grande destaque desse lançamento da Motorola é justamente essa bateria mais parruda, que se tornou tendência entre os aparelhos intermediários de diversas fabricantes. Esse modelo ostenta os 7.000 mAh e oferece capacidade suficiente para pelo menos dois dias de uso contínuo, além da compatibilidade com carregamento de 45W. No quesito das câmeras, o conjunto também não decepciona e a companhia entrega uma ilha traseira com sensor primário de 50 MP por meio do sensor Sony LYTIA 710 (f/1.8). Ao lado desse componente, foi inserido um pequeno sensor macro de dois megapixels para fotografar objetos muito próximos. A câmera frontal tem 32 MP para as selfies. Motorola Edge 70 Neo possui certificação IP64 contra água e poeira Foto: Motorola/Divulgação Tela, processador e disponibilidade As demais especificações do Motorola Edge 70 Neo ainda são interessantes, pois a companhia montou esse smartphone com uma tela bem grande de 6,8 polegadas . Esse display funciona por meio de um painel Extreme AMOLED na resolução de 2.772 x 1.272 pixels, com taxa de atualização de 144 Hz e brilho máximo de 5.200 nits. Já na parte mais interna, quem comanda todas as operações do celular é o Snapdragon 7s Gen 3 , uma plataforma lançada pela Qualcomm em meados de 2024 para smartphones intermediários. Para completar o trio dessas especificações, há opções únicas de 8 GB de memória e 128 GB de armazenamento, expansível até 1 TB via cartão microSD. O modelo da Motorola chega com Android 16 de fábrica e a companhia promete três "
   },
   {
    "id": "365b478affb4e96c",
@@ -13365,95 +13433,6 @@
    "enriched": true,
    "why": "Mostra como a velocidade na correção de falhas impulsionada por IA pode sobrecarregar e desestabilizar as infraestruturas tecnológicas.",
    "todo": "Planeie e teste as atualizações críticas com cuidado para evitar sobrecargas operacionais, mantendo o foco na segurança."
-  },
-  {
-   "id": "ede0adf4c578028e",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/",
-   "published": "2026-11-18T20:49:32+00:00",
-   "title": "Coinbase bloqueia 4,7 milhões de dólares em transferências para esquema de 'deepfake' de Elon Musk",
-   "summary": "A plataforma Coinbase conseguiu bloquear transferências de criptomoedas no valor de 4,7 milhões de dólares destinadas a burlões. Os criminosos utilizavam uma falsificação profunda gerada por inteligência artificial, simulando Elon Musk durante uma transmissão em direto da Tesla. Este esquema fraudulento de falsas ofertas atraiu mais de 500.000 visualizadores antes de ser travado.",
-   "image": null,
-   "points": [
-    "O quê: Bloqueio de 4,7 milhões de dólares em transferências de criptomoeda.",
-    "Como: Burla baseada num 'deepfake' de Elon Musk em direto na Tesla.",
-    "Impacto: Proteção de utilizadores contra esquemas massivos de roubo de fundos."
-   ],
-   "title_original": "Coinbase blocks $4.7 million in transfers to Elon Musk deepfake scam",
-   "category": "Phishing/Fraude",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia o perigo crescente dos 'deepfakes' em tempo real em grandes transmissões para enganar utilizadores e roubar criptomoedas.",
-   "todo": "Desconfie sempre de ofertas de criptomoedas em transmissões em direto, mesmo que envolvam figuras públicas conhecidas."
-  },
-  {
-   "id": "cebfa689962e40ae",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/cyber-risk/strike-graph-launches-integration-ai-to-automate-continuous-compliance-evidence-using-any-existing-tool",
-   "published": "2026-11-18T20:45:49+00:00",
-   "title": "Strike Graph lança integração com IA para automatizar evidências de conformidade contínua com qualquer ferramenta existente",
-   "summary": "A Strike Graph lançou uma nova solução de inteligência artificial agêntica desenhada para simplificar processos regulatórios. A tecnologia utiliza APIs para recolher provas de conformidade diretamente dos sistemas existentes. De seguida, aplica esses dados a mais de 30 frameworks de conformidade diferentes, evitando a duplicação de trabalho pelas equipas.",
-   "image": null,
-   "points": [
-    "O quê: Lançamento de solução de IA agêntica para automatizar a conformidade.",
-    "Como: Uso de APIs para recolher dados de sistemas e aplicá-los a várias frameworks.",
-    "Impacto: Eliminação de trabalho duplicado e simplificação na gestão de conformidade."
-   ],
-   "title_original": "Strike Graph Launches Integration AI to Automate Continuous Compliance Evidence Using Any Existing Tool",
-   "category": "Regulação",
-   "translated": true,
-   "enriched": true,
-   "why": "Ajuda as empresas a gerir a conformidade regulatória de forma mais eficiente através da automação por IA.",
-   "todo": "Considere soluções automatizadas para reduzir o esforço manual na recolha de evidências de conformidade nas ferramentas da empresa."
-  },
-  {
-   "id": "68db8fe19e005f1a",
-   "source": "CSO Online",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.csoonline.com/article/4250390/a-new-critical-java-hole-illustrates-the-enterprise-it-visibility-problem.html",
-   "published": "2026-11-18T20:39:16+00:00",
-   "title": "Uma nova falha crítica em Java ilustra o problema de visibilidade de TI nas empresas",
-   "summary": "Uma empresa de cibersegurança descobriu uma falha de segurança grave em Java, designada Java4Shell e registada como CVE-2026-114938, com uma pontuação de gravidade crítica. A vulnerabilidade afeta o descodificador Base64 do OpenJDK e permite que um atacante não autenticado leia memória heap, roube chaves privadas e execute código remoto. Dada a ubiquidade do Java nas empresas e a dificuldade dos CISO em mapear todas as instâncias, esta falha representa um risco elevado. O problema reside num erro no código otimizado ao processar dados binários, expondo vulnerabilidades semelhantes ao antigo Heartbleed.",
-   "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4250390-0-10098500-1795034372-shutterstock_1671261181.jpg?quality=50&strip=all",
-   "points": [
-    "O quê: Vulnerabilidade crítica de corrupção de memória em Java (CVE-2026-114938).",
-    "Quem e como: Afeta o OpenJDK Base64; atacantes sem autenticação podem roubar dados e executar código.",
-    "Impacto: Risco elevado para empresas devido à ampla utilização de Java e à falta de visibilidade total.",
-    "Severidade: Classificada com 9.2 (Crítica) no CVSS 4.0."
-   ],
-   "title_original": "A new critical Java hole illustrates the enterprise IT visibility problem",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Expõe como vulnerabilidades em componentes omnipresentes como o Java colocam dados e sistemas empresariais em risco severo devido à falta de inventário.",
-   "todo": "Mantenha um inventário rigoroso de todos os ativos Java na sua rede e aplique patches de segurança imediatos."
-  },
-  {
-   "id": "33f8f6aa43e26574",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/judge-signs-off-google-purchase-spirit-airlines-data",
-   "published": "2026-11-18T20:39:00+00:00",
-   "title": "Juiz aprova venda de dados da Spirit Airlines à Google",
-   "summary": "Um juiz federal de falências autorizou a aquisição dos dados da extinta Spirit Airlines por parte da Google, num negócio avaliado em 10 milhões de dólares. A gigante tecnológica concordou em implementar várias proteções de segurança na transação. A intenção da Google é utilizar estes dados recolhidos para alimentar os seus projetos futuros no âmbito da inteligência artificial.",
-   "image": "https://cms.therecord.media/uploads/spirit_airlines_pexels_ant_armada_5803bb2701.jpg",
-   "points": [
-    "O quê: Aprovada a venda de dados da Spirit Airlines à Google por 10 milhões de dólares.",
-    "Como: Decisão emitida por um juiz federal de falências com proteções acordadas.",
-    "Impacto: A Google adquire bases de dados para alimentar projetos de inteligência artificial."
-   ],
-   "title_original": "Judge signs off on sale of Spirit Airlines’ data to Google",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Ilustra como ativos de dados de empresas falidas são comercializados e integrados em iniciativas tecnológicas de IA.",
-   "todo": ""
   }
  ]
 }

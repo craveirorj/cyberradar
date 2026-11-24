@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T20:45:01.596968+00:00",
+ "updated": "2026-11-24T21:05:56.093970+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Hacker News",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 12,
-  "pending": 366,
-  "unenriched": 250,
+  "done": 24,
+  "pending": 346,
+  "unenriched": 229,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,57 @@
   ]
  },
  "items": [
+  {
+   "id": "1e590e449d20ac03",
+   "source": "HackRead",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://hackread.com/researchers-take-over-5-us-treasury-subdomains/",
+   "published": "2026-11-24T20:53:59+00:00",
+   "title": "Researchers Take Over Five US Treasury Subdomains for About $3 Each",
+   "summary": "Old DNS records let Intruder researchers take over five US Treasury subdomains via reassigned AWS IP addresses. No government data theft was reported.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "Old DNS records let Intruder researchers take over five US Treasury subdomains via reassigned AWS IP addresses. No government data theft was reported."
+  },
+  {
+   "id": "2f99e3ac2673fbf0",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/mycolorado-app-down-data-breach",
+   "published": "2026-11-24T20:52:00+00:00",
+   "title": "Colorado says cyberattack took down myColorado app, warns 150,000 had data stolen",
+   "summary": "Cybercriminals likely stole data from 150,000 users of myColorado, which residents typically use for digital identification, document storage and accessing state government services.",
+   "image": "https://cms.therecord.media/uploads/my_colorado_app_fb8214e64c.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "Cybercriminals likely stole data from 150,000 users of myColorado, which residents typically use for digital identification, document storage and accessing state government services."
+  },
+  {
+   "id": "0a831bdb4e0f14f4",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203900/data-breach/eu-academy-users-names-and-emails-exposed-in-eu-commission-hack.html",
+   "published": "2026-11-24T20:29:25+00:00",
+   "title": "EU Academy Users’ Names and Emails Exposed in EU Commission Hack",
+   "summary": "The EU Commission confirms an AI-powered cyberattack leaked EU Academy users’ names and emails. China-backed threat actors are suspected. The European Commission has confirmed that the cyberattack it disclosed last week exposed personal data. The European Commission (EC) confirmed that the cyberattack exposed personal information. When the attack was discovered, several applications were temporarily shut […]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "The EU Commission confirms an AI-powered cyberattack leaked EU Academy users’ names and emails. China-backed threat actors are suspected. The European Commission has confirmed that the cyberattack it disclosed last week exposed personal data. The European Commission (EC) confirmed that the cyberattack exposed personal information. When the attack was discovered, several applications were temporarily shut down. At the time, the Commission said it had found no evidence that staff data had been compromised. EU cybersecurity experts have still not confirmed that any staff data was stolen, but the attack affected another group of users. On Monday, Commission spokesperson Thomas Regnier told reporters that the investigation had uncovered a data breach involving EU Academy. The platform offers online courses about EU policies to people outside the Commission. According to Euronews, it also provides professional training and specialised learning opportunities for young people. What was taken is limited so far, but the picture isn’t final. Compromised information includes names and email addresses of EU Academy users. Access to the platform is suspended, and the European Data Protection Supervisor has been notified. “The Commission has confirmed a leak of names and email addresses and is warning users of possible follow-ups from the attacker, such as phishing campaigns based on their personal data.” Euronews reports . “That is the first major consequence of the incident. For other IT systems, EU cyber experts have not confirmed data theft affecting Commission staff, though several internal apps were taken offline as a precaution and some remain unavailable.” Regnier said the scale of the leak is still under investigation, so the Commission posted one general message for everyone"
+  },
   {
    "id": "0bc0f9692115f3dd",
    "source": "BleepingComputer",
@@ -480,14 +531,19 @@
    "link": "https://tek.sapo.pt/how-to/artigos/vai-receber-visitas-em-casa-prepare-o-wi-fi-e-crie-um-codigo-qr-para-ninguem-ter-de-pedir-a-palavra-passe/",
    "published": "2026-11-24T18:39:08+00:00",
    "title": "Vai receber visitas em casa? Prepare o Wi-Fi e crie um código QR para ninguém ter de pedir a palavra-passe",
-   "summary": "Vai receber convidados? Saiba como melhorar a cobertura, ativar uma rede separada e partilhar o acesso com um código QR são ajustes rápidos que evitam lentidão, riscos de segurança e a eterna pergunta: \"qual é a password?\".",
+   "summary": "Para receber visitas em casa de forma prática, é aconselhável preparar uma rede de Wi-Fi separada e melhorar a cobertura. Esta medida evita lentidão na rede principal e reduz riscos de segurança. Além disso, a partilha de acesso através de um código QR elimina a necessidade de pedir a palavra-passe verbalmente.",
    "image": null,
-   "points": [],
+   "points": [
+    "Melhorar a cobertura e criar rede Wi-Fi separada para visitas.",
+    "Utilizar um código QR para partilha rápida de acesso.",
+    "Evitar riscos de segurança e lentidão na rede principal."
+   ],
    "title_original": null,
    "category": "Geral",
    "translated": false,
-   "enriched": false,
-   "raw": "Vai receber convidados? Saiba como melhorar a cobertura, ativar uma rede separada e partilhar o acesso com um código QR são ajustes rápidos que evitam lentidão, riscos de segurança e a eterna pergunta: \"qual é a password?\"."
+   "enriched": true,
+   "why": "Permite receber convidados em casa com maior conveniência e sem comprometer a segurança da rede principal.",
+   "todo": "Configure uma rede de convidados isolada no seu router e crie um código QR para acesso rápido."
   },
   {
    "id": "3f46f37092857247",
@@ -496,15 +552,20 @@
    "lang": "en",
    "link": "https://aws.amazon.com/blogs/security/aws-completed-its-second-iso-iec-420012023-surveillance-audit/",
    "published": "2026-11-24T18:32:21+00:00",
-   "title": "AWS completed its second ISO/IEC 42001:2023 surveillance audit",
-   "summary": "In November 2024, Amazon Web Services (AWS) was the first major cloud service provider to announce the ISO/IEC 42001 accredited certification for AI services, covering Amazon Bedrock, Amazon Q Business, Amazon Textract, and Amazon Transcribe. In November 2026, AWS successfully completed its second surveillance audit for ISO 42001:2023, Artificial Intelligence Management System (AIMS), with no […]",
+   "title": "AWS concluiu a sua segunda auditoria de vigilância da norma ISO/IEC 42001:2023",
+   "summary": "A Amazon Web Services concluiu com sucesso a segunda auditoria de vigilância para a certificação do Sistema de Gestão de Inteligência Artificial. O processo decorreu sem quaisquer não-conformidades detetadas pelos auditores independentes. A certificação abrange agora um novo serviço denominado AWS DevOps Agent, reforçando o compromisso com práticas de IA responsáveis.",
    "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/23/Basit-Janjua.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A AWS concluiu a segunda auditoria de vigilância da norma ISO/IEC 42001:2023.",
+    "A auditoria ao Sistema de Gestão de IA não registou quaisquer descobertas ou falhas.",
+    "O novo serviço AWS DevOps Agent foi integrado no programa de certificação."
+   ],
+   "title_original": "AWS completed its second ISO/IEC 42001:2023 surveillance audit",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "In November 2024, Amazon Web Services (AWS) was the first major cloud service provider to announce the ISO/IEC 42001 accredited certification for AI services, covering Amazon Bedrock , Amazon Q Business , Amazon Textract , and Amazon Transcribe . In November 2026, AWS successfully completed its second surveillance audit for ISO 42001:2023 , Artificial Intelligence Management System (AIMS), with no findings and added AWS DevOps Agent as a new service now covered under its ISO 42001:2023 certification program. This demonstrates the continuous commitment by AWS to responsible AI practices. With this independent validation, our customers can gain assurances on our commitment to responsible AI that enables customers to build and operate AI applications responsibly using AWS services. For a full list of AWS services that are certified under ISO and CSA STAR, see the AWS ISO and CSA STAR Certified page. Customers can also access the certifications through the AWS Management Console for AWS Artifact. If you have questions about this post, contact AWS Support or start a new thread on AWS re:Post . Basit Janjua Basit is a Senior Security Industry Specialist at AWS. He leads the AWS assurance delivery strategy for security assurance audits and engagements across the globe. Basit has nearly 20 years of experience in information security engineering and assurance. He holds a Bachelor’s degree in Computer Science and a Master’s degree in Telecommunications, along with professional certifications including CISSP and CCSP. Shalini Mishra Shalini is a Compliance Program Manager at AWS. She has over 5 years of experience leading end-to-end compliance programs across ISO, SOC, and cloud security frameworks, with deep expertise in third-party risk management and enterprise governance, driv"
+   "translated": true,
+   "enriched": true,
+   "why": "Garante aos clientes que os serviços de inteligência artificial da plataforma seguem normas rigorosas de gestão e responsabilidade.",
+   "todo": "Consulte a consola de gestão da AWS para verificar os detalhes das certificações de segurança e conformidade."
   },
   {
    "id": "cb0d7372f9a0d9c6",
@@ -513,15 +574,20 @@
    "lang": "en",
    "link": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/",
    "published": "2026-11-24T18:02:59+00:00",
-   "title": "UK warns AI-driven cyberattacks are exposing years of weak security",
-   "summary": "The British cyber agency says that \"building strong foundations has never mattered more\" as AI hacking tools rely on exploiting simple security flaws.",
+   "title": "Reino Unido alerta que ciberataques impulsionados por IA expõem anos de segurança fraca",
+   "summary": "A agência cibernética britânica emitiu um aviso sobre a forma como as ferramentas de pirataria baseadas em inteligência artificial estão a aproveitar falhas de segurança simples. A situação demonstra que muitos sistemas arrastam vulnerabilidades antigas devido a bases débeis. Os responsáveis sublinham que a construção de fundações sólidas em cibersegurança nunca foi tão urgente.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Ferramentas de hacking baseadas em IA exploram falhas de segurança simples.",
+    "A agência britânica alerta que existem anos de segurança fraca por resolver.",
+    "Construir bases fortes de cibersegurança tornou-se uma prioridade essencial."
+   ],
+   "title_original": "UK warns AI-driven cyberattacks are exposing years of weak security",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "The British cyber agency says that \"building strong foundations has never mattered more\" as AI hacking tools rely on exploiting simple security flaws."
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que a adoção de IA por atacantes agrava o risco de falhas simples que persistem há anos nas organizações.",
+   "todo": "Reveja as fundações de segurança da sua infraestrutura e corrija falhas básicas antes que sejam exploradas por IA."
   },
   {
    "id": "d6fa980fc1acd813",
@@ -1598,15 +1664,20 @@
    "lang": "en",
    "link": "https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/",
    "published": "2026-11-24T13:34:23+00:00",
-   "title": "New Shirudo tool uses AI to shield unpatched Linux systems from exploits",
-   "summary": "OpenAI and Cisco launched an open-source Linux security tool named Shirudo that deploys temporary runtime protections to block vulnerability exploitation while administrators prepare and roll out patches, without restarting services. [...]",
+   "title": "Nova ferramenta Shirudo usa IA para proteger sistemas Linux não corrigidos contra explorações",
+   "summary": "A OpenAI e a Cisco lançaram conjuntamente uma ferramenta de segurança de código aberto para sistemas Linux chamada Shirudo. Esta solução aplica proteções temporárias em tempo de execução para bloquear explorações de vulnerabilidades enquanto os administradores preparam os patches necessários. O sistema cumpre a sua função sem exigir o reinício dos serviços.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "OpenAI e Cisco lançaram a ferramenta de código aberto Shirudo para Linux.",
+    "A aplicação implementa proteções temporárias em tempo de execução contra exploits.",
+    "Permite bloquear ameaças sem necessidade de reiniciar os serviços afetados."
+   ],
+   "title_original": "New Shirudo tool uses AI to shield unpatched Linux systems from exploits",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "OpenAI and Cisco launched an open-source Linux security tool named Shirudo that deploys temporary runtime protections to block vulnerability exploitation while administrators prepare and roll out patches, without restarting services. [...]"
+   "translated": true,
+   "enriched": true,
+   "why": "Oferece uma defesa imediata a sistemas Linux vulneráveis enquanto se aguarda a aplicação dos patches oficiais.",
+   "todo": "Avalie a integração de ferramentas de proteção em tempo de execução para mitigar vulnerabilidades pendentes."
   },
   {
    "id": "a6ac99d677c50975",
@@ -1615,15 +1686,20 @@
    "lang": "en",
    "link": "https://www.securityweek.com/anthropic-expands-enterprise-safeguards-for-detecting-ai-misuse/",
    "published": "2026-11-24T13:30:23+00:00",
-   "title": "Anthropic Expands Enterprise Safeguards for Detecting AI Misuse",
-   "summary": "EFS helps zero-retention customers spot Claude misuse spread across many requests while keeping conversation data in their own cloud.",
+   "title": "Anthropic expande salvaguardas empresariais para detetar uso indevido de IA",
+   "summary": "A Anthropic atualizou as suas salvaguardas empresariais para ajudar clientes com políticas de retenção zero a identificar utilizações indevidas do modelo Claude. A funcionalidade permite detetar comportamentos abusivos distribuídos por múltiplos pedidos efetuados por utilizadores. Todo este processo decorre mantendo os dados de conversação estritamente na nuvem privada da própria organização.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Anthropic expandiu as salvaguardas empresariais contra o uso indevido de IA.",
+    "A ferramenta deteta abusos espalhados por vários pedidos no assistente Claude.",
+    "Os dados das conversas permanecem guardados no ambiente de nuvem do cliente."
+   ],
+   "title_original": "Anthropic Expands Enterprise Safeguards for Detecting AI Misuse",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "EFS helps zero-retention customers spot Claude misuse spread across many requests while keeping conversation data in their own cloud."
+   "translated": true,
+   "enriched": true,
+   "why": "Permite detetar abusos de IA em ambientes corporativos sem comprometer a privacidade e a retenção de dados.",
+   "todo": "Ative as opções de monitorização e salvaguarda empresarial disponibilizadas pelo seu fornecedor de serviços de IA."
   },
   {
    "id": "db22ce6bdf496569",
@@ -1632,15 +1708,20 @@
    "lang": "en",
    "link": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
    "published": "2026-11-24T13:28:26+00:00",
-   "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
-   "summary": "Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication. The critical vulnerability, tracked as CVE-2026-123903, is rated 9.8 out of 10.0 on the CVSS scoring system. It resides in the VMware Directory Service (\"vmdir\"). \"A malicious actor with",
+   "title": "VMware vCenter atingido por outra falha crítica de desvio de autenticação com pontuação 9.8 após exploração zero-day",
+   "summary": "A Broadcom lançou correções para resolver 23 vulnerabilidades que afetam vários produtos VMware, incluindo o ESX, vCenter e Workstation. Entre as falhas destaca-se uma vulnerabilidade crítica de desvio de autenticação no VMware Directory Service, registada como CVE-2026-123903. Esta falha obteve a pontuação máxima de 9.8 no sistema CVSS e já foi alvo de exploração.",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0zpQTclLnhVQHphFdBZZ_hrxhsZvA5G50sGBz5qq1iOg2B1YLu8rE5e_HM1GZOE24SNpwexwst80NTKP7_Wwexq7EzIl-I7ykIXCtTGQjeZhBGVVuAgzxac5JwaquTQuMNRstBFo8JzMDyqgsNbM_KtxGF3wHPBIM9GfaclNu0OTPlpF5YhNvqoKKytAY/s1600/vmware-exploit.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Broadcom corrigiu 23 vulnerabilidades em produtos como VMware vCenter e ESX.",
+    "A falha crítica CVE-2026-123903 permite o desvio de autenticação no vmdir.",
+    "A vulnerabilidade recebeu uma pontuação de gravidade de 9.8 e sofreu exploração prévia."
+   ],
+   "title_original": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication. The critical vulnerability, tracked as CVE-2026-123903, is rated 9.8 out of 10.0 on the CVSS scoring system. It resides in the VMware Directory Service (\"vmdir\"). \"A malicious actor with"
+   "translated": true,
+   "enriched": true,
+   "why": "Representa um risco severo de intrusão em ambientes virtuais devido à gravidade e exploração ativa da falha.",
+   "todo": "Atualize urgentemente os produtos VMware afetados com os patches de segurança disponibilizados pela Broadcom."
   },
   {
    "id": "0c4445d4ccaf59f7",
@@ -1649,15 +1730,20 @@
    "lang": "en",
    "link": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html",
    "published": "2026-11-24T13:28:21+00:00",
-   "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
-   "summary": "A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have rebranded and continued operations under a new name called INCEPTION, according to Okta's Threat Intelligence team. The cluster, dubbed O-UNC-053, is characterized by the use of voice phishing (aka vishing) attacks to trick targets into entering credentials in phishing pages and approving",
+   "title": "Okta associa grupo de vishing ligado aos ShinyHunters ao novo site de fuga de dados INCEPTION",
+   "summary": "A equipa de inteligência de ameaças da Okta concluiu que um cluster de cibercriminosos, associado anteriormente ao grupo de extorsão ShinyHunters, terá mudado de nome para INCEPTION. O grupo, identificado como O-UNC-053, utiliza ataques de phishing por voz para enganar as vítimas. O objetivo é levá-las a inserir credenciais em páginas falsas e a autorizar acessos.",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjete6dy8Fmd7sbjqKI5GKSySXkcnz4NF__irfVMBHzgRIDUnpGHtvRIbCywZYYsoKsnMdPhvanoXcnXbYvZpMjL2lL6d_F9a4ErEaI5rH_boPedH_ru2Ush9wonb8tYhGNVM6M_01DTue1THY7uGMbuKBJKNgMbrACkxHCGJiJylHWoxkkpCXNr2Z_CIdf/s1600/leaks.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O grupo O-UNC-053 ligado aos ShinyHunters opera agora sob o nome INCEPTION.",
+    "A atividade criminosa baseia-se em ataques de phishing por voz para roubo de credenciais.",
+    "A investigação foi conduzida e divulgada pela equipa de inteligência da Okta."
+   ],
+   "title_original": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
    "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": false,
-   "raw": "A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have rebranded and continued operations under a new name called INCEPTION, according to Okta's Threat Intelligence team. The cluster, dubbed O-UNC-053, is characterized by the use of voice phishing (aka vishing) attacks to trick targets into entering credentials in phishing pages and approving"
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia a reestruturação de grupos de cibercrime conhecidos e a persistência de táticas de engenharia social por voz.",
+   "todo": "Treine os colaboradores para reconhecerem tentativas de vishing e reforce os controlos de autenticação multifator."
   },
   {
    "id": "9cc82a24359da945",
@@ -1666,15 +1752,20 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/control-systems-codesys-security-advisory-av26-1199",
    "published": "2026-11-24T13:23:33+00:00",
-   "title": "[Control systems] Codesys security advisory (AV26-1199)",
-   "summary": "",
+   "title": "[Sistemas de controlo] Aviso de segurança Codesys (AV26-1199)",
+   "summary": "Foi emitido um alerta de segurança relativo a vulnerabilidades detetadas no software Codesys Visualization em versões anteriores à 4.11.0.0. O centro cibernético responsável apela aos utilizadores e administradores para consultarem os avisos oficiais. É fundamental aplicar as atualizações de segurança necessárias assim que fiquem disponíveis para mitigar riscos.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O alerta AV26-1199 reporta vulnerabilidades no Codesys Visualization.",
+    "As versões afetadas são anteriores à 4.11.0.0.",
+    "Recomenda-se a revisão dos advisories e a aplicação de atualizações."
+   ],
+   "title_original": "[Control systems] Codesys security advisory (AV26-1199)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1199 Date: November 24, 2026 As of November 24, 2026, Codesys is affected by vulnerabilities in the following product: Visualization Prior to 4.11.0.0 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. CODESYS Visualization - multiple vulnerabilities CODESYS Security Advisories"
+   "translated": true,
+   "enriched": true,
+   "why": "Protege sistemas de controlo industrial e de visualização contra explorações de falhas conhecidas.",
+   "todo": "Verifique a versão do Codesys Visualization em uso e atualize para a versão mais recente."
   },
   {
    "id": "8c5b93afc1b1388b",
@@ -1683,15 +1774,20 @@
    "lang": "en",
    "link": "https://www.rapid7.com/blog/post/ra-rapid7-analysis-vmware-vcenter-srp-authentication-bypass-to-root-cve-2026-123890",
    "published": "2026-11-24T13:01:25+00:00",
-   "title": "Rapid7 Analysis: VMware vCenter SRP Authentication Bypass to Root (CVE-2026-123890)",
-   "summary": "Overview An unauthenticated attacker can retrieve the session key for an in-progress administrator login to VMware vCenter's directory service. The attacker then uses that key to complete the login without knowing the account's password. The vulnerable interface is exposed through DCE/RPC on TCP port 2012. The issue, tracked as CVE-2026-123890 , combines a Secure Remote Password (SRP) session-key getter that is callable before authentication with an RPC context lookup that does not enforce ownership. The context handles use predictable UUIDv1 values. By creating two reference contexts around a",
+   "title": "Análise da Rapid7: Desvio de autenticação SRP para root no VMware vCenter (CVE-2026-123890)",
+   "summary": "Investigadores da Rapid7 analisaram uma falha crítica no VMware vCenter identificada como CVE-2026-123890. A vulnerabilidade permite que um atacante sem autenticação obtenha a chave de sessão de um início de sessão pendente de administrador. Com essa chave, o intruso consegue concluir o login sem conhecer a palavra-passe e executar comandos com privilégios de root.",
    "image": "https://images.contentstack.io/v3/assets/blte4f029e766e6b253/bltcbf09ec3af35e28e/6a15c63f08221ed5144dbf77/webinar-rapid7-logo.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A falha CVE-2026-123890 afeta o serviço de diretório do VMware vCenter.",
+    "Permite obter a chave de sessão SRP e efetuar login sem palavra-passe.",
+    "Um atacante consegue escalar privilégios até root e aceder à base de dados."
+   ],
+   "title_original": "Rapid7 Analysis: VMware vCenter SRP Authentication Bypass to Root (CVE-2026-123890)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Overview An unauthenticated attacker can retrieve the session key for an in-progress administrator login to VMware vCenter's directory service. The attacker then uses that key to complete the login without knowing the account's password. The vulnerable interface is exposed through DCE/RPC on TCP port 2012. The issue, tracked as CVE-2026-123890 , combines a Secure Remote Password (SRP) session-key getter that is callable before authentication with an RPC context lookup that does not enforce ownership. The context handles use predictable UUIDv1 values. By creating two reference contexts around a pending login, an attacker can narrow the hidden login handle to a short timestamp window and ask the server for its key. We reproduced the bypass against vCenter Server Appliance 8.0.2.00400, build 23929136 , running Photon OS 4.0, and leveraged the resulting administrator connection through to root command execution. SSH and Bash access were initially disabled. The attack recovered the directory database and its Security Token Service (STS) signing key, forged an administrator API session, and used appliance administration features to create an account and enable SSH. Neither the existing SSO password nor the root password was an input to that chain. Impact The attacker needs network access to TCP 2012 and the name of an existing SSO principal. Our PoC uses the default SSO administrator principal, administrator@vsphere.local ; deployments using a different SSO domain need the corresponding account name. The attack does not depend on an existing authenticated connection or an administrator being online. The attacker initiates the login attempt in order to recover its session key. The authenticated connection can call the directory database-copy interface. Its raw database contain"
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes externos obtenham controlo total sobre servidores VMware vCenter vulneráveis.",
+   "todo": "Aplique imediatamente as correções de segurança fornecidas pela VMware para mitigar a vulnerabilidade."
   },
   {
    "id": "17faeada10e472c5",
@@ -1700,15 +1796,20 @@
    "lang": "en",
    "link": "https://therecord.media/japan-mcdonalds-cyberattack-breach",
    "published": "2026-11-24T13:00:00+00:00",
-   "title": "McDonald’s Japan discloses breach exposing customer purchase and location data",
-   "summary": "McDonald’s Japan disclosed a cybersecurity breach that exposed customers’ purchase histories and mobile device location data.",
+   "title": "McDonald's do Japão revela violação que expôs dados de compras e localização de clientes",
+   "summary": "A cadeia de restauração rápida McDonald's no Japão sofreu um incidente de cibersegurança que resultou na exposição de dados sensíveis. Entre as informações comprometidas encontram-se o historial de compras dos clientes e dados de localização dos respetivos dispositivos móveis. A empresa divulgou publicamente a ocorrência da violação.",
    "image": "https://cms.therecord.media/uploads/Mc_Donalds_Japan_38f4a4b801.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O McDonald's do Japão divulgou um incidente de cibersegurança.",
+    "A violação expôs históricos de compras e dados de localização móvel dos clientes.",
+    "Os detalhes do impacto foram tornados públicos pela própria empresa."
+   ],
+   "title_original": "McDonald’s Japan discloses breach exposing customer purchase and location data",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "McDonald’s Japan disclosed a cybersecurity breach that exposed customers’ purchase histories and mobile device location data."
+   "translated": true,
+   "enriched": true,
+   "why": "Ilustra como incidentes de segurança em grandes marcas podem expor dados de geolocalização e hábitos de consumo.",
+   "todo": "Monitore as comunicações oficiais da empresa afetada e mantenha a vigilância sobre potenciais fraudes associadas."
   },
   {
    "id": "2f8cd8afa8069277",
@@ -1717,15 +1818,20 @@
    "lang": "en",
    "link": "https://www.infosecurity-magazine.com/news/chinese-ai-models-top/",
    "published": "2026-11-24T13:00:00+00:00",
-   "title": "Chinese Open-Weight AI Models Top Closed Ones at Vulnerability Discovery in New Test",
-   "summary": "In a vulnerability discovery test, DeepSeek outperformed five American closed-source AI models while costing far less to run",
+   "title": "Modelos de IA chineses de pesos abertos superam modelos fechados na descoberta de vulnerabilidades num novo teste",
+   "summary": "Um novo teste prático de descoberta de vulnerabilidades revelou que o modelo de inteligência artificial DeepSeek superou cinco modelos americanos de código fechado. Além de alcançar um desempenho superior na identificação de falhas, a solução chinesa destacou-se por apresentar custos de execução consideravelmente mais baixos.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O modelo DeepSeek superou concorrentes americanos em testes de descoberta de vulnerabilidades.",
+    "Trata-se de um modelo de inteligência artificial de pesos abertos.",
+    "A solução apresentou custos operacionais significativamente mais baixos que os rivais."
+   ],
+   "title_original": "Chinese Open-Weight AI Models Top Closed Ones at Vulnerability Discovery in New Test",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "In a vulnerability discovery test, DeepSeek outperformed five American closed-source AI models while costing far less to run"
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra a evolução e a competitividade crescente dos modelos de IA de código aberto na área da segurança.",
+   "todo": ""
   },
   {
    "id": "f328a95c846e7631",
@@ -1734,15 +1840,20 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/suse-linux-security-advisory-av26-1198",
    "published": "2026-11-24T12:59:47+00:00",
-   "title": "SUSE Linux security advisory (AV26-1198)",
-   "summary": "",
+   "title": "Aviso de segurança SUSE Linux (AV26-1198)",
+   "summary": "Foi publicado um alerta de segurança referente a falhas no produto NeuVector da SUSE em versões anteriores à 5.7.0, 5.5.6 e 5.6.5. O problema decorre de questões de segurança de memória no plano de dados que podem provocar o esgotamento de um buffer de pilha. Estas falhas podem ser exploradas para causar ataques de negação de serviço nas aplicações afetadas.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O aviso AV26-1198 reporta vulnerabilidades no SUSE NeuVector.",
+    "As versões anteriores a 5.7.0, 5.5.6 e 5.6.5 estão afetadas.",
+    "Problemas de segurança de memória no plano de dados podem causar negação de serviço."
+   ],
+   "title_original": "SUSE Linux security advisory (AV26-1198)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1198 Date: November 24, 2026 As of November 24, 2026, SUSE is affected by vulnerabilities in the following product: NeuVector Prior to 5.7.0 Prior to 5.5.6 Prior to 5.6.5 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. DLP/WAF rule inside every documented validation limit overflows a 2048-byte stack buffer in the enforcer dataplane Memory-safety issues in dataplane that could lead to DoS SUSE Update Advisories"
+   "translated": true,
+   "enriched": true,
+   "why": "Previne falhas de estabilidade e ataques de negação de serviço em ambientes de contentores protegidos pelo NeuVector.",
+   "todo": "Atualize o SUSE NeuVector para as versões corrigidas indicadas pelo fabricante."
   },
   {
    "id": "c8b424af74caa488",
@@ -1751,15 +1862,20 @@
    "lang": "en",
    "link": "https://hackread.com/when-threat-intelligence-works-against-soc-pattern/",
    "published": "2026-11-24T12:51:04+00:00",
-   "title": "When Threat Intelligence Works Against Your SOC: 3 Patterns to Watch For",
-   "summary": "Poor threat intelligence can slow your SOC. Learn how to fix three recurring problems: gaps in threat data, delayed updates and too many manual tasks.",
+   "title": "Quando a Inteligência de Ameaças Funciona Contra o Seu SOC: 3 Padrões a Vigiar",
+   "summary": "Uma inteligência de ameaças deficiente pode desacelerar o trabalho das equipas de operações de segurança (SOC). A análise identifica três problemas recorrentes que afetam a eficiência: lacunas nos dados de ameaças, atrasos nas atualizações e excesso de tarefas manuais. Corrigir estes aspetos ajuda a otimizar a resposta a incidentes nas organizações.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Problema: Falhas e atrasos nos dados de inteligência de ameaças desaceleram o SOC.",
+    "Causas: Lacunas de informação, atualizações tardias e excesso de processos manuais.",
+    "Impacto: Redução da eficiência operacional na deteção e resposta a ameaças."
+   ],
+   "title_original": "When Threat Intelligence Works Against Your SOC: 3 Patterns to Watch For",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Poor threat intelligence can slow your SOC. Learn how to fix three recurring problems: gaps in threat data, delayed updates and too many manual tasks."
+   "translated": true,
+   "enriched": true,
+   "why": "Melhorar a qualidade dos dados de ameaças evita a lentidão e o desgaste das equipas de segurança.",
+   "todo": "Reveja os fluxos de inteligência de ameaças, automatize tarefas repetitivas e garanta atualizações atempadas."
   },
   {
    "id": "44f44f128f5c4a28",
@@ -1768,15 +1884,21 @@
    "lang": "en",
    "link": "https://securityaffairs.com/203882/hacking/u-s-cisa-adds-n-able-mailassure-and-project-monai-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
    "published": "2026-11-24T12:48:09+00:00",
-   "title": "U.S. CISA adds N-able MailAssure and Project MONAI flaws to its Known Exploited Vulnerabilities catalog",
-   "summary": "U.S. Cybersecurity and Infrastructure Security Agency (CISA) adds N-able MailAssure and Project MONAI flaws to its Known Exploited Vulnerabilities catalog. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added N-able MailAssure and Project MONAI vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog: The first flaw is CVE-2026-133968 (CVSS score of 9.8), a critical path traversal vulnerability in Project […]",
+   "title": "EUA CISA adiciona falhas do N-able MailAssure e Project MONAI ao catálogo de vulnerabilidades exploradas",
+   "summary": "A agência norte-americana CISA adicionou duas falhas críticas ao seu catálogo de vulnerabilidades conhecidas exploradas. Uma delas afeta o Project MONAI e a outra o N-able MailAssure, sendo ambas alvo de exploração ativa. Estas falhas permitem ataques graves, incluindo execução remota de código e falsificação de solicitações do lado do servidor.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: A CISA adicionou falhas do Project MONAI e N-able MailAssure ao catálogo KEV.",
+    "O quê: Vulnerabilidades críticas de path traversal (CVE-2026-133968) e SSRF (CVE-2026-134624).",
+    "Como: Foram exploradas ativamente por atacantes, incluindo agentes de IA autónomos.",
+    "Impacto: Risco de acesso não autorizado e controlo de servidores afetados."
+   ],
+   "title_original": "U.S. CISA adds N-able MailAssure and Project MONAI flaws to its Known Exploited Vulnerabilities catalog",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "U.S. Cybersecurity and Infrastructure Security Agency (CISA) adds N-able MailAssure and Project MONAI flaws to its Known Exploited Vulnerabilities catalog. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added N-able MailAssure and Project MONAI vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog : CVE-2026-133968 Project MONAI MONAI Label Path Traversal Vulnerability CVE-2026-134624 N-able Mail Assure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability The first flaw is CVE-2026-133968 (CVSS score of 9.8), a critical path traversal vulnerability in Project MONAI’s MONAI Label. It affects versions up to 0.8.5 and allows unauthenticated remote attackers to access files outside the intended directory through the image parameter in the PUT /datastore/image endpoint. Successful exploitation can also lead to remote code execution, potentially allowing attackers to take control of the affected server. The vulnerability has been exploited in the wild since September 2026, before its public disclosure on November 20. Amazon Threat Intelligence linked the exploitation to a Chinese-nexus threat actor, with moderate confidence. According to Amazon, the attackers used autonomous AI agents running the open-source Cairn framework to discover and exploit the zero-day. The agents reportedly gained root access to a university server and later used the vulnerability to target another university network. Amazon has not identified a specific threat group. The vulnerability was fixed in MONAI Label 0.8.6. The second flaw is CVE-2026-134624 (CVSS score of 9.3), a critical Server-Side Request Forgery (SSRF) vulnerability in N-able Mail Assure (SpamExperts). The flaw affects versions earlier than 20261121.1943 and exists in the LDAP synchronisation "
+   "translated": true,
+   "enriched": true,
+   "why": "A inclusão no catálogo da CISA indica que estas falhas estão a ser ativamente exploradas por atacantes.",
+   "todo": "Atualize imediatamente o Project MONAI para a versão 0.8.6 e o N-able Mail Assure para a versão corrigida."
   },
   {
    "id": "887479947b9c5d54",
@@ -1785,15 +1907,21 @@
    "lang": "en",
    "link": "https://www.helpnetsecurity.com/2026/11/24/shinyhunters-inception-leak-site-okta/",
    "published": "2026-11-24T12:47:07+00:00",
-   "title": "ShinyHunters-linked crew resurfaces on new leak site",
-   "summary": "The ShinyHunters leak site went dark in September, but a crew that supplied it with victims seems to have found a new home under the Inception name, Okta’s threat intelligence team has discovered. Okta tracks the crew as O-UNC-053, a cluster that has been running social engineering and credential-harvesting campaigns since March 2026. Its targets include companies in technology, healthcare, biotech, financial services, insurance, entertainment, gaming, retail, transportation, hospitality and the legal sector. “While this … More →",
+   "title": "Grupo ligado ao ShinyHunters reaparece num novo site de fugas de informação",
+   "summary": "Uma equipa associada ao grupo ShinyHunters regressou à atividade num novo site de fugas de informação sob o nome Inception. A equipa, monitorizada pela Okta como O-UNC-053, realiza campanhas de engenharia social e roubo de credenciais desde março de 2026. Os alvos incluem múltiplos setores de atividade, desde a tecnologia até à saúde e serviços financeiros.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: O grupo O-UNC-053, ligado ao ShinyHunters, opera agora sob o nome Inception.",
+    "O quê: Criação de um novo site de fugas de dados após o encerramento do anterior.",
+    "Como: Utilização de campanhas de engenharia social e roubo de credenciais.",
+    "Impacto: Comprometimento de empresas em diversos setores como tecnologia, saúde e finanças."
+   ],
+   "title_original": "ShinyHunters-linked crew resurfaces on new leak site",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "The ShinyHunters leak site went dark in September, but a crew that supplied it with victims seems to have found a new home under the Inception name, Okta’s threat intelligence team has discovered. Okta tracks the crew as O-UNC-053, a cluster that has been running social engineering and credential-harvesting campaigns since March 2026. Its targets include companies in technology, healthcare, biotech, financial services, insurance, entertainment, gaming, retail, transportation, hospitality and the legal sector. “While this … More →"
+   "translated": true,
+   "enriched": true,
+   "why": "O ressurgimento de grupos de extorsão conhecidos sob novos nomes aumenta o risco contínuo para empresas de vários setores.",
+   "todo": "Reforce a formação em engenharia social para os colaboradores e implemente autenticação multifator robusta."
   },
   {
    "id": "6085ef54790f43b5",
@@ -1802,15 +1930,21 @@
    "lang": "en",
    "link": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
    "published": "2026-11-24T12:42:09+00:00",
-   "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
-   "summary": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that looked like it came from GitHub's official checkout tool. They even labeled it a",
+   "title": "Hackers encontraram forma de contornar o SHA Pinning do GitHub. Este webinar explica como fechar a falha",
+   "summary": "O SHA Pinning, técnica utilizada para fixar ações do GitHub a versões exatas de código e evitar ataques à cadeia de abastecimento, foi contornado por atacantes. Em março de 2026, hackers comprometeram o scanner de segurança Trivy ao introduzirem código malicioso disfarçado de ferramenta oficial. O incidente demonstra que as defesas tradicionais baseadas em versões fixas já não são infalíveis.",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYUhfLA6wixTr6AiVmOSa8uxO2mHxPqG7rHalDaUtYlOaTwUSIzi3JAP78cfEUhwwaoijNe8vJ0ZFiBqDmfrG9LVOzItxMxCYcTCbEc4f7W8iWgKSvzR6DrT0XtK_cM4eTKQ2Edvz-QG5P8iXF_GV_-k6CXMN_-D_QAJags-LpeuXmJ5C6DDz7mDRSBMY/s1600/git-actions.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Atacantes não especificados comprometeram a ferramenta Trivy.",
+    "O quê: Contorno da técnica de defesa SHA Pinning em ações do GitHub.",
+    "Como: Injeção de código malicioso mascarado como ferramenta oficial de checkout.",
+    "Impacto: Ameaça direta à segurança da cadeia de abastecimento de software."
+   ],
+   "title_original": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that looked like it came from GitHub's official checkout tool. They even labeled it a"
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que os mecanismos atuais de proteção da cadeia de abastecimento de software podem ser burlados por atacantes sofisticados.",
+   "todo": "Audite regularmente as dependências de código aberto e reveja as permissões e origens das ações utilizadas no GitHub."
   },
   {
    "id": "ca1277f0d6397260",
@@ -1819,15 +1953,21 @@
    "lang": "en",
    "link": "https://www.helpnetsecurity.com/2026/11/24/bedrock-data-agent-dlp/",
    "published": "2026-11-24T12:34:02+00:00",
-   "title": "Bedrock Data enhances AI agent governance with intent-aware DLP",
-   "summary": "Bedrock Data has announced that Agent DLP, its runtime data loss prevention for AI agents, now infers a user’s intent (the business purpose behind the task) and evaluates the agent’s behavior (the sum of its actions across every tool and LLM call) against that intent and the organization’s policy. By weighing both intent and behavior, Agent DLP lets employees keep working with AI agents while sensitive data stays protected. Agent DLP adds support for off-the-shelf … More →",
+   "title": "Bedrock Data melhora a governação de agentes de IA com DLP consciente da intenção",
+   "summary": "A Bedrock Data atualizou a sua solução de prevenção de perda de dados (DLP) em tempo de execução para agentes de IA, passando a avaliar a intenção do utilizador e o comportamento do agente. A ferramenta cruza o objetivo de negócio da tarefa com as ações executadas através de chamadas a modelos de linguagem. Esta abordagem permite manter a produtividade dos colaboradores ao mesmo tempo que protege dados sensíveis.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: A Bedrock Data lançou melhorias na sua ferramenta Agent DLP.",
+    "O quê: Controlo de segurança que infere a intenção do utilizador e avalia o comportamento do agente de IA.",
+    "Como: Comparação das ações do agente face à política da organização e ao propósito empresarial.",
+    "Impacto: Proteção de dados sensíveis sem bloquear o uso de ferramentas de inteligência artificial."
+   ],
+   "title_original": "Bedrock Data enhances AI agent governance with intent-aware DLP",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "Bedrock Data has announced that Agent DLP, its runtime data loss prevention for AI agents, now infers a user’s intent (the business purpose behind the task) and evaluates the agent’s behavior (the sum of its actions across every tool and LLM call) against that intent and the organization’s policy. By weighing both intent and behavior, Agent DLP lets employees keep working with AI agents while sensitive data stays protected. Agent DLP adds support for off-the-shelf … More →"
+   "translated": true,
+   "enriched": true,
+   "why": "Equilibra a adoção empresarial de inteligência artificial com a estrita proteção de dados sensíveis.",
+   "todo": "Implemente soluções de DLP adaptadas a IA para monitorizar e restringir o acesso indevido a dados corporativos confidenciais."
   },
   {
    "id": "21c67f84759f6dc5",
@@ -1836,15 +1976,21 @@
    "lang": "en",
    "link": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
    "published": "2026-11-24T12:30:05+00:00",
-   "title": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
-   "summary": "The Cairn AI framework is proving to be a boon for defenders and attackers.",
+   "title": "Amazon diz que agentes de IA de hackers encontraram e exploraram zero-day com pouca intervenção humana",
+   "summary": "A Amazon revelou que agentes de IA autónomos descobriram e exploraram uma vulnerabilidade zero-day num servidor universitário com supervisão humana mínima. Utilizando o framework de testes de penetração Cairn, os agentes receberam apenas instruções básicas e o objetivo de obter acesso root. Este caso evidencia que as operações ofensivas automatizadas por IA já são uma realidade veloz e persistente.",
    "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/cairn-banner.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Atacantes utilizaram agentes de IA baseados no framework Cairn.",
+    "O quê: Descoberta e exploração autónoma de uma vulnerabilidade zero-day.",
+    "Como: Instruções simples dadas aos modelos para obter acesso shell num servidor.",
+    "Impacto: Demonstração da velocidade e perigosidade de ataques ofensivos automatizados por IA."
+   ],
+   "title_original": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Amazon said AI agents recently found and exploited a zero-day vulnerability with no human oversight beyond a simple instruction to get root access on an East Asian university server. The agents were running on Cairn, an open source AI penetration-testing framework. The hackers, who provided prompts in simplified Chinese and configured the model to the Chinese Standard Time zone, gave the agents a list of IP addresses and the goal: “obtain shell access.” In short order, the agents discovered a zero-day in an open source medical imaging AI application running on one of the target servers. The agents then exploited the vulnerability and gained full control of the system. “These findings show that agentic offensive operations are already happening, and defenders should prepare for the speed and persistence these tools enable,” Amazon said . Read full article Comments"
+   "translated": true,
+   "enriched": true,
+   "why": "Revela a evolução preocupante de ataques cibernéticos totalmente automatizados por inteligência artificial.",
+   "todo": "Acelere a aplicação de patches e utilize ferramentas de monitorização comportamental para detetar atividades anómalas rápidas."
   },
   {
    "id": "c717d04d5f559b69",
@@ -1853,15 +1999,21 @@
    "lang": "en",
    "link": "https://www.helpnetsecurity.com/2026/11/24/elastic-security-9-6-features/",
    "published": "2026-11-24T12:27:45+00:00",
-   "title": "Elastic puts AI agents to work on the SOC alert backlog",
-   "summary": "Elastic announced Elastic Security 9.6, which introduces AlertZero, a set of AI agents that triage alerts, hunt threats and tune detection rules in the background. The release also adds ransomware protection for Linux, expanded entity resolution and an expanded set of 143 detection rules covering AI agents and large language model platforms. AlertZero takes on the alert queue AlertZero organizes its agents, called Workers, into four teams known as Watches: triage, threat hunting, detection engineering … More →",
+   "title": "Elastic coloca agentes de IA a trabalhar no atraso de alertas do SOC",
+   "summary": "A Elastic lançou a versão Elastic Security 9.6, introduzindo o AlertZero, um conjunto de agentes de IA concebidos para realizar triagem de alertas, caça a ameaças e afinação de regras em segundo plano. Os agentes, organizados em equipas chamadas Workers, ajudam a reduzir a fila de pendentes das equipas de segurança. A atualização inclui também proteção contra ransomware para Linux e novas regras de deteção focadas em modelos de linguagem.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: A empresa Elastic atualizou a sua plataforma de segurança para a versão 9.6.",
+    "O quê: Introdução do AlertZero, agentes de IA para triagem de alertas e caça a ameaças.",
+    "Como: Organização de agentes em equipas especializadas que operam em segundo plano.",
+    "Impacto: Alívio da carga de trabalho e redução do volume de alertas pendentes no SOC."
+   ],
+   "title_original": "Elastic puts AI agents to work on the SOC alert backlog",
    "category": "Ransomware",
-   "translated": false,
-   "enriched": false,
-   "raw": "Elastic announced Elastic Security 9.6, which introduces AlertZero, a set of AI agents that triage alerts, hunt threats and tune detection rules in the background. The release also adds ransomware protection for Linux, expanded entity resolution and an expanded set of 143 detection rules covering AI agents and large language model platforms. AlertZero takes on the alert queue AlertZero organizes its agents, called Workers, into four teams known as Watches: triage, threat hunting, detection engineering … More →"
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda a mitigar a fadiga de alertas e a escassez de recursos humanos nas equipas de cibersegurança.",
+   "todo": "Considere a adoção de ferramentas de automação baseadas em IA para otimizar a triagem de alertas rotineiros."
   },
   {
    "id": "f8f388caca53544a",
@@ -1870,15 +2022,21 @@
    "lang": "en",
    "link": "https://www.malwarebytes.com/blog/news/2026/11/new-windows-security-check-could-let-apps-block-access",
    "published": "2026-11-24T12:22:17+00:00",
-   "title": "New Windows security check could let apps block access",
-   "summary": "Windows baseline protection will show which of eight safeguards your PC is missing and help you turn them on.",
+   "title": "Novo controlo de segurança do Windows poderá permitir que aplicações bloqueiem o acesso",
+   "summary": "A Microsoft planeia lançar em 2027 a proteção de base do Windows, reunindo oito salvaguardas de segurança num único estado verificável. A funcionalidade visa alertar os utilizadores sobre proteções em falta e permitir a ativação de salvaguardas com um clique. Em simultâneo, as aplicações poderão utilizar este estado para avisar utilizadores, limitar funcionalidades ou bloquear o acesso caso o computador não cumpra os requisitos.",
    "image": "https://www.malwarebytes.com/wp-content/uploads/sites/2/2026/11/new_settings_menu.png",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: A Microsoft anunciou a futura proteção de base do Windows para 2027.",
+    "O quê: Centralização de oito salvaguardas de segurança num único painel de estado.",
+    "Como: Verificação automática das proteções ativadas e possibilidade de ativação simplificada.",
+    "Impacto: Permite que aplicações bloqueiem o acesso a dispositivos se faltarem medidas de segurança."
+   ],
+   "title_original": "New Windows security check could let apps block access",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": ".kadence-column492404_9b1ca1-64 > .kt-inside-inner-col{padding-top:20px;padding-right:20px;padding-bottom:10px;padding-left:20px;}.kadence-column492404_9b1ca1-64 > .kt-inside-inner-col{column-gap:var(--global-kb-gap-sm, 1rem);}.kadence-column492404_9b1ca1-64 > .kt-inside-inner-col{flex-direction:column;}.kadence-column492404_9b1ca1-64 > .kt-inside-inner-col > .aligncenter{width:100%;}.kadence-column492404_9b1ca1-64 > .kt-inside-inner-col{background-color:rgba(255, 229, 229, 0.83);}.kadence-column492404_9b1ca1-64 > .kt-inside-inner-col:before{opacity:0.3;}.kadence-column492404_9b1ca1-64{position:relative;}@media all and (max-width: 1024px){.kadence-column492404_9b1ca1-64 > .kt-inside-inner-col{flex-direction:column;justify-content:center;}}@media all and (max-width: 767px){.kadence-column492404_9b1ca1-64 > .kt-inside-inner-col{flex-direction:column;justify-content:center;}} In this article Microsoft plans to bring eight Windows security checks together in 2027 Windows baseline protection will flag missing safeguards and let you turn some on with one click Apps could use the result to warn you, limit features, or block access Microsoft announced plans to introduce Windows baseline protection , a feature that brings eight existing safeguards together into a single, verifiable security status. With the feature expected to become generally available in 2027, Microsoft wants to make a familiar Windows security problem less confusing. Your PC has a collection of built-in protections, but working out which ones are enabled and what to do when they aren’t can take some digging. Windows baseline protection will show you what’s missing and help you fix it. It will also give software developers a simpler way to check whether your computer meets their requirements and decide whether"
+   "translated": true,
+   "enriched": true,
+   "why": "Padroniza e simplifica a verificação da postura de segurança dos dispositivos com sistema operativo Windows.",
+   "todo": "Mantenha o sistema operativo atualizado e familiarize-se com as definições de segurança recomendadas pela Microsoft."
   },
   {
    "id": "ba152944e2e86ab6",
@@ -1887,15 +2045,21 @@
    "lang": "en",
    "link": "https://www.theregister.com/security/2026/11/24/crowdstrike-splashes-44b-on-zscaler-customers-brace-for-the-bill/5311877",
    "published": "2026-11-24T12:22:17+00:00",
-   "title": "CrowdStrike splashes $44B on Zscaler, customers brace for the bill",
-   "summary": "Record-breaking cybersecurity deal promises tighter integration, but sysadmins fear higher prices and vendor lock-in",
+   "title": "CrowdStrike gasta 44 mil milhões de dólares na Zscaler e clientes preparam-se para a fatura",
+   "summary": "A CrowdStrike acordou a compra da Zscaler por 43,9 mil milhões de dólares, naquela que será a maior aquisição de sempre no setor da cibersegurança. A transação combina a proteção de endpoints da plataforma Falcon com a segurança de rede zero-trust da Zscaler. Embora a empresa prometa uma plataforma unificada e novas capacidades para proteger agentes de IA, os clientes expressam preocupações com potenciais aumentos de preços e renovações mais caras.",
    "image": "https://image.theregister.com/?imageId=252462&width=800",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: A CrowdStrike concordou em adquirir a Zscaler por 43,9 mil milhões de dólares.",
+    "O quê: Fusão entre proteção de endpoints e tecnologia de segurança de rede zero-trust.",
+    "Como: Negócio totalmente em ações para criar uma plataforma integrada.",
+    "Impacto: Preocupação dos clientes quanto a aumentos de custos nas renovações de contratos."
+   ],
+   "title_original": "CrowdStrike splashes $44B on Zscaler, customers brace for the bill",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "CrowdStrike has agreed to buy Zscaler for $43.9 billion in what would be the biggest cybersecurity acquisition on record, and customers are already bracing for pricier renewals. The all-stock deal, announced on Monday, will see Zscaler shareholders receive 1.135 CrowdStrike shares for every share they own, representing a 34 percent premium on Friday's closing price. The transaction dwarfs even Google's $32 billion acquisition of cloud security upstart Wiz. Buying Zscaler gives CrowdStrike a sizeable foothold in the network security market, where it will be going up against the likes of Palo Alto Networks and Fortinet. The plan is to combine Falcon's endpoint protection capabilities with Zscaler's zero-trust network security technology, giving customers a single platform for securing devices and the connections between them. Naturally, there's an AI angle to the biggest cyber deal in history. CrowdStrike reckons owning both technologies will allow it to keep tabs on what AI agents are doing on corporate devices, where they're connecting, and what data they're getting their hands on. CrowdStrike CEO George Kurtz described the proposed combination as \"cybersecurity’s operating system.\" The acquisition also gives CrowdStrike's salespeople plenty to get excited about. Around 8,000 Zscaler customers don't currently buy CrowdStrike's wares, and the companies already have more than 2,000 customers in common. CrowdStrike reckons it can boost its annualized revenue by around $1 billion within 30 months of closing the deal by selling more products to the two companies' existing customers. Some of those customers, however, don't sound particularly keen on being cross-sold to. Over on Reddit's r/sysadmin subreddit, news of the purchase was met with a familiar set of concerns from IT"
+   "translated": true,
+   "enriched": true,
+   "why": "Redefine o mercado empresarial de cibersegurança ao unificar proteção de dispositivos e segurança de rede.",
+   "todo": "Avalie o impacto financeiro e contratual da fusão nas licenças e ferramentas de segurança atualmente utilizadas."
   },
   {
    "id": "70ffa0cfd81dd026",
@@ -1904,15 +2068,21 @@
    "lang": "en",
    "link": "https://www.securityweek.com/openai-cisco-unveil-open-source-tool-to-shield-unpatched-linux-systems/",
    "published": "2026-11-24T12:20:41+00:00",
-   "title": "OpenAI, Cisco Unveil Open Source Tool to Shield Unpatched Linux Systems",
-   "summary": "OpenAI and Cisco’s Shirudo uses AI-generated shields to block Linux exploits while patches are prepared, but it’s not yet production-ready.",
+   "title": "OpenAI e Cisco revelam ferramenta de código aberto para proteger sistemas Linux não corrigidos",
+   "summary": "A OpenAI e a Cisco apresentaram o Shirudo, uma ferramenta de código aberto que recorre a inteligência artificial para gerar escudos protetores capazes de bloquear exploits em sistemas Linux. O objetivo é mitigar vulnerabilidades enquanto as correções oficiais não são disponibilizadas. Contudo, a solução tecnológica ainda não se encontra pronta para ambientes de produção.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: OpenAI e Cisco desenvolveram conjuntamente a ferramenta Shirudo.",
+    "O quê: Solução baseada em IA para bloquear exploits em sistemas Linux.",
+    "Como: Criação de escudos protetores temporários antes da aplicação de patches.",
+    "Impacto: Oferece uma camada defensiva provisória para sistemas vulneráveis."
+   ],
+   "title_original": "OpenAI, Cisco Unveil Open Source Tool to Shield Unpatched Linux Systems",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "OpenAI and Cisco’s Shirudo uses AI-generated shields to block Linux exploits while patches are prepared, but it’s not yet production-ready."
+   "translated": true,
+   "enriched": true,
+   "why": "Oferece uma nova abordagem para proteger sistemas contra explorações enquanto se aguardam patches oficiais.",
+   "todo": "Acompanhe o desenvolvimento de ferramentas de mitigação temporária baseadas em IA para futura adoção em ambientes de teste."
   },
   {
    "id": "1f5f949117f5dc51",
@@ -2081,15 +2251,21 @@
    "lang": "en",
    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-02",
    "published": "2026-11-24T12:00:00+00:00",
-   "title": "Schneider Electric EcoStruxure Power Build Rapsody software",
-   "summary": "View CSAF Summary Schneider Electric is aware of a vulnerability in its EcoStruxure™ Power Build Rapsody product. The EcoStruxure™ Power Build Rapsody is used to enter or import the single line diagram, to get the extensive bill of material of your switchboard, including all devices, connection items, and mounting components. Failure to apply the remediations provided below may risk memory corruption, heap-based buffer overflow, and/or stack-based buffer overflow, which could result in local attackers being able to exploit these issues to potentially execute arbitrary code. The following versi",
+   "title": "Software EcoStruxure Power Build Rapsody da Schneider Electric",
+   "summary": "Foi detetada uma vulnerabilidade crítica de use-after-free no software EcoStruxure Power Build Rapsody da Schneider Electric, afetando múltiplas versões genéricas e regionais. A falha pode permitir a execução arbitrária de código local caso um atacante engane o utilizador para abrir um ficheiro SSD malicioso especialmente criado. A exploração bem-sucedida coloca em risco a integridade da memória e a estabilidade de sistemas em setores industriais e de energia.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: A Schneider Electric alertou para falhas no software EcoStruxure Power Build Rapsody.",
+    "O quê: Vulnerabilidade de tipo use-after-free catalogada como CVE-2026-119055.",
+    "Como: Atacantes locais precisam de enganar o utilizador para abrir um ficheiro SSD malicioso.",
+    "Impacto: Risco de corrupção de memória e execução de código arbitrário."
+   ],
+   "title_original": "Schneider Electric EcoStruxure Power Build Rapsody software",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "View CSAF Summary Schneider Electric is aware of a vulnerability in its EcoStruxure™ Power Build Rapsody product. The EcoStruxure™ Power Build Rapsody is used to enter or import the single line diagram, to get the extensive bill of material of your switchboard, including all devices, connection items, and mounting components. Failure to apply the remediations provided below may risk memory corruption, heap-based buffer overflow, and/or stack-based buffer overflow, which could result in local attackers being able to exploit these issues to potentially execute arbitrary code. The following versions of Schneider Electric EcoStruxure Power Build Rapsody software are affected: EcoStruxure Power Build Rapsody software vers:generic/<=2.9.1.0_FR, 2.9.12.0101_FR, vers:generic/<=2.8.5.0301_ESP, 2.9.5.0000_ESP, vers:generic/<=2.8.7.0101_PT, 2.9.7.0000_PT, vers:generic/<=2.8.8.0201_BEL(FR), 2.9.8.0000_BELFR, vers:generic/<=2.8.3.0201_BEL(EN), 2.9.3.0000_BELEN, vers:generic/<=2.8.4.0401_INT(EN), 2.9.4.0000_INTEN, vers:generic/<=2.8.6.0000_INT(FR), 2.9.6.0000_INTFR, vers:generic/<=2.8.2.0000_NL, 2.9.6.0000_NL (CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055) CVSS Vendor Equipment v3 5.3 Schneider Electric EcoStruxure Power Build Rapsody software 1 Vulnerability Use After Free Background Critical Infrastructure Sectors: Energy, Critical Manufacturing, Commercial Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: France Vulnerabilities CVE-2026-119055 A CWE- 416: Use After Free vulnerability exists that could cause arbitrary code execution when a local attacker could trick the end user to open a specially crafted malicious SSD file. Read More 8 Affected Products EcoStruxure"
+   "translated": true,
+   "enriched": true,
+   "why": "Protege infraestruturas críticas e sistemas industriais contra execução de código não autorizado.",
+   "todo": "Atualize o software EcoStruxure Power Build Rapsody para as versões corrigidas disponibilizadas pelo fabricante."
   },
   {
    "id": "153407077dbd1977",
@@ -2098,15 +2274,21 @@
    "lang": "en",
    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03",
    "published": "2026-11-24T12:00:00+00:00",
-   "title": "Danfoss AK-SM 8xxA Series",
-   "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code with webserver privileges. The following versions of Danfoss AK-SM 8xxA Series are affected: AK-SM8xxA <=5.4.0 (CVE-2026-129713) CVSS Vendor Equipment v3 9.8 Danfoss AK-SM8xxA 1 Vulnerability Stack-based Buffer Overflow Background Critical Infrastructure Sectors: Commercial Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Denmark Vulnerabilities CVE-2026-129713 A stack-based buffer overflow in an unauthenticated CGI handler of the Danfoss AK-SM 8xxA Ser",
+   "title": "Série Danfoss AK-SM 8xxA",
+   "summary": "Os controladores Danfoss AK-SM 8xxA (versões 5.4.0 e anteriores) contêm uma vulnerabilidade crítica de estouro de buffer baseado em pilha num manipulador CGI sem autenticação. Um atacante remoto pode enviar pedidos HTTP ou HTTPS POST maliciosos para causar corrupção de memória, reinicialização do servidor web e potencial execução de código com privilégios de servidor. A falha afeta infraestruturas comerciais a nível global e não requer autenticação para ser explorada.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: A Danfoss e a CISA alertaram para falhas nos controladores AK-SM 8xxA.",
+    "O quê: Vulnerabilidade crítica de estouro de buffer (CVE-2026-129713) com pontuação CVSS de 9.8.",
+    "Como: Atacantes remotos enviam pedidos HTTP/S POST manipulados sem necessidade de autenticação.",
+    "Impacto: Risco de corrupção de memória, reinicialização e execução de código no servidor web."
+   ],
+   "title_original": "Danfoss AK-SM 8xxA Series",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code with webserver privileges. The following versions of Danfoss AK-SM 8xxA Series are affected: AK-SM8xxA <=5.4.0 (CVE-2026-129713) CVSS Vendor Equipment v3 9.8 Danfoss AK-SM8xxA 1 Vulnerability Stack-based Buffer Overflow Background Critical Infrastructure Sectors: Commercial Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Denmark Vulnerabilities CVE-2026-129713 A stack-based buffer overflow in an unauthenticated CGI handler of the Danfoss AK-SM 8xxA Series controller allows remote attackers to send specially crafted HTTP/S POST requests, leading to memory corruption, webserver restart and hypothetically potential arbitrary code execution with webserver privileges. Authentication is not required to exploit this vulnerability. Read More 1 Affected Product Danfoss AK-SM8xxA <=5.4.0 Product Status: known_affected Remediations Mitigation This vulnerability will be addressed in an upcoming Danfoss AK-SM 800A Series software release (version 5.5.x). Mitigation In addition, Danfoss will remove the ability for users to disable Strict Mode in future software releases. Additional Metrics Relevant CWE: CWE-121 Stack-based Buffer Overflow CVSS Version Base Score Base Severity Vector String 3.1 9.8 CRITICAL CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H 4.0 9.3 CRITICAL CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N View CVE Details Acknowledgments Carlo Meijer of Midnight Blue reported CVE-2026-129713 to CISA. Recommended Practices CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities. Minimize network exposure for all control system devices and/or systems, ensuring they are"
+   "translated": true,
+   "enriched": true,
+   "why": "Evita o acesso remoto não autorizado e o controlo de controladores em instalações comerciais críticas.",
+   "todo": "Minimize a exposição de sistemas de controlo à internet e atualize o software para a versão 5.5.x assim que estiver disponível."
   },
   {
    "id": "0e0d7bdcc4e24a02",
@@ -13508,74 +13690,6 @@
    "enriched": true,
    "why": "Servidores web vulneráveis podem ser facilmente explorados por atacantes para assumirem o controlo dos sistemas.",
    "todo": "Aplique imediatamente as correções disponibilizadas pela F5 nos seus servidores NGINX."
-  },
-  {
-   "id": "0fc679bd70b9cd0a",
-   "source": "IT Security",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://www.itsecurity.pt/news/threats/comissao-europeia-investiga-possivel-fuga-de-dados-apos-ciberataque",
-   "published": "2026-11-19T00:00:00+00:00",
-   "title": "Comissão Europeia investiga possível fuga de dados após ciberataque",
-   "summary": "A Comissão Europeia sofreu um ciberataque que pode ter comprometido dados pessoais de utilizadores. Vários sistemas internos ficaram inoperacionais durante aproximadamente dez dias devido à incidência. A extensão total dos danos e dos dados afetados continua por apurar.",
-   "image": null,
-   "points": [
-    "Comissão Europeia alvo de ciberataque.",
-    "Possível fuga de dados pessoais.",
-    "Sistemas internos indisponíveis por cerca de dez dias.",
-    "Extensão do incidente ainda por esclarecer."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia que mesmo instituições de topo enfrentam incidentes graves com potenciais fugas de informação sensível.",
-   "todo": "Monitore os acessos aos sistemas e reforce os protocolos de resposta a incidentes e monitorização de redes."
-  },
-  {
-   "id": "9b5c27bfe2178c5d",
-   "source": "IT Security",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://www.itsecurity.pt/news/news/ataques-a-cloud-aceleram-com-recurso-a-ia",
-   "published": "2026-11-19T00:00:00+00:00",
-   "title": "Ataques à cloud aceleram com recurso à IA",
-   "summary": "Um estudo recente da Fortinet contabilizou 2,3 mil milhões de tentativas de ataques de força bruta direcionados a ambientes na cloud. O relatório alerta que a inteligência artificial está a encurtar significativamente o intervalo temporal entre a divulgação de vulnerabilidades e a respetiva exploração. Esta aceleração eleva o risco para as infraestruturas empresariais.",
-   "image": null,
-   "points": [
-    "2,3 mil milhões de ataques de força bruta na cloud.",
-    "Dados divulgados num relatório da Fortinet.",
-    "Uso de IA acelera exploração de vulnerabilidades.",
-    "Redução drástica do tempo de resposta defensiva."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "A automação com IA por parte dos atacantes obriga as empresas a reagirem muito mais depressa na proteção da cloud.",
-   "todo": "Implemente autenticação multifator rigorosa e automatize a gestão de patches em ambientes cloud."
-  },
-  {
-   "id": "6490e5f1cbbfbfed",
-   "source": "IT Security",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://www.itsecurity.pt/news/threats/php-corrige-sete-falhas-criticas-de-seguranca",
-   "published": "2026-11-19T00:00:00+00:00",
-   "title": "PHP corrige sete falhas críticas de segurança",
-   "summary": "As atualizações recentes da linguagem PHP corrigem sete vulnerabilidades críticas que podiam permitir a execução remota de código por atacantes. Entre as falhas corrigidas encontram-se problemas relacionados com a gestão de memória, sessões e o componente PHP-FPM. Estas correções são essenciais para proteger aplicações web.",
-   "image": null,
-   "points": [
-    "O PHP corrigiu sete vulnerabilidades críticas de segurança.",
-    "As falhas permitiam potencial execução remota de código.",
-    "Os problemas afetavam a gestão de memória, sessões e o PHP-FPM."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Evita que servidores web sejam comprometidos através de explorações de código remoto em aplicações PHP desatualizadas.",
-   "todo": "Atualiza imediatamente os teus servidores e ambientes PHP para as versões mais recentes disponibilizadas pelos mantenedores."
   }
  ]
 }

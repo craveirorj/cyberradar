@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T09:46:28.720373+00:00",
+ "updated": "2026-11-24T10:05:44.168799+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -9,7 +9,7 @@
   {
    "source": "IT Security",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Pplware Segurança",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -134,7 +134,7 @@
   {
    "source": "Schneier on Security",
    "ok": true,
-   "added": 6
+   "added": 7
   },
   {
    "source": "SANS ISC",
@@ -224,7 +224,7 @@
   {
    "source": "NCSC UK",
    "ok": true,
-   "added": 3
+   "added": 2
   },
   {
    "source": "CERT-EU",
@@ -234,7 +234,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 19
+   "added": 18
   },
   {
    "source": "The Register Security",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Security Affairs",
@@ -254,7 +254,7 @@
   {
    "source": "WeLiveSecurity (ESET)",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "Sophos News",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 36,
-  "pending": 307,
-  "unenriched": 179,
+  "done": 12,
+  "pending": 328,
+  "unenriched": 201,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -791,6 +791,75 @@
    "enriched": true,
    "why": "Ilustra o desfecho judicial de um dos maiores ataques de violação de dados na indústria de jogos.",
    "todo": ""
+  },
+  {
+   "id": "ca7f411746c4e08d",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/threats/cisa-confirma-exploracao-ativa-de-vulnerabilidade-no-sap-netweaver",
+   "published": "2026-11-24T00:00:00+00:00",
+   "title": "CISA confirma exploração ativa de vulnerabilidade no SAP NetWeaver",
+   "summary": "A agência CISA confirmou a exploração ativa da falha CVE-2025-42884 no SAP NetWeaver, originalmente corrigida pela SAP em novembro de 2025. A vulnerabilidade permite que atacantes sem autenticação acedam ou alterem dados nos servidores através de operações JNDI manipuladas. O impacto afeta a segurança e integridade dos sistemas afetados que ainda não aplicaram as correções.",
+   "image": null,
+   "points": [
+    "Alvo: Servidores SAP NetWeaver afetados pela falha CVE-2025-42884.",
+    "O quê: Atacantes não autenticados exploram operações JNDI para aceder ou modificar dados.",
+    "Como: Através de ataques ativos que aproveitam a vulnerabilidade conhecida.",
+    "Impacto: Risco direto de acesso não autorizado e alteração de informações no servidor."
+   ],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": true,
+   "why": "Permite que intrusos comprometam servidores empresariais críticos sem precisarem de credenciais.",
+   "todo": "Atualize urgentemente os sistemas SAP NetWeaver com as correções disponibilizadas pelo fabricante."
+  },
+  {
+   "id": "a2e2685f4b92e65c",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/threats/php-corrige-vulnerabilidade-critica-que-pode-permitir-execucao-remota-de-codigo-atraves-de-sessoes",
+   "published": "2026-11-24T00:00:00+00:00",
+   "title": "PHP corrige vulnerabilidade crítica que pode permitir execução remota de código através de sessões",
+   "summary": "Foi descoberta a vulnerabilidade phpAfterShell (CVE-2026-126714), classificada com uma pontuação CVSS de 9,2, que afeta os mecanismos de atualização de ficheiros de sessão no PHP. O problema assemelha-se a falhas anteriores exploradas pelo PHP2Shell e pode ser utilizado para desencadear a execução remota de código. O impacto desta falha crítica é a potencial tomada de controlo dos servidores afetados por parte de atacantes.",
+   "image": null,
+   "points": [
+    "Alvo: Ambientes e servidores que utilizam versões vulneráveis de PHP.",
+    "O quê: Falha crítica identificada como CVE-2026-126714 com pontuação CVSS de 9,2.",
+    "Como: Exploração de falhas na atualização de ficheiros de sessão para execução remota de código.",
+    "Impacto: Risco elevado de execução de código malicioso no servidor."
+   ],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": true,
+   "why": "A gravidade extrema da falha expõe os servidores web a execução remota de código malicioso.",
+   "todo": "Aplique imediatamente as atualizações de segurança oficiais disponibilizadas pelo PHP."
+  },
+  {
+   "id": "670f8cdb3eabf4e5",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/laliga-hacked-spain-top-professional-league-confirms-cyber-incident",
+   "published": "2026-11-24T00:00:00+00:00",
+   "title": "LaLiga alvo de ciberataque: liga espanhola de futebol confirma roubo de dados pessoais de adeptos",
+   "summary": "A liga profissional de futebol de Espanha, LaLiga, confirmou que sofreu um ciberataque que resultou no roubo de informações pessoais pertencentes a adeptos. O incidente afetou os serviços digitais da própria organização e de vários clubes espanhóis. O impacto principal traduz-se na exposição de dados privados dos utilizadores destes serviços.",
+   "image": "https://cms.therecord.media/uploads/Screenshot_2026_11_24_at_09_19_55_4ba843172f.png",
+   "points": [
+    "Alvo: LaLiga e vários clubes de futebol espanhóis.",
+    "O quê: Roubo de dados pessoais de adeptos em serviços digitais.",
+    "Como: Através de um ciberataque bem-sucedido à infraestrutura digital.",
+    "Impacto: Exposição e roubo de informação sensível de utilizadores e adeptos."
+   ],
+   "title_original": "LaLiga hacked: Spain’s top football league confirms theft of fans’ personal data",
+   "category": "Ataque/APT",
+   "translated": true,
+   "enriched": true,
+   "why": "Compromete a privacidade de milhares de adeptos e afeta a reputação digital das entidades desportivas.",
+   "todo": "Monitore contas associadas a serviços de clubes e utilize palavras-passe fortes e únicas."
   },
   {
    "id": "453252f9d2559d7e",
@@ -13681,73 +13750,6 @@
    "enriched": true,
    "why": "Expõe inúmeros sistemas empresariais a potenciais falhas de segurança se não forem atualizados.",
    "todo": "Consulte o boletim da Oracle e aplique as atualizações de segurança recomendadas para os produtos afetados."
-  },
-  {
-   "id": "7aa694effe302302",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/java4shell-vulnerability-remote/",
-   "published": "2026-11-18T12:35:00+00:00",
-   "title": "Vulnerabilidade Java4Shell Permite Ataques Remotos em Principais Aplicações Java",
-   "summary": "Uma falha crítica no OpenJDK foi descoberta, expondo aplicações Java importantes a ataques de execução remota de código. A CISA já apelou às organizações para implementarem medidas de mitigação imediatas. A vulnerabilidade afeta sistemas amplamente utilizados, elevando o risco de intrusão e comprometimento de infraestruturas.",
-   "image": null,
-   "points": [
-    "Alvo: Aplicações Java e OpenJDK.",
-    "O quê: Vulnerabilidade crítica de execução remota de código.",
-    "Impacto: Exposição de grandes sistemas a ataques externos.",
-    "Ação: A CISA exorta à aplicação urgente de mitigações."
-   ],
-   "title_original": "Java4Shell Vulnerability Allows Remote Attacks on Major Java Apps",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite que atacantes executem código remotamente em aplicações empresariais críticas construídas em Java.",
-   "todo": "Consulte os alertas oficiais da CISA e aplique as mitigações ou patches de segurança disponibilizados para o OpenJDK."
-  },
-  {
-   "id": "74d12e4423207d9d",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
-   "published": "2026-11-18T12:28:30+00:00",
-   "title": "Novo ataque contorna bloqueio do TPM para quebrar PINs do Windows Hello e BitLocker em dias, não em anos",
-   "summary": "Investigadores da Universidade Técnica de Berlim descobriram que o bloqueio do TPM para PINs do Windows Hello e BitLocker pode ser reiniciado em computadores baseados em AMD e alguns Intel através do acesso físico ao interior do PC. Esta falha permite contornar as barreiras de segurança e adivinhar PINs curtos num espaço de poucos dias. Em testes práticos, a equipa conseguiu quebrar um PIN de quatro dígitos no Windows Hello e de seis dígitos no BitLocker.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpsv4GxAUbzCsIV1umrxZs6VxfD1eFwAeCgRHQQG_dNbP1fLiYe48hM-Wbd_8w5IxlacAwoidLqyQgBmG7YD7qKo0_XcqW2GhggfXshuK1uXz8BOma2H0Jjs8fabCO4IxHBfRopEUFDd0xHRRv43gMeog852Usv40sfcTwnO_9coyxtIMmteJxeJI_oPA/s1600/bitlocker.jpg",
-   "points": [
-    "Investigadores da TU Berlin descobriram uma falha em PCs AMD e alguns Intel.",
-    "O bloqueio do TPM pode ser resetado abrindo a caixa do computador.",
-    "PINs curtos de Windows Hello e BitLocker foram descobertos em testes laboratoriais em dias."
-   ],
-   "title_original": "New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Compromete a segurança de acessos locais e encriptação de dispositivos com PINs curtos.",
-   "todo": "Utilize PINs e palavras-passe mais longas e complexas para mitigar o risco de ataques por força bruta física."
-  },
-  {
-   "id": "c9f8dc26d8d07054",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
-   "published": "2026-11-18T12:15:00+00:00",
-   "title": "Lista de Verificação de Pentesting de IA para Apps Web: 15 Perguntas a Fazer Antes de Escolher um Fornecedor",
-   "summary": "Os ataques informáticos ocorrem cada vez mais cedo, com muitas explorações a surgirem antes mesmo de existir uma correção oficial. Perante esta realidade, escolher um fornecedor de pentesting baseado em inteligência artificial exige cautela, pois nem todos oferecem o mesmo nível de fiabilidade. As principais falhas costumam manifestar-se nos fluxos autenticados, na cobertura dos testes e na segurança em ambiente de produção. Assim, avaliar cuidadosamente estas soluções é essencial para garantir uma proteção eficaz.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdb3EyKCLHzaa6p3bzrF2EkkcJJQgshTsoaU6kzga1C8NGRBE1rDwlsHwhVKehkmGsOYpf0Dq-VCQpmFDPYLglxQIQjEiv3NrkFDRPTc3wUObe1Kc0km71lwUEXLTtWJGBQ3nO6wFbRqKoOJLcBv2lwpD-ZAYc1caohfkIFkCVlLQdS-YuwmbecgBf-sQ/s1600/reflectiz.jpg",
-   "points": [
-    "Os atacantes exploram vulnerabilidades rapidamente, muitas vezes antes de existirem correções.",
-    "A maioria dos fornecedores de pentesting de IA parece convincente nas demonstrações.",
-    "As falhas aparecem tipicamente nos fluxos com login, na cobertura e na produção."
-   ],
-   "title_original": "AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Ajuda as organizações a selecionarem fornecedores de pentesting de IA seguros e verdadeiramente eficazes.",
-   "todo": "Analise rigorosamente a cobertura e a segurança de produção dos fornecedores de IA antes de os contratar."
   }
  ]
 }

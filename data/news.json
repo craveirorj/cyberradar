@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T07:52:15.304673+00:00",
+ "updated": "2026-11-24T08:05:16.297223+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -284,7 +284,7 @@
   {
    "source": "Securelist (Kaspersky)",
    "ok": true,
-   "added": 8
+   "added": 6
   },
   {
    "source": "Risky Bulletin",
@@ -309,17 +309,33 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 60,
-  "pending": 283,
-  "unenriched": 151,
+  "done": 0,
+  "pending": 341,
+  "unenriched": 210,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do",
-   "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)",
-   "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)"
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "42e5f99f0a8baf4c",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203865/cyber-crime/hackers-may-have-breached-fbi-database-used-by-police-nationwide.html",
+   "published": "2026-11-24T07:05:05+00:00",
+   "title": "Hackers May Have Breached FBI Database Used by Police Nationwide",
+   "summary": "FBI investigates an apparent breach of its NCIC criminal database, raising concerns over sensitive law enforcement data and security. The FBI is investigating a possible breach of a database that police use to check arrest warrants and access criminal records. According to the BBC, US media reported the incident, citing two people familiar with the […]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "FBI investigates an apparent breach of its NCIC criminal database, raising concerns over sensitive law enforcement data and security. The FBI is investigating a possible breach of a database that police use to check arrest warrants and access criminal records. According to the BBC , US media reported the incident, citing two people familiar with the matter. The FBI has not publicly commented on the reports and did not respond to the BBC’s request for comment. The database is the National Crime Information Center (NCIC). Federal and local law enforcement agencies use it to share information about arrest warrants and background checks. Police officers also access it during traffic stops and investigations. According to the FBI, as of 2023, the NCIC contained more than 18 million active records across 22 databases and provided services to over 100,000 law enforcement and criminal justice organisations. Reports say the intrusion was found in recent days, and nobody has said when it happened, how the attackers got in, who they are, or whether they took anything. It’s also unclear whether the incident disrupted police access to the system. Bureau officials learned of it on Thursday, according to CNN. President Donald Trump briefly commented on the incident during a Fox News interview on Saturday. He said he had just learned about the breach, called it bad news and said he did not like it. He also suggested that the investigation might reveal information that officials would not otherwise have discovered. “But maybe we’ll learn things that we would’ve never learned otherwise,” Trump said. On Sunday, Director of National Intelligence Jay Clayton told Fox News that the FBI was investigating who was behind the incident. However, he did not share further details about the intrusio"
+  },
   {
    "id": "d305226424f3c59e",
    "source": "Help Net Security",
@@ -13725,29 +13741,6 @@
    "enriched": true,
    "why": "Mostra como os grupos de ameaças estatais estão a migrar o seu foco para ambientes em nuvem para maximizar o roubo de dados.",
    "todo": "Reforce a autenticação multifator (MFA) em todas as contas de serviços em nuvem e monitorize acessos suspeitos."
-  },
-  {
-   "id": "ac7a12437b591221",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/chrome-158-patches-204-vulnerabilities/",
-   "published": "2026-11-18T11:43:22+00:00",
-   "title": "Chrome 158 Patches 204 Vulnerabilities",
-   "summary": "A Google lançou uma nova atualização para o navegador Chrome que corrige centenas de falhas de segurança. No âmbito deste ciclo, a empresa atribuiu recompensas financeiras a investigadores externos por vulnerabilidades reportadas. Várias falhas continuam sob análise para determinar o valor do prémio a atribuir. Estas correções visam manter a estabilidade e a segurança do software.",
-   "image": null,
-   "points": [
-    "Quem: A Google e investigadores de segurança externos.",
-    "O quê: Correção de 204 vulnerabilidades na nova versão do Chrome.",
-    "Como: Através do lançamento de patches e atribuição de recompensas.",
-    "Impacto: Melhora a proteção do navegador contra potenciais explorações."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Garante que o navegador web mais utilizado permanece protegido contra vulnerabilidades recém-descobertas.",
-   "todo": "Atualize o Google Chrome para a versão mais recente o mais rapidamente possível."
   }
  ]
 }

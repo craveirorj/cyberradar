@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T06:31:43.004731+00:00",
+ "updated": "2026-11-24T06:49:31.178621+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -169,7 +169,7 @@
   {
    "source": "Cisco Talos",
    "ok": true,
-   "added": 5
+   "added": 6
   },
   {
    "source": "Unit 42 (Palo Alto)",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 2
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Check Point Research",
@@ -309,16 +309,39 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 107,
-  "pending": 236,
-  "unenriched": 105,
+  "done": 24,
+  "pending": 323,
+  "unenriched": 190,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent"
+   "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)",
+   "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)"
   ]
  },
  "items": [
+  {
+   "id": "0dcf600d68f6f824",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/24/check-point-ransomware-attacks-q3-2026-report/",
+   "published": "2026-11-24T06:30:26+00:00",
+   "title": "Gangues de ransomware continuam a multiplicar-se, apesar de menos vítimas pagarem",
+   "summary": "No terceiro trimestre de 2026, os grupos de ransomware registaram um recorde de 2.830 vítimas em sites de fugas de dados, segundo um relatório da Check Point Research. A atividade intensa foi acompanhada por uma expansão no número de marcas e operadores ativos de ransomware. Este crescimento demonstra que a escala dos ataques continua a aumentar a um ritmo acelerado.",
+   "image": null,
+   "points": [
+    "Registo de 2.830 vítimas em sites de fugas no Q3 de 2026.",
+    "O mês de agosto liderou com 1.042 vítimas registadas.",
+    "Verificou-se uma expansão significativa de novos grupos ativos."
+   ],
+   "title_original": "Ransomware gangs keep multiplying, even as fewer victims pay",
+   "category": "Ransomware",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que a ameaça do ransomware continua a escalar em volume e diversidade de operadores.",
+   "todo": "Reforçar as cópias de segurança offline e implementar políticas rigorosas de gestão de acessos."
+  },
   {
    "id": "389c7e58bfc2b3b6",
    "source": "Help Net Security",
@@ -334,12 +357,56 @@
     "Foco no controlo total de dados e conformidade regulatória rigorosa.",
     "Desenvolvida em articulação com autoridades de cibersegurança e reguladores."
    ],
-   "title_original": "AWS European Sovereign Cloud: Architecture, assurance, and compliance",
+   "title_original": null,
    "category": "Regulação",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa para garantir que organizações europeias inovam mantendo total controlo regulatório e de segurança sobre os seus dados.",
    "todo": "Avalie os requisitos de soberania e conformidade da sua organização antes de migrar dados sensíveis para serviços na nuvem."
+  },
+  {
+   "id": "a0a25e5ec0683ad7",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html",
+   "published": "2026-11-24T06:02:57+00:00",
+   "title": "OpenAI e Cisco revelam ferramenta de segurança Linux assistida por IA para bloquear explorações antes de patches",
+   "summary": "A OpenAI e a Cisco uniram forças para lançar o Shirudo, um runtime Linux de código aberto que recorre a agentes de inteligência artificial. Esta ferramenta permite defender os sistemas sem criar interrupções, escrevendo controlos eBPF dinâmicos. Desta forma, os defensores ganham mais tempo para testar e aplicar os patches necessários.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKBknwzOcmsT5P3Gnyn8-WGRNbttWLAtmWlHkVuS900lrH1Q7Wj_kBCJiASbBvhNUKWEsO8Xt5VKKokGA-M17y8Pj4EtH6564yafSWGebOVgMuTwxUUB5fV4oProNTbg8MeEhcaiy95WbMi6og3q0uSM4SxLCyzVwV3FbCfiSXrVoJtQUrYpJfyeW1AUFm/s1600/openai-linux.jpg",
+   "points": [
+    "Lançamento do Shirudo, uma solução open-source baseada em eBPF e IA.",
+    "Desenvolvido em parceria pela OpenAI e pela Cisco.",
+    "Permite bloquear explorações de forma dinâmica antes de instalar correções."
+   ],
+   "title_original": "OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Oferece uma defesa preventiva contra explorações enquanto os patches oficiais não são aplicados.",
+   "todo": "Acompanhar o desenvolvimento de ferramentas de mitigação baseadas em IA para proteger ambientes Linux."
+  },
+  {
+   "id": "14a00d8221c42a6b",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html",
+   "published": "2026-11-24T06:02:45+00:00",
+   "title": "Piratas informáticos exploram falha do N-able MailAssure enquanto agentes de IA exploram zero-day do MONAI Label",
+   "summary": "A CISA adicionou duas vulnerabilidades críticas ao seu catálogo de explorações conhecidas, após detetar sinais de ataque ativo. Entre as falhas encontra-se a CVE-2026-134624, uma vulnerabilidade de falsificação de pedidos do lado do servidor (SSRF) no N-able MailAssure. Esta situação sublinha a urgência de mitigar falhas ativamente visadas por atacantes.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrPCPwSotVSX8IYSgpSrVceRAIYqba8YSZSlNwD5RjetEhPG6vLRhk_NKkatjg1h-fulZJDm4CucsLvQrEtCO6v0NtuJGo3nZD3mXSHyKpgPrUZMpq7YNpheStYC_AqyMWRfWIFiK9bcHJNAw6pwK9JqirhO8JESKdmsI5Pl8UgtsVsRivmMmMenQ01ClW/s1600/cisa-kev.jpg",
+   "points": [
+    "Inclusão de duas falhas no catálogo KEV da CISA devido a exploração ativa.",
+    "Destaque para a CVE-2026-134624, uma vulnerabilidade SSRF no N-able MailAssure.",
+    "A vulnerabilidade possui uma pontuação CVSS elevada de 9.3."
+   ],
+   "title_original": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Indica que as falhas listadas estão a ser ativamente exploradas em ataques no terreno.",
+   "todo": "Atualizar imediatamente os softwares afetados e consultar os avisos de segurança da CISA."
   },
   {
    "id": "9718616967807cce",
@@ -356,9 +423,9 @@
     "Proteção temporária em sistemas Linux sem exigir reinício.",
     "Bloqueia comportamentos maliciosos enquanto se aguarda pela correção oficial."
    ],
-   "title_original": "Linux patches can take weeks, and OpenAI and Cisco built Shirudo to help in the meantime",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Importa porque reduz drasticamente o tempo de exposição a vulnerabilidades enquanto as correções oficiais demoram a ser aplicadas.",
    "todo": "Considere o uso de ferramentas de mitigação temporária para proteger sistemas críticos enquanto valida as atualizações de segurança."
@@ -13681,75 +13748,6 @@
    "enriched": true,
    "why": "Protege infraestruturas empresariais contra a execução remota de código através de falhas no Java.",
    "todo": "Atualize o Java e aplique prontamente as correções de segurança disponibilizadas pela Oracle e OpenJDK."
-  },
-  {
-   "id": "fd349f5a83c393ad",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203394/hacking/norwegian-gas-giant-equinor-says-its-under-cyberattack-production-keeps-running.html",
-   "published": "2026-11-18T11:36:00+00:00",
-   "title": "Norwegian Gas Giant Equinor Says It’s Under Cyberattack. Production Keeps Running",
-   "summary": "A empresa norueguesa Equinor detetou um ciberataque direcionado a alguns dos seus sistemas de TI internos. A gigante energética garantiu que a produção de gás e as operações principais não foram afetadas pelo incidente. Os recursos necessários foram mobilizados para neutralizar a ameaça e restaurar a integridade dos sistemas. As autoridades norueguesas acompanham a situação num contexto de elevado alerta de cibersegurança.",
-   "image": null,
-   "points": [
-    "Quem: A empresa energética norueguesa Equinor e a autoridade NSM.",
-    "O quê: Ciberataque a sistemas de TI internos e de escritório.",
-    "Como: Deteção de acessos e mobilização de recursos de resposta.",
-    "Impacto: Perturbação de aplicações diárias e email, sem afetar a produção."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia os riscos crescentes de ciberataques contra operadores de infraestruturas críticas e fornecedores de energia.",
-   "todo": "Mantenha os planos de resposta a incidentes atualizados e garanta a segmentação adequada entre redes corporativas e industriais."
-  },
-  {
-   "id": "594fa93fd9554080",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/18/java4shell-openjdk-vulnerability-cve-2026-114938/",
-   "published": "2026-11-18T11:12:12+00:00",
-   "title": "Falha Java4Shell OpenJDK: Exploração é complexa e depende de CPUs específicas (CVE-2026-114938)",
-   "summary": "Foi detetada uma vulnerabilidade de corrupção de memória no descodificador Base64 do OpenJDK, batizada de Java4Shell. O problema afeta servidores que alojam aplicações Java e pode permitir a execução de código por atacantes não autenticados. A Oracle e o projeto OpenJDK já corrigiram a falha. Embora não existam provas de ataques ativos, a CISA insta as organizações a aplicarem a atualização de imediato.",
-   "image": null,
-   "points": [
-    "O quê: Falha de segurança CVE-2026-114938 no descodificador Base64 do OpenJDK.",
-    "Quem: Afeta servidores com aplicações Java e utilizadores do OpenJDK.",
-    "Como: Atacantes não autenticados podem tentar executar código remotamente.",
-    "Impacto: Risco potencial de execução de código e comprometimento de servidores."
-   ],
-   "title_original": "Java4Shell OpenJDK flaw: Exploitation is tricky and hinges on specific CPUs (CVE-2026-114938)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite que atacantes executem código em servidores vulneráveis, exigindo a aplicação urgente de correções.",
-   "todo": "Atualize o OpenJDK e as aplicações Java afetadas para a versão corrigida o mais rapidamente possível."
-  },
-  {
-   "id": "aa9ca93e66e2e06b",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/microsoft-agent-framework-releases-poisoned-with-credential-stealer/",
-   "published": "2026-11-18T11:05:39+00:00",
-   "title": "Versões do Microsoft Agent Framework comprometidas com roubo de credenciais",
-   "summary": "As versões 1.26.1 e 1.26.2 do pacote agent-framework no repositório PyPI foram infetadas com código malicioso. O componente foi concebido para roubar credenciais do Azure, Azure DevOps e GitHub Actions assim que o Python é iniciado. A situação representa um risco direto para programadores e ambientes que utilizam estas ferramentas. A descoberta sublinha os perigos associados a dependências de software comprometidas.",
-   "image": null,
-   "points": [
-    "O quê: Versões maliciosas do agent-framework no PyPI.",
-    "Quem: Afeta programadores e sistemas que utilizam Python com as versões 1.26.1 ou 1.26.2.",
-    "Como: O código rouba credenciais do Azure, Azure DevOps e GitHub Actions no arranque.",
-    "Impacto: Exposição de chaves de acesso e dados sensíveis de nuvem e controlo de versões."
-   ],
-   "title_original": "Microsoft Agent Framework Releases Poisoned With Credential Stealer",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Compromete credenciais críticas de acesso a serviços de nuvem e ferramentas de desenvolvimento logo na inicialização.",
-   "todo": "Verifique se utiliza as versões afetadas do agent-framework, remova-as e revogue imediatamente todas as credenciais expostas."
   }
  ]
 }

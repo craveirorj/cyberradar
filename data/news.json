@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T15:38:12.888107+00:00",
+ "updated": "2026-11-24T15:45:42.397675+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -59,7 +59,7 @@
   {
    "source": "CISA Advisories",
    "ok": true,
-   "added": 20
+   "added": 23
   },
   {
    "source": "CISA Alertas (KEV)",
@@ -310,8 +310,8 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 378,
-  "unenriched": 260,
+  "pending": 381,
+  "unenriched": 263,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -1209,6 +1209,57 @@
    "enriched": true,
    "why": "Oferece uma alternativa prática para mitigar vulnerabilidades em servidores sem paragens operacionais.",
    "todo": "Avalie a implementação da ferramenta para proteger temporariamente sistemas Linux vulneráveis enquanto planeia a atualização."
+  },
+  {
+   "id": "e1d950e00d28b4bf",
+   "source": "CISA Advisories",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-02",
+   "published": "2026-11-24T12:00:00+00:00",
+   "title": "Schneider Electric EcoStruxure Power Build Rapsody software",
+   "summary": "View CSAF Summary Schneider Electric is aware of a vulnerability in its EcoStruxure™ Power Build Rapsody product. The EcoStruxure™ Power Build Rapsody is used to enter or import the single line diagram, to get the extensive bill of material of your switchboard, including all devices, connection items, and mounting components. Failure to apply the remediations provided below may risk memory corruption, heap-based buffer overflow, and/or stack-based buffer overflow, which could result in local attackers being able to exploit these issues to potentially execute arbitrary code. The following versi",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "View CSAF Summary Schneider Electric is aware of a vulnerability in its EcoStruxure™ Power Build Rapsody product. The EcoStruxure™ Power Build Rapsody is used to enter or import the single line diagram, to get the extensive bill of material of your switchboard, including all devices, connection items, and mounting components. Failure to apply the remediations provided below may risk memory corruption, heap-based buffer overflow, and/or stack-based buffer overflow, which could result in local attackers being able to exploit these issues to potentially execute arbitrary code. The following versions of Schneider Electric EcoStruxure Power Build Rapsody software are affected: EcoStruxure Power Build Rapsody software vers:generic/<=2.9.1.0_FR, 2.9.12.0101_FR, vers:generic/<=2.8.5.0301_ESP, 2.9.5.0000_ESP, vers:generic/<=2.8.7.0101_PT, 2.9.7.0000_PT, vers:generic/<=2.8.8.0201_BEL(FR), 2.9.8.0000_BELFR, vers:generic/<=2.8.3.0201_BEL(EN), 2.9.3.0000_BELEN, vers:generic/<=2.8.4.0401_INT(EN), 2.9.4.0000_INTEN, vers:generic/<=2.8.6.0000_INT(FR), 2.9.6.0000_INTFR, vers:generic/<=2.8.2.0000_NL, 2.9.6.0000_NL (CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055) CVSS Vendor Equipment v3 5.3 Schneider Electric EcoStruxure Power Build Rapsody software 1 Vulnerability Use After Free Background Critical Infrastructure Sectors: Energy, Critical Manufacturing, Commercial Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: France Vulnerabilities CVE-2026-119055 A CWE- 416: Use After Free vulnerability exists that could cause arbitrary code execution when a local attacker could trick the end user to open a specially crafted malicious SSD file. Read More 8 Affected Products EcoStruxure"
+  },
+  {
+   "id": "153407077dbd1977",
+   "source": "CISA Advisories",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03",
+   "published": "2026-11-24T12:00:00+00:00",
+   "title": "Danfoss AK-SM 8xxA Series",
+   "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code with webserver privileges. The following versions of Danfoss AK-SM 8xxA Series are affected: AK-SM8xxA <=5.4.0 (CVE-2026-129713) CVSS Vendor Equipment v3 9.8 Danfoss AK-SM8xxA 1 Vulnerability Stack-based Buffer Overflow Background Critical Infrastructure Sectors: Commercial Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Denmark Vulnerabilities CVE-2026-129713 A stack-based buffer overflow in an unauthenticated CGI handler of the Danfoss AK-SM 8xxA Ser",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code with webserver privileges. The following versions of Danfoss AK-SM 8xxA Series are affected: AK-SM8xxA <=5.4.0 (CVE-2026-129713) CVSS Vendor Equipment v3 9.8 Danfoss AK-SM8xxA 1 Vulnerability Stack-based Buffer Overflow Background Critical Infrastructure Sectors: Commercial Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Denmark Vulnerabilities CVE-2026-129713 A stack-based buffer overflow in an unauthenticated CGI handler of the Danfoss AK-SM 8xxA Series controller allows remote attackers to send specially crafted HTTP/S POST requests, leading to memory corruption, webserver restart and hypothetically potential arbitrary code execution with webserver privileges. Authentication is not required to exploit this vulnerability. Read More 1 Affected Product Danfoss AK-SM8xxA <=5.4.0 Product Status: known_affected Remediations Mitigation This vulnerability will be addressed in an upcoming Danfoss AK-SM 800A Series software release (version 5.5.x). Mitigation In addition, Danfoss will remove the ability for users to disable Strict Mode in future software releases. Additional Metrics Relevant CWE: CWE-121 Stack-based Buffer Overflow CVSS Version Base Score Base Severity Vector String 3.1 9.8 CRITICAL CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H 4.0 9.3 CRITICAL CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N View CVE Details Acknowledgments Carlo Meijer of Midnight Blue reported CVE-2026-129713 to CISA. Recommended Practices CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities. Minimize network exposure for all control system devices and/or systems, ensuring they are"
+  },
+  {
+   "id": "0e0d7bdcc4e24a02",
+   "source": "CISA Advisories",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01",
+   "published": "2026-11-24T12:00:00+00:00",
+   "title": "AutomationDirect C-More EA9 Programming Software",
+   "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow attackers to corrupt application memory and cause instability or a crash, potentially leading to arbitrary code execution, if a user is convinced to open a malicious file. The following versions of AutomationDirect C-More EA9 Programming Software are affected: C-More EA9 Programming Software <=V6.80 (CVE-2026-127280) CVSS Vendor Equipment v3 7.8 AutomationDirect C-More EA9 Programming Software 1 Vulnerability Heap-based Buffer Overflow Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Water an",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "View CSAF Summary Successful exploitation of this vulnerability could allow attackers to corrupt application memory and cause instability or a crash, potentially leading to arbitrary code execution, if a user is convinced to open a malicious file. The following versions of AutomationDirect C-More EA9 Programming Software are affected: C-More EA9 Programming Software <=V6.80 (CVE-2026-127280) CVSS Vendor Equipment v3 7.8 AutomationDirect C-More EA9 Programming Software 1 Vulnerability Heap-based Buffer Overflow Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Water and Wastewater Systems Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities CVE-2026-127280 C-More EA9 Programming Software V6.80 does not adequately validate data read from a project file before using it in heap memory operations. A crafted file causes a heap buffer overrun during file open, resulting in heap corruption and instability within the application. An attacker can exploit this vulnerability by convincing a user to open a malicious project file delivered through common distribution channels such as email, file sharing, or removable media. Read More 1 Affected Product AutomationDirect C-More EA9 Programming Software <=V6.80 Product Status: known_affected Remediations Vendor fix Update C-More EA9 Programming Software to V6.81: https://www.automationdirect.com/support/software-downloads Additional Metrics Relevant CWE: CWE-122 Heap-based Buffer Overflow CVSS Version Base Score Base Severity Vector String 3.1 7.8 HIGH CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H 4.0 8.4 HIGH CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N View CVE Details Acknowledgments rgod of TrendAI Zero Day Initiative reported this vulnerability "
   },
   {
    "id": "f3a43b39549fdc89",
@@ -13464,72 +13515,6 @@
    "enriched": true,
    "why": "Alerta para falhas críticas em software de servidores web amplamente utilizado a nível global.",
    "todo": "Reveja os avisos da F5 e atualize as instâncias do NGINX Plus e Open Source para as versões corrigidas."
-  },
-  {
-   "id": "2946b5f4f93db8fb",
-   "source": "WIRED Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.wired.com/story/ai-debt-collection-service-exposed-66-million-accounts-and-315000-call-recordings/",
-   "published": "2026-11-18T19:00:00+00:00",
-   "title": "Serviço de cobrança de dívidas com IA expôs 6,6 milhões de contas e 315 mil gravações de chamadas",
-   "summary": "Duas falhas graves de segurança na plataforma CreditNirvana deixaram acessíveis quantidades massivas de dados sensíveis. O incidente expôs informações detalhadas de milhões de contas, incluindo relatórios de crédito, correios eletrónicos e mensagens de texto. Adicionalmente, centenas de milhares de gravações de chamadas ficaram vulneráveis a acessos não autorizados.",
-   "image": "https://media.wired.com/photos/6af4e24b10b23929948ce140/master/pass/Security_Breach%20of%20AI%20Debt%20Collection%20Call%20Center%20Exposes%20315,000%20Calls%20and%20Much%20More_v1.jpg",
-   "points": [
-    "Quem: Plataforma CreditNirvana.",
-    "O quê: Exposição de milhões de contas e gravações devido a vulnerabilidades.",
-    "Impacto: Dados altamente confidenciais e privados ficaram acessíveis a atacantes."
-   ],
-   "title_original": "An AI Debt Collection Service Exposed 6.6 Million Accounts and 315,000 Call Recordings",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Sublinha os riscos extremos de privacidade associados a plataformas automatizadas de gestão de dados financeiros.",
-   "todo": "Implemente testes de segurança rigorosos e validações de acesso em plataformas baseadas em IA que armazenem dados sensíveis."
-  },
-  {
-   "id": "1336631baf90a7a0",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/ai-cyber-white-house",
-   "published": "2026-11-18T19:00:00+00:00",
-   "title": "Legisladores apelam à Casa Branca para desenvolver sistemas cibernéticos de IA defensivos",
-   "summary": "Um grupo bipartidário de senadores apelou à Casa Branca para liderar um esforço a nível nacional. O objetivo é combater de forma mais robusta as ameaças cibernéticas impulsionadas por inteligência artificial. Este pedido surge na sequência de recentes incidentes de segurança ligados a esta tecnologia.",
-   "image": "https://cms.therecord.media/uploads/Maria_Cantwell_b590a127c1.jpg",
-   "points": [
-    "Quem: Dois senadores norte-americanos e a Casa Branca.",
-    "O quê: Apelo para o lançamento de um plano nacional de defesa cibernética com IA.",
-    "Impacto: Resposta coordenada contra o aumento de incidentes de segurança baseados em IA."
-   ],
-   "title_original": "Lawmakers call on White House to develop defensive AI cyber systems",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Reflete a urgência governamental em mitigar ameaças cibernéticas avançadas potenciadas por inteligência artificial.",
-   "todo": ""
-  },
-  {
-   "id": "ad35669340d43217",
-   "source": "CyberScoop",
-   "region": "US",
-   "lang": "en",
-   "link": "https://cyberscoop.com/nginx-critical-vulnerabilities-exploits/",
-   "published": "2026-11-18T18:54:12+00:00",
-   "title": "A vez do NGINX causar dores de cabeça com vulnerabilidades",
-   "summary": "Investigadores de segurança divulgaram cinco vulnerabilidades no software de servidor web NGINX, acompanhadas por exploits funcionais. A falha mais grave afeta o protocolo HTTP/2 e permite que atacantes não autenticados executem código remotamente, podendo ser combinada com uma falha do kernel do Linux para assumir o controlo total da máquina. A F5 lançou correções e classificou a falha principal como crítica, atribuindo-lhe uma pontuação elevada no sistema CVSS.",
-   "image": null,
-   "points": [
-    "Quem: Investigadores de segurança, F5 e administradores de servidores NGINX.",
-    "O quê: Divulgação de cinco falhas no NGINX, incluindo uma vulnerabilidade crítica de execução de código.",
-    "Impacto: Servidores vulneráveis podem ser totalmente controlados por atacantes remotos."
-   ],
-   "title_original": "It’s NGINX’s turn to cause vulnpocalypse headaches",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Afeta diretamente cerca de um terço dos websites mundiais que dependem do NGINX para gerir tráfego.",
-   "todo": "Aplique imediatamente as atualizações de segurança disponibilizadas pela F5 para mitigar as falhas no NGINX."
   }
  ]
 }

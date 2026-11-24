@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T20:24:58.126565+00:00",
+ "updated": "2026-11-24T20:45:01.596968+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -114,7 +114,7 @@
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 8
+   "added": 9
   },
   {
    "source": "TechCrunch Security",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "Help Net Security",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -294,7 +294,7 @@
   {
    "source": "Troy Hunt",
    "ok": true,
-   "added": 2
+   "added": 1
   },
   {
    "source": "Cyber Centre Canadá",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 376,
-  "unenriched": 261,
+  "done": 12,
+  "pending": 366,
+  "unenriched": 250,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -531,14 +531,20 @@
    "link": "https://www.estadao.com.br/tecmundo/voxel/gta-6-comeca-a-rodar-no-pc-mas-rockstar-luta-para-evitar-versao-pirata/",
    "published": "2026-11-24T17:54:00+00:00",
    "title": "GTA 6 começa a rodar no PC, mas Rockstar luta para evitar versão pirata",
-   "summary": "GTA 6 rodou no PC apenas algumas horas após o vazamento do executável do jogo.",
+   "summary": "Modders conseguiram colocar o GTA 6 a funcionar em computadores após o vazamento de um executável da versão de Xbox nas redes sociais. Um dos principais grupos envolvidos, o Projeto Leonida, utilizou ferramentas de recompilação e inteligência artificial para criar uma adaptação executável. Em resposta, a Rockstar agiu rapidamente, resultando na desativação do servidor de Discord do projeto e no encerramento das operações por parte dos criadores. Outros grupos, contudo, continuam a tentar criar uma versão jogável para PC.",
    "image": "https://www.estadao.com.br/resizer/v2/YSDH42E3K5FAPL6ACNV4JENRLY.jpg?quality=80&auth=f7e42613ba858e4d3bcdf52a391d342374f51d72373ee0823c2a8498c54366be&width=710",
-   "points": [],
+   "points": [
+    "Modders adaptaram o executável de Xbox do GTA 6 para PC usando IA e recompilação.",
+    "O Projeto Leonida liderou os esforços iniciais, mas encerrou operações após pressão da Rockstar.",
+    "O servidor de Discord e a página no GitHub do projeto foram desativados pelos responsáveis.",
+    "Apesar do revés, outros grupos mantêm tentativas de criar versões piratas para computadores."
+   ],
    "title_original": null,
    "category": "Fuga de dados",
    "translated": false,
-   "enriched": false,
-   "raw": "As últimas 24 horas foram movimentadas para a comunidade de modders que tenta fazer GTA 6 funcionar no PC. Depois de o vazador CyberLeek disponibilizar o executável da versão de Xbox nas redes sociais , diferentes grupos começaram a trabalhar em uma adaptação para os computadores. O objetivo era transformar os arquivos da versão de Xbox em uma edição funcional para PC utilizando ferramentas de recompilação e IA. Com isso em mente, um dos principais esforços nesse sentido era liderado pelo Projeto Leonida, que chegou a mostrar o jogo sendo iniciado em computadores poucas horas após o vazamento. No entanto, a Rockstar já teria começado a agir contra essas iniciativas. O servidor do Discord do Projeto Leonida foi desativado, e seus responsáveis anunciaram o encerramento da operação — enquanto outros grupos continuam tentando fazer GTA 6 funcionar nos computadores. Ver esse post no Instagram Um post compartilhado por Voxel (@voxeloficial) Líder do projeto que portava a versão vazada de GTA 6 para PC afirma ser ‘um garoto de 15 anos’ O principal ponto de encontro dessa iniciativa era o servidor do Projeto Leonida no Discord, que reunia uma equipe de modders voluntários e mantinha um repositório próprio. Com ajuda do Claude Code, o grupo trabalhava para recompilar os arquivos da versão vazada de GTA 6 para torna-lo executável no PC. No entanto, o servidor do projeto foi desativado, assim como sua página no GitHub. Após fãs perceberem as remoções, NotRexed , responsável pelo Projeto Leonida, publicou uma mensagem no X anunciando o encerramento do desenvolvimento. “Pessoal, estou desistindo. Me desculpem”, escreveu o criador. “Eu realmente quero criar coisas legais, mas sempre acontecem coisas que eu não consigo controlar, então estou me afastando. Obrigado a todos, especialmen"
+   "enriched": true,
+   "why": "Mostra como os vazamentos de código podem motivar esforços rápidos da comunidade para criar versões não oficiais, exigindo resposta imediata dos criadores.",
+   "todo": "Evite descarregar ficheiros executáveis ou mods de fontes não oficiais para prevenir infecções por malware."
   },
   {
    "id": "adb18ca6aea028ca",
@@ -547,15 +553,20 @@
    "lang": "en",
    "link": "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/",
    "published": "2026-11-24T17:49:05+00:00",
-   "title": "Radware discloses breach exposing customer cloud access keys",
-   "summary": "Cybersecurity company Radware says attackers gained access to some of its customers' account details and cloud access keys through an unsecured internal Cloud WAF (Web Application Firewall) management API that was left exposed online. [...]",
+   "title": "Radware revela violação que expôs chaves de acesso à cloud de clientes",
+   "summary": "A empresa de cibersegurança Radware sofreu um incidente de segurança após atacantes acederem a detalhes de contas e chaves de acesso à cloud de clientes. O acesso foi obtido através de uma API interna de gestão de WAF (Web Application Firewall) que não estava devidamente protegida e se encontrava exposta online. A falha permitiu a exposição de dados sensíveis armazenados na infraestrutura em nuvem.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Atacantes acederam a dados de contas e chaves de acesso de clientes da Radware.",
+    "A brecha ocorreu devido a uma API de gestão de Cloud WAF interna desprotegida na internet.",
+    "O incidente comprometeu informações sensíveis ligadas a ambientes na cloud."
+   ],
+   "title_original": "Radware discloses breach exposing customer cloud access keys",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "Cybersecurity company Radware says attackers gained access to some of its customers' account details and cloud access keys through an unsecured internal Cloud WAF (Web Application Firewall) management API that was left exposed online. [...]"
+   "translated": true,
+   "enriched": true,
+   "why": "Destaca os riscos críticos associados a APIs internas deixadas expostas na internet sem a devida autenticação.",
+   "todo": "Audite regularmente os pontos de acesso interno e garanta que APIs de gestão na cloud não estão expostas publicamente."
   },
   {
    "id": "2db8a6398bacd187",
@@ -564,15 +575,20 @@
    "lang": "en",
    "link": "https://therecord.media/idscan-data-breach-warning-congressional-letter",
    "published": "2026-11-24T17:49:00+00:00",
-   "title": "Lawmakers warn ID verification companies to bolster security after September hack",
-   "summary": "A bicameral, bipartisan letter from lawmakers said identity verification companies still have significant security work to do in the wake of a data breach at IDscan in September.",
+   "title": "Legisladores alertam empresas de verificação de identidade para reforçarem a segurança após ataque em setembro",
+   "summary": "Legisladores enviaram uma carta bipartidária a alertar que as empresas de verificação de identidade ainda precisam de melhorar significativamente a sua segurança. O aviso surge na sequência de uma violação de dados sofrida pela empresa IDscan em setembro. O objetivo é garantir que estas organizações protegem adequadamente os dados sensíveis dos cidadãos.",
    "image": "https://cms.therecord.media/uploads/brian_schatz_sapprops_20260512_afe849fc45.png",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Legisladores enviaram uma carta conjunta a exigir melhorias na segurança de empresas de identificação.",
+    "O alerta ocorre após um ataque cibernético registado na empresa IDscan em setembro.",
+    "As empresas do setor continuam com lacunas significativas na proteção de dados."
+   ],
+   "title_original": "Lawmakers warn ID verification companies to bolster security after September hack",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "A bicameral, bipartisan letter from lawmakers said identity verification companies still have significant security work to do in the wake of a data breach at IDscan in September."
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia a pressão política sobre o setor de verificação de identidade para elevar os padrões de proteção de dados.",
+   "todo": "Implemente controlos rigorosos de acesso e encriptação de ponta a ponta em plataformas de verificação de identidade."
   },
   {
    "id": "c4d26819484090cd",
@@ -581,15 +597,20 @@
    "lang": "en",
    "link": "https://cyberscoop.com/kash-patel-fbi-ncic-database-hack/",
    "published": "2026-11-24T17:48:34+00:00",
-   "title": "Patel mum on FBI crime info database hack, citing ongoing investigation",
-   "summary": "The breach of the National Crime Information Center was the second in recent months for the bureau.",
+   "title": "Patel mantém silêncio sobre ataque à base de dados de crimes do FBI, citando investigação em curso",
+   "summary": "O diretor do FBI, Kash Patel, recusou adiantar detalhes sobre o ciberataque à base de dados do National Crime Information Center (NCIC), afirmando que o processo continua sob investigação. O ataque à plataforma de partilha de informações sobre mandados e fugitivos ocorreu recentemente, marcando o segundo incidente de relevo no FBI em poucos meses. O presidente Donald Trump desvalorizou o impacto do ataque, sugerindo que poderá trazer aprendizagens úteis.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O FBI confirmou um ataque à base de dados NCIC, mas recusou partilhar detalhes devido à investigação.",
+    "Este foi o segundo incidente cibernético a afetar o FBI em poucos meses.",
+    "O presidente Donald Trump minimizou o impacto público da intrusão informática."
+   ],
+   "title_original": "Patel mum on FBI crime info database hack, citing ongoing investigation",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "There’s an active investigation into a hack of the FBI’s National Crime Information Center, bureau director Kash Patel said Tuesday, but he otherwise declined to comment on details of the breach. Patel said “the matter is ongoing” when asked at a new conference about who was behind the hack reported Friday and what information they obtained from the NCIC, a national database for sharing information on warrants, fugitives, missing persons and background checks. “We’ve publicly released, as we always do, information we are permitted to at this time, but it’s an ongoing investigation,” he said, adding that the FBI was working with other agencies on the matter. “So we’re working with the interagency, and as we’ve done in the past, we will make all the information public either through our partners at the Department of Justice or through our engagements on Capitol Hill.” President Donald Trump over the weekend said the breach was “not good” and that he’d just learned about it, but otherwise downplayed it, something he often does in response to cyberattacks against the United States. “I don’t like that,” Trump said. “But maybe we will learn things that we would’ve never learned otherwise.” It was the second breach in recent months at the FBI, which suffered an attack from ShinyHunters in September that saw the bureau’s website defaced and the hacking group claiming it stole sensitive information on FBI agents and jobseekers. Patel made his remarks at a Justice Department press conference to tout progress in its battle against scammers — including cybercrime — since Trump signed an executive order in March. As part of his answer to the question about the FBI breach, Patel claimed intrusions were “down 36% based on FBI caseload” under Trump compared to his predecessor, Joe Bide"
+   "translated": true,
+   "enriched": true,
+   "why": "Ilustra que mesmo agências governamentais de topo continuam a ser alvo de ataques bem-sucedidos a bases de dados críticas.",
+   "todo": "Assegure monitorização contínua e registos de auditoria rigorosos em bases de dados com informação sensível."
   },
   {
    "id": "1a2e2ef73cdc6cf0",
@@ -598,15 +619,20 @@
    "lang": "en",
    "link": "https://aws.amazon.com/blogs/security/aws-achieves-spains-national-limited-distribution-difusion-limitada-and-nato-restricted-accreditation-in-the-aws-europe-spain-region/",
    "published": "2026-11-24T17:38:00+00:00",
-   "title": "AWS achieves Spain’s national Limited Distribution (Difusión Limitada) and NATO Restricted accreditation in the AWS Europe (Spain) Region",
-   "summary": "Spanish version » Amazon Web Services (AWS) is pleased to announce that AWS has achieved Spain’s national Limited Distribution (“Difusión Limitada”) and NATO Restricted accreditation for the AWS Europe (Spain) Region. The Difusión Limitada and NATO Restricted accreditation was granted by the Spanish Delegated Authority for the Security of Classified Information, the Secretary of State […]",
+   "title": "AWS obtém acreditação nacional de Difusão Limitada de Espanha e Restrito pela NATO na Região AWS Europa (Espanha)",
+   "summary": "A Amazon Web Services (AWS) alcançou as acreditações nacionais de Difusão Limitada de Espanha e de Restrito pela NATO na sua região europeia em Espanha. A certificação foi concedida pelo Centro Nacional de Inteligência (CNI) após auditorias rigorosas conduzidas pelo Centro Criptológico Nacional e pela Oficina Nacional de Segurança. Com este marco, a AWS torna-se o primeiro fornecedor de cloud a cumprir estes critérios de segurança para lidar com informações classificadas.",
    "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/23/borjales.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A AWS obteve as acreditações de Difusão Limitada em Espanha e Restrito pela NATO.",
+    "A certificação foi atribuída após auditorias do CNI e organismos associados.",
+    "A AWS torna-se o primeiro fornecedor de cloud a atingir este nível de segurança classificativa na região."
+   ],
+   "title_original": "AWS achieves Spain’s national Limited Distribution (Difusión Limitada) and NATO Restricted accreditation in the AWS Europe (Spain) Region",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Spanish version » Amazon Web Services (AWS) is pleased to announce that AWS has achieved Spain’s national Limited Distribution (“Difusión Limitada”) and NATO Restricted accreditation for the AWS Europe (Spain) Region. The Difusión Limitada and NATO Restricted accreditation was granted by the Spanish Delegated Authority for the Security of Classified Information, the Secretary of State Director of Spain’s Centro Nacional de Inteligencia (CNI) . The Centro Criptológico Nacional (CCN) and the Oficina Nacional de Seguridad (ONS) are working bodies of the CNI, which audited AWS against the CCN-STIC-004 policy and the applicable ONS requirements. With this milestone, AWS becomes the first cloud provider to be accredited under NATO Restricted level, and the first to be accredited for Difusión Limitada in the AWS Europe (Spain) Region. In Spain, this was a double achievement: AWS first met the national Difusión Limitada requirements and then, in addition to this national methodology, achieved the NATO Restricted accreditation by incorporating the requirements of NATO Directive 32. This demonstrates our continued commitment to helping the public sector, defense, and NATO-affiliated customers run sensitive workloads in the cloud while meeting the highest applicable national and international security requirements. What this covers The Difusión Limitada and NATO Restricted accreditation by the CNI confirms that the AWS system in the AWS Europe (Spain) Region meets the procedural and security requirements for handling classified information up to the Difusión Limitada and NATO Restricted level. What is Spain’s classified information framework? Spain’s framework for protecting national classified information is administered by the ONS and the CCN, under the CNI. In 2026, Spain estab"
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra o cumprimento de requisitos exigentes de segurança para o tratamento de dados confidenciais do setor público e da defesa.",
+   "todo": "Adote fornecedores de serviços em nuvem com certificações oficiais validadas para o tratamento de cargas de trabalho sensíveis."
   },
   {
    "id": "3127c44d38bca902",
@@ -615,15 +641,20 @@
    "lang": "en",
    "link": "https://databreaches.net/2026/11/24/gingko-bioworks-holdings-issued-a-statement-on-october-8-about-a-data-breach-getting-an-update-from-them-has-been-difficult/",
    "published": "2026-11-24T17:34:23+00:00",
-   "title": "Gingko Bioworks Holdings issued a statement on October 8 about a data breach. Getting an update from them has been difficult.",
-   "summary": "On or about November 19, FulcrumSec added Gingko Bioworks Holdings to its clear net leak site. As has been its practice, the threat actor(s) provided a great detail of analysis and details about the data they acquired. In short, they claim to have acquired: 9.9 TB total exfil • 10,775,976 files across 82 buckets •...",
+   "title": "Gingko Bioworks Holdings emite declaração sobre violação de dados enquanto atualizações continuam difíceis",
+   "summary": "A empresa Gingko Bioworks Holdings foi adicionada por um grupo de cibercriminosos a um site de fugas de informação na internet aberta. O grupo responsável pelo ataque reivindicou o roubo de cerca de 9,9 terabytes de dados, distribuídos por milhões de ficheiros em dezenas de baldes de armazenamento. A obtenção de informações atualizadas e transparentes sobre o incidente tem sido difícil para o público.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Gingko Bioworks Holdings foi listada num site de fugas por operadores maliciosos.",
+    "Os atacantes afirmam ter exfiltrado 9,9 TB de dados contendo milhões de ficheiros.",
+    "Tem sido difícil obter atualizações claras sobre o incidente por parte da empresa."
+   ],
+   "title_original": "Gingko Bioworks Holdings issued a statement on October 8 about a data breach. Getting an update from them has been difficult.",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "On or about November 19, FulcrumSec added Gingko Bioworks Holdings to its clear net leak site. As has been its practice, the threat actor(s) provided a great detail of analysis and details about the data they acquired. In short, they claim to have acquired: 9.9 TB total exfil • 10,775,976 files across 82 buckets •..."
+   "translated": true,
+   "enriched": true,
+   "why": "Reflete os riscos de extorsão e exposição pública de grandes volumes de dados corporativos roubados.",
+   "todo": "Segmente o armazenamento de dados em nuvem e utilize encriptação forte para mitigar o impacto de exfiltrações em massa."
   },
   {
    "id": "93821c2ae5ea2679",
@@ -632,15 +663,20 @@
    "lang": "en",
    "link": "https://cyberscoop.com/uk-ncsc-ai-assisted-cyberattacks/",
    "published": "2026-11-24T17:27:09+00:00",
-   "title": "UK cyber agency, threat companies tracking rise in AI-assisted hacks",
-   "summary": "The National Cyber Security Centre said it is observing a “marked” increase in such attacks across sectors, as threat actors increasingly delegate to machines.",
+   "title": "Agência de cibersegurança do Reino Unido e empresas rastreiam aumento de ataques assistidos por IA",
+   "summary": "O Centro Nacional de Cibersegurança do Reino Unido (NCSC) detetou um aumento acentuado de ciberataques assistidos por inteligência artificial desde setembro. Os atacantes estão a utilizar estruturas de testes de intrusão ofensiva combinadas com modelos de linguagem e APIs acessíveis para automatizar a descoberta de vulnerabilidades. Embora os ataques alcancem maior velocidade e escala, as falhas exploradas são conhecidas e poderiam ter sido evitadas com correções atempadas.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O NCSC do Reino Unido reportou um aumento de ataques cibernéticos assistidos por IA.",
+    "Os atacantes usam frameworks ofensivas e modelos de IA para automatizar a exploração de falhas.",
+    "As vulnerabilidades exploradas são conhecidas e poderiam ter sido corrigidas antecipadamente."
+   ],
+   "title_original": "UK cyber agency, threat companies tracking rise in AI-assisted hacks",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "As U.S. policymakers focus on outages that appear partly caused by widespread patching of AI-identified vulnerabilities, the U.K.’s top cyber intelligence agency says it is seeing more cyberattacks carried out with AI assistance. On Tuesday, three officials from the National Cyber Security Centre said they had observed “a marked rise” in AI-assisted cyberattacks since September. “Organizations across multiple sectors are reporting incidents as a result of threat actors using ‘agentic offensive frameworks’; software originally designed for red teaming being applied beyond its defensive purpose,” wrote David Chismon, chief technology officer for architecture, and two partially-named NCSC staffers, Kris B., incident handler, and Ellen T, lead data scientist on the vulnerability management team. The incidents resemble past AI-enabled hacks, defined by rapid, automated vulnerability discovery and attempted exploitation of all of a target’s internet-facing assets “in quick succession.” The impact on victims ranged from outages to system compromise. “What has changed, is how quickly and persistently threat actors can conduct attacks – at low cost – using these frameworks combined with cheap, capable open models or illegal API resellers,” the officials wrote. The NCSC officials called the threat sobering but noted that “none” of the vulnerabilities or attacks are novel. They’re known weaknesses that organizations should have patched sooner, and most can still be patched. Additionally, hacking operations moving at speed and scale generate a great deal of “noise” and telemetry that defenders can track. Large language models are powerful on their own, but combined with technical harnesses , offensive security frameworks , and human expertise, they can become genuine national secur"
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para a utilização crescente de inteligência artificial por cibercriminosos para acelerar e escalar ataques a vulnerabilidades conhecidas.",
+   "todo": "Priorize a aplicação imediata de patches de segurança para mitigar explorações automatizadas de alta velocidade."
   },
   {
    "id": "f0ed0fdc40d96a21",
@@ -1452,15 +1488,20 @@
    "lang": "en",
    "link": "https://databreaches.net/2026/11/24/state-shuts-down-mycolorado-app-after-data-breach-up-to-150000-people-may-be-affected/",
    "published": "2026-11-24T14:00:06+00:00",
-   "title": "State shuts down myColorado app after data breach; up to 150,000 people may be affected",
-   "summary": "Kiowa County Press reports: The state’s myColorado app will stay offline while officials investigate a data breach that may have exposed information belonging to as many as 150,000 people. The Governor’s Office of Information Technology found on November 18 that an unauthorized user had been able to get into data on the app’s platform, the...",
+   "title": "Estado encerra app myColorado após violação de dados que pode afetar até 150.000 pessoas",
+   "summary": "A aplicação estatal myColorado foi temporariamente encerrada na sequência de uma violação de segurança que comprometeu dados de até 150.000 pessoas. O Gabinete de Tecnologia da Informação do Governador detetou que um utilizador não autorizado conseguiu aceder à plataforma da aplicação. As autoridades mantêm a aplicação offline enquanto investigam a extensão total do incidente.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A aplicação myColorado foi desligada após um acesso não autorizado à sua plataforma.",
+    "Até 150.000 utilizadores podem ter sido afetados pela exposição de dados.",
+    "O governo mantém a aplicação offline enquanto decorre a investigação forense."
+   ],
+   "title_original": "State shuts down myColorado app after data breach; up to 150,000 people may be affected",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "Kiowa County Press reports: The state’s myColorado app will stay offline while officials investigate a data breach that may have exposed information belonging to as many as 150,000 people. The Governor’s Office of Information Technology found on November 18 that an unauthorized user had been able to get into data on the app’s platform, the..."
+   "translated": true,
+   "enriched": true,
+   "why": "Sublinha a vulnerabilidade de aplicações governamentais móveis a acessos não autorizados e o impacto nos cidadãos.",
+   "todo": "Implemente autenticação multifator estrita e controlos de acesso baseados no princípio do privilégio mínimo em aplicações públicas."
   },
   {
    "id": "f11098c507607eb0",
@@ -1469,15 +1510,20 @@
    "lang": "en",
    "link": "https://therecord.media/cyberattacks-uk-artificial-intelligence",
    "published": "2026-11-24T13:45:00+00:00",
-   "title": "UK cyber agency seeing ‘marked rise’ in AI-driven attacks",
-   "summary": "Britain’s National Cyber Security Centre said it has observed “a marked rise” since September in cyberattacks assisted by artificial intelligence and warned the technology was increasing attackers’ speed, scale and persistence.",
+   "title": "Agência de cibersegurança britânica regista aumento acentuado de ataques impulsionados por IA",
+   "summary": "O Centro Nacional de Cibersegurança do Reino Unido (NCSC) revelou um crescimento notório nos ataques cibernéticos apoiados por inteligência artificial desde o mês de setembro. A agência alertou que esta tecnologia está a ser utilizada para potenciar a velocidade, a escala e a persistência dos atacantes. O fenómeno resulta no aproveitamento automatizado de falhas existentes na infraestrutura das organizações.",
    "image": "https://cms.therecord.media/uploads/uk_ncsc_cyberuk_twitter_x_fe8e68b06d.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O NCSC britânico registou mais ciberataques apoiados por IA desde setembro.",
+    "A tecnologia aumenta a velocidade, escala e persistência das investidas maliciosas.",
+    "Os ataques focam-se na exploração rápida de vulnerabilidades digitais."
+   ],
+   "title_original": "UK cyber agency seeing ‘marked rise’ in AI-driven attacks",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "Britain’s National Cyber Security Centre said it has observed “a marked rise” since September in cyberattacks assisted by artificial intelligence and warned the technology was increasing attackers’ speed, scale and persistence."
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como a IA está a alterar a dinâmica das ameaças cibernéticas, tornando os ataques mais rápidos e persistentes.",
+   "todo": "Refagre a gestão de vulnerabilidades e utilize ferramentas de defesa automatizadas para responder à velocidade dos ataques baseados em IA."
   },
   {
    "id": "e8e6c985877b75be",
@@ -1486,15 +1532,20 @@
    "lang": "en",
    "link": "https://www.infosecurity-magazine.com/news/ai-agent-risks-face-action-fca/",
    "published": "2026-11-24T13:45:00+00:00",
-   "title": "Address AI Agent Risks or Face Action, FCA Warns Financial Firms",
-   "summary": "The FCA said financial organizations must provide effective oversight and governance controls for AI agents, amid rising deployment in the sector",
+   "title": "FCA alerta empresas financeiras para abordarem riscos de agentes de IA ou enfrentarem sanções",
+   "summary": "A Autoridade de Conduta Financeira (FCA) avisou as organizações do setor financeiro de que devem implementar uma supervisão eficaz e controlos de governação sobre os agentes de IA. O aviso surge devido à crescente implementação destas tecnologias no setor. O incumprimento destas diretrizes poderá resultar em ações regulatórias contra as empresas.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A FCA exigiu melhor governação e supervisão sobre o uso de agentes de IA.",
+    "O aviso surge na sequência da adoção crescente de inteligência artificial no setor financeiro.",
+    "As empresas que não cumprirem os controlos arriscam-se a sanções regulatórias."
+   ],
+   "title_original": "Address AI Agent Risks or Face Action, FCA Warns Financial Firms",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "The FCA said financial organizations must provide effective oversight and governance controls for AI agents, amid rising deployment in the sector"
+   "translated": true,
+   "enriched": true,
+   "why": "Destaca a exigência dos reguladores financeiros por maior controlo face aos riscos associados à adoção de agentes de IA autónomos.",
+   "todo": "Estabeleça quadros de governação rigorosos e auditorias regulares para o uso de ferramentas de IA nas operações financeiras."
   },
   {
    "id": "72cace5c82fd439f",
@@ -1503,15 +1554,20 @@
    "lang": "en",
    "link": "https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-2026-idc-marketscape-worldwide-augmented-identity-security-solutions/",
    "published": "2026-11-24T13:41:23.858028+00:00",
-   "title": "CrowdStrike Named a Leader in the 2026 IDC MarketScape for Worldwide Augmented Identity Security Solutions",
-   "summary": "",
+   "title": "CrowdStrike nomeada líder no IDC MarketScape para soluções globais de segurança de identidade aumentada",
+   "summary": "A empresa CrowdStrike foi reconhecida como líder no relatório IDC MarketScape de 2026 para soluções mundiais de segurança de identidade aumentada. A distinção destaca a capacidade da empresa em fornecer proteção avançada contra ameaças centradas na identidade. O reconhecimento reflete a importância crescente da segurança de acessos no ecossistema de cibersegurança atual.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A CrowdStrike foi destacada como líder global pelo IDC MarketScape.",
+    "A avaliação focou-se em soluções de segurança de identidade aumentada.",
+    "O reconhecimento realça o papel crítico da proteção de identidades na cibersegurança."
+   ],
+   "title_original": "CrowdStrike Named a Leader in the 2026 IDC MarketScape for Worldwide Augmented Identity Security Solutions",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": ""
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia o valor das soluções avançadas de gestão e proteção de identidades para travar ameaças modernas.",
+   "todo": "Adote soluções robustas de gestão de identidade e acesso (IAM) para proteger contas de utilizadores contra compromissos."
   },
   {
    "id": "78138acb2d0a1975",
@@ -1520,15 +1576,20 @@
    "lang": "en",
    "link": "https://www.helpnetsecurity.com/2026/11/24/gta-vi-hacker-sentenced-seven-years-released-on-licence/",
    "published": "2026-11-24T13:35:37+00:00",
-   "title": "GTA 6 hacker sentenced to seven years and released the same day",
-   "summary": "The Lapsus$ member who leaked footage of Grand Theft Auto VI (GTA 6) was sentenced to seven years in prison on Monday and released from custody on licence the same day, City of London Police announced. Arion Kurtaj, 21, formerly of Oxfordshire, pleaded guilty to six charges, including fraud and computer misuse offences, at Woolwich Crown Court on 16 November. The court set a nine-year term and then took off two years for the time … More →",
+   "title": "Hacker do GTA 6 condenado a sete anos e libertado no mesmo dia",
+   "summary": "Arion Kurtaj, um jovem de 21 anos e membro do grupo Lapsus$ responsável por fugas de informação do Grand Theft Auto VI (GTA 6), foi condenado a sete anos de prisão por um tribunal britânico. No entanto, devido ao tempo já cumprido em prisão preventiva, foi libertado sob licença no mesmo dia da sentença. O indivíduo tinha sido considerado culpado de várias acusações, incluindo fraude e crimes de utilização indevida de computadores.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Um membro do grupo Lapsus$ envolvido na fuga do GTA 6 foi condenado a sete anos de prisão.",
+    "O hacker acabou por ser libertado sob licença no mesmo dia devido ao tempo de detenção prévia.",
+    "O arguido foi condenado por várias acusações de fraude e uso indevido de computadores."
+   ],
+   "title_original": "GTA 6 hacker sentenced to seven years and released the same day",
    "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": false,
-   "raw": "The Lapsus$ member who leaked footage of Grand Theft Auto VI (GTA 6) was sentenced to seven years in prison on Monday and released from custody on licence the same day, City of London Police announced. Arion Kurtaj, 21, formerly of Oxfordshire, pleaded guilty to six charges, including fraud and computer misuse offences, at Woolwich Crown Court on 16 November. The court set a nine-year term and then took off two years for the time … More →"
+   "translated": true,
+   "enriched": true,
+   "why": "Ilustra o desfecho judicial de um dos casos mais sonantes de fugas de propriedade intelectual na indústria dos videojogos.",
+   "todo": "Aplique o princípio do menor privilégio e monitore acessos internos para prevenir roubos de dados por grupos organizados."
   },
   {
    "id": "e94ac3e9d5200e65",

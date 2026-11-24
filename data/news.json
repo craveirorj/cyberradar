@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T22:04:44.101165+00:00",
+ "updated": "2026-11-24T22:26:56.725610+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,12 +54,12 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
    "ok": true,
-   "added": 20
+   "added": 21
   },
   {
    "source": "CISA Alertas (KEV)",
@@ -89,7 +89,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 22
+   "added": 21
   },
   {
    "source": "SecurityWeek",
@@ -104,7 +104,7 @@
   {
    "source": "CyberScoop",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Cybersecurity Dive",
@@ -209,7 +209,7 @@
   {
    "source": "Tenable",
    "ok": true,
-   "added": 5
+   "added": 6
   },
   {
    "source": "Zero Day Initiative",
@@ -238,8 +238,8 @@
   },
   {
    "source": "The Register Security",
-   "ok": true,
-   "added": 9
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "Help Net Security",
@@ -309,16 +309,80 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 345,
-  "unenriched": 229,
+  "done": 120,
+  "pending": 223,
+  "unenriched": 104,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "Expecting ',' delimiter: line 83 column 69 (char 6089)"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "6a6218931c47e3bc",
+   "source": "Dark Reading",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.darkreading.com/cyber-risk/satellites-ground-level-cybersecurity-problem",
+   "published": "2026-11-24T22:05:34+00:00",
+   "title": "Satélites têm um problema de cibersegurança ao nível do solo",
+   "summary": "As fragilidades presentes na infraestrutura terrestre que dá suporte aos serviços de satélite estão a tornar-se mais problemáticas à medida que a nova corrida ao espaço avança. Estas falhas na terra colocam em risco todo o ecossistema espacial. O impacto traduz-se numa maior vulnerabilidade de serviços essenciais que dependem desta tecnologia.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt6866e786d2fd0c3c/6b05fc1bdcebc97b86eb1502/satellite_Y_alax_shutterstock.jpg?width=720&quality=80&disable=upscale",
+   "points": [
+    "Fragilidades afetam a infraestrutura terrestre de satélites.",
+    "Problema ganha relevância com a nova corrida ao espaço.",
+    "Infraestruturas de solo tornam-se mais críticas e vulneráveis."
+   ],
+   "title_original": "Satellites Have a Ground-Level Cybersecurity Problem",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que a segurança espacial depende fortemente da proteção das infraestruturas terrestres.",
+   "todo": "Auditar e reforçar a segurança física e lógica dos sistemas terrestres de suporte a operações."
+  },
+  {
+   "id": "f52a74730bc13a7a",
+   "source": "CyberScoop",
+   "region": "US",
+   "lang": "en",
+   "link": "https://cyberscoop.com/cia-odni-osint-data-breach/",
+   "published": "2026-11-24T22:01:23+00:00",
+   "title": "Sistema de inteligência não classificado foi atacado por hackers, afetando a CIA e a ODNI",
+   "summary": "A CIA e o Gabinete do Diretor de Inteligência Nacional detetaram uma violação de dados num sistema de análise de inteligência de código aberto. Embora os dados expostos não fossem confidenciais, o incidente revelou quais os tópicos e prioridades que os analistas estavam a seguir. A investigação indicou que redes OSINT são difíceis de proteger devido à necessidade de permanecerem ligadas à internet pública.",
+   "image": null,
+   "points": [
+    "CIA e ODNI afetadas por violação de dados num sistema OSINT.",
+    "Informação exposta não era classificada, mas revelava prioridades analíticas.",
+    "Redes de código aberto são difíceis de proteger por estarem ligadas à internet pública."
+   ],
+   "title_original": "Unclassified intel system hit by hackers, affecting CIA, ODNI",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia que dados não classificados podem revelar informações estratégicas valiosas para adversários.",
+   "todo": "Restringir o acesso a redes de recolha de informação aberta e monitorizar padrões de pesquisa atípicos."
+  },
+  {
+   "id": "354cd6c9eefc16bd",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/produto-e-review/kagi-mail-rival-do-gmail-estreia-com-foco-em-privacidade-recursos-de-ia-e-teste-gratuito/",
+   "published": "2026-11-24T22:00:00+00:00",
+   "title": "Kagi Mail: rival do Gmail estreia com foco em privacidade, recursos de IA e teste gratuito",
+   "summary": "A Kagi lançou a versão beta pública do seu serviço de correio eletrónico pago, posicionado como uma alternativa focada na privacidade e sem anúncios. A plataforma suporta padrões abertos, domínios próprios e calendários integrados, oferecendo 50 GB de armazenamento. Conta ainda com ferramentas de IA, bloqueio de pixéis de rastreamento e proteção contra phishing.",
+   "image": "https://www.estadao.com.br/resizer/v2/7INOE72VMZESDCQXFAMVCYDO64.jpg?quality=80&auth=c0d86c779a4985c6d7fe228b31e740671188967c4c89f4e14cb624321a0213b5&width=710",
+   "points": [
+    "Kagi lança serviço de email pago com foco em privacidade.",
+    "Plataforma inclui padrões abertos, domínios próprios e 50 GB de armazenamento.",
+    "Oferece bloqueio de rastreio, ferramentas de IA e proteção contra phishing."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Disponibiliza uma nova alternativa de comunicação empresarial centrada na privacidade e segurança de dados.",
+   "todo": "Avaliar o uso de soluções de email com foco em privacidade e ativar defesas contra phishing."
+  },
   {
    "id": "7f8f5938b05b8fb0",
    "source": "Dark Reading",
@@ -326,15 +390,20 @@
    "lang": "en",
    "link": "https://www.darkreading.com/perimeter/webworm-slithers-customized-softether-vpn",
    "published": "2026-11-24T21:48:06+00:00",
-   "title": "Webworm APT Slithers Into Networks With Customized SoftEther VPN",
-   "summary": "The China-aligned espionage group rebuilt the open source VPN software from source, stripping out the artifacts that would normally expose it to defenders.",
+   "title": "Grupo APT Webworm infiltra-se em redes com SoftEther VPN personalizada",
+   "summary": "O grupo de espionagem alinhado à China reconstruiu um software VPN de código aberto diretamente a partir do código-fonte para remover artefactos que normalmente o expõem aos defensores. Esta customização permitiu ao grupo infiltrar-se em redes de forma furtiva. O impacto foca-se em campanhas de espionagem industrial e estatal.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt90d6b1405473fe5b/6b05fadd5bf26ea3ca9d2638/snake_computer-the-lightwriter-GettyImages-530757188.jpg?width=720&quality=80&disable=upscale",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Grupo APT Webworm associado à China usou VPN modificada.",
+    "Software SoftEther VPN foi recompilado para ocultar artefactos de deteção.",
+    "Tática evitou a deteção por parte das equipas de segurança."
+   ],
+   "title_original": "Webworm APT Slithers Into Networks With Customized SoftEther VPN",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "The China-aligned espionage group rebuilt the open source VPN software from source, stripping out the artifacts that would normally expose it to defenders."
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra como atores avançados modificam ferramentas legítimas para passarem despercebidos.",
+   "todo": "Monitorizar comportamentos anómalos em conexões VPN e atualizar assinaturas de deteção."
   },
   {
    "id": "6c270107d3982041",
@@ -343,15 +412,20 @@
    "lang": "en",
    "link": "https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/",
    "published": "2026-11-24T21:37:30+00:00",
-   "title": "Rackspace shuts down Spot cloud platform after security breach",
-   "summary": "Rackspace is shutting down its Rackspace Spot cloud platform after a security breach allowed hackers to access customer Kubernetes clusters and secrets, giving customers until December 8 to migrate their services and download their data. [...]",
+   "title": "Rackspace encerra plataforma de nuvem Spot após violação de segurança",
+   "summary": "A Rackspace decidiu encerrar a plataforma de nuvem Rackspace Spot após um ataque cibernético ter permitido a intrusos aceder a clusters Kubernetes e dados confidenciais de clientes. A empresa deu um prazo até dezembro para que os utilizadores migrassem os seus serviços e descarregassem os dados. O impacto resultou na descontinuação total do serviço.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Rackspace encerra plataforma Spot após incidente de segurança.",
+    "Ataque expôs clusters Kubernetes e segredos de clientes.",
+    "Clientes tiveram de migrar serviços e dados rapidamente."
+   ],
+   "title_original": "Rackspace shuts down Spot cloud platform after security breach",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "Rackspace is shutting down its Rackspace Spot cloud platform after a security breach allowed hackers to access customer Kubernetes clusters and secrets, giving customers until December 8 to migrate their services and download their data. [...]"
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra o impacto severo que uma violação de segurança pode ter na continuidade de um serviço em nuvem.",
+   "todo": "Garantir uma gestão rigorosa de acessos e segredos em ambientes Kubernetes."
   },
   {
    "id": "3b8d0a7e0d039061",
@@ -360,15 +434,20 @@
    "lang": "en",
    "link": "https://www.darkreading.com/vulnerabilities-threats/god-mode-flaws-wreak-border-control-havoc",
    "published": "2026-11-24T21:36:11+00:00",
-   "title": "'God Mode' Flaws Could Wreak Border-Control Havoc",
-   "summary": "Attackers could have disrupted traveler entry into Nigeria, Ethiopia, Zambia, Sri Lanka, Fiji, and Ghana via several vulnerabilities in their online visa and immigration systems.",
+   "title": "Falhas de 'Modo Deus' podiam causar caos no controlo de fronteiras",
+   "summary": "Várias vulnerabilidades críticas em sistemas online de vistos e imigração permitiam a atacantes interromper a entrada de viajantes em países como Nigéria, Etiópia, Zâmbia, Sri Lanka, Fiji e Gana. Estas falhas davam capacidades de controlo total sobre os portais afetados. O impacto potencial envolvia a paralisação de fronteiras nacionais.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltf04ed1ecab1b2c42/66cc9d45781c434a1b20ebb3/airport1800_RoadPix_alamy.jpg?width=720&quality=80&disable=upscale",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Vulnerabilidades encontradas em sistemas de vistos e imigração de vários países.",
+    "Falhas permitiam perturbar a entrada de viajantes em múltiplos territórios.",
+    "Problema afetou portais online de governos na África, Ásia e Pacífico."
+   ],
+   "title_original": "'God Mode' Flaws Could Wreak Border-Control Havoc",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Attackers could have disrupted traveler entry into Nigeria, Ethiopia, Zambia, Sri Lanka, Fiji, and Ghana via several vulnerabilities in their online visa and immigration systems."
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia o risco sistémico de falhas em plataformas governamentais críticas de controlo de fronteiras.",
+   "todo": "Realizar auditorias de segurança regulares e testes de intrusão em portais de serviços públicos online."
   },
   {
    "id": "4266742c8a27ff93",
@@ -377,15 +456,20 @@
    "lang": "en",
    "link": "https://aws.amazon.com/blogs/security/aws-network-firewall-introduces-automated-internet-firewall-mode-preview/",
    "published": "2026-11-24T21:30:20+00:00",
-   "title": "AWS Network Firewall introduces automated internet firewall mode (Preview)",
-   "summary": "AWS Network Firewall now offers automated internet firewall mode (Preview). In this mode, Network Firewall applies your centrally defined rules to traffic at the internet gateway of each of your virtual private clouds (VPCs). It also performs built-in network address translation (NAT) for outbound-only connections. A subnet that reaches the internet needs only one route, […]",
+   "title": "AWS Network Firewall introduz modo de firewall de internet automatizado (Pré-visualização)",
+   "summary": "A AWS Network Firewall lançou uma nova modalidade que aplica regras de segurança centralizadas diretamente no gateway de internet de cada nuvem privada virtual (VPC). Esta funcionalidade inclui tradução de endereços de rede (NAT) integrada para ligações de saída e dispensa a configuração manual de endpoints de firewall em cada VPC. O objetivo é simplificar a inspeção de tráfego à escala.",
    "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/24/aif-fig1-r25-r30.png",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "AWS lança modo de firewall de internet automatizado em pré-visualização.",
+    "Aplica regras centralizadas no gateway de internet de cada VPC.",
+    "Integra NAT para tráfego de saída e simplifica arquiteturas de segurança."
+   ],
+   "title_original": "AWS Network Firewall introduces automated internet firewall mode (Preview)",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "AWS Network Firewall now offers automated internet firewall mode (Preview). In this mode, Network Firewall applies your centrally defined rules to traffic at the internet gateway of each of your virtual private clouds (VPCs). It also performs built-in network address translation (NAT) for outbound-only connections. A subnet that reaches the internet needs only one route, directly to the internet gateway. You no longer need to deploy firewall endpoints and NAT gateways in each VPC and configure the routes between them and the subnets. If you’re new to internet traffic inspection, you can start with AWS managed rule groups for Network Firewall . AWS security experts maintain and update these rule groups to help protect your workloads against changing threats. You can deploy these managed rule groups centrally across your environment. With automated internet firewall mode, you can: Inspect traffic at the internet gateway – Each VPC gets its own firewall for inbound and outbound IPv4 and IPv6 traffic, with built-in NAT for outbound-only IPv4 connections. Manage centrally, inspect in each VPC – You define policies in AWS Network Security Manager or start from an AWS managed template. Each VPC’s traffic passes its own firewall, so each VPC you add brings its own inspection capacity. The same central policy also works for VPCs with overlapping Classless Inter-Domain Routing (CIDR) ranges. Extend coverage to new VPCs – You can create a scope that includes all existing and future VPCs, so your policy applies to new VPCs when teams create them. In this post, we explain how automated internet firewall mode works and how it fits your existing architecture. We also walk through the steps to deploy it across your environment. How automated internet firewall mode works In automated in"
+   "translated": true,
+   "enriched": true,
+   "why": "Facilita a implementação consistente de políticas de segurança em ambientes cloud complexos.",
+   "todo": "Adotar regras de segurança geridas centralmente para proteger tráfego de entrada e saída na nuvem."
   },
   {
    "id": "4647bb6a18f6a9b5",
@@ -394,15 +478,20 @@
    "lang": "en",
    "link": "https://techcrunch.com/2026/11/24/dozens-of-oil-and-shipping-tankers-hacked-in-recent-weeks-per-report/",
    "published": "2026-11-24T21:09:04+00:00",
-   "title": "Dozens of oil and shipping tankers hacked in recent weeks, per report",
-   "summary": "Iran is the chief suspect behind the dozens of cyberattacks targeting oil and chemical shipping vessels.",
+   "title": "Dezenas de petroleiros e navios de carga atacados nas últimas semanas, segundo relatório",
+   "summary": "Várias dezenas de navios de transporte de petróleo e químicos foram alvo de ataques cibernéticos recentes. O Irão surge como o principal suspeito por trás desta vaga de incidentes contra embarcações comerciais. O impacto afeta a segurança da navegação e o setor marítimo global.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Dezenas de petroleiros e navios alvo de ciberataques.",
+    "Irão apontado como principal suspeito das intrusões.",
+    "Incidência concentrada em embarcações de transporte de petróleo e químicos."
+   ],
+   "title_original": "Dozens of oil and shipping tankers hacked in recent weeks, per report",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Iran is the chief suspect behind the dozens of cyberattacks targeting oil and chemical shipping vessels."
+   "translated": true,
+   "enriched": true,
+   "why": "Revela a crescente vulnerabilidade do setor marítimo a campanhas cibernéticas direcionadas.",
+   "todo": "Reforçar os controlos de cibersegurança nos sistemas de navegação e comunicação a bordo."
   },
   {
    "id": "1e590e449d20ac03",
@@ -411,15 +500,20 @@
    "lang": "en",
    "link": "https://hackread.com/researchers-take-over-5-us-treasury-subdomains/",
    "published": "2026-11-24T20:53:59+00:00",
-   "title": "Researchers Take Over Five US Treasury Subdomains for About $3 Each",
-   "summary": "Old DNS records let Intruder researchers take over five US Treasury subdomains via reassigned AWS IP addresses. No government data theft was reported.",
+   "title": "Investigadores assumem o controlo de cinco subdomínios do Tesouro dos EUA por cerca de 3 dólares cada",
+   "summary": "Registos DNS obsoletos permitiram a investigadores da empresa Intruder apropriarem-se de cinco subdomínios do Departamento do Tesouro dos EUA através de endereços IP da AWS reutilizados. Embora o controlo tenha sido obtido com um custo reduzido, não houve registo de roubo de dados governamentais. A situação decorreu de órfãos tecnológicos em registos de DNS.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Investigadores apropriam-se de subdomínios do Tesouro dos EUA.",
+    "Uso de registos DNS antigos e IPs da AWS reutilizados facilitou a ação.",
+    "Nenhum dado governamental foi roubado durante a experiência."
+   ],
+   "title_original": "Researchers Take Over Five US Treasury Subdomains for About $3 Each",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Old DNS records let Intruder researchers take over five US Treasury subdomains via reassigned AWS IP addresses. No government data theft was reported."
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra o perigo de subdomínios abandonados apontados a infraestruturas de nuvem reutilizadas.",
+   "todo": "Auditar e limpar regularmente registos DNS órfãos para evitar sequestro de subdomínios."
   },
   {
    "id": "2f99e3ac2673fbf0",
@@ -428,15 +522,20 @@
    "lang": "en",
    "link": "https://therecord.media/mycolorado-app-down-data-breach",
    "published": "2026-11-24T20:52:00+00:00",
-   "title": "Colorado says cyberattack took down myColorado app, warns 150,000 had data stolen",
-   "summary": "Cybercriminals likely stole data from 150,000 users of myColorado, which residents typically use for digital identification, document storage and accessing state government services.",
+   "title": "Colorado afirma que ciberataque derrubou a aplicação myColorado e alerta que 150.000 pessoas tiveram dados roubados",
+   "summary": "Um ataque cibernético comprometeu a aplicação estatal myColorado, utilizada pelos residentes para identificação digital, armazenamento de documentos e serviços governamentais. Os atacantes roubaram dados pertencentes a cerca de 150.000 utilizadores. O incidente resultou na interrupção do serviço e na exposição de informação pessoal sensível.",
    "image": "https://cms.therecord.media/uploads/my_colorado_app_fb8214e64c.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Aplicação myColorado derrubada por ataque cibernético.",
+    "Dados de 150.000 utilizadores foram roubados.",
+    "Plataforma serve para identificação digital e acesso a serviços do estado."
+   ],
+   "title_original": "Colorado says cyberattack took down myColorado app, warns 150,000 had data stolen",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Cybercriminals likely stole data from 150,000 users of myColorado, which residents typically use for digital identification, document storage and accessing state government services."
+   "translated": true,
+   "enriched": true,
+   "why": "Sublinha o risco elevado associado à concentração de dados de identificação pessoal em aplicações móveis.",
+   "todo": "Implementar encriptação forte de dados locais e monitorizar acessos anómalos a aplicações governamentais."
   },
   {
    "id": "0a831bdb4e0f14f4",
@@ -445,15 +544,20 @@
    "lang": "en",
    "link": "https://securityaffairs.com/203900/data-breach/eu-academy-users-names-and-emails-exposed-in-eu-commission-hack.html",
    "published": "2026-11-24T20:29:25+00:00",
-   "title": "EU Academy Users’ Names and Emails Exposed in EU Commission Hack",
-   "summary": "The EU Commission confirms an AI-powered cyberattack leaked EU Academy users’ names and emails. China-backed threat actors are suspected. The European Commission has confirmed that the cyberattack it disclosed last week exposed personal data. The European Commission (EC) confirmed that the cyberattack exposed personal information. When the attack was discovered, several applications were temporarily shut […]",
+   "title": "Nomes e emails de utilizadores da EU Academy expostos em ciberataque à Comissão Europeia",
+   "summary": "A Comissão Europeia confirmou que um ciberataque potenciado por inteligência artificial comprometeu a plataforma EU Academy, expondo nomes e endereços de correio eletrónico de utilizadores externos. Várias aplicações internas foram temporariamente desativadas por precaução, enquanto atores apoiados pela China são suspeitos da autoria. As autoridades alertam para potenciais campanhas de phishing direcionadas.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Plataforma EU Academy alvo de ciberataque com recurso a IA.",
+    "Nomes e emails de utilizadores externos foram expostos.",
+    "Atores apoiados pela China são os principais suspeitos do ataque."
+   ],
+   "title_original": "EU Academy Users’ Names and Emails Exposed in EU Commission Hack",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "The EU Commission confirms an AI-powered cyberattack leaked EU Academy users’ names and emails. China-backed threat actors are suspected. The European Commission has confirmed that the cyberattack it disclosed last week exposed personal data. The European Commission (EC) confirmed that the cyberattack exposed personal information. When the attack was discovered, several applications were temporarily shut down. At the time, the Commission said it had found no evidence that staff data had been compromised. EU cybersecurity experts have still not confirmed that any staff data was stolen, but the attack affected another group of users. On Monday, Commission spokesperson Thomas Regnier told reporters that the investigation had uncovered a data breach involving EU Academy. The platform offers online courses about EU policies to people outside the Commission. According to Euronews, it also provides professional training and specialised learning opportunities for young people. What was taken is limited so far, but the picture isn’t final. Compromised information includes names and email addresses of EU Academy users. Access to the platform is suspended, and the European Data Protection Supervisor has been notified. “The Commission has confirmed a leak of names and email addresses and is warning users of possible follow-ups from the attacker, such as phishing campaigns based on their personal data.” Euronews reports . “That is the first major consequence of the incident. For other IT systems, EU cyber experts have not confirmed data theft affecting Commission staff, though several internal apps were taken offline as a precaution and some remain unavailable.” Regnier said the scale of the leak is still under investigation, so the Commission posted one general message for everyone"
+   "translated": true,
+   "enriched": true,
+   "why": "Destaca como plataformas educacionais públicas podem ser usadas para extrair dados para futuros ataques de phishing.",
+   "todo": "Avisar os utilizadores afetados para estarem atentos a tentativas de phishing baseadas nos dados vazados."
   },
   {
    "id": "0bc0f9692115f3dd",
@@ -462,15 +566,20 @@
    "lang": "en",
    "link": "https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/",
    "published": "2026-11-24T20:20:58+00:00",
-   "title": "New Inception extortion gang launches large-scale vishing campaign",
-   "summary": "A newly formed data extortion group named 'Inception' has been linked to a large-scale campaign that targets single sign-on (SSO) credentials of multiple global brands and firms. [...]",
+   "title": "Novo gangue de extorsão Inception lança campanha de 'vishing' em grande escala",
+   "summary": "Um grupo de extorsão de dados recém-formado, denominado 'Inception', iniciou uma campanha de larga escala focada no roubo de credenciais de autenticação única (SSO) de marcas e empresas globais. O grupo utiliza técnicas de 'vishing' (phishing por voz) para enganar as vítimas. O impacto foca-se na intrusão em grandes corporações globais para fins de extorsão.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Novo grupo de extorsão 'Inception' surge no panorama de ciberameaças.",
+    "Campanha foca-se no roubo de credenciais SSO de marcas globais.",
+    "Utilização de vishing para comprometer contas corporativas."
+   ],
+   "title_original": "New Inception extortion gang launches large-scale vishing campaign",
    "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": false,
-   "raw": "A newly formed data extortion group named 'Inception' has been linked to a large-scale campaign that targets single sign-on (SSO) credentials of multiple global brands and firms. [...]"
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra a evolução das táticas de engenharia social para roubar credenciais de acesso centralizado.",
+   "todo": "Adotar autenticação multifator (MFA) resistente a phishing e formar funcionários contra esquemas de vishing."
   },
   {
    "id": "6204a0dc325c8346",
@@ -479,15 +588,21 @@
    "lang": "en",
    "link": "https://www.theregister.com/security/2026/11/24/we-are-not-shinyhunters-says-criminal-hacking-crew-that-looks-and-acts-just-like-shinyhunters/5311978",
    "published": "2026-11-24T20:15:36+00:00",
-   "title": "'We are not ShinyHunters,' says criminal hacking crew that looks and acts just like ShinyHunters",
-   "summary": "Nothing to see here…",
+   "title": "\"Não somos os ShinyHunters\", afirma grupo de piratas informáticos que imita táticas do coletivo",
+   "summary": "Um novo grupo de roubo de dados e extorsão chamado Inception rejeitou publicamente qualquer ligação ao conhecido coletivo ShinyHunters. A investigação da Okta Threat Intelligence tinha sugerido que o grupo emergente seria uma rebrand devido a infraestruturas partilhadas e táticas idênticas, como ataques de vishing. Em resposta, os operadores do Inception insistiram que são uma organização totalmente nova com objetivos próprios e que apenas adotaram uma metodologia eficaz. Esta situação destaca como os criminosos reutilizam técnicas de engenharia social bem-sucedidas para explorar o fator humano.",
    "image": "https://image.theregister.com/?imageId=222661&width=800",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O grupo Inception negou veementemente ser uma rebrand do coletivo ShinyHunters.",
+    "A investigadora Okta apontou semelhanças em infraestruturas e táticas de vishing entre os dois grupos.",
+    "O Inception argumenta que a partilha de métodos e serviços não prova qualquer afiliação.",
+    "O impacto centra-se na confusão sobre a identidade de novos atores de ameaças cibernéticas."
+   ],
+   "title_original": "'We are not ShinyHunters,' says criminal hacking crew that looks and acts just like ShinyHunters",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Inception, a new data theft and extortion gang that security researchers have theorized is a rebrand of the ShinyHunters group, “reject[s] this attribution” and claims it has no affiliation with any prior cybercrime enterprise. In a lengthy statement posted Tuesday and shared on X, the extortionists insist that they are a new group, with new operators, and that their alleged social engineering attacks aren’t copying anyone - but rather just abusing the weakest link in an organization’s security: “a human being holding a phone.” The rant follows a Monday report by Okta Threat Intelligence - along with social media speculation since Inception’s inception last week - that the newly emerged group is very likely ShinyHunters with a different name. Okta’s researchers based their analysis on the two groups’ shared infrastructure, plus Inception’s nearly identical tactics: voice phishing, during which the scammers trick targets into entering credentials into phishing pages and approving multi-factor authentication (MFA) requests. Inception apparently took offense to this. “We would like to address this once, clearly, and only once,” the crims' statement says. “We are not ShinyHunters. We were never ShinyHunters. We are Inception.” The gang argues that its overlapping domain registrars, hosting providers, and DNS services don’t prove anything. These are commodity services, “available to anyone who can pay for them,” Inception wrote. Plus, their similar methodologies don't necessarily make Inception a reboot. “That is not theft of tradecraft,” they wrote. “It is acknowledgment of a good idea – the same way every group after LockBit used a leak site, and nobody called them LockBit.” “Inception is a new group, with new operators, our own objectives, and our own name,” the statement"
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda as empresas a compreenderem o surgimento de novos atores de ameaças e a evolução das táticas de engenharia social.",
+   "todo": "Forme os colaboradores para reconhecerem tentativas de vishing e ataques de engenharia social focados na validação de pedidos de MFA."
   },
   {
    "id": "ff43e152311a9ef3",
@@ -496,15 +611,21 @@
    "lang": "en",
    "link": "https://hackread.com/free-vs-paid-security-tools-free-options-fall-short/",
    "published": "2026-11-24T20:05:05+00:00",
-   "title": "Free vs. Paid Security Tools: Where Free Options Fall Short",
-   "summary": "Compare free and paid cybersecurity tools for small businesses with a look at where free options fall short on monitoring, investigation and response.",
+   "title": "Ferramentas de segurança gratuitas vs. pagas: Onde as opções gratuitas ficam aquém",
+   "summary": "Muitas pequenas empresas recorrem a ferramentas de segurança gratuitas para proteger os seus ativos digitais face a restrições orçamentais. No entanto, estas soluções frequentemente apresentam lacunas significativas em áreas críticas como a monitorização contínua, a investigação de incidentes e a capacidade de resposta. Esta discrepância deixa as organizações mais expostas a ameaças avançadas que exigem visibilidade profunda e automação. O impacto traduz-se num risco acrescido de brechas de segurança não detetadas atempadamente.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Comparação entre ferramentas de cibersegurança gratuitas e pagas para pequenas empresas.",
+    "As opções gratuitas falham frequentemente na monitorização, investigação e resposta a incidentes.",
+    "A falta de recursos avançados limita a capacidade de defesa contra ameaças complexas.",
+    "O impacto resulta numa maior vulnerabilidade a ataques não detetados."
+   ],
+   "title_original": "Free vs. Paid Security Tools: Where Free Options Fall Short",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Compare free and paid cybersecurity tools for small businesses with a look at where free options fall short on monitoring, investigation and response."
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra às pequenas empresas os limites de proteção das ferramentas gratuitas na gestão de incidentes.",
+   "todo": "Avalie o risco do seu negócio e considere investir em soluções pagas se as ferramentas gratuitas não cobrirem as necessidades de monitorização."
   },
   {
    "id": "d331fb83b9e8036f",
@@ -513,15 +634,21 @@
    "lang": "en",
    "link": "https://aws.amazon.com/blogs/security/delegate-user-access-to-ai-agents-with-amazon-cognito-token-exchange/",
    "published": "2026-11-24T20:01:08+00:00",
-   "title": "Delegate user access to AI agents with Amazon Cognito token exchange",
-   "summary": "Suppose you use a restaurant review app to check reviews, book tables, and email invitations to your friends. With OAuth 2.0, the app sends you to the authorization server that your email provider trusts, where you sign in and approve only the access the app requested, such as the contacts.read and messages.send scopes. The review […]",
+   "title": "Delegar acesso de utilizadores a agentes de IA com a troca de tokens do Amazon Cognito",
+   "summary": "Com a crescente utilização de agentes de IA e aplicações complexas que exigem saltos múltiplos entre serviços, a gestão segura da identidade do utilizador tornou-se um desafio. O mecanismo OAuth 2.0 Token Exchange, definido na RFC 8693, resolve este problema ao permitir que um serviço intermédio obtenha um novo token no servidor de autorização. Desta forma, preserva-se a identidade do utilizador original e os respetivos consentimentos sem expor credenciais sensíveis. O impacto reside em manter controlos de acesso rigorosos em arquiteturas modernas baseadas em IA.",
    "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/24/figure-1-second-hop.png",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Aplicações com agentes de IA realizam múltiplos saltos para aceder a serviços a jusante.",
+    "A troca de tokens OAuth 2.0 (RFC 8693) permite passar o contexto do utilizador de forma segura.",
+    "Evita expor credenciais e preserva as permissões consentes pelo utilizador.",
+    "O impacto assegura a integridade do controlo de acessos em integrações complexas."
+   ],
+   "title_original": "Delegate user access to AI agents with Amazon Cognito token exchange",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "Suppose you use a restaurant review app to check reviews, book tables, and email invitations to your friends. With OAuth 2.0 , the app sends you to the authorization server that your email provider trusts, where you sign in and approve only the access the app requested, such as the contacts.read and messages.send scopes. The review app won’t sees your credentials. It only receives a short-lived access token limited to the scopes you approved, which it presents to your email provider’s API to read your contacts and send invitation emails on your behalf. That works while the app calls the email API directly, but many requests take a second hop to call downstream services. When you book a table, the app calls its reservation service with your token to email details to your friends, which token should the reservation service use to call the email API? Forwarding the access token issued to the review app hides the reservation service because the email API thinks the app sent the request. Using the reservation service’s own token from an OAuth 2.0 client credentials grant loses user identity, because the email API knows which service called, but not for which user. Figure 1 shows this second hop. Figure 1: The reservation service calling the email API for a signed-in user OAuth 2.0 Token Exchange, defined in RFC 8693 , handles this second hop. Instead of forwarding your access token, the reservation service goes back to the authorization server with two things: your access token, which shows what you consented for, and its own credentials, which show who it is. The authorization server returns a new token for the email API, called issued token , which identifies the user, can also name the reservation service, and carries the same scopes or fewer. AI agents make this second h"
+   "translated": true,
+   "enriched": true,
+   "why": "Explica como manter a segurança e a identidade do utilizador ao integrar agentes de IA em arquiteturas de serviços.",
+   "todo": "Adote o padrão OAuth 2.0 Token Exchange para gerir de forma segura o acesso delegado em serviços intermédios."
   },
   {
    "id": "51cbc8e7f7f74369",
@@ -530,15 +657,20 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/erlang-security-advisory-av26-1204",
    "published": "2026-11-24T19:59:34+00:00",
-   "title": "Erlang security advisory (AV26-1204)",
-   "summary": "",
+   "title": "Aviso de segurança Erlang (AV26-1204)",
+   "summary": "O Centro Cibernético emitiu um alerta informando que várias versões do produto Erlang OTP estão afetadas por vulnerabilidades de segurança. Os administradores e utilizadores são encorajados a consultar os links oficiais disponibilizados para acompanhar o problema. O impacto direto prende-se com a exposição a potenciais explorações nestes sistemas caso as correções não sejam aplicadas. A recomendação principal passa por atualizar o software assim que os patches estiverem disponíveis.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O Erlang OTP foi afetado por vulnerabilidades em múltiplas versões.",
+    "O Centro Cibernético aconselha a revisão dos links de segurança e aplicação de atualizações.",
+    "O impacto envolve o risco de exploração de falhas em sistemas não corrigidos."
+   ],
+   "title_original": "Erlang security advisory (AV26-1204)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1204 Date: November 24, 2026 As of November 24, 2026, Erlang is affected by vulnerabilities in the following product: OTP Multiple versions The Cyber Centre encourages users and administrators to review the provided web link and apply any necessary updates as they become available. Security Advisories · erlang/otp · GitHub"
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta administradores para falhas críticas em componentes de software fundamentais.",
+   "todo": "Consulte os avisos oficiais de segurança e atualize o Erlang OTP para as versões corrigidas."
   },
   {
    "id": "cd5ae87ef1947bdc",
@@ -548,14 +680,20 @@
    "link": "https://www.estadao.com.br/tecmundo/guia-de-compras/quais-servicos-contratar-na-black-friday/",
    "published": "2026-11-24T19:41:00+00:00",
    "title": "Quais serviços contratar na Black Friday 2026?",
-   "summary": "Contratar um plano de VPN na Black Friday pode gerar uma economia de até 70%.",
+   "summary": "A época de promoções da Black Friday estende-se para além dos produtos físicos, abrangendo também serviços digitais e de cibersegurança essenciais. Várias empresas oferecem descontos significativos em ferramentas como redes virtuais privadas (VPN), antivírus, alojamento web e pacotes de software de produtividade. Esta oportunidade permite que pequenas empresas e utilizadores reforcem a sua proteção digital a preços mais económicos. O impacto traduz-se numa melhoria da postura de segurança com custos reduzidos.",
    "image": "https://www.estadao.com.br/resizer/v2/TR4CF6WVNBCFFHMLRCY46CZS2Q.jpg?quality=80&auth=660488031bbd344e8be8ae45af3c6d8b6a8965bbabb1b2f00fa2dfa7a58a2207&width=710",
-   "points": [],
+   "points": [
+    "A Black Friday oferece descontos em serviços de antivírus, VPN e alojamento web.",
+    "Marcas como NordVPN, Hostinger, Kaspersky e Adobe disponibilizam promoções expressivas.",
+    "Permite reforçar a segurança e a infraestrutura digital das empresas com menor investimento.",
+    "O impacto facilita o acesso a ferramentas essenciais de proteção a custos reduzidos."
+   ],
    "title_original": null,
    "category": "Geral",
    "translated": false,
-   "enriched": false,
-   "raw": "As compras na Black Friday não se resumem a produtos, os serviços de assinatura também trazem ótimas oportunidades para a data promocional. Dá para renovar o plano de VPN, investir em um novo streaming de música, vídeo ou assinar um curso anual economizando bastante este mês. Serviços com promoções especiais de Black Friday Se você está pensando em contratar ou renovar a assinatura de diversos tipos de programas, aproveite a lista que preparamos abaixo e veja, por categorias, onde encontrar os melhores descontos: Tecnologia e segurança Proteger seus bens digitais pode ser mais econômico na Black Friday. Serviços de antivírus e VPN costumam ter descontos de mais de 70%. Quem tem ou pretende abrir um negócio também pode aproveitar ofertas em hospedagem web e domínio de sites. NordVPN A NordVPN oferece mais privacidade e segurança na internet com até 75% off e 3 meses extras grátis, dependendo do plano selecionado. Escolha entre Basic, Plus, Complete e Prime e ainda aproveite a conexão em até 10 dispositivos simultâneos, com garantia de reembolso de 30 dias . Assine a NordVPN com até 75% off com o cupom o cupom TECMUNDO26 Hostinger A Hostinger está com 82% de desconto para quem deseja criar um site. Os pacotes ainda podem incluir ferramentas de IA, armazenamento NVMe, backups, entre outros recursos. Kaspersky Dona de um dos antivírus mais populares do mercado, a Kaspersky trouxe uma promoção especial para a semana mais aguardada do ano. Todos os planos estão com 70% de desconto , e você ainda garante 10% off com o cupom TECMUNDO no site . Adobe A Adobe disponibiliza o pacote Creative Cloud com até 66% de desconto . O plano inclui serviços como Photoshop, Illustrator, Premiere e até o Firefly, ferramenta de IA da marca. Cursos As plataformas de ensino também têm promoções e"
+   "enriched": true,
+   "why": "Ajuda empresas e utilizadores a poupar na aquisição de ferramentas essenciais de cibersegurança.",
+   "todo": "Aproveite as promoções da época para renovar ou contratar soluções fiáveis de antivírus e VPN para o seu negócio."
   },
   {
    "id": "8a279dc693833480",
@@ -564,15 +702,20 @@
    "lang": "en",
    "link": "https://therecord.media/california-privacy-agency-kemp",
    "published": "2026-11-24T19:30:00+00:00",
-   "title": "California privacy agency director Kemp to leave after two-year tenure",
-   "summary": "The director of the trailblazing California Privacy Protection Agency announced his departure following implementation of a first-in-the-nation platform allowing consumers to easily opt out of data sharing.",
+   "title": "Diretor da agência de privacidade da Califórnia, Kemp, vai deixar o cargo após mandato de dois anos",
+   "summary": "O diretor da Agência de Proteção de Privacidade da Califórnia anunciou a sua saída após cumprir um mandato de dois anos. Durante este período, a organização implementou uma plataforma pioneira a nível nacional que permite aos consumidores recusarem facilmente a partilha de dados. Esta mudança legislativa e tecnológica marcou um passo importante na regulamentação da privacidade nos Estados Unidos. O impacto reflete-se na transição de liderança numa entidade reguladora de grande relevância.",
    "image": "https://cms.therecord.media/uploads/California_flag_e855acf0cf.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O diretor da California Privacy Protection Agency vai abandonar o cargo.",
+    "A saída ocorre após dois anos de liderança e a implementação de uma plataforma pioneira de exclusão de partilha de dados.",
+    "O impacto marca a mudança na liderança de um organismo regulador de privacidade chave."
+   ],
+   "title_original": "California privacy agency director Kemp to leave after two-year tenure",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "The director of the trailblazing California Privacy Protection Agency announced his departure following implementation of a first-in-the-nation platform allowing consumers to easily opt out of data sharing."
+   "translated": true,
+   "enriched": true,
+   "why": "Informa sobre alterações na liderança de uma importante autoridade de regulamentação de privacidade.",
+   "todo": ""
   },
   {
    "id": "5f76ac4f7ca9daa3",
@@ -581,15 +724,20 @@
    "lang": "en",
    "link": "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/",
    "published": "2026-11-24T18:59:52+00:00",
-   "title": "Turnitin discloses cyberattack affecting customer-facing systems",
-   "summary": "Turnitin disclosed via a statement from its CEO, Chris Caren, that it recently detected unauthorized activity involving certain customer-facing systems. [...]",
+   "title": "Turnitin reporta ciberataque que afeta sistemas voltados para o cliente",
+   "summary": "A empresa Turnitin detetou recentemente uma atividade não autorizada direcionada a alguns dos seus sistemas acessíveis pelos clientes. A confirmação foi avançada através de uma declaração oficial emitida pelo diretor-executivo, Chris Caren. Este incidente expõe os riscos contínuos a que as plataformas educativas e de software estão sujeitas por parte de cibercriminosos. O impacto foca-se na potencial exposição de sistemas e na necessidade de mitigação de incidentes.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Turnitin detetou atividade não autorizada nos seus sistemas voltados para clientes.",
+    "A informação foi divulgada pelo CEO da empresa, Chris Caren.",
+    "O impacto abrange potenciais riscos de segurança em plataformas amplamente utilizadas."
+   ],
+   "title_original": "Turnitin discloses cyberattack affecting customer-facing systems",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Turnitin disclosed via a statement from its CEO, Chris Caren, that it recently detected unauthorized activity involving certain customer-facing systems. [...]"
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para incidentes de segurança em plataformas de software amplamente utilizadas por instituições.",
+   "todo": "Monitore os seus acessos e esteja atento a comunicações oficiais da Turnitin sobre o estado dos serviços."
   },
   {
    "id": "24dda7695830a06b",
@@ -598,15 +746,20 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/vmware-security-advisory-av26-1203",
    "published": "2026-11-24T18:43:41+00:00",
-   "title": "VMware security advisory (AV26-1203)",
-   "summary": "",
+   "title": "Aviso de segurança VMware (AV26-1203)",
+   "summary": "Foram detetadas várias vulnerabilidades em múltiplos produtos da VMware, incluindo versões do vCenter, Cloud Foundation e vSphere Foundation. O Centro Cibernético apelou aos administradores para que verifiquem os avisos de segurança e apliquem as atualizações necessárias com brevidade. O impacto abrange o risco de comprometimento de infraestruturas virtuais críticas que utilizam software desatualizado. A correção passa estritamente por atualizar para as versões seguras indicadas pela marca.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Múltiplas versões de produtos VMware vCenter e Cloud Foundation apresentam vulnerabilidades.",
+    "O Centro Cibernético recomenda a revisão de links de advisories e aplicação de patches.",
+    "O impacto afeta a estabilidade e segurança de infraestruturas de virtualização."
+   ],
+   "title_original": "VMware security advisory (AV26-1203)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1203 Date: November 24, 2026 As of November 24, 2026, VMware is affected by vulnerabilities in the following products: VMware Cloud Foundation / VMware vSphere Foundation - vCenter 9.1.x.x versions prior to 9.1.2 9.0.x.x versions prior to 9.0.2.0300 VMware vCenter 8.0 versions prior to 8.0 U3m Version 7.0 VMware Cloud Foundation vCenter 5.x versions prior to 5.2.5 VMware Telco Cloud Platform vCenter Versions 3.0, 4.x, 5.0.x, 5.1.x and 5.2 VMware Telco Cloud Infrastructure vCenter Version 3.0 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. VMSA-2026-0011: VMware ESX, vCenter, Workstation, Fusion, and, Avi Load Balancer updates address multiple vulnerabilities Security Advisories - VMware Cloud Foundation"
+   "translated": true,
+   "enriched": true,
+   "why": "Fundamental para proteger infraestruturas virtuais contra falhas críticas de segurança em produtos VMware.",
+   "todo": "Consulte o aviso VMSA-2026-0011 e atualize os componentes VMware afetados para as versões corrigidas."
   },
   {
    "id": "d5d1221d1d607e83",
@@ -880,15 +1033,21 @@
    "lang": "en",
    "link": "https://www.cybersecuritydive.com/news/ai-vulnerability-openai-cisco-shirudo-linux/875644/",
    "published": "2026-11-24T17:18:07+00:00",
-   "title": "OpenAI, Cisco debut tool that lets AI agents safely block vulnerability exploitation",
-   "summary": "The new framework can provide temporary protection while organizations test patches.",
+   "title": "OpenAI e Cisco estreiam ferramenta que permite a agentes de IA bloquear com segurança a exploração de vulnerabilidades",
+   "summary": "Foi lançado um novo framework desenvolvido em parceria que capacita agentes de inteligência artificial a bloquear temporariamente a exploração de vulnerabilidades. Esta solução serve como medida de proteção provisória enquanto as organizações testam e aplicam os patches definitivos. O impacto traduz-se numa capacidade de resposta mais rápida face a ameaças ativas, reduzindo a janela de exposição das redes empresariais.",
    "image": "https://imgproxy.divecdn.com/CfDjkOOtIhLmrbSaqs4qjJp0TJeSFzFZJf3X1F4kTBU/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMTYxMzc0MzE5LmpwZw==.webp",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "OpenAI e Cisco lançaram um framework inovador baseado em agentes de IA.",
+    "A ferramenta bloqueia temporariamente a exploração de vulnerabilidades em sistemas.",
+    "Funciona como proteção provisória durante o período de testes de patches.",
+    "O impacto reduz a janela de vulnerabilidade das organizações face a ataques."
+   ],
+   "title_original": "OpenAI, Cisco debut tool that lets AI agents safely block vulnerability exploitation",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "The new framework can provide temporary protection while organizations test patches."
+   "translated": true,
+   "enriched": true,
+   "why": "Apresenta uma nova abordagem automatizada para mitigar vulnerabilidades antes da aplicação de patches.",
+   "todo": "Avalie a integração de ferramentas de mitigação baseadas em IA para proteger temporariamente sistemas vulneráveis."
   },
   {
    "id": "900fce837958a210",
@@ -2399,15 +2558,44 @@
    "lang": "en",
    "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01",
    "published": "2026-11-24T12:00:00+00:00",
-   "title": "AutomationDirect C-More EA9 Programming Software",
-   "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow attackers to corrupt application memory and cause instability or a crash, potentially leading to arbitrary code execution, if a user is convinced to open a malicious file. The following versions of AutomationDirect C-More EA9 Programming Software are affected: C-More EA9 Programming Software <=V6.80 (CVE-2026-127280) CVSS Vendor Equipment v3 7.8 AutomationDirect C-More EA9 Programming Software 1 Vulnerability Heap-based Buffer Overflow Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Water an",
+   "title": "Software de programação AutomationDirect C-More EA9 alvo de falha crítica",
+   "summary": "O software de programação AutomationDirect C-More EA9 (versões iguais ou inferiores à V6.80) contém uma vulnerabilidade de estouro de heap baseada em memória devido à validação inadequada de dados. Um atacante pode explorar esta falha enviando um ficheiro de projeto malicioso que, ao ser aberto pelo utilizador, corrompe a memória da aplicação e causa falhas de estabilidade ou execução arbitrária de código. O impacto afeta setores de infraestruturas críticas a nível mundial, como a energia e a gestão de águas.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Afeta o software AutomationDirect C-More EA9 nas versões V6.80 e anteriores.",
+    "A vulnerabilidade CVE-2026-127280 resulta num estouro de heap ao abrir ficheiros maliciosos.",
+    "Pode permitir a execução de código arbitrário e afeta setores de infraestruturas críticas.",
+    "O impacto exige a atualização imediata do software para a versão V6.81."
+   ],
+   "title_original": "AutomationDirect C-More EA9 Programming Software",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "View CSAF Summary Successful exploitation of this vulnerability could allow attackers to corrupt application memory and cause instability or a crash, potentially leading to arbitrary code execution, if a user is convinced to open a malicious file. The following versions of AutomationDirect C-More EA9 Programming Software are affected: C-More EA9 Programming Software <=V6.80 (CVE-2026-127280) CVSS Vendor Equipment v3 7.8 AutomationDirect C-More EA9 Programming Software 1 Vulnerability Heap-based Buffer Overflow Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Water and Wastewater Systems Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities CVE-2026-127280 C-More EA9 Programming Software V6.80 does not adequately validate data read from a project file before using it in heap memory operations. A crafted file causes a heap buffer overrun during file open, resulting in heap corruption and instability within the application. An attacker can exploit this vulnerability by convincing a user to open a malicious project file delivered through common distribution channels such as email, file sharing, or removable media. Read More 1 Affected Product AutomationDirect C-More EA9 Programming Software <=V6.80 Product Status: known_affected Remediations Vendor fix Update C-More EA9 Programming Software to V6.81: https://www.automationdirect.com/support/software-downloads Additional Metrics Relevant CWE: CWE-122 Heap-based Buffer Overflow CVSS Version Base Score Base Severity Vector String 3.1 7.8 HIGH CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H 4.0 8.4 HIGH CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N View CVE Details Acknowledgments rgod of TrendAI Zero Day Initiative reported this vulnerability "
+   "translated": true,
+   "enriched": true,
+   "why": "Protege infraestruturas críticas contra falhas de execução de código através de ficheiros manipulados.",
+   "todo": "Atualize o software AutomationDirect C-More EA9 para a versão V6.81 e evite abrir ficheiros de projetos de fontes não confiáveis."
+  },
+  {
+   "id": "a0ae3cb09c406305",
+   "source": "CISA Advisories",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+   "published": "2026-11-24T12:00:00+00:00",
+   "title": "CISA adiciona três novas vulnerabilidades exploradas ao seu catálogo KEV",
+   "summary": "A CISA adicionou três vulnerabilidades recentemente exploradas ao Catálogo de Vulnerabilidades Conhecidas (KEV), com base em evidências de exploração ativa. Os problemas afetam o AntiCsrf da Idunno, o Drupal Core e a ferramenta de experimentação web da Optimizely. Esta inclusão obriga as agências federais a priorizarem a remediação rápida destas falhas sob diretivas de segurança específicas. O impacto evidencia os riscos contínuos associados a vetores de ataque frequentemente utilizados por cibercriminosos.",
+   "image": null,
+   "points": [
+    "A CISA adicionou três novas falhas ao catálogo KEV devido a exploração ativa.",
+    "As vulnerabilidades afetam componentes da Idunno, Drupal Core e Optimizely.",
+    "As diretivas exigem a remediação rápida de falhas críticas em ativos expostos.",
+    "O impacto mitiga o risco de ataques bem-sucedidos baseados em falhas conhecidas."
+   ],
+   "title_original": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda as organizações a priorizarem a correção de falhas que estão ativamente a ser exploradas por atacantes.",
+   "todo": "Verifique se utiliza os produtos afetados e aplique as correções recomendadas prioritariamente."
   },
   {
    "id": "f3a43b39549fdc89",
@@ -13568,95 +13756,6 @@
    "enriched": true,
    "why": "A automatização via IA pode expandir inadvertidamente a superfície de ataque ao conceder privilégios excessivos a sistemas autónomos.",
    "todo": "Implemente políticas de gestão de identidade e monitorize rigorosamente as permissões atribuídas a ferramentas de IA integradas."
-  },
-  {
-   "id": "d1202d3392a4ec40",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html",
-   "published": "2026-11-19T04:33:46+00:00",
-   "title": "PHP alerta para falhas de segurança críticas em todas as versões suportadas, correções chegam a 19 de novembro",
-   "summary": "Os responsáveis pela linguagem de programação PHP anunciaram a descoberta de vulnerabilidades críticas que afetam todas as versões atualmente suportadas. Está prevista a disponibilização de uma atualização de segurança para corrigir estas falhas no dia 19 de novembro de 2026. Esta medida faz parte do ciclo regular de manutenção da linguagem. Recomenda-se que os utilizadores estejam atentos para aplicar as correções assim que forem lançadas.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj86YA0ZvPrdlouN6GvSZ5P_I5HCaYLm2PBs_JA74wUDgHl8anwcqEN5_Z0kTlAggf0906enJmrtUnN_6jn9kqD8KguG8nOeh1yGS6AAPo1-JHORLQ5nZcpmS5Ss7liuqghFsq8Bb4ooabK29UcCbZlwWGM6HtyRPs4Ty5zv5d4FC5So6tVFUOaEhUylIFU/s1600/php-flaws.jpg",
-   "points": [
-    "Falhas críticas em todas as versões PHP",
-    "Correções agendadas para 19 de novembro",
-    "Atualização parte do ciclo de manutenção"
-   ],
-   "title_original": "PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "A vulnerabilidade afeta todas as versões suportadas, exigindo atenção imediata para evitar a exploração de sistemas.",
-   "todo": "Prepare os seus sistemas para a atualização de segurança que será lançada a 19 de novembro."
-  },
-  {
-   "id": "5128ef42275011f7",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/palo-alto-networks-to-buy-ai-startup-applied-compute-for-4-5-billion/",
-   "published": "2026-11-19T03:25:23+00:00",
-   "title": "Palo Alto Networks compra startup de IA Applied Compute por 4,5 mil milhões de dólares",
-   "summary": "A empresa de cibersegurança Palo Alto Networks anunciou a aquisição da startup de inteligência artificial Applied Compute. O negócio, realizado inteiramente em ações, visa reforçar as capacidades da empresa no domínio da IA. A plataforma adquirida permitirá à Palo Alto Networks otimizar e executar modelos de IA de código aberto em nuvens públicas e soberanas.",
-   "image": null,
-   "points": [
-    "Palo Alto Networks adquire Applied Compute.",
-    "Negócio avaliado em 4,5 mil milhões de dólares.",
-    "Foco na execução de modelos de IA em nuvem."
-   ],
-   "title_original": "Palo Alto Networks to Buy AI Startup Applied Compute for $4.5 Billion",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Esta aquisição demonstra a aposta estratégica das empresas de segurança na integração de IA para melhorar a proteção de dados.",
-   "todo": ""
-  },
-  {
-   "id": "124ed4a5f3b266df",
-   "source": "SANS ISC",
-   "region": "US",
-   "lang": "en",
-   "link": "https://isc.sans.edu/diary/rss/33536",
-   "published": "2026-11-19T02:00:03+00:00",
-   "title": "ISC Stormcast For Thursday, November 19th, 2026",
-   "summary": "Este episódio do podcast Stormcast aborda as principais atualizações e análises de cibersegurança do dia 19 de novembro de 2026. A rubrica diária fornece contexto técnico sobre ameaças emergentes e vulnerabilidades ativas. O impacto foca-se na preparação e na conscienciação dos profissionais da área.",
-   "image": null,
-   "points": [
-    "O quê: Análise diária de cibersegurança e ameaças.",
-    "Quando: 19 de novembro de 2026.",
-    "Impacto: Apoio à tomada de decisão e resposta a incidentes."
-   ],
-   "title_original": "ISC Stormcast For Thursday, November 19th, 2026 https://isc.sans.edu/podcastdetail/10186, (Thu, Nov 19th)",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Ajuda os profissionais a manterem-se atualizados sobre o panorama de ameaças em constante evolução.",
-   "todo": "Subscreva fontes de inteligência de ameaças fidedignas e reveja os alertas diários."
-  },
-  {
-   "id": "e884bb9a4f7fd151",
-   "source": "SANS ISC",
-   "region": "US",
-   "lang": "en",
-   "link": "https://isc.sans.edu/diary/rss/33534",
-   "published": "2026-11-19T01:53:48+00:00",
-   "title": "Tratar a Análise de Honeypots como Código: Git, Pull Requests e Controlo Humano para IA",
-   "summary": "Um estagiário da SANS.edu partilhou uma abordagem para gerir a análise de honeypots utilizando metodologias de desenvolvimento de software. A técnica aplica ferramentas como Git, pedidos de submissão (pull requests) e validação humana para interagir com a inteligência artificial. O objetivo é otimizar a segurança e o rigor na monitorização de ameaças.",
-   "image": null,
-   "points": [
-    "Quem: Kevin Truong, estagiário da SANS.edu.",
-    "O quê: Gestão de honeypots com práticas de engenharia de software.",
-    "Como: Uso de Git, pull requests e validação humana para IA.",
-    "Impacto: Maior controlo e precisão na análise de segurança."
-   ],
-   "title_original": "Treat Your Honeypot Analysis Like Code: Git, Pull Requests and a Human Gate for AI [Guest Diary], (Wed, Nov 18th)",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Melhora a fiabilidade e a governação na utilização de IA para analisar dados de honeypots.",
-   "todo": "Adote processos de revisão por pares e controlo de versões em projetos de automatização de segurança."
   }
  ]
 }

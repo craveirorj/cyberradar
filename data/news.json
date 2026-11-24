@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T16:44:42.019807+00:00",
+ "updated": "2026-11-24T17:06:17.326016+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -34,7 +34,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -109,7 +109,7 @@
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CSO Online",
@@ -139,7 +139,7 @@
   {
    "source": "SANS ISC",
    "ok": true,
-   "added": 2
+   "added": 3
   },
   {
    "source": "DataBreaches.net",
@@ -234,7 +234,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 18
+   "added": 17
   },
   {
    "source": "The Register Security",
@@ -310,8 +310,8 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 391,
-  "unenriched": 274,
+  "pending": 392,
+  "unenriched": 275,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,40 @@
   ]
  },
  "items": [
+  {
+   "id": "f6e8b2ad0e789497",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/24/an-ai-coding-agent-a-browser-and-a-mac-tool-found-a-financial-firms-access-key-in-under-6-minutes/5311922",
+   "published": "2026-11-24T17:00:00+00:00",
+   "title": "An AI coding agent, a browser, and a Mac tool found a financial firm's access key in under 6 minutes",
+   "summary": "No sophisticated malware or attack framework required",
+   "image": "https://image.theregister.com/?imageId=5311939&width=800",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "A Romanian hacker, armed with only an open source coding agent, a Chrome browser, and a Mac, tried multiple ways to break into a financial services firm, ultimately found an access key - luckily, it was a decoy - and carried out an entire (almost) attack in under six minutes. It’s a stark reminder that miscreants don’t need sophisticated malware - as in the Binance heist - or AI pen-testing tools like ARTEX to carry out intrusions into critical networks. Open source coding agents, and specifically OpenCode in this case, also work just fine. “What surprised me most was how little it took and the toolkit: a free coding agent, the curl that comes with every Mac and an ordinary Chrome, all from one laptop,” Jesta co-founder and CTO Lior Finkelshtein told The Register. “Until now I thought that we had more time until tools like OpenCode are used in offensive operations. This incident shows us that it's already in use in the field, and we will probably see more of that in the future.” Jesta is a Tel Aviv-based security startup that builds defensive tools to detect and stop autonomous AI attacks. In a report shared exclusively with The Register, Finkelshtein documented an attempted intrusion targeting a major financial services company that’s also a Jesta customer - the security shop declined to say which one. Jesta’s investigation into the incident determined that someone in Bucharest downloaded a free AI coding agent called OpenCode and pointed it at the financial services customer on November 16 at 4:24:57 a.m. ET. 'Nothing in OpenCode was built for hacking' OpenCode is an open source coding agent that lets users connect to more than 200 model providers or local models, including Anthropic’s Claude models, OpenAI’s GPTs, Google’s Gemini, DeepSeek, and Z.ai’s GLM. Jesta does"
+  },
+  {
+   "id": "365b478affb4e96c",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/tanium-security-advisory-av26-1202",
+   "published": "2026-11-24T16:45:31+00:00",
+   "title": "Tanium security advisory (AV26-1202)",
+   "summary": "",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Serial number: AV26-1202 Date: November 24, 2026 As of November 23, 2026, Tanium is affected by vulnerabilities in the following products: Core Content Prior to 1.11.97 Prior to 1.14.124 Prior to 1.15.171 Core Content - Enhanced Tags Prior to 2.6.90 Prior to 2.8.113 Default Content Prior to 8.7.102 Prior to 8.8.97 Prior to 8.9.213 Endpoint Configuration Toolset Solution Prior to 1.51.63 Prior to 1.59.53 Prior to 1.71.28 Engage Prior to 1.11.298 Prior to 1.13.157 Prior to 1.9.195 Tanium Zone Server Prior to 7.7.3.8351 Prior to 7.8.2.1263 Prior to 7.8.4.1399 Threat Response Prior to 4.12.349 Prior to 4.17.327 Prior to 4.9.476 The Cyber Centre encourages users and administrators to review the provided web link and apply any necessary updates as they become available. All Advisories - Tanium Security Advisories"
+  },
   {
    "id": "d8d315a763428aed",
    "source": "SAPO Tek",
@@ -13420,50 +13454,6 @@
    "enriched": true,
    "why": "Ilustra como ativos de dados de empresas falidas são comercializados e integrados em iniciativas tecnológicas de IA.",
    "todo": ""
-  },
-  {
-   "id": "27e5f548c7a1914c",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/threat-intelligence/attackiq-research-reveals-iranian-cyber-groups",
-   "published": "2026-11-18T20:38:42+00:00",
-   "title": "Investigação da AttackIQ revela como grupos cibernéticos iranianos partilham acessos a redes para permitir ataques destrutivos",
-   "summary": "Uma análise detalhada a 20 grupos de ameaças patrocinados pelo estado iraniano examinou a forma como operam no ecossistema cibernético. A investigação demonstra a intersecção entre espionagem, ransomware e ativismo político em campanhas estatais. Os grupos colaboram frequentemente, passando acessos obtidos a redes para viabilizar ataques altamente destrutivos.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png?width=720&quality=80&disable=upscale",
-   "points": [
-    "O quê: Análise de 20 grupos de ameaças iranianos apoiados pelo estado.",
-    "Como: Cooperação mútua na partilha de acessos iniciais a redes corporativas.",
-    "Impacto: Facilitação de campanhas complexas que combinam espionagem, ransomware e ações destrutivas."
-   ],
-   "title_original": "AttackIQ Research Reveals How Iranian Cyber Groups Hand Off Network Access to Enable Destructive Attacks",
-   "category": "Ransomware",
-   "translated": true,
-   "enriched": true,
-   "why": "Revela a colaboração tática entre diferentes grupos estatais para maximizar o impacto de ataques cibernéticos destrutivos.",
-   "todo": "Reforce a monitorização de acessos e a deteção precoce de movimentos laterais para mitigar intrusões avançadas."
-  },
-  {
-   "id": "f0ed0fdc40d96a21",
-   "source": "CrowdStrike Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-2026-gartner-mq-siem/",
-   "published": "2026-11-18T20:21:28.264902+00:00",
-   "title": "CrowdStrike Is Building the Engine of the Agentic SOC with Falcon Next-Gen SIEM",
-   "summary": "A CrowdStrike está a desenvolver uma nova motorização para centros de operações de segurança autónomos utilizando a plataforma Falcon Next-Gen SIEM. Esta tecnologia visa transformar a forma como as equipas respondem a incidentes através de capacidades melhoradas. O impacto traduz-se numa maior automatização e eficiência na gestão de ameaças cibernéticas.",
-   "image": null,
-   "points": [
-    "CrowdStrike desenvolve motor para SOC autónomo.",
-    "Utilização da tecnologia Falcon Next-Gen SIEM.",
-    "Aumento da automatização na segurança cibernética."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Permite melhorar a velocidade e a eficácia na deteção e resposta a incidentes de segurança.",
-   "todo": "Avalie a integração de soluções SIEM modernas para otimizar as operações de segurança da sua organização."
   }
  ]
 }

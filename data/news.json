@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T12:05:07.635321+00:00",
+ "updated": "2026-11-24T12:29:19.924952+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -114,7 +114,7 @@
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 7
+   "added": 6
   },
   {
    "source": "TechCrunch Security",
@@ -194,7 +194,7 @@
   {
    "source": "SentinelLabs",
    "ok": true,
-   "added": 1
+   "added": 2
   },
   {
    "source": "Elastic Security Labs",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 344,
-  "unenriched": 216,
+  "done": 96,
+  "pending": 248,
+  "unenriched": 123,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,52 @@
   ]
  },
  "items": [
+  {
+   "id": "1f5f949117f5dc51",
+   "source": "Schneier on Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.schneier.com/blog/archives/2026/11/we-get-the-infrastructure-we-pay-for.html",
+   "published": "2026-11-24T12:06:50+00:00",
+   "title": "Temos a infraestrutura que pagamos",
+   "summary": "O ecossistema digital global apresenta falhas crónicas de fragilidade e vulnerabilidade devido a uma infraestrutura envelhecida e centralizada. A prioridade dada pelo capitalismo moderno de acionistas à eficiência de custos e ao lucro de curto prazo eliminou a redundância e a resiliência. Como resultado, os sistemas atuais tornam-se pontos únicos de falha e alvos fáceis para ataques cibernéticos humanos e baseados em inteligência artificial.",
+   "image": null,
+   "points": [
+    "A infraestrutura tecnológica global é antiga, frágil e excessivamente centralizada.",
+    "A busca implacável por lucros a curto prazo elimina custos essenciais de segurança e resiliência.",
+    "A falta de redundância cria pontos únicos de falha em sistemas críticos.",
+    "Os sistemas atuais estão mais expostos a ataques cibernéticos e falhas generalizadas."
+   ],
+   "title_original": "We Get the Infrastructure We Pay For",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como os modelos económicos focados no lucro criam pontos únicos de falha e vulnerabilidades sistémicas.",
+   "todo": "Invista em redundância e avalie criticamente a resiliência dos fornecedores de tecnologia que utiliza."
+  },
+  {
+   "id": "bd2130a7476e80b3",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/24/azure-apim-vulnerability-credential-theft/",
+   "published": "2026-11-24T12:04:37+00:00",
+   "title": "Vulnerabilidade no Azure API Management explorada para roubar segredos de clientes",
+   "summary": "Atacantes explotaram com sucesso uma falha de segurança nas instâncias dos níveis clássicos do Azure API Management da Microsoft. Várias organizações norueguesas, incluindo as empresas de energia Equinor e Skagerak Energi, foram afetadas por esta campanha maliciosa. O incidente resultou na exposição de credenciais e segredos confidenciais armazenados nas plataformas vulneráveis.",
+   "image": null,
+   "points": [
+    "Atacantes exploraram uma falha no Azure API Management Classic.",
+    "Empresas de energia norueguesas, como a Equinor e a Skagerak Energi, foram vítimas.",
+    "Credenciais e segredos armazenados nas instâncias foram comprometidos.",
+    "A Microsoft já disponibilizou mitigações, mas apela à rotação de segredos."
+   ],
+   "title_original": "Azure API Management vulnerability exploited to steal customers’ secrets",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Exemplifica como falhas em serviços de gestão de API expõem credenciais críticas de empresas de energia.",
+   "todo": "Atualize os serviços afetados, assuma que as credenciais expostas foram comprometidas e faça a rotação imediata de todos os segredos."
+  },
   {
    "id": "914e107a13d7e4ad",
    "source": "NCSC UK",
@@ -371,15 +417,21 @@
    "lang": "en",
    "link": "https://www.infosecurity-magazine.com/news/openai-cisco-shirudo-linux-shields/",
    "published": "2026-11-24T12:00:00+00:00",
-   "title": "OpenAI and Cisco Release Open-Source Tool to Shield Unpatched Linux Systems",
-   "summary": "OpenAI and Cisco’s Shirudo helps Linux users block exploitation of known vulnerabilities on live systems, buying time for patching without requiring a restart",
+   "title": "OpenAI e Cisco lançam ferramenta de código aberto para proteger sistemas Linux sem patches",
+   "summary": "A OpenAI e a Cisco desenvolveram conjuntamente a ferramenta Shirudo para ajudar utilizadores do sistema operativo Linux. A solução bloqueia a exploração de vulnerabilidades conhecidas em sistemas ativos sem necessidade de reiniciar. Esta abordagem permite ganhar tempo precioso para aplicar os patches de segurança necessários.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "OpenAI e Cisco criaram a ferramenta de código aberto Shirudo.",
+    "O objetivo é bloquear a exploração de vulnerabilidades em sistemas Linux ativos.",
+    "Permite mitigar riscos sem exigir o reinício do sistema.",
+    "Ajuda a ganhar tempo para a aplicação de patches de segurança."
+   ],
+   "title_original": "OpenAI and Cisco Release Open-Source Tool to Shield Unpatched Linux Systems",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "OpenAI and Cisco’s Shirudo helps Linux users block exploitation of known vulnerabilities on live systems, buying time for patching without requiring a restart"
+   "translated": true,
+   "enriched": true,
+   "why": "Oferece uma alternativa prática para mitigar vulnerabilidades em servidores sem paragens operacionais.",
+   "todo": "Avalie a implementação da ferramenta para proteger temporariamente sistemas Linux vulneráveis enquanto planeia a atualização."
   },
   {
    "id": "f3a43b39549fdc89",
@@ -388,15 +440,21 @@
    "lang": "en",
    "link": "https://www.securityweek.com/1-5-million-impacted-by-data-breach-at-south-korean-electric-company-kepco/",
    "published": "2026-11-24T11:50:21+00:00",
-   "title": "1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO",
-   "summary": "Hackers stole personal information from the company’s customer portal and supplier relationship management platform.",
+   "title": "1,5 milhões de afetados em violação de dados na empresa elétrica sul-coreana KEPCO",
+   "summary": "A empresa elétrica sul-coreana KEPCO sofreu uma violação de dados após um ataque informático. Os piratas informáticos conseguiram roubar informações pessoais do portal de clientes e da plataforma de gestão de fornecedores. O incidente afetou cerca de 1,5 milhões de pessoas.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A empresa elétrica KEPCO foi alvo de um roubo de dados na Coreia do Sul.",
+    "Hackers penetraram no portal de clientes e na plataforma de fornecedores.",
+    "Informações pessoais de cerca de 1,5 milhões de pessoas foram roubadas.",
+    "O impacto concentra-se na privacidade dos utilizadores afetados."
+   ],
+   "title_original": "1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "Hackers stole personal information from the company’s customer portal and supplier relationship management platform."
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra os riscos de ataques a portais de atendimento ao cliente em grandes fornecedores de serviços essenciais.",
+   "todo": "Monitore os acessos aos portais de clientes e reforce a autenticação nas plataformas de gestão de fornecedores."
   },
   {
    "id": "cc8b0013c5a49935",
@@ -405,15 +463,21 @@
    "lang": "en",
    "link": "https://www.csoonline.com/article/4252513/attackers-exploited-an-azure-api-management-flaw-to-steal-secrets-microsoft-warns.html",
    "published": "2026-11-24T11:48:59+00:00",
-   "title": "Attackers exploited an Azure API Management flaw to steal secrets, Microsoft warns",
-   "summary": "Microsoft is warning customers that attackers exploited a flaw in Azure API Management Classic tiers to steal stored secrets, an intrusion that Norway’s National Security Authority has linked to breaches at two energy companies and says organizations should assume exposed credentials were compromised. Microsoft said in an Azure Service Health security advisory sent to customers that it identified the vulnerability on Nov. 18 and deployed a mitigation the following day. The advisory, tracking ID MZK9-GH0, said the exposure began before Microsoft found the flaw, reported Bleeping Computer. The c",
+   "title": "Atacantes exploraram falha no Azure API Management para roubar segredos, avisa a Microsoft",
+   "summary": "A Microsoft emitiu um aviso de segurança a alertar que atacantes exploraram uma vulnerabilidade nos níveis clássicos do Azure API Management. A falha permitiu o acesso não autorizado a segredos armazenados, como chaves de subscrição e credenciais de fornecedores de identidade. A Autoridade de Segurança Nacional da Noruega confirmou ataques a empresas de energia devido a este problema, aconselhando a rotação de credenciais expostas.",
    "image": "https://www.csoonline.com/wp-content/uploads/2026/10/4242174-0-34629500-1793350972-shutterstock_2710227815.jpg?quality=50&strip=all",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Microsoft detetou e mitigou a vulnerabilidade rastreada como MZK9-GH0.",
+    "Apenas os níveis clássicos do Azure API Management foram afetados.",
+    "O incidente expôs chaves de API, tokens e segredos de identidade.",
+    "A Noruega confirmou o aproveitamento desta falha em ataques a empresas energéticas."
+   ],
+   "title_original": "Attackers exploited an Azure API Management flaw to steal secrets, Microsoft warns",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Microsoft is warning customers that attackers exploited a flaw in Azure API Management Classic tiers to steal stored secrets, an intrusion that Norway’s National Security Authority has linked to breaches at two energy companies and says organizations should assume exposed credentials were compromised. Microsoft said in an Azure Service Health security advisory sent to customers that it identified the vulnerability on Nov. 18 and deployed a mitigation the following day. The advisory, tracking ID MZK9-GH0, said the exposure began before Microsoft found the flaw, reported Bleeping Computer. The company said in the advisory that “an unauthorized party could have used the issue to access secrets stored in Azure API Management Classic instances.” The potentially exposed information includes secrets stored in Named Values, client secrets associated with identity providers and OpenID Connect providers, subscription keys, and tokens used to call direct management APIs, the report added. Microsoft warned that its mitigation does not invalidate previously compromised credentials and that affected customers must rotate potentially exposed secrets and investigate suspicious activity. The advisory said only the Classic tiers of the service are affected, not Azure API Management v2, the report added. The potential exposure was not limited to a theoretical security risk. Norway’s National Security Authority (NSM) subsequently linked cyberattacks against two energy companies to the vulnerability, providing evidence of exploitation in an operational environment. Norway tells customers to assume exposure In a security advisory published November 20 and updated November 23, NSM said an unidentified actor had actively targeted access tokens, secrets, and Named Values stored in Azure API Man"
+   "translated": true,
+   "enriched": true,
+   "why": "Destaca a urgência de auditar e rodar credenciais de APIs após incidentes de segurança em plataformas em nuvem.",
+   "todo": "Verifique os registos de atividade à procura de comportamentos suspeitos e proceda imediatamente à rotação de todas as chaves e segredos armazenados."
   },
   {
    "id": "b4a9690560183d3c",
@@ -422,15 +486,21 @@
    "lang": "en",
    "link": "https://www.theregister.com/cyber-crime/2026/11/24/european-commission-confirms-personal-data-stolen-in-ai-assisted-cyberattack/5311834",
    "published": "2026-11-24T11:32:41+00:00",
-   "title": "European Commission confirms personal data stolen in AI-assisted cyberattack",
-   "summary": "EU Academy names and email addresses exposed, with users warned via website notice rather than contacted directly",
+   "title": "Comissão Europeia confirma roubo de dados pessoais em ciberataque assistido por IA",
+   "summary": "A Comissão Europeia confirmou que a plataforma de ensino online EU Academy foi comprometida num ciberataque assistido por inteligência artificial. O ataque resultou no roubo de nomes e endereços de email de utilizadores externos. A instituição optou por não contactar individualmente os afetados, publicando apenas um aviso no site, e desativou a plataforma até janeiro para remodelação.",
    "image": "https://image.theregister.com/?imageId=5311112&width=800",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A plataforma EU Academy da Comissão Europeia foi comprometida por hackers.",
+    "Foram roubados nomes e emails de utilizadores externos.",
+    "A Comissão optou por um aviso público no site em vez de notificações diretas.",
+    "A plataforma permanecerá offline até janeiro de 2027 para reconstrução."
+   ],
+   "title_original": "European Commission confirms personal data stolen in AI-assisted cyberattack",
    "category": "Ataque/APT",
-   "translated": false,
-   "enriched": false,
-   "raw": "The European Commission has confirmed that hackers made off with personal data in the AI-assisted cyberattack disclosed last week, but has relied on a website notice rather than contacting affected users directly. Speaking at a press briefing on Monday, Commission spokesperson Thomas Regnier confirmed that EU Academy, an online learning platform offering courses on EU policies and initiatives, was among the systems compromised during the cyber campaign targeting the bloc's executive arm. The stolen data includes the names and email addresses of people outside the EU institutions, though the Commission has yet to figure out how many users are affected or whether other personal information was compromised. Public access to the platform has been disabled as a precaution. Despite confirming the theft, the Commission hasn't contacted affected individuals directly. Instead, it has posted a notice on the EU Academy website, a decision Regnier defended when quizzed by reporters on Monday. \"There was no reach out to individual users, but rather a general message to all users on the website out of transparency,\" Regnier said. The notice warns users that they could find themselves on the receiving end of spearphishing attacks, impersonation attempts, and spam as a result of the breach. The Commission is also advising users not to hand over personal information to anyone who contacts them claiming to be involved in EU Academy activities. The trouble with notifying users via the EU Academy website is that they've already been told not to come back until January. A separate notice says the platform will be offline from November 11 through January 14, 2027, while the Commission rebuilds it. When it reopens, users will have to register again, and any record of their previous coursework"
+   "translated": true,
+   "enriched": true,
+   "why": "Ilustra o risco de campanhas de engenharia social direcionadas contra utilizadores cujos dados foram vazados de plataformas institucionais.",
+   "todo": "Desconfie de contactos inesperados que aleguem estar ligados a iniciativas da EU Academy e evite partilhar dados pessoais."
   },
   {
    "id": "0789592871d104f4",
@@ -439,15 +509,21 @@
    "lang": "en",
    "link": "https://www.malwarebytes.com/blog/ai/2026/11/researchers-planted-secrets-in-ai-prompts-attackers-found-them",
    "published": "2026-11-24T11:21:42+00:00",
-   "title": "Researchers planted secrets in AI prompts. Attackers found them",
-   "summary": "Researchers planted access keys in AI prompts. Within hours, attackers were testing some of them against Amazon cloud accounts.",
+   "title": "Investigadores colocaram segredos em prompts de IA e atacantes encontraram-nos",
+   "summary": "Atacantes têm monitorizado e analisado consultas enviadas por utilizadores a serviços de IA online, conhecidas como prompts. Os cibercriminosos procuram dados sensíveis e chaves de acesso nestes pedidos, por vezes reutilizando as credenciais roubadas poucas horas depois. O problema afeta plataformas de alojamento de modelos de IA e serviços de encaminhamento de terceiros.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Atacantes monitorizam prompts enviados a serviços de IA para extrair dados sensíveis.",
+    "Chaves de acesso roubadas são utilizadas maliciosamente em poucas horas.",
+    "O problema afeta fornecedores de alojamento de IA e serviços de encaminhamento.",
+    "Muitos prompts roubados provêm de serviços marcados com retenção zero de dados."
+   ],
+   "title_original": "Researchers planted secrets in AI prompts. Attackers found them",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": ".kadence-column492389_464345-0f > .kt-inside-inner-col{padding-top:20px;padding-right:20px;padding-bottom:10px;padding-left:20px;}.kadence-column492389_464345-0f > .kt-inside-inner-col{column-gap:var(--global-kb-gap-sm, 1rem);}.kadence-column492389_464345-0f > .kt-inside-inner-col{flex-direction:column;}.kadence-column492389_464345-0f > .kt-inside-inner-col > .aligncenter{width:100%;}.kadence-column492389_464345-0f > .kt-inside-inner-col{background-color:rgba(255, 229, 229, 0.83);}.kadence-column492389_464345-0f > .kt-inside-inner-col:before{opacity:0.3;}.kadence-column492389_464345-0f{position:relative;}@media all and (max-width: 1024px){.kadence-column492389_464345-0f > .kt-inside-inner-col{flex-direction:column;justify-content:center;}}@media all and (max-width: 767px){.kadence-column492389_464345-0f > .kt-inside-inner-col{flex-direction:column;justify-content:center;}} In this article Researchers traced stolen prompts to three AI hosting providers Some stolen prompts were marked “zero data retention” Keep sensitive data out of prompts and check which providers your AI routing service can send them to Attackers have been reading queries sent indirectly to online AI services. They’ve scoured these queries (also known as “prompts”) for sensitive data, in some cases trying out stolen access keys within hours. Not everyone works directly with the likes of ChatGPT, Gemini and Claude. Plenty of people use other AI services, including hosting companies that run open-source AI models. There are also third-party services that accept your prompts and then send them on to the most appropriate AI services. These services, known as routers, give you access to different models. Perhaps you prefer one for designing something for your 3D printer and another for coding. On some marke"
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para o perigo de expor dados confidenciais e chaves de API em interações com ferramentas de inteligência artificial.",
+   "todo": "Nunca inclua dados sensíveis, credenciais ou segredos em prompts enviados a ferramentas de IA e verifique a política de privacidade dos fornecedores."
   },
   {
    "id": "a36fd360c1b8f304",
@@ -13680,50 +13756,6 @@
    "enriched": true,
    "why": "A segurança da cadeia de fornecedores de software é vital para prevenir a introdução de vulnerabilidades nas empresas.",
    "todo": "Avalie regularmente a segurança do código desenvolvido internamente e dos fornecedores externos utilizados pela organização."
-  },
-  {
-   "id": "55016e2da81bf79e",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
-   "published": "2026-11-18T14:11:28+00:00",
-   "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
-   "summary": "Um grupo de ameaças persistentes avançadas (APT) suspeito de origem chinesa atualizou o seu malware EggStreme para evitar a deteção por ferramentas de segurança. O grupo continua a focar os seus ataques em organizações governamentais nas Filipinas. Segundo a Bitdefender, os atacantes alteram constantemente o código e os hashes dos ficheiros para dificultar a identificação.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYLKVaRRp02L2STeR4kakGeA1NJokTtxw2aLU4wBLS34vltviR8gV4eUjk0QJ9jDVbiS_2hSeDQCwIR_JoCzPzUt-FSNUNpaKNtHpKiMugkRAMwOIbl4FbcL5iE7KCe1hebNbJRTxqO5xQkEFBuDI6F8FnsnYfreljrQlHHXuKBEN0suJZeuIf8heda5wY/s1600/chinese.jpg",
-   "points": [
-    "Um grupo APT suspeito de origem chinesa renovou o kit de ferramentas do malware EggStreme.",
-    "O alvo principal da campanha continuam a ser organizações governamentais nas Filipinas.",
-    "As alterações frequentes de código e hashes ajudam a evadir as ferramentas de segurança."
-   ],
-   "title_original": null,
-   "category": "Malware",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia a capacidade dos grupos de ameaças avançadas em adaptar rapidamente o seu malware para contornar defesas tradicionais.",
-   "todo": "Mantenha as soluções de deteção e resposta a endpoints (EDR) atualizadas e monitorize comportamentos anómalos na rede."
-  },
-  {
-   "id": "8368f9805644f450",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/vulnerabilities-threats/major-brazilian-signature-app-rce-fraud",
-   "published": "2026-11-18T14:00:00+00:00",
-   "title": "Major Brazilian Signature Apps Enable RCE & Fraud",
-   "summary": "Aplicações de assinatura e autenticação de uso governamental no Brasil foram associadas a falhas críticas que permitem execução remota de código (RCE). Estes middlewares de autenticação são utilizados para gerir documentos jurídicos de elevada importância. A presença destas vulnerabilidades abre portas a potenciais fraudes e comprometimento de segurança.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltd3d76d438281428b/6afb51c99f6beb04c5e535c4/Brazil_CNH-RafaPress-Getty.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "Aplicações de assinatura no Brasil afetadas por falhas graves.",
-    "Vulnerabilidades permitem execução remota de código (RCE).",
-    "Middleware é utilizado em documentos jurídicos cruciais."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Falhas em aplicações de assinatura digital colocam em risco a validade jurídica de documentos e facilitam fraudes.",
-   "todo": "Garanta a auditoria rigorosa de software crítico e aplique correções de segurança logo que os fabricantes as disponibilizem."
   }
  ]
 }

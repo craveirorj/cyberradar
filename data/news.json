@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T05:26:36.906986+00:00",
+ "updated": "2026-11-24T05:49:31.055420+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -239,12 +239,12 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 8
+   "added": 7
   },
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -309,16 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 233,
-  "unenriched": 102,
+  "done": 119,
+  "pending": 222,
+  "unenriched": 91,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 44 column 5 (char 3721)",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "97b500d3a3efe809",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/24/passwork-enterprise-password-management/",
+   "published": "2026-11-24T05:30:07+00:00",
+   "title": "Como as TI podem delegar a gestão de palavras-passe sem perder o controlo",
+   "summary": "Muitas empresas enfrentam o desafio de departamentos que gerem as suas próprias ferramentas e acessos sem supervisão da equipa de TI. Esta descentralização cria contas desconhecidas e riscos de segurança, especialmente quando há mudanças de pessoal ou utilização de agências externas. O problema agrava-se quando contas críticas ficam ligadas a e-mails pessoais de colaboradores. É essencial que a TI estabeleça processos claros para manter a visibilidade e o controlo sobre todos os acessos corporativos.",
+   "image": null,
+   "points": [
+    "Departamentos criam acessos sem supervisão da TI",
+    "Contas partilhadas aumentam o risco de segurança",
+    "Falta de controlo em mudanças de pessoal",
+    "TI deve centralizar a gestão de identidades"
+   ],
+   "title_original": "How IT can delegate password management without losing control",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "A falta de controlo sobre contas departamentais cria pontos cegos que facilitam acessos não autorizados e fugas de dados.",
+   "todo": "Implemente uma solução centralizada de gestão de acessos e estabeleça políticas rigorosas para a criação e partilha de contas."
+  },
   {
    "id": "e3ea5f473094b75f",
    "source": "The Register Security",
@@ -13728,29 +13750,6 @@
    "enriched": true,
    "why": "Torna o malware muito mais resiliente à interrupção tradicional de servidores de comando e controlo.",
    "todo": "Monitorize o tráfego de rede JSON-RPC anómalo e analise regularmente a memória dos terminais."
-  },
-  {
-   "id": "a3cef9df02f8e3a4",
-   "source": "Cisco Talos",
-   "region": "US",
-   "lang": "en",
-   "link": "https://blog.talosintelligence.com/uat-12643-suspected-north-korea-aligned-actor-blends-blockchain-resilience-with-targeted-infostealing/",
-   "published": "2026-11-18T11:00:00+00:00",
-   "title": "UAT-12643: Atores suspeitos alinhados com a Coreia do Norte misturam resiliência de blockchain com roubo de dados",
-   "summary": "A Cisco Talos descobriu uma campanha maliciosa atribuída ao grupo UAT-12643 que visa utilizadores de criptomoedas, plataformas de jogos e software VoIP. O arsenal inclui o trojan Overlord, o roubador Good Game e um sequestrador de área de transferência. O grupo utiliza a blockchain Solana para esconder URLs de comando e controlo em notas de transação. A campanha afeta utilizadores em várias regiões, incluindo a Europa, através de ficheiros isco em vários idiomas.",
-   "image": "https://storage.ghost.io/c/af/a0/afa04ee3-414f-4481-8d23-7e7c146f192e/content/images/2026/11/threat_spotlight.jpg",
-   "points": [
-    "O quê: Nova campanha de malware com o trojan Overlord e o roubador Good Game.",
-    "Quem: Grupo UAT-12643, possivelmente associado à Coreia do Norte, visando vários setores.",
-    "Como: Empregam URLs encriptados na blockchain Solana e ficheiros isco direcionados.",
-    "Impacto: Roubo de criptomoedas, dados de contas de jogos, credenciais e informações confidenciais."
-   ],
-   "title_original": "UAT-12643: Suspected North Korea-aligned actor blends blockchain resilience with targeted infostealing",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Combina técnicas avançadas de evasão em blockchain com múltiplos vetores de roubo de dados pessoais e profissionais.",
-   "todo": "Evite abrir ficheiros suspeitos de fontes desconhecidas e utilize soluções de segurança atualizadas para detetar ameaças em terminais."
   }
  ]
 }

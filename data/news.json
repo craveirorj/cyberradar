@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T05:08:21.032931+00:00",
+ "updated": "2026-11-24T05:26:36.906986+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Security Affairs",
@@ -309,15 +309,39 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 223,
-  "unenriched": 91,
+  "done": 108,
+  "pending": 233,
+  "unenriched": 102,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting property name enclosed in double quotes: line 44 column 5 (char 3721)",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "e3ea5f473094b75f",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/24/orgs-that-leak-data-prioritize-corporate-interests-over-customers-says-have-i-been-pwneds-troy-hunt/5311802",
+   "published": "2026-11-24T05:13:51+00:00",
+   "title": "Organizações que perdem dados priorizam os interesses corporativos em detrimento dos clientes, diz Troy Hunt do Have I Been Pwned",
+   "summary": "Troy Hunt, fundador do Have I Been Pwned, utilizou a inteligência artificial da Anthropic para analisar mais de oito anos de comunicações com 73 organizações notificadas por fugas de dados. A investigação revelou padrões de comportamento defensivo, com atrasos deliberados, forte envolvimento de advogados e desvios de notificações para o apoio ao cliente. Muitas entidades ignoraram os avisos, negaram as evidências ou minimizaram o impacto, demonstrando que os interesses comerciais superam a proteção dos utilizadores.",
+   "image": "https://image.theregister.com/?imageId=259203&width=800",
+   "points": [
+    "Troy Hunt analisou respostas de 73 organizações notificadas sobre fugas de dados entre 2018 e 2026.",
+    "Muitas entidades trataram os avisos de incidentes como meros pedidos de suporte ao cliente.",
+    "As empresas adotaram posturas evasivas, negando provas ou desvalorizando a gravidade das brechas.",
+    "O impacto resulta na falta de transparência e na exposição contínua dos dados dos clientes afetados."
+   ],
+   "title_original": "Orgs that leak data ‘prioritize corporate interests over customers’ says Have I Been Pwned’s Troy Hunt",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como as empresas falham frequentemente na gestão de incidentes e na proteção dos dados dos clientes.",
+   "todo": "Estabeleça canais claros de comunicação para incidentes de segurança e treine as equipas de atendimento para os encaminhar corretamente."
+  },
   {
    "id": "5d936f899015cf8f",
    "source": "Help Net Security",
@@ -13727,29 +13751,6 @@
    "enriched": true,
    "why": "Combina técnicas avançadas de evasão em blockchain com múltiplos vetores de roubo de dados pessoais e profissionais.",
    "todo": "Evite abrir ficheiros suspeitos de fontes desconhecidas e utilize soluções de segurança atualizadas para detetar ameaças em terminais."
-  },
-  {
-   "id": "608d082ccd20f2a6",
-   "source": "CyberScoop",
-   "region": "US",
-   "lang": "en",
-   "link": "https://cyberscoop.com/government-tech-debt-national-security-risk-op-ed/",
-   "published": "2026-11-18T11:00:00+00:00",
-   "title": "A dívida tecnológica governamental constitui um risco para a segurança nacional",
-   "summary": "Ataques cibernéticos patrocinados por estados estrangeiros contra infraestruturas críticas e redes governamentais têm-se tornado mais frequentes e severos. Os defensores enfrentam o desafio de proteger sistemas complexos enquanto os atacantes apenas precisam de encontrar uma única vulnerabilidade. A gestão e os contratos públicos agravam o problema ao manterem várias gerações de tecnologias desatualizadas em simultâneo. Esta complexidade estrutural dificulta o trabalho das equipas de cibersegurança do Estado.",
-   "image": null,
-   "points": [
-    "O quê: Vulnerabilidade de infraestruturas críticas devido a sistemas governamentais desatualizados.",
-    "Quem: Agências governamentais e atacantes patrocinados por estados.",
-    "Como: Exploração de fraquezas em tecnologias antigas e complexas mantidas em simultâneo.",
-    "Impacto: Aumento do risco de intrusões bem-sucedidas em redes estatais sensíveis."
-   ],
-   "title_original": "Government tech debt is a national security risk",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Expõe sistemas estatais críticos a ataques persistentes devido à utilização prolongada de tecnologia obsoleta.",
-   "todo": "Modernize as infraestruturas tecnológicas legadas e unifique a gestão de segurança entre diferentes camadas de sistemas."
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T02:48:12.131935+00:00",
+ "updated": "2026-11-24T03:06:58.765143+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -139,7 +139,7 @@
   {
    "source": "SANS ISC",
    "ok": true,
-   "added": 3
+   "added": 2
   },
   {
    "source": "DataBreaches.net",
@@ -164,7 +164,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "Cisco Talos",
@@ -310,14 +310,37 @@
  "translation": {
   "provider": "gemini",
   "done": 119,
-  "pending": 226,
-  "unenriched": 94,
+  "pending": 225,
+  "unenriched": 93,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "f31f66f6df8f5c30",
+   "source": "AWS Security Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://aws.amazon.com/blogs/security/know-the-identity-behind-the-role-authorize-and-audit-with-trusted-identity-propagation/",
+   "published": "2026-11-24T02:52:38+00:00",
+   "title": "Conhecer a identidade por trás do papel: Autorizar e auditar com propagação de identidade fidedigna",
+   "summary": "A AWS expandiu a funcionalidade de propagação de identidade fidedigna (TIP) para a federação IAM e o AWS IAM Roles Anywhere. Esta ferramenta transporta a identidade de utilizadores ou cargas de trabalho não humanas em cada pedido na AWS. Anteriormente restrita ao AWS IAM Identity Center, agora permite um melhor controlo de acessos e auditoria no CloudTrail. O objetivo é combater a proliferação de papéis e identificar claramente quem executa cada ação.",
+   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/24/fig1-2.png",
+   "points": [
+    "A AWS expandiu a propagação de identidade fidedigna (TIP).",
+    "Agora suporta federação IAM e IAM Roles Anywhere.",
+    "Associa a identidade real do utilizador ou carga de trabalho aos pedidos.",
+    "Melhora a auditoria no CloudTrail e o controlo de acessos."
+   ],
+   "title_original": "Know the identity behind the role: Authorize and audit with trusted identity propagation",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite rastrear ações exatas de utilizadores e cargas de trabalho em papéis partilhados da AWS.",
+   "todo": "Adote a propagação de identidade fidedigna para evitar o uso excessivo de papéis genéricos e melhorar o registo de auditoria."
+  },
   {
    "id": "74976701e7615db5",
    "source": "SANS ISC",
@@ -13727,29 +13750,6 @@
    "enriched": true,
    "why": "Abre portas à execução remota de código em milhões de servidores e aplicações empresariais baseadas em Java.",
    "todo": "Atualize imediatamente as suas instalações e runtimes OpenJDK para as versões corrigidas."
-  },
-  {
-   "id": "94321d4b37d655bf",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/",
-   "published": "2026-11-18T10:37:08+00:00",
-   "title": "Exploração Crítica de RCE no Perforce Puppet Alvo de Ataques",
-   "summary": "Uma vulnerabilidade crítica identificada como CVE-2026-115731 afeta o Perforce Puppet, permitindo que um cliente com um certificado de agente assinado por CA execute código no servidor. A falha já está a ser ativamente explorada em ataques informáticos. Este problema representa um vetor de intrusão grave para infraestruturas que utilizam este software. Os atacantes conseguem comprometer os servidores afetados através de comandos executados remotamente.",
-   "image": null,
-   "points": [
-    "Vulnerabilidade CVE-2026-115731 afeta o Perforce Puppet.",
-    "Permite execução de código no servidor por clientes autenticados.",
-    "A falha está a ser explorada ativamente em ataques.",
-    "Exige atenção urgente para evitar o compromisso de servidores."
-   ],
-   "title_original": "Critical Perforce Puppet RCE Exploited in Attacks",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite que agentes maliciosos executem código arbitrário diretamente em servidores corporativos vulneráveis.",
-   "todo": "Aplique imediatamente as atualizações de segurança disponibilizadas pelo fabricante para corrigir a falha CVE-2026-115731."
   }
  ]
 }

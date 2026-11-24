@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T21:24:51.539441+00:00",
+ "updated": "2026-11-24T21:44:58.271566+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -109,7 +109,7 @@
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CSO Online",
@@ -119,7 +119,7 @@
   {
    "source": "TechCrunch Security",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "Ars Technica Security",
@@ -311,7 +311,7 @@
   "provider": "gemini",
   "done": 0,
   "pending": 346,
-  "unenriched": 229,
+  "unenriched": 230,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,57 @@
   ]
  },
  "items": [
+  {
+   "id": "6c270107d3982041",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/",
+   "published": "2026-11-24T21:37:30+00:00",
+   "title": "Rackspace shuts down Spot cloud platform after security breach",
+   "summary": "Rackspace is shutting down its Rackspace Spot cloud platform after a security breach allowed hackers to access customer Kubernetes clusters and secrets, giving customers until December 8 to migrate their services and download their data. [...]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "Rackspace is shutting down its Rackspace Spot cloud platform after a security breach allowed hackers to access customer Kubernetes clusters and secrets, giving customers until December 8 to migrate their services and download their data. [...]"
+  },
+  {
+   "id": "3b8d0a7e0d039061",
+   "source": "Dark Reading",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.darkreading.com/vulnerabilities-threats/god-mode-flaws-wreak-border-control-havoc",
+   "published": "2026-11-24T21:36:11+00:00",
+   "title": "'God Mode' Flaws Could Wreak Border-Control Havoc",
+   "summary": "Attackers could have disrupted traveler entry into Nigeria, Ethiopia, Zambia, Sri Lanka, Fiji, and Ghana via several vulnerabilities in their online visa and immigration systems.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltf04ed1ecab1b2c42/66cc9d45781c434a1b20ebb3/airport1800_RoadPix_alamy.jpg?width=720&quality=80&disable=upscale",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Attackers could have disrupted traveler entry into Nigeria, Ethiopia, Zambia, Sri Lanka, Fiji, and Ghana via several vulnerabilities in their online visa and immigration systems."
+  },
+  {
+   "id": "4266742c8a27ff93",
+   "source": "AWS Security Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://aws.amazon.com/blogs/security/aws-network-firewall-introduces-automated-internet-firewall-mode-preview/",
+   "published": "2026-11-24T21:30:20+00:00",
+   "title": "AWS Network Firewall introduces automated internet firewall mode (Preview)",
+   "summary": "AWS Network Firewall now offers automated internet firewall mode (Preview). In this mode, Network Firewall applies your centrally defined rules to traffic at the internet gateway of each of your virtual private clouds (VPCs). It also performs built-in network address translation (NAT) for outbound-only connections. A subnet that reaches the internet needs only one route, […]",
+   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/24/aif-fig1-r25-r30.png",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "AWS Network Firewall now offers automated internet firewall mode (Preview). In this mode, Network Firewall applies your centrally defined rules to traffic at the internet gateway of each of your virtual private clouds (VPCs). It also performs built-in network address translation (NAT) for outbound-only connections. A subnet that reaches the internet needs only one route, directly to the internet gateway. You no longer need to deploy firewall endpoints and NAT gateways in each VPC and configure the routes between them and the subnets. If you’re new to internet traffic inspection, you can start with AWS managed rule groups for Network Firewall . AWS security experts maintain and update these rule groups to help protect your workloads against changing threats. You can deploy these managed rule groups centrally across your environment. With automated internet firewall mode, you can: Inspect traffic at the internet gateway – Each VPC gets its own firewall for inbound and outbound IPv4 and IPv6 traffic, with built-in NAT for outbound-only IPv4 connections. Manage centrally, inspect in each VPC – You define policies in AWS Network Security Manager or start from an AWS managed template. Each VPC’s traffic passes its own firewall, so each VPC you add brings its own inspection capacity. The same central policy also works for VPCs with overlapping Classless Inter-Domain Routing (CIDR) ranges. Extend coverage to new VPCs – You can create a scope that includes all existing and future VPCs, so your policy applies to new VPCs when teams create them. In this post, we explain how automated internet firewall mode works and how it fits your existing architecture. We also walk through the steps to deploy it across your environment. How automated internet firewall mode works In automated in"
+  },
   {
    "id": "4647bb6a18f6a9b5",
    "source": "TechCrunch Security",
@@ -13612,73 +13663,6 @@
    "enriched": true,
    "why": "Permite que atacantes obtenham controlo total de root sobre os servidores afetados através do encadeamento de falhas críticas.",
    "todo": "Instale imediatamente o pacote de segurança lançado pela F5 a 18 de novembro de 2026."
-  },
-  {
-   "id": "c39fbe2f26b94984",
-   "source": "Graham Cluley",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://grahamcluley.com/smashing-security-podcast-493/",
-   "published": "2026-11-19T00:14:52+00:00",
-   "title": "Podcast Smashing Security #493: Porque é que o seu modelo de IA pode ser um agente adormecido",
-   "summary": "O episódio 493 do podcast Smashing Security debate os riscos associados a modelos de inteligência artificial que podem funcionar como agentes adormecidos maliciosos. Os convidados discutem fraudes baseadas em falsas atualizações de microfones em videochamadas e formas de monitorizar o uso de ferramentas de IA nas empresas. O impacto centra-se na prevenção de fugas de dados corporativos sem proibir o uso de IA.",
-   "image": null,
-   "points": [
-    "Quem: Graham Cluley e Andrius Buinovskis.",
-    "O quê: Riscos de IA como agentes adormecidos e fugas de dados.",
-    "Como: Modificação de parâmetros em modelos e análise de ferramentas usadas pelos funcionários.",
-    "Impacto: Proteção de dados sensíveis nas organizações."
-   ],
-   "title_original": "Smashing Security podcast #493: Why your AI model could be a sleeper agent",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Alerta para os riscos ocultos de manipulação de IA e para a necessidade de visibilidade sobre o seu uso empresarial.",
-   "todo": "Monitore as ferramentas de IA utilizadas pelos colaboradores e implemente políticas claras de prevenção de perda de dados."
-  },
-  {
-   "id": "c808af3473f2461a",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/19/nist-quantum-position-verification/",
-   "published": "2026-11-19T00:07:39+00:00",
-   "title": "Verificação de posição quântica pode bloquear hackers remotos, mostra o NIST",
-   "summary": "Físicos do National Institute of Standards and Technology utilizaram fotões entrelaçados para confirmar fisicamente a localização exata de uma parte. A equipa executou com sucesso um protocolo de verificação de posição quântica num edifício de investigação em Boulder, eliminando falhas que permitiam fraudes em esquemas anteriores. Esta inovação visa impedir acessos não autorizados por parte de atacantes remotos.",
-   "image": null,
-   "points": [
-    "O NIST utilizou fotões entrelaçados para validar localizações físicas.",
-    "A experiência em Boulder eliminou vulnerabilidades de esquemas anteriores.",
-    "A técnica reforça a segurança contra hackers remotos."
-   ],
-   "title_original": "Quantum position verification could lock remote hackers out, NIST shows",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite confirmar com exatidão a presença física de um elemento, impedindo fraudes de localização por atacantes.",
-   "todo": ""
-  },
-  {
-   "id": "a4d93bd0c731e6cc",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/produto-e-review/kit-da-maldade-usa-gta-6-para-infectar-computadores/",
-   "published": "2026-11-19T00:00:00+00:00",
-   "title": "Kit da ‘maldade’ usa GTA 6 para hackear computadores",
-   "summary": "Crimiosos colocaram à venda na dark web um pacote completo de golpes temáticos sobre o jogo GTA 6, descoberto pela NordVPN. O kit, comercializado por duzentos dólares em criptomoedas, explora a expectativa pelo lançamento de uma versão para PC através de páginas falsas e drenadores de carteiras. O impacto afeta utilizadores desatentos que procuram conteúdos antecipados e caem nestas burlas.",
-   "image": "https://www.estadao.com.br/resizer/v2/RPBJKKDUEZDSJNFLDFPC7MBYDM.png?quality=80&auth=3f07225ac5818b341c4e6aa90629a538acbf01d49ca4f361de41bc00d65f900b&width=710",
-   "points": [
-    "Crimiosos vendem um kit de golpes na dark web centrado em GTA 6 por duzentos dólares.",
-    "O pacote inclui páginas falsas e drenadores de carteiras de criptomoedas.",
-    "O golpe explora a ausência de uma versão oficial do jogo para computador."
-   ],
-   "title_original": null,
-   "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": true,
-   "why": "Facilita ataques informáticos a utilizadores comuns sem necessidade de conhecimentos técnicos avançados por parte dos compradores.",
-   "todo": "Desconfie de ofertas de versões antecipadas de jogos populares para PC e evite clicar em links desconhecidos."
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T06:08:33.676491+00:00",
+ "updated": "2026-11-24T06:31:43.004731+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Security Affairs",
@@ -309,15 +309,60 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 221,
-  "unenriched": 90,
+  "done": 107,
+  "pending": 236,
+  "unenriched": 105,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
+   "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "389c7e58bfc2b3b6",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/24/aws-european-sovereign-cloud-details/",
+   "published": "2026-11-24T06:15:37+00:00",
+   "title": "AWS European Sovereign Cloud: Architecture, assurance, and compliance",
+   "summary": "A Amazon Web Services apresentou uma visão detalhada da sua nova nuvem soberana europeia, focada em responder às exigências regulatórias locais. A infraestrutura foi desenhada para garantir controlo total dos dados e conformidade para organizações europeias. O projeto é liderado por especialistas em cibersegurança e soberania digital em articulação com autoridades reguladoras. O objetivo é permitir a inovação tecnológica sem comprometer a segurança e a soberania das informações na Europa.",
+   "image": null,
+   "points": [
+    "Apresentação da AWS European Sovereign Cloud para o mercado europeu.",
+    "Foco no controlo total de dados e conformidade regulatória rigorosa.",
+    "Desenvolvida em articulação com autoridades de cibersegurança e reguladores."
+   ],
+   "title_original": "AWS European Sovereign Cloud: Architecture, assurance, and compliance",
+   "category": "Regulação",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa para garantir que organizações europeias inovam mantendo total controlo regulatório e de segurança sobre os seus dados.",
+   "todo": "Avalie os requisitos de soberania e conformidade da sua organização antes de migrar dados sensíveis para serviços na nuvem."
+  },
+  {
+   "id": "9718616967807cce",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/24/cisco-openai-shirudo/",
+   "published": "2026-11-24T06:00:50+00:00",
+   "title": "Linux patches can take weeks, and OpenAI and Cisco built Shirudo to help in the meantime",
+   "summary": "A OpenAI e a Cisco lançaram o Shirudo, uma ferramenta de código aberto destinada a proteger sistemas Linux enquanto as atualizações oficiais não são aplicadas. O programa atua bloqueando comportamentos específicos de vulnerabilidades sem necessidade de reiniciar o sistema operativo. Esta solução mitiga o risco durante o período em que os administradores testam e implementam os remendos de segurança. O nome deriva da palavra japonesa para escudo e visa reduzir a janela de exposição a ataques.",
+   "image": null,
+   "points": [
+    "Lançamento da ferramenta open-source Shirudo pela OpenAI e Cisco.",
+    "Proteção temporária em sistemas Linux sem exigir reinício.",
+    "Bloqueia comportamentos maliciosos enquanto se aguarda pela correção oficial."
+   ],
+   "title_original": "Linux patches can take weeks, and OpenAI and Cisco built Shirudo to help in the meantime",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque reduz drasticamente o tempo de exposição a vulnerabilidades enquanto as correções oficiais demoram a ser aplicadas.",
+   "todo": "Considere o uso de ferramentas de mitigação temporária para proteger sistemas críticos enquanto valida as atualizações de segurança."
+  },
   {
    "id": "97b500d3a3efe809",
    "source": "Help Net Security",
@@ -13705,51 +13750,6 @@
    "enriched": true,
    "why": "Compromete credenciais críticas de acesso a serviços de nuvem e ferramentas de desenvolvimento logo na inicialização.",
    "todo": "Verifique se utiliza as versões afetadas do agent-framework, remova-as e revogue imediatamente todas as credenciais expostas."
-  },
-  {
-   "id": "63ab0fd187977a4a",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html",
-   "published": "2026-11-18T11:03:57+00:00",
-   "title": "A Qualidade Não é a Principal Preocupação no Pentesting de IA — A Privacidade de Dados e a Segurança em Produção São",
-   "summary": "A adoção da inteligência artificial está a acelerar a criação de software, resultando em mais código e mais oportunidades para introduzir vulnerabilidades. Em simultâneo, os atacantes utilizam a mesma tecnologia para detetar e explorar falhas num espaço de tempo cada vez mais curto. Para acompanhar este ritmo, o pentesting automatizado com IA permite realizar testes profundos sem esperar por ciclos tradicionais. Contudo, os maiores desafios centram-se na proteção da privacidade dos dados e na segurança dos ambientes produtivos.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj276QET-ma2-edrAgsOdbZltmoW58d_kJT8C-g8DXQfDQAzPlmCcQYv-tWcX-DXcSipQpu_oFY_pPunvn-eXoog3H0BYPLkb4uY3B4Ax9T7LmtVBgVDwZZInLbj5QgnjVMI5d1za8bgR1a2TvGaJzZUK2UuSAEk3gSY-erKiddYAYTkNE9kxEp0zcx5x8/s1600/intruder.jpg",
-   "points": [
-    "A IA acelera tanto o desenvolvimento de software como a atividade dos atacantes.",
-    "O tempo necessário para explorar vulnerabilidades foi reduzido para apenas um dia.",
-    "O pentesting com IA exige salvaguardar a privacidade e a estabilidade da produção."
-   ],
-   "title_original": "Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Alerta para os riscos de privacidade e segurança ao integrar testes de IA em ambientes de produção.",
-   "todo": "Garanta que as ferramentas de teste baseadas em IA cumprem rigorosos padrões de privacidade e segurança."
-  },
-  {
-   "id": "e3a24527dd73e527",
-   "source": "Cisco Talos",
-   "region": "US",
-   "lang": "en",
-   "link": "https://blog.talosintelligence.com/the-challenge-of-defending-against-bulletproof-dead-drops-on-public-blockchains/",
-   "published": "2026-11-18T11:00:00+00:00",
-   "title": "O desafio de defender contra pontos de contacto ocultos em blockchains públicas",
-   "summary": "A infraestrutura de comando e controlo de malware evoluiu para utilizar redes de blockchain públicas e descentralizadas, eliminando pontos únicos de falha. Os atacantes aproveitam transações e contratos inteligentes para armazenar e atualizar os seus pontos de ligação sem depender de servidores centralizados. Esta abordagem contorna as defesas tradicionais baseadas em listas de bloqueio de domínios. Como resposta, a cibersegurança exige a monitorização de tráfego JSON-RPC anómalo e a análise de memória.",
-   "image": "https://storage.ghost.io/c/af/a0/afa04ee3-414f-4481-8d23-7e7c146f192e/content/images/2026/11/on_the_radar.jpg",
-   "points": [
-    "O quê: Utilização de blockchains públicas para infraestruturas de comando e controlo.",
-    "Quem: Atores de ameaças e equipas de defesa em organizações.",
-    "Como: O malware obtém configurações encriptadas através de consultas RPC diretamente na memória.",
-    "Impacto: Dificulta a interrupção de campanhas maliciosas por parte das autoridades e defesas tradicionais."
-   ],
-   "title_original": "The challenge of defending against bulletproof dead drops on public blockchains",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "Torna o malware muito mais resiliente à interrupção tradicional de servidores de comando e controlo.",
-   "todo": "Monitorize o tráfego de rede JSON-RPC anómalo e analise regularmente a memória dos terminais."
   }
  ]
 }

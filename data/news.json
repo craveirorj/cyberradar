@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T01:46:43.184823+00:00",
+ "updated": "2026-11-24T02:07:30.876832+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -309,15 +309,55 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 224,
-  "unenriched": 92,
+  "done": 119,
+  "pending": 225,
+  "unenriched": 93,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "732957406cb22dd9",
+   "source": "SANS ISC",
+   "region": "US",
+   "lang": "en",
+   "link": "https://isc.sans.edu/diary/rss/33552",
+   "published": "2026-11-24T02:00:04+00:00",
+   "title": "ISC Stormcast For Tuesday, November 24th, 2026 https://isc.sans.edu/podcastdetail/10192, (Tue, Nov 24th)",
+   "summary": "",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": ""
+  },
+  {
+   "id": "a3dc1c3f9c0a28fb",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/24/cisco-and-openai-pitch-ebpf-kernel-plugins-as-the-way-to-tame-the-patchpocalypse/5311795",
+   "published": "2026-11-24T01:46:56+00:00",
+   "title": "Cisco e OpenAI promovem plugins de kernel eBPF como solução para a \"patchpocalypse\"",
+   "summary": "A Cisco e a OpenAI lançaram o Shirudo, uma ferramenta open-source que utiliza eBPF para implementar controlos compensatórios no kernel do Linux. O objetivo é proteger sistemas contra vulnerabilidades sem a necessidade imediata de aplicar patches, algo difícil devido ao volume massivo de falhas descobertas atualmente. A ferramenta permite criar \"escudos\" que bloqueiam explorações, sendo recomendada a supervisão humana antes da sua implementação em produção. Esta abordagem visa ajudar organizações que lutam para acompanhar o ritmo das atualizações de segurança.",
+   "image": "https://image.theregister.com/?imageId=1682068&width=800",
+   "points": [
+    "Shirudo utiliza eBPF para criar defesas no kernel Linux.",
+    "Ajuda a mitigar falhas sem necessidade de patches imediatos.",
+    "Requer revisão humana antes de aplicar os escudos gerados.",
+    "Combate o volume excessivo de vulnerabilidades de software."
+   ],
+   "title_original": "Cisco and OpenAI pitch eBPF kernel plugins as the way to tame the patchpocalypse",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite proteger infraestruturas críticas contra vulnerabilidades conhecidas quando a aplicação imediata de patches não é viável.",
+   "todo": "Avalie a implementação de controlos compensatórios em sistemas legados e mantenha uma rotina rigorosa de gestão de vulnerabilidades."
+  },
   {
    "id": "453252f9d2559d7e",
    "source": "Help Net Security",
@@ -13706,52 +13746,6 @@
    "enriched": true,
    "why": "Permite o controlo remoto de servidores vulneráveis através de exploração ativa em curso.",
    "todo": "Aplique imediatamente as atualizações de segurança disponibilizadas pela Apache para o Roller."
-  },
-  {
-   "id": "92333b5b9c3bfc02",
-   "source": "CERT-EU",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://cert.europa.eu/publications/security-advisories/2026-021/",
-   "published": "2026-11-18T10:11:05+00:00",
-   "title": "Vulnerabilidade de Alta Gravidade no Java SE e OpenJDK",
-   "summary": "A Oracle e o projeto OpenJDK lançaram correções para a CVE-2026-114938, uma falha de alta gravidade no OpenJDK. Esta vulnerabilidade pode permitir a execução remota de código sem autenticação sob determinadas circunstâncias. O CERT-EU recomenda a atualização imediata das versões vulneráveis, priorizando as aplicações expostas à internet.",
-   "image": null,
-   "points": [
-    "Afeta o OpenJDK e o Java SE.",
-    "Vulnerabilidade identificada como CVE-2026-114938.",
-    "Permite execução remota de código sem autenticação.",
-    "CERT-EU aconselha priorizar aplicações viradas para a web."
-   ],
-   "title_original": "2026-021: High Severity Vulnerability in Java SE and OpenJDK",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite que atacantes executem código remotamente sem precisar de autenticação.",
-   "todo": "Atualize as versões vulneráveis do OpenJDK, dando prioridade às aplicações com acesso direto à internet."
-  },
-  {
-   "id": "6197daa3a7d91a28",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/ai-models-vulnerability-findings/",
-   "published": "2026-11-18T10:00:00+00:00",
-   "title": "Três modelos de IA concordam em apenas uma de 121 falhas de código potenciais",
-   "summary": "A Echo testou três modelos de inteligência artificial diferentes utilizando o mesmo código para detetar falhas de segurança. Os modelos avaliados foram o Claude Mythos, o GPT-5.6 Sol e o GLM-5.3. Os resultados demonstraram uma sobreposição muito reduzida entre as conclusões de cada sistema. Apenas uma única vulnerabilidade foi identificada por todos os modelos em análise.",
-   "image": null,
-   "points": [
-    "A Echo testou os modelos Claude Mythos, GPT-5.6 Sol e GLM-5.3.",
-    "Foi analisado o mesmo código à procura de potenciais falhas de segurança.",
-    "Os três sistemas encontraram poucas coincidências nas vulnerabilidades detetadas.",
-    "Apenas uma falha em 121 foi identificada por todos os modelos."
-   ],
-   "title_original": "Three AI Models Agree on Just One of 121 Potential Code Flaws",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra que confiar numa única ferramenta de IA para auditar código pode deixar falhas críticas por detetar.",
-   "todo": "Combine a análise automatizada por IA com revisões de código manuais e ferramentas tradicionais."
   }
  ]
 }

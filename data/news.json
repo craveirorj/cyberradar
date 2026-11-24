@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T16:05:58.757692+00:00",
+ "updated": "2026-11-24T16:25:07.801939+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -109,7 +109,7 @@
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CSO Online",
@@ -143,8 +143,8 @@
   },
   {
    "source": "DataBreaches.net",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "Malwarebytes Labs",
@@ -204,7 +204,7 @@
   {
    "source": "Rapid7",
    "ok": true,
-   "added": 8
+   "added": 9
   },
   {
    "source": "Tenable",
@@ -263,8 +263,8 @@
   },
   {
    "source": "Graham Cluley",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 2
   },
   {
    "source": "HackRead",
@@ -310,8 +310,8 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 379,
-  "unenriched": 261,
+  "pending": 385,
+  "unenriched": 267,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,57 @@
   ]
  },
  "items": [
+  {
+   "id": "5ba708d91b205e45",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/",
+   "published": "2026-11-24T16:15:23+00:00",
+   "title": "Hackers compromise Check Point Servers in 22 organizations",
+   "summary": "Threat actors have exploited multiple vulnerabilities to compromise two dozen Check Point Security management servers in an ongoing campaign targeting 22 organizations. [...]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Threat actors have exploited multiple vulnerabilities to compromise two dozen Check Point Security management servers in an ongoing campaign targeting 22 organizations. [...]"
+  },
+  {
+   "id": "076062d7e09e35fe",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/carnegie-endowment-data-breach",
+   "published": "2026-11-24T16:00:00+00:00",
+   "title": "Carnegie Endowment for International Peace says third-party breach leaked donation info",
+   "summary": "Some donors to the Carnegie Endowment for International Peace had their information leaked due to a cyberattack on a third-party vendor named Soapbox Engage.",
+   "image": "https://cms.therecord.media/uploads/Carnegie_2_5a558fb99b.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "Some donors to the Carnegie Endowment for International Peace had their information leaked due to a cyberattack on a third-party vendor named Soapbox Engage."
+  },
+  {
+   "id": "22b8415a8b1f6bf7",
+   "source": "Rapid7",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.rapid7.com/blog/post/dr-comparing-mdr-providers-scorecard",
+   "published": "2026-11-24T15:51:25+00:00",
+   "title": "How to compare MDR providers when every proposal looks promising",
+   "summary": "Choosing a managed detection and response (MDR) provider means committing budget, connecting systems, and trusting another team to act when your organization is under pressure. Yet a proposal promising 24x7 coverage, expert analysts, and fast response can leave important questions unanswered. Which systems will actually be monitored? What will analysts investigate before contacting you? What happens when an incident needs more work? Before choosing a provider or renewing your current agreement, ask for evidence of how the service operates. Rapid7’s MDR Evaluation Scorecard gives you 18 checks ",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "Choosing a managed detection and response (MDR) provider means committing budget, connecting systems, and trusting another team to act when your organization is under pressure. Yet a proposal promising 24x7 coverage, expert analysts, and fast response can leave important questions unanswered. Which systems will actually be monitored? What will analysts investigate before contacting you? What happens when an incident needs more work? Before choosing a provider or renewing your current agreement, ask for evidence of how the service operates. Rapid7’s MDR Evaluation Scorecard gives you 18 checks to structure that conversation and record what still needs proving. Start with one investigation Ask a provider to walk you through a completed investigation, using an anonymized example where necessary. Follow the initial signal through the evidence considered, the analyst’s decision, and any response actions. Suppose suspicious activity involves an account with access to a critical business system. Can the provider show how the account’s permissions, the systems within reach, and known weaknesses influenced its investigation? Can it explain what it ruled out and why it escalated or contained the activity? This exercise helps you assess whether exposure context, intelligence, and customer telemetry work together. It also makes the division of work visible: what the provider investigated, what it decided, and what your team had to do next. Compare the service you would actually receive Use the same requirements for every provider, including your incumbent. Confirm the proposed service tier, supported integrations, response responsibilities, and total costs before comparing scores. Be specific about incident response. Establish who handles containment, forensics, eradication, and mi"
+  },
   {
    "id": "1f75de46df5160e7",
    "source": "BleepingComputer",
@@ -437,6 +488,23 @@
    "translated": false,
    "enriched": false,
    "raw": "Names and email addresses of EU Academy users were exposed in the AI-assisted cyberattack the European Commission detected in October."
+  },
+  {
+   "id": "e977cb91a2ba7521",
+   "source": "Cybersecurity Dive",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cybersecuritydive.com/news/food-agriculture-cybersecurity-usda-fda-gao-report/875596/",
+   "published": "2026-11-24T14:41:48+00:00",
+   "title": "Federal agencies missing opportunities to help protect food sector from cyber threats, GAO says",
+   "summary": "The U.S. Department of Agriculture and the Food and Drug Administration said they lacked the resources and staff to fulfill all of their infrastructure protection responsibilities.",
+   "image": "https://imgproxy.divecdn.com/pkHtu0iJtBtH_CKP-E1KTNonlQ3DY1YcT9uwfg9IERU/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xMTU5NjA0MzAuanBn.webp",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "The U.S. Department of Agriculture and the Food and Drug Administration said they lacked the resources and staff to fulfill all of their infrastructure protection responsibilities."
   },
   {
    "id": "9b3ccb63fc514435",
@@ -13427,94 +13495,6 @@
    "enriched": true,
    "why": "Mostra como um ataque a um fornecedor de serviços de TI pode comprometer em cadeia dezenas de empresas clientes.",
    "todo": "Audite regularmente a segurança dos seus fornecedores externos e reforce os controlos de acesso aos dados partilhados."
-  },
-  {
-   "id": "d5acfeb860fe36bb",
-   "source": "CyberScoop",
-   "region": "US",
-   "lang": "en",
-   "link": "https://cyberscoop.com/danielle-thumann-severs-fcc-nomination-tech-bills/",
-   "published": "2026-11-18T19:16:11+00:00",
-   "title": "Senadores republicanos fazem avançar nomeada para a FCC e projetos de cibersegurança",
-   "summary": "O comité de comércio do Senado avançou com a nomeação de Danielle Thumann Severs para comissária da FCC, votando também favoravelmente vários projetos de lei de tecnologia e cibersegurança. No entanto, o boicote dos democratas à audiência coloca em dúvida o futuro destas iniciativas legislativas. Se confirmada, a nomeação garantirá uma maioria republicana na comissão.",
-   "image": null,
-   "points": [
-    "Quem: Comité de comércio do Senado e republicanos.",
-    "O quê: Avanço da nomeação de Danielle Thumann Severs para a FCC e votação de leis tecnológicas.",
-    "Impacto: Oposição democrata gera incerteza sobre a aprovação final dos projetos."
-   ],
-   "title_original": "Senate Republicans advance FCC nominee, slate of cyber bills",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia o impacto político partidário na aprovação de legislação e nomeações críticas para o setor tecnológico.",
-   "todo": ""
-  },
-  {
-   "id": "f7e2b10e71948ef4",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/18/deutsche-bank-chair-backs-ceo-after-reports-expose-past-lapses-trump-calls-tax-leak-illegal/",
-   "published": "2026-11-18T19:14:57+00:00",
-   "title": "Presidente do Deutsche Bank apoia CEO após relatórios exporem falhas passadas; Trump classifica fuga de impostos como 'ilegal'",
-   "summary": "O presidente do Deutsche Bank manifestou apoio público ao CEO Christian Sewing. Esta tomada de posição surge na sequência de registos internos divulgados por um consórcio, que renovaram o escrutínio sobre relações passadas do banco com figuras proeminentes. Paralelamente, Donald Trump comentou uma fuga de informação fiscal considerando-a ilegal.",
-   "image": null,
-   "points": [
-    "Quem: Presidentes e CEO do Deutsche Bank.",
-    "O quê: Divulgação de registos internos sobre negociações passadas com clientes proeminentes.",
-    "Impacto: Renovação do escrutínio público e mediático sobre a instituição financeira."
-   ],
-   "title_original": "Deutsche Bank chair backs CEO after reports expose past lapses; Trump calls tax leak ‘illegal’",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra como a fuga de dados e registos históricos pode gerar crises reputacionais severas para grandes instituições.",
-   "todo": "Assegure políticas rigorosas de retenção e proteção de dados internos e históricos para evitar fugas de informação sensível."
-  },
-  {
-   "id": "c6cd0b534acd60ff",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/cisco-security-advisory-av26-1175",
-   "published": "2026-11-18T19:14:56+00:00",
-   "title": "Aviso de segurança Cisco (AV26-1175)",
-   "summary": "A Cisco reportou vulnerabilidades que afetam vários dos seus produtos de segurança em diferentes sistemas operativos. As falhas foram identificadas em versões anteriores de conectores para Linux, Mac e Windows. O Centro Cibernético aconselhou os utilizadores e administradores a consultarem as informações e aplicarem as atualizações necessárias.",
-   "image": null,
-   "points": [
-    "Quem: Cisco e administradores de sistemas.",
-    "O quê: Descoberta de vulnerabilidades em Secure Endpoint Connectors.",
-    "Impacto: Produtos em versões anteriores ficam expostos a falhas de segurança."
-   ],
-   "title_original": "Cisco security advisory (AV26-1175)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite manter a infraestrutura protegida contra falhas conhecidas em ferramentas de segurança essenciais.",
-   "todo": "Atualize imediatamente os conectores do Cisco Secure Endpoint para as versões recomendadas."
-  },
-  {
-   "id": "40c347e43d7d43f7",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/f5-security-advisory-av26-1174",
-   "published": "2026-11-18T19:02:27+00:00",
-   "title": "Aviso de segurança F5 (AV26-1174)",
-   "summary": "A F5 alertou para vulnerabilidades detetadas em várias versões dos softwares NGINX Plus e NGINX Open Source. Os problemas estão associados ao módulo ngx_http_v2_module e foram catalogados com identificadores específicos. As autoridades e o centro cibernético recomendam a consulta de avisos e a aplicação célere de patches.",
-   "image": null,
-   "points": [
-    "Quem: F5 e utilizadores de servidores NGINX.",
-    "O quê: Identificação de falhas no módulo HTTP/2 do NGINX.",
-    "Impacto: Versões desatualizadas dos servidores web ficam vulneráveis."
-   ],
-   "title_original": "F5 security advisory (AV26-1174)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Alerta para falhas críticas em software de servidores web amplamente utilizado a nível global.",
-   "todo": "Reveja os avisos da F5 e atualize as instâncias do NGINX Plus e Open Source para as versões corrigidas."
   }
  ]
 }

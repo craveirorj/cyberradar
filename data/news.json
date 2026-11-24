@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T10:47:20.918120+00:00",
+ "updated": "2026-11-24T11:04:58.878836+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "The Record",
@@ -234,12 +234,12 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 19
+   "added": 18
   },
   {
    "source": "The Register Security",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 7
   },
   {
    "source": "Help Net Security",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Check Point Research",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 48,
-  "pending": 289,
-  "unenriched": 161,
+  "done": 0,
+  "pending": 342,
+  "unenriched": 215,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -363,6 +363,57 @@
    "enriched": true,
    "why": "Importa porque os ataques criados com IA e estruturas agênticas exploram vulnerabilidades conhecidas a uma velocidade inédita.",
    "todo": "Atualize regularmente os sistemas e adote medidas de monitorização contínua para detetar comportamentos anómalos."
+  },
+  {
+   "id": "9436fc5b47f7d00e",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html",
+   "published": "2026-11-24T10:44:49+00:00",
+   "title": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
+   "summary": "Norway's National Security Authority (NSM) has disclosed that it became aware of a security vulnerability in Microsoft's Azure API Management (APIM) that has affected multiple businesses in the country, including energy companies Equinor and Skagerak Energi. \"An unknown actor has been actively looking for access tokens, secrets, and named values ​​in APIM,\" NSM said. \"It is still uncertain how",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSM2FAnf9UEb3Do4v-r8AEBpoI8byXOrHgng-eRjEyudSf0hiKMpymmDiK_NLTxYuzXdtrWvMrBzY9qmLqDo31r3JOpVefOQxLE77gdkoOAYMkCK__-Bc-AJoWg-8nEOEVjcY6SswkzLbCfYl6kK9clg6xXw3xginWqIwnMxBUaS6wgPKVVwXZNhZA5G85/s1600/azure-ms.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Norway's National Security Authority (NSM) has disclosed that it became aware of a security vulnerability in Microsoft's Azure API Management (APIM) that has affected multiple businesses in the country, including energy companies Equinor and Skagerak Energi. \"An unknown actor has been actively looking for access tokens, secrets, and named values ​​in APIM,\" NSM said. \"It is still uncertain how"
+  },
+  {
+   "id": "15b8b568346dad03",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/elecbrakes-bluetooth-vulnerabilities-expose-trailers-to-forced-braking/",
+   "published": "2026-11-24T10:44:44+00:00",
+   "title": "Elecbrakes Bluetooth Vulnerabilities Expose Trailers to Forced Braking",
+   "summary": "Critical Bluetooth flaws in Elecbrakes controllers could let nearby attackers force trailer braking, potentially causing accidents.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Critical Bluetooth flaws in Elecbrakes controllers could let nearby attackers force trailer braking, potentially causing accidents."
+  },
+  {
+   "id": "20534b25c7da6bc5",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/peninsula-energy-halts-trading-after-cyber-incident-hits-us-uranium-mine/",
+   "published": "2026-11-24T10:35:04+00:00",
+   "title": "Peninsula Energy Halts Trading After Cyber Incident Hits US Uranium Mine",
+   "summary": "The company told the ASX that a cybersecurity incident at its Wyoming uranium project would temporarily affect operations.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "The company told the ASX that a cybersecurity incident at its Wyoming uranium project would temporarily affect operations."
   },
   {
    "id": "0dfc97470a390126",
@@ -13683,72 +13734,6 @@
    "enriched": true,
    "why": "O roubo de identidades corporativas legitima campanhas de phishing e facilita o acesso a redes empresariais.",
    "todo": "Implemente autenticação multifator resistente a phishing e valide identidades em pedidos atípicos de colaboradores."
-  },
-  {
-   "id": "593f3f6a4cfabc0a",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/inside-malwarebytes/2026/11/who-protects-the-antivirus-how-we-secure-malwarebytes-itself",
-   "published": "2026-11-18T13:32:54+00:00",
-   "title": "Who protects the antivirus? How we secure Malwarebytes itself",
-   "summary": "A segurança do software antivírus apresenta desafios complexos, uma vez que estas ferramentas operam com privilégios elevados no sistema operativo. A Malwarebytes explicou a arquitetura de duas camadas que separa a interface de utilizador do serviço em segundo plano executado como SYSTEM. Esta divisão através do Windows COM protege operações críticas contra abusos por parte de software malicioso.",
-   "image": "https://www.malwarebytes.com/wp-content/uploads/sites/2/2026/11/illustration_1_trust_boundary.png?w=1024",
-   "points": [
-    "Antivírus operam com privilégios elevados, tornando-se alvos atrativos.",
-    "Arquitetura divide a interface e o serviço SYSTEM via COM.",
-    "Objetivo é impedir que o malware desative as defesas do sistema."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Garantir a integridade do próprio software de segurança evita que o malware desative as proteções do sistema operativo.",
-   "todo": "Mantenha todo o software de segurança atualizado e restrinja permissões administrativas locais em postos de trabalho."
-  },
-  {
-   "id": "f46e27c9ea7a3d03",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/google-security-advisory-av26-1171",
-   "published": "2026-11-18T13:31:24+00:00",
-   "title": "Google security advisory (AV26-1171)",
-   "summary": "A Google emitiu um aviso de segurança a 17 de novembro de 2026 para corrigir vulnerabilidades que afetam o navegador Google Chrome. A falha impacta o canal estável do Chrome para desktop em versões anteriores à 158.0.8127.36 ou 158.0.8127.37 no Windows e Mac, e anterior à 158.0.8127.36 no Linux. O Centro Cibernético recomenda a aplicação urgente das atualizações disponíveis.",
-   "image": null,
-   "points": [
-    "A Google reportou uma vulnerabilidade no Google Chrome para Desktop.",
-    "As versões anteriores a 158.0.8127.36/.37 (Windows/Mac) e 158.0.8127.36 (Linux) estão afetadas.",
-    "O Centro Cibernético aconselha a atualização imediata do navegador."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Protege os utilizadores contra potenciais explorações ativas direcionadas a falhas conhecidas no navegador.",
-   "todo": "Atualize o Google Chrome para a versão mais recente através das definições do próprio navegador."
-  },
-  {
-   "id": "58112a1964c673a4",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/norway-equinor-cyberattack-energy",
-   "published": "2026-11-18T13:30:00+00:00",
-   "title": "Cyberattack hits Norwegian energy giant Equinor, disrupting internal services",
-   "summary": "A gigante energética norueguesa Equinor foi alvo de um ciberataque direcionado aos seus sistemas de TI, resultando na interrupção de serviços internos. A empresa garantiu que o incidente não afetou as operações de produção de petróleo e gás. Atualmente, a organização encontra-se a trabalhar para conter a ocorrência e mitigar os impactos.",
-   "image": "https://cms.therecord.media/uploads/Equinor_Northern_Lights_4aa869f98c.jpg",
-   "points": [
-    "A empresa norueguesa Equinor sofreu um ciberataque nos seus sistemas de TI.",
-    "Houve perturbações em vários serviços internos da organização.",
-    "A produção de petróleo e gás manteve-se sem impacto decorrente do ataque."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Demonstra os riscos contínuos de ataques cibernéticos a infraestruturas críticas e grandes empresas do setor energético.",
-   "todo": "Assegure planos de contingência robustos e monitorize continuamente os acessos aos sistemas internos e redes corporativas."
   }
  ]
 }

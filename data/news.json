@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T10:25:23.275001+00:00",
+ "updated": "2026-11-24T10:47:20.918120+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -9,7 +9,7 @@
   {
    "source": "IT Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Pplware Segurança",
@@ -209,7 +209,7 @@
   {
    "source": "Tenable",
    "ok": true,
-   "added": 5
+   "added": 6
   },
   {
    "source": "Zero Day Initiative",
@@ -224,7 +224,7 @@
   {
    "source": "NCSC UK",
    "ok": true,
-   "added": 3
+   "added": 2
   },
   {
    "source": "CERT-EU",
@@ -238,8 +238,8 @@
   },
   {
    "source": "The Register Security",
-   "ok": true,
-   "added": 7
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "Help Net Security",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 10
+   "added": 11
   },
   {
    "source": "ACSC Austrália",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 12,
-  "pending": 329,
-  "unenriched": 202,
+  "done": 48,
+  "pending": 289,
+  "unenriched": 161,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -349,15 +349,42 @@
    "lang": "en",
    "link": "https://www.ncsc.gov.uk/blogs/familiar-weaknesses-exploited-faster-defending-against-agentic-cyber-attacks",
    "published": "2026-11-24T12:00:00+00:00",
-   "title": "Familiar weaknesses, exploited faster: defending against agentic cyber attacks",
-   "summary": "How to protect your organisation from cyber attacks created using ‘agentic offensive frameworks’.",
+   "title": "Fraudes familiares, exploradas mais rapidamente: defesa contra ciberataques agênticos",
+   "summary": "Este artigo aborda a necessidade de proteger as organizações contra ciberataques desenvolvidos com recurso a novas estruturas ofensivas agênticas. Estas ameaças aproveitam vulnerabilidades já conhecidas, mas conseguem explorá-las a uma velocidade superior. O impacto reflete-se no aumento do risco operacional para as empresas que não adaptarem as suas defesas. É fundamental compreender o funcionamento destas ferramentas para mitigar potenciais intrusões.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O uso de estruturas ofensivas agênticas acelera a exploração de falhas.",
+    "As organizações enfrentam novos desafios na proteção contra estas ameaças.",
+    "A adaptação rápida das defesas é essencial para mitigar o impacto."
+   ],
+   "title_original": "Familiar weaknesses, exploited faster: defending against agentic cyber attacks",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "How to protect your organisation from cyber attacks created using ‘agentic offensive frameworks’."
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque os ataques criados com IA e estruturas agênticas exploram vulnerabilidades conhecidas a uma velocidade inédita.",
+   "todo": "Atualize regularmente os sistemas e adote medidas de monitorização contínua para detetar comportamentos anómalos."
+  },
+  {
+   "id": "0dfc97470a390126",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/la-liga-says-football-fans/",
+   "published": "2026-11-24T10:30:00+00:00",
+   "title": "LaLiga Afirma que Dados Pessoais de Fãs de Futebol Foram Roubados",
+   "summary": "A liga de futebol espanhola LaLiga revelou publicamente que sofreu uma violação de segurança que resultou no roubo de dados de identificação pessoal de adeptos. O incidente expôs informações sensíveis associadas a utilizadores e espetadores. O impacto centra-se na privacidade dos afetados e nos potenciais riscos de utilização indevida desses dados. A entidade confirmou o sucedido, desencadeando preocupações quanto à proteção de informação nas organizações desportivas.",
+   "image": null,
+   "points": [
+    "A LaLiga confirmou uma violação de dados pessoais de adeptos.",
+    "Foram comprometidas informações de identificação pessoal.",
+    "O incidente levanta sérias preocupações sobre a privacidade no desporto."
+   ],
+   "title_original": "LaLiga Says Football Fans’ Personal Data Stolen",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque demonstra que as grandes organizações desportivas são alvos viáveis para o roubo de dados de utilizadores.",
+   "todo": "Reforce a segurança no armazenamento de dados pessoais e monitore acessos não autorizados a bases de dados sensíveis."
   },
   {
    "id": "8f5a536245749409",
@@ -480,15 +507,20 @@
    "lang": "en",
    "link": "https://thehackernews.com/2026/11/whmcs-sql-injection-flaw-could-expose.html",
    "published": "2026-11-24T08:34:20+00:00",
-   "title": "WHMCS SQL Injection Could Expose Customer Data and Admin Password Hashes without Login",
-   "summary": "A flaw in WHMCS's shopping cart, the billing and automation platform many web hosting companies use to run their businesses, could allow anyone on the internet to retrieve customer records and administrator password hashes from an installation's database. No login is needed. The company disclosed the SQL injection yesterday along with two other flaws that need a logged-in client, and released",
+   "title": "Injeção de SQL no WHMCS Pode Expor Dados de Clientes e Hashes de Palavras-passe de Administrador Sem Necessidade de Login",
+   "summary": "Foi descoberta uma falha crítica de injeção de SQL na plataforma de faturação e automação WHMCS, frequentemente utilizada por empresas de alojamento web. Esta vulnerabilidade permite que qualquer elemento na internet aceda a registos de clientes e a hashes de palavras-passe de administrador diretamente a partir da base de dados, sem requerer qualquer autenticação. A empresa revelou o problema juntamente com outras duas falhas que exigiam privilégios de cliente. Esta situação coloca em risco os dados de inúmeras empresas e utilizadores dependentes da plataforma.",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK7wXAof6nH7PDC5-3qxXZJgJvZODTjQcrWFOjO8jeb9yGkK6bUkzm27MzMy5n0S_Xywsj0npu_F0FmQ4JcKxPXNEoezLrpKoSStaYK4Ww46QUuzySTeQnnzcIXs_NADunlqeyuMIl5Wm5PKWc3c0JyNmYPxfbInIWx2tfosieI_QS_e4PX-JILlLH-1U/s1600/hosting.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Uma falha de injeção de SQL afeta a plataforma WHMCS.",
+    "Permite extrair dados de clientes e hashes de administrador sem login.",
+    "A vulnerabilidade expõe instalações de alojamento web a acessos não autorizados."
+   ],
+   "title_original": "WHMCS SQL Injection Could Expose Customer Data and Admin Password Hashes without Login",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "A flaw in WHMCS's shopping cart, the billing and automation platform many web hosting companies use to run their businesses, could allow anyone on the internet to retrieve customer records and administrator password hashes from an installation's database. No login is needed. The company disclosed the SQL injection yesterday along with two other flaws that need a logged-in client, and released"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque permite a atacantes extrair dados confidenciais e credenciais de administrador sem necessitar de autenticação.",
+   "todo": "Aplique imediatamente as correções e atualizações de segurança disponibilizadas pelo fornecedor para a plataforma WHMCS."
   },
   {
    "id": "42e5f99f0a8baf4c",
@@ -903,14 +935,19 @@
    "link": "https://www.itsecurity.pt/news/news/portugal-avalia-riscos-das-infraestruturas-criticas",
    "published": "2026-11-24T00:00:00+00:00",
    "title": "Portugal avalia riscos das infraestruturas críticas",
-   "summary": "O Governo deverá aprovar em dezembro o relatório sobre as infraestruturas críticas nacionais, com o objetivo de avaliar riscos e reforçar a continuidade dos serviços essenciais",
+   "summary": "O Governo português prevê aprovar em dezembro um relatório focado nas infraestruturas críticas nacionais. O principal objetivo desta avaliação passa por identificar riscos potenciais e reforçar a continuidade dos serviços essenciais no país. A medida visa antecipar ameaças e assegurar a resiliência de setores fundamentais. Trata-se de um passo importante na estratégia de cibersegurança e proteção do território nacional.",
    "image": null,
-   "points": [],
+   "points": [
+    "O Governo vai aprovar um relatório sobre infraestruturas críticas em dezembro.",
+    "O objetivo é avaliar riscos e garantir a continuidade dos serviços essenciais.",
+    "A iniciativa reforça a resiliência e a segurança nacional."
+   ],
    "title_original": null,
    "category": "Geral",
    "translated": false,
-   "enriched": false,
-   "raw": "O Governo deverá aprovar em dezembro o relatório sobre as infraestruturas críticas nacionais, com o objetivo de avaliar riscos e reforçar a continuidade dos serviços essenciais"
+   "enriched": true,
+   "why": "Importa porque a proteção das infraestruturas críticas é vital para garantir a estabilidade económica e a segurança do país.",
+   "todo": "As organizações do setor essencial devem alinhar as suas práticas de segurança com as diretrizes e avaliações de risco nacionais."
   },
   {
    "id": "453252f9d2559d7e",
@@ -13712,28 +13749,6 @@
    "enriched": true,
    "why": "Demonstra os riscos contínuos de ataques cibernéticos a infraestruturas críticas e grandes empresas do setor energético.",
    "todo": "Assegure planos de contingência robustos e monitorize continuamente os acessos aos sistemas internos e redes corporativas."
-  },
-  {
-   "id": "2c1ddb51a4dc89a3",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/last-of-five-defendants-sentenced-in-us-scattered-spider-hacking-case/",
-   "published": "2026-11-18T13:19:32+00:00",
-   "title": "Último de cinco réus sentenciado no caso de pirataria informática do Scattered Spider nos EUA",
-   "summary": "O cidadão britânico Tyler Robert Buchanan foi condenado a seis anos de prisão nos Estados Unidos, conforme anunciado pelo Departamento de Justiça norte-americano. Esta decisão marca a conclusão das sentenças aplicadas aos cinco arguidos envolvidos no caso de hacking associado ao grupo Scattered Spider. O impacto reflete-se na responsabilização judicial de uma rede criminosa com impacto internacional.",
-   "image": null,
-   "points": [
-    "Tyler Robert Buchanan foi condenado a 6 anos de prisão nos EUA.",
-    "O anúncio foi feito oficialmente pelo Departamento de Justiça (DOJ).",
-    "Trata-se do último dos cinco arguidos sentenciados no caso do Scattered Spider."
-   ],
-   "title_original": "Last of Five Defendants Sentenced in US Scattered Spider Hacking Case",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Fecha um processo judicial relevante contra membros de um grupo de cibercrime ativo.",
-   "todo": ""
   }
  ]
 }

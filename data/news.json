@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T18:24:46.685220+00:00",
+ "updated": "2026-11-24T18:45:46.085348+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -34,7 +34,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CISA Advisories",
@@ -149,7 +149,7 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 6
+   "added": 7
   },
   {
    "source": "Microsoft Security Blog",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 405,
-  "unenriched": 291,
+  "done": 12,
+  "pending": 397,
+  "unenriched": 282,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,40 @@
   ]
  },
  "items": [
+  {
+   "id": "d5d1221d1d607e83",
+   "source": "SAPO Tek",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://tek.sapo.pt/how-to/artigos/vai-receber-visitas-em-casa-prepare-o-wi-fi-e-crie-um-codigo-qr-para-ninguem-ter-de-pedir-a-palavra-passe/",
+   "published": "2026-11-24T18:39:08+00:00",
+   "title": "Vai receber visitas em casa? Prepare o Wi-Fi e crie um código QR para ninguém ter de pedir a palavra-passe",
+   "summary": "Vai receber convidados? Saiba como melhorar a cobertura, ativar uma rede separada e partilhar o acesso com um código QR são ajustes rápidos que evitam lentidão, riscos de segurança e a eterna pergunta: \"qual é a password?\".",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "Vai receber convidados? Saiba como melhorar a cobertura, ativar uma rede separada e partilhar o acesso com um código QR são ajustes rápidos que evitam lentidão, riscos de segurança e a eterna pergunta: \"qual é a password?\"."
+  },
+  {
+   "id": "3f46f37092857247",
+   "source": "AWS Security Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://aws.amazon.com/blogs/security/aws-completed-its-second-iso-iec-420012023-surveillance-audit/",
+   "published": "2026-11-24T18:32:21+00:00",
+   "title": "AWS completed its second ISO/IEC 42001:2023 surveillance audit",
+   "summary": "In November 2024, Amazon Web Services (AWS) was the first major cloud service provider to announce the ISO/IEC 42001 accredited certification for AI services, covering Amazon Bedrock, Amazon Q Business, Amazon Textract, and Amazon Transcribe. In November 2026, AWS successfully completed its second surveillance audit for ISO 42001:2023, Artificial Intelligence Management System (AIMS), with no […]",
+   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/23/Basit-Janjua.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "IA",
+   "translated": false,
+   "enriched": false,
+   "raw": "In November 2024, Amazon Web Services (AWS) was the first major cloud service provider to announce the ISO/IEC 42001 accredited certification for AI services, covering Amazon Bedrock , Amazon Q Business , Amazon Textract , and Amazon Transcribe . In November 2026, AWS successfully completed its second surveillance audit for ISO 42001:2023 , Artificial Intelligence Management System (AIMS), with no findings and added AWS DevOps Agent as a new service now covered under its ISO 42001:2023 certification program. This demonstrates the continuous commitment by AWS to responsible AI practices. With this independent validation, our customers can gain assurances on our commitment to responsible AI that enables customers to build and operate AI applications responsibly using AWS services. For a full list of AWS services that are certified under ISO and CSA STAR, see the AWS ISO and CSA STAR Certified page. Customers can also access the certifications through the AWS Management Console for AWS Artifact. If you have questions about this post, contact AWS Support or start a new thread on AWS re:Post . Basit Janjua Basit is a Senior Security Industry Specialist at AWS. He leads the AWS assurance delivery strategy for security assurance audits and engagements across the globe. Basit has nearly 20 years of experience in information security engineering and assurance. He holds a Bachelor’s degree in Computer Science and a Master’s degree in Telecommunications, along with professional certifications including CISSP and CCSP. Shalini Mishra Shalini is a Compliance Program Manager at AWS. She has over 5 years of experience leading end-to-end compliance programs across ISO, SOC, and cloud security frameworks, with deep expertise in third-party risk management and enterprise governance, driv"
+  },
   {
    "id": "cb0d7372f9a0d9c6",
    "source": "TechCrunch Security",
@@ -496,15 +530,21 @@
    "lang": "en",
    "link": "https://www.malwarebytes.com/blog/ai/2026/11/a-bot-tested-an-aws-key-within-8-seconds-of-exposure",
    "published": "2026-11-24T17:08:51+00:00",
-   "title": "A bot tested an AWS key within 8 seconds of exposure",
-   "summary": "If you accidentally publish a cloud access key, a bot could find it before you have time to take it down.",
+   "title": "Um bot testou uma chave AWS menos de 8 segundos após a exposição",
+   "summary": "Investigadores descobriram que um bot automatizado testou uma chave de acesso à nuvem em apenas 7,86 segundos após esta ter sido colocada num pacote de software público. Os atacantes utilizaram cerca de 60 dólares em créditos pré-pagos de OpenAI e Anthropic. O incidente demonstra a rapidez com que as chaves expostas são exploradas para gerar custos indevidos.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Investigadores da Universidade de Stony Brook publicaram uma chave AWS de propósito.",
+    "Um bot detetou e testou a chave em menos de 8 segundos.",
+    "Foram consumidos cerca de 60 dólares em créditos de serviços de IA.",
+    "A exposição rápida resulta em custos financeiros e interrupção do serviço."
+   ],
+   "title_original": "A bot tested an AWS key within 8 seconds of exposure",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": ".kadence-column492445_8da46d-6f > .kt-inside-inner-col{padding-top:20px;padding-right:20px;padding-bottom:10px;padding-left:20px;}.kadence-column492445_8da46d-6f > .kt-inside-inner-col{column-gap:var(--global-kb-gap-sm, 1rem);}.kadence-column492445_8da46d-6f > .kt-inside-inner-col{flex-direction:column;}.kadence-column492445_8da46d-6f > .kt-inside-inner-col > .aligncenter{width:100%;}.kadence-column492445_8da46d-6f > .kt-inside-inner-col{background-color:rgba(255, 229, 229, 0.83);}.kadence-column492445_8da46d-6f > .kt-inside-inner-col:before{opacity:0.3;}.kadence-column492445_8da46d-6f{position:relative;}@media all and (max-width: 1024px){.kadence-column492445_8da46d-6f > .kt-inside-inner-col{flex-direction:column;justify-content:center;}}@media all and (max-width: 767px){.kadence-column492445_8da46d-6f > .kt-inside-inner-col{flex-direction:column;justify-content:center;}} In this article A bot tested an AWS key just 7.86 seconds after researchers published it Attackers used up about $60 in prepaid OpenAI and Anthropic credit If you accidentally publish a key, revoke it and check your account for unexpected usage and charges Eight seconds is barely enough time to notice a mistake, let alone fix it. But researchers at Stony Brook University found that it was enough time for a bot to test a cloud access key they’d deliberately left inside a publicly available software package. The fastest observed use came just 7.86 seconds after publication. You don’t need a company cloud account to have a key worth stealing. If you’ve created an API key for an AI service and used it in an app or script, someone who gets hold of it can run up charges on your account. OpenAI warns that they could also use up your quote and interrupt your service. To see who was collecting those secrets, B"
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra a velocidade automatizada com que os atacantes aproveitam credenciais deixadas acidentalmente públicas.",
+   "todo": "Revogue imediatamente qualquer chave exposta acidentalmente e verifique o histórico de utilização e cobranças na conta."
   },
   {
    "id": "f6e8b2ad0e789497",
@@ -513,15 +553,21 @@
    "lang": "en",
    "link": "https://www.theregister.com/security/2026/11/24/an-ai-coding-agent-a-browser-and-a-mac-tool-found-a-financial-firms-access-key-in-under-6-minutes/5311922",
    "published": "2026-11-24T17:00:00+00:00",
-   "title": "An AI coding agent, a browser, and a Mac tool found a financial firm's access key in under 6 minutes",
-   "summary": "No sophisticated malware or attack framework required",
+   "title": "Agente de programação de IA, browser e ferramenta Mac encontraram chave de acesso de empresa financeira em menos de 6 minutos",
+   "summary": "Um hacker em Bucareste utilizou ferramentas acessíveis, incluindo um agente de código open source chamado OpenCode, um browser Chrome e utilitários nativos de Mac, para realizar uma tentativa de intrusão numa empresa financeira em menos de seis minutos. A operação culminou na descoberta de uma chave de acesso que, felizmente, era falsa. O caso evidencia que operadores maliciosos já utilizam agentes autónomos de IA em cenários reais de ataque.",
    "image": "https://image.theregister.com/?imageId=5311939&width=800",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Um hacker na Roménia visou uma empresa de serviços financeiros com ferramentas comuns.",
+    "Foi utilizado o agente de IA de código aberto OpenCode juntamente com um Mac e o Chrome.",
+    "A intrusão simulada encontrou uma chave de acesso señora em menos de seis minutos.",
+    "Demonstra a adoção precoce de agentes de IA em operações ofensivas reais."
+   ],
+   "title_original": "An AI coding agent, a browser, and a Mac tool found a financial firm's access key in under 6 minutes",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "A Romanian hacker, armed with only an open source coding agent, a Chrome browser, and a Mac, tried multiple ways to break into a financial services firm, ultimately found an access key - luckily, it was a decoy - and carried out an entire (almost) attack in under six minutes. It’s a stark reminder that miscreants don’t need sophisticated malware - as in the Binance heist - or AI pen-testing tools like ARTEX to carry out intrusions into critical networks. Open source coding agents, and specifically OpenCode in this case, also work just fine. “What surprised me most was how little it took and the toolkit: a free coding agent, the curl that comes with every Mac and an ordinary Chrome, all from one laptop,” Jesta co-founder and CTO Lior Finkelshtein told The Register. “Until now I thought that we had more time until tools like OpenCode are used in offensive operations. This incident shows us that it's already in use in the field, and we will probably see more of that in the future.” Jesta is a Tel Aviv-based security startup that builds defensive tools to detect and stop autonomous AI attacks. In a report shared exclusively with The Register, Finkelshtein documented an attempted intrusion targeting a major financial services company that’s also a Jesta customer - the security shop declined to say which one. Jesta’s investigation into the incident determined that someone in Bucharest downloaded a free AI coding agent called OpenCode and pointed it at the financial services customer on November 16 at 4:24:57 a.m. ET. 'Nothing in OpenCode was built for hacking' OpenCode is an open source coding agent that lets users connect to more than 200 model providers or local models, including Anthropic’s Claude models, OpenAI’s GPTs, Google’s Gemini, DeepSeek, and Z.ai’s GLM. Jesta does"
+   "translated": true,
+   "enriched": true,
+   "why": "Revela que ferramentas de IA gratuitas e abertas já estão a ser utilizadas por atacantes em cenários de intrusão.",
+   "todo": "Monitore estritamente o uso de chaves de API e adote controlos de acesso rigorosos para detetar comportamentos anómalos."
   },
   {
    "id": "9e4440d5c4e6b9e7",
@@ -531,14 +577,20 @@
    "link": "https://www.estadao.com.br/tecmundo/produto-e-review/motorola-lanca-edge-70-neo-com-bateria-de-7000-mah-confira-especificacoes/",
    "published": "2026-11-24T17:00:00+00:00",
    "title": "Motorola lança Edge 70 Neo com bateria de 7.000 mAh; confira especificações",
-   "summary": "Motorola Edge 70 Neo possui certificação IP64 contra água e poeira",
+   "summary": "A Motorola anunciou o novo smartphone intermediário Edge 70 Neo, destacando-se pela inclusão de uma bateria de 7.000 mAh com autonomia para dois dias. O dispositivo vem equipado com um ecrã Extreme AMOLED de 6,8 polegadas, processador Snapdragon 7s Gen 3 e câmara principal de 50 megapixels com sensor Sony LYTIA 710. O modelo opera com Android 16 e oferece especificações robustas para a gama média.",
    "image": "https://www.estadao.com.br/resizer/v2/W3ZBYBKW2BD3RIGQXH3RCQABRY.jpg?quality=80&auth=c98858fa5f4b78de84f6441bc3d7635f5b908168ef80bd9430d1adf78653900f&width=710",
-   "points": [],
+   "points": [
+    "A Motorola lançou o smartphone intermediário Edge 70 Neo.",
+    "O aparelho inclui uma bateria de 7.000 mAh com carregamento de 45W.",
+    "Conta com um ecrã AMOLED de 6,8 polegadas e processador Snapdragon 7s Gen 3.",
+    "Possui uma câmara principal de 50 MP e certificação IP64."
+   ],
    "title_original": null,
    "category": "Fuga de dados",
    "translated": false,
-   "enriched": false,
-   "raw": "Após diversos rumores e vazamentos, a Motorola enfim anunciou a chegada do Motorola Edge 70 Neo , seu novo smartphone intermediário da série 70. O modelo traz um conjunto de especificações até bem competente, como uma câmera primária de 50 megapixels e uma bateria de 7.000 mAh. O grande destaque desse lançamento da Motorola é justamente essa bateria mais parruda, que se tornou tendência entre os aparelhos intermediários de diversas fabricantes. Esse modelo ostenta os 7.000 mAh e oferece capacidade suficiente para pelo menos dois dias de uso contínuo, além da compatibilidade com carregamento de 45W. No quesito das câmeras, o conjunto também não decepciona e a companhia entrega uma ilha traseira com sensor primário de 50 MP por meio do sensor Sony LYTIA 710 (f/1.8). Ao lado desse componente, foi inserido um pequeno sensor macro de dois megapixels para fotografar objetos muito próximos. A câmera frontal tem 32 MP para as selfies. Motorola Edge 70 Neo possui certificação IP64 contra água e poeira Foto: Motorola/Divulgação Tela, processador e disponibilidade As demais especificações do Motorola Edge 70 Neo ainda são interessantes, pois a companhia montou esse smartphone com uma tela bem grande de 6,8 polegadas . Esse display funciona por meio de um painel Extreme AMOLED na resolução de 2.772 x 1.272 pixels, com taxa de atualização de 144 Hz e brilho máximo de 5.200 nits. Já na parte mais interna, quem comanda todas as operações do celular é o Snapdragon 7s Gen 3 , uma plataforma lançada pela Qualcomm em meados de 2024 para smartphones intermediários. Para completar o trio dessas especificações, há opções únicas de 8 GB de memória e 128 GB de armazenamento, expansível até 1 TB via cartão microSD. O modelo da Motorola chega com Android 16 de fábrica e a companhia promete três "
+   "enriched": true,
+   "why": "Apresenta novas opções de hardware no mercado de dispositivos móveis de gama média com forte foco em autonomia.",
+   "todo": ""
   },
   {
    "id": "6b48789d1147d2db",
@@ -547,15 +599,21 @@
    "lang": "en",
    "link": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
    "published": "2026-11-24T16:54:07+00:00",
-   "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
-   "summary": "A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus. Central to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File System (IPFS) for command-and-control (C2) and deploys Homa, a post-compromise framework that's a reimplementation of",
+   "title": "Volant Manticore alinhado com o Irão usa backdoor KuboShell baseado em IPFS em campanhas de espionagem",
+   "summary": "Um grupo de ciberespionagem ligado ao Irão, denominado Volant Manticore, tem visado infraestruturas críticas, companhias aéreas e o setor de telecomunicações no Chipre. As operações utilizam uma backdoor chamada KuboShell, que recorre ao InterPlanetary File System para o comando e controlo. Adicionalmente, o grupo emprega o framework Homa para atividades posteriores à intrusão.",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqukTcR2pkDWiTqMzORa4j7zZRB0MDUGfBly50X7gPwPHqSeBmfReQWpMR9IdPOP_NbeuQSBdYPknSgxvutDll4VAZNSoGqcwmXzhZNEez-UoE-MwTnM9i9XxjoLYRdhY0iY6tD9BK9IDB0o8RUU7sNsOex5tVNtoNwRHCCAxM9ri66c4G2wPa9AqW9saA/s1600/iran-hackers.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O grupo Volant Manticore atacou infraestruturas e telecomunicações em Chipre.",
+    "Utiliza uma backdoor denominada KuboShell baseada em IPFS para comunicação C2.",
+    "Implementa o framework Homa em fases posteriores da campanha de espionagem.",
+    "As operações centram-se em campanhas direcionadas de ciberespionagem."
+   ],
+   "title_original": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
    "category": "Malware",
-   "translated": false,
-   "enriched": false,
-   "raw": "A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus. Central to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File System (IPFS) for command-and-control (C2) and deploys Homa, a post-compromise framework that's a reimplementation of"
+   "translated": true,
+   "enriched": true,
+   "why": "Expõe novas táticas de cibercrime que aproveitam tecnologias descentralizadas para ocultar comandos maliciosos.",
+   "todo": "Monitore o tráfego de rede para detetar ligações suspeitas a sistemas descentralizados e atualize sistemas críticos."
   },
   {
    "id": "365b478affb4e96c",
@@ -564,15 +622,21 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/tanium-security-advisory-av26-1202",
    "published": "2026-11-24T16:45:31+00:00",
-   "title": "Tanium security advisory (AV26-1202)",
-   "summary": "",
+   "title": "Aviso de segurança Tanium (AV26-1202)",
+   "summary": "A Tanium emitiu um aviso de segurança detalhando vulnerabilidades que afetam vários dos seus produtos e componentes centrais. As falhas abrangem versões anteriores a marcos específicos em ferramentas como Core Content, Endpoint Configuration Toolset e Threat Response. Os utilizadores e administradores são aconselhados a rever a documentação e aplicar as atualizações necessárias.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Tanium reportou vulnerabilidades em múltiplos produtos e versões anteriores.",
+    "Os componentes afetados incluem Core Content, Default Content e Threat Response.",
+    "O Centro Cibernético recomenda a revisão dos links e aplicação de patches.",
+    "As atualizações corrigem falhas em ferramentas de gestão de endpoints."
+   ],
+   "title_original": "Tanium security advisory (AV26-1202)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1202 Date: November 24, 2026 As of November 23, 2026, Tanium is affected by vulnerabilities in the following products: Core Content Prior to 1.11.97 Prior to 1.14.124 Prior to 1.15.171 Core Content - Enhanced Tags Prior to 2.6.90 Prior to 2.8.113 Default Content Prior to 8.7.102 Prior to 8.8.97 Prior to 8.9.213 Endpoint Configuration Toolset Solution Prior to 1.51.63 Prior to 1.59.53 Prior to 1.71.28 Engage Prior to 1.11.298 Prior to 1.13.157 Prior to 1.9.195 Tanium Zone Server Prior to 7.7.3.8351 Prior to 7.8.2.1263 Prior to 7.8.4.1399 Threat Response Prior to 4.12.349 Prior to 4.17.327 Prior to 4.9.476 The Cyber Centre encourages users and administrators to review the provided web link and apply any necessary updates as they become available. All Advisories - Tanium Security Advisories"
+   "translated": true,
+   "enriched": true,
+   "why": "Permite mitigar falhas de segurança conhecidas em softwares de gestão empresarial antes que sejam exploradas.",
+   "todo": "Consulte o aviso oficial da Tanium e atualize imediatamente os componentes afetados para as versões recomendadas."
   },
   {
    "id": "d8d315a763428aed",
@@ -582,14 +646,20 @@
    "link": "https://tek.sapo.pt/noticias/negocios/artigos/magic-beans-investe-mais-de-um-milhao-de-euros-em-nova-marca-de-ciberseguranca-em-parceria-com-a-cloudflare/",
    "published": "2026-11-24T16:34:33+00:00",
    "title": "Magic Beans investe mais de um milhão de euros em nova marca de cibersegurança com parceria da Cloudflare",
-   "summary": "Com a Magic Shield, a Magic Beans aposta na cibersegurança, numa parceria estratégica com a Cloudflare. A consultora tecnológica prevê investir mais de um milhão de euros no projeto até 2027, com planos para consolidar a operação em Portugal, entrar em Espanha e chegar a 20 clientes ativos.",
+   "summary": "A consultora tecnológica Magic Beans lançou a Magic Shield, uma nova aposta na área da cibersegurança em parceria estratégica com a Cloudflare. O projeto prevê um investimento superior a um milhão de euros até 2027 para consolidar a operação em Portugal, expandir para Espanha e atingir duas dezenas de clientes ativos. A iniciativa visa fortalecer a oferta de serviços de proteção digital.",
    "image": null,
-   "points": [],
+   "points": [
+    "A Magic Beans criou a marca Magic Shield dedicada à cibersegurança.",
+    "O projeto conta com uma parceria estratégica da Cloudflare.",
+    "Serão investidos mais de um milhão de euros até 2027.",
+    "O objetivo inclui consolidar o mercado em Portugal e expandir para Espanha."
+   ],
    "title_original": null,
    "category": "Geral",
    "translated": false,
-   "enriched": false,
-   "raw": "Com a Magic Shield, a Magic Beans aposta na cibersegurança, numa parceria estratégica com a Cloudflare. A consultora tecnológica prevê investir mais de um milhão de euros no projeto até 2027, com planos para consolidar a operação em Portugal, entrar em Espanha e chegar a 20 clientes ativos."
+   "enriched": true,
+   "why": "Mostra o crescimento do investimento nacional em soluções e parcerias estratégicas de cibersegurança.",
+   "todo": ""
   },
   {
    "id": "5e84d271f3fa4996",
@@ -598,15 +668,21 @@
    "lang": "en",
    "link": "https://www.securityweek.com/vmware-updates-patch-critical-esx-vcenter-vulnerabilities/",
    "published": "2026-11-24T16:32:56+00:00",
-   "title": "VMware Updates Patch Critical ESX, vCenter Vulnerabilities",
-   "summary": "The critical bugs include an authentication bypass in vCenter and flaws that could allow code execution on ESX hosts.",
+   "title": "VMware atualiza patch para corrigir vulnerabilidades críticas em ESX e vCenter",
+   "summary": "A VMware lançou atualizações de segurança para corrigir falhas críticas nos seus sistemas. Entre as vulnerabilidades corrigidas encontram-se uma falha de bypass de autenticação no vCenter e problemas que poderiam permitir a execução de código em anfitriões ESX. A aplicação destas correções é essencial para proteger ambientes de virtualização contra ataques.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A VMware corrigiu bugs críticos em produtos de virtualização.",
+    "Foi identificada uma falha de bypass de autenticação no vCenter.",
+    "Foram resolvidas vulnerabilidades de execução de código em anfitriões ESX.",
+    "As correções evitam o comprometimento de infraestruturas virtuais."
+   ],
+   "title_original": "VMware Updates Patch Critical ESX, vCenter Vulnerabilities",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "The critical bugs include an authentication bypass in vCenter and flaws that could allow code execution on ESX hosts."
+   "translated": true,
+   "enriched": true,
+   "why": "Protege infraestruturas de virtualização empresariais contra explorações remotas e execução de código.",
+   "todo": "Aplique as atualizações e patches de segurança disponibilizados pela VMware o mais rapidamente possível."
   },
   {
    "id": "63399c74702aaea2",
@@ -615,15 +691,21 @@
    "lang": "en",
    "link": "https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/",
    "published": "2026-11-24T16:30:19+00:00",
-   "title": "ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof",
-   "summary": "The ShinyHunters extortion gang claims to have returned in posts on a new data leak site after a series of arrests over the past two months targeting alleged members. [...]",
+   "title": "ShinyHunters afirma regressar após detenções do FBI e usa antigas chaves PGP como prova",
+   "summary": "O grupo de extorsão ShinyHunters publicou mensagens num novo site de fugas de informação, alegando estar de volta à atividade após uma vaga de detenções de suspeitos nos últimos dois meses. Para comprovar a sua identidade, o grupo utilizou antigas chaves PGP como prova. Este anúncio surge na sequência de ações policiais direcionadas contra os supostos membros da organização.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O grupo de extorsão ShinyHunters anunciou o seu regresso num novo site de fugas.",
+    "A atividade criminosa tinha sido afetada por detenções recentes do FBI.",
+    "O grupo utilizou chaves PGP antigas como método de verificação de identidade.",
+    "Demonstra a resiliência de cibercriminosos perante operações policiais."
+   ],
+   "title_original": "ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "The ShinyHunters extortion gang claims to have returned in posts on a new data leak site after a series of arrests over the past two months targeting alleged members. [...]"
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia que grupos de cibercrime tentam reestruturar-se e manter a atividade após ações policiais.",
+   "todo": "Mantenha cópias de segurança atualizadas e reforce a monitorização de redes para detetar possíveis fugas de dados."
   },
   {
    "id": "e259976f8ecc978d",
@@ -632,15 +714,21 @@
    "lang": "en",
    "link": "https://www.infosecurity-magazine.com/news/inception-extortion-sso-vishing/",
    "published": "2026-11-24T16:30:00+00:00",
-   "title": "New Inception Extortion Brand Tied to SSO Vishing Campaign",
-   "summary": "Okta and ReversingLabs linked Inception to an SSO vishing campaign targeting employee credentials",
+   "title": "Nova marca de extorsão Inception ligada a campanha de vishing SSO",
+   "summary": "A Okta e a ReversingLabs associaram o grupo Inception a uma campanha de vishing focada em Single Sign-On. Os atacantes utilizaram esta técnica de engenharia social por voz para roubar credenciais de colaboradores. A campanha demonstra a evolução das ameaças direcionadas ao acesso de identidade nas empresas.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A campanha de vishing foi associada ao grupo Inception.",
+    "O ataque foca-se em mecanismos de autenticação Single Sign-On (SSO).",
+    "O objetivo principal é o roubo de credenciais de funcionários.",
+    "A investigação foi apoiada pela Okta e ReversingLabs."
+   ],
+   "title_original": "New Inception Extortion Brand Tied to SSO Vishing Campaign",
    "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": false,
-   "raw": "Okta and ReversingLabs linked Inception to an SSO vishing campaign targeting employee credentials"
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para os perigos do roubo de credenciais através de engenharia social avançada baseada em voz.",
+   "todo": "Implemente autenticação multifator resistente a phishing e reforce a formação dos colaboradores contra ataques de vishing."
   },
   {
    "id": "cad292c7e46bbd2d",
@@ -649,15 +737,21 @@
    "lang": "en",
    "link": "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/",
    "published": "2026-11-24T16:22:44+00:00",
-   "title": "European Commission confirms data theft in EU Academy breach",
-   "summary": "The European Commission, the European Union's main executive body, has confirmed that attackers breached its EU Academy online learning hub and stole the personal data of an undisclosed number of users. [...]",
+   "title": "Comissão Europeia confirma roubo de dados em violação na EU Academy",
+   "summary": "A Comissão Europeia confirmou que atacantes comprometeram a plataforma de aprendizagem online EU Academy, resultando no roubo de dados pessoais de um número não especificado de utilizadores. O principal órgão executivo da União Europeia detetou a intrusão e confirmou a exfiltração de informação. O incidente afeta os utilizadores registados na plataforma de formação.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Comissão Europeia confirmou um ataque cibernético à plataforma EU Academy.",
+    "Foram roubados dados pessoais de utilizadores registados na plataforma de ensino.",
+    "A extensão exata do número de afetados não foi divulgada publicamente.",
+    "Trata-se de uma falha de segurança num serviço oficial da União Europeia."
+   ],
+   "title_original": "European Commission confirms data theft in EU Academy breach",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "The European Commission, the European Union's main executive body, has confirmed that attackers breached its EU Academy online learning hub and stole the personal data of an undisclosed number of users. [...]"
+   "translated": true,
+   "enriched": true,
+   "why": "Sublinha os riscos de cibersegurança que afetam plataformas institucionais e educativas de grande escala.",
+   "todo": "Utilize palavras-passe únicas e esteja atento a comunicações oficiais caso tenha conta na plataforma EU Academy."
   },
   {
    "id": "5ba708d91b205e45",
@@ -666,15 +760,21 @@
    "lang": "en",
    "link": "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/",
    "published": "2026-11-24T16:15:23+00:00",
-   "title": "Hackers compromise Check Point Servers in 22 organizations",
-   "summary": "Threat actors have exploited multiple vulnerabilities to compromise two dozen Check Point Security management servers in an ongoing campaign targeting 22 organizations. [...]",
+   "title": "Hackers comprometem servidores da Check Point em 22 organizações",
+   "summary": "Atores maliciosos exploraram várias vulnerabilidades para comprometer servidores de gestão de segurança da Check Point numa campanha em curso. O ataque afetou cerca de duas dezenas de servidores distribuídos por 22 organizações distintas. A exploração permitiu aos atacantes obter acesso não autorizado aos sistemas de gestão.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Múltiplas vulnerabilidades foram exploradas em servidores da Check Point.",
+    "A campanha maliciosa afetou 22 organizações diferentes.",
+    "O ataque visou especificamente servidores de gestão de segurança.",
+    "Exige atenção imediata por parte dos administradores de sistemas afetados."
+   ],
+   "title_original": "Hackers compromise Check Point Servers in 22 organizations",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Threat actors have exploited multiple vulnerabilities to compromise two dozen Check Point Security management servers in an ongoing campaign targeting 22 organizations. [...]"
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que ferramentas de segurança centrais também podem ser visadas e comprometidas por atacantes.",
+   "todo": "Aplique imediatamente as correções de segurança indicadas para os servidores Check Point e verifique sinais de intrusão."
   },
   {
    "id": "076062d7e09e35fe",
@@ -683,15 +783,21 @@
    "lang": "en",
    "link": "https://therecord.media/carnegie-endowment-data-breach",
    "published": "2026-11-24T16:00:00+00:00",
-   "title": "Carnegie Endowment for International Peace says third-party breach leaked donation info",
-   "summary": "Some donors to the Carnegie Endowment for International Peace had their information leaked due to a cyberattack on a third-party vendor named Soapbox Engage.",
+   "title": "Carnegie Endowment for International Peace diz que violação de terceiros vazou dados de doadores",
+   "summary": "Informações confidenciais de alguns doadores da Carnegie Endowment for International Peace foram divulgadas devido a um ciberataque sofrido por um fornecedor externo chamado Soapbox Engage. O incidente demonstra como falhas de segurança em parceiros comerciais podem expor dados sensíveis de organizações. A instituição afetada investigou o impacto da fuga de informação.",
    "image": "https://cms.therecord.media/uploads/Carnegie_2_5a558fb99b.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Carnegie Endowment for International Peace sofreu uma fuga de dados de doadores.",
+    "O ataque ocorreu através de um fornecedor terceiro chamado Soapbox Engage.",
+    "A falha expôs informação sensível gerida pela plataforma externa.",
+    "Evidencia os riscos associados à cadeia de fornecimento digital."
+   ],
+   "title_original": "Carnegie Endowment for International Peace says third-party breach leaked donation info",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "Some donors to the Carnegie Endowment for International Peace had their information leaked due to a cyberattack on a third-party vendor named Soapbox Engage."
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para a necessidade de auditar a segurança e os fornecedores terceiros que gerem dados sensíveis.",
+   "todo": "Exija padrões rigorosos de cibersegurança aos fornecedores externos e monitore o acesso a dados de clientes e doadores."
   },
   {
    "id": "22b8415a8b1f6bf7",
@@ -13338,50 +13444,6 @@
    "enriched": true,
    "why": "Melhora a visibilidade em ambientes multicloud e ajuda a priorizar ameaças complexas numa única plataforma.",
    "todo": "Configure a integração do Azure no AWS Security Hub e reveja regularmente as descobertas de exposição e caminhos de ataque."
-  },
-  {
-   "id": "3a88244cac9f9c52",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/big-techs/hoje-no-tecmundo-18-gpt-62-chegou-whatsapp-ganha-backup-proprio-e-mais/",
-   "published": "2026-11-18T22:16:00+00:00",
-   "title": "Hoje no TecMundo (18): GPT-6.2 chegou, WhatsApp ganha backup próprio e mais",
-   "summary": "O programa diário do TecMundo destacou várias novidades tecnológicas, incluindo o lançamento dos modelos GPT-6.2 Astra e Sol pela OpenAI e testes do WhatsApp com um serviço de backup em nuvem próprio com 2 GB gratuitos. A Microsoft reformulou o Copilot integrando ferramentas do Excel e do PowerPoint, enquanto um ataque cibernético utilizou sites de 178 empresas para distribuir códigos maliciosos. Além disso, um malware no Android começou a usar o Grok para roubar dados bancários dos utilizadores e a Samsung disponibilizou o beta público da One UI 9.5.",
-   "image": "https://www.estadao.com.br/resizer/v2/RUX4WVOGH5MY3LBFXEIF5G6NNI.jpg?quality=80&auth=a94e25f5a7a0dade2698330457f36b45836a037811ef5827fc524a8820d583bc&width=710",
-   "points": [
-    "A OpenAI revelou os novos modelos de inteligência artificial GPT-6.2 Astra e Sol.",
-    "O WhatsApp iniciou testes para um serviço de armazenamento próprio com 2 GB gratuitos.",
-    "Campanhas maliciosas utilizaram sites empresariais para distribuir códigos e um malware explorou o Grok para roubo bancário no Android."
-   ],
-   "title_original": null,
-   "category": "Malware",
-   "translated": false,
-   "enriched": true,
-   "why": "Mantém as empresas e o público informados sobre as principais ameaças de segurança e novidades tecnológicas do dia.",
-   "todo": "Mantenha as aplicações atualizadas e desconfie de links ou downloads inesperados em dispositivos móveis e computadores."
-  },
-  {
-   "id": "e0a5424d80069ea5",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/ai/2026/11/outage-or-attack-dont-let-social-media-fill-in-the-gaps",
-   "published": "2026-11-18T22:07:01+00:00",
-   "title": "Interrupção ou ataque? Não deixe que as redes sociais preencham as lacunas",
-   "summary": "Falhas técnicas recentes em serviços tecnológicos e aplicações bancárias geraram ondas de especulação e teorias da conspiração nas redes sociais. Situações causadas por erros de software, falhas de configuração ou problemas de hardware são frequentemente confundidas com ataques cibernéticos maliciosos. A falta de informação imediata durante uma interrupção cria um vazio que alimenta relatórios exagerados e pânico desnecessário. As autoridades e especialistas sublinham que nem todas as falhas operacionais resultam de incidentes de segurança.",
-   "image": null,
-   "points": [
-    "Falhas tecnológicas geram especulação rápida e alarmismo infundado nas redes sociais.",
-    "Problemas como erros de software e falhas de configuração são muitas vezes confundidos com ciberataques.",
-    "A incerteza inicial durante as interrupções de serviço cria um vazio de informação preenchido por boatos."
-   ],
-   "title_original": "Outage or attack? Don’t let social media fill in the gaps",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Evita o pânico generalizado e a desinformação quando ocorrem falhas técnicas inesperadas.",
-   "todo": "Consulte sempre fontes oficiais e aguarde comunicados verificados antes de partilhar informações sobre falhas tecnológicas."
   }
  ]
 }

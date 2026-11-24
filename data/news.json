@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T21:44:58.271566+00:00",
+ "updated": "2026-11-24T22:04:44.101165+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,17 +79,17 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
    "ok": true,
-   "added": 3
+   "added": 2
   },
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 23
+   "added": 22
   },
   {
    "source": "SecurityWeek",
@@ -164,7 +164,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 8
+   "added": 7
   },
   {
    "source": "Cisco Talos",
@@ -204,7 +204,7 @@
   {
    "source": "Rapid7",
    "ok": true,
-   "added": 8
+   "added": 7
   },
   {
    "source": "Tenable",
@@ -264,7 +264,7 @@
   {
    "source": "Graham Cluley",
    "ok": true,
-   "added": 2
+   "added": 3
   },
   {
    "source": "HackRead",
@@ -310,15 +310,32 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 346,
-  "unenriched": 230,
+  "pending": 345,
+  "unenriched": 229,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "Expecting ',' delimiter: line 83 column 69 (char 6089)"
   ]
  },
  "items": [
+  {
+   "id": "7f8f5938b05b8fb0",
+   "source": "Dark Reading",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.darkreading.com/perimeter/webworm-slithers-customized-softether-vpn",
+   "published": "2026-11-24T21:48:06+00:00",
+   "title": "Webworm APT Slithers Into Networks With Customized SoftEther VPN",
+   "summary": "The China-aligned espionage group rebuilt the open source VPN software from source, stripping out the artifacts that would normally expose it to defenders.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt90d6b1405473fe5b/6b05fadd5bf26ea3ca9d2638/snake_computer-the-lightwriter-GettyImages-530757188.jpg?width=720&quality=80&disable=upscale",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "The China-aligned espionage group rebuilt the open source VPN software from source, stripping out the artifacts that would normally expose it to defenders."
+  },
   {
    "id": "6c270107d3982041",
    "source": "BleepingComputer",
@@ -13640,29 +13657,6 @@
    "enriched": true,
    "why": "Melhora a fiabilidade e a governação na utilização de IA para analisar dados de honeypots.",
    "todo": "Adote processos de revisão por pares e controlo de versões em projetos de automatização de segurança."
-  },
-  {
-   "id": "3c8f5ba833ed1e38",
-   "source": "Tenable",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.tenable.com/blog/nginx2root-cve-2026-123007-frequently-asked-questions-about-five-critical-nginx",
-   "published": "2026-11-19T00:18:05+00:00",
-   "title": "NGINX2Root (CVE-2026-123007): Perguntas frequentes sobre cinco vulnerabilidades críticas no NGINX",
-   "summary": "A F5 lançou uma atualização de segurança para corrigir cinco vulnerabilidades críticas de execução remota de código no NGINX, agrupadas como NGINX2Root, além de outras falhas. Entre os problemas destaca-se o CVE-2026-123007, uma falha de execução remota de código não autenticada no HTTP/2 que já possui um exploit público no GitHub. Os atacantes podem combinar estas falhas com uma vulnerabilidade por corrigir de escalação de privilégios locais no kernel do Linux para obter acesso total de root. Esta situação afeta os sistemas que utilizam as funcionalidades vulneráveis ativas.",
-   "image": "https://www.tenable.com/sites/default/files/images/articles/NGINX2Root.png",
-   "points": [
-    "Cinco falhas críticas de execução remota de código no NGINX foram corrigidas pela F5.",
-    "O CVE-2026-123007 afeta o HTTP/2 e já tem código de exploração público disponível.",
-    "As falhas podem ser encadeadas com uma vulnerabilidade no kernel do Linux para atingir privilégios de root.",
-    "A correção foi incluída num lançamento de segurança extraordinário a 18 de novembro."
-   ],
-   "title_original": "NGINX2Root (CVE-2026-123007): Frequently asked questions about five critical NGINX vulnerabilities",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite que atacantes obtenham controlo total de root sobre os servidores afetados através do encadeamento de falhas críticas.",
-   "todo": "Instale imediatamente o pacote de segurança lançado pela F5 a 18 de novembro de 2026."
   }
  ]
 }

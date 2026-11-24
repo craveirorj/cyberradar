@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T23:07:15.851084+00:00",
+ "updated": "2026-11-24T23:25:45.548851+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -138,8 +138,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 5
   },
   {
    "source": "DataBreaches.net",
@@ -174,7 +174,7 @@
   {
    "source": "Unit 42 (Palo Alto)",
    "ok": true,
-   "added": 5
+   "added": 6
   },
   {
    "source": "Google Threat Intelligence",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 60,
-  "pending": 266,
-  "unenriched": 147,
+  "done": 36,
+  "pending": 294,
+  "unenriched": 176,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,29 @@
   ]
  },
  "items": [
+  {
+   "id": "5a7ed17eceba38be",
+   "source": "Unit 42 (Palo Alto)",
+   "region": "US",
+   "lang": "en",
+   "link": "https://unit42.paloaltonetworks.com/cve-2026-123633-nginx-http2-vulnerability/",
+   "published": "2026-11-24T23:00:14+00:00",
+   "title": "NGINX HTTP/2 Use-After-Free: CVE-2026-123633",
+   "summary": "Analistas de cibersegurança divulgaram detalhes técnicos sobre a vulnerabilidade CVE-2026-123633, uma falha do tipo use-after-free que afeta o servidor NGINX no protocolo HTTP/2. A análise inclui as versões que se encontram vulneráveis, testes com ferramentas de desinfeção e orientações essenciais para a aplicação de correções. Esta descoberta surge no âmbito da monitorização contínua de falhas críticas em infraestruturas web amplamente utilizadas. O impacto foca-se na potencial exploração da falha por agentes maliciosos para comprometer sistemas se não forem atualizados.",
+   "image": "https://unit42.paloaltonetworks.com/wp-content/uploads/2026/11/06_Security-Technology_Category_1920x900.jpg",
+   "points": [
+    "Falha CVE-2026-123633 identificada no NGINX HTTP/2.",
+    "Vulnerabilidade do tipo use-after-free detalhada por investigadores.",
+    "Análise inclui versões afetadas e testes de correção.",
+    "Mitigação requer aplicação de patches de segurança."
+   ],
+   "title_original": "NGINX HTTP/2 Use-After-Free: CVE-2026-123633",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite corrigir falhas críticas em servidores web antes que sejam exploradas.",
+   "todo": "Atualize o NGINX para a versão mais recente disponibilizada pelo fabricante."
+  },
   {
    "id": "ae79bb5847a54156",
    "source": "SecurityWeek",
@@ -13734,29 +13757,6 @@
    "enriched": true,
    "why": "A linguagem PHP é amplamente utilizada, tornando estas falhas de execução remota altamente perigosas.",
    "todo": "Aplicar as atualizações de segurança do PHP logo que sejam disponibilizadas pelos maintainers."
-  },
-  {
-   "id": "9e60f0b7013b6ce4",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/19/slipping-past-ot-network-segmentation/",
-   "published": "2026-11-19T05:30:09+00:00",
-   "title": "Consolas de jogos e Teslas estão a contornar a segmentação de redes OT",
-   "summary": "Uma investigação da Claroty detetou milhares de dispositivos de consumo, como consolas de jogos e veículos Tesla, ligados a redes críticas de hospitais e fábricas. Muitos destes equipamentos não estão isolados em redes de convidados, encontrando-se em redes de produção. Esta falha de segmentação expõe infraestruturas sensíveis a riscos de segurança desnecessários. A presença destes dispositivos pode facilitar o acesso de atacantes a sistemas vitais.",
-   "image": null,
-   "points": [
-    "Dispositivos de consumo em redes críticas",
-    "Falha na segmentação de rede",
-    "Risco para hospitais e fábricas",
-    "Consolas e Teslas em redes de produção"
-   ],
-   "title_original": "Game consoles and Teslas are slipping past OT network segmentation",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "A mistura de dispositivos pessoais com redes industriais críticas aumenta drasticamente a superfície de ataque.",
-   "todo": "Implemente uma segmentação de rede rigorosa e utilize VLANs para isolar dispositivos de consumo da rede de produção."
   }
  ]
 }

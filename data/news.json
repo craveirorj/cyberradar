@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T11:46:37.111842+00:00",
+ "updated": "2026-11-24T12:05:07.635321+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -59,7 +59,7 @@
   {
    "source": "CISA Advisories",
    "ok": true,
-   "added": 21
+   "added": 20
   },
   {
    "source": "CISA Alertas (KEV)",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -149,7 +149,7 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 9
+   "added": 8
   },
   {
    "source": "Microsoft Security Blog",
@@ -204,7 +204,7 @@
   {
    "source": "Rapid7",
    "ok": true,
-   "added": 8
+   "added": 9
   },
   {
    "source": "Tenable",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 7
+   "added": 6
   },
   {
    "source": "Help Net Security",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 24,
-  "pending": 320,
-  "unenriched": 191,
+  "done": 0,
+  "pending": 344,
+  "unenriched": 216,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -363,6 +363,57 @@
    "enriched": true,
    "why": "Importa porque os ataques criados com IA e estruturas agênticas exploram vulnerabilidades conhecidas a uma velocidade inédita.",
    "todo": "Atualize regularmente os sistemas e adote medidas de monitorização contínua para detetar comportamentos anómalos."
+  },
+  {
+   "id": "91d4c3b285f96e6e",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/openai-cisco-shirudo-linux-shields/",
+   "published": "2026-11-24T12:00:00+00:00",
+   "title": "OpenAI and Cisco Release Open-Source Tool to Shield Unpatched Linux Systems",
+   "summary": "OpenAI and Cisco’s Shirudo helps Linux users block exploitation of known vulnerabilities on live systems, buying time for patching without requiring a restart",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "OpenAI and Cisco’s Shirudo helps Linux users block exploitation of known vulnerabilities on live systems, buying time for patching without requiring a restart"
+  },
+  {
+   "id": "f3a43b39549fdc89",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/1-5-million-impacted-by-data-breach-at-south-korean-electric-company-kepco/",
+   "published": "2026-11-24T11:50:21+00:00",
+   "title": "1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO",
+   "summary": "Hackers stole personal information from the company’s customer portal and supplier relationship management platform.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "Hackers stole personal information from the company’s customer portal and supplier relationship management platform."
+  },
+  {
+   "id": "cc8b0013c5a49935",
+   "source": "CSO Online",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.csoonline.com/article/4252513/attackers-exploited-an-azure-api-management-flaw-to-steal-secrets-microsoft-warns.html",
+   "published": "2026-11-24T11:48:59+00:00",
+   "title": "Attackers exploited an Azure API Management flaw to steal secrets, Microsoft warns",
+   "summary": "Microsoft is warning customers that attackers exploited a flaw in Azure API Management Classic tiers to steal stored secrets, an intrusion that Norway’s National Security Authority has linked to breaches at two energy companies and says organizations should assume exposed credentials were compromised. Microsoft said in an Azure Service Health security advisory sent to customers that it identified the vulnerability on Nov. 18 and deployed a mitigation the following day. The advisory, tracking ID MZK9-GH0, said the exposure began before Microsoft found the flaw, reported Bleeping Computer. The c",
+   "image": "https://www.csoonline.com/wp-content/uploads/2026/10/4242174-0-34629500-1793350972-shutterstock_2710227815.jpg?quality=50&strip=all",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Microsoft is warning customers that attackers exploited a flaw in Azure API Management Classic tiers to steal stored secrets, an intrusion that Norway’s National Security Authority has linked to breaches at two energy companies and says organizations should assume exposed credentials were compromised. Microsoft said in an Azure Service Health security advisory sent to customers that it identified the vulnerability on Nov. 18 and deployed a mitigation the following day. The advisory, tracking ID MZK9-GH0, said the exposure began before Microsoft found the flaw, reported Bleeping Computer. The company said in the advisory that “an unauthorized party could have used the issue to access secrets stored in Azure API Management Classic instances.” The potentially exposed information includes secrets stored in Named Values, client secrets associated with identity providers and OpenID Connect providers, subscription keys, and tokens used to call direct management APIs, the report added. Microsoft warned that its mitigation does not invalidate previously compromised credentials and that affected customers must rotate potentially exposed secrets and investigate suspicious activity. The advisory said only the Classic tiers of the service are affected, not Azure API Management v2, the report added. The potential exposure was not limited to a theoretical security risk. Norway’s National Security Authority (NSM) subsequently linked cyberattacks against two energy companies to the vulnerability, providing evidence of exploitation in an operational environment. Norway tells customers to assume exposure In a security advisory published November 20 and updated November 23, NSM said an unidentified actor had actively targeted access tokens, secrets, and Named Values stored in Azure API Man"
   },
   {
    "id": "b4a9690560183d3c",
@@ -13673,72 +13724,6 @@
    "enriched": true,
    "why": "Falhas em aplicações de assinatura digital colocam em risco a validade jurídica de documentos e facilitam fraudes.",
    "todo": "Garanta a auditoria rigorosa de software crítico e aplique correções de segurança logo que os fabricantes as disponibilizem."
-  },
-  {
-   "id": "cbfae60454052722",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/eggstreme-malware-rebuilt-after/",
-   "published": "2026-11-18T14:00:00+00:00",
-   "title": "Suspected Chinese APT Rebuilds EggStreme Malware After Exposure",
-   "summary": "Um grupo de ameaça persistente avançada (APT), suspeito de ter origem na China, reconstruiu o seu malware EggStreme e respetiva infraestrutura. A remodulação ocorreu na sequência da exposição pública das ferramentas originais por parte da empresa de cibersegurança Bitdefender. Este comportamento demonstra a capacidade de adaptação rápida destes operadores maliciosos.",
-   "image": null,
-   "points": [
-    "Grupo APT chinês reconstrói o malware EggStreme.",
-    "Reestruturação ocorreu após exposição pública pela Bitdefender.",
-    "Demonstra a resiliência e adaptabilidade de agentes de ameaça."
-   ],
-   "title_original": null,
-   "category": "Malware",
-   "translated": false,
-   "enriched": true,
-   "why": "Grupos de cibercunpionagem adaptam rapidamente as suas ferramentas para continuar campanhas de intrusão após serem detetados.",
-   "todo": "Mantenha soluções de deteção e resposta a endpoints (EDR) atualizadas para identificar variantes novas ou modificadas de malware."
-  },
-  {
-   "id": "0659e2489161c5d8",
-   "source": "SentinelLabs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.sentinelone.com/labs/labscon26-replay-governing-just-in-time-intelligence-ai-dual-use-capabilities-and-the-limits-of-guardrails/",
-   "published": "2026-11-18T14:00:00+00:00",
-   "title": "LABScon26 Replay | Governing Just-in-Time Intelligence: AI, Dual-Use Capabilities, and the Limits of Guardrails",
-   "summary": "Numa apresentação na conferência LABScon 26, Mauro Vignati abordou os limites das barreiras de segurança na inteligência artificial generativa avançada. O especialista defendeu que o modelo de distribuição de IA a pedido reutiliza lógicas industriais e criminosas preexistentes. Como alternativa aos controlos superficiais, foi proposta uma estrutura em camadas para regular o uso destes modelos.",
-   "image": "https://images.contentstack.io/v3/assets/blt53c99b43892c2378/bltf0d6eb4fdce2acfe/6afc8dac99559c1960e0acc8/labscon_mauro_ftr.jpg",
-   "points": [
-    "Mauro Vignati debateu os limites da regulação em IA na LABScon 26.",
-    "Modelos de IA usam distribuições comerciais de uso dual.",
-    "Propõe-se uma estrutura em camadas para governar o acesso à IA."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "A utilização de inteligência artificial de uso geral por cibercriminosos exige novas abordagens de governance e mitigação de riscos.",
-   "todo": "Estabeleça políticas claras de utilização interna de ferramentas de inteligência artificial generativa nas empresas."
-  },
-  {
-   "id": "98d24ce7e396ea0e",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/ox-security-launches-ox-radar-and-response-center-to-show-companies-which-cyber-threats-actually-affect-them/",
-   "published": "2026-11-18T13:58:11+00:00",
-   "title": "OX Security Launches OX Radar and Response Center to Show Companies Which Cyber Threats Actually Affect Them",
-   "summary": "A OX Security anunciou o lançamento do OX Radar e de um centro de resposta em Nova Iorque. As novas soluções foram criadas para ajudar as empresas a identificar quais as ameaças cibernéticas que impactam diretamente os seus ambientes. O objetivo é reduzir o ruído de alertas e focar os recursos em riscos reais.",
-   "image": null,
-   "points": [
-    "OX Security lança OX Radar e centro de resposta.",
-    "Ferramentas ajudam a filtrar ameaças com impacto real.",
-    "Anúncio efetuado em Nova Iorque a 18 de novembro de 2026."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "A priorização de alertas de segurança evita a fadiga das equipas e acelerta a remediação de ameaças críticas.",
-   "todo": "Adote plataformas que centralizem e contextualizem alertas de segurança com base no risco real para o seu negócio."
   }
  ]
 }

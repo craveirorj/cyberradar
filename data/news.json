@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T11:28:11.093802+00:00",
+ "updated": "2026-11-24T11:46:37.111842+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -104,7 +104,7 @@
   {
    "source": "CyberScoop",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Cybersecurity Dive",
@@ -129,7 +129,7 @@
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 8
+   "added": 7
   },
   {
    "source": "Schneier on Security",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 12
+   "added": 13
   },
   {
    "source": "ACSC Austrália",
@@ -309,11 +309,12 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 236,
-  "unenriched": 111,
+  "done": 24,
+  "pending": 320,
+  "unenriched": 191,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
@@ -364,6 +365,40 @@
    "todo": "Atualize regularmente os sistemas e adote medidas de monitorização contínua para detetar comportamentos anómalos."
   },
   {
+   "id": "b4a9690560183d3c",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/cyber-crime/2026/11/24/european-commission-confirms-personal-data-stolen-in-ai-assisted-cyberattack/5311834",
+   "published": "2026-11-24T11:32:41+00:00",
+   "title": "European Commission confirms personal data stolen in AI-assisted cyberattack",
+   "summary": "EU Academy names and email addresses exposed, with users warned via website notice rather than contacted directly",
+   "image": "https://image.theregister.com/?imageId=5311112&width=800",
+   "points": [],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": false,
+   "raw": "The European Commission has confirmed that hackers made off with personal data in the AI-assisted cyberattack disclosed last week, but has relied on a website notice rather than contacting affected users directly. Speaking at a press briefing on Monday, Commission spokesperson Thomas Regnier confirmed that EU Academy, an online learning platform offering courses on EU policies and initiatives, was among the systems compromised during the cyber campaign targeting the bloc's executive arm. The stolen data includes the names and email addresses of people outside the EU institutions, though the Commission has yet to figure out how many users are affected or whether other personal information was compromised. Public access to the platform has been disabled as a precaution. Despite confirming the theft, the Commission hasn't contacted affected individuals directly. Instead, it has posted a notice on the EU Academy website, a decision Regnier defended when quizzed by reporters on Monday. \"There was no reach out to individual users, but rather a general message to all users on the website out of transparency,\" Regnier said. The notice warns users that they could find themselves on the receiving end of spearphishing attacks, impersonation attempts, and spam as a result of the breach. The Commission is also advising users not to hand over personal information to anyone who contacts them claiming to be involved in EU Academy activities. The trouble with notifying users via the EU Academy website is that they've already been told not to come back until January. A separate notice says the platform will be offline from November 11 through January 14, 2027, while the Commission rebuilds it. When it reopens, users will have to register again, and any record of their previous coursework"
+  },
+  {
+   "id": "0789592871d104f4",
+   "source": "Malwarebytes Labs",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.malwarebytes.com/blog/ai/2026/11/researchers-planted-secrets-in-ai-prompts-attackers-found-them",
+   "published": "2026-11-24T11:21:42+00:00",
+   "title": "Researchers planted secrets in AI prompts. Attackers found them",
+   "summary": "Researchers planted access keys in AI prompts. Within hours, attackers were testing some of them against Amazon cloud accounts.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "IA",
+   "translated": false,
+   "enriched": false,
+   "raw": ".kadence-column492389_464345-0f > .kt-inside-inner-col{padding-top:20px;padding-right:20px;padding-bottom:10px;padding-left:20px;}.kadence-column492389_464345-0f > .kt-inside-inner-col{column-gap:var(--global-kb-gap-sm, 1rem);}.kadence-column492389_464345-0f > .kt-inside-inner-col{flex-direction:column;}.kadence-column492389_464345-0f > .kt-inside-inner-col > .aligncenter{width:100%;}.kadence-column492389_464345-0f > .kt-inside-inner-col{background-color:rgba(255, 229, 229, 0.83);}.kadence-column492389_464345-0f > .kt-inside-inner-col:before{opacity:0.3;}.kadence-column492389_464345-0f{position:relative;}@media all and (max-width: 1024px){.kadence-column492389_464345-0f > .kt-inside-inner-col{flex-direction:column;justify-content:center;}}@media all and (max-width: 767px){.kadence-column492389_464345-0f > .kt-inside-inner-col{flex-direction:column;justify-content:center;}} In this article Researchers traced stolen prompts to three AI hosting providers Some stolen prompts were marked “zero data retention” Keep sensitive data out of prompts and check which providers your AI routing service can send them to Attackers have been reading queries sent indirectly to online AI services. They’ve scoured these queries (also known as “prompts”) for sensitive data, in some cases trying out stolen access keys within hours. Not everyone works directly with the likes of ChatGPT, Gemini and Claude. Plenty of people use other AI services, including hosting companies that run open-source AI models. There are also third-party services that accept your prompts and then send them on to the most appropriate AI services. These services, known as routers, give you access to different models. Perhaps you prefer one for designing something for your 3D printer and another for coding. On some marke"
+  },
+  {
    "id": "a36fd360c1b8f304",
    "source": "CyberScoop",
    "region": "US",
@@ -378,9 +413,9 @@
     "A intrusão ocorreu através de interfaces administrativas expostas, falhas conhecidas e passwords por omissão.",
     "O incidente demonstra que a tecnologia operacional sofre de falhas básicas urgentes de segurança."
    ],
-   "title_original": "Tomorrow’s quantum threat is today’s open door",
+   "title_original": null,
    "category": "Fuga de dados",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra que as organizações devem corrigir falhas básicas atuais em vez de focarem apenas em ameaças quânticas futuras.",
    "todo": "Remova interfaces de administração expostas diretamente à internet e altere todas as palavras-passe predefinidas."
@@ -400,9 +435,9 @@
     "Foram divulgados nomes de utilizador, palavras-passe e documentos sensíveis.",
     "A fuga de informação pode permitir aos atacantes assumir o controlo da vida digital das vítimas."
    ],
-   "title_original": "Database Leaks Expose 3.5 Billion Usernames, Passwords, and Documents",
+   "title_original": null,
    "category": "Fuga de dados",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Sublinha o perigo crítico de deixar bases de dados sem autenticação ou medidas de segurança adequadas.",
    "todo": "Garanta que todas as bases de dados e repositórios de informação estão devidamente protegidos e requerem autenticação robusta."
@@ -422,9 +457,9 @@
     "Empresas de energia como Equinor e Skagerak Energi foram afetadas pelo incidente.",
     "Um atacante desconhecido procurou ativamente tokens de acesso e segredos de clientes."
    ],
-   "title_original": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Evidencia o risco de exploração de falhas em serviços em nuvem para roubar credenciais corporativas críticas.",
    "todo": "Atualize e aplique rapidamente os patches de segurança disponibilizados pela Microsoft para o Azure API Management."
@@ -444,9 +479,9 @@
     "Atacantes nas proximidades podem forçar a travagem inesperada de reboques.",
     "O problema cria riscos severos de segurança rodoviária e potenciais acidentes."
    ],
-   "title_original": "Elecbrakes Bluetooth Vulnerabilities Expose Trailers to Forced Braking",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Demonstra como vulnerabilidades em tecnologias sem fios em equipamentos físicos podem colocar vidas em risco.",
    "todo": "Consulte o fabricante para obter atualizações de firmware que corrijam as falhas de Bluetooth."
@@ -466,9 +501,9 @@
     "A empresa suspendeu temporariamente a negociação das ações na bolsa ASX.",
     "O ataque afetou de forma direta as operações mineiras locais."
    ],
-   "title_original": "Peninsula Energy Halts Trading After Cyber Incident Hits US Uranium Mine",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Ilustra como um incidente cibernético pode paralisar as operações e a atividade bolsista de uma empresa industrial.",
    "todo": "Implemente planos robustos de resposta a incidentes para mitigar rapidamente paralisações operacionais."
@@ -13704,50 +13739,6 @@
    "enriched": true,
    "why": "A priorização de alertas de segurança evita a fadiga das equipas e acelerta a remediação de ameaças críticas.",
    "todo": "Adote plataformas que centralizem e contextualizem alertas de segurança com base no risco real para o seu negócio."
-  },
-  {
-   "id": "7918b8a639b8200f",
-   "source": "Rapid7",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.rapid7.com/blog/post/ve-cve-2026-123007-critical-nginx-http-2-integer-underflow-leads-to-rce-fixed",
-   "published": "2026-11-18T13:56:42+00:00",
-   "title": "CVE-2026-123007: Vulnerabilidade Crítica de Integer Underflow no NGINX HTTP/2 permite Execução Remota de Código",
-   "summary": "Foi divulgada uma vulnerabilidade crítica de integer underflow no NGINX HTTP/2, identificada como CVE-2026-123007, com uma pontuação CVSSv4 de 9.2. A falha permite que um cliente remoto não autenticado provoque corrupção de memória e execução remota de código (RCE) com permissões do processo do trabalhador. A exploração exige o envio de um volume elevado de tráfego de rede para ter sucesso sob determinadas condições.",
-   "image": "https://images.contentstack.io/v3/assets/blte4f029e766e6b253/bltcbf09ec3af35e28e/6a15c63f08221ed5144dbf77/webinar-rapid7-logo.jpg",
-   "points": [
-    "A falha CVE-2026-123007 afeta o NGINX HTTP/2 com corrupção de memória e RCE.",
-    "Possui uma gravidade crítica com pontuação CVSSv4 de 9.2.",
-    "A exploração requer o envio de grandes volumes de tráfego de dados pela rede."
-   ],
-   "title_original": "CVE-2026-123007: Critical NGINX HTTP/2 Integer Underflow Leads to RCE (FIXED)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite que atacantes não autenticados executem código arbitrário em servidores vulneráveis, comprometendo toda a infraestrutura web.",
-   "todo": "Atualize imediatamente os servidores NGINX afetados para as versões corrigidas disponibilizadas pelos fornecedores."
-  },
-  {
-   "id": "959698f1939d3a92",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/russia-hockey-cyberattack-championships",
-   "published": "2026-11-18T13:45:00+00:00",
-   "title": "Federação Internacional de Hóquei no Gelo sofre desaturação de site devido a disputa sobre a Rússia",
-   "summary": "A Federação Internacional de Hóquei no Gelo (IIHF) confirmou ter sido alvo de um ciberataque que afetou o seu portal oficial. Os atacantes alteraram a página principal para exibir uma mensagem pró-russa. O ataque ocorreu no contexto de um diferendo relacionado com a exclusão da Rússia de competições internacionais.",
-   "image": "https://cms.therecord.media/uploads/Hockey_stick_669de98496.jpg",
-   "points": [
-    "Website da IIHF foi alvo de um ataque de desaturação.",
-    "Página inicial foi substituída por mensagem pró-russa.",
-    "Motivação ligada à exclusão do país de competições desportivas."
-   ],
-   "title_original": "Ice hockey governing body website defaced by hackers amid dispute over Russia's exclusion",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Disputas geopolíticas resultam frequentemente em ataques de desaturação e hacktivismo contra alvos institucionais.",
-   "todo": "Proteja os portais web com autenticação robusta, firewalls de aplicações web (WAF) e monitorização de integridade."
   }
  ]
 }

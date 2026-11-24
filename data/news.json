@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T09:24:51.984426+00:00",
+ "updated": "2026-11-24T09:46:28.720373+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -34,7 +34,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -59,7 +59,7 @@
   {
    "source": "CISA Advisories",
    "ok": true,
-   "added": 20
+   "added": 21
   },
   {
    "source": "CISA Alertas (KEV)",
@@ -114,7 +114,7 @@
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 6
+   "added": 7
   },
   {
    "source": "TechCrunch Security",
@@ -224,7 +224,7 @@
   {
    "source": "NCSC UK",
    "ok": true,
-   "added": 2
+   "added": 3
   },
   {
    "source": "CERT-EU",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 338,
-  "unenriched": 211,
+  "done": 36,
+  "pending": 307,
+  "unenriched": 179,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -320,21 +320,96 @@
  },
  "items": [
   {
+   "id": "914e107a13d7e4ad",
+   "source": "NCSC UK",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.ncsc.gov.uk/blogs/introducing-cornerstone-delivering-external-services-for-the-ncsc",
+   "published": "2026-11-24T12:00:00+00:00",
+   "title": "Apresentação do CORNERSTONE: prestação de serviços externos para o NCSC",
+   "summary": "O NCSC está a recolher feedback junto da indústria sobre um novo modelo de entrega para a modernização dos seus serviços externos de cibersegurança. Esta iniciativa visa recolher opiniões e perspetivas de mercado para melhorar a eficiência operacional e a resposta face aos desafios digitais atuais. O impacto foca-se na otimização da prestação de serviços de segurança prestados a entidades externas.",
+   "image": null,
+   "points": [
+    "O NCSC procura feedback da indústria.",
+    "Novo modelo para serviços externos de cibersegurança.",
+    "Objetivo de modernizar e otimizar processos.",
+    "Impacto na melhoria da eficiência operacional."
+   ],
+   "title_original": "Introducing CORNERSTONE: delivering external services for the NCSC",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite modernizar os serviços de cibersegurança externos com base na experiência da indústria.",
+   "todo": ""
+  },
+  {
+   "id": "8f5a536245749409",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/24/globetopper-breach-gift-cards/",
+   "published": "2026-11-24T09:33:33+00:00",
+   "title": "GlobeTopper enfrenta perdas de receitas até 2,5 milhões de dólares após roubo de 70.000 dólares em cartões oferta",
+   "summary": "Piratas informáticos violaram a plataforma digital B2B GlobeTopper e roubaram credenciais de API de clientes empresariais, resultando no resgate não autorizado de cartões oferta avaliados em cerca de 70.000 dólares. A empresa mãe iQSTEL reportou à SEC que a intrusão foi detetada a 22 de outubro, levando à suspensão da plataforma no dia seguinte após mais atividade não autorizada. O impacto traduz-se em potenciais perdas de receitas que podem atingir os 2,5 milhões de dólares para a empresa.",
+   "image": null,
+   "points": [
+    "Alvo: Plataforma B2B GlobeTopper.",
+    "O quê: Roubo de credenciais de API e resgate de 70.000 dólares em cartões oferta.",
+    "Como: Violação de sistemas e acesso não autorizado.",
+    "Impacto: Potenciais perdas de receitas até 2,5 milhões de dólares."
+   ],
+   "title_original": "GlobeTopper faces up to $2.5 million in lost revenue after hackers steal $70,000 in gift cards",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como o roubo de credenciais de API pode causar danos financeiros diretos e disrupção operacional grave.",
+   "todo": "Proteja as APIs com autenticação robusta e monitorize continuamente acessos e pedidos anómalos."
+  },
+  {
+   "id": "5f954aa8e8ae11b7",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/researchers-new-ai-attack-path/",
+   "published": "2026-11-24T09:30:00+00:00",
+   "title": "Investigadores descobrem novo vetor de ataque em IA: instruções de agentes",
+   "summary": "A empresa Ox Security emitiu um aviso alertando que os agentes de inteligência artificial estão a ser manipulados sem a necessidade de recorrer a malware executável. Esta nova técnica explora as instruções atribuídas aos próprios agentes para subverter o seu comportamento normal. O impacto reside no risco acrescido de manipulação de sistemas autónomos de IA utilizados pelas organizações.",
+   "image": null,
+   "points": [
+    "Alvo: Agentes de inteligência artificial.",
+    "O quê: Manipulação através de instruções sem malware executável.",
+    "Quem: Avisado pela Ox Security.",
+    "Impacto: Risco de desvio de comportamento em sistemas autónomos."
+   ],
+   "title_original": "Researchers Find a New AI Attack Path: Agent Instructions",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia que as vulnerabilidades em IA vão além do código malicioso tradicional, afetando a lógica dos agentes.",
+   "todo": "Valide e restrinja estritamente as instruções e entradas fornecidas aos agentes de IA."
+  },
+  {
    "id": "d0b87a53ea5742d4",
    "source": "Help Net Security",
    "region": "EU",
    "lang": "en",
    "link": "https://www.helpnetsecurity.com/2026/11/24/anthropic-claude-ship-beta/",
    "published": "2026-11-24T09:02:02+00:00",
-   "title": "Claude Ship gives AI a seat on both sides of code review",
-   "summary": "Anthropic launched Claude Ship in beta, a suite of agents that reviews pull requests, fixes issues and approves changes permitted by a team’s policy. Teams decide where it runs and which changes require human approval. Anthropic said Claude writes most of the code on its Claude Code team. With Claude Ship, the company aims to help teams “ship code as fast as teams write it.” How Claude Ship works Claude Ship combines Code Review, which … More →",
+   "title": "Claude Ship dá à IA um lugar em ambos os lados da revisão de código",
+   "summary": "A Anthropic lançou em versão beta o Claude Ship, um conjunto de agentes de IA criado para rever pull requests, corrigir problemas e aprovar alterações de código permitidas pelas políticas de cada equipa. As organizações mantêm o controlo sobre onde a ferramenta corre e que ações exigem aprovação humana. O objetivo da empresa é ajudar as equipas a desenvolver software com maior rapidez.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Anthropic lançou o Claude Ship em beta.",
+    "O quê: Conjunto de agentes para revisão e correção de código.",
+    "Como: Automação controlada por políticas definidas pelas equipas.",
+    "Impacto: Aceleração do ciclo de desenvolvimento de software."
+   ],
+   "title_original": "Claude Ship gives AI a seat on both sides of code review",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "Anthropic launched Claude Ship in beta, a suite of agents that reviews pull requests, fixes issues and approves changes permitted by a team’s policy. Teams decide where it runs and which changes require human approval. Anthropic said Claude writes most of the code on its Claude Code team. With Claude Ship, the company aims to help teams “ship code as fast as teams write it.” How Claude Ship works Claude Ship combines Code Review, which … More →"
+   "translated": true,
+   "enriched": true,
+   "why": "Automatiza tarefas de revisão de código, aumentando a velocidade de desenvolvimento sob supervisão humana.",
+   "todo": "Garanta que todas as alterações automatizadas de código mantêm validação e aprovação humana obrigatória."
   },
   {
    "id": "37000e2774a3f896",
@@ -344,14 +419,20 @@
    "link": "https://tek.sapo.pt/extras/site-do-dia/artigos/esquema-de-certificacao-de-ciberseguranca-em-consulta-publica/",
    "published": "2026-11-24T09:01:49+00:00",
    "title": "Esquema de certificação de cibersegurança em consulta pública",
-   "summary": "O Centro Nacional de Cibersegurança colocou em consulta pública uma versão, ainda preliminar, do esquemaa de certificação do Quadro Nacional de Referência para a Cibersegurança, uma peça importante para a adaptação à NIS2.",
+   "summary": "O Centro Nacional de Cibersegurança colocou em consulta pública uma versão preliminar do esquema de certificação integrado no Quadro Nacional de Referência para a Cibersegurança. Esta medida constitui um elemento fundamental para apoiar a adaptação das organizações à diretiva NIS2. O impacto direto reflete-se no alinhamento regulatório nacional com as normas europeias de segurança.",
    "image": null,
-   "points": [],
+   "points": [
+    "Quem: Centro Nacional de Cibersegurança.",
+    "O quê: Consulta pública sobre o esquema de certificação.",
+    "Como: Disponibilização de versão preliminar do Quadro Nacional de Referência.",
+    "Impacto: Apoio à adaptação regulatória à diretiva NIS2."
+   ],
    "title_original": null,
    "category": "Ataque/APT",
    "translated": false,
-   "enriched": false,
-   "raw": "O Centro Nacional de Cibersegurança colocou em consulta pública uma versão, ainda preliminar, do esquemaa de certificação do Quadro Nacional de Referência para a Cibersegurança, uma peça importante para a adaptação à NIS2."
+   "enriched": true,
+   "why": "É crucial para preparar as organizações portuguesas para os novos requisitos legais da diretiva NIS2.",
+   "todo": "Acompanhe os processos de consulta pública e prepare a sua organização para os futuros requisitos de certificação."
   },
   {
    "id": "602d63e2c253f86c",
@@ -13667,72 +13748,6 @@
    "enriched": true,
    "why": "Ajuda as organizações a selecionarem fornecedores de pentesting de IA seguros e verdadeiramente eficazes.",
    "todo": "Analise rigorosamente a cobertura e a segurança de produção dos fornecedores de IA antes de os contratar."
-  },
-  {
-   "id": "ddb3ea43dd74220f",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview/",
-   "published": "2026-11-18T12:14:23+00:00",
-   "title": "Microsoft Retira a Plataforma de Segurança Agentic Perception do Estado de Pré-visualização",
-   "summary": "A Microsoft disponibilizou de forma geral quatro agentes de equipa azul e o agente Recon, integrados na sua plataforma de segurança. Esta alteração significa que estas ferramentas deixam o estado de pré-visualização para passarem a estar acessíveis aos utilizadores. Em simultâneo, outras funcionalidades associadas, como integrações e proteção contra vulnerabilidades, continuam ainda em fase de pré-visualização. Com esta mudança, a empresa reforça o portefólio de ferramentas defensivas baseadas em agentes.",
-   "image": null,
-   "points": [
-    "Quatro agentes defensivos e o agente Recon ficaram geralmente disponíveis.",
-    "As ferramentas passam a integrar oficialmente as soluções de segurança da Microsoft.",
-    "As integrações e a proteção contra vulnerabilidades continuam em pré-visualização."
-   ],
-   "title_original": "Microsoft Takes Perception Agentic Security Platform Out of Preview",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Disponibiliza novas ferramentas defensivas baseadas em agentes para melhorar a segurança das organizações.",
-   "todo": "Consulte a documentação da Microsoft para adotar e testar os novos agentes de segurança disponíveis."
-  },
-  {
-   "id": "6352ff872275d62b",
-   "source": "Schneier on Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html",
-   "published": "2026-11-18T12:05:35+00:00",
-   "title": "França Acusa o Irão pelo Ciberataque aos Frigoríficos",
-   "summary": "Agências de inteligência dos Estados Unidos atribuíram com baixa confiança ao Irão a responsabilidade por ataques cibernéticos ocorridos em solo francês. Uma avaliação de baixa confiança indica que os dados disponíveis são fragmentados, podendo a conclusão alterar-se com novas informações. As investigações apontam o Estado iraniano de forma genérica, sem identificar um grupo específico, como a Guarda Revolucionária. Além do caso em França, as autoridades suspeitam que o Irão esteja associado a incidentes semelhantes noutros países europeus.",
-   "image": null,
-   "points": [
-    "Serviços secretos norte-americanos associam o Irão a ataques cibernéticos em França.",
-    "A avaliação é de baixa confiança devido à fragmentação inicial dos dados.",
-    "O governo iraniano também é suspeito de outros ataques semelhantes na Europa."
-   ],
-   "title_original": "France Is Blaming Iran for the Fridge Cyberattack",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Revela potenciais operações cibernéticas estatais direcionadas a infraestruturas e equipamentos na Europa.",
-   "todo": ""
-  },
-  {
-   "id": "2df0fcea5ad6b106",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/ciso-conversations-patti-degnan-part-of-the-job-is-deciding-what-not-to-do/",
-   "published": "2026-11-18T12:00:00+00:00",
-   "title": "Conversas com CISO: Patti Degnan – Parte do Trabalho é Decidir O Que Não Fazer",
-   "summary": "Patti Degnan assumiu o cargo de CISO na empresa de segurança de endpoints Glow após ter enfrentado o roubo da sua própria identidade. Este acontecimento pessoal marcou o ponto de partida para o seu percurso na liderança da cibersegurança. A experiência destaca os desafios diários enfrentados pelos responsáveis de segurança na gestão de prioridades. O testemunho ilustra como trajetórias individuais moldam profissionais na área da proteção digital.",
-   "image": null,
-   "points": [
-    "Patti Degnan sofreu um roubo de identidade que impulsionou a sua carreira.",
-    "Assumiu a posição de CISO na empresa de segurança Glow.",
-    "O trabalho de liderança em segurança exige focar o que realmente importa."
-   ],
-   "title_original": "CISO Conversations: Patti Degnan – Part of the Job Is Deciding What Not to Do",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Ilumina a perspetiva de liderança e a tomada de decisões críticas na gestão de cibersegurança.",
-   "todo": "Priorize iniciativas de segurança críticas e aprenda a gerir eficazmente os recursos disponíveis."
   }
  ]
 }

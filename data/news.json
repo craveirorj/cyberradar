@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T11:04:58.878836+00:00",
+ "updated": "2026-11-24T11:28:11.093802+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "The Record",
@@ -104,7 +104,7 @@
   {
    "source": "CyberScoop",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Cybersecurity Dive",
@@ -129,7 +129,7 @@
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 7
+   "added": 8
   },
   {
    "source": "Schneier on Security",
@@ -149,7 +149,7 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 8
+   "added": 9
   },
   {
    "source": "Microsoft Security Blog",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 11
+   "added": 12
   },
   {
    "source": "ACSC Austrália",
@@ -309,12 +309,11 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 342,
-  "unenriched": 215,
+  "done": 108,
+  "pending": 236,
+  "unenriched": 111,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
@@ -365,6 +364,50 @@
    "todo": "Atualize regularmente os sistemas e adote medidas de monitorização contínua para detetar comportamentos anómalos."
   },
   {
+   "id": "a36fd360c1b8f304",
+   "source": "CyberScoop",
+   "region": "US",
+   "lang": "en",
+   "link": "https://cyberscoop.com/ot-security-post-quantum-cryptography-op-ed/",
+   "published": "2026-11-24T11:00:00+00:00",
+   "title": "Tomorrow’s quantum threat is today’s open door",
+   "summary": "Atacantes comprometeram sistemas de refrigeração em supermercados de vários países europeus e bancos de sangue em França, colocando o foco nas falhas atuais da tecnologia operacional (OT). Os invasores exploraram interfaces administrativas expostas à internet, falhas conhecidas e credenciais predefinidas, ignorando a necessidade de quebrar encriptação avançada. Especialistas alertam que, embora a criptografia pós-quântica seja importante, as organizações industriais e de infraestruturas devem primeiro corrigir as vulnerabilidades básicas e acessíveis que já enfrentam hoje.",
+   "image": null,
+   "points": [
+    "Atacantes manipularam sistemas de refrigeração em supermercados e bancos de sangue europeus.",
+    "A intrusão ocorreu através de interfaces administrativas expostas, falhas conhecidas e passwords por omissão.",
+    "O incidente demonstra que a tecnologia operacional sofre de falhas básicas urgentes de segurança."
+   ],
+   "title_original": "Tomorrow’s quantum threat is today’s open door",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que as organizações devem corrigir falhas básicas atuais em vez de focarem apenas em ameaças quânticas futuras.",
+   "todo": "Remova interfaces de administração expostas diretamente à internet e altere todas as palavras-passe predefinidas."
+  },
+  {
+   "id": "4625e961d860c845",
+   "source": "WIRED Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.wired.com/story/3-billion-usernames-passwords-and-documents-leaked-online/",
+   "published": "2026-11-24T11:00:00+00:00",
+   "title": "Database Leaks Expose 3.5 Billion Usernames, Passwords, and Documents",
+   "summary": "Duas bases de dados desprotegidas expuseram informações altamente confidenciais pertencentes a centenas de milhões de pessoas. O material comprometido inclui dados críticos, como nomes de utilizador e palavras-passe, que concedem a potenciais atacantes acesso total à vida digital das vítimas. Este incidente destaca os perigos severos associados à falta de proteção e salvaguarda em bases de dados acessíveis.",
+   "image": "https://media.wired.com/photos/6b04b219ef7c9c5fad5ca15d/master/pass/Security_3.5%20Billion%20Usernames,%20Passwords,%20and%20Documents%20Leaked%20Online_v1.jpg",
+   "points": [
+    "Duas bases de dados sem proteção expuseram dados de centenas de milhões de utilizadores.",
+    "Foram divulgados nomes de utilizador, palavras-passe e documentos sensíveis.",
+    "A fuga de informação pode permitir aos atacantes assumir o controlo da vida digital das vítimas."
+   ],
+   "title_original": "Database Leaks Expose 3.5 Billion Usernames, Passwords, and Documents",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Sublinha o perigo crítico de deixar bases de dados sem autenticação ou medidas de segurança adequadas.",
+   "todo": "Garanta que todas as bases de dados e repositórios de informação estão devidamente protegidos e requerem autenticação robusta."
+  },
+  {
    "id": "9436fc5b47f7d00e",
    "source": "The Hacker News",
    "region": "INT",
@@ -372,14 +415,19 @@
    "link": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html",
    "published": "2026-11-24T10:44:49+00:00",
    "title": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
-   "summary": "Norway's National Security Authority (NSM) has disclosed that it became aware of a security vulnerability in Microsoft's Azure API Management (APIM) that has affected multiple businesses in the country, including energy companies Equinor and Skagerak Energi. \"An unknown actor has been actively looking for access tokens, secrets, and named values ​​in APIM,\" NSM said. \"It is still uncertain how",
+   "summary": "A Autoridade Nacional de Segurança da Noruega revelou uma falha de segurança no Azure API Management (APIM) da Microsoft, que afetou várias empresas locais, incluindo grandes empresas de energia. Um intervente desconhecido aproveitou-se da vulnerabilidade para procurar ativamente tokens de acesso, segredos e valores nomeados dentro da plataforma. Em resposta, a Microsoft procedeu à correção da vulnerabilidade clássica do APIM.",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSM2FAnf9UEb3Do4v-r8AEBpoI8byXOrHgng-eRjEyudSf0hiKMpymmDiK_NLTxYuzXdtrWvMrBzY9qmLqDo31r3JOpVefOQxLE77gdkoOAYMkCK__-Bc-AJoWg-8nEOEVjcY6SswkzLbCfYl6kK9clg6xXw3xginWqIwnMxBUaS6wgPKVVwXZNhZA5G85/s1600/azure-ms.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Autoridade de segurança norueguesa detetou falha no Azure API Management da Microsoft.",
+    "Empresas de energia como Equinor e Skagerak Energi foram afetadas pelo incidente.",
+    "Um atacante desconhecido procurou ativamente tokens de acesso e segredos de clientes."
+   ],
+   "title_original": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Norway's National Security Authority (NSM) has disclosed that it became aware of a security vulnerability in Microsoft's Azure API Management (APIM) that has affected multiple businesses in the country, including energy companies Equinor and Skagerak Energi. \"An unknown actor has been actively looking for access tokens, secrets, and named values ​​in APIM,\" NSM said. \"It is still uncertain how"
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia o risco de exploração de falhas em serviços em nuvem para roubar credenciais corporativas críticas.",
+   "todo": "Atualize e aplique rapidamente os patches de segurança disponibilizados pela Microsoft para o Azure API Management."
   },
   {
    "id": "15b8b568346dad03",
@@ -389,14 +437,19 @@
    "link": "https://www.securityweek.com/elecbrakes-bluetooth-vulnerabilities-expose-trailers-to-forced-braking/",
    "published": "2026-11-24T10:44:44+00:00",
    "title": "Elecbrakes Bluetooth Vulnerabilities Expose Trailers to Forced Braking",
-   "summary": "Critical Bluetooth flaws in Elecbrakes controllers could let nearby attackers force trailer braking, potentially causing accidents.",
+   "summary": "Controladores Elecbrakes contêm falhas críticas de segurança via Bluetooth que permitem a atacantes próximos forçar a travagem de reboques à distância. Esta vulnerabilidade pode colocar em risco a segurança rodoviária e provocar acidentes graves na estrada. O problema afeta diretamente a tecnologia de comunicação sem fios destes dispositivos de controlo.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Detetadas falhas críticas de Bluetooth em controladores Elecbrakes.",
+    "Atacantes nas proximidades podem forçar a travagem inesperada de reboques.",
+    "O problema cria riscos severos de segurança rodoviária e potenciais acidentes."
+   ],
+   "title_original": "Elecbrakes Bluetooth Vulnerabilities Expose Trailers to Forced Braking",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Critical Bluetooth flaws in Elecbrakes controllers could let nearby attackers force trailer braking, potentially causing accidents."
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra como vulnerabilidades em tecnologias sem fios em equipamentos físicos podem colocar vidas em risco.",
+   "todo": "Consulte o fabricante para obter atualizações de firmware que corrijam as falhas de Bluetooth."
   },
   {
    "id": "20534b25c7da6bc5",
@@ -406,14 +459,19 @@
    "link": "https://www.securityweek.com/peninsula-energy-halts-trading-after-cyber-incident-hits-us-uranium-mine/",
    "published": "2026-11-24T10:35:04+00:00",
    "title": "Peninsula Energy Halts Trading After Cyber Incident Hits US Uranium Mine",
-   "summary": "The company told the ASX that a cybersecurity incident at its Wyoming uranium project would temporarily affect operations.",
+   "summary": "A empresa Peninsula Energy suspendeu a negociação das suas ações na bolsa ASX após ser vítima de um incidente de cibersegurança. O ataque afetou diretamente as operações do seu projeto de mineração de urânio localizado no estado norte-americano de Wyoming. Este acontecimento ilustra o impacto operacional direto que os ataques informáticos podem causar em empresas do setor industrial.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Peninsula Energy sofreu um incidente cibernético no seu projeto de urânio no Wyoming.",
+    "A empresa suspendeu temporariamente a negociação das ações na bolsa ASX.",
+    "O ataque afetou de forma direta as operações mineiras locais."
+   ],
+   "title_original": "Peninsula Energy Halts Trading After Cyber Incident Hits US Uranium Mine",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "The company told the ASX that a cybersecurity incident at its Wyoming uranium project would temporarily affect operations."
+   "translated": true,
+   "enriched": true,
+   "why": "Ilustra como um incidente cibernético pode paralisar as operações e a atividade bolsista de uma empresa industrial.",
+   "todo": "Implemente planos robustos de resposta a incidentes para mitigar rapidamente paralisações operacionais."
   },
   {
    "id": "0dfc97470a390126",
@@ -13690,50 +13748,6 @@
    "enriched": true,
    "why": "Disputas geopolíticas resultam frequentemente em ataques de desaturação e hacktivismo contra alvos institucionais.",
    "todo": "Proteja os portais web com autenticação robusta, firewalls de aplicações web (WAF) e monitorização de integridade."
-  },
-  {
-   "id": "23c332bbba47ed24",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/github-security-advisory-av26-1172",
-   "published": "2026-11-18T13:40:25+00:00",
-   "title": "Aviso de segurança do GitHub (AV26-1172)",
-   "summary": "O GitHub emitiu um aviso de segurança referente a vulnerabilidades detetadas em várias versões do GitHub Enterprise Server. As falhas afetam as linhas de produtos 3.19, 3.20, 3.21 e 3.22 em compilações anteriores a versões específicas corrigidas. Os centros de cibersegurança recomendam aos administradores a aplicação imediata das atualizações disponíveis.",
-   "image": null,
-   "points": [
-    "GitHub emite alerta de segurança AV26-1172.",
-    "Vulnerabilidades afetam o GitHub Enterprise Server.",
-    "Versões anteriores a 3.19.16, 3.20.12, 3.21.10 e 3.22.5 estão em risco."
-   ],
-   "title_original": "GitHub security advisory (AV26-1172)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Vulnerabilidades em servidores corporativos de gestão de código podem expor projetos confidenciais e credenciais de acesso.",
-   "todo": "Atualize o GitHub Enterprise Server para as versões corrigidas recomendadas no boletim de segurança."
-  },
-  {
-   "id": "dfcd48a830ee2555",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/russian-apt-poses-as-employee-of-hacked-firm-to-breach-another-us-organization/",
-   "published": "2026-11-18T13:33:47+00:00",
-   "title": "Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization",
-   "summary": "O grupo russo Star Blizzard utilizou dados e identidades roubadas no final de 2025 para realizar ataques de phishing contra uma organização norte-americana. Ao fazer-se passar por um colaborador de uma empresa previamente comprometida, o grupo conseguiu infiltrar-se com sucesso no novo alvo. Esta técnica de engenharia social aprofundada aumenta a eficácia das intrusões.",
-   "image": null,
-   "points": [
-    "Grupo Star Blizzard usou identidades roubadas em ataques.",
-    "Atacantes fingiram ser colaboradores de uma empresa comprometida.",
-    "Organização nos EUA foi alvo de campanhas de phishing direcionadas."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "O roubo de identidades corporativas legitima campanhas de phishing e facilita o acesso a redes empresariais.",
-   "todo": "Implemente autenticação multifator resistente a phishing e valide identidades em pedidos atípicos de colaboradores."
   }
  ]
 }

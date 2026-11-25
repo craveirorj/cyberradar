@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T21:47:36.296315+00:00",
+ "updated": "2026-11-25T22:08:12.411083+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -119,7 +119,7 @@
   {
    "source": "TechCrunch Security",
    "ok": true,
-   "added": 5
+   "added": 6
   },
   {
    "source": "Ars Technica Security",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -309,11 +309,12 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 185,
-  "unenriched": 87,
+  "done": 108,
+  "pending": 199,
+  "unenriched": 99,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
@@ -333,9 +334,9 @@
     "Como: Através do acesso indevido à conta do funcionário no GitHub.",
     "Impacto: Roubo de dados de clientes."
    ],
-   "title_original": "1Password customer data stolen after employee GitHub account breach",
+   "title_original": null,
    "category": "Fuga de dados",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra que a segurança de contas individuais de colaboradores pode comprometer toda a infraestrutura e os dados dos clientes de uma empresa.",
    "todo": "Ative a autenticação multifator (MFA) em todas as contas de colaboradores e monitorize acessos anómalos a repositórios de código."
@@ -378,9 +379,9 @@
     "Como: Através da integração rápida do Artex nos seus kits de ferramentas.",
     "Impacto: Aumento da capacidade de ataque destes grupos."
    ],
-   "title_original": "Microsoft: China’s Salt Typhoon hackers are using Artex",
+   "title_original": null,
    "category": "Fuga de dados",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Evidencia como os atacantes estatais estão a adotar ferramentas de inteligência artificial para otimizar as suas operações maliciosas.",
    "todo": ""
@@ -406,6 +407,29 @@
    "enriched": true,
    "why": "Ajuda a prevenir ataques direcionados a falhas ativamente exploradas em software empresarial.",
    "todo": "Consulte os avisos de segurança da Mitel e aplique imediatamente os patches de atualização disponíveis."
+  },
+  {
+   "id": "14c2f279b50e82d7",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/204004/hacking/switzerland-confirms-first-ai-agent-cyberattacks-on-local-organisations.html",
+   "published": "2026-11-25T21:06:55+00:00",
+   "title": "Suíça Confirma Primeiros Ciberataques com Agentes de IA em Organizações Locais",
+   "summary": "O Centro Nacional de Cibersegurança da Suíça (NCSC) registou os primeiros ciberataques assistidos por agentes de inteligência artificial contra operadores de infraestruturas críticas em pelo menos dois setores. Os agentes ofensivos automatizados procuraram falhas e senhas fracas, conseguindo comprometer com sucesso os sistemas informáticos de todas as vítimas conhecidas num curto espaço de tempo. Este fenómeno marca uma mudança significativa no panorama de ameaças, uma vez que a IA consegue reagir flexivelmente às defesas com intervenção humana limitada. As autoridades suíças instaram à correção urgente de sistemas expostos à internet no espaço de 24 horas.",
+   "image": null,
+   "points": [
+    "O NCSC da Suíça detetou ciberataques com agentes de IA em operadores de infraestruturas críticas.",
+    "Os atacantes usaram estruturas de IA para detetar vulnerabilidades e explorar sistemas rapidamente.",
+    "Todas as organizações visadas nestes incidentes viram os seus sistemas informáticos comprometidos.",
+    "As autoridades recomendam a correção imediata de falhas em sistemas expostos à internet."
+   ],
+   "title_original": "Switzerland Confirms First AI-Agent Cyberattacks on Local Organisations",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Estes incidentes demonstram que os atacantes estão a usar automação avançada com IA para comprometer infraestruturas críticas com rapidez e eficácia sem precedentes.",
+   "todo": "Atualize e corrija todos os sistemas expostos à internet nas primeiras 24 horas e reforce as políticas de gestão de palavras-passe."
   },
   {
    "id": "e333803fc6688746",
@@ -13750,28 +13774,6 @@
    "enriched": true,
    "why": "Permite antecipar as novas estratégias de segurança para ambientes em nuvem impulsionados por IA.",
    "todo": "Acompanhe as novidades e sessões do evento para alinhar a estratégia de segurança na cloud da sua organização."
-  },
-  {
-   "id": "df29d71aedcbd867",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
-   "published": "2026-11-19T22:25:42+00:00",
-   "title": "Piratas informáticos roubam dados de 1,6 milhões de clientes do SBC Medical Group",
-   "summary": "O SBC Medical Group reportou à entidade reguladora norte-americana SEC que sofreu dois incidentes de cibersegurança. Estas ocorrências resultaram na exposição de informações sensíveis de clientes e colaboradores. No total, os dados pessoais de 1,6 milhões de pessoas foram comprometidos. O impacto centra-se no risco de utilização indevida destas informações privadas.",
-   "image": null,
-   "points": [
-    "Incidente reportado pelo SBC Medical Group à SEC.",
-    "Dois ataques cibernéticos expuseram dados sensíveis.",
-    "1,6 milhões de pessoas afetadas com roubo de dados pessoais."
-   ],
-   "title_original": "Hackers steal data of 1.6 million SBC Medical Group customers",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia o risco massivo de exposição de dados em empresas do setor da saúde.",
-   "todo": "Monitore contas afetadas e reforce a vigilância contra tentativas de phishing direcionadas."
   }
  ]
 }

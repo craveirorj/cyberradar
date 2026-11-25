@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T20:07:27.950492+00:00",
+ "updated": "2026-11-25T20:25:09.149328+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -74,7 +74,7 @@
   {
    "source": "MS-ISAC (CIS)",
    "ok": true,
-   "added": 3
+   "added": 4
   },
   {
    "source": "BleepingComputer",
@@ -164,7 +164,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 5
+   "added": 4
   },
   {
    "source": "Cisco Talos",
@@ -309,16 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 48,
-  "pending": 259,
-  "unenriched": 157,
+  "done": 12,
+  "pending": 295,
+  "unenriched": 193,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting value: line 5 column 9 (char 126)",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "2c8d145c5c430942",
+   "source": "CSO Online",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.csoonline.com/article/4253329/broadcom-issues-fixes-for-23-new-vmware-flaws-three-critical.html",
+   "published": "2026-11-25T20:07:57+00:00",
+   "title": "Broadcom issues fixes for 23 new VMware flaws, three critical",
+   "summary": "A Broadcom lançou um aviso de segurança para corrigir quase duas dezenas de vulnerabilidades em produtos VMware, incluindo falhas críticas. Entre os problemas destaca-se uma vulnerabilidade de contorno de autenticação no vCenter, com a referência CVE-2026-123903 e pontuação máxima de gravidade. A exploração destas falhas pode permitir que atores maliciosos obtenham acesso não autorizado aos sistemas afetados. A empresa disponibilizou atualizações para mitigar estes riscos em vários componentes.",
+   "image": "https://www.csoonline.com/wp-content/uploads/2026/08/4211112-0-73786800-1787130145-shutterstock_2372690397.jpg?quality=50&strip=all",
+   "points": [
+    "A Broadcom corrigiu 23 vulnerabilidades em vários produtos VMware.",
+    "A falha mais grave é uma vulnerabilidade de autenticação no vCenter (CVE-2026-123903).",
+    "A exploração pode conceder a atacantes acesso não autorizado ao sistema."
+   ],
+   "title_original": "Broadcom issues fixes for 23 new VMware flaws, three critical",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes contornem a autenticação e acedam a sistemas VMware críticos se não forem aplicadas as correções.",
+   "todo": "Aplicar imediatamente as atualizações e patches de segurança disponibilizados pela Broadcom para o vCenter e restantes produtos afetados."
+  },
   {
    "id": "ee5ffc5da428be85",
    "source": "AWS Security Blog",
@@ -13751,28 +13773,6 @@
    "enriched": true,
    "why": "Protege infraestruturas críticas contra explorações ativas por grupos de ameaças persistentes avançadas.",
    "todo": "Atualize o vCenter de forma urgente, seguindo as recomendações e versões corrigidas indicadas pelo fabricante."
-  },
-  {
-   "id": "413190ef9a98fbe1",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/produto-e-review/chrome-vai-usar-capturas-de-tela-e-analise-por-ia-para-detectar-sites-fraudulentos/",
-   "published": "2026-11-19T21:00:00+00:00",
-   "title": "Chrome vai usar capturas de tela e análise por IA para detectar sites fraudulentos",
-   "summary": "O Google Chrome vai introduzir um novo mecanismo de segurança que combina capturas de tela com inteligência artificial para detetar sites fraudulentos. A funcionalidade analisa o aspeto visual das páginas para identificar tentativas de imitação de serviços legítimos de forma mais rápida. Esta camada adicional de proteção estará disponível para os utilizadores que ativarem a Navegação Segura Avançada.",
-   "image": "https://www.estadao.com.br/resizer/v2/7MNTDYX6M5LPRM4QAZT2YGVQQM.jpg?quality=80&auth=ab9e66bf220dae3b2a302e1ef100c22857b2afb9ac9f3349d8c03ef54a0b6878&width=710",
-   "points": [
-    "O Chrome vai usar capturas de tela e IA para identificar sites de phishing.",
-    "A tecnologia analisa elementos visuais para detetar imitações de marcas e serviços.",
-    "A ferramenta será restrita à opção de Navegação Segura Avançada."
-   ],
-   "title_original": null,
-   "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": true,
-   "why": "Melhora a deteção precoce de páginas de phishing sofisticadas e recém-criadas.",
-   "todo": "Ative a opção de Navegação Segura Avançada nas definições do seu navegador Chrome."
   }
  ]
 }

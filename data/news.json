@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T20:47:28.691806+00:00",
+ "updated": "2026-11-25T21:06:44.390564+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -144,7 +144,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Malwarebytes Labs",
@@ -309,16 +309,67 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 72,
-  "pending": 235,
-  "unenriched": 132,
+  "done": 48,
+  "pending": 261,
+  "unenriched": 158,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "Expecting property name enclosed in double quotes: line 88 column 1 (char 6668)"
   ]
  },
  "items": [
+  {
+   "id": "498617c6fd6a830d",
+   "source": "AWS Security Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://aws.amazon.com/blogs/security/secure-agentic-access-to-aws-with-enterprise-managed-authorization/",
+   "published": "2026-11-25T21:00:37+00:00",
+   "title": "Secure agentic access to AWS with Enterprise-Managed Authorization",
+   "summary": "AWS Sign-In is introducing support for Enterprise-Managed Authorization (EMA) using the Identity Assertion JWT Authorization Grant (ID-JAG), enabling organizations to securely authorize AI agents to access AWS MCP Server through their existing enterprise identity providers (IdPs), such as Okta. With this capability, organizations can centrally manage which applications can access Amazon Web Services (AWS) resources […]",
+   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/25/figure-1-enterprise-managed-authorization-flow-using-okta-aws-sign-in-and-aws-mcp-server.png",
+   "points": [],
+   "title_original": null,
+   "category": "IA",
+   "translated": false,
+   "enriched": false,
+   "raw": "AWS Sign-In is introducing support for Enterprise-Managed Authorization (EMA) using the Identity Assertion JWT Authorization Grant (ID-JAG), enabling organizations to securely authorize AI agents to access AWS MCP Server through their existing enterprise identity providers (IdPs), such as Okta. With this capability, organizations can centrally manage which applications can access Amazon Web Services (AWS) resources on behalf of their employees, without requiring users to manage additional long-term credentials or complete separate consent flows. In our previous blog post, Introducing OAuth Support for AWS MCP Server , we introduced OAuth-based authorization, enabling AI agents to securely access AWS MCP Server through interactive sign-in or programmatic authentication using AWS credentials. EMA builds on these capabilities by enabling organizations to authorize AI agents through their existing enterprise IdPs. Because authentication to an AI application doesn’t automatically grant access to AWS resources, EMA provides a way to authorize access across these separate trust domains while maintaining existing AWS Identity and Access Management (IAM) permissions. In this post, we explain how EMA and ID-JAG work with AWS Sign-In , discuss security best practices, and walk you through configuring Okta to authorize AI agents to access AWS MCP Server. How Enterprise-Managed Authorization works with AWS Sign-In Enterprise-Managed Authorization (EMA) is an extension of the Model Context Protocol (MCP) that enables organizations to centrally manage how AI applications access protected resources on behalf of employees. EMA uses the Identity Assertion JWT Authorization Grant (ID-JAG), an OAuth-based authorization grant that enables enterprise IdPs to authorize access across different"
+  },
+  {
+   "id": "dbfa2402c895a28e",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/fifa-data-breach-limited",
+   "published": "2026-11-25T20:40:00+00:00",
+   "title": "FIFA says hackers accessed ‘limited set of personal and business information’",
+   "summary": "The Switzerland-based international governing body for soccer says it's working with relevant authorities and law enforcement to investigate a recent breach.",
+   "image": "https://cms.therecord.media/uploads/fifa_sign_wc_final_202655407277531_c63256a9d9_o_77bc61d70a.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "The Switzerland-based international governing body for soccer says it's working with relevant authorities and law enforcement to investigate a recent breach."
+  },
+  {
+   "id": "a8e0a40252f0ca0e",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/25/1password-says-a-hacker-used-an-employees-github-account-to-take-customer-data/",
+   "published": "2026-11-25T20:37:39+00:00",
+   "title": "1Password says a hacker used an employee’s GitHub account to take customer data",
+   "summary": "Dave Barr reports: Malicious code sent through one employee’s corporate GitHub account made 1Password’s own backend services download customer records, the company said in an incident post on Wednesday, November 25. The intruder also copied source code from private repositories and got into the CI/CD system, the pipeline that builds and ships software. 1Password started...",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Dave Barr reports: Malicious code sent through one employee’s corporate GitHub account made 1Password’s own backend services download customer records, the company said in an incident post on Wednesday, November 25. The intruder also copied source code from private repositories and got into the CI/CD system, the pipeline that builds and ships software. 1Password started..."
+  },
   {
    "id": "2c8d145c5c430942",
    "source": "CSO Online",
@@ -13707,72 +13758,6 @@
    "enriched": true,
    "why": "Alerta para os riscos de segurança associados à cadeia de fornecimento e a fornecedores externos.",
    "todo": "Monitore contas bancárias e comunicações à procura de potenciais tentativas de phishing baseadas nos dados expostos."
-  },
-  {
-   "id": "8d134922cedfad57",
-   "source": "AWS Security Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://aws.amazon.com/blogs/security/introducing-the-new-aws-waf-security-analytics-dashboard/",
-   "published": "2026-11-19T21:10:43+00:00",
-   "title": "Introducing the new AWS WAF security analytics dashboard",
-   "summary": "A AWS lançou o painel de análises de segurança do AWS WAF, uma página global centralizada para investigar tráfego em pacotes de proteção e recursos regionais. A ferramenta permite analisar dados detalhados de pedidos sem requerer a criação de pipelines de registos próprios. O objetivo é ajudar as equipas de segurança a conter ameaças mais depressa e reduzir falsos positivos.",
-   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/18/Figure1-SecurityAnalyticsDashboard.png",
-   "points": [
-    "Lançamento do painel de análises de segurança global para o AWS WAF.",
-    "Permite investigar tráfego e picos em todos os recursos e regiões.",
-    "Ajuda a conter ameaças rapidamente e a minimizar falsos positivos."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Facilita a monitorização e a resposta rápida a incidentes de segurança na cloud sem complexidade adicional.",
-   "todo": "Aceda à consola AWS WAF e configure o novo painel de análises de segurança para otimizar a gestão de tráfego."
-  },
-  {
-   "id": "9346f1ad67796351",
-   "source": "CSO Online",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.csoonline.com/article/4251012/critical-flaw-in-vmware-vcenter-allows-authentication-bypass-2.html",
-   "published": "2026-11-19T21:07:25+00:00",
-   "title": "Critical flaw in VMware vCenter allows authentication bypass",
-   "summary": "A Broadcom corrigiu cinco vulnerabilidades em produtos VMware, destacando-se uma falha crítica de contorno de autenticação no VMware vCenter com gravidade máxima. A vulnerabilidade, rastreada como CVE-2026-123890, permite a atacantes com acesso de rede obterem acesso não autorizado ao sistema. A empresa emitiu versões corrigidas e sublinha que não existem soluções alternativas disponíveis.",
-   "image": "https://www.csoonline.com/wp-content/uploads/2026/08/4211112-0-73786800-1787130145-shutterstock_2372690397.jpg?quality=50&strip=all",
-   "points": [
-    "A Broadcom corrigiu uma falha crítica de contorno de autenticação no vCenter.",
-    "CVE-2026-123890 tem uma pontuação de gravidade de 9.8 em 10.",
-    "Atacantes com acesso de rede podem obter acesso administrativo não autorizado."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Evita o acesso total e não autorizado de intrusos aos sistemas de gestão VMware afetados.",
-   "todo": "Aplique imediatamente as atualizações de segurança fornecidas pela Broadcom para as versões afetadas."
-  },
-  {
-   "id": "71189ac539a86087",
-   "source": "Rapid7",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.rapid7.com/blog/post/etr-cve-2026-123890-critical-authentication-bypass-vmware-vcenter",
-   "published": "2026-11-19T21:06:24+00:00",
-   "title": "CVE-2026-123890: Critical Authentication Bypass in VMware vCenter",
-   "summary": "A Broadcom publicou um alerta de segurança para corrigir a vulnerabilidade crítica CVE-2026-123890 no VMware vCenter. A falha afeta o componente VMware Directory Service e permite que atacantes sem credenciais obtenham acesso de Administrador. A Mandiant confirmou a exploração ativa desta falha por um grupo associado ao estado chinês desde setembro de 2026.",
-   "image": "https://images.contentstack.io/v3/assets/blte4f029e766e6b253/blt65a432ba319f4043/6846abddaf18306debe6cf4d/ETR.webp",
-   "points": [
-    "Vulnerabilidade CVE-2026-123890 afeta o VMware Directory Service no vCenter.",
-    "Permite contornar a autenticação sem credenciais e obter privilégios de Administrador.",
-    "Grupo estatal chinês ARMORY CASTLE explorou ativamente a falha em ambiente real."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Protege infraestruturas críticas contra explorações ativas por grupos de ameaças persistentes avançadas.",
-   "todo": "Atualize o vCenter de forma urgente, seguindo as recomendações e versões corrigidas indicadas pelo fabricante."
   }
  ]
 }

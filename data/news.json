@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T05:06:36.912074+00:00",
+ "updated": "2026-11-25T05:27:07.050754+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 115,
-  "pending": 213,
-  "unenriched": 92,
+  "done": 119,
+  "pending": 210,
+  "unenriched": 89,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
@@ -339,6 +339,52 @@
    "enriched": true,
    "why": "Mostra como a evolução das ameaças por IA está a alterar a sustentabilidade e os critérios dos seguros de cibersegurança.",
    "todo": "Avalie o investimento em ferramentas de defesa baseadas em inteligência artificial para cumprir os novos critérios de risco das seguradoras."
+  },
+  {
+   "id": "5ac4f0994107ce75",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/virtualization/2026/11/25/this-could-mess-with-thanksgiving-says-vmware-as-it-drops-third-critical-patch-bundle-in-a-week/5312017",
+   "published": "2026-11-25T05:15:08+00:00",
+   "title": "VMware emite o terceiro lote de correções críticas numa semana",
+   "summary": "A VMware lançou um novo aviso de segurança para corrigir quatro falhas críticas e um total de 23 problemas. Entre as vulnerabilidades destaca-se a CVE-2026-123903, com uma pontuação de 9.8, que permite contornar a autenticação e obter acesso não autorizado ao vCenter. Outras falhas incluem problemas de execução de código em anfitriões ESX e uma fuga de sandbox em hipervisores de desktop. A empresa reconhece que a altura escolhida para o lançamento, próxima de um feriado, não é ideal devido aos riscos associados.",
+   "image": "https://image.theregister.com/?imageId=225492&width=800",
+   "points": [
+    "Quem: A VMware emitiu avisos de segurança para utilizadores de vCenter e ESX.",
+    "O quê: Foram corrigidas quatro falhas críticas, incluindo a CVE-2026-123903 com pontuação 9.8.",
+    "Como: As vulnerabilidades permitem burlar autenticação, executar código ou escapar de sandboxes.",
+    "Impacto: Acesso não autorizado a ferramentas de gestão e risco operacional."
+   ],
+   "title_original": "This could mess with Thanksgiving, says VMware as it drops third critical patch bundle in a week",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite acesso não autorizado a sistemas críticos de gestão e execução de código por atacantes.",
+   "todo": "Instale as atualizações de software fornecidas e desative o controlador USB nos produtos afetados quando aplicável."
+  },
+  {
+   "id": "0b94ce10b8ce9ccb",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/25/mcafee-holiday-shopping-scams-report/",
+   "published": "2026-11-25T05:00:00+00:00",
+   "title": "Perdas com burlas festivas obrigam vítimas a cortar em bens essenciais",
+   "summary": "A percentagem de pessoas nos Estados Unidos que afirmam ter sido vítimas de fraudes nas compras festivas duplicou quase em comparação com o ano anterior, subindo para 42%. Paralelamente, a confiança dos consumidores na capacidade de detetar esquemas online diminuiu de forma acentuada. A investigação revela que a população está menos certa de conseguir identificar este tipo de burlas atempadamente. Esta situação tem um impacto económico direto, forçando algumas das vítimas a reduzir despesas em bens essenciais.",
+   "image": null,
+   "points": [
+    "Quem: Consumidores norte-americanos afetados por fraudes de compras.",
+    "O quê: Aumento acentuado para 42% nas vítimas de burlas festivas.",
+    "Como: Através de esquemas online que os utilizadores têm cada vez mais dificuldade em detetar.",
+    "Impacto: Perdas financeiras que obrigam a cortes em bens essenciais."
+   ],
+   "title_original": "Holiday scam losses force some victims to cut back on essentials",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia o aumento dramático e o impacto financeiro severo das fraudes centradas nas compras online.",
+   "todo": "Desconfie de ofertas demasiado vantajosas e verifique sempre a autenticidade das lojas online antes de efetuar pagamentos."
   },
   {
    "id": "d777a1c874ce5f85",
@@ -13715,51 +13761,6 @@
    "enriched": true,
    "why": "Incumbe as empresas de manterem a vigilância sobre potenciais fugas de dados na dark web.",
    "todo": "Monitorize regularmente os ativos corporativos e reforce a deteção de ameaças em canais subterrâneos."
-  },
-  {
-   "id": "bfadadb8ef76265d",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203440/hacking/nginx2rootai-discovers-five-critical-nginx-flaws-and-a-path-to-root.html",
-   "published": "2026-11-19T09:21:19+00:00",
-   "title": "nginx2root: IA descobre cinco falhas críticas no nginx e um caminho para root",
-   "summary": "Foram descobertas cinco vulnerabilidades críticas no nginx, juntamente com um erro no kernel do Linux, através de investigação que utilizou IA. A falha mais grave, catalogada como CVE-2026-123007, afeta o controlo de fluxo HTTP/2 e permite a execução remota de código sem autenticação. Ao encadear esta falha com o erro do kernel, um atacante pode alcançar privilégios de root num sistema vulnerável.",
-   "image": "https://i0.wp.com/securityaffairs.com/wp-content/uploads/2026/11/image-49.png?resize=1024%2C670&#038;ssl=1",
-   "points": [
-    "A descoberta expõe cinco falhas no nginx e um erro no kernel do Linux com exploits comprovados.",
-    "A vulnerabilidade CVE-2026-123007 permite execução remota de código através do fluxo HTTP/2.",
-    "Quase 10 milhões de serviços na Internet utilizam versões vulneráveis do Nginx.",
-    "A correção para o problema foi introduzida na versão 1.31.9."
-   ],
-   "title_original": "nginx2root:AI Discovers Five Critical nginx Flaws and a Path to Root",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Afeta milhões de servidores web públicos globalmente, permitindo acesso total não autorizado se não for corrigido.",
-   "todo": "Atualizar imediatamente o Nginx para a versão 1.31.9 ou superior para colmatar a falha no HTTP/2."
-  },
-  {
-   "id": "c31168ebf53521e3",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/rakuten-securities-breach-15/",
-   "published": "2026-11-19T09:20:00+00:00",
-   "title": "Violação de dados na Rakuten Securities pode afetar 15 milhões de clientes",
-   "summary": "A corretora japonesa Rakuten Securities revelou uma violação de dados que comprometeu os detalhes de conta de 15 milhões de clientes. Este incidente expõe informações sensíveis de um vasto número de utilizadores, aumentando o risco de fraudes e ataques direcionados. As autoridades e a empresa investigam o impacto total da brecha de segurança.",
-   "image": null,
-   "points": [
-    "A vítima foi a corretora japonesa Rakuten Securities.",
-    "Foram expostos detalhes de contas de 15 milhões de clientes.",
-    "O incidente constitui uma grande violação de dados corporativos."
-   ],
-   "title_original": "Rakuten Securities Breach Could Impact 15 Million Customers",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "A exposição de milhões de contas aumenta drasticamente o risco de fraudes financeiras e roubo de identidade para os clientes afetados.",
-   "todo": "Monitorize de perto as suas contas financeiras e altere as suas palavras-passe para credenciais fortes e únicas."
   }
  ]
 }

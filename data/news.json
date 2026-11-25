@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T23:07:23.126966+00:00",
+ "updated": "2026-11-25T23:27:10.190627+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CISA Advisories",
@@ -189,7 +189,7 @@
   {
    "source": "CrowdStrike Blog",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "SentinelLabs",
@@ -309,16 +309,60 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 96,
-  "pending": 211,
-  "unenriched": 112,
+  "done": 72,
+  "pending": 237,
+  "unenriched": 137,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 45 column 5 (char 4000)",
-   "Expecting property name enclosed in double quotes: line 57 column 5 (char 5294)"
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "8236f5eb74b094df",
+   "source": "CrowdStrike Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.crowdstrike.com/en-us/blog/crowdstrike-helps-protect-against-nginx2root-cve-2026-123007/",
+   "published": "2026-11-25T23:21:20.572433+00:00",
+   "title": "NGINX2Root: Identify and Protect with the CrowdStrike Falcon Platform",
+   "summary": "A CrowdStrike apresentou uma solução através da plataforma Falcon para identificar e proteger sistemas contra ameaças associadas ao NGINX2Root. Esta ferramenta visa ajudar as organizações a detetar riscos e mitigar potenciais vulnerabilidades na sua infraestrutura. O impacto foca-se na melhoria da visibilidade e na defesa proativa contra explorações nesta tecnologia.",
+   "image": null,
+   "points": [
+    "CrowdStrike disponibiliza proteção com a plataforma Falcon.",
+    "Foco na identificação de riscos associados ao NGINX2Root.",
+    "Melhoria da visibilidade e defesa proativa para organizações."
+   ],
+   "title_original": "NGINX2Root: Identify and Protect with the CrowdStrike Falcon Platform",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite reforçar a segurança em ambientes que utilizam NGINX contra ameaças direcionadas.",
+   "todo": "Utilize ferramentas de monitorização e siga as diretrizes de segurança da plataforma Falcon para detetar exposições."
+  },
+  {
+   "id": "ccac544b1e9f9e2a",
+   "source": "AWS Security Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://aws.amazon.com/blogs/security/icymi-october-2026-aws-security/",
+   "published": "2026-11-25T23:04:26+00:00",
+   "title": "Atualizações de Segurança da AWS em Outubro de 2026",
+   "summary": "A AWS divulgou o seu resumo mensal de segurança relativo a outubro de 2026, destacando novas ferramentas, artigos técnicos e recursos para o desenvolvimento seguro na cloud. Entre os destaques estão melhorias no fluxo de remediação com agentes de IA e o progresso do AWS Continuum na segurança de código. O impacto traduz-se no acesso a orientações práticas para reforçar a postura de segurança e governação das empresas.",
+   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/07/14/Rodolfo-Brenes-author.jpeg",
+   "points": [
+    "Publicação de 19 artigos no blog de segurança da AWS em outubro.",
+    "AWS Continuum atinge 89% de sucesso no benchmark CyberGym-E2E.",
+    "Foco em agentes de IA para remediação e testes de penetração."
+   ],
+   "title_original": "ICYMI: October 2026 @AWS Security",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda as empresas a manterem-se informadas sobre as mais recentes melhorias e ferramentas de proteção na cloud da AWS.",
+   "todo": "Consulte os recursos e atualizações publicados pela AWS para aplicar as novas recomendações de segurança."
+  },
   {
    "id": "26ee1f923c46031d",
    "source": "Tecmundo",
@@ -327,14 +371,19 @@
    "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/falha-em-recurso-do-claude-permitia-execucao-remota-de-codigos/",
    "published": "2026-11-25T22:45:00+00:00",
    "title": "Falha em recurso do Claude permitia execução remota de códigos",
-   "summary": "Falha em recurso do Claude permitia que extensões de navegador executassem códigos",
+   "summary": "Uma vulnerabilidade no recurso Dispatch do Claude, descoberta pela Forever Security, permitia que extensões de browser maliciosas executassem comandos no sistema operativo através da aplicação de desktop. O problema decorria da aceitação de sessões autenticadas sem validação adequada, permitindo a execução de ações não autorizadas. O impacto afetava utilizadores e empresas, podendo expor dados e sistemas através de contas comprometidas.",
    "image": "https://www.estadao.com.br/resizer/v2/VTB6LSQQIZHWTAZKRN73FEUN7I.png?quality=80&auth=2615ff2e5a0a05149ac75fde7de5c4fe70d6edd0b38894eab8f27702e9cc070b&width=710",
-   "points": [],
+   "points": [
+    "Descoberta uma falha no recurso Dispatch do Claude pela Forever Security.",
+    "Extensões maliciosas conseguiam enviar comandos remotos para o desktop.",
+    "A exploração não exigia vulnerabilidades complexas no navegador."
+   ],
    "title_original": null,
    "category": "Vulnerabilidade",
    "translated": false,
-   "enriched": false,
-   "raw": "Uma vulnerabilidade no recurso Dispatch, no Claude (Anthropic), permitia que extensões de navegador maliciosas executassem códigos discretamente no sistema operacional dos usuários. A descoberta foi revelada em relatório técnico divulgado pela Forever Security, empresa especializada em segurança de endpoints. O problema ocorria devido ao painel de controle do Dispatch , que aceitava sessões comuns autenticadas no site do claude.ai, mesmo sem exibir links visíveis para o recurso. Assim, uma extensão com permissão para atuar na página conseguia enviar instruções para o aplicativo Claude Desktop como se fossem comandos legítimos digitados pela pessoa. Falha em recurso do Claude permitia que extensões de navegador executassem códigos Foto: Reprodução/ChatG A pesquisa demonstrou que, durante um teste prático, um script automatizado abriu o recurso, enviou prompts para instalar um pacote de software desconhecido e clicou automaticamente nos botões de permissão. Mesmo quando a inteligência artificial (IA) hesitou diante de um comando desconhecido, o sistema injetou novas mensagens que convenceram a ferramenta a prosseguir com a instalação. Ela abriu, por fim, a calculadora do sistema operacional para comprovar o acesso remoto. Segundo os pesquisadores liderados por Gal Weizmann na Forever Security, a exploração não exigia vulnerabilidades: “Um site com permissão para interagir com navegador não deveria ter passe livre para executar comando do computador da pessoa”, identificou a equipe técnica, em relatório. Os especialistas alertaram ainda que o problema poderia ser explorado, inclusive, entre dispositivos diferentes conectados à mesma conta, como um computador pessoal e uma máquina corporativa. Tabela demonstrativa sobre a falha Foto: Reprodução/Forever Security A falha foi "
+   "enriched": true,
+   "why": "Mostra como extensões maliciosas podem abusar de integrações de IA para comprometer o sistema operativo.",
+   "todo": "Reveja e limite as permissões concedidas às extensões do navegador e mantenha as aplicações atualizadas."
   },
   {
    "id": "50a53afadcff1570",
@@ -13725,51 +13774,6 @@
    "enriched": true,
    "why": "Ajuda a detetar ameaças recorrentes ou falhas sistémicas mais rapidamente.",
    "todo": "Implemente análises periódicas de tickets para identificar incidentes recorrentes com a mesma causa raiz."
-  },
-  {
-   "id": "bc5c7def51881850",
-   "source": "IT Security",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://www.itsecurity.pt/news/news/palavras-passe-fracas-persistem-em-portugal",
-   "published": "2026-11-20T00:00:00+00:00",
-   "title": "Palavras-passe fracas persistem em Portugal",
-   "summary": "O estudo anual da NordPass revela que a palavra-passe “123456” continua a ser a mais utilizada e exposta em Portugal. Além disso, as credenciais comprometidas incluem frequentemente referências a temas populares como o futebol, a música e a cultura digital. Este cenário demonstra a persistência de fracos hábitos de cibersegurança no país. O impacto traduz-se num risco elevado de acesso não autorizado a contas pessoais e empresariais.",
-   "image": null,
-   "points": [
-    "O quê: Divulgação do estudo anual da NordPass sobre as palavras-passe mais comuns em Portugal.",
-    "Como: Análise de credenciais expostas em incidentes de segurança.",
-    "Impacto: Facilita o acesso indevido de criminosos a contas online devido à fragilidade das passwords.",
-    "Quem: Utilizadores em Portugal que utilizam termos simples, futebol e cultura digital."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Expõe contas online a acessos não autorizados devido à utilização continuada de passwords fáceis de adivinhar.",
-   "todo": "Utilize um gestor de palavras-passe para criar credenciais complexas, únicas e ative sempre a autenticação multifator (MFA)."
-  },
-  {
-   "id": "507f9b79c2397c6c",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/20/android-developer-verification-power-users/",
-   "published": "2026-11-19T23:03:24+00:00",
-   "title": "A verificação de programadores Android vai abranger todas as fontes de instalação, com uma alternativa para utilizadores avançados",
-   "summary": "A Google vai alargar o processo de verificação de identidade para programadores Android a todos os países a partir de janeiro de 2027. Os programadores que não verificarem a sua identidade e registarem as aplicações verão os seus programas perderem a experiência de instalação normal em dispositivos certificados. A implementação inicial envolve sete distribuidores de aplicações, incluindo a Google Play, e será alargada gradualmente ao longo de vários meses.",
-   "image": null,
-   "points": [
-    "A Google vai exigir verificação de programadores Android a nível global em janeiro de 2027.",
-    "Aplicações não registadas perderão o processo de instalação normal em dispositivos certificados.",
-    "Sete distribuidores de aplicações participam na fase inicial do lançamento."
-   ],
-   "title_original": "Android developer verification will reach every install source, with a side door for power users",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Protege os utilizadores ao garantir que todas as aplicações instaladas provêm de programadores com identidade verificada.",
-   "todo": "Certifique-se de que regista e verifica a sua identidade junto da Google caso desenvolva aplicações para Android."
   }
  ]
 }

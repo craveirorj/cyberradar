@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T11:29:21.699752+00:00",
+ "updated": "2026-11-25T11:44:59.603189+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -129,7 +129,7 @@
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "Schneier on Security",
@@ -149,7 +149,7 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "Microsoft Security Blog",
@@ -239,12 +239,12 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 11
+   "added": 10
   },
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -309,11 +309,12 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 216,
-  "unenriched": 111,
+  "done": 0,
+  "pending": 316,
+  "unenriched": 211,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
@@ -339,6 +340,40 @@
    "enriched": true,
    "why": "Mostra como a evolução das ameaças por IA está a alterar a sustentabilidade e os critérios dos seguros de cibersegurança.",
    "todo": "Avalie o investimento em ferramentas de defesa baseadas em inteligência artificial para cumprir os novos critérios de risco das seguradoras."
+  },
+  {
+   "id": "0462a00938955191",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/25/docker-aws-key-exposure-bots/",
+   "published": "2026-11-25T11:22:32+00:00",
+   "title": "Bots exploited leaked AWS key from Docker image in under 8 seconds",
+   "summary": "A cloud access key left inside a newly published Docker image can be found and used by bots in less than eight seconds, Billy Tsouvalas and Nick Nikiforakis of Stony Brook University discovered after planting 300 decoy images on public container registries. Docker images are packaged copies of software, bundled with everything needed to run it, and developers publish them to public registries such as Docker Hub, which hosts over 14 million of them, so … More →",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "A cloud access key left inside a newly published Docker image can be found and used by bots in less than eight seconds, Billy Tsouvalas and Nick Nikiforakis of Stony Brook University discovered after planting 300 decoy images on public container registries. Docker images are packaged copies of software, bundled with everything needed to run it, and developers publish them to public registries such as Docker Hub, which hosts over 14 million of them, so … More →"
+  },
+  {
+   "id": "bd8fc62460121290",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-blank-dialog-that-made-microsoft-365-office-apps-unusable/",
+   "published": "2026-11-25T11:16:32+00:00",
+   "title": "Microsoft fixes Microsoft 365 bug blocking access to Office apps",
+   "summary": "Earlier this week, Microsoft resolved a known issue that was preventing some Microsoft 365 customers from accessing Office applications. [...]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "Earlier this week, Microsoft resolved a known issue that was preventing some Microsoft 365 customers from accessing Office applications. [...]"
   },
   {
    "id": "5baa8b1de0f5b58e",
@@ -13727,50 +13762,6 @@
    "enriched": true,
    "why": "Evidencia a rapidez com que os atacantes convertem PoCs públicos em ataques reais contra infraestruturas corporativas.",
    "todo": "Aplique patches de segurança e atualizações de firmware nos dispositivos de perímetro o mais rapidamente possível."
-  },
-  {
-   "id": "df5a560c1b8f6ae7",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/",
-   "published": "2026-11-19T13:08:08+00:00",
-   "title": "Drupal patches critical RCE flaw, warns exploits may surface quickly",
-   "summary": "A Equipa de Segurança do Drupal lançou uma correção urgente para colmatar uma vulnerabilidade crítica de execução remota de código (RCE). A falha pode permitir que atacantes assumam o controlo total de websites vulneráveis. Os responsáveis alertam que poderão surgir explorações ativas num futuro muito próximo.",
-   "image": null,
-   "points": [
-    "O Drupal corrigiu uma falha crítica de execução remota de código (RCE).",
-    "A vulnerabilidade permite a tomada de controlo de sites vulneráveis por atacantes.",
-    "A equipa de segurança avisa que exploits públicos podem surgir rapidamente."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Protege os gestores de websites contra potenciais ataques de tomada de controlo através de falhas no CMS.",
-   "todo": "Atualize imediatamente o Drupal para a versão corrigida mais recente."
-  },
-  {
-   "id": "bd53d182e5b7fd91",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/19/puppet-enterprise-vulnerability-cve-2026-115731-exploited/",
-   "published": "2026-11-19T13:07:41+00:00",
-   "title": "Exploited Puppet flaw puts the server that configures your endpoint fleet at risk (CVE-2026-115731)",
-   "summary": "Atacantes estão a explorar ativamente a CVE-2026-115731, uma vulnerabilidade crítica de execução remota de código no Perforce Puppet Enterprise. Esta solução é amplamente utilizada por equipas de TI para centralizar a gestão de endpoints. A CISA adicionou a falha ao seu catálogo de vulnerabilidades conhecidas e ordenou a respetiva mitigação.",
-   "image": null,
-   "points": [
-    "A CVE-2026-115731 afeta a solução de gestão centralizada Perforce Puppet Enterprise.",
-    "Trata-se de uma falha de execução remota de código que já está a ser explorada ativamente.",
-    "A CISA adicionou a vulnerabilidade ao catálogo de explorações conhecidas com prazos de correção."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Ameaça diretamente os servidores centrais de configuração de frotas de endpoints nas empresas.",
-   "todo": "Consulte os alertas da CISA e aplique as atualizações de segurança recomendadas pelo fornecedor para a CVE-2026-115731."
   }
  ]
 }

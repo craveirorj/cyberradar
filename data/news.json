@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T21:06:44.390564+00:00",
+ "updated": "2026-11-25T21:26:58.274811+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -59,7 +59,7 @@
   {
    "source": "CISA Advisories",
    "ok": true,
-   "added": 23
+   "added": 24
   },
   {
    "source": "CISA Alertas (KEV)",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -114,7 +114,7 @@
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 6
+   "added": 7
   },
   {
    "source": "TechCrunch Security",
@@ -144,7 +144,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Malwarebytes Labs",
@@ -204,7 +204,7 @@
   {
    "source": "Rapid7",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "Tenable",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Hacker News",
@@ -309,16 +309,82 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 48,
-  "pending": 261,
-  "unenriched": 158,
+  "done": 72,
+  "pending": 239,
+  "unenriched": 139,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "Expecting property name enclosed in double quotes: line 88 column 1 (char 6668)"
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "1a0018bfd634dd1e",
+   "source": "HackRead",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://hackread.com/1password-attacker-copied-customer-account-data-vaults/",
+   "published": "2026-11-25T21:19:49+00:00",
+   "title": "1Password Afirma que um Pirata Informático Copiou Dados de Contas de Clientes, Cofres Intactos",
+   "summary": "Um atacante conseguiu aceder a uma conta GitHub de um colaborador da 1Password e copiou nomes, endereços de email e alguns tokens de recuperação. A empresa garantiu que os cofres dos clientes não foram afetados pelo incidente. Este acesso indevido comprometeu dados confidenciais geridos pela equipa interna. A investigação decorre para apurar todas as circunstâncias.",
+   "image": null,
+   "points": [
+    "Quem: Um atacante obteve acesso não autorizado.",
+    "O quê: Copiou nomes, emails e tokens de recuperação através do GitHub.",
+    "Impacto: Dados de colaboradores e contas foram expostos, mas os cofres ficaram seguros."
+   ],
+   "title_original": "1Password Says Hacker Copied Customer Account Data, Vaults Unaffected",
+   "category": "Ataque/APT",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que mesmo empresas de segurança robustas podem sofrer violações através de acessos internos comprometidos.",
+   "todo": "Ative a autenticação multifator em todas as contas e monitorize o acesso a repositórios de código e ferramentas de desenvolvimento."
+  },
+  {
+   "id": "3300f4affd3eb871",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/mitel-security-advisory-av26-1184",
+   "published": "2026-11-25T21:08:17+00:00",
+   "title": "Aviso de Segurança Mitel (AV26-1184) – Atualização 1",
+   "summary": "A Mitel e a CISA alertaram para vulnerabilidades críticas no software MiCollab. Foram adicionadas várias falhas ao catálogo de explorações conhecidas da CISA. As falhas requerem atenção urgente por parte dos administradores de sistemas. A aplicação rápida de atualizações é recomendada para evitar explorações.",
+   "image": null,
+   "points": [
+    "Quem: A Mitel e a CISA identificaram falhas.",
+    "O quê: Vulnerabilidades no MiCollab foram adicionadas ao catálogo KEV.",
+    "Impacto: Risco de exploração ativa em sistemas vulneráveis."
+   ],
+   "title_original": "Mitel security advisory (AV26-1184) – Update 1",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda a prevenir ataques direcionados a falhas ativamente exploradas em software empresarial.",
+   "todo": "Consulte os avisos de segurança da Mitel e aplique imediatamente os patches de atualização disponíveis."
+  },
+  {
+   "id": "e333803fc6688746",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/gitlab-security-advisory-av26-1210",
+   "published": "2026-11-25T21:06:40+00:00",
+   "title": "Aviso de Segurança GitLab (AV26-1210)",
+   "summary": "O GitLab lançou novas versões de correção para resolver múltiplas vulnerabilidades nas edições Community e Enterprise. As falhas afetam várias versões anteriores do software. Os utilizadores e administradores são incentivados a atualizar os sistemas. A medida visa proteger os ambientes de desenvolvimento contra potenciais ataques.",
+   "image": null,
+   "points": [
+    "Quem: O GitLab emitiu novos patches de segurança.",
+    "O quê: Correção de vulnerabilidades em várias versões anteriores.",
+    "Impacto: Proteção de infraestruturas de desenvolvimento contra falhas conhecidas."
+   ],
+   "title_original": "GitLab security advisory (AV26-1210)",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Garante a integridade do código e dos ambientes de desenvolvimento contra explorações de vulnerabilidades.",
+   "todo": "Atualize o GitLab para as versões corrigidas mais recentes disponibilizadas pelo fabricante."
+  },
   {
    "id": "498617c6fd6a830d",
    "source": "AWS Security Blog",
@@ -326,15 +392,20 @@
    "lang": "en",
    "link": "https://aws.amazon.com/blogs/security/secure-agentic-access-to-aws-with-enterprise-managed-authorization/",
    "published": "2026-11-25T21:00:37+00:00",
-   "title": "Secure agentic access to AWS with Enterprise-Managed Authorization",
-   "summary": "AWS Sign-In is introducing support for Enterprise-Managed Authorization (EMA) using the Identity Assertion JWT Authorization Grant (ID-JAG), enabling organizations to securely authorize AI agents to access AWS MCP Server through their existing enterprise identity providers (IdPs), such as Okta. With this capability, organizations can centrally manage which applications can access Amazon Web Services (AWS) resources […]",
+   "title": "Acesso Seguro Baseado em Agentes à AWS com Autorização Gerida pela Empresa",
+   "summary": "A AWS introduziu suporte para Autorização Gerida pela Empresa utilizando o padrão ID-JAG. Esta capacidade permite às organizações autorizar de forma segura agentes de IA a aceder aos servidores AWS MCP através de fornecedores de identidade existentes, como o Okta. A solução simplifica a gestão de acessos sem exigir credenciais de longa duração. Desta forma, mantém-se a segurança e a permissão centralizada.",
    "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/25/figure-1-enterprise-managed-authorization-flow-using-okta-aws-sign-in-and-aws-mcp-server.png",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: A AWS lançou um novo método de autorização.",
+    "O quê: Integração de agentes de IA com fornecedores de identidade empresariais.",
+    "Impacto: Gestão centralizada e segura de acessos a recursos da cloud."
+   ],
+   "title_original": "Secure agentic access to AWS with Enterprise-Managed Authorization",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "AWS Sign-In is introducing support for Enterprise-Managed Authorization (EMA) using the Identity Assertion JWT Authorization Grant (ID-JAG), enabling organizations to securely authorize AI agents to access AWS MCP Server through their existing enterprise identity providers (IdPs), such as Okta. With this capability, organizations can centrally manage which applications can access Amazon Web Services (AWS) resources on behalf of their employees, without requiring users to manage additional long-term credentials or complete separate consent flows. In our previous blog post, Introducing OAuth Support for AWS MCP Server , we introduced OAuth-based authorization, enabling AI agents to securely access AWS MCP Server through interactive sign-in or programmatic authentication using AWS credentials. EMA builds on these capabilities by enabling organizations to authorize AI agents through their existing enterprise IdPs. Because authentication to an AI application doesn’t automatically grant access to AWS resources, EMA provides a way to authorize access across these separate trust domains while maintaining existing AWS Identity and Access Management (IAM) permissions. In this post, we explain how EMA and ID-JAG work with AWS Sign-In , discuss security best practices, and walk you through configuring Okta to authorize AI agents to access AWS MCP Server. How Enterprise-Managed Authorization works with AWS Sign-In Enterprise-Managed Authorization (EMA) is an extension of the Model Context Protocol (MCP) that enables organizations to centrally manage how AI applications access protected resources on behalf of employees. EMA uses the Identity Assertion JWT Authorization Grant (ID-JAG), an OAuth-based authorization grant that enables enterprise IdPs to authorize access across different"
+   "translated": true,
+   "enriched": true,
+   "why": "Facilita a adoção segura de inteligência artificial em ambientes empresariais na cloud.",
+   "todo": "Configure a autorização baseada em fornecedores de identidade para gerir o acesso de ferramentas de IA de forma centralizada."
   },
   {
    "id": "dbfa2402c895a28e",
@@ -343,15 +414,20 @@
    "lang": "en",
    "link": "https://therecord.media/fifa-data-breach-limited",
    "published": "2026-11-25T20:40:00+00:00",
-   "title": "FIFA says hackers accessed ‘limited set of personal and business information’",
-   "summary": "The Switzerland-based international governing body for soccer says it's working with relevant authorities and law enforcement to investigate a recent breach.",
+   "title": "FIFA Afirma que Piratas Informáticos Acederam a Conjunto Limitado de Dados Pessoais e Comerciais",
+   "summary": "O organismo regulador mundial do futebol confirmou ter sido vítima de um incidente de segurança. A entidade está a trabalhar com as autoridades competentes para investigar a violação de dados. O acesso não autorizado incidiu sobre informações pessoais e de negócios limitadas. A investigação continua em curso para apurar a extensão total do ataque.",
    "image": "https://cms.therecord.media/uploads/fifa_sign_wc_final_202655407277531_c63256a9d9_o_77bc61d70a.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: A FIFA sofreu um acesso não autorizado aos seus sistemas.",
+    "O quê: Dados pessoais e de negócios foram acedidos por atacantes.",
+    "Impacto: Exposição de informações internas e colaboração com a lei."
+   ],
+   "title_original": "FIFA says hackers accessed ‘limited set of personal and business information’",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "The Switzerland-based international governing body for soccer says it's working with relevant authorities and law enforcement to investigate a recent breach."
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia que organizações desportivas globais são alvos frequentes de cibercrime.",
+   "todo": "Implemente controlos rigorosos de acesso à informação e revise regularmente os registos de auditoria."
   },
   {
    "id": "a8e0a40252f0ca0e",
@@ -360,15 +436,20 @@
    "lang": "en",
    "link": "https://databreaches.net/2026/11/25/1password-says-a-hacker-used-an-employees-github-account-to-take-customer-data/",
    "published": "2026-11-25T20:37:39+00:00",
-   "title": "1Password says a hacker used an employee’s GitHub account to take customer data",
-   "summary": "Dave Barr reports: Malicious code sent through one employee’s corporate GitHub account made 1Password’s own backend services download customer records, the company said in an incident post on Wednesday, November 25. The intruder also copied source code from private repositories and got into the CI/CD system, the pipeline that builds and ships software. 1Password started...",
+   "title": "1Password Afirma que um Pirata Informático Usou a Conta GitHub de um Colaborador para Obter Dados de Clientes",
+   "summary": "Um intruso utilizou a conta GitHub corporativa de um funcionário para injetar código malicioso. Essa ação forçou os serviços de backend da 1Password a descarregar registos de clientes. O atacante também acedeu a repositórios de código privado e ao sistema de integração e entrega contínua. A empresa detetou e divulgou o incidente publicamente.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Um atacante comprometeu a conta GitHub de um funcionário.",
+    "O quê: Forçou o download de registos de clientes e acedeu a código fonte.",
+    "Impacto: Comprometimento de dados internos e de registos de clientes."
+   ],
+   "title_original": "1Password says a hacker used an employee’s GitHub account to take customer data",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Dave Barr reports: Malicious code sent through one employee’s corporate GitHub account made 1Password’s own backend services download customer records, the company said in an incident post on Wednesday, November 25. The intruder also copied source code from private repositories and got into the CI/CD system, the pipeline that builds and ships software. 1Password started..."
+   "translated": true,
+   "enriched": true,
+   "why": "Destaca a vulnerabilidade das cadeias de fornecimento de software e dos acessos internos.",
+   "todo": "Proteja contas de desenvolvimento com autenticação forte e monitore o comportamento dos sistemas de CI/CD."
   },
   {
    "id": "2c8d145c5c430942",
@@ -1860,6 +1941,28 @@
    "enriched": true,
    "why": "Evidencia riscos de segurança operacionais na configuração e comando de agentes de inteligência artificial.",
    "todo": "Implementar restrições rigorosas e controlos de integridade em ambientes de teste para agentes de IA."
+  },
+  {
+   "id": "b368c84bce94ed6c",
+   "source": "CISA Advisories",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+   "published": "2026-11-25T12:00:00+00:00",
+   "title": "CISA Adiciona 10 Conhecidas Vulnerabilidades Exploradas ao Catálogo",
+   "summary": "A CISA adicionou dez novas falhas de segurança ao seu catálogo de vulnerabilidades conhecidas exploradas, com base em evidências de exploração ativa. A diretiva obriga as agências federais a priorizarem a correção rápida destes problemas em ativos expostos. Estas falhas representam riscos significativos para a segurança das infraestruturas. Os fabricantes afetados incluem marcas como Danfoss, HPE, Mitel e Vates.",
+   "image": null,
+   "points": [
+    "Quem: A CISA atualizou o catálogo de vulnerabilidades exploradas.",
+    "O quê: Dez novas falhas adicionadas devido a exploração ativa.",
+    "Impacto: Aumento do risco para sistemas que não apliquem correções urgentes."
+   ],
+   "title_original": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Serve como indicador crítico para priorizar correções de segurança com base em ameaças reais.",
+   "todo": "Consulte o catálogo KEV da CISA e aplique patches prioritários em sistemas expostos à internet."
   },
   {
    "id": "6a8ceb0f7d1b2b64",
@@ -13670,94 +13773,6 @@
    "enriched": true,
    "why": "Levanta questões sobre a fiabilidade e interdependência das plataformas tecnológicas atuais.",
    "todo": "Implementar planos de redundância e recuperação rápida para serviços críticos."
-  },
-  {
-   "id": "b16e39aca4755dce",
-   "source": "Cybersecurity Dive",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cybersecuritydive.com/news/chinese-espionage-zero-day-flaw-vmware-vcenter/875273/",
-   "published": "2026-11-19T21:36:46+00:00",
-   "title": "Grupo de espionagem chinês visa falha crítica no VMware vCenter",
-   "summary": "Atentados recentes exploram uma vulnerabilidade zero-day Armoury Castle que já tinha sido alvo de ataques anteriores no BeyondTrust Remote Support. Os atacantes utilizaram esta falha como ponto de entrada inicial para dar início a atividades subsequentes. A campanha é atribuída a um grupo de espionagem com origem na China.",
-   "image": "https://imgproxy.divecdn.com/igV71hmYpJppUJFSLyoGFbbo0vPZlMVJk2XJO_HWeiQ/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjIxMDE0NTMwLmpwZw==.webp",
-   "points": [
-    "Um grupo de espionagem chinês explorou uma falha zero-day no VMware vCenter.",
-    "A vulnerabilidade baseia-se na ferramenta Armoury Castle utilizada anteriormente no BeyondTrust Remote Support.",
-    "A falha serviu como ponto de acesso inicial para ataques subsequentes."
-   ],
-   "title_original": "Chinese espionage group targets critical flaw in VMware vCenter",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Expõe a vulnerabilidade de infraestruturas críticas a campanhas de espionagem patrocinadas por Estados.",
-   "todo": "Atualize imediatamente o VMware vCenter para as versões corrigidas pelos fabricantes."
-  },
-  {
-   "id": "8dfce1d63ad40fde",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/lawmakers-launch-new-ai-safety-caucus",
-   "published": "2026-11-19T21:19:00+00:00",
-   "title": "Parlamentares lançam novo grupo de segurança de IA em resposta a preocupações crescentes",
-   "summary": "Foi lançado um novo grupo focado na segurança da inteligência artificial no Congresso, contando com um número notável de republicanos entre os membros fundadores. Esta adesão bipartidária destaca-se face à forte oposição da Casa Branca à regulação da tecnologia. A iniciativa surge num contexto de crescentes preocupações de segurança em torno do desenvolvimento da IA.",
-   "image": "https://cms.therecord.media/uploads/Congress_6ac7a14ca7.jpg",
-   "points": [
-    "Sete dos vinte e seis membros fundadores são republicanos.",
-    "A criação do grupo foca-se na segurança da inteligência artificial.",
-    "A iniciativa contrasta com a oposição da Casa Branca à regulamentação."
-   ],
-   "title_original": "Lawmakers launch new AI safety caucus amid rising security concerns",
-   "category": "Regulação",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque demonstra o aumento da atenção política e o debate bipartidário em torno da regulamentação e segurança da IA.",
-   "todo": ""
-  },
-  {
-   "id": "3797ecb529a51da9",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/",
-   "published": "2026-11-19T21:15:59+00:00",
-   "title": "ASUS warns of critical hard-coded key flaw in Control Center Express",
-   "summary": "A ASUS lançou a versão 1.7.29 do Control Center Express para corrigir três vulnerabilidades críticas. Estas falhas permitiam que atacantes remotos obtivessem controlo administrativo da consola de gestão e dos dispositivos geridos. O impacto afeta a segurança operacional das infraestruturas que utilizam este software.",
-   "image": null,
-   "points": [
-    "A ASUS corrigiu três falhas críticas no Control Center Express v1.7.29.",
-    "Atacantes remotos podiam obter controlo administrativo total.",
-    "A vulnerabilidade afetava a consola de gestão e os dispositivos geridos."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Protege os sistemas contra o acesso administrativo não autorizado por parte de atacantes remotos.",
-   "todo": "Atualize o Control Center Express para a versão 1.7.29 o mais rapidamente possível."
-  },
-  {
-   "id": "07547d58b9a1af12",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/19/chase-visa-mastercard-confirm-third-party-cyberattacks-that-may-have-exposed-customers-info/5311175",
-   "published": "2026-11-19T21:12:33+00:00",
-   "title": "Chase, Visa, Mastercard confirm third-party cyberattacks that may have exposed customers' info",
-   "summary": "JPMorgan Chase, Visa e Mastercard confirmaram estar a investigar incidentes de segurança relacionados com fornecedores terceiros. Um grupo de extorsão e roubo de dados reivindicou o compromisso, expondo dados limitados como nomes e endereços de email de clientes. As gigantes financeiras asseguram que os seus principais redes de pagamento e sistemas internos não foram afetados.",
-   "image": "https://image.theregister.com/?imageId=5311179&width=800",
-   "points": [
-    "Alvos: JPMorgan Chase, Visa e Mastercard investigam violações em terceiros.",
-    "Impacto: Exposição potencial de dados de clientes, como nomes e emails.",
-    "Segurança: As redes de pagamento e sistemas centrais não foram comprometidos."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "Alerta para os riscos de segurança associados à cadeia de fornecimento e a fornecedores externos.",
-   "todo": "Monitore contas bancárias e comunicações à procura de potenciais tentativas de phishing baseadas nos dados expostos."
   }
  ]
 }

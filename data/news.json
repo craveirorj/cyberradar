@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T02:26:42.384322+00:00",
+ "updated": "2026-11-25T02:46:32.464664+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -119,7 +119,7 @@
   {
    "source": "TechCrunch Security",
    "ok": true,
-   "added": 9
+   "added": 8
   },
   {
    "source": "Ars Technica Security",
@@ -309,15 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 211,
-  "unenriched": 90,
+  "done": 113,
+  "pending": 216,
+  "unenriched": 96,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "22d9225b275f425a",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/24/a-post-using-an-old-shinyhunters-account-suggests-that-theres-more-to-come/",
+   "published": "2026-11-25T02:17:59+00:00",
+   "title": "A post using an old ShinyHunters account suggests that there’s more to come",
+   "summary": "Uma mensagem publicada por um indivíduo na plataforma Exploit utilizou a antiga conta de 2020 do grupo ShinyHunters para sugerir novos desenvolvimentos futuros. O texto foi assinado com a chave PGP original associada ao grupo criminoso. Contudo, especialistas assinalam que esta assinatura não valida a autenticidade da publicação, dado que a referida chave tinha sido comprometida meses antes.",
+   "image": null,
+   "points": [
+    "Uma mensagem surgiu num fórum a prometer novos desenvolvimentos.",
+    "Foi utilizada uma conta e uma chave PGP antiga do grupo ShinyHunters.",
+    "A chave PGP já tinha sido divulgada publicamente meses antes.",
+    "A utilização da chave não prova a verdadeira autoria do aviso."
+   ],
+   "title_original": "A post using an old ShinyHunters account suggests that there’s more to come",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda a monitorizar potenciais ressurgimentos de grupos de cibercrime conhecidos, mesmo quando há dúvidas sobre a veracidade dos avisos.",
+   "todo": "Mantenha os sistemas atualizados e monitorize os registos de atividade para detetar acessos não autorizados."
+  },
   {
    "id": "f3fa36a7a7e1a1fe",
    "source": "SANS ISC",
@@ -13736,28 +13759,6 @@
    "enriched": true,
    "why": "Focar apenas na deteção deixa as empresas expostas por falta de capacidade operacional para aplicar correções.",
    "todo": "Estabeleça processos internos ágeis e colaborativos entre as equipas de infraestrutura e segurança para acelerar a correção de falhas."
-  },
-  {
-   "id": "fa104991146c2dfa",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/29-fake-bank-sites-using-contact-details-steal-logins/",
-   "published": "2026-11-19T08:55:45+00:00",
-   "title": "29 Sites Falsos de Bancos Apanhados a Usar os Mesmos Contactos para Roubar Credenciais",
-   "summary": "Investigadores detetaram dezenas de portais bancários falsos que utilizam dados de contacto e identificadores idênticos para parecerem legítimos. O objetivo destes sites fraudulentos é enganar os utilizadores e roubar as respetivas credenciais de início de sessão. Esta estratégia ajuda os criminosos a dar uma aparência profissional a páginas criadas para o roubo de dados. A descoberta evidencia os métodos recorrentes usados para simular instituições financeiras legítimas.",
-   "image": null,
-   "points": [
-    "Vários sites de bancos falsos usavam dados de contacto idênticos.",
-    "O objetivo foi fazer com que as páginas parecessem legítimas.",
-    "A estratégia visa enganar vítimas e roubar credenciais de acesso."
-   ],
-   "title_original": "29 Fake Bank Sites Caught Using the Same Contact Details to Steal Logins",
-   "category": "Phishing/Fraude",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como os atacantes duplicam elementos de contacto para tornar páginas de phishing financeiro mais credíveis.",
-   "todo": "Confirme sempre o endereço oficial do banco e desconfie de links recebidos por canais não verificados."
   }
  ]
 }

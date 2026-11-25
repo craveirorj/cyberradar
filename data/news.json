@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T19:03:35.003800+00:00",
+ "updated": "2026-11-25T19:08:13.309185+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 353,
-  "unenriched": 268,
+  "done": 12,
+  "pending": 342,
+  "unenriched": 256,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -327,14 +327,20 @@
    "link": "https://blog.talosintelligence.com/oh-is-it-thanksgiving-i-hadnt-noticed/",
    "published": "2026-11-25T19:00:00+00:00",
    "title": "Oh, is it Thanksgiving? I hadn’t noticed!",
-   "summary": "In true Thanksgiving fashion, David has a few thank-yous to give to the cybersecurity community (and a few choice words for threat actors).",
+   "summary": "Esta publicação da Talos reflete sobre a época festiva do Thanksgiving nos Estados Unidos através de agradecimentos direcionados à comunidade de cibersegurança. O autor destaca o papel crucial das equipas de defesa que trabalham durante os feriados para manter os sistemas seguros. São também deixados agradecimentos à equipa interna da Talos e aos leitores do boletim informativo. O impacto foca-se no reconhecimento do esforço contínuo dos profissionais que protegem as organizações contra os cibercriminosos.",
    "image": "https://storage.ghost.io/c/af/a0/afa04ee3-414f-4481-8d23-7e7c146f192e/content/images/2026/11/threat_source-3.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O autor agradece o esforço contínuo das equipas de defesa em cibersegurança.",
+    "Profissionais trabalham durante o feriado do Thanksgiving para garantir a segurança.",
+    "O artigo destaca a importância do trabalho em equipa na Talos.",
+    "Os leitores são reconhecidos pelo apoio contínuo ao boletim informativo."
+   ],
+   "title_original": "Oh, is it Thanksgiving? I hadn’t noticed!",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "I tried hard not to write another typical “Thanksgiving article.” Obviously, I failed. But you know what? It is Thanksgiving week here in the U.S., and coming up with fun, interesting, short form topics is hard , especially when you’re fighting the weight of Tradition expected this week. So instead of me writing something insightful, you’re getting some things I’m thankful for. Even that’s harder than you might think, because there are so many things, and this is just the newsletter introduction , after all. Let’s start off with something I’m pretty sure none of us are thankful for: threat actors. Seriously, screw you guys! I know I'd be out of a job without you, but that’s just another way of saying “I coulda been a professional bagpiper.” There are days when that doesn’t sound so bad. So, no gratitude coming your way, people! In terms of actual thankfulness, I want to give a big THANK YOU to the entire Blue Team, everywhere. Everyone out there defending, especially those in the U.S. taking shifts on Thursday to keep the turkey-eating public safe and secure. This is a hard, often high-pressure job for which you get little thanks, but all the blame when a breach occurs. We see you. We appreciate you. We promise we’ll save you some stuffing. Speaking of defenders, I’m also very thankful to get to work with so many talented and wonderful people here at Talos. I’m not just saying this because I know my boss will read it! Without exception, everyone I’ve worked with here has not only been an expert at what they do, but they’ve been friendly, welcoming, and very patient with me as I’ve been feeling my way around this new org over the past several months. Thank you! Finally, and maybe most importantly of all, I want to thank you , our readers. You are the reason we’re all her"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa reconhecer e valorizar o trabalho sob pressão dos profissionais de defesa que garantem a segurança contínua.",
+   "todo": ""
   },
   {
    "id": "8f62a618cddf04dd",
@@ -344,14 +350,19 @@
    "link": "https://techcrunch.com/2026/11/25/1password-said-hackers-broke-into-its-internal-systems-but-customer-passwords-are-safe/",
    "published": "2026-11-25T18:49:52+00:00",
    "title": "1Password said hackers broke into its internal systems, but customer passwords are safe",
-   "summary": "The password manager maker said an attacker gained access to an employee's corporate account and took some information about customers.",
+   "summary": "A empresa gestora de passwords 1Password sofreu um incidente de segurança após um atacante conseguir aceder à conta corporativa de um funcionário. O intruso obteve informações específicas relacionadas com clientes. Contudo, a empresa garantiu que as palavras-passe dos utilizadores se mantêm totalmente seguras. O impacto afetou os sistemas internos da organização, embora os dados vitais dos utilizadores não tenham sido comprometidos.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Um atacante comprometeu a conta corporativa de um funcionário da 1Password.",
+    "A intrusão afetou os sistemas internos e resultou no roubo de dados de clientes.",
+    "A empresa confirmou que as palavras-passe dos utilizadores continuam seguras."
+   ],
+   "title_original": "1Password said hackers broke into its internal systems, but customer passwords are safe",
    "category": "Ataque/APT",
-   "translated": false,
-   "enriched": false,
-   "raw": "The password manager maker said an attacker gained access to an employee's corporate account and took some information about customers."
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que mesmo as empresas de gestão de credenciais são alvo de ataques a contas internas.",
+   "todo": "Ative a autenticação multifator (MFA) robusta em todas as contas e monitorize o acesso interno."
   },
   {
    "id": "8ffaffb6da4559e1",
@@ -361,14 +372,20 @@
    "link": "https://hackread.com/ai-writes-code-engineers-decide-what-ships/",
    "published": "2026-11-25T18:35:56+00:00",
    "title": "AI Can Write Code. Engineers Still Have to Decide What Ships",
-   "summary": "Senior roles drove most of the rebound in software job postings. See why employers value engineers who can review, test, and verify AI-generated code.",
+   "summary": "O mercado de emprego para engenheiros de software registou uma recuperação liderada por funções sénior. As empresas valorizam fortemente os profissionais capazes de rever, testar e verificar código gerado por inteligência artificial. Embora a IA consiga escrever código, a decisão final sobre o que é implementado continua a depender do julgamento humano. O impacto reflete-se na necessidade de competências de validação e verificação de segurança na engenharia de software.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Funções sénior lideram a recuperação nas ofertas de emprego em software.",
+    "A IA é capaz de gerar código de programação.",
+    "As empresas procuram engenheiros para testar, rever e verificar o código.",
+    "O julgamento humano permanece indispensável para decidir o que é implementado."
+   ],
+   "title_original": "AI Can Write Code. Engineers Still Have to Decide What Ships",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "Senior roles drove most of the rebound in software job postings. See why employers value engineers who can review, test, and verify AI-generated code."
+   "translated": true,
+   "enriched": true,
+   "why": "Destaca que a automação por IA exige supervisão humana rigorosa para evitar vulnerabilidades.",
+   "todo": "Implemente revisões de código rigorosas e testes de segurança em todo o software gerado por ferramentas automatizadas."
   },
   {
    "id": "45ddc028c01d974d",
@@ -378,14 +395,20 @@
    "link": "https://aws.amazon.com/blogs/security/planning-for-99-99-percent-availability-with-the-amazon-cognito-plus-feature-plan/",
    "published": "2026-11-25T17:50:39+00:00",
    "title": "Planning for 99.99 percent availability with the Amazon Cognito Plus feature plan",
-   "summary": "Amazon Cognito handles sign-in and access control for users, AI agents, and microservices with managed user directories, social and enterprise federation, and passwordless sign-in with passkeys or one-time passwords. Sign-in is the front door to your application. If your customer identity and access management (CIAM) layer is unavailable, users can’t sign in or refresh their […]",
+   "summary": "A Amazon atualizou o acordo de nível de serviço (SLA) para o plano Plus do Amazon Cognito, elevando a disponibilidade mensal garantida de 99,9% para 99,99%. Esta alteração aplica-se a diretórios de utilizadores em nuvem que gerem o início de sessão e o controlo de acessos em aplicações críticas. A medida visa responder às exigências de clientes com requisitos restritos de disponibilidade, como portais de saúde e pagamentos. O impacto garante uma infraestrutura de identidade mais fiável para aplicações empresariais.",
    "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/19/Amazon-Cognito-Console-Figure-1.png",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Amazon elevou o SLA do Amazon Cognito Plus para 99,99% de disponibilidade mensal.",
+    "A mudança afeta diretórios de utilizadores e sistemas de autenticação.",
+    "A medida apoia aplicações com requisitos elevados de disponibilidade, como saúde e retalho.",
+    "O plano Plus recebe a nova garantia de serviço de forma automática."
+   ],
+   "title_original": "Planning for 99.99 percent availability with the Amazon Cognito Plus feature plan",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "Amazon Cognito handles sign-in and access control for users, AI agents, and microservices with managed user directories, social and enterprise federation, and passwordless sign-in with passkeys or one-time passwords. Sign-in is the front door to your application. If your customer identity and access management (CIAM) layer is unavailable, users can’t sign in or refresh their sessions, and they can’t reach the rest of your application. Your application’s availability directly depends on the availability of your identity layer. Starting November 1, 2026, the Amazon Cognito Service Level Agreement (SLA) commits to a Monthly Uptime Percentage of 99.99 percent for user pools on the Plus feature plan, up from 99.9 percent. A user pool is a multi-tenant user directory that stores your users’ profiles and settings. User pools on Essentials and Lite feature plans remain at the 99.9 percent Service Commitment, while user pools already on Plus receive the new Service Commitment automatically. This post explains why we made the change, how availability is measured, what’s in the updated SLA, how the SLA measures availability, historical availability data, and how to switch a user pool to Plus. Why we raised the Service Commitment Many customers use Amazon Cognito for sign-in to applications with strict availability requirements, such as patient portals and retail checkout flows. They need the services they build on to support high availability. We raised the Service Commitment for the Plus feature plan to 99.99 percent so that their identity layer is backed by an SLA that matches their commitments. The new Service Commitment and Service Credits For each AWS Region, during each monthly billing cycle, AWS commits to a Monthly Uptime Percentage of at least 99.99 percent for user pools"
+   "translated": true,
+   "enriched": true,
+   "why": "Garante maior fiabilidade na camada de autenticação para aplicações empresariais críticas.",
+   "todo": "Reveja os planos dos seus serviços de identidade para garantir que cumprem os requisitos de disponibilidade do seu negócio."
   },
   {
    "id": "6efc22951138a3c2",
@@ -395,14 +418,19 @@
    "link": "https://www.crowdstrike.com/en-us/blog/crowdstrike-helps-protect-against-java4shell-cve-2026-114938/",
    "published": "2026-11-25T17:41:24.718576+00:00",
    "title": "Java4Shell (CVE-2026-114938): CrowdStrike Detects Exposure and Post-Exploitation Activity",
-   "summary": "",
+   "summary": "A CrowdStrike detetou exposição e atividades de pós-exploração associadas à vulnerabilidade conhecida como Java4Shell e catalogada como CVE-2026-114938. A empresa identificou sistemas afetados por esta falha de segurança em ambientes Java. O impacto envolve o risco de exploração ativa por parte de agentes maliciosos que procurem tirar partido da vulnerabilidade. A deteção precoce permite às organizações mitigarem os riscos antes de sofrerem danos maiores.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A CrowdStrike detetou atividade ligada à vulnerabilidade Java4Shell.",
+    "A falha recebeu o identificador CVE-2026-114938.",
+    "Foram identificadas exposições e comportamentos de pós-exploração em sistemas afetados."
+   ],
+   "title_original": "Java4Shell (CVE-2026-114938): CrowdStrike Detects Exposure and Post-Exploitation Activity",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": ""
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para a exploração ativa de uma vulnerabilidade crítica em ambientes Java.",
+   "todo": "Aplique imediatamente as atualizações de segurança e os patches disponibilizados para mitigar a CVE-2026-114938."
   },
   {
    "id": "c7c1cebe226186a8",
@@ -412,14 +440,19 @@
    "link": "https://techcrunch.com/2026/11/25/doj-accuses-former-cyber-executive-of-defrauding-ransomware-victims-by-secretly-paying-hackers/",
    "published": "2026-11-25T17:36:51+00:00",
    "title": "DOJ accuses former cyber executive of defrauding ransomware victims by secretly paying hackers",
-   "summary": "U.S. prosecutors accused the former executive of defrauding victims of ransomware by paying the hackers, charging victims more, and pocketing the difference.",
+   "summary": "As autoridades judiciais norte-americanas acusaram um antigo executivo de cibersegurança de burlar vítimas de ransomware. O indivíduo pagava secretamente os resgates aos atacantes, cobrava valores mais elevados aos clientes afetados e guardava a diferença para si próprio. O impacto consistiu na exploração financeira de organizações já debilitadas por ataques informáticos. O esquema foi descoberto e resultou em acusações criminais por parte dos procuradores.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Procuradores dos EUA acusaram um ex-executivo de cibersegurança de fraude.",
+    "O suspeito pagava secretamente resgates a cibercriminosos.",
+    "O indivíduo cobrava valores inflacionados às vítimas e embolsava a diferença."
+   ],
+   "title_original": "DOJ accuses former cyber executive of defrauding ransomware victims by secretly paying hackers",
    "category": "Ransomware",
-   "translated": false,
-   "enriched": false,
-   "raw": "U.S. prosecutors accused the former executive of defrauding victims of ransomware by paying the hackers, charging victims more, and pocketing the difference."
+   "translated": true,
+   "enriched": true,
+   "why": "Expõe práticas fraudulentas no setor de recuperação de ransomware e a exploração de vítimas.",
+   "todo": "Verifique a reputação e o historial de empresas prestadoras de serviços de resposta a incidentes e negociação de resgates."
   },
   {
    "id": "4fcf01c31362b2a5",
@@ -429,14 +462,19 @@
    "link": "https://therecord.media/ransomware-doj-indictment-recovery",
    "published": "2026-11-25T17:30:00+00:00",
    "title": "Florida ransomware recovery CEO indicted for allegedly paying hacker ransoms",
-   "summary": "The CEO of a ransomware recovery firm was indicted by a federal grand jury over allegations he lied about his services and paid out ransoms to cybercriminals.",
+   "summary": "Um grande júri federal indiciou o diretor-executivo de uma empresa de recuperação de ransomware na Florida. O responsável é acusado de mentir sobre os seus serviços e de pagar resgates a cibercriminosos em segredo. O impacto envolveu a prática de atividades ilícitas sob o pretexto de prestar apoio na recuperação de ataques. O indiciamento sublinha o escrutínio legal sobre empresas que lidam com extorsão digital.",
    "image": "https://cms.therecord.media/uploads/cash_f097a2d770.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O CEO de uma empresa de recuperação de ransomware foi indiciado por um júri federal.",
+    "O suspeito é acusado de mentir acerca dos serviços prestados.",
+    "O responsável pagou resgates a cibercriminosos em violação das normas."
+   ],
+   "title_original": "Florida ransomware recovery CEO indicted for allegedly paying hacker ransoms",
    "category": "Ransomware",
-   "translated": false,
-   "enriched": false,
-   "raw": "The CEO of a ransomware recovery firm was indicted by a federal grand jury over allegations he lied about his services and paid out ransoms to cybercriminals."
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra as consequências legais para empresas que gerem pagamentos de resgates de forma ilícita.",
+   "todo": "Consulte as autoridades competentes e especialistas legais antes de tomar decisões sobre o pagamento de resgates."
   },
   {
    "id": "5b24808f2ee567ca",
@@ -446,14 +484,19 @@
    "link": "https://hackread.com/fbi-helps-free-trafficking-victims-global-scam-crackdown/",
    "published": "2026-11-25T17:22:40+00:00",
    "title": "FBI Helps Free Over 2,200 Trafficking Victims in Global Scam Crackdown",
-   "summary": "US prosecutors took action against over 800 defendants in more than 400 fraud cases. The FBI reported restraining nearly $17 billion in illicit funds.",
+   "summary": "Os procuradores norte-americanos tomaram medidas legais contra mais de 800 arguidos em mais de 400 casos de fraude numa operação global. O FBI reportou ter ajudado a libertar mais de 2.200 vítimas de tráfico humano ligadas a esquemas fraudulentos. Adicionalmente, as autoridades conseguiram reter cerca de 17 mil milhões de dólares em fundos ilícitos. O impacto traduziu-se num golpe significativo contra redes criminosas internacionais de burlas e tráfico.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Ação coordenada visou mais de 800 arguidos em centenas de casos de fraude.",
+    "O FBI ajudou a libertar mais de 2.200 vítimas de tráfico humano.",
+    "As autoridades retiveram cerca de 17 mil milhões de dólares em fundos ilícitos."
+   ],
+   "title_original": "FBI Helps Free Over 2,200 Trafficking Victims in Global Scam Crackdown",
    "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": false,
-   "raw": "US prosecutors took action against over 800 defendants in more than 400 fraud cases. The FBI reported restraining nearly $17 billion in illicit funds."
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra o impacto financeiro e humanitário de operações internacionais contra redes de fraude.",
+   "todo": "Mantenha-se informado sobre esquemas de fraude comuns e denuncie atividades suspeitas às autoridades."
   },
   {
    "id": "2bc53ab48fabfa98",
@@ -463,14 +506,20 @@
    "link": "https://www.microsoft.com/en-us/security/blog/2026/11/25/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-email-security/",
    "published": "2026-11-25T17:15:00+00:00",
    "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Email Security",
-   "summary": "We're honored to share that Microsoft has been named a Leader in the 2026 Gartner® Magic Quadrant™ for Email Security, for the second consecutive year.",
+   "summary": "A Microsoft foi nomeada líder no Quadrante Mágico da Gartner de 2026 para a segurança de correio eletrónico. A empresa tem investido na utilização de inteligência artificial para combater ameaças que visam tanto os humanos como os agentes de IA que lêem emails. Para mitigar ataques como a injeção de instruções ocultas em texto branco, o Microsoft Defender deteta e coloca em quarentena mensagens maliciosas antes da entrega. O impacto foca-se na proteção contra novas técnicas de ataque automatizadas dirigidas a assistentes virtuais.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Microsoft foi reconhecida como líder no Quadrante Mágico da Gartner de 2026.",
+    "Os atacantes utilizam IA para ocultar instruções maliciosas em emails direcionados a agentes virtuais.",
+    "O Microsoft Defender inclui proteção contra injeção de comandos para bloquear conteúdo malicioso.",
+    "As mensagens suspeitas são detetadas e colocadas em quarentena antes de chegarem aos utilizadores ou agentes."
+   ],
+   "title_original": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Email Security",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": "We’re honored to share that Microsoft has once again been named a Leader in the 2026 Gartner® Magic Quadrant™ for Email Security. AI is changing the threat landscape and this is shifting how organizations think about their existing security strategy. In response, we’ve invested in two areas over the past year: using AI to protect people and the agents that now read their email and making protection measurable so customers can verify that it works. AI is changing both sides of the inbox The first area of investment starts with a simple reality: AI now reads email alongside people, attackers are using AI to target both, and defense must use AI to stay ahead. Picture an ordinary vendor email: a meeting recap, a few action items, and a friendly sign-off. Hidden in white text on a white background is prompt injection: an instruction telling an AI assistant to gather financial documents and send them to an outside address. The employee isn’t the target; their AI agent is. People can be persuaded by messages that exploit fear, trust, or urgency, but agents don’t need persuading. Once an agent acts on an instruction, pulling the message back won’t undo it. This is why Microsoft Defender stops malicious messages before delivery and keeps reevaluating delivered mail as new intelligence comes in. This summer, we introduced prompt injection protection for email in Defender to detect and quarantine messages carrying hidden malicious AI instructions before they reach Microsoft Copilot or other agents. In Defender, analysts can also see what an agent would see: the ‘Show concealed text’ button on the ‘Email Entity’ page reveals hidden content in the email preview, so they can inspect the instructions an agent could encounter. These attacks don’t show up often, yet. Over a four-week ti"
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia a evolução das ameaças por email direcionadas a ferramentas de inteligência artificial.",
+   "todo": "Adote soluções de segurança de email capazes de detetar conteúdo malicioso oculto e ameaças baseadas em IA."
   },
   {
    "id": "b93540ef2a5b4c4c",
@@ -480,14 +529,19 @@
    "link": "https://therecord.media/australia-passes-online-safety-legislation-preempt-harms",
    "published": "2026-11-25T17:07:00+00:00",
    "title": "Australia passes tough legislation requiring big tech to preempt foreseeable harms",
-   "summary": "The Digital Duty of Care Act sailed through Australia's Parliament. It will mandate that online providers establish protocols to protect users from threats of violence and rape as well as behavior that could cause significant harms.",
+   "summary": "O Parlamento da Austrália aprovou a lei do Dever de Cuidado Digital (Digital Duty of Care Act). A nova legislação exige que os fornecedores de serviços online estabeleçam protocolos para proteger os utilizadores contra ameaças de violência, violação e comportamentos geradores de danos graves. O impacto obriga as grandes empresas tecnológicas a prevenir antecipadamente danos previsíveis nas suas plataformas. A medida visa aumentar a responsabilidade das empresas de tecnologia na moderação de conteúdos nocivos.",
    "image": "https://cms.therecord.media/uploads/australia_flag_luis_chavez_unsplash_7d5fcdecdc.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O Parlamento australiano aprovou o Digital Duty of Care Act.",
+    "A lei obriga as plataformas online a protegerem os utilizadores contra ameaças de violência e abusos.",
+    "Os fornecedores de tecnologia devem estabelecer protocolos de prevenção de danos previsíveis."
+   ],
+   "title_original": "Australia passes tough legislation requiring big tech to preempt foreseeable harms",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "The Digital Duty of Care Act sailed through Australia's Parliament. It will mandate that online providers establish protocols to protect users from threats of violence and rape as well as behavior that could cause significant harms."
+   "translated": true,
+   "enriched": true,
+   "why": "Estabelece obrigações legais rigorosas para as grandes tecnológicas na prevenção de danos online.",
+   "todo": "As empresas com presença digital devem monitorizar a conformidade com novas regulamentações locais de proteção de utilizadores."
   },
   {
    "id": "243e005992015321",
@@ -497,14 +551,20 @@
    "link": "https://www.theregister.com/security/2026/11/25/microsofts-ntlm-security-changes-trip-up-third-party-logins/5312085",
    "published": "2026-11-25T17:01:00+00:00",
    "title": "Microsoft's NTLM security changes trip up third-party logins",
-   "summary": "It's not our fault if you've implemented it wrong",
+   "summary": "As atualizações de segurança de novembro da Microsoft introduziram alterações na assinatura de mensagens NTLM que estão a causar falhas de autenticação em aplicações e dispositivos de terceiros. Sistemas como proxies de autenticação, produtos SSO e ferramentas de empacotamento foram afetados devido ao envio de dados incompletos ou vazios no campo TargetInfo. Como solução temporária, os administradores podem alterar o valor no registo do Windows, embora a recomendação a longo prazo passe por atualizações dos fornecedores ou transição para Kerberos. O impacto afeta o acesso e a autenticação em ambientes corporativos que utilizam produtos incompatíveis.",
    "image": "https://image.theregister.com/?imageId=5244798&width=800",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Atualizações da Microsoft alteraram a assinatura NTLM e quebraram logins de terceiros.",
+    "Produtos afetados incluem proxies de autenticação, SSO e ferramentas de empacotamento.",
+    "A falha resulta no envio de campos TargetInfo incompletos ou vazios por parte dos dispositivos.",
+    "Os administradores podem usar uma chave de registo temporária ou migrar para Kerberos."
+   ],
+   "title_original": "Microsoft's NTLM security changes trip up third-party logins",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Microsoft's November security updates can break authentication in some third-party applications and devices following changes to NTLM message signing. Affected systems include authentication proxy servers, single sign-on (SSO) products, and application packaging tools, the company's support notice says. The failures stem from products that claim to supply required information during NTLM authentication but return incomplete or empty data, Microsoft said: \"An affected device might set the NTLMSSP_NEGOTIATE_TARGET_INFO flag in its CHALLENGE_MESSAGE but provide an empty or incomplete TargetInfo field.\" Administrators can use the notice's network trace and event log examples to identify affected products. For confirmed cases, the temporary workaround is to set the ClientAllowUnsignedNtlm Registry value to 1 on affected clients. This stops the client offering signing, backing out the new default rather than fixing the incompatible product. The recommended long-term options are a vendor update or Kerberos authentication, where supported. The value sits under HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0 and defaults to 0, enabling clients to offer signing on non-anonymous connections. The NTLM changes arrived in the November 10 update as phase 1 in a 2-phase process. In phase 1, \"Windows client devices begin offering NTLM signing on all connections by default. Servers accept both signed and unsigned clients. Auditing events identify clients not using signing.\" Phase 2, scheduled for May 2027, will make Windows servers require NTLM signing by default. \"Clients that do not offer signing will be rejected by secure servers,\" Microsoft stated. Ominously, Microsoft warned that it \"might remove the registry keys at a future date,\" so the company is not kidding about"
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para quebras de autenticação em sistemas corporativos após atualizações de segurança da Microsoft.",
+   "todo": "Teste as atualizações de segurança num ambiente controlado e atualize os produtos de terceiros afetados por problemas de autenticação NTLM."
   },
   {
    "id": "e507cff11bd9affa",
@@ -514,14 +574,20 @@
    "link": "https://www.estadao.com.br/tecmundo/big-techs/australia-aprova-lei-que-obriga-big-techs-a-remover-conteudos-prejudiciais/",
    "published": "2026-11-25T17:00:00+00:00",
    "title": "Austrália aprova lei que obriga big techs a remover ‘conteúdos prejudiciais’",
-   "summary": "As redes sociais que descumprirem a nova lei poderão receber multas pesadas.",
+   "summary": "O parlamento da Austrália aprovou a lei do Dever de Cuidado Digital para obrigar as plataformas online a removerem proativamente conteúdos e funcionalidades nocivas. A legislação estabelece coimas pesadas associadas ao faturamento global para as empresas que não cumprirem as regras. A medida visa combater conteúdos que promovam a hostilidade contra as mulheres, glorifiquem o crime ou incentivem desafios perigosos. O impacto transfere parte da responsabilidade pela segurança online para as gigantes da tecnologia.",
    "image": "https://www.estadao.com.br/resizer/v2/EU6HG2577FA2NMJCOXEHWLDL6Q.jpeg?quality=80&auth=bb5e00fb6bd7a0132d0313e160bb4cf01f295a6c64c4673c4c7a51ee5425fc60&width=710",
-   "points": [],
+   "points": [
+    "A Austrália aprovou a lei do Dever de Cuidado Digital para plataformas online.",
+    "As big techs enfrentam multas baseadas no faturamento global em caso de incumprimento.",
+    "A legislação obriga à remoção de conteúdos nocivos, hostis e desafios perigosos.",
+    "A medida transfere a responsabilidade de segurança para as empresas de internet."
+   ],
    "title_original": null,
    "category": "Regulação",
    "translated": false,
-   "enriched": false,
-   "raw": "A Austrália aprovou, nesta quarta-feira (25), uma nova lei que obriga as plataformas online atuando no país a removerem proativamente conteúdos considerados prejudiciais . Em caso de descumprimento, as empresas estarão sujeitas ao pagamento de multas associadas ao faturamento global. Batizada de “Digital Duty of Care”, ou “Dever de Cuidado Digital”, a nova legislação impõe às big techs o dever de priorizar a segurança dos cidadãos australianos, obrigando, também, à remoção de funcionalidades nocivas presentes nas redes sociais . Ela deve entrar em vigor em um ano. Multas podem chegar a bilhões de dólares Segundo Anika Wells, ministra das Comunicações da Austrália, a medida representa um novo marco histórico para o país, que já havia se tornado o primeiro país a proibir menores de 16 anos nas redes sociais . As autoridades locais também planejam determinar que as gigantes da tecnologia paguem pelos conteúdos jornalísticos utilizados em suas plataformas . “O Dever de Cuidado Digital é uma reforma de segurança histórica, semelhante ao uso obrigatório de cintos de segurança, à embalagem genérica de cigarros e à reforma das leis de armas ”, celebrou Wells, após a aprovação; A nova lei australiana substituirá um conjunto de regras de conduta online considerado obsoleto, transferindo parte da responsabilidade pela segurança dos usuários às empresas de internet; Conteúdos que incentivem ou promovam atitudes hostis em relação às mulheres ou à igualdade de gênero e que glorifiquem o crime são alguns dos materiais que as big techs deverão combater; Práticas e experiências digitais consideradas prejudiciais e o incentivo a desafios perigosos ou comportamentos que representem riscos também fazem parte dos conteúdos com obrigatoriedade de remoção. As multas previstas para os casos de"
+   "enriched": true,
+   "why": "Reforça a responsabilização legal das plataformas tecnológicas na remoção de conteúdos perigosos.",
+   "todo": "As organizações devem rever as suas políticas de moderação de conteúdos e conformidade legal face a novas obrigações regulatórias."
   },
   {
    "id": "7deeca46c74df398",

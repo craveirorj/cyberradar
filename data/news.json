@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T16:44:51.612106+00:00",
+ "updated": "2026-11-25T17:06:20.502625+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -109,7 +109,7 @@
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CSO Online",
@@ -154,7 +154,7 @@
   {
    "source": "Microsoft Security Blog",
    "ok": true,
-   "added": 7
+   "added": 6
   },
   {
    "source": "Microsoft MSRC",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 11
+   "added": 10
   },
   {
    "source": "Help Net Security",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "ACSC Austrália",
@@ -319,6 +319,23 @@
   ]
  },
  "items": [
+  {
+   "id": "243e005992015321",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/25/microsofts-ntlm-security-changes-trip-up-third-party-logins/5312085",
+   "published": "2026-11-25T17:01:00+00:00",
+   "title": "Microsoft's NTLM security changes trip up third-party logins",
+   "summary": "It's not our fault if you've implemented it wrong",
+   "image": "https://image.theregister.com/?imageId=5244798&width=800",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "Microsoft's November security updates can break authentication in some third-party applications and devices following changes to NTLM message signing. Affected systems include authentication proxy servers, single sign-on (SSO) products, and application packaging tools, the company's support notice says. The failures stem from products that claim to supply required information during NTLM authentication but return incomplete or empty data, Microsoft said: \"An affected device might set the NTLMSSP_NEGOTIATE_TARGET_INFO flag in its CHALLENGE_MESSAGE but provide an empty or incomplete TargetInfo field.\" Administrators can use the notice's network trace and event log examples to identify affected products. For confirmed cases, the temporary workaround is to set the ClientAllowUnsignedNtlm Registry value to 1 on affected clients. This stops the client offering signing, backing out the new default rather than fixing the incompatible product. The recommended long-term options are a vendor update or Kerberos authentication, where supported. The value sits under HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0 and defaults to 0, enabling clients to offer signing on non-anonymous connections. The NTLM changes arrived in the November 10 update as phase 1 in a 2-phase process. In phase 1, \"Windows client devices begin offering NTLM signing on all connections by default. Servers accept both signed and unsigned clients. Auditing events identify clients not using signing.\" Phase 2, scheduled for May 2027, will make Windows servers require NTLM signing by default. \"Clients that do not offer signing will be rejected by secure servers,\" Microsoft stated. Ominously, Microsoft warned that it \"might remove the registry keys at a future date,\" so the company is not kidding about"
+  },
   {
    "id": "7deeca46c74df398",
    "source": "The Register Security",
@@ -13482,28 +13499,6 @@
    "enriched": true,
    "why": "Permite detetar e mitigar exposições críticas antes que os sistemas sejam comprometidos por atacantes.",
    "todo": "Verifique os alertas da CrowdStrike e atualize os sistemas afetados pela vulnerabilidade Java4Shell."
-  },
-  {
-   "id": "1977168802e46550",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/",
-   "published": "2026-11-19T18:20:01+00:00",
-   "title": "Transport for London breach exposes 265,000 Oyster card users' data",
-   "summary": "A Transport for London (TfL) sofreu uma violação de dados que expôs informações de contas de cerca de 265.000 utilizadores do cartão Oyster photocard. O incidente resultou no acesso não autorizado a dados pessoais geridos pela entidade de transportes. A organização anunciou publicamente a ocorrência para alertar os cidadãos afetados.",
-   "image": null,
-   "points": [
-    "Transport for London sofreu uma violação de dados.",
-    "Cerca de 265.000 utilizadores de Oyster photocard foram afetados.",
-    "Detalhes de contas de clientes ficaram expostos."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "Expõe milhares de utilizadores a potenciais riscos de engenharia social e utilização indevida de dados pessoais.",
-   "todo": "Fique atento a comunicações suspeitas e altere as palavras-passe das contas associadas aos serviços de transporte."
   }
  ]
 }

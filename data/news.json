@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T10:05:27.751610+00:00",
+ "updated": "2026-11-25T10:27:43.828181+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "TugaTech",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -124,7 +124,7 @@
   {
    "source": "Ars Technica Security",
    "ok": true,
-   "added": 4
+   "added": 5
   },
   {
    "source": "WIRED Security",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -309,13 +309,13 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 12,
-  "pending": 304,
-  "unenriched": 193,
+  "done": 96,
+  "pending": 223,
+  "unenriched": 112,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "Expecting ',' delimiter: line 81 column 37 (char 6496)"
   ]
  },
  "items": [
@@ -342,6 +342,28 @@
    "todo": "Avalie o investimento em ferramentas de defesa baseadas em inteligência artificial para cumprir os novos critérios de risco das seguradoras."
   },
   {
+   "id": "7bb089ac45e5adb8",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/",
+   "published": "2026-11-25T10:10:20+00:00",
+   "title": "Hackers exploitam falha crítica RCE do Drupal para sequestrar sites",
+   "summary": "A equipa de segurança do Drupal confirmou que uma vulnerabilidade crítica está a ser ativamente explorada por atacantes desde pelo menos quinta-feira. Esta falha permite que os cibercriminosos comprometam e assumam o controlo de sites que ainda não aplicaram as correções necessárias. O impacto direto é o sequestro de páginas vulneráveis, expondo os recursos online afetados.",
+   "image": null,
+   "points": [
+    "Alvo: Sites do Drupal sem atualizações de segurança aplicadas.",
+    "Ameaça: Exploração ativa de uma vulnerabilidade crítica de execução remota de código (RCE).",
+    "Impacto: Sequestro e compromisso total de portais online vulneráveis."
+   ],
+   "title_original": "Hackers now exploit critical Drupal RCE flaw to hijack sites",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes assumam o controlo total de sites desprevenidos.",
+   "todo": "Atualize o Drupal e os seus módulos para a versão mais recente o mais rapidamente possível."
+  },
+  {
    "id": "27ab83f28f4ea068",
    "source": "Infosecurity Magazine",
    "region": "EU",
@@ -362,6 +384,28 @@
    "enriched": true,
    "why": "Importa para ajudar as empresas a gerirem os riscos emergentes associados a ferramentas de IA ofensivas.",
    "todo": "Adotar uma rigorosa disciplina operacional e monitorizar o uso de ferramentas de automação e IA."
+  },
+  {
+   "id": "8107ad582e572e2b",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/internet/seguranca/surfshark-black-friday-2026-vpn/",
+   "published": "2026-11-25T10:00:00+00:00",
+   "title": "Surfshark na Black Friday: o plano completo custa o mesmo que o básico",
+   "summary": "Durante a Black Friday, período em que muitas pessoas utilizam redes Wi-Fi públicas fora de casa com os telemóveis, a Surfshark lançou uma campanha promocional. A iniciativa comercial oferece o plano completo da marca pelo mesmo preço da versão básica. O objetivo é captar utilizadores que procuram proteção adicional enquanto navegam em redes potencialmente inseguras.",
+   "image": null,
+   "points": [
+    "Contexto: Aumento do uso de redes Wi-Fi públicas durante as compras da Black Friday.",
+    "Oferta: Promoção comercial onde o plano completo custa o mesmo que o básico.",
+    "Finalidade: Atrair consumidores preocupados com a segurança online em dispositivos móveis."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Aproveita o aumento das compras móveis em redes públicas para promover ferramentas de privacidade.",
+   "todo": "Utilize sempre uma VPN fidedigna ao ligar-se a redes Wi-Fi públicas em locais como cafés ou transportes."
   },
   {
    "id": "ea9f93d2daca5abf",
@@ -1022,6 +1066,28 @@
    "enriched": true,
    "why": "Melhora a segurança da rede ao permitir uma inspeção de ameaças mais profunda sem comprometer as regras de acesso.",
    "todo": "Avalie a transição para políticas de Nova Geração para otimizar a inspeção de tráfego na nuvem."
+  },
+  {
+   "id": "44ee8f3c74836845",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/treasury-fincen-takes-systems-offline-after-cyber-incident",
+   "published": "2026-11-25T00:00:00+00:00",
+   "title": "FinCEN do Tesouro tira sistemas do ar após incidente de cibersegurança",
+   "summary": "O Departamento do Tesouro dos EUA desligou alguns dos seus sistemas na sequência de um ciberataque. O incidente resultou num acesso não autorizado a um subconjunto limitado de plataformas da instituição. Como medida de contenção, as operações afetadas foram retiradas online.",
+   "image": "https://cms.therecord.media/uploads/treasury_26f25f72ad.jpg",
+   "points": [
+    "Entidade afetada: FinCEN do Departamento do Tesouro dos EUA.",
+    "O quê: Incidente de cibersegurança com acesso não autorizado a sistemas limitados.",
+    "Resposta: Desativação temporária de sistemas para conter a ameaça."
+   ],
+   "title_original": "Treasury's FinCEN takes systems offline after cybersecurity incident",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra que até organismos governamentais financeiros cruciais são alvo de intrusões bem-sucedidas.",
+   "todo": "Monitore continuamente os acessos aos sistemas e aplique planos rigorosos de resposta a incidentes."
   },
   {
    "id": "c380f1e9589a2306",
@@ -13700,72 +13766,6 @@
    "enriched": true,
    "why": "Expõe falhas críticas em equipamentos de perímetro de rede que deveriam proteger as organizações.",
    "todo": "Garanta que as interfaces de gestão de firewalls nunca estão expostas diretamente à internet e aplique as correções de segurança necessárias."
-  },
-  {
-   "id": "937f390d6b182cf8",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/",
-   "published": "2026-11-19T11:46:00+00:00",
-   "title": "Microsoft tests new Edge Lockdown Mode that disables GPU APIs",
-   "summary": "A Microsoft está a desenvolver um novo modo de segurança para o browser Edge chamado Edge Lockdown Mode. Esta funcionalidade visa reduzir a superfície de ataque ao desativar as APIs WebGL, WebGL2 e WebGPU. A ferramenta encontra-se atualmente em fase de testes.",
-   "image": null,
-   "points": [
-    "A Microsoft testa o Edge Lockdown Mode para o browser Edge.",
-    "A funcionalidade desativa as APIs WebGL, WebGL2 e WebGPU.",
-    "O objetivo principal é reduzir a superfície de ataque."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Ajuda a diminuir a superfície de ataque do navegador ao desativar APIs gráficas.",
-   "todo": "Mantenha o seu navegador atualizado e acompanhe o lançamento oficial de novas opções de segurança."
-  },
-  {
-   "id": "796c0101f860286d",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/19/cyberattack-on-service-provider-exposes-payee-data-at-40-irish-credit-unions/5310979",
-   "published": "2026-11-19T11:45:00+00:00",
-   "title": "Cyberattack on service provider exposes payee data at 40 Irish credit unions",
-   "summary": "Um ciberataque ao fornecedor de software Wellington IT comprometeu dados de beneficiários guardados em cerca de 40 cooperativas de crédito irlandesas. O incidente ocorreu em outubro, mas muitas das instituições afetadas só foram notificadas dias mais tarde, gerando críticas do governo. Os dados expostos incluem nomes, IBANs, BIC e códigos de pagamento, embora as palavras-passe e fundos dos membros tenham permanecido seguros.",
-   "image": "https://image.theregister.com/?imageId=5298439&width=800",
-   "points": [
-    "O fornecedor de software Wellington IT sofreu um ciberataque em outubro.",
-    "Cerca de 40 cooperativas de crédito irlandesas tiveram dados de beneficiários expostos.",
-    "Foram expostos IBANs e nomes, mas as passwords e fundos não foram afetados."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "Expôs dados bancários de beneficiários de dezenas de instituições financeiras devido a uma falha num fornecedor.",
-   "todo": "Monitore contas bancárias regularmente e evite transferências em resposta a contactos suspeitos."
-  },
-  {
-   "id": "714886073da25dd0",
-   "source": "CSO Online",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.csoonline.com/article/4250669/palo-alto-networks-bets-4-5b-on-enterprise-ai-with-applied-compute-acquisition.html",
-   "published": "2026-11-19T11:36:10+00:00",
-   "title": "Palo Alto Networks aposta 4,5 mil milhões de dólares em IA empresarial com a compra da Applied Compute",
-   "summary": "A Palo Alto Networks concordou em adquirir a Applied Compute numa transação totalmente em ações avaliada em 4,5 mil milhões de dólares. O negócio visa integrar a plataforma e a equipa de investigação da startup para ajudar as empresas a adotar e proteger modelos de inteligência artificial de forma segura. O cofundador e CEO da Applied Compute, Yash Patil, assumirá o cargo de codiretor de IA na empresa adquirente. A conclusão da operação está prevista para o terceiro trimestre fiscal de 2027.",
-   "image": "https://www.csoonline.com/wp-content/uploads/2026/10/4235787-0-31296100-1792065592-shutterstock_691590181.jpg?quality=50&strip=all",
-   "points": [
-    "A Palo Alto Networks comprou a Applied Compute por 4,5 mil milhões de dólares.",
-    "A aquisição foca-se na segurança, treino e implementação de modelos de IA para empresas.",
-    "O CEO da Applied Compute, Yash Patil, tornará-se codiretor de IA da Palo Alto."
-   ],
-   "title_original": "Palo Alto Networks bets $4.5B on enterprise AI with Applied Compute acquisition",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite à Palo Alto expandir as suas capacidades de segurança e oferta de inteligência artificial para o mercado empresarial.",
-   "todo": "Garantir a monitorização e a avaliação de risco na adoção de novas ferramentas de inteligência artificial na nuvem."
   }
  ]
 }

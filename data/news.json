@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T09:45:38.910288+00:00",
+ "updated": "2026-11-25T10:05:27.751610+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "TugaTech",
@@ -234,17 +234,17 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 19
+   "added": 18
   },
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Security Affairs",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Check Point Research",
@@ -284,7 +284,7 @@
   {
    "source": "Securelist (Kaspersky)",
    "ok": true,
-   "added": 6
+   "added": 5
   },
   {
    "source": "Risky Bulletin",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 24,
-  "pending": 294,
-  "unenriched": 183,
+  "done": 12,
+  "pending": 304,
+  "unenriched": 193,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -340,6 +340,28 @@
    "enriched": true,
    "why": "Mostra como a evolução das ameaças por IA está a alterar a sustentabilidade e os critérios dos seguros de cibersegurança.",
    "todo": "Avalie o investimento em ferramentas de defesa baseadas em inteligência artificial para cumprir os novos critérios de risco das seguradoras."
+  },
+  {
+   "id": "27ab83f28f4ea068",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/ncsc-tips-tackle-agentic-threat/",
+   "published": "2026-11-25T10:00:00+00:00",
+   "title": "NCSC partilha orientações para enfrentar ameaças de agentes IA semelhantes ao ARTEX",
+   "summary": "O Centro Nacional de Cibersegurança do Reino Unido apelou a uma forte disciplina operacional para lidar com estruturas ofensivas baseadas em agentes autónomos. Esta orientação surge para mitigar riscos associados a ferramentas automatizadas semelhantes ao ARTEX. O impacto foca-se na prevenção de ataques sofisticados executados por estas novas tecnologias.",
+   "image": null,
+   "points": [
+    "O NCSC emitiu orientações para mitigar ameaças de agentes IA.",
+    "O foco é conter estruturas ofensivas semelhantes ao ARTEX.",
+    "Exige-se forte disciplina operacional às organizações."
+   ],
+   "title_original": "NCSC Shares Guidance to Tackle Agentic Threat From ARTEX-Like Tools",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa para ajudar as empresas a gerirem os riscos emergentes associados a ferramentas de IA ofensivas.",
+   "todo": "Adotar uma rigorosa disciplina operacional e monitorizar o uso de ferramentas de automação e IA."
   },
   {
    "id": "ea9f93d2daca5abf",
@@ -406,6 +428,28 @@
    "enriched": true,
    "why": "Permite monitorizar riscos de IA mantendo o controlo total e a confidencialidade dos dados empresariais.",
    "todo": "Adote soluções de IA que permitam manter os dados e as chaves de encriptação no seu próprio ambiente de nuvem."
+  },
+  {
+   "id": "916629091cfddbe4",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html",
+   "published": "2026-11-25T09:06:59+00:00",
+   "title": "Piratas informáticos exploraram falha RCE CVSS 10.0 no Hex.pm para comprometer servidores",
+   "summary": "Um atacante executou comandos num sistema operativo em servidores de produção da Hex.pm, o repositório de pacotes utilizado por programadores Elixir e Erlang. A vulnerabilidade utilizada estava presente no código do registo desde fevereiro de 2016. A equipa de manutenção conseguiu atualizar todos os servidores afetados num curto espaço de tempo após o primeiro pedido malicioso.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBxy4VIOekOumZfm8RElWJl6ZTKoIJ1QLc3U7ynLQ8p9PCqm_kYX1T-akwbZwbthTYcNwfVW-aWbRB4wIkvbUeM_gvQmnw8EH-hpY0542jCwFUAaI2mNEXGE3dct9K4JKFURV1smdERZlx4tV1zCy3AbS_NwF4o926_KSW-OKMPfDXT2gWbbZ4lKjFm6Y/s1600/hex-hack.jpg",
+   "points": [
+    "Atacantes exploraram uma falha RCE de gravidade máxima (CVSS 10.0).",
+    "Foram comprometidos seis servidores de produção da Hex.pm.",
+    "A equipa corrigiu todos os servidores afetados em cerca de 15 minutos."
+   ],
+   "title_original": "Hackers Exploited CVSS 10.0 Hex.pm RCE Flaw to Compromise 6 Package Registry Servers",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque demonstra a velocidade com que vulnerabilidades críticas em repositórios de código podem ser exploradas.",
+   "todo": "Atualizar rapidamente dependências de software e manter os sistemas operativos e pacotes com os patches mais recentes."
   },
   {
    "id": "45c257ac25c83e05",
@@ -13722,51 +13766,6 @@
    "enriched": true,
    "why": "Permite à Palo Alto expandir as suas capacidades de segurança e oferta de inteligência artificial para o mercado empresarial.",
    "todo": "Garantir a monitorização e a avaliação de risco na adoção de novas ferramentas de inteligência artificial na nuvem."
-  },
-  {
-   "id": "3d382cf2ec8f5374",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/tfl-customers-personal-data-exposed/",
-   "published": "2026-11-19T11:35:00+00:00",
-   "title": "TfL alerta que 265.000 clientes de cartões fotográficos podem ter tido dados pessoais expostos",
-   "summary": "A entidade de transportes de Londres foi alertada para um incidente de segurança após o envio de emails através do seu sistema para os clientes de cartões Oyster Photocard. O problema resultou na potencial exposição de dados pessoais de milhares de utilizadores. A organização identificou a falha na sequência do envio destas comunicações automáticas.",
-   "image": null,
-   "points": [
-    "A entidade de transportes de Londres (TfL) enfrentou uma exposição de dados.",
-    "Cerca de 265.000 clientes de Oyster Photocard foram potencialmente afetados.",
-    "O alerta surgiu após o envio de emails a partir do próprio sistema da TfL."
-   ],
-   "title_original": "TfL Warns 265,000 Photocard Customers May Have Had Personal Data Exposed",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Expõe milhares de utilizadores a potenciais riscos de roubo de identidade e burlas direcionadas.",
-   "todo": "Ficar atento a comunicações suspeitas e verificar regularmente a segurança das contas associadas a serviços de transporte."
-  },
-  {
-   "id": "45584a3597b1228a",
-   "source": "Ars Technica Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://arstechnica.com/security/2026/11/how-to-tell-a-cyberattack-from-a-plain-old-outage/",
-   "published": "2026-11-19T11:13:01+00:00",
-   "title": "Como distinguir um ciberataque de uma falha técnica comum",
-   "summary": "Uma série de falhas tecnológicas consecutivas em infraestruturas e serviços nos Estados Unidos gerou preocupação pública sobre um possível ciberataque em grande escala. Entre os incidentes estiveram uma interrupção da Microsoft, problemas técnicos na aviação e falhas em software bancário e de redes governamentais. Apesar de a coincidente e improvável cronologia ter gerado alarme, não existem provas de que estes problemas estivessem relacionados ou tivessem origem em piratas informáticos. Cabe aos analistas de ciberestratégia determinar se uma falha técnica resulta de um acidente ou de uma investida maliciosa.",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2201630098-1152x648.jpg",
-   "points": [
-    "Vários serviços tecnológicos falharam consecutivamente nos Estados Unidos ao longo de quatro dias.",
-    "O impacto incluiu interrupções na Microsoft, aviação e redes governamentais.",
-    "Especulou-se sobre ciberataques, mas não há evidências de ação maliciosa.",
-    "Analistas avaliam cada caso para separar acidentes de incidentes de segurança."
-   ],
-   "title_original": "How to tell a cyberattack from a plain old outage",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Ajuda a evitar o pânico injustificado ao esclarecer que nem todas as falhas tecnológicas graves são ciberataques.",
-   "todo": "Mantenha a calma perante falhas generalizadas de serviços e aguarde informações oficiais antes de tirar conclusões precipitadas."
   }
  ]
 }

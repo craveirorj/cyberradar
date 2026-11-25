@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T08:24:54.617604+00:00",
+ "updated": "2026-11-25T08:48:12.943217+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "The Record",
@@ -234,7 +234,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 18
+   "added": 19
   },
   {
    "source": "The Register Security",
@@ -309,12 +309,12 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 323,
-  "unenriched": 208,
+  "done": 84,
+  "pending": 241,
+  "unenriched": 125,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "Expecting property name enclosed in double quotes: line 45 column 5 (char 3634)",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
@@ -342,21 +342,50 @@
    "todo": "Avalie o investimento em ferramentas de defesa baseadas em inteligência artificial para cumprir os novos critérios de risco das seguradoras."
   },
   {
+   "id": "53b09fe0862f5882",
+   "source": "CSO Online",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.csoonline.com/article/4250533/despite-doom-and-gloom-headlines-ai-attacks-are-thin-on-the-ground.html",
+   "published": "2026-11-25T08:25:00+00:00",
+   "title": "Apesar dos alarmismos, os ataques com inteligência artificial continuam raros",
+   "summary": "Empresas de IA alertaram recentemente sobre modelos capazes de descobrir falhas e escapar a controlos, gerando receios de uma vaga de ataques inéditos. Contudo, inquéritos a responsáveis de segurança de grandes empresas mostram que, embora muitos observem indícios de técnicas baseadas em IA, a abordagem fundamental à cibersegurança não mudou drasticamente. A principal alteração observada cinge-se à velocidade e à quantidade dos ataques registados. Assim, os especialistas continuam a apostar nos princípios fundamentais de segurança para lidar com estas ameaças.",
+   "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4250533-0-87016200-1795595204-emilipothese-R4WCbazrD1g-unsplash.jpg?quality=50&strip=all",
+   "points": [
+    "Empresas de IA alertaram para novas capacidades de exploração e evasão.",
+    "Cerca de 58% dos CISOs observaram indícios de técnicas de ataque com IA.",
+    "A maioria das empresas está a rever a gestão de vulnerabilidades sem alterar a estratégia base.",
+    "O impacto principal reflete-se apenas num aumento da velocidade e do volume de ameaças."
+   ],
+   "title_original": "Despite doom and gloom headlines, AI attacks are thin on the ground",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que, apesar do entusiasmo em torno da IA, os ataques continuam a basear-se nos mesmos princípios fundamentais de sempre.",
+   "todo": "Mantenha o foco nos princípios fundamentais de cibersegurança e reforce os programas de gestão de vulnerabilidades."
+  },
+  {
    "id": "6a20b92f56aabfac",
    "source": "SecurityWeek",
    "region": "US",
    "lang": "en",
    "link": "https://www.securityweek.com/palo-alto-networks-patches-fragnesia-flaw-used-to-root-firewalls/",
    "published": "2026-11-25T08:12:24+00:00",
-   "title": "Palo Alto Networks Patches Fragnesia Flaw Used to Root Firewalls",
-   "summary": "A China-linked hacking group chained PHP2Shell with Fragnesia in AI-assisted attacks that hit 25 servers.",
+   "title": "Palo Alto Networks corrige falha Fragnesia usada para obter controlo de firewalls",
+   "summary": "Um grupo de piratas informáticos ligado à China explorou vulnerabilidades para atacar servidores. Os atacantes encadearam as falhas PHP2Shell e Fragnesia em ações assistidas por inteligência artificial. O ataque afetou diretamente um total de 25 servidores, comprometendo a segurança dos equipamentos.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Um grupo associado à China realizou ataques informáticos assistidos por IA.",
+    "Foram exploradas e encadeadas as vulnerabilidades PHP2Shell e Fragnesia.",
+    "O ataque afetou com sucesso 25 servidores em infraestruturas sensíveis.",
+    "A falha permitiu obter acesso total (root) a firewalls da marca."
+   ],
+   "title_original": "Palo Alto Networks Patches Fragnesia Flaw Used to Root Firewalls",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "A China-linked hacking group chained PHP2Shell with Fragnesia in AI-assisted attacks that hit 25 servers."
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia a exploração ativa de falhas críticas em firewalls por grupos patrocinados por estados.",
+   "todo": "Atualize urgentemente o firmware e os patches de segurança das firewalls afetadas."
   },
   {
    "id": "f44f10d640ae762a",
@@ -365,15 +394,21 @@
    "lang": "en",
    "link": "https://www.securityweek.com/drupal-flaw-found-by-anthropic-scanner-exploited-in-attacks/",
    "published": "2026-11-25T08:01:06+00:00",
-   "title": "Drupal Flaw Found by Anthropic Scanner Exploited in Attacks",
-   "summary": "CISA has added the vulnerability to its KEV catalog and instructed federal agencies to patch it within three days.",
+   "title": "Falha no Drupal descoberta por scanner de IA é explorada em ataques",
+   "summary": "Uma vulnerabilidade recentemente detetada no sistema Drupal foi ativamente explorada por atacantes em ambiente real. Devido ao risco associado, a CISA adicionou a falha ao seu catálogo de vulnerabilidades conhecidas e exploradas (KEV). Como medida de mitigação, foi ordenado às agências federais que apliquem as correções necessárias no espaço de três dias.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Uma vulnerabilidade no Drupal foi descoberta com o auxílio de um scanner de inteligência artificial.",
+    "A falha está a ser ativamente explorada por cibercriminosos em ataques.",
+    "A CISA adicionou a vulnerabilidade ao catálogo KEV para proteção prioritária.",
+    "As agências federais receberam ordens para corrigir o problema em três dias."
+   ],
+   "title_original": "Drupal Flaw Found by Anthropic Scanner Exploited in Attacks",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "CISA has added the vulnerability to its KEV catalog and instructed federal agencies to patch it within three days."
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra a rapidez com que vulnerabilidades descobertas por ferramentas automatizadas passam a ser exploradas por atacantes.",
+   "todo": "Verifique e aplique imediatamente os patches de segurança mais recentes para o Drupal."
   },
   {
    "id": "3bc6f96dec950b6c",
@@ -13733,28 +13768,6 @@
    "enriched": true,
    "why": "Importa porque facilita a adoção de métodos de autenticação mais seguros e resistentes a phishing através de biometria nativa.",
    "todo": "Ative o suporte a passkeys e utilize autenticação biométrica nos seus dispositivos para proteger o acesso aos seus cofres."
-  },
-  {
-   "id": "1fc34cf6486a0e11",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/",
-   "published": "2026-11-19T10:35:05+00:00",
-   "title": "Microsoft confirms app installation, launch issues after hotpatch",
-   "summary": "A Microsoft confirmou a existência de problemas relacionados com a instalação e o arranque de aplicações Office e de terceiros após a aplicação do hotpatch mais recente para o Windows 11. Para mitigar a situação, a empresa partilhou soluções temporárias destinadas aos utilizadores afetados por estas falhas operacionais. Estes contratempos surgem na sequência da implementação de atualizações mensais do sistema operativo. Os administradores e utilizadores devem consultar as recomendações oficiais para ultrapassar os bloqueios.",
-   "image": null,
-   "points": [
-    "A Microsoft confirmou falhas de instalação e arranque após um hotpatch do Windows 11.",
-    "O problema afeta o Microsoft Office e várias aplicações de terceiros.",
-    "A empresa já divulgou soluções de contorno para ajudar os utilizadores afetados."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque falhas em atualizações do sistema operativo podem paralisar o funcionamento de aplicações essenciais nas empresas.",
-   "todo": "Consulte as soluções alternativas oficiais da Microsoft antes de aplicar novos patches em ambientes de produção."
   }
  ]
 }

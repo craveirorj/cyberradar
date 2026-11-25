@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T09:28:19.872028+00:00",
+ "updated": "2026-11-25T09:45:38.910288+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -284,7 +284,7 @@
   {
    "source": "Securelist (Kaspersky)",
    "ok": true,
-   "added": 7
+   "added": 6
   },
   {
    "source": "Risky Bulletin",
@@ -309,11 +309,12 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 217,
-  "unenriched": 103,
+  "done": 24,
+  "pending": 294,
+  "unenriched": 183,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
@@ -339,6 +340,72 @@
    "enriched": true,
    "why": "Mostra como a evolução das ameaças por IA está a alterar a sustentabilidade e os critérios dos seguros de cibersegurança.",
    "todo": "Avalie o investimento em ferramentas de defesa baseadas em inteligência artificial para cumprir os novos critérios de risco das seguradoras."
+  },
+  {
+   "id": "ea9f93d2daca5abf",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/informacao/nao-o-telemovel-nao-esta-a-ouvir-as-suas-conversas-nem-precisa/",
+   "published": "2026-11-25T09:30:00+00:00",
+   "title": "Não, o telemóvel não está a ouvir as suas conversas. Nem precisa…",
+   "summary": "Muitas pessoas desconfiam que os telemóveis escutam as conversas privadas para mostrar anúncios direcionados nas redes sociais. A ideia é amplamente discutida e desmentida por responsáveis de plataformas como o Instagram, incluindo Adam Mosseri. Na realidade, as empresas de tecnologia utilizam algoritmos avançados de rastreio de dados e comportamento online, tornando a escuta desnecessária. O impacto traduz-se na perceção pública errada sobre a privacidade digital e a recolha de dados.",
+   "image": null,
+   "points": [
+    "Muitos utilizadores acreditam que os telemóveis os escutam para publicidade.",
+    "Adam Mosseri, do Instagram, voltou a desmentir publicamente esta desconfiança.",
+    "As plataformas recolhem dados comportamentais em vez de escutarem conversas."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Ajuda a compreender que a privacidade digital é comprometida por recolha de dados online e não por escuta de áudio.",
+   "todo": "Reveja as permissões de acesso a microfones e dados nas definições das aplicações do telemóvel."
+  },
+  {
+   "id": "616fb40681030054",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/uk-app-losses-surge-22-fraudsters/",
+   "published": "2026-11-25T09:29:00+00:00",
+   "title": "Perdas por Pagamento Autorizado Empurrado no Reino Unido aumentam 22% com burlões a roubar 660 milhões de libras",
+   "summary": "As fraudes de pagamento autorizado empurrado (APP) registaram um crescimento anual de 22% durante a primeira metade do ano no Reino Unido. Os criminosos conseguiram roubar um total de 660 milhões de libras através destes esquemas de engenharia social. O impacto afeta diretamente os consumidores e a confiança nos sistemas de pagamento digital.",
+   "image": null,
+   "points": [
+    "Fraudes APP subiram 22% no primeiro semestre do ano.",
+    "Criminosos roubaram 660 milhões de libras no Reino Unido.",
+    "O esquema explora a autorização voluntária de transferências pelas vítimas."
+   ],
+   "title_original": "UK Authorized Push Payment Losses Surge 22% as Fraudsters Steal £660m",
+   "category": "Phishing/Fraude",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra o crescimento acentuado de fraudes financeiras baseadas em manipulação psicológica.",
+   "todo": "Confirme sempre a identidade do beneficiário por um canal seguro antes de autorizar transferências bancárias urgentes."
+  },
+  {
+   "id": "d503225d5fa3cd28",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/25/anthropic-enterprise-frontier-safeguards-public-beta/",
+   "published": "2026-11-25T09:20:14+00:00",
+   "title": "Anthropic quer detetar atividade maliciosa de IA sem reter os seus dados",
+   "summary": "A Anthropic lançou uma versão beta pública dos Enterprise Frontier Safeguards (EFS), permitindo que as organizações detetem atividades de IA potencialmente nocivas em múltiplas interações. A ferramenta utiliza sistemas de segurança automatizados para analisar conversas armazenadas em ambientes de nuvem controlados pelos próprios clientes. O impacto garante a segurança contra uso indevido de IA sem comprometer a privacidade ou reter dados sensíveis.",
+   "image": null,
+   "points": [
+    "Anthropic lançou a beta pública dos Enterprise Frontier Safeguards (EFS).",
+    "Permite detetar atividade de IA nociva com retenção de dados zero.",
+    "A análise ocorre em ambientes de nuvem controlados pelo cliente com encriptação própria."
+   ],
+   "title_original": "Anthropic wants to catch rogue AI activity without retaining your data",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite monitorizar riscos de IA mantendo o controlo total e a confidencialidade dos dados empresariais.",
+   "todo": "Adote soluções de IA que permitam manter os dados e as chaves de encriptação no seu próprio ambiente de nuvem."
   },
   {
    "id": "45c257ac25c83e05",
@@ -13700,74 +13767,6 @@
    "enriched": true,
    "why": "Ajuda a evitar o pânico injustificado ao esclarecer que nem todas as falhas tecnológicas graves são ciberataques.",
    "todo": "Mantenha a calma perante falhas generalizadas de serviços e aguarde informações oficiais antes de tirar conclusões precipitadas."
-  },
-  {
-   "id": "bef0b390eb37d347",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/19/backbox-linux-10-penetration-testing/",
-   "published": "2026-11-19T11:01:12+00:00",
-   "title": "BackBox Linux 10 traz novas ferramentas de 'hacking' e suporte para o Ubuntu 26.04",
-   "summary": "O projeto comunitário BackBox lançou a versão 10 da sua distribuição Linux dedicada a testes de intrusão, designada por Resolute Raccoon. Esta nova atualização foi desenvolvida para garantir compatibilidade com o Ubuntu 26.04 LTS e inclui o kernel Linux 7.0 juntamente com o ambiente de trabalho Xfce 4.20. Além disso, o sistema de anonimato foi modificado para que as consultas DNS passem a utilizar a rede Tor, bloqueando simultaneamente o tráfego IPv6.",
-   "image": null,
-   "points": [
-    "A BackBox lançou a versão 10 do seu sistema operativo para testes de intrusão.",
-    "A distribuição integra compatibilidade com o Ubuntu 26.04 LTS e o kernel Linux 7.0.",
-    "O modo anónimo foi atualizado para encaminhar consultas DNS pelo Tor e bloquear IPv6."
-   ],
-   "title_original": "BackBox Linux 10 brings new hacking tools and Ubuntu 26.04 support",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Fornece aos profissionais de segurança ferramentas atualizadas para testes de penetração e auditorias defensivas.",
-   "todo": "Atualize as suas distribuições de testes de segurança para as versões mais recentes para beneficiar de ferramentas e correções atuais."
-  },
-  {
-   "id": "0dd65038e7fbb203",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/19/tfl-takes-oyster-photocard-website-offline-after-hackers-compromise-customer-accounts/5310985",
-   "published": "2026-11-19T11:01:00+00:00",
-   "title": "TfL desativa website de cartões Oyster após ataque comprometer contas de clientes",
-   "summary": "A Transport for London sofreu um incidente de cibersegurança que afetou os dados de cerca de 265.000 clientes do cartão Oyster. O problema foi descoberto quando os utilizadores começaram a receber emails gerados pelos sistemas da própria operadora para criarem novas contas. Em resposta, a empresa desligou temporariamente o website dos cartões fotográficos e notificou as pessoas potencialmente afetadas. Embora dados sensíveis como palavras-passe, cartões bancários e viagens não tenham sido comprometidos, a empresa vai exigir a alteração de credenciais por precaução.",
-   "image": "https://image.theregister.com/?imageId=249452&width=800",
-   "points": [
-    "A Transport for London sofreu um incidente que afetou cerca de 265.000 contas de clientes.",
-    "Hackers desencadearam emails automáticos falsos a partir dos sistemas internos da empresa.",
-    "A operadora desligou o website afetado e confirmou que dados bancários e passwords não foram acedidos.",
-    "O incidente exigirá que todos os titulares alterem as suas passwords e perguntas de segurança."
-   ],
-   "title_original": "TfL takes Oyster photocard website offline after hackers compromise customer accounts",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque demonstra como sistemas internos podem ser usados para enganar utilizadores, afetando centenas de milhares de contas de transporte.",
-   "todo": "Altere imediatamente a sua palavra-passe e evite reutilizar a mesma credencial em vários serviços online."
-  },
-  {
-   "id": "bc96eaf0dd4b1af9",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/19/tfl-takes-oyster-photocard-website-offline-after-attackers-compromise-customer-accounts/5310985",
-   "published": "2026-11-19T11:01:00+00:00",
-   "title": "Transport for London desativa site de cartões Oyster após compromisso de contas de clientes",
-   "summary": "A empresa Transport for London sofreu uma violação de cibersegurança que afetou os detalhes de contas de cerca de 265.000 utilizadores de cartões Oyster. O incidente foi detetado quando os clientes começaram a receber emails legítimos gerados pelo sistema, mas induzidos por atacantes, pedindo a criação de novas contas. Para conter a situação, a entidade suspendeu rapidamente o site dos cartões fotográficos e notificou os utilizadores potencialmente afetados. Embora palavras-passe e dados bancários não tenham sido comprometidos, a organização exortou todos os clientes a mudarem as suas credenciais.",
-   "image": "https://image.theregister.com/?imageId=249452&width=800",
-   "points": [
-    "A Transport for London sofreu um incidente que afetou 265.000 titulares de cartões Oyster.",
-    "Atacantes comprometeram contas, fazendo com que o sistema enviasse emails automáticos aos utilizadores.",
-    "A empresa retirou o site offline para conter a ameaça e evitou o roubo de dados bancários ou passwords.",
-    "Os clientes afetados foram contactados e instruídos a alterar as respetivas credenciais."
-   ],
-   "title_original": "TfL takes Oyster photocard website offline after attackers compromise customer accounts",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra como sistemas legítimos podem ser manipulados para enganar utilizadores após uma intrusão.",
-   "todo": "Altere imediatamente as suas palavras-passe se for notificado de incidentes e evite reutilizar credenciais em vários serviços."
   }
  ]
 }

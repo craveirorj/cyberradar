@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T22:48:14.842130+00:00",
+ "updated": "2026-11-25T23:07:23.126966+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -174,7 +174,7 @@
   {
    "source": "Unit 42 (Palo Alto)",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "Google Threat Intelligence",
@@ -309,15 +309,33 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 200,
-  "unenriched": 100,
+  "done": 96,
+  "pending": 211,
+  "unenriched": 112,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "Expecting property name enclosed in double quotes: line 45 column 5 (char 4000)",
+   "Expecting property name enclosed in double quotes: line 57 column 5 (char 5294)"
   ]
  },
  "items": [
+  {
+   "id": "26ee1f923c46031d",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/falha-em-recurso-do-claude-permitia-execucao-remota-de-codigos/",
+   "published": "2026-11-25T22:45:00+00:00",
+   "title": "Falha em recurso do Claude permitia execução remota de códigos",
+   "summary": "Falha em recurso do Claude permitia que extensões de navegador executassem códigos",
+   "image": "https://www.estadao.com.br/resizer/v2/VTB6LSQQIZHWTAZKRN73FEUN7I.png?quality=80&auth=2615ff2e5a0a05149ac75fde7de5c4fe70d6edd0b38894eab8f27702e9cc070b&width=710",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Uma vulnerabilidade no recurso Dispatch, no Claude (Anthropic), permitia que extensões de navegador maliciosas executassem códigos discretamente no sistema operacional dos usuários. A descoberta foi revelada em relatório técnico divulgado pela Forever Security, empresa especializada em segurança de endpoints. O problema ocorria devido ao painel de controle do Dispatch , que aceitava sessões comuns autenticadas no site do claude.ai, mesmo sem exibir links visíveis para o recurso. Assim, uma extensão com permissão para atuar na página conseguia enviar instruções para o aplicativo Claude Desktop como se fossem comandos legítimos digitados pela pessoa. Falha em recurso do Claude permitia que extensões de navegador executassem códigos Foto: Reprodução/ChatG A pesquisa demonstrou que, durante um teste prático, um script automatizado abriu o recurso, enviou prompts para instalar um pacote de software desconhecido e clicou automaticamente nos botões de permissão. Mesmo quando a inteligência artificial (IA) hesitou diante de um comando desconhecido, o sistema injetou novas mensagens que convenceram a ferramenta a prosseguir com a instalação. Ela abriu, por fim, a calculadora do sistema operacional para comprovar o acesso remoto. Segundo os pesquisadores liderados por Gal Weizmann na Forever Security, a exploração não exigia vulnerabilidades: “Um site com permissão para interagir com navegador não deveria ter passe livre para executar comando do computador da pessoa”, identificou a equipe técnica, em relatório. Os especialistas alertaram ainda que o problema poderia ser explorado, inclusive, entre dispositivos diferentes conectados à mesma conta, como um computador pessoal e uma máquina corporativa. Tabela demonstrativa sobre a falha Foto: Reprodução/Forever Security A falha foi "
+  },
   {
    "id": "50a53afadcff1570",
    "source": "BleepingComputer",
@@ -13752,28 +13770,6 @@
    "enriched": true,
    "why": "Protege os utilizadores ao garantir que todas as aplicações instaladas provêm de programadores com identidade verificada.",
    "todo": "Certifique-se de que regista e verifica a sua identidade junto da Google caso desenvolva aplicações para Android."
-  },
-  {
-   "id": "8236f5eb74b094df",
-   "source": "CrowdStrike Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.crowdstrike.com/en-us/blog/crowdstrike-helps-protect-against-nginx2root-cve-2026-123007/",
-   "published": "2026-11-19T22:41:18.646206+00:00",
-   "title": "NGINX2Root: Identificar e Proteger com a Plataforma CrowdStrike Falcon",
-   "summary": "A segurança de servidores e aplicações baseadas em NGINX tem sido foco de novas orientações técnicas. A plataforma CrowdStrike Falcon destaca-se na identificação proativa de vulnerabilidades e na proteção destas infraestruturas. Esta abordagem visa mitigar o risco de exploração por parte de agentes maliciosos que procuram elevar privilégios. O impacto direto traduz-se numa maior resiliência operativa para as organizações.",
-   "image": null,
-   "points": [
-    "Foco na segurança de ambientes NGINX.",
-    "Uso da plataforma CrowdStrike Falcon para proteção.",
-    "Mitigação de riscos de escalação de privilégios."
-   ],
-   "title_original": "NGINX2Root: Identify and Protect with the CrowdStrike Falcon Platform",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Ajuda a blindar servidores web críticos contra acessos não autorizados.",
-   "todo": "Implemente soluções de deteção e resposta em endpoints e mantenha os servidores NGINX atualizados."
   }
  ]
 }

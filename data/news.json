@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T16:25:11.948151+00:00",
+ "updated": "2026-11-25T16:44:51.612106+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -74,12 +74,12 @@
   {
    "source": "MS-ISAC (CIS)",
    "ok": true,
-   "added": 5
+   "added": 3
   },
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -89,7 +89,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 18
+   "added": 17
   },
   {
    "source": "SecurityWeek",
@@ -149,7 +149,7 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 8
+   "added": 9
   },
   {
    "source": "Microsoft Security Blog",
@@ -234,7 +234,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 18
+   "added": 17
   },
   {
    "source": "The Register Security",
@@ -310,8 +310,8 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 343,
-  "unenriched": 255,
+  "pending": 345,
+  "unenriched": 257,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,23 @@
   ]
  },
  "items": [
+  {
+   "id": "7deeca46c74df398",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/25/us-treasury-financial-crimes-unit-becomes-latest-fed-breach-victim/5312165",
+   "published": "2026-11-25T16:40:16+00:00",
+   "title": "US Treasury financial crimes unit becomes latest fed breach victim",
+   "summary": "FinCEN takes systems offline and extends filing deadlines while investigating 'unauthorized access'",
+   "image": "https://image.theregister.com/?imageId=232475&width=800",
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "The US Treasury's Financial Crimes Enforcement Network (FinCEN) has taken some systems offline following unauthorized access, disrupting regulatory filings for financial institutions. An alert has gone up on FinCEN's Bank Secrecy Act E-Filing website, as shown in this archived copy, informing those who need to submit reports that they might not be able to while the agency deals with the situation. FinCEN not only enforces compliance with the Bank Secrecy Act and associated regulations but also collects and analyzes financial intelligence for sharing with other US agencies and foreign government partners. In other words, it has some juicy info in its databases. “FinCEN is investigating a cybersecurity incident that resulted in unauthorized access to a limited subset of its systems,” the alert states. “As a proactive measure, FinCEN has taken some systems offline.” FinCEN hasn't said which systems intruders accessed, but clues in the deadline extension notice the agency posted alongside the warning suggest the disruption affects its reporting services for banks and other financial institutions required to submit reports detailing certain financial transactions and suspicious activity that may indicate money laundering or other illicit activity. FinCEN's Secure Data Transfer Mode, one method of submitting those reports, appears to be affected, as do services companies use to submit beneficial ownership information reports and individuals use to update their FinCEN identifiers. Eligible organizations and individuals with filings or updates due from November 18 through December 29 now have until December 30 to submit them. The Register has learned that there’s no evidence of any unauthorized access to Bank Secrecy Act data or beneficial ownership databases. That said, the in"
+  },
   {
    "id": "97df8d95478773eb",
    "source": "BleepingComputer",
@@ -386,6 +403,23 @@
    "translated": false,
    "enriched": false,
    "raw": ""
+  },
+  {
+   "id": "718495461e01151a",
+   "source": "Cybersecurity Dive",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cybersecuritydive.com/news/microsoft-remediates-azure-flaw-following-attacks-against-norwegian-energy/875755/",
+   "published": "2026-11-25T15:36:37+00:00",
+   "title": "Microsoft remediates Azure flaw following attacks against Norwegian energy giants",
+   "summary": "Microsoft released a security update, but still recommends customers rotate credentials and secrets.",
+   "image": "https://imgproxy.divecdn.com/X3kemzUTphFEaN5oM-fc_Q8g6HL5M-JcRjS36u3gxgk/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMTg5NjUyODI3LmpwZw==.webp",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "Microsoft released a security update, but still recommends customers rotate credentials and secrets."
   },
   {
    "id": "ade8cd2e35f1666f",
@@ -13470,50 +13504,6 @@
    "enriched": true,
    "why": "Expõe milhares de utilizadores a potenciais riscos de engenharia social e utilização indevida de dados pessoais.",
    "todo": "Fique atento a comunicações suspeitas e altere as palavras-passe das contas associadas aos serviços de transporte."
-  },
-  {
-   "id": "bf35392ba6106147",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/craftcms-security-advisory-av26-1180",
-   "published": "2026-11-19T18:19:24+00:00",
-   "title": "Aviso de segurança CraftCMS (AV26-1180)",
-   "summary": "O CraftCMS foi afetado por vulnerabilidades que atingem as versões anteriores à 5.11.5, conforme indicado no aviso de segurança AV26-1180. O Centro de Cibersegurança aconselhou os administradores a consultarem os recursos disponíveis e a aplicarem as atualizações necessárias. Esta situação exige atenção célere para mitigar eventuais riscos nos sites e servidores que utilizam o CMS.",
-   "image": null,
-   "points": [
-    "Vulnerabilidades detetadas no CraftCMS anteriores à versão 5.11.5.",
-    "Aviso de segurança emitido sob a referência AV26-1180.",
-    "Recomendada a aplicação de atualizações de segurança."
-   ],
-   "title_original": "CraftCMS security advisory (AV26-1180)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Evita a exploração de falhas conhecidas em gestores de conteúdos que poderiam comprometer sites inteiros.",
-   "todo": "Atualize o CraftCMS para uma versão igual ou superior à 5.11.5 e reveja os avisos de segurança oficiais."
-  },
-  {
-   "id": "884e1c7b0b943a1b",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/ifood-confirma-vazamento-de-dados-de-clientes-parceiros-e-entregadores/",
-   "published": "2026-11-19T18:06:00+00:00",
-   "title": "iFood confirma vazamento de dados de clientes, parceiros e entregadores",
-   "summary": "O iFood sofreu uma invasão aos seus sistemas que resultou na exposição de dados cadastrais de clientes, parceiros, restaurantes e entregadores. A empresa confirmou que senhas, meios de pagamento e dados biométricos não foram acedidos, mantendo os serviços a funcionar normalmente. As informações expostas variam consoante o tipo de utilizador, tendo a ocorrência sido notificada à ANPD.",
-   "image": "https://www.estadao.com.br/resizer/v2/HPL6MLYSC5JXVILJFSU3VX5N3U.jpg?quality=80&auth=96e6cc16593fb2488703c9045dcd7f63c77ae3380f46a5ceb698a2736fdaf08b&width=1150",
-   "points": [
-    "iFood sofreu invasão e exposição de dados cadastrais.",
-    "Dados de clientes, parceiros e entregadores foram acedidos.",
-    "Senhas e cartões de crédito não foram comprometidos."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como incidentes em plataformas de entrega podem expor dados sensíveis de milhares de utilizadores e parceiros.",
-   "todo": "Desconfie de contactos que solicitem códigos ou pagamentos e verifique os emails informativos enviados pela empresa."
   }
  ]
 }

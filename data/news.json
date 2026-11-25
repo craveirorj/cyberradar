@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T19:25:58.386718+00:00",
+ "updated": "2026-11-25T19:47:24.362450+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -154,7 +154,7 @@
   {
    "source": "Microsoft Security Blog",
    "ok": true,
-   "added": 6
+   "added": 7
   },
   {
    "source": "Microsoft MSRC",
@@ -164,7 +164,7 @@
   {
    "source": "AWS Security Blog",
    "ok": true,
-   "added": 4
+   "added": 5
   },
   {
    "source": "Cisco Talos",
@@ -204,7 +204,7 @@
   {
    "source": "Rapid7",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "Tenable",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 15
+   "added": 14
   },
   {
    "source": "ACSC Austrália",
@@ -309,16 +309,107 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 48,
-  "pending": 311,
-  "unenriched": 211,
+  "done": 108,
+  "pending": 214,
+  "unenriched": 112,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "Expecting ':' delimiter: line 73 column 3 (char 5522)"
+   "Expecting property name enclosed in double quotes: line 45 column 5 (char 4090)"
   ]
  },
  "items": [
+  {
+   "id": "9398c1750b17f9c4",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/25/the-security-of-us-water-systems-is-even-leakier-than-we-thought/5312243",
+   "published": "2026-11-25T19:40:17+00:00",
+   "title": "A segurança dos sistemas de água nos EUA é ainda mais vulnerável do que se pensava",
+   "summary": "Um novo índice criado pela empresa de gestão de exposições Securin revelou que os fornecedores de tecnologia para sistemas de água norte-americanos possuem quase o doble de vulnerabilidades registadas publicamente. O estudo identificou falhas exploradas que nem sequer constavam no catálogo de vulnerabilidades conhecidas da CISA. A investigação aponta que um pequeno grupo de fornecedores concentra a maioria dos avisos de segurança. O impacto traduz-se num risco elevado para infraestruturas críticas de abastecimento de água e águas residuais.",
+   "image": "https://image.theregister.com/?imageId=5312249&width=800",
+   "points": [
+    "Quem: A empresa Securin e fornecedores de tecnologia para a água.",
+    "O Quê: Descoberta de quase o dobro das vulnerabilidades conhecidas nos sistemas hídricos.",
+    "Como: Através de um novo índice chamado Water Supply Chain Watch.",
+    "Impacto: Aumento do risco e falhas de segurança ocultas em infraestruturas essenciais."
+   ],
+   "title_original": "The security of US water systems is even leakier than we thought",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que as infraestruturas críticas de água estão muito mais expostas a falhas ocultas do que os registos oficiais indicavam.",
+   "todo": "Auditar os fornecedores de tecnologia e atualizar de imediato os controladores industriais com passwords fortes."
+  },
+  {
+   "id": "63da0c2dc0919fd6",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/",
+   "published": "2026-11-25T19:39:31+00:00",
+   "title": "Itália e Suíça alertam para ciberataques autónomos impulsionados por IA",
+   "summary": "As agências de cibersegurança da Suíça e de Itália emitiram alertas conjuntos sobre a ameaça de ataques informáticos automatizados. Estes ataques são conduzidos por agentes de inteligência artificial direcionados a organizações do setor das infraestruturas críticas. A situação demonstra a evolução das táticas ofensivas utilizadas pelos cibercriminosos.",
+   "image": null,
+   "points": [
+    "Quem: Agências de cibersegurança da Suíça e de Itália.",
+    "O Quê: Alerta sobre ataques autónomos impulsionados por IA.",
+    "Alvo: Organizações de infraestruturas críticas.",
+    "Impacto: Maior velocidade e sofisticação em potenciais campanhas maliciosas."
+   ],
+   "title_original": "Italy and Switzerland warn of autonomous AI-driven cyberattacks",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia a transição para ciberataques totalmente automatizados por inteligência artificial contra setores vitais.",
+   "todo": "Reforçar a monitorização de redes e implementar defesas baseadas em IA para detetar comportamentos anómalos automatizados."
+  },
+  {
+   "id": "aeeca0d56646c86c",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/black-friday-golpe-imita-mercado-livre-para-roubar-dados-e-senhas-do-cartao/",
+   "published": "2026-11-25T19:30:00+00:00",
+   "title": "Black Friday: golpe imita Mercado Livre para roubar dados e senhas do cartão",
+   "summary": "Cibercriminosos criaram pelo menos cinco sites falsos que imitam a plataforma Mercado Livre para roubar dados pessoais e bancários às vésperas da Black Friday. A fraude utiliza falsos descontos em eletrodomésticos, culminando numa cobrança por Pix e num ecrã falso de confirmação de segurança para extrair a senha do cartão. O esquema foi descoberto pela empresa de cibersegurança ESET, enquanto a marca afetada reforça que não possui qualquer vínculo com as páginas fraudulentas.",
+   "image": "https://www.estadao.com.br/resizer/v2/F6NUEXA3SRE27GERCBPILBD4UA.png?quality=80&auth=d40469badf272127072aae83878c47fb2cae138db70141905f829fa37ddd66fd&width=710",
+   "points": [
+    "Quem: Cibercriminosos e a empresa de segurança ESET.",
+    "O Quê: Criação de cinco sites falsos imitando o Mercado Livre.",
+    "Como: Ofertas falsas até 80%, pagamento por Pix e pedido da senha do cartão num ecrã falso.",
+    "Impacto: Roubo de dados pessoais, financeiros e senhas de utilizadores."
+   ],
+   "title_original": null,
+   "category": "Phishing/Fraude",
+   "translated": false,
+   "enriched": true,
+   "why": "Alerta consumidores e empresas para fraudes sofisticadas em épocas de grandes compras.",
+   "todo": "Verificar sempre se está nos canais oficiais antes de comprar e desconfiar de descontos excessivos."
+  },
+  {
+   "id": "655e9ca6c0df750d",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1209",
+   "published": "2026-11-25T19:21:44+00:00",
+   "title": "Aviso de segurança do Drupal (AV26-1209)",
+   "summary": "O núcleo do Drupal foi afetado por uma vulnerabilidade altamente crítica de bypass de acesso, identificada pelo identificador CVE-2026-136716. A falha afeta várias versões anteriores do software e já está a ser ativamente explorada em ataques no mundo real. O Centro Cibernético recomenda a aplicação urgente das atualizações de segurança disponíveis para mitigar o risco.",
+   "image": null,
+   "points": [
+    "Quem: O Centro Cibernético e utilizadores do Drupal.",
+    "O Quê: Vulnerabilidade de bypass de acesso no núcleo do Drupal.",
+    "Impacto: Falha explorada ativamente em ataques e classificada como altamente crítica.",
+    "Como resolver: Aplicar as atualizações indicadas pelo fornecedor."
+   ],
+   "title_original": "Drupal security advisory (AV26-1209)",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Protege os sites baseados nesta plataforma contra explorações ativas de uma falha crítica.",
+   "todo": "Atualizar imediatamente o Drupal core para as versões seguras recomendadas pelo fornecedor."
+  },
   {
    "id": "b9cccd69167a4961",
    "source": "Cyber Centre Canadá",
@@ -326,15 +417,21 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/control-systems-hitachi-security-advisory-av26-1208",
    "published": "2026-11-25T19:11:51+00:00",
-   "title": "[Control systems] Hitachi security advisory (AV26-1208)",
-   "summary": "",
+   "title": "[Sistemas de controlo] Aviso de segurança da Hitachi (AV26-1208)",
+   "summary": "A Hitachi Energy foi afetada por múltiplas vulnerabilidades em produtos críticos, nomeadamente na série RTU500 e no Cosminexus Component Container. As falhas atingem várias versões de firmware e componentes específicos utilizados em sistemas industriais. O Centro Cibernético insta os administradores a verificarem os links fornecidos e a atualizarem os equipamentos.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Hitachi Energy e administradores de sistemas.",
+    "O Quê: Múltiplas vulnerabilidades em produtos como a série RTU500.",
+    "Impacto: Riscos em sistemas industriais e de controlo.",
+    "Como resolver: Revisão de avisos e aplicação de atualizações."
+   ],
+   "title_original": "[Control systems] Hitachi security advisory (AV26-1208)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1208 Date: November 25, 2026 As of November 24, 2026, Hitachi Energy is affected by a vulnerability in the following product: RTU500 series CMU firmware Prior to or equal to 13.9.1 Prior to or equal to 12.7.8 Prior to or equal to 13.5.4 Prior to or equal to 13.6.3 Prior to or equal to 13.7.8 Prior to or equal to 13.8.2 Cosminexus Component Container Multiple versions and platforms The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. Multiple Vulnerabilities in Hitachi Energy RTU500 Product Vulnerability in Cosminexus Hitachi Vulnerability Information"
+   "translated": true,
+   "enriched": true,
+   "why": "Mitiga falhas em equipamentos industriais que podem ser exploradas por atacantes.",
+   "todo": "Consultar os avisos oficiais da Hitachi Energy e aplicar as correções de firmware necessárias."
   },
   {
    "id": "50b8b790f8a4be80",
@@ -411,15 +508,44 @@
    "lang": "en",
    "link": "https://www.rapid7.com/blog/post/so-rapid7-named-leader-2026-gartner-magic-quadrant-integrated-security-operations-center-systems-isocs",
    "published": "2026-11-25T18:34:43+00:00",
-   "title": "Rapid7 Named a Leader in the 2026 Gartner® Magic Quadrant™ for Integrated Security Operations Center Systems",
-   "summary": "Recognized for Completeness of Vision and Ability to Execute. We are proud to share that Rapid7 has been recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Integrated Security Operations Center Systems. Our perspective: less stitching, more stopping threats Most security teams don't struggle to find tools. They struggle to make them work together. We believe SOC analysts lose too much of their day moving between consoles and matching alerts to assets by hand, which is time not spent stopping threats. To us, an integrated approach to security operations means detection, investigati",
+   "title": "Rapid7 considerada Líder no Quadrante Mágico da Gartner de 2026 para Sistemas Integrados de SOC",
+   "summary": "A Rapid7 foi reconhecida como líder no Quadrante Mágico da Gartner de 2026 para Sistemas Integrados de Centro de Operações de Segurança (SOC). A empresa destaca a importância de unificar a gestão de exposições, SIEM e SOAR numa única plataforma para reduzir o tempo perdido pelos analistas entre consolas distintas. Esta integração visa permitir uma priorização mais rápida e eficaz das ameaças detetadas.",
    "image": "https://images.contentstack.io/v3/assets/blte4f029e766e6b253/blt2bb01d44bc984b5f/68efa6dac2504e2d2b200e2c/Card-SIEM-Gartner-Report.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: A empresa Rapid7 e a Gartner.",
+    "O Quê: Reconhecimento como líder em sistemas integrados de SOC.",
+    "Como: Através da união de ferramentas de segurança numa única plataforma.",
+    "Impacto: Maior eficiência na resposta a incidentes e priorização de ameaças."
+   ],
+   "title_original": "Rapid7 Named a Leader in the 2026 Gartner® Magic Quadrant™ for Integrated Security Operations Center Systems",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Recognized for Completeness of Vision and Ability to Execute. We are proud to share that Rapid7 has been recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Integrated Security Operations Center Systems. Our perspective: less stitching, more stopping threats Most security teams don't struggle to find tools. They struggle to make them work together. We believe SOC analysts lose too much of their day moving between consoles and matching alerts to assets by hand, which is time not spent stopping threats. To us, an integrated approach to security operations means detection, investigation and response working from the same data and the same view, so analysts can get from \"what fired?\" to \"what do we do about it?\" faster. The importance of exposure management in the SOC Rapid7 Incident Command, part of the Rapid7 Command Platform, brings together SIEM, SOAR, DFIR, attack surface management and threat intelligence. We built it on the idea that exposure management, and the context it brings, belongs inside the SOC, not next to it. In our view, when an alert arrives with what we know about the asset and how exposed it is, analysts can prioritize what matters instead of working from separate vulnerability reports and alert queues. Context to act, not another console to check We believe adopting an integrated SOC shouldn't be all-or-nothing. Incident Command is available in tiers from Essentials to Ultimate, so teams that want extra coverage can add managed services. That helps resource-pressured teams to start with what they need and grow at their own pace, spending less time building and maintaining integrations and more time on investigations. To us, security operations work best when analysts have the context to act, not another console to check. We're proud to be "
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra a evolução para plataformas de segurança unificadas que facilitam o trabalho das equipas.",
+   "todo": "Avaliar a consolidação de ferramentas de segurança para melhorar a visibilidade e a resposta a incidentes."
+  },
+  {
+   "id": "fc1fe5cb80de4b70",
+   "source": "Microsoft Security Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/25/what-defenders-need-to-know-artex-agentic-ai-framework-threat-actors-abuse/",
+   "published": "2026-11-25T18:09:06+00:00",
+   "title": "O que os defensores precisam de saber sobre o ARTEX, a framework de IA agentica abusada por agentes de ameaças",
+   "summary": "A framework de testes de penetração impulsada por inteligência artificial ARTEX tem sido ativamente abusada por vários grupos de ameaças estatais e motivados por lucro financeiro desde o seu lançamento. Grupos como Storm-0940 e Salt Typhoon integraram a ferramenta para acelerar tarefas como reconhecimento de redes, ataques a credenciais e exploração de aplicações web. A framework utiliza agentes de IA para automatizar várias etapas de um ataque em poucos minutos.",
+   "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/11/ARTEX-AI-agent-architecture.webp",
+   "points": [
+    "Quem: Vários grupos de ameaças e a Microsoft Threat Intelligence.",
+    "O Quê: Abuso da framework de testes de penetração ARTEX.",
+    "Como: Automatização de reconhecimento, acessos e exploração por agentes de IA.",
+    "Impacto: Aceleração drástica de ataques cibernéticos sofisticados."
+   ],
+   "title_original": "What defenders need to know about ARTEX, the agentic AI framework threat actors abuse",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para a industrialização e aceleração de ataques cibernéticos através de ferramentas de IA ofensiva.",
+   "todo": "Monitorizar a rede em busca de atividade associada a ferramentas de pentesting automatizadas e proteger credenciais."
   },
   {
    "id": "45ddc028c01d974d",
@@ -630,15 +756,21 @@
    "lang": "en",
    "link": "https://www.theregister.com/security/2026/11/25/us-treasury-financial-crimes-unit-becomes-latest-fed-breach-victim/5312165",
    "published": "2026-11-25T16:40:16+00:00",
-   "title": "US Treasury financial crimes unit becomes latest fed breach victim",
-   "summary": "FinCEN takes systems offline and extends filing deadlines while investigating 'unauthorized access'",
+   "title": "Unidade de crimes financeiros do Tesouro dos EUA torna-se a mais recente vítima de violação federal",
+   "summary": "A Rede de Execução de Crimes Financeiros do Tesouro dos EUA (FinCEN) retirou alguns sistemas offline após detetar um acesso não autorizado a um subconjunto limitado de dados. A intrusão interrompeu temporariamente os serviços de submissão de relatórios regulatórios para instituições financeiras, levando a agência a prorrogar prazos de entrega. Até ao momento, não existem evidências de compromisso nos dados principais da Lei de Sigilo Bancário.",
    "image": "https://image.theregister.com/?imageId=232475&width=800",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: FinCEN (Tesouro dos EUA) e instituições financeiras afetadas.",
+    "O Quê: Acesso não autorizado e interrupção de sistemas de relatórios.",
+    "Como: Desativação preventiva de serviços afetados pela agência.",
+    "Impacto: Atrasos em submissões regulatórias e prorrogação de prazos para entidades."
+   ],
+   "title_original": "US Treasury financial crimes unit becomes latest fed breach victim",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "The US Treasury's Financial Crimes Enforcement Network (FinCEN) has taken some systems offline following unauthorized access, disrupting regulatory filings for financial institutions. An alert has gone up on FinCEN's Bank Secrecy Act E-Filing website, as shown in this archived copy, informing those who need to submit reports that they might not be able to while the agency deals with the situation. FinCEN not only enforces compliance with the Bank Secrecy Act and associated regulations but also collects and analyzes financial intelligence for sharing with other US agencies and foreign government partners. In other words, it has some juicy info in its databases. “FinCEN is investigating a cybersecurity incident that resulted in unauthorized access to a limited subset of its systems,” the alert states. “As a proactive measure, FinCEN has taken some systems offline.” FinCEN hasn't said which systems intruders accessed, but clues in the deadline extension notice the agency posted alongside the warning suggest the disruption affects its reporting services for banks and other financial institutions required to submit reports detailing certain financial transactions and suspicious activity that may indicate money laundering or other illicit activity. FinCEN's Secure Data Transfer Mode, one method of submitting those reports, appears to be affected, as do services companies use to submit beneficial ownership information reports and individuals use to update their FinCEN identifiers. Eligible organizations and individuals with filings or updates due from November 18 through December 29 now have until December 30 to submit them. The Register has learned that there’s no evidence of any unauthorized access to Bank Secrecy Act data or beneficial ownership databases. That said, the in"
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que até organismos financeiros governamentais de topo enfrentam incidentes de segurança cibernética.",
+   "todo": "Garantir planos de continuidade de negócio e canais alternativos seguros para a comunicação com entidades reguladoras."
   },
   {
    "id": "97df8d95478773eb",
@@ -647,15 +779,21 @@
    "lang": "en",
    "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers/",
    "published": "2026-11-25T16:13:40+00:00",
-   "title": "CISA warns of critical unpatched flaw in Danfoss refrigeration controllers",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning about a critical vulnerability in Danfoss AK-SM 8xxA Series controllers used by food retailers to manage commercial refrigeration, HVAC, and lighting systems. [...]",
+   "title": "CISA alerta para falha crítica não corrigida em controladores de refrigeração Danfoss",
+   "summary": "A Agência de Cibersegurança e Segurança de Infraestruturas dos EUA (CISA) emitiu um aviso sobre uma vulnerabilidade crítica que afeta os controladores da série Danfoss AK-SM 8xxA. Estes equipamentos são amplamente utilizados por retalhistas alimentares para gerir sistemas comerciais de refrigeração, AVAC e iluminação. A falha representa riscos operacionais significativos para estes estabelecimentos caso seja explorada.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: A CISA e a Danfoss.",
+    "O Quê: Vulnerabilidade crítica em controladores da série AK-SM 8xxA.",
+    "Alvo: Sistemas comerciais de refrigeração, AVAC e iluminação.",
+    "Impacto: Risco operacional para o setor de retalho alimentar."
+   ],
+   "title_original": "CISA warns of critical unpatched flaw in Danfoss refrigeration controllers",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning about a critical vulnerability in Danfoss AK-SM 8xxA Series controllers used by food retailers to manage commercial refrigeration, HVAC, and lighting systems. [...]"
+   "translated": true,
+   "enriched": true,
+   "why": "Protege infraestruturas comerciais essenciais contra falhas graves em equipamentos de controlo ambiental.",
+   "todo": "Verificar os avisos da Danfoss e aplicar imediatamente as correções ou restrições de rede recomendadas."
   },
   {
    "id": "be87bda488bc7271",
@@ -664,15 +802,20 @@
    "lang": "en",
    "link": "https://www.infosecurity-magazine.com/news/doj-anti-scam-surge-800-defendants/",
    "published": "2026-11-25T16:00:00+00:00",
-   "title": "US Anti-Scam Surge Hits 800 Defendants and 29 Scam Compounds",
-   "summary": "DOJ's anti-scam surge has targeted over 800 defendants while the FBI has hit over 29 scam compounds",
+   "title": "Aumento da operação anti-fraude nos EUA atinge 800 arguidos e 29 complexos de burlas",
+   "summary": "Uma operação conjunta das autoridades norte-americanas visou mais de 800 arguidos envolvidos em esquemas fraudulentos. Em paralelo, o FBI desmantelou mais de 29 complexos físicos dedicados a operações de burlas em larga escala. A iniciativa faz parte de um esforço coordenado para combater redes criminosas organizadas de cibercrime.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Departamento de Justiça dos EUA e FBI.",
+    "O Quê: Operação contra redes de burlas em larga escala.",
+    "Impacto: Mais de 800 arguidos visados e 29 complexos de cibercrime desmantelados."
+   ],
+   "title_original": "US Anti-Scam Surge Hits 800 Defendants and 29 Scam Compounds",
    "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": false,
-   "raw": "DOJ's anti-scam surge has targeted over 800 defendants while the FBI has hit over 29 scam compounds"
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia o impacto global do desmantelamento de grandes operações de cibercrime organizado.",
+   "todo": "Manter uma cultura de ceticismo perante ofertas online suspeitas e reportar tentativas de fraude."
   },
   {
    "id": "75d3be5138a98021",
@@ -681,15 +824,21 @@
    "lang": "en",
    "link": "https://www.darkreading.com/threat-intelligence/attackers-net-developers-poisoned-job-assessments",
    "published": "2026-11-25T15:48:04+00:00",
-   "title": "Attackers Target .NET Developers With Poisoned Job Assessments",
-   "summary": "Researchers discovered 13 malicious NuGet packages as part of a fake recruitment campaign that spreads malware and gives attackers access to developers' machines.",
+   "title": "Atacantes visam programadores .NET com avaliações de emprego envenenadas",
+   "summary": "Investigadores descobriram 13 pacotes NuGet maliciosos distribuídos no âmbito de uma campanha de recrutamento falsa. O esquema visa programadores de software, instalando malware nos seus computadores através de testes técnicos adulterados. O objetivo principal dos atacantes é obter acesso direto às máquinas dos profissionais de tecnologia.",
    "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt62eb1a39d76dff3b/6b06d44d51725d29015e8423/Gorodenkoff-developer-coding-shutterstock.png?width=720&quality=80&disable=upscale",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Investigadores de cibersegurança e programadores .NET.",
+    "O Quê: Descoberta de 13 pacotes NuGet maliciosos.",
+    "Como: Falsas campanhas de recrutamento com testes técnicos infetados.",
+    "Impacto: Infeção de dispositivos de programadores e acesso não autorizado a ambientes de trabalho."
+   ],
+   "title_original": "Attackers Target .NET Developers With Poisoned Job Assessments",
    "category": "Malware",
-   "translated": false,
-   "enriched": false,
-   "raw": "Researchers discovered 13 malicious NuGet packages as part of a fake recruitment campaign that spreads malware and gives attackers access to developers' machines."
+   "translated": true,
+   "enriched": true,
+   "why": "Revela táticas de engenharia social direcionadas a perfis técnicos através de processos de recrutamento.",
+   "todo": "Validar a autenticidade de dependências de código e descarregar pacotes apenas de fontes oficiais e verificadas."
   },
   {
    "id": "74c03507cc4ed031",
@@ -698,15 +847,20 @@
    "lang": "en",
    "link": "https://www.crowdstrike.com/en-us/blog/falcon-ai-gateway-one-control-point-for-ai-traffic/",
    "published": "2026-11-25T15:41:24.097168+00:00",
-   "title": "Inside Falcon AI Gateway: One Control Point for AI Traffic",
-   "summary": "",
+   "title": "Dentro do Falcon AI Gateway: Um ponto de controlo para o tráfego de IA",
+   "summary": "A solução Falcon AI Gateway foi desenhada para centralizar e controlar todo o tráfego relacionado com inteligência artificial numa única organização. Esta abordagem visa simplificar a gestão de pedidos e interações com modelos de IA por parte das equipas técnicas. O sistema funciona como um ponto único de visibilidade e segurança para as operações digitais.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Ferramentas de segurança focadas em inteligência artificial.",
+    "O Quê: Criação de um ponto centralizado de controlo para tráfego de IA.",
+    "Impacto: Maior visibilidade e governação sobre a utilização de IA nas empresas."
+   ],
+   "title_original": "Inside Falcon AI Gateway: One Control Point for AI Traffic",
    "category": "IA",
-   "translated": false,
-   "enriched": false,
-   "raw": ""
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda as empresas a gerir e proteger a utilização crescente de ferramentas de inteligência artificial.",
+   "todo": "Implementar políticas claras de utilização de IA e centralizar o acesso através de gateways segurados."
   },
   {
    "id": "718495461e01151a",
@@ -715,15 +869,20 @@
    "lang": "en",
    "link": "https://www.cybersecuritydive.com/news/microsoft-remediates-azure-flaw-following-attacks-against-norwegian-energy/875755/",
    "published": "2026-11-25T15:36:37+00:00",
-   "title": "Microsoft remediates Azure flaw following attacks against Norwegian energy giants",
-   "summary": "Microsoft released a security update, but still recommends customers rotate credentials and secrets.",
+   "title": "A Microsoft corrige falha no Azure após ataques contra gigantes energéticos noruegueses",
+   "summary": "A Microsoft lançou uma atualização de segurança para resolver uma vulnerabilidade na plataforma Azure que foi explorada em ataques direcionados a empresas energéticas na Noruega. Embora a correção tenha sido disponibilizada, a empresa continua a aconselhar os clientes a alterarem as suas credenciais e segredos. O incidente realça os riscos enfrentados por setores críticos face a falhas na cloud. Os utilizadores afetados devem aplicar as recomendações de imediato.",
    "image": "https://imgproxy.divecdn.com/X3kemzUTphFEaN5oM-fc_Q8g6HL5M-JcRjS36u3gxgk/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMTg5NjUyODI3LmpwZw==.webp",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A Microsoft corrigiu uma falha de segurança no Azure.",
+    "O alvo dos ataques foram grandes empresas de energia na Noruega.",
+    "A empresa recomenda a rotação de credenciais e segredos."
+   ],
+   "title_original": "Microsoft remediates Azure flaw following attacks against Norwegian energy giants",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Microsoft released a security update, but still recommends customers rotate credentials and secrets."
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque demonstra como falhas em plataformas cloud podem ser exploradas contra infraestruturas energéticas críticas.",
+   "todo": "Atualize os sistemas afetados e proceda à rotação regular de credenciais e chaves secretas."
   },
   {
    "id": "ade8cd2e35f1666f",
@@ -732,15 +891,20 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/juniper-networks-security-advisory-av26-1101",
    "published": "2026-11-25T15:32:26+00:00",
-   "title": "Juniper Networks security advisory (AV26-1101) – Update 1",
-   "summary": "",
+   "title": "Aviso de segurança da Juniper Networks (AV26-1101) – Atualização 1",
+   "summary": "A Juniper Networks identificou vulnerabilidades que afetam o Session Smart Conductor e o Session Smart Router em várias versões anteriores. A CISA adicionou a falha CVE-2026-103406 ao seu catálogo de vulnerabilidades exploradas conhecidas. O Centro Cibernético insta os administradores a consultarem os links de suporte e a aplicarem as atualizações necessárias. Esta medida visa mitigar potenciais explorações ativas nos sistemas afetados.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Afeta os produtos Session Smart Conductor e Session Smart Router.",
+    "A CISA adicionou a CVE-2026-103406 ao catálogo KEV.",
+    "Administradores devem aplicar atualizações de segurança disponíveis."
+   ],
+   "title_original": "Juniper Networks security advisory (AV26-1101) – Update 1",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1101 Date: October 28, 2026 Updated: November 25, 2026 As of October 28, 2026, Juniper Networks is affected by vulnerabilities in the following products: Session Smart Conductor Prior to 7.0.5 Prior to 7.1.7 Prior to 7.2.3 Session Smart Router Prior to 7.0.5 Prior to 7.1.7 Prior to 7.2.3 Update 1 On November 25, 2026, Cybersecurity and Infrastructure Security Agency (CISA) added CVE-2026-103406 to their Known Exploited Vulnerabilities (KEV) Catalog. The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. 2026-10 On-Demand Security Bulletin: Session Smart Router and Session Smart Conductor: Multiple internally discovered vulnerabilities resolved CEC Juniper Community CISA KEV: CVE-2026-103406"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque a inclusão da falha no catálogo KEV indica exploração ativa no terreno, exigindo ação rápida.",
+   "todo": "Consulte os avisos oficiais e aplique as atualizações de firmware ou software disponibilizadas pelo fabricante."
   },
   {
    "id": "c6de0aeb8ff38439",
@@ -749,15 +913,20 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/geoserver-security-advisory-av26-1207",
    "published": "2026-11-25T15:29:23+00:00",
-   "title": "GeoServer security advisory (AV26-1207)",
-   "summary": "",
+   "title": "Aviso de segurança do GeoServer (AV26-1207)",
+   "summary": "O GeoServer foi afetado por vulnerabilidades em várias versões anteriores aos lançamentos recentes, com relatórios a indicar exploração ativa. As falhas identificadas incluem as referências CVE-2026-120705 e CVE-2026-129243. O Centro Cibernético recomenda que os utilizadores revejam a informação técnica e atualizem o software. A correção destas falhas é essencial para evitar compromissos nos servidores afetados.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O GeoServer apresenta falhas críticas em várias versões anteriores.",
+    "As vulnerabilidades CVE-2026-120705 e CVE-2026-129243 estão a ser exploradas.",
+    "Recomenda-se a aplicação urgente de atualizações de segurança."
+   ],
+   "title_original": "GeoServer security advisory (AV26-1207)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1207 Date: November 25, 2026 As of November 23 2026, GeoServer is affected by vulnerabilities in the following product: GeoServer – versions prior to 2.27.7 GeoServer – versions prior to 2.28.6 GeoServer – versions prior to 3.0.2 Open source reporting indicates that CVE-2026-120705 and CVE-2026-129243 are being exploited in the wild. The Cyber Centre encourages users and administrators to review the provided web link and apply any necessary updates as they become available. GeoServer Security Update - November 2026"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque estas falhas no GeoServer estão a ser ativamente exploradas por atacantes.",
+   "todo": "Atualize o GeoServer para as versões recomendadas pelo fornecedor."
   },
   {
    "id": "b2ec86257c9b955b",
@@ -766,15 +935,20 @@
    "lang": "en",
    "link": "https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/",
    "published": "2026-11-25T15:27:36+00:00",
-   "title": "Two Newly Disclosed GeoServer Vulnerabilities Under Attack",
-   "summary": "Attackers are probing GeoServer instances for two high-severity flaws that can be chained with other bugs for unauthenticated RCE.",
+   "title": "Duas novas vulnerabilidades do GeoServer sob ataque",
+   "summary": "Atacantes estão a testar ativamente instâncias do GeoServer à procura de duas falhas de alta gravidade. Estas vulnerabilidades podem ser combinadas com outros erros para obter execução remota de código sem autenticação. A situação exige atenção imediata por parte dos administradores que gerem estas plataformas. O risco de exploração bem-sucedida pode comprometer totalmente os sistemas.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Ciberatacantes visam instâncias do GeoServer com duas falhas graves.",
+    "As vulnerabilidades permitem encadeamento para execução remota de código.",
+    "Os ataques ocorrem sem necessidade de autenticação prévia."
+   ],
+   "title_original": "Two Newly Disclosed GeoServer Vulnerabilities Under Attack",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Attackers are probing GeoServer instances for two high-severity flaws that can be chained with other bugs for unauthenticated RCE."
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque a combinação destas falhas permite o controlo total de sistemas sem exigência de credenciais.",
+   "todo": "Aplique patches de segurança e reforce o isolamento e monitorização de instâncias expostas."
   },
   {
    "id": "b9ceb0be30046769",
@@ -783,15 +957,20 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/solarwinds-security-advisory-av26-1206",
    "published": "2026-11-25T15:23:14+00:00",
-   "title": "SolarWinds security advisory (AV26-1206)",
-   "summary": "",
+   "title": "Aviso de segurança da SolarWinds (AV26-1206)",
+   "summary": "A SolarWinds detetou vulnerabilidades nos produtos Dameware e Serv-U em versões iguais ou anteriores a 2026.3. Entre os problemas encontram-se a escalação de privilégios por path traversal (CVE-2026-123167) e injeção de comandos (CVE-2026-28336). O Centro Cibernético aconselha os administradores a analisarem os avisos e a aplicarem as correções. A falha na aplicação de patches pode permitir acessos indevidos aos sistemas.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Produtos Dameware e Serv-U da SolarWinds foram afetados.",
+    "Inclui falhas como path traversal e injeção de comandos.",
+    "Utilizadores devem consultar links de suporte e atualizar software."
+   ],
+   "title_original": "SolarWinds security advisory (AV26-1206)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1206 Date: November 25, 2026 As of November 24, 2026, SolarWinds is affected by vulnerabilities in the following products: Dameware Prior to or equal to 2026.3 Serv-U Prior to or equal to 2026.3 The Cyber Centre encourages users and administrators to review the provided web links and apply any necessary updates as they become available. SolarWinds Serv-U Privilege Escalation via Path Traversal Vulnerability (CVE-2026-123167) SolarWinds Dameware Command Injection Vulnerability (CVE-2026-28336) SolarWinds Security Vulnerabilities"
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque afeta software de gestão empresarial amplamente utilizado, expondo servidores a intrusões.",
+   "todo": "Atualize os produtos Dameware e Serv-U para versões corrigidas."
   },
   {
    "id": "5265d3f089dfd72e",
@@ -1182,9 +1361,9 @@
     "A Okta identificou potenciais ligações entre o grupo Inception e o ShinyHunters.",
     "O grupo Inception rejeitou publicamente quaisquer laços com os hackers."
    ],
-   "title_original": "ShinyHunters Claims Comeback, New Inception Group Rejects Alleged Ties",
+   "title_original": null,
    "category": "Ataque/APT",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Ilustra a reemergência e a reorganização de cibercriminosos conhecidos sob novas identidades ou estruturas.",
    "todo": "Mantenha as defesas contra exfiltração de dados e reforce a monitorização de acessos a redes corporativas."
@@ -1314,9 +1493,9 @@
     "O foco é direcionado para a criação de programas de segurança reais em instituições.",
     "São priorizados controlos essenciais face a restrições financeiras."
    ],
-   "title_original": "Ground Truth: CISO Matt Martin on Building a Real Security Program Without an Enterprise Budget",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "É relevante para pequenas empresas e organizações com recursos limitados que necessitam de proteger ativos críticos de forma eficiente.",
    "todo": "Concentre os investimentos limitados em cibersegurança nos controlos com maior retorno de risco, como backups e autenticação multifator."
@@ -3229,6 +3408,28 @@
    "enriched": true,
    "why": "Informa sobre alterações na liderança de uma importante autoridade de regulamentação de privacidade.",
    "todo": ""
+  },
+  {
+   "id": "0bb8cd3662a16247",
+   "source": "Cyber Centre Canadá",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://cyber.gc.ca/en/alerts-advisories/drupal-security-advisory-av26-1186",
+   "published": "2026-11-24T19:08:30+00:00",
+   "title": "Aviso de segurança do Drupal (AV26-1186) – Atualização 1",
+   "summary": "O núcleo do Drupal foi afetado por uma vulnerabilidade crítica de execução remota de código identificada como SA-CORE-2026-017. A CISA adicionou o CVE-2026-132165 ao seu catálogo de vulnerabilidades conhecidas exploradas. O Centro Cibernético apela aos utilizadores para atualizarem o Drupal core para as versões recentes. A falha representa um risco elevado de segurança para os sites baseados nesta plataforma.",
+   "image": null,
+   "points": [
+    "O núcleo do Drupal tem uma falha crítica de execução remota de código.",
+    "A CISA adicionou o CVE-2026-132165 ao catálogo KEV.",
+    "O Centro Cibernético recomenda a atualização imediata do sistema."
+   ],
+   "title_original": "Drupal security advisory (AV26-1186) – Update 1",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque a falha permite a execução remota de código e já conta com exploração ativa no terreno.",
+   "todo": "Atualize o Drupal core para as versões seguras disponibilizadas pelo projeto."
   },
   {
    "id": "5f76ac4f7ca9daa3",
@@ -13571,141 +13772,6 @@
    "enriched": true,
    "why": "Importa porque o navegador é uma ferramenta essencial e a exploração pode dar controlo total do sistema ao atacante.",
    "todo": "Atualize o Google Chrome para a versão mais recente o mais rapidamente possível."
-  },
-  {
-   "id": "545852a9591f5a6b",
-   "source": "Ars Technica Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://arstechnica.com/security/2026/11/man-charged-with-spying-on-silicon-valley-tech-and-defense-company-for-russia/",
-   "published": "2026-11-19T20:29:46+00:00",
-   "title": "Homem acusado de espionar empresa de tecnologia e defesa de Silicon Valley para a Rússia",
-   "summary": "Um cidadão russo de 25 anos foi acusado de atuar como espião russo, vigiando funcionários de uma empresa em Silicon Valley que auxiliava a Ucrânia. O suspeito fotografou trabalhadores num café, recolheu moradias de funcionários e perseguiu uma trabalhadora até provocar-lhe stresse emocional. O incidente terminou quando a vítima alertou a polícia numa esquadra local, levando à retirada do indivíduo. A operação visava recolher informações sobre colaboradores de uma empresa ligada ao esforço de guerra ucraniano.",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2023/05/getty-digital-gavel-1152x648.jpg",
-   "points": [
-    "Suspeito russo Igor D’iu vigiou e fotografou funcionários de empresa de Silicon Valley.",
-    "Acusado recolheu moradias e perseguiu agressivamente uma funcionária até uma esquadra policial.",
-    "A empresa visada prestava assistência à Ucrânia no conflito atual.",
-    "Ações do espião deixaram a vítima em forte estado de sofrimento emocional."
-   ],
-   "title_original": "Man charged with spying on Silicon Valley tech and defense company for Russia",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como o espionagem industrial e estatal afeta diretamente a segurança física e psicológica de colaboradores do setor tecnológico.",
-   "todo": "Reforçar a vigilância em redor das instalações e formar os colaboradores para identificarem potenciais perseguições ou comportamentos suspeitos."
-  },
-  {
-   "id": "150f8fb5544609cd",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached",
-   "published": "2026-11-19T20:14:15+00:00",
-   "title": "Segunda empresa de energia da Noruega atacada em dois dias",
-   "summary": "Uma segunda empresa energética norueguesa sofreu uma violação de segurança num espaço de dois dias. As autoridades ainda não encontraram uma ligação direta entre os dois incidentes registados. O impacto afeta o setor energético do país. Continua a investigação para apurar a origem e extensão dos danos.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blte4910babc7878a94/6aff5ad57ab982a4c314744c/Equinor-makasana-Getty.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "Segunda empresa norueguesa de energia alvo de violação.",
-    "Incidente ocorre dois dias após outro caso semelhante.",
-    "Sem ligação oficial estabelecida entre os dois incidentes."
-   ],
-   "title_original": "Second Norwegian Energy Company Breached in Two Days",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra a vulnerabilidade contínua do setor crítico de energia a ataques consecutivos.",
-   "todo": "Reforçar a monitorização de redes e os controlos de acesso em infraestruturas críticas."
-  },
-  {
-   "id": "67df130650e4ee78",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/why-most-apps-do-not-scale-how-to-fix-them/",
-   "published": "2026-11-19T20:01:09+00:00",
-   "title": "Porque é que a maioria das aplicações não escala (e como corrigi-lo)",
-   "summary": "A maioria dos problemas de escalabilidade em aplicações informáticas não decorre do volume de tráfego recebido. O texto aborda os desafios estruturais enfrentados por uma aplicação de análise de texto ao tentar crescer. A questão central foca-se em falhas de arquitetura e conceção de software em vez de sobrecargas de rede. O impacto reflete-se na incapacidade de certas plataformas lidarem com o crescimento sem reestruturações profundas.",
-   "image": null,
-   "points": [
-    "Problemas de escala muitas vezes não estão relacionados com o tráfego.",
-    "Caso prático centrado numa aplicação de análise de texto.",
-    "Identificação de falhas estruturais na arquitetura de software."
-   ],
-   "title_original": "Why Most Apps Don’t Scale (and How to Fix Them)",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Ajude equipas técnicas a focarem os seus esforços de otimização nos locais corretos, evitando desperdício de recursos.",
-   "todo": "Analise a arquitetura interna do software e os gargalos de código antes de investir apenas em infraestrutura e servidores."
-  },
-  {
-   "id": "20bd7f2d741599bf",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/produto-e-review/windows-11-tera-verificacao-de-seguranca-que-pode-bloquear-programas-e-jogos-entenda/",
-   "published": "2026-11-19T20:00:00+00:00",
-   "title": "Windows 11 terá verificação de segurança que pode bloquear programas e jogos; entenda",
-   "summary": "A Microsoft lançou uma prévia da ferramenta Windows Baseline Protection para testadores, reunindo vários mecanismos de segurança do Windows 11 numa única verificação. A funcionalidade avalia oito requisitos de exigência mínima, incluindo processadores de segurança, arranque seguro e integridade da memória. Caso o computador não cumpra os critérios definidos, a ferramenta pode bloquear a execução de determinados programas e jogos. O objetivo principal é elevar o nível geral de proteção do sistema operativo contra ameaças.",
-   "image": "https://www.estadao.com.br/resizer/v2/BRD62ME2CNBG7GLFXZQCBE7CD4.jpg?quality=80&auth=84f84890d8ffcea3673ae7de83ba131386e7ebd5d66916585db0fadfbb422ca2&width=710",
-   "points": [
-    "A Microsoft introduziu a ferramenta Windows Baseline Protection para testadores do Windows 11.",
-    "O sistema analisa oito requisitos essenciais de segurança de forma centralizada.",
-    "Computadores que não cumpram os padrões mínimos podem ver aplicações e jogos bloqueados.",
-    "A medida visa reforçar a integridade e a defesa geral dos PCs."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Garante que os sistemas cumprem padrões mínimos de segurança, embora possa causar incompatibilidades temporárias em software.",
-   "todo": "Mantenha o sistema operativo atualizado e verifique os requisitos de hardware e drivers para evitar bloqueios indesejados."
-  },
-  {
-   "id": "7cf301393d67c629",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/application-security/critical-php-flaws-code-execution-panic-php2shell",
-   "published": "2026-11-19T19:57:31+00:00",
-   "title": "Falhas Críticas no PHP Permitem Execução de Código, Mas Sem Pânico ao Estilo 'PHP2Shell'",
-   "summary": "A atualização mensal de segurança de novembro corrigiu sete falhas críticas no PHP que exigem atenção imediata por parte dos administradores. No entanto, os especialistas indicam que a possibilidade de exploração varia consideravelmente consoante a configuração de cada sistema. A aplicação destas correções deve ser feita rapidamente para mitigar potenciais riscos.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt63f30aa2e4f7a5b8/6aff560d615b4f7719adda8c/source_code_background-scanrail-GettyImages-832282452.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "Sete falhas críticas no PHP foram corrigidas na atualização de novembro.",
-    "A explorabilidade destas vulnerabilidades depende muito da configuração do sistema.",
-    "Os especialistas recomendam a aplicação urgente dos patches disponíveis."
-   ],
-   "title_original": "Critical PHP Flaws Allow Code Execution, But Don't Panic 'PHP2Shell'-Style",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque o PHP alimenta uma vasta gama de aplicações web, tornando estas falhas alvos potenciais para intrusões.",
-   "todo": "Instale as atualizações de segurança mensais do PHP de imediato."
-  },
-  {
-   "id": "dfb731a444878dea",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/vulnerabilities-threats/navigating-vulnerability-hysteria-ai-era",
-   "published": "2026-11-19T19:46:44+00:00",
-   "title": "Navegar pela histeria das vulnerabilidades na era da IA",
-   "summary": "Esta análise aborda as consequências da divulgação de falhas de segurança de alta gravidade recentes. Examina como o receio em torno de explorações auxiliadas por inteligência artificial gera pânico generalizado no setor. O fenómeno resulta em perturbações operacionais significativas e num crescente cansaço perante alertas constantes. O impacto traduz-se em reações desproporcionadas por parte das organizações perante novas vulnerabilidades.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt7d04c37959ab5304/6aff50a7d42cb182cb40c79e/panic_Kzenon_Alamy_REWORKED_FOR_16_BY_9_FORMAT.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "Análise sobre o impacto de falhas de alta gravidade divulgadas recentemente.",
-    "Medos gerados por explorações assistidas por inteligência artificial.",
-    "Ocorrência de pânico generalizado e perturbações operacionais nas empresas.",
-    "Aumento do cansaço face aos avisos de segurança constantes."
-   ],
-   "title_original": "Navigating Vulnerability Hysteria in the AI Era",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Ajuda gestores e equipas a manterem a racionalidade perante notícias alarmistas sobre cibersegurança.",
-   "todo": "Adote uma abordagem baseada em risco para priorizar correções, em vez de reagir impulsivamente a cada novo alerta."
   }
  ]
 }

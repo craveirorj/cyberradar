@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T06:26:15.475722+00:00",
+ "updated": "2026-11-25T06:48:03.526229+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Check Point Research",
@@ -310,8 +310,8 @@
  "translation": {
   "provider": "gemini",
   "done": 119,
-  "pending": 206,
-  "unenriched": 86,
+  "pending": 208,
+  "unenriched": 88,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
@@ -339,6 +339,52 @@
    "enriched": true,
    "why": "Mostra como a evolução das ameaças por IA está a alterar a sustentabilidade e os critérios dos seguros de cibersegurança.",
    "todo": "Avalie o investimento em ferramentas de defesa baseadas em inteligência artificial para cumprir os novos critérios de risco das seguradoras."
+  },
+  {
+   "id": "acb83eb85e45fecb",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/25/vulncheck-credential-harvesting-exploitat-records/",
+   "published": "2026-11-25T06:30:47+00:00",
+   "title": "A recolha de credenciais passa de atividade marginal a tendência de exploração principal",
+   "summary": "A exploração de vulnerabilidades para roubar credenciais tornou-se uma tendência dominante, representando 13% de todos os incidentes registados entre janeiro e novembro de 2026. A quota mensal destes ataques subiu drasticamente, atingindo até 35% no final do ano. Os atacantes utilizaram 127 CVEs diferentes para aceder a bases de dados, chaves de API e outros dados sensíveis. Este aumento reflete uma mudança estratégica dos cibercriminosos para o roubo direto de acessos.",
+   "image": null,
+   "points": [
+    "Aumento acentuado de ataques focados em credenciais.",
+    "Utilização de 127 CVEs para roubo de acessos.",
+    "Impacto em bases de dados, chaves cloud e SSH.",
+    "Tendência crescente de exploração de vulnerabilidades."
+   ],
+   "title_original": "Credential harvesting goes from fringe activity to major exploitation trend",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "O roubo de credenciais é agora o principal vetor de ataque, tornando a proteção de acessos mais crítica do que nunca.",
+   "todo": "Implemente autenticação multifator (MFA) robusta e proceda à rotação regular de chaves de API e credenciais de acesso."
+  },
+  {
+   "id": "d52512d72b3d3b7a",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/wordpress-blocks-six-backdoored-wp.html",
+   "published": "2026-11-25T06:21:12+00:00",
+   "title": "WordPress bloqueia seis plugins com backdoors antes do lançamento oficial",
+   "summary": "A equipa do WordPress removeu preventivamente seis plugins desenvolvidos pela WP Connect após detetar a presença de backdoors. Estas vulnerabilidades, inseridas após um suspeito comprometimento da conta do programador, permitiriam a execução arbitrária de código em sites que instalassem os plugins. A ameaça foi neutralizada antes de qualquer lançamento público, evitando danos aos utilizadores. A ação rápida da equipa de segurança do WordPress impediu uma potencial cadeia de infeções.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNbawIx8zYCfd7sCTbVfIzPFBtykkY65lf8EOswU62pIdZKTrx9ReB3mGnqYqujmW5eGzN_w8pEijAZMTpmOZ3fGB5zFyFaPo4ZhRQ8V0BkAmDCH3WoVqJ3kAfjDcw3_wRjhwphfyJxjF3_rDYiudb-cxt0pY3t8s-IRjNP1aEYHqtO5L1eZMkgBX6y2xD/s1600/wp.jpg",
+   "points": [
+    "Plugins da WP Connect continham backdoors.",
+    "Comprometimento suspeito da conta do programador.",
+    "Risco de execução remota de código em sites.",
+    "Bloqueio preventivo pela equipa do WordPress."
+   ],
+   "title_original": "WordPress Blocks Six Backdoored WP Connect Plugins Before Malicious Releases Go Live",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "A cadeia de fornecimento de software é um alvo constante, e a verificação de plugins é essencial para a segurança de sites.",
+   "todo": "Audite regularmente os plugins instalados e remova qualquer software que não seja estritamente necessário ou que apresente comportamentos suspeitos."
   },
   {
    "id": "1dcff8c3a6af7d2c",
@@ -13718,50 +13764,6 @@
    "enriched": true,
    "why": "Revela o desmantelamento de um grupo cibercriminoso de alto impacto que usava engenharia social por telefone.",
    "todo": "Implemente processos rigorosos de validação de identidade antes de prestar assistência técnica ou partilhar acessos."
-  },
-  {
-   "id": "7fde31af5d7966f7",
-   "source": "SAPO Tek",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://tek.sapo.pt/noticias/internet/artigos/ciberataque-a-comissao-europeia-afeta-sistemas-de-salarios-e-licencas-e-pode-ter-exposto-dados-pessoais/",
-   "published": "2026-11-19T09:47:03+00:00",
-   "title": "Ciberataque à Comissão Europeia afeta sistemas de salários e licenças e pode ter exposto dados pessoais",
-   "summary": "Um grupo de atacantes utilizou a ferramenta de inteligência artificial ARTEX num ciberataque direcionado à Comissão Europeia que já dura há mais de dez dias. O incidente afetou os sistemas de salários e de gestão de licenças da instituição. Atualmente, ainda não é possível confirmar se dados pessoais de funcionários foram comprometidos.",
-   "image": null,
-   "points": [
-    "Atacantes usaram a ferramenta de IA ARTEX num ataque à Comissão Europeia.",
-    "O ciberataque prolonga-se por mais de dez dias e afetou sistemas de salários e licenças.",
-    "Ainda não se sabe ao certo se dados pessoais de funcionários foram expostos."
-   ],
-   "title_original": null,
-   "category": "Ataque/APT",
-   "translated": false,
-   "enriched": true,
-   "why": "Compromete sistemas administrativos sensíveis de uma instituição europeia central com impacto potencial na privacidade dos funcionários.",
-   "todo": "Monitorizar sistemas internos de controlo de acessos e rever registos de atividade à procura de comportamentos anómalos."
-  },
-  {
-   "id": "5366363290a3f3c2",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/news/2026/11/scattered-spiders-phishing-and-sim-swap-tactics-led-to-six-year-sentence",
-   "published": "2026-11-19T09:41:18+00:00",
-   "title": "Scattered Spider’s phishing and SIM-swap tactics led to six-year sentence",
-   "summary": "Um tribunal dos Estados Unidos condenou um membro do grupo cibercriminoso Scattered Spider a seis anos de prisão por crimes que renderam 11,6 milhões de dólares em criptomoedas. O cidadão britânico, juntamente com outros cúmplices, atacou mais de uma dezena de empresas utilizando campanhas de phishing por SMS e técnicas de troca de SIM. Estes ataques visavam funcionários de empresas-alvo através de mensagens falsas em nome de entidades patronais ou fornecedores.",
-   "image": null,
-   "points": [
-    "Um membro do grupo Scattered Spider foi condenado a seis anos de prisão nos EUA.",
-    "O grupo roubou 11,6 milhões de dólares em criptomoedas através de ataques a várias empresas.",
-    "Foram utilizadas mensagens falsas de texto e trocas de cartões SIM para enganar funcionários."
-   ],
-   "title_original": null,
-   "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": true,
-   "why": "Destaca a responsabilização judicial de membros de grupos de cibercrime organizados por ataques de engenharia social.",
-   "todo": "Proteja as suas contas e número de telemóvel com autenticação multifator robusta resistente a trocas de SIM."
   }
  ]
 }

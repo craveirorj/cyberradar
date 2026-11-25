@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T11:44:59.603189+00:00",
+ "updated": "2026-11-25T12:05:38.185488+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -224,7 +224,7 @@
   {
    "source": "NCSC UK",
    "ok": true,
-   "added": 2
+   "added": 1
   },
   {
    "source": "CERT-EU",
@@ -244,12 +244,12 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -310,7 +310,7 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 316,
+  "pending": 314,
   "unenriched": 211,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
@@ -340,6 +340,40 @@
    "enriched": true,
    "why": "Mostra como a evolução das ameaças por IA está a alterar a sustentabilidade e os critérios dos seguros de cibersegurança.",
    "todo": "Avalie o investimento em ferramentas de defesa baseadas em inteligência artificial para cumprir os novos critérios de risco das seguradoras."
+  },
+  {
+   "id": "c9c094cf81ce1e8e",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203965/uncategorized/u-s-cisa-adds-drupal-core-idunno-anticsrf-and-optimizely-web-experimentation-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+   "published": "2026-11-25T11:46:54+00:00",
+   "title": "U.S. CISA adds Drupal Core, Idunno AntiCsrf, and Optimizely Web Experimentation flaws to its Known Exploited Vulnerabilities catalog",
+   "summary": "U.S. Cybersecurity and Infrastructure Security Agency (CISA) adds Drupal Core, Idunno AntiCsrf, and Optimizely Web Experimentation flaws to its Known Exploited Vulnerabilities catalog. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added Drupal Core, Idunno AntiCsrf, and Optimizely Web Experimentation vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog: The first flaw, tracked as CVE-2026-131914 (CVSS score of 9.8), […]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "U.S. Cybersecurity and Infrastructure Security Agency (CISA) adds Drupal Core, Idunno AntiCsrf, and Optimizely Web Experimentation flaws to its Known Exploited Vulnerabilities catalog. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added Drupal Core, Idunno AntiCsrf, and Optimizely Web Experimentation vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog : CVE-2026-131914 Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability CVE-2026-132165 Drupal Core Remote Code Execution Vulnerability CVE-2026-132224 Optimizely Web Experimentation External Control of Critical State Data Vulnerability The first flaw, tracked as CVE-2026-131914 (CVSS score of 9.8) , is a critical insecure deserialization vulnerability affecting Idunno AntiCsrf, a legacy ASP.NET library used to protect web applications against Cross-Site Request Forgery (CSRF) attacks. The vulnerability allows unauthenticated remote attackers to execute arbitrary code on vulnerable servers by sending a specially crafted HTTP POST request. Mandiant confirmed that the flaw is being actively exploited in the wild. However, the security firm has not attributed the attacks to any specific threat actor. The affected library is no longer maintained, and no official security patch is available. Organizations are advised to remove it and replace it with a supported anti-CSRF solution. The second flaw, tracked as CVE-2026-132165 (CVSS score of 9.8) , is a critical remote code execution vulnerability affecting Drupal Core. The issue resides in Drupal’s installation script, install.php , which under specific conditions can be abused by an unauthenticated attacker to reinstall Drupal, potentially resulting in a complete website takeover or remote code execution. Drupal’s security team confi"
+  },
+  {
+   "id": "2b3b00025b682204",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/us-treasury-cyber-incident/",
+   "published": "2026-11-25T11:45:00+00:00",
+   "title": "US Treasury Investigates Cyber Incident Amid Reported Federal Agency Breaches",
+   "summary": "The Treasury’s Crimes Enforcement Network is investigating a cyber incident and took some services offline",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "The Treasury’s Crimes Enforcement Network is investigating a cyber incident and took some services offline"
   },
   {
    "id": "0462a00938955191",
@@ -13717,51 +13751,6 @@
    "enriched": true,
    "why": "Mostra como operações policiais internacionais conseguem desmantelar redes de extorsão cibernética altamente lucrativas.",
    "todo": "Mantenha backups atualizados e isolados e utilize soluções robustas de deteção de ransomware."
-  },
-  {
-   "id": "bb08ed3a2f59d244",
-   "source": "Check Point Research",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://research.checkpoint.com/2026/30-years-of-gatekeeper-asymmetry-doom-the-paradox-that-makes-powerful-llms-more-vulnerable/",
-   "published": "2026-11-19T13:19:10+00:00",
-   "title": "30 Years of Gatekeeper Asymmetry Doom: The Paradox that Makes Powerful LLMs More Vulnerable",
-   "summary": "O princípio da assimetria do guardião dita que sistemas de filtragem de entradas com menor capacidade que os sistemas de processamento conduzem inevitavelmente ao fracasso. O estudo demonstra este paradoxo através de vários exemplos na segurança da informação, incluindo evasões de sandbox e limites de classificação. Os investigadores recomendam a redução desta lacuna ao elevar a capacidade dos mecanismos de validação. Conclui-se que, apesar de ajudarem a mitigar o problema, os modelos de linguagem avançados continuam sujeitos a esta mesma vulnerabilidade.",
-   "image": "https://research.checkpoint.com/wp-content/uploads/2026/11/810F1F5A68-image1.png",
-   "points": [
-    "Sistemas de validação mais fracos que os de processamento geram falhas inevitáveis.",
-    "O princípio aplica-se a classificações estáticas, evasões de sandbox e salvaguardas de IA.",
-    "Recomenda-se elevar a robustez dos sistemas de filtragem para diminuir o risco.",
-    "Grandes modelos de linguagem ajudam a colmatar lacunas, mas não são imunes."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Explica um princípio fundamental de vulnerabilidade estrutural na validação de dados e IA.",
-   "todo": "Reforce os mecanismos de validação de entradas em sistemas críticos e evite confiar apenas em filtros básicos."
-  },
-  {
-   "id": "5e668a30271b8ef2",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/",
-   "published": "2026-11-19T13:12:20+00:00",
-   "title": "Hackers Exploit Cisco Expressway Vulnerability Soon After PoC Release",
-   "summary": "Agentes maliciosos exploraram dispositivos Cisco Expressway agrupados pertencentes a uma organização russa logo após a divulgação de um exploit de prova de conceito. Os atacantes utilizaram a falha para preparar ferramentas direcionadas ao movimento lateral na rede comprometida. A exploração rápida demonstra a ameaça iminente colocada pela publicação de códigos vulneráveis.",
-   "image": null,
-   "points": [
-    "Atacantes invadiram dispositivos Cisco Expressway agrupados numa organização russa.",
-    "A exploração ocorreu logo após o lançamento de um código de prova de conceito.",
-    "Os invasores prepararam ferramentas para facilitar o movimento lateral."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia a rapidez com que os atacantes convertem PoCs públicos em ataques reais contra infraestruturas corporativas.",
-   "todo": "Aplique patches de segurança e atualizações de firmware nos dispositivos de perímetro o mais rapidamente possível."
   }
  ]
 }

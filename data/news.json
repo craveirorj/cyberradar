@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T05:47:13.034432+00:00",
+ "updated": "2026-11-25T06:07:24.082058+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -209,7 +209,7 @@
   {
    "source": "Tenable",
    "ok": true,
-   "added": 6
+   "added": 5
   },
   {
    "source": "Zero Day Initiative",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 114,
-  "pending": 214,
-  "unenriched": 93,
+  "done": 118,
+  "pending": 209,
+  "unenriched": 88,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
@@ -339,6 +339,29 @@
    "enriched": true,
    "why": "Mostra como a evolução das ameaças por IA está a alterar a sustentabilidade e os critérios dos seguros de cibersegurança.",
    "todo": "Avalie o investimento em ferramentas de defesa baseadas em inteligência artificial para cumprir os novos critérios de risco das seguradoras."
+  },
+  {
+   "id": "1dcff8c3a6af7d2c",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/25/gputaskman-open-source-gpu-task-manager/",
+   "published": "2026-11-25T06:00:00+00:00",
+   "title": "gputaskman: Gestor de tarefas open-source para GPUs",
+   "summary": "O gputaskman é uma nova ferramenta open-source que permite monitorizar o uso de GPUs diretamente no terminal em Windows, Linux, WSL e macOS. A aplicação identifica quais os processos que estão a consumir memória da placa gráfica e qual o nível de carga de cada um. Além disso, consegue associar o consumo a modelos de IA específicos, algo que o Gestor de Tarefas do Windows não detalha. É uma solução útil para perceber exatamente o que está a ocupar os recursos de hardware.",
+   "image": null,
+   "points": [
+    "Ferramenta open-source para monitorização de GPU.",
+    "Identifica processos e modelos de IA ativos.",
+    "Funciona em Windows, Linux e macOS.",
+    "Oferece visibilidade superior ao Gestor de Tarefas."
+   ],
+   "title_original": "gputaskman: Open-source task manager for GPUs",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite uma gestão mais eficiente e transparente dos recursos de computação de IA em ambientes de trabalho.",
+   "todo": "Utilize esta ferramenta para diagnosticar consumos anómalos de memória GPU em ambientes de desenvolvimento ou produção."
   },
   {
    "id": "033d307e115d45d4",
@@ -13739,28 +13762,6 @@
    "enriched": true,
    "why": "Destaca a responsabilização judicial de membros de grupos de cibercrime organizados por ataques de engenharia social.",
    "todo": "Proteja as suas contas e número de telemóvel com autenticação multifator robusta resistente a trocas de SIM."
-  },
-  {
-   "id": "67401cc888fc28c2",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
-   "published": "2026-11-19T09:31:26+00:00",
-   "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
-   "summary": "A empresa N-able revelou que agentes maliciosos não identificados acederam sem autorização a um servidor na sua nuvem dedicada ao Mail Assure e Spam Experts. Esta intrusão resultou na desativação temporária de interfaces de gestão e APIs em três regiões. A organização tomou medidas imediatas para mitigar a ameaça e continuar a reforçar a segurança dos seus serviços.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjPpZ9yL9D7JBQvp4_ZmnP8S_U6HKdq3rSM_FVv_uDgT9Iz8D56tO6GNDNE4rs29pejUiKQlxi1HpZ38KYbaSB01PmgPItVL8N-Y9G9vcuJlnadltKvmGhvUKYntAEIVCXFixjdBMyu6S9-zEUlIgGf7E5euvodJbn9LIYWTkRpxwH0g7nz2xp2v5PGMdq/s1600/n-able-hacked.jpg",
-   "points": [
-    "A N-able sofreu um acesso não autorizado num servidor de nuvem de segurança de email.",
-    "O incidente causou a interrupção de interfaces de gestão e APIs em três regiões.",
-    "A empresa implementou medidas de mitigação e continua a investigar a invasão."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como fornecedores de serviços na nuvem podem ser visados, afetando a gestão de segurança dos clientes.",
-   "todo": "Monitorize os alertas de segurança dos seus fornecedores de serviços e aplique controlos de acesso rigorosos."
   }
  ]
 }

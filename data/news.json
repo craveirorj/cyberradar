@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T23:47:03.748084+00:00",
+ "updated": "2026-11-25T00:05:34.614459+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -129,7 +129,7 @@
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "Schneier on Security",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -309,14 +309,60 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 211,
-  "unenriched": 91,
+  "done": 12,
+  "pending": 319,
+  "unenriched": 201,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "Expecting ',' delimiter: line 138 column 68 (char 13429)"
   ]
  },
  "items": [
+  {
+   "id": "c380f1e9589a2306",
+   "source": "WIRED Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.wired.com/story/jensen-huang-nvidia-us-national-security-risks/",
+   "published": "2026-11-24T23:39:04+00:00",
+   "title": "Jensen Huang’s Return Shows Nvidia Is Too Big to Police",
+   "summary": "Especialistas em segurança nacional e política externa indicam que a posição central da Nvidia na economia dos Estados Unidos poderá ter sobreposto as preocupações relacionadas com as ligações do seu CEO a um suspeito ativo de inteligência chinesa. Esta situação evidencia a enorme influência da empresa no mercado atual. O impacto reflete-se na forma como o escrutínio regulatório e político é gerido face a gigantes tecnológicas de dimensão sistémica. Não foram detalhadas medidas corretivas imediatas para esta questão específica.",
+   "image": "https://media.wired.com/photos/6b05a2cb470266bfec0ce9be/master/pass/GettyImages-2306037065.jpg",
+   "points": [
+    "Especialistas apontam peso económico da Nvidia.",
+    "Em causa ligações do CEO a ativo de inteligência chinês.",
+    "Influência da empresa sobrepõe-se a preocupações de segurança."
+   ],
+   "title_original": "Jensen Huang’s Return Shows Nvidia Is Too Big to Police",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como a dependência económica de gigantes tecnológicas pode condicionar o escrutínio de segurança nacional.",
+   "todo": ""
+  },
+  {
+   "id": "c60806ea6c109b58",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203931/security/vmware-patches-critical-vcenter-authentication-bypass-and-esx-flaws.html",
+   "published": "2026-11-24T23:20:02+00:00",
+   "title": "VMware patches critical vCenter authentication bypass and ESX flaws",
+   "summary": "A Broadcom lançou atualizações de segurança para corrigir 23 vulnerabilidades em vários produtos VMware, incluindo falhas críticas de contorno de autenticação no vCenter e problemas de execução de código em hosts ESX. A falha mais grave, com um score CVSS de 9.8 e rastreada como CVE-2026-123903, permite a atacantes com acesso à rede obterem acesso não autorizado. O grupo de espionagem ARMORY CASTLE explorou anteriormente uma vulnerabilidade semelhante para roubar dados e criar contas de administrador. O impacto afeta a integridade e confidencialidade dos ambientes virtuais afetados.",
+   "image": null,
+   "points": [
+    "Broadcom corrigiu 23 falhas em produtos VMware.",
+    "CVE-2026-123903 é uma falha crítica de autenticação no vCenter.",
+    "Grupo ARMORY CASTLE explorou vulnerabilidades anteriores para intrusão."
+   ],
+   "title_original": "VMware patches critical vCenter authentication bypass and ESX flaws",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Falhas críticas em plataformas de virtualização podem conceder acesso total a redes empresariais.",
+   "todo": "Instale urgentemente os patches de segurança disponibilizados pela Broadcom para todos os produtos VMware afetados."
+  },
   {
    "id": "5a7ed17eceba38be",
    "source": "Unit 42 (Palo Alto)",
@@ -13710,51 +13756,6 @@
    "enriched": true,
    "why": "Alerta para vulnerabilidades críticas que estão a ser ativamente exploradas por atacantes em sistemas empresariais.",
    "todo": "Atualize urgentemente os softwares afetados para mitigar o risco de exploração ativa."
-  },
-  {
-   "id": "de81157016f8e474",
-   "source": "WeLiveSecurity (ESET)",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.welivesecurity.com/en/internet-of-things/iot-devices-no-longer-supported-smart-home-safe/",
-   "published": "2026-11-19T08:00:00+00:00",
-   "title": "Os meus dispositivos IoT já não têm suporte – a minha casa inteligente está segura?",
-   "summary": "Dispositivos inteligentes que atingiram o fim de vida útil e deixam de receber atualizações representam um risco de segurança significativo para os utilizadores se não forem geridos adequadamente. A falta de patches deixa portas abertas a potenciais intrusos na rede doméstica. É necessário adotar medidas preventivas para mitigar vulnerabilidades em equipamentos antigos.",
-   "image": null,
-   "points": [
-    "Dispositivos IoT sem suporte criam riscos de segurança.",
-    "Falta de atualizações deixa equipamentos vulneráveis a intrusões.",
-    "Equipamentos obsoletos sem gestão colocam a rede inteligente em perigo.",
-    "Existem recomendações práticas para mitigar estes riscos."
-   ],
-   "title_original": "My IoT devices are no longer supported – is my smart home safe?",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Equipamentos sem suporte oficial são alvos fáceis para invasores comprometerem a segurança de toda a rede.",
-   "todo": "Isole dispositivos IoT sem suporte numa rede de convidados e substitua-os logo que possível por modelos atualizados."
-  },
-  {
-   "id": "e2e32d524f45d098",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/",
-   "published": "2026-11-19T07:45:17+00:00",
-   "title": "PHP Prepara Atualizações Críticas de Segurança para Corrigir Outra Falha RCE",
-   "summary": "Foi divulgada publicamente a vulnerabilidade CVE-2026-115560, que afeta o progresso de carregamento de sessões no PHP. A falha surgiu poucos dias após a aplicação de correções para o PHP2Shell. A equipa prepara agora novas atualizações críticas de segurança.",
-   "image": null,
-   "points": [
-    "Nova falha RCE identificada no PHP.",
-    "CVE-2026-115560 afeta o carregamento de sessões.",
-    "Divulgação ocorreu logo após patches do PHP2Shell."
-   ],
-   "title_original": "PHP Readies Critical Security Updates to Patch Another RCE Flaw",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "A linguagem PHP é amplamente utilizada, tornando estas falhas de execução remota altamente perigosas.",
-   "todo": "Aplicar as atualizações de segurança do PHP logo que sejam disponibilizadas pelos maintainers."
   }
  ]
 }

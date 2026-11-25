@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T08:06:33.162914+00:00",
+ "updated": "2026-11-25T08:24:54.617604+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "The Record",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 48,
-  "pending": 274,
-  "unenriched": 159,
+  "done": 0,
+  "pending": 323,
+  "unenriched": 208,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -342,6 +342,40 @@
    "todo": "Avalie o investimento em ferramentas de defesa baseadas em inteligência artificial para cumprir os novos critérios de risco das seguradoras."
   },
   {
+   "id": "6a20b92f56aabfac",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/palo-alto-networks-patches-fragnesia-flaw-used-to-root-firewalls/",
+   "published": "2026-11-25T08:12:24+00:00",
+   "title": "Palo Alto Networks Patches Fragnesia Flaw Used to Root Firewalls",
+   "summary": "A China-linked hacking group chained PHP2Shell with Fragnesia in AI-assisted attacks that hit 25 servers.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "A China-linked hacking group chained PHP2Shell with Fragnesia in AI-assisted attacks that hit 25 servers."
+  },
+  {
+   "id": "f44f10d640ae762a",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/drupal-flaw-found-by-anthropic-scanner-exploited-in-attacks/",
+   "published": "2026-11-25T08:01:06+00:00",
+   "title": "Drupal Flaw Found by Anthropic Scanner Exploited in Attacks",
+   "summary": "CISA has added the vulnerability to its KEV catalog and instructed federal agencies to patch it within three days.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "CISA has added the vulnerability to its KEV catalog and instructed federal agencies to patch it within three days."
+  },
+  {
    "id": "3bc6f96dec950b6c",
    "source": "BleepingComputer",
    "region": "US",
@@ -356,9 +390,9 @@
     "Quem: Atacantes desconhecidos e a Central Intelligence Agency.",
     "Impacto: Acesso não autorizado a sistemas de inteligência de código aberto."
    ],
-   "title_original": "Hackers reportedly breached CIA intelligence analysis system",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra que mesmo as agências governamentais mais protegidas continuam a ser alvo de ataques bem-sucedidos.",
    "todo": ""
@@ -13721,52 +13755,6 @@
    "enriched": true,
    "why": "Importa porque falhas em atualizações do sistema operativo podem paralisar o funcionamento de aplicações essenciais nas empresas.",
    "todo": "Consulte as soluções alternativas oficiais da Microsoft antes de aplicar novos patches em ambientes de produção."
-  },
-  {
-   "id": "da71ce67dae968b9",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/fifth-uk-employees-share-passwords/",
-   "published": "2026-11-19T10:30:00+00:00",
-   "title": "Um quinto dos trabalhadores do Reino Unido partilha palavras-passe com IA",
-   "summary": "Uma investigação da Dashlane concluiu que funcionários no Reino Unido estão a partilhar palavras-passe com ferramentas de inteligência artificial e a conceder acesso a dados confidenciais. Esta prática expõe as organizações a sérios riscos de segurança empresarial. O problema surge devido à utilização descuidada destas tecnologias no ambiente de trabalho.",
-   "image": null,
-   "points": [
-    "Trabalhadores no Reino Unido partilham passwords com ferramentas de IA.",
-    "A prática concede acesso a dados empresariais sensíveis.",
-    "A investigação foi conduzida pela Dashlane.",
-    "A situação levanta preocupações significativas de segurança nas empresas."
-   ],
-   "title_original": "A Fifth of UK Employees Share Passwords with AI",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "A partilha de credenciais com IA compromete dados empresariais sensíveis e abre portas a incidentes de segurança.",
-   "todo": "Proiba a introdução de palavras-passe e dados confidenciais em ferramentas de inteligência artificial não autorizadas."
-  },
-  {
-   "id": "e45c5124b0ac0b40",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/",
-   "published": "2026-11-19T10:26:51+00:00",
-   "title": "F5 corrige falhas críticas NGINX2Root enquanto exploits PoC tornam-se públicos",
-   "summary": "Foram detetadas cinco vulnerabilidades denominadas NGINX2Root que afetam produtos da F5. Estas falhas podem permitir que atacantes remotos e sem autenticação executem código arbitrário. A divulgação pública de códigos de exploit do tipo PoC aumenta o risco de exploração.",
-   "image": null,
-   "points": [
-    "Cinco vulnerabilidades NGINX2Root foram descobertas nos sistemas F5.",
-    "Permitem execução remota de código por atacantes não autenticados.",
-    "Exploits PoC já se encontram publicamente disponíveis.",
-    "A F5 disponibilizou correções para mitigar o problema."
-   ],
-   "title_original": "F5 Patches Critical NGINX2Root Flaws as PoC Exploits Go Public",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite que atacantes remotos assumam o controlo de sistemas sem necessidade de autenticação.",
-   "todo": "Aplique imediatamente as atualizações e correções de segurança disponibilizadas pela F5."
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T09:05:33.892817+00:00",
+ "updated": "2026-11-25T09:28:19.872028+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -244,12 +244,12 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -284,7 +284,7 @@
   {
    "source": "Securelist (Kaspersky)",
    "ok": true,
-   "added": 6
+   "added": 7
   },
   {
    "source": "Risky Bulletin",
@@ -309,12 +309,11 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 321,
-  "unenriched": 207,
+  "done": 108,
+  "pending": 217,
+  "unenriched": 103,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
@@ -340,6 +339,98 @@
    "enriched": true,
    "why": "Mostra como a evolução das ameaças por IA está a alterar a sustentabilidade e os critérios dos seguros de cibersegurança.",
    "todo": "Avalie o investimento em ferramentas de defesa baseadas em inteligência artificial para cumprir os novos critérios de risco das seguradoras."
+  },
+  {
+   "id": "45c257ac25c83e05",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/hackers-exploit-unpatched-flaw-in-defunct-idunno-anticsrf-library/",
+   "published": "2026-11-25T09:05:13+00:00",
+   "title": "Piratas informáticos exploram falha por corrigir na biblioteca obsoleta Idunno AntiCsrf",
+   "summary": "Os atacantes estão a explorar uma vulnerabilidade identificada como CVE-2026-131914 para executar código remotamente em sistemas afetados. Esta falha pode ser acionada através de um único pedido web que contenha dados especificamente manipulados para o efeito. O problema afeta uma biblioteca que já se encontra descontinuada, expondo os sistemas dependentes a riscos graves de segurança. O impacto principal traduz-se na possibilidade de comprometer totalmente o controlo do sistema visado.",
+   "image": null,
+   "points": [
+    "Alvo: Biblioteca Idunno AntiCsrf, atualmente descontinuada.",
+    "O quê: Exploração da vulnerabilidade CVE-2026-131914 para execução remota de código.",
+    "Como: Através do envio de um único pedido web com dados maliciosos.",
+    "Impacto: Acesso e controlo total não autorizado sobre os sistemas afetados."
+   ],
+   "title_original": "Hackers Exploit Unpatched Flaw in Defunct Idunno AntiCsrf Library",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que agentes maliciosos assumam o controlo remoto de aplicações vulneráveis com extrema facilidade.",
+   "todo": "Identifique e remova quaisquer dependências da biblioteca Idunno AntiCsrf nos seus sistemas, substituindo-a por alternativas suportadas."
+  },
+  {
+   "id": "00f16364aca5121d",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-authentication-issues-after-november-updates/",
+   "published": "2026-11-25T09:02:57+00:00",
+   "title": "Microsoft confirma problemas de autenticação após atualizações de novembro",
+   "summary": "A Microsoft confirmou oficialmente que alguns utilizadores estão a enfrentar falhas de autenticação nos seus sistemas. Estes problemas surgiram após a instalação dos pacotes de segurança lançados em novembro, que tinham como objetivo corrigir uma vulnerabilidade crítica de execução remota de código. A situação afeta a estabilidade do acesso aos serviços por parte dos clientes afetados. O impacto prende-se com constrangimentos operacionais no acesso legítimo às plataformas.",
+   "image": null,
+   "points": [
+    "Quem: A Microsoft e os seus clientes afetados.",
+    "O quê: Dificuldades de autenticação após atualizações de segurança.",
+    "Como: Desencadeadas pela instalação dos patches lançados em novembro.",
+    "Impacto: Perturbação no acesso normal aos sistemas e serviços."
+   ],
+   "title_original": "Microsoft confirms authentication issues after November updates",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Afeta a continuidade operacional das empresas ao bloquear o acesso legítimo de utilizadores aos sistemas.",
+   "todo": "Consulte os canais oficiais da Microsoft para obter orientações de suporte e potenciais soluções temporárias para os erros de autenticação."
+  },
+  {
+   "id": "d30b01c02498baa6",
+   "source": "Securelist (Kaspersky)",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://securelist.com/tr/how-to-protect-against-preinstalled-android-malware/122093/",
+   "published": "2026-11-25T09:00:35+00:00",
+   "title": "Como proteger contra malware pré-instalado em dispositivos Android",
+   "summary": "Vários dispositivos móveis chegam aos utilizadores com software malicioso já integrado no firmware ou nas aplicações de sistema de fábrica. Famílias de malware como Keenadu e Triada têm vindo a infetar um número crescente de terminais, representando ameaças graves de privacidade e segurança. O volume de dispositivos detetados com estas ameaças tem crescido significativamente ao longo do último ano. O impacto abrange desde a roubo de dados pessoais e credenciais até perdas financeiras e danos reputacionais.",
+   "image": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2026/11/24091842/preinstalled-malware-featured-image.jpg",
+   "points": [
+    "O quê: Dispositivos Android vendidos com malware pré-instalado no firmware.",
+    "Quem: Afeta utilizadores particulares e grandes organizações empresariais.",
+    "Como: Através de aplicações de sistema e código malicioso integrado de fábrica.",
+    "Impacto: Roubo de dados, fraudes financeiras e comprometimento total do dispositivo."
+   ],
+   "title_original": "How to protect against preinstalled Android malware",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "Coloca em risco a segurança corporativa e pessoal logo no primeiro uso, uma vez que o malware reside no próprio firmware.",
+   "todo": "Adquira dispositivos apenas através de canais e fornecedores oficiais de confiança e utilize soluções de segurança móvel atualizadas."
+  },
+  {
+   "id": "7a838ed8ae47bc48",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/25/illegal-iptv-disrupted-europol-crypto/",
+   "published": "2026-11-25T08:59:36+00:00",
+   "title": "Polícia desmantela 57 serviços de IPTV ilegais e rastreia 26 milhões de euros em criptomoedas",
+   "summary": "Uma operação policial coordenada em 11 países resultou no desmantelamento de 57 serviços ilegais de IPTV e na identificação de centenas de sites piratas. A ação conjunta foi liderada pela Europol a partir de Espanha, contando com a colaboração da indústria de criptomoedas para seguir o rasto financeiro. As autoridades conseguiram rastrear mais de 26 milhões de euros associados a estas atividades ilícitas. O impacto centrou-se no corte de fontes de rendimento de redes criminosas de pirataria digital.",
+   "image": null,
+   "points": [
+    "Quem: Autoridades policiais de 11 países sob coordenação da Europol.",
+    "O quê: Encerramento de 57 serviços IPTV ilegais e 321 sites piratas.",
+    "Como: Investigação internacional em Sevilha com rastreio de ativos digitais.",
+    "Impacto: Identificação de mais de 26 milhões de euros em criptomoedas associados ao crime."
+   ],
+   "title_original": "Police disrupt 57 illegal IPTV services and trace €26 million in crypto",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra o combate transnacional às redes de cibercrime financeiro e pirataria em larga escala.",
+   "todo": "Evite utilizar serviços de streaming não autorizados ou de origem duvidosa, que frequentemente financiam redes criminosas."
   },
   {
    "id": "53b09fe0862f5882",
@@ -371,15 +462,21 @@
    "lang": "en",
    "link": "https://securityaffairs.com/203918/intelligence/maritime-industry-faces-growing-cyber-threats-as-50-ships-targeted.html",
    "published": "2026-11-25T08:23:10+00:00",
-   "title": "Maritime industry faces growing cyber threats as 50 ships targeted",
-   "summary": "US authorities investigate suspected cyberattacks on up to 50 commercial ships, with Iran and Russia under scrutiny and Fortinet flaws involved. The United States is investigating a wave of cyberattacks targeting commercial vessels carrying oil, liquefied petroleum gas, chemicals, and other potentially hazardous cargo. According to a Wall Street Journal report, as many as 50 […]",
+   "title": "Setor marítimo enfrenta crescentes ameaças cibernéticas com 50 navios visados",
+   "summary": "As autoridades dos Estados Unidos estão a investigar uma vaga de ciberataques que teve como alvo até 50 navios comerciais de transporte de mercadorias perigosas. Os incidentes envolveram a exploração de vulnerabilidades em equipamentos da Fortinet, com suspeitas a recair sobre o Irão e a Rússia. As ações incluíram intrusões em redes de bordo, ameaças de bomba e exigências de resgate direcionadas a petroleiros e outras embarcações. O impacto traduz-se em riscos operacionais graves para a cadeia de abastecimento global e segurança marítima.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Autoridades norte-americanas e navios comerciais visados.",
+    "O quê: Investigação de ataques cibernéticos contra cerca de 50 embarcações.",
+    "Como: Exploração de falhas da Fortinet e campanhas de intimidação.",
+    "Impacto: Potencial comprometimento de redes de bordo em navios de carga perigosa."
+   ],
+   "title_original": "Maritime industry faces growing cyber threats as 50 ships targeted",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "US authorities investigate suspected cyberattacks on up to 50 commercial ships, with Iran and Russia under scrutiny and Fortinet flaws involved. The United States is investigating a wave of cyberattacks targeting commercial vessels carrying oil, liquefied petroleum gas, chemicals, and other potentially hazardous cargo. According to a Wall Street Journal report , as many as 50 ships may have been targeted, with Iran emerging as the primary suspect. “The U.S. is investigating Iran ’s potential involvement in dozens of cyberattacks against energy tankers amid concerns that Tehran is widening the war with cyber operations and terror plots against Americans far from the Middle East.” WSJ states . “As many as 50 ships carrying oil, liquefied petroleum, chemical products and other explosive substances are believed to have been attacked, according to U.S. officials and others familiar with the matter.” US authorities are also considering possible Russian involvement. However, a Trump administration official told the WSJ that investigators have found no evidence linking Iran to the incidents and described four of the attacks as minor disruptions. The incidents reportedly involved both cyber intrusions and intimidation campaigns. Some vessels received bomb threats, ransom demands, and messages warning them against transporting US products. Other ships may have been compromised without their crews being aware of the intrusions. The US Coast Guard has reportedly deployed specialized cyber protection teams to at least four vessels approaching US ports to investigate and mitigate potential threats. The VL Prosperity and Kohaku were among the ships inspected after suspected compromises of their onboard networks. The attackers are reportedly exploiting vulnerabilities in Fortinet netwo"
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia a vulnerabilidade de infraestruturas críticas de transporte a ciberataques geopolíticos.",
+   "todo": "Atualize e corrija prontamente todas as falhas conhecidas em equipamentos de rede e reforce os protocolos de segurança a bordo."
   },
   {
    "id": "6a20b92f56aabfac",
@@ -13671,97 +13768,6 @@
    "enriched": true,
    "why": "Demonstra como sistemas legítimos podem ser manipulados para enganar utilizadores após uma intrusão.",
    "todo": "Altere imediatamente as suas palavras-passe se for notificado de incidentes e evite reutilizar credenciais em vários serviços."
-  },
-  {
-   "id": "2136baff83bb99a5",
-   "source": "SAPO Tek",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://tek.sapo.pt/opiniao/artigos/a-alemanha-legalizou-o-contra-ataque-informatico-e-agora/",
-   "published": "2026-11-19T10:57:00+00:00",
-   "title": "A Alemanha legalizou o contra-ataque informático. E agora?",
-   "summary": "A Alemanha aprovou recentemente uma nova lei que autoriza a realização de contra-ataques informáticos para responder à crescente vaga de ameaças e à guerra híbrida. Esta decisão legislativa tem gerado debates sobre o seu impacto estratégico e as implicações práticas para a segurança. O tema levanta questões relevantes que também se refletem na análise da situação atual em Portugal.",
-   "image": null,
-   "points": [
-    "A Alemanha aprovou legislação pioneira para permitir contra-ataques informáticos.",
-    "A medida surge em resposta ao aumento de ameaças associadas à guerra híbrida.",
-    "O impacto desta decisão está a ser analisado no panorama internacional, incluindo em Portugal."
-   ],
-   "title_original": null,
-   "category": "Ataque/APT",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque marca uma mudança drástica na postura jurídica e estratégica de um país europeu face às ameaças cibernéticas.",
-   "todo": ""
-  },
-  {
-   "id": "be4e4f6ef6a7fab3",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/19/rubrik-configuration-resilience-for-microsoft-365/",
-   "published": "2026-11-19T10:56:44+00:00",
-   "title": "Rubrik Configuration Resilience rolls back unauthorized Microsoft 365 changes",
-   "summary": "A Rubrik lançou uma nova solução chamada Configuration Resilience para o Microsoft 365, destinada a proteger as definições principais de aplicações como o Defender e o Purview. A ferramenta permite reverter modificações não autorizadas no sistema através de uma única ação, recuperando identidades e configurações. O objetivo é bloquear tentativas de roubo de dados sensíveis por parte de atacantes antes que estes consigam concretizar os seus objetivos. A gestão da recuperação é assegurada centralmente através da Rubrik Security Cloud.",
-   "image": null,
-   "points": [
-    "A Rubrik lançou a ferramenta Configuration Resilience para proteger definições do Microsoft 365.",
-    "A solução permite reverter alterações não autorizadas no sistema com apenas um clique.",
-    "O objetivo principal é travar atacantes antes que consigam roubar dados sensíveis.",
-    "A recuperação de identidades e configurações é gerida pela Rubrik Security Cloud."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque oferece uma forma rápida de anular alterações maliciosas em definições críticas de segurança antes que ocorram roubos de dados.",
-   "todo": "Monitore continuamente as configurações das suas ferramentas de colaboração e adote soluções de recuperação automatizada de definições."
-  },
-  {
-   "id": "4c56a06821c6e7ed",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/19/sonicwall-gen-6-firewalls-reach-end-of-support/",
-   "published": "2026-11-19T10:44:29+00:00",
-   "title": "SonicWall urges customers to replace Gen 6 firewalls now",
-   "summary": "A SonicWall emitiu um aviso a instar os clientes a substituírem imediatamente as firewalls da geração Gen 6 que continuem a operar na internet. Todos os equipamentos Gen 6 e Gen 6.5 com o sistema SonicOS 6.x atingiram o fim de suporte oficial, deixando de receber atualizações de firmware ou correções de segurança. A empresa alerta que estes dispositivos representam um risco elevado de exposição a ameaças cibernéticas. Por esse motivo, recomenda-se a desativação urgente destes aparelhos no perímetro da rede.",
-   "image": null,
-   "points": [
-    "A SonicWall apelou à substituição imediata das firewalls Gen 6.",
-    "Os equipamentos atingiram o fim de suporte e deixaram de receber correções de segurança.",
-    "A empresa classifica estes aparelhos desatualizados como um risco elevado para as redes.",
-    "Recomenda-se parar de utilizar estes dispositivos diretamente expostos à internet."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque continuar a usar equipamentos sem suporte deixa as redes vulneráveis a falhas críticas sem qualquer correção disponível.",
-   "todo": "Substitua urgentemente hardware de rede obsoleto por modelos com suporte ativo e atualizações regulares."
-  },
-  {
-   "id": "2aa6fa29c77afd23",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/splunk-patches-nearly-140-flaws-across-three-core-products/",
-   "published": "2026-11-19T10:41:05+00:00",
-   "title": "Splunk Patches Nearly 140 Flaws Across Three Core Products",
-   "summary": "A Splunk lançou atualizações de segurança para corrigir quase 140 vulnerabilidades identificadas em três dos seus produtos principais. As falhas corrigidas incluem problemas críticos e de alta gravidade que podiam permitir a execução remota de código, a ultrapassagem de mecanismos de autenticação e a elevação de privilégios. Com estes patches, a empresa pretende mitigar riscos significativos de exploração nestas plataformas. Os administradores de sistemas devem aplicar as correções o mais rapidamente possível.",
-   "image": null,
-   "points": [
-    "A Splunk corrigiu cerca de 140 vulnerabilidades em três produtos centrais.",
-    "As falhas incluíam problemas de execução remota de código e bypass de autenticação.",
-    "As atualizações resolvem vulnerabilidades de severidade crítica e alta.",
-    "Os administradores devem atualizar os sistemas afetados com brevidade."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque a correção de um número tão elevado de falhas críticas evita que atacantes comprometam plataformas empresariais essenciais.",
-   "todo": "Atualize os produtos Splunk afetados para as versões mais recentes disponibilizadas pelo fabricante."
   }
  ]
 }

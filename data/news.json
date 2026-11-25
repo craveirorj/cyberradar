@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T01:06:41.522898+00:00",
+ "updated": "2026-11-25T01:26:35.811170+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -309,16 +309,61 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 72,
-  "pending": 262,
-  "unenriched": 140,
+  "done": 108,
+  "pending": 226,
+  "unenriched": 104,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "Expecting property name enclosed in double quotes: line 30 column 5 (char 2658)"
+   "Expecting property name enclosed in double quotes: line 100 column 1 (char 7416)"
   ]
  },
  "items": [
+  {
+   "id": "77381f53f5a697f7",
+   "source": "AWS Security Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://aws.amazon.com/blogs/security/introducing-context-aware-rules-for-aws-network-firewall/",
+   "published": "2026-11-25T01:19:20+00:00",
+   "title": "Introdução de regras baseadas no contexto para a AWS Network Firewall",
+   "summary": "A AWS Network Firewall passou a suportar regras sensíveis ao contexto, permitindo filtrar o tráfego com base nos recursos da AWS que o enviam e recebem, em vez de recorrer apenas a endereços IP. Esta funcionalidade utiliza um arquivo de contexto e um gateway de trânsito para mapear cargas de trabalho de curta duração, como funções AWS Lambda, associando-as diretamente a grupos de segurança ou sub-redes. Desta forma, as organizações podem aplicar políticas consistentes entre várias contas e registar com precisão os recursos envolvidos em cada ligação de rede.",
+   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/25/4026-figure-1-full.png",
+   "points": [
+    "Filtra o tráfego com base em recursos da AWS, como VPCs e sub-redes, em vez de endereços IP.",
+    "Facilita o acompanhamento de cargas de trabalho dinâmicas e de curta duração.",
+    "Permite aplicar uma política unificada em várias contas através de um repositório de contexto partilhado.",
+    "Regista detalhadamente os recursos de origem e destino em cada fluxo de rede."
+   ],
+   "title_original": "Introducing context-aware rules for AWS Network Firewall",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Simplifica a gestão de regras de firewall em ambientes em nuvem altamente dinâmicos.",
+   "todo": "Reveja as regras da sua firewall para adotar filtros baseados em recursos em vez de IPs estáticos."
+  },
+  {
+   "id": "16334b5bc6834668",
+   "source": "AWS Security Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://aws.amazon.com/blogs/security/introducing-aws-network-firewall-next-generation-policy/",
+   "published": "2026-11-25T01:11:09+00:00",
+   "title": "Introdução à política de Nova Geração para a AWS Network Firewall",
+   "summary": "A AWS lançou as políticas de Nova Geração para a AWS Network Firewall, que separam o controlo de acessos da proteção contra ameaças em dois motores distintos dentro da mesma firewall. Anteriormente, as regras de acesso e de ameaças partilhavam a mesma capacidade num único motor, limitando a flexibilidade operacional. Com esta nova abordagem, baseada em modos do Suricata, o tráfego aprovado pelo motor de firewall é encaminhado sequencialmente para o motor IPS para inspeção de ameaças. O impacto traduz-se numa gestão de regras independente e numa capacidade de inspeção mais robusta sem perda de desempenho.",
+   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/24/figure-1-v2-fig1-classic-vs-nextgen-engines-r12.png",
+   "points": [
+    "Separa o controlo de acessos e a proteção contra ameaças em dois motores sequenciais.",
+    "Cada motor possui a sua própria capacidade de regras, evitando conflitos de recursos.",
+    "O motor de firewall bloqueia por defeito, enquanto o IPS analisa o tráfego permitido.",
+    "Utiliza tecnologia baseada no Suricata 8 para maior compatibilidade e precisão."
+   ],
+   "title_original": "Introducing AWS Network Firewall Next Generation policy",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Melhora a segurança da rede ao permitir uma inspeção de ameaças mais profunda sem comprometer as regras de acesso.",
+   "todo": "Avalie a transição para políticas de Nova Geração para otimizar a inspeção de tráfego na nuvem."
+  },
   {
    "id": "c380f1e9589a2306",
    "source": "WIRED Security",
@@ -13712,50 +13757,6 @@
    "enriched": true,
    "why": "Revela um vetor de ataque avançado onde contas sem privilégios conseguem comprometer o servidor de base de dados.",
    "todo": "Aplique patches de segurança recentes nos servidores de bases de dados e reveja as permissões atribuídas às contas."
-  },
-  {
-   "id": "59d3b792db480830",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/threat-intelligence/africa-top-spot-most-attacked-region-nigeria-surge",
-   "published": "2026-11-19T08:00:00+00:00",
-   "title": "África Volta ao Topo da Região Mais Ataque, Liderada por Subida na Nigéria",
-   "summary": "A Nigéria enfrentou mais do que o dobro das ameaças cibernéticas em comparação com o ano anterior. Angola e Kenya juntaram-se também aos cinco países mais atacados globalmente. Esta vaga elevou novamente África ao topo das regiões mais visadas.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltcfa70452a477c780/6afe245fab384927766a0238/africa-da-kuk-Getty-1386416241.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "Nigéria viu as ameaças duplicar face ao ano anterior.",
-    "Angola e Kenya integram o top 5 global.",
-    "África reassumiu a liderança de região mais atacada."
-   ],
-   "title_original": "Africa Retakes Top Spot as Most Attacked Region, Led by Nigeria Surge",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra uma mudança geográfica significativa na concentração de ataques cibernéticos globais.",
-   "todo": "Reforçar a monitorização de ameaças e os controlos de segurança nas redes locais."
-  },
-  {
-   "id": "7b2c191d75301f2a",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
-   "published": "2026-11-19T08:00:00+00:00",
-   "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
-   "summary": "A agência norte-americana CISA adicionou quatro vulnerabilidades ao seu catálogo de falhas exploradas conhecidas, após detetar exploração ativa no terreno. As fragilidades afetam sistemas como o Synology DiskStation Manager, BerriAI LiteLLM, Apache Axis e o sistema REDCap da Universidade Vanderbilt. Estas falhas estão associadas a campanhas de ransomware, mineração de criptomoedas e ataques de LLMjacking.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJc2bWATWnk5-O72K0n3cYlHuhhox3nVPELPst8c1bui3mTiwBZFUjAUSem14OyqLB6CTECCs9fc-iyng9KmY3jelZ2cqrHg4FKvP2qOZui8piIbYTZy9WdZD0NqiY4fXcLud5GYzmNEXR6DRNuQpjkFzfPvW4fIcDtwaFg4SM9xW-eG09WxFuEcmuKx7U/s1600/cisa.jpg",
-   "points": [
-    "A CISA adicionou quatro novas falhas ativamente exploradas ao catálogo KEV.",
-    "As vulnerabilidades afetam tecnologias da Synology, BerriAI, Apache e REDCap.",
-    "Os problemas estão ligados a ameaças como ransomware e ataques de inteligência artificial."
-   ],
-   "title_original": null,
-   "category": "Ransomware",
-   "translated": false,
-   "enriched": true,
-   "why": "Alerta para vulnerabilidades críticas que estão a ser ativamente exploradas por atacantes em sistemas empresariais.",
-   "todo": "Atualize urgentemente os softwares afetados para mitigar o risco de exploração ativa."
   }
  ]
 }

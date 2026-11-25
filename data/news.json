@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T02:07:00.153903+00:00",
+ "updated": "2026-11-25T02:26:42.384322+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -139,12 +139,12 @@
   {
    "source": "SANS ISC",
    "ok": true,
-   "added": 5
+   "added": 4
   },
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Malwarebytes Labs",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 115,
-  "pending": 216,
-  "unenriched": 95,
+  "done": 120,
+  "pending": 211,
+  "unenriched": 90,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
@@ -339,6 +339,29 @@
    "enriched": true,
    "why": "Ajuda os profissionais de segurança a acompanharem rapidamente as ameaças mais recentes.",
    "todo": "Ouve regularmente podcasts de fontes fidedignas para manter a equipa informada sobre o panorama de ameaças."
+  },
+  {
+   "id": "9a8d45948879a4c6",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/24/cia-system-breached-in-latest-cyberattack-targeting-us-intelligence-agencies/",
+   "published": "2026-11-25T01:52:45+00:00",
+   "title": "Sistema da CIA alvo de violação num recente ciberataque a agências de inteligência dos EUA",
+   "summary": "Um ciberataque recente visou agências de inteligência dos Estados Unidos e resultou na violação de um sistema não classificado da CIA. De acordo com uma fonte, o incidente não envolveu quaisquer informações altamente sensíveis. O problema técnico ou de segurança já foi totalmente resolvido pelas autoridades competentes.",
+   "image": null,
+   "points": [
+    "Alvo: Agências de inteligência dos EUA e um sistema não classificado da CIA.",
+    "O quê: Ocorrência de uma violação cibernética sem acesso a dados altamente sensíveis.",
+    "Impacto: O incidente foi rapidamente contornado e resolvido, sem fugas de informação crítica.",
+    "Como: Os detalhes exatos do vetor de ataque não foram divulgados pelas fontes."
+   ],
+   "title_original": "CIA system breached in latest cyberattack targeting US intelligence agencies",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que nem as agências governamentais mais protegidas estão imunes a tentativas bem-sucedidas de intrusão cibernética.",
+   "todo": "Manter os sistemas de monitorização ativos e garantir que os dados não classificados estejam segmentados de forma segura."
   },
   {
    "id": "77381f53f5a697f7",
@@ -628,6 +651,29 @@
    "enriched": true,
    "why": "Facilita a implementação consistente de políticas de segurança em ambientes cloud complexos.",
    "todo": "Adotar regras de segurança geridas centralmente para proteger tráfego de entrada e saída na nuvem."
+  },
+  {
+   "id": "724878a26e68ea5b",
+   "source": "TechCrunch Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/",
+   "published": "2026-11-24T21:19:52+00:00",
+   "title": "Maple angaria 5,3 milhões de dólares para criar produtos de IA que protegem os seus dados, até da própria empresa",
+   "summary": "A startup Maple desenvolveu uma arquitetura de inteligência artificial encriptada para salvaguardar a privacidade dos utilizadores. Esta tecnologia inovadora impede que a própria empresa tenha acesso aos dados privados geridos pelos clientes. O projeto conseguiu angariar financiamento significativo para expandir o seu desenvolvimento.",
+   "image": null,
+   "points": [
+    "Quem: A startup Maple e os seus utilizadores.",
+    "O quê: Desenvolvimento de IA com arquitetura de encriptação focada na privacidade.",
+    "Impacto: Garante que nem os criadores da ferramenta conseguem visualizar dados confidenciais.",
+    "Como: Através de investimento financeiro angariado no valor de 5,3 milhões de dólares."
+   ],
+   "title_original": "Maple raises $5.3M to build AI products that protect your data, even from itself",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Aborda um desafio crítico de privacidade na era da inteligência artificial, impedindo a exploração indevida de dados por terceiros.",
+   "todo": "Utilizar soluções baseadas em arquiteturas com conhecimento zero ('zero-knowledge') e encriptação de ponta a ponta sempre que possível."
   },
   {
    "id": "4647bb6a18f6a9b5",
@@ -13712,51 +13758,6 @@
    "enriched": true,
    "why": "Mostra como os atacantes duplicam elementos de contacto para tornar páginas de phishing financeiro mais credíveis.",
    "todo": "Confirme sempre o endereço oficial do banco e desconfie de links recebidos por canais não verificados."
-  },
-  {
-   "id": "ef3cecb6fd503aee",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
-   "published": "2026-11-19T08:42:11+00:00",
-   "title": "Ruby Lança Correções para 7 Falhas de Regex e Strings, com Alerta de RCE",
-   "summary": "Os responsáveis pela linguagem Ruby corrigiram sete vulnerabilidades de segurança relacionadas com o motor de expressões regulares e a conversão de maiúsculas e minúsculas em strings. Para cinco destas falhas, existem provas de conceito públicas que demonstram a possibilidade de execução remota de código através de dados manipulados. A equipa responsável avançou com o lançamento de versões corrigidas para colmatar o problema. Estas falhas afetam a segurança de sistemas que processam entradas não confiáveis.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7rmcgZ7yffFsn_7SX4iQcfMhw1dgsxPFXXh6TUunbQ9VaxZh8O5-AFT2V3q0PE7Wx0rW9nLKuB73eluixYuM9N38Dvq_Gjs1nNOXVk3e71jjfhHoP7W97eeuc5AivI3CQNxIrwSaPR9IGV0f2NZ7900Ihtkdgiw1ZivTvgVrXWH2CrX2X5MZGjos6-bs/s1600/ruby.jpg",
-   "points": [
-    "Foram detetadas sete falhas de segurança na linguagem Ruby.",
-    "Cinco das vulnerabilidades têm provas de conceito para execução remota de código.",
-    "Os criadores disponibilizaram versões atualizadas para corrigir os problemas."
-   ],
-   "title_original": "Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "A existência de provas de conceito para execução remota de código aumenta o risco de exploração destas falhas.",
-   "todo": "Atualize o ambiente Ruby para as versões mais recentes disponibilizadas pelos mantenedores."
-  },
-  {
-   "id": "1b4d43f7260defb0",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/19/us-threat-disruption-center-scam-sextortion-funds/",
-   "published": "2026-11-19T08:21:15+00:00",
-   "title": "US enlists private firms to cut scammers off from victims’ cash",
-   "summary": "Uma nova unidade do governo dos Estados Unidos, denominada Threat Disruption Center e integrada na Homeland Security Task Force, foi criada para travar o dinheiro das vítimas antes que este chegue a redes de burlas e cibercrime no estrangeiro. A iniciativa conta com a colaboração de empresas privadas para funcionar como um centro tecnológico e de cooperação partilhada. Os investigadores terão acesso a ferramentas para organizar queixas de vítimas e mapear os grupos criminosos responsáveis. O objetivo é cortar o fluxo financeiro que alimenta estas redes ilícitas.",
-   "image": null,
-   "points": [
-    "A Homeland Security Task Force criou o Threat Disruption Center nos Estados Unidos.",
-    "O projeto junta o setor público e empresas privadas para combater o cibercrime.",
-    "Investigadores usam novas ferramentas para analisar queixas e mapear redes criminosas.",
-    "O objetivo principal é impedir que o dinheiro das vítimas chegue aos burlões estrangeiros."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque cria uma colaboração direta entre autoridades e empresas privadas para estrangular as fontes de financiamento das redes de cibercrime.",
-   "todo": "Desconfie de esquemas de extorsão e promessas de ganhos fáceis, e denuncie de imediato qualquer atividade suspeita às autoridades competentes."
   }
  ]
 }

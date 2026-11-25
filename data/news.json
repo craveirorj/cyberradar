@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T12:45:22.124678+00:00",
+ "updated": "2026-11-25T13:05:36.442546+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -144,12 +144,12 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "Microsoft Security Blog",
@@ -204,7 +204,7 @@
   {
    "source": "Rapid7",
    "ok": true,
-   "added": 7
+   "added": 8
   },
   {
    "source": "Tenable",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 12,
-  "pending": 305,
-  "unenriched": 206,
+  "done": 0,
+  "pending": 319,
+  "unenriched": 220,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -340,6 +340,23 @@
    "enriched": true,
    "why": "Mostra como a evolução das ameaças por IA está a alterar a sustentabilidade e os critérios dos seguros de cibersegurança.",
    "todo": "Avalie o investimento em ferramentas de defesa baseadas em inteligência artificial para cumprir os novos critérios de risco das seguradoras."
+  },
+  {
+   "id": "09fa7f41e85324a2",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203978/security/electrolux-smart-boilers-in-ukraine-connect-to-russian-servers-raising-privacy-concerns.html",
+   "published": "2026-11-25T12:50:15+00:00",
+   "title": "Electrolux Smart Boilers in Ukraine Connect to Russian Servers, Raising Privacy Concerns",
+   "summary": "Researchers found Electrolux-branded smart boilers connecting to Russian servers, raising concerns about household data and privacy. A router in Ukraine recorded a water heater doing something odd. The owner, Alexander Unger, saw his Electrolux EWH 80 look up a server called mqtt.cloud.rusklimat.ru and then try to connect to it. He published the records on Facebook, […]",
+   "image": "https://i0.wp.com/securityaffairs.com/wp-content/uploads/2026/11/image-60.png?resize=1024%2C401&#038;ssl=1",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "Researchers found Electrolux-branded smart boilers connecting to Russian servers, raising concerns about household data and privacy. A router in Ukraine recorded a water heater doing something odd. The owner, Alexander Unger, saw his Electrolux EWH 80 look up a server called mqtt.cloud.rusklimat.ru and then try to connect to it. He published the records on Facebook, including a lookup timed at 18:00 on November 23, 2026. Mysterium VPN’s research team checked the finding. They repeated the lookup on November 25 and got the same address, 130.193.49[.]173. RIPE, the registry for Europe and Russia, lists that block under Yandex.Cloud LLC at 16 Lva Tolstogo Street in Moscow. The server belongs to Rusklimat, a Moscow group that calls itself the leader of Russia’s climate-equipment market. Its Hommyn app uses that name to reach heaters, air conditioners and ventilation units. Developers who link such devices to Home Assistant list it as the official cloud for Ballu, Electrolux, Zanussi and Royal Thermo, and a 2025 guide on Habr says the devices contact it by default. Rusklimat sells Electrolux-branded boilers in Russia and advertises them for Hommyn and for Yandex’s voice assistant, Alisa. Mysterium adds, citing Meduza , that Ukraine struck three of Yandex’s six data centers in October 2026 and disrupted Yandex Cloud, where Rusklimat’s server runs. “ The manual for the EWH SI EEC series , hosted by the Austrian arm of the home-improvement chain Hornbach, names CladSwiss AG of Zug, Switzerland, as the manufacturer and says the boiler is made in China. It says the Electrolux name is used under license from AB Electrolux, the Swedish parent company.” reads the report published by Mysterium. “It adds that the remote-control app, ClimatOn, comes from CladSwiss and isn’t provided by"
   },
   {
    "id": "3437a64cab1b4a66",
@@ -374,6 +391,23 @@
    "translated": false,
    "enriched": false,
    "raw": "ABC News reports: The Treasury Department’s Financial Crimes Enforcement Network (FinCEN) is “investigating a cybersecurity incident that resulted in unauthorized access to a limited subset of its systems,” and has taken some systems offline as a precaution, according to an alert posted on its site. The agency handles sensitive information and reports about financial crimes..."
+  },
+  {
+   "id": "c2d9c9d48347efce",
+   "source": "Rapid7",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.rapid7.com/blog/post/etr-cve-2026-123903-critical-vmware-directory-service-authentication-bypass-affects-vcenter",
+   "published": "2026-11-25T12:19:20+00:00",
+   "title": "CVE-2026-123903: Critical VMware Directory Service Authentication Bypass affects vCenter",
+   "summary": "Overview On November 24, 2026, Broadcom released VMware Security Advisory VMSA-2026-0011 to address several new vulnerabilities, including CVE-2026-123903 , a critical authentication bypass in the VMware Directory Service component of vCenter. Broadcom assigned it a CVSSv3.1 score of 9.8 Critical . An attacker who can reach an affected vCenter’s VMware Directory Service (vmdir) over the network can gain access without authenticating. Broadcom's supplemental FAQ distinguishes CVE-2026-123903 from an older vulnerability CVE-2026-123890 , which Rapid7 covered previously when CVE-2026-123890 was r",
+   "image": "https://images.contentstack.io/v3/assets/blte4f029e766e6b253/blt65a432ba319f4043/6846abddaf18306debe6cf4d/ETR.webp",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "Overview On November 24, 2026, Broadcom released VMware Security Advisory VMSA-2026-0011 to address several new vulnerabilities, including CVE-2026-123903 , a critical authentication bypass in the VMware Directory Service component of vCenter. Broadcom assigned it a CVSSv3.1 score of 9.8 Critical . An attacker who can reach an affected vCenter’s VMware Directory Service (vmdir) over the network can gain access without authenticating. Broadcom's supplemental FAQ distinguishes CVE-2026-123903 from an older vulnerability CVE-2026-123890 , which Rapid7 covered previously when CVE-2026-123890 was reported as being exploited in the wild. Both of these vulnerabilities affect the VMware Directory Service in vCenter and can give an attacker access to the vCenter without credentials. CVE-2026-123890 was reachable over RPC while CVE-2026-123903 is reachable over LDAP. As of this writing, there are no known public reports of exploitation of CVE-2026-123903 in the wild. A public proof-of-concept exploit is available and has been validated by Rapid7 to successfully achieve an authentication bypass. Attackers are known to be targeting vulnerabilities in the VMware Directory Service, therefore Rapid7 recommends remediating exposed systems on an urgent basis outside of normal patching cycles. Mitigation guidance Vendor updates are available for CVE-2026-123903. Broadcom lists no workaround , and these vCenter updates are not eligible for Quick Patch. Rapid7 recommends updating affected deployments on an urgent basis, outside normal patch cycles, using the standard update mechanism for the deployment. Broadcom lists the following available fixed versions to remediating CVE-2026-123903. These fixed versions also remediate several other high and medium severity CVEs from the same advisory "
   },
   {
    "id": "97f2b8403b125bf9",
@@ -13669,50 +13703,6 @@
    "enriched": true,
    "why": "Evidencia a vulnerabilidade de instituições europeias a ataques impulsionados por inteligência artificial.",
    "todo": "Monitorize os registos de atividade dos sistemas e reforce a deteção de comportamentos anómalos."
-  },
-  {
-   "id": "e8217d7fb17045f9",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/crypto-payment-processors-international-merchants/",
-   "published": "2026-11-19T14:42:46+00:00",
-   "title": "Comparing Crypto Payment Processors for International Merchants",
-   "summary": "O artigo compara diferentes processadores de pagamentos em criptomoedas para comerciantes internacionais. A análise abrange as taxas cobradas, as moedas de liquidação, as taxas de câmbio, a segurança oferecida e a integração com lojas online. O objetivo é ajudar os comerciantes a avaliar as melhores opções para o seu negócio.",
-   "image": null,
-   "points": [
-    "Análise de processadores de pagamentos em criptomoedas para comerciantes internacionais.",
-    "Comparação focada em taxas, moedas de liquidação e taxas de câmbio.",
-    "Avaliação da segurança e da facilidade de integração com lojas online."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Ajuda comerciantes globais a escolherem plataformas de pagamento seguras e eficientes.",
-   "todo": "Analise os requisitos de segurança e as taxas antes de integrar um processador de criptomoedas."
-  },
-  {
-   "id": "dcf0c6422c7ca607",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/19/russian-spies-impersonation-cloud-breach/",
-   "published": "2026-11-19T14:42:20+00:00",
-   "title": "Russian spies turn one cloud breach into a stepping stone for the next",
-   "summary": "Um grupo de ciberespionagem russo, rastreado pela Google como COLD RELIC (também conhecido como Star Blizzard, Callisto e Gossamer Bear) e associado ao FSB, está a fazer-se passar por funcionários de organizações já comprometidas para realizar ataques de phishing contra novos alvos. O grupo tem como alvo funcionários governamentais, entidades da defesa e ONGs na Europa e na América do Norte. Esta técnica transforma uma violação inicial numa plataforma para ataques subsequentes.",
-   "image": null,
-   "points": [
-    "O grupo russo COLD RELIC utiliza identidades falsas de empresas comprometidas.",
-    "O objetivo é enviar mensagens de phishing para enganar novas organizações-alvo.",
-    "Os alvos incluem governos, empresas de defesa e ONGs na Europa e América do Norte."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como os atacantes reutilizam acessos comprometidos para expandir campanhas de phishing altamente credíveis.",
-   "todo": "Implemente autenticação multifator rigorosa e verifique sempre pedidos inesperados de credenciais por parte de supostos colegas."
   }
  ]
 }

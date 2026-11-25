@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T17:06:20.502625+00:00",
+ "updated": "2026-11-25T17:25:34.988685+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -39,7 +39,7 @@
   {
    "source": "WeLiveSecurity (ESET) PT",
    "ok": true,
-   "added": 2
+   "added": 1
   },
   {
    "source": "Canaltech Segurança",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "Help Net Security",
@@ -311,7 +311,7 @@
   "provider": "gemini",
   "done": 0,
   "pending": 345,
-  "unenriched": 257,
+  "unenriched": 258,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,23 @@
   ]
  },
  "items": [
+  {
+   "id": "b93540ef2a5b4c4c",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/australia-passes-online-safety-legislation-preempt-harms",
+   "published": "2026-11-25T17:07:00+00:00",
+   "title": "Australia passes tough legislation requiring big tech to preempt foreseeable harms",
+   "summary": "The Digital Duty of Care Act sailed through Australia's Parliament. It will mandate that online providers establish protocols to protect users from threats of violence and rape as well as behavior that could cause significant harms.",
+   "image": "https://cms.therecord.media/uploads/australia_flag_luis_chavez_unsplash_7d5fcdecdc.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "The Digital Duty of Care Act sailed through Australia's Parliament. It will mandate that online providers establish protocols to protect users from threats of violence and rape as well as behavior that could cause significant harms."
+  },
   {
    "id": "243e005992015321",
    "source": "The Register Security",
@@ -335,6 +352,23 @@
    "translated": false,
    "enriched": false,
    "raw": "Microsoft's November security updates can break authentication in some third-party applications and devices following changes to NTLM message signing. Affected systems include authentication proxy servers, single sign-on (SSO) products, and application packaging tools, the company's support notice says. The failures stem from products that claim to supply required information during NTLM authentication but return incomplete or empty data, Microsoft said: \"An affected device might set the NTLMSSP_NEGOTIATE_TARGET_INFO flag in its CHALLENGE_MESSAGE but provide an empty or incomplete TargetInfo field.\" Administrators can use the notice's network trace and event log examples to identify affected products. For confirmed cases, the temporary workaround is to set the ClientAllowUnsignedNtlm Registry value to 1 on affected clients. This stops the client offering signing, backing out the new default rather than fixing the incompatible product. The recommended long-term options are a vendor update or Kerberos authentication, where supported. The value sits under HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0 and defaults to 0, enabling clients to offer signing on non-anonymous connections. The NTLM changes arrived in the November 10 update as phase 1 in a 2-phase process. In phase 1, \"Windows client devices begin offering NTLM signing on all connections by default. Servers accept both signed and unsigned clients. Auditing events identify clients not using signing.\" Phase 2, scheduled for May 2027, will make Windows servers require NTLM signing by default. \"Clients that do not offer signing will be rejected by secure servers,\" Microsoft stated. Ominously, Microsoft warned that it \"might remove the registry keys at a future date,\" so the company is not kidding about"
+  },
+  {
+   "id": "e507cff11bd9affa",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/big-techs/australia-aprova-lei-que-obriga-big-techs-a-remover-conteudos-prejudiciais/",
+   "published": "2026-11-25T17:00:00+00:00",
+   "title": "Austrália aprova lei que obriga big techs a remover ‘conteúdos prejudiciais’",
+   "summary": "As redes sociais que descumprirem a nova lei poderão receber multas pesadas.",
+   "image": "https://www.estadao.com.br/resizer/v2/EU6HG2577FA2NMJCOXEHWLDL6Q.jpeg?quality=80&auth=bb5e00fb6bd7a0132d0313e160bb4cf01f295a6c64c4673c4c7a51ee5425fc60&width=710",
+   "points": [],
+   "title_original": null,
+   "category": "Regulação",
+   "translated": false,
+   "enriched": false,
+   "raw": "A Austrália aprovou, nesta quarta-feira (25), uma nova lei que obriga as plataformas online atuando no país a removerem proativamente conteúdos considerados prejudiciais . Em caso de descumprimento, as empresas estarão sujeitas ao pagamento de multas associadas ao faturamento global. Batizada de “Digital Duty of Care”, ou “Dever de Cuidado Digital”, a nova legislação impõe às big techs o dever de priorizar a segurança dos cidadãos australianos, obrigando, também, à remoção de funcionalidades nocivas presentes nas redes sociais . Ela deve entrar em vigor em um ano. Multas podem chegar a bilhões de dólares Segundo Anika Wells, ministra das Comunicações da Austrália, a medida representa um novo marco histórico para o país, que já havia se tornado o primeiro país a proibir menores de 16 anos nas redes sociais . As autoridades locais também planejam determinar que as gigantes da tecnologia paguem pelos conteúdos jornalísticos utilizados em suas plataformas . “O Dever de Cuidado Digital é uma reforma de segurança histórica, semelhante ao uso obrigatório de cintos de segurança, à embalagem genérica de cigarros e à reforma das leis de armas ”, celebrou Wells, após a aprovação; A nova lei australiana substituirá um conjunto de regras de conduta online considerado obsoleto, transferindo parte da responsabilidade pela segurança dos usuários às empresas de internet; Conteúdos que incentivem ou promovam atitudes hostis em relação às mulheres ou à igualdade de gênero e que glorifiquem o crime são alguns dos materiais que as big techs deverão combater; Práticas e experiências digitais consideradas prejudiciais e o incentivo a desafios perigosos ou comportamentos que representem riscos também fazem parte dos conteúdos com obrigatoriedade de remoção. As multas previstas para os casos de"
   },
   {
    "id": "7deeca46c74df398",
@@ -13454,51 +13488,6 @@
    "enriched": true,
    "why": "Sendo o NGINX um dos servidores web mais utilizados do mundo, falhas críticas exigem correção imediata para prevenir ataques futuros.",
    "todo": "Aplique os patches disponibilizados pela F5 para as versões do NGINX afetadas."
-  },
-  {
-   "id": "88045d44367b4836",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/jetbrains-security-advisory-av26-1181",
-   "published": "2026-11-19T18:24:30+00:00",
-   "title": "Aviso de segurança JetBrains (AV26-1181)",
-   "summary": "A JetBrains foi afetada por vulnerabilidades no produto TeamCity, nomeadamente em versões anteriores a 2026.2.1 e 2026.1.5. O Centro Cibernético encoraja os utilizadores e administradores a consultarem os links de segurança fornecidos pela empresa. Recomenda-se a aplicação célere das atualizações para salvaguardar os ambientes de desenvolvimento.",
-   "image": null,
-   "points": [
-    "A JetBrains reportou falhas de segurança no software TeamCity.",
-    "As versões anteriores a 2026.2.1 e 2026.1.5 encontram-se vulneráveis.",
-    "O Centro Cibernético aconselha a análise dos boletins e avisos oficiais da marca.",
-    "É imperativa a aplicação de atualizações nos servidores afetados."
-   ],
-   "title_original": "JetBrains security advisory (AV26-1181)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Proteger ferramentas de integração contínua como o TeamCity impede que atacantes comprometam o código-fonte e os processos de desenvolvimento.",
-   "todo": "Atualize o TeamCity da JetBrains para as versões corrigidas mais recentes."
-  },
-  {
-   "id": "6efc22951138a3c2",
-   "source": "CrowdStrike Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.crowdstrike.com/en-us/blog/crowdstrike-helps-protect-against-java4shell-cve-2026-114938/",
-   "published": "2026-11-19T18:21:28.962269+00:00",
-   "title": "Java4Shell (CVE-2026-114938): CrowdStrike Detects Exposure and Post-Exploitation Activity",
-   "summary": "A CrowdStrike detetou exposição e atividade maliciosa pós-exploração relacionada com a vulnerabilidade Java4Shell, identificada como CVE-2026-114938. Esta falha representa um risco significativo para os sistemas afetados devido à exploração ativa por parte de atacantes. A empresa identificou os vetores de exposição e os sinais de comprometimento associados a esta ameaça.",
-   "image": null,
-   "points": [
-    "CrowdStrike detetou exposição e pós-exploração da falha Java4Shell.",
-    "Identificada sob a referência CVE-2026-114938.",
-    "Atacantes estão a explorar ativamente esta vulnerabilidade de segurança."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Permite detetar e mitigar exposições críticas antes que os sistemas sejam comprometidos por atacantes.",
-   "todo": "Verifique os alertas da CrowdStrike e atualize os sistemas afetados pela vulnerabilidade Java4Shell."
   }
  ]
 }

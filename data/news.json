@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T07:28:21.513069+00:00",
+ "updated": "2026-11-25T07:48:00.889614+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 2
+   "added": 1
   },
   {
    "source": "TugaTech",
@@ -239,12 +239,12 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 8
+   "added": 9
   },
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 119,
-  "pending": 208,
-  "unenriched": 89,
+  "done": 116,
+  "pending": 207,
+  "unenriched": 91,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
@@ -339,6 +339,29 @@
    "enriched": true,
    "why": "Mostra como a evolução das ameaças por IA está a alterar a sustentabilidade e os critérios dos seguros de cibersegurança.",
    "todo": "Avalie o investimento em ferramentas de defesa baseadas em inteligência artificial para cumprir os novos critérios de risco das seguradoras."
+  },
+  {
+   "id": "961cd313ea29ecc0",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/25/idunno-anticsrf-rce-cve-2026-131914-exploited/",
+   "published": "2026-11-25T07:22:32+00:00",
+   "title": "Biblioteca abandonada Idunno.AntiCsrf expõe aplicações ASP.NET legadas a RCE (CVE-2026-131914)",
+   "summary": "A Agência de Cibersegurança e Segurança de Infraestrutura dos EUA adicionou três novas falhas ao seu catálogo de vulnerabilidades exploradas. Entre elas encontra-se a CVE-2026-131914, um problema de desserialização de dados não seguros na biblioteca legada ASP.NET Idunno AntiCsrf. Esta falha permite execução remota de código em aplicações que utilizam o framework web. A exploração desta vulnerabilidade já foi detetada por autoridades competentes.",
+   "image": null,
+   "points": [
+    "O quê: Vulnerabilidade de desserialização em biblioteca ASP.NET.",
+    "Identificador: CVE-2026-131914 na Idunno AntiCsrf.",
+    "Impacto: Permite a execução remota de código em aplicações web afetadas.",
+    "Contexto: Adicionada ao catálogo de vulnerabilidades ativamente exploradas."
+   ],
+   "title_original": "Exploited: Abandoned Idunno.AntiCsrf library opens legacy ASP.NET apps to RCE (CVE-2026-131914)",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A utilização de bibliotecas desatualizadas ou abandonadas em aplicações web cria pontos de entrada críticos para ataques de execução remota de código.",
+   "todo": "Identifique e remova bibliotecas desatualizadas ou sem manutenção nas suas aplicações web, substituindo-as por alternativas suportadas."
   },
   {
    "id": "6727ed97cb4ffa7a",
@@ -13744,29 +13767,6 @@
    "enriched": true,
    "why": "Reforça as capacidades de segurança para a adoção empresarial de inteligência artificial em ambientes híbridos.",
    "todo": ""
-  },
-  {
-   "id": "0bc4a983ccd9fa65",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203472/security/php-warns-of-critical-flaws-ahead-of-november-security-release.html",
-   "published": "2026-11-19T10:22:51+00:00",
-   "title": "PHP Warns of Critical Flaws Ahead of November Security Release",
-   "summary": "A equipa de desenvolvimento do PHP emitiu um aviso sobre novas vulnerabilidades críticas que serão corrigidas num pacote de segurança agendado para novembro. Entre os problemas identificados encontra-se uma falha de execução remota de código associada à gestão de sessões, identificada como CVE-2026-115560. A empresa sublinha que o nível de gravidade mais alto afeta apenas configurações específicas e incomuns da linguagem de programação. Os administradores devem preparar-se para atualizar os sistemas logo que os detalhes técnicos e os patches sejam publicados.",
-   "image": null,
-   "points": [
-    "O PHP anunciou um pacote de segurança para corrigir falhas críticas em versões suportadas.",
-    "Foi identificada uma vulnerabilidade de execução remota de código na gestão de sessões (CVE-2026-115560).",
-    "As falhas mais graves requerem configurações específicas e não predefinidas para serem exploradas.",
-    "Os detalhes técnicos serão divulgados em simultâneo com o lançamento das correções."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque afeta uma linguagem amplamente utilizada na web, exigindo atenção redobrada dos administradores de servidores.",
-   "todo": "Prepare a atualização urgente dos ambientes PHP assim que as novas versões oficiais estiverem disponíveis."
   }
  ]
 }

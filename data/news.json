@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T18:45:07.550614+00:00",
+ "updated": "2026-11-25T19:03:35.003800+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -169,7 +169,7 @@
   {
    "source": "Cisco Talos",
    "ok": true,
-   "added": 5
+   "added": 6
   },
   {
    "source": "Unit 42 (Palo Alto)",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "Help Net Security",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -310,8 +310,8 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 351,
-  "unenriched": 266,
+  "pending": 353,
+  "unenriched": 268,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,40 @@
   ]
  },
  "items": [
+  {
+   "id": "50b8b790f8a4be80",
+   "source": "Cisco Talos",
+   "region": "US",
+   "lang": "en",
+   "link": "https://blog.talosintelligence.com/oh-is-it-thanksgiving-i-hadnt-noticed/",
+   "published": "2026-11-25T19:00:00+00:00",
+   "title": "Oh, is it Thanksgiving? I hadn’t noticed!",
+   "summary": "In true Thanksgiving fashion, David has a few thank-yous to give to the cybersecurity community (and a few choice words for threat actors).",
+   "image": "https://storage.ghost.io/c/af/a0/afa04ee3-414f-4481-8d23-7e7c146f192e/content/images/2026/11/threat_source-3.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "I tried hard not to write another typical “Thanksgiving article.” Obviously, I failed. But you know what? It is Thanksgiving week here in the U.S., and coming up with fun, interesting, short form topics is hard , especially when you’re fighting the weight of Tradition expected this week. So instead of me writing something insightful, you’re getting some things I’m thankful for. Even that’s harder than you might think, because there are so many things, and this is just the newsletter introduction , after all. Let’s start off with something I’m pretty sure none of us are thankful for: threat actors. Seriously, screw you guys! I know I'd be out of a job without you, but that’s just another way of saying “I coulda been a professional bagpiper.” There are days when that doesn’t sound so bad. So, no gratitude coming your way, people! In terms of actual thankfulness, I want to give a big THANK YOU to the entire Blue Team, everywhere. Everyone out there defending, especially those in the U.S. taking shifts on Thursday to keep the turkey-eating public safe and secure. This is a hard, often high-pressure job for which you get little thanks, but all the blame when a breach occurs. We see you. We appreciate you. We promise we’ll save you some stuffing. Speaking of defenders, I’m also very thankful to get to work with so many talented and wonderful people here at Talos. I’m not just saying this because I know my boss will read it! Without exception, everyone I’ve worked with here has not only been an expert at what they do, but they’ve been friendly, welcoming, and very patient with me as I’ve been feeling my way around this new org over the past several months. Thank you! Finally, and maybe most importantly of all, I want to thank you , our readers. You are the reason we’re all her"
+  },
+  {
+   "id": "8f62a618cddf04dd",
+   "source": "TechCrunch Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://techcrunch.com/2026/11/25/1password-said-hackers-broke-into-its-internal-systems-but-customer-passwords-are-safe/",
+   "published": "2026-11-25T18:49:52+00:00",
+   "title": "1Password said hackers broke into its internal systems, but customer passwords are safe",
+   "summary": "The password manager maker said an attacker gained access to an employee's corporate account and took some information about customers.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": false,
+   "raw": "The password manager maker said an attacker gained access to an employee's corporate account and took some information about customers."
+  },
   {
    "id": "8ffaffb6da4559e1",
    "source": "HackRead",
@@ -13401,52 +13435,6 @@
    "enriched": true,
    "why": "Ajuda as organizações a filtrar o ruído e a focar a atenção nas ameaças ativas que requerem intervenção urgente.",
    "todo": "Configure e monitorize os painéis de resposta da AWS para garantir que a triagem diária funciona de forma eficaz na sua organização."
-  },
-  {
-   "id": "f4159f374f79fe57",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/vmware-security-advisory-av26-1185",
-   "published": "2026-11-19T19:02:48+00:00",
-   "title": "Aviso de segurança da VMware (AV26-1185)",
-   "summary": "Foram detetadas múltiplas vulnerabilidades em vários produtos VMware, incluindo o vCenter e o VMware Cloud Foundation. A falha identificada como CVE-2026-123890 está a ser ativamente explorada em ataques no terreno, segundo relatórios de código aberto. O Centro Ciber, juntamente com a VMware através do advisory VMSA-2026-0009, insta os utilizadores a aplicarem as atualizações corretivas. Os incidentes afetam diferentes versões anteriores aos lançamentos mais recentes de 2026.",
-   "image": null,
-   "points": [
-    "Produtos afetados: VMware vCenter, Cloud Foundation, vSphere Foundation e Telco Cloud.",
-    "O quê: Múltiplas vulnerabilidades detetadas, incluindo CVE-2026-123890, CVE-2026-123891, CVE-2026-123892, CVE-2026-123893 e CVE-2026-123894.",
-    "Impacto: A falha CVE-2026-123890 está a ser ativamente explorada (em ambiente real).",
-    "Ação: Instalação urgente das atualizações indicadas no advisory VMSA-2026-0009."
-   ],
-   "title_original": "VMware security advisory (AV26-1185)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "A exploração ativa destas falhas em produtos VMware coloca em risco infraestruturas críticas de centenas de organizações.",
-   "todo": "Reveja os avisos de segurança da VMware e atualize os componentes vCenter afetados para as versões corrigidas."
-  },
-  {
-   "id": "d0c7e186c7e0b5aa",
-   "source": "Cisco Talos",
-   "region": "US",
-   "lang": "en",
-   "link": "https://blog.talosintelligence.com/the-internet-needs-a-nap-and-you-do-too/",
-   "published": "2026-11-19T19:00:00+00:00",
-   "title": "A internet precisa de uma sesta (e tu também)",
-   "summary": "O fluxo constante de notícias sobre vulnerabilidades e falhas em tecnologias como PHP, Java, Outlook, Apple e nginx sobrecarrega as equipas de segurança. Embora falhas e interrupções tenham causas distintas, todas resultam num volume excessivo de trabalho para os administradores. O artigo sublinha que a mitigação exige inventário rigoroso de ativos, atualizações de sistemas e gestão adequada de alertas para evitar que anomalias passem despercebidas.",
-   "image": "https://storage.ghost.io/c/af/a0/afa04ee3-414f-4481-8d23-7e7c146f192e/content/images/2026/11/threat_source-2.jpg",
-   "points": [
-    "O volume contínuo de vulnerabilidades e falhas tecnológicas sobrecarrega as equipas de cibersegurança.",
-    "As organizações devem identificar todos os sistemas, aplicações e dispositivos presentes no seu ambiente.",
-    "A gestão de ativos obsoletos e a aplicação de patches continuam a ser um desafio crítico.",
-    "A falta de tempo e o excesso de alertas dificultam a distinção entre atividade normal e anómala."
-   ],
-   "title_original": "The internet needs a nap (and you do, too)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Conhecer o parque tecnológico e gerir eficazmente os alertas é essencial para evitar que falhas se transformem em incidentes graves.",
-   "todo": "Mantenha um inventário atualizado de todos os softwares e dispositivos da organização e planeie janelas regulares de atualização."
   }
  ]
 }

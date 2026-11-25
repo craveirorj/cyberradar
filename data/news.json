@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T21:26:58.274811+00:00",
+ "updated": "2026-11-25T21:47:36.296315+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -59,7 +59,7 @@
   {
    "source": "CISA Advisories",
    "ok": true,
-   "added": 24
+   "added": 23
   },
   {
    "source": "CISA Alertas (KEV)",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "Help Net Security",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 12
+   "added": 10
   },
   {
    "source": "ACSC Austrália",
@@ -309,16 +309,37 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 72,
-  "pending": 239,
-  "unenriched": 139,
+  "done": 120,
+  "pending": 185,
+  "unenriched": 87,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "70f66acc3de798b1",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/",
+   "published": "2026-11-25T21:33:33+00:00",
+   "title": "1Password customer data stolen after employee GitHub account breach",
+   "summary": "A 1Password sofreu uma violação de dados depois de a conta GitHub de um colaborador ter sido comprometida. Os atacantes utilizaram o acesso para implementar código malicioso nos serviços de backend da empresa. O incidente resultou no roubo de dados de clientes.",
+   "image": null,
+   "points": [
+    "Quem: A 1Password e um colaborador.",
+    "O quê: Conta GitHub comprometida e código malicioso implementado.",
+    "Como: Através do acesso indevido à conta do funcionário no GitHub.",
+    "Impacto: Roubo de dados de clientes."
+   ],
+   "title_original": "1Password customer data stolen after employee GitHub account breach",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que a segurança de contas individuais de colaboradores pode comprometer toda a infraestrutura e os dados dos clientes de uma empresa.",
+   "todo": "Ative a autenticação multifator (MFA) em todas as contas de colaboradores e monitorize acessos anómalos a repositórios de código."
+  },
   {
    "id": "1a0018bfd634dd1e",
    "source": "HackRead",
@@ -340,6 +361,29 @@
    "enriched": true,
    "why": "Mostra que mesmo empresas de segurança robustas podem sofrer violações através de acessos internos comprometidos.",
    "todo": "Ative a autenticação multifator em todas as contas e monitorize o acesso a repositórios de código e ferramentas de desenvolvimento."
+  },
+  {
+   "id": "17a805c0d69ce858",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool",
+   "published": "2026-11-25T21:18:00+00:00",
+   "title": "Microsoft: China’s Salt Typhoon hackers are using Artex",
+   "summary": "Grupos de pirataria informática ligados à China e à Coreia do Norte estão a integrar rapidamente uma ferramenta de inteligência artificial nas suas operações. A revelação foi feita pela Microsoft, destacando o uso da ferramenta Artex por atores como o grupo Salt Typhoon.",
+   "image": "https://cms.therecord.media/uploads/microsoft_sign_pexels_altabena_efbc5ae4db.jpg",
+   "points": [
+    "Quem: A Microsoft, e os grupos Salt Typhoon da China e da Coreia do Norte.",
+    "O quê: Adoção de uma ferramenta de IA em campanhas de pirataria.",
+    "Como: Através da integração rápida do Artex nos seus kits de ferramentas.",
+    "Impacto: Aumento da capacidade de ataque destes grupos."
+   ],
+   "title_original": "Microsoft: China’s Salt Typhoon hackers are using Artex",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia como os atacantes estatais estão a adotar ferramentas de inteligência artificial para otimizar as suas operações maliciosas.",
+   "todo": ""
   },
   {
    "id": "3300f4affd3eb871",
@@ -13728,51 +13772,6 @@
    "enriched": true,
    "why": "Evidencia o risco massivo de exposição de dados em empresas do setor da saúde.",
    "todo": "Monitore contas afetadas e reforce a vigilância contra tentativas de phishing direcionadas."
-  },
-  {
-   "id": "db582c0dbbaec095",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203537/hacking/chaotic-eclipse-releases-fastunlock-a-new-windows-zero-day-vulnerability.html",
-   "published": "2026-11-19T21:43:09+00:00",
-   "title": "Chaotic Eclipse lança FastUnlock, uma nova vulnerabilidade zero-day no Windows",
-   "summary": "O investigador Chaotic Eclipse divulgou uma nova vulnerabilidade zero-day no Windows, apelidada de FastUnlock, que explora o Narrador para contornar o ecrã de bloqueio. A falha permite contornar a encriptação do BitLocker e executar código num sistema Windows 11 com as atualizações de novembro instaladas. O ataque exige acesso físico ao computador e afeta a segurança das estações de trabalho. Esta falha resulta de um problema introduzido pela Microsoft na reformulação do Narrador.",
-   "image": "https://i0.wp.com/securityaffairs.com/wp-content/uploads/2026/11/image-50.png?resize=1024%2C640&#038;ssl=1",
-   "points": [
-    "Investigador Chaotic Eclipse descobre zero-day no Windows.",
-    "Exploração do Narrador permite contornar o ecrã de bloqueio e BitLocker.",
-    "Ataque requer acesso físico e conta online associada.",
-    "Permite execução de código num sistema totalmente encriptado."
-   ],
-   "title_original": "Chaotic Eclipse Releases FastUnlock, a New Windows Zero-Day Vulnerability",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite que um atacante com acesso físico contorne a encriptação BitLocker e execute código no Windows.",
-   "todo": "Manter os sistemas atualizados e restringir o acesso físico a dispositivos corporativos."
-  },
-  {
-   "id": "f2dddf2ea7d8bc56",
-   "source": "TechCrunch Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
-   "published": "2026-11-19T21:42:31+00:00",
-   "title": "Estas falhas técnicas lembram o efeito Y2K, ao estilo de agentes de IA",
-   "summary": "Especialistas em cibersegurança sugerem que as recentes interrupções em sistemas de reservas de companhias aéreas, plataformas bancárias e de produtividade podem estar ligadas a algo mais profundo. Estes incidentes geram preocupação sobre a estabilidade da infraestrutura tecnológica atual. O impacto afeta vários setores económicos dependentes destas plataformas. Ficam por apurar todos os detalhes técnicos das causas exatas.",
-   "image": null,
-   "points": [
-    "Interrupções recentes afetam companhias aéreas e bancos.",
-    "Especialistas apontam para causas profundas nestas falhas.",
-    "Paralelos com o efeito Y2K e novas tecnologias."
-   ],
-   "title_original": "These tech outages are giving Y2K, AI agent style",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Levanta questões sobre a fiabilidade e interdependência das plataformas tecnológicas atuais.",
-   "todo": "Implementar planos de redundância e recuperação rápida para serviços críticos."
   }
  ]
 }

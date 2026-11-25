@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T07:48:00.889614+00:00",
+ "updated": "2026-11-25T08:06:33.162914+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Security Affairs",
@@ -309,12 +309,13 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 116,
-  "pending": 207,
-  "unenriched": 91,
+  "done": 48,
+  "pending": 274,
+  "unenriched": 159,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
@@ -339,6 +340,28 @@
    "enriched": true,
    "why": "Mostra como a evolução das ameaças por IA está a alterar a sustentabilidade e os critérios dos seguros de cibersegurança.",
    "todo": "Avalie o investimento em ferramentas de defesa baseadas em inteligência artificial para cumprir os novos critérios de risco das seguradoras."
+  },
+  {
+   "id": "3bc6f96dec950b6c",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/",
+   "published": "2026-11-25T07:45:03+00:00",
+   "title": "Hackers reportedly breached CIA intelligence analysis system",
+   "summary": "Desconhecidos terão conseguido infiltrar-se num sistema de análise de inteligência de código aberto da CIA. O incidente afetou a agência de inteligência norte-americana. Os detalhes específicos sobre a intrusão e eventuais dados comprometidos não foram avançados.",
+   "image": null,
+   "points": [
+    "O quê: Inativação ou violação de um sistema de análise da CIA.",
+    "Quem: Atacantes desconhecidos e a Central Intelligence Agency.",
+    "Impacto: Acesso não autorizado a sistemas de inteligência de código aberto."
+   ],
+   "title_original": "Hackers reportedly breached CIA intelligence analysis system",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que mesmo as agências governamentais mais protegidas continuam a ser alvo de ataques bem-sucedidos.",
+   "todo": ""
   },
   {
    "id": "961cd313ea29ecc0",
@@ -13744,29 +13767,6 @@
    "enriched": true,
    "why": "Permite que atacantes remotos assumam o controlo de sistemas sem necessidade de autenticação.",
    "todo": "Aplique imediatamente as atualizações e correções de segurança disponibilizadas pela F5."
-  },
-  {
-   "id": "f26a40aa350ac1d1",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/19/palo-alto-networks-acquires-applied-compute/",
-   "published": "2026-11-19T10:23:41+00:00",
-   "title": "Palo Alto Networks vai adquirir a Applied Compute por 4,5 mil milhões de dólares",
-   "summary": "A Palo Alto Networks anunciou a intenção de adquirir a Applied Compute, uma plataforma focada em modelos de IA de pesos abertos. A transação em ações está avaliada em 4,5 mil milhões de dólares e visa integrar a equipa de investigação e tecnologia da empresa adquirida. Com esta compra, a Palo Alto Networks pretende ajudar as empresas a adotar IA de forma segura num futuro híbrido.",
-   "image": null,
-   "points": [
-    "Palo Alto Networks compra a Applied Compute por 4,5 mil milhões de dólares.",
-    "A transação é realizada inteiramente em ações.",
-    "A Applied Compute foca-se em pós-treino e inferência de modelos de IA de pesos abertos.",
-    "O objetivo é reforçar a segurança na adoção empresarial de IA."
-   ],
-   "title_original": "Palo Alto Networks to acquire Applied Compute for $4.5 billion",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Reforça as capacidades de segurança para a adoção empresarial de inteligência artificial em ambientes híbridos.",
-   "todo": ""
   }
  ]
 }

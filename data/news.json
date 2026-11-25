@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T14:25:16.779481+00:00",
+ "updated": "2026-11-25T14:45:03.818353+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -34,7 +34,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -124,7 +124,7 @@
   {
    "source": "Ars Technica Security",
    "ok": true,
-   "added": 4
+   "added": 5
   },
   {
    "source": "WIRED Security",
@@ -204,7 +204,7 @@
   {
    "source": "Rapid7",
    "ok": true,
-   "added": 9
+   "added": 8
   },
   {
    "source": "Tenable",
@@ -238,8 +238,8 @@
   },
   {
    "source": "The Register Security",
-   "ok": true,
-   "added": 10
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "Help Net Security",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 11
+   "added": 13
   },
   {
    "source": "ACSC Austrália",
@@ -310,8 +310,8 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 330,
-  "unenriched": 234,
+  "pending": 324,
+  "unenriched": 229,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -340,6 +340,40 @@
    "enriched": true,
    "why": "Mostra como a evolução das ameaças por IA está a alterar a sustentabilidade e os critérios dos seguros de cibersegurança.",
    "todo": "Avalie o investimento em ferramentas de defesa baseadas em inteligência artificial para cumprir os novos critérios de risco das seguradoras."
+  },
+  {
+   "id": "b8004cf8d62fc205",
+   "source": "Ars Technica Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://arstechnica.com/security/2026/11/a-familiar-iranian-hacking-group-has-found-a-new-way-to-cause-chaos/",
+   "published": "2026-11-25T14:29:43+00:00",
+   "title": "A familiar Iranian hacking group has found a new way to cause chaos",
+   "summary": "France blames an Iranian cyber unit for sabotaging hundreds of supermarket freezers.",
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/freezer-cleanup-1024x648.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": false,
+   "raw": "One night in October, hackers staged one of the most unusual cyber attacks in history : cranking up the temperature in refrigeration systems at hundreds of supermarkets across France and destroying millions of euros of food. Hackers have targeted commercial fridges and freezers before, but never at this scale and never in the heart of Europe. The brazen attack left cyber professionals unsure as to who might have executed such a madcap operation. But French intelligence agencies found traces of Farsi and other clues in the digital trail pointing to an elite hacking unit of the Islamic Revolutionary Guard Corps. The unit allegedly behind the hack, Shahid Kaveh, was already well known to Western intelligence agencies. Named after Mahmoud Kaveh, an Iranian commander who died during the 1980s Iran-Iraq war, it is one of several hacking units overseen by the Revolutionary Guards’ Cyber Electronic Command. Read full article Comments"
+  },
+  {
+   "id": "cb541ff98a9ca421",
+   "source": "SAPO Tek",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://tek.sapo.pt/noticias/computadores/artigos/amazon-e-ebay-pressionadas-a-retirar-brinquedos-com-ia-para-criancas/",
+   "published": "2026-11-25T14:23:49+00:00",
+   "title": "Amazon e eBay pressionadas a retirar brinquedos com IA para crianças",
+   "summary": "Uma coligação internacional de organizações de defesa das crianças e especialistas está a pedir à Amazon e o eBay para suspenderem a venda de brinquedos com inteligência artificial para menores de 16 anos. Em causa estão preocupações relacionadas com a segurança, a privacidade e os potenciais efeitos destes sistemas no desenvolvimento infantil.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "IA",
+   "translated": false,
+   "enriched": false,
+   "raw": "Uma coligação internacional de organizações de defesa das crianças e especialistas está a pedir à Amazon e o eBay para suspenderem a venda de brinquedos com inteligência artificial para menores de 16 anos. Em causa estão preocupações relacionadas com a segurança, a privacidade e os potenciais efeitos destes sistemas no desenvolvimento infantil."
   },
   {
    "id": "f5ef2a358697d369",
@@ -400,7 +434,7 @@
    "link": "https://www.rapid7.com/blog/post/it-2026-cybersecurity-predictions-wrong-or-right",
    "published": "2026-11-25T13:48:40+00:00",
    "title": "Our 2026 Cybersecurity Predictions: What We Got Right, What We Got Wrong, and What Changed",
-   "summary": "Rapid7’s annual Security Predictions webinar returns on December 10, bringing our experts together to explore what the year ahead could hold for cybersecurity. Before sharing our predictions for 2027, we’re grading last year’s calls: that geopolitical tensions would reshape cyber threats, insider threats would dominate breach root causes, and context would become the new currency of cyber performance. Register here for the 2027 Security Predictions webinar . As security leaders work through their priorities for 2027, those predictions offer a useful starting point. The year reinforced several ",
+   "summary": "Rapid7’s annual Security Predictions webinar returns on December 10, bringing our experts together to explore what the year ahead could hold for cybersecurity. Before sharing our predictions for 2027, we’re grading last year’s calls: that geopolitical tensions would reshape cyber threats, insider threats would dominate breach root causes, and context would become the new currency of cyber performance. Register here for the 2027 Security Predictions webinar . As security leaders work through their priorities for 2027, those predictions offer a useful starting point. The year reinforced several",
    "image": "https://images.contentstack.io/v3/assets/blte4f029e766e6b253/blt5919f41d6ecd6f49/6b06e84232e91e016175e10c/Webinar-_Organic_Socials_(1).png",
    "points": [],
    "title_original": null,
@@ -13584,50 +13618,6 @@
    "enriched": true,
    "why": "Ajuda as empresas a mudarem de uma postura reativa para uma mitigação proativa de riscos.",
    "todo": "Avalie se os seus fornecedores de segurança oferecem visibilidade integrada entre vulnerabilidades e monitorização de ameaças."
-  },
-  {
-   "id": "3049d4149a83870d",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/php-patches-seven-critical-rce-vulnerabilities/",
-   "published": "2026-11-19T15:54:20+00:00",
-   "title": "PHP corrige sete vulnerabilidades críticas de Execução Remota de Código",
-   "summary": "Foram detetadas e corrigidas sete vulnerabilidades críticas de execução remota de código (RCE) na linguagem PHP. A exploração bem-sucedida destas falhas por parte de atacantes poderia provocar a interrupção do processo de trabalho. Adicionalmente, permitiria executar código com os privilégios do trabalhador PHP afetado.",
-   "image": null,
-   "points": [
-    "O PHP corrigiu sete falhas críticas de RCE.",
-    "Os atacantes podiam causar a falha do processo de trabalho.",
-    "A exploração permitia executar código com privilégios elevados."
-   ],
-   "title_original": "PHP Patches Seven Critical RCE Vulnerabilities",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Protege os servidores web contra o controlo remoto não autorizado por parte de cibercriminosos.",
-   "todo": "Atualize urgentemente os ambientes PHP para as versões mais recentes disponibilizadas pela fundação."
-  },
-  {
-   "id": "3c9fd4e00765334a",
-   "source": "Cybersecurity Dive",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cybersecuritydive.com/news/technology-outages-cyberattacks-ai-house-hearing/875148/",
-   "published": "2026-11-19T15:50:41+00:00",
-   "title": "«O que raio se está a passar?»: Falhas tecnológicas antecipam futuro caótico e arriscado das infraestruturas dos EUA",
-   "summary": "À medida que a inteligência artificial descobre vulnerabilidades graves de software, as empresas enfrentam grandes dificuldades para atualizar sistemas informáticos envelhecidos. Estas infraestruturas antigas nunca foram desenhadas para responder ao panorama atual de ameaças cibernéticas. O cenário antecipa um futuro repleto de interrupções e riscos para os serviços essenciais.",
-   "image": "https://imgproxy.divecdn.com/S8TeCB8xrcjTioF-pV3JUkIA0enbSveXDSWEwD5D9ko/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMzA1NzIxNzM5LmpwZw==.webp",
-   "points": [
-    "A IA está a acelerar a descoberta de falhas graves de software.",
-    "As empresas lutam para atualizar sistemas informáticos antigos.",
-    "As infraestruturas atuais não foram desenhadas para o risco moderno."
-   ],
-   "title_original": "‘What the hell is going on?’: Technology outages offer preview of US infrastructure’s messy, risky future",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Alerta para o perigo estrutural de manter sistemas desatualizados face a ameaças impulsionadas por IA.",
-   "todo": "Faça um inventário rigoroso dos seus sistemas legados e planeie a sua substituição ou reforço de segurança."
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T10:47:08.285041+00:00",
+ "updated": "2026-11-25T11:05:19.956859+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -9,7 +9,7 @@
   {
    "source": "IT Security",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Pplware Segurança",
@@ -34,7 +34,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -138,8 +138,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": true,
-   "added": 4
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "DataBreaches.net",
@@ -169,7 +169,7 @@
   {
    "source": "Cisco Talos",
    "ok": true,
-   "added": 5
+   "added": 7
   },
   {
    "source": "Unit 42 (Palo Alto)",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Hacker News",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 60,
-  "pending": 257,
-  "unenriched": 148,
+  "done": 0,
+  "pending": 317,
+  "unenriched": 210,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -340,6 +340,108 @@
    "enriched": true,
    "why": "Mostra como a evolução das ameaças por IA está a alterar a sustentabilidade e os critérios dos seguros de cibersegurança.",
    "todo": "Avalie o investimento em ferramentas de defesa baseadas em inteligência artificial para cumprir os novos critérios de risco das seguradoras."
+  },
+  {
+   "id": "d0e888ada6d9aed9",
+   "source": "Cisco Talos",
+   "region": "US",
+   "lang": "en",
+   "link": "https://blog.talosintelligence.com/the-great-escape-tradecraft-insights-from-an-agentic-swarm/",
+   "published": "2026-11-25T11:00:00+00:00",
+   "title": "The Great Escape: Tradecraft insights from an agentic swarm",
+   "summary": "The OpenAI-linked swarm activity in 2026 is fully traceable through public records. This blog analyzes its tradecraft and compares it to early signals and behaviors from current agentic attack activity seen in the wild.",
+   "image": "https://storage.ghost.io/c/af/a0/afa04ee3-414f-4481-8d23-7e7c146f192e/content/images/2026/11/swarm-header.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": false,
+   "raw": "The OpenAI-linked swarm activity in 2026 is fully traceable through public records and offers an unprecedented view into how multi-agent AI systems operate and coordinate at scale. Distilling and documenting the swarm tradecraft may help defenders understand multi-agent operations and communication, and how agents adapt when a path is blocked. Some documented behaviors may transfer to more purpose-built cyber attack frameworks like ARTEX, including methods to persistently store results, the burst-and-pause timing patterns of reasoning loops, and the self-labeling conventions that can reveal workload assignments and distribution. Beginning in June 2026 and extending for several months, a collection of OpenAI models conducting internal training and evaluation tasks broke out of their containerized environments and accessed websites and databases via the public internet in ways the company says it did not authorize . This activity represents a new kind of cyber event: not a malicious intrusion, but an unintentional series of consequences stemming from an agentic swarm , a group of AI agents exhibiting coordinated behavior toward a shared objective. A swarm implies many agents but doesn’t have a rigid count. The main distinction is behavioral; the collective activity of a swarm becomes complex and unpredictable even when individual agents may be explainable. This swarm provided an initial, public glimpse into the behavior and coordination of autonomous, multi-agent operations. Due to constraints in their evaluation environment, the OpenAI swarm used public internet services as improvised infrastructure, which made the activity visible and traceable. The behaviors exposed revealed methods for persistent probing, iterative payload development, work partitioning and coordinati"
+  },
+  {
+   "id": "7194980f82683f60",
+   "source": "Cisco Talos",
+   "region": "US",
+   "lang": "en",
+   "link": "https://blog.talosintelligence.com/securing-grandmas-groceries-with-pierre-cadieux/",
+   "published": "2026-11-25T11:00:00+00:00",
+   "title": "Securing Grandma's groceries with Pierre Cadieux",
+   "summary": "Pierre takes us back to his early days on help desks in the 90s, where learning to correlate logs between Windows and Unix systems sparked the curiosity that eventually led him to security.",
+   "image": "https://storage.ghost.io/c/af/a0/afa04ee3-414f-4481-8d23-7e7c146f192e/content/images/2026/11/humans_of_talos.jpg",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "This month, Amy is joined by Pierre Cadieux, Research Lead for Intelligence Efficacy at Talos. Pierre takes us back to his early days on help desks in the 90s, where learning to correlate logs between Windows and Unix systems sparked the curiosity that eventually led him to security. It’s a great look at how someone who has seen the industry evolve over decades stays grounded and keeps their edge. We also get into what’s kept Pierre at Cisco for nearly ten years. He talks about why he prioritizes the human impact of our work, the importance of knowing when to step away from the keyboard, and how his background in anthropology actually informs the way he approaches threat intelligence today. Amy Ciminnisi: I've known you since you were in Talos IR, which was not too long ago. But tell me a little bit about your professional journey, because I know that definitely was not the start of it. Pierre Cadieux: I worked at an ISP as part of the help desk back in the mid-90s. I was one of the people who people would call up and say, \"Hey, I've got this computer I just bought, how do I get it on the internet?\" I did a lot of learning about what TCP/IP was, what networking was, how to connect things via various different types of connections — whether it be an actual hard-coded network connection or a dial-up connection — and was able to get some expertise around guiding people through that process. Then I moved to a technology company in San Diego and worked on their help desk. One day, someone called me up and said, \"You know how to read Linux logs, right? Or Unix logs, UCS logs, Linux logs.\" I said, \"Yeah.\" They said, \"You know how to use Windows — you're a Windows Server guy, too.\" I said, \"Yeah.\" They said, \"I need you to sit in this chair, look at these two screens — one is a"
+  },
+  {
+   "id": "6fd8119d6a47f097",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/203946/hacking/gt13-ai-assisted-hackers-target-22-organizations-through-check-point-servers.html",
+   "published": "2026-11-25T10:47:10+00:00",
+   "title": "GT13: AI-Assisted Hackers Target 22 Organizations Through Check Point Servers",
+   "summary": "GreyNoise tracks GT13, an unattributed, probably AI-assisted campaign that hit 22 organizations via Check Point management servers. It may still be running. GreyNoise detailed an intrusion campaign against Check Point Security Management Servers. The company confirmed attacks between October 17 and November 2, 2026, and counts at least 22 victim organizations. It tracks the activity […]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": false,
+   "raw": "GreyNoise tracks GT13, an unattributed, probably AI-assisted campaign that hit 22 organizations via Check Point management servers. It may still be running. GreyNoise detailed an intrusion campaign against Check Point Security Management Servers. The company confirmed attacks between October 17 and November 2, 2026, and counts at least 22 victim organizations. It tracks the activity as GreyNoise Threat 13, or GT13. “GreyNoise recently discovered an intrusion campaign targeting Check Point Security Management Servers, with confirmed attack activity between October 17th and November 2nd, 2026, impacting at least 22 distinct organizations globally.” reads the report published by GreyNoise. The victims don’t share a country or an industry. They have assets in the United Kingdom, Ireland, France, the Netherlands, Greece, Germany, Austria, Bulgaria, Poland, India, Thailand, Vietnam, South Korea, Hong Kong, China, Australia and the United States. The sectors include financial services, energy, government, transportation, mining, engineering and manufacturing. GreyNoise cannot attribute the campaign to any known or publicly tracked threat group. The company also says it lacks enough information to identify the attackers’ motives or country of origin. GreyNoise tracked most of the activity through its Global Observation Grid, a network of sensors designed to attract and monitor scanning and exploitation attempts. These sensors work much like honeypots, but the company says they offer broader coverage. They allow researchers to observe entire attacks as they happen, rather than relying only on reports from victims. The attackers used 99 IP addresses, many of them temporary. These addresses belonged either to ExpressVPN exit nodes or to compromised Check Point devices. GreyNoise r"
+  },
+  {
+   "id": "791c47d89313efa4",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/ransomware-surge-october-record/",
+   "published": "2026-11-25T10:45:00+00:00",
+   "title": "Ransomware Attacks Surge 23% in October Following Record Quarter",
+   "summary": "The continued rise in ransomware attacks may reflect a new cyber environment, NCC Group researchers have warned",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Ransomware",
+   "translated": false,
+   "enriched": false,
+   "raw": "The continued rise in ransomware attacks may reflect a new cyber environment, NCC Group researchers have warned"
+  },
+  {
+   "id": "42f113e756b512d0",
+   "source": "HackRead",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://hackread.com/database-exposed-credential-records-session-tokens/",
+   "published": "2026-11-25T10:44:20+00:00",
+   "title": "Open database exposed 2 billion credential records, including session tokens",
+   "summary": "Cybersecurity researcher Jeremiah Fowler found an open database with roughly 2 billion records, including passwords, browser cookies and session tokens. Access was restricted.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "Cybersecurity researcher Jeremiah Fowler found an open database with roughly 2 billion records, including passwords, browser cookies and session tokens. Access was restricted."
+  },
+  {
+   "id": "7d08c2d9b473a589",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/plagiarism-checker-turnitin-investigating-cyberattack/",
+   "published": "2026-11-25T10:40:07+00:00",
+   "title": "Plagiarism Checker Turnitin Investigating Cyberattack",
+   "summary": "The edtech company says the systems are fully operational and safe to use while it investigates the incident.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "The edtech company says the systems are fully operational and safe to use while it investigates the incident."
   },
   {
    "id": "87b9e11be63a5c49",
@@ -4289,6 +4391,40 @@
    "enriched": true,
    "why": "Importa porque a proteção das infraestruturas críticas é vital para garantir a estabilidade económica e a segurança do país.",
    "todo": "As organizações do setor essencial devem alinhar as suas práticas de segurança com as diretrizes e avaliações de risco nacionais."
+  },
+  {
+   "id": "aad8d95038fd742f",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/threats/ransomware-agrava-custos-de-recuperacao-no-retalho",
+   "published": "2026-11-24T00:00:00+00:00",
+   "title": "Ransomware agrava custos de recuperação no retalho",
+   "summary": "Os retalhistas pagam resgates mais baixos e recuperam mais depressa, mas a taxa de encriptação subiu para 62% e o custo médio de recuperação atingiu 1,62 milhões de euros",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Ransomware",
+   "translated": false,
+   "enriched": false,
+   "raw": "Os retalhistas pagam resgates mais baixos e recuperam mais depressa, mas a taxa de encriptação subiu para 62% e o custo médio de recuperação atingiu 1,62 milhões de euros"
+  },
+  {
+   "id": "cf5b15edfd51f0ad",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/threats/desmantelada-botnet-de-fraude-publicitaria",
+   "published": "2026-11-24T00:00:00+00:00",
+   "title": "Desmantelada botnet de fraude publicitária",
+   "summary": "A operação gerava cerca de 40 mil milhões de pedidos de licitação publicitária por dia, recorrendo a dispositivos Android comprometidos para simular visualizações legítimas",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Malware",
+   "translated": false,
+   "enriched": false,
+   "raw": "A operação gerava cerca de 40 mil milhões de pedidos de licitação publicitária por dia, recorrendo a dispositivos Android comprometidos para simular visualizações legítimas"
   },
   {
    "id": "453252f9d2559d7e",
@@ -13588,183 +13724,6 @@
    "enriched": true,
    "why": "Instalar correções de segurança evita a exploração de falhas críticas que permitem comprometer o navegador.",
    "todo": "Atualize o Google Chrome para a versão mais recente em todos os seus dispositivos."
-  },
-  {
-   "id": "b7f6d70bce9069e8",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/stepsecurity-secures-20-million-to-expand-supply-chain-protection/",
-   "published": "2026-11-19T12:23:34+00:00",
-   "title": "StepSecurity obtém 20 milhões de dólares para expandir proteção da cadeia de fornecimento",
-   "summary": "A empresa StepSecurity garantiu um financiamento de vinte milhões de dólares para impulsionar o desenvolvimento e a distribuição da sua plataforma de segurança. Os novos fundos serão aplicados na aceleração de ferramentas voltadas para a proteção da cadeia de fornecimento de software. Com este investimento, a empresa pretende alargar o alcance das suas soluções de defesa.",
-   "image": null,
-   "points": [
-    "A StepSecurity angariou 20 milhões de dólares em financiamento.",
-    "O capital será utilizado para desenvolver e distribuir a plataforma de segurança.",
-    "O foco principal é a proteção da cadeia de fornecimento de software."
-   ],
-   "title_original": "StepSecurity Secures $20 Million to Expand Supply Chain Protection",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "O investimento em plataformas de segurança reforça a defesa contra ameaças na cadeia de fornecimento.",
-   "todo": ""
-  },
-  {
-   "id": "1453e5404303eaef",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/inteligencia-artificial/anthropic-diferenciais-tecnicos-e-de-seguranca-que-podem-justificar-ipo-recorde/",
-   "published": "2026-11-19T12:15:00+00:00",
-   "title": "Anthropic: diferenciais técnicos e de segurança que podem justificar IPO recorde",
-   "summary": "A empresa de inteligência artificial Anthropic estreou-se na bolsa de valores com a maior oferta pública inicial da história da tecnologia, superando marcas anteriores. Fundada por antigos funcionários da OpenAI, a startup destacou-se no mercado corporativo devido aos seus modelos avançados focados em tarefas profissionais complexas e automação. Para além do desempenho técnico, a empresa aposta em diferenciais de segurança que atraem o interesse de grandes investidores.",
-   "image": "https://www.estadao.com.br/resizer/v2/BJ5CI7TCORGFPEOQEA4UKI3FYA.jpeg?quality=80&auth=0b67b298e7639811af52e0905a09c3bb875b13fa52cd4366723ecd554e7250a2&width=710",
-   "points": [
-    "A Anthropic realizou um IPO recorde avaliado em mais de 81 mil milhões de dólares.",
-    "A empresa foi fundada em 2021 por sete ex-funcionários da OpenAI.",
-    "O foco da tecnológica reside em soluções avançadas para o mercado corporativo.",
-    "Os modelos da família Claude destacam-se pela automação e análise de dados."
-   ],
-   "title_original": null,
-   "category": "Ataque/APT",
-   "translated": false,
-   "enriched": true,
-   "why": "Compreender o crescimento das plataformas de IA ajuda a avaliar a adoção segura de ferramentas corporativas.",
-   "todo": "Garanta que a integração de ferramentas de IA corporativa cumpre as políticas internas de segurança."
-  },
-  {
-   "id": "d02f8572d5f1ee4d",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/critical-apache-roller-axis-vulnerabilities-exploited-in-attacks/",
-   "published": "2026-11-19T12:13:24+00:00",
-   "title": "Vulnerabilidades críticas no Apache Roller e Axis exploradas em ataques",
-   "summary": "Atores maliciosos estão a direcionar ataques para o Confluence Data Center através de uma falha no Axis. Em simultâneo, a Apache emitiu um aviso relativamente a ataques direcionados ao Roller. Estas explorações aproveitam vulnerabilidades críticas nestas ferramentas para comprometer os sistemas afetados. As organizações que utilizam estes softwares devem monitorizar e aplicar as correções necessárias.",
-   "image": null,
-   "points": [
-    "Atacantes visam o Confluence Data Center explorando uma falha no Axis.",
-    "A Apache emitiu alertas sobre ataques direcionados ao Roller.",
-    "As vulnerabilidades críticas estão a ser ativamente exploradas."
-   ],
-   "title_original": "Critical Apache Roller, Axis Vulnerabilities Exploited in Attacks",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Estas falhas críticas permitem que atacantes comprometam plataformas empresariais amplamente utilizadas.",
-   "todo": "Consulte os avisos oficiais de segurança e aplique imediatamente as atualizações ou correções disponibilizadas para o Axis e o Apache Roller."
-  },
-  {
-   "id": "aa09e38c305a0ce9",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/f5-patches-nginx-http-2-vulnerabilities-dating-2015/",
-   "published": "2026-11-19T12:02:10+00:00",
-   "title": "F5 Patches Two NGINX HTTP/2 Vulnerabilities, One Dating Back to 2015",
-   "summary": "A F5 lançou correções para duas vulnerabilidades no NGINX HTTP/2 que permitem a execução de código por atacantes sem necessidade de autenticação. Uma das falhas remonta ao ano de 2015. As atualizações destinam-se às versões afetadas do NGINX Open Source e do NGINX Plus.",
-   "image": null,
-   "points": [
-    "A F5 corrigiu duas falhas de segurança no NGINX HTTP/2.",
-    "Uma das vulnerabilidades data de 2015 e permitia execução de código sem login.",
-    "As correções abrangem o NGINX Open Source e o NGINX Plus."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Permite que atacantes executem código remotamente sem autenticação nas versões afetadas.",
-   "todo": "Atualize imediatamente o NGINX Open Source e o NGINX Plus para as versões corrigidas disponibilizadas pela F5."
-  },
-  {
-   "id": "4fc5c33492cc1356",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/the-governance-gap-in-open-weight-ai-and-what-to-do-about-it/",
-   "published": "2026-11-19T12:00:00+00:00",
-   "title": "A lacuna de governação na IA de pesos abertos e o que fazer quanto a isso",
-   "summary": "A adoção de inteligência artificial de pesos abertos tem crescido devido aos custos mais baixos, à privacidade dos dados e a um maior controlo. No entanto, muitas organizações estão a ignorar os riscos de segurança associados a esta tecnologia. A falta de uma governação adequada pode expor as empresas a vulnerabilidades significativas. É essencial que as entidades adotem medidas para mitigar estes perigos operacionais.",
-   "image": null,
-   "points": [
-    "Custos reduzidos e privacidade impulsionam a IA de pesos abertos.",
-    "Muitas organizações ignoram os riscos de segurança associados.",
-    "A falta de governação adequada cria lacunas operacionais."
-   ],
-   "title_original": "The Governance Gap in Open-Weight AI and What to Do About It",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Ignorar os riscos de segurança na IA aberta pode resultar em exposições graves de dados e falhas de controlo.",
-   "todo": "Implemente políticas rigorosas de governação de IA e avalie regularmente os riscos de segurança associados aos modelos de pesos abertos utilizados."
-  },
-  {
-   "id": "73e981a448216743",
-   "source": "CISA Advisories",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02",
-   "published": "2026-11-19T12:00:00+00:00",
-   "title": "Elecbrakes EB2, VM1, ELBC2000",
-   "summary": "Foram detetadas várias vulnerabilidades em controladores de travões da Elecbrakes, incluindo falhas por canais de atualização de firmware desprotegidos. A exploração bem-sucedida destas falhas pode permitir a um atacante assumir o controlo dos travões de um reboque, modificar firmware ou desativar luzes e recursos de segurança. Os modelos afetados incluem o EB2, VM1 e ELBC2000, com graus variados de suporte por parte do fabricante. A Elecbrakes já disponibilizou atualizações de firmware para os modelos suportados.",
-   "image": null,
-   "points": [
-    "Equipamentos: Controladores de reboques Elecbrakes EB2, VM1 e ELBC2000.",
-    "Problemas: Falhas de autenticação e canais de firmware desprotegidos.",
-    "Impacto: Perda de controlo de travões e funções de segurança em transportes."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia riscos de cibersegurança em infraestruturas e sistemas de transporte físicos.",
-   "todo": "Atualize o firmware dos dispositivos afetados através da aplicação móvel da Elecbrakes."
-  },
-  {
-   "id": "3f6682cf94420c03",
-   "source": "CISA Advisories",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03",
-   "published": "2026-11-19T12:00:00+00:00",
-   "title": "libumqtt",
-   "summary": "A biblioteca libumqtt nas versões 1.1.1 e anteriores foi afetada por uma vulnerabilidade de underflow de inteiros (CVE-2026-125132). Um atacante remoto pode explorar esta falha para provocar negação de serviço (DoS), corrupção de memória ou divulgação de informação. A vulnerabilidade afeta múltiplos setores industriais críticos a nível mundial.",
-   "image": null,
-   "points": [
-    "A biblioteca libumqtt <=1.1.1 tem uma falha grave (CVE-2026-125132).",
-    "Permite ataques remotos de negação de serviço e corrupção de memória.",
-    "Afeta setores industriais críticos em todo o mundo."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Mitiga riscos em componentes de software utilizados em infraestruturas industriais e tecnológicas.",
-   "todo": "Minimize a exposição de dispositivos em rede e isole sistemas de controlo atrás de firewalls."
-  },
-  {
-   "id": "7f8f338723412135",
-   "source": "CISA Advisories",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01",
-   "published": "2026-11-19T12:00:00+00:00",
-   "title": "Autonomy Logic OpenPLC Runtime",
-   "summary": "As versões 4.2.4 e anteriores do Autonomy Logic OpenPLC Runtime contêm uma vulnerabilidade de condição de corrida (CVE-2026-126088). Esta falha permite que pedidos concorrentes ultrapassem a validação inicial e criem várias contas de administrador sem autenticação. A vulnerabilidade afeta setores industriais essenciais a nível global.",
-   "image": null,
-   "points": [
-    "O OpenPLC Runtime <=4.2.4 possui uma falha de condição de corrida.",
-    "Permite a criação não autorizada de múltiplas contas de administrador.",
-    "Afeta setores como energia, manufatura e transportes."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Evita que atacantes assumam o controlo administrativo de sistemas industriais essenciais.",
-   "todo": "Atualize o OpenPLC Runtime para a versão 4.3.0 ou posterior e isole os sistemas da internet."
   }
  ]
 }

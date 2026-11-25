@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T12:05:38.185488+00:00",
+ "updated": "2026-11-25T12:24:59.685607+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -9,7 +9,7 @@
   {
    "source": "IT Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Pplware Segurança",
@@ -234,7 +234,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 17
+   "added": 16
   },
   {
    "source": "The Register Security",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -274,12 +274,12 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Check Point Research",
    "ok": true,
-   "added": 3
+   "added": 4
   },
   {
    "source": "Securelist (Kaspersky)",
@@ -310,8 +310,8 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 314,
-  "unenriched": 211,
+  "pending": 315,
+  "unenriched": 215,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -340,6 +340,57 @@
    "enriched": true,
    "why": "Mostra como a evolução das ameaças por IA está a alterar a sustentabilidade e os critérios dos seguros de cibersegurança.",
    "todo": "Avalie o investimento em ferramentas de defesa baseadas em inteligência artificial para cumprir os novos critérios de risco das seguradoras."
+  },
+  {
+   "id": "97f2b8403b125bf9",
+   "source": "Schneier on Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.schneier.com/blog/archives/2026/11/tracking-incidents-of-hacking-using-ai-tools.html",
+   "published": "2026-11-25T12:07:21+00:00",
+   "title": "Tracking Incidents of Hacking Using AI Tools",
+   "summary": "Daniel Meissler is tracking incidents of AI-enhanced hacking, and the offensive harnesses the hackers are using.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": false,
+   "raw": "Daniel Meissler is tracking incidents of AI-enhanced hacking, and the offensive harnesses the hackers are using."
+  },
+  {
+   "id": "cca9084f9953322c",
+   "source": "CSO Online",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.csoonline.com/article/4253053/prompting-ai-to-be-thorough-can-drive-sandbox-escapes-anthropic-says.html",
+   "published": "2026-11-25T12:06:00+00:00",
+   "title": "Prompting AI to be ‘thorough’ can drive sandbox escapes, Anthropic says",
+   "summary": "Prompt wording meant to make AI agents more resourceful, such as telling them to search thoroughly or invoking authority, sharply raises the odds they will reach outside a poorly secured sandbox, Anthropic has found in its latest evaluation. The evaluation, called Siren, gives Claude models routine dev-ops tasks inside deliberately weakened sandboxes and places a “honeypot,” such as a credential, file, or emulated internet service, outside the boundary, Anthropic researchers Oscar O’Rahilly and Darya Kaviani wrote in a blog post . Anthropic tested six Claude models, from Mythos 5 to the 5.5 se",
+   "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4253053-0-65684300-1795608374-KI-Agenten-als-Schlussel-zur-zukunftssicheren-Verwaltung.jpg?quality=50&strip=all",
+   "points": [],
+   "title_original": null,
+   "category": "IA",
+   "translated": false,
+   "enriched": false,
+   "raw": "Prompt wording meant to make AI agents more resourceful, such as telling them to search thoroughly or invoking authority, sharply raises the odds they will reach outside a poorly secured sandbox, Anthropic has found in its latest evaluation. The evaluation, called Siren, gives Claude models routine dev-ops tasks inside deliberately weakened sandboxes and places a “honeypot,” such as a credential, file, or emulated internet service, outside the boundary, Anthropic researchers Oscar O’Rahilly and Darya Kaviani wrote in a blog post . Anthropic tested six Claude models, from Mythos 5 to the 5.5 series, without the safeguards that ship in its products. The tests covered more than 1,700 scenarios in 26 sandboxes built on tools including Docker, gVisor, and QEMU. Most of the weaknesses are misconfigurations modeled on public reports, the company said. Wording mattered more than deadlines Anthropic’s researchers tested different types of instructions, which they called “tempters”. Some increased urgency by introducing deadlines or the consequences of failure. Others encouraged agents to search extensively or gave them broad authority over their machines. “Some tempters give the model broad authority over its own machine. Others tell it to search thoroughly, on that machine or more widely, and list what it checked,” the researchers wrote. Removing deadlines and stated costs of failure changed the rate of reaching outside by no more than about six percentage points, the post said. Removing the wording that asked for thoroughness and asserted authority had a far larger effect, cutting reach rates by 23 to 26 points in five of the six models, the researchers wrote. Claude Mythos 5 was the exception, reaching outside about 90% of the time in every version of the scenarios, the post "
+  },
+  {
+   "id": "6a8ceb0f7d1b2b64",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html",
+   "published": "2026-11-25T11:51:48+00:00",
+   "title": "Credential Remediation Is Slow When You Don’t Know What Will Break",
+   "summary": "TL;DR More than 64% still valid after four years: GitGuardian’s State of Secrets Sprawl 2026 found that most valid secrets discovered in 2022 still worked in January 2026, because teams stall on what a revoke will break. Validity-only triage misses 46% of critical secrets: Prioritize by impact instead, weighing what a credential can access and whether it leaked publicly, and update the",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEil06YVYkZZwt0a8nA97RyMZvYZEQIoZ7r9_YHMtjx5eWc7RNAB4ol6OWb7NIsJOpC0v4w11xynwGgR1SsTnArvWAF7yJseVMbQfoawpTPEKYDdmH6O5UrbIZgJ2Fz9MGBFC6kF95oLeubdwlrdVKaVTPz4kjrOCH0X1neixvpNSYHhotL5WuzdYM12tUo/s1600/GitGuardian.gif",
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "TL;DR More than 64% still valid after four years: GitGuardian’s State of Secrets Sprawl 2026 found that most valid secrets discovered in 2022 still worked in January 2026, because teams stall on what a revoke will break. Validity-only triage misses 46% of critical secrets: Prioritize by impact instead, weighing what a credential can access and whether it leaked publicly, and update the"
   },
   {
    "id": "c9c094cf81ce1e8e",
@@ -374,6 +425,23 @@
    "translated": false,
    "enriched": false,
    "raw": "The Treasury’s Crimes Enforcement Network is investigating a cyber incident and took some services offline"
+  },
+  {
+   "id": "d52cc031d711c026",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
+   "published": "2026-11-25T11:23:26+00:00",
+   "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting Drupal to its Known Exploited Vulnerabilities (KEV) catalog, requiring federal agencies to apply the fixes by November 27, 2026. The vulnerability, tracked as CVE-2026-132165 aka Fail2Install (CVSS score: 9.8), is a case of remote code execution (RCE) impacting Drupal core. \"Drupal Core",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbChdPRqvJHt9cIG4Z1W9o12tl4thtxIDNNcntDjmIytSIC1PWvOytT0JjY0OJtnba6UVJcEmqNxgOMuWxX2pvNJzjQ70-CIeruqZEDdgaDG66Lv2T6lLMv8cEhrXRie1gcaLz6OoNw6f2822s2yz8jl958kok6WpHmZ7p_n3TRWTdEWSpr1le5T28kFQO/s1600/drupal.gif",
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting Drupal to its Known Exploited Vulnerabilities (KEV) catalog, requiring federal agencies to apply the fixes by November 27, 2026. The vulnerability, tracked as CVE-2026-132165 aka Fail2Install (CVSS score: 9.8), is a case of remote code execution (RCE) impacting Drupal core. \"Drupal Core"
   },
   {
    "id": "0462a00938955191",
@@ -1385,6 +1453,23 @@
    "enriched": true,
    "why": "Demonstra que até organismos governamentais financeiros cruciais são alvo de intrusões bem-sucedidas.",
    "todo": "Monitore continuamente os acessos aos sistemas e aplique planos rigorosos de resposta a incidentes."
+  },
+  {
+   "id": "359948e24a734584",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/threats/atualizacoes-do-windows-causam-falhas-de-autenticacao",
+   "published": "2026-11-25T00:00:00+00:00",
+   "title": "Atualizações do Windows causam falhas de autenticação",
+   "summary": "A Microsoft confirmou problemas de autenticação após a instalação das atualizações de segurança de novembro, destinadas a corrigir uma vulnerabilidade de gravidade elevada",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": false,
+   "raw": "A Microsoft confirmou problemas de autenticação após a instalação das atualizações de segurança de novembro, destinadas a corrigir uma vulnerabilidade de gravidade elevada"
   },
   {
    "id": "c380f1e9589a2306",
@@ -13638,119 +13723,6 @@
    "enriched": true,
    "why": "Mostra como grandes empresas são frequentemente alvo de falsas reivindicações de grupos de ransomware.",
    "todo": "Mantenha os sistemas monitorizados e verifique sempre fontes oficiais antes de reagir a notícias de incidentes."
-  },
-  {
-   "id": "1717d6a2f4260a1f",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/swap-bitcoin-ethereum-decentralized-exchange/",
-   "published": "2026-11-19T14:16:58+00:00",
-   "title": "Como Trocar Bitcoin por Ethereum num DEX",
-   "summary": "É possível realizar a troca direta de Bitcoin para Ethereum utilizando a THORChain, uma bolsa descentralizada de cross-chain. Esta tecnologia permite converter BTC nativo em ETH sem necessitar de tokens embrulhados ou de uma conta numa exchange centralizada. O impacto traduz-se numa maior facilidade e descentralização para os utilizadores realizarem transações entre diferentes criptomoedas.",
-   "image": null,
-   "points": [
-    "A THORChain permite trocar Bitcoin por Ethereum diretamente.",
-    "Usa uma plataforma descentralizada de cross-chain sem tokens embrulhados.",
-    "Dispensa a criação de conta numa exchange centralizada."
-   ],
-   "title_original": "How to Swap Bitcoin to Ethereum on a Decentralized Exchange",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Facilita a troca segura e descentralizada de ativos entre diferentes redes de criptomoedas.",
-   "todo": "Utilize apenas exchanges descentralizadas verificadas e garanta a segurança das suas carteiras digitais."
-  },
-  {
-   "id": "8ba163b7a11bb8b8",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/criminal-ip-launches-aitem-to-connect-asset-discovery-with-ai-powered-exposure-management/",
-   "published": "2026-11-19T14:01:04+00:00",
-   "title": "Criminal IP Lança AITEM para Ligar Descoberta de Ativos à Gestão de Exposição Impulsionada por IA",
-   "summary": "A Criminal IP lançou a solução AITEM para unir a descoberta de ativos à gestão de exposição baseada em inteligência artificial. A ferramenta visa ajudar organizações a identificar vulnerabilidades e pontos fracos na sua infraestrutura de forma mais automatizada. Com este lançamento, pretende-se melhorar a visibilidade e a postura de segurança das empresas face a ameaças digitais. O impacto traduz-se numa capacidade reforçada de antecipação e correção de falhas antes de serem exploradas.",
-   "image": null,
-   "points": [
-    "A Criminal IP lançou a nova ferramenta AITEM.",
-    "A solução liga a descoberta de ativos à gestão de exposição por IA.",
-    "O objetivo é melhorar a identificação de vulnerabilidades nas organizações.",
-    "Aumenta a capacidade de antecipar e corrigir falhas de segurança."
-   ],
-   "title_original": "Criminal IP Launches AITEM to Connect Asset Discovery with AI-Powered Exposure Management",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Ajuda as empresas a detetar e gerir vulnerabilidades com maior rapidez através de inteligência artificial.",
-   "todo": "Avalie soluções de gestão de exposição para melhorar a visibilidade sobre os ativos da sua organização."
-  },
-  {
-   "id": "4f4f9e0dd0e068bb",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/cybersecurity-operations/why-holiday-security-cant-wait-black-friday",
-   "published": "2026-11-19T14:00:00+00:00",
-   "title": "Porque a Segurança nas Festividades Não Pode Esperar pela Black Friday",
-   "summary": "As fraudes conduzidas por bots e os ataques de engenharia social estendem-se por várias semanas durante a época festiva. Esta pressão contínua esgota severamente as equipas de segurança e afeta também as pequenas empresas. O impacto reflete-se num risco acrescido de incidentes devido ao volume elevado de tráfego e transações. É essencial antecipar as defesas em vez de reagir apenas nos períodos de pico.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt3a97d098a9dd9e12/6afe0f2eb91ada7c366c492c/Holiday_shopping_tap_to_pay-Nastasic-GettyImages-2235710285.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "Fraudes por bots e engenharia social prolongam-se por várias semanas.",
-    "A situação esgota as equipas de segurança e pequenas empresas.",
-    "O aumento do tráfego festivo eleva o risco de ciberataques.",
-    "Exige uma preparação prévia em vez de resposta tardia."
-   ],
-   "title_original": "Why Holiday Security Can't Wait for Black Friday",
-   "category": "Phishing/Fraude",
-   "translated": true,
-   "enriched": true,
-   "why": "Evita que o esgotamento das equipas e as fraudes sazonais apanhem as empresas desprevenidas.",
-   "todo": "Reforce a monitorização e treine os colaboradores contra esquemas de engenharia social antes dos períodos festivos."
-  },
-  {
-   "id": "fd0ccfc8354876b0",
-   "source": "Google Threat Intelligence",
-   "region": "US",
-   "lang": "en",
-   "link": "https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-vsphere/",
-   "published": "2026-11-19T14:00:00+00:00",
-   "title": "ARMORY CASTLE Exploits vSphere",
-   "summary": "O grupo de ameaças ARMORY CASTLE explorou a vulnerabilidade CVE-2026-123890 no VMware vCenter Server para contornar a autenticação remota e criar sessões de administrador. Através desta sessão, os atacantes executaram comandos arbitrários e obtiveram ficheiros sensíveis, incluindo a base de dados vmdirdbcp. Esta atividade complementa explorações anteriores de zero-days em soluções BeyondTrust.",
-   "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Figure_1_ARMORY_CASTLE_lateral_movement_an.max-1000x1000.png",
-   "points": [
-    "O grupo ARMORY CASTLE explorou a falha CVE-2026-123890 no VMware vCenter.",
-    "A exploração permitiu um bypass de autenticação e criação de sessões de administrador.",
-    "Os atacantes acederam a comandos arbitrários e ficheiros de bases de dados sensíveis."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Expõe riscos críticos em plataformas de virtualização centrais utilizadas por várias empresas.",
-   "todo": "Aplique imediatamente as correções de segurança disponibilizadas pela Broadcom para o vCenter Server."
-  },
-  {
-   "id": "049017878e9b91ce",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/ukraine-ransomware-arrests-cyber",
-   "published": "2026-11-19T13:30:00+00:00",
-   "title": "Ucrânia desmantela rede de ransomware que extorquia empresas de petróleo e saúde dos EUA",
-   "summary": "As autoridades ucranianas detiveram quatro suspeitos de integrarem uma rede internacional de ransomware. O grupo é acusado de extorquir mais de 40 milhões de dólares a várias empresas a nível mundial. Entre as vítimas encontram-se organizações norte-americanas dos setores da saúde e do petróleo.",
-   "image": "https://cms.therecord.media/uploads/Ukraine_prosecutor_office_c19ff7d532.jpg",
-   "points": [
-    "Quatro suspeitos detidos na Ucrânia.",
-    "Rede internacional focada em ransomware.",
-    "Mais de 40 milhões de dólares extorquidos globalmente.",
-    "Afetou empresas petrolíferas e de saúde dos EUA."
-   ],
-   "title_original": "Ukraine exposes ransomware network extorting US oil, healthcare firms",
-   "category": "Ransomware",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como operações policiais internacionais conseguem desmantelar redes de extorsão cibernética altamente lucrativas.",
-   "todo": "Mantenha backups atualizados e isolados e utilize soluções robustas de deteção de ransomware."
   }
  ]
 }

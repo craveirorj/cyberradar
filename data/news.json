@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T22:08:12.411083+00:00",
+ "updated": "2026-11-25T22:27:17.513889+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -310,14 +310,58 @@
  "translation": {
   "provider": "gemini",
   "done": 108,
-  "pending": 199,
-  "unenriched": 99,
+  "pending": 200,
+  "unenriched": 100,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "Expecting property name enclosed in double quotes: line 42 column 5 (char 3872)"
   ]
  },
  "items": [
+  {
+   "id": "50a53afadcff1570",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/",
+   "published": "2026-11-25T22:05:09+00:00",
+   "title": "Palo Alto Networks alerta para falha Fragnesia explorada em ataques ao PAN-OS",
+   "summary": "Piratas informáticos estão a combinar exploits para as vulnerabilidades PHP2Shell e Fragnesia para atacar dispositivos da Palo Alto Networks. Os alvos principais são equipamentos que possuem interfaces de gestão expostas diretamente à internet. Esta exploração coordenada visa comprometer a segurança dos sistemas afetados.",
+   "image": null,
+   "points": [
+    "Alvos: Dispositivos da Palo Alto Networks com interfaces de gestão expostas à internet.",
+    "Ameaça: Atores maliciosos combinam exploits para as falhas PHP2Shell e Fragnesia.",
+    "Impacto: Comprometimento potencial de sistemas e infraestruturas empresariais."
+   ],
+   "title_original": "Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite o acesso não autorizado a dispositivos de rede críticos expostos à internet.",
+   "todo": "Certifique-se de que as interfaces de gestão dos equipamentos não estão acessíveis diretamente a partir da internet e aplique as atualizações recomendadas."
+  },
+  {
+   "id": "30f310e79522c59f",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/celular-seguro-tem-media-de-mais-de-108-mil-consultas-de-imei-por-dia/",
+   "published": "2026-11-25T22:00:00+00:00",
+   "title": "Celular Seguro tem média de mais de 10,8 mil consultas de IMEI por dia",
+   "summary": "O programa federal brasileiro Celular Seguro registou mais de 1,62 milhão de consultas de IMEI nos últimos cinco meses. Esta ferramenta permite verificar se um smartphone tem restrições por roubo, furto ou extravio, ajudando a evitar a compra de produtos ilícitos. Além disso, a iniciativa facilitou a recuperação de dezenas de milhares de aparelhos desde o seu lançamento.",
+   "image": "https://www.estadao.com.br/resizer/v2/HLHOOW33VBCHZBR3MZ424Y6QGE.jpeg?quality=80&auth=af172d964c0b5ac2f9b32845b7cdae4622dc18032b58e02ce9c69134dc07d77a&width=710",
+   "points": [
+    "O quê: O programa Celular Seguro atingiu uma média superior a 10,8 mil consultas de IMEI diárias.",
+    "Como: A plataforma cruza o número de identificação do telemóvel com a base de dados policial (BNCR).",
+    "Impacto: Ajuda cidadãos a evitar compras ilícitas e permitiu recuperar milhares de dispositivos."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Combate o mercado ilegal de smartphones roubados e facilita a recuperação de aparelhos pelos legítimos donos.",
+   "todo": "Utilize ferramentas oficiais de consulta de IMEI antes de adquirir dispositivos usados para garantir a sua origem legítima."
+  },
   {
    "id": "70f66acc3de798b1",
    "source": "BleepingComputer",
@@ -13730,50 +13774,6 @@
    "enriched": true,
    "why": "Ajuda a blindar servidores web críticos contra acessos não autorizados.",
    "todo": "Implemente soluções de deteção e resposta em endpoints e mantenha os servidores NGINX atualizados."
-  },
-  {
-   "id": "5e65458c080e9126",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/cyber-risk/qwen-incidents-self-hosted-ai-models-stronger-steering",
-   "published": "2026-11-19T22:40:03+00:00",
-   "title": "Incidentes com o Qwen Mostram que Modelos de IA Auto-hospedados Precisam de Maior Controlo",
-   "summary": "Vários incidentes recentes demonstraram que as empresas que implementam agentes de inteligência artificial enfrentam uma falsa sensação de controlo sobre os sistemas. Os dados mostram que as organizações precisam de estar preparadas para impor direções e limites claros aos modelos. Esta necessidade surge à medida que mais empresas apostam em soluções de IA auto-hospedadas.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltdca0689384b67fb8/6aff731dfef3359545395d0a/old-ship-steering-wheel-DmitriiElj-shutterstock.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "Empresas enfrentam a ilusão de controlo com agentes de IA.",
-    "Vários incidentes expuseram falhas na supervisão de modelos auto-hospedados.",
-    "As organizações precisam de estar prontas para impor direções rígidas."
-   ],
-   "title_original": "Qwen Incidents Show Self-Hosted AI Models Need Stronger Steering",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque a falta de controlo em modelos de IA auto-hospedados pode expor as empresas a comportamentos imprevisíveis e riscos operacionais.",
-   "todo": "Defina políticas de governação rigorosas e estabeleça mecanismos de monitorização contínua para os modelos de IA implementados internamente."
-  },
-  {
-   "id": "82779fce477634aa",
-   "source": "AWS Security Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://aws.amazon.com/blogs/security/your-aws-security-identity-and-governance-guide-to-reinvent-2026/",
-   "published": "2026-11-19T22:31:34+00:00",
-   "title": "Guia AWS de Segurança, Identidade e Governança para o re:Invent 2026",
-   "summary": "A equipa de Segurança, Identidade e Governança da AWS convidou os utilizadores para o evento re:Invent em Las Vegas, agendado para o final de 2026. O evento aborda o impacto dos agentes de inteligência artificial autónomos na identidade, deteção e proteção de redes. Serão realizadas cerca de 120 sessões focadas em múltiplos temas de segurança, incluindo o dia dedicado no hotel Wynn. O objetivo é preparar as organizações para os novos desafios da governança na cloud.",
-   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/19/Security-Identity-Governance-guide-Figure-1.png",
-   "points": [
-    "Conferência AWS re:Invent marcada para o final de 2026 em Las Vegas.",
-    "Foco nos desafios de segurança trazidos por agentes de IA autónomos.",
-    "Mais de 120 sessões técnicas dedicadas à segurança e governança na cloud."
-   ],
-   "title_original": "Your AWS Security, Identity, and Governance guide to re:Invent 2026",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite antecipar as novas estratégias de segurança para ambientes em nuvem impulsionados por IA.",
-   "todo": "Acompanhe as novidades e sessões do evento para alinhar a estratégia de segurança na cloud da sua organização."
   }
  ]
 }

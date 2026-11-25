@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T01:47:47.071310+00:00",
+ "updated": "2026-11-25T02:07:00.153903+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -169,7 +169,7 @@
   {
    "source": "Cisco Talos",
    "ok": true,
-   "added": 6
+   "added": 5
   },
   {
    "source": "Unit 42 (Palo Alto)",
@@ -309,16 +309,37 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 223,
-  "unenriched": 103,
+  "done": 115,
+  "pending": 216,
+  "unenriched": 95,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 25 column 5 (char 2339)",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "f3fa36a7a7e1a1fe",
+   "source": "SANS ISC",
+   "region": "US",
+   "lang": "en",
+   "link": "https://isc.sans.edu/diary/rss/33554",
+   "published": "2026-11-25T02:00:03+00:00",
+   "title": "ISC Stormcast Para Quarta-feira, 25 de novembro de 2026",
+   "summary": "Este episódio do podcast Stormcast aborda as principais atualizações e análises de cibersegurança do dia. A iniciativa visa informar os profissionais sobre novas vulnerabilidades e incidentes recentes registados a nível global. O impacto reflete-se na necessidade de manter as equipas atualizadas face às ameaças em constante evolução.",
+   "image": null,
+   "points": [
+    "Podcast diário da SANS ISC sobre cibersegurança.",
+    "Análise de vulnerabilidades e tendências de ameaças atuais.",
+    "Foco na atualização rápida para profissionais de TI."
+   ],
+   "title_original": "ISC Stormcast For Wednesday, November 25th, 2026 https://isc.sans.edu/podcastdetail/10194, (Wed, Nov 25th)",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Ajuda os profissionais de segurança a acompanharem rapidamente as ameaças mais recentes.",
+   "todo": "Ouve regularmente podcasts de fontes fidedignas para manter a equipa informada sobre o panorama de ameaças."
+  },
   {
    "id": "77381f53f5a697f7",
    "source": "AWS Security Blog",
@@ -13736,28 +13757,6 @@
    "enriched": true,
    "why": "Importa porque cria uma colaboração direta entre autoridades e empresas privadas para estrangular as fontes de financiamento das redes de cibercrime.",
    "todo": "Desconfie de esquemas de extorsão e promessas de ganhos fáceis, e denuncie de imediato qualquer atividade suspeita às autoridades competentes."
-  },
-  {
-   "id": "3d3c58459056e381",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html",
-   "published": "2026-11-19T08:14:00+00:00",
-   "title": "Investigador Demonstra Exploits de RCE em Bases de Dados Afetando PostgreSQL, MySQL e Oracle",
-   "summary": "Um investigador demonstrou que contas de base de dados com privilégios reduzidos podem ser utilizadas para executar código no servidor. O ataque explora falhas de corrupção de memória subjacentes ao motor de execução de comandos SQL. Foram publicadas provas de conceito direcionadas a sistemas como PostgreSQL, MySQL e ClickHouse, além de uma cadeia de exploração para Oracle. Esta técnica permite contornar restrições habituais associadas a utilizadores com permissões limitadas.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDE1pOkFxdtUcDqLptfhjaBnnEyzz2JfxUJICSOrW3vpcNlygN1XleKCdkv9CA3Zp901yQ884tOkPX9TmSYx5tpevenJw1CmW4oktkn2creXnB5-dvbiJB3crcILx4Kb8b6eVhiKjh-RRZTGnvWskqROJOjF3yaWFVK17fmh-tdT7WMas7MbdK-JsCBmw/s1600/database-rce.jpg",
-   "points": [
-    "Contas de base de dados com poucos privilégios conseguiram executar código no servidor.",
-    "Foram exploradas falhas de corrupção de memória em motores de bases de dados.",
-    "O investigador publicou provas de conceito para plataformas como PostgreSQL e MySQL."
-   ],
-   "title_original": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Revela um vetor de ataque avançado onde contas sem privilégios conseguem comprometer o servidor de base de dados.",
-   "todo": "Aplique patches de segurança recentes nos servidores de bases de dados e reveja as permissões atribuídas às contas."
   }
  ]
 }

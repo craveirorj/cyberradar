@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T10:28:02.364566+00:00",
+ "updated": "2026-11-26T10:45:09.822035+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "TugaTech",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Security Affairs",
@@ -309,15 +309,33 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 202,
-  "unenriched": 105,
+  "done": 12,
+  "pending": 295,
+  "unenriched": 197,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "64d50fdadf543716",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/home-office-reprimanded-gdpr/",
+   "published": "2026-11-26T10:30:00+00:00",
+   "title": "Home Office Reprimanded After GDPR Failure at the Border",
+   "summary": "The ICO has reprimanded the Home Office after data integrity failings caused distress at the border",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Regulação",
+   "translated": false,
+   "enriched": false,
+   "raw": "The ICO has reprimanded the Home Office after data integrity failings caused distress at the border"
+  },
   {
    "id": "2fb0ec0a35f100b4",
    "source": "Pplware Segurança",
@@ -377,9 +395,9 @@
     "Foram copiados nomes e emails de um subconjunto de utilizadores.",
     "Os cofres de palavras-passe e as chaves de encriptação mantiveram-se seguros."
    ],
-   "title_original": "1Password Hacked: Customer Names and Emails Copied, Vaults Untouched",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra como o comprometimento de uma única conta de colaborador pode expor dados administrativos de clientes.",
    "todo": "Proteja contas de desenvolvimento com autenticação forte e reforce a monitorização de acessos a repositórios de código."
@@ -13744,28 +13762,6 @@
    "enriched": true,
    "why": "Mostra como a vulnerabilidade de um fornecedor externo pode expor dados de grandes organizações financeiras.",
    "todo": "Reveja regularmente a segurança e o acesso de fornecedores e parceiros externos aos seus sistemas."
-  },
-  {
-   "id": "471f6faa5d753487",
-   "source": "Pplware Segurança",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://pplware.sapo.pt/internet/seguranca/cuidado-com-o-winrar-e-o-firefox-novo-malware-esconde-se-em-programas-normais/",
-   "published": "2026-11-20T09:30:00+00:00",
-   "title": "Cuidado com o WinRAR e o Firefox: novo malware esconde-se em programas normais",
-   "summary": "Uma nova ameaça cibernética denominada BubbleLoader foi identificada por investigadores da ReversingLabs. Esta técnica transforma software legítimo e comum, como o WinRAR, o Firefox ou o Windows Media Player, em veículos de infeção. O objetivo é executar código oculto em segundo plano nos sistemas Windows, manipulando aplicações do dia a dia. O impacto afeta a segurança dos utilizadores que correm programas que parecem inofensivos.",
-   "image": null,
-   "points": [
-    "O investigador ReversingLabs detetou o BubbleLoader a infetar software legítimo.",
-    "Aplicações comuns como WinRAR e Firefox são usadas para ocultar código malicioso.",
-    "O malware executa ações em segundo plano no sistema operativo Windows."
-   ],
-   "title_original": null,
-   "category": "Malware",
-   "translated": false,
-   "enriched": true,
-   "why": "Aproveita a confiança em programas do quotidiano para executar código malicioso sem que o utilizador suspeite.",
-   "todo": "Mantenha o software atualizado e utilize soluções de segurança capazes de analisar o comportamento das aplicações em execução."
   }
  ]
 }

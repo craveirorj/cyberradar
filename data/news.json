@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-26T20:46:13.801972+00:00",
+ "updated": "2026-11-26T21:07:37.959081+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "IT Security",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 1
   },
   {
    "source": "The Hacker News",
@@ -310,13 +310,36 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 169,
-  "unenriched": 72,
+  "pending": 170,
+  "unenriched": 73,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "07fd9a354f581f46",
+   "source": "HackRead",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://hackread.com/cs2-scams-2026-what-players-should-watch-out-for/",
+   "published": "2026-11-26T20:48:54+00:00",
+   "title": "Burlas do CS2 em 2026: O que os jogadores devem acautelar",
+   "summary": "Os jogadores de Counter-Strike 2 devem manter-se atentos a novas burlas direcionadas às suas contas e inventários no Steam. Entre os esquemas identificados encontram-se páginas de início de sessão falsas, manipulações de trocas e truques associados à reversão de transações. O principal objetivo dos atacantes é roubar contas e skins valiosas. É fundamental que os utilizadores adotem medidas de proteção rigorosas para salvaguardar os seus ativos digitais.",
+   "image": null,
+   "points": [
+    "Alvos: Jogadores do jogo CS2 e utilizadores da plataforma Steam.",
+    "Ameaças: Falsos logins, burlas de troca e manipulações de reversão.",
+    "Impacto: Roubo de contas do Steam e perda de skins valiosas.",
+    "Prevenção: Proteger a conta e verificar cuidadosamente todas as transações."
+   ],
+   "title_original": "CS2 Scams in 2026: What Players Should Watch Out For",
+   "category": "Phishing/Fraude",
+   "translated": true,
+   "enriched": true,
+   "why": "Protege os ativos digitais dos jogadores contra o roubo de contas e skins valiosas no Steam.",
+   "todo": "Ative sempre a autenticação de dois fatores e evite clicar em links de troca ou páginas de login de origem duvidosa."
+  },
   {
    "id": "135a5428247c670f",
    "source": "Security Affairs",
@@ -13738,29 +13761,6 @@
    "enriched": true,
    "why": "Permite que atacantes assumam o controlo total de servidores e aplicações corporativas sem necessidade de credenciais.",
    "todo": "Aplique imediatamente os pacotes de correção de segurança disponibilizados pela Oracle e pelos fornecedores dos softwares afetados."
-  },
-  {
-   "id": "0b4f3c2e24378974",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/widgets-brechas-de-seguranca-ameacam-o-telegram/",
-   "published": "2026-11-20T17:30:00+00:00",
-   "title": "‘Widgets’: brechas de segurança ameaçam o Telegram",
-   "summary": "A introdução de uma ferramenta de widgets no Telegram abriu espaço para invasões graves em dispositivos Android. Pesquisadores de segurança descobriram que falhas no motor JavaScript QuickJS permitem contornar as defesas do sistema operativo e executar código malicioso à distância através de mensagens. Apesar da implementação do filtro de segurança seccomp pelos desenvolvedores, os especialistas encontraram formas de driblar a barreira. O impacto demonstra que estes componentes podem ser explorados para comprometer a segurança dos telemóveis dos utilizadores.",
-   "image": "https://www.estadao.com.br/resizer/v2/S5CO43RH55BO3H52H3S7M2ESZ4.png?quality=80&auth=0a1a70f4b2e98ac1f9d6636a56b54c6cdeab7e642acc36e1f820d8c4589352db&width=710",
-   "points": [
-    "O quê: Vulnerabilidades no Telegram exploradas através do novo recurso de widgets.",
-    "Como: Utilização de falhas no motor JavaScript QuickJS e contornos à barreira seccomp do Android.",
-    "Impacto: Execução de códigos maliciosos e controlo remoto em telemóveis de testes.",
-    "Quem: Investigadores da NebuSec detetaram as brechas que afetam a aplicação no Android."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Permite que mensagens maliciosas executem código e comprometam a segurança de smartphones Android.",
-   "todo": "Atualize a aplicação Telegram para a versão mais recente e evite interagir com conteúdos ou mensagens desconhecidas."
   }
  ]
 }

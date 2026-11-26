@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T07:32:27.359625+00:00",
+ "updated": "2026-11-26T07:47:13.673651+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "TugaTech",
@@ -238,8 +238,8 @@
   },
   {
    "source": "The Register Security",
-   "ok": true,
-   "added": 12
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "Help Net Security",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Check Point Research",
@@ -309,17 +309,39 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 96,
-  "pending": 215,
-  "unenriched": 114,
+  "done": 108,
+  "pending": 192,
+  "unenriched": 91,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do",
-   "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)",
-   "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)"
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "457c08cf27ea6f55",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
+   "published": "2026-11-26T07:02:34+00:00",
+   "title": "Drupal alerta para nova vulnerabilidade crítica de tomada de controlo de sites sob exploração ativa",
+   "summary": "O Drupal emitiu um aviso sobre uma falha de segurança altamente crítica no seu núcleo, que já está a ser explorada por atacantes. Identificada como CVE-2026-136716, a vulnerabilidade resulta de uma verificação inadequada de condições excecionais. O problema está relacionado com a falha Fail2Install (CVE-2026-132165), focando-se em estados de instalação vulneráveis que ainda persistiam. O impacto permite que atacantes comprometam sites que utilizam a plataforma.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiy2EcytpsKiKLhUfvQEADKBG6Ht2NprR2VIhIXPJcNQMIGqKT20l0afBPUVhehKFhRzpkHvl3Qu_qaPjFL3L4UsLYH3L4C1DM63zqskhJV1UAjaPqONaEbNkBFsxVDX2jpPZrMym52WvBx2pHktUiRfdXOcp_23xjTdUOxxjxJtI906XLMmw258Bjah1J2/s1600/drupal-rce.png",
+   "points": [
+    "Falha crítica no núcleo do Drupal.",
+    "Exploração ativa já confirmada.",
+    "Relacionada com estados de instalação inseguros.",
+    "Permite a tomada de controlo de sites."
+   ],
+   "title_original": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A vulnerabilidade permite que atacantes assumam o controlo total de sites Drupal, exigindo atenção imediata dos administradores.",
+   "todo": "Verifique as atualizações de segurança do Drupal e aplique os patches disponibilizados pelo fornecedor o mais rapidamente possível."
+  },
   {
    "id": "ff21dac4a794acfa",
    "source": "Pplware Segurança",
@@ -342,6 +364,29 @@
    "enriched": true,
    "why": "Mostra que a comprometimento de credenciais individuais pode expor infraestruturas críticas de grandes fornecedores de software.",
    "todo": "Implementar autenticação multifator robusta e monitorizar o acesso a repositórios e sistemas internos."
+  },
+  {
+   "id": "1d57aa7ac03a11fd",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
+   "published": "2026-11-26T06:44:46+00:00",
+   "title": "Hackers exploram 10 vulnerabilidades em produtos Mitel, Juniper, Vates e Danfoss",
+   "summary": "A agência norte-americana CISA adicionou 10 novas vulnerabilidades ao seu catálogo de falhas exploradas (KEV). Entre os produtos afetados estão soluções da Mitel, Juniper, Vates e Danfoss. Destacam-se cinco falhas no Mitel MiCollab, incluindo uma vulnerabilidade de carregamento arbitrário de ficheiros. Esta atualização alerta para a necessidade de as organizações verificarem os seus sistemas contra estas ameaças conhecidas.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEht82Zul6A6D_rTYZuOr0QQWkA4p8kQXRI-4qAYhdGBdTR0ZNzlHkHCiz3eSv5wm9Gq1rADX0CIEBUu08HBUbWd4fVKtL6f7UrWcaa_nVetYt0DyPj2-f_yM80HEIUbuy57mpftPYHHp1FKCNXvkDnFtsj-V5PWGUvWiNL38OKY3EIKUwKHuoKsIc4oSXeC/s1600/mitel.jpg",
+   "points": [
+    "CISA adicionou 10 falhas ao catálogo KEV.",
+    "Afeta produtos Mitel, Juniper, Vates e Danfoss.",
+    "Inclui falha de carregamento de ficheiros no Mitel MiCollab.",
+    "Vulnerabilidades já estão a ser exploradas."
+   ],
+   "title_original": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A inclusão no catálogo KEV da CISA confirma que estas falhas estão a ser ativamente utilizadas por atacantes para comprometer redes.",
+   "todo": "Consulte o catálogo KEV da CISA e verifique se utiliza algum dos produtos afetados para proceder à atualização imediata."
   },
   {
    "id": "3980562478a3e8d9",
@@ -13727,51 +13772,6 @@
    "enriched": true,
    "why": "Mostra que treinar defesas de IA com mais dados de ataque nem sempre resulta em sistemas mais seguros.",
    "todo": "Reveja regularmente os métodos de validação e testes de segurança aplicados aos modelos de IA na sua organização."
-  },
-  {
-   "id": "9d409aafac3684e5",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/20/security-dashboards-tips-video/",
-   "published": "2026-11-20T06:00:21+00:00",
-   "title": "It’s time to retire vanity security dashboards",
-   "summary": "Um especialista em segurança operacional explicou que as equipas de TI e OT devem abandonar os painéis de controlo superficiais. O problema foi ilustrado com um caso numa fábrica, onde tarefas de manutenção aprovadas geravam alertas repetidos todas as semanas. Os analistas fechavam milhares de tickets sem resolver a falha subjacente. A recomendação passa por cruzar dados entre as equipas para afinar os alertas.",
-   "image": null,
-   "points": [
-    "Especialista aponta falhas nos painéis de controlo de segurança em ambientes TI e OT.",
-    "Casos repetidos de manutenção geravam milhares de alertas e tickets sem resolução real.",
-    "As equipas de SOC e controlo devem rever padrões em conjunto para afinar os sistemas."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Evita o desperdício de tempo das equipas de segurança em falsos problemas e foca a atenção no que realmente importa.",
-   "todo": "Revejam regularmente os alertas recorrentes para eliminar ruído e corrigir as causas raiz dos incidentes."
-  },
-  {
-   "id": "09866cb18e2f4169",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/20/ai-agent-api-security-production/",
-   "published": "2026-11-20T05:30:11+00:00",
-   "title": "A segurança das APIs de agentes de IA não acompanhou o ritmo dos agentes já em produção",
-   "summary": "Um inquérito da Postman a cerca de 9.000 profissionais revelou que muitas empresas colocam agentes de IA a trabalhar em produção antes de garantirem a sua segurança. Cerca de um quarto das organizações já tem agentes a interagir com as suas APIs. No entanto, quatro em dez inquiridos ainda não definiram como gerir as credenciais e a identidade, expondo falhas críticas.",
-   "image": null,
-   "points": [
-    "Quase 9.000 programadores e arquitetos foram inquiridos pela Postman sobre a gestão de agentes de IA.",
-    "Um quarto das organizações já utiliza agentes de IA a aceder a APIs em ambiente de produção.",
-    "Cerca de 40% dos inquiridos ainda não resolveram a questão das credenciais e da identidade.",
-    "A falta de planeamento em segurança expõe APIs e sistemas a acessos não autorizados."
-   ],
-   "title_original": "AI agent API security hasn’t caught up with agents already running in production",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "A adoção precipitada de IA sem controlo de acessos cria vulnerabilidades graves nas APIs corporativas.",
-   "todo": "Audite e restrinja as permissões das credenciais atribuídas aos agentes de IA em ambiente de produção."
   }
  ]
 }

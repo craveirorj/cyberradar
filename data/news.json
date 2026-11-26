@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T17:46:53.288719+00:00",
+ "updated": "2026-11-26T18:07:09.833589+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -74,12 +74,12 @@
   {
    "source": "MS-ISAC (CIS)",
    "ok": true,
-   "added": 4
+   "added": 5
   },
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -309,14 +309,59 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 171,
-  "unenriched": 74,
+  "done": 108,
+  "pending": 184,
+  "unenriched": 87,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Invalid control character at: line 140 column 68 (char 11753)"
   ]
  },
  "items": [
+  {
+   "id": "1c0fdc3979bbc9ce",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/nordvpn-black-friday-deal-get-78-percent-off-vpn-plans-in-2026/",
+   "published": "2026-11-26T17:58:42+00:00",
+   "title": "Promoção de Black Friday da NordVPN: Descontos até 78% em planos de VPN em 2026",
+   "summary": "A campanha de Black Friday e Cyber Monday de 2026 da NordVPN já se encontra ativa. A oferta proporciona descontos que podem chegar aos 78% nas assinaturas de VPN. Adicionalmente, os clientes recebem três meses de proteção extra.",
+   "image": null,
+   "points": [
+    "Campanha de Black Friday e Cyber Monday da NordVPN ativa.",
+    "Descontos anunciados de até 78% nas subscrições.",
+    "Oferta inclui três meses adicionais de proteção."
+   ],
+   "title_original": "NordVPN Black Friday Deal: Get 78% off VPN plans in 2026",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite adquirir serviços de VPN e proteção adicional com uma redução significativa no preço.",
+   "todo": "Aproveite a campanha promocional diretamente através dos canais oficiais da marca, se precisar de atualizar ou adquirir uma solução de VPN."
+  },
+  {
+   "id": "54d532049fb6097a",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/ias-permitem-que-cibercriminosos-ataquem-varios-paises-ao-mesmo-tempo/",
+   "published": "2026-11-26T17:30:00+00:00",
+   "title": "IAs permitem que cibercriminosos ataquem vários países ao mesmo tempo",
+   "summary": "O avanço da inteligência artificial possibilita que operadores maliciosos coordenem ciberataques complexos em simultâneo contra múltiplos países com menos recursos. Um exemplo é a campanha BOSSAI, detalhada no relatório da Acronis, onde mais de 10 modelos de IA foram ligados a ferramentas ofensivas para atingir governos, serviços de emergência e instituições financeiras. O comprometimento inicial de credenciais ou dispositivos serve frequentemente como porta de entrada para infiltrações em ambientes corporativos e redes de fornecedores.",
+   "image": "https://www.estadao.com.br/resizer/v2/6OOOFXYBZBAHJNXYS52XVH6RM4.png?quality=80&auth=8013194ac6498f20311d46cafe57815649b34804797fc12ecbfe40d8866b0add&width=710",
+   "points": [
+    "Operador usou mais de 10 modelos de IA para coordenar ataques globais.",
+    "Campanha BOSSAI visou serviços de emergência, governos e finanças em vários países.",
+    "Roubo de credenciais e acessos iniciais facilitam a propagação a redes corporativas."
+   ],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": true,
+   "why": "Mostra como a automação por IA acelera e amplia a escala dos ataques transnacionais.",
+   "todo": "Reforce a segurança das credenciais de acesso e adote autenticação multifator para mitigar o impacto de potenciais compromissos iniciais."
+  },
   {
    "id": "1fab220044e3092e",
    "source": "Tecmundo",
@@ -407,6 +452,28 @@
    "enriched": true,
    "why": "Porque demonstra que organizações desportivas globais de topo continuam a ser alvo de incidentes de cibersegurança.",
    "todo": "Reforce a monitorização de acessos internos e mantenha planos de resposta a incidentes atualizados."
+  },
+  {
+   "id": "f706d5d684e8676e",
+   "source": "MS-ISAC (CIS)",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-juniper-products-could-allow-for-arbitrary-code-execution_2026-143",
+   "published": "2026-11-26T16:40:54+00:00",
+   "title": "Múltiplas vulnerabilidades em produtos Juniper permitem execução arbitrária de código",
+   "summary": "Foram detetadas falhas graves de segurança no Juniper Session Smart Router e no Session Smart Conductor. A vulnerabilidade mais crítica, identificada como CVE-2026-103406, permite que um atacante remoto não autenticado execute comandos arbitrários com privilégios de root no Conductor afetado. Este impacto coloca em risco não só o sistema de gestão, mas também toda a frota de routers geridos e respetivos locais.",
+   "image": null,
+   "points": [
+    "Descobertas falhas de segurança no Session Smart Router e Session Smart Conductor da Juniper.",
+    "CVE-2026-103406 permite execução remota de comandos como root sem autenticação.",
+    "Comprometer o Conductor coloca em risco toda a rede de routers gerida."
+   ],
+   "title_original": "Multiple Vulnerabilities in Juniper Products Could Allow for Arbitrary Code Execution",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes obtenham controlo total administrativo sobre infraestruturas de rede críticas.",
+   "todo": "Consulte os avisos de segurança da Juniper e aplique urgentemente as correções e atualizações de firmware disponíveis."
   },
   {
    "id": "6e5dcf12da713631",
@@ -13692,73 +13759,6 @@
    "enriched": true,
    "why": "Facilita a identificação e mitigação de ameaças direcionadas especificamente a sistemas de inteligência artificial nas organizações.",
    "todo": "Atualize as suas soluções de segurança para beneficiar de regras de deteção adaptadas a riscos de IA."
-  },
-  {
-   "id": "4ebef484f948ffe8",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/jpmorgan-data-breach-third-party/",
-   "published": "2026-11-20T16:15:00+00:00",
-   "title": "JPMorgan Confirms Customer Data Breach Following Third-Party Compromise",
-   "summary": "O JPMorgan foi alvo de uma violação de dados de clientes na sequência de um compromisso de segurança num fornecedor terceiro. Um grupo de ransomware identificado como N0n reivindicou a autoria dos ataques, visando também entidades como a Visa e a Mastercard. O impacto traduziu-se na alegada fuga de dados confidenciais de clientes, que foram publicados no site do grupo na dark web.",
-   "image": null,
-   "points": [
-    "Alvo: JPMorgan, Visa e Mastercard.",
-    "Atacante: Grupo de ransomware N0n.",
-    "O quê: Violação de dados através de terceiros.",
-    "Impacto: Fuga e publicação de dados de clientes na dark web."
-   ],
-   "title_original": null,
-   "category": "Ransomware",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como falhas em fornecedores terceiros podem expor dados críticos de clientes em grandes instituições.",
-   "todo": "Audite regularmente a segurança de fornecedores terceiros e restrinja os acessos privilegiados a sistemas externos."
-  },
-  {
-   "id": "f67114676f5678ce",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/nsa-resumes-normal-operations-following-internal-disruptions",
-   "published": "2026-11-20T16:06:00+00:00",
-   "title": "NSA retoma operações normais após perturbações na rede interna",
-   "summary": "A Agência de Segurança Nacional (NSA) retomou as suas operações habituais após ter enfrentado problemas na sua rede interna. Algumas instalações mantiveram o nível de alerta 'Código Laranja' para funcionários não essenciais, implicando atrasos na abertura e verificações adicionais com os supervisores. O incidente afetou o funcionamento interno de certas infraestruturas da agência.",
-   "image": "https://cms.therecord.media/uploads/8815949_9b41fe9ed1.jpg",
-   "points": [
-    "A NSA sofreu perturbações na sua rede interna de computadores.",
-    "Algumas instalações mantiveram o alerta 'Código Laranja' para trabalhadores não essenciais.",
-    "As operações normais acabaram por ser retomadas após a ocorrência."
-   ],
-   "title_original": "NSA resumes normal operations following internal network disruptions",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia que mesmo as agências de cibersegurança mais avançadas podem enfrentar falhas operacionais internas.",
-   "todo": ""
-  },
-  {
-   "id": "b3099b7219afcaab",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/",
-   "published": "2026-11-20T16:01:02+00:00",
-   "title": "WhatsApp corrige falha descoberta durante a interrupção de uma campanha de fraudes",
-   "summary": "A equipa de segurança do WhatsApp identificou e corrigiu uma vulnerabilidade registada como CVE-2026-23871. A falha foi descoberta no âmbito de uma operação para desmantelar uma campanha de burlas na plataforma. A vulnerabilidade em causa poderá ter sido aproveitada por criminosos para dar maior credibilidade às mensagens fraudulentas enviadas às vítimas. A correção foi implementada para proteger os utilizadores.",
-   "image": null,
-   "points": [
-    "A vulnerabilidade CVE-2026-23871 foi descoberta pela equipa de segurança do WhatsApp.",
-    "A falha foi detetada enquanto as autoridades ou a empresa investigavam uma campanha de burlas.",
-    "A vulnerabilidade podia ser usada para tornar mensagens fraudulentas mais credíveis."
-   ],
-   "title_original": "WhatsApp Fixes Flaw Uncovered While Disrupting Scam Campaign",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como os atacantes exploram funcionalidades de aplicações de mensagens para aumentar a eficácia de fraudes.",
-   "todo": "Atualize imediatamente a aplicação WhatsApp para garantir que tem a correção de segurança mais recente."
   }
  ]
 }

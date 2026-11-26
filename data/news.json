@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T10:05:19.479287+00:00",
+ "updated": "2026-11-26T10:28:02.364566+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -119,7 +119,7 @@
   {
    "source": "TechCrunch Security",
    "ok": true,
-   "added": 6
+   "added": 7
   },
   {
    "source": "Ars Technica Security",
@@ -244,12 +244,12 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -309,16 +309,59 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 308,
-  "unenriched": 210,
+  "done": 108,
+  "pending": 202,
+  "unenriched": 105,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "2fb0ec0a35f100b4",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/internet/seguranca/maior-fuga-de-credenciais-base-de-dados-aberta-expos-2-mil-milhoes-de-acessos-e-sessoes/",
+   "published": "2026-11-26T10:05:00+00:00",
+   "title": "Fuga de credenciais? Base de dados aberta expôs 2 mil milhões de acessos e sessões",
+   "summary": "Uma base de dados pública sem encriptação nem palavra-passe expôs cerca de dois mil milhões de credenciais e dados de sessão de contas online. A descoberta foi anunciada por um investigador de cibersegurança num relatório publicado recentemente. Este enorme volume de dados colocou em risco a privacidade e a segurança de utilizadores em todo o mundo. O achado supera largamente outras fugas detetadas anteriormente.",
+   "image": null,
+   "points": [
+    "Uma base de dados pública continha dois mil milhões de acessos e sessões sem proteção.",
+    "A falha foi descoberta e reportada por um investigador de cibersegurança.",
+    "A exposição massiva ameaça a segurança das contas online afetadas."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Expor milhões de credenciais sem proteção facilita o acesso indevido a contas e sistemas por parte de atacantes.",
+   "todo": "Altere regularmente as suas palavras-passe e utilize a autenticação multifator (MFA) em todas as contas importantes."
+  },
+  {
+   "id": "9fef03c442c03373",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/26/ransomware-recovery-fraud-florida-firm-co-founder-charged/",
+   "published": "2026-11-26T09:59:07+00:00",
+   "title": "Co-fundador de empresa de recuperação de dados acusado de lucrar com vítimas de ransomware",
+   "summary": "O co-fundador de uma empresa de recuperação de dados baseada na Florida foi acusado de pagar secretamente a gangues de ransomware enquanto garantia aos clientes que a sua empresa nunca o fazia. O cidadão colombiano foi detido em Las Vegas e enfrenta várias acusações de fraude eletrónica por um grande júri federal. Esta conduta ilícita explorava o desespero das vítimas afetadas por ataques de extorsão digital.",
+   "image": null,
+   "points": [
+    "Um responsável por empresa de recuperação pagava em segredo a grupos de ransomware.",
+    "O suspeito foi detido e acusado de fraude eletrónica por um júri federal.",
+    "A conduta enganava clientes que procuravam ajuda legítima para recuperar dados."
+   ],
+   "title_original": "Data recovery firm co-founder accused of cashing in on ransomware victims",
+   "category": "Ransomware",
+   "translated": true,
+   "enriched": true,
+   "why": "Alimenta o ecossistema do ransomware e defrauda empresas vulneráveis que confiam em serviços de recuperação.",
+   "todo": "Consulte organismos oficiais e especialistas certificados antes de negociar ou pagar resgates por dados bloqueados."
+  },
   {
    "id": "08c2500833e62b37",
    "source": "Security Affairs",
@@ -327,14 +370,19 @@
    "link": "https://securityaffairs.com/204031/cyber-crime/1password-hacked-customer-names-and-emails-copied-vaults-untouched.html",
    "published": "2026-11-26T09:42:47+00:00",
    "title": "1Password Hacked: Customer Names and Emails Copied, Vaults Untouched",
-   "summary": "1Password says an attacker stole customer names and emails through an employee’s GitHub account, but vaults and passwords remained safe. 1Password has disclosed that an attacker got into some of its backend systems. The company posted its update on November 25 and says customer vaults weren’t affected. It also says some customer account data was […]",
+   "summary": "A empresa de segurança 1Password confirmou que um atacante comprometeu a conta de um colaborador no GitHub para aceder a sistemas internos. O incidente resultou na cópia de nomes e endereços de correio eletrónico de alguns clientes, embora os cofres de palavras-passe tenham permanecido seguros. O acesso não autorizado começou a ser investigado após a deteção de atividade suspeita no repositório corporativo. A empresa sublinha que os dados mestres e as chaves de encriptação dos utilizadores não foram afetados.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Atacantes usaram a conta GitHub de um colaborador para aceder a sistemas internos da 1Password.",
+    "Foram copiados nomes e emails de um subconjunto de utilizadores.",
+    "Os cofres de palavras-passe e as chaves de encriptação mantiveram-se seguros."
+   ],
+   "title_original": "1Password Hacked: Customer Names and Emails Copied, Vaults Untouched",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "1Password says an attacker stole customer names and emails through an employee’s GitHub account, but vaults and passwords remained safe. 1Password has disclosed that an attacker got into some of its backend systems. The company posted its update on November 25 and says customer vaults weren’t affected. It also says some customer account data was copied. “An attacker gained access to some of our backend systems and copied a limited amount of customer account information from a subset of our customers, including the names and email addresses that customers use to sign into 1Password.” reads the update published by 1Password. “Your vault data, the items in them, and the keys that protect them are safe and were not affected. 1Password does not have access to your password or secret keys.” An attacker accessed some of company’s backend systems and copied a limited amount of customer data. This affected only some customers and included the names and email addresses they use to sign in. The identity security firm has not said how many customers were affected, a detail also missing from TechCrunch’s report. The attack started with an employee’s corporate GitHub account. 1Password began investigating on November 19, after detecting signs that someone had accessed the account without permission. The attacker used it to access source code and add malicious code to backend services. These services then downloaded customer-related administrative data. It is still unclear how the attacker gained access to the employee’s GitHub account. The copied records include names and email addresses, account and user identifiers, and the times each account was created and last signed in. They also hold public keys, which are public by design, and Secure Remote Password parameters, which can’t be"
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como o comprometimento de uma única conta de colaborador pode expor dados administrativos de clientes.",
+   "todo": "Proteja contas de desenvolvimento com autenticação forte e reforce a monitorização de acessos a repositórios de código."
   },
   {
    "id": "a0100a52ea63eb06",
@@ -389,14 +437,19 @@
    "link": "https://pplware.sapo.pt/internet/seguranca/black-friday-psp-deixa-alerta-sobre-burlas-nas-compras-online-saiba-como-se-proteger/",
    "published": "2026-11-26T09:30:00+00:00",
    "title": "Black Friday: PSP deixa alerta sobre burlas nas compras online. Saiba como se proteger",
-   "summary": "A Polícia de Segurança Pública (PSP) recomenda desconfiança perante preços significativamente inferiores aos habituais no mercado e pede que qualquer suspeita de burla seja comunicada à polícia, independentemente do valor do prejuízo. A PSP divulgou um comunicado a propósito da Black Friday, no qual alerta os consumidores para a existência de eventuais esquemas fraudulentos associados […]",
+   "summary": "A Polícia de Segurança Pública emitiu recomendações para prevenir burlas nas compras online durante a época da Black Friday. As autoridades aconselham os consumidores a desconfiarem de preços anormalmente baixos face aos valores habituais de mercado. Qualquer suspeita de fraude deve ser imediatamente comunicada à polícia, independentemente do valor do prejuízo financeiro. O objetivo é mitigar o impacto dos esquemas fraudulentos típicos desta altura comercial.",
    "image": null,
-   "points": [],
+   "points": [
+    "A PSP alertou para o aumento de esquemas fraudulentos nas compras online na Black Friday.",
+    "Recomenda-se desconfiança perante descontos excessivos ou preços muito abaixo do mercado.",
+    "As autoridades pedem a denúncia imediata de qualquer suspeita de burla."
+   ],
    "title_original": null,
    "category": "Phishing/Fraude",
    "translated": false,
-   "enriched": false,
-   "raw": "A Polícia de Segurança Pública (PSP) recomenda desconfiança perante preços significativamente inferiores aos habituais no mercado e pede que qualquer suspeita de burla seja comunicada à polícia, independentemente do valor do prejuízo. A PSP divulgou um comunicado a propósito da Black Friday, no qual alerta os consumidores para a existência de eventuais esquemas fraudulentos associados […]"
+   "enriched": true,
+   "why": "Ajuda os consumidores a evitarem perdas financeiras em campanhas de grandes descontos.",
+   "todo": "Compre apenas em sites de confiança e desconfie de propostas com preços demasiado baixos para serem verdade."
   },
   {
    "id": "ecfd160b2eed585b",
@@ -13713,50 +13766,6 @@
    "enriched": true,
    "why": "Aproveita a confiança em programas do quotidiano para executar código malicioso sem que o utilizador suspeite.",
    "todo": "Mantenha o software atualizado e utilize soluções de segurança capazes de analisar o comportamento das aplicações em execução."
-  },
-  {
-   "id": "3270c493c152a36b",
-   "source": "SAPO Tek",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://tek.sapo.pt/noticias/internet/artigos/imt-e-alvo-de-varios-ciberataques-e-suspende-os-servicos/",
-   "published": "2026-11-20T09:25:40+00:00",
-   "title": "IMT é alvo de “vários ciberataques” e suspende os serviços. Site já foi reposto",
-   "summary": "O Instituto da Mobilidade e dos Transportes foi alvo de múltiplos ciberataques, o que levou à suspensão temporária dos seus serviços digitais e deixou o site inacessível desde sábado. As autoridades competentes já estão a investigar a origem da ocorrência para apurar responsabilidades. O organismo garantiu publicamente que, até ao momento, não existem indícios de comprometimento ou de exfiltração de dados.",
-   "image": null,
-   "points": [
-    "O Instituto da Mobilidade e dos Transportes sofreu vários ciberataques.",
-    "Os serviços digitais e o site foram suspensos temporariamente.",
-    "As autoridades investigam o caso, sem indícios de roubo de dados."
-   ],
-   "title_original": null,
-   "category": "Ataque/APT",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra a vulnerabilidade de serviços públicos essenciais a paralisações decorrentes de ataques informáticos.",
-   "todo": "As entidades públicas e privadas devem reforçar os planos de contingência e monitorização contínua dos sistemas."
-  },
-  {
-   "id": "09d3f14eaae718fb",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132057-update-released-with-28-changes-and-fixes/",
-   "published": "2026-11-20T09:25:35+00:00",
-   "title": "Atualização KB5132057 do Windows 11 lançada com 28 alterações e correções",
-   "summary": "A Microsoft disponibilizou a atualização de pré-visualização KB5132057 para o Windows 11, introduzindo um total de 28 alterações e correções. Esta nova versão traz melhorias significativas em ferramentas nativas do sistema operativo, destacando-se aspetos como o Windows Search, o Windows Hello e a caixa de diálogo Executar. Estas modificações visam otimizar a experiência e a estabilidade para os utilizadores.",
-   "image": null,
-   "points": [
-    "A Microsoft lançou a atualização de pré-visualização KB5132057 do Windows 11.",
-    "Foram introduzidas 28 alterações e correções no sistema operativo.",
-    "Inclui melhorias no Windows Search, Windows Hello e na caixa Executar."
-   ],
-   "title_original": "Windows 11 KB5132057 update released with 28 changes and fixes",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Corrige erros e melhora funcionalidades essenciais do sistema operativo Windows 11.",
-   "todo": "Instale as atualizações oficiais do sistema operativo de forma regular para garantir a estabilidade e segurança."
   }
  ]
 }

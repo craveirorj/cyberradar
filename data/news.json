@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T12:06:44.587931+00:00",
+ "updated": "2026-11-26T12:28:10.710577+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -234,12 +234,12 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 15
+   "added": 16
   },
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 10
+   "added": 11
   },
   {
    "source": "Help Net Security",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -309,13 +309,11 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 48,
-  "pending": 249,
-  "unenriched": 155,
+  "done": 120,
+  "pending": 173,
+  "unenriched": 82,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
@@ -13023,6 +13021,29 @@
    "todo": "Atualize as suas soluções de segurança para beneficiar de regras de deteção adaptadas a riscos de IA."
   },
   {
+   "id": "4ebef484f948ffe8",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/jpmorgan-data-breach-third-party/",
+   "published": "2026-11-20T16:15:00+00:00",
+   "title": "JPMorgan Confirms Customer Data Breach Following Third-Party Compromise",
+   "summary": "O JPMorgan foi alvo de uma violação de dados de clientes na sequência de um compromisso de segurança num fornecedor terceiro. Um grupo de ransomware identificado como N0n reivindicou a autoria dos ataques, visando também entidades como a Visa e a Mastercard. O impacto traduziu-se na alegada fuga de dados confidenciais de clientes, que foram publicados no site do grupo na dark web.",
+   "image": null,
+   "points": [
+    "Alvo: JPMorgan, Visa e Mastercard.",
+    "Atacante: Grupo de ransomware N0n.",
+    "O quê: Violação de dados através de terceiros.",
+    "Impacto: Fuga e publicação de dados de clientes na dark web."
+   ],
+   "title_original": "JPMorgan Confirms Customer Data Breach Following Third-Party Compromise",
+   "category": "Ransomware",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como falhas em fornecedores terceiros podem expor dados críticos de clientes em grandes instituições.",
+   "todo": "Audite regularmente a segurança de fornecedores terceiros e restrinja os acessos privilegiados a sistemas externos."
+  },
+  {
    "id": "f67114676f5678ce",
    "source": "The Record",
    "region": "US",
@@ -13747,29 +13768,6 @@
    "enriched": true,
    "why": "Mostra como o setor da saúde continua a ser um alvo prioritário para o roubo massivo de dados de clientes.",
    "todo": "Monitorize regularmente os acessos às bases de dados e reforce as políticas de autenticação e encriptação de dados sensíveis."
-  },
-  {
-   "id": "cf0779df78aa4b0a",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/cibercriminosos-russos-usam-ia-para-aplicar-golpes-no-brasil/",
-   "published": "2026-11-20T11:30:00+00:00",
-   "title": "Cibercriminosos russos usam IA para aplicar golpes no Brasil",
-   "summary": "Cibercriminosos que falam russo lançaram uma campanha direcionada ao Brasil e a outros países para roubar dados confidenciais de empresas e utilizadores. Os atacantes combinam engenharia social, serviços legítimos de internet e inteligência artificial para criar centenas de páginas falsas personalizadas. A infraestrutura utilizada emprega ferramentas como XaocMail, Phantom53 e Havoc para dificultar o bloqueio tradicional por parte das defesas. O setor tecnológico lidera a lista de alvos afetados por esta operação estruturada.",
-   "image": "https://www.estadao.com.br/resizer/v2/MHRSOGIMABDORBN5ZYNGFIFKMA.png?quality=80&auth=9773b1640e8307fc2cdfcd8286ef0339975496f52e8b07363531afaf59ef35e3&width=710",
-   "points": [
-    "Quem: Hackers russos e utilizadores ou empresas no Brasil.",
-    "O quê: Campanha de phishing e roubo de dados auxiliada por inteligência artificial.",
-    "Como: Uso de e-mails falsos, páginas fraudulentas e ferramentas como XaocMail e Havoc.",
-    "Impacto: Criação de quase mil páginas falsas e roubo de dados confidenciais em setores como a tecnologia."
-   ],
-   "title_original": null,
-   "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia a profissionalização do cibercrime através da inteligência artificial para contornar os controlos de segurança tradicionais.",
-   "todo": "Forme os colaboradores para reconhecerem sinais de phishing e utilize soluções de segurança avançadas capazes de detetar anomalias no tráfego de e-mail."
   }
  ]
 }

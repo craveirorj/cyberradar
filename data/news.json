@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T08:46:51.884531+00:00",
+ "updated": "2026-11-26T09:07:33.840306+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -310,14 +310,37 @@
  "translation": {
   "provider": "gemini",
   "done": 108,
-  "pending": 202,
+  "pending": 203,
   "unenriched": 101,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting value: line 5 column 10 (char 128)"
+   "Expecting value: line 21 column 7 (char 1926)"
   ]
  },
  "items": [
+  {
+   "id": "69311314e8504d77",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/26/1password-breach-github-customer-records/",
+   "published": "2026-11-26T08:42:32+00:00",
+   "title": "1Password sofre intrusão através de conta do GitHub de colaborador e rouba nomes e emails de clientes",
+   "summary": "Um atacante obteve acesso à conta corporativa do GitHub de um colaborador da 1Password, permitindo-lhe copiar registos de contas de utilizadores e código-fonte de repositórios privados. A empresa de gestores de palavras-passe detetou o incidente de segurança a 19 de novembro de 2026 e iniciou uma investigação aos sistemas de backend afetados. O impacto inclui a exposição de dados de clientes, especificamente nomes e endereços de correio eletrónico. A 1Password manteve a transparência ao atualizar publicamente os seus clientes sobre o progresso da investigação.",
+   "image": null,
+   "points": [
+    "Quem: Um atacante não identificado e a empresa 1Password.",
+    "O quê: Acedeu a uma conta do GitHub de um colaborador e roubou dados de clientes e código-fonte.",
+    "Como: Comprometendo a conta corporativa do GitHub de um funcionário da empresa.",
+    "Impacto: Roubo de nomes, emails de utilizadores e extração de código de repositórios privados."
+   ],
+   "title_original": "1Password breached through hijacked employee GitHub account, customer names and emails stolen",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como contas internas comprometidas em plataformas de desenvolvimento podem expor diretamente os dados confidenciais dos clientes.",
+   "todo": "Aplique autenticação multifator rigorosa e monitorize o acesso a repositórios de código e contas corporativas de colaboradores."
+  },
   {
    "id": "84ce059e91edb937",
    "source": "SecurityWeek",
@@ -334,9 +357,9 @@
     "Impacto: Roubo de registos de clientes e inserção de código malicioso.",
     "Âmbito: Os cofres de dados dos utilizadores não foram acedidos."
    ],
-   "title_original": "1Password Breach Exposes Customer Data, Internal Source Code",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra que mesmo empresas de segurança robustas podem ser comprometidas através de contas de colaboradores.",
    "todo": "Ative a autenticação multifator (MFA) em todas as contas de desenvolvimento e monitorize o acesso a repositórios de código."
@@ -13749,29 +13772,6 @@
    "enriched": true,
    "why": "Permite educar as gerações mais jovens sobre segurança rodoviária através de uma plataforma digital interativa e acessível.",
    "todo": ""
-  },
-  {
-   "id": "009f6643a8548564",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/",
-   "published": "2026-11-20T07:35:46+00:00",
-   "title": "JPMorgan, Visa e Mastercard citam incidentes de terceiros após fuga de dados",
-   "summary": "As empresas JPMorgan, Visa e Mastercard foram alvo de uma fuga de dados que expôs informações dos seus clientes. O incidente foi atribuído ao grupo de extorsão N0n. As instituições financeiras indicaram que a origem do problema reside em fornecedores externos de serviços. O impacto direto reflete-se na segurança dos dados dos utilizadores destas plataformas.",
-   "image": null,
-   "points": [
-    "Grupo N0n expôs dados de clientes.",
-    "Incidente originado em fornecedores terceiros.",
-    "Afeta JPMorgan, Visa e Mastercard.",
-    "Dados sensíveis de utilizadores comprometidos."
-   ],
-   "title_original": "JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra como a segurança de uma empresa depende da resiliência dos seus parceiros e fornecedores.",
-   "todo": "Avalie regularmente a postura de segurança dos seus fornecedores e limite o acesso a dados sensíveis ao estritamente necessário."
   }
  ]
 }

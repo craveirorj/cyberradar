@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T04:07:35.340903+00:00",
+ "updated": "2026-11-26T04:27:20.226612+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -189,7 +189,7 @@
   {
    "source": "CrowdStrike Blog",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "SentinelLabs",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Check Point Research",
@@ -309,15 +309,60 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 112,
-  "pending": 193,
-  "unenriched": 92,
+  "done": 115,
+  "pending": 192,
+  "unenriched": 91,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "f6f7fcdada17bb3c",
+   "source": "CrowdStrike Blog",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.crowdstrike.com/en-us/blog/securing-employees-ai-use-requires-unified-architecture/",
+   "published": "2026-11-26T04:21:19.208474+00:00",
+   "title": "Proteger a utilização de IA pelos colaboradores requer uma arquitetura unificada",
+   "summary": "A integração de ferramentas de Inteligência Artificial no ambiente de trabalho exige uma estratégia de segurança centralizada. As empresas precisam de uma arquitetura unificada para gerir os riscos associados à utilização destas tecnologias pelos funcionários. Esta abordagem é essencial para garantir que a adoção da IA não comprometa a segurança dos dados corporativos. A falta de controlo central pode expor a organização a vulnerabilidades significativas.",
+   "image": null,
+   "points": [
+    "Necessidade de arquitetura unificada para IA",
+    "Gestão centralizada de riscos de IA",
+    "Proteção de dados corporativos na era da IA"
+   ],
+   "title_original": "Securing Employees’ AI Use Requires a Unified Architecture",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "A utilização descontrolada de IA por colaboradores aumenta a superfície de ataque e o risco de fuga de dados sensíveis.",
+   "todo": "Implemente políticas de utilização aceitável e utilize soluções de segurança que permitam monitorizar e controlar o acesso a ferramentas de IA."
+  },
+  {
+   "id": "98bf0c432201829a",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html",
+   "published": "2026-11-26T03:48:52+00:00",
+   "title": "13 pacotes NuGet maliciosos transformam falsas avaliações de emprego .NET em armadilhas de malware",
+   "summary": "Investigadores de cibersegurança detetaram 13 pacotes NuGet maliciosos que visam programadores .NET no Windows. Estes pacotes disfarçam-se de componentes legítimos de interface, como botões WinUI 3 e WPF, sendo distribuídos através de falsos processos de recrutamento. Ao executar ou compilar estes pacotes, o malware é instalado no sistema da vítima. O objetivo é comprometer os dispositivos dos programadores que tentam realizar testes técnicos de emprego.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjt0w3YJQrn6VoUVUTTj46NLfeL_JJE-sDoxKsuBe-_OxBtQ3iX8AZTZ1CEn39-N5TGKYd-0ZKdOT43UwAWUbpIXlFdDwhyphenhyphenEKpkQVVJYJVodQRHyz0pJeKEvJIJgUpAEQqXizajmrriq9Mj1aqioeK1Zug__X26Ra4HwzFg8ImTajGc6b7Ck9LW2OCIpPoa/s1600/dotnet.jpg",
+   "points": [
+    "Alvo: Programadores .NET no Windows",
+    "Método: Pacotes NuGet maliciosos disfarçados",
+    "Vetor: Falsas avaliações de competências técnicas",
+    "Impacto: Infeção por malware no sistema"
+   ],
+   "title_original": "13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "Os atacantes estão a explorar a confiança dos programadores em processos de recrutamento para distribuir código malicioso diretamente nos seus ambientes de desenvolvimento.",
+   "todo": "Verifique sempre a proveniência de pacotes de código e evite executar bibliotecas de fontes não verificadas, especialmente em contextos de testes de recrutamento."
+  },
   {
    "id": "40290378d9addc9c",
    "source": "AWS Security Blog",
@@ -13729,52 +13774,6 @@
    "enriched": true,
    "why": "Estas vulnerabilidades críticas expõem infraestruturas virtuais a acessos não autorizados e ataques remotos.",
    "todo": "Atualize urgentemente os softwares VMware e os pacotes afetados conforme as recomendações dos fabricantes."
-  },
-  {
-   "id": "c5e24a06d3952b8f",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
-   "published": "2026-11-20T00:26:25+00:00",
-   "title": "VMware corrige zero-day do vCenter explorado em ataques desde setembro",
-   "summary": "A Broadcom lançou atualizações de segurança para corrigir uma vulnerabilidade crítica de contorno de autenticação no VMware vCenter Server. A falha tem sido explorada ativamente em ataques do tipo zero-day por hackers com ligações à China desde setembro de 2026. O impacto afeta a segurança de infraestruturas que utilizam este software de gestão.",
-   "image": null,
-   "points": [
-    "A Broadcom lançou atualizações para corrigir uma falha crítica no VMware vCenter Server.",
-    "A vulnerabilidade permite o contorno de autenticação e foi explorada desde setembro de 2026.",
-    "O grupo por trás dos ataques é constituído por hackers ligados à China.",
-    "O impacto foca-se na segurança de servidores e redes empresariais."
-   ],
-   "title_original": "VMware patches vCenter zero-day exploited in attacks since September",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite que atacantes comprometam servidores centrais de gestão de infraestruturas críticas.",
-   "todo": "Instale imediatamente as atualizações de segurança disponibilizadas pela Broadcom para o VMware vCenter Server."
-  },
-  {
-   "id": "9b9f66e814c29bdd",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/20/germ-network-infects-android-but-in-a-good-way/5311186",
-   "published": "2026-11-20T00:06:35+00:00",
-   "title": "Germ Network infects Android, but in a good way",
-   "summary": "A aplicação de mensagens encriptadas Germ Network expandiu-se para o sistema Android após o seu lançamento inicial no iOS em 2023. A plataforma registou um aumento exponencial na utilização graças à forte adesão dos utilizadores de Android que queriam comunicar com utilizadores de Bluesky. O serviço foca-se na privacidade, utilizando criptografia ponta a ponta e substituindo os números de telefone por cartões de identidade virtuais. O impacto reflete-se numa nova opção de comunicação segura que protege a identidade dos utilizadores e reduz os metadados.",
-   "image": "https://image.theregister.com/?imageId=5311190&width=800",
-   "points": [
-    "A app Germ Network chegou ao sistema operativo Android.",
-    "A plataforma utiliza encriptação ponta a ponta baseada no Messaging Layer Security.",
-    "O sistema substitui os números de telefone por cartões de identidade virtuais.",
-    "O objetivo é aumentar a privacidade e a confiança nas comunicações digitais."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Permite compreender novas abordagens de privacidade e encriptação na comunicação móvel e em redes descentralizadas.",
-   "todo": "Avalie aplicações de mensagens focadas na privacidade e verifique as permissões que partilha ao comunicar com terceiros."
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T10:45:09.822035+00:00",
+ "updated": "2026-11-26T11:06:14.189960+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -199,7 +199,7 @@
   {
    "source": "Elastic Security Labs",
    "ok": true,
-   "added": 5
+   "added": 4
   },
   {
    "source": "Rapid7",
@@ -234,7 +234,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 17
+   "added": 16
   },
   {
    "source": "The Register Security",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Hacker News",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 12,
-  "pending": 295,
-  "unenriched": 197,
+  "done": 24,
+  "pending": 283,
+  "unenriched": 185,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -320,21 +320,48 @@
  },
  "items": [
   {
+   "id": "82568982e7fbcf68",
+   "source": "HackRead",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://hackread.com/905672-characters-qualified-signature-gdpr-export/",
+   "published": "2026-11-26T10:46:47+00:00",
+   "title": "905 672 caracteres sob rectângulos pretos: porque uma assinatura qualificada não serve de prova numa exportação do RGPD",
+   "summary": "Uma exportação de dados protegida pelo RGPD revelou quase um milhão de carateres que continuavam legíveis por baixo de tarjas pretas. O incidente demonstra que uma assinatura digital em PDF não consegue comprovar se os redações ou a integridade dos dados foram devidamente aplicadas. A falha expõe lacunas técnicas na verificação de documentos confidenciais exportados para terceiros.",
+   "image": null,
+   "points": [
+    "O quê: Exportação de dados do RGPD com 905 672 carateres legíveis sob caixas pretas.",
+    "Como: A assinatura digital válida do PDF falhou em validar a ocultação e integridade do conteúdo.",
+    "Impacto: Informação sensível permaneceu acessível apesar de aparentemente mascarada no documento."
+   ],
+   "title_original": "905,672 Characters Under Black Rectangles: Why a Qualified Signature Can’t Vouch for a GDPR Export",
+   "category": "Regulação",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que assinar digitalmente um documento não valida automaticamente a eficácia da ocultação de dados.",
+   "todo": "Valide visualmente e de forma independente se os dados confidenciais foram totalmente removidos antes de exportar ficheiros."
+  },
+  {
    "id": "64d50fdadf543716",
    "source": "Infosecurity Magazine",
    "region": "EU",
    "lang": "en",
    "link": "https://www.infosecurity-magazine.com/news/home-office-reprimanded-gdpr/",
    "published": "2026-11-26T10:30:00+00:00",
-   "title": "Home Office Reprimanded After GDPR Failure at the Border",
-   "summary": "The ICO has reprimanded the Home Office after data integrity failings caused distress at the border",
+   "title": "Home Office repreendido após falha do RGPD na fronteira",
+   "summary": "O comissário de proteção de dados britânico (ICO) emitiu uma repreensão formal ao Home Office. O motivo foram falhas graves na integridade dos dados que geraram transtornos e sofrimento aos cidadãos afetados na fronteira. A situação evidencia a responsabilidade das entidades governamentais na gestão correta de dados pessoais sensíveis.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: O regulador ICO e o Home Office britânico.",
+    "O quê: Repreensão oficial devido a falhas de integridade de dados na fronteira.",
+    "Impacto: Causou perturbação e sofrimento aos cidadãos afetados pelo erro."
+   ],
+   "title_original": "Home Office Reprimanded After GDPR Failure at the Border",
    "category": "Regulação",
-   "translated": false,
-   "enriched": false,
-   "raw": "The ICO has reprimanded the Home Office after data integrity failings caused distress at the border"
+   "translated": true,
+   "enriched": true,
+   "why": "Sublinha que as falhas no tratamento de dados públicos resultam em sanções regulatórias e danos para os cidadãos.",
+   "todo": "Garanta auditorias rigorosas aos sistemas de controlo de fronteiras e tratamento de dados de identificação."
   },
   {
    "id": "2fb0ec0a35f100b4",
@@ -13740,28 +13767,6 @@
    "enriched": true,
    "why": "Permite obter ferramentas de privacidade e gestão de acessos a um preço consideravelmente reduzido.",
    "todo": "Avalie se as funcionalidades do serviço respondem às necessidades de segurança da sua atividade antes de subscrever."
-  },
-  {
-   "id": "384152c9138d4c44",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/jpmorgan-chase-visa-mastercard-vendor-incidents-n0n-leak/",
-   "published": "2026-11-20T09:50:52+00:00",
-   "title": "JPMorgan Chase, Visa e Mastercard confirmam incidentes em fornecedores após fugas do grupo n0n",
-   "summary": "Várias grandes instituições financeiras, incluindo o JPMorgan Chase, a Visa e a Mastercard, confirmaram incidentes de segurança em fornecedores terceiros. A confirmação surge na sequência de publicações feitas pelo grupo n0n, que expuseram mais de 27.000 endereços de email em ficheiros partilhados online. O impacto afeta a cadeia de fornecimento destas empresas de renome devido a falhas em parceiros externos.",
-   "image": null,
-   "points": [
-    "Alvo: JPMorgan Chase, Visa e Mastercard.",
-    "Incidente: Fuga de dados por fornecedores terceiros.",
-    "Impacto: Mais de 27.000 endereços de email expostos pelo grupo n0n."
-   ],
-   "title_original": "JPMorgan Chase, Visa and Mastercard confirm vendor incidents after n0n leak claims",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como a vulnerabilidade de um fornecedor externo pode expor dados de grandes organizações financeiras.",
-   "todo": "Reveja regularmente a segurança e o acesso de fornecedores e parceiros externos aos seus sistemas."
   }
  ]
 }

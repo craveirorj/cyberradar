@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T13:27:11.568299+00:00",
+ "updated": "2026-11-26T13:47:37.142266+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -114,7 +114,7 @@
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "TechCrunch Security",
@@ -134,7 +134,7 @@
   {
    "source": "Schneier on Security",
    "ok": true,
-   "added": 5
+   "added": 6
   },
   {
    "source": "SANS ISC",
@@ -144,7 +144,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 0
+   "added": 3
   },
   {
    "source": "Malwarebytes Labs",
@@ -234,12 +234,12 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 15
+   "added": 14
   },
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 11
+   "added": 12
   },
   {
    "source": "Help Net Security",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "ACSC Austrália",
@@ -309,14 +309,104 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 173,
-  "unenriched": 82,
+  "done": 108,
+  "pending": 189,
+  "unenriched": 95,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting value: line 21 column 7 (char 1806)"
   ]
  },
  "items": [
+  {
+   "id": "14b3e60e10f9bd95",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/26/company-was-religious-about-backups-but-sinned-by-leaving-them-exposed/5312234",
+   "published": "2026-11-26T13:22:00+00:00",
+   "title": "Company was religious about backups but sinned by leaving them exposed",
+   "summary": "Um fabricante chinês de peças para veículos foi vítima de um grupo de ransomware que conseguiu apagar as cópias de segurança e encriptar os servidores de produção. Os criminosos entraram na rede, descobriram que o servidor de backup estava no mesmo domínio do Windows e localizaram uma palavra-passe em texto limpo num script de manutenção. Como a palavra-passe era a mesma utilizada numa conta de administrador de domínio, conseguiram eliminar todos os pontos de restauro. O impacto foi devastador, deixando a fábrica sem capacidade para agendar produção, enviar peças ou segui-las, uma vez que os dados do MES e da SAP desapareceram.",
+   "image": "https://image.theregister.com/?imageId=5312239&width=800",
+   "points": [
+    "Fabricante chinês de peças para veículos atacado por ransomware.",
+    "Servidor de backup estava no mesmo domínio e utilizava a mesma palavra-passe de administrador.",
+    "Criminosos eliminaram todos os pontos de restauro e encriptaram os servidores de produção.",
+    "A fábrica perdeu os sistemas MES e SAP, paralisando a produção e o envio de peças."
+   ],
+   "title_original": "Company was religious about backups but sinned by leaving them exposed",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Ter cópias de segurança diárias não protege a empresa se estas estiverem acessíveis na mesma rede e com as mesmas credenciais que os sistemas atacados.",
+   "todo": "Mantenha os backups isolados da rede principal e utilize credenciais únicas e fortes, evitando repetir palavras-passe de administrador em servidores de cópia de segurança."
+  },
+  {
+   "id": "0084f4bf0275a168",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/26/fifa-says-it-has-been-victim-of-a-cyberattack-accessing-personal-and-business-information/",
+   "published": "2026-11-26T13:18:58+00:00",
+   "title": "FIFA says it has been victim of a cyberattack accessing ‘personal and business information’",
+   "summary": "A FIFA foi alvo de um ciberataque que resultou no acesso não autorizado a um conjunto limitado de informações pessoais e de negócios. O organismo gestor do futebol mundial avançou com a informação numa declaração enviada à comunicação social na quinta-feira. No seguimento do incidente, a organização está a colaborar de perto com as autoridades competentes, incluindo as forças de segurança. O impacto direto consiste na exposição de dados internos de natureza pessoal e empresarial.",
+   "image": null,
+   "points": [
+    "A FIFA foi vítima de um ciberataque.",
+    "Houve acesso não autorizado a um conjunto limitado de dados pessoais e de negócios.",
+    "A organização está a trabalhar em conjunto com as autoridades e forças de segurança."
+   ],
+   "title_original": "FIFA says it has been victim of a cyberattack accessing ‘personal and business information’",
+   "category": "Ataque/APT",
+   "translated": true,
+   "enriched": true,
+   "why": "Mesmo grandes organizações desportivas globais são alvo de ataques informáticos que comprometem dados confidenciais.",
+   "todo": "Monitore os acessos a bases de dados sensíveis e reforce as medidas de deteção precoce de intrusões."
+  },
+  {
+   "id": "95ab5107820cfeab",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/26/preinstalled-keenadu-malware-turns-up-on-220000-android-devices/",
+   "published": "2026-11-26T13:18:53+00:00",
+   "title": "Preinstalled Keenadu malware turns up on 220,000+ Android devices",
+   "summary": "Novos telemóveis Android estão a chegar aos utilizadores com malware já integrado no firmware de fábrica. De acordo com a Kaspersky, o número mensal de dispositivos detetados com este problema cresceu mais de 2,5 vezes ao longo do último ano. O Keenadu é uma das duas famílias de malware responsáveis pela maioria destas infeções, tendo já atingido mais de 220.000 dispositivos. O impacto afeta diretamente os consumidores que compram telemóveis já infetados de origem.",
+   "image": null,
+   "points": [
+    "Dispositivos Android chegam ao mercado com malware pré-instalado no firmware.",
+    "A Kaspersky reporta um crescimento superior a 2,5 vezes nos dispositivos detetados num ano.",
+    "O Keenadu é uma das principais famílias de malware responsáveis por mais de 220.000 infeções."
+   ],
+   "title_original": "Preinstalled Keenadu malware turns up on 220,000+ Android devices",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "A presença de malware no firmware de origem significa que os dispositivos podem vir comprometidos de fábrica, antes de qualquer utilização pelo cliente.",
+   "todo": "Adquira dispositivos Android apenas através de canais e marcas oficiais de confiança e verifique regularmente o estado de segurança do sistema."
+  },
+  {
+   "id": "1559caed12e86231",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/26/australias-flight-centre-data-breach-exposes-customer-records-and-passport-details/",
+   "published": "2026-11-26T13:18:46+00:00",
+   "title": "Australia’s Flight Centre Data Breach Exposes Customer Records and Passport Details",
+   "summary": "O Flight Centre Travel Group, na Austrália, está a investigar um incidente cibernético que atingiu um sistema de reservas de alojamento de terceiros. A empresa detetou atividade invulgar numa plataforma utilizada por várias das suas marcas de viagens de lazer e comunicou o sucedido. Como resultado do incidente, um número significativo de registos de clientes e detalhes de passaporte pode ter sido exposto. O impacto recai sobre a privacidade dos clientes cujos dados de viagem e identificação foram potencialmente comprometidos.",
+   "image": null,
+   "points": [
+    "O Flight Centre Travel Group investiga um incidente de cibersegurança num sistema de terceiros.",
+    "Foi detetada atividade invulgar numa plataforma de reservas de marcas de viagens de lazer.",
+    "O incidente pode ter exposto registos de clientes e detalhes de passaporte."
+   ],
+   "title_original": "Australia’s Flight Centre Data Breach Exposes Customer Records and Passport Details",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "As falhas de segurança em plataformas de fornecedores terceiros podem expor dados altamente sensíveis dos clientes de uma empresa.",
+   "todo": "Avalie e audite regularmente a segurança dos fornecedores terceiros e parceiros que acedem aos dados da sua empresa."
+  },
   {
    "id": "51c4c7d388fa4f21",
    "source": "Infosecurity Magazine",
@@ -332,9 +422,9 @@
     "Como: Através da obrigatoriedade de uso de servidores Workspace MCP ou linha de comandos.",
     "Impacto: Maior controlo e segurança nas ligações a ferramentas como Gmail e Drive."
    ],
-   "title_original": "Google Cloud Requires AI Agents to Access Workspace Through Approved Methods",
+   "title_original": null,
    "category": "IA",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Protege o acesso automatizado a dados corporativos confidenciais contra exposições indevidas.",
    "todo": "Garanta que todos os agentes de IA na sua empresa utilizam exclusivamente os métodos oficiais e aprovados pela Google."
@@ -354,9 +444,9 @@
     "Quem: Afeta versões iguais ou inferiores à 18.00.0006.",
     "Impacto: Falhas no sistema e instabilidade devido a reescrita de instruções."
    ],
-   "title_original": "PostgreSQL security advisory (AV26-1211)",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Evita falhas graves de estabilidade e potenciais vetores de exploração nos sistemas de base de dados.",
    "todo": "Consulte os avisos de segurança oficiais e atualize o psqlODBC para uma versão corrigida assim que possível."
@@ -376,9 +466,9 @@
     "Como: Através de interfaces de gestão expostas à internet combinadas com falhas PHP2Shell.",
     "Impacto: Atores maliciosos obtiveram privilégios de root nos equipamentos afetados."
    ],
-   "title_original": "Palo Alto confirms Fragnesia exploitation against firewalls in PHP2Shell attacks",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mitiga o risco de compromisso total de firewalls corporativas expostas na linha da frente.",
    "todo": "Nunca exponha a interface de gestão dos seus equipamentos de rede à internet e aplique imediatamente os patches disponibilizados."
@@ -398,9 +488,9 @@
     "Como: Atacantes remotos executam comandos arbitrários.",
     "Impacto: Perfeita tomada de controlo do sistema com privilégios de root."
    ],
-   "title_original": "Critical Juniper Session Smart Conductor Flaw Exploited in Attacks",
+   "title_original": null,
    "category": "Vulnerabilidade",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Imede o acesso total de intrusos a infraestruturas de rede críticas.",
    "todo": "Aplique as correções de segurança recomendadas pelo fabricante para esta falha de forma urgente."
@@ -13675,97 +13765,6 @@
    "enriched": true,
    "why": "Mostra como vulnerabilidades em fornecedores terceiros podem expor dados sensíveis de clientes de grandes empresas.",
    "todo": "Monitorize a sua atividade e desconfie de mensagens ou contactos inesperados que utilizem os seus dados pessoais."
-  },
-  {
-   "id": "5b364ed36dab9469",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/industry-reactions-to-major-outages-and-ai-patching-questions-feedback-friday/",
-   "published": "2026-11-20T12:38:55+00:00",
-   "title": "Reações da Indústria a Grandes Falhas e Questões de Correção com IA: Feedback Friday",
-   "summary": "Especialistas discutiram recentemente o impacto potencial da automação de correções por inteligência artificial em incidentes graves. Foram também destacados o valor de planos de reversão devidamente testados e a vulnerabilidade inerente aos sistemas altamente interconectados atuais. O debate focou-se na resiliência operacional face a falhas sistémicas complexas.",
-   "image": null,
-   "points": [
-    "Especialistas debateram o papel da IA em correções rápidas.",
-    "Destacou-se a necessidade de planos de reversão testados.",
-    "Alertou-se para a fragilidade de sistemas interconectados."
-   ],
-   "title_original": "Industry Reactions to Major Outages and AI Patching Questions: Feedback Friday",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Ajuda as organizações a prepararem melhor os seus sistemas contra falhas em cadeia.",
-   "todo": "Teste regularmente os planos de reversão e garanta redundância nos sistemas interligados."
-  },
-  {
-   "id": "56d6acf1943fbd7c",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/20/vmware-vcenter-zero-day-cve-2026-123890-exploited/",
-   "published": "2026-11-20T12:30:19+00:00",
-   "title": "Zero-day do VMware vCenter explorado durante meses antes da correção (CVE-2026-123890)",
-   "summary": "Um grupo de espionagem ligado à China, denominado Armory Castle, explorou ativamente uma vulnerabilidade zero-day no VMware vCenter desde o início de setembro. A falha, catalogada como CVE-2026-123890 com uma pontuação CVSS de 9.8, permite a invasores remotos não autenticados obterem sessões de administrador. A Broadcom acabou por lançar uma atualização de segurança para corrigir o problema.",
-   "image": null,
-   "points": [
-    "Grupo Armory Castle explorou falha zero-day no VMware vCenter.",
-    "Vulnerabilidade CVE-2026-123890 tem pontuação CVSS máxima de 9.8.",
-    "Permite acesso de administrador remoto sem autenticação.",
-    "Broadcom disponibilizou uma correção para o problema."
-   ],
-   "title_original": "VMware vCenter zero-day exploited for months before patch (CVE-2026-123890)",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permitia o acesso total não autorizado a servidores virtuais críticos das empresas.",
-   "todo": "Aplique imediatamente as atualizações de segurança fornecidas pela Broadcom para o vCenter."
-  },
-  {
-   "id": "f80afcc478575741",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
-   "published": "2026-11-20T12:20:00+00:00",
-   "title": "Falha no KVM do Linux (CVE-2026-99312) permite que VMs convidadas acedam à memória do anfitrião em sistemas AMD",
-   "summary": "Investigadores descobriram uma falha no hipervisor KVM do núcleo Linux que permitia ler cerca de 127 GB de memória de servidores em nuvem a partir de uma máquina virtual própria. A vulnerabilidade afeta exclusivamente servidores anfitriões com processadores AMD e com a virtualização aninhada ativada, podendo expor dados de outros clientes em ambientes partilhados. Os kernels corrigidos já foram disponibilizados.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg-jisyf4SWwWYA_RUtOoVqBviv2uNAUl6vEeGjsuBA0aOhfLYw7yHitbRBxAoWcf5ZP0UcGovNmyk-u-320fLFYIyUz7jtR77GiveyLdqsZWJ0DohwBfEFyN0KlNAIpIcpS9B6jHEZJybmTu7nuKM-PhSNPco-Z1QmacaSfwWyOWLXzT2WqaEdbZ810M/s1600/vms.jpg",
-   "points": [
-    "Falha CVE-2026-99312 afeta o hipervisor KVM em sistemas Linux.",
-    "Permitia a leitura de memória do anfitrião a partir de VMs.",
-    "Apenas afeta anfitriões com processadores AMD e virtualização aninhada.",
-    "Kernel com a correção já se encontra disponível."
-   ],
-   "title_original": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Comprometia o isolamento de dados entre diferentes clientes em servidores cloud partilhados.",
-   "todo": "Atualize o kernel do Linux nos servidores afetados com processadores AMD."
-  },
-  {
-   "id": "63ce2dd9ff54afb6",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/20/uk-government-cant-keep-its-encryption-busting-order-to-apple-a-secret-tribunal-rules/5311292",
-   "published": "2026-11-20T12:18:19+00:00",
-   "title": "Tribunal decide que o governo britânico não pode manter em segredo ordem de encriptação dirigida à Apple",
-   "summary": "O Tribunal de Poderes Investigatórios confirmou que o governo britânico emitiu uma Notificação de Capacidade Técnica secreta à Apple para exigir acesso a dados encriptados do iCloud. A medida levou a empresa a revogar a Proteção Avançada de Dados para utilizadores no Reino Unido. Face à pressão e a relatórios públicos, os EUA opuseram-se à exigência por afetar os seus cidadãos. Posteriormente, o governo britânico acabou por retirar a diretiva.",
-   "image": "https://image.theregister.com/?imageId=5220278&width=800",
-   "points": [
-    "O governo britânico emitiu uma ordem secreta à Apple para aceder a dados do iCloud.",
-    "A Apple revogou a Proteção Avançada de Dados no Reino Unido devido à pressão legal.",
-    "Políticos norte-americanos opuseram-se à medida por riscos à privacidade de cidadãos dos EUA.",
-    "O tribunal rejeitou o argumento de segurança nacional e confirmou a existência da diretiva."
-   ],
-   "title_original": "UK government can't keep its encryption-busting order to Apple a secret, tribunal rules",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra o conflito global entre as exigências de vigilância governamental e a privacidade dos dados encriptados dos utilizadores.",
-   "todo": "Utiliza sempre definições de segurança robustas e monitoriza alterações nas funcionalidades de privacidade das tuas plataformas."
   }
  ]
 }

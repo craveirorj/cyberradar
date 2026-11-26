@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-26T21:26:31.586231+00:00",
+ "updated": "2026-11-26T21:46:45.017413+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "IT Security",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 8
+   "added": 9
   },
   {
    "source": "Help Net Security",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -309,15 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 183,
-  "unenriched": 86,
+  "done": 120,
+  "pending": 171,
+  "unenriched": 74,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 41 column 5 (char 3571)"
+   "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "ebb1d8002dd86e97",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/10-dicas-como-se-proteger-de-golpes-na-black-friday/",
+   "published": "2026-11-26T21:30:00+00:00",
+   "title": "10 dicas: como se proteger de golpes na Black Friday",
+   "summary": "Durante a época da Black Friday, o TecMundo reuniu um conjunto de recomendações práticas para ajudar os consumidores a evitar fraudes financeiras e roubo de dados. As orientações incluem desconfiar de links recebidos por canais de mensagens, verificar a reputação das lojas e ter cautela com pagamentos via Pix e descontos exagerados. O objetivo é mitigar o impacto de esquemas fraudulentos e páginas falsas criadas para enganar compradores. Os utilizadores devem adotar uma postura vigilante e comparar preços reais antes de finalizar qualquer aquisição.",
+   "image": "https://www.estadao.com.br/resizer/v2/7ZMGX6GTZRF2HDJPUJL6DJF45Q.jpg?quality=80&auth=36b5822237d79d10344c1d79dd46f84759638b376c357f4d54d9864b14600ad8&width=710",
+   "points": [
+    "Desconfie de links suspeitos recebidos por WhatsApp ou SMS.",
+    "Consulte a reputação de lojas e CNPJ antes de comprar.",
+    "Utilize cartões de crédito virtuais temporários para maior segurança.",
+    "Confirme sempre o endereço real dos sites de comércio eletrónico."
+   ],
+   "title_original": null,
+   "category": "Phishing/Fraude",
+   "translated": false,
+   "enriched": true,
+   "why": "Ajuda os consumidores a evitarem fraudes e roubo de dados durante o período de maior volume de compras online.",
+   "todo": "Verifique a reputação das lojas e desconfie de ofertas excessivamente baratas ou links desconhecidos."
+  },
   {
    "id": "e0bf93ab8a32087a",
    "source": "BleepingComputer",
@@ -13738,28 +13761,6 @@
    "enriched": true,
    "why": "Evidencia como as ferramentas de IA open-source estão a ser usadas por atacantes para descobrir vulnerabilidades críticas.",
    "todo": "Audite regularmente o software de terceiros e aplique patches de segurança assim que forem disponibilizados."
-  },
-  {
-   "id": "cd038ca0a29b9504",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day",
-   "published": "2026-11-20T17:30:00+00:00",
-   "title": "Amazon afirma que piratas informáticos chineses usaram ferramenta de IA Cairn para descobrir aparente zero-day em ataque a universidade",
-   "summary": "Um grupo de piratas informáticos com ligações à China utilizou a ferramenta de testes de intrusão Cairn para atacar persistentemente duas universidades. Segundo investigadores da Amazon, os atacantes aproveitaram as capacidades da IA para tentar quebrar defesas e, num dos casos, possivelmente descobrir uma vulnerabilidade zero-day. A operação destaca a adoção de ferramentas de inteligência artificial por parte de cibercriminosos avançados. A investigação revelou detalhes sobre os métodos automatizados empregues.",
-   "image": "https://cms.therecord.media/uploads/ai_planet_volumes_unsplash_79b8f00a24.jpg",
-   "points": [
-    "Atacantes com ligações à China atacaram duas universidades.",
-    "Foi utilizada a ferramenta de testes de penetração baseada em IA Cairn.",
-    "A ferramenta foi usada para ataques persistentes e possível descoberta de falhas zero-day."
-   ],
-   "title_original": "Amazon says Chinese hackers used Cairn AI tool to discover apparent zero-day during attack on university",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Ilustra o interesse de grupos apoiados por Estados em explorar tecnologias de IA para conduzir ataques sofisticados.",
-   "todo": "Proteja os servidores expostos à internet e reforce a monitorização de acessos a redes universitárias ou empresariais."
   }
  ]
 }

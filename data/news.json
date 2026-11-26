@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T08:07:05.614068+00:00",
+ "updated": "2026-11-26T08:26:52.312605+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -89,7 +89,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 21
+   "added": 20
   },
   {
    "source": "SecurityWeek",
@@ -310,11 +310,11 @@
  "translation": {
   "provider": "gemini",
   "done": 108,
-  "pending": 201,
+  "pending": 202,
   "unenriched": 101,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting value: line 21 column 7 (char 1792)"
+   "Expecting property name enclosed in double quotes: line 84 column 5 (char 6864)"
   ]
  },
  "items": [
@@ -334,12 +334,35 @@
     "Objetivo: Recolha de inteligência para Teerão.",
     "Impacto: Aumento do risco de espionagem cibernética."
    ],
-   "title_original": "Cyprus Becomes Espionage Target for Iranian Hackers",
+   "title_original": null,
    "category": "Ataque/APT",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra como novos grupos de espionagem patrocinados por estados expandem os seus alvos geográficos.",
    "todo": "Monitorize o tráfego de rede para detetar padrões anómalos de comunicação com infraestruturas estrangeiras desconhecidas."
+  },
+  {
+   "id": "4388262e10c6e7b3",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/lojas-falsas-lideram-golpes-antes-da-black-friday/",
+   "published": "2026-11-26T08:00:00+00:00",
+   "title": "Lojas falsas lideram golpes antes da Black Friday",
+   "summary": "As lojas falsas e as promoções enganosas lideraram as suspeitas de fraudes digitais em outubro de 2026, segundo dados da assistente EVA, da EXA. O pico das suspeitas ocorreu na semana do Dia das Crianças, atingindo 38% das interações analisadas via WhatsApp. Os golpistas aproveitam as datas promocionais para pressionar os compradores a adquirir produtos à pressa. O impacto afeta os consumidores que caem em esquemas fraudulentos durante períodos de grande atividade comercial.",
+   "image": "https://www.estadao.com.br/resizer/v2/Z227PTPW4BCHVFOD45DXJBAOXE.png?quality=80&auth=a79f1b388ceea2f2010ec2ddbc7de83f8a565ca9818242e0b13c782e2c7cb7bc&width=710",
+   "points": [
+    "Lojas e promoções falsas lideraram as suspeitas de fraude em outubro de 2026.",
+    "O pico de 38% ocorreu na semana do Dia das Crianças.",
+    "Golpistas usam a urgência para enganar os compradores em épocas promocionais.",
+    "A maioria das dúvidas ocorreu fora do horário comercial."
+   ],
+   "title_original": null,
+   "category": "Phishing/Fraude",
+   "translated": false,
+   "enriched": true,
+   "why": "Mostra como os atacantes exploram épocas festivas e de saldos para enganar rapidamente os consumidores.",
+   "todo": "Desconfie de promoções exageradas, verifique sempre a autenticidade das lojas online e evite comprar sob pressão."
   },
   {
    "id": "457c08cf27ea6f55",
@@ -13749,29 +13772,6 @@
    "enriched": true,
    "why": "A utilização de binários assinados torna estes ataques mais difíceis de detetar por soluções de segurança tradicionais.",
    "todo": "Mantenha o software atualizado e utilize soluções de segurança que detetem comportamentos anómalos, não apenas assinaturas de ficheiros."
-  },
-  {
-   "id": "dc6901c8a6d8ff52",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
-   "published": "2026-11-20T06:33:31+00:00",
-   "title": "Hackers ligados à China exploram vulnerabilidade zero-day crítica no VMware vCenter para obter acesso de administrador e roubar dados",
-   "summary": "O grupo de ciberespionagem Armory Castle explorou uma falha de segurança zero-day no VMware vCenter Server no início de setembro de 2026. A vulnerabilidade, identificada como CVE-2026-123890 com uma pontuação CVSS de 9.8, consiste num bypass de autenticação no VMware Directory Service. Esta falha permitiu aos atacantes obter acesso não autorizado para comprometer os sistemas afetados e extrair dados sensíveis. O impacto afeta a integridade e confidencialidade das infraestruturas empresariais que utilizam este software.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTSAI-N-DRII1YA3I98ZVnKnG0SMgm97oEAqyiSXZB23DPwzvTk3figFLsTCKsMJRxRhjKEPFblxfcOuB_UXc_OAXJRiVI07Jxjn-CebJVHiRQ5sc43AifBpUPNfU5-LRD6QEGbX7Vnt_HAmJZiLojS32PtNWwIWeideJZnIpgjrstJ0Iy84lYd47bePk/s1600/chinese-vmware.jpg",
-   "points": [
-    "O grupo Armory Castle explorou uma falha zero-day no VMware vCenter Server.",
-    "A vulnerabilidade CVE-2026-123890 possui uma pontuação CVSS de 9.8.",
-    "O vetor de ataque envolveu um bypass de autenticação no VMware Directory Service.",
-    "Os atacantes obtiveram acesso administrativo para roubar dados confidenciais."
-   ],
-   "title_original": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite que atacantes obtenham controlo administrativo total sobre servidores críticos através de uma falha de gravidade máxima.",
-   "todo": "Atualize imediatamente o VMware vCenter Server com os patches de segurança disponibilizados pelo fabricante."
   }
  ]
 }

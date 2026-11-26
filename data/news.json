@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T08:26:52.312605+00:00",
+ "updated": "2026-11-26T08:46:51.884531+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CISA Advisories",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -314,10 +314,33 @@
   "unenriched": 101,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 84 column 5 (char 6864)"
+   "Expecting value: line 5 column 10 (char 128)"
   ]
  },
  "items": [
+  {
+   "id": "84ce059e91edb937",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/1password-breach-exposes-customer-data-internal-source-code/",
+   "published": "2026-11-26T08:32:10+00:00",
+   "title": "1Password Breach Exposes Customer Data, Internal Source Code",
+   "summary": "Um hacker comprometeu a conta GitHub de um colaborador da 1Password para injetar código malicioso e roubar registos de clientes. Apesar do incidente, os cofres com dados sensíveis dos utilizadores não foram acedidos. O ataque afetou a segurança interna da empresa ao expor código-fonte e dados de clientes.",
+   "image": null,
+   "points": [
+    "O quê: Violação de segurança que expôs dados de clientes e código-fonte.",
+    "Como: Utilização de uma conta GitHub comprometida de um funcionário.",
+    "Impacto: Roubo de registos de clientes e inserção de código malicioso.",
+    "Âmbito: Os cofres de dados dos utilizadores não foram acedidos."
+   ],
+   "title_original": "1Password Breach Exposes Customer Data, Internal Source Code",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que mesmo empresas de segurança robustas podem ser comprometidas através de contas de colaboradores.",
+   "todo": "Ative a autenticação multifator (MFA) em todas as contas de desenvolvimento e monitorize o acesso a repositórios de código."
+  },
   {
    "id": "dd168b1ec489e2d2",
    "source": "Dark Reading",
@@ -13749,29 +13772,6 @@
    "enriched": true,
    "why": "Demonstra como a segurança de uma empresa depende da resiliência dos seus parceiros e fornecedores.",
    "todo": "Avalie regularmente a postura de segurança dos seus fornecedores e limite o acesso a dados sensíveis ao estritamente necessário."
-  },
-  {
-   "id": "ba74506a96acc2d3",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
-   "published": "2026-11-20T07:11:39+00:00",
-   "title": "Ataques ROMULUS ClickFix distribuem RAT para espionar utilizadores e controlar PCs",
-   "summary": "Cibercriminosos estão a utilizar a plataforma ROMULUS ClickFix para disseminar um novo trojan de acesso remoto (RAT). Este malware partilha semelhanças com o CNCMachineRMS e permite o controlo total dos computadores infetados. A técnica envolve o uso de binários assinados para contornar defesas. O objetivo é a espionagem e a tomada de controlo de sistemas.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjugg63OPJwZuh94vDIg7MkA4YoeLKr5sjiqI6CEgjvDjUvJ-pBJOfUrUBxPUTbartqVwdldczbKSYo6lpkcVic1EDQYIDyWq12zMdMONjpDtK4NKCgkppAWvnOJpXe7prfmRG8WNpH0RrQ0bhX2nZKGpRy33y0OMZraBjEPoDorp9h3kNJSa-IQrJC7Nl5/s1600/cf.jpg",
-   "points": [
-    "Plataforma ROMULUS ClickFix usada para ataques.",
-    "Novo RAT permite espionagem e controlo remoto.",
-    "Utiliza técnicas de sideloading de binários assinados.",
-    "Semelhanças com o malware CNCMachineRMS."
-   ],
-   "title_original": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "A utilização de binários assinados torna estes ataques mais difíceis de detetar por soluções de segurança tradicionais.",
-   "todo": "Mantenha o software atualizado e utilize soluções de segurança que detetem comportamentos anómalos, não apenas assinaturas de ficheiros."
   }
  ]
 }

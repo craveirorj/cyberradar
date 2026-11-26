@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-26T17:26:40.094662+00:00",
+ "updated": "2026-11-26T17:46:53.288719+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "IT Security",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -119,7 +119,7 @@
   {
    "source": "TechCrunch Security",
    "ok": true,
-   "added": 7
+   "added": 8
   },
   {
    "source": "Ars Technica Security",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 1
   },
   {
    "source": "The Hacker News",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "ACSC Austrália",
@@ -310,13 +310,36 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 170,
-  "unenriched": 72,
+  "pending": 171,
+  "unenriched": 74,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "1fab220044e3092e",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/fifa-confirma-que-sofreu-ciberataque-e-acesso-nao-autorizado/",
+   "published": "2026-11-26T17:17:00+00:00",
+   "title": "Fifa confirma que sofreu ciberataque e acesso não autorizado; confira o que pode ter vazado",
+   "summary": "A Fifa foi alvo de um ciberataque recente que resultou num acesso não autorizado a dados pessoais e empresariais. Uma federação confirmou oficialmente o incidente através de um comunicado e está a colaborar com as autoridades para investigar a situação. Postagens na rede social X e relatos apontam que um grupo chamado Handsome Boy Hacking Club poderá estar por trás do roubo de cerca de 12 GB de documentos. O impacto inclui a potencial exposição de informações confidenciais, financeiras e de imigração dos indivíduos envolvidos.",
+   "image": "https://www.estadao.com.br/resizer/v2/BUPOXA7GDNCTTIZFNRHYKUG4TA.jpg?quality=80&auth=c889051955c5b467799ee390e95f29a0d10c2913c4c5dbeb4fa0f733a7af943e&width=710",
+   "points": [
+    "A Fifa sofreu uma invasão criminosa com acesso não autorizado a dados.",
+    "O grupo Handsome Boy Hacking Club é apontado como o provável autor.",
+    "Cerca de 12 GB de dados pessoais, financeiros e de imigração foram visados.",
+    "A entidade condena o roubo e colabora com as autoridades na investigação."
+   ],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": true,
+   "why": "Mostra que até grandes organizações desportivas são alvo de ataques que comprometem dados sensíveis.",
+   "todo": "Monitorize regularmente os acessos aos sistemas e adote políticas rigorosas de proteção de dados e privacidade."
+  },
   {
    "id": "42756c94ced72ba9",
    "source": "BleepingComputer",
@@ -339,6 +362,28 @@
    "enriched": true,
    "why": "Porque ameaça as credenciais de acesso corporativo a serviços essenciais através de esquemas sofisticados de impersonação.",
    "todo": "Desconfie de convites inesperados para entrevistas ou webinars e verifique sempre os canais oficiais das marcas."
+  },
+  {
+   "id": "f15e463bcbac11cf",
+   "source": "HackRead",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://hackread.com/facebook-ads-fake-wallpapers-sys010-malware-windows/",
+   "published": "2026-11-26T17:09:09+00:00",
+   "title": "Anúncios do Facebook para papéis de parede falsos propagam malware SYS010 no Windows",
+   "summary": "Anúncios de papéis de parede animados falsos no Facebook estão a ser utilizados para distribuir um malware direcionado a contas empresariais na plataforma Meta. Esta ameaça afeta computadores com o sistema operativo Windows e tem como principal objetivo o roubo de dados corporativos. A estratégia aproveita-se de canais publicitários legítimos para atrair vítimas desatentas. O impacto recai sobre a segurança das contas de empresas geridas através da rede social.",
+   "image": null,
+   "points": [
+    "Anúncios falsos de papéis de parede no Facebook espalham malware.",
+    "A ameaça foca-se em contas empresariais da Meta no Windows.",
+    "O objetivo principal dos criminosos é o roubo de dados sensíveis."
+   ],
+   "title_original": "Facebook Ads for Fake Wallpapers Spread SYS010 Malware on Windows",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "Ilustra como os atacantes abusam de plataformas de anúncios legítimos para infetar utilizadores e empresas.",
+   "todo": "Evite descarregar software ou ficheiros promocionais de fontes desconhecidas em redes sociais."
   },
   {
    "id": "8399c78e0a541262",
@@ -13714,50 +13759,6 @@
    "enriched": true,
    "why": "Mostra como os atacantes exploram funcionalidades de aplicações de mensagens para aumentar a eficácia de fraudes.",
    "todo": "Atualize imediatamente a aplicação WhatsApp para garantir que tem a correção de segurança mais recente."
-  },
-  {
-   "id": "bbc19bb6f991b9cb",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/",
-   "published": "2026-11-20T15:58:06+00:00",
-   "title": "Violação de dados em fornecedor expõe informações de clientes da Chase, Visa e Mastercard",
-   "summary": "O J.P. Morgan Chase emitiu um aviso após sofrer uma violação de dados resultante de um ataque cibernético a um fornecedor externo de serviços. O incidente expôs informações pessoais e dados de marketing de vários clientes das instituições financeiras envolvidas. As empresas afetadas estão a lidar com as consequências desta falha de segurança na cadeia de abastecimento digital.",
-   "image": null,
-   "points": [
-    "O J.P. Morgan Chase sofreu uma violação de dados através de um fornecedor externo.",
-    "O incidente expôs informações pessoais e dados de marketing de clientes.",
-    "Clientes de empresas como Visa e Mastercard também foram afetados pelo ataque ao fornecedor."
-   ],
-   "title_original": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Sublinha o risco crítico associado à segurança de fornecedores terceiros na cadeia de abastecimento empresarial.",
-   "todo": "Exija rigorosos padrões de cibersegurança a parceiros externos e fornecedores que tenham acesso aos seus dados."
-  },
-  {
-   "id": "c85ee54b43abeb95",
-   "source": "Cybersecurity Dive",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cybersecuritydive.com/news/jpmorgan-visa-customer-data-leaked-third-party-hacks/875333/",
-   "published": "2026-11-20T15:52:41+00:00",
-   "title": "JPMorgan e Visa confirmam roubo de dados de clientes em ataques a fornecedores terceiros",
-   "summary": "As empresas envolvidas confirmaram que dados de clientes foram comprometidos na sequência de incidentes de segurança em fornecedores terceiros. Foi esclarecido que estas violações de dados não estão relacionadas com a recente vaga de perturbações tecnológicas registadas noutros contextos. As investigações continuam a apurar o impacto total do roubo de informação.",
-   "image": "https://imgproxy.divecdn.com/xcjjt5ZKChnr0BkiYQlxWWblzyLtC5Kss8gArq0eZlw/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xNDQ2MjEwNzg5LmpwZw==.webp",
-   "points": [
-    "JPMorgan e Visa confirmaram a ocorrência de roubo de dados de clientes.",
-    "Os ataques afetaram fornecedores de serviços externos às instituições.",
-    "As empresas asseguraram que os incidentes não estão ligados a falhas tecnológicas recentes."
-   ],
-   "title_original": "JPMorgan, Visa confirm customer data taken in third-party vendor hacks",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Reforça a necessidade de auditar regularmente a postura de segurança dos parceiros tecnológicos com quem partilha dados.",
-   "todo": "Monitore contas financeiras regularmente e ative alertas para transações inesperadas."
   }
  ]
 }

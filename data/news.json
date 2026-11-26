@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T21:46:45.017413+00:00",
+ "updated": "2026-11-26T22:06:46.575399+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -340,6 +340,29 @@
    "enriched": true,
    "why": "Ajuda os consumidores a evitarem fraudes e roubo de dados durante o período de maior volume de compras online.",
    "todo": "Verifique a reputação das lojas e desconfie de ofertas excessivamente baratas ou links desconhecidos."
+  },
+  {
+   "id": "461aa9f4741cedf4",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/falha-da-microsoft-expoe-segredos-de-empresas-de-energia-da-europa/",
+   "published": "2026-11-26T21:30:00+00:00",
+   "title": "Falha da Microsoft expõe segredos de empresas de energia da Europa",
+   "summary": "Cibercriminosos exploraram uma falha crítica no serviço Azure API Management para roubar credenciais e executar tarefas administrativas em empresas de energia na Noruega. A Microsoft aplicou uma correção automática e recomendou que os clientes investiguem invasões anteriores. A vulnerabilidade afetou organizações como a Equinor e a Skagerak Energi que utilizavam versões antigas do serviço. O problema ocorreu porque os utilizadores armazenaram segredos digitais diretamente na plataforma em vez de recorrerem a um cofre virtual seguro.",
+   "image": "https://www.estadao.com.br/resizer/v2/WQ3YGMBUG5E2BIBYX5INUID3TQ.png?quality=80&auth=e4417fa87c8e626f3880946fd215363650e9f2e7404feadad509d4ab792f10e2&width=710",
+   "points": [
+    "Quem: Cibercriminosos e empresas de energia norueguesas como a Equinor.",
+    "O quê: Exploração de falha crítica no Azure API Management da Microsoft.",
+    "Como: Roubo de credenciais devido ao armazenamento incorreto de segredos na plataforma.",
+    "Impacto: Acesso indevido a redes corporativas e risco de ataques profundos."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "A falha permitiu o roubo de chaves e credenciais críticas, abrindo portas para invasões profundas em infraestruturas essenciais de energia.",
+   "todo": "Utilize cofres virtuais seguros, como o Azure Key Vault, para guardar segredos e siga estritamente as regras de proteção de rede recomendadas."
   },
   {
    "id": "e0bf93ab8a32087a",
@@ -13739,28 +13762,6 @@
    "enriched": true,
    "why": "Mostra que os ataques informáticos automatizados por inteligência artificial e capazes de descobrir falhas já estão a acontecer.",
    "todo": "Mantenha os sistemas e aplicações atualizados e monitorize o tráfego de rede para detetar padrões de ataque automatizados."
-  },
-  {
-   "id": "0abe4221510a96d0",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/",
-   "published": "2026-11-20T17:30:00+00:00",
-   "title": "Piratas informáticos usam ferramenta de IA autónoma Cairn para encontrar zero-day e assumir controlo de servidor",
-   "summary": "Cibercriminosos utilizaram a framework de testes de intrusão em inteligência artificial Cairn para detetar uma vulnerabilidade inédita numa aplicação de imagem médica. O uso desta ferramenta permitiu aos atacantes conduzir operações automatizadas sem assistência humana direta. A exploração desta falha culminou na tomada de controlo de um servidor. O incidente evidencia os riscos crescentes do uso de IA em ataques informáticos.",
-   "image": null,
-   "points": [
-    "Atacantes usaram a ferramenta de IA Cairn para fins maliciosos.",
-    "Foi detetada uma vulnerabilidade desconhecida numa aplicação de imagem médica.",
-    "A exploração resultou na tomada de controlo bem-sucedida de um servidor."
-   ],
-   "title_original": "Hackers use autonomous AI tool Cairn to find zero-day, take over server",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia como as ferramentas de IA open-source estão a ser usadas por atacantes para descobrir vulnerabilidades críticas.",
-   "todo": "Audite regularmente o software de terceiros e aplique patches de segurança assim que forem disponibilizados."
   }
  ]
 }

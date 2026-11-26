@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-26T12:28:10.710577+00:00",
+ "updated": "2026-11-26T12:47:33.365450+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
@@ -234,7 +234,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 16
+   "added": 15
   },
   {
    "source": "The Register Security",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -309,14 +309,61 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 173,
-  "unenriched": 82,
+  "done": 108,
+  "pending": 185,
+  "unenriched": 93,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "0109f789cb007359",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/hugging-face-ai-builder-phishing/",
+   "published": "2026-11-26T12:30:00+00:00",
+   "title": "Criminosos abusam do construtor de sites de IA da Hugging Face para falsificar grandes marcas",
+   "summary": "A empresa Aikido descobriu 42 páginas de phishing alojadas no Hugging Face Spaces, sendo que dois terços foram criados com recurso à ferramenta de construção de sites por inteligência artificial da plataforma. Os atacantes utilizaram esta funcionalidade para imitar marcas de grande notoriedade e enganar os utilizadores. Este aproveitamento indevido demonstra como as ferramentas automatizadas de IA podem ser usadas maliciosamente para criar campanhas de engenharia social credíveis. O impacto traduz-se no risco acrescido de roubo de credenciais e dados pessoais dos utilizadores que acedem a estas páginas falsas.",
+   "image": null,
+   "points": [
+    "A Aikido detetou 42 páginas de phishing no Hugging Face Spaces.",
+    "Dois terços das páginas maliciosas foram criadas com o construtor de sites por IA da plataforma.",
+    "Os atacantes utilizaram os sites falsos para imitar grandes marcas conhecidas.",
+    "O impacto inclui o risco de roubo de dados e credenciais de utilizadores desatentos."
+   ],
+   "title_original": "Phishers Abuse Hugging Face's AI Site Builder to Spoof Big Brands",
+   "category": "Phishing/Fraude",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como ferramentas legítimas de criação baseadas em IA podem ser facilmente desviadas para criar páginas de phishing convincentes à escala.",
+   "todo": "Verifique sempre os URLs oficiais antes de inserir credenciais e mantenha soluções de segurança atualizadas para bloquear acessos a domínios fraudulentos."
+  },
+  {
+   "id": "c1505f8746ace765",
+   "source": "Malwarebytes Labs",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.malwarebytes.com/blog/ai/2026/11/why-new-york-is-banning-ai-chatbot-toys",
+   "published": "2026-11-26T12:20:27+00:00",
+   "title": "Porque é que Nova Iorque vai proibir brinquedos com chatbots de IA",
+   "summary": "O estado de Nova Iorque aprovou uma proibição de cinco anos sobre o fabrico, distribuição e venda de brinquedos infantis equipados com assistentes de inteligência artificial integrados. A lei, assinada pela governadora Kathy Hochul, surge após testes de fundos de consumidores revelarem que alguns bonecos e robôs recomendados para crianças discutiam temas sexualmente explícitos ou davam orientações perigosas. Esta medida preventiva pretende proteger os menores de interações inadequadas ou nocivas geradas por sistemas automatizados. O impacto foca-se na regulação e restrição imediata da comercialização destes produtos tecnológicos no mercado de Nova Iorque.",
+   "image": null,
+   "points": [
+    "Nova Iorque decretou uma proibição de cinco anos sobre brinquedos infantis com IA.",
+    "Testes demonstraram que alguns brinquedos abordavam temas sexuais ou davam conselhos perigosos a crianças.",
+    "A lei abrange peluches, bonecas e robôs interativos ligados à internet.",
+    "O objetivo é proteger os menores contra conteúdos inadequados gerados por chatbots."
+   ],
+   "title_original": "Why New York is banning AI chatbot toys",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Evita que crianças sejam expostas a conteúdos impróprios ou conselhos perigosos gerados por brinquedos inteligentes insuficientemente regulados.",
+   "todo": "Antes de adquirir brinquedos com componentes conectados, consulte avaliações de segurança independentes e verifique se é possível desativar as funções de IA."
+  },
   {
    "id": "c01f0716c009d410",
    "source": "Security Affairs",
@@ -13036,9 +13083,9 @@
     "O quê: Violação de dados através de terceiros.",
     "Impacto: Fuga e publicação de dados de clientes na dark web."
    ],
-   "title_original": "JPMorgan Confirms Customer Data Breach Following Third-Party Compromise",
+   "title_original": null,
    "category": "Ransomware",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra como falhas em fornecedores terceiros podem expor dados críticos de clientes em grandes instituições.",
    "todo": "Audite regularmente a segurança de fornecedores terceiros e restrinja os acessos privilegiados a sistemas externos."
@@ -13722,52 +13769,6 @@
    "enriched": true,
    "why": "Alerta para falhas críticas que estão a ser ativamente usadas por cibercriminosos.",
    "todo": "Consulte o catálogo KEV e aplique patches de segurança prioritários nos softwares afetados."
-  },
-  {
-   "id": "82d038c6d3891970",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/mail-bombing-attacks-it-helpdesk/",
-   "published": "2026-11-20T11:55:00+00:00",
-   "title": "Mail Bombing Attacks Fuel IT Helpdesk Impersonation Scams",
-   "summary": "Investigadores descobriram uma campanha em larga escala onde os atacantes inundam caixas de correio eletrónico com mensagens em massa. De seguida, fazem-se passar por funcionários do suporte técnico de IT para enganar os utilizadores e obter acesso às respetivas contas. Esta tática combina ataques de negação de serviço na caixa de entrada com engenharia social direcionada. O impacto principal traduz-se no comprometimento de contas de utilizador devido à falsa identidade de suporte.",
-   "image": null,
-   "points": [
-    "Atacantes inundam caixas de correio com emails em massa.",
-    "Crimisuosos fingem ser funcionários do suporte técnico de IT.",
-    "O objetivo é enganar os utilizadores para obter acesso às contas.",
-    "O impacto resulta no roubo de credenciais e acesso não autorizado."
-   ],
-   "title_original": null,
-   "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como os atacantes combinam volume de tráfego com engenharia social para roubar acessos.",
-   "todo": "Desconfie de contactos inesperados do suporte técnico e valide sempre a identidade do remetente através de canais oficiais."
-  },
-  {
-   "id": "3827cbac510e9c51",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/sbc-medical-group-data-breach-impacts-over-2-million/",
-   "published": "2026-11-20T11:36:51+00:00",
-   "title": "Violação de dados no SBC Medical Group afeta mais de 2 milhões de pessoas",
-   "summary": "Atores maliciosos conseguiram aceder a bases de dados que continham informações de clientes ligadas a clínicas no Japão. Este incidente resultou na exposição de dados sensíveis de mais de dois milhões de pessoas. A situação demonstra os riscos persistentes a que as infraestruturas de saúde e clínicas estão expostas perante ataques cibernéticos. O acesso não autorizado comprometeu a privacidade dos utentes afetados.",
-   "image": null,
-   "points": [
-    "Quem: Atores maliciosos e SBC Medical Group.",
-    "O quê: Acesso não autorizado a bases de dados com informação de clientes.",
-    "Onde: Clínicas associadas no Japão.",
-    "Impacto: Mais de dois milhões de pessoas afetadas pela violação de dados."
-   ],
-   "title_original": "SBC Medical Group Data Breach Impacts Over 2 Million",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como o setor da saúde continua a ser um alvo prioritário para o roubo massivo de dados de clientes.",
-   "todo": "Monitorize regularmente os acessos às bases de dados e reforce as políticas de autenticação e encriptação de dados sensíveis."
   }
  ]
 }

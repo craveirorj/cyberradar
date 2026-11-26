@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-26T12:47:33.365450+00:00",
+ "updated": "2026-11-26T13:05:55.257034+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "IT Security",
@@ -149,7 +149,7 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 8
+   "added": 7
   },
   {
    "source": "Microsoft Security Blog",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -309,15 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 185,
-  "unenriched": 93,
+  "done": 24,
+  "pending": 268,
+  "unenriched": 177,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "Expecting ':' delimiter: line 64 column 3 (char 5164)"
   ]
  },
  "items": [
+  {
+   "id": "04fe40120dba23f2",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/26/keenadu-malware-android-devices/",
+   "published": "2026-11-26T12:57:58+00:00",
+   "title": "Malware Keenadu pré-instalado afeta mais de 220.000 dispositivos Android",
+   "summary": "A Kaspersky detetou que novos telemóveis Android chegam ao mercado com malware integrado no firmware, sendo as famílias Keenadu e Triada as principais responsáveis por estas infeções. A Keenadu infetou mais de 220.000 dispositivos nos primeiros dez meses do ano. Juntamente com a Triada, estas ameaças estiveram presentes em 88% dos aparelhos afetados. Este problema compromete a segurança dos utilizadores logo após a compra do equipamento.",
+   "image": null,
+   "points": [
+    "Novos telemóveis Android vendidos com malware pré-instalado no firmware.",
+    "As famílias Keenadu e Triada lideram a maioria das infeções detetadas.",
+    "A Keenadu atingiu mais de 220.000 dispositivos em dez meses."
+   ],
+   "title_original": "Preinstalled Keenadu malware turns up on 220,000+ Android devices",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como a cadeia de fornecimento de hardware pode comprometer a segurança dos utilizadores logo na compra.",
+   "todo": "Verifique a integridade do dispositivo e atualize o sistema operativo e as aplicações de segurança assim que ligar um telemóvel novo."
+  },
   {
    "id": "0109f789cb007359",
    "source": "Infosecurity Magazine",
@@ -13746,29 +13769,6 @@
    "enriched": true,
    "why": "Demonstra a mudança iminente na gestão operacional da cibersegurança empresarial.",
    "todo": "Defina limites claros de autoridade e monitorize de perto as ações automatizadas dos agentes de IA."
-  },
-  {
-   "id": "925f615d574112f7",
-   "source": "CISA Advisories",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-   "published": "2026-11-20T12:00:00+00:00",
-   "title": "CISA adiciona quatro vulnerabilidades conhecidas e exploradas ao catálogo",
-   "summary": "A CISA adicionou quatro novas falhas ao seu Catálogo de Vulnerabilidades Conhecidas e Exploradas (KEV). As falhas afetam tecnologias como SAP NetWeaver, Cisco Expressway, VMWare vCenter e Apache Roller. A diretiva BOD 26-04 obriga agências federais a priorizar a correção urgente destas brechas.",
-   "image": null,
-   "points": [
-    "Quem: CISA.",
-    "O quê: Adição de quatro CVEs ativamente exploradas ao catálogo KEV.",
-    "Como: Identificação de exploração ativa em produtos da SAP, Cisco, VMWare e Apache.",
-    "Impacto: Aumento do risco de exploração em infraestruturas públicas e privadas."
-   ],
-   "title_original": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Alerta para falhas críticas que estão a ser ativamente usadas por cibercriminosos.",
-   "todo": "Consulte o catálogo KEV e aplique patches de segurança prioritários nos softwares afetados."
   }
  ]
 }

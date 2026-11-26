@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T09:24:55.073005+00:00",
+ "updated": "2026-11-26T09:46:34.520315+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -9,7 +9,7 @@
   {
    "source": "IT Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Pplware Segurança",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Hacker News",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 311,
-  "unenriched": 209,
+  "done": 48,
+  "pending": 265,
+  "unenriched": 163,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -320,21 +320,93 @@
  },
  "items": [
   {
+   "id": "a0100a52ea63eb06",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/1password-github-account-backend/",
+   "published": "2026-11-26T09:32:00+00:00",
+   "title": "1Password alvo de intrusão no sistema central através de conta GitHub de colaborador comprometida",
+   "summary": "Um atacante conseguiu aceder a dados de clientes da 1Password utilizando a conta de GitHub de um colaborador. A plataforma confirmou o incidente, embora tenha assegurado que os cofres cifrados dos utilizadores não foram comprometidos. O ataque demonstra os riscos associados ao sequestro de contas internas de colaboradores por parte de cibercriminosos.",
+   "image": null,
+   "points": [
+    "Atacante comprometeu conta GitHub de um funcionário da 1Password.",
+    "Dados de clientes foram acedidos sem comprometer os cofres (vaults).",
+    "A intrusão ocorreu ao nível da infraestrutura de backend."
+   ],
+   "title_original": "1Password Hit by Backend Breach via Hijacked Employee GitHub Account",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que as contas de acesso interno de colaboradores continuam a ser um vetor crítico para comprometer plataformas de segurança.",
+   "todo": "Ative a autenticação multifator (MFA) resistente a phishing em todas as contas de desenvolvimento e controlo de versões."
+  },
+  {
+   "id": "76edafc19f9cbb7b",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/26/uk-home-office-waved-through-border-system-without-a-working-fix-for-bad-data/5312162",
+   "published": "2026-11-26T09:30:00+00:00",
+   "title": "Governo britânico avançou com sistema de fronteiras sem correção funcional para dados incorretos",
+   "summary": "O Gabinete do Comissário de Informação do Reino Unido repreendeu o Ministério do Interior britânico por lançar o sistema de fronteiras Helios sem uma forma eficaz de corrigir dados pessoais inexatos. A falha corre o risco de resultar em detenções erróneas de cidadãos para verificações adicionais nas fronteiras, gerando preocupações de conformidade. A plataforma entrou em funcionamento apesar de os operadores não conseguirem alterar registos incorretos em tempo real.",
+   "image": "https://image.theregister.com/?imageId=252762&width=800",
+   "points": [
+    "O ICO repreendeu o Ministério do Interior do Reino Unido.",
+    "O sistema de fronteiras Helios foi lançado sem correção de dados funcional.",
+    "Funcionários operacionais não conseguiam alterar registos erróneos em tempo real.",
+    "A falha expõe pessoas ao risco de detenções incorretas."
+   ],
+   "title_original": "UK Home Office waved through border system without a working fix for bad data",
+   "category": "Regulação",
+   "translated": true,
+   "enriched": true,
+   "why": "Sublinha os perigos de implementar sistemas críticos de tratamento de dados públicos sem mecanismos adequados de correção e salvaguarda.",
+   "todo": "Garanta que qualquer novo sistema de dados inclua mecanismos validados para auditoria, correção e tratamento de erros antes da sua implementação."
+  },
+  {
+   "id": "ecfd160b2eed585b",
+   "source": "HackRead",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://hackread.com/hackers-hugging-face-ai-site-builder-fake-microsoft-login-pages/",
+   "published": "2026-11-26T09:28:59+00:00",
+   "title": "Piratas informáticos usaram criador de sites de IA da Hugging Face para criar páginas falsas de início de sessão da Microsoft",
+   "summary": "Investigadores descobriram dezenas de páginas de phishing alojadas na plataforma Hugging Face Spaces, muitas construídas com recurso à aplicação de IA DeepSite. Os sites fraudulentos imitavam marcas conhecidas, incluindo a Microsoft e o PayPal, para enganar os utilizadores. Este uso malicioso evidencia como ferramentas legítimas de inteligência artificial podem ser reaproveitadas por cibercriminosos.",
+   "image": null,
+   "points": [
+    "Foram encontradas 42 páginas de phishing em Hugging Face Spaces.",
+    "29 páginas foram criadas com a aplicação de IA DeepSite.",
+    "Os ataques impersonaram marcas como Microsoft e PayPal."
+   ],
+   "title_original": "Hackers used Hugging Face’s AI site builder to create fake Microsoft login pages",
+   "category": "Phishing/Fraude",
+   "translated": true,
+   "enriched": true,
+   "why": "Ilustra como os atacantes exploram ferramentas de IA acessíveis ao público para automatizar e acelerar campanhas de phishing.",
+   "todo": "Eduque os colaboradores para verificarem rigorosamente os URLs de autenticação antes de introduzirem credenciais corporativas."
+  },
+  {
    "id": "37e152d36e89d0cb",
    "source": "SecurityWeek",
    "region": "US",
    "lang": "en",
    "link": "https://www.securityweek.com/drupal-installer-patch-left-a-gap-attackers-are-already-exploiting/",
    "published": "2026-11-26T09:12:26+00:00",
-   "title": "Drupal Installer Patch Left a Gap Attackers Are Already Exploiting",
-   "summary": "Drupal warns that its previous installer patch left some websites vulnerable to takeover, with attackers already exploiting the gap.",
+   "title": "Correção do instalador do Drupal deixou falha que atacantes já estão a explorar",
+   "summary": "O Drupal emitiu um aviso a alertar que uma correção anterior aplicada ao seu instalador deixou inadvertidamente alguns websites vulneráveis a apropriação total. Os atacantes já estão a tirar partido desta falha de segurança ativa para comprometer os sites afetados. Os administradores são instados a aplicar as medidas de mitigação necessárias.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O Drupal alertou para uma falha deixada por um patch anterior.",
+    "Atacantes já estão a explorar ativamente a vulnerabilidade.",
+    "O problema pode permitir a tomada de controlo de sites vulneráveis."
+   ],
+   "title_original": "Drupal Installer Patch Left a Gap Attackers Are Already Exploiting",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Drupal warns that its previous installer patch left some websites vulnerable to takeover, with attackers already exploiting the gap."
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra que mesmo as correções de segurança oficiais podem conter falhas residuais que os atacantes aproveitam rapidamente.",
+   "todo": "Atualize imediatamente os sistemas baseados em Drupal para as versões mais recentes e seguras."
   },
   {
    "id": "69311314e8504d77",
@@ -3699,6 +3771,28 @@
    "enriched": true,
    "why": "Problemas em atualizações oficiais podem bloquear o acesso legítimo a computadores e servidores empresariais.",
    "todo": "Consulte os boletins oficiais da Microsoft para verificar se existem soluções temporárias ou correções de recurso para o erro de autenticação."
+  },
+  {
+   "id": "b105cbbb796aec2f",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/news/ncsc-publica-orientacoes-para-ajudar-organizacoes-a-responderem-a-ataques-autonomos",
+   "published": "2026-11-25T00:00:00+00:00",
+   "title": "NCSC publica orientações para ajudar organizações a responderem a ataques autónomos",
+   "summary": "O Centro Nacional de Cibersegurança britânico lançou um conjunto de oito recomendações práticas para apoiar as organizações na resposta ao crescimento acentuado de ataques automatizados impulsionados por agentes de inteligência artificial. O documento visa preparar as defesas corporativas face à nova vaga de ameaças baseadas em IA autónoma. Estas diretrizes focam-se na adaptação operacional das defesas.",
+   "image": null,
+   "points": [
+    "O NCSC britânico publicou oito recomendações de segurança.",
+    "O foco é o aumento de ataques automatizados com agentes de IA.",
+    "O objetivo é ajudar as organizações a responderem a estas ameaças."
+   ],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": true,
+   "why": "Ajuda as empresas a prepararem-se para o novo panorama de ameaças impulsionado pela automação inteligente.",
+   "todo": "Consulte as orientações do NCSC e reveja os procedimentos de resposta a incidentes para incluir ameaças automatizadas."
   },
   {
    "id": "c380f1e9589a2306",
@@ -13675,98 +13769,6 @@
    "enriched": true,
    "why": "Ajuda a compreender como ataques a plataformas de email na cloud podem expor credenciais sensíveis.",
    "todo": "Ative a autenticação multifator (MFA) em todas as contas e monitorize acessos suspeitos."
-  },
-  {
-   "id": "17c3a4b45a20dbc3",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203554/cyber-crime/hunt-io-uncovers-russian-speaking-credential-theft-operation-targeting-us-banks-and-government-accounts.html",
-   "published": "2026-11-20T09:03:11+00:00",
-   "title": "Hunt.io Uncovers Russian-Speaking Credential Theft Operation Targeting US Banks and Government Accounts",
-   "summary": "Uma investigação da Hunt.io descobriu uma operação de roubo de credenciais que comprometeu centenas de computadores com Windows e expôs dados sensíveis. Os atacantes utilizaram ferramentas personalizadas como HavoX, Phantom53 e Kraken Bridge para gerir infeções e roubar chaves de gestores de passwords e dados bancários. O impacto incluiu o acesso ilícito a cofres digitais e a serviços federais e de autenticação norte-americanos. A operação afetou dezenas de vítimas com contas governamentais ou bancárias associadas.",
-   "image": "https://i0.wp.com/securityaffairs.com/wp-content/uploads/2026/11/image-53.png?resize=1024%2C624&#038;ssl=1",
-   "points": [
-    "Operação russa comprometeu 603 PCs com Windows e expôs dados bancários e governamentais.",
-    "Atacantes usaram ferramentas como HavoX, Phantom53 e Kraken Bridge para comunicação e gestão.",
-    "Foram roubadas credenciais de serviços como LastPass, IRS, Google e várias plataformas financeiras.",
-    "O impacto incluiu o acesso não autorizado a dados de identidade federal e contas bancárias."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como operações de roubo de credenciais conseguem contornar proteções locais e aceder a cofres de palavras-passe em PCs infetados.",
-   "todo": "Utilize autenticação multifator robusta e mantenha o software e os sistemas operativos atualizados para mitigar riscos de roubo de sessão e credenciais."
-  },
-  {
-   "id": "10bc282c54eecba4",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/overlord-rat-solana-blockchain-c2/",
-   "published": "2026-11-20T09:00:00+00:00",
-   "title": "Suspected North Korea-Aligned Group Hides C2 on Solana Blockchain",
-   "summary": "A Cisco Talos associou um RAT (Remote Access Trojan) atribuído ao grupo UAT-12643 que oculta a sua infraestrutura de comando e controlo (C2) na blockchain Solana. Esta ameaça tem a capacidade de persistir mesmo após reinicializações do sistema operativo Windows. O impacto prende-se com a utilização de tecnologias inovadoras e descentralizadas para dificultar a deteção e a remediação por parte das equipas de segurança.",
-   "image": null,
-   "points": [
-    "O grupo UAT-12643 foi associado a um novo RAT.",
-    "O malware esconde o C2 na blockchain Solana.",
-    "A ameaça sobrevive a reinicializações de sistemas Windows.",
-    "A descoberta foi divulgada pela equipa da Cisco Talos."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como os atacantes estão a explorar tecnologias descentralizadas para ocultar comunicações maliciosas e escapar aos métodos tradicionais de deteção.",
-   "todo": "Monitore o tráfego de rede e o comportamento dos endpoints para detetar padrões anómalos de comunicação com redes blockchain."
-  },
-  {
-   "id": "e9069e703ad1ae33",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/20/european-commission-ai-generated-cyberattack-publicly-available-tool/",
-   "published": "2026-11-20T08:52:29+00:00",
-   "title": "European Commission confirms AI-generated cyberattack disrupted its systems",
-   "summary": "A Comissão Europeia confirmou ter sido alvo de um ciberataque que utilizou indevidamente uma ferramenta de IA publicamente acessível para perturbar os seus sistemas. O incidente obrigou a instituição a colocar várias das suas aplicações offline. A confirmação foi dada pelo porta-voz Thomas Regnier, após uma notícia exclusiva publicada pelo Politico.",
-   "image": null,
-   "points": [
-    "A Comissão Europeia foi alvo de um ciberataque.",
-    "Os atacantes usaram uma ferramenta de IA pública.",
-    "Várias aplicações institucionais foram colocadas offline.",
-    "O incidente foi confirmado oficialmente pelo porta-voz Thomas Regnier."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia o risco crescente do uso malicioso de ferramentas de inteligência artificial acessíveis ao público contra instituições oficiais.",
-   "todo": "Implemente controlos rigorosos sobre o uso de ferramentas de IA generativa e reforce a monitorização de acessos e tráfego anómalo."
-  },
-  {
-   "id": "32ba884f602411ad",
-   "source": "CSO Online",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.csoonline.com/article/4248694/do-ais-mathematical-advances-put-pki-under-threat.html",
-   "published": "2026-11-20T08:25:00+00:00",
-   "title": "Serão os avanços matemáticos da IA uma ameaça para a infraestrutura de chave pública (PKI)?",
-   "summary": "O criptógrafo Matthew Green alertou na rede social X que a segurança global da criptografia de chave pública corre sérios riscos devido ao avanço da inteligência artificial. Segundo o especialista, as máquinas começaram a superar os humanos na resolução de problemas matemáticos complexos que sustentam os padrões atuais da internet. Esta evolução poderá gerar uma perda súbita de confiança nos sistemas se a indústria não adotar rapidamente uma maior agilidade criptográfica. O debate tem motivado discussões na comunidade de segurança sobre o futuro da criptografia.",
-   "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4248694-0-14142900-1795163250-thomas-t-OPpCbAAKWv8-unsplash.jpg?quality=50&strip=all",
-   "points": [
-    "Matthew Green alertou para riscos na criptografia de chave pública devido à IA.",
-    "As máquinas estão a superar humanos na resolução de problemas matemáticos difíceis.",
-    "Existe o risco de perda de confiança nos algoritmos de encriptação atuais.",
-    "A indústria precisa de focar-se urgentemente em adotar agilidade criptográfica."
-   ],
-   "title_original": "Do AI’s mathematical advances put PKI under threat?",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque a infraestrutura de chave pública sustenta a segurança de toda a internet e das comunicações digitais.",
-   "todo": "Acompanhe as diretrizes da indústria sobre a transição para algoritmos pós-quânticos e reforce a agilidade criptográfica nos sistemas da sua organização."
   }
  ]
 }

@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-26T17:07:21.770003+00:00",
+ "updated": "2026-11-26T17:26:40.094662+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -310,13 +310,59 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 168,
-  "unenriched": 70,
+  "pending": 170,
+  "unenriched": 72,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "42756c94ced72ba9",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/apple/fake-paid-expert-interviews-impersonate-brands-to-steal-google-logins/",
+   "published": "2026-11-26T17:15:27+00:00",
+   "title": "Entrevistas falsas com peritos fingem ser marcas para roubar logins do Google",
+   "summary": "Uma campanha de phishing em curso finge representar grandes marcas como o Google, a Nvidia, a Accenture e a SpaceX. Os atacantes enviam convites falsos para webinars e entrevistas com peritos para roubar credenciais corporativas do Google e do Okta. O principal impacto é o compromisso de contas empresariais através de engenharia social direcionada.",
+   "image": null,
+   "points": [
+    "Campanha de phishing GoodGuys utiliza convites falsos para webinars.",
+    "Impersona marcas conhecidas como Google, Nvidia, Accenture e SpaceX.",
+    "O objetivo é roubar credenciais corporativas do Google e do Okta.",
+    "Impacta a segurança de contas empresariais através de enganos elaborados."
+   ],
+   "title_original": "Fake paid expert interviews impersonate brands to steal Google logins",
+   "category": "Phishing/Fraude",
+   "translated": true,
+   "enriched": true,
+   "why": "Porque ameaça as credenciais de acesso corporativo a serviços essenciais através de esquemas sofisticados de impersonação.",
+   "todo": "Desconfie de convites inesperados para entrevistas ou webinars e verifique sempre os canais oficiais das marcas."
+  },
+  {
+   "id": "8399c78e0a541262",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/fifa-says-it-has-been-victim-of-a-cyberattack-accessing-personal-and-business-information/",
+   "published": "2026-11-26T17:06:55+00:00",
+   "title": "FIFA diz ter sido vítima de um ciberataque que acedeu a \"informação pessoal e empresarial\"",
+   "summary": "A FIFA confirmou ter sido alvo de um ciberataque que resultou no acesso a dados pessoais e de negócios. A organização não divulgou a data exata em que o incidente ocorreu nem a natureza precisa da informação comprometida. O impacto reflete-se na exposição potencial de dados internos da entidade organizadora do futebol mundial.",
+   "image": null,
+   "points": [
+    "A FIFA foi vítima de um ciberataque não especificado no tempo.",
+    "Foram acedidas informações pessoais e de negócios.",
+    "A organização não revelou a extensão total dos dados comprometidos.",
+    "Afeta a privacidade e a segurança da informação interna da FIFA."
+   ],
+   "title_original": "FIFA Says It Has Been Victim of a Cyberattack Accessing ‘Personal and Business Information’",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Porque demonstra que organizações desportivas globais de topo continuam a ser alvo de incidentes de cibersegurança.",
+   "todo": "Reforce a monitorização de acessos internos e mantenha planos de resposta a incidentes atualizados."
+  },
   {
    "id": "6e5dcf12da713631",
    "source": "The Register Security",
@@ -13712,51 +13758,6 @@
    "enriched": true,
    "why": "Reforça a necessidade de auditar regularmente a postura de segurança dos parceiros tecnológicos com quem partilha dados.",
    "todo": "Monitore contas financeiras regularmente e ative alertas para transações inesperadas."
-  },
-  {
-   "id": "91f1fffca12a349b",
-   "source": "TechCrunch Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://techcrunch.com/2026/11/20/a-transcription-firm-used-by-police-prosecutors-and-tech-giants-exposed-customer-data-online/",
-   "published": "2026-11-20T15:46:07+00:00",
-   "title": "Empresa de transcrição usada por polícia, procuradores e gigantes tecnológicos expõe dados de clientes online",
-   "summary": "Uma falha de segurança simples expôs transcrições de entrevistas policiais e imagens de câmaras corporais num servidor na nuvem que não exigia palavra-passe. O descuido afetou uma empresa de transcrição de dados utilizada por forças de segurança, procuradores e grandes empresas tecnológicas. Esta exposição indevida deixou dados altamente confidenciais acessíveis publicamente na internet.",
-   "image": null,
-   "points": [
-    "Uma falha de segurança deixou dados expostos num servidor na nuvem sem proteção por password.",
-    "Foram expostas transcrições de interrogatórios policiais e imagens de câmaras corporais.",
-    "A empresa afetada presta serviços a forças policiais, magistrados e grandes empresas de tecnologia."
-   ],
-   "title_original": "A transcription firm used by police, prosecutors and tech giants exposed customer data online",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra como erros básicos de configuração na nuvem podem expor dados sensíveis e críticos de entidades públicas e privadas.",
-   "todo": "Garanta que todos os servidores na nuvem e bases de dados possuem controlos de acesso rigorosos e autenticação ativada."
-  },
-  {
-   "id": "c140d4722bc9099a",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/control-systems-moxa-security-advisory-av26-1187",
-   "published": "2026-11-20T15:39:31+00:00",
-   "title": "[Control Systems] Moxa security advisory (AV26-1187)",
-   "summary": "A Moxa emitiu um aviso de segurança enumerando múltiplas vulnerabilidades que afetam diversos equipamentos industriais e de rede da marca. As falhas incluem problemas de estouro de buffer em dispositivos Ethernet Remote I/Os e várias vulnerabilidades em switches Ethernet de várias séries. O Centro de Cibersegurança recomenda aos utilizadores e administradores que consultem os links disponíveis e apliquem as atualizações necessárias. O impacto foca-se na segurança dos sistemas de controlo afetados por estas falhas.",
-   "image": null,
-   "points": [
-    "O quê: Vulnerabilidades de estouro de buffer e outras falhas em equipamentos Moxa.",
-    "Como: Explorando falhas em séries específicas de switches Ethernet e controladores remotos.",
-    "Impacto: Compromete a integridade e segurança de sistemas de controlo industrial e de rede.",
-    "Quem: Afeta produtos como ioLogik E1200, além das séries EDS-E, IKS, ICS, PT, SDS, TWS e TN da Moxa."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Deixa infraestruturas industriais e de rede expostas a falhas de segurança críticas em equipamentos Moxa.",
-   "todo": "Reveja os avisos de segurança oficiais da Moxa e aplique as atualizações de firmware disponíveis o mais rapidamente possível."
   }
  ]
 }

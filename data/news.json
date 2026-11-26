@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-26T21:07:37.959081+00:00",
+ "updated": "2026-11-26T21:26:31.586231+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 1
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -309,14 +309,59 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 170,
-  "unenriched": 73,
+  "done": 108,
+  "pending": 183,
+  "unenriched": 86,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting property name enclosed in double quotes: line 41 column 5 (char 3571)"
   ]
  },
  "items": [
+  {
+   "id": "e0bf93ab8a32087a",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/",
+   "published": "2026-11-26T21:06:22+00:00",
+   "title": "OpenAI avisa que GPT-6.2 Astra atingirá os limites de utilização 40% mais rápido devido a correção de erro",
+   "summary": "A OpenAI confirmou a correção de uma falha que descontava incorretamente a utilização do GPT-6.2. Com a resolução deste erro, os utilizadores passarão a atingir os limites de uso da inteligência artificial 40% mais depressa do que anteriormente. Esta alteração afeta diretamente a cadência e o volume de interações diárias permitidas pela plataforma.",
+   "image": null,
+   "points": [
+    "A OpenAI corrigiu um erro de desconto na utilização do GPT-6.2.",
+    "Os limites de uso são agora atingidos 40% mais rápido.",
+    "A alteração decorre diretamente da correção do bug na plataforma."
+   ],
+   "title_original": "OpenAI warns GPT-6.2 Astra will hit usage limits 40% faster because it fixed a bug",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa para gerir a expectativa e o planeamento operacional no uso diário da ferramenta de IA.",
+   "todo": "Monitorize o consumo da ferramenta e otimize as interações para mitigar o impacto dos novos limites de utilização."
+  },
+  {
+   "id": "ec09ff0fa2a34ed7",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/stem/neuralink-e-autorizada-a-realizar-novos-testes-em-pessoas-com-paralisia-grave/",
+   "published": "2026-11-26T21:00:00+00:00",
+   "title": "Neuralink é autorizada a realizar novos testes em pessoas com paralisia grave",
+   "summary": "A Neuralink recebeu luz verde da Food and Drug Administration (FDA) para avançar com novos ensaios clínicos com o seu chip cerebral em pacientes com paralisia grave associada à esclerose lateral amiotrófica. Denominado \"LINK\", o estudo pivotal pretende avaliar a segurança e a eficácia de uma interface cérebro-computador implantada no crânio. A tecnologia capta sinais neuronais através de microfios, convertendo-os em comandos digitais para que os voluntários consigam controlar dispositivos externos com o pensamento.",
+   "image": "https://www.estadao.com.br/resizer/v2/MDE7TNKV7JBX7AXR654XG7SJWQ.jpg?quality=80&auth=78a9a288ab0306ab5f7345b0934513dba78703e5576ac55b9d53a709e1d69374&width=710",
+   "points": [
+    "A FDA autorizou um novo ensaio clínico da Neuralink para pacientes com paralisia grave.",
+    "O estudo denominado LINK testa uma interface cérebro-computador implantada.",
+    "Fios com eletrodos captam sinais neuronais transformados em comandos digitais para computadores."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Importa por representar um avanço clínico regulado em interfaces neuronais para utilizadores com incapacidades motoras severas.",
+   "todo": ""
+  },
   {
    "id": "07fd9a354f581f46",
    "source": "HackRead",
@@ -13715,52 +13760,6 @@
    "enriched": true,
    "why": "Ilustra o interesse de grupos apoiados por Estados em explorar tecnologias de IA para conduzir ataques sofisticados.",
    "todo": "Proteja os servidores expostos à internet e reforce a monitorização de acessos a redes universitárias ou empresariais."
-  },
-  {
-   "id": "82b76084c3aaddba",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/20/china-attackers-deployed-ai-agents-that-autonomously-found-and-exploited-a-0-day-to-take-over-a-university-server/5311382",
-   "published": "2026-11-20T17:30:00+00:00",
-   "title": "Atacantes chineses implantaram agentes de IA que encontraram e exploraram autonomamente uma falha 0-day para assumir o controlo de um servidor universitário",
-   "summary": "Espiões suspeitos de origem chinesa utilizaram agentes de IA autónomos através da framework Cairn para atacar redes universitárias. Os agentes tentaram inicialmente vários métodos de intrusão sem sucesso, mas acabaram por descobrir e explorar uma falha zero-day na aplicação MONAI Label. Esta exploração permitiu-lhes obter o controlo total de um servidor de uma universidade. A Amazon notificou os criadores da aplicação, que já lançaram uma correção.",
-   "image": "https://image.theregister.com/?imageId=5311400&width=800",
-   "points": [
-    "Atacantes desprenderam agentes de IA que operaram sem assistência humana.",
-    "Os agentes exploraram com sucesso um zero-day na aplicação de imagem médica MONAI Label.",
-    "O ataque resultou no controlo total de um servidor universitário.",
-    "Tentativas anteriores noutros serviços falharam antes de encontrarem a falha exploitável."
-   ],
-   "title_original": "China attackers deployed AI agents that autonomously found and exploited a 0-day to take over a university server",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Alerta para a capacidade da IA em testar múltiplos vetores de ataque de forma autónoma até encontrar uma falha explorável.",
-   "todo": "Implemente defesas em profundidade e remova o acesso público desnecessário a ferramentas e servidores de teste."
-  },
-  {
-   "id": "a7cf3e12a3be7357",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/falha-critica-em-java-permite-invasao-remota-a-aplicacoes-corporativas/",
-   "published": "2026-11-20T17:30:00+00:00",
-   "title": "Falha crítica em Java permite invasão remota a aplicações corporativas",
-   "summary": "Uma falha de segurança grave identificada no OpenJDK, apelidada de “Java4Shell” e com a referência CVE-2026-114938, coloca em risco servidores e aplicações corporativas globais. O problema afeta um recurso de otimização de hardware em processadores modernos, permitindo que invasores sem credenciais corrompam a memória e executem código malicioso à distância. Softwares populares como Jira, Confluence, Keycloak e Jenkins foram atingidos pela vulnerabilidade. A Oracle já disponibilizou atualizações de segurança para corrigir o problema nos seus produtos afetados.",
-   "image": "https://www.estadao.com.br/resizer/v2/VJDLNZEOV5DHJL3KRFLYJ3R5U4.png?quality=80&auth=5622b891849012536728b6c8cd1cffe3d967ad8f5107171e6f8deb6cd98bbc8f&width=710",
-   "points": [
-    "O quê: Falha crítica de segurança no OpenJDK (Java4Shell) com pontuação 9,2.",
-    "Como: Exploração de um recurso de otimização AVX-512 para corrompar memória e executar código à distância.",
-    "Impacto: Roubo de dados confidenciais e controlo total de servidores e aplicações corporativas.",
-    "Quem: Afeta softwares como Jira, Confluence, Keycloak e Jenkins."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Permite que atacantes assumam o controlo total de servidores e aplicações corporativas sem necessidade de credenciais.",
-   "todo": "Aplique imediatamente os pacotes de correção de segurança disponibilizados pela Oracle e pelos fornecedores dos softwares afetados."
   }
  ]
 }

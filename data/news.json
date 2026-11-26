@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T11:06:14.189960+00:00",
+ "updated": "2026-11-26T11:12:29.402541+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 24,
-  "pending": 283,
-  "unenriched": 185,
+  "done": 60,
+  "pending": 247,
+  "unenriched": 149,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -320,26 +320,73 @@
  },
  "items": [
   {
+   "id": "3394969024a06453",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/chinese-north-korea-artex/",
+   "published": "2026-11-26T11:05:00+00:00",
+   "title": "Piratas informáticos chineses e norte-coreanos adotam a framework ofensiva de IA ARTEX",
+   "summary": "A Microsoft confirmou que atores estatais utilizaram a ferramenta ARTEX nas suas operações ofensivas. Por sua vez, a CSA classificou o aparecimento desta tecnologia como parte de uma terceira vaga de ameaças impulsionadas por inteligência artificial. Esta situação demonstra a crescente adoção de ferramentas automatizadas avançadas por grupos de piratas informáticos em ataques a nível global.",
+   "image": null,
+   "points": [
+    "Atores estatais da China e Coreia do Norte utilizaram a framework ARTEX.",
+    "A Microsoft confirmou a implementação desta ferramenta em campanhas maliciosas.",
+    "A CSA classificou o fenómeno como uma nova vaga de ameaças baseadas em IA.",
+    "O uso destas tecnologias acelera e automatiza as capacidades ofensivas dos atacantes."
+   ],
+   "title_original": "Chinese, North Korean Hackers Adopt ARTEX AI Offensive Framework",
+   "category": "Ataque/APT",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como os grupos patrocinados por Estados estão a integrar ferramentas de inteligência artificial nas suas operações ofensivas.",
+   "todo": "Monitorize o tráfego de rede e reforce a deteção de comportamentos anómalos associados a ferramentas de IA."
+  },
+  {
+   "id": "977230ccbf62a3c1",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/26/hackers-help-themselves-to-1passwords-source-code-and-customer-data/5312317",
+   "published": "2026-11-26T11:02:00+00:00",
+   "title": "Piratas informáticos acedem ao código-fonte e dados de clientes da 1Password",
+   "summary": "Um atacante comprometeu a conta do GitHub de um colaborador da 1Password, roubando código-fonte privado e injetando código malicioso nos serviços de backend para extrair dados de clientes. O incidente permitiu o acesso a identificadores de contas, nomes e endereços de email, embora a empresa garanta que os cofres encriptados dos utilizadores não foram acedidos. Além disso, o intruso obteve acesso à infraestrutura de CI/CD e a credenciais críticas, obrigando a empresa a revogar os acessos expostos.",
+   "image": "https://image.theregister.com/?imageId=5306978&width=800",
+   "points": [
+    "Um atacante comprometeu a conta do GitHub de um funcionário da 1Password.",
+    "Foram roubados código-fonte privado, dados de clientes e credenciais de infraestrutura.",
+    "A empresa garantiu que os cofres com os dados protegidos dos utilizadores não foram afetados.",
+    "A 1Password revogou credenciais expostas após detetar o acesso não autorizado."
+   ],
+   "title_original": "Hackers help themselves to 1Password's source code and customer data",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia como a vulnerabilidade de uma conta de colaborador pode expor dados de clientes e infraestruturas críticas.",
+   "todo": "Implemente autenticação multifator rigorosa e adote o princípio do privilégio mínimo nas plataformas de desenvolvimento e controlo de versões."
+  },
+  {
    "id": "82568982e7fbcf68",
    "source": "HackRead",
    "region": "EU",
    "lang": "en",
    "link": "https://hackread.com/905672-characters-qualified-signature-gdpr-export/",
    "published": "2026-11-26T10:46:47+00:00",
-   "title": "905 672 caracteres sob rectângulos pretos: porque uma assinatura qualificada não serve de prova numa exportação do RGPD",
-   "summary": "Uma exportação de dados protegida pelo RGPD revelou quase um milhão de carateres que continuavam legíveis por baixo de tarjas pretas. O incidente demonstra que uma assinatura digital em PDF não consegue comprovar se os redações ou a integridade dos dados foram devidamente aplicadas. A falha expõe lacunas técnicas na verificação de documentos confidenciais exportados para terceiros.",
+   "title": "905.672 carateres sob retângulos pretos: porque é que uma assinatura qualificada não valida uma exportação do RGPD",
+   "summary": "Uma exportação de dados ao abrigo do RGPD devidamente assinada continha mais de 900 mil carateres legíveis escondidos sob tarjas pretas. Este caso demonstrou que a existência de uma assinatura digital válida num documento PDF não serve para comprovar a eficácia de tarjas de anonimização ou a integridade total do conteúdo ocultado. A falha expõe os riscos de confiar apenas em assinaturas eletrónicas para garantir a proteção de dados sensíveis.",
    "image": null,
    "points": [
-    "O quê: Exportação de dados do RGPD com 905 672 carateres legíveis sob caixas pretas.",
-    "Como: A assinatura digital válida do PDF falhou em validar a ocultação e integridade do conteúdo.",
-    "Impacto: Informação sensível permaneceu acessível apesar de aparentemente mascarada no documento."
+    "Um documento de exportação do RGPD continha centenas de milhares de carateres ocultos de forma ineficaz.",
+    "As informações sensíveis continuavam legíveis por baixo de tarjas pretas.",
+    "Uma assinatura digital válida num PDF não garante a correta anonimização dos dados.",
+    "O caso demonstra falhas graves na validação de documentos confidenciais."
    ],
    "title_original": "905,672 Characters Under Black Rectangles: Why a Qualified Signature Can’t Vouch for a GDPR Export",
    "category": "Regulação",
    "translated": true,
    "enriched": true,
-   "why": "Mostra que assinar digitalmente um documento não valida automaticamente a eficácia da ocultação de dados.",
-   "todo": "Valide visualmente e de forma independente se os dados confidenciais foram totalmente removidos antes de exportar ficheiros."
+   "why": "Alerta para o facto de que assinar digitalmente um documento não assegura que os dados ocultados foram efetivamente eliminados.",
+   "todo": "Remova permanentemente os metadados e o texto subjacente ao mascarar dados sensíveis, em vez de aplicar apenas formas visuais por cima."
   },
   {
    "id": "64d50fdadf543716",
@@ -349,19 +396,20 @@
    "link": "https://www.infosecurity-magazine.com/news/home-office-reprimanded-gdpr/",
    "published": "2026-11-26T10:30:00+00:00",
    "title": "Home Office repreendido após falha do RGPD na fronteira",
-   "summary": "O comissário de proteção de dados britânico (ICO) emitiu uma repreensão formal ao Home Office. O motivo foram falhas graves na integridade dos dados que geraram transtornos e sofrimento aos cidadãos afetados na fronteira. A situação evidencia a responsabilidade das entidades governamentais na gestão correta de dados pessoais sensíveis.",
+   "summary": "O ICO emitiu uma repreensão formal ao Home Office devido a falhas na integridade de dados que provocaram situações de angústia junto da fronteira. O incidente esteve relacionado com deficiências no tratamento de informação pessoal regulada pelo RGPD. Esta medida punitiva reforça a necessidade de rigor na gestão de dados por parte de entidades governamentais.",
    "image": null,
    "points": [
-    "Quem: O regulador ICO e o Home Office britânico.",
-    "O quê: Repreensão oficial devido a falhas de integridade de dados na fronteira.",
-    "Impacto: Causou perturbação e sofrimento aos cidadãos afetados pelo erro."
+    "O ICO repreendeu o Home Office britânico.",
+    "O motivo esteve associado a falhas de integridade de dados na fronteira.",
+    "A situação causou transtornos e angústia aos cidadãos afetados.",
+    "A infração violou as normas de proteção de dados do RGPD."
    ],
    "title_original": "Home Office Reprimanded After GDPR Failure at the Border",
    "category": "Regulação",
    "translated": true,
    "enriched": true,
-   "why": "Sublinha que as falhas no tratamento de dados públicos resultam em sanções regulatórias e danos para os cidadãos.",
-   "todo": "Garanta auditorias rigorosas aos sistemas de controlo de fronteiras e tratamento de dados de identificação."
+   "why": "Sublinha que as entidades públicas estão sujeitas a sanções severas quando falham na proteção de dados dos cidadãos.",
+   "todo": "Audite regularmente os processos de tratamento de dados pessoais para garantir o cumprimento estrito das normas de privacidade."
   },
   {
    "id": "2fb0ec0a35f100b4",
@@ -13722,51 +13770,6 @@
    "enriched": true,
    "why": "Permite que os profissionais de segurança testem e identifiquem vulnerabilidades críticas em servidores de colaboração e email.",
    "todo": "Atualize os servidores Zimbra para as versões mais recentes e verifique se existem desvios de autenticação ou limites de taxa mal configurados."
-  },
-  {
-   "id": "28d85bc28999fc0e",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/20/transport-for-london-oyster-photocard-data-breach/",
-   "published": "2026-11-20T10:21:41+00:00",
-   "title": "265,000 Oyster photocard customers’ data exposed in Transport for London breach",
-   "summary": "A Transport for London (TfL) detetou atividade suspeita no seu site de cartões Oyster e sofreu uma violação de dados que comprometeu informações de cerca de 265.000 clientes. Entre os afetados estão crianças com cartões Zip e utilizadores com o cartão 60+ London Oyster. Para limitar o acesso e conter o incidente, a empresa colocou temporariamente o sistema de cartões offline. A investigação sobre o acesso não autorizado continua em curso.",
-   "image": null,
-   "points": [
-    "Quem: Transport for London (TfL) e 265.000 clientes.",
-    "O quê: Violação de dados e atividade suspeita no site.",
-    "Impacto: Exposição de detalhes de contas de portadores de cartões Oyster.",
-    "Ação: Sistema colocado offline para limitar acessos."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "Expõe dados pessoais de centenas de milhares de utilizadores de transportes públicos, incluindo menores e idosos.",
-   "todo": "Monitore as suas contas financeiras e credenciais associadas a serviços de transporte e altere palavras-passe caso receba alertas."
-  },
-  {
-   "id": "3ee0dff29d7e7488",
-   "source": "Pplware Segurança",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://pplware.sapo.pt/internet/seguranca/fastestvpn-black-friday-plano-vitalicio/",
-   "published": "2026-11-20T10:00:00+00:00",
-   "title": "FastestVPN Black Friday: plano vitalício a 25 dólares com o FastestPass incluído",
-   "summary": "A FastestVPN lançou uma campanha de Black Friday com um desconto de 93% num plano vitalício. A oferta inclui acesso a 10 dispositivos, servidores espalhados por mais de 100 localizações e um gestor de palavras-passe gratuito chamado FastestPass. Esta promoção foca-se na privacidade e poupança para os utilizadores na aquisição de ferramentas de segurança.",
-   "image": null,
-   "points": [
-    "Desconto de 93% na Black Friday da FastestVPN.",
-    "Plano vitalício disponível por 25 dólares.",
-    "Inclui 10 dispositivos e gestor de passwords."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Permite obter ferramentas de privacidade e gestão de acessos a um preço consideravelmente reduzido.",
-   "todo": "Avalie se as funcionalidades do serviço respondem às necessidades de segurança da sua atividade antes de subscrever."
   }
  ]
 }

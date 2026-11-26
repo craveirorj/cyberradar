@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-26T16:07:04.401280+00:00",
+ "updated": "2026-11-26T16:26:38.601433+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
@@ -264,12 +264,12 @@
   {
    "source": "Graham Cluley",
    "ok": true,
-   "added": 3
+   "added": 2
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -310,13 +310,36 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 170,
-  "unenriched": 73,
+  "pending": 169,
+  "unenriched": 72,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "6e5dcf12da713631",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/public-sector/2026/11/26/uk-privacy-watchdog-faces-probe-into-its-workplace-culture/5312380",
+   "published": "2026-11-26T16:16:00+00:00",
+   "title": "UK privacy watchdog faces probe into its workplace culture",
+   "summary": "Uma revisão independente vai examinar a cultura, governação e responsabilidade do regulador de privacidade do Reino Unido, na sequência da demissão do antigo Comissário da Informação, John Edwards. A investigação irá analisar se a liderança e as regras permitiram o desenvolvimento de problemas e se os funcionários conseguiam reportar comportamentos inadequados. O processo surge após uma investigação anterior ter concluído que a conduta de Edwards ficou aquém das expectativas para um cargo público. Atuais e antigos funcionários poderão prestar testemunho de forma confidencial e voluntária.",
+   "image": "https://image.theregister.com/?imageId=237639&width=800",
+   "points": [
+    "Quem: O regulador de privacidade do Reino Unido e a investigadora Karon Monaghan KC.",
+    "O quê: Uma revisão independente à cultura de trabalho e governação após a demissão do ex-comissário.",
+    "Como: Funcionários podem dar testemunho voluntário e confidencial, com acesso a documentos internos.",
+    "Impacto: Avaliar se a liderança falhou na prevenção de problemas e na proteção de denúncias."
+   ],
+   "title_original": "UK privacy watchdog faces probe into its workplace culture",
+   "category": "Regulação",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque demonstra que os reguladores de privacidade também estão sujeitos a escrutínio rigoroso sobre a sua própria transparência e ética interna.",
+   "todo": "Estabelecer canais internos de denúncia seguros e confidenciais para que os colaboradores possam reportar má conduta sem receio de retaliação."
+  },
   {
    "id": "0d3c85a49e3b738a",
    "source": "CSO Online",
@@ -13734,29 +13757,6 @@
    "enriched": true,
    "why": "Deixa infraestruturas industriais e de rede expostas a falhas de segurança críticas em equipamentos Moxa.",
    "todo": "Reveja os avisos de segurança oficiais da Moxa e aplique as atualizações de firmware disponíveis o mais rapidamente possível."
-  },
-  {
-   "id": "19cca4f1450a3e90",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/",
-   "published": "2026-11-20T15:00:10+00:00",
-   "title": "Ainda a monitorizar palavras-passe em folhas de cálculo? Está a voar às cegas.",
-   "summary": "A gestão de credenciais corporativas através de folhas de cálculo deixa as empresas vulneráveis a palavras-passe fracas, reorquestradas ou comprometidas sem que a equipa de TI se aperceba. A NordPass explica que a adoção de um sistema centralizado melhora a visibilidade das credenciais e simplifica a partilha segura. O impacto traduz-se num risco acrescido de incidentes de segurança devido à falta de controlo sobre dados partilhados fora de sistemas aprovados.",
-   "image": null,
-   "points": [
-    "Empresas usam folhas de cálculo para rastrear palavras-passe corporativas.",
-    "Falta de visibilidade expõe credenciais fracas ou comprometidas.",
-    "Gestão centralizada melhora a segurança e simplifica a partilha.",
-    "Risco elevado de acessos não autorizados fora de sistemas aprovados."
-   ],
-   "title_original": "Still tracking company passwords in spreadsheets? You’re flying blind.",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "A utilização de folhas de cálculo para palavras-passe cria pontos cegos perigosos que facilitam ciberataques.",
-   "todo": "Migre para um gestor de palavras-passe empresarial centralizado e elimine o uso de folhas de cálculo para credenciais."
   }
  ]
 }

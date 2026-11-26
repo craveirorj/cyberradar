@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T06:47:15.180409+00:00",
+ "updated": "2026-11-26T07:07:11.184523+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -114,7 +114,7 @@
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 8
+   "added": 9
   },
   {
    "source": "TechCrunch Security",
@@ -244,12 +244,12 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 117,
-  "pending": 192,
-  "unenriched": 92,
+  "done": 111,
+  "pending": 200,
+  "unenriched": 99,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
@@ -333,9 +333,9 @@
     "Oportunidade para empresas e utilizadores adquirirem soluções de proteção a preços mais baixos.",
     "Aconselha-se a leitura atenta das condições e letras pequenas das promoções."
    ],
-   "title_original": "Black Friday cybersecurity deals 2026: Stay safe, spend less",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Permite adquirir ferramentas de segurança essenciais a preços mais baixos para reforçar a proteção digital.",
    "todo": "Analise detalhadamente os termos e condições das ofertas de cibersegurança antes de efetuar qualquer compra."
@@ -361,6 +361,29 @@
    "enriched": true,
    "why": "Permite realizar alterações arriscadas em ambientes de produção com uma rede de segurança fiável.",
    "todo": "Atualize para a versão 9.3 e valide a configuração dos seus volumes LVM antes de implementar snapshots em produção."
+  },
+  {
+   "id": "faeb2678652eaf77",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/204014/hacking/u-s-cisa-adds-hpe-juniper-session-smart-conductor-and-session-smart-router-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
+   "published": "2026-11-26T06:05:09+00:00",
+   "title": "CISA adiciona vulnerabilidades da HPE, Danfoss, Mitel MiCollab e Vates Xen Orchestra ao catálogo de explorações conhecidas",
+   "summary": "A CISA, agência de cibersegurança dos EUA, incluiu várias falhas críticas no seu catálogo de Vulnerabilidades Exploradas Conhecidas (KEV). Entre os sistemas afetados estão equipamentos de refrigeração da Danfoss, routers da HPE, a plataforma Mitel MiCollab e o Vates Xen Orchestra. Estas vulnerabilidades permitem, em certos casos, a execução remota de comandos ou o acesso indevido a ficheiros sensíveis. Até ao momento, não existem relatos confirmados de exploração ativa destas falhas por agentes maliciosos.",
+   "image": null,
+   "points": [
+    "CISA atualizou catálogo KEV com novas falhas.",
+    "Afeta produtos da HPE, Danfoss, Mitel e Vates.",
+    "Falhas permitem acesso a ficheiros ou execução de comandos.",
+    "Nenhum ataque confirmado publicamente até à data."
+   ],
+   "title_original": "U.S. CISA adds HPE, Danfoss, Mitel MiCollab, and Vates Xen Orchestra flaws to its Known Exploited Vulnerabilities catalog",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A inclusão no catálogo KEV indica que estas falhas são alvos prioritários e devem ser corrigidas imediatamente para evitar ataques.",
+   "todo": "Verifique se utiliza os produtos mencionados e aplique as atualizações de segurança disponibilizadas pelos fabricantes o mais rapidamente possível."
   },
   {
    "id": "e51dcba7db603e16",
@@ -13747,28 +13770,6 @@
    "enriched": true,
    "why": "O acesso físico a computadores com falhas por corrigir pode comprometer a integridade local do sistema.",
    "todo": "Bloqueie fisicamente os dispositivos e restrinja o acesso não autorizado às estações de trabalho."
-  },
-  {
-   "id": "5cdfc826b45c2f05",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/20/network-outage-recovery-resilience/",
-   "published": "2026-11-20T05:00:27+00:00",
-   "title": "A maioria dos CIOs e CISOs espera conter ataques, embora poucos consigam aceder rapidamente aos seus equipamentos",
-   "summary": "Um inquérito da Opengear a 514 responsáveis de TI revelou que a maioria das organizações não consegue aceder de forma segura à sua infraestrutura de rede crítica quando esta falha. Esta incapacidade de gestão remota imediata é particularmente grave durante ataques de ransomware ou falhas de atualizações. O acesso rápido é essencial para isolar sistemas comprometidos e restaurar serviços. A falta de caminhos alternativos de acesso dificulta a resposta a incidentes críticos.",
-   "image": null,
-   "points": [
-    "Dificuldade em aceder à infraestrutura após falhas de rede.",
-    "Gestão remota limitada durante ataques de ransomware.",
-    "Necessidade de acesso imediato para restaurar serviços."
-   ],
-   "title_original": "Most CIOs and CISOs expect to contain attacks, though few can reach their gear right away",
-   "category": "Ransomware",
-   "translated": true,
-   "enriched": true,
-   "why": "A falta de acesso de gestão fora de banda impede uma resposta rápida e eficaz a crises de cibersegurança.",
-   "todo": "Implemente soluções de gestão fora de banda (out-of-band) para garantir acesso à infraestrutura mesmo quando a rede principal está em baixo."
   }
  ]
 }

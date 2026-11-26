@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T07:47:13.673651+00:00",
+ "updated": "2026-11-26T08:07:05.614068+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -238,8 +238,8 @@
   },
   {
    "source": "The Register Security",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 12
   },
   {
    "source": "Help Net Security",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -310,15 +310,37 @@
  "translation": {
   "provider": "gemini",
   "done": 108,
-  "pending": 192,
-  "unenriched": 91,
+  "pending": 201,
+  "unenriched": 101,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent"
+   "Expecting value: line 21 column 7 (char 1792)"
   ]
  },
  "items": [
+  {
+   "id": "dd168b1ec489e2d2",
+   "source": "Dark Reading",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/cyprus-espionage-target-iranian-hackers",
+   "published": "2026-11-26T08:00:00+00:00",
+   "title": "Cyprus Becomes Espionage Target for Iranian Hackers",
+   "summary": "Um grupo de ameaças iraniano inédito, denominado \"Volant Manticore\", começou a visar organizações cipriotas. O objetivo desta campanha é a recolha de informações de inteligência para Teerão. Esta atividade demonstra um foco acrescido de atores estatais iranianos na região de Chipre.",
+   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt08316e419aab95b8/6b071dfb870042f8e04904af/cyprus-tunart-GettyImages-961759390.jpg?width=720&quality=80&disable=upscale",
+   "points": [
+    "Alvo: Organizações sediadas em Chipre.",
+    "Atores: Grupo iraniano Volant Manticore.",
+    "Objetivo: Recolha de inteligência para Teerão.",
+    "Impacto: Aumento do risco de espionagem cibernética."
+   ],
+   "title_original": "Cyprus Becomes Espionage Target for Iranian Hackers",
+   "category": "Ataque/APT",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como novos grupos de espionagem patrocinados por estados expandem os seus alvos geográficos.",
+   "todo": "Monitorize o tráfego de rede para detetar padrões anómalos de comunicação com infraestruturas estrangeiras desconhecidas."
+  },
   {
    "id": "457c08cf27ea6f55",
    "source": "The Hacker News",
@@ -13750,28 +13772,6 @@
    "enriched": true,
    "why": "Permite que atacantes obtenham controlo administrativo total sobre servidores críticos através de uma falha de gravidade máxima.",
    "todo": "Atualize imediatamente o VMware vCenter Server com os patches de segurança disponibilizados pelo fabricante."
-  },
-  {
-   "id": "8b38735d044ef4d6",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/20/ai-prompt-injection-red-team/",
-   "published": "2026-11-20T06:30:20+00:00",
-   "title": "A sua equipa de 'red team' de IA pode estar a encontrar a mesma injeção de 'prompts' milhares de vezes",
-   "summary": "Investigadores descobriram que agentes de IA retreinados com um volume maior de ataques de injeção de 'prompts' tornaram-se mais fáceis de comprometer em três de quatro testes realizados. A ferramenta automatizada de 'red-teaming' que detetou mais ataques funcionantes acabou por produzir defesas mais fracas. O problema surge quando instruções ocultas em emails, páginas web ou saídas de ferramentas são processadas pelo agente de IA.",
-   "image": null,
-   "points": [
-    "Investigadores de várias universidades testaram agentes de IA retreinados com ataques de injeção de 'prompts'.",
-    "Ferramentas automáticas detetaram mais ataques mas resultaram em defesas mais fracas.",
-    "Instruções ocultas em conteúdos digitais continuam a enganar agentes de IA."
-   ],
-   "title_original": "Your AI red team may be finding the same prompt injection thousands of times",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra que treinar defesas de IA com mais dados de ataque nem sempre resulta em sistemas mais seguros.",
-   "todo": "Reveja regularmente os métodos de validação e testes de segurança aplicados aos modelos de IA na sua organização."
   }
  ]
 }

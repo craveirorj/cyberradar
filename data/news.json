@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T19:46:30.425930+00:00",
+ "updated": "2026-11-26T20:06:04.742522+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CISA Advisories",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -309,14 +309,39 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 169,
-  "unenriched": 72,
+  "done": 72,
+  "pending": 217,
+  "unenriched": 120,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting property name enclosed in double quotes: line 51 column 5 (char 4856)",
+   "Expecting property name enclosed in double quotes: line 78 column 5 (char 6666)"
   ]
  },
  "items": [
+  {
+   "id": "135a5428247c670f",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/204085/security/drupal-warns-of-new-critical-flaw-exploited-in-the-wild.html",
+   "published": "2026-11-26T19:45:57+00:00",
+   "title": "Drupal alerta para nova falha crítica explorada ativamente",
+   "summary": "A plataforma Drupal corrigiu uma vulnerabilidade crítica no núcleo (CVE-2026-136716) que está a ser explorada ativamente por atacantes para assumirem o controlo de websites vulneráveis. O problema decorre do tratamento inadequado de estados de instalação atípicos ou incompletos, afetando sítios onde o instalador permanece remotamente acessível. A falha está ligada a uma correção anterior que não abrangeu todos os cenários de instalação vulneráveis. Os administradores enfrentam dificuldades para identificar os sistemas afetados através da interface, uma vez que o estado vulnerável pode não ser evidente.",
+   "image": null,
+   "points": [
+    "O quê: Vulnerabilidade crítica no instalador do Drupal (CVE-2026-136716).",
+    "Quem: Afeta websites com instaladores remotamente acessíveis.",
+    "Como: Atacantes exploram estados de instalação incompletos para assumir o controlo.",
+    "Impacto: Tomada de controlo total de sites vulneráveis."
+   ],
+   "title_original": "Drupal Warns of New Critical Flaw Exploited in the Wild",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes assumam o controlo completo de websites vulneráveis sem que os administradores percebam facilmente.",
+   "todo": "Investigue possíveis compromissos anteriores e garanta que o instalador do Drupal (install.php) está devidamente protegido e inacessível remotamente."
+  },
   {
    "id": "5b85703e9e652995",
    "source": "Tecmundo",
@@ -13737,29 +13762,6 @@
    "enriched": true,
    "why": "Ajuda a compreender acontecimentos corporativos importantes que afetam o ecossistema tecnológico.",
    "todo": ""
-  },
-  {
-   "id": "705577b57ecf22bf",
-   "source": "Microsoft Security Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/20/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-siem/",
-   "published": "2026-11-20T17:00:00+00:00",
-   "title": "Microsoft distinguida como Líder no Gartner Magic Quadrant 2026 para SIEM",
-   "summary": "A Microsoft foi reconhecida como Líder no Quadrante Mágico da Gartner de 2026 para Gestão de Informação e Eventos de Segurança (SIEM). Num cenário de ameaças complexas, a empresa destaca a capacidade da sua solução cloud-native, o Microsoft Sentinel, em unificar dados, inteligência contra ameaças e automação. A ferramenta centraliza o histórico de segurança e dados em tempo real para ajudar as operações de segurança das organizações. Com centenas de conectores, o sistema procura melhorar a cobertura e a eficácia das equipas na deteção precoce de ataques.",
-   "image": null,
-   "points": [
-    "A Microsoft foi nomeada Líder no Gartner Magic Quadrant 2026 para SIEM.",
-    "O Microsoft Sentinel combina dados de segurança, automação e inteligência contra ameaças na cloud.",
-    "A solução centraliza dados em tempo real para otimizar operações e a deteção de ameaças.",
-    "O impacto foca-se em dar maior visibilidade e capacidade de ação rápida face a ataques complexos."
-   ],
-   "title_original": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for SIEM",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque demonstra as soluções tecnológicas disponíveis para ajudar as organizações a gerir ambientes de segurança complexos e atuar rapidamente.",
-   "todo": "Avalie soluções de SIEM robustas e centralizadas para melhorar a visibilidade e a resposta a incidentes na sua infraestrutura."
   }
  ]
 }

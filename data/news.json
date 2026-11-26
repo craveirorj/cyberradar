@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T11:47:15.515072+00:00",
+ "updated": "2026-11-26T12:06:44.587931+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -59,7 +59,7 @@
   {
    "source": "CISA Advisories",
    "ok": true,
-   "added": 23
+   "added": 18
   },
   {
    "source": "CISA Alertas (KEV)",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -94,12 +94,12 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Check Point Research",
@@ -309,14 +309,61 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 181,
-  "unenriched": 87,
+  "done": 48,
+  "pending": 249,
+  "unenriched": 155,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "c01f0716c009d410",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/204049/data-breach/australias-flight-centre-data-breach-exposes-customer-records-and-passport-details.html",
+   "published": "2026-11-26T11:51:11+00:00",
+   "title": "Violação de dados no Flight Centre na Austrália expõe registos de clientes e detalhes de passaportes",
+   "summary": "O Flight Centre Travel Group está a investigar uma violação de segurança num sistema de reservas de alojamento de terceiros utilizado por várias marcas de lazer. O incidente comprometeu registos de clientes, incluindo nomes e, num número muito reduzido de casos, detalhes de passaportes, contactos e datas de nascimento. As reservas de voos e de viagens corporativas não foram afetadas por esta falha. A empresa já está a analisar a extensão do acesso não autorizado e a apurar o número exato de registos afetados.",
+   "image": null,
+   "points": [
+    "O quê: Incidente de cibersegurança num sistema de reservas de alojamento de terceiros.",
+    "Quem: Flight Centre Travel Group e marcas de viagens afetadas.",
+    "Impacto: Exposição de nomes de clientes e, raramente, de passaportes e dados sensíveis.",
+    "Como: Atividade atípica detetada numa plataforma de reservas externa."
+   ],
+   "title_original": "Australia’s Flight Centre Data Breach Exposes Customer Records and Passport Details",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque a exposição de dados pessoais e de passaportes coloca os clientes em risco de phishing e roubo de identidade.",
+   "todo": "Monitore os seus dados pessoais e de viagem com atenção redobrada e desconfie de contactos inesperados a solicitar informações adicionais."
+  },
+  {
+   "id": "23ec231ca044747f",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/sys010-malware-abuses-browser-management-to-spy-on-gmail-outlook/",
+   "published": "2026-11-26T11:50:17+00:00",
+   "title": "Malware SYS010 abusa da gestão de navegadores para espionar Gmail e Outlook",
+   "summary": "Uma nova variante do infostealer SYS01 está a ser distribuída através de anúncios na plataforma Meta. Esta ameaça inscreve os navegadores dos utilizadores num modo de gestão empresarial para forçar a instalação de extensões maliciosas. O objetivo principal é roubar dados confidenciais, com especial foco no acesso a caixas de correio eletrónico do Gmail e Outlook.",
+   "image": null,
+   "points": [
+    "O quê: Nova versão do infostealer SYS01 distribuída via anúncios da Meta.",
+    "Como: Abuso da gestão de navegadores para forçar extensões maliciosas.",
+    "Impacto: Roubo de dados sensíveis e espionagem de e-mails do Gmail e Outlook."
+   ],
+   "title_original": "SYS010 malware abuses browser management to spy on Gmail, Outlook",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque utiliza canais legítimos de publicidade para infetar sistemas e comprometer credenciais de correio eletrónico.",
+   "todo": "Reveja regularmente as extensões instaladas no seu navegador e utilize bloqueadores de anúncios fidedignos."
+  },
   {
    "id": "84f25e4640741573",
    "source": "SecurityWeek",
@@ -431,6 +478,28 @@
    "enriched": true,
    "why": "Evidencia como os motores de busca e os resultados patrocinados continuam a ser explorados para distribuir malware sofisticado.",
    "todo": "Evite clicar em links patrocinados para transferir software e verifique sempre se está a descarregar ferramentas a partir dos repositórios oficiais."
+  },
+  {
+   "id": "27c41b73faa55f9a",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/most-wanted-phishing-kits-and.html",
+   "published": "2026-11-26T10:57:55+00:00",
+   "title": "Os Kits de Phishing e Técnicas Mais Procurados que Ignoram os Controlos de Segurança",
+   "summary": "Os ataques de phishing dependem da capacidade de contornar defesas como o filtragem de e-mail e a segurança web antes de chegarem aos utilizadores. A eficácia destes ataques varia consoante os kits utilizados, sendo medidos pela taxa de sucesso em ultrapassar as barreiras de segurança. Compreender estas ferramentas e taxas de rutura é essencial para que as equipas de segurança consigam proteger melhor os colaboradores.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOYXUiExbrrmBGGBgTjOFcDJSrLYJuITQwZY-l1mOzzkes21-mR0My9ikeCM7cI6VDXuBIE9BZPnKazemiuZf7A4w_xeeMy_IUUlNVTKX3PmW-Xt7FA9UI8JoICZDPW4ZWSspztPv_Mo4Zf7G_fXEw_phMe4uc89O38ugIlQJJKmc6VD7QN3NzU0n0SQU/s1600/push-most.jpg",
+   "points": [
+    "O quê: Análise de kits de phishing e da respetiva taxa de sucesso contra defesas.",
+    "Como: Ataques que evitam filtros de e-mail e barreiras de segurança web.",
+    "Impacto: Ameaças chegam com sucesso aos utilizadores finais."
+   ],
+   "title_original": "Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls",
+   "category": "Phishing/Fraude",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque ajuda a identificar as técnicas de phishing mais perigosas que conseguem iludir as defesas tradicionais.",
+   "todo": "Atualize as defesas de perímetro e reforce a formação contínua dos colaboradores em cibersegurança."
   },
   {
    "id": "64c805fe0a24738b",
@@ -13701,75 +13770,6 @@
    "enriched": true,
    "why": "Evidencia a profissionalização do cibercrime através da inteligência artificial para contornar os controlos de segurança tradicionais.",
    "todo": "Forme os colaboradores para reconhecerem sinais de phishing e utilize soluções de segurança avançadas capazes de detetar anomalias no tráfego de e-mail."
-  },
-  {
-   "id": "dd4cf6646af136a9",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203581/intelligence/trumps-first-move-after-the-outages-fire-the-cyber-director.html",
-   "published": "2026-11-20T11:23:45+00:00",
-   "title": "Trump’s First Move After the Outages: Fire the Cyber Director",
-   "summary": "O diretor nacional de cibersegurança, Sean Cairncross, foi despedido dias após falhas tecnológicas afetarem a Microsoft, voos nos Estados Unidos e a rede classificada da NSA. A administração tomou esta decisão após uma série de perturbações que incluíram uma falha global no Outlook e Microsoft 365, paragens de voos e uma interrupção na rede NSANet. Fontes oficiais indicam que a falha na NSA ocorreu após manutenção de rotina, sem evidências de um ciberataque. Kirsten Davies assumirá o cargo de forma temporária.",
-   "image": null,
-   "points": [
-    "O diretor nacional de cibersegurança Sean Cairncross foi despedido pela administração.",
-    "A decisão surge após falhas globais na Microsoft, voos e na rede interna da NSA.",
-    "A interrupção na NSA resultou de manutenção de rotina, sem indícios de ciberataque.",
-    "Kirsten Davies assumirá temporariamente a liderança da cibersegurança federal."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia a instabilidade institucional e o impacto político de falhas tecnológicas críticas em infraestruturas.",
-   "todo": ""
-  },
-  {
-   "id": "4ebef484f948ffe8",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/jpmorgan-data-breach-third-party/",
-   "published": "2026-11-20T11:15:00+00:00",
-   "title": "JPMorgan Confirms Customer Data Breach Following Third-Party Compromise",
-   "summary": "O grupo de ransomware N0n reivindicou ataques contra o JPMorgan, a Visa e a Mastercard, divulgando alegadamente dados de clientes na dark web. A violação ocorreu através de um fornecedor externo, resultando na exposição de informações confidenciais. Esta situação demonstra como os fornecedores terceiros podem representar um vetor de risco crítico para grandes instituições financeiras. O incidente levanta sérias preocupações sobre a segurança e o controlo de dados em cadeias de fornecimento interconectadas.",
-   "image": null,
-   "points": [
-    "O grupo de ransomware N0n atacou JPMorgan, Visa e Mastercard.",
-    "Dados de clientes foram alegadamente publicados na dark web.",
-    "A intrusão ocorreu através do compromisso de um sistema externo.",
-    "O impacto inclui a exposição de dados sensíveis de clientes."
-   ],
-   "title_original": null,
-   "category": "Ransomware",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como falhas em parceiros externos podem comprometer a segurança de grandes organizações financeiras.",
-   "todo": "Avalie e audite regularmente a postura de cibersegurança dos seus fornecedores e parceiros externos."
-  },
-  {
-   "id": "33a6571603207c4b",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/20/windows-11-passkey-bug-cries-failure-after-successful-sign-in/5311263",
-   "published": "2026-11-20T11:09:44+00:00",
-   "title": "Windows 11 passkey bug cries failure after successful sign-in",
-   "summary": "Um erro no Windows 11 faz com que telemóveis Android exibam uma mensagem de falha de autenticação mesmo quando o início de sessão com passkey é bem-sucedido. O problema afeta utilizadores que entram num PC Windows utilizando chaves armazenadas no Android através de browsers como o Edge ou Chrome. A Microsoft já lançou uma correção nas versões 25H2 e 26H2 através da atualização KB5132057. O impacto traduz-se em confusão para os utilizadores e num aumento de chamadas para as equipas de suporte.",
-   "image": "https://image.theregister.com/?imageId=5289791&width=800",
-   "points": [
-    "Um erro no Windows 11 exibe falhas falsas em passkeys guardadas no Android.",
-    "Acontece durante o início de sessão cruzado entre o PC e o telemóvel.",
-    "A Microsoft corrigiu o problema na atualização opcional KB5132057.",
-    "O impacto é a desconfiança dos utilizadores e falsos alertas de erro."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Evita o alarme desnecessário dos utilizadores e reduz o volume de pedidos de suporte técnico.",
-   "todo": "Instale as atualizações mais recentes do Windows e ignore a mensagem no Android se o login no PC funcionou."
   }
  ]
 }

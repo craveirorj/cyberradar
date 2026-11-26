@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T11:12:29.402541+00:00",
+ "updated": "2026-11-26T11:26:23.656800+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "TugaTech",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -234,17 +234,17 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 16
+   "added": 15
   },
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 11
+   "added": 10
   },
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 60,
-  "pending": 247,
-  "unenriched": 149,
+  "done": 48,
+  "pending": 257,
+  "unenriched": 160,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,29 @@
   ]
  },
  "items": [
+  {
+   "id": "98404916e851bfd9",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/26/fincen-breach-systems-offline/",
+   "published": "2026-11-26T11:05:01+00:00",
+   "title": "Agência dos EUA de combate ao branqueamento de capitais é a vítima mais recente de uma vaga de invasões federais",
+   "summary": "A FinCEN, unidade de inteligência financeira dos EUA, sofreu um incidente de cibersegurança que resultou no acesso não autorizado a um subconjunto limitado de dados. O ataque forçou a agência a colocar alguns sistemas offline e a estender os prazos de entrega de relatórios para as instituições financeiras. Atualmente, a organização encontra-se a investigar o sucedido para apurar a extensão do problema. O impacto traduz-se na interrupção temporária de serviços e no atraso de obrigações regulatórias do setor.",
+   "image": null,
+   "points": [
+    "O quê: Incidente de cibersegurança e acesso não autorizado na FinCEN.",
+    "Como: Os atacantes conseguiram acesso a um subconjunto limitado de dados.",
+    "Impacto: Sistemas colocados offline e prazos de relato financeiro prolongados.",
+    "Ação: A agência está a investigar o sucedido e a repor a normalidade."
+   ],
+   "title_original": "US agency tracking money laundering is latest casualty in string of federal breaches",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que nem mesmo as agências governamentais de inteligência financeira estão imunes a brechas de segurança críticas.",
+   "todo": "Mantenha os sistemas monitorizados e garanta a existência de planos de contingência robustos para interrupções operacionais imprevistas."
+  },
   {
    "id": "3394969024a06453",
    "source": "Infosecurity Magazine",
@@ -364,6 +387,52 @@
    "enriched": true,
    "why": "Evidencia como a vulnerabilidade de uma conta de colaborador pode expor dados de clientes e infraestruturas críticas.",
    "todo": "Implemente autenticação multifator rigorosa e adote o princípio do privilégio mínimo nas plataformas de desenvolvimento e controlo de versões."
+  },
+  {
+   "id": "31a5c951a06be636",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/anuncios-falsos-no-google-usam-empresas-reais-para-infectar-macs/",
+   "published": "2026-11-26T11:00:00+00:00",
+   "title": "Anúncios falsos no Google usam empresas reais para infectar Macs",
+   "summary": "Cibercriminosos utilizaram anúncios patrocinados no Google para promover downloads falsos de ferramentas de programação populares, visando utilizadores de computadores Mac. O esquema aproveitou-se de contas comerciais de anunciantes comprometidas ou de identidades falsas para enganar as vítimas com links maliciosos. Ao clicar nestes anúncios, os utilizadores eram direcionados para páginas fraudulentas que induziam à execução de comandos maliciosos no Terminal. O impacto abrange a infeção de dispositivos com programas espiões e a potencial exposição de dados sensíveis.",
+   "image": "https://www.estadao.com.br/resizer/v2/NT6D2XCFUZAQ7CADX5IM7RFHUA.png?quality=80&auth=dbebbdd9f028eac9695592f53f4c7633075d3aeef40bd6400f11cc55e686dc2e&width=710",
+   "points": [
+    "Quem: Cibercriminosos e utilizadores de computadores Mac.",
+    "O quê: Campanhas de anúncios falsos no Google a distribuir software malicioso.",
+    "Como: Uso de contas comprometidas, técnicas de cloaking e comandos no Terminal.",
+    "Impacto: Infeção de dispositivos com programas espiões."
+   ],
+   "title_original": null,
+   "category": "Phishing/Fraude",
+   "translated": false,
+   "enriched": true,
+   "why": "Evidencia como os motores de busca e os resultados patrocinados continuam a ser explorados para distribuir malware sofisticado.",
+   "todo": "Evite clicar em links patrocinados para transferir software e verifique sempre se está a descarregar ferramentas a partir dos repositórios oficiais."
+  },
+  {
+   "id": "64c805fe0a24738b",
+   "source": "Malwarebytes Labs",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.malwarebytes.com/blog/family-and-parenting/2026/11/teen-missing-for-521-days-found-help-through-among-us-chat",
+   "published": "2026-11-26T10:57:25+00:00",
+   "title": "Adolescente desaparecida há 521 dias foi encontrada com ajuda do chat de Among Us",
+   "summary": "Uma jovem de 15 anos que estava desaparecida e mantida contra a sua vontade foi resgatada após conseguir contactar um amigo através do jogo online Among Us. A adolescente tinha sido raptada e isolada num espaço no Oregon por um homem de 38 anos que conheceu na internet. Graças à comunicação estabelecida na plataforma de jogos, foi possível accionar as autoridades e desencadear a operação de salvamento. O impacto culminou no resgate bem-sucedido da vítima e na detenção do agressor pelas autoridades federais.",
+   "image": null,
+   "points": [
+    "Quem: Uma jovem desaparecida e utilizadores do jogo Among Us.",
+    "O quê: Resgate de uma vítima de sequestro através de chat num jogo online.",
+    "Como: Contacto estabelecido com um amigo durante a jogabilidade que permitiu o alerta.",
+    "Impacto: A vítima foi resgatada com sucesso e o suspeito foi travado."
+   ],
+   "title_original": "Teen missing for 521 days found help through Among Us chat",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra como as plataformas de jogos online podem, em circunstâncias excecionais, servir de canal de salvamento em situações de perigo extremo.",
+   "todo": "Converse regularmente com os jovens sobre os riscos dos chats em jogos online e o que devem fazer se precisarem de ajuda urgente."
   },
   {
    "id": "82568982e7fbcf68",
@@ -1261,6 +1330,29 @@
    "enriched": true,
    "why": "Facilita a adoção segura de inteligência artificial em ambientes empresariais na cloud.",
    "todo": "Configure a autorização baseada em fornecedores de identidade para gerir o acesso de ferramentas de IA de forma centralizada."
+  },
+  {
+   "id": "3ee0dff29d7e7488",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/internet/seguranca/fastestvpn-black-friday-plano-vitalicio/",
+   "published": "2026-11-25T21:00:00+00:00",
+   "title": "FastestVPN Black Friday: plano vitalício a 25 dólares com o FastestPass incluído",
+   "summary": "A prestadora de serviços FastestVPN lançou uma campanha promocional de Black Friday que substitui os pagamentos mensais habituais por uma modalidade de plano vitalício único. A oferta inclui também o acesso à ferramenta FastestPass mediante o pagamento de um montante fixo. Esta proposta surge num contexto de aumento generalizado dos custos de subscrição de serviços de streaming e estrangulamento de tráfego por parte das operadoras. O impacto foca-se na alternativa comercial para utilizadores que procuram poupar em ferramentas de privacidade e conectividade.",
+   "image": null,
+   "points": [
+    "Quem: A empresa FastestVPN e potenciais clientes.",
+    "O quê: Lançamento de um plano vitalício promocional com FastestPass incluído.",
+    "Como: Pagamento único em vez de subscrições mensais recorrentes.",
+    "Impacto: Redução de custos a longo prazo para os utilizadores na área de VPNs."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Ilustra as estratégias comerciais adotadas por fornecedores de cibersegurança e privacidade para captar clientes durante épocas de descontos.",
+   "todo": "Avalie criticamente as necessidades reais de privacidade antes de aderir a planos de longa duração de serviços de VPN."
   },
   {
    "id": "dbfa2402c895a28e",
@@ -13679,97 +13771,6 @@
    "enriched": true,
    "why": "Mostra como os ataques cibernéticos baseados em IA já afetam diretamente instituições de elevada importância estratégica.",
    "todo": "Mantenha os sistemas monitorizados e reforce os mecanismos de deteção rápida contra ameaças potenciadas por inteligência artificial."
-  },
-  {
-   "id": "b6dced9e8be0bdef",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html",
-   "published": "2026-11-20T10:38:22+00:00",
-   "title": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
-   "summary": "A SonicWall alertou os clientes para substituírem imediatamente as firewalls de geração 6, pois estes equipamentos deixaram de receber correções de segurança, mesmo para falhas críticas. A empresa sublinha que os atacantes utilizam agora automação e inteligência artificial para detetar e explorar mais depressa dispositivos sem suporte na internet. Esta exposição coloca em risco elevado todas as redes que continuam a utilizar hardware obsoleto na linha de frente da internet. O impacto direto é a vulnerabilidade total destas organizações a intrusões automatizadas.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGn5oji8gd4l_d6wKemSflqTX-q-eiuu4CbbV2ROvzK6Gzpeq8zPsQyGb-UO80f_M8L2pDNNyNqF1ZIdyMPGReyW0KmPb7uuAuRu1M-ZVyNu-GJvx1CRaBsaEOVjV-asFG0P__0MK0Jp3WPJmcNxATiSd6NeBzcCmy-6dLvS5yvpen0cRrwLZvgVpYAvn0/s1600/sonicwall.jpg",
-   "points": [
-    "A SonicWall descontinuou o suporte a patches nas firewalls de Geração 6.",
-    "Criminosos usam IA para explorar rapidamente equipamentos desatualizados na internet.",
-    "A recomendação é retirar e substituir o hardware afetado de imediato.",
-    "O impacto deixa as redes expostas a ataques automatizados e críticos."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Manter equipamento de rede sem suporte abre uma porta direta e sem defesa para os atacantes.",
-   "todo": "Substitua o equipamento de rede obsoleto e garanta que nenhuma firewall sem suporte fica exposta diretamente à internet."
-  },
-  {
-   "id": "f5b6ed0f978c7e42",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/",
-   "published": "2026-11-20T10:34:10+00:00",
-   "title": "Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE",
-   "summary": "A linguagem Ruby corrigiu uma vulnerabilidade de estouro de buffer baseada em heap, identificada como CVE-2026-132825. Esta falha, conhecida como Ruby2Shell, pode permitir que atacantes executem código remoto de forma não autorizada. A correção já foi disponibilizada para proteger os sistemas afetados. Os utilizadores devem atualizar o software o mais rapidamente possível para evitar explorações.",
-   "image": null,
-   "points": [
-    "O quê: Correção da falha CVE-2026-132825 (Ruby2Shell).",
-    "Tipo: Estouro de buffer baseado em heap.",
-    "Impacto: Execução remota de código (RCE).",
-    "Como resolver: Atualizar a linguagem Ruby."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Permite que atacantes assumam o controlo de sistemas vulneráveis se a falha não for corrigida.",
-   "todo": "Atualize a linguagem Ruby para a versão mais recente com patches."
-  },
-  {
-   "id": "c9ddefa65f5030a8",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
-   "published": "2026-11-20T10:32:50+00:00",
-   "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
-   "summary": "Vários atacantes exploraram uma falha crítica de segurança em dispositivos Cisco Expressway para invadir uma organização russa. A exploração focou-se na vulnerabilidade CVE-2026-76466 com uma pontuação CVSS de 9.8, permitindo que utilizadores remotos não autenticados acedam à rede. Esta atividade foi detetada logo após a disponibilização pública de um exploit de prova de conceito. O impacto consistiu no comprometimento de vários dispositivos e no acesso bem-sucedido à rede interna da vítima.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrMm7M_HyuVDt9NknngHSgyfGKu0DR8VTc_GYL-tr_hMhTmi3EAZnM8x5byJQRYEqcUAZlDTR_Xi4RcMm4lidmk9UR_iyTWpDa5Mn6xRBoNwAf3auen2u6guKxnvoIrcQOfq7Mm1clmsyBMYVcjaOqVFYiN4mXgYSyR5_DUSrmVOLDK5mQeAS8BBB3X5-5/s1600/cisco-cyberattacks.jpg",
-   "points": [
-    "Atacantes exploraram a vulnerabilidade CVE-2026-76466 num Cisco Expressway.",
-    "A falha tem uma gravidade máxima e afeta dispositivos expostos à rede.",
-    "A exploração ocorreu logo após a publicação de uma prova de conceito.",
-    "O impacto permitiu o acesso não autorizado à rede interna da organização."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "A exploração rápida de falhas críticas recém-divulgadas compromete redes internas em minutos.",
-   "todo": "Aplique imediatamente as correções de segurança disponibilizadas pela Cisco para o CVE-2026-76466."
-  },
-  {
-   "id": "d7d1043ff4ae8fc6",
-   "source": "Rapid7",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.rapid7.com/blog/post/pt-metasploit-wrap-up-breaking-zimbra-s-identity-boundaries",
-   "published": "2026-11-20T10:30:36+00:00",
-   "title": "Metasploit atualizado com módulos para contornar fronteiras de identidade do Zimbra",
-   "summary": "O Metasploit integrou novos módulos e correções focados em problemas de fronteira de identidade no Zimbra, baseados em investigações recentes. As adições incluem um componente partilhado para autenticação SOAP e módulos que visam falhas específicas de autorização e de limitação de taxa. Estas ferramentas permitem validar a segurança em instâncias do Zimbra Network Edition.",
-   "image": "https://images.contentstack.io/v3/assets/blte4f029e766e6b253/blt0d50271a40a5f14f/6849ab419621d9f3824d5017/metasploit-sky.png",
-   "points": [
-    "Foram adicionados novos módulos ao Metasploit focados na plataforma Zimbra.",
-    "As ferramentas testam falhas como desvios de autorização e contornos de limite de taxa.",
-    "A investigação ajuda a identificar vulnerabilidades em ambientes corporativos de correio eletrónico."
-   ],
-   "title_original": "Metasploit Wrap Up: Breaking Zimbra's Identity Boundaries",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite que os profissionais de segurança testem e identifiquem vulnerabilidades críticas em servidores de colaboração e email.",
-   "todo": "Atualize os servidores Zimbra para as versões mais recentes e verifique se existem desvios de autenticação ou limites de taxa mal configurados."
   }
  ]
 }

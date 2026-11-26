@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-26T15:07:46.093815+00:00",
+ "updated": "2026-11-26T15:30:25.255227+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "IT Security",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -69,7 +69,7 @@
   {
    "source": "CERT/CC (Carnegie Mellon)",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "MS-ISAC (CIS)",
@@ -89,7 +89,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 20
+   "added": 21
   },
   {
    "source": "SecurityWeek",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -264,17 +264,17 @@
   {
    "source": "Graham Cluley",
    "ok": true,
-   "added": 3
+   "added": 2
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Check Point Research",
@@ -309,14 +309,59 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 170,
-  "unenriched": 74,
+  "done": 108,
+  "pending": 181,
+  "unenriched": 86,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)"
   ]
  },
  "items": [
+  {
+   "id": "f5eee8a53f92f417",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
+   "published": "2026-11-26T15:13:41+00:00",
+   "title": "Coreia do Norte liga-se a PolinRider e envenena mais de 7.600 repositórios do GitHub para espalhar malware",
+   "summary": "Atores de ameaça ligados à campanha PolinRider colocaram um carregador Python em repositórios do GitHub para propagar software malicioso. A atividade poderá ter começado em fevereiro de 2025 e afeta mais de 7.600 repositórios. O código malicioso esconde-se em pequenos pacotes utilitários ou em conftest.py para ser executado quando o ficheiro é importado.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgquhPuqGJrSE3xNpn5ZUELVAv-Y7qXqkHgpw7nbVqCay4gyraYO5NNE12rAGzuqk_zhreNwcyzjZf3vZZB5C4teohyuppUP-JlP41PQiLu-hGEFCsqMZO0T6MoaVk-uY818yaTaiJaX-d2O0h0RER22knXbUQc7qnwIcVbleLQrEspMQ8btNa4Q9mFrmue/s1600/gitcat.jpg",
+   "points": [
+    "Atacantes ligados à Coreia do Norte infetaram mais de 7.600 repositórios do GitHub.",
+    "Um carregador Python foi colocado em pacotes utilitários ou no ficheiro conftest.py.",
+    "O malware executa-se automaticamente quando o Python importa o ficheiro afetado."
+   ],
+   "title_original": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "Compromete milhares de projetos de software legítimos ao injetar código malicioso de forma silenciosa através de dependências.",
+   "todo": "Audite regularmente as dependências dos seus projetos em Python e verifique a integridade dos pacotes utilizados no GitHub."
+  },
+  {
+   "id": "8a516d33ec62afe7",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/inteligencia-artificial/dificil-imaginar-que-a-humanidade-mantenha-o-controle-executivo-da-meta-alerta-sobre-super-ia/",
+   "published": "2026-11-26T15:00:00+00:00",
+   "title": "‘Difícil imaginar que a humanidade mantenha o controle’: executivo da Meta alerta sobre super IA",
+   "summary": "O diretor de IA da Meta, Alexandr Wang, alertou que a humanidade poderá perder o controlo sobre a inteligência artificial com o avanço dos sistemas inteligentes. O aviso surgiu após um funcionário da Anthropic utilizar o Claude para resolver a Hipótese de Riemann. Wang destacou que o desenvolvimento acelerado trará consequências negativas e dificultará a monitorização por parte dos humanos.",
+   "image": "https://www.estadao.com.br/resizer/v2/SFMC2BYAWJPP3JPY27TY4W2LUQ.jpg?quality=80&auth=adb18d41dcb36cdb14efe94711fde764779d7fa894b52d57c8c1c35c641fc5df&width=1150",
+   "points": [
+    "O diretor de IA da Meta alertou para a perda de controlo sobre a superinteligência artificial.",
+    "O aviso ocorreu após uma IA resolver um conhecido problema matemático em aberto.",
+    "O executivo defende que a prioridade deve ser a segurança e o controlo, evitando a autonomia total."
+   ],
+   "title_original": null,
+   "category": "IA",
+   "translated": false,
+   "enriched": true,
+   "why": "Alerta para os riscos existenciais e de segurança associados ao desenvolvimento descontrolado de sistemas de IA altamente autónomos.",
+   "todo": "Estabeleça políticas rigorosas de governação e segurança interna antes de adotar sistemas avançados de inteligência artificial."
+  },
   {
    "id": "adc2f0ceeb28b6a6",
    "source": "Security Affairs",
@@ -13714,52 +13759,6 @@
    "enriched": true,
    "why": "Mostra que os ataques de ransomware causam paragens prolongadas que afetam gravemente a continuidade do negócio.",
    "todo": "Invista em cópias de segurança offline e imutáveis e teste regularmente os seus planos de recuperação de desastres."
-  },
-  {
-   "id": "d1bd094a16227bc7",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/voxel/gta-6-pirata-hacker-cyberleek-esta-de-volta-com-build-ilegal-do-jogo/",
-   "published": "2026-11-20T14:14:00+00:00",
-   "title": "GTA 6 pirata? Hacker Cyberleek está de volta com build ilegal do jogo",
-   "summary": "O hacker Cyberleek reapareceu e publicou uma suposta versão de desenvolvimento de GTA 6 para consolas Xbox, com cerca de 209 GB, obtida via torrent. A distribuição faz parte de uma tentativa de promover e lucrar com uma criptomoeda própria chamada $CYBERLEEK, condicionando a libertação do executável a metas de mercado. Especialistas em segurança analisaram os ficheiros e consideram o material legítimo, embora existam dúvidas técnicas sobre a sua integridade.",
-   "image": "https://www.estadao.com.br/resizer/v2/M2ZQDJK4INKQFDVBHR43ME7V5M.jpg?quality=80&auth=130f2befce38fe571dfa47701805272bab3554298a287fc25fd4539629160722&width=710",
-   "points": [
-    "Hacker Cyberleek vazou uma build de desenvolvimento de GTA 6 para Xbox.",
-    "Ficheiros foram distribuídos por torrent e rondam os 209 GB.",
-    "Ação serve para promover a criptomoeda $CYBERLEEK e angariar fundos.",
-    "Especialistas consideram o material legítimo, apesar de faltarem componentes essenciais."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "O download de software não oficial e ilegal de fontes desconhecidas é um vetor clássico para a propagação de malware.",
-   "todo": "Evite descarregar conteúdos de fontes não oficiais e mantenha as soluções de endpoint atualizadas."
-  },
-  {
-   "id": "096e0ef0231d7dec",
-   "source": "Tenable",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.tenable.com/blog/public-sector-exposure-management-php2shell",
-   "published": "2026-11-20T14:00:00+00:00",
-   "title": "How exposure management can help public sector prepare for PHP2Shell-like vulnerabilities",
-   "summary": "As vulnerabilidades conhecidas como PHP2Shell demonstraram a rapidez com que falhas ao nível do 'runtime' passam da revelação pública para a exploração ativa por parte de cibercriminosos. O principal desafio para as equipas de segurança foi identificar a localização exata do PHP nos seus ativos de TI, aplicações Web e ambientes em nuvem. As autoridades e organizações públicas viram-se obrigadas a adotar medidas drásticas, incluindo desativar temporariamente websites para travar as tentativas de ataque. Esta situação evidenciou a urgência de antecipar o impacto na borda da rede e priorizar correções com base em evidências reais de exploração.",
-   "image": "https://www.tenable.com/sites/default/files/images/articles/How%20exposure%20management%20can%20help%20public%20sector%20prepare%20for%20the%20next%20PHP2Shell.png",
-   "points": [
-    "Falhas PHP2Shell exploradas rapidamente após a revelação.",
-    "Dificuldade das equipas em localizar o PHP nos ambientes.",
-    "Necessidade de mapear caminhos de escalação de privilégios.",
-    "Priorização de correções baseada em evidências de exploração."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "A aceleração no tempo de exploração de falhas críticas exige uma gestão rigorosa da exposição e mapeamento prévio de ativos.",
-   "todo": "Mapeie todos os ativos onde o PHP executa na sua infraestrutura e estabeleça planos de contingência para sistemas que não podem ser corrigidos de imediato."
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T06:07:02.825623+00:00",
+ "updated": "2026-11-26T06:27:35.851839+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Security Affairs",
@@ -309,15 +309,59 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 118,
-  "pending": 188,
-  "unenriched": 88,
+  "done": 117,
+  "pending": 191,
+  "unenriched": 91,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "bb379b79e74f5c02",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/26/proxmox-9-3-adds-production-snapshots-for-san-backed-vms/",
+   "published": "2026-11-26T06:07:23+00:00",
+   "title": "Proxmox 9.3 adiciona snapshots de produção para VMs em SAN",
+   "summary": "O Proxmox Virtual Environment 9.3 introduziu suporte oficial para snapshots em armazenamento partilhado LVM via iSCSI e Fibre Channel SAN. Esta funcionalidade permite criar pontos de restauro antes de alterações críticas, garantindo que a identidade da máquina virtual se mantém após migrações ou backups. A solução é ideal para ambientes de produção que utilizam infraestruturas SAN.",
+   "image": null,
+   "points": [
+    "Suporte oficial para snapshots em SAN",
+    "Identidade persistente em migrações e backups",
+    "Melhoria na segurança para alterações críticas"
+   ],
+   "title_original": "Proxmox 9.3 adds production snapshots for SAN-backed VMs",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite realizar alterações arriscadas em ambientes de produção com uma rede de segurança fiável.",
+   "todo": "Atualize para a versão 9.3 e valide a configuração dos seus volumes LVM antes de implementar snapshots em produção."
+  },
+  {
+   "id": "e51dcba7db603e16",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/26/fortinet-holiday-shopping-cyber-threats-report/",
+   "published": "2026-11-26T06:00:53+00:00",
+   "title": "Mais de 4.400 domínios maliciosos à espera dos compradores de época festiva",
+   "summary": "Cibercriminosos estão a preparar campanhas fraudulentas para a época de compras natalícias, utilizando lojas falsas e roubo de contas. Investigadores detetaram mais de 4.400 domínios maliciosos criados recentemente com termos relacionados com compras. Estes ataques visam o roubo de dados de clientes e a exploração de infraestruturas de comércio eletrónico.",
+   "image": null,
+   "points": [
+    "Aumento de lojas online fraudulentas",
+    "Roubo de dados e credenciais de clientes",
+    "Uso de domínios com palavras-chave sazonais"
+   ],
+   "title_original": "More than 4,400 malicious domains are waiting for holiday shoppers",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "O volume de ameaças aumenta drasticamente durante a época de compras, expondo tanto consumidores como empresas.",
+   "todo": "Verifique sempre a legitimidade dos domínios antes de inserir dados e reforce a autenticação nas contas de e-commerce."
+  },
   {
    "id": "d03a4b25546f4b4e",
    "source": "Help Net Security",
@@ -13726,51 +13770,6 @@
    "enriched": true,
    "why": "Demonstra como a automatização de confiança pode tornar-se um ponto de entrada para atacantes em ecossistemas de software amplamente utilizados.",
    "todo": "As empresas devem auditar as permissões das suas ferramentas de automatização e implementar princípios de privilégio mínimo."
-  },
-  {
-   "id": "e640697064297c0b",
-   "source": "CSO Online",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.csoonline.com/article/4251068/european-commission-hr-hit-by-cyber-attack.html",
-   "published": "2026-11-20T02:08:48+00:00",
-   "title": "Recursos Humanos da Comissão Europeia atingidos por ciberataque",
-   "summary": "A Comissão Europeia confirmou que sistemas de recursos humanos foram alvo de um ataque cibernético perpetrado com a ferramenta ARTEX. O incidente foi detetado a 22 de outubro e obrigou ao corte de acessos aos sistemas durante mais de dez dias como medida preventiva. A campanha envolveu uma série de incidentes e a EDPS foi devidamente informada sobre o sucedido. As autoridades asseguraram que não existem, até ao momento, provas de uma fuga de dados que afete o pessoal da Comissão.",
-   "image": "https://www.csoonline.com/wp-content/uploads/2026/10/4229824-0-32639600-1790929680-shutterstock_318496325.jpg?quality=50&strip=all",
-   "points": [
-    "Ataque a sistemas de recursos humanos da Comissão Europeia através da ferramenta ARTEX.",
-    "Acesso aos sistemas cortado por mais de dez dias para mitigação e prevenção.",
-    "Envolvimento de uma campanha com múltiplos incidentes reportados à EDPS.",
-    "Ausência de indícios de violação de dados de funcionários da Comissão."
-   ],
-   "title_original": "European Commission HR hit by cyber attack",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como ferramentas de teste de penetração de código aberto podem ser ativamente weaponizadas por atacantes contra infraestruturas governamentais críticas.",
-   "todo": "Monitorizar e restringir o uso não autorizado de ferramentas de pentest nas redes e manter canais de comunicação ativos com as equipas de CERT."
-  },
-  {
-   "id": "e60f53cef3c69b10",
-   "source": "SANS ISC",
-   "region": "US",
-   "lang": "en",
-   "link": "https://isc.sans.edu/diary/rss/33538",
-   "published": "2026-11-20T02:00:02+00:00",
-   "title": "ISC Stormcast para sexta-feira, 20 de novembro de 2026",
-   "summary": "Este episódio do podcast Stormcast aborda as principais atualizações e análises de cibersegurança do dia. O programa fornece um resumo técnico direcionado a profissionais da área sobre as ameaças e vulnerabilidades recentes. Trata-se de uma emissão regular para manter a comunidade informada sobre o panorama de riscos atual.",
-   "image": null,
-   "points": [
-    "Resumo diário de cibersegurança em formato podcast.",
-    "Análise de ameaças e tendências atuais.",
-    "Foco em informação técnica para profissionais."
-   ],
-   "title_original": "ISC Stormcast For Friday, November 20th, 2026 https://isc.sans.edu/podcastdetail/10188, (Fri, Nov 20th)",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite acompanhar rapidamente os incidentes e desenvolvimentos mais recentes no setor da cibersegurança.",
-   "todo": "Ouvir o podcast regularmente para se manter atualizado sobre novas ameaças."
   }
  ]
 }

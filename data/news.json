@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T09:46:34.520315+00:00",
+ "updated": "2026-11-26T10:05:19.479287+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -9,12 +9,12 @@
   {
    "source": "IT Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "TugaTech",
@@ -114,7 +114,7 @@
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "TechCrunch Security",
@@ -239,7 +239,7 @@
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 12
+   "added": 11
   },
   {
    "source": "Help Net Security",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 48,
-  "pending": 265,
-  "unenriched": 163,
+  "done": 0,
+  "pending": 308,
+  "unenriched": 210,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
@@ -319,6 +319,23 @@
   ]
  },
  "items": [
+  {
+   "id": "08c2500833e62b37",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/204031/cyber-crime/1password-hacked-customer-names-and-emails-copied-vaults-untouched.html",
+   "published": "2026-11-26T09:42:47+00:00",
+   "title": "1Password Hacked: Customer Names and Emails Copied, Vaults Untouched",
+   "summary": "1Password says an attacker stole customer names and emails through an employee’s GitHub account, but vaults and passwords remained safe. 1Password has disclosed that an attacker got into some of its backend systems. The company posted its update on November 25 and says customer vaults weren’t affected. It also says some customer account data was […]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "1Password says an attacker stole customer names and emails through an employee’s GitHub account, but vaults and passwords remained safe. 1Password has disclosed that an attacker got into some of its backend systems. The company posted its update on November 25 and says customer vaults weren’t affected. It also says some customer account data was copied. “An attacker gained access to some of our backend systems and copied a limited amount of customer account information from a subset of our customers, including the names and email addresses that customers use to sign into 1Password.” reads the update published by 1Password. “Your vault data, the items in them, and the keys that protect them are safe and were not affected. 1Password does not have access to your password or secret keys.” An attacker accessed some of company’s backend systems and copied a limited amount of customer data. This affected only some customers and included the names and email addresses they use to sign in. The identity security firm has not said how many customers were affected, a detail also missing from TechCrunch’s report. The attack started with an employee’s corporate GitHub account. 1Password began investigating on November 19, after detecting signs that someone had accessed the account without permission. The attacker used it to access source code and add malicious code to backend services. These services then downloaded customer-related administrative data. It is still unclear how the attacker gained access to the employee’s GitHub account. The copied records include names and email addresses, account and user identifiers, and the times each account was created and last signed in. They also hold public keys, which are public by design, and Secure Remote Password parameters, which can’t be"
+  },
   {
    "id": "a0100a52ea63eb06",
    "source": "Infosecurity Magazine",
@@ -363,6 +380,23 @@
    "enriched": true,
    "why": "Sublinha os perigos de implementar sistemas críticos de tratamento de dados públicos sem mecanismos adequados de correção e salvaguarda.",
    "todo": "Garanta que qualquer novo sistema de dados inclua mecanismos validados para auditoria, correção e tratamento de erros antes da sua implementação."
+  },
+  {
+   "id": "3759815b9ec056fd",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/internet/seguranca/black-friday-psp-deixa-alerta-sobre-burlas-nas-compras-online-saiba-como-se-proteger/",
+   "published": "2026-11-26T09:30:00+00:00",
+   "title": "Black Friday: PSP deixa alerta sobre burlas nas compras online. Saiba como se proteger",
+   "summary": "A Polícia de Segurança Pública (PSP) recomenda desconfiança perante preços significativamente inferiores aos habituais no mercado e pede que qualquer suspeita de burla seja comunicada à polícia, independentemente do valor do prejuízo. A PSP divulgou um comunicado a propósito da Black Friday, no qual alerta os consumidores para a existência de eventuais esquemas fraudulentos associados […]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Phishing/Fraude",
+   "translated": false,
+   "enriched": false,
+   "raw": "A Polícia de Segurança Pública (PSP) recomenda desconfiança perante preços significativamente inferiores aos habituais no mercado e pede que qualquer suspeita de burla seja comunicada à polícia, independentemente do valor do prejuízo. A PSP divulgou um comunicado a propósito da Black Friday, no qual alerta os consumidores para a existência de eventuais esquemas fraudulentos associados […]"
   },
   {
    "id": "ecfd160b2eed585b",
@@ -13723,52 +13757,6 @@
    "enriched": true,
    "why": "Corrige erros e melhora funcionalidades essenciais do sistema operativo Windows 11.",
    "todo": "Instale as atualizações oficiais do sistema operativo de forma regular para garantir a estabilidade e segurança."
-  },
-  {
-   "id": "8165d9521735285d",
-   "source": "TechCrunch Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://techcrunch.com/2026/11/20/the-u-s-national-cyber-director-is-stepping-down/",
-   "published": "2026-11-20T09:14:19+00:00",
-   "title": "The U.S. national cyber director is stepping down",
-   "summary": "O diretor nacional de ciberdos Estados Unidos vai abandonar o cargo. Esta decisão surge numa altura em que várias empresas em todo o país reportam diversas falhas técnicas. Atualmente, as causas exatas para estas interrupções permanecem desconhecidas.",
-   "image": null,
-   "points": [
-    "Quem: O diretor nacional de cibersegurança dos EUA.",
-    "O quê: Vai demitir-se do cargo.",
-    "Como: A saída coincide com relatos de falhas técnicas pelo país.",
-    "Impacto: Aumenta a incerteza enquanto as causas das falhas continuam por apurar."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Permanece incerto o impacto destas falhas técnicas e a liderança futura da cibersegurança norte-americana.",
-   "todo": ""
-  },
-  {
-   "id": "1842d6db44a69da9",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/n-able-blames-service-disruption-on-cyberattack/",
-   "published": "2026-11-20T09:08:35+00:00",
-   "title": "N-able Blames Service Disruption on Cyberattack",
-   "summary": "A empresa N-able atribuiu uma recente interrupção de serviço a um ciberataque. O incidente afetou diretamente as plataformas Mail Assure e SpamExperts Hosted Cloud. Esta falha de segurança podia ter resultado no roubo de credenciais dos utilizadores.",
-   "image": null,
-   "points": [
-    "Quem: N-able.",
-    "O quê: Atribuiu interrupção de serviço a um ciberataque.",
-    "Como: Incidente atingiu Mail Assure e SpamExperts Hosted Cloud.",
-    "Impacto: Risco potencial de roubo de credenciais de acesso."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Ajuda a compreender como ataques a plataformas de email na cloud podem expor credenciais sensíveis.",
-   "todo": "Ative a autenticação multifator (MFA) em todas as contas e monitorize acessos suspeitos."
   }
  ]
 }

@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-26T20:06:04.742522+00:00",
+ "updated": "2026-11-26T20:21:36.992364+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
@@ -129,7 +129,7 @@
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 9
+   "added": 8
   },
   {
    "source": "Schneier on Security",
@@ -154,7 +154,7 @@
   {
    "source": "Microsoft Security Blog",
    "ok": true,
-   "added": 4
+   "added": 5
   },
   {
    "source": "Microsoft MSRC",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -268,13 +268,13 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Check Point Research",
@@ -309,13 +309,12 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 72,
-  "pending": 217,
-  "unenriched": 120,
+  "done": 108,
+  "pending": 181,
+  "unenriched": 84,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 51 column 5 (char 4856)",
-   "Expecting property name enclosed in double quotes: line 78 column 5 (char 6666)"
+   "Expecting ':' delimiter: line 91 column 3 (char 7030)"
   ]
  },
  "items": [
@@ -341,6 +340,29 @@
    "enriched": true,
    "why": "Permite que atacantes assumam o controlo completo de websites vulneráveis sem que os administradores percebam facilmente.",
    "todo": "Investigue possíveis compromissos anteriores e garanta que o instalador do Drupal (install.php) está devidamente protegido e inacessível remotamente."
+  },
+  {
+   "id": "2cde4a64c5deb9d2",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html",
+   "published": "2026-11-26T19:39:57+00:00",
+   "title": "ThreatsDay: 10M NGINX Services at Risk, 250+ Malicious Extensions, AI Server Hijacking + 17 More Stories",
+   "summary": "Uma nova análise sobre o panorama de ameaças cibernéticas revelou múltiplos riscos críticos que afetam milhões de sistemas e utilizadores a nível global. Entre os problemas identificados encontram-se milhões de serviços NGINX vulneráveis, centenas de extensões de navegador maliciosas e tentativas de sequestro de servidores de inteligência artificial. Estas falhas demonstram a facilidade com que os atacantes exploram tanto infraestruturas de rede como ferramentas do quotidiano digital. O impacto abrange desde a potencial exposição de dados até ao comprometimento total de servidores empresariais.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlwb4cL2xbF38yynT-hp8rHaGntsYzuQwL4-68g3SxEW4Taw6_Kl4WFfL4CuNRNXGxO_KS9prZaqk0A6SA6fib3k8j9miTymP8PzABv9OA21eSDsRv1j9NEgbIEVMR7u1C7VmFyFxdBf0Zcj2sckIyHDkRSjm76oFMDd10drUHa1ctv6190vdYHhuVuRPk/s1600/thday.jpg",
+   "points": [
+    "Milhões de serviços NGINX expostos a riscos de segurança.",
+    "Mais de 250 extensões de navegador maliciosas detetadas.",
+    "Atacantes tentam sequestrar servidores dedicados a inteligência artificial.",
+    "Vulnerabilidades afetam infraestruturas de rede e ferramentas digitais."
+   ],
+   "title_original": "ThreatsDay: 10M NGINX Services at Risk, 250+ Malicious Extensions, AI Server Hijacking + 17 More Stories",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como diversas frentes tecnológicas, do software de servidores às extensões, estão sob forte ataque.",
+   "todo": "Audite regularmente as extensões de navegador instaladas e mantenha os servidores NGINX e aplicações atualizados."
   },
   {
    "id": "5b85703e9e652995",
@@ -13740,28 +13762,6 @@
    "enriched": true,
    "why": "Permite que mensagens maliciosas executem código e comprometam a segurança de smartphones Android.",
    "todo": "Atualize a aplicação Telegram para a versão mais recente e evite interagir com conteúdos ou mensagens desconhecidas."
-  },
-  {
-   "id": "35aed7f27fbb0710",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/cyber-risk/what-we-missed-nvidia-ceo-scandal-rocks-ai-industry",
-   "published": "2026-11-20T17:04:04+00:00",
-   "title": "What We Missed: Nvidia CEO Scandal Rocks AI Industry",
-   "summary": "Num vídeo recente, os editores da Dark Reading debateram notícias marcantes que não tinham sido cobertas anteriormente. Entre os temas abordados encontram-se a demissão de Jensen Huang da Nvidia e uma recente falha na cloud da Microsoft. Estes acontecimentos geraram ondas de choque na indústria tecnológica e no setor da inteligência artificial. A discussão destacou o impacto destes eventos na estabilidade do mercado.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltafa9df51f75884e4/6b007fead61f59302a23c588/nvidia-Benjamin_Fanjoy_-Getty-2304259055.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "Editores da Dark Reading discutem notícias tecnológicas menos cobertas.",
-    "Inclui a demissão de Jensen Huang da Nvidia.",
-    "Aborda também a recente falha na cloud da Microsoft."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "Ajuda a compreender acontecimentos corporativos importantes que afetam o ecossistema tecnológico.",
-   "todo": ""
   }
  ]
 }

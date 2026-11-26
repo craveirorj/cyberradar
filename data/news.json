@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T15:30:25.255227+00:00",
+ "updated": "2026-11-26T15:45:50.366266+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -34,7 +34,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CISA Advisories",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -209,7 +209,7 @@
   {
    "source": "Tenable",
    "ok": true,
-   "added": 6
+   "added": 7
   },
   {
    "source": "Zero Day Initiative",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -309,15 +309,108 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 181,
-  "unenriched": 86,
+  "done": 60,
+  "pending": 229,
+  "unenriched": 135,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)"
+   "Expecting property name enclosed in double quotes: line 5 column 1 (char 60)",
+   "Expecting property name enclosed in double quotes: line 65 column 5 (char 5010)"
   ]
  },
  "items": [
+  {
+   "id": "0d3c85a49e3b738a",
+   "source": "CSO Online",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.csoonline.com/article/4253667/new-geoserver-rce-exploit-chain-seen-in-the-wild-two-days-after-disclosure.html",
+   "published": "2026-11-26T15:39:58+00:00",
+   "title": "New GeoServer RCE exploit chain seen in the wild two days after disclosure",
+   "summary": "Dois dias após a divulgação pública por parte do projeto GeoServer, atacantes começaram a explorar ativamente uma cadeia de cinco vulnerabilidades que permite a execução remota de código sem autenticação. A atividade foi detetada pela empresa de segurança watchTowr através de servidores honeypot, com endereços IP a testar instâncias vulneráveis. As falhas afetam várias versões do GeoServer, um software amplamente utilizado por agências governamentais e grandes organizações para publicar dados geoespaciais. O impacto permite que atacantes externos contornem restrições de segurança e executem código no sistema hospedeiro.",
+   "image": "https://www.csoonline.com/wp-content/uploads/2025/07/4032009-0-81697400-1753960152-shutterstock_2477533867.jpg?quality=50&strip=all",
+   "points": [
+    "Atacantes testam ativamente uma cadeia de cinco falhas no GeoServer dias após a divulgação.",
+    "As vulnerabilidades permitem a execução remota de código sem autenticação por parte de agentes externos.",
+    "O GeoServer é amplamente utilizado por governos e grandes organizações para publicar dados geoespaciais.",
+    "O impacto inclui a possibilidade de contornar restrições de segurança e executar código nos servidores afetados."
+   ],
+   "title_original": "New GeoServer RCE exploit chain seen in the wild two days after disclosure",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes executem código remotamente em servidores críticos de organizações e entidades governamentais.",
+   "todo": "Atualize o GeoServer para as versões corrigidas mais recentes, dependendo da ramificação principal em utilização."
+  },
+  {
+   "id": "13d931ddc733da65",
+   "source": "SAPO Tek",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://tek.sapo.pt/noticias/internet/artigos/black-friday-a-procura-dos-melhores-descontos-e-promocoes-saiba-como-evitar-burlas-online/",
+   "published": "2026-11-26T15:31:00+00:00",
+   "title": "Black Friday: À procura dos melhores descontos e promoções? Saiba como evitar burlas online",
+   "summary": "Durante a época de descontos da Black Friday, o aumento de compras online é acompanhado por um crescimento de ameaças cibernéticas. Foram identificadas várias fraudes, incluindo lojas falsas e campanhas de phishing desenhadas para enganar os consumidores. O impacto afeta os utilizadores que procuram promoções, expondo-os a perdas financeiras e roubo de dados pessoais. Para mitigar estes riscos, são recomendadas boas práticas de segurança a adotar não só nesta altura, mas em qualquer compra na internet.",
+   "image": null,
+   "points": [
+    "A época da Black Friday traz um aumento de lojas falsas, phishing e fraudes online.",
+    "Os consumidores são o principal alvo destas campanhas maliciosas durante as compras na internet.",
+    "O impacto traduz-se no roubo de dados pessoais e potenciais perdas financeiras para os utilizadores.",
+    "Devem aplicar-se precauções de segurança contínuas em todas as transações e compras digitais."
+   ],
+   "title_original": null,
+   "category": "Phishing/Fraude",
+   "translated": false,
+   "enriched": true,
+   "why": "Protege os consumidores contra fraudes financeiras e roubo de dados durante picos de compras online.",
+   "todo": "Desconfie de promoções demasiado boas para ser verdade e verifique sempre a autenticidade das lojas online."
+  },
+  {
+   "id": "e81487fa4f9ec74d",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/26/significant-number-of-customer-records-pwned-in-flight-centre-travel-group-breach/5312360",
+   "published": "2026-11-26T15:29:00+00:00",
+   "title": "'Significant number of customer records' pwned in Flight Centre Travel Group breach",
+   "summary": "O grupo de viagens Flight Centre Travel Group foi alvo de um ciberataque que resultou no acesso não autorizado a um número significativo de registos de clientes. O incidente afetou um sistema de reservas de alojamento de terceiros utilizado por várias marcas do grupo, detetando-se que a maioria dos registos continha nomes e dados básicos de viagem. Embora os sistemas de reservas de voos e viagens corporativas tenham ficado isolados e sem impactos, uma pequena percentagem de dados expostos incluiu informações sensíveis. A empresa já conteve o ataque, rotacionou credenciais e está a colaborar com especialistas forenses.",
+   "image": "https://image.theregister.com/?imageId=259334&width=800",
+   "points": [
+    "O Flight Centre Travel Group sofreu um ciberataque num sistema de reservas de alojamento de terceiros.",
+    "Atacantes acederam a registos de clientes contendo nomes, dados de viagens e informações limitadas.",
+    "O impacto afeta a privacidade de clientes de várias marcas do grupo de viagens afetado.",
+    "A empresa conteve a ameaça, rotacionou credenciais e iniciou o contacto com os afetados."
+   ],
+   "title_original": "'Significant number of customer records' pwned in Flight Centre Travel Group breach",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Expõe dados pessoais de clientes através de falhas em sistemas de fornecedores terceiros.",
+   "todo": "Verifique de forma independente mensagens inesperadas sobre reservas antes de clicar em links ou partilhar dados."
+  },
+  {
+   "id": "17ea7e9dd6a3abc4",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/",
+   "published": "2026-11-26T15:23:28+00:00",
+   "title": "Remus malware steals Gmail messages via fake Google Sheets extension",
+   "summary": "O infostealer Remus está a roubar mensagens do Gmail através de uma extensão maliciosa para o navegador Chrome disfarçada de ferramenta do Google Sheets. Os operadores do malware comercializaram esta capacidade perigosa tirando partido de falhas nos serviços de email da Google. O impacto recai sobre os utilizadores infetados, cujas caixas de correio e dados privados ficam comprometidos. A ameaça demonstra como extensões falsas de browser continuam a ser usadas para espionagem e exfiltração de dados.",
+   "image": null,
+   "points": [
+    "O infostealer Remus utiliza uma extensão falsa do Google Sheets para roubar mensagens do Gmail.",
+    "Os atacantes comercializaram a capacidade de extração explorando o serviço de correio da Google.",
+    "O impacto afeta a confidencialidade das caixas de correio e dados privados dos utilizadores afetados.",
+    "A ameaça propaga-se através de extensões de navegador maliciosas e furtivas."
+   ],
+   "title_original": "Remus malware steals Gmail messages via fake Google Sheets extension",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Compromete o correio eletrónico e dados sensíveis dos utilizadores através de extensões de browser falsas.",
+   "todo": "Evite instalar extensões de navegador desconhecidas ou não verificadas e verifique as permissões solicitadas."
+  },
   {
    "id": "f5eee8a53f92f417",
    "source": "The Hacker News",
@@ -13667,98 +13760,6 @@
    "enriched": true,
    "why": "Mostra como uma falha de segurança num fornecedor externo pode expor dados de grandes instituições financeiras.",
    "todo": "Monitore regularmente os seus extratos bancários e adote serviços de proteção contra roubo de identidade caso seja contactado pela instituição afetada."
-  },
-  {
-   "id": "1722752aee2d029e",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/in-other-news-norwegian-energy-firm-cyberattacks-supercomputer-hack-new-nightmare-eclipse-exploit/",
-   "published": "2026-11-20T14:56:23+00:00",
-   "title": "Noutras notícias: Ciberataques a empresas de energia norueguesas, ataque a supercomputador e nova falha Eclipse",
-   "summary": "Vários incidentes recentes passaram despercebidos, incluindo a adição do grupo NoName057(16) à lista de sanções cibernéticas da União Europeia. Destacam-se também campanhas de malware direcionadas a computadores pessoais e agentes Gemini visando a Epoch AI. Estes eventos demonstram a persistência de ameaças direcionadas a infraestruturas e inteligência artificial.",
-   "image": null,
-   "points": [
-    "UE adiciona grupo NoName057(16) a sanções cibernéticas.",
-    "Malware foca-se em computadores pessoais.",
-    "Agentes Gemini foram visados pela Epoch AI.",
-    "Empresas de energia na Noruega sofreram ciberataques."
-   ],
-   "title_original": "In Other News: Norwegian Energy Firm Cyberattacks, Supercomputer Hack, New Nightmare Eclipse Exploit",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Monitorizar ameaças menos mediáticas é essencial para antecipar tendências e proteger os ativos das organizações.",
-   "todo": "Mantenha-se informado sobre sanções e novas vagas de malware para ajustar as defesas da sua organização."
-  },
-  {
-   "id": "57375f482cd69943",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/sean-cairncross-out-as-national-cyber-director",
-   "published": "2026-11-20T14:30:00+00:00",
-   "title": "Diretor cibernético Cairncross sai da Casa Branca em remodelação da liderança",
-   "summary": "Sean Cairncross vai abandonar o seu cargo na Casa Branca, surgindo uma nova liderança na cibersegurança norte-americana. Kirsten Davies, que exercia funções como diretora de informação do Pentágono, foi nomeada como a nova czar interina para a cibersegurança. Esta mudança reflete uma reorganização estratégica nas chefias de segurança digital do governo dos EUA.",
-   "image": "https://cms.therecord.media/uploads/cairncross_billington_2025_d9233ef5de.jpg",
-   "points": [
-    "Sean Cairncross deixa a Casa Branca.",
-    "Kirsten Davies assume o cargo de czar interina para a cibersegurança.",
-    "Davies ocupava anteriormente o cargo de CIO do Pentágono.",
-    "A alteração representa uma remodelação na liderança cibernética governamental."
-   ],
-   "title_original": "Cyber Director Cairncross out as White House resets cyber leadership",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Mudanças na liderança governamental de cibersegurança podem alterar prioridades e políticas de regulação digital.",
-   "todo": ""
-  },
-  {
-   "id": "c21f2f095f9f04c9",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/dozens-of-credit-unions-hit-by-supplier-breach",
-   "published": "2026-11-20T14:24:00+00:00",
-   "title": "Dezenas de cooperativas de crédito atingidas por violação em fornecedor que passou despercebida durante seis semanas",
-   "summary": "A Comissão de Proteção de Dados da Irlanda confirmou ter recebido mais de 40 notificações de violação de segurança por parte de cooperativas de crédito. O incidente teve origem num fornecedor sediado em Belfast que atuava como processador de dados destas instituições. A falha permaneceu totalmente indetetada durante um período de seis semanas, expondo dados sensíveis geridos por terceiros.",
-   "image": "https://cms.therecord.media/uploads/bank_safe_33ac6c970a.jpg",
-   "points": [
-    "Mais de 40 cooperativas de crédito irlandesas afetadas por violação.",
-    "Incidente originado num fornecedor e processador de dados de Belfast.",
-    "Violação passou inteiramente despercebida durante seis semanas.",
-    "Autoridade de proteção de dados irlandesa recebeu as notificações."
-   ],
-   "title_original": "Dozens of credit unions hit by supplier breach that went unnoticed for six weeks",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Ataques à cadeia de fornecedores demonstram que parceiros terceiros representam um vetor de risco crítico para as empresas.",
-   "todo": "Audite regularmente a segurança dos seus fornecedores e parceiros tecnológicos com acesso a dados confidenciais."
-  },
-  {
-   "id": "8c71d1d140fee16b",
-   "source": "Infosecurity Magazine",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.infosecurity-magazine.com/news/ransomware-recovery-20-days/",
-   "published": "2026-11-20T14:15:00+00:00",
-   "title": "Recuperação de ransomware demora 20 dias para a vítima típica, revela relatório",
-   "summary": "Um estudo recente da Rubrik concluiu que as vítimas de ataques de ransomware enfrentam um período médio de 20 dias para conseguir recuperar os seus sistemas. Além disso, o relatório indica que cerca de 28% dos casos de recuperação ultrapassam um prazo de seis semanas. Esta demora prolongada acentuou o impacto operacional e financeiro nas organizações afetadas.",
-   "image": null,
-   "points": [
-    "Rubrik publicou um relatório sobre o tempo de recuperação de ataques de ransomware.",
-    "A mediana do tempo de recuperação situa-se nos 20 dias para as vítimas.",
-    "Mais de um quarto dos casos analisados demorou mais de seis semanas a recuperar.",
-    "O impacto traduz-se em longos períodos de inatividade para as empresas afetadas."
-   ],
-   "title_original": "Ransomware Recovery Takes 20 Days for the Typical Victim, Report Finds",
-   "category": "Ransomware",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra que os ataques de ransomware causam paragens prolongadas que afetam gravemente a continuidade do negócio.",
-   "todo": "Invista em cópias de segurança offline e imutáveis e teste regularmente os seus planos de recuperação de desastres."
   }
  ]
 }

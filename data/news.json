@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T07:07:11.184523+00:00",
+ "updated": "2026-11-26T07:32:27.359625+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "TugaTech",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -309,15 +309,40 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 111,
-  "pending": 200,
-  "unenriched": 99,
+  "done": 96,
+  "pending": 215,
+  "unenriched": 114,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
+   "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do",
+   "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)",
+   "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)"
   ]
  },
  "items": [
+  {
+   "id": "ff21dac4a794acfa",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/internet/seguranca/ataque-a-1password-expoe-dados-de-utilizadores-o-que-foi-roubado-e-o-que-ficou-seguro/",
+   "published": "2026-11-26T07:00:00+00:00",
+   "title": "1Password: ataque expõe dados das contas! O que foi roubado e o que ficou seguro",
+   "summary": "A 1Password sofreu uma intrusão nos servidores após um atacante roubar as credenciais GitHub de um funcionário. Com este acesso, o invasor copiou código de repositórios privados, acedeu aos sistemas de CI/CD e injetou código malicioso no backend. Apesar da gravidade do incidente, as aplicações e os serviços principais mantiveram-se seguros.",
+   "image": null,
+   "points": [
+    "Invasor roubou credenciais GitHub de um funcionário da 1Password.",
+    "Código de repositórios privados e sistemas de CI/CD foram comprometidos.",
+    "Código malicioso foi injetado no backend dos servidores.",
+    "Aplicações e serviços da empresa não foram afetados pelo ataque."
+   ],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": true,
+   "why": "Mostra que a comprometimento de credenciais individuais pode expor infraestruturas críticas de grandes fornecedores de software.",
+   "todo": "Implementar autenticação multifator robusta e monitorizar o acesso a repositórios e sistemas internos."
+  },
   {
    "id": "3980562478a3e8d9",
    "source": "Help Net Security",
@@ -13747,29 +13772,6 @@
    "enriched": true,
    "why": "A adoção precipitada de IA sem controlo de acessos cria vulnerabilidades graves nas APIs corporativas.",
    "todo": "Audite e restrinja as permissões das credenciais atribuídas aos agentes de IA em ambiente de produção."
-  },
-  {
-   "id": "fa700a4eb8ceffe8",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
-   "published": "2026-11-20T05:30:01+00:00",
-   "title": "Novo zero-day do Windows, FastUnlock, permite a execução de programas num PC bloqueado",
-   "summary": "Uma nova técnica de zero-day chamada FastUnlock foi divulgada por investigadores, permitindo que quem tenha acesso físico a um computador Windows bloqueado consiga iniciar programas sem iniciar sessão. Embora o método conceda apenas uma conta limitada e não privilégios de administrador, a falha permanece sem correção oficial. A vulnerabilidade foi tornada pública pelos investigadores conhecidos como MSNightmare e Nightmare Eclipse, juntamente com a empresa ThreatLocker.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRnUdcazdCteyaE1EC_aLit8CioDaJ5yvsWnawFVWQrJvYFktNRJXlW9MOJLimG_-aS1IZChVHJbjPI4CXjIbNFLjn5W686xynepfC0oWyEG81NX5CxdS-9ayumfRljgy32e2bYXDD72T6VpIFFzeCcPKwG48RDKiZExwNdF-4XDFicISSaaRtT3W2dt0/s1600/windows-lockscreen.jpg",
-   "points": [
-    "O método FastUnlock permite iniciar programas num PC Windows bloqueado sem fazer login.",
-    "A exploração requer acesso físico direto à máquina afetada.",
-    "O acesso obtido restringe-se a uma conta limitada, sem privilégios de administrador.",
-    "A falha de zero-day foi divulgada publicamente sem correção disponível da Microsoft."
-   ],
-   "title_original": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "O acesso físico a computadores com falhas por corrigir pode comprometer a integridade local do sistema.",
-   "todo": "Bloqueie fisicamente os dispositivos e restrinja o acesso não autorizado às estações de trabalho."
   }
  ]
 }

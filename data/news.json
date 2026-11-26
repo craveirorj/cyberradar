@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T18:07:09.833589+00:00",
+ "updated": "2026-11-26T18:25:03.822075+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -69,17 +69,17 @@
   {
    "source": "CERT/CC (Carnegie Mellon)",
    "ok": true,
-   "added": 3
+   "added": 2
   },
   {
    "source": "MS-ISAC (CIS)",
    "ok": true,
-   "added": 5
+   "added": 4
   },
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -234,7 +234,7 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 14
+   "added": 15
   },
   {
    "source": "The Register Security",
@@ -309,15 +309,39 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 184,
-  "unenriched": 87,
+  "done": 36,
+  "pending": 253,
+  "unenriched": 157,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Invalid control character at: line 140 column 68 (char 11753)"
+   "Expecting property name enclosed in double quotes: line 11 column 5 (char 765)",
+   "Expecting ':' delimiter: line 49 column 3 (char 4024)"
   ]
  },
  "items": [
+  {
+   "id": "d3bcab1d533943f6",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/gerenciador-1password-sofre-invasao-mas-diz-que-senhas-estao-seguras/",
+   "published": "2026-11-26T18:00:00+00:00",
+   "title": "Gerenciador 1Password sofre invasão, mas diz que senhas estão seguras",
+   "summary": "O gerenciador de senhas 1Password sofreu um acesso não autorizado aos seus sistemas de backend na última quinta-feira. Um intruso utilizou uma conta corporativa do GitHub roubada para copiar dados administrativos dos utilizadores, incluindo nomes, emails e metadados. No entanto, a empresa garantiu que os cofres com as senhas e as chaves de acesso dos clientes não foram afetados. O impacto limitou-se a informações não-secretas da arquitetura e perfis, mantendo os aplicativos e extensões seguros.",
+   "image": "https://www.estadao.com.br/resizer/v2/P2KZDNNZ4VDK3MPRIWKVWDBSXA.webp?quality=80&auth=2c38a8ed3b43d45fa3139105db68ddad4cd4931825bbfb655ecbfacd51a7329a&width=710",
+   "points": [
+    "Invasão dos sistemas internos do 1Password através de uma conta do GitHub roubada.",
+    "Cópia de dados administrativos e metadados de utilizadores, sem afetar senhas.",
+    "Cofres, chaves de acesso e aplicações mantiveram-se seguros e fora do alcance do intruso.",
+    "Importa porque reforça a eficácia de arquiteturas de conhecimento zero na proteção de credenciais."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Mostra como a arquitetura de conhecimento zero protege os dados vitais dos utilizadores mesmo durante uma falha nos sistemas centrais.",
+   "todo": "Ative sempre a autenticação de dois fatores (2FA) em todas as contas corporativas e de ferramentas de desenvolvimento."
+  },
   {
    "id": "1c0fdc3979bbc9ce",
    "source": "BleepingComputer",
@@ -13737,28 +13761,6 @@
    "enriched": true,
    "why": "Destaca os riscos críticos associados a conselhos erróneos fornecidos por dispositivos de IA integrados no quotidiano.",
    "todo": "Avalie criticamente o uso de dispositivos baseados em IA em situações onde a segurança física esteja em causa."
-  },
-  {
-   "id": "4727638392dd0c1d",
-   "source": "Elastic Security Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.elastic.co/security-labs/blog/mitre-atlas-elastic-security-detection-coverage",
-   "published": "2026-11-20T16:30:00+00:00",
-   "title": "Mapeamento do panorama de ameaças de IA: MITRE ATLAS chega ao Elastic Security",
-   "summary": "A versão Elastic Security 9.6 passou a suportar a base de conhecimento MITRE ATLAS, dedicada a ataques contra sistemas de inteligência artificial. Esta integração inclui regras de deteção pré-construídas para plataformas de IA e ferramentas de IA geradora. O objetivo é fornecer contexto de segurança específico para IA de forma nativa e permitir medir a cobertura de ameaças através de táticas e técnicas próprias. Esta abordagem complementa o tradicional framework MITRE ATT&CK.",
-   "image": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/bltf8f4b5c2ef207605/6b00543f4e093d0aae470149/mitre-atlas.jpg",
-   "points": [
-    "Elastic Security 9.6 adiciona suporte para a base de conhecimento MITRE ATLAS.",
-    "Foram incluídas regras pré-construídas para detetar ameaças em plataformas de IA e GenAI.",
-    "A plataforma ajuda a mapear táticas e técnicas usadas por atacantes contra sistemas inteligentes."
-   ],
-   "title_original": "Mapping the AI threat landscape: MITRE ATLAS comes to Elastic Security",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Facilita a identificação e mitigação de ameaças direcionadas especificamente a sistemas de inteligência artificial nas organizações.",
-   "todo": "Atualize as suas soluções de segurança para beneficiar de regras de deteção adaptadas a riscos de IA."
   }
  ]
 }

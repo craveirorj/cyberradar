@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-26T23:26:31.556793+00:00",
+ "updated": "2026-11-26T23:47:30.663485+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -309,7 +309,7 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 112,
+  "done": 113,
   "pending": 178,
   "unenriched": 81,
   "errors": [
@@ -318,6 +318,29 @@
   ]
  },
  "items": [
+  {
+   "id": "b1fd7d6f14154fb5",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/passkey-senha-ou-2fa-qual-metodo-e-mais-seguro/",
+   "published": "2026-11-26T23:15:00+00:00",
+   "title": "Passkey, senha e 2FA: qual é o método de login mais seguro?",
+   "summary": "As senhas tradicionais continuam a ser amplamente utilizadas, mas enfrentam limitações face a métodos modernos de autenticação como a autenticação de dois fatores (2FA) e as passkeys. Enquanto a senha e a passkey servem para comprovar a identidade inicial, o 2FA exige uma verificação dupla para reforçar a segurança. Atualmente, as passkeys destacam-se como uma das soluções mais robustas contra ataques de phishing e roubo de credenciais. Contudo, a transição entre estes métodos deve ser avaliada caso a caso, mantendo a proteção adequada em todas as contas.",
+   "image": "https://www.estadao.com.br/resizer/v2/OIR6NZPKNZKU5ME3AS2KZ3ZRPM.jpg?quality=80&auth=022e5bf545b8551fa215667818843b82fe1c9306e82f5ca72935e0284a4dbff3&width=710",
+   "points": [
+    "Senhas: sequência secreta criada pelo utilizador ou gerador.",
+    "Passkey: credencial digital que utiliza biometria ou PIN local.",
+    "2FA: exige duas formas distintas para confirmar a identidade.",
+    "Impacto: passkeys oferecem maior resistência contra phishing e roubo de credenciais."
+   ],
+   "title_original": null,
+   "category": "Phishing/Fraude",
+   "translated": false,
+   "enriched": true,
+   "why": "Compreender as diferenças entre métodos de autenticação ajuda a escolher as melhores defesas para proteger contas contra acessos indevidos.",
+   "todo": "Avalie a ativação de passkeys e 2FA nos serviços essenciais que utiliza e utilize gestores de senhas robustos."
+  },
   {
    "id": "ebb1d8002dd86e97",
    "source": "Tecmundo",
@@ -13739,29 +13762,6 @@
    "enriched": true,
    "why": "Protege os utilizadores contra campanhas de burlas que exploram falhas de validação na aplicação.",
    "todo": "Atualizar imediatamente a aplicação WhatsApp para a versão mais recente na loja oficial."
-  },
-  {
-   "id": "ec99630010cb437c",
-   "source": "AWS Security Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://aws.amazon.com/blogs/security/chinese-nexus-actors-cairn-ai-agents-found-a-zero-day-on-their-own/",
-   "published": "2026-11-20T17:30:13+00:00",
-   "title": "Agentes de IA Cairn, associados à China, descobriram uma falha zero-day de forma autónoma",
-   "summary": "Investigadores da Amazon Threat Intelligence descobriram uma campanha onde agentes de inteligência artificial autónomos foram usados para realizar ataques informáticos com intervenção humana mínima. Os agentes utilizaram a framework de testes de intrusão Cairn para atingir universidades na Ásia Oriental. Durante o processo, descobriram autonomamente uma vulnerabilidade zero-day numa aplicação e conseguiram o controlo total de um servidor. Este caso demonstra que as operações ofensivas baseadas em agentes de IA já são uma realidade atual.",
-   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2022/05/24/CJ_Moses.jpeg",
-   "points": [
-    "Atores ligados à China utilizaram agentes de IA autónomos para testes de intrusão.",
-    "A ferramenta Cairn foi usada para visar endereços IP de universidades na Ásia Oriental.",
-    "Os agentes descobriram autonomamente uma falha zero-day e ganharam controlo de um servidor.",
-    "O incidente revela a velocidade e persistência que as ferramentas de IA trazem aos ataques."
-   ],
-   "title_original": "Chinese-nexus actor’s Cairn AI agents found a zero-day on their own",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra que os ataques informáticos automatizados por inteligência artificial e capazes de descobrir falhas já estão a acontecer.",
-   "todo": "Mantenha os sistemas e aplicações atualizados e monitorize o tráfego de rede para detetar padrões de ataque automatizados."
   }
  ]
 }

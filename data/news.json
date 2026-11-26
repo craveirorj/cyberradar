@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-26T14:07:40.484261+00:00",
+ "updated": "2026-11-26T14:27:54.239969+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Pplware Segurança",
@@ -144,7 +144,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Malwarebytes Labs",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -309,15 +309,80 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 186,
-  "unenriched": 88,
+  "done": 120,
+  "pending": 177,
+  "unenriched": 79,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting ',' delimiter: line 90 column 169 (char 7822)"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "4d7b5a0ac0d3bce1",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/cisa-alert-danfoss-critical-flaw/",
+   "published": "2026-11-26T14:15:00+00:00",
+   "title": "CISA emite alerta após Danfoss revelar falha crítica em controladores de frigoríficos",
+   "summary": "A agência CISA emitiu um alerta direcionado ao setor retalhista alimentar. O aviso surge depois de o fabricante Danfoss ter divulgado uma nova vulnerabilidade crítica que afeta controladores de refrigeração. Este tipo de falha coloca em risco os sistemas utilizados por empresas do setor. Os detalhes exatos do impacto imediato continuam sob observação.",
+   "image": null,
+   "points": [
+    "A Danfoss detetou uma falha crítica em controladores de frigoríficos.",
+    "A CISA emitiu um alerta oficial para o setor retalhista alimentar.",
+    "A vulnerabilidade afeta sistemas usados no comércio de alimentos."
+   ],
+   "title_original": "CISA Issues Alert After Danfoss Reveals Critical Flaw in Fridge Controllers",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque explora falhas em infraestruturas e equipamentos críticos usados na cadeia alimentar.",
+   "todo": "Verifique com o fabricante a existência de atualizações de firmware ou patches para os controladores afetados."
+  },
+  {
+   "id": "2512a65d290b11c2",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/26/wyoming-uranium-operation-shuts-down-after-cyberattack/5312323",
+   "published": "2026-11-26T14:02:00+00:00",
+   "title": "Operação de urânio no Wyoming suspensa após ciberataque",
+   "summary": "A empresa Peninsula Energy suspendeu temporariamente as operações na sua subsidiária Strata Energy, no Wyoming. Um incidente de cibersegurança afetou os sistemas de controlo da fábrica e da zona de extração. A empresa acionou os procedimentos de resposta e recorreu a peritos externos, mantendo os sistemas administrativos e de recursos humanos operacionais. A investigação continua em curso para apurar se houve compromisso de dados e ainda não há data para a retoma.",
+   "image": "https://image.theregister.com/?imageId=5312346&width=800",
+   "points": [
+    "A Peninsula Energy sofreu um ciberataque na sua subsidiária Strata Energy.",
+    "O incidente afetou os sistemas de controlo da fábrica e extração no Wyoming.",
+    "As funções administrativas não foram afetadas e as operações continuam suspensas."
+   ],
+   "title_original": "Wyoming uranium operation shuts down after cyberattack",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque demonstra o impacto físico e operacional direto de um ciberataque em infraestruturas industriais e de energia.",
+   "todo": "Garanta a segmentação adequada entre redes operacionais (OT) e redes corporativas (IT) para limitar o alcance de potenciais intrusões."
+  },
+  {
+   "id": "3bb29e4d500901df",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/26/happy-thanksgiving-8/",
+   "published": "2026-11-26T13:56:02+00:00",
+   "title": "Feliz Dia de Ação de Graças!",
+   "summary": "O portal DataBreaches.net assinalou o seu décimo sétimo Dia de Ação de Graças com uma pausa temporária nas publicações. O autor agradeceu aos leitores e informadores pelo apoio contínuo ao longo dos anos. Foi também deixada uma nota sobre as crescentes preocupações em torno das tentativas de censura de notícias e opiniões jornalísticas. As atualizações regulares de notícias retomam no próprio dia à noite.",
+   "image": null,
+   "points": [
+    "O portal DataBreaches.net celebrou o seu 17.º Dia de Ação de Graças.",
+    "As publicações de notícias foram temporariamente interrompidas.",
+    "O autor destacou preocupações crescentes com tentativas de censura à imprensa."
+   ],
+   "title_original": "Happy Thanksgiving!",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa para dar a conhecer o estado de funcionamento do portal e reflexões sobre a liberdade de imprensa.",
+   "todo": ""
+  },
   {
    "id": "14b3e60e10f9bd95",
    "source": "The Register Security",
@@ -1419,6 +1484,50 @@
    "enriched": true,
    "why": "Reflete os desafios governamentais na preparação de estratégias abrangentes de defesa económica contra cibercrime.",
    "todo": ""
+  },
+  {
+   "id": "8c94cafaa19ea4c5",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/threats/microsoft-declara-code-red-apos-falha-global",
+   "published": "2026-11-26T00:00:00+00:00",
+   "title": "Microsoft declara Code Red após falha global",
+   "summary": "A Microsoft elevou o seu nível de alerta interno para o grau máximo, conhecido como Code Red, na sequência de uma interrupção nos serviços do Microsoft 365. Com esta medida, a empresa pretende otimizar os seus processos para conseguir reduzir o tempo de recuperação perante futuras falhas globais. O objetivo fixado é garantir que a normalização ocorra em menos de uma hora.",
+   "image": null,
+   "points": [
+    "A Microsoft ativou o nível máximo de prioridade interna (Code Red).",
+    "A decisão decorre da interrupção recente nos serviços do Microsoft 365.",
+    "A empresa quer baixar o tempo de recuperação de falhas globais para menos de uma hora."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Importa porque evidencia a vulnerabilidade de plataformas em nuvem amplamente utilizadas e as medidas de resposta da tecnológica.",
+   "todo": "Mantenha planos de continuidade de negócio atualizados para mitigar o impacto de falhas repentinas em serviços de colaboração na nuvem."
+  },
+  {
+   "id": "dcbb00e142313166",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/threats/cncs-alerta-para-falhas-no-drupal-e-apache-roller",
+   "published": "2026-11-26T00:00:00+00:00",
+   "title": "CNCS alerta para falhas no Drupal e Apache Roller",
+   "summary": "O Centro Nacional de Cibersegurança (CNCS) emitiu um alerta devido a duas vulnerabilidades críticas que afetam o Drupal e o Apache Roller. Estas falhas permitem que atacantes comprometam servidores e sites sem necessidade de autenticação prévia. Perante indícios de exploração ativa no terreno, a entidade recomenda a aplicação urgente de atualizações de segurança.",
+   "image": null,
+   "points": [
+    "O CNCS alertou para vulnerabilidades em servidores Drupal e Apache Roller.",
+    "As falhas permitem o compromisso de sites sem exigir autenticação.",
+    "Existem registos de exploração ativa destas vulnerabilidades."
+   ],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": true,
+   "why": "Importa porque explora sistemas de gestão de conteúdos e aplicações web comuns, permitindo acesso total a atacantes.",
+   "todo": "Atualize de imediato os softwares afetados para as versões mais recentes disponibilizadas pelos fabricantes."
   },
   {
    "id": "8236f5eb74b094df",
@@ -13651,120 +13760,6 @@
    "enriched": true,
    "why": "Permite uma resposta mais rápida contra fraudadores financeiros, dificultando a retenção de fundos roubados.",
    "todo": "Desconfie de contactos inesperados sobre dinheiro e reporte imediatamente qualquer suspeita de burla às autoridades competentes."
-  },
-  {
-   "id": "6a9674fffab60e12",
-   "source": "Tecmundo",
-   "region": "BR",
-   "lang": "pt",
-   "link": "https://www.estadao.com.br/tecmundo/ciberseguranca/falhas-graves-no-nginx-permitem-invasao-e-controle-de-servidores/",
-   "published": "2026-11-20T13:30:00+00:00",
-   "title": "Falhas graves no NGINX permitem invasão e controle de servidores",
-   "summary": "Investigadores de segurança descobriram cinco falhas críticas no software NGINX e uma brecha adicional no sistema Linux, coletivamente denominadas \"nginx2root\". Este conjunto de vulnerabilidades permite que atacantes remotos enviem comandos à distância e assumam o controlo total de servidores vulneráveis sem precisarem de autenticação. A exploração bem-sucedida concede o nível mais elevado de permissão do sistema, conhecido como root, permitindo inclusive escapar de ambientes isolados em nuvem. A F5 e outras entidades de segurança confirmaram o risco e divulgaram atualizações urgentes para mitigar o problema.",
-   "image": "https://www.estadao.com.br/resizer/v2/Q4HRU747GBEHNL6HWBW36ACJLU.png?quality=80&auth=c2ad8a2d78a0dee0b472ec22168905485cdbea1692ae7a4b4d44e3d6b1de1718&width=710",
-   "points": [
-    "Cinco falhas críticas no NGINX e uma no Linux detetadas.",
-    "Permitem controlo total (root) à distância sem autenticação.",
-    "Vulnerabilidades monitorizadas como CVE-2026-123633 e CVE-2026-123007.",
-    "Empresas de segurança confirmam exploração bem-sucedida em laboratório."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Estas brechas críticas permitem que atacantes externos assumam o controlo total de servidores essenciais sem qualquer credencial.",
-   "todo": "Atualize o NGINX e os sistemas afetados para as versões corrigidas mais recentes disponibilizadas pelos fabricantes o mais rapidamente possível."
-  },
-  {
-   "id": "d9a325150570d699",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/",
-   "published": "2026-11-20T13:18:36+00:00",
-   "title": "N-able diz que recente violação de segurança causou grande falha de serviço",
-   "summary": "A N-able reportou que atacantes violaram um dos seus servidores, provocando uma interrupção severa nos serviços de nuvem Mail Assure e SpamExperts. A falha afetou utilizadores a nível global, comprometendo o acesso a estas ferramentas de correio eletrónico. A empresa encontra-se a lidar com o impacto da intrusão nos sistemas afetados.",
-   "image": null,
-   "points": [
-    "Atacantes violaram um servidor da N-able.",
-    "A interrupção afetou globalmente os serviços Mail Assure e SpamExperts.",
-    "Os serviços de nuvem sofreram uma falha de grande escala."
-   ],
-   "title_original": "N-able says recent security breach led to major service outage",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como a invasão de um único fornecedor de serviços em nuvem pode desestabilizar comunicações empresariais à escala global.",
-   "todo": "Monitorize o estado dos seus fornecedores de serviços em nuvem e mantenha planos de contingência para falhas de comunicação."
-  },
-  {
-   "id": "efdcd7b00458ccae",
-   "source": "Securelist (Kaspersky)",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://securelist.com/how-a-cloud-pentest-works/121921/",
-   "published": "2026-11-20T13:00:53+00:00",
-   "title": "Transcending the trust boundaries: how a cloud pentest works",
-   "summary": "Os testes de intrusão em ambientes de cloud requerem uma abordagem que vai além da camada externa tradicional, focando-se na complexidade das fronteiras de confiança. A infraestrutura em nuvem pode ser comparada a um hotel com várias zonas, onde o objetivo principal é avaliar se um atacante consegue violar os limites entre as camadas. Um teste de pentest eficaz não se mede apenas pelo número de vulnerabilidades encontradas, mas sim pela análise profunda da segurança do ambiente. O impacto reside na garantia de que os dados alojados permanecem estritamente confidenciais e protegidos contra acessos indesejados.",
-   "image": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2026/11/12092808/cloud1_securelist-featured_1200x600.jpg",
-   "points": [
-    "O quê: Metodologia e abordagem para testes de intrusão (pentest) em ambientes de cloud.",
-    "Como: Analisando as fronteiras de confiança entre a camada externa, lógica e de infraestrutura.",
-    "Impacto: Avaliar se atacantes conseguem quebrar o isolamento de ambientes em nuvem.",
-    "Quem: Especialistas em cibersegurança e equipas de investigação externa."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Ajuda a identificar falhas estruturais profundas que os testes de segurança tradicionais na camada externa frequentemente ignoram.",
-   "todo": "Realize auditorias regulares de pentest na cloud focadas na verificação de limites de confiança e isolamento de tenants."
-  },
-  {
-   "id": "a6cdc463c1597485",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203598/hacking/hackers-exploit-cisco-expressway-flaw-cve-2026-76466-to-breach-russian-organization.html",
-   "published": "2026-11-20T12:52:40+00:00",
-   "title": "Hackers Exploit Cisco Expressway Flaw CVE-2026-76466 to Breach Russian Organization",
-   "summary": "Uma vulnerabilidade crítica no serviço de base de dados do Cisco Expressway, identificada como CVE-2026-76466, foi ativamente explorada para invadir uma organização russa. Os atacantes utilizaram um código de exploração público para comprometer dispositivos expostos à Internet e obter privilégios de root. A partir daí, conseguiram avançar para nós internos da rede e preparar ferramentas para movimentos laterais. A Cisco tinha lançado uma correção dias antes, mas a exploração ocorreu logo após o surgimento de um exploit na Internet.",
-   "image": null,
-   "points": [
-    "Falha CVE-2026-76466 explorada em dispositivos Cisco Expressway.",
-    "Atacantes obtiveram acesso root e moveram-se para a rede interna.",
-    "Primeiro caso conhecido de exploração desta falha no terreno.",
-    "A Cisco disponibilizou uma correção para o problema."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "A rápida weaponização de falhas após a divulgação pública coloca em risco imediato os dispositivos perimetrais expostos.",
-   "todo": "Aplique imediatamente as atualizações de segurança disponibilizadas pela Cisco para os dispositivos afetados e restrinja o acesso à Internet."
-  },
-  {
-   "id": "da07337d7560d129",
-   "source": "Malwarebytes Labs",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.malwarebytes.com/blog/data-breaches/2026/11/hackers-leak-data-linked-to-visa-mastercard-and-jpmorgan-customers",
-   "published": "2026-11-20T12:51:36+00:00",
-   "title": "Fuga de dados afeta clientes da Visa, Mastercard e JPMorgan",
-   "summary": "Um grupo de ransomware divulgou dados de clientes associados à Visa, Mastercard e JPMorgan Chase, obtidos através de ataques a fornecedores externos. A informação vazada inclui contactos e reservas, mas as empresas confirmam que os sistemas de pagamento não foram afetados. Os dados recolhidos podem agora ser explorados por burlões para tornar mensagens fraudulentas mais convincentes.",
-   "image": "https://www.malwarebytes.com/wp-content/uploads/sites/2/2026/11/n0n_leak_site.png",
-   "points": [
-    "Alvo: Clientes da Visa, Mastercard e JPMorgan Chase através de fornecedores externos.",
-    "O quê: Fuga de dados com nomes, emails e histórico de reservas.",
-    "Impacto: Sem dados de pagamento expostos, mas riscos de burlas direcionadas.",
-    "Como: Ciberataques a prestadores de serviços de terceiros."
-   ],
-   "title_original": "Hackers leak data linked to Visa, Mastercard, and JPMorgan customers",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como vulnerabilidades em fornecedores terceiros podem expor dados sensíveis de clientes de grandes empresas.",
-   "todo": "Monitorize a sua atividade e desconfie de mensagens ou contactos inesperados que utilizem os seus dados pessoais."
   }
  ]
 }

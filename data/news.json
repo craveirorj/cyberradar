@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T20:52:23.166716+00:00",
+ "updated": "2026-11-27T21:06:10.282156+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -114,7 +114,7 @@
   {
    "source": "CSO Online",
    "ok": true,
-   "added": 10
+   "added": 9
   },
   {
    "source": "TechCrunch Security",
@@ -169,7 +169,7 @@
   {
    "source": "Cisco Talos",
    "ok": true,
-   "added": 5
+   "added": 4
   },
   {
    "source": "Unit 42 (Palo Alto)",
@@ -294,7 +294,7 @@
   {
    "source": "Troy Hunt",
    "ok": true,
-   "added": 1
+   "added": 2
   },
   {
    "source": "Cyber Centre Canadá",
@@ -309,12 +309,13 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 170,
-  "unenriched": 78,
+  "done": 84,
+  "pending": 205,
+  "unenriched": 113,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 82 column 2 (char 5429)"
+   "Expecting ':' delimiter: line 51 column 3 (char 4352)",
+   "Expecting property name enclosed in double quotes: line 126 column 5 (char 10941)"
   ]
  },
  "items": [
@@ -334,9 +335,9 @@
     "Como: Atacantes não autenticados podem explorar a porta 2049 para corromper memória e executar código malicioso.",
     "Impacto: Permite assumir o controlo total com privilégios de root."
    ],
-   "title_original": "Flaw in Linux NFS file sharing exposes servers to remote takeover",
+   "title_original": null,
    "category": "IA",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Permite que atacantes obtenham controlo total de servidores Linux afetados através da rede.",
    "todo": "Atualize o kernel do Linux para as versões mais recentes disponibilizadas pelos distribuidores ou mantenham os sistemas de armazenamento e dispositivos embebidos atualizados com o firmware do fabricante."

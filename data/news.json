@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-27T09:44:58.746886+00:00",
+ "updated": "2026-11-27T10:04:54.720857+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "IT Security",
@@ -34,7 +34,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -74,12 +74,12 @@
   {
    "source": "MS-ISAC (CIS)",
    "ok": true,
-   "added": 5
+   "added": 6
   },
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -138,8 +138,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": true,
-   "added": 5
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "DataBreaches.net",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Security Affairs",
@@ -254,7 +254,7 @@
   {
    "source": "WeLiveSecurity (ESET)",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "Sophos News",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -310,15 +310,66 @@
  "translation": {
   "provider": "gemini",
   "done": 0,
-  "pending": 293,
-  "unenriched": 197,
+  "pending": 288,
+  "unenriched": 194,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+   "Expecting property name enclosed in double quotes: line 38 column 5 (char 3920)"
   ]
  },
  "items": [
+  {
+   "id": "902d6957376bbec6",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/27/british-social-security-system-techies-yank-services-offline-following-cyber-incident/5312522",
+   "published": "2026-11-27T10:01:00+00:00",
+   "title": "British social security system techies yank services offline following 'cyber incident'",
+   "summary": "Pensioners assured their funds will arrive as normal",
+   "image": "https://image.theregister.com/?imageId=249560&width=800",
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "The largest UK government department, the one responsible for welfare and pensions, has temporarily brought services offline after detecting a \"cyber incident.\" The Department for Work and Pensions (DWP) announced the partial shutdown on Friday morning in a brief statement that confirmed some online services were offline, but pension payments were unaffected. \"We have taken some DWP online services offline as a precaution after we identified a cyber incident affecting our systems,\" it said. \"We are working closely with the National Cyber Security Centre and Government Cyber Coordination Centre (GC3) to investigate and to bring services back online as quickly as possible and to minimize any disruption. \"Regular benefit and pension payments are not affected and will be paid as normal. \"If an online service you need is unavailable, please try again later. As always, we will never message you to ask for bank details or ask you to click on links.\" The Register contacted both the DWP and NCSC for more information. The DWP declined to comment beyond the statement issued publicly. The GC3's responsibility is to lead and coordinate incident response efforts in cases involving attacks on government. It sits inside DSIT's Government Cyber Unit, established earlier this year with £210 million in funding and led by the government CISO, Bella Powell. Officials have not commented on any of the usual details one would expect from a cyber incident disclosure, including the specific services that were downed, when they are expected to return, or whether any data is thought to be compromised, even at this early stage. The attack follows a warning this week from the NCSC about the rise of automated cyberattacks, especially those that involve automated offensive frameworks (AOFs). ARTEX, th"
+  },
+  {
+   "id": "34ba075e7282f4ea",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/sap-confirms-security-incident-after-suspicious-github-activity/",
+   "published": "2026-11-27T09:56:36+00:00",
+   "title": "SAP confirms security incident after suspicious GitHub activity",
+   "summary": "SAP has confirmed to BleepingComputer that it took urgent action to protect its customers after detecting suspicious activity in its IT environment. [...]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": false,
+   "raw": "SAP has confirmed to BleepingComputer that it took urgent action to protect its customers after detecting suspicious activity in its IT environment. [...]"
+  },
+  {
+   "id": "01c0b124a8a0422d",
+   "source": "SAPO Tek",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://tek.sapo.pt/noticias/internet/artigos/psp-alerta-para-disparo-de-burlas-no-whatsapp-185-casos-em-20-dias-de-novembro/",
+   "published": "2026-11-27T09:44:53+00:00",
+   "title": "PSP alerta para disparo de burlas no WhatsApp: 185 casos em 20 dias de novembro",
+   "summary": "Só em 20 dias durante novembro, a PSP contabilizou mais casos do que em todo o mês de outubro. A polícia avisa que o acesso à conta pode acontecer sem que a vítima partilhe dados, abra ficheiros ou clique em ligações suspeitas.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Phishing/Fraude",
+   "translated": false,
+   "enriched": false,
+   "raw": "Só em 20 dias durante novembro, a PSP contabilizou mais casos do que em todo o mês de outubro. A polícia avisa que o acesso à conta pode acontecer sem que a vítima partilhe dados, abra ficheiros ou clique em ligações suspeitas."
+  },
   {
    "id": "3e6c0975b1398ac2",
    "source": "Help Net Security",
@@ -13685,73 +13736,6 @@
    "enriched": true,
    "why": "Evidencia que o fator humano continua a ser o elo mais fraco, mesmo entre os criadores de tecnologia mais avançada.",
    "todo": "Promova a conscienciação sobre engenharia social e mantenha a cautela na partilha de informações pessoais online."
-  },
-  {
-   "id": "fc81bf677b411b33",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached-norwegian",
-   "published": "2026-11-20T20:43:45+00:00",
-   "title": "Outra empresa energética norueguesa foi alvo de uma intrusão de dados de dois dias",
-   "summary": "Uma empresa norueguesa do setor energético foi recentemente alvo de um ataque cibernético que resultou numa intrusão de dados com a duração de dois dias. Apesar de existirem semelhanças evidentes com outros incidentes anteriores no mesmo setor, as autoridades não encontraram até ao momento uma ligação direta e concreta entre as ocorrências. O caso sublinha os riscos contínuos enfrentados por infraestruturas críticas.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blte4910babc7878a94/6aff5ad57ab982a4c314744c/Equinor-makasana-Getty.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "Empresa energética na Noruega sofreu intrusão de dados durante dois dias.",
-    "Foram identificadas semelhanças com outros incidentes na região.",
-    "Não foi confirmada nenhuma ligação formal entre os diferentes ataques."
-   ],
-   "title_original": "Nok et norsk energiselskap har blitt utsatt for et datainnbrudd på to dager",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra a vulnerabilidade contínua das infraestruturas energéticas a incidentes de segurança.",
-   "todo": "Reforce a monitorização de redes industriais e os controlos de acesso em infraestruturas críticas."
-  },
-  {
-   "id": "273c692ec6e6b04d",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/security/2026/11/20/signal-slams-door-on-prying-ai-agents-to-protect-privacy/5311466",
-   "published": "2026-11-20T20:42:04+00:00",
-   "title": "Signal fecha a porta a agentes de IA intrusivos para proteger a privacidade",
-   "summary": "A aplicação de mensagens encriptadas Signal bloqueou o acesso de assistentes de IA, como o Google Gemini e a Apple Siri, às mensagens dos utilizadores. A medida surge porque os sistemas operativos recolhem dados através da análise do ecrã para alimentar agentes inteligentes, comprometendo a privacidade. Como solução, as novas versões da aplicação bloqueiam por predefinição capturas de ecrã em dispositivos móveis. Embora possam existir outras vias de acesso, esta atualização mitiga a ingestão não autorizada de conversas por servidores externos.",
-   "image": "https://image.theregister.com/?imageId=227546&width=800",
-   "points": [
-    "Signal bloqueou o acesso de assistentes de IA às mensagens privadas.",
-    "Sistemas operativos analisam ecrãs para alimentar ferramentas como Gemini e Siri.",
-    "Atualizações bloqueiam capturas de ecrã para evitar fugas de dados.",
-    "Utilizadores podem desativar a proteção, correndo o risco de expor conteúdos."
-   ],
-   "title_original": "Signal slams door on prying AI agents to protect privacy",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Protege as comunicações privadas contra a recolha abusiva de dados por assistentes de inteligência artificial integrados nos sistemas operativos.",
-   "todo": "Mantenha as definições de bloqueio de capturas de ecrã ativadas nas aplicações de mensagens sensíveis."
-  },
-  {
-   "id": "195a7d84fcbd18c2",
-   "source": "MS-ISAC (CIS)",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cisecurity.org/advisory/a-vulnerability-in-vmware-products-could-allow-for-authentication-bypass_2026-140",
-   "published": "2026-11-20T20:40:39+00:00",
-   "title": "A Vulnerability in VMware Products Could Allow for Authentication Bypass",
-   "summary": "Foi descoberta uma vulnerabilidade no VMware vCenter que pode permitir a anulação de mecanismos de autenticação. Um atacante sem autenticação e com acesso à rede pode explorar esta falha para obter acesso não autorizado ao sistema. Dependendo das permissões da conta afetada, o intruso poderá executar comandos, gerir dados ou criar novos utilizadores com plenos poderes.",
-   "image": null,
-   "points": [
-    "Descoberta falha de segurança no VMware vCenter.",
-    "Permite a atacantes sem autenticação contornar os controlos de acesso.",
-    "Um invasor pode ganhar controlo total do sistema afetado."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Permite que atacantes externos assumam o controlo de plataformas de virtualização centrais nas empresas.",
-   "todo": "Aplique imediatamente as correções e atualizações de segurança disponibilizadas pelo fabricante para o VMware vCenter."
   }
  ]
 }

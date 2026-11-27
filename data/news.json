@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-27T05:12:35.325298+00:00",
+ "updated": "2026-11-27T05:27:08.370045+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
@@ -138,8 +138,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 5
   },
   {
    "source": "DataBreaches.net",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -309,17 +309,37 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 96,
-  "pending": 188,
-  "unenriched": 91,
+  "done": 117,
+  "pending": 173,
+  "unenriched": 76,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do",
-   "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)",
-   "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)"
+   "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "ca0dc6333c11694f",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/27/crest-ai-threat-led-penetration-testing/",
+   "published": "2026-11-27T05:00:32+00:00",
+   "title": "A IA levanta novas questões sobre o que os testes de penetração comprovam",
+   "summary": "A inteligência artificial está a tornar-se uma ferramenta central nos testes de penetração baseados em ameaças (TLPT), com 81% dos fornecedores a utilizá-la para além da fase experimental. Um estudo do CREST, focado no setor financeiro, revela que a IA está a expandir significativamente as capacidades de emulação de ameaças. Profissionais da área e partes interessadas debateram como esta tecnologia altera a garantia de segurança e o controlo dos testes. O setor prepara-se agora para uma evolução acelerada destas capacidades nos próximos 12 meses.",
+   "image": null,
+   "points": [
+    "81% dos fornecedores já usam IA em testes de penetração.",
+    "A IA amplia a capacidade de emular ameaças reais.",
+    "O estudo foca-se na fiabilidade da segurança no setor financeiro."
+   ],
+   "title_original": "AI raises new questions about what penetration testing proves",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "A IA está a mudar a forma como testamos a segurança, exigindo uma reavaliação do que constitui uma prova de proteção eficaz.",
+   "todo": "Avalie como a IA pode melhorar os seus testes de segurança, mas mantenha supervisão humana crítica sobre os resultados."
+  },
   {
    "id": "24f736113b681609",
    "source": "The Register Security",
@@ -13742,29 +13762,6 @@
    "enriched": true,
    "why": "Destaca a importância de uma comunicação transparente e alinhada na gestão de riscos.",
    "todo": "Garanta que as políticas de segurança são comunicadas de forma simples e direta a todas as equipas."
-  },
-  {
-   "id": "316817c5e67e182a",
-   "source": "MS-ISAC (CIS)",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-php-could-allow-for-remote-code-execution_2026-137",
-   "published": "2026-11-20T18:02:56+00:00",
-   "title": "Múltiplas vulnerabilidades em PHP podem permitir a execução remota de código",
-   "summary": "Foram descobertas várias falhas de segurança no PHP, sendo a mais grave capaz de permitir a execução remota de código sem necessidade de autenticação. A exploração bem-sucedida desta falha num serviço afetado dá ao atacante permissões equivalentes à conta do serviço visado. Dependendo dos privilégios dessa conta, podem ser instalados programas, manipulados dados ou criadas novas contas de utilizador com acesso total. O impacto varia consoante o nível de privilégios configurado no serviço afetado.",
-   "image": null,
-   "points": [
-    "O quê: Descobertas várias vulnerabilidades no PHP com risco de execução remota de código.",
-    "Quem: Afeta sistemas que utilizam a linguagem de programação PHP.",
-    "Como: Um atacante sem autenticação pode explorar falhas graves através de contas de serviço.",
-    "Impacto: Pode resultar na instalação de programas, alteração de dados ou criação de novas contas."
-   ],
-   "title_original": "Multiple Vulnerabilities in PHP Could Allow for Remote Code Execution",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite que atacantes assumam o controlo de servidores web se os serviços correrem com privilégios excessivos.",
-   "todo": "Atualize o PHP para as versões corrigidas e garanta que os serviços web correm com o mínimo de privilégios necessários."
   }
  ]
 }

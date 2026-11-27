@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T13:45:16.092469+00:00",
+ "updated": "2026-11-27T14:06:52.198018+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Security Affairs",
@@ -268,13 +268,13 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 13
+   "added": 12
   },
   {
    "source": "ACSC Austrália",
@@ -309,13 +309,11 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 72,
-  "pending": 229,
-  "unenriched": 134,
+  "done": 119,
+  "pending": 180,
+  "unenriched": 87,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting ':' delimiter: line 120 column 3 (char 10869)",
-   "Expecting ',' delimiter: line 90 column 50 (char 7020)"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
@@ -326,15 +324,21 @@
    "lang": "en",
    "link": "https://cyber.gc.ca/en/alerts-advisories/mitel-security-advisory-av26-1212",
    "published": "2026-11-27T13:36:37+00:00",
-   "title": "Mitel security advisory (AV26-1212)",
-   "summary": "",
+   "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+   "summary": "O diretor tecnológico e cofundador da empresa 'RansomwareHelp' foi acusado de fraude eletrónica após uma operação disfarçada do FBI. A empresa prometia recuperar 100% dos dados bloqueados por ransomware através de ferramentas criptográficas avançadas, cobrando margens elevadas aos clientes. Na realidade, a investigação descobriu que a empresa limitava-se a pagar aos próprios grupos de ransomware pelas chaves de desencriptação em segredo. O esquema enganava vítimas que procuravam ajuda legítima para recuperar os seus sistemas extorquidos.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem foi acusado: O CTO e cofundador da empresa RansomwareHelp.",
+    "O que aconteceu: Cobrava valores elevados a vítimas fingindo usar ferramentas avançadas de recuperação.",
+    "Como funcionava: A empresa pagava secretamente o resgate aos atacantes e lucrava com a margem.",
+    "Impacto: As vítimas eram enganadas por um serviço falso descoberto numa operação do FBI."
+   ],
+   "title_original": "Mitel security advisory (AV26-1212)",
    "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": false,
-   "raw": "Serial number: AV26-1212 Date: November 27, 2026 As of November 27, 2026, Mitel is affected by a vulnerability in the following products: OpenScape 4000 Prior to V11 R2.14 OpenScape 4000 Manager Prior to V11 R2.14 The Cyber Centre encourages users and administrators to review the provided web links and apply the necessary updates. Mitel Product Security Advisory MISA-2026-0013 Mitel Product Security Advisory"
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta contra empresas falsas de recuperação de dados que aproveitam ataques de ransomware para extorquir ainda mais as vítimas.",
+   "todo": "Em caso de ransomware, recorra apenas a entidades forenses e de cibersegurança devidamente credenciadas e evite intermediários duvidosos."
   },
   {
    "id": "975d13cf6e538b4f",
@@ -344,14 +348,20 @@
    "link": "https://www.helpnetsecurity.com/2026/11/27/fifa-cyberattack-data-leak/",
    "published": "2026-11-27T13:21:50+00:00",
    "title": "FIFA hacked, cybercriminals claim access to sensitive internal records",
-   "summary": "Cybercriminals broke into FIFA’s systems and gained access to “a limited set of personal and business information,” world football’s governing body confirmed on Thursday. “FIFA is working closely with the relevant authorities, including law enforcement,” the Zurich-based football governing body told The Associated Press, without saying when the attack happened or what kind of information the intruders took. “FIFA condemns in the strongest possible terms the unlawful acquisition and publication of information, particularly personal data. … More →",
+   "summary": "A FIFA confirmou ter sido alvo de um ataque cibernético que resultou no acesso não autorizado a um conjunto limitado de informações pessoais e de negócios. A organização internacional de futebol está a trabalhar em estreita colaboração com as autoridades competentes e com a aplicação da lei. Até ao momento, não foram divulgados detalhes sobre quando ocorreu a intrusão ou o tipo exato de dados obtidos pelos atacantes.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem foi visado: A FIFA, órgão máximo do futebol mundial.",
+    "O que aconteceu: Cibercomunistas invadiram os sistemas e obtiveram dados internos limitados.",
+    "Impacto: Acesso indevido a informações pessoais e de negócios da organização.",
+    "Resposta: A entidade está a colaborar ativamente com as autoridades policiais."
+   ],
+   "title_original": "FIFA hacked, cybercriminals claim access to sensitive internal records",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "Cybercriminals broke into FIFA’s systems and gained access to “a limited set of personal and business information,” world football’s governing body confirmed on Thursday. “FIFA is working closely with the relevant authorities, including law enforcement,” the Zurich-based football governing body told The Associated Press, without saying when the attack happened or what kind of information the intruders took. “FIFA condemns in the strongest possible terms the unlawful acquisition and publication of information, particularly personal data. … More →"
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra que grandes organizações desportivas continuam a ser alvos lucrativos para roubo de dados.",
+   "todo": "Monitore acessos a redes internas, reforce a autenticação multifator e mantenha planos de resposta a incidentes atualizados."
   },
   {
    "id": "9a79f6f175dbf801",
@@ -567,14 +577,20 @@
    "link": "https://thehackernews.com/2026/11/microsoft-store-app-found-delivering.html",
    "published": "2026-11-27T11:49:34+00:00",
    "title": "Microsoft Store App Found Delivering Vinci RAT Capable of Remote System Control",
-   "summary": "Cybersecurity researchers have disclosed details of a cyber attack in which a threat actor leveraged a Microsoft Store application to deliver a remote access trojan (RAT) called Vinci RAT. The intrusion, according to eSentire, begins with a redirection to a bogus site for a sniping tool (\"snipp.codes-team[.]com\"), from where a Microsoft-signed installer called \"Snipping-Tool.exe\" is",
+   "summary": "Investigadores de cibersegurança descobriram um ciberataque em que os atacantes utilizaram uma aplicação na Microsoft Store para distribuir o cavalo de Troia de acesso remoto Vinci RAT. A intrusão começa com o redirecionamento para um site falso de uma ferramenta de recorte, onde os utilizadores descarregam um instalador assinado pela Microsoft chamado 'Snipping-Tool.exe'. Esta ameaça dá aos atacantes a capacidade de controlar remotamente os sistemas infetados.",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpD815FTK1v-12AKbFYOz3fplAY5EWVRrb1mh5LOUSmUmG7u7mdgGnppCpL9-ZaG-3CyWm_2KP4icW3UY1Q3AYG6lEe03ezqY9Jx49mW9SC4D0JqiUhT-Rmet7lin7u1bHdyppzeay-bTKDty53IDUI_P9md3iUp5xaY-ko1U2uBRTkNdPhAVTYuW9hDmO/s1600/ms-store.png",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem foi o vetor: Uma aplicação maliciosa alojada na Microsoft Store.",
+    "O que aconteceu: Foi distribuído o trojan Vinci RAT através de um instalador falso assinado.",
+    "Impacto: Permite o controlo remoto completo dos sistemas infetados por atacantes.",
+    "Como opera: Redireciona vítimas para sites falsos de ferramentas de recorte."
+   ],
+   "title_original": "Microsoft Store App Found Delivering Vinci RAT Capable of Remote System Control",
    "category": "Malware",
-   "translated": false,
-   "enriched": false,
-   "raw": "Cybersecurity researchers have disclosed details of a cyber attack in which a threat actor leveraged a Microsoft Store application to deliver a remote access trojan (RAT) called Vinci RAT. The intrusion, according to eSentire, begins with a redirection to a bogus site for a sniping tool (\"snipp.codes-team[.]com\"), from where a Microsoft-signed installer called \"Snipping-Tool.exe\" is"
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que os atacantes conseguem abusar de lojas de aplicações oficiais e de assinaturas legítimas para distribuir malware.",
+   "todo": "Descarregue apenas software de fontes estritamente fidedignas e valide sempre a autenticidade dos instaladores e ferramentas."
   },
   {
    "id": "963228c15b1d2e3e",

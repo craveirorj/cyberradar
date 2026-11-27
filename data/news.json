@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T09:26:33.968767+00:00",
+ "updated": "2026-11-27T09:44:58.746886+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -309,14 +309,50 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 172,
-  "unenriched": 76,
+  "done": 0,
+  "pending": 293,
+  "unenriched": 197,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
+   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
   ]
  },
  "items": [
+  {
+   "id": "3e6c0975b1398ac2",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/27/flight-centre-travel-group-data-breach-booking-system/",
+   "published": "2026-11-27T09:31:44+00:00",
+   "title": "Flight Centre Travel Group warns of customer data breach involving some passport details",
+   "summary": "Travellers who booked accommodation through Flight Centre and several of its leisure brands may have had their names, and in rare cases passport and health details, accessed by unknown persons, Flight Centre Travel Group (FLT) disclosed. In a statement to the Australian Securities Exchange, the Brisbane-based travel company said it is investigating “unusual activity” in a third-party accommodation booking system used by the Flight Centre brand, Travel Associates, Cruiseabout and some independent agents. Flight bookings … More →",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "Travellers who booked accommodation through Flight Centre and several of its leisure brands may have had their names, and in rare cases passport and health details, accessed by unknown persons, Flight Centre Travel Group (FLT) disclosed. In a statement to the Australian Securities Exchange, the Brisbane-based travel company said it is investigating “unusual activity” in a third-party accommodation booking system used by the Flight Centre brand, Travel Associates, Cruiseabout and some independent agents. Flight bookings … More →"
+  },
+  {
+   "id": "564b5565654ac562",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/100000-potentially-impacted-by-colorado-data-breach/",
+   "published": "2026-11-27T09:30:54+00:00",
+   "title": "100,000 Potentially Impacted by Colorado Data Breach",
+   "summary": "Hackers breached the digital identification and document storage application myColorado and accessed user-uploaded data.",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Fuga de dados",
+   "translated": false,
+   "enriched": false,
+   "raw": "Hackers breached the digital identification and document storage application myColorado and accessed user-uploaded data."
+  },
   {
    "id": "05f4c13650df3f7c",
    "source": "BleepingComputer",
@@ -13716,51 +13752,6 @@
    "enriched": true,
    "why": "Permite que atacantes externos assumam o controlo de plataformas de virtualização centrais nas empresas.",
    "todo": "Aplique imediatamente as correções e atualizações de segurança disponibilizadas pelo fabricante para o VMware vCenter."
-  },
-  {
-   "id": "537595fdc52e0494",
-   "source": "MS-ISAC (CIS)",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-mitel-micollab-could-allow-for-arbitrary-code-execution_2026-139",
-   "published": "2026-11-20T20:39:44+00:00",
-   "title": "Multiple Vulnerabilities in Mitel MiCollab Could Allow for Arbitrary Code Execution",
-   "summary": "Foram detetadas várias vulnerabilidades na plataforma de comunicações Mitel MiCollab, sendo a mais grave passível de execução arbitrária de código. A exploração bem-sucedida desta falha permite a um atacante executar comandos no contexto do sistema. Consoante os privilégios associados, o intruso pode manipular dados, instalar programas ou criar contas com privilégios máximos.",
-   "image": null,
-   "points": [
-    "Múltiplas falhas identificadas na plataforma Mitel MiCollab.",
-    "A vulnerabilidade mais grave possibilita a execução arbitrária de código.",
-    "O impacto depende dos privilégios da conta, podendo levar ao comprometimento total."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Coloca em risco plataformas de colaboração empresarial através da execução de código malicioso.",
-   "todo": "Atualize o software Mitel MiCollab para as versões corrigidas mais recentes."
-  },
-  {
-   "id": "e010061a1eb7f0ca",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/chinese-open-weight-AI-use-by-US-companies-house-investigation",
-   "published": "2026-11-20T20:25:00+00:00",
-   "title": "A utilização de IA aberta chinesa por empresas norte-americanas gera críticas de presidentes da Câmara",
-   "summary": "Uma investigação liderada pelo comité de Segurança Interna da Câmara dos Representantes focou-se nos perigos associados à utilização, por parte de empresas dos EUA, de modelos de IA de pesos abertos de baixo custo em determinados projetos. Esta prática tem levantado preocupações de segurança nacional e gerado fortes reações críticas por parte dos líderes políticos. O impacto centra-se na potencial exposição a riscos geopolíticos e de cibersegurança decorrentes da adoção destas tecnologias estrangeiras económicas.",
-   "image": "https://cms.therecord.media/uploads/garbarino_20230423_515e2f0b4a.png",
-   "points": [
-    "Investigação liderada pelo comité de Segurança Interna da Câmara dos EUA.",
-    "Empresas norte-americanas utilizam modelos de IA de pesos abertos chineses de baixo custo.",
-    "Críticas políticas devido a potenciais riscos associados à tecnologia.",
-    "Impacto focado na segurança nacional e na adoção de ferramentas externas."
-   ],
-   "title_original": "US companies’ use of Chinese open weight AI draws rebuke from House chairmen",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra a crescente vigilância política sobre a dependência empresarial de tecnologias de IA de origem estrangeira.",
-   "todo": "Avalie cuidadosamente a origem e a segurança dos modelos de IA utilizados nos projetos da sua organização."
   }
  ]
 }

@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-27T08:46:15.852886+00:00",
+ "updated": "2026-11-27T09:06:53.363135+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -284,7 +284,7 @@
   {
    "source": "Securelist (Kaspersky)",
    "ok": true,
-   "added": 5
+   "added": 4
   },
   {
    "source": "Risky Bulletin",
@@ -309,15 +309,59 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 184,
-  "unenriched": 88,
+  "done": 120,
+  "pending": 172,
+  "unenriched": 76,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 42 column 5 (char 3597)"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "eddd0da598237743",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/cyberstrikeai-shut-down-threatbook/",
+   "published": "2026-11-27T09:00:00+00:00",
+   "title": "Criador do CyberStrikeAI desativa framework ofensiva de IA de código aberto",
+   "summary": "A versão de código aberto da ferramenta de testes de intrusão CyberStrikeAI foi permanentemente retirada do ar. No entanto, uma versão empresarial da ferramenta baseada em inteligência artificial continua acessível. A medida marca o fim da disponibilidade pública desta versão específica do software. Não foram avançados detalhes adicionais sobre os motivos da remoção total do repositório aberto.",
+   "image": null,
+   "points": [
+    "O criador removeu permanentemente a versão de código aberto do CyberStrikeAI.",
+    "A ferramenta de testes de intrusão baseada em IA foca-se em vertentes ofensivas.",
+    "A versão empresarial da aplicação continua acessível para utilização."
+   ],
+   "title_original": "CyberStrikeAI Creator Shuts Down Open-Source AI Offensive Framework",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "A remoção de frameworks ofensivas públicas altera a dinâmica de acesso a ferramentas automatizadas de testes de intrusão.",
+   "todo": "Acompanhe as políticas de segurança e o panorama de ferramentas de teste autorizadas utilizadas na sua infraestrutura."
+  },
+  {
+   "id": "b4dd6d3b701239f3",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/204100/data-breach/fifa-confirms-a-cyberattack-hackers-claim-12-gb-of-internal-files.html",
+   "published": "2026-11-27T08:48:03+00:00",
+   "title": "FIFA confirma ciberataque e hackers reivindicam 12 GB de ficheiros internos",
+   "summary": "A FIFA confirmou ter sido vítima de um ciberataque que resultou no acesso a um conjunto limitado de informações pessoais e de negócios. O grupo denominado Handsome Boy Hacking Club reivindicou a autoria da intrusão, afirmando ter exfiltrado mais de 12 GB de documentos internos do ambiente Microsoft da organização. A entidade de futebol declarou estar a colaborar estreitamente com as autoridades policiais competentes. O incidente ocorre numa altura sensível para a liderança da federação internacional.",
+   "image": null,
+   "points": [
+    "A FIFA confirmou um ciberataque que comprometeu dados pessoais e de negócios.",
+    "O grupo Handsome Boy Hacking Club assumiu a responsabilidade pela exfiltração.",
+    "Os atacantes afirmam ter obtido mais de 12 GB de documentos internos, incluindo dados de imigração.",
+    "A organização está a trabalhar com as autoridades policiais para investigar a violação."
+   ],
+   "title_original": "FIFA Confirms a Cyberattack, Hackers Claim 12 GB of Internal Files",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "O roubo de dados confidenciais a grandes organizações desportivas expõe falhas em ambientes corporativos e riscos para os titulares dos dados.",
+   "todo": "Assegure controlos apertados de acesso aos ambientes corporativos e políticas rigorosas de monitorização de identidades."
+  },
   {
    "id": "15e93fc59e91b640",
    "source": "BleepingComputer",
@@ -13718,51 +13762,6 @@
    "enriched": true,
    "why": "Importa porque os golpistas aproveitam a euforia das compras para roubar dinheiro e dados pessoais dos consumidores através de canais fraudulentos.",
    "todo": "Verifique sempre se a oferta provém de um canal legítimo e desconfie de descontos exagerados ou pedidos de pagamento urgentes por Pix e boleto."
-  },
-  {
-   "id": "0a863e6f7d52efa1",
-   "source": "CyberScoop",
-   "region": "US",
-   "lang": "en",
-   "link": "https://cyberscoop.com/signal-blocks-apple-google-ai-screenshots/",
-   "published": "2026-11-20T19:54:25+00:00",
-   "title": "Signal bloqueia captura de ecrã por IA da Apple e Google para proteger privacidade",
-   "summary": "A aplicação de mensagens encriptadas Signal vai passar a bloquear por defeito os sistemas operativos da Apple e da Google de tirarem capturas de ecrã das mensagens dos utilizadores. Esta medida surge para travar as funcionalidades de inteligência artificial integradas, como a Siri AI e o Gemini Intelligence, que analisam os ecrãs para responder a pedidos. A liderança da Signal considera estas integrações baseadas em agentes uma ameaça existencial à privacidade da aplicação. A empresa apela aos fabricantes para fornecerem ferramentas técnicas simples que permitam aos programadores impedir este acesso indesejado.",
-   "image": null,
-   "points": [
-    "A Signal bloqueia sistemas da Apple e Google de capturarem ecrãs com mensagens.",
-    "A medida protege contra assistentes de IA que analisam o ecrã, como Gemini e Siri.",
-    "A liderança da Signal classifica estas ferramentas de IA como uma ameaça existencial à privacidade."
-   ],
-   "title_original": "Signal blocks Apple, Google AI screenshotting in response to ‘existential threat’ to privacy app",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Protege as conversas privadas dos utilizadores contra a leitura automatizada por assistentes de inteligência artificial dos sistemas operativos.",
-   "todo": "Desative assistentes de IA com acesso global ao ecrã ou utilize versões atualizadas da aplicação com estas proteções ativas."
-  },
-  {
-   "id": "f4159f374f79fe57",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/vmware-security-advisory-av26-1185",
-   "published": "2026-11-20T19:48:57+00:00",
-   "title": "Aviso de segurança da VMware (AV26-1185) – Atualização 1",
-   "summary": "A VMware reportou múltiplas vulnerabilidades que afetam vários produtos, incluindo o vCenter e o Cloud Foundation. Uma das falhas identificadas, com a referência CVE-2026-123890, está a ser ativamente explorada em ataques reais. A CISA adicionou esta mesma falha ao seu catálogo de vulnerabilidades conhecidas. Os administradores de sistemas devem consultar os avisos e aplicar as correções disponíveis o mais rapidamente possível.",
-   "image": null,
-   "points": [
-    "A VMware alertou para vulnerabilidades em produtos como o vCenter e o Cloud Foundation.",
-    "A falha CVE-2026-123890 está a ser explorada ativamente em ataques no terreno.",
-    "A CISA incluiu a vulnerabilidade no seu catálogo KEV de explorações conhecidas.",
-    "Foram disponibilizadas atualizações de segurança para mitigar as falhas identificadas."
-   ],
-   "title_original": "VMware security advisory (AV26-1185) – Update 1",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "As falhas no vCenter afetam a gestão de infraestruturas virtuais críticas, expondo os ambientes corporativos a tomadas de controlo.",
-   "todo": "Aplique imediatamente as atualizações de segurança oficiais indicadas no advisory da VMware para o vCenter e componentes afetados."
   }
  ]
 }

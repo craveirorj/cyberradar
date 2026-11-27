@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T06:06:47.759270+00:00",
+ "updated": "2026-11-27T06:28:24.301446+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Check Point Research",
@@ -309,15 +309,84 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 116,
-  "pending": 175,
-  "unenriched": 78,
+  "done": 117,
+  "pending": 177,
+  "unenriched": 80,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "bdba96d745bb1de4",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+   "published": "2026-11-27T06:04:20+00:00",
+   "title": "Suíça confirma ataques cibernéticos assistidos por IA contra infraestruturas críticas",
+   "summary": "A agência de cibersegurança da Suíça confirmou que atacantes utilizaram agentes de IA para invadir sistemas informáticos em organizações nacionais. Dos cinco ataques confirmados, três visaram operadores de infraestruturas críticas, resultando em duas invasões bem-sucedidas. Embora não tenham sido reportadas perturbações graves, este é o primeiro caso do género no país. A identidade das vítimas e dos atacantes permanece desconhecida.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjviiPK0v6Kpjxjo_jDNE9vaZ8-JKiq6Oct4uU6qPDfTXq66QnxuV2iExRo2Rx2FyHhyphenhyphenDquMIoxmlfo5GwxfKoEXRG8Pj38FDOzEKitDdhXBNOGN7b6sddsMozMuhI44c-3mimoE4OxU-Xg7h8IzhDiyrXmP6qBO-wW6xmitkIEv_EkU-FJUJBTNtQ8uY/s1600/swiss.jpg",
+   "points": [
+    "Agentes de IA usados em ataques cibernéticos.",
+    "Alvos incluíram operadores de infraestruturas críticas.",
+    "Primeiros casos confirmados na Suíça.",
+    "Sem interrupções operacionais significativas reportadas."
+   ],
+   "title_original": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra a evolução das ameaças, onde a IA é usada para automatizar e escalar ataques contra infraestruturas essenciais.",
+   "todo": "Reforce a monitorização de redes e implemente defesas robustas contra comportamentos automatizados e anómalos."
+  },
+  {
+   "id": "e1ccd20a1f2efd3c",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/27/product-showcase-norton-claude-scam-detection/",
+   "published": "2026-11-27T06:00:59+00:00",
+   "title": "Vitrine de produtos: Norton ajuda utilizadores do Claude a detetar sinais de fraude",
+   "summary": "A Norton lançou um conector para o chatbot Claude que integra capacidades de deteção de esquemas fraudulentos baseadas em IA. Os utilizadores podem submeter e-mails, mensagens de texto, capturas de ecrã e links suspeitos para análise imediata. A ferramenta também responde a questões sobre cibersegurança, privacidade e proteção de identidade. Esta funcionalidade não exige a criação de uma conta Norton ou a instalação de aplicações adicionais.",
+   "image": null,
+   "points": [
+    "Integração da IA Genie da Norton no Claude.",
+    "Análise de links, mensagens e capturas de ecrã.",
+    "Acesso a conselhos de segurança e privacidade.",
+    "Utilização simples sem necessidade de conta."
+   ],
+   "title_original": "Product showcase: Norton helps Claude users uncover the telltale signs of fraud",
+   "category": "Phishing/Fraude",
+   "translated": true,
+   "enriched": true,
+   "why": "Facilita o acesso a ferramentas de segurança em tempo real para utilizadores comuns, ajudando a identificar tentativas de phishing.",
+   "todo": "Utilize ferramentas de verificação de IA para validar comunicações suspeitas antes de clicar em links ou partilhar dados."
+  },
+  {
+   "id": "706168821faab9b6",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
+   "published": "2026-11-27T05:48:20+00:00",
+   "title": "Vulnerabilidade zero-day no Cacti permite RCE com apenas quatro pedidos HTTP",
+   "summary": "Foi descoberta uma nova vulnerabilidade zero-day na ferramenta de monitorização de rede Cacti, que permite a execução remota de código (RCE). O exploit, identificado como 4HTTP2SHELL e 4HTTP2ROOT, possibilita que um atacante obtenha controlo total do servidor a partir de uma sessão HTTP não autenticada. Os detalhes técnicos revelam que o ataque pode ser executado com apenas quatro pedidos HTTP. A falha ainda não possui um identificador CVE atribuído.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy4kFFGLYGbyvO7M_M1gKBjBUm5TF_eT6dIHtCmXKz_cGyC6orRw9XupBLbcQlJTQEEqjZ3q73Cv_Sn9ncPKxOJYU8Poi8Q54-bWKIro4Sp4JYi9hjUjYy71OR1LOV6B5nX8dHK0jYSRJ1p4O1pdMWomZGhCiTKE7MkvrC-gfeINrM-GOab64Bw_MzxA6Z/s1600/cacti.png",
+   "points": [
+    "Falha zero-day no Cacti (monitorização de rede).",
+    "Permite execução remota de código (RCE).",
+    "Exploits rastreados como 4HTTP2SHELL e 4HTTP2ROOT.",
+    "Acesso possível via sessão HTTP não autenticada."
+   ],
+   "title_original": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Representa um risco crítico, pois permite que atacantes não autenticados assumam o controlo total de servidores de monitorização.",
+   "todo": "Restrinja o acesso à interface do Cacti e verifique regularmente por atualizações de segurança ou patches do fabricante."
+  },
   {
    "id": "5dce1fd3db2e0840",
    "source": "Help Net Security",
@@ -13693,75 +13762,6 @@
    "enriched": true,
    "why": "Mostra como vulnerabilidades em fornecedores terceiros podem expor dados financeiros altamente sensíveis.",
    "todo": "Monitorizar contas bancárias e ativar alertas de atividade suspeita."
-  },
-  {
-   "id": "a5a082552bfdec56",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/20/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
-   "published": "2026-11-20T18:56:50+00:00",
-   "title": "Bell Canada diz que hacker \"agente\" roubou dados de clientes empresariais",
-   "summary": "Um ator de ameaça avançado invadiu os sistemas da operadora Bell Canada a 17 de novembro de 2026. Durante o incidente, foram roubados dados de clientes empresariais, incluindo registos de um sistema de fornecimento de circuitos. A empresa confirmou a falha de segurança após deteção interna.",
-   "image": null,
-   "points": [
-    "Quem: Bell Canada e um atacante com capacidades de IA.",
-    "O quê: Violação de sistemas e roubo de dados empresariais.",
-    "Como: Acesso não autorizado a um sistema de fornecimento de telecomunicações.",
-    "Impacto: Exposição de informações confidenciais de clientes empresariais."
-   ],
-   "title_original": "Bell Canada says ‘agentic’ hacker stole enterprise customer data",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra os riscos crescentes de ataques automatizados a grandes fornecedores de telecomunicações.",
-   "todo": "Monitore continuamente os acessos aos sistemas críticos e reforce a autenticação multifator."
-  },
-  {
-   "id": "6c623452a14a6d23",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
-   "published": "2026-11-20T18:51:43+00:00",
-   "title": "Bell Canada diz que hacker 'agente' roubou dados de clientes empresariais",
-   "summary": "A operadora Bell Canada sofreu uma invasão nos seus sistemas a 17 de novembro de 2026. Um atacante descrito como \"agente\" conseguiu aceder e roubar dados de clientes empresariais. Entre as informações comprometidas estão dados de plataformas usadas para gerir circuitos de telecomunicações.",
-   "image": null,
-   "points": [
-    "Quem: Bell Canada e atacantes com IA.",
-    "O quê: Roubo de dados de clientes empresariais.",
-    "Como: Invasão bem-sucedida aos sistemas internos da operadora.",
-    "Impacto: Dados sensíveis de infraestruturas de telecomunicações foram comprometidos."
-   ],
-   "title_original": "Bell Canada says 'agentic' hacker stole enterprise customer data",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia a vulnerabilidade de infraestruturas críticas face a ameaças automatizadas modernas.",
-   "todo": "Implemente políticas rigorosas de registo de auditoria e monitorização em tempo real."
-  },
-  {
-   "id": "755bf327b1298bc8",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/20/u-s-department-of-agriculture-grapples-with-security-breach-as-it-staff-take-multiple-systems-offline/",
-   "published": "2026-11-20T18:44:27+00:00",
-   "title": "Departamento de Agricultura dos EUA lida com violação de segurança enquanto equipa de TI desliga vários sistemas",
-   "summary": "O Departamento de Agricultura dos EUA teve de desligar várias aplicações ao longo de vários dias. A medida surgiu como resposta direta a um incidente de cibersegurança detetado internamente. Estas interrupções afetaram diversas ferramentas financeiras utilizadas pela organização.",
-   "image": null,
-   "points": [
-    "Quem: Departamento de Agricultura dos EUA.",
-    "O quê: Desativação de sistemas devido a incidente de segurança.",
-    "Como: Desligamento manual de aplicações pela equipa de TI ao longo de vários dias.",
-    "Impacto: Indisponibilidade de ferramentas financeiras importantes."
-   ],
-   "title_original": "U.S. Department of Agriculture grapples with security breach as IT staff take multiple systems offline",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra o impacto operacional severo que uma resposta a incidentes exige em organismos públicos.",
-   "todo": "Tenha planos de contingência testados para isolar sistemas rapidamente sem paragens prolongadas."
   }
  ]
 }

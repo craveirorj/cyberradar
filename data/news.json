@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T12:46:21.357301+00:00",
+ "updated": "2026-11-27T13:06:49.023040+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "TugaTech",
@@ -149,7 +149,7 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 8
+   "added": 7
   },
   {
    "source": "Microsoft Security Blog",
@@ -309,14 +309,32 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 184,
-  "unenriched": 85,
+  "done": 108,
+  "pending": 194,
+  "unenriched": 97,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting property name enclosed in double quotes: line 71 column 5 (char 6864)"
   ]
  },
  "items": [
+  {
+   "id": "fc16d60c1f9758a8",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/internet/sap-investiga-ciberataque-apos-hackers-acederem-ao-github/",
+   "published": "2026-11-27T12:47:04+00:00",
+   "title": "SAP investiga ciberataque após hackers acederem ao GitHub",
+   "summary": "A fabricante alemã de software diz não ter, até ao momento, indícios de acesso não autorizado a dados de negócio de clientes, mas a imprensa do país noticia que os atacantes terão usado credenciais roubadas de colaboradores para copiar e alterar código-fonte. A SAP confirmou à Reuters que identificou atividade suspeita e que implementou de […]",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": false,
+   "raw": "A fabricante alemã de software diz não ter, até ao momento, indícios de acesso não autorizado a dados de negócio de clientes, mas a imprensa do país noticia que os atacantes terão usado credenciais roubadas de colaboradores para copiar e alterar código-fonte. A SAP confirmou à Reuters que identificou atividade suspeita e que implementou de […]"
+  },
   {
    "id": "03428b46424a84a2",
    "source": "Malwarebytes Labs",
@@ -13731,29 +13749,6 @@
    "enriched": true,
    "why": "Permite que atacantes roubem dados de aplicações através de vulnerabilidades em bibliotecas de encriptação padrão.",
    "todo": "Atualize a biblioteca GPGME para a versão 2.3.0 ou superior em todos os softwares afetados."
-  },
-  {
-   "id": "16765aea3bd9ae9d",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
-   "published": "2026-11-21T11:03:17+00:00",
-   "title": "Agentes de IA de atacantes encontraram uma falha de dia zero em software de imagem médica e obtiveram acesso root",
-   "summary": "Hackers suspeitos de terem ligações à China utilizaram agentes de IA autónomos para detetar uma vulnerabilidade desconhecida no servidor de imagem médica MONAI Label. Com esta falha, atacantes sem conta conseguiram escrever ficheiros fora da pasta de armazenamento e obter acesso root num servidor universitário. O problema afeta o MONAI Label 0.8.5 e versões anteriores na configuração predefinida.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEIG6Wgi3wGQXrsdGKEf4ORPFjHVGpRkoSUPraOJfKhGmB0vYFojLq2mCuOP3a71_XpNZusvn45ZDa1J3a7eQ0WE3XJY0FGunHVWB1yHBluJT5vSDCmzkhaFGiHjeKbnoah6noyZ3mNInS-mjJK1Gfcf7jT3A60ZYR_eknSgt_sEa6MNGM-DA5-aLXMbZ5/s1600/medical-ai.jpg",
-   "points": [
-    "Atacantes usaram agentes de IA para descobrir uma falha de dia zero.",
-    "A vulnerabilidade afeta o MONAI Label 0.8.5 e versões anteriores.",
-    "Permite a escrita de ficheiros fora da pasta predefinida sem autenticação.",
-    "Foi obtido acesso root num servidor universitário através deste vetor."
-   ],
-   "title_original": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Demonstra a utilização de inteligência artificial autónoma por atacantes para descobrir vulnerabilidades e obter controlo total de servidores.",
-   "todo": "Atualize o MONAI Label para uma versão corrigida e reveja as permissões predefinidas dos servidores."
   }
  ]
 }

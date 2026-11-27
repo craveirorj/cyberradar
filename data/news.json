@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-27T20:46:32.425041+00:00",
+ "updated": "2026-11-27T20:52:23.166716+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "IT Security",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -309,15 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 182,
-  "unenriched": 90,
+  "done": 120,
+  "pending": 170,
+  "unenriched": 78,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "Expecting property name enclosed in double quotes: line 82 column 2 (char 5429)"
   ]
  },
  "items": [
+  {
+   "id": "fac8e2a94f2ef0fb",
+   "source": "CSO Online",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.csoonline.com/article/4254114/flaw-in-linux-nfs-file-sharing-exposes-servers-to-remote-takeover.html",
+   "published": "2026-11-27T20:43:35+00:00",
+   "title": "Flaw in Linux NFS file sharing exposes servers to remote takeover",
+   "summary": "Investigadores descobriram uma falha crítica de segurança no servidor de partilha de ficheiros NFS do kernel do Linux, registada como CVE-2026-99362 e com uma gravidade de 9.8. A vulnerabilidade, presente há 12 anos, afeta versões do protocolo NFSv4.1 e NFSv4.2 e permite que atacantes não autenticados corrompam a memória e obtenham acesso total de root. O problema foi descoberto de forma independente por investigadores, incluindo com recurso a ferramentas de inteligência artificial. Já foram disponibilizadas correções para várias ramificações estáveis do kernel do Linux.",
+   "image": "https://www.csoonline.com/wp-content/uploads/2026/11/4247815-0-12378000-1794485404-shutterstock_235908178.jpg?quality=50&strip=all",
+   "points": [
+    "O quê: Falha crítica de segurança no NFS do kernel do Linux (CVE-2026-99362).",
+    "Quem: Afeta sistemas que executam o NFSv4.1 ou NFSv4.2.",
+    "Como: Atacantes não autenticados podem explorar a porta 2049 para corromper memória e executar código malicioso.",
+    "Impacto: Permite assumir o controlo total com privilégios de root."
+   ],
+   "title_original": "Flaw in Linux NFS file sharing exposes servers to remote takeover",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes obtenham controlo total de servidores Linux afetados através da rede.",
+   "todo": "Atualize o kernel do Linux para as versões mais recentes disponibilizadas pelos distribuidores ou mantenham os sistemas de armazenamento e dispositivos embebidos atualizados com o firmware do fabricante."
+  },
   {
    "id": "f55b51d529a2f276",
    "source": "DataBreaches.net",
@@ -13753,28 +13776,6 @@
    "enriched": true,
    "why": "Mostra como falhas em infraestruturas públicas essenciais podem paralisar setores fundamentais como a agricultura.",
    "todo": "Avalie regularmente os fornecedores e parceiros críticos para garantir que cumprem padrões rigorosos de cibersegurança."
-  },
-  {
-   "id": "50699f46d53a5c82",
-   "source": "Troy Hunt",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://www.troyhunt.com/weekly-update-531/",
-   "published": "2026-11-22T05:24:12+00:00",
-   "title": "Weekly Update 531: Optimizely. Script Dependencies & Third Parties",
-   "summary": "Um incidente recente de segurança envolvendo a Optimizely evidenciou a questão da responsabilização quando ocorrem falhas em fornecedores terceiros. Embora a responsabilidade técnica pareça recair sobre o fornecedor, cabe às entidades parceiras, como a Norwegian Airlines, decidir como e quando contactar as pessoas afetadas. No entanto, o terceiro envolvido nem sequer foi publicamente nomeado pelas empresas afetadas. Esta situação demonstra os desafios na gestão de dependências externas e na transparência da comunicação de incidentes.",
-   "image": "https://storage.ghost.io/c/fb/33/fb3391dc-723d-4e74-b95a-d641b5feb38e/content/images/2026/11/maxresdefault.webp",
-   "points": [
-    "A Optimizely esteve envolvida num incidente de segurança relacionado com terceiros.",
-    "Empresas parceiras, como a Norwegian Airlines, decidem a comunicação aos afetados.",
-    "A entidade terceirizada responsável não foi identificada publicamente no processo."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como a dependência de fornecedores terceiros complica a responsabilização e a transparência em cibersegurança.",
-   "todo": "Avalie e audite regularmente os riscos associados a fornecedores terceiros e dependências de scripts externos."
   }
  ]
 }

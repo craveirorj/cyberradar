@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-27T15:26:23.751421+00:00",
+ "updated": "2026-11-27T15:45:22.599191+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Pplware Segurança",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CISA Advisories",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -149,7 +149,7 @@
   {
    "source": "Malwarebytes Labs",
    "ok": true,
-   "added": 7
+   "added": 6
   },
   {
    "source": "Microsoft Security Blog",
@@ -199,7 +199,7 @@
   {
    "source": "Elastic Security Labs",
    "ok": true,
-   "added": 5
+   "added": 4
   },
   {
    "source": "Rapid7",
@@ -299,21 +299,22 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 12
+   "added": 13
   },
   {
    "source": "ACSC Austrália",
    "ok": false,
-   "error": "HTTPSConnectionPool(host='www.cyber.gov.au', port=443): Read timed out. (read timeout=25)"
+   "error": "403 Client Error: Forbidden for url: https://www.cyber.gov.au/rss/alerts"
   }
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 184,
-  "unenriched": 87,
+  "done": 108,
+  "pending": 192,
+  "unenriched": 96,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting ':' delimiter: line 52 column 3 (char 4361)"
   ]
  },
  "items": [
@@ -1578,6 +1579,29 @@
    "enriched": true,
    "why": "Sublinha que órgãos de comunicação social globais são alvos diretos de ataques que afetam a circulação de informação.",
    "todo": "Reforce a segurança nos canais de distribuição de conteúdos e mantenha planos de contingência operacionais."
+  },
+  {
+   "id": "2cdfe40c035ef75d",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/news/software-supply-chain-e-it-security-conference-em-destaque-na-edicao-de-dezembro-da-it-security",
+   "published": "2026-11-27T00:00:00+00:00",
+   "title": "Software Supply Chain e IT Security Conference em destaque na edição de dezembro da IT Security",
+   "summary": "A edição número 33 da revista IT Security foi publicada com foco em temas fundamentais para o setor. A capa da publicação é inteiramente dedicada à cadeia de abastecimento de software (Software Supply Chain). Além disso, a secção Brave New World aborda o conceito de segurança por desenho à escala. Os leitores podem ainda consultar a cobertura completa da edição de 2026 da IT Security Conference.",
+   "image": null,
+   "points": [
+    "Publicação da edição 33 da revista IT Security.",
+    "Destaque de capa para a cadeia de abastecimento de software.",
+    "Abordagem sobre segurança por desenho à escala na secção Brave New World.",
+    "Cobertura completa da IT Security Conference de 2026."
+   ],
+   "title_original": null,
+   "category": "Geral",
+   "translated": false,
+   "enriched": true,
+   "why": "Permite aos profissionais manterem-se atualizados sobre as tendências e debates essenciais na área da cibersegurança.",
+   "todo": ""
   },
   {
    "id": "b1fd7d6f14154fb5",
@@ -13745,29 +13769,6 @@
    "enriched": true,
    "why": "Mostra como os agentes de IA autónomos já conseguem descobrir e explorar vulnerabilidades zero-day sem intervenção humana.",
    "todo": "Garanta que todos os servidores expostos publicamente possuem autenticação forte e revise regularmente as permissões de acesso."
-  },
-  {
-   "id": "fdf2ca3c607854a9",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203639/security/u-s-cisa-adds-cisco-expressway-sap-netweaver-broadcom-vmware-vcenter-and-apache-roller-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
-   "published": "2026-11-21T16:09:38+00:00",
-   "title": "U.S. CISA adds Cisco Expressway, SAP NetWeaver, Broadcom VMware vCenter, and Apache Roller flaws to its Known Exploited Vulnerabilities catalog",
-   "summary": "A agência norte-americana CISA atualizou o seu catálogo de vulnerabilidades conhecidas exploradas com falhas em produtos como Cisco Expressway, SAP NetWeaver, Broadcom VMware vCenter e Apache Roller. Entre os problemas destaca-se uma falha no SAP NetWeaver e uma vulnerabilidade crítica de credenciais hard-coded no Cisco Expressway Series. Estas falhas permitem a atacantes não autenticados aceder a sistemas e executar chamadas de procedimento remoto. A inclusão destas falhas confirma que já estão a ser exploradas ativamente em ataques no terreno.",
-   "image": null,
-   "points": [
-    "Alvo: Falhas adicionadas ao catálogo KEV da CISA afetando Cisco, SAP, VMware e Apache.",
-    "O quê: Vulnerabilidades críticas incluindo execução remota e bypass de autenticação.",
-    "Impacto: Acesso não autorizado a servidores e execução de comandos remotos.",
-    "Como: Exploradas ativamente por atacantes em campanhas no terreno."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Ajuda as organizações a priorizar a correção urgente de falhas críticas que já estão a ser usadas por atacantes.",
-   "todo": "Consulte o catálogo da CISA e aplique imediatamente os patches de segurança fornecidos pelos fabricantes para os softwares afetados."
   }
  ]
 }

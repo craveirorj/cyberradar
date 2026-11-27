@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T07:46:31.412004+00:00",
+ "updated": "2026-11-27T08:07:22.727473+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -184,7 +184,7 @@
   {
    "source": "Google Project Zero",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CrowdStrike Blog",
@@ -299,7 +299,7 @@
   {
    "source": "Cyber Centre Canadá",
    "ok": true,
-   "added": 10
+   "added": 11
   },
   {
    "source": "ACSC Austrália",
@@ -309,15 +309,37 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 117,
-  "pending": 176,
-  "unenriched": 79,
+  "done": 108,
+  "pending": 185,
+  "unenriched": 88,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
+   "Expecting property name enclosed in double quotes: line 42 column 5 (char 3852)"
   ]
  },
  "items": [
+  {
+   "id": "c51ad7ce4d32c740",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/hex-package-manager-warns-of-potential-data-breach/",
+   "published": "2026-11-27T07:44:49+00:00",
+   "title": "Gestor de Pacotes Hex Alerta para Potencial Violação de Dados",
+   "summary": "Uma vulnerabilidade na plataforma hex.pm permitiu que atacantes executassem comandos diretamente em servidores web. Embora não tenham sido encontradas provas de modificação de dados, as leituras na base de dados não são registadas. Este incidente expôs falhas na segurança dos servidores da plataforma.",
+   "image": null,
+   "points": [
+    "Vulnerabilidade permitiu execução de comandos em servidores web do hex.pm.",
+    "Não foram detetadas evidências de alteração ou modificação de dados.",
+    "As leituras efetuadas na base de dados não se encontram registadas."
+   ],
+   "title_original": "Hex Package Manager Warns of Potential Data Breach",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque a falha permitiu acesso não autorizado a servidores através do hex.pm sem deixar registos das leituras de dados.",
+   "todo": "Monitorize os registos de acesso aos servidores e atualize regularmente os pacotes e dependências utilizados."
+  },
   {
    "id": "62ce00fb3a46f09e",
    "source": "SecurityWeek",
@@ -13740,28 +13762,6 @@
    "enriched": true,
    "why": "Permite mitigar falhas críticas ativamente exploradas em infraestruturas empresariais.",
    "todo": "Consulte os avisos de segurança da Cisco e instale as atualizações de software disponíveis o mais rapidamente possível."
-  },
-  {
-   "id": "edfeced150c6a6c3",
-   "source": "The Record",
-   "region": "US",
-   "lang": "en",
-   "link": "https://therecord.media/container-store-restores-systems-cyberattack",
-   "published": "2026-11-20T19:32:00+00:00",
-   "title": "Container Store restores systems after cyberattack",
-   "summary": "A empresa-mãe da The Container Store, Neighborhood Intelligence, anunciou que a marca conseguiu recuperar o seu website e sistemas. A interrupção ocorreu na sequência de um incidente de cibersegurança registado durante o fim de semana anterior. O impacto centrou-se na indisponibilidade temporária das plataformas digitais da empresa. A situação foi resolvida com a restauração bem-sucedida dos serviços afetados.",
-   "image": "https://cms.therecord.media/uploads/the_container_store_78204f1ab6.jpg",
-   "points": [
-    "The Container Store foi alvo de um incidente de cibersegurança.",
-    "Website e sistemas foram totalmente restaurados.",
-    "Aviso divulgado pela empresa-mãe Neighborhood Intelligence."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como incidentes informáticos podem interromper o negócio e exigir recuperação rápida.",
-   "todo": "Mantenha planos de recuperação de desastres atualizados e cópias de segurança testadas para responder a incidentes."
   }
  ]
 }

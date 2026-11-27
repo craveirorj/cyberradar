@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-27T12:26:25.420529+00:00",
+ "updated": "2026-11-27T12:46:21.357301+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "IT Security",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -134,7 +134,7 @@
   {
    "source": "Schneier on Security",
    "ok": true,
-   "added": 7
+   "added": 6
   },
   {
    "source": "SANS ISC",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -310,13 +310,36 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 186,
-  "unenriched": 87,
+  "pending": 184,
+  "unenriched": 85,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "03428b46424a84a2",
+   "source": "Malwarebytes Labs",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.malwarebytes.com/blog/news/2026/11/malware-steals-gmail-messages-using-a-fake-google-sheets-extension",
+   "published": "2026-11-27T12:09:14+00:00",
+   "title": "Malware roupa mensagens do Gmail através de uma falsa extensão do Google Sheets",
+   "summary": "Uma nova investigação revelou que o infostealer Remus utiliza uma extensão do Google Chrome disfarçada de Google Sheets para roubar mensagens do Gmail. Esta extensão maliciosa mantém-se instalada mesmo após a alteração da palavra-passe e retoma a leitura das caixas de correio quando o utilizador volta a iniciar sessão. Os criadores do malware tinham anunciado anteriormente esta capacidade de acesso persistente, que foi agora associada a este componente do navegador. O impacto afeta a privacidade dos utilizadores, cujas mensagens de correio eletrónico continuam acessíveis após tentativas de mitigação.",
+   "image": null,
+   "points": [
+    "O infostealer Remus utiliza uma extensão falsa do Google Sheets para roubar mensagens do Gmail.",
+    "A extensão maliciosa persiste após a alteração da palavra-passe e volta a monitorizar o correio.",
+    "A descoberta foi feita por investigadores da Gen Threat Labs, ligada a uma alegada zero-day do Gmail.",
+    "O impacto resulta no acesso continuado à caixa de correio da vítima sem o seu consentimento."
+   ],
+   "title_original": "Malware steals Gmail messages using a fake Google Sheets extension",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como os atacantes mantêm o acesso a contas de email infetadas mesmo após a mudança de credenciais.",
+   "todo": "Verifique as extensões instaladas no Google Chrome e proteja a sua Conta Google a partir de um dispositivo limpo."
+  },
   {
    "id": "c50ded1a2a68b762",
    "source": "Schneier on Security",
@@ -13731,28 +13754,6 @@
    "enriched": true,
    "why": "Demonstra a utilização de inteligência artificial autónoma por atacantes para descobrir vulnerabilidades e obter controlo total de servidores.",
    "todo": "Atualize o MONAI Label para uma versão corrigida e reveja as permissões predefinidas dos servidores."
-  },
-  {
-   "id": "e308213d41986638",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/fake-gta-vi-streaming-client-malware-windows-pc/",
-   "published": "2026-11-21T08:57:36+00:00",
-   "title": "Fake GTA VI Streaming Client Installs Data-Stealing Malware on Windows PCs",
-   "summary": "A Bitdefender emitiu um alerta sobre um esquema de streaming falso do GTA VI desenhado para enganar jogadores no Windows. A campanha distribui software malicioso capaz de roubar palavras-passe guardadas no sistema e carteiras de criptomoedas. Este ataque aproveita o entusiasmo em redor do jogo para comprometer dados sensíveis dos utilizadores afetados.",
-   "image": null,
-   "points": [
-    "Alvo: Jogadores de PC em busca de streaming de GTA VI.",
-    "O quê: Instalação de malware de roubo de dados.",
-    "Impacto: Roubo de credenciais guardadas e carteiras de criptomoedas."
-   ],
-   "title_original": null,
-   "category": "Malware",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como os atacantes exploram títulos de videojogos populares para distribuir malware de roubo de dados pessoais.",
-   "todo": "Evite descarregar clientes de streaming ou software não oficial de fontes desconhecidas e utilize soluções de segurança atualizadas."
   }
  ]
 }

@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-27T12:06:50.486234+00:00",
+ "updated": "2026-11-27T12:26:25.420529+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
@@ -89,7 +89,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 25
+   "added": 26
   },
   {
    "source": "SecurityWeek",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -138,8 +138,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 5
   },
   {
    "source": "DataBreaches.net",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -309,15 +309,36 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 192,
-  "unenriched": 93,
+  "done": 120,
+  "pending": 186,
+  "unenriched": 87,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 30 column 5 (char 2462)"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "c50ded1a2a68b762",
+   "source": "Schneier on Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.schneier.com/blog/archives/2026/11/recent-outages-have-economic-causes.html",
+   "published": "2026-11-27T12:02:23+00:00",
+   "title": "As recentes falhas têm causas económicas",
+   "summary": "Várias interrupções afetaram recentemente a infraestrutura tecnológica de entidades como a Microsoft, a FAA, bancos e a Apple, gerando suspeitas de ataques informáticos coordenados. Contudo, trata-se de incidentes não relacionados e puramente coincidentes, sem ligação a ciberataques ou inteligência artificial. O impacto principal revela a fragilidade e a vulnerabilidade da infraestrutura digital atual, muitas vezes envelhecida, centralizada e dependente de sistemas de apoio precários. A raiz do problema reside em decisões económicas, onde os custos com segurança e resiliência não geram lucros imediatos.",
+   "image": null,
+   "points": [
+    "O quê: Falhas tecnológicas em várias grandes entidades e infraestruturas.",
+    "Como: Causadas por vulnerabilidade estrutural e falta de investimento em resiliência, e não por ataques.",
+    "Impacto: Interrupções em cascata na sociedade devido à centralização e fragilidade dos sistemas."
+   ],
+   "title_original": "Recent Outages Have Economic Causes",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que a fragilidade tecnológica global resulta de escolhas económicas que descuram a segurança e a resiliência.",
+   "todo": "Invista na redundância de sistemas críticos e não dependa exclusivamente de pontos únicos de falha."
+  },
   {
    "id": "963228c15b1d2e3e",
    "source": "CrowdStrike Blog",
@@ -1121,6 +1142,29 @@
    "enriched": true,
    "why": "A exploração ativa desta falha crítica representa um risco iminente de compromisso total dos sistemas afetados.",
    "todo": "Aplique imediatamente as atualizações de segurança disponibilizadas pelo fabricante para mitigar a vulnerabilidade."
+  },
+  {
+   "id": "f9571136225a9842",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/france-afp-hit-by-cyberattack",
+   "published": "2026-11-27T00:00:00+00:00",
+   "title": "Ciberataque perturba a plataforma global de distribuição de notícias da AFP em França",
+   "summary": "A agência de notícias francesa Agence France-Presse foi alvo de um ciberataque, o que a obrigou a retirar temporariamente de funcionamento uma das suas principais plataformas de distribuição de conteúdos a nível mundial. O incidente afetou a capacidade da organização de entregar notícias aos seus parceiros mediáticos em todo o globo. Até ao momento, não foram avançados detalhes adicionais sobre a autoria ou o impacto prolongado da ocorrência.",
+   "image": "https://cms.therecord.media/uploads/paris_france_558ae68906.jpg",
+   "points": [
+    "Quem: A agência de notícias francesa Agence France-Presse (AFP).",
+    "O quê: Alvo de um ciberataque que afetou a distribuição global de conteúdos.",
+    "Como: Através de uma intrusão que obrigou a desligar plataformas vitais.",
+    "Impacto: Suspensão temporária da plataforma de distribuição de notícias a organizações mediáticas mundiais."
+   ],
+   "title_original": "Cyberattack disrupts global news distribution platform at France’s AFP",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Sublinha que órgãos de comunicação social globais são alvos diretos de ataques que afetam a circulação de informação.",
+   "todo": "Reforce a segurança nos canais de distribuição de conteúdos e mantenha planos de contingência operacionais."
   },
   {
    "id": "b1fd7d6f14154fb5",
@@ -13709,50 +13753,6 @@
    "enriched": true,
    "why": "Mostra como os atacantes exploram títulos de videojogos populares para distribuir malware de roubo de dados pessoais.",
    "todo": "Evite descarregar clientes de streaming ou software não oficial de fontes desconhecidas e utilize soluções de segurança atualizadas."
-  },
-  {
-   "id": "9da47b8efcbbfaa0",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
-   "published": "2026-11-21T08:49:20+00:00",
-   "title": "Signal bloqueia agentes de IA de lerem chats privados através de capturas de ecrã no Android e iOS",
-   "summary": "A plataforma Signal implementou restrições automáticas de capturas de ecrã para impedir que assistentes de inteligência artificial leiam conversas privadas. A funcionalidade protege contra sistemas integrados em dispositivos móveis. No entanto, a própria empresa admite que esta barreira de proteção não é totalmente perfeita. A medida abrange versões do Android e do iOS onde a aplicação consegue detetar a ação da IA.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1cVX1DZUDMTkSc3kGcO8KsGd-MIBr6py39SuaRxG1wCxVVfKIQhiQaywRpjn95FQV4tMy0dWyNc49745cwqBBLpGzVK_eut-DGLBaidiiYCdIH65bXGtopuPJ7dofJzAJVJ6cWrKp2JJb5gNrODQuWtK7vZZp824ecrz4_DHWWJIaC5wS6aYfsMsKshg4/s1600/signal.jpg",
-   "points": [
-    "Signal restringe capturas de ecrã para bloquear assistentes de IA.",
-    "A proteção aplica-se a sistemas integrados no Android e iOS.",
-    "A própria empresa reconhece que a eficácia da medida é incompleta."
-   ],
-   "title_original": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa para proteger a privacidade das conversas encriptadas contra a leitura automatizada por ferramentas de inteligência artificial.",
-   "todo": "Mantenha a aplicação Signal atualizada com a versão mais recente para garantir que beneficia das defesas de privacidade disponíveis."
-  },
-  {
-   "id": "a3eac34b29cf4ec4",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
-   "published": "2026-11-21T08:49:13+00:00",
-   "title": "Hackers exploram falhas críticas em produtos VMware, Cisco e Apache em ataques de espionagem",
-   "summary": "A agência norte-americana CISA adicionou quatro vulnerabilidades críticas à sua lista de falhas ativamente exploradas. O alerta surge no seguimento de campanhas de espionagem digital que visam sistemas empresariais. Entre os softwares afetados encontram-se soluções da Apache, Cisco, SAP e Broadcom VMware. Esta inclusão baseia-se em evidências concretas de exploração bem-sucedida por parte de cibercriminosos.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFnWnBDigw8RogBTSInXktn1vUISbzwjHm5GuAFBNX0_ClLBk83WOa2BYiHUbgtva76TY8Oz2kJvEZtvEjqZlFFCuvQ-u-l-4l5dzo2MXw7zHLEuklv_Gn1mB-f5TL9GP_3n1NxQkzkZ-fAX7UpcqfZqUefQiRQZm21sq6IZOzmyuQ1hYs4AFHWQAj83WX/s1600/vmware-cisco.jpg",
-   "points": [
-    "CISA adicionou quatro novas falhas à lista de exploração ativa.",
-    "Produtos afetados incluem tecnologias da Cisco, Apache, SAP e VMware.",
-    "Ataques estão associados a campanhas de espionagem cibernética."
-   ],
-   "title_original": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa porque estas vulnerabilidades críticas estão a ser ativamente exploradas por atacantes em cenários de espionagem.",
-   "todo": "Consulte os avisos de segurança oficiais e aplique imediatamente os patches de atualização fornecidos pelos fabricantes afetados."
   }
  ]
 }

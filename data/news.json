@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-27T18:07:50.409255+00:00",
+ "updated": "2026-11-27T18:26:19.591650+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "TugaTech",
@@ -39,7 +39,7 @@
   {
    "source": "WeLiveSecurity (ESET) PT",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Canaltech Segurança",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -309,15 +309,37 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 182,
-  "unenriched": 91,
+  "done": 120,
+  "pending": 171,
+  "unenriched": 79,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 51 column 5 (char 4528)"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "987a46c01e4f1497",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/informacao/ciberataques-com-ia-na-suica/",
+   "published": "2026-11-27T17:59:14+00:00",
+   "title": "Suíça confirma primeiros ciberataques com IA a infraestruturas críticas",
+   "summary": "A Suíça confirmou cinco ciberataques que utilizaram agentes de inteligência artificial, tendo os atacantes conseguido comprometer sistemas informáticos em quatro ocasiões. Três destes ataques visaram especificamente operadores de infraestruturas críticas, resultando em duas intrusões sem causar perturbações significativas nos serviços. Os dados foram revelados a 26 de novembro por Florian Schütz, diretor do Centro Nacional de Cibersegurança.",
+   "image": null,
+   "points": [
+    "O Centro Nacional de Cibersegurança da Suíça confirmou cinco ciberataques com inteligência artificial.",
+    "Quatro dos ataques comprometeram sistemas informáticos e três visaram infraestruturas críticas.",
+    "Houve duas intrusões confirmadas, mas sem perturbações significativas nos serviços prestados.",
+    "Os dados foram divulgados publicamente a 26 de novembro por Florian Schütz."
+   ],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": true,
+   "why": "Mostra a evolução real da ameaça com o uso ofensivo de inteligência artificial em alvos críticos.",
+   "todo": "Monitorize rigorosamente os acessos e adote defesas automatizadas baseadas em IA para detetar comportamentos anómalos precocemente."
+  },
   {
    "id": "8b62149719af4472",
    "source": "BleepingComputer",
@@ -13749,28 +13771,6 @@
    "enriched": true,
    "why": "A encriptação é o pilar fundamental que impede a interceção e leitura indevida de informações sensíveis trocadas online.",
    "todo": "Utilize sempre aplicações que ofereçam encriptação ponto-a-ponto e mantenha o software atualizado."
-  },
-  {
-   "id": "8d54d4add32f2fcc",
-   "source": "TechCrunch Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
-   "published": "2026-11-21T21:37:10+00:00",
-   "title": "Signal restringe capturas de ecrã móveis para enfrentar a \"ameaça existencial\" da vigilância por IA",
-   "summary": "A aplicação de mensagens Signal está a limitar a capacidade dos utilizadores de efetuarem capturas de ecrã nas suas versões para Android e iOS. Esta medida surge como uma resposta preventiva face à crescente ameaça da vigilância baseada em Inteligência Artificial. O objetivo é proteger a privacidade das conversas dos utilizadores contra ferramentas automatizadas que possam explorar estas imagens.",
-   "image": null,
-   "points": [
-    "Signal bloqueia capturas de ecrã",
-    "Medida visa combater vigilância por IA",
-    "Proteção reforçada da privacidade do utilizador"
-   ],
-   "title_original": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "A medida é crucial para garantir que a privacidade das comunicações não é comprometida por ferramentas de análise de imagem automatizadas.",
-   "todo": "Verifique as definições de privacidade da sua aplicação e mantenha-a sempre atualizada para a versão mais recente."
   }
  ]
 }

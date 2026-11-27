@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T06:28:24.301446+00:00",
+ "updated": "2026-11-27T06:49:50.778450+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -309,15 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 117,
-  "pending": 177,
-  "unenriched": 80,
+  "done": 104,
+  "pending": 188,
+  "unenriched": 91,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
+   "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do",
+   "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)"
   ]
  },
  "items": [
+  {
+   "id": "7398662a36a5555a",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/27/sailpoint-2027-ai-identity-security-predictions-report/",
+   "published": "2026-11-27T06:30:14+00:00",
+   "title": "Em 2027, \"o agente fez isso\" deixará de ser uma desculpa válida",
+   "summary": "As empresas enfrentarão uma pressão crescente para responsabilizar os agentes autónomos de inteligência artificial em 2027. Reguladores, conselhos de administração e seguradoras exigirão provas sobre a governação de decisões automatizadas e a gestão de acessos. Uma investigação revelou que 79% das empresas já implementaram agentes de IA em produção, mas apenas 2% possuem controlos de segurança de identidade adequados. Esta discrepância cria um risco operacional significativo para as organizações.",
+   "image": null,
+   "points": [
+    "Empresas enfrentam pressões regulatórias sobre agentes de IA em 2027.",
+    "79% das empresas usam IA, mas só 2% têm controlos de identidade.",
+    "Reguladores e seguradoras exigem provas de governação e gestão de acessos."
+   ],
+   "title_original": "In 2027, “the agent did it” stops being an excuse",
+   "category": "Regulação",
+   "translated": true,
+   "enriched": true,
+   "why": "A falta de controlos de identidade para agentes de IA autónomos expõe as empresas a riscos regulatórios e operacionais graves.",
+   "todo": "Implemente controlos de segurança de identidade específicos e políticas de auditoria para todos os agentes de IA em produção."
+  },
   {
    "id": "bdba96d745bb1de4",
    "source": "The Hacker News",
@@ -13740,28 +13763,6 @@
    "enriched": true,
    "why": "Ajuda a identificar dispositivos de IoT mais seguros no mercado.",
    "todo": "Verifique sempre se os dispositivos IoT que adquire possuem certificações ou padrões de segurança recomendados."
-  },
-  {
-   "id": "688d34085c16818f",
-   "source": "Graham Cluley",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.bitdefender.com/en-us/blog/hotforsecurity/n0n-extortion-leaks-data-jpmorgan-chase-visa-mastercard",
-   "published": "2026-11-20T18:57:38+00:00",
-   "title": "Grupo de extorsão n0n divulga dados de clientes da JPMorgan Chase, Visa e Mastercard",
-   "summary": "Dados pertencentes a clientes de três gigantes da finança global foram divulgados online por cibercriminosos. A fuga ocorreu após um grupo de piratas informáticos violar fornecedores externos de serviços que trabalham com a JPMorgan Chase, a Visa e a Mastercard. Este incidente expõe informações sensíveis de utilizadores destas instituições financeiras. O ataque destaca os riscos associados à cadeia de fornecimento digital no setor financeiro.",
-   "image": null,
-   "points": [
-    "Dados de clientes da JPMorgan Chase, Visa e Mastercard foram divulgados online.",
-    "A violação ocorreu através de fornecedores de serviços terceiros.",
-    "O grupo de extorsão n0n foi o responsável pela fuga de informação."
-   ],
-   "title_original": "n0n extortion gang leaks data of JPMorgan Chase, Visa, and Mastercard customers",
-   "category": "Fuga de dados",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como vulnerabilidades em fornecedores terceiros podem expor dados financeiros altamente sensíveis.",
-   "todo": "Monitorizar contas bancárias e ativar alertas de atividade suspeita."
   }
  ]
 }

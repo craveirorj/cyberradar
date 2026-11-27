@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T17:05:21.925088+00:00",
+ "updated": "2026-11-27T17:26:14.499188+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -34,7 +34,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -119,7 +119,7 @@
   {
    "source": "TechCrunch Security",
    "ok": true,
-   "added": 9
+   "added": 10
   },
   {
    "source": "Ars Technica Security",
@@ -129,7 +129,7 @@
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 9
+   "added": 8
   },
   {
    "source": "Schneier on Security",
@@ -274,7 +274,7 @@
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Check Point Research",
@@ -309,16 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 24,
-  "pending": 270,
-  "unenriched": 177,
+  "done": 108,
+  "pending": 186,
+  "unenriched": 94,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Invalid \\escape: line 96 column 261 (char 7442)",
-   "Expecting property name enclosed in double quotes: line 45 column 5 (char 4833)"
+   "Expecting ':' delimiter: line 157 column 3 (char 11894)"
   ]
  },
  "items": [
+  {
+   "id": "8b62149719af4472",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/",
+   "published": "2026-11-27T17:06:13+00:00",
+   "title": "Zero-day não corrigido no Cacti com PoC pública permite execução remota de código",
+   "summary": "Foi revelada publicamente uma vulnerabilidade zero-day na plataforma de monitorização de rede Cacti, acompanhada de um exploit do tipo proof-of-concept. Esta falha permite que atacantes não autenticados executem comandos diretamente em servidores vulneráveis. O impacto afeta a segurança e a integridade dos sistemas que utilizam esta ferramenta.",
+   "image": null,
+   "points": [
+    "Alvo: Plataforma de monitorização de rede Cacti.",
+    "O quê: Vulnerabilidade zero-day com PoC pública para execução de comandos.",
+    "Como: Atacantes não autenticados exploram a falha para executar código nos servidores.",
+    "Impacto: Risco de execução remota de código e compromisso dos servidores afetados."
+   ],
+   "title_original": "Unpatched Cacti zero-day with public PoC gives remote code execution",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes não autenticados assumam o controlo remoto de servidores vulneráveis através de uma falha zero-day.",
+   "todo": "Verifique a disponibilidade de correções oficiais junto do fabricante e aplique-as de imediato, ou restrinja o acesso à plataforma."
+  },
   {
    "id": "923ef4280fd2f2cd",
    "source": "SAPO Tek",
@@ -327,14 +349,20 @@
    "link": "https://tek.sapo.pt/noticias/ciencia/artigos/neuralink-recebe-luz-verde-para-testes-decisivos-com-implantes-cerebrais-em-pessoas-com-ela/",
    "published": "2026-11-27T16:50:06+00:00",
    "title": "Neuralink recebe “luz verde” para testes decisivos com implantes cerebrais em pessoas com ELA",
-   "summary": "A Neuralink recebeu aprovação da reguladora FDA para avançar com novos testes do seu implante cerebral em pessoas com Esclerose Lateral Amiotrófica (ELA). O ensaio vai avaliar a capacidade da tecnologia para permitir o controlo de equipamentos digitais através do pensamento, bem como a sua segurança e fiabilidade a longo prazo.",
+   "summary": "A Neuralink obteve a autorização da reguladora FDA para realizar novos testes com o seu implante cerebral em pacientes com Esclerose Lateral Amiotrófica (ELA). Este ensaio clínico visa testar a segurança, a fiabilidade a longo prazo e a capacidade da tecnologia para controlar dispositivos digitais através do pensamento. A iniciativa representa um passo importante no desenvolvimento de interfaces cérebro-computador.",
    "image": null,
-   "points": [],
+   "points": [
+    "Quem: Neuralink e a entidade reguladora FDA.",
+    "O quê: Aprovação para novos testes de implantes cerebrais em doentes com ELA.",
+    "Como: Ensaio clínico para avaliar o controlo de equipamentos digitais por pensamento.",
+    "Impacto: Avanço tecnológico na neurotecnologia e melhoria potencial da autonomia dos pacientes."
+   ],
    "title_original": null,
    "category": "Geral",
    "translated": false,
-   "enriched": false,
-   "raw": "A Neuralink recebeu aprovação da reguladora FDA para avançar com novos testes do seu implante cerebral em pessoas com Esclerose Lateral Amiotrófica (ELA). O ensaio vai avaliar a capacidade da tecnologia para permitir o controlo de equipamentos digitais através do pensamento, bem como a sua segurança e fiabilidade a longo prazo."
+   "enriched": true,
+   "why": "Demonstra o avanço regulatório e clínico de tecnologias de interface cérebro-computador para fins médicos.",
+   "todo": ""
   },
   {
    "id": "f01224df1f54e40b",
@@ -343,15 +371,21 @@
    "lang": "en",
    "link": "https://thehackernews.com/2026/11/suspected-vietnam-linked-hackers-target.html",
    "published": "2026-11-27T16:36:11+00:00",
-   "title": "Suspected Vietnam-Linked Hackers Target Southeast Asia in South China Sea Espionage Campaign",
-   "summary": "A Vietnam-sponsored hacking group has been attributed to attacks targeting Southeast Asian military, government, and legislative organizations with an aim to gather intelligence on South China Sea defense and military agreements. The previously undocumented incursion set, detailed by SOCRadar, has been codenamed WeaveLotus. The activity is assessed to have comprised five intrusions in Thailand",
+   "title": "Hachkers suspeitos ligados ao Vietname visam o Sudeste Asiático em campanha de espionagem no Mar da China Meridional",
+   "summary": "Um grupo de pirataria informática patrocinado pelo Vietname foi identificado em ataques direcionados a organizações militares, governamentais e legislativas no Sudeste Asiástico. A campanha, batizada de WeaveLotus e documentada pela SOCRadar, teve como objetivo recolher informações sobre acordos de defesa e militares no Mar da China Meridional. Foram registadas pelo menos cinco intrusões na Tailândia.",
    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj19T-kU1dmVfKt2PtUQ2I25MGovj8kmv6lMkk6inlif4yLeezJS4kVRTvsARL5UkpTT66jYru6k2b5bmWfjjlkmG4JznSKmkmd4ldXcyxTw3xsU5nP6_jxfWMw9thW37m5usfr-eWAZBHq6bPuS613CIx9XgWxPcSVFcZVgz_9tWd5Nu8YWAxexuqcVPrN/s1600/data.jpg",
-   "points": [],
-   "title_original": null,
+   "points": [
+    "Quem: Grupo de hackers patrocinado pelo Vietname (WeaveLotus).",
+    "O quê: Campanha de espionagem contra entidades governamentais e militares.",
+    "Como: Incursões direcionadas para recolha de inteligência de defesa.",
+    "Impacto: Comprometimento de informações sensíveis sobre acordos militares no Sudeste Asiático."
+   ],
+   "title_original": "Suspected Vietnam-Linked Hackers Target Southeast Asia in South China Sea Espionage Campaign",
    "category": "Ataque/APT",
-   "translated": false,
-   "enriched": false,
-   "raw": "A Vietnam-sponsored hacking group has been attributed to attacks targeting Southeast Asian military, government, and legislative organizations with an aim to gather intelligence on South China Sea defense and military agreements. The previously undocumented incursion set, detailed by SOCRadar, has been codenamed WeaveLotus. The activity is assessed to have comprised five intrusions in Thailand"
+   "translated": true,
+   "enriched": true,
+   "why": "Revela campanhas de espionagem cibernética direcionadas a infraestruturas governamentais e militares estratégicas.",
+   "todo": "Monitorize o tráfego de rede para detetar acessos não autorizados e reforce os controlos de identidade e acesso."
   },
   {
    "id": "47ba8e3fb16d19ce",
@@ -13737,28 +13771,6 @@
    "enriched": true,
    "why": "A medida é crucial para garantir que a privacidade das comunicações não é comprometida por ferramentas de análise de imagem automatizadas.",
    "todo": "Verifique as definições de privacidade da sua aplicação e mantenha-a sempre atualizada para a versão mais recente."
-  },
-  {
-   "id": "eb3fc971b476db8d",
-   "source": "CrowdStrike Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-november-2026/",
-   "published": "2026-11-21T19:21:21.602262+00:00",
-   "title": "November 2026 Patch Tuesday: 1,252 CVEs Include One Zero-Day and 68 Critical Vulnerabilities",
-   "summary": "A Microsoft lançou a atualização de segurança do Patch Tuesday de novembro de 2026, corrigindo um total de 1.252 vulnerabilidades CVE. Entre as falhas corrigidas encontram-se uma vulnerabilidade de dia zero e 68 falhas classificadas como críticas. Estas correções são essenciais para proteger os sistemas contra explorações ativas e potenciais acessos não autorizados. As empresas devem aplicar as atualizações com a maior brevidade possível para mitigar riscos.",
-   "image": null,
-   "points": [
-    "Atualização de novembro de 2026 corrige 1.252 CVEs.",
-    "Inclui uma vulnerabilidade de dia zero e 68 falhas críticas.",
-    "A aplicação atempada de patches previne explorações de segurança."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "A instalação destas atualizações é vital para evitar que atacantes explorem vulnerabilidades conhecidas nos sistemas.",
-   "todo": "Atualize os sistemas operativos e software Microsoft afetados assim que os patches estiverem disponíveis."
   }
  ]
 }

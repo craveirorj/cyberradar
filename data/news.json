@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-27T22:06:48.486003+00:00",
+ "updated": "2026-11-27T22:26:18.428624+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CISA Advisories",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -309,14 +309,59 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 168,
-  "unenriched": 76,
+  "done": 108,
+  "pending": 181,
+  "unenriched": 89,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting property name enclosed in double quotes: line 123 column 5 (char 11692)"
   ]
  },
  "items": [
+  {
+   "id": "9a5641a98b228a31",
+   "source": "Schneier on Security",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-giant-squid-in-newfoundland.html",
+   "published": "2026-11-27T22:01:25+00:00",
+   "title": "Blogue de lula Gigante: Lula Gigante em Terra Nova",
+   "summary": "Esta publicação aborda a história interessante relacionada com lulas gigantes em Terra Nova. O autor utiliza o espaço do blogue para discutir temas de segurança que não foram cobertos noutros artigos recentes. A publicação também relembra a política de moderação seguida no blogue.",
+   "image": null,
+   "points": [
+    "O autor discute a história de lulas gigantes em Terra Nova.",
+    "A publicação serve para debater notícias de segurança recentes.",
+    "É mencionada a política de moderação adotada no blogue."
+   ],
+   "title_original": "Friday Squid Blogging: Giant Squid in Newfoundland",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite acompanhar reflexões e discussões sobre atualidades de cibersegurança e temas paralelos.",
+   "todo": ""
+  },
+  {
+   "id": "f5b026042cf76da8",
+   "source": "Tecmundo",
+   "region": "BR",
+   "lang": "pt",
+   "link": "https://www.estadao.com.br/tecmundo/big-techs/tem-vontade-de-trabalhar-em-big-techs-veja-vagas-de-emprego-disponiveis-no-brasil/",
+   "published": "2026-11-27T22:00:00+00:00",
+   "title": "Tem vontade de trabalhar em big techs? Veja vagas de emprego disponíveis no Brasil",
+   "summary": "Várias empresas tecnológicas de grande dimensão, incluindo o Google e a Meta, têm processos de recrutamento abertos para escritórios no Brasil, nomeadamente em São Paulo e Belo Horizonte. As oportunidades englobam funções técnicas e de gestão, como engenharia de software, inteligência artificial, operações de segurança e experiência do utilizador. Os candidatos podem consultar os pré-requisitos, localizações e detalhes dos processos de seleção nos links associados a cada vaga.",
+   "image": "https://www.estadao.com.br/resizer/v2/OJHVDGZQQVL2NPCGFK6SXBYKCE.png?quality=80&auth=8d71d8ef688176cacdb8c807a29e76dd516a4c4b847299b6e508e59b9741a1cb&width=1150",
+   "points": [
+    "Google e Meta têm vagas abertas em São Paulo e Belo Horizonte.",
+    "Os cargos incluem engenharia de software, IA e gestão de segurança.",
+    "Os interessados podem verificar os requisitos e candidatar-se online."
+   ],
+   "title_original": null,
+   "category": "IA",
+   "translated": false,
+   "enriched": true,
+   "why": "Mostra oportunidades profissionais no setor tecnológico para quem procura funções em áreas críticas como a segurança e a IA.",
+   "todo": "Consulte os canais oficiais de recrutamento das empresas para verificar os pré-requisitos e submeter a candidatura de forma segura."
+  },
   {
    "id": "af0b3ecff38bfb74",
    "source": "Tecmundo",
@@ -13731,51 +13776,6 @@
    "enriched": true,
    "why": "Fornece um panorama abrangente sobre as ameaças cibernéticas mais recentes, ajudando as empresas a antecipar riscos globais.",
    "todo": "Mantenha todos os softwares e sistemas atualizados e aplique correções de segurança com base nos alertas das autoridades competentes."
-  },
-  {
-   "id": "0a7cbee92aad3a6f",
-   "source": "Pplware Segurança",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://pplware.sapo.pt/truques-dicas/dica-como-criar-um-cartao-virtual-mb-way-para-comprar-online-em-seguranca/",
-   "published": "2026-11-22T12:00:00+00:00",
-   "title": "Dica: como criar um cartão virtual MB WAY para comprar online em segurança",
-   "summary": "O serviço MB WAY permite aos utilizadores gerir cartões virtuais MB NET para efetuar pagamentos em compras online de forma segura, sem expor os dados bancários reais. Esta funcionalidade serve como uma camada adicional de proteção, especialmente útil em períodos de grande volume de compras como a Black Friday. Para começar a utilizar esta ferramenta, os utilizadores precisam apenas de ter a aplicação móvel instalada e um cartão bancário devidamente associado. A preparação da aplicação antecipadamente garante transações mais seguras na internet.",
-   "image": null,
-   "points": [
-    "O que é: Geração de cartões virtuais MB NET através do MB WAY para compras online.",
-    "Como funciona: Permite pagar na internet sem partilhar os dados do cartão bancário real.",
-    "Impacto: Oferece uma proteção extra contra fraudes em períodos de grande atividade comercial como a Black Friday.",
-    "Requisito: É necessário ter a aplicação instalada com um cartão associado antes de iniciar as compras."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Protege os dados bancários reais contra roubos e fraudes durante compras online.",
-   "todo": "Utilize sempre cartões virtuais temporários ou descartáveis ao realizar compras em lojas online desconhecidas."
-  },
-  {
-   "id": "cee6ea3378f23cdb",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/22/week-in-review-java4shell-proves-tricky-to-exploit-malware-planted-via-optimizely-hits-178-orgs/",
-   "published": "2026-11-22T09:00:25+00:00",
-   "title": "Resumo semanal: Java4Shell revela-se difícil de explorar e malware distribuído via Optimizely afeta 178 organizações",
-   "summary": "Um atacante explorou uma vulnerabilidade na plataforma Optimizely para inserir código JavaScript malicioso em sites de clientes, afetando 178 organizações, incluindo marcas como BBC, CNN e Zoom. Adicionalmente, foi analisada a falha CVE-2026-114938 no OpenJDK, conhecida como Java4Shell. Esta vulnerabilidade de corrupção de memória afeta o descodificador Base64 e exige condições específicas de CPU para ser explorada com sucesso.",
-   "image": null,
-   "points": [
-    "Um atacante comprometeu a plataforma Optimizely para injetar código malicioso em 178 organizações.",
-    "A falha CVE-2026-114938 no OpenJDK afeta o descodificador Base64 e apresenta uma exploração difícil.",
-    "A exploração da vulnerabilidade Java4Shell depende de arquiteturas de CPU específicas."
-   ],
-   "title_original": "Week in review: Java4Shell proves tricky to exploit, malware planted via Optimizely hits 178 orgs",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Campanhas de cadeia de suprimentos e novas falhas de componentes exigem monitorização constante das plataformas utilizadas.",
-   "todo": "Mantenha os softwares e componentes atualizados e verifique regularmente a integridade dos scripts de terceiros integrados nos seus websites."
   }
  ]
 }

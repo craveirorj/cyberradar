@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T07:27:51.547685+00:00",
+ "updated": "2026-11-27T07:46:31.412004+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "TugaTech",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
@@ -309,15 +309,37 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 119,
-  "pending": 174,
-  "unenriched": 77,
+  "done": 117,
+  "pending": 176,
+  "unenriched": 79,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "62ce00fb3a46f09e",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/",
+   "published": "2026-11-27T07:36:14+00:00",
+   "title": "SAP confirma ciberataque e possível compromisso de código-fonte",
+   "summary": "A SAP detetou atividade suspeita na plataforma GitHub relacionada com a sua infraestrutura. Hackers utilizaram tokens de funcionários roubados para aceder, copiar e modificar código-fonte da empresa. A situação está sob investigação para determinar a extensão total do impacto.",
+   "image": null,
+   "points": [
+    "Hackers usaram tokens de funcionários roubados",
+    "Código-fonte da SAP foi copiado e alterado",
+    "Atividade detetada no GitHub"
+   ],
+   "title_original": "SAP Confirms Cyberattack, Source Code Reportedly Compromised",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "O compromisso de código-fonte pode permitir a descoberta de vulnerabilidades críticas em software utilizado por milhares de empresas.",
+   "todo": "Revogue imediatamente todos os tokens de acesso e credenciais de funcionários e reforce a autenticação multifator (MFA)."
+  },
   {
    "id": "87b9d612546a0df5",
    "source": "Pplware Segurança",
@@ -13740,28 +13762,6 @@
    "enriched": true,
    "why": "Mostra como incidentes informáticos podem interromper o negócio e exigir recuperação rápida.",
    "todo": "Mantenha planos de recuperação de desastres atualizados e cópias de segurança testadas para responder a incidentes."
-  },
-  {
-   "id": "dcf516144473eefa",
-   "source": "Cyber Centre Canadá",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://cyber.gc.ca/en/alerts-advisories/sap-security-advisory-november-2025-monthly-rollup-av25-738",
-   "published": "2026-11-20T19:17:04+00:00",
-   "title": "Aviso de segurança da SAP – Atualização consolidada de novembro de 2025 (AV25-738)",
-   "summary": "A SAP publicou avisos de segurança para corrigir vulnerabilidades que afetam múltiplos produtos e versões do seu ecossistema. As falhas foram identificadas em ferramentas como o SAP Solution Manager, SAP HANA, SAP NetWeaver e várias versões do SAP S/4HANA. Estas atualizações visam mitigar riscos de segurança nestas plataformas amplamente utilizadas por organizações. A aplicação destas correções é essencial para proteger os sistemas contra potenciais explorações.",
-   "image": null,
-   "points": [
-    "A SAP lançou correções para vulnerabilidades em vários produtos e versões.",
-    "Os produtos afetados incluem SAP Solution Manager, SAP HANA e SAP NetWeaver.",
-    "As atualizações visam proteger os sistemas empresariais contra riscos de segurança."
-   ],
-   "title_original": "SAP security advisory – November 2025 monthly rollup (AV25-738) – Update 1",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite que as empresas protejam os seus sistemas SAP contra falhas conhecidas.",
-   "todo": "Instalar prontamente os patches e atualizações de segurança fornecidos pela SAP."
   }
  ]
 }

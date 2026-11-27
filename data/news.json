@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-27T19:46:13.476870+00:00",
+ "updated": "2026-11-27T20:06:39.779220+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
@@ -34,7 +34,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -59,7 +59,7 @@
   {
    "source": "CISA Advisories",
    "ok": true,
-   "added": 18
+   "added": 19
   },
   {
    "source": "CISA Alertas (KEV)",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Krebs on Security",
@@ -144,7 +144,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Malwarebytes Labs",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -309,15 +309,36 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 184,
-  "unenriched": 92,
+  "done": 120,
+  "pending": 173,
+  "unenriched": 80,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 78 column 5 (char 6447)"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "f55b51d529a2f276",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/27/department-of-health-care-access-and-information-hcai-notifies-individuals-of-data-security-incident-discovered-in-may/",
+   "published": "2026-11-27T19:41:56+00:00",
+   "title": "Department of Health Care Access and Information (HCAI) notifies individuals of data security incident discovered in May.",
+   "summary": "O Departamento de Acesso e Informação em Cuidados de Saúde (HCAI) da Califórnia enviou cartas de notificação aos cidadãos afetados por um incidente de segurança descoberto em maio. O problema ocorreu porque candidaturas a bolsas e empréstimos submetidas através do portal online ficaram acessíveis através de ligações de motores de busca. Esta exposição indevida colocou em risco os dados pessoais dos utilizadores que recorreram à plataforma de financiamento.",
+   "image": null,
+   "points": [
+    "O HCAI notificou utilizadores afetados por um incidente de segurança descoberto em maio.",
+    "Candidaturas submetidas num portal online ficaram acessíveis por ligações de motores de busca.",
+    "O impacto envolveu a exposição não intencional de dados de formulários de financiamento."
+   ],
+   "title_original": "Department of Health Care Access and Information (HCAI) notifies individuals of data security incident discovered in May.",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "A exposição de dados em portais públicos compromete a privacidade dos cidadãos e exige uma melhor gestão de acessos.",
+   "todo": "Auditar regularmente as permissões de motores de busca e indexação em portais web com dados sensíveis."
+  },
   {
    "id": "7ece5db1387c3e37",
    "source": "SAPO Tek",
@@ -357,9 +378,9 @@
     "Como: Dispositivos desconhecidos acederam a contas, mesmo com 2FA ativo.",
     "Impacto: Acesso não autorizado a contas de utilizadores."
    ],
-   "title_original": "pCloud confirms password manager hack after suspicious login alerts",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra que nem mesmo a autenticação de dois fatores impede totalmente acessos não autorizados em caso de compromisso da plataforma.",
    "todo": "Monitorizar os registos de atividade das contas e alterar imediatamente as palavras-passe em caso de alertas suspeitos."
@@ -936,6 +957,29 @@
    "enriched": true,
    "why": "Mostra que a fragilidade tecnológica global resulta de escolhas económicas que descuram a segurança e a resiliência.",
    "todo": "Invista na redundância de sistemas críticos e não dependa exclusivamente de pontos únicos de falha."
+  },
+  {
+   "id": "e66a2e1c8c17bc39",
+   "source": "CISA Advisories",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+   "published": "2026-11-27T12:00:00+00:00",
+   "title": "CISA Adiciona Três Vulnerabilidades Conhecidas e Exploradas ao Catálogo",
+   "summary": "A agência CISA adicionou três novas falhas de segurança ao seu catálogo de vulnerabilidades exploradas, alertando para ataques ativos. Os problemas afetam o OSGeo GeoServer e o Drupal Core, constituindo vetores de ataque frequentes para agentes maliciosos. As agências federais foram instruídas a priorizar a correção célere destas falhas em ativos públicos para mitigar riscos graves.",
+   "image": null,
+   "points": [
+    "A CISA adicionou três vulnerabilidades ao catálogo KEV devido a exploração ativa.",
+    "Os problemas afetam o OSGeo GeoServer e o Drupal Core.",
+    "O impacto foca-se no risco elevado para sistemas expostos na internet.",
+    "A mitigação exige a aplicação imediata de atualizações de segurança."
+   ],
+   "title_original": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Ignorar vulnerabilidades conhecidas e ativamente exploradas expõe as organizações a ataques informáticos graves.",
+   "todo": "Monitorizar os alertas da CISA e aplicar patches de segurança prioritários em softwares afetados."
   },
   {
    "id": "4895aa5a5bc0ae74",
@@ -13730,50 +13774,6 @@
    "enriched": true,
    "why": "Mostra como a dependência de fornecedores terceiros complica a responsabilização e a transparência em cibersegurança.",
    "todo": "Avalie e audite regularmente os riscos associados a fornecedores terceiros e dependências de scripts externos."
-  },
-  {
-   "id": "78074d39dfa2deb1",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
-   "published": "2026-11-22T05:06:55+00:00",
-   "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
-   "summary": "Investigadores descobriram que atacantes roubaram dados do interior de três fornecedores de inferência de IA durante meses, sem que estes se apercebessem. Vários dos pedidos comprometidos estavam sinalizados com a definição Zero Data Retention, que supostamente garantia que nunca seriam guardados. Na sequência do sucedido, a OpenRouter removeu os três fornecedores afetados da sua rede.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEGP3P_elvK4C-QnSx5onZ67viDXCIgPCUYqtTF_RDNcLJfyQ4QMbegUmn8AJy5nEmnXfN4ACr6hHztG_DdqXlj54S21toacPQaZgRx2rgqZltN3lvREpZR2xlvgXF_iZ7zW0XT0b91mMiRDVaEB6TUvMFlWwaSa3_C7gwpxdKcNhLtIq15KqwaZrR3VI/s1600/openrouter.png",
-   "points": [
-    "Atacantes roubaram dados em três fornecedores de IA durante meses.",
-    "A campanha afetou pedidos com a opção Zero Data Retention.",
-    "A empresa OpenRouter retirou os três fornecedores após o alerta de investigadores."
-   ],
-   "title_original": null,
-   "category": "IA",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque demonstra que as garantias de retenção zero de dados em serviços de IA podem falhar e ser exploradas por atacantes.",
-   "todo": "Reveja os fornecedores de serviços de IA que utiliza e valide as políticas reais de tratamento e armazenamento de dados sensíveis."
-  },
-  {
-   "id": "0be8ff22df4a77bf",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
-   "published": "2026-11-22T05:03:41+00:00",
-   "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
-   "summary": "Uma falha recentemente corrigida no Ghostscript permitia que ficheiros maliciosos escapassem à sandbox de segurança do programa e executassem comandos nos servidores de processamento. A vulnerabilidade afetava servidores Linux que convertem documentos carregados, como PDFs e imagens, sem que a aplicação o solicitasse diretamente. A empresa de segurança pwn.ai demonstrou como carregamentos de ficheiros comuns podiam ser explorados.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1BiCJUIrSJXNfKPZEkM46ynK6Rs7gba2xMaTUdoJ7yOK6Y8kcKMqJ_6PhbUIog_U1E8gRCpbj2HrkQ9UEpbPi1HOvkxdxCE5Afa5LbkNhUPvgU7Sa60IVHAWqSvgJaX1p6frMAN335QncL5UTZ3a4v1-agyb8ZXIlMGZTOtzsC0Gll2qRI0NJNMHTsf8/s1600/ghostscript.jpg",
-   "points": [
-    "Uma vulnerabilidade no Ghostscript permitia escapar à sandbox de segurança.",
-    "Ficheiros maliciosos permitiam a execução remota de códigos em servidores Linux.",
-    "A falha afetava a conversão automática de formatos como PDFs e imagens."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Importa porque o Ghostscript é amplamente utilizado de forma invisível por muitos servidores para processar uploads de utilizadores.",
-   "todo": "Atualize o software Ghostscript para a versão mais recente disponibilizada pelo fornecedor."
   }
  ]
 }

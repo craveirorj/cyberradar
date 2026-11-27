@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T14:06:52.198018+00:00",
+ "updated": "2026-11-27T14:26:12.037322+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CyberScoop",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -309,14 +309,36 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 119,
-  "pending": 180,
-  "unenriched": 87,
+  "done": 120,
+  "pending": 179,
+  "unenriched": 84,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "4a82d3723014bbc0",
+   "source": "The Record",
+   "region": "US",
+   "lang": "en",
+   "link": "https://therecord.media/japan-education-ministry-cyberattack",
+   "published": "2026-11-27T14:15:00+00:00",
+   "title": "Ministério da Educação do Japão divulga violação de sistema de contratação pública",
+   "summary": "O Ministério da Educação do Japão revelou que hackers invadiram o seu sistema de contratação pública governamental. A intrusão poderá ter exposto registos com endereços de e-mail e informações de empresas. O incidente afetou a segurança dos dados geridos por esta entidade pública. As autoridades estão a avaliar o impacto potencial da exposição destas informações.",
+   "image": "https://cms.therecord.media/uploads/Japan_school_ministry_4ac8c35089.jpg",
+   "points": [
+    "O quê: Violação do sistema de contratação pública governamental.",
+    "Quem: Ministério da Educação do Japão e hackers não identificados.",
+    "Impacto: Potencial exposição de registos com endereços de e-mail e dados empresariais."
+   ],
+   "title_original": "Japan’s education ministry discloses breach of government procurement system",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que os sistemas governamentais continuam a ser alvo de acessos não autorizados que comprometem dados confidenciais.",
+   "todo": "Monitorize o acesso aos sistemas de compras e reforce os controlos de autenticação em plataformas públicas."
+  },
   {
    "id": "11664b3d81839547",
    "source": "Cyber Centre Canadá",
@@ -356,9 +378,9 @@
     "Impacto: Acesso indevido a informações pessoais e de negócios da organização.",
     "Resposta: A entidade está a colaborar ativamente com as autoridades policiais."
    ],
-   "title_original": "FIFA hacked, cybercriminals claim access to sensitive internal records",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Demonstra que grandes organizações desportivas continuam a ser alvos lucrativos para roubo de dados.",
    "todo": "Monitore acessos a redes internas, reforce a autenticação multifator e mantenha planos de resposta a incidentes atualizados."
@@ -585,9 +607,9 @@
     "Impacto: Permite o controlo remoto completo dos sistemas infetados por atacantes.",
     "Como opera: Redireciona vítimas para sites falsos de ferramentas de recorte."
    ],
-   "title_original": "Microsoft Store App Found Delivering Vinci RAT Capable of Remote System Control",
+   "title_original": null,
    "category": "Malware",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra que os atacantes conseguem abusar de lojas de aplicações oficiais e de assinaturas legítimas para distribuir malware.",
    "todo": "Descarregue apenas software de fontes estritamente fidedignas e valide sempre a autenticidade dos instaladores e ferramentas."
@@ -13740,28 +13762,6 @@
    "enriched": true,
    "why": "A liderança nacional na cibersegurança define as prioridades estratégicas e a postura de defesa digital do país.",
    "todo": ""
-  },
-  {
-   "id": "21520cce0b83a7ba",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/21/php-security-updates-fix-18-flaws-including-critical-rce-bugs/",
-   "published": "2026-11-21T12:59:16+00:00",
-   "title": "Atualizações de segurança do PHP corrigem 18 falhas, incluindo graves bugs de execução remota de código",
-   "summary": "A equipa de desenvolvimento do PHP lançou atualizações de segurança para corrigir 18 vulnerabilidades, incluindo falhas críticas que permitem a atacantes remotos sem autenticação executar código em servidores vulneráveis. Os patches foram disponibilizados para todos os ramos suportados, abrangendo as versões recentes. A empresa de segurança Aikido reportou a existência destes problemas. O impacto afeta os servidores que utilizam as versões afetadas do PHP.",
-   "image": null,
-   "points": [
-    "A equipa PHP corrigiu 18 vulnerabilidades em servidores.",
-    "Foram detetadas falhas críticas de execução remota de código sem autenticação.",
-    "As atualizações aplicam-se a vários ramos suportados da linguagem."
-   ],
-   "title_original": "PHP security updates fix 18 flaws, including critical RCE bugs",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Protege servidores contra a execução remota de código malicioso por atacantes não autenticados.",
-   "todo": "Atualize imediatamente os servidores PHP para as versões mais recentes disponíveis (8.5.13, 8.4.28, 8.3.37 ou 8.2.36)."
   }
  ]
 }

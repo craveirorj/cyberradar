@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T11:59:40.152533+00:00",
+ "updated": "2026-11-27T12:06:50.486234+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -59,7 +59,7 @@
   {
    "source": "CISA Advisories",
    "ok": true,
-   "added": 19
+   "added": 18
   },
   {
    "source": "CISA Alertas (KEV)",
@@ -138,8 +138,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": true,
-   "added": 5
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "DataBreaches.net",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -309,11 +309,12 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 185,
-  "unenriched": 86,
+  "done": 108,
+  "pending": 192,
+  "unenriched": 93,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting property name enclosed in double quotes: line 30 column 5 (char 2462)"
   ]
  },
  "items": [
@@ -339,6 +340,29 @@
    "enriched": true,
    "why": "Mostra como a cadeia de abastecimento de IA pode ser comprometida de forma silenciosa através de componentes reutilizados.",
    "todo": "Valide a proveniência dos modelos de IA de fontes externas e utilize ambientes isolados para testes antes da implementação em produção."
+  },
+  {
+   "id": "71d573bc8f0a3f35",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/204121/data-breach/sap-security-incident-stolen-tokens-raise-supply-chain-concerns.html",
+   "published": "2026-11-27T11:39:20+00:00",
+   "title": "Incidente de Segurança na SAP: Tokens Roubados geram Preocupações na Cadeia de Abastecimento",
+   "summary": "A SAP confirmou um incidente de segurança após relatórios indicarem o roubo de tokens do GitHub e a alteração de código-fonte. A investigação interna, apelidada de Project Granite, analisa se foram utilizados sistemas de inteligência artificial pelos atacantes. A empresa declarou que os dados comerciais dos clientes não foram comprometidos e implementou medidas de proteção. Contudo, os detalhes conhecidos provêm maioritariamente da imprensa e a situação continua sob investigação.",
+   "image": null,
+   "points": [
+    "A SAP confirmou um incidente de segurança com tokens do GitHub roubados.",
+    "Atacantes poderão ter usado sistemas de IA para alterar código-fonte.",
+    "A empresa assegura que os dados dos clientes não foram afetados.",
+    "A investigação interna decorre sob a designação Project Granite."
+   ],
+   "title_original": "SAP Security Incident: Stolen Tokens Raise Supply Chain Concerns",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como o roubo de credenciais de acesso a repositórios de código pode ameaçar a integridade de grandes fabricantes de software.",
+   "todo": "Monitore o acesso aos repositórios de código e reforce a segurança e validade dos tokens de autenticação."
   },
   {
    "id": "7b714952d08e1b2f",
@@ -13729,29 +13753,6 @@
    "enriched": true,
    "why": "Importa porque estas vulnerabilidades críticas estão a ser ativamente exploradas por atacantes em cenários de espionagem.",
    "todo": "Consulte os avisos de segurança oficiais e aplique imediatamente os patches de atualização fornecidos pelos fabricantes afetados."
-  },
-  {
-   "id": "a03f51601e713e60",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/identity-access-management-security/ai-agents-bring-enterprises-new-access-control-challenges",
-   "published": "2026-11-21T01:31:23+00:00",
-   "title": "Como os fornecedores de segurança estão a abordar os desafios de controlo de acessos para agentes de IA",
-   "summary": "As empresas enfrentam o desafio de manter os agentes de inteligência artificial confinados às tarefas que lhes foram atribuídas. Para resolver esta questão, os controlos de identidade, de tempo de execução e de desenvolvimento estão a convergir. Contudo, os fornecedores utilizam abordagens distintas, o que obriga os responsáveis de segurança da informação (CISOs) a avaliarem cuidadosamente as suas opções.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt64d615142d7be882/6882572f618f869f048e5227/Agentic_AI_(1800)_Pattara_Alamy.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "Empresas precisam de limitar a atuação de agentes de IA às tarefas atribuídas.",
-    "Verifica-se uma convergência entre controlos de identidade, de tempo de execução e de desenvolvimento.",
-    "Os fornecedores apresentam abordagens variadas para resolver o problema de controlo.",
-    "Os CISOs têm de selecionar a melhor estratégia para o seu ambiente."
-   ],
-   "title_original": "How Security Vendors Are Tackling Access-Control Challenges for AI Agents",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Ajuda a compreender a evolução das ferramentas de segurança na gestão de acessos para novas tecnologias de IA.",
-   "todo": "Defina políticas rigorosas de controlo de acessos e monitorize o comportamento dos agentes de IA implementados na organização."
   }
  ]
 }

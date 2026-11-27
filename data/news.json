@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-27T14:26:12.037322+00:00",
+ "updated": "2026-11-27T14:46:21.079721+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -99,7 +99,7 @@
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -144,7 +144,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Malwarebytes Labs",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -310,13 +310,36 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 179,
-  "unenriched": 84,
+  "pending": 180,
+  "unenriched": 85,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "814d32c90295b943",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/malwarebytes-antivirus-get-50-percent-off-during-black-friday-2026/",
+   "published": "2026-11-27T14:22:06+00:00",
+   "title": "Malwarebytes Antivirus: Get 50% off during Black Friday 2026",
+   "summary": "A Malwarebytes lançou a sua campanha promocional de Black Friday e Cyber Monday para 2026. A iniciativa oferece descontos de 50% em subscrições de segurança para particulares, famílias e pequenas empresas. Estão incluídos softwares antivírus, VPN, proteção contra roubo de identidade e remoção de dados pessoais.",
+   "image": null,
+   "points": [
+    "A Malwarebytes lançou a promoção de Black Friday 2026.",
+    "Oferece 50% de desconto em subscrições de segurança e privacidade.",
+    "O desconto abrange particulares, famílias e pequenas empresas.",
+    "Inclui antivírus, VPN e proteção de dados pessoais."
+   ],
+   "title_original": "Malwarebytes Antivirus: Get 50% off during Black Friday 2026",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que pequenas empresas reforcem a cibersegurança a um custo mais reduzido.",
+   "todo": "Aproveitar promoções de fornecedores fidedignos para atualizar ou adquirir soluções de proteção essenciais."
+  },
   {
    "id": "4a82d3723014bbc0",
    "source": "The Record",
@@ -338,6 +361,29 @@
    "enriched": true,
    "why": "Mostra que os sistemas governamentais continuam a ser alvo de acessos não autorizados que comprometem dados confidenciais.",
    "todo": "Monitorize o acesso aos sistemas de compras e reforce os controlos de autenticação em plataformas públicas."
+  },
+  {
+   "id": "7c06c14bd3b65d65",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/27/the-biggest-data-breach-settlements-of-2026/",
+   "published": "2026-11-27T14:14:55+00:00",
+   "title": "The Biggest Data Breach Settlements of 2026",
+   "summary": "Durante o ano de 2026, registou-se um elevado número de acordos de ações coletivas relacionados com incidentes de violação de dados de destaque ocorridos nos últimos anos. Vários destes casos foram também alvo de ações regulatórias em separado. O artigo destaca os maiores acordos de indemnização anunciados ao longo deste período.",
+   "image": null,
+   "points": [
+    "Registo de múltiplos acordos de ações coletivas por violação de dados em 2026.",
+    "Casos derivam de incidentes de segurança de alto perfil dos últimos anos.",
+    "Alguns incidentes enfrentaram também processos regulatórios independentes.",
+    "O artigo compila os maiores acordos de indemnização do ano."
+   ],
+   "title_original": "The Biggest Data Breach Settlements of 2026",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra o peso financeiro e legal que as fugas de dados de alto perfil continuam a ter para as organizações.",
+   "todo": "Implementar medidas rigorosas de proteção de dados para mitigar o risco de incidentes e processos judiciais."
   },
   {
    "id": "11664b3d81839547",
@@ -13718,50 +13764,6 @@
    "enriched": true,
    "why": "Permite mitigar falhas críticas de validação em clusters Tomcat vulneráveis.",
    "todo": "Verifique a versão do Apache Tomcat em uso e aplique as atualizações de segurança disponibilizadas pelo fabricante."
-  },
-  {
-   "id": "9dd04be51f1df2a0",
-   "source": "WIRED Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.wired.com/story/brace-yourself-for-years-of-outage-chaos/",
-   "published": "2026-11-21T13:00:00+00:00",
-   "title": "As interrupções estão apenas a começar",
-   "summary": "A inteligência artificial está a obrigar as empresas a corrigir os seus sistemas com maior rapidez, enquanto os atacantes tentam explorar vulnerabilidades recém-descobertas. Esta corrida tecnológica e de segurança está a gerar um cenário de instabilidade generalizada na internet. A situação resulta numa pressão acrescida para fechar falhas antes que sejam aproveitadas por agentes maliciosos. O impacto reflete-se num ambiente digital cada vez mais propício a falhas de funcionamento em larga escala.",
-   "image": "https://media.wired.com/photos/6b00ba06fb286bb31d23be2b/master/pass/Kernel-Panic-Brace-for-More-Outages-Security.jpg",
-   "points": [
-    "A IA força as empresas a corrigirem sistemas rapidamente.",
-    "Atacantes competem para explorar novas vulnerabilidades descobertas.",
-    "O cenário atual gera instabilidade e falhas generalizadas na internet."
-   ],
-   "title_original": "The Outages Are Just Getting Started",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como a corrida entre a correção rápida de falhas e a sua exploração por IA está a destabilizar a internet.",
-   "todo": "Acelere a aplicação de patches e atualizações de segurança nos sistemas da sua empresa."
-  },
-  {
-   "id": "45e8d2f82c3e3e03",
-   "source": "SecurityWeek",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.securityweek.com/president-trump-taps-kirsten-davies-as-national-cyber-director/",
-   "published": "2026-11-21T13:00:00+00:00",
-   "title": "Presidente Trump nomeia Kirsten Davies como Diretora Nacional de Cibersegurança",
-   "summary": "A Casa Branca anunciou a nomeação de Kirsten Davies para o cargo de Diretora Nacional de Cibersegurança. A líder de cibersegurança terá a missão de impulsionar uma estratégia cibernética centrada na América. A decisão visa reforçar a liderança e a resiliência digital do país.",
-   "image": null,
-   "points": [
-    "Quem: A Casa Branca e Kirsten Davies.",
-    "O quê: Nomeação para Diretora Nacional de Cibersegurança.",
-    "Como: Através de uma escolha executiva para liderar a estratégia digital."
-   ],
-   "title_original": "President Trump Taps Kirsten Davies as National Cyber Director",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "A liderança nacional na cibersegurança define as prioridades estratégicas e a postura de defesa digital do país.",
-   "todo": ""
   }
  ]
 }

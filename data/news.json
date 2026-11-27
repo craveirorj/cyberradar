@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T01:06:35.387216+00:00",
+ "updated": "2026-11-27T01:26:56.045676+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -309,15 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 115,
-  "pending": 175,
-  "unenriched": 78,
+  "done": 116,
+  "pending": 174,
+  "unenriched": 77,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "24f736113b681609",
+   "source": "The Register Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.theregister.com/security/2026/11/27/free-e-government-platform-that-serves-two-billion-people-in-ten-countries-has-critical-sql-injection-bug/5312449",
+   "published": "2026-11-27T01:19:31+00:00",
+   "title": "Plataforma de governo eletrónico gratuita que serve dois mil milhões de pessoas em dez países tem falha crítica de SQL injection",
+   "summary": "Uma falha crítica de SQL injection, identificada como CVE-2026-136706, afeta a plataforma indiana de governo eletrónico DIGIT, utilizada por governos em dez países que servem mais de dois mil milhões de cidadãos. A vulnerabilidade permite que atacantes remotos não autenticados executem consultas SQL arbitrárias através de pontos de acesso da API afetados. O impacto abrange serviços essenciais geridos por milhares de organizações locais e nacionais que utilizam esta infraestrutura modular. A situação coloca em risco a segurança dos dados e dos sistemas em várias nações dependentes deste software.",
+   "image": "https://image.theregister.com/?imageId=5312454&width=800",
+   "points": [
+    "Plataforma afetada: DIGIT (Digital Infrastructure for Governance).",
+    "Vulnerabilidade: CVE-2026-136706 (falha de SQL injection com pontuação 9.3).",
+    "Impacto: Afeta governos e utilizadores em dez países, totalizando mais de dois mil milhões de pessoas.",
+    "Como ocorre: Atacantes remotos não autenticados enviam entradas maliciosas através de APIs."
+   ],
+   "title_original": "Free e-government platform that serves two billion people in ten countries has critical SQL injection bug",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Uma única vulnerabilidade numa plataforma amplamente exportada compromete a segurança de dados governamentais de dois mil milhões de cidadãos a nível global.",
+   "todo": "Aplicar urgentemente as correções e atualizações disponibilizadas para fechar a falha de SQL injection nos componentes afetados."
+  },
   {
    "id": "b1fd7d6f14154fb5",
    "source": "Tecmundo",
@@ -13740,28 +13763,6 @@
    "enriched": true,
    "why": "Permite que atacantes assumam o controlo de servidores web se os serviços correrem com privilégios excessivos.",
    "todo": "Atualize o PHP para as versões corrigidas e garanta que os serviços web correm com o mínimo de privilégios necessários."
-  },
-  {
-   "id": "6cc616c5c6e76f97",
-   "source": "The Hacker News",
-   "region": "INT",
-   "lang": "en",
-   "link": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
-   "published": "2026-11-20T17:57:20+00:00",
-   "title": "WhatsApp corrige três falhas de segurança, incluindo erro no Android suspeito de uso em burlas",
-   "summary": "A Meta corrigiu vulnerabilidades de segurança no WhatsApp, incluindo uma falha na aplicação para Android que poderá ter sido explorada em esquemas de burlas. O problema, registado como CVE-2026-23871, resulta de uma validação incompleta de URLs de resposta a anúncios externos em versões anteriores. Esta falha afeta tanto o WhatsApp como o WhatsApp Business para Android. A correção destina-se a impedir a exploração maliciosa desta vulnerabilidade por parte de burlões.",
-   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUSbYUJJkBlZsaH90SXIaxYAv5iJN7ZEus7Q24A_Z9fDNNlnOjFnNZ3SnA6er-iuMgQnE6k73nwVwAEPPk1AjRT12N9o8cJft3_dPqMZKeJbpq6QIcGbN1z1UbE_Q3fXTyp1c0XmqynQu2lJPeIYoraqXFcgM-wQH4b1rIBrOKF221CIKLldJIZVJ4g7cr/s1600/whatsapp.jpg",
-   "points": [
-    "A Meta corrigiu falhas de segurança no WhatsApp para Android.",
-    "A vulnerabilidade CVE-2026-23871 está associada a burlas com URLs externos.",
-    "O problema afeta versões do WhatsApp e WhatsApp Business anteriores à 2.26.17.4."
-   ],
-   "title_original": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Protege os utilizadores contra campanhas de burlas que exploram falhas de validação na aplicação.",
-   "todo": "Atualizar imediatamente a aplicação WhatsApp para a versão mais recente na loja oficial."
   }
  ]
 }

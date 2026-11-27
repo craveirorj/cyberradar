@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-27T15:45:22.599191+00:00",
+ "updated": "2026-11-27T16:06:45.153748+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "IT Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Pplware Segurança",
@@ -199,7 +199,7 @@
   {
    "source": "Elastic Security Labs",
    "ok": true,
-   "added": 4
+   "added": 3
   },
   {
    "source": "Rapid7",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -304,17 +304,16 @@
   {
    "source": "ACSC Austrália",
    "ok": false,
-   "error": "403 Client Error: Forbidden for url: https://www.cyber.gov.au/rss/alerts"
+   "error": "HTTPSConnectionPool(host='www.cyber.gov.au', port=443): Read timed out. (read timeout=25)"
   }
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 192,
-  "unenriched": 96,
+  "done": 120,
+  "pending": 178,
+  "unenriched": 83,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting ':' delimiter: line 52 column 3 (char 4361)"
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
@@ -340,6 +339,29 @@
    "enriched": true,
    "why": "Mostra que nem mesmo as infraestruturas em nuvem militares mais protegidas estão imunes a campanhas de ataques direcionados a agências federais.",
    "todo": "Monitorize rigorosamente o acesso aos recursos na nuvem e reforce as políticas de autenticação e registo de atividades."
+  },
+  {
+   "id": "0be27de9c802ce5f",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/204136/security/air-force-cloud-one-breach-updates-blocked-migration-paused-scope-unknown.html",
+   "published": "2026-11-27T15:03:05+00:00",
+   "title": "Inbreque na Cloud One da Força Aérea: Atualizações Bloqueadas, Migração Pausada e Alcance Desconhecido",
+   "summary": "A plataforma Cloud One da Força Aérea dos EUA sofreu uma violação de segurança descoberta há cerca de um mês durante trabalhos de atualização. A intrusão afetou serviços críticos, incluindo aplicações de logística, dados de pessoal e sistemas de comando militar. Atualmente, o alcance total do ataque e a possível roubo de dados permanecem desconhecidos. A Força Aérea não comentou o estado operacional específico, mas mantém medidas para proteger os sistemas.",
+   "image": null,
+   "points": [
+    "Plataforma Cloud One da Força Aérea dos EUA foi violada por atacantes desconhecidos.",
+    "A falha põe em risco dados sensíveis de operações, pessoal e logística militar.",
+    "A descoberta interrompeu o serviço e levou ao bloqueio de atualizações e à pausa na migração.",
+    "O impacto exato e a extensão do roubo de dados ainda estão por apurar."
+   ],
+   "title_original": "Air Force Cloud One Breach: Updates Blocked, Migration Paused, Scope Unknown",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Acede a uma das maiores plataformas de computação em nuvem militar, comprometendo dados operacionais e logísticos altamente sensíveis.",
+   "todo": "Aplicar atualizações de segurança assim que disponibilizadas e rever continuamente as políticas de acesso e proteção nas infraestruturas em nuvem."
   },
   {
    "id": "96edb4ed0f1cdbb3",
@@ -13746,29 +13768,6 @@
    "enriched": true,
    "why": "Importa porque a exposição de dados de administradores e configurações compromete a segurança de toda a infraestrutura na cloud.",
    "todo": "Verifique os registos de acesso administrativo e garanta que os serviços da Microsoft estão atualizados."
-  },
-  {
-   "id": "a80afcb1d850204c",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203664/ai/cairn-ai-framework-used-in-autonomous-zero-day-exploitation.html",
-   "published": "2026-11-21T16:50:49+00:00",
-   "title": "Framework de IA Cairn Utilizado em Exploração Autónoma de Zero-Day",
-   "summary": "A Amazon descobriu ataques impulsionados por inteligência artificial direcionados a universidades, onde agentes autónomos detetaram uma vulnerabilidade zero-day e obtiveram acesso root sem intervenção humana. Uma entidade ligada à China utilizou a ferramenta de testes de penetração Cairn para executar uma campanha de cerca de 48 horas contra endereços IP na Ásia Oriental. O incidente ocorreu porque o operador deixou um servidor público exposto sem autenticação, revelando configurações e prompts. Esta atividade demonstra a capacidade de agentes autónomos planearem e executarem ataques de forma independente.",
-   "image": null,
-   "points": [
-    "Agentes de IA autónomos descobriram uma zero-day sem intervenção humana.",
-    "Ataque executado por ator ligado à China contra universidades na Ásia Oriental.",
-    "Servidor público sem autenticação expôs o histórico e configurações operacionais.",
-    "O impacto inclui o acesso root não autorizado a sistemas vulneráveis."
-   ],
-   "title_original": "Cairn AI Framework Used in Autonomous Zero-Day Exploitation",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como os agentes de IA autónomos já conseguem descobrir e explorar vulnerabilidades zero-day sem intervenção humana.",
-   "todo": "Garanta que todos os servidores expostos publicamente possuem autenticação forte e revise regularmente as permissões de acesso."
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T10:04:54.720857+00:00",
+ "updated": "2026-11-27T10:26:46.420978+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -14,7 +14,7 @@
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "TugaTech",
@@ -34,7 +34,7 @@
   {
    "source": "SAPO Tek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "WeLiveSecurity (ESET) PT",
@@ -74,7 +74,7 @@
   {
    "source": "MS-ISAC (CIS)",
    "ok": true,
-   "added": 6
+   "added": 7
   },
   {
    "source": "BleepingComputer",
@@ -89,7 +89,7 @@
   {
    "source": "Dark Reading",
    "ok": true,
-   "added": 23
+   "added": 24
   },
   {
    "source": "SecurityWeek",
@@ -138,8 +138,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 5
   },
   {
    "source": "DataBreaches.net",
@@ -269,7 +269,7 @@
   {
    "source": "HackRead",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Hacker News",
@@ -309,16 +309,59 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 0,
-  "pending": 288,
-  "unenriched": 194,
+  "done": 108,
+  "pending": 191,
+  "unenriched": 97,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "Expecting property name enclosed in double quotes: line 38 column 5 (char 3920)"
+   "Expecting property name enclosed in double quotes: line 121 column 5 (char 12155)"
   ]
  },
  "items": [
+  {
+   "id": "30a43f231a877acd",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/",
+   "published": "2026-11-27T10:10:15+00:00",
+   "title": "Drupal alerta para nova falha de apropriação de sites explorada em ataques",
+   "summary": "A equipa de segurança da Drupal informou que agentes maliciosos estão a explorar ativamente uma segunda vulnerabilidade crítica. Esta falha permite violar e assumir o controlo de websites que ainda não foram atualizados. Os ataques colocam em risco a integridade das páginas afetadas. É fundamental aplicar as correções disponíveis para mitigar o risco.",
+   "image": null,
+   "points": [
+    "A equipa de segurança da Drupal detetou ataques ativos.",
+    "Uma nova vulnerabilidade crítica afeta sites não corrigidos.",
+    "Os atacantes conseguem invadir e assumir o controlo de páginas web."
+   ],
+   "title_original": "Drupal warns of new site takeover flaw exploited in attacks",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite que atacantes tomem o controlo total de sites vulneráveis sem remediação.",
+   "todo": "Atualize o Drupal e os seus componentes de imediato para a versão mais recente."
+  },
+  {
+   "id": "cd9144b6b215ec37",
+   "source": "HackRead",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://hackread.com/fake-car-diagnostic-tools-github-repair-shops-malware/",
+   "published": "2026-11-27T10:07:13+00:00",
+   "title": "Ferramentas falsas de diagnóstico de carros no GitHub visam oficinas com malware",
+   "summary": "Foram descobertos dezasseis repositórios falsos na plataforma GitHub que utilizavam código automóvel genuíno e descrições criadas por inteligência artificial. O objetivo era atrair técnicos de reparação para descarregarem software malicioso. Esta ameaça tem a capacidade de roubar credenciais de acesso de construtores de automóveis. A campanha representa um risco direto para o setor de reparação automóvel.",
+   "image": null,
+   "points": [
+    "Dezasseis repositórios falsos foram descobertos no GitHub.",
+    "Técnicos de reparação foram visados com código malicioso e IA.",
+    "O malware visa roubar dados de início de sessão de fabricantes de automóveis."
+   ],
+   "title_original": "Fake Car Diagnostic Tools on GitHub Target Repair Shops with Malware",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "Compromete as credenciais de profissionais do setor automóvel através de ferramentas de trabalho falsas.",
+   "todo": "Verifique a autenticidade do software de diagnóstico e descarregue apenas de fontes oficiais."
+  },
   {
    "id": "902d6957376bbec6",
    "source": "The Register Security",
@@ -326,15 +369,42 @@
    "lang": "en",
    "link": "https://www.theregister.com/security/2026/11/27/british-social-security-system-techies-yank-services-offline-following-cyber-incident/5312522",
    "published": "2026-11-27T10:01:00+00:00",
-   "title": "British social security system techies yank services offline following 'cyber incident'",
-   "summary": "Pensioners assured their funds will arrive as normal",
+   "title": "Serviços tecnológicos do sistema de segurança social britânico desligados após incidente cibernético",
+   "summary": "O principal departamento do governo britânico responsável por pensões e subsídios desativou temporariamente alguns serviços online. A medida preventiva ocorreu após a deteção de um incidente cibernético que afetou os sistemas internos. As autoridades estão a investigar o sucedido em colaboração com o Centro Nacional de Cibersegurança. Os pagamentos regulares de pensões e subsídios não foram afetados pela ocorrência.",
    "image": "https://image.theregister.com/?imageId=249560&width=800",
-   "points": [],
+   "points": [
+    "O Departamento de Trabalho e Pensões britânico sofreu um incidente cibernético.",
+    "Serviços online foram desligados temporariamente por precaução.",
+    "Os pagamentos de pensões e subsídios continuam a funcionar normalmente."
+   ],
+   "title_original": "British social security system techies yank services offline following 'cyber incident'",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Afeta a disponibilidade de serviços públicos essenciais de apoio social.",
+   "todo": "Desconfie de contactos inesperados a pedir dados bancários e siga as recomendações oficiais."
+  },
+  {
+   "id": "c9eafc41bb4fd82e",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/internet/seguranca/purevpn-black-friday-2026/",
+   "published": "2026-11-27T10:00:00+00:00",
+   "title": "PureVPN na Black Friday: a VPN para as compras que se fazem fora de casa",
+   "summary": "A campanha de Black Friday da PureVPN surge numa altura em que muitas compras são feitas em dispositivos móveis através de redes Wi-Fi públicas. O uso destas redes em cafés ou centros comerciais aumenta a exposição a riscos de segurança. O serviço é apresentado como uma solução para proteger a navegação durante este período de compras intensivas. A iniciativa visa salvaguardar os dados dos utilizadores fora de casa.",
+   "image": null,
+   "points": [
+    "As compras em redes Wi-Fi públicas aumentam os riscos de segurança.",
+    "A PureVPN lançou uma campanha promocional para a Black Friday.",
+    "O serviço protege a navegação móvel fora de casa."
+   ],
    "title_original": null,
    "category": "Geral",
    "translated": false,
-   "enriched": false,
-   "raw": "The largest UK government department, the one responsible for welfare and pensions, has temporarily brought services offline after detecting a \"cyber incident.\" The Department for Work and Pensions (DWP) announced the partial shutdown on Friday morning in a brief statement that confirmed some online services were offline, but pension payments were unaffected. \"We have taken some DWP online services offline as a precaution after we identified a cyber incident affecting our systems,\" it said. \"We are working closely with the National Cyber Security Centre and Government Cyber Coordination Centre (GC3) to investigate and to bring services back online as quickly as possible and to minimize any disruption. \"Regular benefit and pension payments are not affected and will be paid as normal. \"If an online service you need is unavailable, please try again later. As always, we will never message you to ask for bank details or ask you to click on links.\" The Register contacted both the DWP and NCSC for more information. The DWP declined to comment beyond the statement issued publicly. The GC3's responsibility is to lead and coordinate incident response efforts in cases involving attacks on government. It sits inside DSIT's Government Cyber Unit, established earlier this year with £210 million in funding and led by the government CISO, Bella Powell. Officials have not commented on any of the usual details one would expect from a cyber incident disclosure, including the specific services that were downed, when they are expected to return, or whether any data is thought to be compromised, even at this early stage. The attack follows a warning this week from the NCSC about the rise of automated cyberattacks, especially those that involve automated offensive frameworks (AOFs). ARTEX, th"
+   "enriched": true,
+   "why": "Ajuda a proteger dados sensíveis ao realizar compras através de redes públicas vulneráveis.",
+   "todo": "Utilize uma rede privada virtual (VPN) fidedigna ao ligar-se a redes Wi-Fi públicas."
   },
   {
    "id": "34ba075e7282f4ea",
@@ -343,15 +413,20 @@
    "lang": "en",
    "link": "https://www.bleepingcomputer.com/news/security/sap-confirms-security-incident-after-suspicious-github-activity/",
    "published": "2026-11-27T09:56:36+00:00",
-   "title": "SAP confirms security incident after suspicious GitHub activity",
-   "summary": "SAP has confirmed to BleepingComputer that it took urgent action to protect its customers after detecting suspicious activity in its IT environment. [...]",
+   "title": "SAP confirma incidente de segurança após atividade suspeita no GitHub",
+   "summary": "A empresa SAP confirmou ter tomado medidas urgentes para proteger os seus clientes. A ação ocorreu após a deteção de atividade suspeita no seu ambiente de TI ligado à plataforma GitHub. A empresa agiu rapidamente para precaver potenciais impactos na segurança. Os detalhes específicos sobre a origem da atividade não foram totalmente divulgados.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A SAP detetou atividade suspeita no seu ambiente tecnológico.",
+    "A empresa implementou ações urgentes para proteger os clientes.",
+    "A situação envolveu registos na plataforma GitHub."
+   ],
+   "title_original": "SAP confirms security incident after suspicious GitHub activity",
    "category": "Geral",
-   "translated": false,
-   "enriched": false,
-   "raw": "SAP has confirmed to BleepingComputer that it took urgent action to protect its customers after detecting suspicious activity in its IT environment. [...]"
+   "translated": true,
+   "enriched": true,
+   "why": "Envolve uma grande empresa tecnológica e protege os dados dos utilizadores contra acessos indevidos.",
+   "todo": "Monitore os ambientes de TI para detetar comportamentos anómalos e reforce os controlos de acesso."
   },
   {
    "id": "01c0b124a8a0422d",
@@ -361,14 +436,19 @@
    "link": "https://tek.sapo.pt/noticias/internet/artigos/psp-alerta-para-disparo-de-burlas-no-whatsapp-185-casos-em-20-dias-de-novembro/",
    "published": "2026-11-27T09:44:53+00:00",
    "title": "PSP alerta para disparo de burlas no WhatsApp: 185 casos em 20 dias de novembro",
-   "summary": "Só em 20 dias durante novembro, a PSP contabilizou mais casos do que em todo o mês de outubro. A polícia avisa que o acesso à conta pode acontecer sem que a vítima partilhe dados, abra ficheiros ou clique em ligações suspeitas.",
+   "summary": "A Polícia de Segurança Pública registou um aumento acentuado de fraudes na aplicação WhatsApp durante o mês de novembro. Em apenas vinte dias, o número de ocorrências ultrapassou o total verificado no mês anterior. As autoridades alertam que o acesso ilícito às contas pode ocorrer sem que a vítima partilhe dados ou clique em ligações. Este tipo de burla tem afetado um número crescente de cidadãos.",
    "image": null,
-   "points": [],
+   "points": [
+    "A PSP registou 185 casos de burlas no WhatsApp em vinte dias.",
+    "O número de ocorrências superou o mês de outubro inteiro.",
+    "O acesso à conta pode acontecer sem interação direta da vítima."
+   ],
    "title_original": null,
    "category": "Phishing/Fraude",
    "translated": false,
-   "enriched": false,
-   "raw": "Só em 20 dias durante novembro, a PSP contabilizou mais casos do que em todo o mês de outubro. A polícia avisa que o acesso à conta pode acontecer sem que a vítima partilhe dados, abra ficheiros ou clique em ligações suspeitas."
+   "enriched": true,
+   "why": "Exponencia o roubo de contas de mensagens, facilitando fraudes a contactos próximos.",
+   "todo": "Ative a verificação em dois passos no WhatsApp e nunca partilhe códigos de acesso."
   },
   {
    "id": "3e6c0975b1398ac2",
@@ -377,15 +457,20 @@
    "lang": "en",
    "link": "https://www.helpnetsecurity.com/2026/11/27/flight-centre-travel-group-data-breach-booking-system/",
    "published": "2026-11-27T09:31:44+00:00",
-   "title": "Flight Centre Travel Group warns of customer data breach involving some passport details",
-   "summary": "Travellers who booked accommodation through Flight Centre and several of its leisure brands may have had their names, and in rare cases passport and health details, accessed by unknown persons, Flight Centre Travel Group (FLT) disclosed. In a statement to the Australian Securities Exchange, the Brisbane-based travel company said it is investigating “unusual activity” in a third-party accommodation booking system used by the Flight Centre brand, Travel Associates, Cruiseabout and some independent agents. Flight bookings … More →",
+   "title": "Flight Centre Travel Group avisa sobre violação de dados de clientes com detalhes de passaportes",
+   "summary": "O grupo de viagens Flight Centre divulgou que pessoas não autorizadas acederam a dados de clientes. A falha afetou utilizadores que reservaram alojamento através de várias marcas do grupo. Em casos raros, foram consultados detalhes de passaportes e informações de saúde. A empresa está a investigar a atividade pouco comum num sistema de reservas de terceiros.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "O Flight Centre detetou acesso não autorizado a dados de clientes.",
+    "Um sistema de reservas de terceiros foi alvo de atividade anómala.",
+    "Foram expostos nomes e, em casos raros, dados de passaportes."
+   ],
+   "title_original": "Flight Centre Travel Group warns of customer data breach involving some passport details",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "Travellers who booked accommodation through Flight Centre and several of its leisure brands may have had their names, and in rare cases passport and health details, accessed by unknown persons, Flight Centre Travel Group (FLT) disclosed. In a statement to the Australian Securities Exchange, the Brisbane-based travel company said it is investigating “unusual activity” in a third-party accommodation booking system used by the Flight Centre brand, Travel Associates, Cruiseabout and some independent agents. Flight bookings … More →"
+   "translated": true,
+   "enriched": true,
+   "why": "Compromete dados pessoais sensíveis e documentos de identificação de viajantes.",
+   "todo": "Esteja atento a comunicações suspeitas relacionadas com reservas de viagens e altere palavras-passe."
   },
   {
    "id": "564b5565654ac562",
@@ -394,15 +479,20 @@
    "lang": "en",
    "link": "https://www.securityweek.com/100000-potentially-impacted-by-colorado-data-breach/",
    "published": "2026-11-27T09:30:54+00:00",
-   "title": "100,000 Potentially Impacted by Colorado Data Breach",
-   "summary": "Hackers breached the digital identification and document storage application myColorado and accessed user-uploaded data.",
+   "title": "100.000 pessoas potencialmente afetadas por violação de dados no Colorado",
+   "summary": "Piratas informáticos comprometeram a aplicação de identificação digital e armazenamento de documentos myColorado. Os atacantes conseguiram aceder a dados carregados pelos utilizadores na plataforma. O incidente tem um impacto potencial em cerca de cem mil pessoas. As autoridades locais estão a avaliar a extensão da brecha de segurança.",
    "image": null,
-   "points": [],
-   "title_original": null,
+   "points": [
+    "A aplicação myColorado sofreu uma violação de segurança informatica.",
+    "Hackers acederam a dados carregados pelos utilizadores na plataforma.",
+    "Cerca de cem mil pessoas foram potencialmente afetadas."
+   ],
+   "title_original": "100,000 Potentially Impacted by Colorado Data Breach",
    "category": "Fuga de dados",
-   "translated": false,
-   "enriched": false,
-   "raw": "Hackers breached the digital identification and document storage application myColorado and accessed user-uploaded data."
+   "translated": true,
+   "enriched": true,
+   "why": "Expõe documentos de identificação digital e dados pessoais de milhares de cidadãos.",
+   "todo": "Monitore extratos e alertas de identidade para detetar potenciais utilizações abusivas de dados."
   },
   {
    "id": "05f4c13650df3f7c",
@@ -13668,74 +13758,6 @@
    "enriched": true,
    "why": "Evidencia que roubos de dados em terceiros podem alimentar campanhas de phishing direcionadas contra clientes.",
    "todo": "Desconfie sempre de contactos inesperados que utilizem dados pessoais detalhados para aparentar legitimidade."
-  },
-  {
-   "id": "a9aa37ceddf16814",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day",
-   "published": "2026-11-20T21:03:27+00:00",
-   "title": "O 'Armory Castle' da China ataca o zero-day do VMware vCenter",
-   "summary": "Durante o período de atualizações de segurança do VMware vCenter, um grupo de ameaças ligado à China já estaria a preparar uma nova falha do tipo zero-day. Este grupo utilizou táticas avançadas para visar sistemas vulneráveis, apanhando as organizações desprevenidas. O impacto desta investida afeta a integridade dos servidores afetados. As autoridades e especialistas continuam a monitorizar estas movimentações.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt911ff7b35a2a2c1d/6b009babdd63b308b3111bc2/Chinese_fortress-Lukas_Bischoff-Getty.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "Um grupo associado à China preparou um zero-day para o VMware vCenter.",
-    "A exploração ocorreu durante o lançamento de atualizações de segurança.",
-    "O impacto foca-se na vulnerabilidade dos servidores VMware visados."
-   ],
-   "title_original": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como os atacantes aproveitam o timing das atualizações para explorar falhas críticas.",
-   "todo": "Aplique as correções e atualizações de segurança do VMware vCenter assim que forem disponibilizadas."
-  },
-  {
-   "id": "99727b65c29013d0",
-   "source": "Ars Technica Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-   "published": "2026-11-20T20:59:08+00:00",
-   "title": "Uma cadeia de fornecimento de IA vulnerável expõe dados confidenciais de utilizadores a um ritmo alarmante",
-   "summary": "Um investigador plantou armadilhas digitais em pedidos enviados através de vários serviços de IA para testar a segurança dos dados. A experiência revelou que o ecossistema de intermediários e routers de IA deixa escapar informações altamente confidenciais com facilidade. Foram utilizadas credenciais falsas e chaves de acesso para monitorizar fugas de informação ao longo da cadeia de serviços. Esta falha expõe a vulnerabilidade das aplicações modernas que dependem de intermediários para gerar respostas de modelos de IA.",
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/ai-privacy-leakage-1152x648.jpg",
-   "points": [
-    "Investigador testou a segurança de serviços intermediários de IA com armadilhas digitais.",
-    "O ecossistema revelou fugas massivas de dados confidenciais e credenciais.",
-    "Foram usadas chaves de acesso falsas para identificar falhas na cadeia.",
-    "A dependência de routers de IA aumenta os riscos de privacidade e roubo de dados."
-   ],
-   "title_original": "A leaky AI supply chain is exposing secret user data at an alarming rate",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como o uso de intermediários de IA pode expor dados sensíveis e credenciais de utilizadores sem o seu conhecimento.",
-   "todo": "Evite partilhar dados confidenciais em plataformas de IA desconhecidas e utilize serviços com políticas de privacidade rigorosas."
-  },
-  {
-   "id": "6787a271fdfea631",
-   "source": "TechCrunch Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/",
-   "published": "2026-11-20T20:58:29+00:00",
-   "title": "Peritos alertam: quase todos no setor da IA são atualmente suscetíveis a esquemas de \"honey trap\"",
-   "summary": "Especialistas alertam para o facto de os profissionais que desenvolvem tecnologias avançadas estarem vulneráveis a esquemas de \"honey trap\". Estas armadilhas exploram o fator humano e a vida pessoal para comprometer quem constrói ferramentas tecnológicas globais. Os atacantes aproveitam esta falha emocional para obter acesso não autorizado a sistemas e informações sensíveis. O impacto afeta a segurança operacional de projetos tecnológicos críticos.",
-   "image": null,
-   "points": [
-    "Profissionais de tecnologia enfrentam o risco de esquemas de \"honey trap\".",
-    "As armadilhas exploram vulnerabilidades emocionais e pessoais.",
-    "O objetivo é comprometer a segurança de criadores de tecnologia.",
-    "Ataques colocam em risco a integridade de projetos e sistemas críticos."
-   ],
-   "title_original": "Experts warn: nearly everyone in AI is susceptible to a honey trap scheme right now",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Evidencia que o fator humano continua a ser o elo mais fraco, mesmo entre os criadores de tecnologia mais avançada.",
-   "todo": "Promova a conscienciação sobre engenharia social e mantenha a cautela na partilha de informações pessoais online."
   }
  ]
 }

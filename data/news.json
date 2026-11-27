@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T05:27:08.370045+00:00",
+ "updated": "2026-11-27T05:46:44.366170+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -74,7 +74,7 @@
   {
    "source": "MS-ISAC (CIS)",
    "ok": true,
-   "added": 4
+   "added": 5
   },
   {
    "source": "BleepingComputer",
@@ -304,20 +304,43 @@
   {
    "source": "ACSC Austrália",
    "ok": false,
-   "error": "HTTPSConnectionPool(host='www.cyber.gov.au', port=443): Read timed out. (read timeout=25)"
+   "error": "403 Client Error: Forbidden for url: https://www.cyber.gov.au/rss/alerts"
   }
  ],
  "translation": {
   "provider": "gemini",
-  "done": 117,
-  "pending": 173,
-  "unenriched": 76,
+  "done": 114,
+  "pending": 177,
+  "unenriched": 80,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "5dce1fd3db2e0840",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/27/doj-scam-crackdown-800-scammers/",
+   "published": "2026-11-27T05:30:28+00:00",
+   "title": "EUA apreendem quase 17 mil milhões de dólares numa ofensiva global contra redes de fraude",
+   "summary": "O governo dos EUA liderou uma operação massiva contra mais de 800 suspeitos de fraude, visando desmantelar redes criminosas que visam cidadãos americanos. A iniciativa envolveu mais de 400 processos judiciais e a colaboração policial com mais de 10 países para encerrar centros de chamadas fraudulentos. O impacto inclui novas acusações, vereditos de culpa e a extradição de 30 indivíduos para território americano.",
+   "image": null,
+   "points": [
+    "Operação global contra 800 suspeitos de fraude.",
+    "Colaboração entre EUA e polícias de 10 países.",
+    "Apreensão de 17 mil milhões de dólares.",
+    "Encerramento de centros de chamadas criminosos."
+   ],
+   "title_original": "US seizes nearly $17 billion in global war on scam rings",
+   "category": "Phishing/Fraude",
+   "translated": true,
+   "enriched": true,
+   "why": "Demonstra o aumento da cooperação internacional no combate ao cibercrime organizado e à fraude em larga escala.",
+   "todo": "Mantenha-se vigilante contra chamadas não solicitadas e nunca partilhe dados financeiros ou pessoais com desconhecidos."
+  },
   {
    "id": "ca0dc6333c11694f",
    "source": "Help Net Security",
@@ -13739,29 +13762,6 @@
    "enriched": true,
    "why": "Mostra o impacto operacional severo que uma resposta a incidentes exige em organismos públicos.",
    "todo": "Tenha planos de contingência testados para isolar sistemas rapidamente sem paragens prolongadas."
-  },
-  {
-   "id": "95e1986b820d2a34",
-   "source": "Dark Reading",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.darkreading.com/cybersecurity-operations/security-words-matter",
-   "published": "2026-11-20T18:35:40+00:00",
-   "title": "Em segurança, as palavras importam tanto quanto as ferramentas, talvez mais",
-   "summary": "Líderes de cibersegurança estão a perceber que a comunicação clara é fundamental. Seja a falar de segurança na nuvem ou de IA, a articulação rigorosa tornou-se crucial. Esta disciplina funciona agora como uma primeira linha de defesa nas organizações.",
-   "image": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt36f1afcfa92ff2c5/6af766db3c02eaba0a4aae0d/cyber_talk_ATHVisions_Getty.jpg?width=720&quality=80&disable=upscale",
-   "points": [
-    "Quem: Líderes de cibersegurança.",
-    "O quê: Importância da comunicação clara em cibersegurança.",
-    "Como: Utilizando mensagens disciplinadas sobre nuvem e inteligência artificial.",
-    "Impacto: Fortalecimento da postura defensiva empresarial global."
-   ],
-   "title_original": "In Security, Words Matter as Much as Tools, Maybe More",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Destaca a importância de uma comunicação transparente e alinhada na gestão de riscos.",
-   "todo": "Garanta que as políticas de segurança são comunicadas de forma simples e direta a todas as equipas."
   }
  ]
 }

@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-27T10:46:43.304811+00:00",
+ "updated": "2026-11-27T11:07:13.308038+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Pplware Segurança",
@@ -94,12 +94,12 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "The Record",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CyberScoop",
@@ -129,7 +129,7 @@
   {
    "source": "WIRED Security",
    "ok": true,
-   "added": 9
+   "added": 8
   },
   {
    "source": "Schneier on Security",
@@ -174,7 +174,7 @@
   {
    "source": "Unit 42 (Palo Alto)",
    "ok": true,
-   "added": 2
+   "added": 3
   },
   {
    "source": "Google Threat Intelligence",
@@ -234,12 +234,12 @@
   {
    "source": "Infosecurity Magazine",
    "ok": true,
-   "added": 14
+   "added": 13
   },
   {
    "source": "The Register Security",
    "ok": true,
-   "added": 8
+   "added": 9
   },
   {
    "source": "Help Net Security",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -309,14 +309,36 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 176,
-  "unenriched": 82,
+  "done": 119,
+  "pending": 180,
+  "unenriched": 85,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "db4a5f90bd411011",
+   "source": "SecurityWeek",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.securityweek.com/in-other-news-tanker-cyberattacks-eu-quantum-act-new-virustotal-capabilities/",
+   "published": "2026-11-27T11:00:00+00:00",
+   "title": "Outras Notícias: Ciberataques a Petroleiros, Lei Europeia de Computação Quântica e Novas Capacidades do VirusTotal",
+   "summary": "Vários incidentes e desenvolvimentos recentes passaram despercebidos, incluindo acusações de lucro por parte do RansomwareHelp através de pagamentos de resgates. Verificou-se também uma violação nos sistemas de pagamento do Departamento de Agricultura dos Estados Unidos (USDA). Adicionalmente, a empresa de cibersegurança Radware foi alvo de um ataque cibernético.",
+   "image": null,
+   "points": [
+    "RansomwareHelp acusado de lucrar com resgates.",
+    "Sistemas de pagamento do USDA violados.",
+    "Empresa de cibersegurança Radware sofre ciberataque."
+   ],
+   "title_original": "In Other News: Tanker Cyberattacks, EU Quantum Act, New VirusTotal Capabilities",
+   "category": "Ransomware",
+   "translated": true,
+   "enriched": true,
+   "why": "Estes incidentes demonstram que organizações de vários setores e dimensões continuam a ser vulneráveis a ataques diversificados.",
+   "todo": "Mantenha a monitorização contínua dos sistemas e reforce as defesas contra ransomware."
+  },
   {
    "id": "ae06ba599eea8d5e",
    "source": "Infosecurity Magazine",
@@ -332,9 +354,9 @@
     "O quê: Exposição de dados pessoais e empresariais limitados.",
     "Impacto: Comprometimento da confidencialidade de informações geridas pela organização."
    ],
-   "title_original": "FIFA Confirms Cyber-Attack, Personal and Business Information Compromised",
+   "title_original": null,
    "category": "Fuga de dados",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Mostra que entidades desportivas globais são alvos atrativos para ciberataques.",
    "todo": "Monitorizar acessos e garantir políticas rigorosas de proteção de dados internos."
@@ -442,9 +464,9 @@
     "O quê: Foco em energia de reserva e bens essenciais.",
     "Impacto: Aumento da resiliência da população face a potenciais crises."
    ],
-   "title_original": "The British Government is Turning Everyone Into a Prepper",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Evidencia a importância da preparação comunitária perante cenários de interrupção de serviços.",
    "todo": "Criar um plano de contingência familiar e assegurar fontes alternativas de energia e mantimentos."
@@ -868,12 +890,34 @@
     "O quê: Incidente cibernético levou ao corte de serviços.",
     "Impacto: Indisponibilidade temporária de plataformas públicas por precaução."
    ],
-   "title_original": "British government takes services offline following ‘cyber incident’",
+   "title_original": null,
    "category": "Geral",
-   "translated": true,
+   "translated": false,
    "enriched": true,
    "why": "Demonstra como incidentes de segurança podem paralisar serviços governamentais essenciais.",
    "todo": "Implementar planos de resposta a incidentes para mitigar falhas operacionais rápidas."
+  },
+  {
+   "id": "a9243b1fe22d3e90",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/threats/juniper-confirma-exploracao-ativa-de-vulnerabilidade-critica-no-session-smart-conductor",
+   "published": "2026-11-27T00:00:00+00:00",
+   "title": "Juniper confirma exploração ativa de vulnerabilidade crítica no Session Smart Conductor",
+   "summary": "A Juniper confirmou a exploração ativa de uma falha grave com classificação CVSS máxima no Session Smart Conductor. Esta vulnerabilidade permite a execução remota de comandos com privilégios de root por parte de atacantes. O problema levou a CISA a exigir a correção imediata por parte das agências federais afetadas.",
+   "image": null,
+   "points": [
+    "Falha CVE-2026-103406 afeta o Session Smart Conductor.",
+    "Vulnerabilidade com pontuação CVSS de 9,8 já é explorada.",
+    "Permite execução remota de comandos como root."
+   ],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": true,
+   "why": "A exploração ativa desta falha crítica representa um risco iminente de compromisso total dos sistemas afetados.",
+   "todo": "Aplique imediatamente as atualizações de segurança disponibilizadas pelo fabricante para mitigar a vulnerabilidade."
   },
   {
    "id": "b1fd7d6f14154fb5",
@@ -2721,6 +2765,28 @@
    "enriched": true,
    "why": "Importa porque explora sistemas de gestão de conteúdos e aplicações web comuns, permitindo acesso total a atacantes.",
    "todo": "Atualize de imediato os softwares afetados para as versões mais recentes disponibilizadas pelos fabricantes."
+  },
+  {
+   "id": "fdd328f52b8cc0ca",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/threats/cibercriminosos-chineses-e-norte-coreanos-recorrem-a-ferramenta-de-ia-para-automatizar-ataques",
+   "published": "2026-11-26T00:00:00+00:00",
+   "title": "Cibercriminosos chineses e norte-coreanos recorrem a ferramenta de IA para automatizar ataques",
+   "summary": "A Microsoft detetou vários grupos de ciberespionagem a utilizar um novo framework para automatizar as suas operações maliciosas. Esta ferramenta recorre a capacidades de inteligência artificial para acelerar significativamente a descoberta e exploração de falhas. A utilização desta tecnologia eleva a escala e a velocidade das campanhas de pirataria informática.",
+   "image": null,
+   "points": [
+    "Grupos de ciberespionagem usam o framework ARTEX.",
+    "Recurso a IA para automatizar e acelerar ataques.",
+    "Identificação levada a cabo pela Microsoft."
+   ],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": true,
+   "why": "A automação de ataques com IA permite aos atacantes escalar operações maliciosas de forma sem precedentes.",
+   "todo": "Adote soluções de segurança baseadas em IA para detetar comportamentos anómalos e automatizar a resposta a incidentes."
   },
   {
    "id": "8236f5eb74b094df",
@@ -13689,73 +13755,6 @@
    "enriched": true,
    "why": "Permite isolar e minimizar os privilégios de agentes de IA e processos automatizados para evitar abusos.",
    "todo": "Utilize o princípio do privilégio mínimo, aplicando políticas restritas a agentes e processos automatizados."
-  },
-  {
-   "id": "931f9a9053dff1e2",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/xrp-lending-platforms-compared-security-ltv-speed/",
-   "published": "2026-11-20T22:26:16+00:00",
-   "title": "4 Best XRP Lending Platforms Compared by Security, LTV, and Speed",
-   "summary": "Quatro plataformas de empréstimo de XRP foram analisadas e comparadas tendo em conta vários critérios de segurança e funcionamento. A análise abrangeu serviços como CoinRabbit, Arch, Nexo e Coinbase. Foram avaliados fatores cruciais como o rácio empréstimo-valor (LTV), taxas de juro, velocidade de financiamento e os riscos associados à garantia.",
-   "image": null,
-   "points": [
-    "Plataformas comparadas: CoinRabbit, Arch, Nexo e Coinbase.",
-    "Critérios avaliados: Segurança, LTV, taxas de juro e velocidade.",
-    "Foco: Riscos de colateral e condições de financiamento em XRP."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Ajuda os utilizadores a escolherem plataformas seguras para empréstimos em criptomoedas.",
-   "todo": "Avalie sempre os riscos de colateral e a segurança da plataforma antes de depositar ativos digitais."
-  },
-  {
-   "id": "0a6dc192a1954684",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203622/security/cve-2026-23871-whatsapp-bug-helped-scammers-make-messages-look-legitimate.html",
-   "published": "2026-11-20T22:21:12+00:00",
-   "title": "CVE-2026-23871: Falha no WhatsApp ajudou burlões a legitimar mensagens",
-   "summary": "O WhatsApp corrigiu três falhas de segurança, incluindo a CVE-2026-23871, que foi explorada numa campanha de burlas para tornar mensagens fraudulentas mais credíveis. A vulnerabilidade afeta o WhatsApp e o WhatsApp Business para Android em versões anteriores a 2.26.17.4, decorrendo de uma validação incompleta de URLs externos em anúncios. O impacto permitia que um atacante recolhesse o endereço IP do dispositivo da vítima quando uma mensagem manipulada era exibida.",
-   "image": null,
-   "points": [
-    "Três falhas corrigidas pelo WhatsApp, incluindo a CVE-2026-23871.",
-    "Explorada por burlões para dar credibilidade a mensagens fraudulentas.",
-    "Afeta o WhatsApp para Android devido a validação incorreta de URLs.",
-    "Permitia a exposição do endereço IP da vítima a atacantes."
-   ],
-   "title_original": "CVE-2026-23871: WhatsApp Bug Helped Scammers Make Messages Look Legitimate",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Mostra como vulnerabilidades em aplicações de mensagens são usadas para enganar utilizadores com fraudes elaboradas.",
-   "todo": "Atualize imediatamente as aplicações WhatsApp e WhatsApp Business para as versões mais recentes."
-  },
-  {
-   "id": "d20cb913632d0a35",
-   "source": "Schneier on Security",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-the-largest-squid-ever-filmed.html",
-   "published": "2026-11-20T22:04:12+00:00",
-   "title": "Blogue de lulas de sexta-feira: A maior lula alguma vez filmada",
-   "summary": "Este artigo destaca a filmagem da maior lula alguma vez registada, ocorrida em 2006 perto das ilhas Ogasawara, no Japão. O autor utiliza este espaço para abordar temas de cibersegurança que não foram cobertos noutros artigos. A publicação serve também como ponto de encontro para discussões sobre segurança digital.",
-   "image": null,
-   "points": [
-    "Registo histórico de lula gigante",
-    "Localização perto das ilhas Ogasawara",
-    "Espaço para discussão de cibersegurança"
-   ],
-   "title_original": "Friday Squid Blogging: The Largest Squid Ever Filmed",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Serve como um ponto de contacto para a comunidade discutir notícias de segurança que não foram detalhadas noutros artigos.",
-   "todo": ""
   }
  ]
 }

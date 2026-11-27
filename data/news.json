@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-27T11:07:13.308038+00:00",
+ "updated": "2026-11-27T11:26:05.589804+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "IT Security",
    "ok": true,
-   "added": 2
+   "added": 0
   },
   {
    "source": "Pplware Segurança",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "TugaTech",
@@ -94,7 +94,7 @@
   {
    "source": "SecurityWeek",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "The Record",
@@ -134,7 +134,7 @@
   {
    "source": "Schneier on Security",
    "ok": true,
-   "added": 6
+   "added": 7
   },
   {
    "source": "SANS ISC",
@@ -244,7 +244,7 @@
   {
    "source": "Help Net Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Security Affairs",
@@ -268,13 +268,13 @@
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 1
   },
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 2
   },
   {
    "source": "Check Point Research",
@@ -309,14 +309,81 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 119,
-  "pending": 180,
-  "unenriched": 85,
+  "done": 120,
+  "pending": 181,
+  "unenriched": 87,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "8cbae16fd0fae885",
+   "source": "Infosecurity Magazine",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.infosecurity-magazine.com/news/uk-welfare-services-offline/",
+   "published": "2026-11-27T11:15:00+00:00",
+   "title": "UK Welfare and Pension Services Taken Offline Following Cyber Incident",
+   "summary": "Os serviços online do DWP foram desativados preventivamente na sequência de um incidente informático. O departamento governamental confirmou que os pagamentos regulares de pensões e subsídios não sofreram qualquer tipo de afetação. A medida teve caráter de precaução para salvaguardar a operação perante a ameaça detetada. Não foram avançados pormenores adicionais sobre a origem ou a natureza exata do incidente.",
+   "image": null,
+   "points": [
+    "DWP suspendeu serviços online por precaução devido a incidente informático.",
+    "Pagamentos regulares de pensões e subsídios mantêm-se inalterados.",
+    "Autoridades britânicas agiram preventivamente para proteger os sistemas."
+   ],
+   "title_original": "UK Welfare and Pension Services Taken Offline Following Cyber Incident",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como entidades públicas suspendem serviços de forma preventiva para conter potenciais ameaças cibernéticas.",
+   "todo": "Manter planos de contingência atualizados e testar procedimentos de interrupção preventiva de serviços."
+  },
+  {
+   "id": "62401e0e429c10c8",
+   "source": "Help Net Security",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://www.helpnetsecurity.com/2026/11/27/artex-ai-pentest-framework-china-north-korea-state-hackers/",
+   "published": "2026-11-27T11:06:57+00:00",
+   "title": "Chinese and North Korean state hackers add ARTEX AI framework to their arsenal",
+   "summary": "Grupos de pirataria informática associados a Pequim e Pyongyang começaram a utilizar a ferramenta ARTEX nos seus ataques. O ARTEX é um quadro de testes de intrusão de código aberto, impulsionado por inteligência artificial e publicado no GitHub por um utilizador. A tecnologia permite planear e executar ataques de forma autónoma a partir de um objetivo definido pelo operador. A Microsoft Threat Intelligence e a empresa ThreatBook emitiram alertas sobre esta adoção por parte de atores estatais.",
+   "image": null,
+   "points": [
+    "Hackers estatais da China e Coreia do Norte adotam a ferramenta ARTEX.",
+    "ARTEX é um framework de testes de intrusão baseado em IA e open source.",
+    "A ferramenta executa ataques de forma quase autónoma após receber objetivos.",
+    "Microsoft Threat Intelligence detetou o uso desta tecnologia."
+   ],
+   "title_original": "Chinese and North Korean state hackers add ARTEX AI framework to their arsenal",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia como os atacantes estatais estão a integrar ferramentas automatizadas baseadas em IA nos seus arsenais.",
+   "todo": "Monitorizar a atividade de ferramentas de testes de penetração não autorizadas e reforçar a deteção comportamental."
+  },
+  {
+   "id": "3e8f6ed4cfed4d8e",
+   "source": "HackRead",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://hackread.com/what-happens-when-you-mine-crypto-in-game/",
+   "published": "2026-11-27T11:01:03+00:00",
+   "title": "What Happens When You Mine Crypto in a Game Instead of Real Life?",
+   "summary": "O artigo aborda o funcionamento dos jogos de mineração de criptomoedas, explicando as diferenças face à mineração real. São analisados os aspetos práticos relacionados com recompensas, processos de levantamento, custos associados e riscos envolvidos. O conteúdo serve para esclarecer os utilizadores sobre o que esperar deste tipo de passatempos digitais. O foco está em desmistificar a rentabilidade e a segurança destas plataformas.",
+   "image": null,
+   "points": [
+    "Jogos de mineração de criptomoedas diferem da atividade real de mineração.",
+    "O artigo examina recompensas, levantamentos, custos e riscos associados.",
+    "Ajuda a compreender o funcionamento real destas plataformas de entretenimento."
+   ],
+   "title_original": "What Happens When You Mine Crypto in a Game Instead of Real Life?",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta os utilizadores para os riscos e a realidade financeira por trás de jogos que prometem ganhos em criptomoedas.",
+   "todo": "Desconfiar de promessas de ganhos fáceis em jogos e verificar sempre os termos de utilização e riscos associados."
+  },
   {
    "id": "db4a5f90bd411011",
    "source": "SecurityWeek",
@@ -338,6 +405,50 @@
    "enriched": true,
    "why": "Estes incidentes demonstram que organizações de vários setores e dimensões continuam a ser vulneráveis a ataques diversificados.",
    "todo": "Mantenha a monitorização contínua dos sistemas e reforce as defesas contra ransomware."
+  },
+  {
+   "id": "fe1f2947b5eaf7f2",
+   "source": "Pplware Segurança",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://pplware.sapo.pt/software/open-source-nao-significa-privacidade-e-o-t3-code-acaba-de-o-demonstrar/",
+   "published": "2026-11-27T11:00:00+00:00",
+   "title": "Open source não significa privacidade! E o T3 Code acaba de o demonstrar",
+   "summary": "A ferramenta T3 Code, um painel de código aberto para gerir agentes de programação com IA, gerou polémica devido às suas práticas de recolha de dados. O software estava a recolher telemetria capaz de identificar o mesmo utilizador em diferentes dispositivos. Este comportamento veio demonstrar que o software open source nem sempre garante a total privacidade dos utilizadores. A situação gerou debate sobre a transparência no tratamento de dados por parte destas ferramentas.",
+   "image": null,
+   "points": [
+    "T3 Code é um painel open source para gestão de agentes de IA.",
+    "A ferramenta recolhia telemetria capaz de rastrear utilizadores entre vários equipamentos.",
+    "O caso demonstra que código aberto não assegura automaticamente privacidade."
+   ],
+   "title_original": null,
+   "category": "Vulnerabilidade",
+   "translated": false,
+   "enriched": true,
+   "why": "Adverte que mesmo ferramentas de código aberto podem recolher dados sensíveis de telemetria sem o devido escrutínio.",
+   "todo": "Auditar o comportamento de rede e a telemetria de ferramentas open source antes de as integrar nos fluxos de trabalho."
+  },
+  {
+   "id": "415efee3262bc9c4",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html",
+   "published": "2026-11-27T10:32:18+00:00",
+   "title": "How to Keep Your Security Picture Current When Attackers Move at AI Speed",
+   "summary": "Muitas métricas de segurança atuais são concebidas apenas para apresentação em relatórios trimestrais e reuniões, em vez de refletirem o estado real do ambiente tecnológico. Estes indicadores são frequentemente limpos e ajustados à pressa na véspera de avaliações para transmitir uma falsa sensação de segurança. Como resultado, não revelam o que está realmente a acontecer na infraestrutura de TI de uma organização durante a semana. O texto aponta para a necessidade de métricas que acompanhem a velocidade dos atacantes impulsionados por IA.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivjmF6SycZfBA1Red5jxgerBNr4pe7i8jIwZyZkF20Kxvw__-2oD3cO1hKSCGGQRqncukvouxIx-6KBQdRf5jz9eXb80yFmNyTo2sOsmW2TEXS4irdH7uPvWfZh66zxIa9h0RixfLZtaKO3rSo_riHT9hfbyBGC1m_Y0_FWRu_M0EADEFFZmXFB_NG72Q/s1600/anecdotes.jpg",
+   "points": [
+    "Métricas de segurança servem frequentemente apenas para apresentação e não para proteção real.",
+    "Dados são ajustados antes de revisões para mascarar o estado real da cibersegurança.",
+    "A abordagem tradicional falha face à velocidade dos ataques atuais."
+   ],
+   "title_original": "How to Keep Your Security Picture Current When Attackers Move at AI Speed",
+   "category": "IA",
+   "translated": true,
+   "enriched": true,
+   "why": "Sublinha que métricas de segurança desatualizadas e cosméticas deixam as organizações cegas perante ameaças modernas.",
+   "todo": "Implementar métricas de segurança dinâmicas e baseadas em dados em tempo real em vez de relatórios estáticos."
   },
   {
    "id": "ae06ba599eea8d5e",
@@ -558,6 +669,28 @@
    "enriched": true,
    "why": "Expõe documentos de identificação digital e dados pessoais de milhares de cidadãos.",
    "todo": "Monitore extratos e alertas de identidade para detetar potenciais utilizações abusivas de dados."
+  },
+  {
+   "id": "99bc87f8212c6dd2",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html",
+   "published": "2026-11-27T09:29:30+00:00",
+   "title": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware",
+   "summary": "Investigadores de cibersegurança detetaram um ataque à cadeia de fornecimento de software que comprometeu os instaladores dos programas Q-Dir e DesktopOK. Os ficheiros maliciosos foram distribuídos diretamente através do site oficial SoftwareOK, afetando tanto novas descargas como o processo de atualização de versões anteriores. Esta adulteração resultou na entrega de malware de acesso remoto aos sistemas dos utilizadores. O incidente demonstra como can oficial de distribuição podem ser transformados em vetores de infeção.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSXVfewkMqSKHEHRrAVXFHFOsMisOpBVnJ_sWbNNQQXuSWTHU5Y8AZW18gdQq7eI5N4l1dXoeBXVuqGGNClEK0U55LHgLYUxmopN9JHaMrYtrt4QrtWmk3uIvX8FzE2jL7Rf-oOG2fiDzj4g99wYn1Ih9uAOmyD0DtWN7ZqkG5UTd3xRYSRnIurQuT437O/s1600/trojan.jpg",
+   "points": [
+    "Atacantes comprometeram instaladores de Q-Dir e DesktopOK no site oficial SoftwareOK.",
+    "Ataque à cadeia de fornecimento afetou novas descargas e atualizações automáticas.",
+    "O malware entregue fornece capacidades de acesso remoto aos atacantes."
+   ],
+   "title_original": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que até downloads obtidos em sites oficiais podem ser infetados através de ataques à cadeia de fornecimento.",
+   "todo": "Validar hashes de ficheiros descarregados sempre que disponíveis e utilizar soluções de endpoint atualizadas."
   },
   {
    "id": "05f4c13650df3f7c",
@@ -13619,142 +13752,6 @@
    "enriched": true,
    "why": "Alerta as organizações para os perigos de recorrer a falsas empresas de recuperação de dados e extorsão.",
    "todo": "Em caso de ransomware, contacte as autoridades competentes e procure peritos forenses credenciados, evitando intermediários duvidosos."
-  },
-  {
-   "id": "963228c15b1d2e3e",
-   "source": "CrowdStrike Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.crowdstrike.com/en-us/blog/supply-chain-risk-from-backdoored-lora-models/",
-   "published": "2026-11-21T00:21:30.013455+00:00",
-   "title": "Escondido nos Pesos: Risco na Cadeia de Abastecimento de Modelos LoRA com Backdoors",
-   "summary": "A investigação revela riscos de segurança na cadeia de abastecimento de modelos de Inteligência Artificial, especificamente em modelos LoRA (Low-Rank Adaptation). Estes modelos podem conter backdoors ocultos nos seus pesos, permitindo comportamentos maliciosos. O impacto é significativo, uma vez que a confiança cega em modelos pré-treinados pode comprometer sistemas que os integram. A vulnerabilidade reside na dificuldade de auditar o código malicioso inserido diretamente nos parâmetros do modelo.",
-   "image": null,
-   "points": [
-    "Modelos LoRA podem conter backdoors ocultos.",
-    "Ataque compromete a cadeia de abastecimento de IA.",
-    "Dificuldade em auditar pesos de modelos.",
-    "Risco de execução de código malicioso."
-   ],
-   "title_original": "Hidden in the Weights: Supply Chain Risk from Backdoored LoRA Models",
-   "category": "Malware",
-   "translated": true,
-   "enriched": true,
-   "why": "A integridade dos modelos de IA é crítica, pois um modelo comprometido pode atuar como um cavalo de Troia dentro de aplicações empresariais.",
-   "todo": "Utilize apenas modelos provenientes de fontes fidedignas e implemente processos de validação e verificação de segurança antes de integrar modelos de IA no seu ambiente de produção."
-  },
-  {
-   "id": "0120c46b3eac32c1",
-   "source": "CSO Online",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.csoonline.com/article/4251711/f5-scrambles-to-fix-more-critical-big-ip-security-flaws-2.html",
-   "published": "2026-11-21T00:16:44+00:00",
-   "title": "F5 apressa-se a corrigir mais falhas críticas de segurança no BIG-IP",
-   "summary": "A F5 lançou correções de emergência para vulnerabilidades críticas nos produtos BIG-IP Access Policy Manager (APM) e BIG-IP iRule. Foram identificadas cinco falhas com uma pontuação de gravidade de 9.8, que permitem a um atacante não autenticado causar a terminação do Traffic Management Microkernel (TMM). Esta interrupção pode levar à execução remota de código (RCE) nos sistemas afetados. As falhas estão relacionadas com o processamento de comandos específicos em iRules e configurações de políticas de acesso.",
-   "image": "https://www.csoonline.com/wp-content/uploads/2025/12/4094475-0-93324400-1765319251-cloud-technology-protection-information-cybersecurity-indentity-100937522-orig-100943311-orig.jpg?quality=50&strip=all",
-   "points": [
-    "Cinco vulnerabilidades críticas (CVE-2026-121805 e outras).",
-    "Afeta BIG-IP APM e iRules da F5.",
-    "Permite execução remota de código (RCE).",
-    "Correções de emergência já disponíveis."
-   ],
-   "title_original": "F5 scrambles to fix more critical BIG-IP security flaws",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "A exploração destas falhas permite o controlo total de dispositivos de rede críticos, colocando em risco a infraestrutura de acesso das empresas.",
-   "todo": "Aplique as atualizações de segurança fornecidas pela F5 imediatamente e verifique se as configurações de iRules nos seus dispositivos estão protegidas."
-  },
-  {
-   "id": "4b67abb568bc1c45",
-   "source": "IT Security",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://www.itsecurity.pt/news/x-ray/relatorio-enisa-ue-reforca-ciberseguranca-mas-ameacas-persistem",
-   "published": "2026-11-21T00:00:00+00:00",
-   "title": "Relatório ENISA: UE reforça cibersegurança, mas ameaças persistem",
-   "summary": "A Agência da União Europeia para a Cibersegurança publicou o seu relatório de 2026, atribuindo uma pontuação de 71,53 à maturidade da segurança digital no bloco comunitário. No entanto, o documento adverte para o aumento dos riscos nas cadeias de abastecimento de tecnologia. Além disso, as ameaças impulsionadas por inteligência artificial continuam a preocupar as autoridades europeias. O impacto traduz-se na necessidade urgente de reforçar a resiliência das organizações perante cenários de ataque cada vez mais complexos.",
-   "image": null,
-   "points": [
-    "A ENISA avaliou a maturidade da cibersegurança na UE com 71,53 pontos.",
-    "Identificados riscos crescentes nas cadeias de abastecimento tecnológico.",
-    "Ameaças potenciadas por inteligência artificial destacadas no relatório."
-   ],
-   "title_original": null,
-   "category": "Regulação",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra que, apesar dos avanços regulatórios, as empresas europeias enfrentam vectores de ataque mais sofisticados.",
-   "todo": "Reveja regularmente a segurança dos seus fornecedores e adote práticas robustas de gestão de riscos na cadeia de abastecimento."
-  },
-  {
-   "id": "658edd0f5c0a38ca",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/20/ransomware-what-we-know-about-the-arrests-of-chaos-affiliates/",
-   "published": "2026-11-20T23:50:20+00:00",
-   "title": "Ransomware: O que sabemos sobre as detenções de afiliados do Chaos",
-   "summary": "As autoridades ucranianas divulgaram detalhes sobre a detenção de quatro indivíduos ligados ao grupo de ransomware Chaos. Estes suspeitos fazem parte de uma rede criminosa mais vasta, composta por 27 membros, que tem operado no submundo do cibercrime. O grupo Chaos é uma ameaça relativamente recente que tem vindo a ser investigada pelas forças da ordem. Esta operação marca um passo importante no combate às infraestruturas de ransomware.",
-   "image": null,
-   "points": [
-    "Quatro membros do grupo Chaos detidos.",
-    "Investigação abrange rede de 27 criminosos.",
-    "Esforço coordenado pelas autoridades ucranianas.",
-    "Grupo focado em operações de ransomware."
-   ],
-   "title_original": "Ransomware: What we know about the arrests of Chaos affiliates",
-   "category": "Ransomware",
-   "translated": true,
-   "enriched": true,
-   "why": "A desarticulação de grupos de ransomware é essencial para reduzir a ameaça global de extorsão digital contra empresas e organizações.",
-   "todo": "Mantenha backups offline atualizados e garanta que os sistemas de deteção de intrusão estão ativos para mitigar riscos de ransomware."
-  },
-  {
-   "id": "9b2dca1639f78a8a",
-   "source": "The Register Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.theregister.com/devops/2026/11/20/php-86-things-are-gonna-get-a-lot-more-strict-around-here/5311486",
-   "published": "2026-11-20T23:28:47+00:00",
-   "title": "PHP 8.6: As coisas vão tornar-se muito mais restritas por aqui",
-   "summary": "A linguagem PHP lançou a versão 8.6 no seu habitual ciclo anual, trazendo correções cruciais para diversas vulnerabilidades recentes. Desde outubro, uma vaga de falhas permitia a atacantes não autenticados executar código remoto ou bloquear servidores em aplicações como WordPress, Laravel e Symfony. Para mitigar o problema, a comunidade corrigiu sete falhas críticas de execução remota de código numa única atualização. Adicionalmente, a nova versão endurece configurações predefinidas historicamente liberais da extensão de sessões para aumentar a segurança.",
-   "image": "https://image.theregister.com/?imageId=5247128&width=800",
-   "points": [
-    "O PHP lançou a versão 8.6 e correções para fechar sete falhas críticas de execução remota de código.",
-    "As vulnerabilidades afetavam aplicações como WordPress, Laravel e Symfony desde outubro.",
-    "A nova versão adota predefinições mais seguras para as configurações de sessão propostas por Jörg Sowa."
-   ],
-   "title_original": "PHP 8.6: Things are gonna get a lot more strict around here",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "A atualização corrige falhas críticas que permitiam a execução remota de código em servidores e endurece as predefinições de segurança.",
-   "todo": "Atualize imediatamente as suas instâncias de PHP para as versões corrigidas mais recentes."
-  },
-  {
-   "id": "e8806155abb34644",
-   "source": "AWS Security Blog",
-   "region": "US",
-   "lang": "en",
-   "link": "https://aws.amazon.com/blogs/security/scope-down-permissions-of-existing-sessions-using-aws-sts-getscopedcredentials/",
-   "published": "2026-11-20T22:57:22+00:00",
-   "title": "Reduzir permissões de sessões existentes usando o AWS STS GetScopedCredentials",
-   "summary": "A AWS lançou a API GetScopedCredentials no AWS Security Token Service para permitir que agentes de IA e processos herdem credenciais com privilégios reduzidos. Esta ferramenta cria credenciais temporárias com políticas restritas e durações de sessão mais curtas a partir de acessos existentes. O objetivo é garantir que subagentes tenham apenas o acesso estritamente necessário para realizar as suas tarefas. O impacto traduz-se numa maior segurança e controlo granular sobre os acessos em arquiteturas complexas e pipelines de CI/CD.",
-   "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/20/Vaishnavi-Merugu-author.jpeg",
-   "points": [
-    "Nova API AWS STS GetScopedCredentials para restringir credenciais temporárias.",
-    "Permite atribuir privilégios reduzidos a agentes de IA ou subagentes.",
-    "Aplica políticas de limite e durações de sessão mais curtas.",
-    "Melhora a segurança ao limitar o raio de ação de processos automatizados."
-   ],
-   "title_original": "Scope down permissions of existing sessions using AWS STS GetScopedCredentials",
-   "category": "IA",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite isolar e minimizar os privilégios de agentes de IA e processos automatizados para evitar abusos.",
-   "todo": "Utilize o princípio do privilégio mínimo, aplicando políticas restritas a agentes e processos automatizados."
   }
  ]
 }

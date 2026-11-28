@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28T03:46:22.045669+00:00",
+ "updated": "2026-11-28T04:07:10.207596+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -138,8 +138,8 @@
   },
   {
    "source": "SANS ISC",
-   "ok": true,
-   "added": 5
+   "ok": false,
+   "error": "resposta sem notícias (feed vazio ou página HTML)"
   },
   {
    "source": "DataBreaches.net",
@@ -309,15 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 114,
-  "pending": 169,
-  "unenriched": 81,
+  "done": 120,
+  "pending": 158,
+  "unenriched": 70,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "732fc2f930c6513d",
+   "source": "CSO Online",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.csoonline.com/article/4254142/1password-data-breach-included-some-customer-info-internal-source-code.html",
+   "published": "2026-11-28T03:44:01+00:00",
+   "title": "Violação de dados da 1Password incluiu informações de clientes e código-fonte interno",
+   "summary": "A 1Password sofreu uma violação de segurança após um atacante comprometer a conta do GitHub de um funcionário. Com esse acesso, os atacantes descarregaram dados administrativos de utilizadores, incluindo nomes, emails e metadados, além de copiarem código-fonte privado. No entanto, a empresa garantiu que os cofres de palavras-passe dos clientes e as respetivas chaves de proteção não foram afetados. Como medida de precaução, foram desencadeadas rotações de credenciais e os utilizadores afetados foram notificados.",
+   "image": "https://www.csoonline.com/wp-content/uploads/2026/06/4185797-0-58010000-1781686988-shutterstock_1523564426.jpg?quality=50&strip=all",
+   "points": [
+    "O quê: Conta de GitHub de um funcionário comprometida, levando ao roubo de dados de utilizadores e código-fonte.",
+    "Quem: A empresa de gestão de palavras-passe 1Password e utilizadores afetados.",
+    "Impacto: Exposição de metadados de contas e dados administrativos, embora os cofres de palavras-passe permaneçam seguros.",
+    "Como: Um atacante acedeu aos serviços de backend através de credenciais roubadas para descarregar a informação."
+   ],
+   "title_original": "1Password data breach included some customer info, internal source code",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que mesmo empresas de segurança robustas podem sofrer acessos indevidos através de contas de colaboradores.",
+   "todo": "Ative a autenticação multifator (MFA) em todas as contas empresariais e reveja regularmente os acessos a repositórios de código."
+  },
   {
    "id": "fc27df21d79fa552",
    "source": "DataBreaches.net",
@@ -13756,28 +13779,6 @@
    "enriched": true,
    "why": "Permite acompanhar as novas famílias de malware e táticas de ataque que ameaçam sistemas operativos e infraestruturas.",
    "todo": "Garanta que os sistemas operativos e soluções antimalware estão atualizados para detetar e bloquear ameaças recentes."
-  },
-  {
-   "id": "d3ddd154f18944e5",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/22/dialing-for-data-inside-the-coms-high-profile-heists/",
-   "published": "2026-11-22T13:51:37+00:00",
-   "title": "Dialing for Data: Inside the Com’s High-Profile Heists",
-   "summary": "A Unit 42 tem monitorizado várias vagas de ataques de \"vishing\" conduzidos por atores afiliados ao grupo Com. Estes ataques visam setores ricos em dados, como serviços financeiros, saúde e serviços jurídicos. A atividade maliciosa resultou em roubo de dados e tentativas de extorsão junto das organizações afetadas.",
-   "image": null,
-   "points": [
-    "Atores afiliados ao grupo Com realizaram ataques de vishing contra setores ricos em dados.",
-    "As vítimas incluem organizações dos setores financeiro, de saúde e jurídico.",
-    "Os ataques resultaram em roubo de dados e tentativas de extorsão."
-   ],
-   "title_original": null,
-   "category": "Phishing/Fraude",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como o uso de engenharia social através de chamadas telefónicas continua a ameaçar indústrias críticas com o roubo de dados sensíveis.",
-   "todo": "Formule políticas rigorosas de verificação de identidade para pedidos sensíveis recebidos por telefone e treine os colaboradores para reconhecer tentativas de vishing."
   }
  ]
 }

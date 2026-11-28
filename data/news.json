@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28T00:26:09.656254+00:00",
+ "updated": "2026-11-28T00:46:25.393286+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -9,7 +9,7 @@
   {
    "source": "IT Security",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Pplware Segurança",
@@ -314,7 +314,7 @@
   "unenriched": 89,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting ',' delimiter: line 113 column 228 (char 9111)",
+   "Expecting ',' delimiter: line 84 column 12 (char 7928)",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
@@ -327,14 +327,19 @@
    "link": "https://www.itsecurity.pt/news/news/sap-investiga-ciberataque-ao-github-apos-relatos-de-roubo-e-alteracao-de-codigo-fonte",
    "published": "2026-11-28T00:00:00+00:00",
    "title": "SAP investiga ciberataque ao GitHub após relatos de roubo e alteração de código-fonte",
-   "summary": "A SAP confirmou a identificação de atividades suspeitas na sua infraestrutura de desenvolvimento e está a investigar um possível comprometimento de código-fonte. Segundo a imprensa alemã, os atacantes terão utilizado tokens de autenticação de colaboradores para aceder a repositórios no GitHub. A empresa afirma não ter encontrado evidências de acesso não autorizado a dados empresariais dos clientes",
+   "summary": "A empresa SAP confirmou a deteção de atividades suspeitas na respetiva infraestrutura de desenvolvimento, estando a analisar um possível comprometimento de código-fonte. Informações da imprensa indicam que os atacantes terão recorrido a tokens de autenticação de colaboradores para obter acesso aos repositórios alojados no GitHub. Até ao momento, a organização não detetou indícios de que dados empresariais de clientes tenham sido acedidos de forma não autorizada.",
    "image": null,
-   "points": [],
+   "points": [
+    "A SAP investiga acessos suspeitos na sua infraestrutura de desenvolvimento e GitHub.",
+    "Atacantes poderão ter usado tokens de colaboradores para entrar nos repositórios.",
+    "A empresa garante que não encontrou provas de roubo de dados de clientes."
+   ],
    "title_original": null,
    "category": "Ataque/APT",
    "translated": false,
-   "enriched": false,
-   "raw": "A SAP confirmou a identificação de atividades suspeitas na sua infraestrutura de desenvolvimento e está a investigar um possível comprometimento de código-fonte. Segundo a imprensa alemã, os atacantes terão utilizado tokens de autenticação de colaboradores para aceder a repositórios no GitHub. A empresa afirma não ter encontrado evidências de acesso não autorizado a dados empresariais dos clientes"
+   "enriched": true,
+   "why": "Permite monitorizar ameaças direcionadas a cadeias de fornecimento de software e repositórios corporativos.",
+   "todo": "Reveja e restrinja as permissões dos tokens de autenticação e adote autenticação multifator rigorosa no acesso a repositórios."
   },
   {
    "id": "9a5641a98b228a31",

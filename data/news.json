@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-28T17:46:28.582127+00:00",
+ "updated": "2026-11-28T18:05:28.952615+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "IT Security",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -309,14 +309,39 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 157,
-  "unenriched": 74,
+  "done": 60,
+  "pending": 218,
+  "unenriched": 135,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting property name enclosed in double quotes: line 82 column 5 (char 7424)",
+   "Expecting ':' delimiter: line 73 column 3 (char 4962)"
   ]
  },
  "items": [
+  {
+   "id": "259243c742ec04c6",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/college-board-confirms-data-breach-after-unauthorized-password-changes/",
+   "published": "2026-11-28T17:45:59+00:00",
+   "title": "College Board confirma violação de dados após alterações não autorizadas de palavra-passe",
+   "summary": "A College Board confirmou ter sofrido uma violação de dados depois de os estudantes terem notado alterações inesperadas nas palavras-passe. Os atacantes conseguiram aceder aos sistemas de registo de contas e de candidaturas a ajuda financeira da organização. O incidente ocorreu durante o feriado de Ação de Graças.",
+   "image": null,
+   "points": [
+    "Quem: A organização College Board e os utilizadores afetados.",
+    "O quê: Violação de dados após acesso não autorizado aos sistemas.",
+    "Como: Através de alterações inesperadas de palavra-passe detetadas no Dia de Ação de Graças.",
+    "Impacto: Acesso indevido a sistemas de registo de contas e ajuda financeira."
+   ],
+   "title_original": "College Board confirms data breach after unauthorized password changes",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque expõe dados sensíveis de utilizadores em sistemas de registo e apoio financeiro.",
+   "todo": "Monitorize contas de utilizador para detetar alterações suspeitas e utilize palavras-passe fortes e autenticação multifator."
+  },
   {
    "id": "2607e0272e790e8e",
    "source": "BleepingComputer",
@@ -13759,28 +13784,6 @@
    "enriched": true,
    "why": "Alerta para o uso de IA por atacantes para acelerar e automatizar a exploração de falhas críticas em infraestruturas empresariais.",
    "todo": "Aplique imediatamente as correções de segurança disponibilizadas pela Cisco para o Expressway e verifique sinais de intrusão."
-  },
-  {
-   "id": "2f1b51ccb5d12aef",
-   "source": "IT Security",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://www.itsecurity.pt/news/news/crowdstrike-anuncia-aquisicao-da-zscaler-por-439-mil-milhoes-de-dolares",
-   "published": "2026-11-23T00:00:00+00:00",
-   "title": "CrowdStrike anuncia aquisição da Zscaler por 43,9 mil milhões de dólares",
-   "summary": "A CrowdStrike anunciou a aquisição da Zscaler numa operação avaliada em 43,9 mil milhões de dólares, realizada exclusivamente através de ações. Esta transação junta duas das principais empresas do setor de cibersegurança numa plataforma unificada que combina proteção de endpoints, redes e arquiteturas zero trust. O negócio deverá ficar concluído durante a segunda metade do ano fiscal de 2028 da CrowdStrike, criando uma gigante com mais de dez mil milhões de dólares em receitas recorrentes anuais.",
-   "image": null,
-   "points": [
-    "Aquisição avaliada em 43,9 mil milhões de dólares paga em ações.",
-    "Combina tecnologias de endpoint, redes e abordagens zero trust.",
-    "Conclusão prevista para a segunda metade do ano fiscal de 2028 da CrowdStrike."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Redefine o panorama do mercado de cibersegurança ao unificar líderes de proteção de endpoints e redes.",
-   "todo": ""
   }
  ]
 }

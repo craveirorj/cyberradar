@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28T15:26:18.133073+00:00",
+ "updated": "2026-11-28T15:46:22.386964+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -79,7 +79,7 @@
   {
    "source": "BleepingComputer",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Krebs on Security",
@@ -310,13 +310,35 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 158,
-  "unenriched": 74,
+  "pending": 159,
+  "unenriched": 75,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "2607e0272e790e8e",
+   "source": "BleepingComputer",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.bleepingcomputer.com/news/security/q-dir-and-desktopok-windows-utilities-compromised-to-push-python-rat/",
+   "published": "2026-11-28T15:32:49+00:00",
+   "title": "Utilitários do Windows Q-Dir e DesktopOK comprometidos para propagar RAT em Python",
+   "summary": "Os canais oficiais de distribuição das ferramentas Q-Dir e DesktopOK foram comprometidos por atacantes para infetar os instaladores. Estes instaladores adulterados continham malware de acesso remoto desenvolvido em Python. O incidente afeta diretamente os utilizadores que descarregaram estes utilitários legítimos a partir das fontes oficiais. O impacto prende-se com a exposição a infeções de malware de acesso remoto (RAT).",
+   "image": null,
+   "points": [
+    "Canais oficiais dos utilitários Q-Dir e DesktopOK foram comprometidos.",
+    "Instaladores falsos continham malware de acesso remoto em Python.",
+    "Utilizadores legítimos que descarregaram as ferramentas ficaram expostos."
+   ],
+   "title_original": "Q-Dir and DesktopOK Windows utilities compromised to push Python RAT",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como os canais de distribuição legítimos podem ser transformados em vetores de infeção.",
+   "todo": "Verifique a integridade e as assinaturas dos softwares descarregados e evite utilitários de fontes não totalmente verificadas."
+  },
   {
    "id": "a2d7a43ec057f570",
    "source": "DataBreaches.net",
@@ -13759,29 +13781,6 @@
    "enriched": true,
    "why": "Redefine o panorama do mercado de cibersegurança ao unificar líderes de proteção de endpoints e redes.",
    "todo": ""
-  },
-  {
-   "id": "d9d2b8e7310259b0",
-   "source": "Help Net Security",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://www.helpnetsecurity.com/2026/11/23/debian-13-8-released/",
-   "published": "2026-11-22T23:05:09+00:00",
-   "title": "Debian 13.8 bundles kernel and Chromium security fixes with a 122-package bugfix list",
-   "summary": "O projeto Debian lançou a versão 13.8 da sua série estável, focando-se na correção de falhas de segurança e erros graves. Esta atualização agrupa vários avisos de segurança publicados anteriormente de forma isolada. O impacto abrange múltiplos pacotes e programas amplamente utilizados, como o Chromium, Firefox ESR e PostgreSQL 17. Os utilizadores desta série devem verificar e aplicar as atualizações disponíveis.",
-   "image": null,
-   "points": [
-    "O projeto Debian lançou a atualização 13.8 para a série \"trixie\".",
-    "Inclui correções de segurança e correção de vários erros graves em 122 pacotes.",
-    "Abrange software crítico como Chromium, Firefox ESR, OpenJDK e bases de dados.",
-    "Atualizar o sistema assegura a proteção contra vulnerabilidades conhecidas nestes componentes."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Mantém os sistemas operativos e aplicações atualizados contra falhas recentemente descobertas.",
-   "todo": "Verifique e instale as atualizações mais recentes nos sistemas que executam a versão trixie do Debian."
   }
  ]
 }

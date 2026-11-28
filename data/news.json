@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-28T18:46:14.514086+00:00",
+ "updated": "2026-11-28T19:06:47.951140+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -310,13 +310,36 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 157,
-  "unenriched": 74,
+  "pending": 158,
+  "unenriched": 75,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "82dc91cb5f8c21a5",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/204185/hacking/u-s-cisa-adds-drupal-core-and-geoserver-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+   "published": "2026-11-28T18:44:38+00:00",
+   "title": "A CISA dos EUA adicionou falhas do Drupal Core e do GeoServer ao seu catálogo de vulnerabilidades exploradas",
+   "summary": "A Agência de Segurança de Infraestrutura e Cibersegurança dos EUA (CISA) adicionou várias falhas críticas ao seu catálogo de Known Exploited Vulnerabilities (KEV). Entre as vulnerabilidades estão falhas de injeção de XML e de autorização incorreta no OSGeo GeoServer, além de um problema no Drupal Core. Estas falhas permitem que atacantes não autenticados leiam ficheiros locais, contornem controlos de segurança ou enviem pedidos maliciosos para os servidores. As vulnerabilidades já estão a ser ativamente exploradas por atacantes no terreno.",
+   "image": null,
+   "points": [
+    "CISA adicionou vulnerabilidades do GeoServer e Drupal Core ao catálogo KEV.",
+    "Falhas no GeoServer permitem injeção de XML e bypass de autorização.",
+    "Atacantes estão a explorar ativamente as falhas para obter acesso não autorizado.",
+    "As vulnerabilidades afetam servidores web e exigem aplicação urgente de correções."
+   ],
+   "title_original": "U.S. CISA adds Drupal Core and GeoServer flaws to its Known Exploited Vulnerabilities catalog",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Importa porque estas falhas já estão a ser ativamente exploradas por atacantes para comprometer servidores vulneráveis.",
+   "todo": "Atualize imediatamente o GeoServer e o Drupal Core para as versões mais recentes disponibilizadas pelos fornecedores."
+  },
   {
    "id": "259243c742ec04c6",
    "source": "BleepingComputer",
@@ -13760,28 +13783,6 @@
    "enriched": true,
    "why": "Revela como vulnerabilidades em aplicações de mensagens populares são aproveitadas para fins fraudulentos e comprometimento de privacidade.",
    "todo": "Atualize imediatamente as aplicações WhatsApp e WhatsApp Business no seu dispositivo Android para a versão mais recente."
-  },
-  {
-   "id": "b4f77005033184fd",
-   "source": "IT Security",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://www.itsecurity.pt/news/threats/cisa-alerta-para-exploracao-com-ia-de-vulnerabilidade-critica",
-   "published": "2026-11-23T00:00:00+00:00",
-   "title": "CISA alerta para exploração com IA de vulnerabilidade crítica",
-   "summary": "A agência norte-americana CISA confirmou que uma falha crítica no Cisco Expressway está a ser ativamente explorada com recurso a inteligência artificial. A vulnerabilidade permite a execução remota de comandos no sistema com privilégios máximos de administrador. Esta situação aumenta drasticamente o risco para as organizações que utilizam o software afetado. A exploração bem-sucedida dá controlo total aos atacantes.",
-   "image": null,
-   "points": [
-    "Vulnerabilidade crítica detetada no Cisco Expressway.",
-    "A falha está a ser ativamente explorada com auxílio de inteligência artificial.",
-    "O problema permite a execução remota de comandos com privilégios de administrador."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Alerta para o uso de IA por atacantes para acelerar e automatizar a exploração de falhas críticas em infraestruturas empresariais.",
-   "todo": "Aplique imediatamente as correções de segurança disponibilizadas pela Cisco para o Expressway e verifique sinais de intrusão."
   }
  ]
 }

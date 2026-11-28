@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-28T08:25:29.160403+00:00",
+ "updated": "2026-11-28T08:46:08.618906+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "IT Security",
@@ -268,13 +268,13 @@
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "The Hacker News",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Check Point Research",
@@ -309,16 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 60,
-  "pending": 221,
-  "unenriched": 134,
+  "done": 108,
+  "pending": 174,
+  "unenriched": 87,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting value: line 21 column 7 (char 2027)",
-   "Expecting property name enclosed in double quotes: line 44 column 5 (char 3611)"
+   "Expecting property name enclosed in double quotes: line 90 column 5 (char 7963)"
   ]
  },
  "items": [
+  {
+   "id": "ed56aac972a34714",
+   "source": "The Hacker News",
+   "region": "INT",
+   "lang": "en",
+   "link": "https://thehackernews.com/2026/11/pcloud-password-manager-hit-by-cyber.html",
+   "published": "2026-11-28T08:08:11+00:00",
+   "title": "Gestor de palavras-passe pCloud alvo de ciberataque com exposição de emails e tentativas de início de sessão",
+   "summary": "O gestor de palavras-passe pCloud Pass foi alvo de um ciberataque que resultou na exposição de endereços de email de um pequeno número de utilizadores. O incidente foi confirmado pela empresa suíça após utilizadores reportarem a ligação de dispositivos desconhecidos às respetivas contas. A equipa da pCloud conseguiu conter prontamente a situação. O impacto centrou-se na comprometimento parcial de dados de contacto e na tentativa de acesso não autorizado.",
+   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizySCkvtf5mXH_3zoxzuk-QyEdUnYmspglEsVYdqRITloUFrUDZCQJcwtQG09teFmXo2IJOknOQb7CXhUpjKjGnadD6TuOIvVWIoWmKcaxb8-1uwf-3AiXZPYCFf2RzDkHNZ06d2Q5OS6AcCV7JHjTACCJH2f5aipC8vllpOwj1dSBYQJtqJ_wDc5nXQwU/s1600/pcloud.jpg",
+   "points": [
+    "Alvo: O gestor de palavras-passe pCloud Pass sofreu um ciberataque.",
+    "O quê: Ocorreu a exposição de emails de um pequeno grupo de utilizadores e tentativas de ligação de dispositivos desconhecidos.",
+    "Impacto: Contenção rápida pela empresa suíça, mas com comprometimento da privacidade de dados de utilizadores.",
+    "Como: Detetado após utilizadores reportarem acessos anómalos nas contas."
+   ],
+   "title_original": "pCloud Password Manager Hit by Cyber Attack Involving Email Address Exposure and Login Attempts",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra que até os gestores de password podem sofrer brechas, expondo credenciais e dados de contacto.",
+   "todo": "Ative a autenticação multifator (MFA) nas suas contas e verifique regularmente os dispositivos ligados aos seus serviços."
+  },
   {
    "id": "732fc2f930c6513d",
    "source": "CSO Online",
@@ -13758,28 +13780,6 @@
    "enriched": true,
    "why": "Mostra como a inteligência artificial está a acelerar e a transformar o panorama atual das ameaças cibernéticas.",
    "todo": "Mantenha-se informado sobre as novas tendências de ameaças baseadas em IA e reforce a monitorização de logs e acessos."
-  },
-  {
-   "id": "e53b3b51e88564ba",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203714/malware/security-affairs-malware-newsletter-round-123-2.html",
-   "published": "2026-11-22T13:56:43+00:00",
-   "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 123",
-   "summary": "A centésima vigésima terceira edição da newsletter de malware da Security Affairs destacou diversas investigações sobre ameaças recentes a nível internacional. Entre os incidentes mencionados constam novos implantes como o Linux/EasyShell, campanhas de cadeias de suprimentos e ataques baseados em serviços na cloud que visam redes governamentais. A publicação também aborda técnicas de ocultação de criptominedores e roubo de credenciais bancárias.",
-   "image": null,
-   "points": [
-    "Novo implante Linux/EasyShell e ameaças em ambientes macOS e Linux.",
-    "Campanhas de ataques à cadeia de suprimentos e serviços cloud.",
-    "Operações focadas no roubo de credenciais e infeção por malware."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Permite acompanhar as novas famílias de malware e táticas de ataque que ameaçam sistemas operativos e infraestruturas.",
-   "todo": "Garanta que os sistemas operativos e soluções antimalware estão atualizados para detetar e bloquear ameaças recentes."
   }
  ]
 }

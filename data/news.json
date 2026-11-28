@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-28T08:06:34.087797+00:00",
+ "updated": "2026-11-28T08:25:29.160403+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -309,12 +309,13 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 108,
-  "pending": 173,
-  "unenriched": 86,
+  "done": 60,
+  "pending": 221,
+  "unenriched": 134,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting property name enclosed in double quotes: line 149 column 5 (char 13652)"
+   "Expecting value: line 21 column 7 (char 2027)",
+   "Expecting property name enclosed in double quotes: line 44 column 5 (char 3611)"
   ]
  },
  "items": [

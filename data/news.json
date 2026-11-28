@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-28T13:46:21.925143+00:00",
+ "updated": "2026-11-28T14:06:44.402132+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
   },
   {
    "source": "IT Security",
@@ -139,12 +139,12 @@
   {
    "source": "SANS ISC",
    "ok": true,
-   "added": 5
+   "added": 6
   },
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 4
+   "added": 2
   },
   {
    "source": "Malwarebytes Labs",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": true,
-   "added": 0
+   "ok": false,
+   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
   },
   {
    "source": "The Hacker News",
@@ -310,13 +310,59 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 161,
-  "unenriched": 77,
+  "pending": 160,
+  "unenriched": 76,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "a2d7a43ec057f570",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/28/booba-ransomware-attack-on-water-plant-reveals-monitoring-blind-spot/",
+   "published": "2026-11-28T13:34:03+00:00",
+   "title": "Ataque de Ransomware Booba em Fábrica de Água Revela Falha de Monitorização",
+   "summary": "Uma estação de tratamento de água na Costa Leste foi alvo do ransomware Booba em novembro, afetando também a rede do governo local responsável. A equipa da ThreatDown identificou o incidente, mas não encontrou provas de que as operações de fornecimento de água tenham sido interrompidas. O relatório da Industrial Cyber indica que a rede estava dividida entre dois fornecedores e era monitorizada pela equipa da ThreatDown.",
+   "image": null,
+   "points": [
+    "Uma fábrica de tratamento de água sofreu um ataque do ransomware Booba em novembro.",
+    "A rede do governo local associada também foi alcançada pelo software malicioso.",
+    "As operações de água não sofreram interrupções conhecidas na sequência do incidente.",
+    "A infraestrutura afetada contava com monitorização da equipa da ThreatDown."
+   ],
+   "title_original": "Booba Ransomware Attack on Water Plant Reveals Monitoring Blind Spot",
+   "category": "Ransomware",
+   "translated": true,
+   "enriched": true,
+   "why": "Evidencia vulnerabilidades na visibilidade de redes críticas municipais e de serviços essenciais.",
+   "todo": "Reforçar a segmentação de redes e garantir monitorização contínua em infraestruturas críticas."
+  },
+  {
+   "id": "31fa0cee04433960",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/28/hong-kongs-octopus-cyberattack-exposes-data-of-nearly-30k-customers-and-merchants/",
+   "published": "2026-11-28T13:28:22+00:00",
+   "title": "Ciberataque à Octopus em Hong Kong expõe dados de quase 30 mil clientes e comerciantes",
+   "summary": "O sistema de pagamentos inteligentes Octopus, em Hong Kong, foi alvo de um ciberataque que poderá ter afetado cerca de 30.000 clientes e comerciantes. Esta ocorrência sucede a outros incidentes de cibersegurança envolvendo a empresa financeira Aeon Credit Service e a aplicação SmartPLAY. A Octopus detetou a intrusão nos seus sistemas na manhã do dia 27 de novembro.",
+   "image": null,
+   "points": [
+    "O sistema de pagamento inteligente Octopus sofreu um ciberataque.",
+    "Quase 30.000 clientes e comerciantes foram potencialmente afetados pela exposição de dados.",
+    "O incidente ocorreu após outros episódios de segurança em entidades de Hong Kong.",
+    "A empresa detetou o acesso não autorizado na manhã de 27 de novembro."
+   ],
+   "title_original": "Hong Kong’s Octopus cyberattack exposes data of nearly 30K customers and merchants",
+   "category": "Geral",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra os riscos de cibersegurança em plataformas de pagamento digital com grande volume de utilizadores.",
+   "todo": "Implementar autenticação forte e monitorização de acessos anómalos em sistemas de pagamento."
+  },
   {
    "id": "99b2a1993414ee20",
    "source": "DataBreaches.net",
@@ -13736,50 +13782,6 @@
    "enriched": true,
    "why": "Mantém os sistemas operativos e aplicações atualizados contra falhas recentemente descobertas.",
    "todo": "Verifique e instale as atualizações mais recentes nos sistemas que executam a versão trixie do Debian."
-  },
-  {
-   "id": "8015620ee9b6b6c3",
-   "source": "Pplware Segurança",
-   "region": "PT",
-   "lang": "pt",
-   "link": "https://pplware.sapo.pt/internet/seguranca/como-proteger-as-suas-contas-online/",
-   "published": "2026-11-22T20:30:00+00:00",
-   "title": "Como proteger as suas contas online?",
-   "summary": "Face à crescente dependência tecnológica e exposição a ameaças digitais, torna-se essencial adotar medidas preventivas para salvaguardar dados pessoais e impedir intrusões não autorizadas. O artigo destaca a importância de implementar cuidados básicos para garantir a segurança das contas utilizadas no dia a dia. Entre as recomendações fundamentais encontra-se a utilização de credenciais robustas e diferenciadas para cada serviço.",
-   "image": null,
-   "points": [
-    "Adotar cuidados diários contra ameaças digitais.",
-    "Proteger dados pessoais e evitar acessos indesejados.",
-    "Utilizar palavras-passe fortes e diferentes nas contas."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Ajuda a prevenir o roubo de dados pessoais e o acesso não autorizado às suas contas online.",
-   "todo": "Utilize palavras-passe fortes e distintas em cada um dos seus serviços online."
-  },
-  {
-   "id": "e84afceb005f0d48",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
-   "published": "2026-11-22T18:45:37+00:00",
-   "title": "Hackers exploram falha na cloud da GL.iNet para infetar routers e dispositivos KVM",
-   "summary": "A GL.iNet confirmou que atacantes exploraram uma vulnerabilidade nos seus serviços de gestão remota na cloud para instalar malware personalizado em routers e dispositivos KVM de clientes. Vários utilizadores afetados relataram a presença de backdoors e reverse shells, concedendo acesso remoto não autorizado aos equipamentos infetados. Este incidente compromete a segurança de infraestruturas de rede e dispositivos ligados.",
-   "image": null,
-   "points": [
-    "Atacantes exploraram falha em serviços de gestão remota na cloud da GL.iNet.",
-    "Foram instalados malware personalizado, backdoors e reverse shells em routers e KVM.",
-    "O impacto inclui a perda de controlo e acesso remoto não autorizado aos dispositivos."
-   ],
-   "title_original": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "Permite que atacantes ganhem acesso remoto total e controlo sobre routers e dispositivos de rede.",
-   "todo": "Atualize o firmware dos dispositivos afetados para a versão mais recente disponibilizada pelo fabricante e restrinja o acesso à gestão remota."
   }
  ]
 }

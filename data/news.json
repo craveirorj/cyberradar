@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28T01:46:18.387153+00:00",
+ "updated": "2026-11-28T02:06:58.774689+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -109,7 +109,7 @@
   {
    "source": "Cybersecurity Dive",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "CSO Online",
@@ -144,7 +144,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "Malwarebytes Labs",
@@ -309,9 +309,9 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 115,
-  "pending": 171,
-  "unenriched": 81,
+  "done": 117,
+  "pending": 168,
+  "unenriched": 79,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
@@ -385,6 +385,28 @@
    "enriched": true,
    "why": "Permite monitorizar ameaças direcionadas a cadeias de fornecimento de software e repositórios corporativos.",
    "todo": "Reveja e restrinja as permissões dos tokens de autenticação e adote autenticação multifator rigorosa no acesso a repositórios."
+  },
+  {
+   "id": "b51246981f5888b4",
+   "source": "Cybersecurity Dive",
+   "region": "US",
+   "lang": "en",
+   "link": "https://www.cybersecuritydive.com/news/sap-investigates-attack-source-code/875820/",
+   "published": "2026-11-27T22:06:30+00:00",
+   "title": "SAP investiga alegado ataque com impacto no código-fonte",
+   "summary": "A gigante do software SAP está a responder a uma violação de segurança que permitiu a atacantes desconhecidos obter acesso ao seu ambiente GitHub. O incidente levantou preocupações sobre a integridade dos repositórios de código da empresa. A investigação em curso procura apurar a extensão do acesso não autorizado e mitigar riscos futuros. Para já, a companhia continua a avaliar os impactos exatos desta intrusão nos seus sistemas.",
+   "image": null,
+   "points": [
+    "A SAP sofreu uma violação de segurança no seu ambiente GitHub.",
+    "Atacantes desconhecidos conseguiram aceder ao código-fonte da empresa.",
+    "A tecnológica está a investigar ativamente o incidente para apurar responsabilidades e danos."
+   ],
+   "title_original": "SAP investigates suspected attack impacting source code",
+   "category": "Vulnerabilidade",
+   "translated": true,
+   "enriched": true,
+   "why": "Acede ao código-fonte de uma gigante do software, o que pode comprometer a cadeia de fornecimento e gerar riscos de vulnerabilidades generalizadas.",
+   "todo": "Monitorizar alertas de segurança oficiais da SAP e reforçar a vigilância nos acessos a repositórios de código internos."
   },
   {
    "id": "9a5641a98b228a31",
@@ -13756,28 +13778,6 @@
    "enriched": true,
    "why": "Mostra como o uso de engenharia social através de chamadas telefónicas continua a ameaçar indústrias críticas com o roubo de dados sensíveis.",
    "todo": "Formule políticas rigorosas de verificação de identidade para pedidos sensíveis recebidos por telefone e treine os colaboradores para reconhecer tentativas de vishing."
-  },
-  {
-   "id": "b0be1fab790401da",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/22/information-and-privacy-commissioner-confirms-health-authority-updates-following-snooping-incidents-related-to-lapu-lapu-day-festival/",
-   "published": "2026-11-22T13:51:25+00:00",
-   "title": "Information and Privacy Commissioner confirms health authority updates following snooping incidents related to Lapu Lapu Day Festival",
-   "summary": "O comissário de informação e privacidade de British Columbia, Michael Harvey, confirmou atualizações por parte das autoridades de saúde após um relatório de fevereiro de 2026. Este relatório revelou 71 incidentes de intrusão indevida por 36 trabalhadores de saúde relacionados com o festival Lapu Lapu Day de 2025. O caso envolveu a Fraser Health Authority e outras entidades, motivando melhorias na proteção de dados de saúde.",
-   "image": null,
-   "points": [
-    "Trinta e seis trabalhadores de saúde cometeram 71 incidentes de intrusão indevida em dados.",
-    "Os acessos não autorizados estavam relacionados com o festival Lapu Lapu Day de 2025.",
-    "O comissário Michael Harvey confirmou a implementação de atualizações de segurança pelas autoridades de saúde."
-   ],
-   "title_original": null,
-   "category": "Geral",
-   "translated": false,
-   "enriched": true,
-   "why": "Evidencia a importância de controlar e auditar o acesso interno a registos médicos sensíveis para prevenir a invasão de privacidade por funcionários.",
-   "todo": "Implemente controlos de acesso baseados em funções eauditorias regulares aos registos para detetar acessos não autorizados por colaboradores."
   }
  ]
 }

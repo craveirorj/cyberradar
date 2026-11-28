@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-28T13:26:14.806844+00:00",
+ "updated": "2026-11-28T13:46:21.925143+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "IT Security",
@@ -54,7 +54,7 @@
   {
    "source": "Tecmundo",
    "ok": true,
-   "added": 1
+   "added": 0
   },
   {
    "source": "CISA Advisories",
@@ -144,7 +144,7 @@
   {
    "source": "DataBreaches.net",
    "ok": true,
-   "added": 0
+   "added": 4
   },
   {
    "source": "Malwarebytes Labs",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -310,13 +310,101 @@
  "translation": {
   "provider": "gemini",
   "done": 120,
-  "pending": 159,
-  "unenriched": 74,
+  "pending": 161,
+  "unenriched": 77,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
   ]
  },
  "items": [
+  {
+   "id": "99b2a1993414ee20",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/28/hong-kongs-smartplay-data-breach-potentially-exposes-90k-users/",
+   "published": "2026-11-28T13:24:31+00:00",
+   "title": "Violação de dados no SmartPLAY em Hong Kong pode expor 90 mil utilizadores",
+   "summary": "O Gabinete do Comissário para a Privacidade dos Dados Pessoais de Hong Kong iniciou uma investigação a uma suspeita de violação de dados na plataforma SmartPLAY. O incidente veio a público após vários utilizadores relatarem ter recebido códigos de verificação sem terem solicitado o serviço. Esta falha no sistema de reservas online do governo para recintos desportivos e recreativos pode afetar 90 mil utilizadores.",
+   "image": null,
+   "points": [
+    "O Gabinete do Comissário investiga uma suspeita falha de dados no SmartPLAY.",
+    "Utilizadores receberam códigos de verificação inesperados.",
+    "O sistema governamental de reservas afeta potencialmente 90.000 pessoas."
+   ],
+   "title_original": "Hong Kong’s SmartPLAY data breach potentially exposes 90K users",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Permite avaliar os riscos de segurança em plataformas digitais governamentais e a proteção de dados dos cidadãos.",
+   "todo": "Monitorize contas online para detetar atividade não solicitada e reforce a autenticação com palavras-passe fortes."
+  },
+  {
+   "id": "636c132a36142604",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/28/korea-posts-mobile-service-hacked-with-personal-data-of-at-least-113000-customers-leaked/",
+   "published": "2026-11-28T13:18:01+00:00",
+   "title": "Serviço móvel dos Correios da Coreia do Sul alvo de pirataria informática com fuga de dados",
+   "summary": "Um ataque informático aos correios da internet na Coreia do Sul expôs a informação pessoal de pelo menos 113.855 clientes. O serviço postal, sob a alçada do Ministério da Ciência e TIC, confirmou o acesso não autorizado por parte de hackers. A extensão total da violação e o impacto completo continuam sob investigação pelas autoridades competentes.",
+   "image": null,
+   "points": [
+    "Os correios online da Coreia do Sul sofreram um ataque informático.",
+    "Foram expostos dados de pelo menos 113.855 clientes.",
+    "A extensão total da violação ainda está a ser investigada."
+   ],
+   "title_original": "Korea Post’s mobile service hacked, with personal data of at least 113,000 customers leaked",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Destaca a vulnerabilidade de serviços postais e estatais face a ataques direcionados a bases de dados de clientes.",
+   "todo": "Fique atento a comunicações suspeitas e verifique regularmente o uso indevido de dados pessoais."
+  },
+  {
+   "id": "953a98d262e6c304",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/28/hk-app-breach-may-expose-500000-construction-workers/",
+   "published": "2026-11-28T13:17:56+00:00",
+   "title": "Hong Kong: Violação de aplicação pode expor 500 mil trabalhadores da construção civil",
+   "summary": "Foi detetado um acesso não autorizado no servidor da aplicação do Conselho da Indústria da Construção em Hong Kong. A falha poderá ter exposto os dados de cerca de 500.000 trabalhadores registados na plataforma. A informação potencialmente acedida inclui nomes, datas de nascimento e números de identificação, embora os registos financeiros não tenham sido afetados.",
+   "image": null,
+   "points": [
+    "O servidor da aplicação do Conselho da Indústria da Construção sofreu acesso não autorizado.",
+    "Cerca de 500.000 trabalhadores registados podem ter tido dados expostos.",
+    "Foram acedidos nomes, datas de nascimento e números de ID, sem dados financeiros envolvidos."
+   ],
+   "title_original": "HK: App breach may expose 500,000 construction workers",
+   "category": "Fuga de dados",
+   "translated": true,
+   "enriched": true,
+   "why": "Alerta para a exposição massiva de dados de identificação profissional através de aplicações setoriais.",
+   "todo": "Verifique se a sua organização está a monitorizar adequadamente os acessos aos servidores de aplicações."
+  },
+  {
+   "id": "f8e7c93de7372ee3",
+   "source": "DataBreaches.net",
+   "region": "US",
+   "lang": "en",
+   "link": "https://databreaches.net/2026/11/28/boston-scientific-data-breach-hackers-steal-personal-information-via-voice-phishing-attack/",
+   "published": "2026-11-28T13:17:36+00:00",
+   "title": "Violação de dados na Boston Scientific – Hackers roubam informações pessoais via ataque de phishing por voz",
+   "summary": "A empresa de tecnologia médica Boston Scientific confirmou que sofreu uma intrusão através de phishing por voz, conhecida como vishing. O ataque expôs dados pessoais e relacionados com a saúde em aplicações empresariais baseadas na nuvem. A companhia começou a enviar avisos formais aos indivíduos afetados em vários estados norte-americanos após notificar as autoridades.",
+   "image": null,
+   "points": [
+    "A Boston Scientific foi vítima de um ataque de phishing por voz (vishing).",
+    "O incidente expôs dados pessoais e médicos guardados na nuvem.",
+    "A empresa iniciou o envio de avisos aos cidadãos afetados."
+   ],
+   "title_original": "Boston Scientific Data Breach – Hackers Steal Personal Information via Voice Phishing Attack",
+   "category": "Phishing/Fraude",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como técnicas de engenharia social por voz continuam a comprometer dados sensíveis na nuvem.",
+   "todo": "Forme os colaboradores para desconfiarem de chamadas inesperadas que solicitem credenciais ou informações confidenciais."
+  },
   {
    "id": "604bc81988d8fa1e",
    "source": "Tecmundo",
@@ -13692,94 +13780,6 @@
    "enriched": true,
    "why": "Permite que atacantes ganhem acesso remoto total e controlo sobre routers e dispositivos de rede.",
    "todo": "Atualize o firmware dos dispositivos afetados para a versão mais recente disponibilizada pelo fabricante e restrinja o acesso à gestão remota."
-  },
-  {
-   "id": "f6ee8bdc262f5053",
-   "source": "SANS ISC",
-   "region": "US",
-   "lang": "en",
-   "link": "https://isc.sans.edu/diary/rss/33530",
-   "published": "2026-11-22T18:38:34+00:00",
-   "title": "Uma breve história dos carimbos de data/hora do syslog, (Qua, 18 de nov)",
-   "summary": "A Debian e a Ubuntu removeram uma diretiva de configuração do pacote rsyslogd no início de 2023. Esta alteração afetou a forma como os carimbos de data/hora eram geridos no sistema. A medida foi implementada diretamente pelos maintainers das respetivas distribuições Linux. O impacto refletiu-se em modificações nas opções predefinidas de registo do sistema operativo.",
-   "image": null,
-   "points": [
-    "Debian e Ubuntu removeram uma diretiva de configuração.",
-    "A alteração ocorreu no pacote rsyslogd no início de 2023.",
-    "O impacto afetou a gestão de carimbos de data/hora nos sistemas."
-   ],
-   "title_original": "A brief history of syslog timestamps, (Wed, Nov 18th)",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa para administradores de sistemas que utilizam Debian ou Ubuntu e dependem da consistência dos registos do rsyslogd.",
-   "todo": "Verifique as configurações atuais do rsyslogd nos sistemas afetados e consulte a documentação da distribuição para mitigar incompatibilidades."
-  },
-  {
-   "id": "9cc2aecfef6cb7be",
-   "source": "HackRead",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://hackread.com/executive-impersonation-across-platforms/",
-   "published": "2026-11-22T18:34:09+00:00",
-   "title": "Quando a impersonação de executivos se propaga por múltiplas plataformas",
-   "summary": "A impersonação de executivos pode estender-se através de contas falsas, sites clonados e materiais de identidade copiados. Este tipo de fraude multiplataforma exige uma avaliação coordenada para mitigar os riscos associados. Os atacantes utilizam estes meios para enganar clientes, parceiros e colaboradores. O impacto traduz-se em potenciais fraudes de engenharia social e danos reputacionais.",
-   "image": null,
-   "points": [
-    "A impersonação abrange contas falsas e sites clonados.",
-    "Ocorre a replicação de material de identidade de executivos.",
-    "A mitigação exige avaliações coordenadas de segurança."
-   ],
-   "title_original": "When Executive Impersonation Spreads Across Multiple Platforms",
-   "category": "Geral",
-   "translated": true,
-   "enriched": true,
-   "why": "Importa para proteger a reputação corporativa e prevenir fraudes direcionadas a colaboradores e parceiros de negócio.",
-   "todo": "Monitore regularmente a existência de perfis falsos ou domínios fraudulentos associados à empresa e aos seus dirigentes."
-  },
-  {
-   "id": "6ed1dae5249a698b",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203742/ai/signal-is-blocking-ai-agents-from-reading-your-screen.html",
-   "published": "2026-11-22T18:01:22+00:00",
-   "title": "Signal está a bloquear agentes de IA de lerem o seu ecrã",
-   "summary": "A Signal está a bloquear agentes de inteligência artificial a nível do sistema operativo, como o Gemini e o Siri AI, de lerem o conteúdo da aplicação no iOS 27 e Android. A empresa tomou esta medida para proteger a privacidade dos utilizadores, alertando que a leitura de ecrãs por IA compromete as suas garantias de encriptação. Esta restrição junta-se a ações anteriores implementadas no Windows contra o Microsoft Recall. O objetivo é impedir que dados confidenciais sejam capturados antes de serem encriptados.",
-   "image": null,
-   "points": [
-    "A Signal bloqueia agentes de IA do sistema operativo no iOS 27 e Android.",
-    "Ferramentas como Gemini e Siri AI tentam ler dados do ecrã para responder a perguntas.",
-    "A medida visa proteger as conversas encriptadas contra capturas de ecrã por assistentes de IA."
-   ],
-   "title_original": "Signal Is Blocking AI Agents From Reading Your Screen",
-   "category": "Ataque/APT",
-   "translated": true,
-   "enriched": true,
-   "why": "Evita que assistentes de IA capturem dados de conversas privadas diretamente do ecrã antes da encriptação.",
-   "todo": "Desative as funcionalidades de IA ao nível do sistema operativo que analisam o ecrã se pretender reforçar a privacidade."
-  },
-  {
-   "id": "855a50efe0f3bb9d",
-   "source": "BleepingComputer",
-   "region": "US",
-   "lang": "en",
-   "link": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
-   "published": "2026-11-22T15:43:04+00:00",
-   "title": "Cleverbridge avisa que hackers roubaram números de cartões de crédito e CVVs em violação de dados",
-   "summary": "A plataforma de comércio eletrónico Cleverbridge sofreu uma violação de sistemas que permitiu a hackers o roubo de informações de pagamento de clientes. Entre os dados comprometidos encontram-se números de cartões de crédito e códigos de segurança CVV. A empresa já emitiu um aviso público para alertar os utilizadores afetados sobre o incidente de segurança.",
-   "image": null,
-   "points": [
-    "A plataforma de comércio eletrónico Cleverbridge foi alvo de uma violação de segurança nos seus sistemas.",
-    "Hackers roubaram informações sensíveis de pagamento, incluindo números de cartões e códigos CVV.",
-    "A empresa já iniciou avisos públicos para alertar os clientes afetados pelo roubo de dados."
-   ],
-   "title_original": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
-   "category": "Vulnerabilidade",
-   "translated": true,
-   "enriched": true,
-   "why": "A exposição de dados financeiros de clientes coloca os utilizadores em risco imediato de fraude e uso indevido dos cartões.",
-   "todo": "Monitorize regularmente os extratos bancários e ative alertas de transações para detetar rapidamente qualquer atividade suspeita no seu cartão."
   }
  ]
 }

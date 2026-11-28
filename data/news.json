@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-28T10:46:19.979950+00:00",
+ "updated": "2026-11-28T11:06:36.328688+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://seguranca-informatica.pt/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "IT Security",
@@ -238,8 +238,8 @@
   },
   {
    "source": "The Register Security",
-   "ok": false,
-   "error": "resposta sem notícias (feed vazio ou página HTML)"
+   "ok": true,
+   "added": 10
   },
   {
    "source": "Help Net Security",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -268,8 +268,8 @@
   },
   {
    "source": "HackRead",
-   "ok": false,
-   "error": "415 Client Error: Unsupported Media Type for url: https://hackread.com/feed/"
+   "ok": true,
+   "added": 0
   },
   {
    "source": "The Hacker News",
@@ -309,14 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 120,
-  "pending": 150,
-  "unenriched": 64,
+  "done": 108,
+  "pending": 173,
+  "unenriched": 87,
   "errors": [
-   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest "
+   "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting property name enclosed in double quotes: line 120 column 5 (char 11094)"
   ]
  },
  "items": [
+  {
+   "id": "a442c95c8959bb46",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/204166/cyber-crime/booba-ransomware-attack-on-water-plant-reveals-monitoring-blind-spot.html",
+   "published": "2026-11-28T10:51:27+00:00",
+   "title": "Ataque de ransomware Booba a estação de tratamento de água revela falha de monitorização",
+   "summary": "Um ataque de ransomware Booba afetou uma estação de tratamento de água na Costa Leste dos Estados Unidos em novembro e propagou-se para a rede do governo local responsável. A investigação da ThreatDown revelou que o ataque explorou uma divisão de redes geridas por fornecedores diferentes, tendo cifrado alguns computadores. A equipa de resposta isolou rapidamente dezenas de máquinas para conter a ameaça, evitando danos maiores. Não houve evidências de interrupção nas operações de abastecimento de água.",
+   "image": null,
+   "points": [
+    "O ransomware Booba atingiu uma estação de tratamento de água e o governo local.",
+    "Ataque explorou a divisão de redes geridas por fornecedores diferentes.",
+    "Equipa de segurança isolou estações de trabalho para travar a propagação.",
+    "Operações de água não foram interrompidas pelo incidente."
+   ],
+   "title_original": "Booba Ransomware Attack on Water Plant Reveals Monitoring Blind Spot",
+   "category": "Ransomware",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como a falta de visibilidade e integração entre redes de diferentes fornecedores pode facilitar a propagação de ransomware.",
+   "todo": "Garantir a monitorização centralizada e contínua de todas as redes e dispositivos interconectados."
+  },
   {
    "id": "ed56aac972a34714",
    "source": "The Hacker News",
@@ -13757,28 +13781,6 @@
    "enriched": true,
    "why": "Protege as conversas privadas dos utilizadores contra a recolha indesejada de dados por assistentes de IA.",
    "todo": "Atualize a aplicação Signal para a versão mais recente e verifique as definições de privacidade e bloqueio de ecrã."
-  },
-  {
-   "id": "5b216973c02909e7",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203725/ai/security-affairs-ai-cybersecurity-newsletter-round-9.html",
-   "published": "2026-11-22T14:31:35+00:00",
-   "title": "SECURITY AFFAIRS AI-CYBERSECURITY NEWSLETTER ROUND 9",
-   "summary": "A nona edição da newsletter da Security Affairs focada em IA e cibersegurança reuniu artigos sobre o impacto da inteligência artificial no setor. A tecnologia está a transformar tanto as técnicas dos atacantes como as ferramentas de defesa, automatizando tarefas e acelerando a descoberta de vulnerabilidades. Foram destacados vários casos, campanhas maliciosas e investigações que envolvem o uso de agentes autónomos e modelos comprometidos.",
-   "image": null,
-   "points": [
-    "IA altera táticas de atacantes e defensores na cibersegurança.",
-    "Agentes autónomos automatizam ameaças e análise de vulnerabilidades.",
-    "Newsletter compila incidentes recentes envolvendo IA e campanhas maliciosas."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Mostra como a inteligência artificial está a acelerar e a transformar o panorama atual das ameaças cibernéticas.",
-   "todo": "Mantenha-se informado sobre as novas tendências de ameaças baseadas em IA e reforce a monitorização de logs e acessos."
   }
  ]
 }

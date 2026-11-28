@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28T00:46:25.393286+00:00",
+ "updated": "2026-11-28T01:07:11.531448+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -249,7 +249,7 @@
   {
    "source": "Security Affairs",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "WeLiveSecurity (ESET)",
@@ -309,16 +309,38 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 107,
-  "pending": 180,
-  "unenriched": 89,
+  "done": 119,
+  "pending": 168,
+  "unenriched": 77,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "Expecting ',' delimiter: line 84 column 12 (char 7928)",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "9cde8bf91f132c65",
+   "source": "Security Affairs",
+   "region": "EU",
+   "lang": "en",
+   "link": "https://securityaffairs.com/204142/intelligence/fake-government-app-exposes-italys-expanding-spyware-surveillance-industry.html",
+   "published": "2026-11-28T00:08:30+00:00",
+   "title": "Falsa aplicação governamental expõe a crescente indústria de spyware em Itália",
+   "summary": "Uma falsa aplicação do Ministério do Interior, denominada FirmaDigitale, foi utilizada para distribuir o spyware Morpheus a requerentes de asilo em Itália. O software malicioso, associado ao fornecedor IPS, podia aceder a microfones, chamadas, ficheiros e mensagens, além de imitar alertas biométricos do WhatsApp. Embora o site de distribuição tenha ficado inacessível, a aplicação continua a circular e outras marcas conhecidas também foram visadas. O impacto afeta diretamente a privacidade e a segurança digital de cidadãos vulneráveis.",
+   "image": null,
+   "points": [
+    "Aplicação falsa imitava serviços postais e autoridades para enganar requerentes de asilo.",
+    "Spyware Morpheus recolhia dados pessoais e comprometia aplicações como o WhatsApp.",
+    "Investigação atribuiu a ameaça ao fornecedor IPS, embora os mandantes permaneçam desconhecidos.",
+    "Utilizadores foram expostos a vigilância indevida e roubo de informação sensível."
+   ],
+   "title_original": "Fake Government App Exposes Italy’s Expanding Spyware Surveillance Industry",
+   "category": "Malware",
+   "translated": true,
+   "enriched": true,
+   "why": "Mostra como ferramentas de spyware de baixo custo exploram a vulnerabilidade de populações fragilizadas para violar a privacidade.",
+   "todo": "Descarregue aplicações apenas das lojas oficiais e confirme sempre a autenticidade dos serviços públicos digitais."
+  },
   {
    "id": "b44968a96d3c0395",
    "source": "IT Security",
@@ -13755,28 +13777,6 @@
    "enriched": true,
    "why": "Demonstra o impacto financeiro e legal do uso indevido de dados pessoais de pacientes no setor da saúde.",
    "todo": "Proteja rigorosamente os registos de pacientes com controlos de acesso robustos e monitorize regularmente as faturas e reclamações de serviços."
-  },
-  {
-   "id": "40034c303f90b456",
-   "source": "DataBreaches.net",
-   "region": "US",
-   "lang": "en",
-   "link": "https://databreaches.net/2026/11/22/huge-european-telecom-leak-exposes-swedbank-seb-airbaltic-and-dozens-of-other-companies-clients/",
-   "published": "2026-11-22T13:51:01+00:00",
-   "title": "Huge European telecom leak exposes Swedbank, SEB, airBaltic and dozens of other companies’ clients",
-   "summary": "A filial letónia do fornecedor de telecomunicações CSC Telecom deixou exposta uma base de dados contendo mais de 125 milhões de mensagens SMS. Os registos expostos abrangem o período entre outubro de 2022 e setembro de 2026. A fuga afetou os clientes de dezenas de empresas, incluindo instituições como o Swedbank, o SEB e a airBaltic.",
-   "image": null,
-   "points": [
-    "A filial letónia da CSC Telecom deixou uma base de dados sem proteção adequada.",
-    "Foram expostas mais de 125 milhões de mensagens SMS relativas a um período de vários anos.",
-    "A falha afetou os clientes de várias empresas de destaque, como Swedbank, SEB e airBaltic."
-   ],
-   "title_original": null,
-   "category": "Fuga de dados",
-   "translated": false,
-   "enriched": true,
-   "why": "Sublinha como falhas de configuração em fornecedores de telecomunicações podem expor massivamente dados de clientes de múltiplas empresas de renome.",
-   "todo": "Audite regularmente os servidores externos e bases de dados geridas por terceiros para garantir que não contêm dados confidenciais expostos publicamente."
   }
  ]
 }

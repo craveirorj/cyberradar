@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28T00:07:17.554274+00:00",
+ "updated": "2026-11-28T00:26:09.656254+00:00",
  "sources": [
   {
    "source": "Segurança Informática",
@@ -9,7 +9,7 @@
   {
    "source": "IT Security",
    "ok": true,
-   "added": 0
+   "added": 1
   },
   {
    "source": "Pplware Segurança",
@@ -309,15 +309,33 @@
  ],
  "translation": {
   "provider": "gemini",
-  "done": 116,
-  "pending": 171,
-  "unenriched": 79,
+  "done": 107,
+  "pending": 180,
+  "unenriched": 89,
   "errors": [
    "gemini-2.5-flash-lite: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
+   "Expecting ',' delimiter: line 113 column 228 (char 9111)",
    "gemini-3.5-flash-lite: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
   ]
  },
  "items": [
+  {
+   "id": "b44968a96d3c0395",
+   "source": "IT Security",
+   "region": "PT",
+   "lang": "pt",
+   "link": "https://www.itsecurity.pt/news/news/sap-investiga-ciberataque-ao-github-apos-relatos-de-roubo-e-alteracao-de-codigo-fonte",
+   "published": "2026-11-28T00:00:00+00:00",
+   "title": "SAP investiga ciberataque ao GitHub após relatos de roubo e alteração de código-fonte",
+   "summary": "A SAP confirmou a identificação de atividades suspeitas na sua infraestrutura de desenvolvimento e está a investigar um possível comprometimento de código-fonte. Segundo a imprensa alemã, os atacantes terão utilizado tokens de autenticação de colaboradores para aceder a repositórios no GitHub. A empresa afirma não ter encontrado evidências de acesso não autorizado a dados empresariais dos clientes",
+   "image": null,
+   "points": [],
+   "title_original": null,
+   "category": "Ataque/APT",
+   "translated": false,
+   "enriched": false,
+   "raw": "A SAP confirmou a identificação de atividades suspeitas na sua infraestrutura de desenvolvimento e está a investigar um possível comprometimento de código-fonte. Segundo a imprensa alemã, os atacantes terão utilizado tokens de autenticação de colaboradores para aceder a repositórios no GitHub. A empresa afirma não ter encontrado evidências de acesso não autorizado a dados empresariais dos clientes"
+  },
   {
    "id": "9a5641a98b228a31",
    "source": "Schneier on Security",
@@ -13754,28 +13772,6 @@
    "enriched": true,
    "why": "Sublinha como falhas de configuração em fornecedores de telecomunicações podem expor massivamente dados de clientes de múltiplas empresas de renome.",
    "todo": "Audite regularmente os servidores externos e bases de dados geridas por terceiros para garantir que não contêm dados confidenciais expostos publicamente."
-  },
-  {
-   "id": "0fac7f56c243495f",
-   "source": "Security Affairs",
-   "region": "EU",
-   "lang": "en",
-   "link": "https://securityaffairs.com/203701/breaking-news/security-affairs-newsletter-round-605-by-pierluigi-paganini-international-edition.html",
-   "published": "2026-11-22T13:22:46+00:00",
-   "title": "Security Affairs newsletter Round 605 by Pierluigi Paganini – INTERNATIONAL EDITION",
-   "summary": "A newsletter semanal Security Affairs destacou diversos incidentes e vulnerabilidades a nível global, incluindo um ciberataque ao Ministério dos Negócios Estrangeiros da Áustria e uma campanha de roubo de credenciais dirigida a bancos norte-americanos. O boletim também referiu ações da CISA sobre vulnerabilidades conhecidas, falhas críticas descobertas por IA e ações judiciais contra membros de grupos como o Scattered Spider. Estes eventos demonstram a amplitude contínua de ameaças em várias infraestruturas e setores.",
-   "image": null,
-   "points": [
-    "O Ministério dos Negócios Estrangeiros da Áustria sofreu um ciberataque que expôs dados diplomáticos.",
-    "A CISA adicionou várias falhas críticas ao catálogo de vulnerabilidades exploradas conhecidas.",
-    "Um membro do Scattered Spider foi condenado a seis anos de prisão por phishing e troca de SIM."
-   ],
-   "title_original": null,
-   "category": "Vulnerabilidade",
-   "translated": false,
-   "enriched": true,
-   "why": "Fornece um panorama abrangente sobre as ameaças cibernéticas mais recentes, ajudando as empresas a antecipar riscos globais.",
-   "todo": "Mantenha todos os softwares e sistemas atualizados e aplique correções de segurança com base nos alertas das autoridades competentes."
   }
  ]
 }
